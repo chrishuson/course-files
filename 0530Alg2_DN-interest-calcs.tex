@@ -1,0 +1,116 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{tkz-fct}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage \\Name: \hspace{1.5in}.\\}
+\lhead{BECA / Dr. Huson / 11.2 Algebra  \\* 30 May 2018 \\* \textbf{Do Now: Interest rate calculations}}
+
+\vspace{1cm}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Problem set template}
+\author{Chris Huson}
+\date{May 2018}
+
+\begin{document}
+%\maketitle
+
+%\subsubsection*{\\* \textnormal{Graph carefully using pencil}}
+
+\begin{enumerate}
+
+\item Given a loan or investment there are certain values to substitute into one of three formulas. Assume\\[5pt]
+Principal amount invested, $P_0= \$1,000$\\[5pt]
+Interest rate, $r=5\% = 0.05$\\[5pt]
+Time, $t=5$ years \\[5pt]
+Compounding periods per year, $n=12$\\[25pt]
+Identify and label the three interest rate formulas: simple interest, compound interest, \& continuous interest.
+\begin{enumerate}
+    \item $\displaystyle P(t)=P_0 (1 + \frac{r}{n})^{nt}$
+    \item $P(t)=P_0 e^{rt}$
+    \item $P(t)=P_0 (1 + r)^{t}$
+\end{enumerate}
+
+\item How much will the investment be worth using \emph{simple interest}? \\[1.5in]
+
+\item How much will the investment be worth using \emph{compound interest}? \\[1.5in]
+
+\item How much will the investment be worth using \emph{continuous interest}? \\[.5in]
+
+\newpage
+\item Seth’s parents gave him \$5000 to invest for his 16th birthday. He is considering two investment options. Option $A$ will pay him 4.5\% interest compounded annually. Option $B$ will pay him 4.6\% compounded quarterly.\\[10pt]
+Write a function of option $A$ and option $B$ that calculates the value of each account after $n$ years.\\[2in]
+Seth plans to use the money after he graduates from college in 6 years. Determine how much more money option $B$ will earn than option $A$ to the \emph{nearest cent}.\\[2in]
+Algebraically determine, to the nearest tenth of a year, how long it would take for option $B$ to double Seth’s initial investment. %Alg2 Regents Aug2016
+
+
+\newpage
+
+\item For each polynomial graph, state 
+\begin{enumerate}
+\item its degree,
+\item how many distinct zeros it has, and
+\item the sign of its leading coefficient.
+\end{enumerate}
+
+    \begin{tikzpicture}[scale=2/4]
+    %\draw[step=1cm,gray,very thin] (-7,-7) grid (7,7);
+    \draw[thick,<->] (-7.5,0) -- (7.5,0) node[anchor=north west] {\textbf{x}};
+    \draw[thick,<->] (0,-7.5) -- (0,7.5) node[anchor=south east] {\textbf{y}};
+    %\foreach \x in {-6, -4, -2, 2, 4, 6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
+    \tkzInit[xmin=-6,xmax=6,ymin=-7,ymax=7,ystep=1]   
+    \tkzFct[color=black,thick,<->,domain = -4.3:5.2] {-0.1*(x+3)*(x)*(x-4)};
+    \end{tikzpicture}
+    \begin{tikzpicture}[scale=2/4]
+    %\draw[step=1cm,gray,very thin] (-7,-7) grid (7,7);
+    \draw[thick,<->] (-7.5,0) -- (7.5,0) node[anchor=north west] {\textbf{x}};
+    \draw[thick,<->] (0,-7.5) -- (0,7.5) node[anchor=south east] {\textbf{y}};
+    %\foreach \x in {-6, -4, -2, 2, 4, 6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
+    \tkzInit[xmin=-6,xmax=6,ymin=-7,ymax=7,ystep=1]   
+    \tkzFct[color=black,thick,<->,domain = -5.3:4.2] {-0.05*(x+5)*(x+3)*(x-1)*(x-4)};
+    \end{tikzpicture}
+\\[30pt]
+    \begin{tikzpicture}[scale=2/4]
+    %\draw[step=1cm,gray,very thin] (-7,-7) grid (7,7);
+    \draw[thick,<->] (-7.5,0) -- (7.5,0) node[anchor=north west] {\textbf{x}};
+    \draw[thick,<->] (0,-7.5) -- (0,7.5) node[anchor=south east] {\textbf{y}};
+    %\foreach \x in {-6, -4, -2, 2, 4, 6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
+    \tkzInit[xmin=-6,xmax=6,ymin=-7,ymax=7,ystep=1]   
+    \tkzFct[color=black,thick,<->,domain = -1.3:5.2] {-0.5*(x-2)*(x-2)};
+    \end{tikzpicture}
+    \begin{tikzpicture}[scale=2/4]
+    %\draw[step=1cm,gray,very thin] (-7,-7) grid (7,7);
+    \draw[thick,<->] (-7.5,0) -- (7.5,0) node[anchor=north west] {\textbf{x}};
+    \draw[thick,<->] (0,-7.5) -- (0,7.5) node[anchor=south east] {\textbf{y}};
+    %\foreach \x in {-6, -4, -2, 2, 4, 6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
+    \tkzInit[xmin=-6,xmax=6,ymin=-7,ymax=7,ystep=1]   
+    \tkzFct[color=black,thick,<->,domain = -3.3:5.2] {0.05*(x*x*x*x-3*x*x*x-9*x*x+10*x+20)};
+    \end{tikzpicture}
+
+\newpage
+\item Solve the equation $\sqrt{2x+2}+x=3$ algebraically, and justify the solution set.\\*[1.5in]
+ %Alg2 Regents Aug2016
+
+
+\item Solve the equation $\sqrt{2x-7}+x=5$ algebraically, and justify the solution set.\\*[2.5in]
+ %Alg2 Regents Aug2016
+
+\item The speed of a tidal wave, $s$, in hundreds of miles per hour, can be modeled by the equation $s= \sqrt{t} - 2t+6$, where $t$ represents the time from its origin in hours. Algebraically determine the time when $s=0$.\\[10pt]
+
+
+\end{enumerate}
+\end{document}
