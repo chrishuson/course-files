@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+
+\pagestyle{empty}
+\begin{document}
+
+\definecolor{qqwuqq}{rgb}{0.,0.40,0.}
+\definecolor{cqcqcq}{rgb}{0.75,0.75,0.75}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.2cm,y=0.01cm]
+
+%grid
+\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (0.,0) grid (53.,740);
+
+%x-axis
+\draw[->,color=black] (0.,0.) -- (55.,0.);
+\foreach \x in {0,10,20,30,40,50}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$ m};
+\draw[color=black] (53,10) node [anchor=south west] { x}; %"x" label
+
+%y-axis
+\draw[->,color=black] (0.,0.) -- (0.,750);
+\foreach \y in {0,100,200,300,400,500,600,700}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$ m};
+\draw[color=black] (0.50,715) node [anchor=west] { y}; %"y" label
+
+%\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; %origin
+%\clip(0.,-49.887637299940074) rectangle (55.,749.9999502862663);
+
+\draw[line width=2.pt,color=black,smooth,samples=100,domain=0.0:52] plot(\x,{0-(\x)^(2.0)+50.0*(\x)+100.0});
+
+%function label
+\begin{scriptsize}
+%\draw[color=black] (49.0,80) node {$f$};
+\end{scriptsize}
+\draw[color=black] (49.0,80) node {$f$};
+
+\end{tikzpicture}
+
+
+\end{document}

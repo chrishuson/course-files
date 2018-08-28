@@ -1,0 +1,26 @@
+\documentclass{article}
+
+\usepackage{tikz} % Package for drawing
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{figure}[!htbp]
+\begin{center}
+\begin{tikzpicture}
+
+\draw[domain=-2:2, color=blue] plot (\x, {1 - (\x)^2}) node[above = .5cm, right, color=blue] {$f(x)=1-x^2$};
+
+\draw[domain=-2:2, color=red] plot(\x,-1 * \x + 1.25) node[above = .5cm, right, color=red] {Tangent at $x=.5$};
+
+\draw [thick, ->] (-3,0) -- (3,0) node [above] {$x$};
+\draw [thick, ->] (0,-3) -- (0,3) node [right] {$y$};
+
+\node at (.5,.75) {\textbullet};
+\end{tikzpicture}
+\end{center}
+
+\caption{The plot of $f(x)=1-x^2$ with a tangent at $x=.5$.}\label{exampleplot}
+\end{figure}
+
+\end{document}
