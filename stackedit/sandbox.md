@@ -19,6 +19,8 @@ $$ \frac{1}{2} $$
 
 **Daily DRUI**
 
+(format csv file as table - md or latex functions)
+
 Date | Topic | Guiding Question | Do Now | Task | Homework
 ---|---|---|---|---|---
 6 Sep | Intro to triangles | How do we abbreviate geometric terms? | Handout | Equilateral triangle definition and applications | Triangle+algebra practice
@@ -50,5 +52,5 @@ continued
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDY0MDI1NjEsNjcxMzM0NTkyXX0=
+eyJoaXN0b3J5IjpbLTExMTM3NzMxNTEsNjcxMzM0NTkyXX0=
 -->
