@@ -13,7 +13,10 @@ $f(x) = mx+b$
 
 $$g(x) = ax^2+bx+c$$
 
-$$ \frac{1}{2} $$
+$$
+ \frac{1}{2} \\
+ \times 4 = 6
+ $$
 
 ## Tables
 
@@ -52,5 +55,6 @@ continued
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTM3NzMxNTEsNjcxMzM0NTkyXX0=
+eyJoaXN0b3J5IjpbLTExNDEzMTUxMTIsLTExMTM3NzMxNTEsNj
+cxMzM0NTkyXX0=
 -->
