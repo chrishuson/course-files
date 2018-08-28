@@ -9,8 +9,12 @@
 \usepackage{graphicx}
 \usepackage{venndiagram}
 
-%\usepackage{pgfplots}
-%\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{pgfplots}
+\pgfmathdeclarefunction{gauss}{2}{
+  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}
+  }
+
+\pgfplotsset{width=10cm,compat=1.9}
 %\usepackage{pgfplotstable}
 
 \setlength{\headheight}{26pt}%doesn't seem to fix warning
@@ -30,7 +34,7 @@
 \title{Mathematics Class Slides}
 \subtitle{Bronx Early College Academy}
 \author{Chris Huson}
-\date{27 August [was 23 May] 2018}
+\date{28 August 2018}
 
 \begin{document}
 
@@ -264,6 +268,5 @@
 \end{figure}
 
 }
-
 
 \end{document}
