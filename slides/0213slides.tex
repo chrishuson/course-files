@@ -1,0 +1,279 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\rhead{\small{13 February 2018}}
+\lhead{\small{BECA / Dr. Huson / Mathematics}}
+
+%\vspace{1cm}
+
+\renewcommand{\headrulewidth}{0pt}
+
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Chris Huson}
+\date{February 2018}
+
+\begin{document}
+
+\frame{\titlepage}
+
+%\section[Outline]{}
+%\frame{\tableofcontents}
+
+\section{12.1 Drui}
+\frame
+{
+  \frametitle{GQ: How do we calculate displacement from velocity?}
+  \framesubtitle{CCSS: F.IF.B.6 Calculate \& interpret the rate of change of a function \qquad \alert{12.1}}
+
+  \begin{block}{Do Now: Do the calculations below and read the handout}
+  \begin{enumerate}
+      \item Lance Armstrong’s average speed in his six Tour de France victories from 1999-2004 was about 24 miles per hour. Assuming that he pedals at his average speed and takes no breaks, how long would it take him to ride 38 miles to the top of a 10,000 ft. volcano?
+      \item People who are not Lance Armstrong can travel at about 12 miles per hour on a bike. At that speed, how long would it take to reach the top of the volcano?
+  \end{enumerate}
+  \end{block}
+  Lesson: Integrating velocity over time, displacement p. 321\\%*[5pt]
+  %Task: Practice Examples 11, 12 p. 310-1\\%*[5pt]
+  Assessment: Example \#18 p. 323 \\%*[5pt]
+  Homework: Exercises 9N \& 9O p. 320, 324
+}
+
+\section{11.1 Drui}
+\frame
+{
+  \frametitle{GQ: How do we calculate displacement from velocity?}
+  \framesubtitle{CCSS: F.IF.B.6 Calculate \& interpret the rate of change of a function \qquad \alert{11.1}}
+
+  \begin{block}{Do Now: Do the calculations below and read the handout}
+  \begin{enumerate}
+      \item Lance Armstrong’s average speed in his six Tour de France victories from 1999-2004 was about 24 miles per hour. Assuming that he pedals at his average speed and takes no breaks, how long would it take him to ride 38 miles to the top of a 10,000 ft. volcano?
+      \item People who are not Lance Armstrong can travel at about 12 miles per hour on a bike. At that speed, how long would it take to reach the top of the volcano?
+  \end{enumerate}
+  \end{block}
+  Lesson: Interpreting a displacement vs time graph\\%*[5pt]
+  Task: Parabola problem\\%*[5pt]
+  Assessment: Exercise 2K \#1 p. 55 \\%*[5pt]
+  Homework: Review exercises 1-7 p. 56-57
+}
+
+\frame
+{
+  \frametitle{Interpreting a displacement vs time graph}
+  \framesubtitle{CCSS: F.IF.B.6 Calculate \& interpret the rate of change of a function}
+
+  \begin{block}{Consider the function $f(x)=-x^2+2x+3$}
+  \begin{enumerate}
+      \item Factor $f$ and state its zeros.
+      \item Restate $f$ in vertex form. Write down the vertex as an ordered pair.
+      \item Over what intervals is the function increasing, decreasing, and neither?
+      \item If $f(x)$ represents the height of a diver over the domain $0 \leq x \leq 3$, interpret $f(0)$, the vertex, and $f(3)$
+      \item What does the "slope" of the curve represent?
+  \end{enumerate}
+  \end{block}
+}
+
+\frame
+{
+  \frametitle{GQ: How do we organize data using sample space diagrams?}
+  \framesubtitle{CCSS: HSS.CP.B.6 Probabilities}
+
+  \begin{block}{Do Now: Phone preferences by gender}
+  \begin{enumerate}
+      \item Convert a frequency table to Venn diagram
+      \item Convert a Venn diagram to a frequency diagram
+  \end{enumerate}
+  \end{block}
+  Lesson: Sample space tables, Example 8 (p. 78)\\*[5pt]
+  Task: Exercises 3E page 79.\\*[5pt]
+  Assessment: When rolling two dice, why aren't all the possible totals equally likely?\\*[5pt]
+  Homework: Exercises 3E page 79.  
+}
+
+
+\section{11.2 Drui}
+\frame
+{
+  \frametitle{GQ: How do we calculate displacement from velocity?}
+  \framesubtitle{CCSS: F.IF.B.6 Calculate \& interpret the rate of change of a function \qquad \alert{11.2}}
+
+  \begin{block}{Do Now: Do the calculations below and read the handout}
+  \begin{enumerate}
+      \item Lance Armstrong’s average speed in his six Tour de France victories from 1999-2004 was about 24 miles per hour. Assuming that he pedals at his average speed and takes no breaks, how long would it take him to ride 38 miles to the top of a 10,000 ft. volcano?
+      \item People who are not Lance Armstrong can travel at about 12 miles per hour on a bike. At that speed, how long would it take to reach the top of the volcano?
+  \end{enumerate}
+  \end{block}
+  Lesson: Interpreting a displacement vs time graph\\%*[5pt]
+  Task: Parabola problem\\%*[5pt]
+  %Assessment: Exercise 2K \#1 p. 55 \\%*[5pt]
+  Homework: Handout
+}
+
+\frame
+{
+  \frametitle{GQ: How do we organize data using sample space diagrams?}
+  \framesubtitle{CCSS: HSS.CP.B.6 Probabilities}
+
+  \begin{block}{Do Now: Phone preferences by gender}
+  \begin{enumerate}
+      \item Convert a frequency table to Venn diagram
+      \item Convert a Venn diagram to a frequency diagram
+  \end{enumerate}
+  \end{block}
+  Lesson: Review exam\\*[5pt]
+  Task: Sample space diagrams\\*[5pt]
+  Assessment: When rolling two dice, why aren't all the possible totals equally likely?\\*[5pt]
+  Homework: Probability handout  
+}
+
+\begin{frame}{Do Now \#1: Phone preferences by gender}
+    \framesubtitle{Given the frequency table, make a Venn diagram}
+    \begin{tabular}{l|c|r|}
+        & Android & iPhone\\ 
+        \hline 
+        Boys & 15 & 5 \\ 
+        \hline 
+        Girls & 5 & 15 \\
+        \hline 
+    \end{tabular}\\*[10pt]
+    \centering
+    $A=\{ \text{prefers Android}\}$ and $B=\{ \text{is a boy}\}$
+    \begin{venndiagram2sets}[tikzoptions={scale=1.0}]
+    \end{venndiagram2sets}
+\end{frame}
+
+\begin{frame}{Do Now \#2: Independence}
+    \framesubtitle{Given the situation, make a Venn diagram, frequency table, and tree representing}
+    $\mathrm{P}(A)=0.6$, $\mathrm{P}(B)=0.5$, $\mathrm{P}(A \cap B)=0.3$
+    \centering
+    \begin{venndiagram2sets}[tikzoptions={scale=1.0}]
+    \end{venndiagram2sets}\\*[10pt]
+    \begin{tabular}{l|c|r|}
+        & $A$ & $A^\prime$\\ 
+        \hline 
+        $B$ &  \qquad \qquad &  \qquad \qquad \\ 
+        \hline 
+        $B^\prime$ &  &  \\
+        \hline 
+    \end{tabular}\\*[10pt]
+\end{frame}
+
+\begin{frame}{$\mathrm P(A \cup B) = \mathrm P(A) + \mathrm P(B) - \mathrm P(A \cap B)$}
+    \framesubtitle{The addition rule}
+    \begin{venndiagram2sets}[tikzoptions={scale=2}]
+    \end{venndiagram2sets}
+\end{frame}
+
+\begin{frame}{Distributions}
+    \framesubtitle{Tables and charts used to summarize a problem situation}
+    A \alert{frequency distribution} displays the number of times each event in the sample space occurs, either in tabular or graphical form.\\*[10pt]
+    A \alert{probability distribution} shows the same data, normalizing the totals to one.
+\end{frame}
+
+
+\begin{frame}{Technical writing}
+    \framesubtitle{Write a short paper answering the query: \\* "How many subsets can be picked from a group of four students?"}
+    \begin{enumerate}
+        \item Logical, step-by-step explanation, using an example
+        \item Precise terminology, succinct: combination, permutation, order (matters), event, sample space, set, subset, with /without replacement, factorial
+        \item Notation: algebra symbols, tables, trees, grids
+        \item Summary, big-picture, conceptual idea
+        \item Audience: student peers
+    \end{enumerate}
+\end{frame}
+
+
+
+
+
+\begin{frame}{Combinatorics formulas}
+    \alert{Combinations}, when order doesn't matter
+	$$_nC_r = \frac{n!}{(n-r)! r!} \qquad \text{''n pick r"}$$
+    \alert{Permutations}, when order does matter
+	$$_nP_r = \frac{n!}{(n-r)!} $$
+\end{frame}
+
+\begin{frame}{Definition of theoretical probability}
+    The \alert{theoretical probability} of an event $A$ is $\displaystyle \mathrm P(A) = \frac{n(A)}{n(U)}$\\*[10pt]
+    \quad where $n(A)$ is the number of ways an event can occur\\*[5pt]
+    \quad and $n(U)$ is the total number of possible outcomes (p. 65)\\*[10pt]
+    Theoretically, in $n$ trials, one would expect the event to occur $n \times \mathrm P(A)$ times\\*[10pt]
+    Probabilities are between 0 and 1, inclusive. $0 \leq \mathrm P(X) \leq 1$
+\end{frame}
+
+\begin{frame}{Empirical (experimental) probability}
+    The \alert{relative frequency} of an event can be used as an estimate of its probability. $$\displaystyle \mathrm P(A) = \frac{\text{number of occurrences of event } A}{\text{total number of trials}}$$
+    The larger the number of trials the more reliable the estimate of probability.
+\end{frame}
+
+\begin{frame}{Independence and mutual exclusivity}
+    Two events are \alert{independent} if the occurrence of one does not affect the probability of the other. $$\displaystyle \mathrm P(\text{both }A \text{ and }B \text{ occur}) = \mathrm P(A) \times \mathrm P(B)$$
+    Two events are \alert{mutually exclusive} if they never occur together. 
+    $$\displaystyle \mathrm P(\text{both }A \text{ and }B \text{ occur}) = 0 \qquad \text{and}$$
+    $$\mathrm P(\text{either }A \text{ or }B \text{ occur}) = \mathrm P(A) + \mathrm P(B)$$
+\end{frame}
+
+\begin{frame}{Venn diagrams}
+    \framesubtitle{For organizing compound events}
+    When two events can occur, and perhaps both, or neither.
+    \begin{venndiagram2sets}[tikzoptions={scale=1.5}]
+    \end{venndiagram2sets}
+\end{frame}
+
+\begin{frame}{The union of sets: $A \cup B$}
+    That $A$ happens, or $B$ happens, or both
+    \begin{venndiagram2sets}[tikzoptions={scale=1.5}]
+    \fillA
+    \fillB
+    \end{venndiagram2sets}
+\end{frame}
+
+\begin{frame}{The intersection of sets: $A \cap B$}
+    That both $A$ and $B$ happen
+    \begin{venndiagram2sets}[tikzoptions={scale=1.5}]
+    \fillACapB
+    \end{venndiagram2sets}
+\end{frame}
+
+\begin{frame}{The addition rule}
+    \framesubtitle{That $A$ or $B$ or both occur}
+    
+    When two events can occur, and perhaps both
+    
+    \begin{venndiagram2sets}%[labelA={primes}, labelB={evens}, shade =lightgray]%
+    %\fillA
+    %\fillB
+    %\fillACapB
+    \end{venndiagram2sets}
+
+    $$P(\text{either }A \text{ or }B \text{ occur}) = P(A) + P(B) - P(\text{both }A \text{ and }B \text{ occur})$$
+\end{frame}
+
+\begin{frame}{Vocabulary for probability \& statistics}
+    event, experiment, random\\*[5pt]
+    probability, P(A), values [0,1]\\*[5pt]
+    theoretical, empirical, subjective\\*[5pt]
+    sample space, U; frequency, trials\\*[5pt]
+    n(U) = number of possibilities\\*[5pt]
+    P(A) = n(A)/n(U); expected = n * P
+\end{frame}
+
+\end{document}
+independent events: P(A&B)=P(A)*P(B) 
+dependent events, mutually exclusive
+P(A or B)= P(A) + P(B) - P(A&B)
+P(A) = n(A)/n(U)

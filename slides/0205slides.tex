@@ -1,0 +1,156 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\rhead{12.1 11.1 11.2}
+\lhead{BECA / Dr. Huson / IB Math SL \\* 5 February 2018}
+
+%\vspace{1cm}
+
+\renewcommand{\headrulewidth}{0pt}
+
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Chris Huson}
+\date{February 2018}
+
+\begin{document}
+
+\frame{\titlepage}
+
+%\section[Outline]{}
+%\frame{\tableofcontents}
+
+\section{12.1 Drui}
+\frame
+{
+  \frametitle{GQ: How do we calculate area with integration?}
+  \framesubtitle{CCSS: F.IF.B.6 Calculate \& interpret the rate of change of a function}
+
+  \begin{block}{Do Now}
+  \begin{enumerate}
+      \item Find $\int{(4x^3-3x+1)}\mathrm{d}x$.
+      \item Find $\int e^{5x}\mathrm{d}x$.
+      \item Find $\displaystyle \int \frac{1}{3x+1} \mathrm{d}x$.
+  \end{enumerate}
+  Homework review \#1, 5, 6 p. 302
+  \end{block}
+  Lesson: Reimann sums and the definite integral\\*[5pt]
+  Task: Example 8, page 304\\*[5pt]
+  Assessment: Calculator integration \\*[5pt]
+  Homework: Exercises 9H evens p. 308  
+}
+
+\section{11.1 Drui}
+\frame
+{
+  \frametitle{GQ: How do we organize data using Venn diagrams?}
+  \framesubtitle{CCSS: HSS.CP.B.6 Probabilities}
+
+  \begin{block}{Do Now}
+  \begin{enumerate}
+      \item Find $_5C_1$.
+      \item Write down the first 5 rows of Pascal's triangle, and circle the coefficient nCr for $n=5, r=1$.
+  \end{enumerate}
+  Homework review \#3 p. 67
+  \end{block}
+  Lesson: Tools for counting, Venn diagrams (p. 68)\\*[5pt]
+  Task: unions, intersections, complements of sets\\*[5pt]
+  Assessment:  \\*[5pt]
+  Homework: p 71-2 3B \#1-6  
+}
+
+\begin{frame}{Combinatorics formulas}
+    \alert{Combinations}, when order doesn't matter
+	$$_nC_r = \frac{n!}{(n-r)! r!} \qquad \text{''n pick r"}$$
+    \alert{Permutations}, when order does matter
+	$$_nP_r = \frac{n!}{(n-r)!} $$
+\end{frame}
+
+\begin{frame}{Definition of theoretical probability}
+    The \alert{theoretical probability} of an event $A$ is $\displaystyle \mathrm P(A) = \frac{n(A)}{n(U)}$\\*[10pt]
+    \quad where $n(A)$ is the number of ways an event can occur\\*[5pt]
+    \quad and $n(U)$ is the total number of possible outcomes (p. 65)\\*[10pt]
+    Theoretically, in $n$ trials, one would expect the event to occur $n \times \mathrm P(A)$ times\\*[10pt]
+    Probabilities are between 0 and 1, inclusive. $0 \leq \mathrm P(X) \leq 1$
+\end{frame}
+
+\begin{frame}{Empirical (experimental) probability}
+    The \alert{relative frequency} of an event can be used as an estimate of its probability. $$\displaystyle \mathrm P(A) = \frac{\text{number of occurrences of event } A}{\text{total number of trials}}$$
+    The larger the number of trials the more reliable the estimate of probability.
+\end{frame}
+
+\begin{frame}{Independence and mutual exclusivity}
+    Two events are \alert{independent} if the occurrence of one does not affect the probability of the other. $$\displaystyle \mathrm P(\text{both }A \text{ and }B \text{ occur}) = \mathrm P(A) \times \mathrm P(B)$$
+    Two events are \alert{mutually exclusive} if they never occur together. 
+    $$\displaystyle \mathrm P(\text{both }A \text{ and }B \text{ occur}) = 0 \qquad \text{and}$$
+    $$\mathrm P(\text{either }A \text{ or }B \text{ occur}) = \mathrm P(A) + \mathrm P(B)$$
+\end{frame}
+
+\begin{frame}{Venn diagrams}
+    \framesubtitle{For organizing compound events}
+    
+    When two events can occur, and perhaps both, or neither.
+    
+    \begin{venndiagram2sets}[tikzoptions={scale=1.5}]
+    \end{venndiagram2sets}
+
+\end{frame}
+
+\begin{frame}{The union of sets: $A \cup B$}
+    That $A$ happens, or $B$ happens, or both
+    \begin{venndiagram2sets}[tikzoptions={scale=1.5}]
+    \fillA
+    \fillB
+    \end{venndiagram2sets}
+\end{frame}
+
+\begin{frame}{The intersection of sets: $A \cap B$}
+    That both $A$ and $B$ happen
+    \begin{venndiagram2sets}[tikzoptions={scale=1.5}]
+    \fillACapB
+    \end{venndiagram2sets}
+\end{frame}
+
+\begin{frame}{The addition rule}
+    \framesubtitle{That $A$ or $B$ or both occur}
+    
+    When two events can occur, and perhaps both
+    
+    \begin{venndiagram2sets}%[labelA={primes}, labelB={evens}, shade =lightgray]%
+    %\fillA
+    %\fillB
+    %\fillACapB
+    \end{venndiagram2sets}
+
+    $$P(\text{either }A \text{ or }B \text{ occur}) = P(A) + P(B) - P(\text{both }A \text{ and }B \text{ occur})$$
+\end{frame}
+
+\begin{frame}{Vocabulary for probability \& statistics}
+    event, experiment, random\\*[5pt]
+    probability, P(A), values [0,1]\\*[5pt]
+    theoretical, empirical, subjective\\*[5pt]
+    sample space, U; frequency, trials\\*[5pt]
+    n(U) = number of possibilities\\*[5pt]
+    P(A) = n(A)/n(U); expected = n * P
+\end{frame}
+
+\end{document}
+independent events: P(A&B)=P(A)*P(B) 
+dependent events, mutually exclusive
+P(A or B)= P(A) + P(B) - P(A&B)
+P(A) = n(A)/n(U)
