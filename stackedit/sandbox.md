@@ -7,15 +7,13 @@
 
 ## Mathematics (LaTeX)
 
-4 math formulas follow:
+3 math formulas follow:
 
 $f(x) = mx+b$
 
 $$g(x) = ax^2+bx+c$$
 
 $$ \frac{1}{2} $$
-
-\[ f(x) = mx+b \]
 
 ## Tables
 
@@ -52,5 +50,5 @@ continued
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcxMzM0NTkyXX0=
+eyJoaXN0b3J5IjpbLTEwMDY0MDI1NjEsNjcxMzM0NTkyXX0=
 -->
