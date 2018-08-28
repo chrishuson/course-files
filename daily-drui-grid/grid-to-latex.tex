@@ -27,11 +27,11 @@
 
 \begin{document}
 
-This imports the file "DRUI-grid-IB2.csv" and formats it as LaTeX for rendering as a table.
+This imports the file "DRUI-grid-IB2.tsv" and formats it as LaTeX for rendering as a table.
 
-\pgfplotstabletypeset[col sep=comma,
-     columns={Day,Chapter,Title,Guiding_Question,CCLS,},
-    ]{DRUI-grid-IB2.csv}
+\pgfplotstabletypeset[col sep=tab,
+     columns={Date,Chapter,Title,Guiding_Question,CCLS,},
+    ]{DRUI-grid-IB2.tsv}
 
 
 \end{document}
