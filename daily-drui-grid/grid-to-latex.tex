@@ -1,0 +1,37 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{tkz-fct}
+
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.9}% supress warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{Name: \hspace{1.5in} }
+\lhead{BECA / Dr. Huson / Mathematics \\* 26 August 2018 \\* \textbf{Daily DRUI}}
+
+\vspace{5cm}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Daily DRUI}
+\author{Chris Huson}
+\date{August 2018}
+
+\begin{document}
+
+This imports the file "DRUI-grid-IB2.csv" and formats it as LaTeX for rendering as a table.
+
+\pgfplotstabletypeset[col sep=comma,
+     columns={Day,Chapter,Title,Guiding_Question,CCLS,},
+    ]{DRUI-grid-IB2.csv}
+
+
+\end{document}
