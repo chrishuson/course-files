@@ -1,0 +1,106 @@
+\documentclass[]{book}
+
+\usepackage{import}
+\usepackage{preamble}
+\usepackage{tikz}
+
+\begin{document}
+
+\noindent BECA / Huson / 11.1 IB Math SL \hspace{2in} Name:\\*
+19 December 2017
+\begin{center}
+{\Large Homework: Functions review}\\
+\textit{Answer in the space provided.}
+\end{center}
+
+%\vspace{0.2 cm}
+
+
+\begin{enumerate}
+
+\item Let $f(x) = 2x^2+5x$ and $g(x)=3x+\frac{3}{2}$
+\begin{enumerate}
+    \item Rewrite $f$ in vertex form and state the vertex as an ordered pair.\\*[35pt]
+    \item Factor the function $f$ and write down its roots.\\*[35pt]
+    \item Graph the function $f$, labeling it. Mark the intercepts and graph the axis of symmetry as a dotted line, labeling it with its equation.
+    \item Graph $g$ and label it with its name or equation.
+    \item Mark the intersections of $f$ and $g$ as ordered pairs. 
+
+\end{enumerate}
+
+
+\begin{figure}[!htbp]
+\begin{center}
+\begin{tikzpicture}
+
+%grid
+\draw [thick, color=black,, xstep=1.0cm,ystep=1.0cm] (-5.5,-4.5) grid (5.5,6.5);
+\draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-5.5,-4.5) grid (5.5,6.5);
+
+\foreach \x in {-5, -4, -3, -2, -1, 0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,-1pt) -- (0pt,3pt) node[below]  {$\quad \x$};
+
+\foreach \y in {-4, -3, -2,-1,0,1,2,3,4, 5, 6}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
+
+\draw [thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
+\draw [thick, ->] (0,-4.5) -- (0,6.5) node [left] {$y$};
+
+%\draw [<-, ->] plot[domain= -3.25:1] (\x, 2*\x*\x +5*\x);
+%\draw [<-, ->] plot[domain= -2:1.5] (\x, 3*\x+1.5);
+
+\end{tikzpicture}
+\end{center}
+\end{figure}
+
+\newpage
+Simplify, leaving no negative or fractional exponents.
+
+\item $(3x)^{2}y^3 \times \frac{4}{9}x^3 y^{-1}$\\*[65pt]
+\item $\sqrt[3]{a^{-3} b^{4}}$\\*[65pt]
+\item $\displaystyle x^{\frac{3}{2}} \times (\frac{x^3}{z^3})^{\frac{2}{3}}$\\*[65pt]
+\item $\displaystyle (a^0 b^3)^{\frac{1}{2}} \div a^{-3} b^\frac{2}{3}$\\*[65pt]
+
+\item Let $f(x) = \sqrt{x} -16$ and $g(x)=(x-4)^2$
+\begin{enumerate}
+    \item Find $(f \circ g)(x)$\\*[65pt]
+    \item Find $g^{-1}(x)$\\*[65pt]
+\end{enumerate}
+
+\newpage
+\item The function $f(x)=e^x$ is shown on the graph. 
+\begin{enumerate}
+    \item On the graph. Label the point $A(0, f(0))$\\*[35pt]
+    \item Sketch $g(x)=-f(x+1)+2$. 
+    \item Draw the asymptote of the function $g$. Label it with its equation.
+    \item The point $B(k, g(k))$ is the image of $A$. Plot $B$ and label it's coordinates as an ordered pair.\\*[65pt]
+    \item Describe the transformation mapping $f$ to $g$. (hint: this requires an answer in complete sentences, e.g. "The function $f$ was shifted horizontally ...reflected, and then ...."\\*[125pt]
+\end{enumerate}
+
+
+
+\begin{figure}[!htbp]
+\begin{center}
+\begin{tikzpicture}
+
+%grid
+%\draw [thick, color=black,, xstep=1.0cm,ystep=1.0cm] (-5.5,-1.5) grid (5.5,16.5);
+%\draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-5.5,-1.5) grid (5.5,16.5);
+
+\foreach \x in {-5, -4, -3, -2, -1, 0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below]  {$\x$};
+
+\foreach \y in {-1,0,1,2,3,4,5, 6, 7}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
+
+\draw [thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
+\draw [thick, ->] (0,-1.0) -- (0,7.5) node [left] {$y$};
+
+\draw [<-, ->] plot[domain= -3:2] (\x, e^\x);
+
+\end{tikzpicture}
+\end{center}
+\end{figure}
+
+\end{enumerate}
+\end{document}
