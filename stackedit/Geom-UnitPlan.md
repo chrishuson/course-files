@@ -6,11 +6,11 @@ Plan 2018-19
 Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 ---|---|---|---|---:|:---:
 9/5 - 9/21 | 1a. Introduction (Chapter 1) | Definitions, measuring segments, angles, constructions, angle pairs ||10|
-9/5 - 9/21 | 1b. Introduction (Chapter 1) | Definitions, measuring segments, angles, constructions, angle pairs ||10|16
-9/24 - 10/5 | 2. Proof (Chapter 2) | Induction, logic, algebra applications, angle proofs ||10|10
-10/9 - 10/19 | 3a. Analytic Geometry (Chapter 3) | Line equations, slope, parallel, perpendiculars, constructions, translations||9|
-10/9 - 10/19 | 3b. Analytic Geometry (Chapter 3) | Line equations, slope, parallel, perpendiculars, constructions, translations||9|16
-10/22 - 11/2 | 4. Congruent Triangles (Chapter 4) | Congruence theorems, transformations, overlapping triangles ||10|14
+9/24 - 10/5 | 1b. Introduction (Chapter 1) | Definitions, measuring segments, angles, constructions, angle pairs ||10|16
+10/9 - 10/19 | 2. Proof (Chapter 2) | Induction, logic, algebra applications, angle proofs ||9|10
+10/22 - 11/2 | 3a. Analytic Geometry (Chapter 3) | Line equations, slope, parallel, perpendiculars, constructions, translations||9|
+ | 3b. Analytic Geometry (Chapter 3) | Line equations, slope, parallel, perpendiculars, constructions, translations||11|16
+ | 4. Congruent Triangles (Chapter 4) | Congruence theorems, transformations, overlapping triangles ||10|14
 11/5 - 11/21 | 5. Triangle Relationships (Chapter 5) | Mid-segments, medians, angle bisectors, perpendiculars, centers ||11| 12
 11/26 - 12/7 | 6a. Quadrilaterals (Chapter 6) | Angle sums, parallelograms, properties | |10|
 11/26 - 12/7 | 6b. Quadrilaterals (Chapter 6) | Angle sums, parallelograms, properties | |10|16
@@ -26,6 +26,6 @@ Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 137 instructional days
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MDUwMTYxNiwxMDc0NTI3NjYsMjAwNz
-YxNTIsLTc3ODQ0MTMyMywtMTk2ODM2NzgyMl19
+eyJoaXN0b3J5IjpbLTI5ODU0MzM4LDEwNzQ1Mjc2NiwyMDA3Nj
+E1MiwtNzc4NDQxMzIzLC0xOTY4MzY3ODIyXX0=
 -->
