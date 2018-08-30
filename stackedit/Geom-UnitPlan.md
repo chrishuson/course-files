@@ -20,11 +20,11 @@ Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 4/8 - 4/18 | 10. Area (Chapter 10) | Polygon formulas, perimeter, arcs, sectors ||10|
 4/29 - 5/10 | 11. Volume (Chapter 11) |Prisms, cylinders, cones||10|
 5/13 - 5/24 | 12. Circles (Chapter 12) | Tangents, chords, inscribed angles, angle measures, lengths ||10|
- | 13. Review |  ||9|
+5/28 - 6/14 | 13. Review |  ||12|
 
-137 instructional days
+165 instructional days
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMDc0NzQ1OCwxMDc0NTI3NjYsMjAwNz
-YxNTIsLTc3ODQ0MTMyMywtMTk2ODM2NzgyMl19
+eyJoaXN0b3J5IjpbNjYxMjUxMDE4LDEwNzQ1Mjc2NiwyMDA3Nj
+E1MiwtNzc4NDQxMzIzLC0xOTY4MzY3ODIyXX0=
 -->
