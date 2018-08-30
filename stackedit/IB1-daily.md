@@ -12,7 +12,7 @@ Date|Day|Unit|Text|Title|Guiding Question|CCLS|Do Now|Mini-lesson|Task|Assessmen
 31-Oct|7|1|4|Exponentials|How do we work with exponents?|HSF.IF.C.7 Analyze functions|Radicals problems|Adding radicals, rationalizing the denominator|Exponent problems|-|Handout radical problems and review
 1-Nov|8|1|4|Exponentials|How do we communicate mathematical ideas?|HSF.IF.C.7 Analyze functions|Radicals problems, transformations|Desmos, Office, technical writing|1) Deltamath radicals practice, 2) 1 page graphing paper|Share chuson@schools.nyc.gov (husonbeca@gmail.com); Deltamath ID: 546068|Login to Deltamath and Office from home (write text by hand)
 2-Nov|9|1|4|Exponentials|How do we communicate mathematical ideas?|HSF.IF.C.7 Analyze functions|Boot up laptop for radicals problems, transformations|Desmos, Office, technical writing|1) Deltamath radicals practice, 2) 1 page graphing paper|-|Login to Deltamath and Office from home (write text by hand)
-6-Nov|10|1|4|Exponentials|How do we simplify and graph exponential functions?|HSN.RN.A.2 Rewrite expressions involving radicals and rational exponents using the properties of exponents|$f(x)=x2+2x-15$, simplify f(x-3)|Properties of exponents and exponential functions p 103-7|Problems 4C p107, 4D-E p108|Share out exercises, hand in classwork|Quiz preparation & review, handout problems
+6-Nov|10|1|4|Exponentials|How do we simplify and graph exponential functions?|HSN.RN.A.2 Rewrite expressions involving radicals and rational exponents using the properties of exponents|$f(x)=x2+2x-15$, simplify $f(x-3)$|Properties of exponents and exponential functions p 103-7|Problems 4C p107, 4D-E p108|Share out exercises, hand in classwork|Quiz preparation & review, handout problems
 
 
 <!--stackedit_data:
