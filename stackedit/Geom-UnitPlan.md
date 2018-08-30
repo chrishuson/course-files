@@ -6,8 +6,8 @@ Plan 2018-19
 Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 ---|---|---|---|---:|:---:
 9/5 - 9/21 | 1. Introduction (Chapter 1) | Definitions, measuring segments, angles, angle pairs ||10|16
-9/24 - 10/5 | 2. Proof (Chapter 2) | Induction, logic,  ||10|10
-10/9 - 10/19 | 3. Vectors (Chapter 12) | Introduction, arithmetic, line equations, intersection, applications ||9|8
+9/24 - 10/5 | 2. Proof (Chapter 2) | Induction, logic, algebra applications, angle proofs ||10|10
+10/9 - 10/19 | 3. Analytic Geometry (Chapter 3) | Line equations, slope, paall||9|8
 10/22 - 11/2 | 4. Calculus (Chapter 7) | Graphical interpretations, kinematics, applications ||10|10
 11/5 - 11/21 | 5. Trig & periodic functions (Chapter 11, 13) | Sine, cosine rules, transformations, applications, identities, derivatives ||11| 8
 11/26 - 12/7 | 6. Probability distributions (Chapter 15) | Binomial expansion, expected value, normal distribution | |10|
@@ -23,5 +23,5 @@ Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 137 instructional days
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1ODQwMTEyNywtMTk2ODM2NzgyMl19
+eyJoaXN0b3J5IjpbMTYzMzQ2ODgwMiwtMTk2ODM2NzgyMl19
 -->
