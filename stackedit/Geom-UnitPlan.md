@@ -3,9 +3,9 @@
 
 Plan 2018-19
 
-Dates| Unit (Textbook Chapter) | Topics  | Project |Duration
+Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 ---|---|---|---|---:|:---:
-9/5 - 9/21 | 1. Functions review (Chapter 1) | Graphical features, in/decreasing, extrema (gradient), continuity; applications; sequences ||10|
+9/5 - 9/21 | 1. Introduction (Chapter 1) | Graphical features, in/decreasing, extrema (gradient), continuity; applications; sequences ||10|16
 9/24 - 10/5 | 2. Derivatives (Chapter 7) | Limits, tangents/normals, differentiating polynomials ||10|10
 10/9 - 10/19 | 3. Vectors (Chapter 12) | Introduction, arithmetic, line equations, intersection, applications ||9|8
 10/22 - 11/2 | 4. Calculus (Chapter 7) | Graphical interpretations, kinematics, applications ||10|10
@@ -23,5 +23,6 @@ Dates| Unit (Textbook Chapter) | Topics  | Project |Duration
 137 instructional days
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjgzNjc4MjJdfQ==
+eyJoaXN0b3J5IjpbLTIxMzMxNjQ4MDYsLTE5NjgzNjc4MjJdfQ
+==
 -->
