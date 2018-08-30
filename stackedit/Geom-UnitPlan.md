@@ -18,13 +18,13 @@ Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 3/11 - 3/22 | 8. Trigonometry (Chapter 8) | Ratios, special angles, elevation, depression ||13|
 3/25 - 4/5 | 9. Transformations (Chapter 9) | Rotation, reflection, dilation, composition, isometry and similarity ||13|
 4/8 - 4/18 | 10. Area (Chapter 10) | Polygon formulas, perimeter, arcs, sectors ||10|
-4/29 - 5/3 | 11. Volume (Chapter 11) |Prisms, cylinders, cones||10|
- | 12. Circles (Chapter 12) | Tangents, chords, inscribed angles, angle measures, lengths ||10|
+4/29 - 5/10 | 11. Volume (Chapter 11) |Prisms, cylinders, cones||10|
+5/13 - 5/24 | 12. Circles (Chapter 12) | Tangents, chords, inscribed angles, angle measures, lengths ||10|
  | 13. Review |  ||9|
 
 137 instructional days
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODQ2NDE3MjUsMTA3NDUyNzY2LDIwMD
-c2MTUyLC03Nzg0NDEzMjMsLTE5NjgzNjc4MjJdfQ==
+eyJoaXN0b3J5IjpbLTYwMDc0NzQ1OCwxMDc0NTI3NjYsMjAwNz
+YxNTIsLTc3ODQ0MTMyMywtMTk2ODM2NzgyMl19
 -->
