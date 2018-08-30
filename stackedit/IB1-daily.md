@@ -16,5 +16,5 @@ Date|Day|Unit|Text|Title|Guiding Question|CCLS|Do Now|Mini-lesson|Task|Assessmen
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYwMjM0ODQxXX0=
+eyJoaXN0b3J5IjpbLTE0ODUzMDA1NzcsNDYwMjM0ODQxXX0=
 -->
