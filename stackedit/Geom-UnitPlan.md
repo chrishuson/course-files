@@ -10,8 +10,8 @@ Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 10/9 - 10/19 | 3. Analytic Geometry (Chapter 3) | Line equations, slope, parallel, perpendiculars, constructions||9|16
 10/22 - 11/2 | 4. Congruent Triangles (Chapter 4) | Congruence theorems, transformations, overlapping triangles ||10|14
 11/5 - 11/21 | 5. Triangle Relationships (Chapter 5) | Mid-segments, medians, angle bisectors, perpendiculars, centers ||11| 12
-11/26 - 12/7 | 6. Quadrilaterals (Chapter 6) | Angle sums,  | |10|
-12/10 - 12/18 | 7. Bivariate analysis (Chapter 10) | Review cumulative frequency; scatter plots, regression ||7|
+11/26 - 12/7 | 6. Quadrilaterals (Chapter 6) | Angle sums, parallelograms, properties | |10|16
+12/10 - 12/18 | 7. Similarity (Chapter 7) |  ||7|
 1/2 - 1/18 | 8. Integration (Chapter 9) | Antiderivatives, areas, motion applications ||13|15
 1/29 - 2/15 | 9. Calculus (Chapter 7) | Product/quotient/chain rules, kinematics, graphical interpretation, applications ||13| 5
 2/25 - 3/8 | 10. Vectors (Chapter 12) | Dot product, angles, applications ||10| 8
@@ -23,6 +23,6 @@ Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 137 instructional days
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTkwMTIyNzMsLTc3ODQ0MTMyMywtMT
-k2ODM2NzgyMl19
+eyJoaXN0b3J5IjpbMTM0NDMyNTI1MCwtNzc4NDQxMzIzLC0xOT
+Y4MzY3ODIyXX0=
 -->
