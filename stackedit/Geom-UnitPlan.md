@@ -12,7 +12,7 @@ Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 11/5 - 11/21 | 5. Triangle Relationships (Chapter 5) | Mid-segments, medians, angle bisectors, perpendiculars, centers ||11| 12
 11/26 - 12/7 | 6. Quadrilaterals (Chapter 6) | Angle sums, parallelograms, properties | |10|16
 12/10 - 12/18 | 7. Similarity (Chapter 7) | Ratios, similarity theorems ||7|
-1/2 - 1/18 | 8. Integration (Chapter 9) | Antiderivatives, areas, motion applications ||13|15
+1/2 - 1/18 | 8. Trigonometry (Chapter 8) | Ratios, special angles,  ||13|15
 1/29 - 2/15 | 9. Calculus (Chapter 7) | Product/quotient/chain rules, kinematics, graphical interpretation, applications ||13| 5
 2/25 - 3/8 | 10. Vectors (Chapter 12) | Dot product, angles, applications ||10| 8
 3/11 - 3/22 | 11. Integration (Chapter 9) |Definite integrals, areas, volumes, kinematics||10|
@@ -23,6 +23,6 @@ Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 137 instructional days
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNzYxNTIsLTc3ODQ0MTMyMywtMTk2OD
-M2NzgyMl19
+eyJoaXN0b3J5IjpbMTg4NTcxMDU0MCwyMDA3NjE1MiwtNzc4ND
+QxMzIzLC0xOTY4MzY3ODIyXX0=
 -->
