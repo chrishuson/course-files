@@ -16,12 +16,12 @@
 1.2|What are domain and range?|Problems 2-4 pg 8|Domain, range, asymptotes p8-11|1C & 1D pages 10, 12
 1.3| What notation do we use for functions?|Graph 3a and one other from problem 3, p12. Use 1 cm = 1 unit| Function notation, substitution p13|Functions 1E p13
 1.4|How do we solve quadratic equations?||Factoring, setting $=0$, checking solutions|
-1.5|How do we graph quadratics?||$x-$ and $y-$intercepts, vertex, axis of symmetry|Project paper
+1.5|How do we graph quadratics?|Create Dropbox account|$x-$ and $y-$intercepts, vertex, axis of symmetry|Project paper
 1.6|How do we simplify exponents?||Product, quotient, power rules, $(\sqrt{x^4})$|Pretest
 1.7| How do we use negative exponents?||Inverses|Study for test
 1.8| How do we work with functions, algebraically and graphically? || Test
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NzEzOTgyLC00MzIyOTc0NDNdfQ==
+eyJoaXN0b3J5IjpbMzEyNjkxMDQ3LC00MzIyOTc0NDNdfQ==
 -->
