@@ -9,7 +9,7 @@ Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 9/24 - 10/5 | 2. Proof (Chapter 2) | Induction, logic, algebra applications, angle proofs ||10|10
 10/9 - 10/19 | 3. Analytic Geometry (Chapter 3) | Line equations, slope, parallel, perpendiculars, constructions||9|16
 10/22 - 11/2 | 4. Congruent Triangles (Chapter 4) | Congruence theorems, transformations, overlapping triangles ||10|14
-11/5 - 11/21 | 5. Trig & periodic functions (Chapter 11, 13) | Sine, cosine rules, transformations, applications, identities, derivatives ||11| 8
+11/5 - 11/21 | 5. Triangle Relationships (Chapter 5) | Midsegments, medians, angle bisectors,  ||11| 8
 11/26 - 12/7 | 6. Probability distributions (Chapter 15) | Binomial expansion, expected value, normal distribution | |10|
 12/10 - 12/18 | 7. Bivariate analysis (Chapter 10) | Review cumulative frequency; scatter plots, regression ||7|
 1/2 - 1/18 | 8. Integration (Chapter 9) | Antiderivatives, areas, motion applications ||13|15
@@ -23,5 +23,6 @@ Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 137 instructional days
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3ODQ0MTMyMywtMTk2ODM2NzgyMl19
+eyJoaXN0b3J5IjpbODI0NDIxMjM3LC03Nzg0NDEzMjMsLTE5Nj
+gzNjc4MjJdfQ==
 -->
