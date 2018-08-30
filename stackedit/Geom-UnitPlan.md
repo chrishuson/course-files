@@ -15,14 +15,14 @@ Dates| Unit (Textbook Chapter) | Topics  | Project |Duration|Guide
 1/2 - 1/18 | 8. Trigonometry (Chapter 8) | Ratios, special angles, elevation, depression ||13|
 1/29 - 2/15 | 9. Transformations (Chapter 9) | Rotation, reflection, dilation, composition, isometry and similarity ||13|
 2/25 - 3/8 | 10. Area (Chapter 10) | Polygon formulas, perimeter, arcs, sectors ||10|
-3/11 - 3/22 | 11. Volume (Chapter 11) |Definite integrals, areas, volumes, kinematics||10|
-3/25 - 4/5 | 12. Functions review (Chapter 1-4) | Exponentials, logarithms, rational expressions, sequences & series ||10|
-4/8 - 4/18 | 13. Probability & statistics review (Chapter 11, 13) | Independence, conditional, frequency, cumulative, & normal distributions ||9|
+3/11 - 3/22 | 11. Volume (Chapter 11) |Prisms, cylinders, cones||10|
+3/25 - 4/5 | 12. Circles (Chapter 12) | Tangents, chords, in ||10|
+4/8 - 4/18 | 13. Review | Independence, conditional, frequency, cumulative, & normal distributions ||9|
 4/29 - 5/3 | 14. Review |||5|
 
 137 instructional days
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwOTE2NjY1OCwyMDA3NjE1MiwtNzc4ND
-QxMzIzLC0xOTY4MzY3ODIyXX0=
+eyJoaXN0b3J5IjpbMjc0MTk5NzA2LDIwMDc2MTUyLC03Nzg0ND
+EzMjMsLTE5NjgzNjc4MjJdfQ==
 -->
