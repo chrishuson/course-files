@@ -1,0 +1,232 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%\rhead{\small{21 May 2018}}
+\lhead{\small{BECA / Dr. Huson / Mathematics}}
+
+%\vspace{1cm}
+
+\renewcommand{\headrulewidth}{0pt}
+
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Chris Huson}
+\date{2 January 2019}
+
+\begin{document}
+
+\frame{\titlepage}
+
+%\section[Outline]{}
+%\frame{\tableofcontents}
+
+  \section{12.1 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate area with integration?}
+    \framesubtitle{CCSS: F.IF.B.6 Calculate \& interpret the rate of change of a function}
+
+    \begin{block}{Do Now}
+    \begin{enumerate}
+        \item Find $\int{(4x^3-3x+1)}\mathrm{d}x$.
+        \item Find $\int e^{5x}\mathrm{d}x$.
+        \item Find $\displaystyle \int \frac{1}{3x+1} \mathrm{d}x$.
+    \end{enumerate}
+    Homework review \#1, 5, 6 p. 302
+    \end{block}
+    Lesson: Reimann sums and the definite integral\\*[5pt]
+    Task: Example 8, page 304\\*[5pt]
+    Assessment: Calculator integration \\*[5pt]
+    Homework: Exercises 9H evens p. 308
+  }
+
+  \section{12.1 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate area with definite integrals?}
+    \framesubtitle{CCSS: F.IF.B.6 Calculate \& interpret the rate of change of a function}
+
+    \begin{block}{Do Now}
+    \begin{enumerate}
+        \item Use a calculator to find $\displaystyle \int_0^{\frac{\pi}{2}}{\cos x}\ \mathrm{d}x$
+        \item Differentiate $y=\sqrt{3x^3-x}$
+        \item Find $\int{(6x^2-2x-5)}\mathrm{d}x$.
+        \item Differentiate $y={(3x^2-5x)^5}$
+        \item Find $\int 5(x^2+1)^4(2x)\mathrm{d}x$.
+        \item Find $\displaystyle \int \frac{3}{x}\ \mathrm{d}x$.
+    \end{enumerate}
+    \end{block}
+    Lesson: Properties of definite integrals p. 307\\%*[5pt]
+    Task: Review homework problems\\%*[5pt]
+    Assessment: Problem \#11 p. 300 \\%*[5pt]
+    Homework: Exercises 9H evens p. 308
+  }
+
+  \section{12.1 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate area with definite integrals?}
+    \framesubtitle{CCSS: F.IF.B.6 Calculate \& interpret the rate of change of a function}
+
+    \begin{block}{Do Now}
+    \begin{enumerate}
+        \item Use a calculator to find $\displaystyle \int_{-1}^{1}{\frac{1}{x+2}}\ \mathrm{d}x$
+        \item Differentiate $y=\sqrt[3]{5x^2-2x}$
+        \item Find $\int{(6x^2-2)^4(12x)} \ \mathrm{d}x$.
+        \item Differentiate $y={(3x^2-5x)(\ln x)}$
+        \item Find $\displaystyle \int_1^2 \frac{3}{x^2}\ \mathrm{d}x$. (check your result with a calculator)
+    \end{enumerate}
+    \end{block}
+    Lesson: The fundamental theorem of calculus p. 309\\%*[5pt]
+    Task: Practice Examples 11, 12 p. 310-1\\%*[5pt]
+    Assessment: Problem 9J \#1 p. 312 \\%*[5pt]
+    Homework: Exercises 9I, 9J p. 310-12
+  }
+
+  \section{12.1 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the area between two curves?}
+    \framesubtitle{CCSS: F.IF.B.6 Calculate \& interpret the rate of change of a function}
+
+    \begin{block}{Do Now: Consider the function $f(x)=-x^2+2x+3$}
+    \begin{enumerate}
+        \item Factor $f$ and state its zeros.
+        \item Restate $f$ in vertex form. Write down the vertex as an ordered pair.
+        \item Differentiate $f$. Show that the zero of $f^\prime(x)$ is the vertex of $f$.
+        \item If $f(x)$ represents the height of a diver over the domain $0 \leq x \leq 3$, interpret $f(0)$ and $f^\prime(0)$
+        \item What is the size of the area bounded by $f$, $x=0$, and $y=0$?
+    \end{enumerate}
+    \end{block}
+    Lesson: The area between two functions p. 313\\%*[5pt]
+    %Task: Practice Examples 11, 12 p. 310-1\\%*[5pt]
+    Assessment: Example \#13 p. 314 \\%*[5pt]
+    Homework: Exercises 9K p. 316
+  }
+
+  \section{12.1 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate a volume of rotation?}
+    \framesubtitle{CCSS: F.IF.B.6 Calculate \& interpret the rate of change of a function}
+
+    \begin{block}{Do Now: Sketch the functions $f(x)=10x+x^2-3x^3$ and $g(x)=x^2-2x$}
+    \begin{enumerate}
+        \item What are their intersections? (i.e. $f(x)=g(x)$)
+        \item What is the definite integral representing the area between the curves?
+        \item Using a calculator, what is the size of the area? (this may not be a trivial question)
+    \end{enumerate}
+    \end{block}
+    Lesson: Integrating circle areas, modeling a solid p. 318\\%*[5pt]
+    %Task: Practice Examples 11, 12 p. 310-1\\%*[5pt]
+    Assessment: Example \#15 p. 319 \\%*[5pt]
+    Homework: Exercises 9L \& 9M p. 317, 319; probability handout
+  }
+
+  \section{12.1 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate displacement from velocity?}
+    \framesubtitle{CCSS: F.IF.B.6 Calculate \& interpret the rate of change of a function \qquad \alert{12.1}}
+
+    \begin{block}{Do Now: Do the calculations below and read the handout}
+    \begin{enumerate}
+        \item Lance Armstrong’s average speed in his six Tour de France victories from 1999-2004 was about 24 miles per hour. Assuming that he pedals at his average speed and takes no breaks, how long would it take him to ride 38 miles to the top of a 10,000 ft. volcano?
+        \item People who are not Lance Armstrong can travel at about 12 miles per hour on a bike. At that speed, how long would it take to reach the top of the volcano?
+    \end{enumerate}
+    \end{block}
+    Lesson: Integrating velocity over time, displacement p. 321\\%*[5pt]
+    %Task: Practice Examples 11, 12 p. 310-1\\%*[5pt]
+    Assessment: Example \#18 p. 323 \\%*[5pt]
+    Homework: Exercises 9N \& 9O p. 320, 324
+  }
+
+  \section{12.1 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate displacement from velocity?}
+    \framesubtitle{CCSS: F.IF.B.6 Calculate \& interpret the rate of change of a function \qquad \alert{12.1}}
+
+    \begin{block}{Do Now: continued, 38 mile ride in 10 hours}
+    \begin{enumerate}
+        \item Using the velocity vs time graph from yesterday, integrate to show that the areas representing the distance covered by the three riders are equal ($v \times t = d$).
+        \item Show that a rider accelerating according to $v(t)= \frac{76}{100}t$ also arrives at $(10,38)$.
+    \end{enumerate}
+    \end{block}
+    Lesson: Integrating velocity over time, displacement p. 321\\%*[5pt]
+    Task: Review 9F, 9M, probability\\%*[5pt]
+    Assessment: Example \#18 p. 323 (take home test Thursday)\\%*[5pt]
+    Homework: Exercises 9P p. 326, any remaining problem sets
+  }
+
+  \section{12.1 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we integrate a function?}
+    \framesubtitle{CCSS: HSF.IF.B.6 Calculate and interpret the area under a function \qquad \alert{12.1}}
+
+    \begin{block}{Do Now: Chain rule - Take the derivative of each function}
+      \begin{enumerate}
+      \item $f(x)=\sin{x^3}$
+      \item $g(x)=\sqrt{x^4+2}$
+      \item $h(x)=\ln{(x^2+1)}$
+      \end{enumerate}
+   \end{block}
+    Lesson: Take home exam papers assessment \& review\\%*[5pt]
+    Task: Work problems on board\\%*[5pt]
+    Assessment: Test corrections due\\%*[5pt]
+    Homework: Integration exam problems
+  }
+
+  \section{12.1 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate volume (of a rotated function)?}
+    \framesubtitle{CCSS: HSF.IF.B.6 Calculate and interpret the area under a function \qquad \alert{12.1}}
+
+    \begin{block}{Do Now: Identifying problem types. On your homework, underline the ``M1" points you earned. Examples:}
+      \begin{enumerate}
+      \item $X \sim B(10, 0.5)$
+      \item bell curve sketch
+      \item $u= \& \quad u'=$
+      \end{enumerate}
+   \end{block}
+    Lesson: $\displaystyle \int_a^b \pi r^2 \text{d}x$\\%*[5pt]
+    Task: Work homework problems on board\\%*[5pt]
+    Assessment: self-reflection on mixed versus block problem sets\\%*[5pt]
+    Homework: Solids of rotation \& mixed exam problems
+  }
+
+
+  \frame
+  {
+    \frametitle{The volume of a function rotated around the $x$-axis}
+    \framesubtitle{Differentiate over $x$, but use the area of a disk defined by $A=\pi r^2$}
+  \href{https://www.youtube.com/watch?v=i4L5XoUBD_Q}{video}\\
+  \begin{figure}[!ht]
+      \centering
+      \includegraphics[width=0.5\textwidth]{0413CW-paraboloid.jpg}
+  \end{figure}
+  \small{Credit: MATHalino.com - Pinoy Math Community Romel Verterra}
+  }
+
+\end{document}
