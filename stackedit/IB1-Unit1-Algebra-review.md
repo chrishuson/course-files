@@ -1,8 +1,9 @@
 
 
-9/5 - 9/21
+9/5 - 9/21 IB Math 1st year
 ## Unit 1. Algebra review (Chapter 1, 2, 4)
 **Skills:** Notation, domain, range, factoring, exponents; graphing
+
 **CCLS:**
 - HSF.IF.C.7 Analyze functions
 - HSN.RN.A.2 Rewrite expressions involving radicals and rational exponents using the properties of exponents
@@ -23,5 +24,6 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEyNjkxMDQ3LC00MzIyOTc0NDNdfQ==
+eyJoaXN0b3J5IjpbMTU5MzYyMjA0NywzMTI2OTEwNDcsLTQzMj
+I5NzQ0M119
 -->
