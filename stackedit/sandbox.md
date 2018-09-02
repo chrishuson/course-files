@@ -1,44 +1,12 @@
 
 # Sandbox
 
-**Course scope and sequence**
-
-*Let's try some markup*
-
-## Mathematics (LaTeX)
-
-3 math formulas follow:
-
-$f(x) = mx+b$
-
-$$g(x) = ax^2+bx+c$$
-
-$$
- \frac{1}{2} \\
- \times 4 = 6
- $$
-
-## Tables
-
-**Daily DRUI**
-
-(format csv file as table - md or latex functions)
-
-Date | Topic | Guiding Question | Do Now | Task | Homework
----|---|---|---|---|---
-6 Sep | Intro to triangles | How do we abbreviate geometric terms? | Handout | Equilateral triangle definition and applications | Triangle+algebra practice
-7 Sep |||||
-
-continued
-
-## Misc markdown examples
+## markdown checkboxes
 
 [x] this is a complete item
 
 [ ] this is an incomplete item
 
-* Item 1 (bullet)
-* Item 2
 
 ## Links to other pages
 
@@ -55,6 +23,6 @@ continued
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDEzMTUxMTIsLTExMTM3NzMxNTEsNj
-cxMzM0NTkyXX0=
+eyJoaXN0b3J5IjpbLTM2MTQxODE2NiwtMTE0MTMxNTExMiwtMT
+ExMzc3MzE1MSw2NzEzMzQ1OTJdfQ==
 -->
