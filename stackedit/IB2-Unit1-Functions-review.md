@@ -22,13 +22,13 @@
 | 1.4| How do we graph quadratics? | Factoring | $x-$ and $y-$intercepts, vertex, axis of symmetry | Quadratics graphing
 | 1.5 | How do we calculate rates in context? | Sketch cubic | Rates of change problem applications, graphing | Motion problems
 | 1.6|How do we simplify exponents?| Graph interpretation |Product, quotient, power rules, $(\sqrt{x^4})$| Weekend packet
-| 1.7|How do we interpret fractional exponents?| Exponent simplification ($2^2018-2$ puzzle) | Radicals | Cumulative review
+| 1.7|How do we interpret fractional exponents?| Exponent simplification ($\frac{2^{2018}+2^{2016}}{2^{2018}-2^{2016}}$ puzzle) | Radicals | Cumulative review
 | 1.8| How do we model growth?| Graph exponential function with a calculator | Interpret exponential function parameters | Pretest (pre holiday)
 | 1.9| How do we use algebraic properties to understand functions? | Exponential function | Linear, quadratic, rational, and exponential functions | Study for test
 | 1.10| How do we work with functions, algebraically and graphically? || Test | Algebra packet
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY1MTcxOTcwLDk4Njc3MzkwMywtMTA0Nz
-Y2NDMyOCw5ODAzNzc2MDZdfQ==
+eyJoaXN0b3J5IjpbLTMxNjM4Njc5Miw5ODY3NzM5MDMsLTEwND
+c2NjQzMjgsOTgwMzc3NjA2XX0=
 -->
