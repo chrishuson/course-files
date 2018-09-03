@@ -5,7 +5,7 @@
 | + | $\Delta$ |
 |---|---|
 | Listen and respond to classmates | Side talk, interruptions, ignoring class discussion|
-| Punctual, ready to work: notebook, homework, calculator, tools | Standing up, walking around |
+| Punctual, ready to work: notebook, homework, calculator, formula sheet, tools | Standing up, walking around |
 | Group efficiency: rep to get computers, etc.| Don't create messy spiral notebook scraps|
 | 3 minute cleanup, seated for on-time dismissal, push in chairs | Delaying classmates by not being ready |
 | Do Now quizzes | Wandering eyes, copying |
