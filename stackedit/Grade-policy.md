@@ -23,14 +23,14 @@
 |Make an effort: 30-60 minutes | Late: 80% minus 10% per day, until exam |
 |You may collaborate | Blind copying (both parties)|
 
-### Exams (35%)
+### Exams (25%)
 | + | $\Delta$ |
 |---|---|
 |Test corrections: half the missed points | Being absent without telling me |
 
 ## Extra help
 *I am available to help with math questions*
-- **Lunch:** Ask for a  pass to get help or do homework (no socializing)
+- **Lunch:** Ask for a  pass to get help or do homework (no socializing)(October start)
 - **Computers & printer:** Work on your papers in Room 414
 - ** After school:** I can often stay, but arrange with me ahead of time
 
@@ -42,5 +42,5 @@
 
 [Home](index), [Expectations](Expectations), [Writing](Written-work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3ODMwODk3XX0=
+eyJoaXN0b3J5IjpbLTU3OTc3NzAwNywxOTc4MzA4OTddfQ==
 -->
