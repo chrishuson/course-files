@@ -44,12 +44,14 @@ Directions
   \draw [red, thick] (3,4) circle [radius=2];
 \end{tikzpicture}
 
-\begin{tikzpicture}[scale=2]
+\begin{tikzpicture}
   \draw [thick, <->] (0,5) node [left] {$y$}
        -- (0,0) -- (5,0) node [below right] {$x$};
   \draw[fill] (2,2) circle  [radius=0.05]
        node[below left] (2, 2) {$A$};
-  \draw [thick] (2,2)--(5,2)--(5,4) node[right] {$B$} --(2,2);
+  \draw [thick] (2,2)--(5,2) node[right] {$C$} --(5,4) node[right] {$B$} --(2,2);
+  \draw [thick] (3.5,2.1)--(3.5,1.9);
+  \node [right] at (5,3) {$BC=2$};
 \end{tikzpicture}
 
 
