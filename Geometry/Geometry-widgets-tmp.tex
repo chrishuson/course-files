@@ -23,27 +23,53 @@
 \begin{document}
 \begin{enumerate}
 
-\item Draw and label the geometric object $\overrightarrow{AB}$
+\item Draw and label the geometric object $\overrightarrow{AB}$.
 \vspace{2cm}
 
+\item Two or more line segments of equal measure are $\rule{4cm}{0.15mm}$.
 
-\item Given line $\overleftrightarrow{AB}$ with midpoint $M$, that is, $\overline{AM} \cong \overline{BM}$. $AM=2$ cm. Find the length of $\overline{AB}$.\\[0.75cm]
-\begin{tikzpicture}
-  \centering
-  \draw [<->, thick] (0,0)--(6,0); % also thin, ultra thick, help lines, dashed, dotted, red
-  \draw [fill] (1,0) circle [radius=0.05] node[below]{$A$};
-  \draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
-  \draw [fill] (3,0) circle [radius=0.05] node[below]{$M$};
-\end{tikzpicture}
-\vspace{3cm}
+\item Given $\overline{ABC}$, $AB=10$, and $BC=4$.
+\begin{enumerate}
+  \item Find ${AC}$.\\[0.75cm]
+    \begin{tikzpicture}
+      \draw [-, thick] (1,0)--(7,0);
+      \draw [fill] (1,0) circle [radius=0.05] node[below]{$A$};
+      \draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
+      \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+    \end{tikzpicture}
+  \item The postulate used in this problem is the \rule{6cm}{0.15mm}.
+\end{enumerate}
+\smallskip
 
-\item Given $\triangle ABC$ with $\overline{AC} \cong \overline{BC}$. On the diagram mark the congruent line segments with tick marks.\\[0.5cm]
+\item Given $\triangle ABC$ with $\overline{AC} \cong \overline{BC}$. On the diagram mark the congruent line segments with tick marks.
+\begin{center}
 \begin{tikzpicture}[scale=0.5]
   \draw [thick](0,0)--(8,0)--(4,3)--(0,0);
   \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
   \draw [fill] (8,0) circle [radius=0.05] node[below]{$B$};
   \draw [fill] (4,3) circle [radius=0.05] node[above right]{$C$};
 \end{tikzpicture}
+\end{center}
+
+\item Given line segment $\overline{AB}$ with midpoint $M$, that is, $\overline{AM} \cong \overline{BM}$. $AM=2$ cm. Find the length of $\overline{AB}$.\\[0.75cm]
+\begin{tikzpicture}
+  \draw [-, thick] (1,0)--(5,0);
+  \draw [fill] (1,0) circle [radius=0.05] node[below]{$A$};
+  \draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
+  \draw [fill] (3,0) circle [radius=0.05] node[below]{$M$};
+\end{tikzpicture}
+\vspace{3cm}
+
+\item Points that are all located on the same line are $\rule{4cm}{0.15mm}$.
+
+\item Given the points $X$ and $Y$, draw $\overrightarrow{YX}$.\\[2cm]
+\begin{center}
+  \begin{tikzpicture}
+  \draw [fill] (0,2) circle [radius=0.05] node[below]{$X$};
+  \draw [fill] (5,0) circle [radius=0.05] node[below]{$Y$};
+\end{tikzpicture}
+\end{center}
+\vspace{2cm}
 
 \item Given $\triangle ABC$ with $\overline{AC} \cong \overline{BC}$. $AC=x+7$ and $BC=2x+1$. Find $AC$.\\[0.5cm]
 \begin{tikzpicture}[scale=0.75]
@@ -61,18 +87,41 @@
 \vspace{4cm}
 \begin{center}
 \begin{tikzpicture}
-  \draw [<->, thick] (0,0)--(8,0);
+  \draw [->, thick] (0,0)--(8,0);
   \draw [fill] (0,0) circle [radius=0.05] node[below]{$D$};
   \draw [fill] (3,0) circle [radius=0.05] node[below]{$E$};
 \end{tikzpicture}
 \end{center}
+\vspace{4cm}
 
-\item big skip
-\bigskip
+\item Write down the name of two line segments shown in the diagram below using proper geometric notation.
+\begin{center}
+\begin{tikzpicture}
+  \draw [->, thick] (0,0)--(4,4);
+  \draw [->, thick] (3,3)--(3,-1);
+  \draw [fill] (0,0) circle [radius=0.05] node[left]{$R$};
+  \draw [fill] (3,3) circle [radius=0.05] node[above left]{$S$};
+  \draw [fill] (3,0) circle [radius=0.05] node[right]{$T$};
+\end{tikzpicture}
+\end{center}
 
-\item small skip follows
-\smallskip
-\item the end
+\item Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overline{BC} \cong \overline{DA}$. $AB=x+7$ and $\displaystyle CD=\frac{4x+2}{2}$. Find $AB$.\\[0.5cm]
+\begin{tikzpicture}[scale=0.75]
+  \draw [thick](0,0)--(6,0)--(6,3)--(0,3)--(0,0);
+  \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+  \draw [fill] (6,0) circle [radius=0.05] node[below]{$B$};
+  \draw [fill] (6,3) circle [radius=0.05] node[above right]{$C$};
+  \draw [fill] (0,3) circle [radius=0.05] node[above left]{$D$};
+  \draw [thick] (3,-0.2)--(3,0.2); %tick mark
+  \draw [thick] (3,2.8)--(3,3.2); %tick mark
+  \draw [thick] (-0.2,1.4)--(0.2,1.4); %tick mark
+  \draw [thick] (-0.2,1.6)--(0.2,1.6); %tick mark
+  \draw [thick] (5.8,1.4)--(6.2,1.4); %tick mark
+  \draw [thick] (5.8,1.6)--(6.2,1.6); %tick mark
+  \node [below] at (2,0){$x+7$};
+  \node [below] at (2,3){$\frac{4x+2}{2}$};
+\end{tikzpicture}
+\vspace{4cm}
 
 \end{enumerate}
 \end{document}
