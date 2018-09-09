@@ -1,0 +1,51 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{tkz-fct} %alternative to pgfplots.
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepgfplotslibrary{statistics}
+\usepackage{pgfplotstable}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage \\}
+\lhead{BECA / Dr. Huson / Mathematics\\* Template geometric figures}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\subsection*{pgfplots library}
+
+\begin{tikzpicture}
+\begin{axis}[axis lines = none]
+  \addplot[ mark=* ] coordinates {(0,0)(7,1)(6,5)(0,0)};
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[
+  title = {Title: pgfplots coordinates plot},
+  axis lines = center, %left, %box, left, middle, center, right, none
+  xlabel = $x$,
+  ylabel = {$y$},
+  xmin=-10, xmax=10,
+  ymin=-10, ymax=10,
+  %xtick={0,2,4,6,8,10},
+  %xmajorgrids=true,
+  %grid style=dashed
+]
+  \addplot[ mark=* ] coordinates {(1,2)(-3,5)(4,4)(1,2)};
+  %brackets are mandatory, leave blank space
+\end{axis}
+\end{tikzpicture}
+
+
+\end{document}
