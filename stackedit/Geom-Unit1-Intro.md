@@ -9,6 +9,7 @@
 - HSG.CO.A.1 Know precise geometric definitions 
 - HSG.CO.D.12 Congruence, Make geometric constructions
 - HSG.CO.D.13 Construct an equilateral triangle
+- - HSG.GPE.B.7 
 
 **Project:** Compass and straightedge constructions
 10 days
@@ -28,7 +29,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc0NDk3MDI0LDEyMDE4MjE0MTEsNDM0Nz
+eyJoaXN0b3J5IjpbNzQwNTQ5NzQzLDEyMDE4MjE0MTEsNDM0Nz
 g5Mjc2LDE1OTYxMTY1MjAsLTE3OTcyMTc3NzQsMjIwNTU1Njk0
 LC0xNDc1MzExMjMyLDI1MzQzNTU3Ml19
 -->
