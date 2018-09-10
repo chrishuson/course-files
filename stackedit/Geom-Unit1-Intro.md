@@ -16,7 +16,7 @@
 |Unit | Guiding question | Do Now | Lesson | Homework |
 |---|---|---|---|---|
 | 1.1|How do we define the basic elements of geometry?|Skills Check 1-3 p. 2|Definitions: point, line, plane, ray, segment, end point, collinear, coplanar, congruent, distance or length, angle, vertex. Segment addition postulate (classwork handout)|Vocabulary practice
-1.2|How do we construct geometric figures?|Problems 75-80 pg 19|Opposite rays, intersection, p. 13-15; Compass practice|1C & 1D pages 10, 12
+1.2|How do we construct geometric figures?|Problems 75-80 pg 19|Opposite rays, intersection, p. 13-15; Compass practice|Algebra assessm
 1.3| How do we construct an equilateral triangle?|Do Now Quiz: Notation and terminology| Euclid's first construction|Purchase tools: compass, ruler, protractor, calculator, notebook, folder
 1.4|How do we solve quadratic equations?||Factoring, setting $=0$, checking solutions|Geometry and algebra practice
 1.5|How do we graph quadratics?|Create Dropbox account|$x-$ and $y-$intercepts, vertex, axis of symmetry|Project paper
@@ -26,5 +26,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNzExMTg3LDI1MzQzNTU3Ml19
+eyJoaXN0b3J5IjpbMjA3NDYyNjY2NSwyNTM0MzU1NzJdfQ==
 -->
