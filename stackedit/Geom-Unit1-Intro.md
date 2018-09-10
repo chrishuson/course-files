@@ -21,12 +21,12 @@
 1.4|How do we solve quadratic equations?|Tools checklist, notation, segment addition; notation, segment addition, absolute value, equilateral triangle construction|Plane geometry pp. 14-17, #1-20 p.16 |Pre-quiz geometry and algebra practice
 1.5|How do we measure distance?|Plane geometry, measure lengths|Midpoint, bisector, step-by-step solving distance algebra problems pp. 20-24, #1-5, 8-20|Distance algebra problems, challenge p. 26
 1.6|How do we measure angles?|Do Now quiz: notation, segment addition algebra, absolute value, equilateral triangle construction|Angle terminology, types; protractor use pp. 27-29, #1-20 (odds) p.31|Angle notation
-1.7| How do we solve for angle measures?||Angle algebra Problem 4, p. 30; |Study for test
+1.7| How do we solve for angle measures?|Construction|Angle algebra Problem 4, p. 30; #21-32 pp. 31-32|Angle measure algebra problems
 1.8| How do we work with functions, algebraically and graphically? || Test
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0Nzg5Mjc2LDE1OTYxMTY1MjAsLTE3OT
-cyMTc3NzQsMjIwNTU1Njk0LC0xNDc1MzExMjMyLDI1MzQzNTU3
-Ml19
+eyJoaXN0b3J5IjpbNjUxMjU2NTM0LDQzNDc4OTI3NiwxNTk2MT
+E2NTIwLC0xNzk3MjE3Nzc0LDIyMDU1NTY5NCwtMTQ3NTMxMTIz
+MiwyNTM0MzU1NzJdfQ==
 -->
