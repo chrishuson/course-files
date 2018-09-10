@@ -6,8 +6,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
+\usetikzlibrary{angles}
 \usepackage{graphicx}
-\usepackage{venndiagram}
 
 %\usepackage{pgfplots}
 %\pgfplotsset{width=10cm,compat=1.9}
@@ -19,13 +19,10 @@
 \pagestyle{fancy}
 \fancyhf{}
 
-%\rhead{\small{5 September 2018}}
+%\rhead{\small{10 September 2018}}
 \lhead{\small{BECA / Dr. Huson / Geometry Unit 1}}
 
-%\vspace{1cm}
-
 \renewcommand{\headrulewidth}{0pt}
-
 
 \title{Mathematics Class Slides}
 \subtitle{Bronx Early College Academy}
@@ -33,141 +30,196 @@
 \date{5-21 September 2018}
 
 \begin{document}
-
 \frame{\titlepage}
+\section[Outline]{}
+\frame{\tableofcontents}
 
-%\section[Outline]{}
-%\frame{\tableofcontents}
+\section{1.1 Drui}
+\frame
+{
+  \frametitle{GQ: How do we define the basic elements of geometry?}
+  \framesubtitle{CCSS: HSG.CO.A.1 Know precise geometric definitions \hspace{\stretch{1}} \alert{1.1}}
 
-  \section{1.1 Drui}
-  \frame
-  {
-    \frametitle{GQ: How do we define the basic elements of geometry?}
-    \framesubtitle{CCSS: HSF.IF.C.7 Analyze functions \hspace{\stretch{1}} \alert{1.1}}
-
-    Welcome back to school
-    \begin{block}{Do Now Handout: Algebra skills check}
-    \begin{enumerate}
-        \item Assigned seating: \alert{Without saying a word (!),} arrange yourself alphabetically by last name, left to right, front to back.
-        \item Take out notebooks (or blank paper) \& calculator
-        \item Complete signin sheet \emph{in order by last name}\\*
-    \end{enumerate}
-    \end{block}
-    Lesson: Definitions: point, line, plane, ray, segment, end point, colinear, coplanar, congruent, distance or length, angle, vertex \\%*[5pt]
-    Segment addition postulate (classwork handout)\\
-    Early finishers: How should the papers be handed in to be in order?\\
-    Homework: Problem set 1-1 Vocabulary and terminology
-  }
+  Welcome back to school
+  \begin{block}{Do Now Handout: Algebra skills check}
+  \begin{enumerate}
+      \item Assigned seating: \alert{Without saying a word (!),} arrange yourself alphabetically by last name, left to right, front to back.
+      \item Take out notebooks (or blank paper) \& calculator
+      \item Complete signin sheet \emph{in order by last name}\\*
+  \end{enumerate}
+  \end{block}
+  Lesson: Definitions: point, line, plane, ray, segment, end point, colinear, coplanar, congruent, distance or length, angle, vertex \\%*[5pt]
+  Segment addition postulate (classwork handout)\\
+  Early finishers: How should the papers be handed in to be in order?\\
+  Homework: Problem set 1-1 Vocabulary and terminology
+}
 %Prepare copies of formula sheets
 
-  \section{1.2 Drui}
+\section{1.2 Drui}
+\frame
+{
+  \frametitle{GQ: How do we construct geometric figures?}
+  \framesubtitle{CCSS: HSG.CO.D.12 Congruence, Make geometric constructions \qquad \alert{1.2}}
+
+  \begin{block}{Do Now: Problems 75-80 pg 19}
+  %\begin{enumerate}
+      %\item
+  %\end{enumerate}
+  \end{block}
+  Homework review\\
+  Riddle on page 3\\
+  Lesson: Opposite rays, intersection, p. 13-15\\
+  Project: Introduction to compass use\\
+  Calculator deposits \$20
+  \\%*[5pt]
+  Homework: Algebra skills assessment
+}
+
+\section{1.3 Drui}
+\frame
+{
+  \frametitle{GQ: How do we construct an equilateral triangle?}
+  \framesubtitle{CCSS: HSG.CO.D.13 Construct an equilateral triangle \qquad \alert{1.3}}
+
+  \begin{block}{Do Now Quiz}
+  \begin{enumerate}
+      \item Notation and terminology
+  \end{enumerate}
+  \end{block}
+  Lesson: Circle notation; ``Sketch", ``draw", ``construct"; ``Given"\\[5pt]
+  Euclid's first construction
+  \begin{enumerate}
+      \item Steps in the construction
+      \item Logic: Why does it work?
+      \item Assessment criteria: precision, correct \& complete, elegance or beauty
+  \end{enumerate}
+  \vspace{0.5cm}
+  Homework: Geometry and algebra practice\\
+  Due: notebook, folder, compass, ruler, protractor, calculator
+}
+
+\section{1.4 Drui}
+\frame
+{
+  \frametitle{GQ: How do we work in three dimensions?}
+  \framesubtitle{CCSS: HSG.CO.A.1 Know precise geometric definitions \hspace{\stretch{1}} \alert{1.4}}
+
+  \begin{block}{Do Now: I have a compass, notebook, and calculator}
+  \begin{enumerate}
+      \item Tools checklist
+      \item Notation
+      \item Segment addition, absolute value
+      \item Equilateral triangle construction
+  \end{enumerate}
+  \end{block}
+  Plane geometry pp. 14-17\\ Problems \#1-20 p.16\\
+  \vspace{0.5cm}
+  Homework: Pre-quiz geometry and algebra practice\\
+  Construction project due Friday (hexagon challenge)
+}
+
+\section{1.5 Drui}
   \frame
   {
-    \frametitle{GQ: How do we construct geometric figures?}
-    \framesubtitle{CCSS: HSG.CO.D.12 Congruence, Make geometric constructions \qquad \alert{1.2}}
+    \frametitle{GQ: How do we measure distance?}
+    \framesubtitle{CCSS: HSG.CO.D.12 Congruence, Make geometric constructions \hspace{\stretch{1}} \alert{1.5}}
 
-    \begin{block}{Do Now: Problems 75-80 pg 19}
-    %\begin{enumerate}
-        %\item
-    %\end{enumerate}
+    \begin{block}{Do Now: I have a ruler and protractor}
+    \begin{enumerate}
+        \item Plane geometry
+        \item Measure lengths
+    \end{enumerate}
     \end{block}
-    Homework review\\
-    Riddle on page 3\\
-    Lesson: Opposite rays, intersection, p. 13-15\\
-    Project: Introduction to compass use\\
-    Calculator deposits \$20
-    \\%*[5pt]
-    Homework: Algebra skills assessment
+    Midpoint, bisector, step-by-step solving distance algebra\\
+    Problems pp. 20-24, \#1-5, 8-20\\
+    \vspace{0.5cm}
+    Homework: Distance algebra problems, challenge p. 26\\
+    Construction project due tomorrow (hexagon challenge)
   }
 
-  \section{1.3 Drui}
+\section{1.6 Drui}
   \frame
   {
-    \frametitle{GQ: How do we construct an equilateral triangle?}
-    \framesubtitle{CCSS: HSG.CO.D.12 Congruence, Make geometric constructions \qquad \alert{1.3}}
+    \frametitle{GQ: How do we measure angles?}
+    \framesubtitle{CCSS: HSG.CO.A.1 Know precise geometric definitions \hspace{\stretch{1}} \alert{1.6}}
 
-    \begin{block}{Do Now Quiz}
+    \begin{block}{Do Now quiz - \alert{Project due}}
     \begin{enumerate}
-        \item Notation and terminology
+        \item Notation
+        \item Segment addition, absolute value
+        \item Equilateral triangle construction
     \end{enumerate}
     \end{block}
-    Lesson: Circle notation; ``Sketch", ``draw", ``construct"; ``Given"\\[5pt]
-    Euclid's first construction
-    \begin{enumerate}
-        \item Steps in the construction
-        \item Logic: Why does it work?
-        \item Assessment criteria: precision, correct \& complete, elegance or beauty
-    \end{enumerate}
+    Angle terminology, types; protractor use pp. 27-29\\
+    Problems \#1-20 (odds) p.31\\
     \vspace{1cm}
-    Homework: Geometry and algebra practice\\
-    Due: notebook, folder, compass, ruler, protractor, calculator
+    Homework: Angle notation
   }
 
-  \section{1.4 Drui}
+\section{1.7 Drui}
   \frame
   {
-    \frametitle{GQ: How do we graph quadratics?}
-    \framesubtitle{CCSS: HSG.CO.D.12 Congruence, Make geometric constructions  \alert{1.4}}
+    \frametitle{GQ: How do we use geometric notation?}
+    \framesubtitle{CCSS: HSG.CO.A.1 Know precise geometric definitions \hspace{\stretch{1}} \alert{1.7}}
 
-    \begin{block}{Do Now: Factoring}
+    \begin{block}{Do Now: Laptop setup}
     \begin{enumerate}
-        \item
-        \item Construct an equilateral triangle
-        \item I have a compass of my own
+        \item Use your assigned laptop number
+        \item ``Lids down" for group focus
+        \item Return laptops to proper slot number, charging cable
     \end{enumerate}
     \end{block}
-    Review construction challenge\\
-    \vspace{2cm}
-    Homework: Construction project due Friday (hexagon?)
+    Deltamath geometry notation; \\Challenge Geogebra construction\\
+    \vspace{1cm}
+    Homework: Angle measure, algebra problems
   }
 
+\section{1.8 Drui}
   \frame
   {
-    \frametitle{GQ: How do we graph quadratics?}
-    \framesubtitle{CCSS: HSG.CO.D.12 Congruence, Make geometric constructions  \qquad \alert{1.4}}
+    \frametitle{GQ: How do we use the tools of geometry?}
+    \framesubtitle{CCSS: HSG.CO.A.1 Know precise geometric definitions \hspace{\stretch{1}} \alert{1.8}}
 
-    \begin{block}{Symmetry of functions, graphically and algebraically}
+    \begin{block}{Do Now: Practice, construction}
     \begin{enumerate}
-        \item Definition: a function is \emph{even} if it can be reflected onto itself across the $y-$axix. Equivalently, iff $f(x)=f(-x)$
-        \item Definition: a function is \emph{odd} if it can be reflected onto itself across the origin. Equivalently, iff $f(x)=-f(-x)$
+        \item Use your protractor, ruler, and compass
     \end{enumerate}
     \end{block}
-    %graph examples
+    Review\\
+    \vspace{1cm}
+    Homework: Pre-test
   }
 
+\section{1.9 Drui}
   \frame
   {
-    \frametitle{How do we graph quadratics?}
-    \framesubtitle{CCSS: HSG.CO.D.12 Congruence, Make geometric constructions  \qquad \alert{1.4}}
+    \frametitle{GQ: How do we use the tools of geometry?}
+    \framesubtitle{CCSS: HSG.CO.A.1 Know precise geometric definitions \hspace{\stretch{1}} \alert{1.9}}
 
-    \begin{block}{Consider the function $f(x)=-x^2+2x+3$}
+    \begin{block}{Do Now: Angle measure practice, construction}
     \begin{enumerate}
-        \item Factor $f$ and state its zeros.
-        \item Restate $f$ in vertex form. Write down the vertex as an ordered pair.
-        \item Over what intervals is the function increasing, decreasing, and neither?
-        \item If $f(x)$ represents the height of a diver over the domain $0 \leq x \leq 3$, interpret $f(0)$, the vertex, and $f(3)$
-        \item What does the "slope" of the curve represent?
+        \item Use your protractor, ruler, and compass
     \end{enumerate}
     \end{block}
+    Test review\\
+    \vspace{1cm}
+    Homework: Study for test
   }
 
+  \section{1.9 Drui}
+    \frame
+    {
+      \frametitle{GQ: How do we use the tools of geometry?}
+      \framesubtitle{CCSS: HSG.CO.A.1 Know precise geometric definitions \hspace{\stretch{1}} \alert{1.9}}
 
-  \section{1.5 Drui}
-  \frame
-  {
-    \frametitle{GQ: How do we calculate rates in context?}
-    \framesubtitle{CCSS: HSG.CO.D.12 Congruence, Make geometric constructions  \qquad \alert{1.5}}
+      \begin{block}{Do Now: (Test)}
+      %\begin{enumerate}
+          %\item Use your assigned laptop number
+      %\end{enumerate}
+      \end{block}
+      Test\\
+      \vspace{1cm}
+      Homework: Angle measure algebra problems
+    }
 
-    \begin{block}{Do Now: Sketch the function $f(x)=x^3-9x$}
-      \begin{enumerate}
-      \item Either factor it by hand or use a graphing calculator .
-      \item "Sketch" is an IB "command term" meaning roughly show the key relationships.
-      \item Label the intersections, maximum, and minimum.
-      \item Add an axis caption of increasing ("++++") and decreasing ("- - - -") intervals
-      \end{enumerate}
-   \end{block}
-    Lesson: Rates of change problem applications, graphing\\%*[5pt]
-    Homework: Motion problems
-  }
-
-  \end{document}
+\end{document}
