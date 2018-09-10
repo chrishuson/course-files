@@ -9,7 +9,7 @@
 - HSG.CO.A.1 Know precise geometric definitions 
 - HSG.CO.D.12 Congruence, Make geometric constructions
 - HSG.CO.D.13 Construct an equilateral triangle
-- - HSG.GPE.B.7 
+- HSG.GPE.B.6 Find the midpoint of a segment
 
 **Project:** Compass and straightedge constructions
 10 days
@@ -29,7 +29,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQwNTQ5NzQzLDEyMDE4MjE0MTEsNDM0Nz
-g5Mjc2LDE1OTYxMTY1MjAsLTE3OTcyMTc3NzQsMjIwNTU1Njk0
-LC0xNDc1MzExMjMyLDI1MzQzNTU3Ml19
+eyJoaXN0b3J5IjpbMjAxMzA0Njk2NCwxMjAxODIxNDExLDQzND
+c4OTI3NiwxNTk2MTE2NTIwLC0xNzk3MjE3Nzc0LDIyMDU1NTY5
+NCwtMTQ3NTMxMTIzMiwyNTM0MzU1NzJdfQ==
 -->
