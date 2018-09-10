@@ -7,8 +7,8 @@
 
 **CCLS:**
 - HSG.CO.D.12 Congruence, Make geometric constructions 
-- HSF.IF.C.7 Analyze functions
-- HSN.RN.A.2 Rewrite expressions involving radicals and rational exponents using the properties of exponents
+- HSG.CO.D.12 Congruence
+- HSG.CO.D.12 Congruence
 
 **Project:** Compass and straightedge constructions
 10 days
@@ -28,7 +28,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMTgyMTQxMSw0MzQ3ODkyNzYsMTU5Nj
-ExNjUyMCwtMTc5NzIxNzc3NCwyMjA1NTU2OTQsLTE0NzUzMTEy
-MzIsMjUzNDM1NTcyXX0=
+eyJoaXN0b3J5IjpbLTk5NzI0MzUxNCwxMjAxODIxNDExLDQzND
+c4OTI3NiwxNTk2MTE2NTIwLC0xNzk3MjE3Nzc0LDIyMDU1NTY5
+NCwtMTQ3NTMxMTIzMiwyNTM0MzU1NzJdfQ==
 -->
