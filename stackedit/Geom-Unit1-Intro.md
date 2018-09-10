@@ -6,9 +6,9 @@
 **Skills:** Definitions, measuring segments, angles, constructions, angle pairs
 
 **CCLS:**
-- HSG.CO.D.12 Congruence, Make geometric constructions 
-- HSG.CO.D.12 Congruence
-- HSG.CO.D.12 Congruence
+- HSG.CO.A.1 Know precise geometric definitions 
+- HSG.CO.D.12 Congruence, Make geometric constructions
+- HSG.CO.D.13 Construct an equilateral triangle
 
 **Project:** Compass and straightedge constructions
 10 days
@@ -28,7 +28,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NzI0MzUxNCwxMjAxODIxNDExLDQzND
-c4OTI3NiwxNTk2MTE2NTIwLC0xNzk3MjE3Nzc0LDIyMDU1NTY5
-NCwtMTQ3NTMxMTIzMiwyNTM0MzU1NzJdfQ==
+eyJoaXN0b3J5IjpbNDc0NDk3MDI0LDEyMDE4MjE0MTEsNDM0Nz
+g5Mjc2LDE1OTYxMTY1MjAsLTE3OTcyMTc3NzQsMjIwNTU1Njk0
+LC0xNDc1MzExMjMyLDI1MzQzNTU3Ml19
 -->
