@@ -20,12 +20,12 @@
 1.3| How do we construct an equilateral triangle?|Do Now Quiz: Notation and terminology| Euclid's first construction|Purchase tools: compass, ruler, protractor, calculator, notebook, folder
 1.4|How do we solve quadratic equations?||Tools checklist, notation, segment addition|Pre-quiz Geometry and algebra practice
 1.5|How do we graph quadratics?|Create Dropbox account|$x-$ and $y-$intercepts, vertex, axis of symmetry|Project paper
-1.6|How do we simplify exponents?||Product, quotient, power rules, $(\sqrt{x^4})$|Pretest
+1.6|How do we simplify exponents?||Do Now quiz: notation, segment addition algebra, absolute value, equilateral triangle construction|Geometry and algebra practice
 1.7| How do we use negative exponents?||Inverses|Study for test
 1.8| How do we work with functions, algebraically and graphically? || Test
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjM5NjEwNDcsLTE0NzUzMTEyMzIsMj
-UzNDM1NTcyXX0=
+eyJoaXN0b3J5IjpbMjIwNTU1Njk0LC0xNDc1MzExMjMyLDI1Mz
+QzNTU3Ml19
 -->
