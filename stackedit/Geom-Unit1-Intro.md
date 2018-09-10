@@ -20,12 +20,12 @@
 1.3| How do we construct an equilateral triangle?|Do Now Quiz: Notation and terminology| Euclid's first construction|Purchase tools: compass, ruler, protractor, calculator, notebook, folder
 1.4|How do we solve quadratic equations?|Tools checklist, notation, segment addition; notation, segment addition, absolute value, equilateral triangle construction|Plane geometry pp. 14-17, #1-20 p.16 |Pre-quiz geometry and algebra practice
 1.5|How do we measure distance?|Plane geometry, measure lengths|Midpoint, bisector, step-by-step solving distance algebra problems pp. 20-24, #1-5, 8-20|Distance algebra problems, challenge p. 26
-1.6|How do we measure angles?||Do Now quiz: notation, segment addition algebra, absolute value, equilateral triangle construction|Geometry and algebra practice
+1.6|How do we measure angles?|Do Now quiz: notation, segment addition algebra, absolute value, equilateral triangle construction||Geometry and algebra practice
 1.7| How do we use negative exponents?||Inverses|Study for test
 1.8| How do we work with functions, algebraically and graphically? || Test
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTUyNDc0NjAsLTE3OTcyMTc3NzQsMj
-IwNTU1Njk0LC0xNDc1MzExMjMyLDI1MzQzNTU3Ml19
+eyJoaXN0b3J5IjpbMzAyMzg2OTc0LC0xNzk3MjE3Nzc0LDIyMD
+U1NTY5NCwtMTQ3NTMxMTIzMiwyNTM0MzU1NzJdfQ==
 -->
