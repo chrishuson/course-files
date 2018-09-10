@@ -19,13 +19,13 @@
 1.2|How do we construct geometric figures?|Algebra problems 75-80 pg 19|Opposite rays, intersection, p. 13-15; Compass practice|Algebra assessment
 1.3| How do we construct an equilateral triangle?|Do Now Quiz: Notation and terminology| Euclid's first construction|Purchase tools: compass, ruler, protractor, calculator, notebook, folder
 1.4|How do we solve quadratic equations?|Tools checklist, notation, segment addition; notation, segment addition, absolute value, equilateral triangle construction|Plane geometry pp. 14-17, #1-20 p.16 |Pre-quiz geometry and algebra practice
-1.5|How do we measure distance?|Plane geometry, measure leng|Midpoint, bisector, step-by-step solving distance algebra problems|Project paper
+1.5|How do we measure distance?|Plane geometry, measure lengths|Midpoint, bisector, step-by-step solving distance algebra problems|Project paper
 1.6|How do we simplify exponents?||Do Now quiz: notation, segment addition algebra, absolute value, equilateral triangle construction|Geometry and algebra practice
 1.7| How do we use negative exponents?||Inverses|Study for test
 1.8| How do we work with functions, algebraically and graphically? || Test
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODk5MzY1NSwtMTc5NzIxNzc3NCwyMj
-A1NTU2OTQsLTE0NzUzMTEyMzIsMjUzNDM1NTcyXX0=
+eyJoaXN0b3J5IjpbODk0ODM2MjI4LC0xNzk3MjE3Nzc0LDIyMD
+U1NTY5NCwtMTQ3NTMxMTIzMiwyNTM0MzU1NzJdfQ==
 -->
