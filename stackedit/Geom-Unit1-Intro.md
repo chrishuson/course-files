@@ -22,13 +22,13 @@
 1.5|How do we measure distance?|Plane geometry, measure lengths|Midpoint, bisector, step-by-step solving distance algebra problems pp. 20-24, #1-5, 8-20|Distance algebra problems, challenge p. 26
 1.6|How do we measure angles?|Do Now quiz: notation, segment addition algebra, absolute value, equilateral triangle construction|Angle terminology, types; protractor use pp. 27-29, #1-20 (odds) p.31|Angle notation
 1.7| How do we use geometric notation?| Laptop setup| Deltamath geometry notation; challenge Geogebra construction |Angle measure algebra problems
-1.8| How do we solve for angle measures?| Angle measure practice, construction||Pre-test
-1.9| How do we solve for angle measures?| Angle measure practice, construction|Test review| Study for test
+1.8| How do we use the tools of geometry?| Practice, construction|Review|Pre-test
+1.9| How do we use the tools of geometry?| Angle measure practice, construction|Test review| Study for test
 1.10| How do we use the tools of geometry?| | Test| Angle measure algebra problems
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MDg0MDI0LDQzNDc4OTI3NiwxNTk2MT
-E2NTIwLC0xNzk3MjE3Nzc0LDIyMDU1NTY5NCwtMTQ3NTMxMTIz
-MiwyNTM0MzU1NzJdfQ==
+eyJoaXN0b3J5IjpbMTIwMTgyMTQxMSw0MzQ3ODkyNzYsMTU5Nj
+ExNjUyMCwtMTc5NzIxNzc3NCwyMjA1NTU2OTQsLTE0NzUzMTEy
+MzIsMjUzNDM1NTcyXX0=
 -->
