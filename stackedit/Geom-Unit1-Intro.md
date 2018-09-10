@@ -18,7 +18,7 @@
 | 1.1|How do we define the basic elements of geometry?|Skills Check 1-3 p. 2|Definitions: point, line, plane, ray, segment, end point, collinear, coplanar, congruent, distance or length, angle, vertex. Segment addition postulate (classwork handout)|Vocabulary practice
 1.2|How do we construct geometric figures?|Algebra problems 75-80 pg 19|Opposite rays, intersection, p. 13-15; Compass practice|Algebra assessment
 1.3| How do we construct an equilateral triangle?|Do Now Quiz: Notation and terminology| Euclid's first construction|Purchase tools: compass, ruler, protractor, calculator, notebook, folder
-1.4|How do we solve quadratic equations?||Factoring, setting $=0$, checking solutions|Geometry and algebra practice
+1.4|How do we solve quadratic equations?||Tools checklist, notation, segment addition|Pre-quiz Geometry and algebra practice
 1.5|How do we graph quadratics?|Create Dropbox account|$x-$ and $y-$intercepts, vertex, axis of symmetry|Project paper
 1.6|How do we simplify exponents?||Product, quotient, power rules, $(\sqrt{x^4})$|Pretest
 1.7| How do we use negative exponents?||Inverses|Study for test
@@ -26,5 +26,6 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzUzMTEyMzIsMjUzNDM1NTcyXX0=
+eyJoaXN0b3J5IjpbLTE5NjM5NjEwNDcsLTE0NzUzMTEyMzIsMj
+UzNDM1NTcyXX0=
 -->
