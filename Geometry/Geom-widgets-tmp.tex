@@ -1,0 +1,55 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles}
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+
+
+
+%\usepackage{tkz-fct} %alternative to pgfplots.
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepgfplotslibrary{statistics}
+%\usepackage{pgfplotstable}
+%\usepackage{venndiagram}
+
+
+\begin{document}
+
+\begin{tikzpicture} %https://tex.stackexchange.com/questions/256863/drawing-and-labeling-angles-in-an-axis-environment
+
+%A triangle is drawn on the Cartesian plane. One side of the triangle is along
+%the positive x-axis, and another side of the triangle is drawn in Quadrant II.
+\coordinate (A) at (0,0);
+\coordinate (B) at (3.5,0);
+\coordinate (C) at ({5*cos(120)},{5*sin(120)});
+\draw (A) -- (B) -- (C) -- cycle;
+
+\coordinate (D) at (A-|C);% horizontal to (A), vertical to (C)
+
+%The labels for A and B are typeset.
+\node[below right] at (A){$A$};
+\node[below] at (B){$B$};
+%The label for C is typeset.
+\node[blue,above left] at (C) {$C$};
+
+
+%Angles are drawn for $\theta$ and its supplement.
+\draw[draw=blue] (A) ++(120:0.4) arc (120:0:0.4)
+  node[midway,above right,inner sep=2pt,font={\footnotesize}]{$\theta$};
+\draw[draw=blue,dash dot] (A) ++(180:0.6) arc (180:120:0.6)
+  node[midway,left,inner sep=2pt,font={\footnotesize}]{$\pi - \theta$};
+
+%A right-angle mark is drawn.
+\draw[dash dot] (D) +(0,3mm) -- +(3mm,3mm) -- +(3mm,0);
+
+\draw[dashed] (C) -- (D);
+\end{tikzpicture}
+
+\end{document}
