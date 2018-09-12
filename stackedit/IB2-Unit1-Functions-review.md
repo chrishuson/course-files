@@ -18,7 +18,7 @@
 |---|---|---|---|---|
 | 1.1| How do we follow IB mathematics conventions?| Handout: precision, notation | Identifying graphical features, average slope |Handout: sig figs, slope
 | 1.2|What is the average rate of change of a function?| Substitution notation |Point-slope form of linear equations |Linear equation practice
-| 1.3| What is asymptotic behavior? | DoNow quiz: precision | Rational functions, factoring denominators [calculator graphing example] | Peer edit, factoring practice, rationals
+| 1.3| What is asymptotic behavior? | Do Now quiz: precision | Rational functions, factoring denominators [calculator graphing example] | Textbook Review exercises 1-5 page 155-6; Peer edit of exploration papers.
 | 1.4| How do we graph quadratics? | Factoring | $x-$ and $y-$intercepts, vertex, axis of symmetry, discriminant | Quadratics graphing
 | 1.5 | How do we calculate rates in context? | Sketch cubic | Rates of change problem applications, graphing | Motion problems
 | 1.6|How do we simplify exponents?| Graph interpretation |Product, quotient, power rules, $(\sqrt{x^4})$| Exponents (weekend packet)
@@ -29,6 +29,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NzM3MDIzMCwtMzE2Mzg2NzkyLDk4Nj
-c3MzkwMywtMTA0NzY2NDMyOCw5ODAzNzc2MDZdfQ==
+eyJoaXN0b3J5IjpbLTIxMjA1NDQ1MDIsLTQ4NzM3MDIzMCwtMz
+E2Mzg2NzkyLDk4Njc3MzkwMywtMTA0NzY2NDMyOCw5ODAzNzc2
+MDZdfQ==
 -->
