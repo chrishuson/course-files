@@ -6,6 +6,11 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+%\usepgfplotslibrary{statistics}
+%\usepackage{pgfplotstable}
+
 \usepackage{tkz-fct}
 
 \usepackage{fancyhdr}
@@ -28,7 +33,7 @@ Use pencil for graphs. Label points as ordered pairs.
       is shown on the graph.
 
 \begin{tikzpicture}[scale=.75]
-  \tkzInit[xmin=-5,xmax=5,ymin=-10,ymax=10,ystep=2]   
+  \tkzInit[xmin=-5,xmax=5,ymin=-10,ymax=10,ystep=2]
   \tkzGrid
   \tkzAxeXY
   \tkzFct[color=blue,thick,domain = -5:5]{x**3-3*x**2-2*x+2};
@@ -39,7 +44,7 @@ Use pencil for graphs. Label points as ordered pairs.
     \item Show that $f(0)$ is the $y$-intercept by substituting $x=0$ into the function $f(x)$.\\*[20pt]
     \item Write down the $x$-intercepts.
     \item Show that $-1$ is an $x$-intercept because $x=-1$ is a solution to $f(x)=0$.\\*[20pt]
-    \item What is the end behavior? 
+    \item What is the end behavior?
     \begin{enumerate}
         \item As $x\xrightarrow{}+\infty$ does $y\xrightarrow{}+\infty \text{ or } -\infty$?
         \item As $x\xrightarrow{}-\infty$ does $y\xrightarrow{}+\infty \text{ or } -\infty$?
@@ -50,7 +55,7 @@ Use pencil for graphs. Label points as ordered pairs.
 \end{enumerate}
 
 \begin{tikzpicture}[scale=.75]
-  \tkzInit[xmin=-5,xmax=5]   
+  \tkzInit[xmin=-5,xmax=5]
   \tkzAxeX
 \end{tikzpicture}
 
@@ -58,7 +63,7 @@ Use pencil for graphs. Label points as ordered pairs.
 \item The function $g(x)=-x^3-5x^2-3x+4$ is shown on the graph.
 
 \begin{tikzpicture}[scale=.75]
-  \tkzInit[xmin=-5,xmax=5,ymin=-10,ymax=10,ystep=2]   
+  \tkzInit[xmin=-5,xmax=5,ymin=-10,ymax=10,ystep=2]
   \tkzGrid
   \tkzAxeXY
   \tkzFct[color=blue,thick,domain = -5:5]{-x**3-5*x**2-3*x+4};
@@ -69,7 +74,7 @@ Use pencil for graphs. Label points as ordered pairs.
     \item Show that $f(0)$ is the $y$-intercept by substituting $x=0$ into the function $f(x)$.\\*[20pt]
     \item Write down the $x$-intercepts.
     \item Show that $-4$ is an $x$-intercept because $x=-4$ is a solution to $f(x)=0$.\\*[20pt]
-    \item What is the sign of the leading coefficient?\\* What is the end behavior? 
+    \item What is the sign of the leading coefficient?\\* What is the end behavior?
     \begin{enumerate}
         \item As $x\xrightarrow{}+\infty$ does $y\xrightarrow{}+\infty \text{ or } -\infty$?
         \item As $x\xrightarrow{}-\infty$ does $y\xrightarrow{}+\infty \text{ or } -\infty$?
@@ -79,7 +84,7 @@ Use pencil for graphs. Label points as ordered pairs.
 \end{enumerate}
 
 \begin{tikzpicture}[scale=.75]
-  \tkzInit[xmin=-5,xmax=5]   
+  \tkzInit[xmin=-5,xmax=5]
   \tkzAxeX
 \end{tikzpicture}
 
@@ -92,13 +97,13 @@ Use pencil for graphs. Label points as ordered pairs.
     \item The other $x$-intercepts are $-3$ and $+2$. Mark them on the plot.
 
     \begin{tikzpicture}[scale=1.0]
-      \tkzInit[xmin=-5,xmax=5,ymin=-10,ymax=10,ystep=2]   
+      \tkzInit[xmin=-5,xmax=5,ymin=-10,ymax=10,ystep=2]
       \tkzGrid
       \tkzAxeXY
       %\tkzFct[color=blue,thick,domain = -5:5]{x**3+2*x**2-5*x-6};
     \end{tikzpicture}
 
-    \item What is the sign of the leading coefficient, positive or negative? Hence, what is the function's end behavior? 
+    \item What is the sign of the leading coefficient, positive or negative? Hence, what is the function's end behavior?
     \begin{enumerate}
         \item As $x\xrightarrow{}+\infty$ does $y\xrightarrow{}+\infty \text{ or } -\infty$?
         \item As $x\xrightarrow{}-\infty$ does $y\xrightarrow{}\infty \text{ or } -\infty$?
