@@ -16,14 +16,14 @@
 | 1.1|How do we define functions?|Skills Check 1-3 p. 2|Linear functions, slope, solving; vertical line test p 4-6|Function identification 1A & 1B p. 6-7
 1.2|What are domain and range?|Problems 2-4 pg 8|Domain, range, asymptotes p8-11|Average rate of change application problems
 1.3| What notation do we use for functions?|Graph 3a and one other from problem 3, p 12. Use 1 cm = 1 unit| Function notation, substitution p 13, 1E|Functions  p13
-1.4|How do we solve quadratic equations?||Factoring, setting $=0$, checking solutions|
-1.5|How do we graph quadratics?|Create Dropbox account|$x-$ and $y-$intercepts, vertex, axis of symmetry|Project paper
+1.4|How do we solve quadratic equations?||Factoring, setting $=0$, checking solutions, $x-$ and $y-$intercepts, vertex, axis of symmetry| Factoring practice
+1.5|How do we graph quadratics?|Create Dropbox account|$x-$ and $y-$intercepts, vertex, axis of symmetry| Graphing quadratics
 1.6|How do we simplify exponents?||Product, quotient, power rules, $(\sqrt{x^4})$|Pretest
 1.7| How do we use negative exponents?||Inverses|Study for test
 1.8| How do we work with functions, algebraically and graphically? || Test
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDMyNTgwMTgsMTU5MzYyMjA0NywzMT
-I2OTEwNDcsLTQzMjI5NzQ0M119
+eyJoaXN0b3J5IjpbLTE3MTczMjEyNjksLTExNDMyNTgwMTgsMT
+U5MzYyMjA0NywzMTI2OTEwNDcsLTQzMjI5NzQ0M119
 -->
