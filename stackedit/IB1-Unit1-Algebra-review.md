@@ -15,7 +15,7 @@
 |---|---|---|---|---|
 | 1.1|How do we define functions?|Skills Check 1-3 p. 2|Linear functions, slope, solving; vertical line test p 4-6|Function identification 1A & 1B p. 6-7
 1.2|What are domain and range?|Problems 2-4 pg 8|Domain, range, asymptotes p8-11|Average rate of change application problems
-1.3| What notation do we use for functions?|Graph 3a and one other from problem 3, p 12. Use 1 cm = 1 unit| Function notation, substitution p 13|Functions  p13
+1.3| What notation do we use for functions?|Graph 3a and one other from problem 3, p 12. Use 1 cm = 1 unit| Function notation, substitution p 13, 1E|Functions  p13
 1.4|How do we solve quadratic equations?||Factoring, setting $=0$, checking solutions|
 1.5|How do we graph quadratics?|Create Dropbox account|$x-$ and $y-$intercepts, vertex, axis of symmetry|Project paper
 1.6|How do we simplify exponents?||Product, quotient, power rules, $(\sqrt{x^4})$|Pretest
@@ -24,6 +24,6 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTU3MTM5MTQsMTU5MzYyMjA0NywzMT
+eyJoaXN0b3J5IjpbLTExNDMyNTgwMTgsMTU5MzYyMjA0NywzMT
 I2OTEwNDcsLTQzMjI5NzQ0M119
 -->
