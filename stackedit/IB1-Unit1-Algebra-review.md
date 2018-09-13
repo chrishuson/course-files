@@ -18,13 +18,13 @@
 1.3| What notation do we use for functions?|Graph 3a and one other from problem 3, p 12. Use 1 cm = 1 unit| Function notation, substitution p 13, 1E|Function substitution, domain and range
 1.4|How do we solve quadratic equations?||Factoring, setting $=0$, checking solutions, $x-$ and $y-$intercepts, vertex, axis of symmetry| Factoring practice
 1.5|How do we graph quadratics?|Create Dropbox account|$x-$ and $y-$intercepts, vertex, axis of symmetry| Graphing quadratics
-1.6|How do we simplify exponents?||Product, quotient, power rules, $(\sqrt{x^4})$|Pretest
-1.7| How do we use negative exponents?||Inverses|Study for test
+1.6| How do we communicate mathematical results?| Laptop setup | Technical skills needed to communicate mathematics||Pretest
+1.7|How do we simplify exponents?||Product, quotient, power rules, $(\sqrt{x^4})$|Study for test
 1.8| How do we work with functions, algebraically and graphically? || Test
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMjg0NjE2NywtMTcxNzMyMTI2OSwtMT
-E0MzI1ODAxOCwxNTkzNjIyMDQ3LDMxMjY5MTA0NywtNDMyMjk3
-NDQzXX0=
+eyJoaXN0b3J5IjpbLTk2MTg2ODIyLDIxMzI4NDYxNjcsLTE3MT
+czMjEyNjksLTExNDMyNTgwMTgsMTU5MzYyMjA0NywzMTI2OTEw
+NDcsLTQzMjI5NzQ0M119
 -->
