@@ -272,9 +272,9 @@
       \begin{flushright} Segment addition\\ postulate \end{flushright}
       \item Substitute algebraic values
       \item Solve for the unknown \vspace{3cm}
-      \begin{center} $x=$ \rule{1cm}{0.15} \end{center}
+      \begin{center} $x=$ \rule{1cm}{0.15mm} \end{center}
       \item Answer the question\\
-      \begin{center} $AB=$ \rule{1cm}{0.15} \end{center}
+      \begin{center} $AB=$ \rule{1cm}{0.15mm} \end{center}
       \item Check your answer
     \end{enumerate}
 
@@ -283,90 +283,152 @@
   \end{enumerate}
 
 \newpage
-\subsubsection*{Do Now Quiz 1.6: notation, segment addition algebra} %duplicate of 1.4 Homework
+\subsubsection*{Do Now Quiz 1.6: Notation, segment addition algebra} %duplicate of 1.4 Homework
 \begin{enumerate}
-  \item A flat surface is a(n) $\rule{4cm}{0.15mm}$.
+  \item Points that are all located on the same line are \qquad $\rule{4cm}{0.15mm}$.\bigskip
+
   \item Use symbols to write the name of the given figure.
     \begin{tikzpicture}
-      \draw [->, thick] (0,0)--(3,1.5);
+      \draw [-, thick] (0,0)--(4,1);
       \draw [fill] (0,0) circle [radius=0.05] node[below]{$R$};
-      \draw [fill] (2,1) circle [radius=0.05] node[below]{$S$};
+      \draw [fill] (4,1) circle [radius=0.05] node[below]{$S$};
     \end{tikzpicture} \bigskip
 
-  \item Given $\overline{ABC}$, $AB=2x+1$, $BC=x-1$, and $AC=9$. Find ${AB}$.\\[0.5in]
-      %\vspace{1cm}
-     \begin{tikzpicture}
-      \draw [-, thick] (-1,0)--(7,0);
-      \draw [fill] (-1,0) circle [radius=0.05] node[below]{$A$};
-      \draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
-      \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
-    \end{tikzpicture} \vspace{2cm}
+  \item Draw and label a line segment $AB$ such that the distance between points $A$ and $B$ is 8 cm. \vspace{2cm}
 
-  \item Write down the name of two line segments shown in the diagram below using proper geometric notation.
+  \item Find the value of $|2-7|$.
+
+  \item Identify three points in the given plane.\\[0.25in]
+    \begin{tikzpicture}[scale=0.8]
+      \draw [thick](0,0) node[above right]{$\ m$} --(6,0)--(8,4)--(2,4)--(0,0);
+      \draw [<->, thick] (1,1)--(6,3);
+      \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$P \ $};
+      \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$Q$};
+      \draw [<->, thick] (2,3.5)--(5.25,.25);
+      \draw [fill] (5,0.5) circle [radius=0.05] node[left]{$R \ $};
+    \end{tikzpicture}
+
+  \item Given $M(2,3)$ and $N(5,9)$. What is the slope of $\overleftrightarrow{MN}$? Use the formula $\displaystyle m=\frac{y_2-y_1}{x_2-x_1}$. \vspace{3cm}
+
+  \item Given $\overline{DEF}$, $DE=10$, and $EF=3$. Find ${DF}$.\\[0.75cm]
+      \begin{tikzpicture}
+        \draw [-, thick] (0,0)--(7,0);
+        \draw [fill] (0,0) circle [radius=0.05] node[below]{$D$};
+        \draw [fill] (5,0) circle [radius=0.05] node[below]{$E$};
+        \draw [fill] (7,0) circle [radius=0.05] node[below]{$F$};
+      \end{tikzpicture} \smallskip
+
+\newpage
+  \item Given $\triangle STU$ with $\overline{SU} \cong \overline{TU}$. On the diagram mark the congruent line segments with tick marks.
   \begin{center}
-  \begin{tikzpicture}
-    \draw [->, thick] (0,0)--(4,4);
-    \draw [->, thick] (3,3)--(3,-1);
-    \draw [fill] (0,0) circle [radius=0.05] node[left]{$R$};
-    \draw [fill] (3,3) circle [radius=0.05] node[above left]{$S$};
-    \draw [fill] (3,0) circle [radius=0.05] node[right]{$T$};
+  \begin{tikzpicture}[scale=0.3]
+    \draw [thick](0,0)--(8,0)--(4,8)--(0,0);
+    \draw [fill] (0,0) circle [radius=0.05] node[below]{$S$};
+    \draw [fill] (8,0) circle [radius=0.05] node[below]{$T$};
+    \draw [fill] (4,8) circle [radius=0.05] node[above right]{$U$};
   \end{tikzpicture}
   \end{center}
 
-  \item Identify two lines in the given plane.\\[0.25in]
+  \item Given line segment $\overline{PQ}$ with midpoint $M$, that is, $\overline{PM} \cong \overline{QM}$. $PQ=14$ cm. Find the length of $\overline{MQ}$.\\[0.75cm]
+  \begin{tikzpicture}
+    \draw [-, thick] (0,0)--(6,0);
+    \draw [fill] (0,0) circle [radius=0.05] node[below]{$P$};
+    \draw [fill] (6,0) circle [radius=0.05] node[below]{$Q$};
+    \draw [fill] (3,0) circle [radius=0.05] node[below]{$M$};
+  \end{tikzpicture}
+  \vspace{1cm}
+
+  \item Given the points $J$ and $K$, draw $\overrightarrow{JK}$.
+  \begin{flushright}
     \begin{tikzpicture}
-      \draw [thick](0,0) node[above right]{$\ p$} --(6,0)--(8,4)--(2,4)--(0,0);
-      \draw [<->, thick] (1,1)--(6,3);
-      \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$J \ $};
-      \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$K$};
-      \draw [<->, thick] (2,3.5)--(5.25,.25);
-      \draw [fill] (5,0.5) circle [radius=0.05] node[below left]{$L$};
+    \draw [fill] (0,2) circle [radius=0.05] node[below]{$K$};
+    \draw [fill] (4,0) circle [radius=0.05] node[below]{$J$};
+  \end{tikzpicture}
+  \end{flushright}
+  %\vspace{2cm}
+
+  \item Given $\overline{ABC}$, $AB=x+1$, $BC=3x-1$, and $AC=8$. Find ${AB}$.\\[0.5in]
+      %\vspace{1cm}
+     \begin{tikzpicture}
+      \draw [-, thick] (0,0)--(7,0);
+      \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw [fill] (3,0) circle [radius=0.05] node[below]{$B$};
+      \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
     \end{tikzpicture} \vspace{2cm}
-
-  \item Given $\triangle ABC$ with $\overline{AC} \cong \overline{BC}$. $AC=x+7$ and $BC=2x+1$. Find $AC$.\\[0.5cm]
-  \begin{tikzpicture}[scale=0.75]
-    \draw [thick](0,0)--(4,0)--(2,6)--(0,0);
-    \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-    \draw [fill] (4,0) circle [radius=0.05] node[below]{$B$};
-    \draw [fill] (2,6) circle [radius=0.05] node[above right]{$C$};
-    \draw [thick] (0.8,3)--(1.2,3); %tick mark
-    \draw [thick] (2.8,3)--(3.2,3); %tick mark
-    \node [right] at (3.25,2.5){$x+7$};
-    \node [left] at (0.75,2.5){$2x+1$};
-  \end{tikzpicture}
-
-  \item $\rule{4cm}{0.15mm}$ is to make a freehand diagram showing important features. \smallskip
-
-  \item Given $A(4,3)$ and $B(6,4)$. What is the slope of $\overleftrightarrow{AB}$? Use the formula $\displaystyle m=\frac{y_2-y_1}{x_2-x_1}$. \vspace{3cm}
-
-  \item Points that are all located on the same line are $\rule{4cm}{0.15mm}$.\bigskip
-
-  \item Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overline{BC} \cong \overline{DA}$. $AB=x+7$ and $\displaystyle CD=\frac{4x+2}{2}$. Find $AB$.\\[0.5cm]
-  \begin{tikzpicture}[scale=0.75]
-    \draw [thick](0,0)--(6,0)--(6,3)--(0,3)--(0,0);
-    \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-    \draw [fill] (6,0) circle [radius=0.05] node[below]{$B$};
-    \draw [fill] (6,3) circle [radius=0.05] node[above right]{$C$};
-    \draw [fill] (0,3) circle [radius=0.05] node[above left]{$D$};
-    \draw [thick] (3,-0.2)--(3,0.2); %tick mark
-    \draw [thick] (3,2.8)--(3,3.2); %tick mark
-    \draw [thick] (-0.2,1.4)--(0.2,1.4); %tick mark
-    \draw [thick] (-0.2,1.6)--(0.2,1.6); %tick mark
-    \draw [thick] (5.8,1.4)--(6.2,1.4); %tick mark
-    \draw [thick] (5.8,1.6)--(6.2,1.6); %tick mark
-    \node [below] at (2,0){$x+7$};
-    \node [below] at (2,3){$\frac{4x+2}{2}$};
-  \end{tikzpicture}
-  \vspace{4cm}
 
 \end{enumerate}
 
 \newpage
 \subsubsection*{Homework 1.6: Angle notation}
   \begin{enumerate}
-    \item \tikz \draw (2,0) coordinate (A) -- (0,0) coordinate (B)
-             -- (1,1) coordinate (C)
-      pic [draw, ->] {angle=A--B--C}; %pic ["$K$"] naming not working
+
+    \item Write the appropriate name for the type of angle depending on its measure in degrees. (acute, right, obtuse, or straight)
+    \begin{enumerate}
+      \item $m\angle = 90$ : \rule{4cm}{0.15mm} \bigskip
+      \item $90 < m\angle < 180$ : \rule{4cm}{0.15mm} \bigskip
+      \item $0< m\angle < 90$ : \rule{4cm}{0.15mm} \bigskip
+      \item $m\angle = 180$ : \rule{4cm}{0.15mm} \bigskip
+    \end{enumerate}
+
+    \item Write down the name of the given angle three different ways.\\
+    \begin{tikzpicture}
+      \draw
+        (3,-1) coordinate (a) node[right] {P}
+        -- (0,0) coordinate (b) node[left] {Q}
+        -- (2,2) coordinate (c) node[above right] {R}
+        pic["1", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
+        {angle=a--b--c};
+    \end{tikzpicture}
+
+    \item Points that are all located on the same plane are $\rule{4cm}{0.15mm}$.
+
+    \item Write down the name of the angle shown in the diagram below using proper geometric notation.
+    \begin{center}
+    \begin{tikzpicture}[scale=2]
+      \draw [->, thick] (0,0)--(4,3);
+      \draw [->, thick] (0,0)--(5,-1);
+      \draw [fill] (2.66666,2) circle [radius=0.05] node[above left ]{$D$};
+      \draw [fill] (0,0) circle [radius=0.05] node[above left]{$E$};
+      \draw [fill] (4,-0.8) circle [radius=0.05] node[above]{$F$};
+    \end{tikzpicture}
+    \end{center}
+    Find the measure of the angle in degrees with a protractor.
+
+\newpage
+    \item Given $\overline{ABC}$, $AB=3x-2$, $BC=x+11$, $AC=29$. Find ${AB}$. Show each step:\\[0.35in]
+    \begin{flushright}
+      \begin{tikzpicture}
+         \draw [-, thick] (0,0)--(7,0);
+         \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+         \draw [fill] (3,0) circle [radius=0.05] node[below]{$B$};
+         \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+      \end{tikzpicture}
+    \end{flushright}
+      %\vspace{1cm}
+    \begin{enumerate}
+      \item Sketch and label the situation
+      \item Write a geometric equation:\\
+      %\begin{flushright} Segment addition\\ postulate \end{flushright}
+      \item Substitute algebraic values and solve:
+      %\item Solve for the unknown
+      \vspace{3cm}
+      \begin{flushright} $x=$ \rule{1cm}{0.15mm} \end{flushright}
+      \item Answer the question\\
+      \begin{flushright} $AB=$ \rule{1cm}{0.15mm} \end{flushright}
+      \item Check your answer
+    \end{enumerate}
+
+    \item Given $\triangle ABC$ with $\overline{AC} \cong \overline{BC}$. $AC=5x+7$ and $BC=3x+17$. Find $AC$.\\[0.5cm]
+    \begin{tikzpicture}[scale=0.55]
+      \draw [thick](0,0)--(4,0)--(2,6)--(0,0);
+      \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw [fill] (4,0) circle [radius=0.05] node[below]{$B$};
+      \draw [fill] (2,6) circle [radius=0.05] node[above right]{$C$};
+      \draw [thick] (0.8,3)--(1.2,3); %tick mark
+      \draw [thick] (2.8,3)--(3.2,3); %tick mark
+      \node [right] at (3.25,2.5){$5x+7$};
+      \node [left] at (0.75,2.5){$3x+17$};
+    \end{tikzpicture}
 
 
   \end{enumerate}
@@ -380,10 +442,12 @@
 \newpage
 \subsubsection*{Homework 1.7: Angle measurement}
   \begin{enumerate}
-  \item \tikz \draw (2,0) coordinate (A) -- (0,0) coordinate (B)
+  \item
+  \begin{tikzpicture}[scale=0.75]
+     \draw (2,0) coordinate (A) -- (0,0) coordinate (B)
            -- (1,1) coordinate (C)
     pic [draw, ->] {angle=A--B--C}; %pic ["$K$"] naming not working
-
+  \end{tikzpicture}
 
   \end{enumerate}
 
