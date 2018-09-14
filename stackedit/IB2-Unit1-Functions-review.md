@@ -21,7 +21,7 @@
 | 1.3| What is asymptotic behavior? | Do Now quiz: precision | Rational functions, factoring denominators [calculator graphing example] | Textbook Review exercises 1-5 page 155-6; Peer edit of exploration papers.
 | 1.4| How do we graph quadratics? | Factoring | $x-$ and $y-$intercepts, vertex, axis of symmetry, discriminant | Quadratics graphing
 | 1.5 | How do we calculate rates in context? | Sketch cubic | Quadratics applications, graphing | Motion problems pp. 57-58
-| 1.6|How do we simplify exponents?| Graph interpretation |Product, quotient, power rules, $(\sqrt{x^4})$| Exponents (weekend packet)
+| 1.6|How do we simplify exponents?| Exponent warmup problems |Product, quotient, power rules, $(\sqrt{x^4})$| Exponents (weekend packet)
 | 1.7|How do we interpret fractional exponents?| Exponent simplification ($\frac{2^{2018}+2^{2016}}{2^{2018}-2^{2016}}$ puzzle) | Radicals | Cumulative review
 | 1.8| How do we model growth?| Graph exponential function with a calculator | Interpret exponential function parameters | Pretest (pre holiday)
 | 1.9| How do we use algebraic properties to understand functions? | Exponential function | Linear, quadratic, rational, and exponential functions | Study for test
@@ -29,7 +29,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU1NTQ5MzI2LC0yMTIwNTQ0NTAyLC00OD
-czNzAyMzAsLTMxNjM4Njc5Miw5ODY3NzM5MDMsLTEwNDc2NjQz
-MjgsOTgwMzc3NjA2XX0=
+eyJoaXN0b3J5IjpbMTM0Nzk0MjcxMSwzNTU1NDkzMjYsLTIxMj
+A1NDQ1MDIsLTQ4NzM3MDIzMCwtMzE2Mzg2NzkyLDk4Njc3Mzkw
+MywtMTA0NzY2NDMyOCw5ODAzNzc2MDZdfQ==
 -->
