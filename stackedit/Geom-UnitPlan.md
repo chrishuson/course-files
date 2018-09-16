@@ -5,7 +5,7 @@ Plan 2018-19
 
 Dates| Unit | Topics  | Project |Duration|Guide
 ---|---|---|---|---:|:---:
-9/5 - 9/21 | 1a. Introduction | Definitions, measuring segments, angles, constructions, angle pairs ||10|
+9/5 - 9/21 | 1a. Introduction | Definitions, measuring segments and angles, addition postulates, constructions ||10|
 9/24 - 10/5 | 1b. Introduction | Definitions, measuring segments, angles, constructions, angle pairs ||10|16
 10/9 - 10/19 | 2. Proof | Induction, logic, algebra applications, angle proofs ||9|10
 10/22 - 11/2 | 3a. Analytic Geometry | Line equations, slope, parallel, perpendiculars, constructions, translations||9|
@@ -25,6 +25,7 @@ Dates| Unit | Topics  | Project |Duration|Guide
 165 instructional days
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjI4NjA5MjUsMTA3NDUyNzY2LDIwMD
-c2MTUyLC03Nzg0NDEzMjMsLTE5NjgzNjc4MjJdfQ==
+eyJoaXN0b3J5IjpbLTEzNDkxNTkwMjAsLTE5MjI4NjA5MjUsMT
+A3NDUyNzY2LDIwMDc2MTUyLC03Nzg0NDEzMjMsLTE5NjgzNjc4
+MjJdfQ==
 -->
