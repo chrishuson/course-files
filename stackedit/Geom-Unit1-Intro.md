@@ -23,7 +23,7 @@
 1.5|How do we measure distance?|Plane geometry, measure lengths|Midpoint, bisector, step-by-step solving distance algebra problems pp. 20-24, #1-5, 8-20|Distance algebra problems, challenge p. 26; Construction project
 1.6|How do we measure angles?|Do Now quiz: notation, segment addition algebra, absolute value, equilateral triangle construction|Angle terminology, types; protractor use pp. 27-29, #1-20 (odds) p.31|Angle notation
 1.7| How do we add angle measures?| Segment addition problem, triangle construction| Angle addition postulate pp. 30-32 |Angle measure algebra problems
-1.8| How do we use the tools of geometry?| Practice, construction|Review| Pre-test
+1.8| How do we solve midpoint problems?| Practice, construction| Algebra of bisected segments| Pre-test
 1.9| How do we use the tools of geometry?| Angle measure practice, construction|Test review| Study for test
 1.10| How do we use the tools of geometry?| | Test| Angle measure algebra problems
 
@@ -31,8 +31,8 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzIyMTU3MDEsNjExMDE1MTQsMjAxMz
-A0Njk2NCwxMjAxODIxNDExLDQzNDc4OTI3NiwxNTk2MTE2NTIw
-LC0xNzk3MjE3Nzc0LDIyMDU1NTY5NCwtMTQ3NTMxMTIzMiwyNT
-M0MzU1NzJdfQ==
+eyJoaXN0b3J5IjpbMTcyMzY1OTEwNCw2MTEwMTUxNCwyMDEzMD
+Q2OTY0LDEyMDE4MjE0MTEsNDM0Nzg5Mjc2LDE1OTYxMTY1MjAs
+LTE3OTcyMTc3NzQsMjIwNTU1Njk0LC0xNDc1MzExMjMyLDI1Mz
+QzNTU3Ml19
 -->
