@@ -27,9 +27,12 @@
 1.9| How do we use the tools of geometry?| Angle measure practice, construction|Test review| Study for test
 1.10| How do we use the tools of geometry?| | Test| Angle measure algebra problems
 
+2.x| How do we use geometric notation?| Laptop setup| Deltamath geometry notation; challenge Geogebra construction |Angle measure algebra problems
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjExMDE1MTQsMjAxMzA0Njk2NCwxMjAxOD
-IxNDExLDQzNDc4OTI3NiwxNTk2MTE2NTIwLC0xNzk3MjE3Nzc0
-LDIyMDU1NTY5NCwtMTQ3NTMxMTIzMiwyNTM0MzU1NzJdfQ==
+eyJoaXN0b3J5IjpbMTU2MzAyMjA3NSw2MTEwMTUxNCwyMDEzMD
+Q2OTY0LDEyMDE4MjE0MTEsNDM0Nzg5Mjc2LDE1OTYxMTY1MjAs
+LTE3OTcyMTc3NzQsMjIwNTU1Njk0LC0xNDc1MzExMjMyLDI1Mz
+QzNTU3Ml19
 -->
