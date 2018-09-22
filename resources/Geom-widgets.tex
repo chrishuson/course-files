@@ -49,6 +49,20 @@ Axes
 \end{tikzpicture}
 \end{figure}
 
+\begin{tikzpicture}[scale=1] %grid with numbered axes, IB cm paper.
+  \draw [thick, color=black,, xstep=1.0cm,ystep=1.0cm] (-5.5,-1.5) grid (5.5,7.5);
+  \draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-5.5,-1.5) grid (5.5,7.5);
+  \foreach \x in {-5, -4, -3, -2, -1, 0,1,2,3,4,5}
+    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below]  {$\x$};
+  \foreach \y in {-1,0,1,2,3,4,5, 6, 7}
+    \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
+  \draw [thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
+  \draw [thick, ->] (0,-1.0) -- (0,7.5) node [left] {$y$};
+
+  \draw [<-, ->] plot[domain= -3:2] (\x, e^\x);
+\end{tikzpicture}
+
+
 \subsection*{Drawing lines and shapes}
 tikz draw command, node labeling function\\
 \begin{tikzpicture}
