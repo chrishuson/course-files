@@ -1,5 +1,5 @@
 
-|Chris Huson |Lesson Plan 11.1 IB Math SL  24 August 2018|
+|Chris Huson |Lesson Plan 11.1 IB Math SL  2 October 2018|
 |---|---|
 |**Guiding Question**|How do we organize data using sample space diagrams?|
 |**Learning Standards**|HSS.CP.A.1 Probabilities: subsets of a sample space
@@ -17,5 +17,5 @@
 |**Differentiation**|Open questioning: Why do we assume fairness? How do we methodically create the sample space of a situation? Why do “with replacement” and “without replacement” differ? Challenge homework problems|
 |**Grouping** Group heterogeneously, seating chart.|Rapid exposure and independent homework: Class at regular pace: \*IEP, \*\*ELL|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzI1NTEwMTFdfQ==
+eyJoaXN0b3J5IjpbMTg1ODYyMzQwNCwtMjEzMjU1MTAxMV19
 -->
