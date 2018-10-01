@@ -1,5 +1,5 @@
 
-|Chris Huson |Lesson Plan 11.1 IB Math SL  2 October 2018|
+|Chris Huson |Lesson Plan 10th Grade Geometry  2 October 2018|
 |---|---|
 |**Guiding Question**|How do we communicate mathematical results?
 |**Learning Standards**|MP.4 Model with mathematics
@@ -17,6 +17,6 @@
 |**Differentiation**|Open questioning: Why do we assume we can diffentiate? How do we methodically create the sample space of a situation? Why do “with replacement” and “without replacement” differ? Challenge homework problems|
 |**Grouping** Group heterogeneously, seating chart.|Rapid exposure and independent homework: Class at regular pace: \*IEP, \*\*ELL|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODUyNDk1MTAsLTE4MTA1NTMyOTksMT
-g1ODYyMzQwNCwtMjEzMjU1MTAxMV19
+eyJoaXN0b3J5IjpbMTQzNDA3NTY3MywtMTM4NTI0OTUxMCwtMT
+gxMDU1MzI5OSwxODU4NjIzNDA0LC0yMTMyNTUxMDExXX0=
 -->
