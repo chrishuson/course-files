@@ -1,14 +1,14 @@
 
-|Chris Huson |Lesson Plan 12.1 IB Math SL  2 October 2018|
+|Chris Huson |Lesson Plan 11.1 IB Math SL  2 October 2018|
 |---|---|
-|**Guiding Question**|How do we differentiate functions?
-|**Learning Standards**|HSF-IF.B.6 Interpret functions, and their rate of change
-|**Materials**|Calculator plotting and exponent functions; Overhead doc-cam|
+|**Guiding Question**|How do we communicate mathematical results?
+|**Learning Standards**|MP.4 Model with mathematics
+|**Materials**|Laptop computer, Calculator plot; Overhead doc-cam|
 |**Vocabulary**|Fair, bias, experiment, random variance, empirical, relative frequency number, theoretical probability, sample space, event|
 
 ||Teacher Actions|Student Actions|
 |---|---|---|
-|**Do Now:** Given the function f(x), take the first and second derivatives. Find the extrema. Spicy: differentiate g(x)=x^3 from first principals.|Teacher poses problem, monitors individual progress and assists as appropriate. Teacher highlights key take-aways and connects to lesson.|Students work problem individually, comparing answers. Students present and discuss solutions.|
+|**Do Now:** Given the quadratic function f(x), take the first and second derivatives. Find the extrema. Spicy: differentiate g(x)=x^3 from first principals.|Teacher poses problem, monitors individual progress and assists as appropriate. Teacher highlights key take-aways and connects to lesson.|Students work problem individually, comparing answers. Students present and discuss solutions.|
 |**Procedure:** Applying calculus in a real world context|Teacher assesses homework (completion basis, with spot-check of selected problems). Teacher presents lesson concepts: Discussion of lesson concepts. Format: “I do, we do, you do”. Teacher connects new practices to existing body of knowledge, assesses level of understanding.|Students present explanation of probabilistic situation, interpreting results. Students take notes, respond to questions and each other, ask questions. Students complete practice problems, share on board. Exercises 10A \#4 p 339|
 
 |**Assessment**|Writing to learn: final course exam mock problem, natural exponent differentiation|
@@ -17,6 +17,6 @@
 |**Differentiation**|Open questioning: Why do we assume we can diffentiate? How do we methodically create the sample space of a situation? Why do “with replacement” and “without replacement” differ? Challenge homework problems|
 |**Grouping** Group heterogeneously, seating chart.|Rapid exposure and independent homework: Class at regular pace: \*IEP, \*\*ELL|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTA1NTMyOTksMTg1ODYyMzQwNCwtMj
-EzMjU1MTAxMV19
+eyJoaXN0b3J5IjpbLTEzNDI3NjQwMDEsLTE4MTA1NTMyOTksMT
+g1ODYyMzQwNCwtMjEzMjU1MTAxMV19
 -->
