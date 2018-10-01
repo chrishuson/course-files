@@ -1,5 +1,5 @@
 
-|Chris Huson |Lesson Plan 11.1 IB Math SL  2 October 2018|
+|Chris Huson |Lesson Plan 12.1 IB Math SL  2 October 2018|
 |---|---|
 |**Guiding Question**|How do we differentiate functions?
 |**Learning Standards**|HSF-IF.B.6 Interpret functions, and their rate of change
@@ -13,10 +13,10 @@
 
 |**Assessment**|Writing to learn: final course exam mock problem, natural exponent differentiation|
 |---|---|
-|**Homework** Textbook 10B p. 341|Exercises to practice and review; Statistics textbook problems. Complete exercises, working 30 to 60 minutes, using notes and internet access.|
-|**Differentiation**|Open questioning: Why do we assume fairness? How do we methodically create the sample space of a situation? Why do “with replacement” and “without replacement” differ? Challenge homework problems|
+|**Homework** Textbook 7L odds p. 219|Exercises to practice and review; Textbook problems. Complete exercises, working 30 to 60 minutes, using notes and internet access.|
+|**Differentiation**|Open questioning: Why do we assume we can diffentiate? How do we methodically create the sample space of a situation? Why do “with replacement” and “without replacement” differ? Challenge homework problems|
 |**Grouping** Group heterogeneously, seating chart.|Rapid exposure and independent homework: Class at regular pace: \*IEP, \*\*ELL|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM1MDQ5NDgzLDE4NTg2MjM0MDQsLTIxMz
-I1NTEwMTFdfQ==
+eyJoaXN0b3J5IjpbLTE4MTA1NTMyOTksMTg1ODYyMzQwNCwtMj
+EzMjU1MTAxMV19
 -->
