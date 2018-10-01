@@ -6,7 +6,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usetikzlibrary{quotes, angles}
+\usetikzlibrary{calc, quotes, angles, through} %,intersections,through,backgrounds
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -28,6 +28,14 @@ tikz grid command
 \end{center} %Regents style, no axes
 
 Axes
+
+\begin{tikzpicture}
+  \draw [<->] (-5.5,0)--(5.5,0);
+  \foreach \x in {-5,...,5} %2 leading for diff!=1
+    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+    \draw [fill] (-2,0) circle [radius=0.05] node[above] {$A$};
+\end{tikzpicture}
+
 \begin{center} %4 quadrant regents grid
 \begin{tikzpicture}[scale=.3]%[scale=0.635]
   \draw [help lines] (-10,-10) grid (10,10);
@@ -37,6 +45,12 @@ Axes
        node[below left] (4, 2) {$A$};
 \end{tikzpicture}
 \end{center}
+
+\begin{tikzpicture}[->] %3 dimensions
+  \draw (0,0) -- (1,0);
+  \draw (0,0) -- (0,1,0);
+  \draw (0,0) -- (0,0,1);
+\end{tikzpicture}
 
 \begin{figure} %[!htbp] First quadrant with axes
   \caption{$x$ and $y$ axes for grid}
@@ -52,12 +66,12 @@ Axes
 \begin{tikzpicture}[scale=1] %grid with numbered axes, IB cm paper.
   \draw [thick, color=black,, xstep=1.0cm,ystep=1.0cm] (-5.5,-1.5) grid (5.5,7.5);
   \draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-5.5,-1.5) grid (5.5,7.5);
-  \foreach \x in {-5, -4, -3, -2, -1, 0,1,2,3,4,5}
-    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below]  {$\x$};
-  \foreach \y in {-1,0,1,2,3,4,5, 6, 7}
-    \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
   \draw [thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
   \draw [thick, ->] (0,-1.0) -- (0,7.5) node [left] {$y$};
+  \foreach \x in {-5, -4, -3, -2, -1, 0,1,2,3,4,5}
+    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=3pt, fill=white]  {$\x$};
+  \foreach \y in {-1,0,1,2,3,4,5, 6, 7}
+    \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left, fill=white]  {$\y$};
 
   \draw [<-, ->] plot[domain= -3:2] (\x, e^\x);
 \end{tikzpicture}
@@ -91,8 +105,7 @@ tikz draw command, node labeling function\\
 
 \begin{tikzpicture}[scale=0.4]
   \draw [help lines] (0,0) grid (10,10);
-  %Triangle
-  \draw [thick](0,0)--(8,0)--(8,6)--(0,0);
+  \draw [thick](0,0)--(8,0)--(8,6)--(0,0); %Triangle
   \draw [fill] (8,0) circle [radius=0.05];
   \node [below] at (8,0) {A}; %above, right, left
   %line through points
@@ -104,13 +117,22 @@ tikz draw command, node labeling function\\
   \draw [red, thick] (3,4) circle [radius=2];
 \end{tikzpicture}
 
+\begin{tikzpicture}%[scale=0.4]
+  \draw [help lines] (0,0) grid (10,10);
+  \draw [<->, thick] (2,3)--(8,6);
+  \draw [fill] (3,3.5) circle [radius=0.05] node[below]{$X$};
+  \draw [fill] (7,5.5) circle [radius=0.05] node[below right]{$Y$};
+  \draw [color=blue] (3,3.5)--(3,3.5 |- 7,5.5)--(7,5.5);
+  \draw [color=red] (3,3.5)--(7,5.5 |- 3,3.5)--(7,5.5);
+\end{tikzpicture}
+
 \begin{tikzpicture}[scale=0.8]
   \draw[fill] (2,2) circle  [radius=0.05]
        node[below left] (2, 2) {$A$};
-  \draw [thick] (2,2)--(5,2) node[right] {$C$} --(5,4) node[right] {$B$} --(2,2);
+  \draw [thick] (2,2)-- node[below]{$AC=3$} (5,2) node[right] {$C$} --(5,4) node[right] {$B$} --(2,2);
   \draw [thick] (3.5,2.1)--(3.5,1.9); %tick mark
   \node [right] at (5,3) {$BC=2$};
-\end{tikzpicture}
+\end{tikzpicture}\vspace{1cm}
 
 Given $\triangle ABC$ with $\overline{AC} \cong \overline{BC}$. $AC=x+7$ and $BC=2x+1$. Find $AC$.\\[0.5cm]
 \begin{tikzpicture}[scale=0.5]
@@ -136,7 +158,7 @@ Given $\triangle ABC$ with $\overline{AC} \cong \overline{BC}$. $AC=x+7$ and $BC
 
 Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overline{BC} \cong \overline{DA}$. $AB=x+7$ and $\displaystyle CD=\frac{4x+2}{2}$. Find $AB$.\\[0.5cm]
 \begin{tikzpicture}[scale=0.75]
-  \draw [thick](0,0)--(6,0)--(6,3)--(0,3)--(0,0);
+  \draw [thick](0,0)--(6,0)--(6,3)--(0,3)--cycle;
   \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
   \draw [fill] (6,0) circle [radius=0.05] node[below]{$B$};
   \draw [fill] (6,3) circle [radius=0.05] node[above right]{$C$};
@@ -154,7 +176,7 @@ Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overli
 \subsection*{Plane geometry}
   Identify two lines in the given plane.\\
   \begin{tikzpicture}
-    \draw [thick](0,0) node[above right]{$\ p$} --(6,0)--(8,4)--(2,4)--(0,0);
+    \draw [thick](0,0) node[above right]{$\ p$} --(6,0)--(8,4)--(2,4)--cycle;
     \draw [<->, thick] (1,1)--(6,3);
     \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$J \ $};
     \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$K$};
@@ -163,6 +185,38 @@ Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overli
   \end{tikzpicture} \vspace{2cm}
 
 \subsection*{Marking angles}
+\begin{tikzpicture} %[scale=3]
+  \draw [<->, thick] (37:5) node[above]{$A$} --(0,0)node[label=left:$B$]{} --(5,0);
+  \draw [color=blue] (0.75,0) arc [start angle=0, end angle=37, radius=0.75];
+\end{tikzpicture}\vspace{1cm}
+
+\begin{tikzpicture}
+  \coordinate (A) at (40:3);
+  \coordinate (B) at (0, 0);
+  \coordinate (C) at (-10:3);
+  \draw [<->, thick] (A)--(B)--(C)
+  %pic [draw=black, angle radius=0.4, "$\theta$"]{angle = A--B--C};
+  pic [draw=green!50!black, fill=green!20, angle radius=9mm,
+             "$\alpha$"] {angle = C--B--A};
+\end{tikzpicture}
+
+\begin{tikzpicture} %[scale=3]
+  \draw [<->, thick] (3,0)--(0,0)--(60:4); %note polar coordinates
+  \draw [color=blue] (0.75,0) arc [start angle=0, end angle=60, radius=0.75];
+\end{tikzpicture}\vspace{1cm}
+
+\begin{tikzpicture} %[scale=3]
+  \draw [-, thick] (0,0)--(5,0)--(2.5,4)--cycle;
+  \draw [color=blue] (0.75,0) arc [start angle=0, end angle=58, radius=0.75];
+  \draw (5,0)-- +(-0.75,0) arc [start angle=180, end angle=122, radius=0.75];
+\end{tikzpicture}\vspace{1cm}
+
+\begin{tikzpicture} %[scale=3]
+  \draw [-, thick] (10:5)--(0,0)--(70:3)--cycle;
+  \draw [color=blue] (0,0) ++(10:0.75) arc [start angle=10, end angle=70, radius=0.75];
+  \draw [color=red] (10:5) ++(190:0.75) arc [start angle=190, end angle=160, radius=0.75];
+\end{tikzpicture}\vspace{1cm}
+
 \tikz \draw (2,0) coordinate (A) -- (0,0) coordinate (B)
          -- (1,1) coordinate (C)
   pic ["$K$", draw, ->] {angle=A--B--C};
@@ -176,5 +230,13 @@ Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overli
       {angle=a--b--c};
   \end{tikzpicture}
 
+\begin{tikzpicture}
+  \coordinate [label=left:$A$] (A) at (-4,0);
+  \coordinate [label=right:$B$] (B) at (4,0);
+  \coordinate [label=right:$C$] (C) at (50:4);
+  \draw[thick] (A) --(0,0) node[below]{$O$} -- (B)--(C)--cycle;
+  \draw (C) ++(-0.3,0)-- +(0,-0.3)-- +(0.3,-0.3);
+  \node [draw,circle through=(C)] at (0,0) {};
+\end{tikzpicture}
 
 \end{document}
