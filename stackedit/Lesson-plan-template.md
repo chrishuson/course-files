@@ -1,10 +1,10 @@
 
 |Chris Huson |Lesson Plan 10th Grade Geometry  2 October 2018|
 |---|---|
-|**Guiding Question**|How do we communicate mathematical results?
-|**Learning Standards**|MP.4 Model with mathematics
+|**Guiding Question**|How do we practice our geometry skills?
+|**Learning Standards**|HSG.CO.A.1 Know precise geometric definitions
 |**Materials**|Laptop computer, Calculator plot; Overhead doc-cam|
-|**Vocabulary**|Fair, bias, experiment, random variance, empirical, relative frequency number, theoretical probability, sample space, event|
+|**Vocabulary**|Postulate, axiom, theorem, congruent, collinear, random variance, empirical, relative frequency number, theoretical probability, sample space, event|
 
 ||Teacher Actions|Student Actions|
 |---|---|---|
@@ -17,6 +17,7 @@
 |**Differentiation**|Open questioning: Why do we assume we can diffentiate? How do we methodically create the sample space of a situation? Why do “with replacement” and “without replacement” differ? Challenge homework problems|
 |**Grouping** Group heterogeneously, seating chart.|Rapid exposure and independent homework: Class at regular pace: \*IEP, \*\*ELL|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNDA3NTY3MywtMTM4NTI0OTUxMCwtMT
-gxMDU1MzI5OSwxODU4NjIzNDA0LC0yMTMyNTUxMDExXX0=
+eyJoaXN0b3J5IjpbLTY2ODE4MjczMSwxNDM0MDc1NjczLC0xMz
+g1MjQ5NTEwLC0xODEwNTUzMjk5LDE4NTg2MjM0MDQsLTIxMzI1
+NTEwMTFdfQ==
 -->
