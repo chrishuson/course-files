@@ -1,41 +1,76 @@
-\documentclass{article}
+\documentclass[12pt, oneside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
 \usepackage[english]{babel}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles}
 \usepackage{graphicx}
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepgfplotslibrary{statistics}
+%\usepackage{pgfplotstable}
+%\usepackage{tkz-fct}
+%\usepackage{venndiagram}
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage \\Name: \hspace{1.5in}.\\}
+\lhead{BECA / Dr. Huson / 12.1 IB Math SL\\4 October 2018}
 
-\title{12.1 Tests}
-\author{chris }
-\date{September 2018}
+\renewcommand{\headrulewidth}{0pt}
 
 \begin{document}
-
-
-\noindent BECA / Huson / 12.1 IB Math SL \qquad \qquad Name:\\
-4 October 2018
-\subsection*{Pre-test: Introduction to differential calculus}
+\subsubsection*{Unit 1 Test: Introduction to differential calculus}
 Show working for all problems. State answers exactly or to three significant figures.
+  \vspace{0.5cm}
+  \begin{enumerate}
 
-\begin{enumerate}
+  \item Find the derivative of each function.
+  \begin{itemize}
+    \item[(a)] $f(x) = x^2 + 3x + 4$
+  	\item[(b)] $g(x)=\frac{1}{6}x^3-\ln x$
+  	\item[(c)] $h(x)=e^x \sin x$
+  	\item[(d)] $\displaystyle j(x)= \frac{3e^x}{x^2}$
+  \end{itemize}
 
-\item Write down the derivative of the function $f(x) = x^2 + 3x + 4$.
+  \item Find $f'(x)$  for the following function. Express your final result without negative exponents.
+  	 \[	f(x) = \frac{x^3-4x-8}{x}\]
 
-\item	A function is given as $y = ax^2 + bx + 6$.
+  \item	Sketch the function $f(x) = x^2 - 4x - 5$.
+  \begin{itemize}
+      \item[(a)] Find $f(1)$.
+  	\item[(b)] Find $f'(x)$.
+  	\item[(c)] What is the slope of a tangent to $f$ when $x=1$?
+  	\item[(d)] What is the equation of the line tangent to $f$ when $x=1$?
+  	\item[(e)] What is the equation of the line normal to $f$ when $x=1$?
+  	\item[(e)] Add the tangent and normal lines to the sketch, labeling the point of tangency as a coordinate pair.
+  \end{itemize}
 
-\begin{itemize}
-    \item[(a)] Find $\displaystyle \frac {dy}{dx}$.
-	\item[(b)] If the gradient of this function is 2 when $x$ is 6, write an equation in terms of $a$ and $b$.
-	\item[(c)] If the point $(3, -15)$ lies on the graph of the function find a second equation in terms of $a$ and $b$.
-	\item[(d)] Solve for $x$ in terms of $a$ and $b$:
-	\[\frac {dy}{dx}=0\]
-	Where have you seen this expression before?
-\end{itemize}
+%  \item Find the equation of the tangent to $\displaystyle f(x) = \frac{4}{x^2}$ when $x = 1$.
 
-\item Find $f'(x)$  for the following function. Express your final result without negative exponents:
-	 \[	f(x) = \frac{x^3-4x-8}{x}\]
+  \item	A function is given as $y = ax^2 + bx + 6$.
+  \begin{itemize}
+      \item[(a)] Find $\displaystyle \frac {dy}{dx}$.
+  	\item[(b)] If the gradient of this function is 2 when $x$ is 6, write an equation in terms of $a$ and $b$.
+  	\item[(c)] If the point $(3, -15)$ lies on the graph of the function find a second equation in terms of $a$ and $b$.
+  	\item[(d)] Spicy: Solve for $x$ in terms of $a$ and $b$ when
+  	$\displaystyle \frac {dy}{dx}=0$. \\[10pt]
+  	Where have you seen this expression before? Explain the connection.
+  \end{itemize}
 
-\item Find the equation of the tangent to $\displaystyle f(x) = \frac{4}{x^2}$ when $x = 1$.
+  \item Spicy: Show that the derivative of $f(x)=x^2+1$ is $f'(x)=2x$ from first principles using the definition of the derivative as a limit.
+
+\end{enumerate}
+
+\end{document}
+
+
+
+
 
 \item Consider the function $f(x) = x^3 - 4x^2 - 3x + 18$.
 \begin{itemize}
@@ -56,7 +91,3 @@ Show working for all problems. State answers exactly or to three significant fig
     \end{itemize}
 
 \end{itemize}
-
-\end{enumerate}
-
-\end{document}
