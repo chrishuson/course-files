@@ -37,7 +37,7 @@ Axes
 \end{tikzpicture}
 
 \begin{center} %4 quadrant regents grid
-\begin{tikzpicture}[scale=.3]%[scale=0.635]
+\begin{tikzpicture}[scale=.25]%[scale=0.635]
   \draw [help lines] (-10,-10) grid (10,10);
   \draw [thick, ->] (-10.2,0) -- (10.4,0) node [below right] {$x$};
   \draw [thick, ->] (0,-10.2)--(0,10.4) node [left] {$y$};
@@ -45,6 +45,17 @@ Axes
        node[below left] (4, 2) {$A$};
 \end{tikzpicture}
 \end{center}
+
+Triangle $DAN$ is graphed on the set of axes below. % Regents June 2018 #15
+The vertices of $\triangle DAN$ have coordinates $D(-6,-1), A(6,3), \text{ and } N(-3,10)$.\\
+\begin{tikzpicture}[scale=.3]%[scale=0.635]
+  \draw [help lines] (-10,-5) grid (10,10);
+  \draw [thick, <->] (-10.4,0) -- (10.4,0) node [below right] {$x$};
+  \draw [thick, <->] (0,-5.4)--(0,10.4) node [left] {$y$};
+  \draw [-, thick] (-6,-1) node[below left]{$D$} --
+    (6,3) node[right]{$A$} --(-3,10) node[above]{$N$} --cycle;
+\end{tikzpicture}\\
+What is the area of $\triangle DAN$?
 
 \begin{tikzpicture}[->] %3 dimensions
   \draw (0,0) -- (1,0);
@@ -156,6 +167,31 @@ Given $\triangle ABC$ with $\overline{AC} \cong \overline{BC}$. $AC=x+7$ and $BC
 \end{tikzpicture}
 \end{center}
 
+\subsection*{Complex Regents angle problems}
+
+\begin{tikzpicture}%[scale=0.5] %Regents June 2018 #2
+  \draw [->, thick] (6.5,0) node[below]{$E$} --
+    (0.5,3) node[left]{$A$} --(3.5,3) node[right]{$B$} --
+    (0,0) node[below]{$D$} -- (9,0) node[below]{$F$} -- (9.5,0);
+  \draw [fill] (9,0) circle [radius=0.05];
+  \node at (2.9,2.1)[ ]{$C$};
+  \node at (6.65,0)[above]{$152^\circ$};
+  \node at (3.3,3.05)[below left]{$43^\circ$};
+  \draw (6.5,0) +(0.75,0) arc [start angle=0, end angle=152, radius=0.75];
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=1.2] %Regents June 2018 #4
+  \draw [-, thick] (4.5,0.5) node[right]{$B$} --
+    (4.5,5.5) node[above]{$F$} --(0,0) node[below]{$A$} --
+    (0,2) node[above]{$D$} -- (4.5,0.5) node[below left]{$115^\circ$} -- (4.5,-0.5)node[below]{$E$};
+  %\draw [fill] (9,0) circle [radius=0.05];
+  \node at (1.7,1.7)[ ]{$C$};
+  \node at (0.3,1.6)[ ]{$65^\circ$};
+  %\node at (3.3,3.05)[below left]{$43^\circ$};
+  %\draw (6.5,0) +(0.75,0) arc [start angle=0, end angle=152, radius=0.75];
+\end{tikzpicture}
+
+
 Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overline{BC} \cong \overline{DA}$. $AB=x+7$ and $\displaystyle CD=\frac{4x+2}{2}$. Find $AB$.\\[0.5cm]
 \begin{tikzpicture}[scale=0.75]
   \draw [thick](0,0)--(6,0)--(6,3)--(0,3)--cycle;
@@ -230,13 +266,24 @@ Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overli
       {angle=a--b--c};
   \end{tikzpicture}
 
+\subsection*{Circles}
 \begin{tikzpicture}
   \coordinate [label=left:$A$] (A) at (-4,0);
   \coordinate [label=right:$B$] (B) at (4,0);
   \coordinate [label=right:$C$] (C) at (50:4);
-  \draw[thick] (A) --(0,0) node[below]{$O$} -- (B)--(C)--cycle;
+  \node [draw,circle through=(C), thick] at (0,0){};
+  \node at (0,0)[below]{$O$};
+  \draw[thick] (A) -- (B)--(C)--cycle;
   \draw (C) ++(-0.3,0)-- +(0,-0.3)-- +(0.3,-0.3);
-  \node [draw,circle through=(C)] at (0,0) {};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \draw [thick] (0,0) circle [radius=3cm] node[above]{$O$};
+  \draw [fill] (0,0) circle [radius=0.5mm];
+  \draw [-,thick] (170:3) node[left]{$C$} -- (45:3) node[right]{$D$};
+  \draw [-,thick] (100:3) node[above]{$A$} --  (-10:3) node[right]{$B$};
+  \node at (0.5,1.8) {$58^\circ$};
+  \node at (0.6,1.3) {$E$};
 \end{tikzpicture}
 
 \end{document}
