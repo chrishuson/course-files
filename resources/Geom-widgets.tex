@@ -48,6 +48,19 @@ Axes
 \end{tikzpicture}
 \end{center}
 
+
+\begin{center} %4 quadrant regents grid w T-chart
+\begin{tikzpicture}[scale=.635]%[scale=0.635]
+  \draw [thick, -] (-11, -2)--(-11,8);
+  \draw [thick, -] (-13,7)--(-8.25,7);
+  \node at (-12,7) [above] {$x$};
+  \node at (-9.5,7) [above] {$y=x-2$};
+  \draw [help lines] (-8,-8) grid (8,8);
+  \draw [thick, ->] (-8.2,0) -- (8.4,0) node [below right] {$x$};
+  \draw [thick, ->] (0,-8.2)--(0,8.4) node [left] {$y$};
+\end{tikzpicture}
+\end{center}
+
 Triangle $DAN$ is graphed on the set of axes below. % Regents June 2018 #15
 The vertices of $\triangle DAN$ have coordinates $D(-6,-1), A(6,3), \text{ and } N(-3,10)$.\\
 \begin{tikzpicture}[scale=.3]%[scale=0.635]
