@@ -6,7 +6,9 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usetikzlibrary{calc, quotes, angles, through} %,intersections,through,backgrounds
+\usetikzlibrary{calc, quotes, angles, through}
+\usetikzlibrary{arrows.meta}
+ %,intersections,through,backgrounds
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -224,7 +226,14 @@ Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overli
 \begin{tikzpicture} %[scale=3]
   \draw [<->, thick] (37:5) node[above]{$A$} --(0,0)node[label=left:$B$]{} --(5,0);
   \draw [color=blue] (0.75,0) arc [start angle=0, end angle=37, radius=0.75];
-\end{tikzpicture}\vspace{1cm}
+\end{tikzpicture}\vspace{0.5cm}
+
+\begin{tikzpicture}
+\draw (3,0) coordinate (A)
+         -- (0,1) coordinate (B)
+         -- (1,2) coordinate (C)
+            pic [draw, "$\alpha$"] {angle};
+\end{tikzpicture}
 
 \begin{tikzpicture}
   \coordinate (A) at (40:3);
@@ -241,8 +250,10 @@ Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overli
   \draw [color=blue] (0.75,0) arc [start angle=0, end angle=60, radius=0.75];
 \end{tikzpicture}\vspace{1cm}
 
-\begin{tikzpicture} %[scale=3]
+\begin{tikzpicture} %[scale=3] Isosceles, parallel marks, congruence marks
   \draw [-, thick] (0,0)--(5,0)--(2.5,4)--cycle;
+  \draw [>->, thick] (1.0,1.6)--(1.25,2);
+  \draw [{Bar[]}-{Bar[]}, thick] (4,1.6)--(3.75,2);
   \draw [color=blue] (0.75,0) arc [start angle=0, end angle=58, radius=0.75];
   \draw (5,0)-- +(-0.75,0) arc [start angle=180, end angle=122, radius=0.75];
 \end{tikzpicture}\vspace{1cm}
