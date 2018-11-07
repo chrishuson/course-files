@@ -27,39 +27,73 @@
 \subsubsection*{Transversals and parallel lines}
   \begin{enumerate}
   \item Corresponding angles
-  \item Alternate interior
-  \item Situations and configurations
-  \begin{enumerate}
-    \item Triangle $180^\circ$ sum of internal angles
-    \item Parallelograms in both directions
-    \item Triangle midlines
-    \end{enumerate}
+  \item Alternate interior angles
+  %\item Situations and configurations
+%  \begin{enumerate}
+%    \item Triangle $180^\circ$ sum of internal angles
+%    \item Parallelograms in both directions
+%    \item Triangle midlines
+%    \end{enumerate}
   \end{enumerate}
 
   \begin{enumerate}
-    \subsubsection*{Corresponding angles}
+    %\subsubsection*{Corresponding angles}
     \item Given two parallel lines and a transversal, as shown. Apply the theorem ``If a transversal intersects two parallel lines, then corresponding angles are congruent."
-    \begin{center}
-    \begin{tikzpicture}
-      \draw [<->, thick] (1,2)--(9,2);
-      \draw [<->, thick] (0,0)--(8,0);
-      \draw [<->, thick] (4,-1)--(5.5,3);
-      \node at (4.5,0.3) [left]{$5$};
-      \node at (4.5,0.3) [right]{$6$};
-      \node at (4.3,-0.3) [left]{$7$};
-      \node at (4.3,-0.3) [right]{$8$};
-      \node at (5.2,2) [above left]{$1$};
-      \node at (5.2,2) [above right]{$2$};
-      \node at (5,2) [below left]{$3$};
-      \node at (5,2) [below right]{$4$};
-    \end{tikzpicture}
-    \end{center}
+      \begin{center}
+      \begin{tikzpicture}
+        \draw [<->, thick] (1,2)--(9,2);
+        \draw [<->, thick] (0,0)--(8,0);
+        \draw [<->, thick] (4,-1)--(5.5,3);
+        \node at (4.5,0.3) [left]{$5$};
+        \node at (4.5,0.3) [right]{$6$};
+        \node at (4.3,-0.3) [left]{$7$};
+        \node at (4.3,-0.3) [right]{$8$};
+        \node at (5.2,2) [above left]{$1$};
+        \node at (5.2,2) [above right]{$2$};
+        \node at (5,2) [below left]{$3$};
+        \node at (5,2) [below right]{$4$};
+      \end{tikzpicture}
+      \end{center}
       \begin{enumerate}
-        \item State the angle corresponding with $\angle 7$. \bigskip
-        \item Given $m\angle 6 = 80^\circ$ and $m\angle 2 = 2x^\circ$. Find $x$. \bigskip
-        \item Given $m\angle 5 = 100^\circ$. Find $m\angle 3$.
+        \item State the angle corresponding with $\angle 8$. \bigskip
+        \item Given $m\angle 6 = 81^\circ$ and $m\angle 2 = 3x^\circ$. Find $x$. \bigskip
+        \item Given $m\angle 5 = 99^\circ$. Find $m\angle 3$. \bigskip
+        \item In a proof, what reason would justify $\angle 4 \cong \angle 5$? \rule{6cm}{0.15mm}
       \end{enumerate}
 
+    \item Given two parallel lines and a transversal, as shown. $m\angle 2=5x$ and $m\angle 5=6x+15$. Find $m\angle 5$.
+        \begin{center}
+        \begin{tikzpicture}
+          \draw [<->, thick] (1,2)--(9,2);
+          \draw [<->, thick] (0,0)--(8,0);
+          \draw [<->, thick] (4,-1)--(5.5,3);
+          \node at (4.5,0.3) [left]{$5$};
+          %\node at (4.5,0.3) [right]{$6$};
+          %\node at (4.3,-0.3) [left]{$7$};
+          %\node at (4.3,-0.3) [right]{$8$};
+          %\node at (5.2,2) [above left]{$1$};
+          \node at (5.2,2) [above right]{$2$};
+          \node at (5,2) [below left]{$3$};
+          %\node at (5,2) [below right]{$4$};
+        \end{tikzpicture}
+        \end{center}
+
+\newpage
+    \item Spicy: Construct a duplicate of $\angle ABC$, with $A$ as the vertex and with one leg parallel to $\overleftrightarrow{BC}$, as shown by the dotted line. (Leave all construction marks.)
+    \vspace{2cm}
+      \begin{center}
+      \begin{tikzpicture}[scale=1.4]
+        \draw [<->, thick] (-1,0)--(0,0)--(4,0);
+        \draw [<->, thick] (-1,-1)--(5,5);
+        \draw [->, thick, dashed] (2.5,2.5)--(5, 2.5); %node[below right]{$E$};
+        \draw [fill] (2.5,2.5) circle [radius=0.05] node[above left]{$A$};
+        \draw [fill] (0,0) circle [radius=0.05] node[above left]{$B$};
+        \draw [fill] (3,0) circle [radius=0.05] node[above left]{$C$};
+        %\draw [fill] (7,0) circle [radius=0.05] node[above right]{$C$};
+      \end{tikzpicture}
+      \end{center}
+      \vspace{1cm}
+      Explain why the constructed leg is parallel to $\overleftrightarrow{BC}$.
 
   \end{enumerate}
 
