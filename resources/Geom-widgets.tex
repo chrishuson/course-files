@@ -271,6 +271,19 @@ Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overli
   \draw (5,0)-- +(-0.75,0) arc [start angle=180, end angle=122, radius=0.75];
 \end{tikzpicture}\vspace{1cm}
 
+\begin{tikzpicture}[scale=0.7]
+  \draw [thick](0,0)--(4,0)--(2,6)--(0,0);
+  \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+  \draw [fill] (4,0) circle [radius=0.05] node[below]{$B$};
+  \draw [fill] (2,6) circle [radius=0.05] node[above right]{$C$};
+  \draw [color=blue] (0,0) ++(0.75,0) arc [start angle=0, end angle=70, radius=0.75];
+  \draw [color=blue] (4,0) ++(-0.22, 0.73) arc [start angle=110, end angle=180, radius=0.75];
+  \draw [thick] (0.8,3.1)--(1.2,2.9); %tick mark
+  \draw [thick] (2.8,2.9)--(3.2,3.1); %tick mark
+  %\node [right] at (3.25,2.5){$x+7$};
+  %\node [left] at (0.75,2.5){$2x+1$};
+\end{tikzpicture}
+
 \begin{tikzpicture} %[scale=3]
   \draw [-, thick] (10:5)--(0,0)--(70:3)--cycle;
   \draw [color=blue] (0,0) ++(10:0.75) arc [start angle=10, end angle=70, radius=0.75];
