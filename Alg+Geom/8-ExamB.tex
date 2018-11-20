@@ -1,0 +1,200 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles}
+\usepackage{graphicx}
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepgfplotslibrary{statistics}
+%\usepackage{pgfplotstable}
+%\usepackage{tkz-fct}
+%\usepackage{venndiagram}
+\usepackage{multicol}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage \\Name: \hspace{1.5in}.\\}
+\lhead{BECA / Dr. Huson / 10.3 Geometry\\* 19 November 2018}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+  Solve each problem. Show your work, and check your answer.
+  \begin{enumerate}
+    \subsubsection*{Exam - Part B}
+  %\subsubsection*{Graphing linear functions}
+
+\item Find the slope and $y$-intercept of the function from the table. Show the line differences.
+    \begin{multicols}{2}
+      \begin{tabular}{|c|r|}
+      \hline
+      $x$ & $f(x)$\\
+      \hline
+      -1 & 0 \\
+      \hline
+      0 & 1 \\
+      \hline
+      1 & 2 \\
+      \hline
+      2 & 3 \\
+      \hline
+      3 & 4 \\
+      \hline
+      \end{tabular}
+
+      Slope $= \rule{2cm}{0.15mm}\\[0.5cm]$
+      $y$-intercept $= \rule{2cm}{0.15mm}$ \\[0.5cm]
+
+    \end{multicols}
+Graph the function as a line over the domain $-1 \leq x \leq 3$.
+
+\begin{center} %4 quadrant regents grid w T-Chart
+\begin{tikzpicture}[scale=.635]
+  \draw [help lines] (-5,-4) grid (7,9);
+  \draw [thick, ->] (-5.2,0) -- (7.4,0) node [below right] {$x$};
+  \draw [thick, ->] (0,-4.2)--(0,9.4) node [left] {$y$};
+\end{tikzpicture}
+\end{center}
+
+In the following two problems, solve for the value of $x$.
+\begin{multicols}{2}
+\item   $9=4x-x$ \vspace{3cm}
+\item   $\frac{1}{2}(12-2x)=2x$ %\vspace{3cm}
+\end{multicols}
+
+\newpage
+
+
+  \item A new band charges \$250 to play for a party plus \$125 per hour. The total for BECA's 10th grade prom party was \$750.
+  \begin{enumerate}
+    \item Make a table with $x$ the number of hours and the cost. Start with $x=0$ \\[0.5cm]
+    \renewcommand{\arraystretch}{1.6}
+    \begin{center}
+      \begin{tabular}{|c|r|}
+      \hline
+      $x$ hours & total cost\\
+      \hline
+      0 &  \\
+      \hline
+      1 &  \\
+      \hline
+      2 &  \\
+      \hline
+      3 &  \\
+      \hline
+      4 &  \\
+      \hline
+      5 &  \\
+      \hline
+      6 &  \\
+      \hline
+      \end{tabular}
+    \end{center}
+    Show the row differences. Circle the row in the table with the right cost.
+    \vspace{1cm}
+
+    \item Write an equation for the problem of the form $y=mx+b$, and solve it for $x$ \vspace{3.5cm}
+    \item Check the answer \vspace{2.5cm}
+    \item Spicy: How much would be a tip for the band of 15\% on the total charge?
+  \end{enumerate}
+
+\newpage
+\item
+\begin{enumerate}
+  \item For the function $y= \frac{2}{3}x+1$, fill in the T-chart, plot the points, and draw the line.
+    \begin{center} %4 quadrant regents grid w T-Chart
+    \begin{tikzpicture}[scale=.635]
+      \draw [thick, -] (-11, -2)--(-11,8);
+      \draw [thick, -] (-13,7)--(-8.25,7);
+      \node at (-12,7.1) [above] {$x$};
+      \node at (-9.3,7) [above] {$y= \frac{2}{3}x+1$};
+      \draw [help lines] (-7,-6) grid (8,6);
+      \draw [thick, ->] (-7.2,0) -- (8.4,0) node [below right] {$x$};
+      \draw [thick, ->] (0,-6.2)--(0,6.4) node [left] {$y$};
+    \end{tikzpicture}
+    \end{center}
+    \item Write down the slope and $y$-intercept of the line.\\[0.5cm]
+    $m=$\\[0.5cm]
+    $b=$\\[0.5cm]
+    \item Circle the row for the $y$-intercept.
+\end{enumerate}
+\vspace{1cm}
+
+In the following two problems, simplify by collecting like terms.
+\begin{multicols}{2}
+\item $3x^2-3x +5 -2x^2-x-4$ \vspace{3cm}
+\item $4(a^2-2a +1) -3(a^2-a+2)$ \vspace{3cm}
+\end{multicols}
+
+\newpage
+
+  \item After lunch on the day of the math test, Dr. Huson took 12 students for dessert. Some students wanted a snow cone, which cost \$2.50 each, and the others got cake, which cost \$3.00 each. The total cost was \$31.00. (Dr. Huson did not eat) How many students got each kind of dessert? \\[0.5cm]
+  Use $x$ for the number of snow cone orders and $y$ for the number of cake orders.
+  \begin{enumerate}
+    \item Complete the table of costs below. (the first row is done as a hint)
+
+    \renewcommand{\arraystretch}{1.6}
+    \begin{center}
+      \begin{tabular}{|c|c|r| r |r|}
+      \hline
+      $x$ & $y$ & cost for snow cones & cost for cake & total cost\\
+      \hline
+      0 & 12 & \$0.00 & \$36.00 & \$36.00 \\
+      \hline
+      2 & 10 &  &  &  \\
+      \hline
+      4 & 8 &  &  &   \\
+      \hline
+      6 & 6 &  &  &   \\
+      \hline
+      8 & 4 &  &  &   \\
+      \hline
+      10 & 2 &  &  &   \\
+      \hline
+      12 & 0 &  &  &   \\
+      \hline
+      \end{tabular}
+    \end{center}
+
+    \item Complete the two equations modeling the situation, one adding up to 12 people, the other adding up to \$31.00. \\[0.5cm]
+    \hspace{6cm} $x  + y  = \rule{2cm}{0.15mm}$ \\[0.5cm]
+    \hspace{3cm} $x \times \rule{2cm}{0.15mm} + y \times \rule{2cm}{0.15mm}= \rule{2cm}{0.15mm}$
+
+    \item Circle the row in the table that has the correct total. Write down how many students wanted ice cream and pie ($x$ and $y$).\\[0.5cm]
+    \hspace{6cm} $x = \rule{2cm}{0.15mm}$ \\[0.5cm]
+    \hspace{6cm} $y = \rule{2cm}{0.15mm}$
+
+    \item Check your answer.
+  \end{enumerate}
+
+\newpage
+
+  \begin{multicols}{2}
+    Distribute
+    \item $(x+2)(x+3)$ \vspace{2.5cm}
+    \item $(x+4)(x+4)$
+
+    Factor each expression
+    \item $x^2+8x+7$ \vspace{2.5cm}
+    \item $x^2+7x+10$
+  \end{multicols}
+
+\vspace{3cm}
+Solve for the value of $x$.
+
+\item   $5=\frac{1}{2}x+2x-10$ \vspace{3cm}
+
+
+\item Given $f(x)=3x+5$. Simplify $f(3)$. \vspace{4cm}
+\item Given $\displaystyle f(x)=-\frac{(6+3x)}{13}$. Simplify $f(-2)$.
+
+\newpage
+
+\end{enumerate}
+\end{document}
