@@ -134,5 +134,43 @@
     \end{tikzpicture}
     \end{center}
 
+\newpage
+\subsubsection*{Triangle congruence ($\triangle \cong$)}
+
+  \item Function notation: $A \rightarrow A'$ is pronounced ``A gets mapped to A prime," or ``A corresponds to A prime."
+
+  \item Given $\triangle ABC$, duplicate $\triangle ABC$ by duplicating each side. (``side-side-side" or ``SSS")
+  \begin{enumerate}
+    \item Construct $\overrightarrow{A'}$.
+    \item Circle $A'$ with radius $AB$.
+    \item Intersection $B'$.
+    \item Circle $A'$ with radius $AC$.
+    \item Circle $B'$ with radius $BC$.
+    \item Intersection $C'$.
+    \item $\triangle ABC \cong \triangle A'B'C'$ by the SSS $\triangle \cong$ Postulate.
+  \end{enumerate}
+  \begin{tikzpicture}[scale=0.6]
+    \draw [thick] (0,0)--(5.5,0)--(3,4)--cycle;
+    \draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
+    \draw [fill] (5.5,0) circle [radius=0.05] node[right]{$B$};
+    \draw [fill] (3,4) circle [radius=0.05] node[above]{$C$};
+    \draw[thick,red] ([shift=(-10:5.5)]0,0) arc (-10:10:5.5);
+    \draw[thick,red] ([shift=(45:5)]0,0) arc (45:65:5);
+    \draw[thick,red] ([shift=(110:4.72)]5.5,0) arc (110:130:5.5);
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.6]
+    \draw [dashed, thick] (0,0)--(5.5,0)--(3,4)--cycle;
+    \draw [->, thick] (0,0)--(7.5,0);
+    \draw [fill] (0,0) circle [radius=0.05] node[left]{$A'$};
+    \draw [fill] (5.5,0) circle [radius=0.05] node[below right]{$B'$};
+    \draw [fill] (3,4) circle [radius=0.05] node[above]{$C'$};
+    \draw[thick,red] ([shift=(-10:5.5)]0,0) arc (-10:10:5.5);
+    \draw[thick,red] ([shift=(45:5)]0,0) arc (45:65:5);
+    \draw[thick,red] ([shift=(110:4.72)]5.5,0) arc (110:130:5.5);
+  \end{tikzpicture}
+
+\item The Side-side-side triangle congruence postulate (SSS $\triangle \cong$).\\
+$\triangle ABC \cong \triangle A'B'C'$ iff $\overline{AB} \cong \overline{A'B'}, \overline{BC} \cong \overline{B'C'}, \text{ and } \overline{AC} \cong \overline{A'C'}$
+
   \end{enumerate}
 \end{document}
