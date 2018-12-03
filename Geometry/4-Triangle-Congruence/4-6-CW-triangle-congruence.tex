@@ -1,0 +1,93 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles}
+\usepackage{graphicx}
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepgfplotslibrary{statistics}
+%\usepackage{pgfplotstable}
+%\usepackage{tkz-fct}
+%\usepackage{venndiagram}
+\usepackage{multicol}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage \\Name: \hspace{1.5in}.\\}
+\lhead{BECA / Dr. Huson / 10th Grade Geometry\\* 3 December 2018}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+\subsubsection*{Classwork: Triangle congruence proofs}
+ \begin{enumerate}
+
+  \item Given $\triangle ABC$ and $\triangle EFG$ with $\angle A \cong \angle E$, $\overline{AB} \cong \overline{EF}$, and $\overline{AC} \cong \overline{EG}$. Prove $\triangle ABC \cong \triangle EFG$.\\[0.5cm]
+    \begin{tikzpicture}
+        \draw [thick]
+          (2,0)node[below]{$A$}--
+          (8,0)node[below]{$B$}--
+          (4,3)node[above]{$C$} --(2,0);
+      \end{tikzpicture}
+      \begin{tikzpicture}%[scale=0.7]
+        \draw [thick]%(0,0)node[below]{$A$}--
+        (2,0)node[below]{$E$}--
+        (8,0)node[below]{$F$}--
+        (4,3)node[above]{$G$} --(2,0);
+    \end{tikzpicture}
+    \begin{multicols}{2}
+      Statement \\ \rule{4cm}{0.15mm}\\
+      Reason \\ \rule{4cm}{0.15mm}
+    \end{multicols}
+    \begin{multicols}{2}
+      \begin{enumerate}
+        \item $\triangle ABC$, $\triangle EFG$ %\vspace{0.4cm}
+        \item $\angle A \cong \angle E$ %\vspace{0.4cm}
+        \item $\overline{AB} \cong \overline{EF}$, and $\overline{AC} \cong \overline{EG}$ %\vspace{0.4cm}
+        \item $\triangle ABC \cong \triangle EFG$ \\
+      \end{enumerate}
+      \begin{enumerate}
+        \item Given
+        \item \rule{4cm}{0.15mm}
+        \item \rule{4cm}{0.15mm}
+        \item \rule{4cm}{0.15mm}
+      \end{enumerate}
+    \end{multicols}
+
+  \item Given $\triangle ABP$ and $\triangle JKP$ with $\angle A \cong \angle E$, $\overline{AP} \cong \overline{JP}$, and $\overline{BP} \cong \overline{KP}$. Prove $\triangle ABP \cong \triangle JKP$.\\[0.5cm]
+    \begin{tikzpicture}
+        \draw [thick]
+          (-2,-1)node[left]{$A$}--
+          (3,3)node[right]{$K$}--
+          (2,-1)node[right]{$J$}--
+          (0,1.6)node[below]{$P$}--
+          (-3,3)node[left]{$B$}--(-2,-1);
+      \end{tikzpicture}
+    \begin{multicols}{2}
+      Statement \\ \rule{4cm}{0.15mm}\\
+      Reason \\ \rule{4cm}{0.15mm}
+    \end{multicols}
+    \begin{multicols}{2}
+      \begin{enumerate}
+        \item $\triangle ABC$, $\triangle EFG$ %\vspace{0.4cm}
+        \item $\angle A \cong \angle E$ %\vspace{0.4cm}
+        \item $\overline{AB} \cong \overline{EF}$, and $\overline{AC} \cong \overline{EG}$ %\vspace{0.4cm}
+        \item $\triangle ABC \cong \triangle EFG$ \\
+      \end{enumerate}
+      \begin{enumerate}
+        \item Given
+        \item \rule{4cm}{0.15mm}
+        \item \rule{4cm}{0.15mm}
+        \item \rule{4cm}{0.15mm}
+      \end{enumerate}
+    \end{multicols}
+
+
+\end{enumerate}
+\end{document}
