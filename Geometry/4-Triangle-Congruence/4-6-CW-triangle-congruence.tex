@@ -1,4 +1,4 @@
-\documentclass[12pt, oneside]{article}
+\documentclass[12pt, twoside]{article}
 \usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
@@ -14,15 +14,15 @@
 %\usepackage{pgfplotstable}
 %\usepackage{tkz-fct}
 %\usepackage{venndiagram}
+\usepackage{enumitem}
 \usepackage{multicol}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhf{}
-\rhead{\thepage \\Name: \hspace{1.5in}.\\}
-\lhead{BECA / Dr. Huson / 10th Grade Geometry\\* 4 December 2018}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
 
-\renewcommand{\headrulewidth}{0pt}
+\fancyhead[RO]{Name: \hspace{1.5in}}
+\lhead{BECA / Dr. Huson / 10th Grade Geometry\\* 4 December 2018}
 
 \begin{document}
 \subsubsection*{Classwork: Triangle congruence proofs}
@@ -41,18 +41,20 @@
         (8,0)node[below]{$F$}--
         (4,3)node[above]{$G$} --(2,0);
     \end{tikzpicture}
+
     \begin{multicols}{2}
-      Statement \\ \rule{4cm}{0.15mm}\\
-      Reason \\ \rule{4cm}{0.15mm}
+      \underline{Statement} \\
+      \underline{Reason}
     \end{multicols}
     \begin{multicols}{2}
-      \begin{enumerate}
-        \item $\triangle ABC$, $\triangle EFG$ %\vspace{0.4cm}
-        \item $\angle A \cong \angle E$ %\vspace{0.4cm}
-        \item $\overline{AB} \cong \overline{EF}$, and $\overline{AC} \cong \overline{EG}$ %\vspace{0.4cm}
+      \raggedcolumns
+      \begin{enumerate}[label={\arabic*)}]
+        \item $\triangle ABC$, $\triangle EFG$
+        \item $\angle A \cong \angle E$
+        \item $\overline{AB} \cong \overline{EF}$, and $\overline{AC} \cong \overline{EG}$
         \item $\triangle ABC \cong \triangle EFG$ \\
       \end{enumerate}
-      \begin{enumerate}
+      \begin{enumerate}[label={\arabic*)}]
         \item Given
         \item \rule{4cm}{0.15mm}
         \item \rule{4cm}{0.15mm}
@@ -69,25 +71,36 @@
           (0,0.6)node[below]{$P$}--
           (-3,3)node[left]{$B$}--(-2,-1);
       \end{tikzpicture}
+
     \begin{multicols}{2}
-      Statement \\ \rule{2.5cm}{0.15mm}\\
-      Reason \\ \rule{2.5cm}{0.15mm}
+      \underline{Statement} \\
+      \underline{Reason}
     \end{multicols}
     \begin{multicols}{2}
-      \begin{enumerate}
-        \item $\triangle ABC$, $\triangle JKP$ \vspace{0.4cm}
+      \raggedcolumns
+      \begin{enumerate}[label={\arabic*)}]
+        \item $\triangle ABC$, $\triangle JKP$
         \item \rule{4cm}{0.15mm}%$\angle A \cong \angle J$ and $\overline{AP} \cong \overline{JP}$ %\vspace{0.4cm}
         \item $\angle APB \cong \angle JPK$ %
-        \vspace{0.4cm}
+
         \item $\triangle ABP \cong \triangle JKP$
       \end{enumerate}
-      \begin{enumerate}
+      \begin{enumerate}[label={\arabic*)}]
         \item Given
         \item Given
         \item \rule{4cm}{0.15mm}
         \item \rule{4cm}{0.15mm}
       \end{enumerate}
     \end{multicols}
+
+\newpage
+\subsubsection*{List of theorem/situations for $\triangle \cong$ proofs}
+  \item Vertical angles w segment bisectors
+  \item Transversal corresponding
+  \item Transversal with shared side on transversal
+  \item Two inscribed in circle with vertical angles
+  \item Inscribed in circle triangle with external angle, showing arc measure relationship
+  \item Rotate triangle
 
 
 \end{enumerate}
