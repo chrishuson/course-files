@@ -1,4 +1,4 @@
-\documentclass[12pt, oneside]{article}
+\documentclass[12pt, twoside]{article}
 \usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
@@ -6,38 +6,38 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usetikzlibrary{quotes, angles}
+%\usetikzlibrary{quotes, angles}
+
 \usepackage{graphicx}
-%\usepackage{pgfplots}
-%\pgfplotsset{width=10cm,compat=1.9}
-%\usepgfplotslibrary{statistics}
-%\usepackage{pgfplotstable}
-%\usepackage{tkz-fct}
-%\usepackage{venndiagram}
+\usepackage{enumitem}
+\usepackage{multicol}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{\thepage \\Name: \hspace{1.5in}.\\}
-\lhead{BECA / Dr. Huson / Geometry 10th Grade\\* Learning trajectory: Trig}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
 
-\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{BECA / Dr. Huson / 10th Grade Geometry\\* Learning trajectory: Trig}
 
 \begin{document}
 \subsubsection*{Trig}
   \begin{enumerate}
-  \item calculate sine and cosine from diagram
+  \item calculate sine, cosine, tangent from diagram
   \item Calculator use, finding missing sides
   \item Find angle value using inverse function
-  \item Angle of elevation, depression, declination, incline
+  \item Angle of elevation, depression, declination, incline (in Regents scope?)
   \item Word problem interpretation
+  \item Sine and cosine are cofunctions, explain and apply
   \end{enumerate}
 
   \begin{enumerate}
     \subsubsection*{Diagrams}
     \item Sine and cosine
 
-
+  \item Sine and cosine are cofunctions, explain and apply\\
+  Given the right triangle $ABC$ with $m\angle C=90^\circ$. If $\sin A$ increases, will $\cos B$ increase, decrease, or stay the same? Explain why.\\
+  Draw a right triangle, labeling vertices with capital letters and opposite sides with small letters. Write down the trig functions as ratios, explaining that they are equal.
   \end{enumerate}
 
 \end{document}

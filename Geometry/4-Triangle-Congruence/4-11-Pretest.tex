@@ -1,4 +1,4 @@
-\documentclass[12pt, oneside]{article}
+\documentclass[12pt, twoside]{article}
 \usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
@@ -6,30 +6,23 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usetikzlibrary{quotes, angles}
-\usepackage{graphicx}
-%\usepackage{pgfplots}
-%\pgfplotsset{width=10cm,compat=1.9}
-%\usepgfplotslibrary{statistics}
-%\usepackage{pgfplotstable}
-%\usepackage{tkz-fct}
-%\usepackage{venndiagram}
-\usepackage{multicol}
+%\usetikzlibrary{quotes, angles}
 
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{\thepage \\Name: \hspace{1.5in}.\\}
-\lhead{BECA / Dr. Huson / Geometry 10th Grade\\* Unit 4: Triangle Congruence\\30 November 2018}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
 
-\renewcommand{\headrulewidth}{0pt}
+\fancyhead[RE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{3cm}}
+\fancyhead[L]{BECA / Dr. Huson / 10th Grade Geometry\\* Unit 4: Triangle Congruence\\10 December 2018}
 
 \begin{document}
-\subsubsection*{Take-home Test}
-
-\textit{Open notes, open book (including online materials). No working with other students or human help. Due Monday at the beginning of class.}
-
+\subsubsection*{Pre Test}
   \begin{enumerate}
 
 \item Given two parallel lines and a transversal, as shown. Apply the theorem, ``If a transversal intersects two parallel lines, then corresponding angles are congruent."
@@ -91,6 +84,31 @@
     \end{tikzpicture}
     \vspace{2cm}
 
+  \item In  $\triangle ABC$ shown below, side $\overline{AC}$ is extended to point $D$ with $m\angle DAB=(180-2x)^\circ$, $m\angle C=(x-10)^\circ$, and $m\angle B=(3x+10)^\circ$.
+    \begin{center}
+      \begin{tikzpicture}
+        \draw [thick](-1.5,0)node[below]{$D$}--
+          (1.8,0)node[below]{$A$}--
+          (9,0)node[below]{$C$}--
+          (4,3)node[above]{$B$} --(2,0);
+          \node at (2.2,0)[above left]{$(180-2x)^\circ$};
+          \node at (8.2,0)[above left]{$(x-10)^\circ$};
+          \node at (4.4,2.4)[below]{$(3x+10)^\circ$};
+      \end{tikzpicture}
+    \end{center}
+    What is $m\angle BAC$?
+
+    \item Using  a  compass  and  straightedge,  construct  the  median  to  side $\overline{AC}$ in $\triangle ABC$ below.\\ (Leave all construction marks.)
+      %\vspace{1cm}
+      \begin{center}
+      \begin{tikzpicture}
+        \draw [<->, thick]
+          (0,0) node[left]{$A$}--
+          (10,-2) node[right]{$B$}--
+          (4,-5) node[below]{$C$}
+          --cycle;
+      \end{tikzpicture}
+      \end{center}
 
   \item On the graph below, draw $\overline{AB}$, with $A(-1,5)$ and $B(7,0)$, labeling the end points. Determine and state the coordinates of the midpoint $M$ of $\overline{AB}$ and mark and label it on the graph.\\
     \begin{tikzpicture}[scale=.635]
@@ -100,6 +118,45 @@
     \end{tikzpicture}
     \vspace{1cm}
 
+  \subsubsection*{Midpoint on the $x$-$y$ plane}
+    \item In the diagram below, $\overleftrightarrow{AC}$ has endpoints with coordinates $A(-3,2)$ and $C(3, -7)$.
+      \begin{center} %4 quadrant regents grid
+      \begin{tikzpicture}[scale=.48]
+        \draw [help lines] (-8,-9) grid (8,5);
+        \draw [thick, <->] (-8.2,0) -- (8.4,0) node [below right] {$x$};
+        \draw [thick, <->] (0,-9.2)--(0,5.4) node [left] {$y$};
+        \draw [thick] (-3,2)--(3,-7);
+        \draw [fill] (-3,2) circle [radius=0.1] node[above left] {$A$};
+        \draw [fill] (3,-7) circle [radius=0.1] node[below right] {$C$};
+      \end{tikzpicture}
+      \end{center}
+      If $B$ is a point on  and $AB {:} BC = 1{:}2$,  what  are  the  coordinates
+  of $B$?
+
+\newpage
+\subsubsection*{Distance formula and slope}
+
+\item Triangle $\triangle DAN$ is graphed on the set of axes below. The vertices of $\triangle DAN$ have the coordinates $T(-1,-2)$, $E(8,1)$, and $N(3,6)$.
+  \begin{center} %4 quadrant regents grid
+  \begin{tikzpicture}[scale=.48]
+    \draw [help lines] (-10,-5) grid (10,10);
+    \draw [thick, <->] (-10.4,0) -- (10.4,0) node [below right] {$x$};
+    \draw [thick, <->] (0,-5.4)--(0,10.4) node [left] {$y$};
+    \draw [thick] (-1,-2) node[below] {$T$}--
+    (8,1) node[right] {$E$}--
+    (3,6) node[above] {$N$}--
+    cycle;
+    %\draw [fill] (5,0) circle [radius=0.1] node[above left] {$P$};
+  \end{tikzpicture}
+  \end{center}
+  \begin{enumerate}
+    \item Draw an altitude through point $N$ perpendicular to $\overline{TE}$.
+    \item What is the length of the altitude drawn through $N$?
+    \item What is the length of the base, $TE$?
+    \item Find the area of  $\triangle DAN$.
+  \end{enumerate}
+
+\newpage
   \item In a proof, each of the following statements are written. Write down the reason that would justify each step. \bigskip
     \begin{enumerate}
       \item $MN+NO= MN+LM$  \hspace{1.7cm} $\rule{5cm}{0.15mm}$ property  \bigskip

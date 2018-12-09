@@ -1,4 +1,4 @@
-\documentclass[12pt, oneside]{article}
+\documentclass[12pt, twoside]{article}
 \usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
@@ -6,22 +6,19 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usetikzlibrary{quotes, angles}
+%\usetikzlibrary{quotes, angles}
+
 \usepackage{graphicx}
-%\usepackage{pgfplots}
-%\pgfplotsset{width=10cm,compat=1.9}
-%\usepgfplotslibrary{statistics}
-%\usepackage{pgfplotstable}
-%\usepackage{tkz-fct}
-%\usepackage{venndiagram}
+\usepackage{enumitem}
+\usepackage{multicol}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{\thepage \\Name: \hspace{1.5in}.\\}
-\lhead{BECA / Dr. Huson / Geometry 10th Grade\\* Learning trajectory: Segments}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
 
-\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{BECA / Dr. Huson / 10th Grade Geometry\\* Learning trajectory: Segments}
 
 \begin{document}
 \subsubsection*{Segment addition and partition}
@@ -60,6 +57,21 @@
       \item Mark the point $R$, the midpoint of $\overline{QS}$.
       \item The point $P$ is collinear with $\overleftrightarrow{QS}$ such that $Q$ is the midpoint of $\overleftrightarrow{PS}$. Mark $P$ on the line.
       \end{enumerate}
+
+\subsubsection*{Midpoint on the $x$-$y$ plane}
+  \item In the diagram below, $\overleftrightarrow{AC}$ has endpoints with coordinates $A(-3,2)$ and $C(3, -7)$.
+    \begin{center} %4 quadrant regents grid
+    \begin{tikzpicture}[scale=.48]
+      \draw [help lines] (-8,-9) grid (8,5);
+      \draw [thick, <->] (-8.2,0) -- (8.4,0) node [below right] {$x$};
+      \draw [thick, <->] (0,-9.2)--(0,5.4) node [left] {$y$};
+      \draw [thick] (-3,2)--(3,-7);
+      \draw [fill] (-3,2) circle [radius=0.1] node[above left] {$A$};
+      \draw [fill] (3,-7) circle [radius=0.1] node[below right] {$C$};
+    \end{tikzpicture}
+    \end{center}
+    If $B$ is a point on  and $AB {:} BC = 1{:}2$,  what  are  the  coordinates
+of $B$?
 
 
 \subsubsection*{Segment addition algebra}
