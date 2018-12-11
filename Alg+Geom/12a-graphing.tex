@@ -1,0 +1,211 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+%\usetikzlibrary{quotes, angles}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+
+\fancyhead[RE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{3cm}}
+\fancyhead[L]{BECA / Dr. Huson / 10.3 Geometry\\* 10 December 2018}
+
+\begin{document}
+\subsubsection*{Do Now: Graphing inequalities}
+Show your work. For graphs, use a pencil and straight edge. Graph the inequality after filling in the values in the blanks and circling the correct types.
+  \begin{enumerate}
+
+    \item $\displaystyle y \leq \frac{3}{2} x -2 $
+
+        \vspace{0.25cm}
+        \begin{multicols}{2}
+          $y$-intercept $= \rule{2cm}{0.15mm}$ \\[0.5cm]
+          Slope \hspace{0.7cm} $= \rule{2cm}{0.15mm}$\\[0.5cm]
+
+          Line: \hspace{1cm} Solid ($=$) \hspace{0.45cm} Dashed ($\neq$)\\[0.5cm]
+          Shading: \hspace{0.3cm} Above ($y>$) \hspace{0.25cm} Below ($y<$)\\
+        \end{multicols}
+
+    \begin{center} %4 quadrant regents grid w T-Chart
+    \begin{tikzpicture}[scale=.635]
+      \draw [help lines] (-7,-7) grid (7,7);
+      \draw [thick, ->] (-7.2,0) -- (7.4,0) node [below right] {$x$};
+      \draw [thick, ->] (0,-7.2)--(0,7.4) node [left] {$y$};
+    \end{tikzpicture}
+    \end{center}
+
+    \item Solve for $y$, then complete. $\displaystyle \frac{2}{3} x+ y > -2 $
+
+        \vspace{3cm}
+        \begin{multicols}{2}
+          \raggedcolumns
+          $y$-intercept $= \rule{2cm}{0.15mm}$ \\[0.5cm]
+          Slope \hspace{0.7cm} $= \rule{2cm}{0.15mm}$\\
+
+          Line: \hspace{1cm} Solid ($=$) \hspace{0.45cm} Dashed ($\neq$)\\[0.5cm]
+          Shading: \hspace{0.3cm} Above ($y>$) \hspace{0.25cm} Below ($y<$)
+        \end{multicols}
+
+    \newpage
+
+
+\subsection*{Rate of change}
+
+\item Find the slope of the function from the ratio of the line differences.
+
+  \begin{multicols}{2}
+  \begin{enumerate}
+    \item
+      \begin{tabular}{|c|r|}
+      \hline
+      $x$ & $f(x)$\\
+      \hline
+      -2 & -2 \\
+      \hline
+      -1 & 0 \\
+      \hline
+      0 & 2 \\
+      \hline
+      1 & 4 \\
+      \hline
+      2 & 6 \\
+      \hline
+      \end{tabular}\\[0.85cm]
+
+      Change in $y$ $= \rule{2cm}{0.15mm}$ \\[0.5cm]
+      Change in $x$ $= \rule{2cm}{0.15mm}$ \\[0.5cm]
+      Slope $= \rule{2cm}{0.15mm}$\\
+
+
+    \item
+      \begin{tabular}{|c|r|}
+      \hline
+      $x$ & $f(x)$\\
+      \hline
+      -4 & 9 \\
+      \hline
+      -2 & 6 \\
+      \hline
+      0 & 3 \\
+      \hline
+      2 & 0 \\
+      \hline
+      4 & -3 \\
+      \hline
+      \end{tabular}\\[0.85cm]
+
+      Change in $y$ $= \rule{2cm}{0.15mm}$ \\[0.5cm]
+      Change in $x$ $= \rule{2cm}{0.15mm}$ \\[0.5cm]
+      Slope $= \rule{2cm}{0.15mm}$\\
+
+
+    \end{enumerate}
+    \end{multicols}
+
+  \item Find the slope of the function. If the rate of change is not constant, write, ``Non-linear. The rate of change is not constant."
+
+    \begin{multicols}{2}
+    \begin{enumerate}
+      \item
+        \begin{tabular}{|c|r|}
+          \hline
+          $x$ & $f(x)$\\
+          \hline
+          -3 & 0 \\
+          \hline
+          -1 & -2 \\
+          \hline
+          0 & -3 \\
+          \hline
+          1 & -4 \\
+          \hline
+          3 & -6 \\
+          \hline
+        \end{tabular}\\[0.85cm]
+
+        Slope $= \rule{2cm}{0.15mm}$\\
+
+
+      \item
+        \begin{tabular}{|c|r|}
+          \hline
+          $x$ & $f(x)$\\
+          \hline
+          -4 & 7 \\
+          \hline
+          -2 & 5 \\
+          \hline
+          0 & 3 \\
+          \hline
+          2 & 5 \\
+          \hline
+          4 & 7 \\
+          \hline
+        \end{tabular}\\[0.85cm]
+
+        Slope $= \rule{2cm}{0.15mm}$\\
+
+      \end{enumerate}
+    \end{multicols}
+
+    \newpage
+          \subsubsection*{Graphing quadratic functions}
+
+          \item Given the quadratic function $f(x)=x^2-2$, find the row differences.
+            \renewcommand{\arraystretch}{1.6}
+              \begin{center}
+                \begin{tabular}{|c|r|}
+                \hline
+                $x$ & $f(x)$\\
+                \hline
+                -3 & 7 \\
+                \hline
+                -2 & 2 \\
+                \hline
+                -1 & -1 \\
+                \hline
+                0 & -2 \\
+                \hline
+                1 & -1 \\
+                \hline
+                2 & 2 \\
+                \hline
+                3 & 7 \\
+                \hline
+                \end{tabular}
+              \end{center}
+          Graph the function as a line over the domain $-3 \leq x \leq 3$.
+
+          \begin{center} %4 quadrant regents grid w T-Chart
+          \begin{tikzpicture}[scale=.635]
+            \draw [help lines] (-10,-10) grid (10,10);
+            \draw [thick, ->] (-10.2,0) -- (10.4,0) node [below right] {$x$};
+            \draw [thick, ->] (0,-10.2)--(0,10.4) node [left] {$y$};
+          \end{tikzpicture}
+          \end{center}
+
+
+\end{enumerate}
+\end{document}
+
+      In the following two problems, solve for the value of $x$.
+      \begin{multicols}{2}
+      \item   $11=2x+x-1$ \vspace{3cm}
+      \item   $\frac{1}{3}(6-3x)=11$ %\vspace{3cm}
+      \end{multicols}
+
+
+    \subsubsection*{Simplify each expression (``Collect like terms")}
+      \item $x^2-3x -4 +2x^2+2x+4$ \vspace{1.5cm}
+      \item $5(a^2-3a +1) -2(a^2+2a-3)$ \vspace{3cm}
