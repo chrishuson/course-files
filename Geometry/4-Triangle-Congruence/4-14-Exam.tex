@@ -60,7 +60,7 @@
 
 \newpage
 
-    \item Given $\triangle ABC$ and $\triangle DEC$ with $\angle B \cong \angle E$. $C$ is the midpoint $\overline{BE}$.\\ Prove $\triangle ABC \cong \triangle DEC$.\\[0.5cm]
+    \item Given $\triangle ABC$ and $\triangle DEC$ with $\angle B \cong \angle E$. $C$ is the midpoint of $\overline{BE}$.\\ Prove $\triangle ABC \cong \triangle DEC$.\\[0.5cm]
        \begin{tikzpicture}
            \draw [thick]
              (-1,2)node[right]{$B$}--
@@ -193,7 +193,7 @@
     \item The image of triangle $ABC$ after a translation is $\triangle A'B'C'$. Is the area of the triangle greater, smaller, or the same after the translation? Justify your answer.
 
 \newpage
-    \item In  $\triangle ABC$ shown below, side $\overline{AC}$ is extended to point $D$ with $m\angle DAB=(180-4x)^\circ$, $m\angle C=(x+14)^\circ$, and $m\angle B=(6x-9)^\circ$. \\[1cm]
+    \item In  $\triangle ABC$ shown below, side $\overline{AC}$ is extended to point $D$ with $m\angle DAB=(180-4x)^\circ$, $m\angle C=(x+2)^\circ$, and $m\angle B=(6x-9)^\circ$. \\[1cm]
     \begin{center}
         \begin{tikzpicture}
           \draw [thick](-1.5,0)node[below]{$D$}--
@@ -201,34 +201,34 @@
             (9,0)node[below]{$C$}--
             (4,3)node[above]{$B$} --(2,0);
             \node at (2.2,0)[above left]{$(180-4x)^\circ$};
-            \node at (8.2,0)[above left]{$(x+14)^\circ$};
+            \node at (8.2,0)[above left]{$(x+2)^\circ$};
             \node at (4.4,2.4)[below]{$(6x-9)^\circ$};
         \end{tikzpicture}
-      \end{center}
+      \end{center} \vspace{0.5cm}
       What is $m\angle BAC$?
 
   \newpage
 
 
-  \item Given right $\triangle JKL$ with $\overline{JK} \perp \overline{KL}$, $JL=9$, $m\angle J=32^\circ$. Find the length $JK$.
+  \item Given right $\triangle JKL$ with $\overline{JK} \perp \overline{KL}$, $JL=9$, $m\angle J=32^\circ$. Find the length $JK$, \emph{rounded to the nearest thousandth}.
     \begin{center}
       \begin{tikzpicture}[scale=0.7]
-        \draw [thick](0,0)--(7,0)--(7,3)--(0,0);
-        \draw [fill] (0,0) circle [radius=0.05] node[below]{$J$};
-        \draw [fill] (7,0) circle [radius=0.05] node[below]{$K$};
-        \draw [fill] (7,3) circle [radius=0.05] node[above right]{$L$};
+        \draw [thick]
+        (0,0) node[below]{$J$}--
+        (7,0)  node[below]{$K$}--
+        (7,3) node[above right]{$L$}--cycle;
       \end{tikzpicture}
     \end{center}
 
     \vspace{4cm}
 
 
-    \item In the diagram below, $\overleftrightarrow{AC}$ has endpoints with coordinates $A(-2,3)$ and $C(8, -2)$.
+    \item Spicy: In the diagram below, $\overleftrightarrow{AC}$ has endpoints with coordinates $A(-2,3)$ and $C(8, -2)$.
       \begin{center} %4 quadrant regents grid
         \begin{tikzpicture}[scale=.48]
-          \draw [help lines] (-9,-7) grid (9,7);
-          \draw [thick, <->] (-9.4,0) -- (9.4,0) node [below right] {$x$};
-          \draw [thick, <->] (0,-7.4)--(0,7.4) node [left] {$y$};
+          \draw [help lines] (-7,-5) grid (9,7);
+          \draw [thick, <->] (-7.4,0) -- (9.4,0) node [below right] {$x$};
+          \draw [thick, <->] (0,-5.4)--(0,7.4) node [left] {$y$};
           \draw [thick] (-2,3)--(8, -2);
           \draw [fill] (-2,3) circle [radius=0.1] node[above left] {$A$};
           \draw [fill] (8, -2) circle [radius=0.1] node[below right] {$C$};
@@ -241,12 +241,12 @@
 \newpage
 
 
-  \item Triangle $\triangle DAN$ is graphed on the set of axes below. The vertices of $\triangle DAN$ have the coordinates $T(-1,-2)$, $E(8,1)$, and $N(3,6)$.
+  \item Spicy: Triangle $\triangle DAN$ is graphed on the set of axes below. The vertices of $\triangle DAN$ have the coordinates $T(-1,-2)$, $E(8,1)$, and $N(3,6)$.
     \begin{center} %4 quadrant regents grid
     \begin{tikzpicture}[scale=.48]
-      \draw [help lines] (-10,-5) grid (10,10);
-      \draw [thick, <->] (-10.4,0) -- (10.4,0) node [below right] {$x$};
-      \draw [thick, <->] (0,-5.4)--(0,10.4) node [left] {$y$};
+      \draw [help lines] (-8,-5) grid (10,9);
+      \draw [thick, <->] (-8.4,0) -- (10.4,0) node [below right] {$x$};
+      \draw [thick, <->] (0,-5.4)--(0,9.4) node [left] {$y$};
       \draw [thick] (-1,-2) node[below] {$T$}--
       (8,1) node[right] {$E$}--
       (3,6) node[above] {$N$}--
@@ -255,7 +255,7 @@
     \end{tikzpicture}
     \end{center}
     \begin{enumerate}
-      \item Draw an altitude through point $N$ perpendicular to $\overline{TE}$. \vspace{0.5cm}
+      \item Draw an altitude through point $N$ perpendicular to $\overline{TE}$.
       \item What is the length of the altitude drawn through $N$? \vspace{3.5cm}
       \item What is the length of the base, $TE$?  \vspace{3.5cm}
       \item Find the area of  $\triangle DAN$.
