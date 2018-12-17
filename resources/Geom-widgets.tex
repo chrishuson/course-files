@@ -80,16 +80,29 @@ What is the area of $\triangle DAN$?
 
 \begin{figure} %[!htbp] First quadrant with axes
   \caption{$x$ and $y$ axes for grid}
+  \centering
 \begin{tikzpicture}[scale=0.4]
   \draw [help lines] (0,0) grid (10,10);
-  \draw [thick, <->] (0,10.2) node [left] {$y$}
-       -- (0,0) -- (10.2,0) node [below right] {$x$};
+  \draw [thick, <->] (0,10.4) node [left] {$y$}
+       -- (0,0) -- (10.4,0) node [below right] {$x$};
   \draw[fill] (2,2) circle  [radius=0.05]
        node[below left] (2, 2) {$A$};
 \end{tikzpicture}
 \end{figure}
 
-\begin{tikzpicture}[scale=1] %grid with numbered axes, IB cm paper.
+\subsubsection*{plot functions}
+Use brackets around expressions, especially those having parenthesis\\
+\begin{tikzpicture}[domain=0:4]
+  \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
+  \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};
+  \draw[->] (0,-1.2) -- (0,4.2) node[above] {$f(x)$};
+  \draw[color=red] plot (\x,\x) node[right] {$f(x) =x$};
+  % \x r means to convert ’\x’ from degrees to _r_adians:
+  \draw[color=blue] plot (\x,{sin(\x r)}) node[right] {$f(x) = \sin x$}; \draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
+\end{tikzpicture}
+
+Axis numbering\\
+\begin{tikzpicture}[scale=0.7] %grid with numbered axes, IB cm paper.
   \draw [thick, color=black,, xstep=1.0cm,ystep=1.0cm] (-5.5,-1.5) grid (5.5,7.5);
   \draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-5.5,-1.5) grid (5.5,7.5);
   \draw [thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
@@ -120,7 +133,7 @@ What is the area of $\triangle DAN$?
 \newpage
 
 
-\subsection*{Drawing lines and shapes}
+\subsubsection*{Drawing lines and shapes}
 tikz draw command, node labeling function\\
 \begin{tikzpicture}
   \draw [-, thick] (1,0)--(5,0);
@@ -182,7 +195,57 @@ Given $\triangle ABC$ with $\overline{AC} \cong \overline{BC}$. $AC=x+7$ and $BC
 \end{tikzpicture}
 \end{center}
 
-\subsection*{Complex Regents angle problems}
+\subsubsection*{Triangles}
+
+Shift using coordinates\\
+\begin{tikzpicture}
+  \coordinate [label=above:$A$](A) at (30:3);
+  \coordinate [label=left:$B$](B) at (0, 0);
+  \coordinate [label=right:$C$](C) at (-10:3.5);
+  \draw [thick] (A)--(B)--(C)--cycle;
+
+  \draw [thick, red, xshift=5cm, yshift=2cm] (A) node[above]{$D$}--
+  (0,0) node[left]{$E$}--
+  (-10:3.5) node[right]{$F$}--cycle;
+\end{tikzpicture}
+
+Shift and rotate\\
+\begin{tikzpicture}
+  \coordinate [label=above:$A$](A) at (30:3);
+  \coordinate [label=left:$B$](B) at (0, 0);
+  \coordinate [label=right:$C$](C) at (-10:3.5);
+  \draw [thick] (A)--(B)--(C)--cycle;
+
+  \draw [thick, red, xshift=5cm, yshift=2cm, rotate=45] (30:3) node[above]{$D$}--
+  (0,0) node[left]{$E$}--
+  (-10:3.5) node[right]{$F$}--cycle;
+\end{tikzpicture}
+
+Scale\\
+\begin{tikzpicture}
+  \coordinate [label=above:$A$](A) at (30:3);
+  \coordinate [label=left:$B$](B) at (0, 0);
+  \coordinate [label=right:$C$](C) at (-10:3.5);
+  \draw [thick] (A)--(B)--(C)--cycle;
+
+  \draw [dashed, red, scale=2] (30:3) node[above]{$D$}--
+  (0,0) node[left]{$E$}--
+  (-10:3.5) node[right]{$F$}--cycle;
+\end{tikzpicture}
+
+Reflect\\
+\begin{tikzpicture}
+  \draw [help lines] (-5,-5) grid (5,5);
+  \coordinate [label=above:$A$](A) at (30:3);
+  \coordinate [label=above right:$B$](B) at (0, 0);
+  \coordinate [label=right:$C$](C) at (-70:5);
+  \draw [thick] (A)--(B)--(C)--cycle;
+  \draw [dashed, red, xscale=-1] (30:3) node[above]{$D$}--
+  (0,0) node[above left]{$E$}--
+  (-70:5) node[right]{$F$}--cycle;
+\end{tikzpicture}
+
+\subsubsection*{Complex Regents angle problems}
 
 \begin{tikzpicture}%[scale=0.5] %Regents June 2018 #2
   \draw [->, thick] (6.5,0) node[below]{$E$} --
