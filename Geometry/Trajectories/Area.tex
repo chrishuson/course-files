@@ -23,83 +23,120 @@
 \begin{document}
 \subsubsection*{Area, perimeter, volume}
   \begin{enumerate}
-  \item Rectangle, square area and perimeter
-  \item Circle area and circumference
-  \item Sector areas, arc length
-  \item Solve for parameter versus calculate result
-  \item Compound shapes (including margins)
-  \item Distance on the coordinate plane
-  \begin{enumerate}
-    \item Plotting, labeling points, etc.
-    \item Horizontal \& vertical distances
-    \item Pythagorean formula
-    \item Applications: Rhombus, isosceles $\triangle$,
-    \item Radicals, $\pi$ and rounding
-    \end{enumerate}
-  \item Triangle area, perimeter (formula sheet)
-  \item Volume: prism, cylinder, cone
-  \item Surface area
-  \item Scaling shapes (eg. rectangle, triangles including midline)
+    \item Prior knowledge
+      \begin{enumerate}
+        \item Area: rectangle, square, triangle, parallelogram; area and perimeter (formula sheet)
+        \item Solve for parameter versus calculate result
+      \end{enumerate}
+
+    \item Distance on the coordinate plane
+      \begin{enumerate}
+        \item Plotting, labeling points, etc.
+        \item Horizontal \& vertical distances
+        \item Pythagorean formula
+        \item Applications: Rhombus, isosceles $\triangle$,
+        \item Radicals, $\pi$ and rounding
+      \end{enumerate}
+
+    \item Volume: prism, cylinder, cone
+      \begin{enumerate}
+        \item Compound shapes (including margins)
+        \item Surface area
+      \end{enumerate}
+
+    \item Circle area and circumference
+      \begin{enumerate}
+        \item Sector areas, arc length
+        \item Radian / degree conversion
+      \end{enumerate}
+
+    \item Scaling shapes (eg. rectangle, triangles including midline)
   \end{enumerate}
 
-  \begin{enumerate}
-    \subsubsection*{Basic shapes}
-    \item Regents problems, January 2017, \#26, 34, 29?
+\begin{enumerate}
+  \subsubsection*{Basic shapes}
+  \item Regents problems, January 2017, \#26, 34, 29?
 
-\subsubsection*{Distance on the coordinate plane, proofs}
+  \subsubsection*{Distance on the coordinate plane}
+  \item Given $P(-2,9)$ and $Q(3,-3)$, find the length of $\overline{PQ}$.
 
-\item Triangle $ABC$ has vertices with coordinates A(,), B(,), and C(,). Prove that $\triangle ABC$ is an isoscelese triangle but not an equilateral triangle. (The use of the set of axes below is optional.)\\
-Note: state both conclusions for full credit.
+  \subsubsection*{Distance on the coordinate plane: proofs}
 
-  \item Triangle $\triangle DAN$ is graphed on the set of axes below. The vertices of $\triangle DAN$ have the coordinates $T(-1,-2)$, $E(8,1)$, and $N(3,6)$.
-    \begin{center} %4 quadrant regents grid
-    \begin{tikzpicture}[scale=.48]
-      \draw [help lines] (-10,-5) grid (10,10);
-      \draw [thick, <->] (-10.4,0) -- (10.4,0) node [below right] {$x$};
-      \draw [thick, <->] (0,-5.4)--(0,10.4) node [left] {$y$};
-      \draw [thick] (-1,-2) node[below] {$T$}--
-      (8,1) node[right] {$E$}--
-      (3,6) node[above] {$N$}--
-      cycle;
-      %\draw [fill] (5,0) circle [radius=0.1] node[above left] {$P$};
-    \end{tikzpicture}
-    \end{center}
-    \begin{enumerate}
-      \item Draw an altitude through point $N$ perpendicular to $\overline{TE}$.
-      \item What is the length of the altitude drawn through $N$?
-      \item What is the length of the base, $TE$?
-      \item Find the area of  $\triangle DAN$.
-    \end{enumerate}
+    \item Triangle $ABC$ has vertices with coordinates A(,), B(,), and C(,). Prove that $\triangle ABC$ is an isoscelese triangle but not an equilateral triangle. (The use of the set of axes below is optional.)\\
+    Note: state both conclusions for full credit.
 
-  \item Given the quadrilateral $RSTU$ with $R(1,3)$, $S(4,7)$, $T(4,2)$, and $U(1,-2)$.
-    \begin{enumerate}
-      \item Plot and label $RSTU$ on the grid.
-      \item Using the distance formula or otherwise, calculate $RS$, $ST$, $TU$, and $RU$.
-      \item Definition: If a quadrilateral has four congruent sides, then it is a rhombus.\\[0.5cm]
-      Prove that $RSTU$ is a rhombus.
-    \end{enumerate}
-    \begin{center} %4 quadrant regents grid
-    \begin{tikzpicture}[scale=.635]
-      \draw [help lines] (-5,-5) grid (8,8);
-      \draw [thick, ->] (-5.2,0) -- (8.4,0) node [below right] {$x$};
-      \draw [thick, ->] (0,-5.2)--(0,8.4) node [left] {$y$};
-    \end{tikzpicture}
-    \end{center}
+    \item Triangle $\triangle TEN$ is graphed on the set of axes below. The vertices of $\triangle TEN$ have the coordinates $T(-1,-2)$, $E(8,1)$, and $N(3,6)$.
+      \begin{center} %4 quadrant regents grid
+      \begin{tikzpicture}[scale=.48]
+        \draw [help lines] (-10,-5) grid (10,10);
+        \draw [thick, <->] (-10.4,0) -- (10.4,0) node [below right] {$x$};
+        \draw [thick, <->] (0,-5.4)--(0,10.4) node [left] {$y$};
+        \draw [thick]
+          (-1,-2) node[below] {$T$}--
+          (8,1) node[right] {$E$}--
+          (3,6) node[above] {$N$}--cycle;
+      \end{tikzpicture}
+      \end{center}
+      \begin{enumerate}
+        \item Draw an altitude through point $N$ perpendicular to $\overline{TE}$.
+        \item What is the length of the altitude drawn through $N$?
+        \item What is the length of the base, $TE$?
+        \item Find the area of  $\triangle TEN$.
+      \end{enumerate}
 
-  \item Given the quadrilateral $RECT$ with $R(-4,1)$, $E(8,1)$, $C(8,6)$, and $T(-4,6)$.
-    \begin{enumerate}
-      \item Plot and label $RECT$ on the grid.
-      \item Using the distance formula, calculate the length of the two diagonals $RC$ and $ET$.
-      \item Theorem: If the diagonals of a quadrilateral are congruent, then it is a rectangle.\\[0.5cm]
-      Prove that $RECT$ is a rectangle.
-    \end{enumerate}
-    \begin{center} %4 quadrant regents grid
-    \begin{tikzpicture}[scale=.635]
-      \draw [help lines] (-7,-5) grid (10,8);
-      \draw [thick, ->] (-7.2,0) -- (10.4,0) node [below right] {$x$};
-      \draw [thick, ->] (0,-5.2)--(0,8.4) node [left] {$y$};
-    \end{tikzpicture}
-    \end{center}
+      \item Given the quadrilateral $RSTU$ with $R(1,3)$, $S(4,7)$, $T(4,2)$, and $U(1,-2)$.
+        \begin{enumerate}
+          \item Plot and label $RSTU$ on the grid.
+          \item Using the distance formula or otherwise, calculate $RS$, $ST$, $TU$, and $RU$.
+          \item Definition: If a quadrilateral has four congruent sides, then it is a rhombus.\\[0.5cm]
+          Prove that $RSTU$ is a rhombus.
+        \end{enumerate}
+        \begin{center} %4 quadrant regents grid
+        \begin{tikzpicture}[scale=.635]
+          \draw [help lines] (-5,-5) grid (8,8);
+          \draw [thick, ->] (-5.2,0) -- (8.4,0) node [below right] {$x$};
+          \draw [thick, ->] (0,-5.2)--(0,8.4) node [left] {$y$};
+        \end{tikzpicture}
+        \end{center}
+
+    \item Given the quadrilateral $RECT$ with $R(-4,1)$, $E(8,1)$, $C(8,6)$, and $T(-4,6)$.
+      \begin{enumerate}
+        \item Plot and label $RECT$ on the grid.
+        \item Using the distance formula, calculate the length of the two diagonals $RC$ and $ET$.
+        \item Theorem: If the diagonals of a quadrilateral are congruent, then it is a rectangle.\\[0.5cm]
+        Prove that $RECT$ is a rectangle.
+      \end{enumerate}
+      \begin{center} %4 quadrant regents grid
+      \begin{tikzpicture}[scale=.635]
+        \draw [help lines] (-7,-5) grid (10,8);
+        \draw [thick, ->] (-7.2,0) -- (10.4,0) node [below right] {$x$};
+        \draw [thick, ->] (0,-5.2)--(0,8.4) node [left] {$y$};
+      \end{tikzpicture}
+      \end{center}
+
+    \subsubsection*{Circle area and circumference}
+      \item The diagram below shows the circle $O$ with radii $\overline{OA}$ and $\overline{OB}$. The measure of angle $AOB$ is $120^\circ$, and the length of a radius is 6 inches.
+      \begin{center}
+      \begin{tikzpicture}
+        \draw [thick] (0,0) circle[radius=3cm];
+        \draw [thick, -]
+          (110:3)node[above]{$A$} --
+          (0,0) node [below left]{$O$}--
+          (-10:3)node[right]{$B$};
+          \draw [fill] (0,0) circle [radius=0.07];
+        \node at (1.5,-0.2)[below] {6};
+      \end{tikzpicture}
+      \end{center}
+      Which expression represents the length of arc $AB$, in inches?
+      \begin{multicols}{2}
+        \begin{enumerate}
+          \item $\displaystyle \frac{120}{360}(6\pi)$
+          \item $120(6)$
+          \item $\displaystyle \frac{1}{3}(36\pi)$
+          \item $\displaystyle \frac{1}{3}(12\pi)$
+        \end{enumerate}
+    \end{multicols}
+    %\includegraphics[width=0.85\textwidth]{Circle_JN2018-22.png}
 
   \end{enumerate}
 
