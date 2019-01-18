@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  17 JAN 2019 11:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  18 JAN 2019 11:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -521,15 +521,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2]
+] [2] [3]
 
-./13-inequalities-v6.tex:57: LaTeX Error: \begin{enumerate} on input line 27 ended by \end{document}.
+./13-inequalities-v6.tex:62: LaTeX Error: \begin{enumerate} on input line 26 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 \end{document}
+l.62 \end{document}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -538,21 +538,21 @@ or  <return>  to continue without it.
 (./13-inequalities-v6.aux) )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 27 (\begingroup)
+### semi simple group (level 1) entered at line 26 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
  13745 strings out of 492649
- 265424 string characters out of 6129622
+ 265437 string characters out of 6129622
  321239 words of memory out of 5000000
  17353 multiletter control sequences out of 15000+600000
- 9197 words of font info for 35 fonts, out of 8000000 for 9000
+ 8592 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,54p,399b,709s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,54p,399b,717s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on 13-inequalities-v6.pdf (2 pages, 54662 bytes).
+Output written on 13-inequalities-v6.pdf (3 pages, 55673 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 37 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

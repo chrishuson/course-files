@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1547743511 "13-inequalities-v6.tex" "13-inequalities-v6.pdf" "13-inequalities-v6" 1547743512
+["pdflatex"] 1547830184 "13-inequalities-v6.tex" "13-inequalities-v6.pdf" "13-inequalities-v6" 1547830185
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -132,8 +132,8 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1523934516 4220280 10cab8fbd7c5a7c52aba9917e190d018 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "13-inequalities-v6.aux" 1547743511 30 00c4328e8c6c75fce40642ef2bcfb215 ""
-  "13-inequalities-v6.tex" 1547743506 1620 eeca3bc783373c446bee4800d78472dc ""
+  "13-inequalities-v6.aux" 1547830185 30 00c4328e8c6c75fce40642ef2bcfb215 ""
+  "13-inequalities-v6.tex" 1547830179 1859 ab138b00a7133319df187f83acc79a0a ""
   (generated)
   "13-inequalities-v6.pdf"
   "13-inequalities-v6.log"
