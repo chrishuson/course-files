@@ -1,0 +1,117 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+%\usetikzlibrary{quotes, angles}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+
+\fancyhead[RE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{3cm}}
+\fancyhead[L]{BECA / Dr. Huson / 12.1 IB Math SL\\* 22 January 2019}
+
+\begin{document}
+\subsubsection*{Spiral Review: 6-1 P1 (No Calculator) Calculus Tangents}
+ \begin{enumerate}
+
+  \item 10N.1.sl.TZ0.2\\
+  Let $g(x)=2x \sin x$.
+  \begin{enumerate}
+    \item Find $g'(x)$ [4 marks]
+    \item Find the gradient of the graph of $g$ at $x=\pi$. [3 marks]
+  \end{enumerate}
+
+  \item 12M.1.sl.TZ1.3\\
+  Let $f(x)=e^{6x}$.
+  \begin{enumerate}
+    \item Write down $f'(x)$ [1 mark]
+    \item The tangent to the graph of $f$ at the point $P(0,b)$ has gradient $m$.  [4 marks]
+    \begin{enumerate}
+      \item Show that $m=6$.
+      \item Find $b$.
+    \end{enumerate}
+    \item Hence, write down the equation of this tangent. [1 mark]
+  \end{enumerate}
+
+  \item 09M.1.sl.TZ1.3\\
+  Let $f(x)=e^{x} \cos x$. Find the gradient of the normal to the curve of $f$ at $x= \pi$.
+
+  \item 13M.1.sl.TZ1.3\\
+  Consider $f(x)=x^2 \sin x$.
+  \begin{enumerate}
+    \item Find $f'(x)$. [4 marks]
+    \item Find the gradient of the curve of $f$ at $x= \frac{\pi}{2}$. [3 marks]
+  \end{enumerate}
+
+  \item 12N.1.sl.TZ0.4\\
+  Part of the graph of $f(x)= ax^3-6x^2$ is shown below.
+  \begin{center}
+    \begin{tikzpicture}[scale=3]
+      \draw [thick, ->] (-0.8,0) -- (1.8,0) node [below] {$x$};
+      \draw [thick, ->] (0,-2) -- (0,0.5) node [left] {$y$};
+      \draw[thick, domain=-0.45:1.25] plot[samples=100](\x, {5*(\x)^3 - 6*(\x)^2});
+      \draw[dashed] (1,0)node[above]{$1$} --(1,-1) node[right]{P};
+      \node at (1,-1) {\textbullet};
+    \end{tikzpicture}
+  \end{center}
+
+  The point $P$ lies on the graph of $f$. At $P$, $x=1$.
+  \begin{enumerate}
+    \item Find $f'(x)$. [2 marks]
+    \item The graph of $f$ has a gradient of 3 at the point $P$. Find the value of $a$. [4 marks]
+  \end{enumerate}
+
+  \item 17N.1.sl.TZ0.5\\
+  Let $f(x)=1+e^{-x}$ and $g(x)=2x+b$, for $x \in \mathbb{R}$, where $b$ is a constant.
+  \begin{enumerate}
+    \item Find $(f \circ g)(x)$. [2 marks]
+    \item Given that $\displaystyle \lim_{n \rightarrow \infty} (f \circ g)(x) = -3$, find the value of $b$. [4 marks]
+  \end{enumerate}
+
+  \item 10M.1.sl.TZ2.5 [6 marks]\\
+  Let $f(x)=kx^4$. The point $P(1,k)$ lies on the curve of $f$. At $P$, the normal to the curve is parallel to $y=- \frac{1}{8} x$. Find the value of $k$.
+
+  \item 13N.1.sl.TZ0.6 [6 marks]\\
+  Let $f(x)=e^{2x}$. The line $L$ is the tangent to the curve of $f$ at $(1,e^2)$.\\
+  Find the equation of $L$ in the form $y=ax+b$.
+
+  \item 17M.1.sl.TZ1.6\\
+  The following diagram shows the graph of $f'$, the derivative of $f$.
+  \begin{center}
+    \begin{tikzpicture}[y=0.5cm]
+      \draw [thick, ->] (-4,0) -- (10.5,0) node [below right] {$x$};
+      \draw [thick, ->] (0,-12) -- (0,9) node [left] {$y$};
+      \foreach \x in {-4,..., 10}
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,0pt) node[below=4pt]  {$\x$};
+      \foreach \y in {-12,-10,...,8}
+      \draw[shift={(0,\y)},color=black] (-3pt,0pt) -- (0pt,0pt) node[left=3pt]  {$\y$};
+
+      \draw[thick, domain=-2:9] plot[samples=100](\x, {-0.104*(\x+0.9118)*(\x-6)^2});
+      \draw [fill] (1.39,-5.09) circle [radius=0.05cm] node[below] {$A$};
+      \draw [fill] (4,-2.01) circle [radius=0.05cm] node[below right]{$(4,-2)$};
+      \draw [fill] (6,0) circle [radius=0.05cm] node[above] {$B$};
+           %\draw[dashed] (1,0)node[above]{$1$} --(1,-1) node[right]{P};
+    \end{tikzpicture}
+  \end{center}
+
+  The graph of $f'$ has a local minimum at $A$, a local maximum at $B$ and passes through $(4,2)$. The point $P(4,3)$ lies on the graph of the function, $f$.
+  \begin{enumerate}
+    \item Write down the gradient of the curve of $f$ at $P$. [1 mark]
+    \item Find the equation of the normal to the curve of $f$ at $P$. [3 marks]
+    \item Determine the concavity of the graph of $f$ when $4<x<5$ \textbf{and} justify your answer. [2 marks]
+  \end{enumerate}
+
+
+\end{enumerate}
+\end{document}
