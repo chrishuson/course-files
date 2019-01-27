@@ -126,7 +126,7 @@
         \draw [thick, ->] (0,-1) -- (0,4) node [left] {$y$};
         \draw[thick] plot[samples=100, domain=0.4:1.4](\x, {4*\x-2});
         \draw[thick, domain=-0.4:1.4] plot[samples=100](\x, {2*\x*\x});
-        %\draw[fill=light gray] (0.5,0)--plot[domain=0,1](\x, {2*\x*\x})--(1,0)--(0.5,0);
+        \fill[gray,opacity=.3] (0.5,0)--plot[domain=0:1](\x, {2*\x*\x});
         \draw[thick, dashed] (1,0) node[below]{$1$} --(1,2);
         \draw (0.7,0.5) node {$T$};
         \draw (0.45,0.2) node {$\mathbf{R}$};
@@ -166,105 +166,77 @@
         \item The line $L$ is the tangent to the curve of $f$ at $(3,12)$. Find the equation of $L$ in the form $y=ax+b$. [4 marks]
       \end{enumerate}
 
-      \item 13\\
-      Let $f(x)= x^2-x$, for $x \in \mathbb{R}$. The following diagram shows part of the graph of $f$.
-        \begin{center}
-          \begin{tikzpicture}[xscale=0.75, yscale=0.5]
-            \draw [thick, ->] (-3,0) -- (4,0) node [below] {$x$};
-            \draw [thick, ->] (0,-2) -- (0,10) node [left] {$y$};
-            \draw[thick, domain=-2.5:3.5] plot[samples=100](\x, {(\x)^2 - \x});
-            \node at (1,0) {\textbullet};
-            \node at (1,0)[below] {\textbf{P}};
-            \node at (2,6) {$f$};
-            \node at (4,8)[right] {\textbf{diagram not to scale}};
-          \end{tikzpicture}
-        \end{center}
+    \item 17M.1.sl.TZ1.9\\
+    A quadratic function $f$ can be written in the form  $f(x)=a(x-p)(x-3)$. The graph of $f$ has an axis of symmetry $x=2.5$ and $y$-intercept at $(0,-6)$.
+    \begin{enumerate}
+      \item Find the value of $p$. [3 marks]
+      \item Find the value of $a$. [3 marks]
+      \item The line $y=kx-5$ is a tangent to the curve of $f$. Find the values of $k$. [8 marks]
+    \end{enumerate}
 
-        The graph of $f$ crosses the $x$-axis at the origin and at the point $P(1,0)$.
+    \item 15M.1.sl.TZ1.9\\
+    A function $f$ has its derivative given by $f'(x)=3x^2-2kx-9$, where $k$ is a constant.
+    \begin{enumerate}
+      \item Find $f''(x)$. [2 marks]
+      \item The graph of $f$ has a point of inflexion when $x=1$.\\
+      Show that $k=3$. [3 marks]
+      \item Find $f'(2)$. [2 marks]
+      \item Find the equation of the tangent to the curve of $f$ at $(-2,1)$, giving your answer in the form  $y=ax-b$. [4 marks]
+      \item Given that $f'(-1)=0$, explain why the graph of $f$ has a local maximum when $x=-1$. [3 marks]
+    \end{enumerate}
+
+    \item 13M.1.sl.TZ2.9\\
+    Let $f(x)=\sin x + \frac{1}{2} x^2 -2x$, for $0 \leq x \leq \pi$.\\
+    \begin{enumerate}
+      \item Find $f'(x)$. [3 marks]
+      \item Let $g$ be a quadratic function such that $g(0)=5$. The line $x=2$ is the axis of symmetry of the graph of $g$.\\
+      Find $g(4)$. [3 marks]
+      \item The function $g$ can be expressed in the form $g(x)=a(x-h)^2+3$.
         \begin{enumerate}
-          \item Show that $f'(1)=1$. [3 marks]
-          \item The line $L$ is the normal to the graph of $f$ at $P$.\\
-          Find the equation of $L$ in the form $y=ax+b$. [3 marks]
-          \item The line $L$ intersects the graph of $f$ at another point $Q$, as shown in the following diagram.
-            \begin{center}
-              \begin{tikzpicture}[xscale=0.75, yscale=0.5]
-                \draw [thick, ->] (-3,0) -- (4,0) node [below] {$x$};
-                \draw [thick, ->] (0,-2) -- (0,10) node [left] {$y$};
-                \draw[thick, domain=-2.5:3.5] plot[samples=100](\x, {(\x)^2 - \x});
-                \draw[thick, domain=-3.5:2.5] plot[samples=100](\x, {(-\x+1});
-                \node at (1,0) {\textbullet};
-                \node at (1,0)[below] {\textbf{P}};
-                \node at (2,6) {$f$};
-                \node at (4,8)[right] {\textbf{diagram not to scale}};
-                \node at (-1,2) {\textbullet};
-                \node at (-1,2)[below left] {\textbf{Q}};
-              \end{tikzpicture}
-            \end{center}
-            Find the $x$-coordinate of $Q$.[4 marks]
-            \item Find the area of the region enclosed by the graph of $f$ and the line $L$.  [6 marks]
+          \item Write down the value of $h$.
+          \item Find the value of $a$.
         \end{enumerate}
+      \item Find the value of $x$ for which the tangent to the graph of $f$ is parallel to the tangent to the graph of $g$. [6 marks]
+    \end{enumerate}
 
-        \item 14\\
-        A quadratic function $f$ can be written in the form  $f(x)=a(x-p)(x-3)$. The graph of $f$ has an axis of symmetry $x=2.5$ and $y$-intercept at $(0,-6)$.
-        \begin{enumerate}
-          \item Find the value of $p$. [3 marks]
-          \item Find the value of $a$. [3 marks]
-          \item The line $y=kx-5$ is a tangent to the curve of $f$. Find the values of $k$. [8 marks]
-        \end{enumerate}
+    \item 11N.1.sl.TZ0.9b\\
+    The following diagram shows the graph of $f(x)=a \sin (b(x-c))+d$, for $2 \leq x \leq 10$.
+      \begin{center}
+        \begin{tikzpicture}[x=0.6cm, y=0.5cm]
+          \draw [thick, ->] (-1,0) -- (12,0) node [below right] {$x$};
+          \draw [thick, ->] (0,-5) -- (0,14) node [left] {$y$};
+          \foreach \x in {0,5, 10}
+          \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,0pt) node[below=4pt]  {$\x$};
+          \foreach \y in {-5,0,5,10}
+          \draw[shift={(0,\y)},color=black] (-3pt,0pt) -- (0pt,0pt) node[left=3pt]  {$\y$};
 
-        \item 15\\
-        A function $f$ has its derivative given by $f'(x)=3x^2-2kx-9$, where $k$ is a constant.
-        \begin{enumerate}
-          \item Find $f''(x)$. [2 marks]
-          \item The graph of $f$ has a point of inflexion when $x=1$.\\
-          Show that $k=3$. [3 marks]
-          \item Find $f'(2)$. [2 marks]
-          \item Find the equation of the tangent to the curve of $f$ at $(-2,1)$, giving your answer in the form  $y=ax-b$. [4 marks]
-          \item Given that $f'(-1)=0$, explain why the graph of $f$ has a local maximum when $x=-1$. [3 marks]
-        \end{enumerate}
-
-        \item 16\\
-        Let $f(x)=\sin x + \frac{1}{2} x^2 -2x$, for $0 \leq x \leq \pi$.\\
-        \begin{enumerate}
-          \item Find $f'(x)$. [3 marks]
-          \item Let $g$ be a quadratic function such that $g(0)=5$. The line $x=2$ is the axis of symmetry of the graph of $g$.\\
-          Find $g(4)$. [3 marks]
-          \item The function $g$ can be expressed in the form $g(x)=a(x-h)^2+3$.
-            \begin{enumerate}
-              \item Write down the value of $h$.
-              \item Find the value of $a$.
-            \end{enumerate}
-          \item Find the value of $x$ for which the tangent to the graph of $f$ is parallel to the tangent to the graph of $g$. [6 marks]
-        \end{enumerate}
-
-        \item 17\\
-        The following diagram shows the graph of $f(x)=a \sin (b(x-c))+d$, for $2 \leq x \leq 10$.
-          \begin{center}
-            \begin{tikzpicture}[x=0.6cm, y=0.5cm]
-              \draw [thick, ->] (-1,0) -- (12,0) node [below right] {$x$};
-              \draw [thick, ->] (0,-5) -- (0,14) node [left] {$y$};
-              \foreach \x in {0,5, 10}
-              \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,0pt) node[below=4pt]  {$\x$};
-              \foreach \y in {-5,0,5,10}
-              \draw[shift={(0,\y)},color=black] (-3pt,0pt) -- (0pt,0pt) node[left=3pt]  {$\y$};
-
-              \draw[thick, domain=2:10] plot[samples=100](\x, {8*sin(deg(3.14159*(\x-2)/4)) +4});
-              \draw [fill] (4,12) circle [radius=0.05cm] node[above] {$P(4,12)$};
-              \draw [fill] (8,-4) circle [radius=0.05cm] node[below]{$Q(8,-4)$};
-            \end{tikzpicture}
-          \end{center}
-          There is a maximum point at $P(4,12)$ and a minimum point ast $Q(8, -4)$.
+          \draw[thick, domain=2:10] plot[samples=100](\x, {8*sin(deg(3.14159*(\x-2)/4)) +4});
+          \draw [fill] (4,12) circle [radius=0.05cm] node[above] {$P(4,12)$};
+          \draw [fill] (8,-4) circle [radius=0.05cm] node[below]{$Q(8,-4)$};
+        \end{tikzpicture}
+      \end{center}
+      There is a maximum point at $P(4,12)$ and a minimum point ast $Q(8, -4)$.
+      \begin{enumerate}
+        \item Use the graph to write down the value of [3 marks]
           \begin{enumerate}
-            \item Use the graph to write down the value of [3 marks]
-              \begin{enumerate}
-                \item $a$;
-                \item $c$;
-                \item $d$.
-              \end{enumerate}
-            \item Show that $b= \frac{\pi}{4}$. [2 marks]
-            \item Find $f'(x)$. [2 marks]
-            \item At a point $R$, the gradient is $-2 \pi$. Find the $x$-coordinate of $R$.
+            \item $a$;
+            \item $c$;
+            \item $d$.
           \end{enumerate}
+        \item Show that $b= \frac{\pi}{4}$. [2 marks]
+        \item Find $f'(x)$. [2 marks]
+        \item At a point $R$, the gradient is $-2 \pi$. Find the $x$-coordinate of $R$.
+      \end{enumerate}
+
+    \item 16M.1.sl.TZ1.10\\
+    Let $f(x)=\sqrt{4x+5}$, for $x \geq -1.25$.
+    \begin{enumerate}
+      \item Find $f'(1)$. [4 marks]
+      \item Consider another function $g$. Let $R$ be a point on the graph of $g$. The $x$-coordinate of $R$ is 1. The equation of the tangent to the graph at $R$ is  $y=3x+6$.\\
+      Write down $g'(1)$. [2 marks]
+      \item Find $g(1)$. [2 marks]
+      \item Let $h(x)=f(x) \times g(x)$. Find the equation of the tangent to the graph of $h$ at the point where $x=1$. [7 marks]
+    \end{enumerate}
 
 \end{enumerate}
 \end{document}
