@@ -93,22 +93,46 @@
    \end{enumerate}
    \newpage
 
- \subsubsection*{Spiral Review: 6-2 P1 (No Calculator) Calculus Differentiation - B}
+\subsubsection*{Spiral Review: 6-2 P1 (No Calculator) Calculus Differentiation - C}
+  \begin{enumerate}
+
+  \item 09N.1.sl.TZ0.5 \hfill [6 marks]\\
+    Consider $f(x)= x^2+\frac{p}{x}$, $x \neq 0$, where $p$ is a constant.
     \begin{enumerate}
+      \item Find $f'(x)$ \hfill [2]
+      \item There is a minimum value of $f(x)$ when $x=-2$. Find the value of $p$. \hfill [4]
+    \end{enumerate} \vspace{1cm}
 
-      \item 09N.1.sl.TZ0.5 \hfill [6 marks]\\
-      Consider $f(x)= x^2+\frac{p}{x}$, $x \neq 0$, where $p$ is a constant.
-      \begin{enumerate}
-        \item Find $f'(x)$ \hfill [2]
-        \item There is a minimum value of $f(x)$ when $x=-2$. Find the value of $p$. \hfill [4]
-      \end{enumerate} \vspace{2cm}
+  \item 14M.1.sl.TZ1.7 \hfill [7 marks]\\
+    Let $f(x)= px^3 + px^2 + qx$.
+    \begin{enumerate}
+      \item Find $f'(x)$. \hfill [2]
+      \item Given that $f'(x) \geq 0$, show that $p^2 \leq 3pq$. \hfill [5]
+    \end{enumerate}  \vspace{1cm}
 
-      \item 14M.1.sl.TZ1.7 \hfill [7 marks]\\
-      Let $f(x)= px^3 + px^2 + qx$.
+  \item 10M.1.sl.TZ1.8 \hfill [14 marks]\\
+    Let $f(x)=\frac{1}{3}x^3-x^2-3x$. Part of the graph of $f$ is shown below.
+      \begin{center}
+        \begin{tikzpicture}[yscale=0.5]
+          \draw [thick, ->] (-2,0) -- (5,0) node [below] {$x$};
+          \draw [thick, ->] (0,-10) -- (0,3) node [left] {$y$};
+          \draw[thick, domain=-2:5] plot[samples=100](\x, {0.333*(\x)^3 - (\x)^2 -3*(\x)});
+          \node at (3,-9) {\textbullet};
+          \node at (3,-9)[below] {$B$};
+          \node at (-1,1.666) {\textbullet};
+          \node at (-1,1.666)[above] {$A$};
+        \end{tikzpicture}
+      \end{center}
+    There is a maximum point at $A$ and a minimum point at $B(3, -9)$.
+    \begin{enumerate}
+      \item Find the coordinates of $A$. \hfill [8]
+      \item Write down the coordinates of \hfill [6]
       \begin{enumerate}
-        \item Find $f'(x)$. \hfill [2]
-        \item Given that $f'(x) \geq 0$, show that $p^2 \leq 3pq$. \hfill [5]
+        \item the image of $B$ after reflection in the $y$-axis;
+        \item the image of $B$ after translation by the vector $\left( \begin{array}{c} -2 \\ 5 \end{array}\right)$;
+        \item the image of $B$ after reflection in the $x$-axis followed by a horizontal stretch with scale factor $\frac{1}{2}$.
       \end{enumerate}
+    \end{enumerate}
 
    \end{enumerate}
 \end{document}
