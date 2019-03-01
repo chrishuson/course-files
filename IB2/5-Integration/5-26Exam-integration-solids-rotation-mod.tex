@@ -63,8 +63,8 @@
       \begin{tikzpicture}[xscale=0.6,yscale=1]
         \draw [thick, ->] (0,0) -- (11,0) node [below] {$x$};
         \draw [thick, ->] (0,-3) -- (0,3) node [left] {$y$};
-        \draw[thick, domain=2.1:11] plot[samples=100](\x, {ln(\x-2)});
-        \draw[thick] (10, -.15)node[below]{$10$} --(10,0.15);
+        \draw[thick, domain=2.1:10] plot[samples=100](\x, {ln(\x-2)});
+        \draw[thick] (8, -.15)node[below]{$8$} --(8,0.15);
       \end{tikzpicture}
     \end{center}
   \begin{enumerate}
