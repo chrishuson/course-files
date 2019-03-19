@@ -48,7 +48,23 @@ Axes
 \end{tikzpicture}
 \end{center}
 
+\begin{tikzpicture}[xscale=2.0]
+  \draw [help lines] (0,-4) grid (4,4);
 
+  \foreach \i in {0.5,1.5,2.5,3.5}
+    \draw [help lines] (\i,-4)--(\i,4);
+
+  \foreach \x in {0,1,2,3,4}
+  \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below left]  {$\x$};
+
+  \foreach \y in {-4, -3, -2, -1, 1,2,3,4}
+  \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
+
+  \draw [thick, ->] (-0.5,0) -- (+4.5,0) node [right] {$x$};
+  \draw [thick, ->] (0,-4.0) -- (0,4.5) node [left] {$y$};
+
+  \end{tikzpicture}
+  
 \begin{center} %4 quadrant regents grid w T-chart
 \begin{tikzpicture}[scale=.635]%[scale=0.635]
   \draw [thick, -] (-11, -2)--(-11,8);
