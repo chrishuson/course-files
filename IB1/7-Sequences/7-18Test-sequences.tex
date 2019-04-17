@@ -12,7 +12,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{Name: \hspace{1.5in} }
-\lhead{BECA / Dr. Huson / 11.1 IB Math SL \\* 29 March 2018 \\* Test: Sequences \& series}
+\lhead{BECA / Dr. Huson / 11.1 IB Math SL \\* 18 April 2019 \\* Test: Sequences \& series}
 
 \vspace{1cm}
 
@@ -20,7 +20,7 @@
 
 \title{Worksheet and test template}
 \author{Chris Huson}
-\date{March 2018}
+\date{April 2019}
 
 \begin{document}
 
@@ -100,11 +100,12 @@
     \item The parabola is translated vertically by $k$ units to make the function $g(x)$. The equation $g(x)=0$ has one solution. Find $k$.
 \end{enumerate}
 
-\item For each of the following questions select two applicable words from the following list: revenues, assets, premiums, costs, earnings, expenses, debt, reserves, overhead, investments.
+\item Use your knowledge of the binomial expansion and combinatorics to answer the following questions.
 \begin{enumerate}
-    \item What financial measure would a business manager try to \emph{increase} in order to raise profits?
-    \item What financial measure would a manager try to reduce to improve profitability?
-    \item Since their customers could have large losses from a storm or other disaster at any time an insurance company maintains large amounts of what?
+    \item Write down the first 5 rows of Pascal's triangle.
+    \item Find $_7C_3$.
+    \item Expand the binomial $(x+1)^6$.
+    \item What is the coefficient of the $x^3$ term of the expansion of $(x+1)^7$?
 \end{enumerate}
 
 \newpage
@@ -122,7 +123,7 @@
     \foreach \y in {12.7} \draw (3pt,\y cm) -- (-3pt,\y cm) node[anchor=east] {400};
     \end{tikzpicture}
 \end{center} %Alg2 Regents Jun2017
-Is the function an example of exponential growth or exponential decay? Justify your answer algebraically. 
+Is the function an example of exponential growth or exponential decay? Justify your answer algebraically.
 
 \newpage
 \item Let $A$ and $B$ be independent events, where $\mathrm P(A)=0.5$ and $\mathrm P(B)=0.6$.
@@ -142,13 +143,13 @@ Is the function an example of exponential growth or exponential decay? Justify y
 \begin{tikzpicture}[scale=0.75]
     \foreach \x in {-5, -4, -3, -2, -1, 0,1,2,3,4,5}
     \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below]  {$\x$};
-    
+
     \foreach \y in {-2, -1,0,1,2,3,4,5, 6, 7}
     \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
-    
+
     \draw [thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
     \draw [thick, ->] (0,-2.5) -- (0,7.5) node [left] {$y$};
-    
+
     \draw [<->] plot[domain= -3.5:2] (\x, e^\x);
 
 \end{tikzpicture}
