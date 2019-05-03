@@ -1,7 +1,0 @@
-\babel@toc {english}{}
-\beamer@sectionintoc {2}{10.1 Solids and Their Cross Sections Monday 15 April}{3}{0}{1}
-\beamer@sectionintoc {3}{10.2 Geogebra - Area Situations in Sports Tuesday 16 April}{4}{0}{2}
-\beamer@sectionintoc {4}{10.3 Review for exam Wednesday 17 April}{5}{0}{3}
-\beamer@sectionintoc {5}{10.4 Exam Thursday 18 April}{6}{0}{4}
-\beamer@sectionintoc {6}{10.5 Dilation+similarity review Monday 30 April}{7}{0}{5}
-\beamer@sectionintoc {7}{10.6 Deltamath Volume Practice Tuesday 30 April}{8}{0}{6}
