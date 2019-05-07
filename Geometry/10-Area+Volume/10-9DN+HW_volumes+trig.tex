@@ -108,8 +108,35 @@
          \draw [thick, <->] (-20:5) arc [start angle=-20, end angle=40, radius=5];
        \end{tikzpicture}
      \end{center}
-  What is the length of the arc formed by the $60^\circ$ angle, to the \emph{nearest hundredth of an inch}? \vspace{3cm}
+  What is the length of the arc formed by the $60^\circ$ angle, to the \emph{nearest hundredth of an inch}? \vspace{2.5cm}
 
+  What is the area of the sector formed by the $60^\circ$ angle, to the \emph{nearest hundredth of a square inch}? \vspace{2.5cm}
+
+
+  \item The secants $\overline{ABC}$ and $\overline{ADE}$ intersect the circle $O$, as shown in the diagram. \\Given $m \wideparen{BD}=33^\circ$ and $m \wideparen{CE}=148^\circ$. Find the $m\angle A$.
+       \begin{center}
+       \begin{tikzpicture}[scale=.5]
+         \draw [thick] (0,0) circle[radius=5];
+         \draw [thick]
+         (3,-4) node[below right] {$E$}--
+         (-5,0) node[below left] {$D$}--
+         (-9,2) node[left] {$A$}--
+         (65:5) node[above right] {$C$};
+         \draw (132:5.1) node[left] {$B$};
+         \draw (20:5) node[right] {$148^\circ$};
+         \draw (160:5) node[right] {$33^\circ$};
+       \end{tikzpicture}
+      \end{center}
+\newpage
+
+  \item A zipline wire is strung from a pole to the ground with an angle of elevation of $12^\circ$. If the pole is 30 feet tall, how long is the wire, to the \emph{nearest foot}.\\[0.25cm]
+  \begin{tikzpicture}[scale=1.1]
+    \draw [thick] (10,0)--(0,0)--(10,2.0)--cycle;
+    \draw [thick] (0,0)--(0.75,0) arc [start angle=0, end angle=11.3, radius=0.75]--cycle;
+    \node at (1,0)[below]{Angle of elevation $=12^\circ$};
+    \node at (10,1.2)[right]{$30$};
+    \node at (5,1.6)[below]{wire};
+  \end{tikzpicture} \vspace{4cm}
 
   \item Express each trigonometric ratio to the nearest thousandth and each angle measure to the nearest degree.
     \begin{multicols}{2}
@@ -121,16 +148,59 @@
       \end{enumerate}
     \end{multicols} \vspace{0.25cm}
 
-  \item A zipline wire is strung from a pole to the ground with an angle of elevation of $12^\circ$. If the pole is 30 feet tall, how long is the wire, to the \emph{nearest foot}.\\[0.25cm]
-  \begin{tikzpicture}[scale=1.1]
-    \draw [thick] (10,0)--(0,0)--(10,2.0)--cycle;
-    \draw [thick] (0,0)--(0.75,0) arc [start angle=0, end angle=11.3, radius=0.75]--cycle;
-    \node at (1,0)[below]{Angle of elevation $=12^\circ$};
-    \node at (10,1.2)[right]{$30$};
-    \node at (5,1.6)[below]{wire};
-  \end{tikzpicture} \vspace{3.25cm}
+  \item If $\sin 65^\circ = \cos x$, what is the value of $x$? \vspace{1.5cm}
 
-  %\item If $\sin 43^\circ = \cos x$, what is the value of $x$?
+  \item $\triangle ABC$ is shown with $m\angle C=90^\circ$ and the lengths of the triangle's sides are $BC=5 \sqrt{3}$, $AC=5$, and $AB=10$.
+  \begin{multicols}{2}
+        \begin{tikzpicture}[scale=0.6]
+          \draw [thick]
+          (0,0)node[left]{$A$}--
+          (6,0)node[ right]{$C$}--
+          (6,8)node[right]{$B$}--cycle;
+          \draw (6,0)++(-0.6,0)--++(0,0.6)--+(0.6,0);
+          \node at (3,0)[below]{$5$};
+          \node at (6,4)[right]{$5 \sqrt{3}$};
+          \node at (3,4.5)[above]{$10$};
+        \end{tikzpicture}
+        \begin{enumerate}
+        \item State, as a decimal, the value of $\sin A$. \vspace{1cm}
+        \item Find the measure of $\angle A$, to the \emph{nearest degree}. \vspace{1cm}
+        \item Find the degree measure of $\angle B$.
+      \end{enumerate}
+    \end{multicols}
+
+\newpage
+
+  \item Given $\triangle ABC$. $\overline{AC} \cong \overline{BC}$,  $m\angle A=55$. Find $m\angle C$.\\[0.5cm]
+    \begin{tikzpicture}[scale=0.7]
+      \draw [thick](0,0)--(4,0)--(2,6)--(0,0);
+      \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw [fill] (4,0) circle [radius=0.05] node[below]{$B$};
+      \draw [fill] (2,6) circle [radius=0.05] node[above right]{$C$};
+      \draw [thick] (0.8,3.1)--(1.2,2.9); %tick mark
+      \draw [thick] (2.8,2.9)--(3.2,3.1); %tick mark
+    \end{tikzpicture}%\vspace{1cm}
+
+  \item Given $\triangle DEF$. $\overline{DF} \cong \overline{EF}$,  $m\angle F=72$. Find $m\angle D$.\\[0.4cm]
+    \begin{tikzpicture} %[scale=3] Isosceles, parallel marks, congruence marks
+      \draw [-, thick] (0,0) node[below]{$D$}--
+        (5,0) node[below]{$E$}--(2.5,4) node[above]{$F$}--cycle;
+    \end{tikzpicture}\vspace{0.5cm}
+
+  \item Given the triangle shown with congruent sides marked.  $m\angle 1=110$.
+  \begin{enumerate}
+    \item Find $m\angle 2$. \vspace{1.5cm}
+    \item Find the measure of the vertex angle, $V$.
+  \end{enumerate}
+    \begin{tikzpicture}[scale=0.7]
+      \draw [thick](0,0)--(4,0)--(2,6)--(0,0);
+      \draw [->, thick](0,0)--(4,0) node[above right]{1}--(7,0);
+      \draw [fill] (0,0) circle [radius=0.05] node[above right]{$2$};
+      \draw [fill] (2,6) circle [radius=0.05] node[above right]{$V$};
+      \draw [thick] (0.8,3.1)--(1.2,2.9); %tick mark
+      \draw [thick] (2.8,2.9)--(3.2,3.1); %tick mark
+    \end{tikzpicture}
+
 
 \end{enumerate}
 \end{document}
