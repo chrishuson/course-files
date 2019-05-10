@@ -44,6 +44,29 @@
   \end{tikzpicture} \vspace{0.5cm}
 
 \newpage
+
+  \item A circle with a diameter of 7 in and a central angle of $60^\circ$ is drawn below. What is the area of the sector formed by the $60^\circ$ angle, to the \emph{nearest hundredth of a square inch}?
+       \begin{tikzpicture}[scale=.5]
+         \draw (0,0) circle[radius=5];
+         \draw (40:5)--(220:5);
+         \draw (0,0)--(-20:5);
+         \fill (0,0) circle[radius=0.1];
+         \draw (13:2) node{$60^\circ$};
+         \draw (120:0.75) node[rotate=45]{$7$ in};
+         \draw [thick, <->] (-20:5) arc [start angle=-20, end angle=40, radius=5];
+       \end{tikzpicture}
+   \vspace{1.5cm}
+
+  \item A bakery sells hollow chocolate spheres. The larger diameter of each sphere is 4 cm. The thickness of the chocolate of each sphere is 0.5 cm. Determine and state, to the nearest tenth of a cubic centimeter, the amount of chocolate in each hollow sphere.\\[0.5cm]
+  \begin{tikzpicture}[scale=1.5]
+    \draw [fill, color=lightgray] (0,0) circle[radius=2];
+    \draw [fill, color=white] (0,0) circle[radius=1.5];
+    \draw [very thick, <->] (0:2)--(180:2);
+    \draw (0,0) node[above]{$4$ cm};
+    \draw [very thick, <->]  (30:1.5)--(30:2);
+    \draw (32:1.65) node[above]{$0.5$};
+  \end{tikzpicture}
+
 \item Which three-dimensional figure will result when a right triangle 8 inches tall and 3 inches wide is continuously rotated about the longer side?
   \begin{enumerate}
     \item a cone with a height of 6 inches and radius of 8 inches
@@ -59,16 +82,6 @@
       \item rectangle
       \item triangular prism
     \end{enumerate}
-
-  \item A bakery sells hollow chocolate spheres. The larger diameter of each sphere is 4 cm. The thickness of the chocolate of each sphere is 0.5 cm. Determine and state, to the nearest tenth of a cubic centimeter, the amount of chocolate in each hollow sphere.\\[0.5cm]
-  \begin{tikzpicture}[scale=1.5]
-    \draw [fill, color=lightgray] (0,0) circle[radius=2];
-    \draw [fill, color=white] (0,0) circle[radius=1.5];
-    \draw [very thick, <->] (0:2)--(180:2);
-    \draw (0,0) node[above]{$4$ cm};
-    \draw [very thick, <->]  (30:1.5)--(30:2);
-    \draw (32:1.65) node[above]{$0.5$};
-  \end{tikzpicture}
 
 \newpage
 
@@ -92,14 +105,22 @@
     \end{multicols}
     \vspace{1.25cm}
 
-   \item A sailor observes the top of a lighthouse with an angle of elevation of $4^\circ$. She knows the lighthouse is 100 feet tall. Determine and state the distance $x$ between the sailor and the lighthouse, to the \emph{nearest foot}.\\[0.25cm]
-   \begin{tikzpicture}[scale=1.1]
+  \item Express each trigonometric ratio to the \emph{nearest thousandth} and each angle measure to the nearest degree.
+    \begin{multicols}{2}
+      \begin{enumerate}
+        \item $\sin 55^\circ =$ \vspace{0.5cm}
+        \item $\cos^{-1} 0.766 =$ \vspace{0.5cm}
+      \end{enumerate}
+    \end{multicols} \vspace{0.25cm}
+
+  \item A sailor observes the top of a lighthouse with an angle of elevation of $4^\circ$. She knows the lighthouse is 100 feet tall. Determine and state the distance $x$ between the sailor and the lighthouse, to the \emph{nearest foot}.\\[0.25cm]
+    \begin{tikzpicture}[scale=1.1]
      \draw [thick] (10,0)--(0,0)--(10,2.0)--cycle;
      \draw [thick] (0,0)--(0.75,0) arc [start angle=0, end angle=11.3, radius=0.75]--cycle;
      \node at (1,0)[below]{Angle of elevation $=4^\circ$};
      \node at (10,1.2)[right]{height $=100$ feet};
      \node at (6,0)[below]{$x$};
-   \end{tikzpicture} \vspace{3.25cm}
+    \end{tikzpicture} \vspace{3.25cm}
 
 \newpage
 \item   Solve for the value of $x$.\\[0.5cm]
@@ -213,12 +234,24 @@ $\frac{1}{5}(2x+3)=1$ \vspace{3cm}
   \end{center}
 
 \newpage
-  \item In a right triangle, the acute angles have the relationship $\sin (2x)=\cos(70)$.\\[0.25cm]
-    What is the value of x? \vspace{2.5cm}
+  \item Reflect $\triangle PQR$ across the $x$-axis, drawing its image $\triangle P'Q'R'$ and labeling its vertices.
+    \begin{center}
+      \begin{tikzpicture}[scale=.48]
+        \draw [help lines] (-9,-9) grid (9,9);
+        \draw [thick, <->] (-9.4,0) -- (9.4,0) node [right] {$x$};
+        \draw [thick, <->] (0,-9.4)--(0,9.4) node [above] {$y$};
+        \draw [thick]
+          (7,2) node[below right] {$P$}--
+          (2,5) node[above] {$Q$}--
+          (7,5) node[above right] {$R$}--cycle;
+      \end{tikzpicture}
+    \end{center}
+
+  \item In a right triangle, the acute angles have the relationship $\sin x=\cos 30$. Find x. \vspace{2.0cm}
 
   \item If $\sin (8x-8)^\circ = \cos(7x+8)^\circ$, what is the value of $x$? \vspace{3cm}
 
-  \item Write an equation of the line that is perpendicular to the line whose equation is $3y=2x+6$ and passes through the point $(-1,7)$. \vspace{2cm}
+  \item Write an equation of the line that is parallel to the line whose equation is $y=\frac{1}{2}x-4$ and passes through the point $(-2,5)$. \vspace{2cm}
 
   \item Find the distance between $(1,9)$ and $(6, -3)$.
 
