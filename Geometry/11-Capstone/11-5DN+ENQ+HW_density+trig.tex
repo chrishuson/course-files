@@ -109,59 +109,40 @@
   \end{enumerate}
   \newpage
   \setcounter{page}{1}
-\subsubsection*{11.5 Homework: Volume, density, trig, \& compound shapes}
+\subsubsection*{11.5 Homework: Using slope and distance formulas}
  \begin{enumerate}
-  \item A cube has a volume of 670 cubic inches. What is the length of its side, to the \emph{nearest hundredth of an inch}? \vspace{3cm}
-
-  \item The Great Pyramid of Giza was constructed as a regular pyramid with a square base. It was built with an approximate volume of 2,592,276 cubic meters and a height of 146.5 meters. What was the length of one side of its base, to the \emph{nearest meter}? \vspace{5cm}
-
-  \item A bakery sells hollow chocolate spheres. The larger diameter of each sphere is 4 cm. The thickness of the chocolate of each sphere is 0.5 cm. Determine and state, to the \emph{nearest tenth of a cubic centimeter}, the amount of chocolate in each hollow sphere.\\[4.5cm]
-  The bakery packages 8 of them into a box. If the density of the chocolate is 1.308 g/$\mathrm{cm}^3$, determine and state, to the nearest gram, the total mass of the chocolate in the box.
 
 
-    \item A steel plate is shaped as a 6 inch square with a 2-inch tall triangle on one side, as shown. There are four circular holes in the plate, each having a 1 inch diameter. The plate is one quarter inch thick.
-    \begin{enumerate}
-      \item Determine and state the area taken up by the plate, subtracting the area of the holes, to the \emph{nearest tenth of a square inch}.\\[1.5cm]
-        \begin{tikzpicture}[scale=0.6]
+   \item Given right $\triangle EFG$ with $m\angle G=90^\circ$. If $\overline{FG}=8$ and $\overline{EG}=6$, find $\overline{EF}$.\\
+       \begin{tikzpicture}%[scale=0.7]
+         \draw [thick] (2,0)node[below]{$E$}--
+           (8,0)node[below]{$F$}--
+           (4,3)node[above]{$G$} --(2,0);
+       \end{tikzpicture} \vspace{1cm}
+
+    \item In the diagram below, $\triangle ABC$ has vertices with coordinates $A(0,3)$, $B(6,1)$ and $C(4,5)$.
+      \begin{center} %4 quadrant regents grid
+        \begin{tikzpicture}[scale=.48]
+          \draw [help lines] (-4,-3) grid (9,8);
+          \draw [thick, <->] (-4.4,0) -- (9.4,0) node [below right] {$x$};
+          \draw [thick, <->] (0,-3.4)--(0,8.4) node [left] {$y$};
           \draw [thick]
-          (0,0)--(0,6)--(3,8)--(6,6)--(6,0)--cycle;
-          \draw [dashed] (0,6)--(6,6);
-          \draw [dashed,<->] (6.25,6)--(6.25,8);
-          \draw (1,1) circle[radius=0.5] node[rotate=45]{1};
-          \draw [->] (45:0.5)--(45:0.9142);
-          \draw [->] (45:2.3)--(45:1.9142);
-          \draw (5,1) circle[radius=0.5];
-          \draw (5,5) circle[radius=0.5];
-          \draw (1,5) circle[radius=0.5];
-          %\draw (0,8)++(0,-0.8)--++(0.8,0)--+(0,0.8);
-          \node at (3,0)[below]{$6$};
-          \node at (6,3)[right]{$6$};
-          \node at (6.25,7)[right]{$2$};
-        \end{tikzpicture} \vspace{1cm}
-      \item Find the volume of the plate, to the \emph{nearest tenth of a cubic inch}. \vspace{2cm}
-      \item Find the weight of the plate, to the \emph{nearest ounce}.
-    \end{enumerate} \vspace{1.5cm}
-
-
+            (0,3)node[left]{$A$}--
+            (6,1) node[right]{$B$}--
+            (4,5) node[above right]{$C$}--cycle;
+          %\draw [fill] (-1,2) circle [radius=0.1] node[above left] {$A$};
+          %draw [fill] (8, -4) circle [radius=0.1] node[below right] {$C$};
+        \end{tikzpicture}
+      \end{center}
+      Find the length of each side of $\triangle ABC$, showing that it is isosceles and not equilateral.\\[0.5cm]
+        \begin{tabular}{c|c|c}
+          $AC=$ & $BC=$ & $AB=$ \\
+          $\sqrt{(x_C-x_A)^2+(y_C-y_A)^2}$ & $\sqrt{(x_C-x_B)^2+(y_C-y_B)^2}$ & $ \sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$ \\
+          & & \\
+          & & \\
+        \end{tabular}
 
 \newpage
-\item A concrete ramp with a $4^\circ$ angle of elevation leads to a platform with a staircase stepping down from the opposite side, as shown below. The length of the platform is 3 feet, and each of the four steps has a rise of 7 inches and run of 10 inches. Find the length of the ramp $x$, to the \emph{nearest inch}.\\[0.25cm]
-      \begin{tikzpicture}[scale=0.5]
-        \draw [thick] (7,0)--(30,2.4)--(34,2.4)--(34,1.8)--(35,1.8)--(35,1.2)--(36,1.2)--(36,0.6)--(37,0.6)--(37,0)--cycle;
-        \draw [dashed] (30,0)--(30,2.4);
-        %\draw (10,16)++(0,-0.8)--++(0.8,0)--+(0,0.8);
-        \node at (32,2.4)[above]{$3$};
-        \node at (7,0)[below]{$4^\circ$};
-        \node at (19, 1.2)[above]{$x$};
-        \node at (34, 4)[above]{\emph{Not to Scale}};
-      \end{tikzpicture} \vspace{5cm}
-
-\item A prescription medicine comes in capsule form. The capsule is in the shape of a cylinder with hemispherical ends, as shown in the rendering below. The capsule is 15 millimeters long by 8 millimeters across.
-\begin{enumerate}
-    \item Write down the radius $r$ of the capsule and the length of the cylindical portion $a$, shown in the diagram.\\
-    \includegraphics[width=0.3\textwidth]{capsule.png}\\
-    \item Find the volume of the capsule to the \emph{nearest cubic millimeter}.
-  \end{enumerate}
 
 \end{enumerate}
 \end{document}
