@@ -33,6 +33,7 @@
       \begin{enumerate}
         \item Plotting, labeling points, etc.
         \item Horizontal \& vertical distances
+        \item Perimeter calculation
         \item Pythagorean formula
         \item Applications: Rhombus, isosceles $\triangle$,
         \item Radicals, $\pi$ and rounding
@@ -51,13 +52,117 @@
       \end{enumerate}
 
     \item Scaling shapes (eg. rectangle, triangles including midline)
+
+    \item Regents problems, January 2017, \#26, 34, 29? (basic shapes)
   \end{enumerate}
 
+\newpage
+\subsubsection*{Horizontal and vertical measure}
 \begin{enumerate}
-  \subsubsection*{Basic shapes}
-  \item Regents problems, January 2017, \#26, 34, 29?
 
-  \subsubsection*{Distance on the coordinate plane}
+  \item Given the quadrilateral $ABCD$ with $A(1,2)$, $B(6,2)$, $C(6,5)$, and $D(1,5)$.
+    \begin{enumerate}
+      \item Plot and label $ABCD$ on the grid.
+      \item Find the lengths of the sides by counting on the graph or subtracting coordinates. Complete the table.
+      \item Definition: Perimeter is the total distance around a shape.\\[0.25cm]
+      Add up the perimeter of $ABCD$, entering it to the bottom of the table of lengths.\\
+        \begin{multicols}{2}
+          \begin{tikzpicture}[scale=.635]
+            \draw [help lines] (-5,-5) grid (8,8);
+            \draw [thick, ->] (-5.2,0) -- (8.4,0) node [below right] {$x$};
+            \draw [thick, ->] (0,-5.2)--(0,8.4) node [left] {$y$};
+          \end{tikzpicture}\\
+          \renewcommand{\arraystretch}{1.5}
+          \begin{flushright}
+          \begin{tabular}{|p{1cm}|p{2cm}|}
+            \hline
+            Side & Length \\
+            \hline
+            $AB$ & \\
+            \hline
+            $BC$ & \\
+            \hline
+            $CD$ & \\
+            \hline
+            $AD$ & \\
+            \hline
+            Total & \\
+            \hline
+          \end{tabular}
+        \end{flushright}
+        \end{multicols}
+      \item Definition: Area is the number of unit squares in a shape. \\[0.25cm]
+      Find its area by counting the number of squares in $ABCD$ or use multiplication as a short cut.
+    \end{enumerate}
+
+\newpage
+  \item The rectangle $ABCD$ is shown below with length $l=12$ and width $w=5$. Label the sides of the rectangle with their lengths.
+  \begin{enumerate}
+    \item Calculate the perimeter and enter it in the table.
+    \item Find the area of the rectangle. (show the work as an algebra equation)
+    \begin{multicols}{2}
+      \begin{tikzpicture}[scale=.635]
+        \draw [thick] (0,0)node[below]{$A$}--
+        (12,0)node[below]{$B$}--
+        (12,5)node[above]{$C$}--
+        (0,5)node[above]{$D$}--;
+      \end{tikzpicture}\\
+      \renewcommand{\arraystretch}{1.5}
+      \begin{flushright}
+      \begin{tabular}{|p{2cm}|p{2cm}|}
+        \hline
+        Side & Length \\
+        \hline \hline
+        $AB$ & 12 \\
+        \hline
+        $BC$ & 5 \\
+        \hline
+        $CD$ & 12 \\
+        \hline
+        $AD$ & 5 \\
+        \hline \hline
+        Perimeter & \\
+        \hline
+      \end{tabular}
+    \end{flushright}
+    \end{multicols}
+  \end{enumerate} \vspace{1cm}
+
+  \item Given the quadrilateral $BECA$ with $B(-3,-2)$, $E(5,-2)$, $C(5,5)$, and $A(-3,5)$.
+    \begin{enumerate}
+      \item Plot and label $BECA$ on the grid.
+      \item Find the lengths of the sides and complete the table.
+      \item Calculate the perimeter and enter it in the table.\\
+        \begin{multicols}{2}
+          \begin{tikzpicture}[scale=.635]
+            \draw [help lines] (-5,-3) grid (8,7);
+            \draw [thick, ->] (-5.2,0) -- (8.4,0) node [below right] {$x$};
+            \draw [thick, ->] (0,-3.2)--(0,7.4) node [left] {$y$};
+          \end{tikzpicture}\\
+          \renewcommand{\arraystretch}{1.5}
+          \begin{flushright}
+          \begin{tabular}{|p{1cm}|p{2cm}|}
+            \hline
+            Side & Length \\
+            \hline
+            $BE$ & \\
+            \hline
+            $EC$ & \\
+            \hline
+            $CA$ & \\
+            \hline
+            $AB$ & \\
+            \hline
+            Total & \\
+            \hline
+          \end{tabular}
+        \end{flushright}
+        \end{multicols}
+      \item Find the area of $BECA$.
+    \end{enumerate}
+
+\newpage
+  \subsubsection*{Diagonal distance on the coordinate plane}
   \item Given $P(-2,9)$ and $Q(3,-3)$, find the length of $\overline{PQ}$.
 
   \subsubsection*{Distance on the coordinate plane: proofs}
