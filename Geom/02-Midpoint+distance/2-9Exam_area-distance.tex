@@ -1,0 +1,193 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepgfplotslibrary{statistics}
+%\usepackage{pgfplotstable}
+%\usepackage{tkz-fct}
+%\usepackage{venndiagram}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+
+\fancyhead[RE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{3cm}}
+\fancyhead[L]{BECA / Dr. Huson / Geometry 10th Grade\\* Unit 1: Introduction to Geometry\\27 September 2019}
+
+\begin{document}
+\subsubsection*{2.9 Exam: Area, perimeter, line segments}
+  \vspace{0.25cm}
+  \begin{enumerate}
+
+\item Given the rectangle $ABCD$ shown below, with $AB=8.4$ and $BC=3.7$. Find the area of the rectangle.
+\begin{flushleft}
+\begin{tikzpicture}
+  \draw [-, thick] (0,0)--(4.5,0)--(4.5,2)--(0,2)--cycle;
+  \draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
+  \draw [fill] (4.5,0) circle [radius=0.05] node[right]{$B$};
+  \draw [fill] (4.5,2) circle [radius=0.05] node[right]{$C$};
+  \draw [fill] (0,2) circle [radius=0.05] node[left]{$D$};
+  \node at (5, 1){3.7};
+  \node at (2.25, -0.5){8.4};
+\end{tikzpicture}
+\end{flushleft} \vspace{1cm}  
+
+\item The rectangle $BECA$ has an area of 143, with length $BE=13$. Find the width of the rectangle $EC$. (the drawing is not to scale)
+\begin{flushleft}
+\begin{tikzpicture}
+  \draw [-, thick] (0,0)--(4,0)--(4,3)--(0,3)--cycle;
+  \draw [fill] (0,0) circle [radius=0.05] node[left]{$B$};
+  \draw [fill] (4,0) circle [radius=0.05] node[right]{$E$};
+  \draw [fill] (4,3) circle [radius=0.05] node[right]{$C$};
+  \draw [fill] (0,3) circle [radius=0.05] node[left]{$A$};
+  \node at (4.5, 1.5){?};
+  \node at (2, -0.5){13};
+\end{tikzpicture}
+\end{flushleft} \vspace{2cm}  
+
+\item Find the area of $\triangle CAT$. The altitude $h$ of the triangle is 4.9 centimeters and the base $CA=9.3$ cm.\\[0.5cm]
+\begin{tikzpicture}[scale=1, rotate=15]
+  \draw [thick]
+    (2,0)node[below]{$C$}--
+    (8,0)node[below]{$A$}--
+    (4,3)node[above]{$T$} --(2,0);
+ \draw [dashed] (4,0)--(4,3);
+ \draw (4,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+ \node at (4,1.2)[right]{$h=4.9$};
+ \node at (5,-0.2)[below]{$9.3$};
+\end{tikzpicture} \vspace{1.0cm}
+
+\newpage
+
+  \item One side of the $\triangle ABC$ has a length $AB=12$. The triangle's area is 30. Find the length of the altitude $h$ of the triangle to vertex $C$ and perpendicular to side $\overline{AB}$.\\[0.5cm]
+  \begin{tikzpicture}[scale=1, rotate=-45]
+    \draw [thick]
+      (2,0)node[below left]{$A$}--
+      (8,0)node[below]{$B$}--
+      (5,3)node[above]{$C$} --(2,0);
+  \draw [dashed] (5,0)--(5,3);
+  \draw (5,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+  \node at (5.1,0.7)[right]{$h=?$};
+  \node at (5,0)[below left]{$12$};
+  \end{tikzpicture} \vspace{1.0cm}
+
+
+  \item Given $\overleftrightarrow{RS}$ as shown on the number line, with $R=-2.0$ and $S=4.2$. \\[20pt] % Midpoint
+  \begin{tikzpicture}
+    \draw [<->] (-4.5,0)--(6.5,0);
+    \foreach \x in {-4,...,6} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (-2.0,0) circle [radius=0.05] node[above] {$R$};
+      \draw [fill] (4.2,0) circle [radius=0.05] node[above] {$S$};
+  \end{tikzpicture}
+  \begin{enumerate}
+    \item What is the exact distance on the number line between the points $R$ and $S$? \vspace{3cm} 
+    \item The point $T$ bisects $\overline{RS}$. Find the value of $T$, and mark and label it on the numberline $\overleftrightarrow{RS}$. 
+  \end{enumerate} \vspace{3cm}  
+  
+\newpage
+
+  \item Complete the construction of a perpendicular bisector of $\overline{AB}$. Label the midpoint $M$. \vspace{2cm}
+  \begin{center}
+  \begin{tikzpicture}
+    \draw [-, thick] (0,0)--(4,5);
+    \draw [fill] (0,0) circle [radius=0.05] node[below right]{$A$};
+    \draw [fill] (4,5) circle [radius=0.05] node[above left]{$B$};
+  \end{tikzpicture}
+  \end{center} \vspace{3cm}
+
+\newpage
+
+  \item Given $\overline{ABC}$, $AB=6 \frac{2}{5}$, and $AC=9$.\\ [0.5cm]
+  Find ${BC}$.\\[1.5cm]
+      \begin{tikzpicture}
+        \draw [-, thick] (1,0)--(7,0);
+        \draw [fill] (1,0) circle [radius=0.05] node[below]{$A$};
+        \draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
+        \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+      \end{tikzpicture}\\[1.5cm]
+      The postulate used in this problem is the \rule{6cm}{0.15mm}.
+      \vspace{1.5cm}
+
+  \item Given the diagram shown below. \vspace{0.25cm}
+  \begin{enumerate}
+    \item  Measure the angle $AEB$. $m \angle AEB = $ \rule{4cm}{0.15mm} \bigskip
+    \item Name an angle that is supplementary to $\angle DEB$: \rule{4cm}{0.15mm} \bigskip
+    \item Name a pair of opposite rays: \rule{4cm}{0.15mm}
+  \end{enumerate}
+  \vspace{1cm}
+  \begin{center}
+  \begin{tikzpicture}[scale=1.3, rotate=-30]
+    \draw [->, thick] (0,0)--(50:6);
+    \draw [<->, thick] (-6,0)--(5,0);
+    \draw [->, thick] (0,0)--(0,3);
+    \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+    %\draw [fill] (-1,2.5) circle [radius=0.05] node[left ]{$B$};
+    \draw [fill] (50:4) circle [radius=0.05] node[below right]{$B$};
+    \draw [fill] (-4,0) circle [radius=0.05] node[below]{$A$};
+    \draw [fill] (0,0) circle [radius=0.05] node[below left]{$E$};
+    \draw [fill] (0,2) circle [radius=0.05] node[left]{$C$};
+    \draw [fill] (4,0) circle [radius=0.05] node[below]{$D$};
+  \end{tikzpicture}
+  \end{center}
+  
+\newpage 
+
+  \item Find the perimeter $P$ of the shape shown below, given the side lengths marked (not drawn to scale). All angles are $90^\circ$. Completely mark the diagram with the two missing lengths and show an equation for $P$ as a sum of each side's length.
+  \vspace{1cm} 
+  \begin{flushleft}
+  \begin{tikzpicture}
+    \draw [-, thick] (0,0)--(5,0)--(5,2)--(3,2)--(3,3)--(0,3)--cycle;
+    %\draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
+    %\draw [fill] (7,0) circle [radius=0.05] node[right]{$B$};
+    %\draw [fill] (7,2) circle [radius=0.05] node[right]{$C$};
+    %\draw [fill] (0,2) circle [radius=0.05] node[left]{$D$};
+    \node at (5.5, 1){5};
+    \node at (1.5, 3.5){7};
+    \node at (2.5, -0.5){12};
+    \node at (-0.5, 1.5){7};
+  \end{tikzpicture}
+  \end{flushleft} \vspace{2cm}
+
+  \item Given the collinear points $P$, $Q$, and $R$, with $PQ=4x+4$, $QR=2x+2$, and $PR=5x+12$. Find ${PQ}$.\\*[5pt]
+  Complete all steps for full credit: the drawing to the top right, an equation and solution for $x$ on the left, followed by the answer to the question. Write the check to the bottom right.
+  \vspace{4cm}
+
+\newpage
+  \item Complete the construction of an equilateral triangle with one side as $\overline{AB}$. \vspace{3cm}
+  \begin{center}
+  \begin{tikzpicture}
+    \draw [-, thick] (0,0)--(0,6);
+    \draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
+    \draw [fill] (0,6) circle [radius=0.05] node[left]{$B$};
+  \end{tikzpicture}
+  \end{center} \vspace{3cm}
+  \begin{enumerate}
+    \item Identify two circles in the construction. For each, name the center of the circle and the radius.  \vspace{3cm}
+    \item Assuming that the third vertex of the triangle is point $C$, explain why the distance from $A$ to $C$ is the same as the distance from $A$ to $B$.
+  \end{enumerate}
+
+
+\newpage
+  \subsubsection*{Early finishers, spicy: Solve for $x$ by factoring}
+
+  \begin{multicols}{2}
+  \item $x^2+6x+5=0$
+  \item $x^2+5x=14$
+  \end{multicols}
+
+
+  \end{enumerate}
+\end{document}
