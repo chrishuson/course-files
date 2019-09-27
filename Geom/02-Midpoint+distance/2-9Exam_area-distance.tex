@@ -207,13 +207,75 @@
   
 \newpage
 
-  \subsubsection*{Early finishers, spicy: Solve for $x$ by factoring}
+  \subsubsection*{Early finishers, spicy}
 
-  \begin{multicols}{2}
-  \item $x^2+6x+5=0$
-  \item $x^2+5x=14$
-  \end{multicols}
+  \item Complete the construction of a line perpendicular to line $l$ through the point $P$. Show the construction marks, but make no extra lines. \vspace{2cm}
+  \begin{center}
+  \begin{tikzpicture}
+    \draw [<->, thick] (-5,0)--(7,0)node[below]{$l$}--(8,0);
+    \draw [fill] (3,3) circle [radius=0.05] node[above left]{$P$};
+  \end{tikzpicture}
+  \end{center} \vspace{6cm}
 
+  \item The perimeter of a square is 52 cm. Find the area of the square.
+
+\newpage
+\item Given $\overleftrightarrow{FG}$ as shown on the number line, with $F=-2.5$ and $G=7.5$. \\[20pt] % Midpoint
+  \begin{tikzpicture}
+    \draw [<->] (-4.5,0)--(8.5,0);
+    \foreach \x in {-4,...,8} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (-2.5,0) circle [radius=0.05] node[above] {$F$};
+      \draw [fill] (7.5,0) circle [radius=0.05] node[above] {$G$};
+  \end{tikzpicture}\\[5pt]
+  The point $H$ is $\frac{3}{4}$ of the way from $F$ to $G$. Find the value of $H$, and mark and label it on the numberline $\overleftrightarrow{FG}$. 
+  \vspace{6cm}
+
+  \item The shape shown below is composed of straight lines and right angles, with some lengths as marked. Find the area of the figure. Show your work.
+  \begin{flushleft}
+  \begin{tikzpicture}[scale=0.5]
+    \draw [-, thick] (0,0)--(13,0)--(13,3)--(9,3)--(9,7)--(13,7)--
+    (13, 9)--(0,9)--(0,7)--(4,7)--(4,3)--(0,3)--cycle;
+    %\draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
+    %\draw [fill] (7,0) circle [radius=0.05] node[right]{$B$};
+    %\draw [fill] (7,2) circle [radius=0.05] node[right]{$C$};
+    %\draw [fill] (0,2) circle [radius=0.05] node[left]{$D$};
+    \node at (4.5, 5){4};
+    \node at (2, 2.5){4};
+    \node at (8.5, 5){4};
+    \node at (11, 2.5){4};
+    \node at (6.5, -0.5){13};
+    \node at (13.5, 1.5){3};
+    \node at (13.5, 8){2};
+  \end{tikzpicture}
+  \end{flushleft} \vspace{2cm}
+
+\newpage
+
+  \item The length of the given rectangle is 12 more than the width. Its area is 64. Find the length and width of the rectangle using an algebraic method.\\[5pt]
+  (the drawing is not to scale)
+  \begin{flushleft}
+  \begin{tikzpicture}
+    \draw [-, thick] (0,0)--(4.5,0)--(4.5,2)--(0,2)--cycle;
+    \node at (5, 1){x};
+    \node at (2.25, -0.5){$x+12$};
+  \end{tikzpicture}
+  \end{flushleft} \vspace{5cm}
+
+  \item The circle with center $B$ is shown below with diameter $\overline{AC}$ and radius $\overline{BD}$. Given $BC=7x-3$ and $BD=5x+9$. Find the diameter of the circle.
+  \begin{flushleft}
+  \begin{tikzpicture}[scale=0.65]
+    \draw [thick] (0,0) circle [radius=5];
+    \draw [-, thick] (-5,0)--(0,0)--(5,0);
+    \draw [-, thick] (0,0)--(70:5);
+    \draw [fill] (-5,0) circle [radius=0.05] node[left]{$A$};
+    \draw [fill] (0,0) circle [radius=0.05] node[below]{$B$};
+    \draw [fill] (5,0) circle [radius=0.05] node[right]{$C$};
+    \draw [fill] (70:5) circle [radius=0.05] node[above right]{$D$};
+    \node at (70:2.5)[left]{$5x+9$};
+    \node at (2.5, 0)[below]{$7x-3$};
+  \end{tikzpicture}
+  \end{flushleft} \vspace{2cm}
 
   \end{enumerate}
 \end{document}
