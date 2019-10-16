@@ -289,7 +289,7 @@
     \draw [-, thick] (0,2)--(0.5,2.75)--(6.5,2.75)--(6,2);
     \draw [-, thick] (6,0)--(6.5,0.75)--(6.5,2.75);
     \node at (7.25, 1.75){$h=?$};
-    \node at (3, -0.25){$7.5$};
+    \node at (3, -0.35){$7.5$};
     \node at (6.5, 0.25){$4$};
   \end{tikzpicture}
   \end{flushright} \vspace{1cm} 
@@ -305,28 +305,49 @@
 
 
 \newpage
+\subsubsection*{Early finishers, spicy}
 
-\item The shape shown below is a trapezoid. Its height is 2 cm and the longer base is 8 cm. The shorter side opposite the base is 7 cm. \\[0.25cm]
-Find the area of the trapezoid by adding the rectangular area to the triangle part.
-\begin{flushright} 
-\begin{tikzpicture}[scale=1]
-  \draw [thick]
-  (0,0)--(0,2)--(7,2)--(8,0)--cycle;
-  \draw [dashed,<->] (6.95,0)--(6.95,2);
-  %\draw [dashed,<->] (0,2.1)--(7,2.1);
-  %\draw [->] (45:0.5)--(45:0.9142);
-  %\draw [->] (45:2.3)--(45:1.9142);
-  \draw (0,0)++(0,0.25)--++(0.25,0)--+(0,-0.25);
-  \draw (0,2)++(0,-0.25)--++(0.25,0)--+(0,0.25);
-  \draw (6.95,0)++(0,0.25)--++(0.25,0)--+(0,-0.25);
-  \draw [dashed,<->] (0,-0.1)--(8,-0.1);
-  \node at (4,-0.1)[below]{$8$};
-  \node at (7,1)[left]{$h=2$};
-  \node at (3.5,2.1)[above]{$7$};
-\end{tikzpicture}
-\end{flushright} 
- \vspace{4cm}
+  \item The shape shown below is a trapezoid. Its height is 3.2 cm and the longer base is 6.0 cm. The shorter side opposite the base is 4.8 cm. \\[0.25cm]
+  Find the area of the figure.
+  \begin{flushright} 
+  \begin{tikzpicture}[scale=1.1]
+    \draw [thick]
+    (3,0)--(3,2)--(7,2)--(8,0)--cycle;
+    \draw [dashed,<->] (6.95,0)--(6.95,2);
+    %\draw [dashed,<->] (0,2.1)--(7,2.1);
+    %\draw [->] (45:0.5)--(45:0.9142);
+    %\draw [->] (45:2.3)--(45:1.9142);
+    \draw (3,0)++(0,0.25)--++(0.25,0)--+(0,-0.25);
+    \draw (3,2)++(0,-0.25)--++(0.25,0)--+(0,0.25);
+    \draw (6.95,0)++(0,0.25)--++(0.25,0)--+(0,-0.25);
+    \draw [dashed,<->] (3,-0.1)--(8,-0.1);
+    \node at (5.5,-0.1)[below]{$6.0$};
+    \node at (6.75,1)[left]{$h=3.2$};
+    \node at (5,2.1)[above]{$4.8$};
+  \end{tikzpicture}
+  \end{flushright} 
+  \vspace{4cm}
 
+
+  \item In the diagram below $m\angle BOC = 3x+15$ and $m\angle DOE = 6x-6$. Find $m\angle DOE$.
+  \begin{flushright}
+  \begin{tikzpicture}[scale=0.8, rotate=-10]
+    \draw [<->, thick] (-35:5)--(0,0)--(145:5);
+    \draw [<->, thick] (-5,0)--(5,0);
+    \draw [->, thick] (0,0)--(0,4);
+    \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+    %\draw [fill] (-1,2.5) circle [radius=0.05] node[left ]{$B$};
+    \draw [fill] (145:3) circle [radius=0.05] node[below left]{$B$};
+    \draw [fill] (-4,0) circle [radius=0.05] node[below]{$A$}; 
+    \draw [fill] (0,0) circle [radius=0.05] node[below left]{$O$};
+    \draw [fill] (0,3) circle [radius=0.05] node[left]{$C$};
+    \draw [fill] (4,0) circle [radius=0.05] node[below]{$D$};
+    \draw [fill] (-35:2) circle [radius=0.05] node[below left]{$E$};
+  \end{tikzpicture}
+  \end{flushright}
+
+
+\newpage
   \item An angle bisector is shown below, with $\overrightarrow{PR}$ bisecting $\angle QPS$. Given $m\angle QPR = 4x+2$ and $m\angle QPS = 10x-20$, find $m\angle QPS$.
   \begin{flushright}
   \begin{tikzpicture}[scale=0.6, rotate=30]
@@ -337,75 +358,75 @@ Find the area of the trapezoid by adding the rectangular area to the triangle pa
     %\draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
     %\draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
   \end{tikzpicture}
-  \end{flushright}
+  \end{flushright} \vspace{4cm}
 
-\newpage
-  \item Given that $E$ bisects $\overline{DF}$. $DE=12x-5$, $EF=9x+4$. Find ${EF}$.
-  \vspace{9cm}
+ 
+  \item A rectangle has two triangular cutouts as shown with lengths marked. Find the area of the figure. (the figure is not drawn to scale)
+  \begin{flushleft}
+  \begin{tikzpicture}[scale=0.5]
+    \draw [-, thick] (0,0)--(13,0)--(13,7)--(11,9)--
+    (0,9)--(0,7)--(4,3)--(0,3)--cycle;
+    \draw [dashed] (13,7)--(11,7)--(11,9);
+    \draw [<->, dashed] (13.2,0)--(13.2,9);
+    %\draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
+    %\draw [fill] (7,0) circle [radius=0.05] node[right]{$B$};
+    %\draw [fill] (7,2) circle [radius=0.05] node[right]{$C$};
+    %\draw [fill] (0,2) circle [radius=0.05] node[left]{$D$};
+    \node at (0.5, 8){2};
+    \node at (0.5, 1.5){3};
+    \node at (2, 2.5){3};
+    \node at (10.5, 8){2};
+    \node at (12, 6.5){2};
+    \node at (6.5, -0.5){11};
+    \node at (13.8, 4.5){9};
+    %\node at (13.5, 8){2};
+  \end{tikzpicture}
+  \end{flushleft} \vspace{2cm}
 
   \emph{Write the term that best completes each statement.}
-  \item Two or more line segments of equal measure are \rule{4cm}{0.15mm} \bigskip
+  \item Any two points are \rule{4cm}{0.15mm} \bigskip
 
-  \item Points that are located on the same line are \rule{4cm}{0.15mm} \\[15pt]
-
-  \emph{Factor and solve for $x$.}
-    \begin{multicols}{2}
-        \item $x^2+8x+7=0$
-        \item $x^2+7x=18$
-    \end{multicols}
+  \item Any three points are  \rule{4cm}{0.15mm}
   
-\newpage
+  \newpage
 
-  \subsubsection*{Early finishers, spicy}
-
-  \item Complete the construction of a line perpendicular to line $l$ through the point $P$. Show all construction marks, but make no extra lines. \vspace{2cm}
-  \begin{center}
-  \begin{tikzpicture}
-    \draw [<->, thick] (-5,0)--(7,0)node[below]{$l$}--(8,0);
-    \draw [fill] (3,3) circle [radius=0.05] node[above left]{$P$};
-  \end{tikzpicture}
-  \end{center} \vspace{6cm}
-
-  \item The perimeter of a square is 52 cm. Find the area of the square.
-
-\newpage
-\item Given $\overleftrightarrow{FG}$ as shown on the number line, with $F=-2.5$ and $G=7.5$. \\[20pt] % Midpoint
-  \begin{tikzpicture}
-    \draw [<->] (-4.5,0)--(8.5,0);
-    \foreach \x in {-4,...,8} %2 leading for diff!=1
-      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-      \draw [fill] (-2.5,0) circle [radius=0.05] node[above] {$F$};
-      \draw [fill] (7.5,0) circle [radius=0.05] node[above] {$G$};
-  \end{tikzpicture}\\[5pt]
-  The point $H$ is $\frac{3}{4}$ of the way from $F$ to $G$. Find the value of $H$, and mark and label it on the numberline $\overleftrightarrow{FG}$. 
-  \vspace{6cm}
-
-\newpage
-
-  \item The length of the given rectangle is 12 more than the width. Its area is 64. Find the length and width of the rectangle using an algebraic method.\\[5pt]
+  \item The length of the given rectangle is 10 more than the width. Its area is 75. Find the length and width of the rectangle using an algebraic method.\\[5pt]
   (the drawing is not to scale)
-  \begin{flushleft}
+  \begin{flushright}
   \begin{tikzpicture}
     \draw [-, thick] (0,0)--(4.5,0)--(4.5,2)--(0,2)--cycle;
     \node at (5, 1){x};
-    \node at (2.25, -0.5){$x+12$};
+    \node at (2.25, -0.5){$x+10$};
   \end{tikzpicture}
-  \end{flushleft} \vspace{5cm}
+  \end{flushright} \vspace{5cm}
 
-  \item The circle with center $B$ is shown below with diameter $\overline{AC}$ and radius $\overline{BD}$. Given $BC=7x-3$ and $BD=5x+9$. Find the diameter of the circle.
-  \begin{flushleft}
+  \item The circle with center $B$ is shown below with diameter $\overline{AC}$ and radius $\overline{BD}$. Given $BC=3x+15$ and $BD=2x+5$. Find the diameter of the circle.
+  \begin{flushright}
   \begin{tikzpicture}[scale=0.65]
     \draw [thick] (0,0) circle [radius=5];
     \draw [-, thick] (-5,0)--(0,0)--(5,0);
     \draw [-, thick] (0,0)--(70:5);
     \draw [fill] (-5,0) circle [radius=0.05] node[left]{$A$};
-    \draw [fill] (0,0) circle [radius=0.05] node[below]{$B$};
+    \draw [fill] (0,0) circle [radius=0.05] node[above left]{$B$};
     \draw [fill] (5,0) circle [radius=0.05] node[right]{$C$};
     \draw [fill] (70:5) circle [radius=0.05] node[above right]{$D$};
-    \node at (70:2.5)[left]{$5x+9$};
-    \node at (2.5, 0)[below]{$7x-3$};
+    \node at (70:2.5)[left]{$2x+5$};
+    \node at (-0.5, 0)[below]{$3x+15$};
   \end{tikzpicture}
-  \end{flushleft} \vspace{2cm}
+  \end{flushright} \vspace{2cm}
+
+\newpage
+
+  \item Complete the construction of a hexagon with one side the given line segment. Show all construction marks, but make no extra lines. \vspace{9cm}
+  \begin{center}
+  \begin{tikzpicture}
+    \draw [-, thick] (0,0)--(4,0);
+    \draw [fill] (0,0) circle [radius=0.05];
+    \draw [fill] (4,0) circle [radius=0.05];
+  \end{tikzpicture}
+  \end{center} \vspace{4cm}
+
+  \item The area of a square is 20 cm. Find the perimeter of the square.
 
   \end{enumerate}
 \end{document}
