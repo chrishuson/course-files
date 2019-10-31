@@ -31,19 +31,137 @@
   \vspace{0.25cm}
   \begin{enumerate}
 
-    \item Construct a perpendicular to $l$ though $C$.\\
-      %\hspace{1cm} Given the line  $l$ and point $P$.
-      \vspace{4cm}
-      \begin{center}
-      \begin{tikzpicture}
-        \draw [<->, thick] (0,0)--(11,0) node[below left]{$l$};
-        %\draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
-        %\draw [fill] (11,0) circle [radius=0.05] ;
-        \draw [fill] (7,2) circle [radius=0.05] node[above right]{$C$};
-      \end{tikzpicture}
-    \end{center} %\vspace{3cm}
+  \item Construct a perpendicular to $l$ though $C$.\\
+    %\hspace{1cm} Given the line  $l$ and point $P$.
+    \vspace{2cm}
+    \begin{center}
+    \begin{tikzpicture}
+      \draw [<->, thick] (0,0)--(11,0) node[below left]{$l$};
+      %\draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
+      %\draw [fill] (11,0) circle [radius=0.05] ;
+      \draw [fill] (7,2) circle [radius=0.05] node[above right]{$C$};
+    \end{tikzpicture}
+  \end{center} \vspace{2cm}
 
-  \newpage 
+  \item Complete the construction of the bisector of the given angle. 
+  \vspace{2cm}
+    \begin{center}
+    \begin{tikzpicture}[rotate=20]
+      \draw [<->, thick] (80:7)--(0,0)--(9,0);
+      %\draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      %\draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
+    \end{tikzpicture}
+    \end{center} \vspace{3cm}  
+
+\newpage
+
+  \item Given isosceles right $\triangle ABC$ with $\overline{AC} \cong \overline{BC}$ and $\overline{AC} \perp \overline{BC}$. Find $m\angle A$.
+  \begin{flushright}
+  \begin{tikzpicture}[scale=0.5]
+    \draw [thick](0,0) node[below]{$A$}--
+    (8,0) node[below right]{$C$}--
+    (8,8) node[below right]{$B$} --cycle;
+  \end{tikzpicture}
+  \end{flushright}  \vspace{0.5cm}
+   
+  \item A sheet metal part is cut with square corners and two $45^\circ$ cutouts as shown with lengths marked in centimeters.
+  \begin{enumerate}
+    \item Find the area of the figure. (the drawing is not to scale)
+      \begin{flushright}
+      \begin{tikzpicture}[scale=0.5]
+        \draw [-, thick] (0,0)--(13,0)--(13,7)--(11,9)--
+        (6,9)--(4,7)--(4,3)--(0,3)--cycle;
+        \draw [dashed] (4,7)--(6,7)--(6,9);
+        \draw [dashed] (13,7)--(11,7)--(11,9);
+        \draw [<->, dashed] (13.2,0)--(13.2,9);
+        \node at (6.5, 8){2};
+        \node at (5, 6.5){2};
+        \node at (0.5, 1.5){3};
+        \node at (2, 2.5){4};
+        \node at (10.5, 8){2};
+        \node at (12, 6.5){2};
+        \node at (7, -0.5){12};
+        \node at (13.8, 4.5){9};
+        %\node at (13.5, 8){2};
+      \end{tikzpicture}
+      \end{flushright} \vspace{3cm}
+    \item Spicy: The weight of the sheet metal is 1.5 grams per square centimeter. Find the weight of the part.
+  \end{enumerate}
+
+\newpage 
+
+  \item The measures in degrees of the three angles of a triangle are $3x$, $\frac{1}{2}x+7$, and $5x-65$. Find $x$. \vspace{4cm}
+
+  \item Given isosceles $\triangle RSU$ with $\overline{UR} \cong \overline{US}$. If $m\angle UST=x$ and $m\angle R=x-80$, find $m\angle U$.
+  \begin{flushright}
+  \begin{tikzpicture}[scale=0.8]
+    %\draw [->, thick] (0,0)--(5,5);
+    \draw [<-, thick] (8,0)--
+      (7,0) node[below]{$T$}--
+      (0,0) node[below]{$R$}--
+      (2.5,3) node[above]{$U$}--
+      (5,0) node[below]{$S$};
+  \end{tikzpicture}
+  \end{flushright} \vspace{2cm}
+  
+  \item An angle bisector is shown below, with $\overrightarrow{AC}$ bisecting $\angle BAD$. Given $m\angle BAC = 3x+5$ and $m\angle BAD = 7x-1$, find $m\angle BAD$. (Show check)
+  \begin{flushright}
+  \begin{tikzpicture}[scale=0.7, rotate=20]
+    \draw [<->, thick] (80:7)node[left]{$B$} 
+    --(0,0)node[below]{$A$}
+    --(6,0)node[below]{$D$}--(7,0);
+    \draw [->, thick] (0,0)--(40:7)node[below right]{$C$};
+    %\draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+    %\draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
+  \end{tikzpicture}
+  \end{flushright} \vspace{2cm}
+
+\newpage
+
+
+  \item The trapezoid $ABCD$ has two parallel sides, $\overline{AB} \parallel \overline{CD}$ with lengths $AB=8$ and $CD=11$. The trapezoid's height is $h=6.5$. Find the areas of $\triangle ABC$ and $\triangle CDA$. Add their areas to find the area of the whole trapezoid. \\[0.25cm]
+    \begin{tikzpicture}[scale=0.6]
+      \draw [thick]
+        (0,0)node[below]{$A$}--
+        (6,0)node[below]{$B$}--
+        (7,4)node[above]{$C$} --cycle;
+      \draw [thick] (0,0)--(-1,4)node[above]{$D$}--(7,4);
+      \draw [dashed] (7,0)--(7,4);
+      \draw [dashed, ->] (6,0)--(7.5,0);
+      \draw (7,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
+      \node at (7,2.2)[right]{$h=6.5$};
+      \node at (3,0)[below]{$8$};
+      \node at (3,4)[above]{$11$};
+    \end{tikzpicture} \vspace{2cm}
+
+  \item Given parallel lines $\overleftrightarrow{AB} \parallel \overleftrightarrow{CDE}$ with $\overline{AC} \cong \overline{CD}$. If $m\angle BAD=80$ find $m\angle ACD$.
+  \begin{flushright}
+  \begin{tikzpicture}[scale=0.9]
+    \draw [<->, thick] (1,3)--(6.5,3) node[above left]{$B$};
+    \draw [<->, thick] (0,0)--
+      (5,0)--
+      (6,0) node[below left]{$E$};
+    \draw [-, thick] (1,0) node[below]{$C$}--
+      (2.5,3) node[above]{$A$}--
+      (4.35,0) node[below]{$D$};
+  \end{tikzpicture}
+  \end{flushright} \vspace{1cm}
+
+  \item Two parallel lines intersect a second set of parallel lines. Given $m\angle 2 = 2.8x+9$ and $m\angle 4 = 4.4x - 63$, find the measure of $\angle 1$. 
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.9]
+        \draw [<->, thick] (3,0)--(12,0);
+        \draw [<->, thick] (2,2)--(11,2);
+        \draw [<->, thick] (5,-1)--(3,3);
+        \draw [<->, thick] (11,-1)--(9,3);
+        \node at (4, 1.7){$1$};
+        \node at (6.1, 0.25){$m\angle 2 = 2.8x+9$};
+        \node at (10, 0.25){$3$};
+        \node at (7.6, 1.7){$m\angle 4 = 4.4x - 63$};
+      \end{tikzpicture}
+      \end{flushright}
+
+\newpage
 
     \subsubsection*{Do Not Solve! \\
     Label the drawing completely and write an equation in terms of $x$ modeling the situation.}
@@ -130,15 +248,7 @@
 
 
 \newpage
-    \item Complete the construction of the bisector of the given angle. 
-    \vspace{3cm}
-      \begin{center}
-      \begin{tikzpicture}[rotate=30]
-        \draw [<->, thick] (80:7)--(0,0)--(9,0);
-        %\draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-        %\draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
-      \end{tikzpicture}
-      \end{center} \vspace{3cm}  
+
 
       \item  A cardboard mailing carton is $12 \frac{1}{2}$ inches long, 9 inches wide, and $1 \frac{1}{2}$ inches tall. Find the volume of the box. Show the calculation.
   \begin{flushright}
@@ -281,20 +391,6 @@
   \end{flushleft} \vspace{2cm}
 
   \item Given two complementary angles, $m\angle A = 54$ and $m\angle B = 3x-3$. Find $x$. Check your solution. \vspace{3.5cm} 
- 
-\newpage
-
-  \item An angle bisector is shown below, with $\overrightarrow{AC}$ bisecting $\angle BAD$. Given $m\angle BAC = 4x+2$ and $m\angle DAC = 6x-16$, find $m\angle BAD$. (Show check)
-  \begin{flushright}
-  \begin{tikzpicture}[scale=1]
-    \draw [<->, thick] (80:7)node[left]{$B$} 
-    --(0,0)node[below]{$A$}
-    --(6,0)node[below]{$D$}--(7,0);
-    \draw [->, thick] (0,0)--(40:7)node[below right]{$C$};
-    %\draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-    %\draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
-  \end{tikzpicture}
-  \end{flushright} \vspace{2cm}
 
 \item The volume of the rectanglar prism shown is 105 cubic meters. Its length is 7.5 meters and depth 4 m. Find its height $h$. Show the calculation. (not drawn to scale)
 \begin{flushright}
@@ -373,34 +469,6 @@
     %\draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
   \end{tikzpicture}
   \end{flushright} \vspace{4cm}
-
- 
-  \item A rectangle has two triangular cutouts as shown with lengths marked. Find the area of the figure. (the figure is not drawn to scale)
-  \begin{flushleft}
-  \begin{tikzpicture}[scale=0.5]
-    \draw [-, thick] (0,0)--(13,0)--(13,7)--(11,9)--
-    (0,9)--(0,7)--(4,3)--(0,3)--cycle;
-    \draw [dashed] (13,7)--(11,7)--(11,9);
-    \draw [<->, dashed] (13.2,0)--(13.2,9);
-    %\draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
-    %\draw [fill] (7,0) circle [radius=0.05] node[right]{$B$};
-    %\draw [fill] (7,2) circle [radius=0.05] node[right]{$C$};
-    %\draw [fill] (0,2) circle [radius=0.05] node[left]{$D$};
-    \node at (0.5, 8){2};
-    \node at (0.5, 1.5){3};
-    \node at (2, 2.5){3};
-    \node at (10.5, 8){2};
-    \node at (12, 6.5){2};
-    \node at (6.5, -0.5){11};
-    \node at (13.8, 4.5){9};
-    %\node at (13.5, 8){2};
-  \end{tikzpicture}
-  \end{flushleft} \vspace{2cm}
-
-  \emph{Write the term that best completes each statement.}
-  \item Any two points are \rule{4cm}{0.15mm} \bigskip
-
-  \item Any three points are  \rule{4cm}{0.15mm}
   
   \newpage
 
