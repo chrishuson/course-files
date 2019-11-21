@@ -27,18 +27,18 @@
 \renewcommand{\headrulewidth}{0pt}
 
 \begin{document}
-\subsubsection*{5.10 Do Now: Composition of two transformations}
+\subsubsection*{5.10b Do Now: Composition of two transformations}
   \begin{enumerate}
 
   \item After a dilation with center $(0,0)$, the image of $\overline{MN}$ is $\overline{M'N'}$. If $MN=4.5$ and $M'N'=18$, find the scale factor of this dilation. \vspace{3cm}
 
-  \item In the diagram below, $\triangle ABC$ with sides of 13, 15, and 16, is mapped onto $\triangle DEF$ after a clockwise rotation of $90^\circ$ about point $P$. \\*[0.25cm]
+  \item In the diagram below, $\triangle ABC$ with sides of 13, 15, and 16, is mapped onto $\triangle DEF$ by a rigid motion. \\*[0.25cm]
   If $DE=2x-1$, what is the value of $x$? 
       \begin{flushright}
         \begin{tikzpicture}[scale=.6]
           %\draw [thick, <->] (-7.4,0) -- (10.4,0) node [right] {$x$};
           %draw [thick, <->] (0,-5.4)--(0,10.4) node [above] {$y$};
-          \fill (0,0) circle[radius=0.1] node[right]{$P$};
+          %\fill (0,0) circle[radius=0.1] node[right]{$P$};
           \draw [thick]
             (-2,1) node[below left] {$A$}--
             (-7,2) node[left] {$B$}--
@@ -94,26 +94,26 @@
   \end{center}
   \begin{enumerate}
     \item State the angle corresponding with $\angle 6$. \vspace{0.5cm}
-    \item What theorem would justify $m\angle 5 + m\angle 6 =180^\circ$? \rule{6cm}{0.15mm} \vspace{0.5cm}
-    \item What theorem would justify $m\angle 7 = m\angle 2$? \rule{7cm}{0.15mm} \vspace{0.5cm}
+    \item Why does $m\angle 5 + m\angle 6 =180^\circ$? (justify) \rule{6cm}{0.15mm} \vspace{0.5cm}
+    \item Why does $m\angle 7 = m\angle 2$?  (justify) \rule{7cm}{0.15mm} \vspace{0.5cm}
     \item Given $m\angle 3 = 73^\circ$ and $m\angle 5 = (3x-1)^\circ$. Find $x$. \vspace{5cm}
   \end{enumerate}
 
 \newpage
   \item A translation maps $D(2,4) \rightarrow D'(-3,4)$. What is the image of $E(5,-5)$ under the same translation?  \vspace{3.5cm}
 
-  \item The image of triangle $ABC$ after a rotation is $\triangle A'B'C'$. Is the area of the triangle greater, smaller, or the same after the transformation? Justify your answer. \vspace{3.5cm}
+  \item The image of triangle $ABC$ after a translation is $\triangle A'B'C'$. Is the area of the triangle greater, smaller, or the same after the translation? Justify your answer. \vspace{3.5cm}
 
-  \item The triangle $ABC$, shown below, undergoes two rigid motions carrying it onto triangle $XYZ$. State the two isometric transformations. (be specific)
+  \item The triangle $ABC$, shown below, undergoes a rigid motion carrying it onto triangle $XYZ$. State the transformation. (be specific)
     \begin{flushright}
       \begin{tikzpicture}[scale=.48]
         \draw [help lines] (-10,-6) grid (10,10);
         \draw [thick, <->] (-10.4,0) -- (10.4,0) node [right] {$x$};
         \draw [thick, <->] (0,-6.4)--(0,10.4) node [above] {$y$};
         \draw [thick]
-          (4,2) node[below left] {$X$}--
-          (8,3) node[right] {$Y$}--
-          (8,6) node[above right] {$Z$}--cycle;
+          (5,-3) node[below left] {$X$}--
+          (4,1) node[right] {$Y$}--
+          (1,1) node[above right] {$Z$}--cycle;
         \draw [thick]
           (-1,1) node[below left] {$A$}--
           (-2,5) node[above right] {$B$}--
@@ -124,7 +124,7 @@
 \newpage
 
 \item Triangle $\triangle ABC$ is graphed on the set of axes below. The vertices of $\triangle ABC$ have the coordinates $A(2,-3)$, $B(8,1)$, and $C(-1,8)$. \\*[0.25cm]
-Reflect the triangle across the $y$-axis. Write down its coordinates in a table and plot and label it on the graph.
+Translate the triangle three units to the left and down one unit. Write down its coordinates in a table and plot and label it on the graph.
     \begin{flushright} %4 quadrant regents grid
     \begin{tikzpicture}[scale=.48]
       \draw [help lines] (-9,-5) grid (10,9);
@@ -138,7 +138,7 @@ Reflect the triangle across the $y$-axis. Write down its coordinates in a table 
     \end{tikzpicture}
     \end{flushright}
   
-\item In  $\triangle ABC$ shown below, side $\overline{AC}$ is extended to point $D$ with $m\angle DAB=(6x-16)^\circ$, $m\angle C=(x+4)^\circ$, and $m\angle B=(4x+3)^\circ$. \\[0.25cm]
+\item In  $\triangle ABC$ shown below, side $\overline{AC}$ is extended to point $D$ with $m\angle DAB=122^\circ$, $m\angle C=(x+4)^\circ$, and $m\angle B=(4x+3)^\circ$. \\[0.25cm]
 What is $m\angle BAC$?
 \begin{flushright}
     \begin{tikzpicture}
@@ -146,7 +146,7 @@ What is $m\angle BAC$?
         (1.8,0)node[below]{$A$}--
         (9,0)node[below]{$C$}--
         (4,3)node[above]{$B$} --(2,0);
-        \node at (2.2,0)[above left]{$(6x-16)^\circ$};
+        \node at (2.2,0)[above left]{$122^\circ$};
         \node at (8.2,0)[above left]{$(x+4)^\circ$};
         \node at (4.4,2.4)[below]{$(4x+3)^\circ$};
     \end{tikzpicture}
