@@ -9,8 +9,9 @@
 \usepackage{graphicx}
 \usepackage{venndiagram}
 
-%\usepackage{pgfplots}
-%\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepgfplotslibrary{statistics}
 %\usepackage{pgfplotstable}
 
 \setlength{\headheight}{26pt}%doesn't seem to fix warning
@@ -430,5 +431,36 @@
   Homework: Exploration paper peer review
 }
 
+\section{Results of Descriptive Statistics exam 2 Dec}
+\frame
+{
+  \frametitle{GQ: How do we display summary statistics?}
+  \framesubtitle{CCSS: HSF Box plots, dispersion \hfill \alert{Monday 2 Dec}}
+
+  \begin{tikzpicture}
+    \begin{axis}[
+        title={Statistics Exam Scores},
+        axis lines=left,
+        xmin=0, xmax=50,
+        y=1cm,
+        ytick={1},
+        yticklabels={Overall class},
+      enlargelimits=0.05,
+        ]
+        %\addplot+ [boxplot]
+        %table {3-11_IB-exam.txt};
+       \addplot+ [
+        boxplot prepared={
+            lower whisker=11, lower quartile=21.25,
+            median=24,
+            upper quartile=36, upper whisker=45,
+            average=28,
+            },
+        ] coordinates {};
+    
+    \end{axis}
+    \end{tikzpicture}
+
+  }
 
 \end{document}

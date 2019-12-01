@@ -1,0 +1,61 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+%\usepackage{tkz-fct}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepgfplotslibrary{statistics}
+\usepackage{pgfplotstable}
+%\usepackage{venndiagram}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage \\Name: \hspace{1.5in}}
+\lhead{BECA / Dr. Huson / 12.1 IB Math SL \\* November 2019 \\*\textbf{Graphics examples
+}}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{pgfplots box plot}
+\author{Chris Huson}
+\date{November 2019}
+
+\begin{document}
+
+
+%\begin{enumerate}
+
+
+\begin{tikzpicture}
+\begin{axis}[
+    title={Statistics Exam Scores},
+    axis lines=left,
+    xmin=0, xmax=50,
+    y=1cm,
+    ytick={1,2},
+    yticklabels={From data, Prepared},
+	enlargelimits=0.05,
+    ]
+    \addplot+ [boxplot]
+    table {3-11_IB-exam.txt};
+   \addplot+ [
+    boxplot prepared={draw position=2,
+        lower whisker=7, lower quartile=21.25,
+        median=24,
+        upper quartile=36, upper whisker=45,
+        average=28,
+        },
+    ] coordinates {};
+
+\end{axis}
+\end{tikzpicture}
+
+
+%\end{enumerate}
+\end{document}
