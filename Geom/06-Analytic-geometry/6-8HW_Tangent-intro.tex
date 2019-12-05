@@ -1,0 +1,161 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+%\usetikzlibrary{quotes, angles}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\  Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\* Unit 6: Distance \& slope\\* 5 December 2019}
+
+\begin{document}
+\subsubsection*{Do Now: Linear \& quadratic functions on the coordinate plane}
+  \begin{enumerate}
+
+
+  \item Express the result to \emph{the nearest hundredth}.  \vspace{0.5cm}
+    \begin{multicols}{2}
+      \begin{enumerate}
+        \item $\sin 32^\circ = $ \vspace{0.5cm}
+        \item $\cos 29^\circ =$
+        \item $\cos 58^\circ = $ \vspace{0.5cm}
+        \item $\sin 61^\circ =$
+      \end{enumerate}
+    \end{multicols}
+
+  \item $\triangle ABC$ is shown with $m\angle C=90^\circ$. The lengths of the triangle's sides are $a$, $b$, and $c$. Express each trigonometric ratio as a fraction of two variables. \vspace{1cm}
+  \begin{multicols}{2}
+      \begin{tikzpicture}[scale=0.7]
+        \draw [thick]
+        (0,0)node[left]{$A$}--
+        (4,0)node[below right]{$C$}--
+        (4,5)node[right]{$B$}--cycle;
+        \node at (2,0)[below]{$b$};
+        \node at (4,2.7)[right]{$a$};
+        \node at (1.8,2.5)[above]{$c$};
+      \end{tikzpicture}
+
+        \begin{enumerate}
+        \item $\sin B =$ \vspace{0.75cm}
+        \item $\cos B =$ \vspace{0.75cm}
+        \item $\tan B =$ \vspace{0.75cm}
+      \end{enumerate}
+  \end{multicols}
+
+  
+  \item Given right $\triangle JKL$ with $\overline{JK} \perp \overline{KL}$, $JL=12.4$, $m\angle J=41^\circ$. Find the length $JK$, \emph{rounded to the nearest hundredth}.
+    \begin{center}
+      \begin{tikzpicture}[scale=0.7]
+        \draw [thick]
+        (0,0) node[below]{$J$}--
+        (7,0)  node[below]{$K$}--
+        (7,3) node[above right]{$L$}--cycle;
+      \end{tikzpicture}
+    \end{center}
+
+    %\vspace{4cm}
+
+\newpage
+
+
+  \item Spicy: On the set of axes below, graph the quadrilateral $ABCD$ having coordinates $A(-3,-3)$, $B(5,1)$, $C(6,8)$, and $D(-2,4)$.
+    \begin{center} %4 quadrant regents grid
+    \begin{tikzpicture}[scale=.48]
+      \draw [help lines] (-9,-9) grid (9,9);
+      \draw [thick, <->] (-9.4,0) -- (9.4,0) node [below right] {$x$};
+      \draw [thick, <->] (0,-9.4)--(0,9.4) node [left] {$y$};
+      %\draw [thick] (-3,-3) node[below] {$A$}--
+      %(5,1) node[right] {$B$}--
+      %(6,8) node[left] {$C$}--
+      %(-2,4) node[left] {$D$}--cycle;
+      %\draw [fill] (5,0) circle [radius=0.1] node[above left] {$P$};
+    \end{tikzpicture}
+    \end{center}
+    Given that $\overline{AD} \perp \overline{BC}$. Use what you know about slope and the definition that a parallelogram is a quadrilateral with two pairs of parallel sides to prove $ABCD$ is a parallelogram. Be sure to state the conclusion in your proof.
+
+
+
+  \end{enumerate}
+
+  \end{document}
+
+
+
+  \item Given two vertical angles, $m \angle 1 = 5x+9$, $m \angle 2 = 6x-1$. Find $m \angle 1$.\\
+  For full credit, check by comparing to $m\angle 2$.
+      \begin{flushright}
+      \begin{tikzpicture}[scale=.7]
+        \draw [<->, thick] (0,-1.5)--(10,1.5);
+        \draw [<->, thick] (2,3.5)--(7,-3.5);
+        \node at (3,.4){1};
+        \node at (6,-.6){2};
+      \end{tikzpicture}
+      \end{flushright}
+
+  \item Given $\overrightarrow{BA} \perp \overrightarrow{BC}$, $m \angle ABD = 10x+15$, and $m \angle DBC = 5x$. Find $m \angle DBC$. \\[0.5cm]
+  For full credit, show the check using both angle measures.
+    \begin{flushleft}
+    \begin{tikzpicture}[scale=1.3]
+      \draw [<->, thick] (0,3)--(0,0)--(5,0);
+      \draw [->, thick] (0,0)--(3.5, 2);
+      \draw [-, thin] (0, 0.4)--(0.4, 0.4)--(0.4, 0);
+      %\node at (3,.4){1};
+      %\node at (6,-.6){2};
+      \draw [fill] (0,0) circle [radius=0.05] node[below]{$B$};
+      \draw [fill] (0,2) circle [radius=0.05] node[left]{$A$};
+      \draw [fill] (4,0) circle [radius=0.05] node[below]{$C$};
+      \draw [fill] (2.625, 1.5) circle [radius=0.05] node[below]{$D$};
+    \end{tikzpicture}
+    \end{flushleft}
+    \vspace{3cm}
+
+    \item Given the circle $C$ with circumference $12\pi$.
+  \begin{enumerate}
+    \item Write down the formula for the circumference of a circle and solve for the radius yielding a circumference of $12\pi$. \vspace{1cm}
+    \item Find the area of the circle.
+  \end{enumerate}
+  \begin{tikzpicture}[scale=.635]
+    \draw [help lines] (-8,-8) grid (8,8);
+    %\draw [thick, ->] (-2.2,0) -- (10.4,0) node [below right] {$x$};
+    %\draw [thick, ->] (0,-2.2)--(0,10.4) node [left] {$y$};
+    \draw (0,0) circle [radius=6] node[below]{$C$};
+    \draw [fill] (0,0) circle [radius=0.05];
+  \end{tikzpicture}
+
+  \item On the graph, draw polygon ABCDEF with vertices A(1, 1), B(1, 4), C(3, 4), D(3, 7), E(8, 7), and F(8, 1). Find the perimeter and the area of the polygon.\\[1cm]
+  \begin{tikzpicture}[scale=.635]
+    \draw [help lines] (-2,-2) grid (10,10);
+    \draw [thick, ->] (-2.2,0) -- (10.4,0) node [below right] {$x$};
+    \draw [thick, ->] (0,-2.2)--(0,10.4) node [left] {$y$};
+  \end{tikzpicture}
+  \vspace{2cm}
+
+  \item Given a circle $O$ with radius $5$.
+  \begin{enumerate}
+    \item Find the circumference of $O$. \vspace{2cm}
+    \item Find the area of $O$. \vspace{2cm}
+  \end{enumerate}
+
+
+\newpage
+
+  \item Given $\overline{JKL}$, $JL=24$, and the point $K$ partitions $\overline{JL}$ in a ratio of 1:3.\\[0.5cm] Find ${JK}$. \\[1.5cm]
+      \begin{tikzpicture}
+        \draw [-, thick] (1,0)--(7,0);
+        \draw [fill] (1,0) circle [radius=0.05] node[below]{$J$};
+        \draw [fill] (3.5,0) circle [radius=0.05] node[below]{$K$};
+        \draw [fill] (7,0) circle [radius=0.05] node[below]{$L$};
+      \end{tikzpicture} \vspace{3cm}
