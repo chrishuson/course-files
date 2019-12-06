@@ -25,72 +25,73 @@
 \subsubsection*{6.8 Do Now: Euclid's Garden, mapping angles to slope}
   \begin{enumerate}
 
-    \item Below, right $\triangle ABC$ is shown in standard position with $A(0, 0)$, $B(8, 6)$, and $C(8,0)$.\\[0.25cm]
-     Measure the lengths of the sides of the triangle in centimeters and mark them on the diagram.
-    \begin{center}
-      \begin{tikzpicture}[scale=1.008]
-        \draw [help lines] (-4,-1) grid (10,13);
-        \draw [thick, ->] (-4.2,0) -- (10.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-1.2)--(0,13.4) node [left] {$y$};
-        \draw [thick, -] (0,0)--(8, 6)--(8, 0)--cycle;
-        \draw [fill] (0, 0) circle[radius = 0.05] node[above left]{$A$};
-        \draw [fill] (8, 6) circle[radius = 0.05] node[above right]{$B$};
-        \draw [fill] (8, 0) circle[radius = 0.05] node[above right]{$C$};
+    \item On a separate sheet of paper, make a table listing each point in the graph below:
+    \begin{enumerate}
+      \item Write down the $x$ and $y$ coordinates of the point;
+      \item Calculate the slope, ``rise over run'', as a decimal to the nearest thousandth;
+      \item Measure the angle, $\theta$, made with the origin and $x$-axis, as shown for point $A$.
+    \end{enumerate}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=1.308]
+        \draw [help lines] (0,0) grid (10,10);
+        \draw [thick, ->] (0,0) -- (10.4,0) node [below right] {$x$};
+        \draw [thick, ->] (0,0)--(0,10.4) node [left] {$y$};
+        \draw [fill] (10, 1) circle[radius = 0.05] node[above right]{$A$};
+        \draw [dashed, ->] (0,0)--(10.4, 1.04);
+        \draw [fill] (10, 2) circle[radius = 0.05] node[above right]{$B$};
+        \draw [dashed, ->] (0,0)--(10.1, 2.02);
+        \draw [fill] (6, 2) circle[radius = 0.05] node[above right]{$C$};
+        \draw [dashed, ->] (0,0)--(9, 3);
+        \draw [fill] (8, 4) circle[radius = 0.05] node[above]{$D$};
+        \draw [dashed, ->] (0,0)--(8.8, 4.4);
+        \draw [fill] (8, 5) circle[radius = 0.05] node[above]{$E$};
+        \draw [dashed, ->] (0,0)--(8.8, 5.5);
+        \draw [fill] (5, 4) circle[radius = 0.05] node[above]{$F$};
+        \draw [dashed, ->] (0,0)--(10, 8);
+        \draw [fill] (6, 6) circle[radius = 0.05] node[above]{$G$};
+        \draw [dashed, ->] (0,0)--(8.8, 8.8);
+        \draw [fill] (4, 5) circle[radius = 0.05] node[above]{$H$};
+        \draw [dashed, ->] (0,0)--(8, 10);
+        \draw [fill] (5, 8) circle[radius = 0.05] node[above]{$I$};
+        \draw [dashed, ->] (0,0)--(5.5, 8.8);
+        \draw [fill] (4, 8) circle[radius = 0.05] node[above]{$J$};
+        \draw [dashed, ->] (0,0)--(4.4, 8.8);
+        \draw [fill] (2, 6) circle[radius = 0.05] node[above right]{$K$};
+        \draw [dashed, ->] (0,0)--(3, 9);
+        \draw [fill] (2, 10) circle[radius = 0.05] node[above right]{$L$};
+        \draw [dashed, ->] (0,0)--(2.02, 10.1);
+        \draw [fill] (1, 10) circle[radius = 0.05] node[above right]{$M$};
+        \draw [dashed, ->] (0,0)--(1.04, 10.4);
       \end{tikzpicture}
-    \end{center}
+        \end{flushright}
       \vspace{1cm}
-    \begin{enumerate}
-      \item Mark the vertex of another right triangle in standard position, $D(5,12)$.
-      \item Mark the point $E$ on the $x$-axis such that $\overline{AE} \perp \overline{DE}$.
-      \item Measure and mark the dimensions of $\triangle ADE$ on the graph.
-    \end{enumerate}
-
+    
 \newpage 
-  \item Complete the t-chart for $x= -3,-2,-1,0,1,2,3$, then graph and label the function on the grid below, labeling the vertex on the graph as an ordered pair.\\[0.25cm]
-  Use pencil for graphs. Draw parabolas as smooth curves.
-
-  \[f(x) = x^2\]
-
-    \begin{center} %4 quadrant regents grid w T-Chart
-      \begin{tikzpicture}[scale=.635]
-      \draw [help lines] (-6,-6) grid (8,12);
-      \draw [thick, ->] (-6.2,0) -- (8.4,0) node [below right] {$x$};
-      \draw [thick, ->] (0,-6.2)--(0,12.4) node [left] {$y$};
-      \draw [thick] (-13,8) node[above right]{$x$} --(-9.5,8) node [above left]{$f(x)$}--(-7,8) node [above left]{$g(x)$};
-      \draw [thick] (-9,9)--(-9,-4);
-      \draw [thick] (-12,9)--(-12,-4);
+Use your table of slopes and angles to answer the following questions. 
+  \item A line intersects the $x$-axis at the origin at an angle of $18^\circ$. What is it's slope? \vspace{1cm}
+  \item A line intersects the $x$-axis at the origin at an angle of $63^\circ$. What is it's slope? \vspace{1cm}
+  \item A line through the origin has a slope of 1. What angle does it make with the $x$-origin? \vspace{1cm}
+  \item Right $\triangle ABC$ has a base of length 8 and height 4. What is the measure of the vertex $\angle A$?
+    \begin{flushright}
+    \begin{tikzpicture}[scale=1]
+        \node at (1.6,0)[above]{$m\angle A=?$};
+        \node at (6,1.5)[right]{4};
+        \node at (4,0)[below]{8};
+        \draw [thick] (0, 0)--(6, 0)--(6, 3)--cycle;
+        \draw [dashed] (6,0)++(-0.4,0)-- ++(0,0.4)-- +(0.4,0);
       \end{tikzpicture}
-    \end{center}
-    \begin{enumerate}
-      \item The parabola is translated two units up, $f \rightarrow g$. \\[0.25cm]
-      Draw the parabola $g(x)$ on the graph, marking and labeling its vertex.
-      \item Complete the t-chart values for $g(x)$.
-      \item What is the equation of $g(x)$? \vspace{2cm}
-    \end{enumerate}
+    \end{flushright} 
 
-
-
+    \item Right $\triangle DEF$ has a base of length 4 and height $x$. The measure of the vertex $\angle D = 51^\circ$. Find the height, $x$.
+    \begin{flushright}
+    \begin{tikzpicture}[scale=0.5]
+        \node at (1.6,0)[above]{$51^\circ$};
+        \node at (8,5)[right]{$x$};
+        \node at (4,0)[below]{4};
+        \draw [thick] (0, 0)--(8, 0)--(8, 10)--cycle;
+        \draw [dashed] (8,0)++(-0.4,0)-- ++(0,0.4)-- +(0.4,0);
+      \end{tikzpicture}
+    \end{flushright}
 
 \end{enumerate}
 \end{document}
-
-\item Complete the t-chart for $x= -2,-1,0,1,2,3,4,5$, then graph and label the function on the grid below, labeling the vertex on the graph as an ordered pair.
-
-  \[h(x) = (x-3)^2\]
-
-    \begin{center} %4 quadrant regents grid w T-Chart
-      \begin{tikzpicture}[scale=.635]
-      \draw [help lines] (-6,-4) grid (8,16);
-      \draw [thick, ->] (-6.2,0) -- (8.4,0) node [below right] {$x$};
-      \draw [thick, ->] (0,-4.2)--(0,16.4) node [left] {$y$};
-      \draw [thick] (-13,8) node[above right]{$x$} --(-9.5,8) node [above left]{$h(x)$}--(-7,8) node [above left]{$j(x)$};
-      \draw [thick] (-9,9)--(-9,-4);
-      \draw [thick] (-12,9)--(-12,-4);
-      \end{tikzpicture}
-    \end{center}
-    \begin{enumerate}
-      \item The parabola is translated three units to the left, $h \rightarrow j$. \\[0.25cm]
-      Draw the parabola $j(x)$ on the graph, labeling it and its vertex.
-      \item Complete the t-chart values for $j(x)$.
-      \item What is the equation of $j(x)$? \vspace{2cm}
-    \end{enumerate}
