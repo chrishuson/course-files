@@ -22,7 +22,7 @@
 \fancyhead[LO]{BECA / Dr. Huson / Geometry\\* Unit 6: Distance \& slope\\* 9 December 2019}
 
 \begin{document}
-\subsubsection*{6.9 Pretest: Graphing, perpendicular and parallel slopes}
+\subsubsection*{6.9 Homework pretest: Graphing, perpendicular and parallel slopes}
   \begin{enumerate}
 
   \item Checklist:
@@ -95,15 +95,15 @@
         
 \newpage
 
-\begin{multicols}{2}
-  [\item A translation maps triangle $KLM$ onto triangle $PQR$.] \vspace{0.5cm}
-    \begin{tikzpicture}[scale=0.9]
+  \begin{multicols}{2}
+  [\item A dilation maps triangle $KLM$ onto triangle $PQR$, with $KM=3$, $LM=3.3$, $PR=4$.] \vspace{0.5cm}
+    \begin{tikzpicture}[scale=0.65]
       \coordinate [label=above left:$K$](A) at (95:2);
       \coordinate [label=below:$L$](B) at (0, 0);
       \coordinate [label=right:$M$](C) at (25:3.5);
       \draw [thick] (A)--(B)--(C)--cycle;
 
-      \draw [thick, xshift=3cm, yshift=-2cm] (95:2) node[left]{$P$}--
+      \draw [thick, xshift=3cm, yshift=-3cm, scale=1.3] (95:2) node[left]{$P$}--
       (0,0) node[below]{$Q$}--
       (25:3.5) node[right]{$R$}--cycle;
     \end{tikzpicture}\\
@@ -111,13 +111,29 @@
     \begin{enumerate}
       \item $L \rightarrow$ \rule{2cm}{0.15mm}
       \item $\angle M \cong$ \rule{2cm}{0.15mm}
-      \item \rule{2cm}{0.15mm} $\cong \overline {QR}$
-      \item Justify $\triangle KLM \cong \triangle PQR$. Use the words ``rigid motion" and ``translation''.
+      \item $QR=$ \rule{2cm}{0.15mm} 
+      \item Justify $\triangle KLM \sim \triangle PQR$. Use the words ``maintains angles" and ``dilation''.
     \end{enumerate}
-  \end{multicols}  \vspace{1.5cm}
+  \end{multicols} \vspace{2cm}
 
-\item Triangle $ABC$ is dilated with a scale factor of $k$ centered at $A$, yielding $\triangle ADE$, as shown. Given $AB=8$, $BC=12$, $AC=16$, and $DE=15$. \\[0.25cm] Find $AD$, $CE$, and $k$ (the scale factor).
-\begin{flushright}
+  \item Given $\triangle ABC \sim \triangle DEF$. $m\angle C = 75^\circ$ and $m\angle E = 35^\circ$. Find the measure of $\angle F$. \vspace{3cm}
+    
+  \item Given $\triangle ABP \sim \triangle JKP$ as shown below. $AB=10.0$, $AP=28.6$, $BP=16.0$, and $JK=25.0$. Find $JP$.
+    \begin{flushright}
+    \begin{tikzpicture}[scale=1.4]
+        \draw [thick]
+          (-0.25,-1)node[below left]{$B$}--
+          (0.5,2)node[left]{$K$}--
+          (4,0)node[below left]{$J$}--
+          (0,0)node[above left]{$P$}--
+          (-2,0)node[left]{$A$}--cycle;
+      \end{tikzpicture}
+      \end{flushright}
+      \vspace{2cm}
+
+\newpage
+  \item Triangle $ABC$ is dilated with a scale factor of $k$ centered at $A$, yielding $\triangle ADE$, as shown. Given $AB=8$, $BC=12$, $AC=16$, and $DE=15$. \\[0.25cm] Find $AD$, $CE$, and $k$ (the scale factor).
+  \begin{flushright}
     \begin{tikzpicture}[scale=0.5]
       \draw [thick]
       (0,0)node[left]{$B$}--
@@ -133,22 +149,6 @@
       \node at (5,-3)[below]{$15$};
     \end{tikzpicture}
   \end{flushright} \vspace{2.5cm}
-
-\item Find the image of $P(-4,0)$ after the translation $(x,y) \rightarrow (x-10,y+2)$.    
-
-\newpage
-\item Translate $\triangle ABC$ by $(x,y) \rightarrow (x+6, y-3)$. Make a table of the coordinates and plot and label the image on the axes.
-\begin{flushright}
-    \begin{tikzpicture}[scale=.48]
-    \draw [help lines] (-7,-4) grid (10,9);
-    \draw [thick, <->] (-7.4,0) -- (10.4,0) node [right] {$x$};
-    \draw [thick, <->] (0,-4.4)--(0,9.4) node [above] {$y$};  
-    \draw [thick]
-      (-4,2) node[below left] {$A$}--
-      (-1,5) node[above left] {$B$}--
-      (1,1) node[below] {$C$}--cycle;  
-  \end{tikzpicture}
-\end{flushright}
 
 \item A dilation centered at $A$ maps $\triangle ABC \rightarrow \triangle ADE$. Given the sides of the preimage, $AC = 4$, $BC = 3$, $AB = 5$, and of $DE = 7.5$ find the scale factor $k$ and the lengths $AD$ and $AE$.
   \begin{flushright}
@@ -166,37 +166,61 @@
     \end{tikzpicture}
   \end{flushright} \vspace{1.5cm}
 
-  \item Given $\triangle ABC \sim \triangle DEF$. $m\angle A = 40^\circ$ and $m\angle E = 35^\circ$. Find the measure of $\angle C$.
   
 \newpage
-\item A rotation of $90^\circ$ is applied to $\triangle ABC$, mapping it onto $\triangle PQR$, as shown.
-Which triangle has the larger area, or are they equal? Justify your answer.\\
-    \begin{tikzpicture}[scale=.4]
-      \draw [thick, <->] (-7.4,0) -- (10.4,0) node [right] {$x$};
-      \draw [thick, <->] (0,-4.4)--(0,10.4) node [above] {$y$}; 
-      \draw [thick]
-        (4,-2) node[below right] {$A$}--
-        (8,2) node[right] {$B$}--
-        (2,1) node[left] {$C$}--cycle;
-      \draw [thick]
-        (2,4) node[right] {$P$}--
-        (-2,8) node[above] {$Q$}--
-        (-1,2) node[left] {$R$}--cycle;
-    \end{tikzpicture}
+  \item A rotation of $90^\circ$ is applied to $\triangle ABC$, mapping it onto $\triangle PQR$, as shown.
+  Which triangle has the larger area, or are they equal? Justify your answer.\\
+      \begin{tikzpicture}[scale=.4]
+        \draw [thick, <->] (-7.4,0) -- (10.4,0) node [right] {$x$};
+        \draw [thick, <->] (0,-4.4)--(0,10.4) node [above] {$y$}; 
+        \draw [thick]
+          (4,-2) node[below right] {$A$}--
+          (8,2) node[right] {$B$}--
+          (2,1) node[left] {$C$}--cycle;
+        \draw [thick]
+          (2,4) node[right] {$P$}--
+          (-2,8) node[above] {$Q$}--
+          (-1,2) node[left] {$R$}--cycle;
+      \end{tikzpicture}
 
-\item Given $\triangle ABP \sim \triangle JKP$ as shown below. $AB=11.2$, $AP=8.9$, $BP=5.0$, and $JK=22.4$. Find $JP$.
-\begin{flushright}
-  \begin{tikzpicture}[scale=1.2]
-      \draw [thick]
-        (-0.25,-1)node[below left]{$B$}--
-        (0.5,2)node[left]{$K$}--
-        (4,0)node[below left]{$J$}--
-        (0,0)node[above left]{$P$}--
-        (-2,0)node[left]{$A$}--cycle;
-    \end{tikzpicture}
-    \end{flushright}
-    \vspace{2cm}
+
+  \begin{multicols}{2}
+    [\item A translation maps triangle $KLM$ onto triangle $PQR$.] \vspace{0.5cm}
+      \begin{tikzpicture}[scale=0.9]
+        \coordinate [label=above left:$K$](A) at (95:2);
+        \coordinate [label=below:$L$](B) at (0, 0);
+        \coordinate [label=right:$M$](C) at (25:3.5);
+        \draw [thick] (A)--(B)--(C)--cycle;
+
+        \draw [thick, xshift=3cm, yshift=-2cm] (95:2) node[left]{$P$}--
+        (0,0) node[below]{$Q$}--
+        (25:3.5) node[right]{$R$}--cycle;
+      \end{tikzpicture}\\
+      Write each corresponding object.
+      \begin{enumerate}
+        \item $L \rightarrow$ \rule{2cm}{0.15mm}
+        \item $\angle M \cong$ \rule{2cm}{0.15mm}
+        \item \rule{2cm}{0.15mm} $\cong \overline {QR}$
+        \item Justify $\triangle KLM \cong \triangle PQR$. Use the words ``rigid motion" and ``translation''.
+      \end{enumerate}
+    \end{multicols}  \vspace{1.5cm}
   
+
+  \item Find the image of $P(-4,0)$ after the translation $(x,y) \rightarrow (x-10,y+2)$.    
+
+  \item Translate $\triangle ABC$ by $(x,y) \rightarrow (x+6, y-3)$. Make a table of the coordinates and plot and label the image on the axes.
+  \begin{flushright}
+    \begin{tikzpicture}[scale=.48]
+      \draw [help lines] (-7,-4) grid (10,9);
+      \draw [thick, <->] (-7.4,0) -- (10.4,0) node [right] {$x$};
+      \draw [thick, <->] (0,-4.4)--(0,9.4) node [above] {$y$};  
+      \draw [thick]
+        (-4,2) node[below left] {$A$}--
+        (-1,5) node[above left] {$B$}--
+        (1,1) node[below] {$C$}--cycle;  
+  \end{tikzpicture}
+  \end{flushright}
+
 \newpage
 \item Given two parallel lines and a transversal, as shown below.
 \begin{center}
