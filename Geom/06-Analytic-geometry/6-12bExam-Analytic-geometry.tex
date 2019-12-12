@@ -30,8 +30,13 @@
       $y =\frac{3}{4}x-5$ \\
       $y=-x+2$
     \end{multicols}     \vspace{0.1cm}
-    Are the lines parallel, perpendicular, or neither? Justify your answer.
-    \vspace{4cm}
+    Write down the slopes of the two lines.
+    \begin{multicols}{2}
+      $m_1=$ \\
+      $m_2=$
+    \end{multicols}     \vspace{0.1cm}
+    Are the lines parallel, perpendicular, or neither? Justify your answer using the slopes.
+    \vspace{3cm}
     \begin{center}
       \begin{tikzpicture}[scale=.635]
         \draw [help lines] (-10,-10) grid (10,10);
@@ -45,7 +50,7 @@
       \begin{multicols}{2}
         $y =-\frac{1}{3}x+4$ \\[0.25cm]
         $y=3x-6$ \\
-        Are the lines parallel, perpendicular, or neither? Justify your answer.
+        Are the lines parallel, perpendicular, or neither? Justify your answer using the slopes.
       \end{multicols}     \vspace{0.1cm}
       \vspace{1cm}
       \begin{flushright} %4 quadrant regents grid w T-Chart
@@ -218,42 +223,6 @@
       \end{tikzpicture}
     \end{flushright}
 
-  \newpage
-  \item Given isosceles $\triangle ABC$ with $\overline{AB} \cong \overline{BC}$, $m\angle A = x$, $m\angle B = 63$, and $m\angle C=y$. Mark and label the diagram, and then find $x$ and $y$. \hfill (\emph{the diagram is not to scale})
-  \begin{flushright}
-  \begin{tikzpicture}[scale=1]
-    \draw [thick](0,0)--(4,0)--(2,3.5)--(0,0);
-    \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-    \draw [fill] (4,0) circle [radius=0.05] node[below]{$B$};
-    \draw [fill] (2,3.5) circle [radius=0.05] node[above right]{$C$};
-  \end{tikzpicture}
-  \end{flushright}
-
-  \item Given isosceles $\triangle RSU$ with $\overline{RS} \cong \overline{US}$. If $m\angle UST=140$ find $m\angle R$. (mark and label the diagram) \hfill (\emph{the diagram is not to scale})
-  \begin{flushright}
-  \begin{tikzpicture}[scale=0.8]
-    %\draw [->, thick] (0,0)--(5,5);
-    \draw [<-, thick] (8,0)--
-      (7,0) node[below]{$T$}--
-      (0.5,0) node[below]{$R$}--
-      (3,3) node[above]{$U$}--
-      (5,0) node[below]{$S$};
-  \end{tikzpicture}
-  \end{flushright} \vspace{1cm}
-
-    \item Given parallel lines $\overleftrightarrow{AB} \parallel \overleftrightarrow{CDE}$ with $\overline{AC} \cong \overline{CD}$. If $m\angle BAD=55$ find $m\angle ACD$. (completely mark and label the diagram)
-    \begin{flushright}
-    \begin{tikzpicture}
-      \draw [<->, thick] (1,3)--(6.5,3) node[above left]{$B$};
-      \draw [<->, thick] (0,0)--
-        (5,0)--
-        (6,0) node[below left]{$E$};
-      \draw [-, thick] (1,0) node[below]{$C$}--
-        (2.5,3) node[above]{$A$}--
-        (4,0) node[below]{$D$};
-    \end{tikzpicture}
-    \end{flushright} \vspace{1.5cm}
-
 \newpage
 \item Given $\triangle ABC$, find the lengths of its sides. $A(1,2)$, $B(9,8)$, $C(9,2)$.
   \begin{enumerate}
@@ -299,6 +268,42 @@
     \item Given $m\angle 8 = (5x-8)^\circ$. Find $x$. \vspace{3.5cm}
   \end{enumerate}
 
+  \newpage
+  \item Given isosceles $\triangle ABC$ with $\overline{AB} \cong \overline{BC}$, $m\angle A = x$, $m\angle B = 63$, and $m\angle C=y$. Mark and label the diagram, and then find $x$ and $y$. \hfill (\emph{the diagram is not to scale})
+  \begin{flushright}
+  \begin{tikzpicture}[scale=1]
+    \draw [thick](0,0)--(4,0)--(2,3.5)--(0,0);
+    \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+    \draw [fill] (4,0) circle [radius=0.05] node[below]{$B$};
+    \draw [fill] (2,3.5) circle [radius=0.05] node[above right]{$C$};
+  \end{tikzpicture}
+  \end{flushright}
+
+  \item Given isosceles $\triangle RSU$ with $\overline{RS} \cong \overline{US}$. If $m\angle UST=140$ find $m\angle R$. (mark and label the diagram) \hfill (\emph{the diagram is not to scale})
+  \begin{flushright}
+  \begin{tikzpicture}[scale=0.8]
+    %\draw [->, thick] (0,0)--(5,5);
+    \draw [<-, thick] (8,0)--
+      (7,0) node[below]{$T$}--
+      (0.5,0) node[below]{$R$}--
+      (3,3) node[above]{$U$}--
+      (5,0) node[below]{$S$};
+  \end{tikzpicture}
+  \end{flushright} \vspace{1cm}
+
+    \item Given parallel lines $\overleftrightarrow{AB} \parallel \overleftrightarrow{CDE}$ with $\overline{AC} \cong \overline{CD}$. If $m\angle BAD=55$ find $m\angle ACD$. (completely mark and label the diagram)
+    \begin{flushright}
+    \begin{tikzpicture}
+      \draw [<->, thick] (1,3)--(6.5,3) node[above left]{$B$};
+      \draw [<->, thick] (0,0)--
+        (5,0)--
+        (6,0) node[below left]{$E$};
+      \draw [-, thick] (1,0) node[below]{$C$}--
+        (2.5,3) node[above]{$A$}--
+        (4,0) node[below]{$D$};
+    \end{tikzpicture}
+    \end{flushright} \vspace{1.5cm}
+    
 \newpage
   \item Given two parallel lines and a transversal, as shown below.
   \begin{center}
