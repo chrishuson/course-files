@@ -371,38 +371,84 @@
     \vspace{2cm}
 
 \newpage
-  \item Given $\overleftrightarrow{AB}$ as shown on the number line, with $A=-3$ and $B=5$. Mark and label the midpoint $M$ between $A$ and $B$?\\[20pt] % Midpoint
-    \begin{tikzpicture}
-      \draw [<->] (-4.5,0)--(6.5,0);
-      \foreach \x in {-4,...,6} %2 leading for diff!=1
-        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-        \draw [fill] (-3,0) circle [radius=0.05] node[above] {$A$};
-        \draw [fill] (5,0) circle [radius=0.05] node[above] {$B$};
-    \end{tikzpicture}
-    
-  \item Given two parallel lines and a transversal, as shown below.
-  \begin{center}
-    \begin{tikzpicture}
-      \draw [<->, thick] (1,2)--(9,2);
-      \draw [<->, thick] (0,0)--(8,0);
-      \draw [<->, thick] (4,-1)--(5.5,3);
-      \node at (4.5,0.3) [left]{$5$};
-      \node at (4.5,0.3) [right]{$6$};
-      \node at (4.3,-0.3) [left]{$7$};
-      \node at (4.3,-0.3) [right]{$8$};
-      \node at (5.2,2) [above left]{$1$};
-      \node at (5.2,2) [above right]{$2$};
-      \node at (5,2) [below left]{$3$};
-      \node at (5,2) [below right]{$4$};
-    \end{tikzpicture}
-  \end{center}
-  \begin{enumerate}
-    \item State the angle corresponding with $\angle 7$. \vspace{0.5cm}
-    \item What theorem would justify $m\angle 4 + m\angle 6 =180^\circ$? \rule{5cm}{0.15mm} \vspace{0.5cm}
-    \item What theorem would justify $\angle 3 \cong \angle 6$? \rule{7cm}{0.15mm} \vspace{0.5cm}
-    \item What theorem would justify $\angle 5 \cong \angle 8$? \rule{7cm}{0.15mm} \vspace{0.5cm}
-    %\item Given $m\angle 1 = 117^\circ$ and $m\angle 8 = (4x-3)^\circ$. Find $x$. \vspace{3.5cm}
-  \end{enumerate}
+  \subsubsection*{Spicy Regents problems: Using slope to prove a parallelogram}
+    \item In this problem use the following theorem (copy it at the bottom of the page after your calculations): \\*[0.25cm]
+    \emph{A quadrilateral is a parallelogram if and only if it's opposite sides are parallel.}\\*[0.5cm]
+    Shown below is quadrilateral $ABCD$, $A(2,-1)$, $B(5,1)$, $C(1,6)$, and $D(-2,4)$. \\*[0.25cm]
+    Prove it is a parallelogram by
+    \begin{enumerate}
+      \item finding the slope of each of the four sides,
+      \item stating which sides are parallel,
+      \item copying the theorem as your conclusion.
+    \end{enumerate}
+    \begin{flushright} %4 quadrant regents grid
+      \begin{tikzpicture}[scale=.635]
+        \draw [help lines] (-5,-4) grid (9,9);
+        \draw [thick, <->] (-5.4,0) -- (9.4,0) node [below right] {$x$};
+        \draw [thick, <->] (0,-4.4)--(0,9.4) node [left] {$y$};
+        \draw [thick] (2,-1) node[below] {$A$}--
+        (5,1) node[right] {$B$}--
+        (1,6) node[right] {$C$}--
+        (-2,4) node[left] {$D$}--cycle;
+      \end{tikzpicture}
+    \end{flushright}
+  
+\newpage
+  \subsubsection*{Using the distance formula to prove a parallelogram}
+    \item In this problem use the following theorem (copy it at the bottom of the page after your calculations): \\*[0.25cm]
+    \emph{A quadrilateral is a parallelogram if and only if it's opposite sides are congruent.}\\*[0.5cm]
+    Shown below is quadrilateral $ABCD$, $A(2,-1)$, $B(5,1)$, $C(1,6)$, and $D(-2,4)$. \\*[0.25cm]
+    Prove it is a parallelogram by
+    \begin{enumerate}
+      \item finding the length of each of the four sides,
+      \item stating which sides are congruent,
+      \item copying the theorem as your conclusion.
+    \end{enumerate}
+    \begin{flushright} %4 quadrant regents grid
+      \begin{tikzpicture}[scale=.635]
+        \draw [help lines] (-5,-4) grid (9,9);
+        \draw [thick, <->] (-5.4,0) -- (9.4,0) node [below right] {$x$};
+        \draw [thick, <->] (0,-4.4)--(0,9.4) node [left] {$y$};
+        \draw [thick] (2,-1) node[below] {$A$}--
+        (5,1) node[right] {$B$}--
+        (1,6) node[right] {$C$}--
+        (-2,4) node[left] {$D$}--cycle;
+      \end{tikzpicture}
+    \end{flushright}
+
+    \newpage
+    \item Given $\overleftrightarrow{AB}$ as shown on the number line, with $A=-3$ and $B=5$. Mark and label the midpoint $M$ between $A$ and $B$?\\[20pt] % Midpoint
+      \begin{tikzpicture}
+        \draw [<->] (-4.5,0)--(6.5,0);
+        \foreach \x in {-4,...,6} %2 leading for diff!=1
+          \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+          \draw [fill] (-3,0) circle [radius=0.05] node[above] {$A$};
+          \draw [fill] (5,0) circle [radius=0.05] node[above] {$B$};
+      \end{tikzpicture}
+      
+    \item Given two parallel lines and a transversal, as shown below.
+    \begin{center}
+      \begin{tikzpicture}
+        \draw [<->, thick] (1,2)--(9,2);
+        \draw [<->, thick] (0,0)--(8,0);
+        \draw [<->, thick] (4,-1)--(5.5,3);
+        \node at (4.5,0.3) [left]{$5$};
+        \node at (4.5,0.3) [right]{$6$};
+        \node at (4.3,-0.3) [left]{$7$};
+        \node at (4.3,-0.3) [right]{$8$};
+        \node at (5.2,2) [above left]{$1$};
+        \node at (5.2,2) [above right]{$2$};
+        \node at (5,2) [below left]{$3$};
+        \node at (5,2) [below right]{$4$};
+      \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}
+      \item State the angle corresponding with $\angle 7$. \vspace{0.5cm}
+      \item What theorem would justify $m\angle 4 + m\angle 6 =180^\circ$? \rule{5cm}{0.15mm} \vspace{0.5cm}
+      \item What theorem would justify $\angle 3 \cong \angle 6$? \rule{7cm}{0.15mm} \vspace{0.5cm}
+      \item What theorem would justify $\angle 5 \cong \angle 8$? \rule{7cm}{0.15mm} \vspace{0.5cm}
+      %\item Given $m\angle 1 = 117^\circ$ and $m\angle 8 = (4x-3)^\circ$. Find $x$. \vspace{3.5cm}
+    \end{enumerate}
 
 \end{enumerate}
 \end{document}
