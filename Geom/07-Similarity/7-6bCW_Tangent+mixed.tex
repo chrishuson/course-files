@@ -100,8 +100,8 @@ Mastery topic: Interpreting tangent graphically}
     
 \newpage  
 \subsubsection*{Modeling: Mark each diagram and write and equation. Do Not Solve!}
-  \item Given right $\triangle JKL$ with $\overline{JK} \perp \overline{KL}$, $JK=8$, $m\angle J=24^\circ$. Let $x$ be the length of the side opposite $\angle J$, $x=KL$.\\[0.5cm] 
-  Write an equation expressing $\tan \angle J$ as a ratio of \emph{opposite} over \emph{adjacent}. \hfill (2 stars)
+Write an equation expressing $\tan (\angle)$ as a ratio of \emph{opposite} over \emph{adjacent}. 
+  \item Given right $\triangle JKL$ with $\overline{JK} \perp \overline{KL}$, $JK=8$, $m\angle J=24^\circ$. Let $x$ be the length of the side opposite $\angle J$, $x=KL$.  \hfill (2 stars)
       \begin{flushright}
           \begin{tikzpicture}[scale=0.7]
             \draw [thick](-1,0)--(6,0)--(6,3)--cycle;
@@ -141,5 +141,80 @@ Mastery topic: Interpreting tangent graphically}
     \end{tikzpicture}
   \end{flushright}
 
+\newpage
+  \subsubsection*{Mixed practice (test tomorrow)}
+    Convert each equation to slope-intercept form, $y=mx+b$.
+  \begin{multicols}{2}
+    \item $3x+y=2$ (2 stars)\\
+    \item $x-4y=12$ (2 stars)
+  \end{multicols}     \vspace{3cm}
+
+  \item Given $\triangle ABC$ is isosceles but not equilateral with $\angle A \cong \angle C$. \hfill (\emph{not draw to scale})
+    \begin{enumerate}
+    \item Mark the congruent sides \& angles of $\triangle ABC$. \\[0.25cm]
+    Circle True or False:
+    \begin{multicols}{2}
+    \item True \quad False \quad $\overline{AB} \cong \overline{BC}$
+    \item True \quad False \quad $\overline{AB} \cong \overline{AC}$
+    \item True \quad False \quad $\overline{BC} \cong \overline{AC}$
+    \begin{flushright}
+    \begin{tikzpicture}[scale=0.7]
+      \draw [thick](0,0)--(4,0)--(2,3.5)--(0,0);
+      \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw [fill] (4,0) circle [radius=0.05] node[below]{$B$};
+      \draw [fill] (2,3.5) circle [radius=0.05] node[above right]{$C$};
+    \end{tikzpicture}
+    \end{flushright}
+  \end{multicols}
+  \end{enumerate}
+
+  \item A dilation centered at $A$ maps $\triangle ABC \rightarrow \triangle ADE$. Given the lengths $AC = 6$, $BC = 5$, $AB = 8$, and $CE = 9$. Find $AE$ and then the scale factor $k$. Then find the lengths $AD$ and $DE$. \vspace{1cm}
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item $AE=$ \vspace{0.3cm}
+      \item $k=$ \vspace{0.3cm}
+      \item $AD=$ \vspace{0.3cm}
+      \item $DE=$ \vspace{0.3cm}
+
+    \end{enumerate}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.7]
+        \draw [-, thick] (0,0) node[above left]{$A$}--
+        (8,0) node[below]{$E$}--
+        (9,6) node[above left]{$D$}--cycle;
+        \draw [thick] (3.2,0)--(3.6,2.4);
+        \node at (3.5,0) [below]{$C$};
+        \node at (4,2.7) [above left]{$B$};
+        \node at (2, 0) [below]{$6$};
+        \node at (1.8,1.5) [above]{$8$};
+        \node at (6, 0) [below]{$9$};
+        \node at (3.5, 1.3) [right]{$5$}; \vspace{1cm}
+      \end{tikzpicture}
+    \end{flushright} 
+  \end{multicols}\vspace{1.5cm}
+
+\newpage
+  \item \begin{enumerate}
+    \item Graph and label the two equations. Mark their intersection as an ordered pair.
+      \begin{multicols}{2}
+        $y =\frac{2}{3}x-5$ \\
+        $y=-2x+3$ \hfill (4 pts)
+      \end{multicols}     \vspace{1.5cm}
+    \item Find the slopes of the two lines. \hfill (2 points)
+      \begin{multicols}{2}
+        $m_1=$ \\
+        $m_2=$
+      \end{multicols}
+    \item Are the lines parallel, perpendicular, or neither? Justify your answer with an equation or inequality using the slopes. \hfill (2 points)
+    \vspace{1.5cm}
+  \end{enumerate}
+    \begin{center}
+      \begin{tikzpicture}[scale=.635]
+        \draw [help lines] (-10,-10) grid (10,10);
+        \draw [thick, ->] (-10.2,0) -- (10.4,0) node [below right] {$x$};
+        \draw [thick, ->] (0,-10.2)--(0,10.4) node [left] {$y$};
+      \end{tikzpicture}
+    \end{center}
+  
 \end{enumerate}
 \end{document}
