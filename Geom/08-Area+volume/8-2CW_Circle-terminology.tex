@@ -89,6 +89,20 @@
   \draw [fill] (0,0) circle [radius=0.05];
 \end{tikzpicture}
 
+
+\item Given $\overleftrightarrow{RS}$ as shown on the number line, with $R=-3.1$ and $S=3.9$. \\[20pt] % Midpoint
+\begin{tikzpicture}
+  \draw [<->] (-4.5,0)--(6.5,0);
+  \foreach \x in {-4,...,6} %2 leading for diff!=1
+    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+    \draw [fill] (-3.1,0) circle [radius=0.05] node[above] {$R$};
+    \draw [fill] (3.9,0) circle [radius=0.05] node[above] {$S$};
+\end{tikzpicture}
+\begin{enumerate}
+  \item What is the exact distance on the number line between the points $R$ and $S$? \vspace{2cm} 
+  \item The point $T$ bisects $\overline{RS}$. Find the value of $T$, and mark and label it on the numberline $\overleftrightarrow{RS}$ shown above. 
+\end{enumerate} \vspace{2cm} 
+
   \end{enumerate}
   \newpage
   \setcounter{page}{1}
