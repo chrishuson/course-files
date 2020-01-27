@@ -1,0 +1,146 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{venndiagram}
+\usetikzlibrary{angles, quotes, arrows}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Mr. Nortonsmith / IB Mathematics\\* Vector Test Review\\* 15 January 2020}
+
+\begin{document}
+\begin{enumerate}
+    
+    \newpage
+    \item Find the vector going from point $a$ to point $b$ and write it in column-vector form and unit-vector form:
+    
+    \begin{center}
+        $a = (-1, 1, 2)$ \hspace{1cm} $b = (3, 5, 8)$
+    \end{center}
+
+    \begin{center}
+        \item $\vec{a} = \begin{pmatrix} 3 - (-1) \\ 5 - 1 \\ 8 - 2 \end{pmatrix}$
+        \item $\vec{a} = \begin{pmatrix} 4 \\ 4 \\ 6 \end{pmatrix}$
+        \item $\vec{a} = 4i + 4j + 6k$
+    \end{center}
+
+    \vspace{1cm}
+    
+    \item Find a value for $n$ that will make the magnitude of vector $\vec{a}$ 5:
+    
+    \begin{center}
+        \item $\vec{a} = \begin{pmatrix} 1 \\ 2 \\ n \end{pmatrix}$
+    \end{center}
+
+    \begin{center}
+        \item $|\vec{a}| = 5$
+        \item $|\vec{a}| = \sqrt{1^2 + 2^2 + n^2}$
+        \item $5^2 = 1^2 + 2^2 + n^2$
+        \item $n^2 = 19$
+        \item $n = \sqrt{19}$
+    \end{center}
+
+    \vspace{1cm}
+    
+    For the same vector $\vec{a}$ as above, is it possible to find a value for $n$ that will make $\vec{a}$ have a magnitude of 1? Find such a value $n$ or explain why no such value exists:
+    
+    \vspace{.3cm}
+
+    Not possible. $|\vec{a}| = \sqrt{1^2 + 2^2 + n^2}$, so in order to have $|\vec{a}| = 1$, we must have $1 = 1^2 + 2^2 + n^2$. The right hand side of the equation will be larger than 1 regardless of what value we choose for $n$, so no value of $n$ works.
+    \newpage
+
+    \item Consider the path formed by the 4 vectors in the diagram below:
+    \begin{center}
+    \begin{tikzpicture}[scale=1.4,>=open triangle 45]
+        %grid
+        \draw[->, thick](0, 0) -- (-2, 4) node[midway, below left]{$\vec{a}$};
+        \draw[->, thick](-2, 4) -- (0, 3) node[midway, above right]{$\vec{b}$};
+        \draw[->, thick, dashed](3, 5) -- (0, 3) node[midway, above left]{$\vec{c}$};
+        \draw[->, thick](3, 5) -- (0, 0) node[midway, below right]{$\vec{d}$};
+    \end{tikzpicture}
+    \end{center}
+    
+    \begin{enumerate}
+        \item Fill in $+$ or $-$ signs in between the vectors on the left hand side of the equation below to make the equation true:
+
+        \vspace{1cm}
+    
+        \begin{center}
+            $\vec{a} + \vec{b} - \vec{c} + \vec{d}$ \hspace{.2cm} = \hspace{.2cm} $\begin{pmatrix} 0\\ 0\end{pmatrix}$
+        \end{center}
+
+        Starting with $\vec{a}$ and walking around the path, we follow $\vec{a}$, $\vec{b}$, $\vec{c}$, and $\vec{d}$. We negate $\vec{c}$ because we follow it in the reverse direction.
+
+        \vspace{1cm}
+
+        \item Let the following be the values for the vectors in the diagram:
+        
+        \vspace{.5cm}
+        
+        \begin{center}
+        $\begin{pmatrix} -2\\ 4\end{pmatrix} + 
+        \begin{pmatrix} 2\\ 3\end{pmatrix} + 
+        \begin{pmatrix} c_x\\ c_y\end{pmatrix} + 
+        \begin{pmatrix} -3\\ -5\end{pmatrix}
+        = \begin{pmatrix} 0\\ 0\end{pmatrix}
+            $
+
+        \vspace{.8cm}
+
+        Find the value of $c_x$ and $c_y$:
+
+        \vspace{.2cm}
+        \end{center}
+        \begin{center}
+            $c_x = 0 + 2 - 2 + 3 = 3$
+        \end{center}
+        \begin{center}
+            $c_y = 0 - 4 - 3 + 5 = -3$
+        \end{center}
+
+        But, we need to negate these values to account for the fact that c is reversed. Thus, $\vec{c} = \begin{pmatrix} -3\\ 3\end{pmatrix}$.
+
+        \vspace{2cm}
+
+    \end{enumerate}
+
+    \newpage
+    
+    \item In the diagram below, the magnitude of $\vec{a}$ is 10 and the angle between $\vec{a}$ and $\vec{b}$ is $50^\circ$. Find the magnitude of $\vec{b}$ that will make the dot product $\vec{a} \cdot \vec{b} = 10$
+    
+    \begin{center}
+        \begin{tikzpicture}[scale=1.6]
+            \draw[->, thick](0, 0) -- (1, 3) node[midway, above left]{$\vec{a}$};
+            \draw[->, thick](0, 0) -- (2, 1) node[midway, above left]{$\vec{b}$};
+            \draw[dotted, thick](0, 0) -- (4, 2);
+            
+            \coordinate (A) at (1,3);
+            \coordinate (B) at (0,0);
+            \coordinate (C) at (8,4);
+            \draw [-, thick] pic [draw=black, angle radius=15mm, "$50^\circ$"] {angle = C--B--A};
+        \end{tikzpicture}
+    \end{center}
+
+    \begin{center}
+        $\vec{a} \cdot \vec{b} = |\vec{a}||\vec{b}|\cos{\theta}$ \\ \vspace{.3cm}
+        $10 = |\vec{a}||\vec{b}|\cos{\theta}$ \\ \vspace{.3cm}
+        $10 = 10|\vec{b}|\cos{50}$ \\ \vspace{.3cm}
+        $|\vec{b}| = \frac{1}{\cos{50}} = 1.56$ \\ \vspace{.3cm}
+    \end{center}
+    
+\end{enumerate}
+\end{document}
