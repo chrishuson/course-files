@@ -23,140 +23,170 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Dr. Huson / IB Mathematics\\* Unit 5: Polynomial functions\\* 28 January 2020}
+\fancyhead[LO]{BECA / Dr. Huson / IB Mathematics\\* Unit 5: Polynomial functions\\* 29 January 2020}
 
 \begin{document}
-\begin{enumerate}
-    \subsubsection*{4.11 Exam: Linear equations, function operations, regression}
+\begin{enumerate}[itemsep=0.5cm]
+    \subsubsection*{5.1 Do Now: Function operations, algebra review, graphing quadratics}
 
-    \item {[Maximum mark: 6]} \\[0.3cm]
-    The diagram shows the straight line $L_1$, which intersects the $x$-axis at $A(k, 0)$ and the $y$-axis at $B(0,3)$.
-        \begin{center}
-            \begin{tikzpicture}[scale=1]
-            %\draw [help lines] (0,0) grid (10,8);
-            \draw [thick, ->] (-0.5,0) -- (7.4,0) node [below right] {$x$};
-            \draw [thick, ->] (0,-0.5)--(0,3.4) node [left] {$y$};
-            %\draw [fill] (9,5) circle [radius=0.1];
-            \draw [thick, -] (-0.25,3) node [below] {$B$}--(6,-0.1) node [above] {$A$};
-            \node at (6,4){\textbf{diagram is not to scale}};
-            \end{tikzpicture}
-        \end{center}
-        The gradient of $L_1$ is $-\frac{3}{4}$.
-        \begin{enumerate}%[itemsep=3cm]
-            \item Write down the equation of the line $L_1$. \hfill [1]
-            \item Find the value of $k$. \hfill [2]
-            \item The line $L_2$ is perpendicular to $L_1$ and passes through $(2,1)$.
-                \begin{enumerate}
-                    \item Write down the gradient of the line $L_2$. \hfill [1]
-                    \item Hence, write down the equation of $L_2$. Leave your answer in the form \\ $y-a=m(x-b)$. \hfill [2]
-                \end{enumerate}
-        \end{enumerate}
-        \begin{tikzpicture}
-            \draw (0,3) rectangle (15,11);
-            \draw [dotted] (1,10)--(14,10);
-            \draw [dotted] (1,9)--(14,9);
-            \draw [dotted] (1,8)--(14,8);
-            \draw [dotted] (1,7)--(14,7);
-        \end{tikzpicture}
+    \item Let $f(x)=3x-4$ and $g(x)=5x$, for $x \in \mathbb{R}$.
+    \begin{enumerate}[itemsep=1cm]
+      \item Write down $g(-3)$.
+      \item Find $(f \circ g)(x)$.
+      \item Find $f^{-1}(x)$.\vspace{1.5cm}
+    \end{enumerate}
 
-\newpage 
-    \item {[Maximum mark: 7]} \\[0.3cm]
-    Let $f(x)=2x+8$ and $g(x)=\sqrt{x}-1$, for $x \geq 0$.
-        \begin{enumerate}
-            \item Write down $g(9)$. \hfill [1]
-            \item Find $(f - g)(x)$. \hfill [1]
-            \item Find $(g \circ f)(4)$. \hfill [1]
-            \item Write down $g^{-1}(4)$. \hfill [2]
-            \item Find $f^{-1}(x)$. \hfill [2]
-        \end{enumerate}
-        \begin{tikzpicture}
+    \item Let $f(x)=3x-1$ and $g(x)=-2x^2+2$
+    \begin{enumerate}[itemsep=1.5cm]
+        \item Find $f^{-1}(x)$.
+        \item Find $(f \circ g)(1)$.\vspace{2.5cm}
+    \end{enumerate}
 
-            \draw (0,0) rectangle (15.2,15);
-            \draw (8,0) rectangle (15.2,5);
-            \node at (0,15)[below right]{\textbf{Working:}};
-            \node at (8,5)[below right]{\textbf{Answers:}};
-            \draw [dotted] (9,3.8)node[left]{(a)}--(15,3.8);
-            \draw [dotted] (9,3.1)node[left]{(b)}--(15,3.1);
-            \draw [dotted] (9,2.4)node[left]{(c)}--(15,2.4);
-            \draw [dotted] (9,1.7)node[left]{(d)}--(15,1.7);
-            \draw [dotted] (9,1)node[left]{(e)}--(15,1);
-        \end{tikzpicture}
+
+\item The diagram below shows the graph of a function $f$, composed of four points.
+\begin{multicols}{2}
+    \begin{enumerate}[itemsep=0.5cm]
+        \item Write down the value of $f(2)$.
+        \item Write down the domain of $f$.
+        \item Write down the range of $f$.
+        \item Write down the value of $f^{-1}(1)$.
+        \item Sketch the inverse of $f$, $f^{-1}$, on the grid at right. \vspace{0.5cm}
+    \end{enumerate}
+    \begin{tikzpicture}
+        \draw [thin, color=lightgray,, xstep=1.0cm,ystep=1.0cm] (-4.5,-4.5) grid (4.5,4.5);
+        %\draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-4.5,-1.5) grid (5.5,16.5);
+
+        \foreach \x in {-4, -3, -2, -1,1,2,3,4}
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below]  {$\x$};
+
+        \foreach \y in {-4, -3, -2, -1, 1,2,3,4}
+        \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
+
+        \draw [thick, ->] (-4.5,0) -- (+4.5,0) node [right] {$x$};
+        \draw [thick, ->] (0,-4.5) -- (0,4.5) node [left] {$y$};
+
+        \draw (-3,0) circle[radius=2pt];
+        \fill (-3,0) circle[radius=2pt];
+        \draw (-2,1) circle[radius=2pt];
+        \fill (-2,1) circle[radius=2pt];
+        \draw (1,2) circle[radius=2pt];
+        \fill (1,2) circle[radius=2pt];
+        \draw (2,3) circle[radius=2pt];
+        \fill (2,3) circle[radius=2pt];
+    \end{tikzpicture}
+\end{multicols}
 
 \newpage
-   \item {[Maximum mark: 6]} \\[0.3cm]
-   Early finishers: The diagram below shows the graph of a function $f$ for $-2 \leq x \leq 2.5$. 
-        \begin{center}
-        \begin{tikzpicture}[scale=1.0]
-                \draw [thin, color=gray, xstep=1.0cm,ystep=1.0cm] (-3.5,-3.5) grid (3.5,3.5);
-                %\draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-5.5,-4.5) grid (5.5,6.5);
-                \foreach \x in {-3, -2, -1, 0,1,2,3}
-                    \draw[shift={(\x,0)},color=black] (0pt,-1pt) -- (0pt,3pt) node[below]  {$\quad \x$};
-                \foreach \y in {-3, -2,-1,0,1,2,3}
-                    \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
-                \draw [thick, ->] (-3.5,0) -- (+3.5,0) node [right] {$x$};
-                \draw [thick, ->] (0,-3.5) -- (0,3.5) node [left] {$y$};
-                \draw [thick] (0,-2)--(2.5,0.5);
-                \draw [thick] (0,-2)--(-2,-3);
-                %\draw [thick] plot[domain= -2:3] (\x, {-2*(-\x+3)^0.5 +2});
-            %\draw [thick] plot[domain= -1:2] (\x, \x*1/2 -2);
-            %\draw [thick] (-2,-2).. controls (0,-1) and (2,0) .. (3,1);
-            %\draw [fill] (-3,3) circle[radius=0.1] node[above left]{$A(-3,3)$};
-        \end{tikzpicture}
-        \end{center}
-        \begin{enumerate}%[itemsep=2cm]
-            \item Write down the value of $f(2)$. \hfill [1]
-            \item Write down the value of $f^{-1}(-1)$. \hfill [2]
-            \item Sketch the graph of $f^{-1}$ on the grid. \hfill [3]
-        \end{enumerate}
-        \begin{tikzpicture}
-            \draw (0,1) rectangle (15.5,11);
-            \draw [dotted] (1,10)--(14,10);
-            \draw [dotted] (1,9)--(14,9);
-            \draw [dotted] (1,8)--(14,8);
-            \draw [dotted] (1,7)--(14,7);
-            \draw [dotted] (1,6)--(14,6);
-        \end{tikzpicture}
+\subsubsection*{Quadratics algebra competencies} 
+  
+  \item Expand each binomial-squared expression to the form $ax^2+bx+c$.
+  \begin{multicols}{2}
+  \begin{enumerate}[itemsep=3cm]
+    \item $(x+3)(x+3)$
+    \item $(x+2)^2$ 
+    \item $(x+5)^2$ 
+    \item $(x+7)^2$ 
+  \end{enumerate}
+  \end{multicols}\vspace{3cm}
+  
+  \item Simplify each radical.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=2cm]
+      \item $\sqrt{50}$ 
+      \item $\sqrt{18}$
+      \item $\sqrt{27}$ 
+      \item $\sqrt{24}$ 
+    \end{enumerate}
+    \end{multicols}\vspace{2cm}
+  
+  \item Solve for the appropriate variable ($h$ and $r$).
+    \begin{multicols}{2}
+    \begin{enumerate}[itemsep=2cm]
+      \item $Area=\frac{1}{2}(14.8)h=62.9$ 
+      \item $Area=\pi r^2=483$ 
+    \end{enumerate}
+    \end{multicols}\vspace{2cm}
 
 \newpage
+\subsubsection*{Graphing quadratic functions (you may use a calculator)} 
+    \item Consider the function $f(x)=x^2+2x-3$.
+    \begin{enumerate}
+        \item Sketch the graph of $f$, for $-4 \leq x \leq 2$. Label the vertex and the intercepts.
+        \item This function can also be written in the form $f(x)=(x-p)^2 -4$.\\* 
+        Write down the value of $p$. \vspace{1.5cm}
+        \item The graph of $f$ has two solutions for $f(x)=0$. Write down the solutions (or roots, zeros) of the function. \vspace{1.5cm}
+        \item Hence, write down the function in factored form, $f(x)=(x-a)(x-b)$. \vspace{1.5cm}
+    \end{enumerate}
+    \begin{center}
+    \begin{tikzpicture}
+        \draw [thin, color=lightgray,, xstep=1.0cm,ystep=1.0cm] (-5.5,-5.5) grid (5.5,6.5);
+        \foreach \x in {-5, -4, -3, -2, -1,1,2,3,4, 5}
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below]  {$\x$};
+        \foreach \y in {-5, -4, -3, -2, -1, 1,2,3,4, 5, 6}
+        \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
+        \draw [thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
+        \draw [thick, ->] (0,-5.5) -- (0,6.5) node [left] {$y$};
+    \end{tikzpicture}
+    \end{center}
 
-        \begin{tikzpicture}
-            \draw (0,0) rectangle (15.2,8);
-            \draw (8,0) rectangle (15.2,3);
-            \node at (0,8)[below right]{\textbf{Working:}};
-            \node at (8,3)[below right]{\textbf{Answers:}};
-            \draw [dotted] (9,1.7)node[left]{(a)}--(15,1.7);
-            \draw [dotted] (9,1)node[left]{(b)}--(15,1);
-        \end{tikzpicture}
-
-\newpage 
-    \item {[Maximum mark: 6]} \\[0.3cm]
-    The following table shows the Diploma score $x$ and university entrance mark $y$ for seven IB Diploma students. 
-            \begin{center}
-            \begin{tabular}{|l|c|c|c|c|c|c|c|}
-                \hline
-                Diploma score ($x$) & 28 & 30 & 27 & 31 & 32 & 25 & 27 \\ 
-                \hline 
-                University entrance mark ($y$) & 73.9 & 78.1 & 70.2 & 82.2 & 85.5 & 62.7 & 69.4 \\ 
-                \hline 
-                \end{tabular}
-            \end{center}
-            \begin{enumerate}
-                \item Find the correlation coefficient. \hfill [2]\\[0.25cm]
-                The relationship can be modelled by the regression line with equation $y=ax+b$.
-                \item Write down the value of $a$ and of $b$ \hfill [2]\\[0.25cm]
-                Rita scored a total of 26 in her IB Diploma.
-                \item Use your regression line to estimate Rita's university entrance mark. \hfill [2]
-            \end{enumerate}
+\newpage
+\subsection*{Sketching a quadratic function}
+    \item   Given $f(x)=(x-3)^2-4$
+    \begin{enumerate}[itemsep=0.9cm]
+        \item Write down the vertex of the function as an ordered pair.
+        %\item Write down the equation of the axis of symmetry.
+        \item Expand the function from vertex form to standard form, $ax^2+bx+c \text{ where } a, b, c \;  \epsilon \; \mathbb{R}$. \vspace{1cm}
+        \item Write down the value of $f(0)$. Explain what this represents on the graph. \vspace{1cm}
+        \item Factor the function. Write down the roots. \vspace{1cm}
+        \item Sketch the function, labeling the intercepts with values and the vertex as an ordered pair. Show the axis of symmetry as a dotted line and label it with its equation.
+        \begin{center}
             \begin{tikzpicture}
-                \draw (0,0) rectangle (15.2,9);
-                \draw (8,0) rectangle (15.2,4);
-                \node at (0,9)[below right]{\textbf{Working:}};
-                \node at (8,4)[below right]{\textbf{Answers:}};
-                \draw [dotted] (9,2.4)node[left]{(a)}--(15,2.4);
-                \draw [dotted] (9,1.7)node[left]{(b)}--(15,1.7);
-                \draw [dotted] (9,1)node[left]{(c)}--(15,1);
+                \draw [thick, ->] (-4.5,0) -- (+4.5,0) node [right] {$x$};
+                \draw [thick, ->] (0,-3.5) -- (0,4.5) node [left] {$y$};
             \end{tikzpicture}
+            \end{center}
+        \item Write down the domain and range of the function.
+    \end{enumerate}
 
-                    
+\newpage
+  \item Let $f$ be a quadratic function. Part of the graph of $f$ is shown below.\\*
+  The vertex is at $P(2,1)$ and the $y$-intercept is at $Q(0, 3)$.\\*
+
+    \begin{figure}[!htbp]
+    \begin{center}
+    \begin{tikzpicture}
+
+        %grid
+        %\draw [thin, color=lightgray,, xstep=1.0cm,ystep=1.0cm] (-5.5,-5.5) grid (5.5,5.5);
+        %\draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-5.5,-1.5) grid (5.5,16.5);
+
+        \foreach \x in {-2, -1,1,2,3,4,5,6}
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below]  {$\x$};
+
+        \foreach \y in {-1,1,2,3,4,5,6}
+        \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
+
+        \draw [thick, ->] (-2.5,0) -- (+6.5,0) node [right] {$x$};
+        \draw [thick, ->] (0,-1.5) -- (0,6.5) node [left] {$y$};
+
+        \draw (2,1) circle[radius=2pt] node [below] {$P$};
+        \fill (2,1) circle[radius=2pt];
+        \draw (0,3) circle[radius=2pt] node [right] {$Q$};
+        \fill (0,3) circle[radius=2pt];
+
+        \draw [<->] plot[domain= -1:5] (\x, .5*\x*\x -2*\x +3);
+
+    \end{tikzpicture}
+    \end{center}
+    \end{figure}
+
+    \begin{enumerate}
+        \item Write down the equation of the axis of symmetry.
+        \item The function $f$ can be written in the form $f(x)=a(x-h)^2 +k$. \\*
+        Write down the value of $h$ and of $k$.
+        \item Find $a$.
+    \end{enumerate}
+
+
 \end{enumerate}
 \end{document}

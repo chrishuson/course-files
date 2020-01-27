@@ -23,139 +23,57 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Dr. Huson / IB Mathematics\\* Unit 5: Polynomial functions\\* February 2020}
+\fancyhead[LO]{BECA / Dr. Huson / IB Mathematics\\* Unit 5: Polynomial functions\\* January 2020}
 
 \begin{document}
 \begin{enumerate}
     \subsubsection*{5.0 Calculator practice: Linear regression, systems of equations, cosine rule, frequency table statistics}
 
-    \item Apply the law of cosines, $c^2=a^2+b^2-2ab \cos \theta$. \\[0.25cm]
-    $a=14.5$, $b=4.7$, $\theta = 52^\circ$. Find the third side length, $c$.
+    \item Apply the law of cosines, $c^2=a^2+b^2-2ab \cos \theta$.
+    \begin{enumerate}
+        \item $a=14.5$, $b=4.7$, $\theta = 52^\circ$. Find the third side length, $c$. \hfill [3]
+        \item $a=5.4$, $b=6.7$, $c=8.7$. Find the angle measure, $\theta$. \hfill [3]
+    \end{enumerate}
         \begin{tikzpicture}
-            \draw (0,0) rectangle (15.2,9);
-            \draw (8,0) rectangle (15.2,4);
-            \node at (0,9)[below right]{\textbf{Working:}};
-            \node at (8,4)[below right]{\textbf{Answers:}};
-            \draw [dotted] (9,2.4)node[left]{(a)}--(15,2.4);
-            \draw [dotted] (9,1.7)node[left]{(b)}--(15,1.7);
-            \draw [dotted] (9,1)node[left]{(c)}--(15,1);
+            \draw (0,0) rectangle (15.2,5);
+            \draw (8,0) rectangle (15.2,3);
+            \node at (0,5)[below right]{\textbf{Working:}};
+            \node at (8,3)[below right]{\textbf{Answers:}};
+            \draw [dotted] (9,1.7)node[left]{(a)}--(15,1.7);
+            \draw [dotted] (9,1)node[left]{(b)}--(15,1);
         \end{tikzpicture}
 
     \item Perform a linear regression on the data in the table, finding $y=ax+b$. 
             \begin{center}
             \begin{tabular}{|l|c|c|c|c|c|c|c|}
                 \hline
-                Diploma score ($x$) & 28 & 30 & 27 & 31 & 32 & 25 & 27 \\ 
+                $x$ & 18 & 20 & 17 & 21 & 22 & 15 & 17 \\ 
                 \hline 
-                University entrance mark ($y$) & 73.9 & 78.1 & 70.2 & 82.2 & 85.5 & 62.7 & 69.4 \\ 
+                $y$ & 63.1 & 68.5 & 60.2 & 73.2 & 76.5 & 52.7 & 59.4 \\ 
                 \hline 
                 \end{tabular}
             \end{center}
             \begin{enumerate}
-                \item Write down the value of $a$, $b$, and $r$. \hfill [3]\\[0.25cm]
-                \item Characterize the correlation coefficient. \hfill [1]\\[0.25cm]
-                \item Use your regression line to estimate $y$ for $x=29$. \hfill [2]
+                \item Write down the value of $a$, $b$, and $r$. \hfill [3]
+                \item Characterize the correlation coefficient. \hfill [1]
+                \item Use your regression line to estimate $y$ for $x=19$. \hfill [2]
             \end{enumerate}
             \begin{tikzpicture}
-                \draw (0,0) rectangle (15.2,9);
+                \draw (0,0) rectangle (15.2,7);
                 \draw (8,0) rectangle (15.2,4);
-                \node at (0,9)[below right]{\textbf{Working:}};
+                \node at (0,7)[below right]{\textbf{Working:}};
                 \node at (8,4)[below right]{\textbf{Answers:}};
                 \draw [dotted] (9,2.4)node[left]{(a)}--(15,2.4);
                 \draw [dotted] (9,1.7)node[left]{(b)}--(15,1.7);
                 \draw [dotted] (9,1)node[left]{(c)}--(15,1);
             \end{tikzpicture}
-
-    \item {[Maximum mark: 6]} \\[0.3cm]
-    The diagram shows the straight line $L_1$, which intersects the $x$-axis at $A(k, 0)$ and the $y$-axis at $B(0,3)$.
-        \begin{center}
-            \begin{tikzpicture}[scale=1]
-            %\draw [help lines] (0,0) grid (10,8);
-            \draw [thick, ->] (-0.5,0) -- (7.4,0) node [below right] {$x$};
-            \draw [thick, ->] (0,-0.5)--(0,3.4) node [left] {$y$};
-            %\draw [fill] (9,5) circle [radius=0.1];
-            \draw [thick, -] (-0.25,3) node [below] {$B$}--(6,-0.1) node [above] {$A$};
-            \node at (6,4){\textbf{diagram is not to scale}};
-            \end{tikzpicture}
-        \end{center}
-        The gradient of $L_1$ is $-\frac{3}{4}$.
-        \begin{enumerate}%[itemsep=3cm]
-            \item Write down the equation of the line $L_1$. \hfill [1]
-            \item Find the value of $k$. \hfill [2]
-            \item The line $L_2$ is perpendicular to $L_1$ and passes through $(2,1)$.
-                \begin{enumerate}
-                    \item Write down the gradient of the line $L_2$. \hfill [1]
-                    \item Hence, write down the equation of $L_2$. Leave your answer in the form \\ $y-a=m(x-b)$. \hfill [2]
-                \end{enumerate}
-        \end{enumerate}
-        \begin{tikzpicture}
-            \draw (0,3) rectangle (15,11);
-            \draw [dotted] (1,10)--(14,10);
-            \draw [dotted] (1,9)--(14,9);
-            \draw [dotted] (1,8)--(14,8);
-            \draw [dotted] (1,7)--(14,7);
-        \end{tikzpicture}
-
-\newpage 
-    \item {[Maximum mark: 7]} \\[0.3cm]
-    Let $f(x)=2x+8$ and $g(x)=\sqrt{x}-1$, for $x \geq 0$.
-        \begin{enumerate}
-            \item Write down $g(9)$. \hfill [1]
-            \item Find $(f - g)(x)$. \hfill [1]
-            \item Find $(g \circ f)(4)$. \hfill [1]
-            \item Write down $g^{-1}(4)$. \hfill [2]
-            \item Find $f^{-1}(x)$. \hfill [2]
-        \end{enumerate}
-        \begin{tikzpicture}
-
-            \draw (0,0) rectangle (15.2,15);
-            \draw (8,0) rectangle (15.2,5);
-            \node at (0,15)[below right]{\textbf{Working:}};
-            \node at (8,5)[below right]{\textbf{Answers:}};
-            \draw [dotted] (9,3.8)node[left]{(a)}--(15,3.8);
-            \draw [dotted] (9,3.1)node[left]{(b)}--(15,3.1);
-            \draw [dotted] (9,2.4)node[left]{(c)}--(15,2.4);
-            \draw [dotted] (9,1.7)node[left]{(d)}--(15,1.7);
-            \draw [dotted] (9,1)node[left]{(e)}--(15,1);
-        \end{tikzpicture}
-
+        
 \newpage
-   \item {[Maximum mark: 6]} \\[0.3cm]
-   Early finishers: The diagram below shows the graph of a function $f$ for $-2 \leq x \leq 2.5$. 
-        \begin{center}
-        \begin{tikzpicture}[scale=1.0]
-                \draw [thin, color=gray, xstep=1.0cm,ystep=1.0cm] (-3.5,-3.5) grid (3.5,3.5);
-                %\draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-5.5,-4.5) grid (5.5,6.5);
-                \foreach \x in {-3, -2, -1, 0,1,2,3}
-                    \draw[shift={(\x,0)},color=black] (0pt,-1pt) -- (0pt,3pt) node[below]  {$\quad \x$};
-                \foreach \y in {-3, -2,-1,0,1,2,3}
-                    \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
-                \draw [thick, ->] (-3.5,0) -- (+3.5,0) node [right] {$x$};
-                \draw [thick, ->] (0,-3.5) -- (0,3.5) node [left] {$y$};
-                \draw [thick] (0,-2)--(2.5,0.5);
-                \draw [thick] (0,-2)--(-2,-3);
-                %\draw [thick] plot[domain= -2:3] (\x, {-2*(-\x+3)^0.5 +2});
-            %\draw [thick] plot[domain= -1:2] (\x, \x*1/2 -2);
-            %\draw [thick] (-2,-2).. controls (0,-1) and (2,0) .. (3,1);
-            %\draw [fill] (-3,3) circle[radius=0.1] node[above left]{$A(-3,3)$};
-        \end{tikzpicture}
-        \end{center}
-        \begin{enumerate}%[itemsep=2cm]
-            \item Write down the value of $f(2)$. \hfill [1]
-            \item Write down the value of $f^{-1}(-1)$. \hfill [2]
-            \item Sketch the graph of $f^{-1}$ on the grid. \hfill [3]
-        \end{enumerate}
-        \begin{tikzpicture}
-            \draw (0,1) rectangle (15.5,11);
-            \draw [dotted] (1,10)--(14,10);
-            \draw [dotted] (1,9)--(14,9);
-            \draw [dotted] (1,8)--(14,8);
-            \draw [dotted] (1,7)--(14,7);
-            \draw [dotted] (1,6)--(14,6);
-        \end{tikzpicture}
-
-\newpage
-
+    \item Find the solutions for each system, the value(s) for $x$ such that $f(x)=g(x)$. Sketch the graph to show working.
+    \begin{enumerate}
+        \item $f(x)=x^2-5x+12$, $y=3x+15$. \hfill [3] \vspace{0.3cm}
+        \item $f(x)=-4(x-9)^2-5.5$, $y=0.5x-1$.  \hfill [3]
+    \end{enumerate}
         \begin{tikzpicture}
             \draw (0,0) rectangle (15.2,8);
             \draw (8,0) rectangle (15.2,3);
@@ -164,6 +82,31 @@
             \draw [dotted] (9,1.7)node[left]{(a)}--(15,1.7);
             \draw [dotted] (9,1)node[left]{(b)}--(15,1);
         \end{tikzpicture}
-                    
+
+\item The data for  $n=30$ are shown in the frequency table below.
+    \begin{center}
+        \begin{tabular}{|l|c|c|c|c|}
+            \hline
+            Mark ($x$) & $10 \leq x < 30$ & $30 \leq x < 50$ & $50 \leq x < 70$ & $70 \leq x < 90$\\ 
+            \hline 
+            Frequency & 5 & 11 & 10 & 4\\ 
+            \hline 
+            \end{tabular}
+    \end{center}
+    \begin{enumerate}
+        \item Write down the modal class.  \hfill [1]
+        \item Estimate the mean $\overline{x}$. \hfill [2]
+        \item Estimate the standard deviation of the data, $\sigma$.  \hfill [2]
+        \end{enumerate}
+    \begin{tikzpicture}
+        \draw (0,0) rectangle (15.2,5);
+        \draw (8,0) rectangle (15.2,4);
+        \node at (0,5)[below right]{\textbf{Working:}};
+        \node at (8,4)[below right]{\textbf{Answers:}};
+        \draw [dotted] (9,2.4)node[left]{(a)}--(15,2.4);
+        \draw [dotted] (9,1.7)node[left]{(b)}--(15,1.7);
+        \draw [dotted] (9,1)node[left]{(c)}--(15,1);
+    \end{tikzpicture}
+           
 \end{enumerate}
 \end{document}
