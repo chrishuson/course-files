@@ -6,6 +6,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
+\usepackage{yhmath}
 %\usetikzlibrary{quotes, angles}
 
 \usepackage{graphicx}
@@ -105,7 +106,7 @@
         \draw [thick] (0,0)node[below]{$A$}--
         (12,0)node[below]{$B$}--
         (12,5)node[above]{$C$}--
-        (0,5)node[above]{$D$}--;
+        (0,5)node[above]{$D$}--cycle;
       \end{tikzpicture}\\
       \renewcommand{\arraystretch}{1.5}
       \begin{flushright}
@@ -220,7 +221,8 @@
       \end{center}
 
     \subsubsection*{Circle area and circumference}
-      \item The diagram below shows the circle $O$ with radii $\overline{OA}$ and $\overline{OB}$. The measure of angle $AOB$ is $120^\circ$, and the length of a radius is 6 inches.
+      \item %June 2018
+      The diagram below shows the circle $O$ with radii $\overline{OA}$ and $\overline{OB}$. The measure of angle $AOB$ is $120^\circ$, and the length of a radius is 6 inches.
       \begin{center}
       \begin{tikzpicture}
         \draw [thick] (0,0) circle[radius=3cm];
@@ -243,6 +245,96 @@
     \end{multicols}
     %\includegraphics[width=0.85\textwidth]{Circle_JN2018-22.png}
 
-  \end{enumerate}
+    \item %August 2019
+    Circle O with a radius of 9 is drawn below. The measure of central angle AOC is $120^\circ$.
+    \begin{center}
+      \begin{tikzpicture}
+        \draw [thick] (0,0) circle[radius=2cm];
+        \fill [lightgray] (-50:2)--(0,0)--(70:2)arc(70:310:2);        \draw [thick, -]
+          (70:2)node[above]{$A$} --
+          (0,0) node [ left]{$O$}--
+          (-50:2)node[right]{$B$};
+        \node at (70:1)[right]{9};
+        \node at (0:0.4)[right]{$120^\circ$};
+        \draw (-50:0.5) arc(-50:70:0.5);
+      \end{tikzpicture}
+      \end{center}
+    What is the area of the shaded sector of circle $O$? 
+      \begin{multicols}{2}
+        \begin{enumerate}
+        \item $6\pi$
+        \item $12\pi$
+        \item $27\pi$
+        \item $54\pi$
+      \end{enumerate}
+    \end{multicols}
 
+  \item %June 2019
+  In the diagram below, circle O has a radius of 10.
+  \begin{center}
+    \begin{tikzpicture}
+      \fill [lightgray] (90:2)--(0,0)--(18:2)arc(18:90:2);
+      \draw [thick] (0,0) circle[radius=2cm];
+      \fill (0,0) circle[radius=0.07];
+      \draw [thick, -]
+        (90:2)node[above]{$A$} --
+        (0,0) node [ left]{$O$}--
+        (18:2)node[right]{$B$};
+      \node at (0:1){10};
+      %\node at (0:0.4)[right]{$120^\circ$};
+      %\draw (-50:0.5) arc(-50:70:0.5);
+    \end{tikzpicture}
+    \end{center}
+    If $m \wideparen{AC}=72^\circ$, find the area of shaded sector AOB, in terms of $\pi$.
+
+  \item %January 2018
+  In the diagram below, the circle has a radius of 25 inches. The area of the \emph{unshaded} sector is $500\pi$ $\mathrm{in}^2$.
+  \begin{center}
+    \begin{tikzpicture}
+      \fill [lightgray] (80:2)--(0,0)--(10:2)arc(10:80:2);
+      \draw [thick] (0,0) circle[radius=2cm];
+      \fill (0,0) circle[radius=0.07];
+      \draw [thick, -] (80:2)--(0,0) node [above right]{$Q$}--(10:2);
+      \node at (110:1){25 in};
+    \end{tikzpicture}
+    \end{center}
+    Determine and state the degree measure of angle $Q$, the central angle of the shaded sector. %72 degrees
+    
+  \item %January 2019
+  The area of a sector of a circle with a radius measuring 15 cm is $75\pi$ $\mathrm{cm}^2$. What is the measure of the central angle that forms the sector?
+    \begin{multicols}{2}
+      \begin{enumerate}
+      \item $72^\circ$
+      \item $120^\circ$
+      \item $144^\circ$
+      \item $180^\circ$
+    \end{enumerate}
+  \end{multicols}
+
+  \item %August 2018
+  A circle with a diameter of 10 cm and a central angle of $30^\circ$ is drawn below.
+  \begin{center}
+    \begin{tikzpicture}
+      \draw [thick] (0,0) circle[radius=2cm];
+      \fill (0,0) circle[radius=0.07];
+      \draw [thick, -](220:2)--(0,0)--(40:2);
+      \draw [thick, -](0,0)--(10:2);
+      \node at (23:1.1){$30^\circ$};
+      \node at (130:0.1)[above, rotate=40]{10 cm};
+      %\draw (-50:0.5) arc(-50:70:0.5);
+    \end{tikzpicture}
+    \end{center}
+  What is the area, to the \emph{nearest tenth of a square centimeter}, of the sector formed by the $30^\circ$ angle?
+    \begin{multicols}{2}
+      \begin{enumerate}
+      \item 5.2
+      \item 13.1
+      \item 6.5
+      \item 26.2
+    \end{enumerate}
+    \end{multicols}
+    
+
+    
+  \end{enumerate}
 \end{document}
