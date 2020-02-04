@@ -1,0 +1,165 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{yhmath}
+%\usetikzlibrary{quotes, angles}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+
+\fancyhead[RE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{3cm}}
+\fancyhead[L]{BECA / Dr. Huson / 10th Grade Geometry\\* 4 February 2020}
+
+\begin{document}
+\subsubsection*{8.6b Do Now: Estimating and measuring angles, length, and area}
+ \begin{enumerate}
+
+  \item In your notebook, write the formulas for the area and circumference of circles:
+\[A=\pi r^2\]
+\[C=\pi D = 2\pi r\]
+
+  \item Given the circle centered at $O$ with radius $r=7$.
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item Find the circumference of a circle. %\vspace{1cm}
+      \item Find the area of the circle.\vspace{3cm}
+    \end{enumerate}
+    %\columnbreak
+    \begin{tikzpicture}[scale=.635]
+      %\draw [help lines] (-5,-5) grid (5,5);
+      %\draw [thick, ->] (-2.2,0) -- (10.4,0) node [below right] {$x$};
+      %\draw [thick, ->] (0,-2.2)--(0,10.4) node [left] {$y$};
+      \draw (0,0) circle [radius=4] node[below]{$O$};
+      \draw [fill] (0,0) circle [radius=0.05];
+    \end{tikzpicture}
+  \end{multicols}
+
+  \item Given the quarter-circle shown with diameter $AB=6$. Find its area and perimeter.
+    \begin{flushright}
+    \begin{tikzpicture}[scale=.635, rotate=0]
+      \draw [help lines] (-5,-1) grid (5,4);
+      \draw [thick] (-3,0)node[below left]{$A$}--(0,0) -- (0,3)node[below right]{$B$};
+      %\draw [thick, ->] (0,-2.2)--(0,10.4) node [left] {$y$};
+      \draw [thick] (0,3) arc (90:180:3);
+      \draw [fill] (-3,0) circle [radius=0.05];
+      \draw [fill] (0,3) circle [radius=0.05];
+    \end{tikzpicture}
+  \end{flushright} \vspace{1cm}
+
+  \item Find the radius of a circle having an area of $48$, rounded to the \emph{nearest hundredth}. \vspace{2cm}
+  \item Find the diameter of a circle with a circumference of $50\pi$.
+
+\newpage 
+\subsubsection*{Classwork: Estimating and measuring angles, length, and area} 
+  \item Find the area of a semi-circle with diameter of 6 centimeters.
+   \begin{flushright}
+    \begin{tikzpicture}[scale=.635]
+      %\draw [help lines] (-5,-1) grid (5,4);
+      \draw [thick] (-2,0)-- (2,0);
+      %\draw [thick, ->] (0,-2.2)--(0,10.4) node [left] {$y$};
+      \draw [thick] (2,0) arc (0:180:2);
+      \draw [fill] (-2,0) circle [radius=0.05];
+      \draw [fill] (2,0) circle [radius=0.05];
+      \node at (0,0)[below]{6};
+    \end{tikzpicture}
+  \end{flushright}
+
+  \item Given circle $O$ with radius $OB=14$ cm.
+    \begin{multicols}{2}
+    \raggedcolumns
+    \begin{enumerate}
+      \item Find the circumference of circle $O$. \vspace{1.7cm}
+      \item Find the area of the circle.  \vspace{2cm}
+      \item A regular heptagon (7 sides) is inscribed in the circle, with $A$ and $B$ two of its vertices. \\[0.25cm]
+      Find the area of the sector $AOB$. \vspace{1.5cm}
+    \end{enumerate}
+      \begin{tikzpicture}[scale=1]
+        \draw (0,0) circle[radius=3];
+        \draw [thick]
+        (0:3) node[right] {$B$}--
+        (0,0) node[below] {$O$}--
+        (1*360/7:3) node[above right] {$A$};
+        \fill [lightgray]
+        (0,0)--(0:3) arc (0:1*360/7:3)--(0,0);
+        \draw (1.5,0) node[below] {$14$};
+        \draw [thick] (0:3)--(1*360/7:3)--(2*1*360/7:3)--(3*1*360/7:3)--
+        (4*1*360/7:3)--(5*1*360/7:3)--(6*1*360/7:3)--cycle;
+      \end{tikzpicture}
+    \end{multicols}  \vspace{3cm}
+
+  \item Find the volume of a pyramid ($V=\frac{1}{3}Bh$) having a height of 12.75 inches and with a square base having side lengths of 8.5 inches. Express your result to the \emph{nearest tenth of a cubic inch}. \vspace{5cm}
+
+\newpage
+  \item Find the volume of a hemisphere with a radius of 15 inches, to the \emph{nearest whole cubic inch}. (The formula for the volume of a \emph{sphere} is $V=\frac{4}{3}\pi r^3$) \vspace{5cm}
+
+  \item Given $R(1,-5)$ and $S(5,7)$, find the length of $\overline{RS}$. Note: $l=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$. \vspace{4cm}
+
+  \item On the graph, draw polygon ABCDEF with vertices A(2, 1), B(2, 4), C(4, 4), D(4, 8), E(8, 8), and F(8, 1). Find the perimeter and the area of the polygon.\\[1cm]
+  \begin{tikzpicture}[scale=.635]
+    \draw [help lines] (-2,-2) grid (10,10);
+    \draw [thick, ->] (-2.2,0) -- (10.4,0) node [below right] {$x$};
+    \draw [thick, ->] (0,-2.2)--(0,10.4) node [left] {$y$};
+  \end{tikzpicture}
+  \vspace{2cm}
+
+\newpage
+\subsubsection*{Estimating and measuring}
+  \item The point $P$ falls $A(0)$ and $B(10)$ on the numberline $\overleftrightarrow{AB}$ as shown below. \\[15pt] % Midpoint
+  \begin{tikzpicture}
+    \draw [<->] (-0.5,0)--(10.5,0);
+    \foreach \x in {0,10} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (0,0) circle [radius=0.05] node[above] {$A$};
+      \draw [fill] (10,0) circle [radius=0.05] node[above] {$B$};
+      \draw [fill] (4.5,0) circle [radius=0.05] node[above] {$P$};
+  \end{tikzpicture}
+  \begin{enumerate}
+    \item Estimate the value of $P$ without using any tools. \vspace{1cm} 
+    \item Find the position of $P$ as accurately as you can with a ruler. 
+  \end{enumerate} \vspace{1cm} 
+
+  \item The distance from $B$ on the line is scaled so that each centimeter represents one foot. \\[15pt] % Midpoint
+  \begin{tikzpicture}
+    \draw [-] (0,0)--(10,0);
+    \foreach \x in {0,...,10} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (0,0) circle [radius=0.05] node[above] {$B$};
+      \draw [fill] (2.5,0) circle [radius=0.05] node[above] {$M$};
+      \draw [fill] (7.25,0) circle [radius=0.05] node[above] {$N$};
+  \end{tikzpicture}
+  \begin{enumerate}
+    \item Estimate the distance of $M$ from $B$ in feet and inches (by eye). \vspace{1cm} 
+    \item Using a ruler, find the distance between $M$ and $N$ in feet and inches. 
+  \end{enumerate} \vspace{2cm}
+
+  \item Given the circle $O$ with diameter $D=6$.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=1.5cm]
+      \item Estimate the area by counting the squares in the grid.
+      \item Calculate the area. 
+      \item Quantify the error in your estimate as a percentage.
+    \end{enumerate}
+    \begin{tikzpicture}[scale=1]
+      \draw [help lines] (-3,-3) grid (3,3);
+      %\draw [thick, ->] (-2.2,0) -- (10.4,0) node [below right] {$x$};
+      %\draw [thick, ->] (0,-2.2)--(0,10.4) node [left] {$y$};
+      \draw (0,0) circle [radius=3] node[below]{$O$};
+      \draw [fill] (0,0) circle [radius=0.05];
+    \end{tikzpicture}
+  \end{multicols}
+
+
+\end{enumerate}
+\end{document}
