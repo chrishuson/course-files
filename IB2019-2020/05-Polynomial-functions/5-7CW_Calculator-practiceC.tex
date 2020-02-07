@@ -1,0 +1,113 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+
+\usepackage{pgfplots}
+\pgfplotsset{width=9cm,compat=1.9}
+
+\usepackage{venndiagram}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / IB Mathematics\\* Unit 5: Polynomial functions\\* February 2020}
+
+\begin{document}
+\begin{enumerate}
+    \subsubsection*{5.0C Calculator practice: Linear regression, systems of equations, cosine rule, frequency table statistics}
+
+    \item Apply the law of cosines, $c^2=a^2+b^2-2ab \cos \theta$.
+    \begin{enumerate}
+        \item $a=12.3$, $b=14.7$, $\theta = 71^\circ$. Find the third side length, $c$. \hfill [3]
+        \item $a=11.4$, $b=17.1$, $c=16.0$. Find $\hat{C}$ (the angle opposite side $c$). \hfill [3]
+    \end{enumerate}
+        \begin{tikzpicture}
+            \draw (0,0) rectangle (15.2,5);
+            \draw (8,0) rectangle (15.2,3);
+            \node at (0,5)[below right]{\textbf{Working:}};
+            \node at (8,3)[below right]{\textbf{Answers:}};
+            \draw [dotted] (9,1.7)node[left]{(a)}--(15,1.7);
+            \draw [dotted] (9,1)node[left]{(b)}--(15,1);
+        \end{tikzpicture}
+
+    \item Perform a linear regression on the data in the table, finding $y=ax+b$. 
+            \begin{center}
+            \begin{tabular}{|l|c|c|c|c|c|c|c|}
+                \hline
+                $x$ & 17 & 18 & 17 & 19 & 23 & 15 & 16 \\ 
+                \hline 
+                $y$ & 71.1 & 78.6 & 69.2 & 71.2 & 80.5 & 55.7 & 58.4 \\ 
+                \hline 
+                \end{tabular}
+            \end{center}
+            \begin{enumerate}
+                \item Write down the value of $a$, $b$. \hfill [3]%a=2.90629, b=17.3447
+                \item Write down the correlation coefficient $r$. \hfill [1] %r=0.81267128
+                \item Use your regression line to estimate $y$ for $x=22$. \hfill [2] %y=81.2832
+            \end{enumerate}
+            \begin{tikzpicture}
+                \draw (0,0) rectangle (15.2,7);
+                \draw (8,0) rectangle (15.2,4.5);
+                \node at (0,7)[below right]{\textbf{Working:}};
+                \node at (8,4.5)[below right]{\textbf{Answers:}};
+                \draw [dotted] (9.4,3.1)node[left]{(a)(i)}--(15,3.1);
+                \draw [dotted] (9.5,2.4)node[left]{(ii)}--(15,2.4);
+                \draw [dotted] (9,1.7)node[left]{(b)}--(15,1.7);
+                \draw [dotted] (9,1)node[left]{(c)}--(15,1);
+            \end{tikzpicture}
+        
+\newpage
+    \item Find the solutions for the system, the value(s) for $x$ such that $f(x)=g(x)$. Sketch the graph to show working.
+    \begin{enumerate}
+        \item $f(x)=-2x^2+5x+7$ \\[0.25cm] $y=-2x+4$ \hfill [3] \vspace{0.3cm}
+        % x=-0.386, 3.886
+    \end{enumerate}
+        \begin{tikzpicture}
+            \draw (0,0) rectangle (15.2,8);
+            \draw (8,0) rectangle (15.2,3);
+            \node at (0,8)[below right]{\textbf{Working:}};
+            \node at (8,3)[below right]{\textbf{Answers:}};
+            \draw [dotted] (9,1.7)node[left]{(a)}--(15,1.7);
+            %\draw [dotted] (9,1)node[left]{(b)}--(15,1);
+        \end{tikzpicture}
+
+\item The data for $n=50$ are shown in the frequency table below.
+    \begin{center}
+        \begin{tabular}{|l|c|c|c|c|}
+            \hline
+            $x$ & $15 \leq x < 25$ & $25 \leq x < 35$ & $35 \leq x < 40$ & $70 \leq x < 90$\\ 
+            \hline 
+            Frequency & $k$ & 21 & 16 & 8\\ 
+            \hline 
+            \end{tabular}
+    \end{center}
+    \begin{enumerate}
+        \item Find the value of $k$.  \hfill [1]
+        \item Estimate the mean $\overline{x}$. \hfill [2]
+        \item Estimate the standard deviation of the data, $\sigma$.  \hfill [2]
+        \end{enumerate}
+    \begin{tikzpicture}
+        \draw (0,0) rectangle (15.2,5);
+        \draw (8,0) rectangle (15.2,4);
+        \node at (0,5)[below right]{\textbf{Working:}};
+        \node at (8,4)[below right]{\textbf{Answers:}};
+        \draw [dotted] (9,2.4)node[left]{(a)}--(15,2.4);
+        \draw [dotted] (9,1.7)node[left]{(b)}--(15,1.7);
+        \draw [dotted] (9,1)node[left]{(c)}--(15,1);
+    \end{tikzpicture}
+           
+\end{enumerate}
+\end{document}
