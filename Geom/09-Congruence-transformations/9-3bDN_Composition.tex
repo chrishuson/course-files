@@ -33,24 +33,24 @@
   \begin{multicols}{2}
     [\item A transformation is applied to a triangle, $\triangle CAT \rightarrow \triangle C'A'T'$.  Circle True or False to identify each transformation correctly represented below.]  \vspace{0.5cm}
     \begin{itemize}
-      \item[T \quad F \quad] Translated six to the left, down zero
+      \item[T \quad F \quad] Translated six to the left, up two
       \item[T \quad F \quad] Reflected across the $y$-axis
-      \item[T \quad F \quad] $(x,y) \rightarrow (x-6, y+0)$
+      \item[T \quad F \quad] $(x,y) \rightarrow (x-6, y-2)$
       \item[T \quad F \quad] Rotated $90^\circ$ counterclockwise around the origin
-      \item[T \quad F \quad] A slide six units to the right
+      \item[T \quad F \quad] A slide six units to the right, up two
     \end{itemize}
     \begin{tikzpicture}[scale=.48]
       \draw [help lines] (-7,-4) grid (7,5);
       \draw [thick, <->] (-7.4,0) -- (7.4,0) node [right] {$x$};
       \draw [thick, <->] (0,-4.4)--(0,5.4) node [above] {$y$};  
       \draw [thick]
-      (2,2) node[above] {$C$}--
-      (4,1) node[right] {$A$}--
-      (2,-2) node[below left] {$T$}--cycle;
+      (2,3) node[above] {$C$}--
+      (4,2) node[right] {$A$}--
+      (2,-1) node[below left] {$T$}--cycle;
       \draw [thick]
-      (-4,2) node[above] {$C'$}--
-      (-2,1) node[right] {$A'$}--
-      (-4,-2) node[below left] {$T'$}--cycle;
+      (-4,1) node[above] {$C'$}--
+      (-2,0) node[above right] {$A'$}--
+      (-4,-3) node[below left] {$T'$}--cycle;
     \end{tikzpicture}
   \end{multicols}
   
