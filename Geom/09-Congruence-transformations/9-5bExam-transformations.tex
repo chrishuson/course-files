@@ -28,7 +28,7 @@
 \renewcommand{\headrulewidth}{0pt}
 
 \begin{document}
-\subsubsection*{9.5b Exam: Rigid motions including translation, reflection, rotation}
+\subsubsection*{9.5b Exam: Rigid motions, translation, reflection, rotation (No Calculator)}
   \begin{enumerate}
 
   \item Slide $\triangle ABC$ to the left four and up five. Label the image $\triangle A'B'C'$.
@@ -75,22 +75,6 @@
 
   \item State the translation that would map $Q(4,3)$ onto $Q'(-1,-3)$. \vspace{2cm}
   
-  \item Rotate $\triangle JKL$ $90^\circ$ counterclockwise around the origin on the axes below, labeling the image $\triangle J'K'L'$.
-  \begin{center}
-      \begin{tikzpicture}[scale=.48]
-      \draw [help lines] (-8,-8) grid (8,8);
-      \draw [thick, <->] (-8.4,0) -- (8.4,0) node [right] {$x$};
-      \draw [thick, <->] (0,-8.4)--(0,8.4) node [above] {$y$};  
-      \draw [thick]
-        (4,3) node[above right] {$J$}--
-        (4,-3) node[below] {$K$}--
-        (6,0) node[below right] {$L$}--cycle;  
-    \end{tikzpicture}
-  \end{center}
-
-\newpage
-  \item Triangle $A'B'C'$ is the image of triangle $ABC$ after a translation of 2 units to the right and 3 units up. Is triangle $ABC$ congruent to $A'B'C'$? Explain why. \vspace{3cm}
-
   \item On the set of axes below, $\triangle ABC \cong \triangle STU$. \\[0.5cm]
   Describe the rigid motion that maps $\triangle ABC$ onto $\triangle STU$.
   \begin{flushright}
@@ -108,6 +92,23 @@
       (-5,-4) node[below] {$U$}--cycle;
     \end{tikzpicture}
   \end{flushright}
+
+\newpage
+  \item Triangle $A'B'C'$ is the image of triangle $ABC$ after a translation of 2 units to the right and 3 units up. Is triangle $ABC$ congruent to $A'B'C'$? Explain why. \vspace{3cm}
+
+  \item Rotate $\triangle JKL$ $90^\circ$ counterclockwise around the origin on the axes below, labeling the image $\triangle J'K'L'$.
+  \begin{center}
+      \begin{tikzpicture}[scale=.48]
+      \draw [help lines] (-8,-8) grid (8,8);
+      \draw [thick, <->] (-8.4,0) -- (8.4,0) node [right] {$x$};
+      \draw [thick, <->] (0,-8.4)--(0,8.4) node [above] {$y$};  
+      \draw [thick]
+        (4,3) node[above right] {$J$}--
+        (4,-3) node[below] {$K$}--
+        (6,0) node[below right] {$L$}--cycle;  
+    \end{tikzpicture}
+  \end{center}
+  
 
   \item Draw the line of reflection that would map $\triangle ABC$ onto $\triangle A'B'C'$.
   \begin{center}
@@ -169,9 +170,9 @@
   \item Two transformations have been applied to a triangle in the diagram below, \\$\triangle ABC \rightarrow \triangle A'B'C' \rightarrow \triangle A''B''C''$. Fully characterize each transformation.
   \begin{flushright}
       \begin{tikzpicture}[scale=.48]
-      \draw [help lines] (-10,-7) grid (10,7);
+      \draw [help lines] (-10,-5) grid (10,7);
       \draw [thick, <->] (-10.4,0) -- (10.4,0) node [right] {$x$};
-      \draw [thick, <->] (0,-7.4)--(0,7.4) node [above] {$y$};  
+      \draw [thick, <->] (0,-5.4)--(0,7.4) node [above] {$y$};  
       \draw [thick]
         (-8,4) node[below left] {$A''$}--
         (-2,6) node[above right] {$B''$}--
@@ -185,7 +186,7 @@
         (7,-4) node[below] {$B$}--
         (8,-1) node[right] {$C$}--cycle;
     \end{tikzpicture}
-  \end{flushright} \vspace{1cm}
+  \end{flushright}
 
   \begin{multicols}{2}
     [\item What are the coordinates of the image of $B(2,5)$ after a reflection across the $x$-axis?]  \vspace{0.5cm}
@@ -195,6 +196,11 @@
       \item $(2,-5)$
       \item $(-5,-2)$
     \end{enumerate}
+    \begin{tikzpicture}[scale=.48]
+      \draw [help lines] (-5,-5) grid (5,5);
+      \draw [thick, <->] (-5.4,0) -- (5.4,0) node [right] {$x$};
+      \draw [thick, <->] (0,-5.4)--(0,5.4) node [above] {$y$};   
+    \end{tikzpicture}
   \end{multicols}
 
 \newpage  
@@ -252,9 +258,9 @@
   \item The quadrilateral $ROCK$ undergoes rigid motions, shown below. Describe the sequence of transformations applied.
   \begin{flushright}
       \begin{tikzpicture}[scale=.48]
-      \draw [help lines] (-6,-7) grid (10,7);
+      \draw [help lines] (-6,-7) grid (10,5);
       \draw [thick, <->] (-6.4,0) -- (10.4,0) node [right] {$x$};
-      \draw [thick, <->] (0,-7.4)--(0,7.4) node [above] {$y$};  
+      \draw [thick, <->] (0,-7.4)--(0,5.4) node [above] {$y$};  
       \draw [thick]
         (5,1) node[below] {$K''$}--
         (5,3) node[above left] {$R''$}--
@@ -282,9 +288,9 @@
       \item Translation
     \end{enumerate}
     \begin{tikzpicture}[scale=.48]
-      \draw [help lines] (-8,-4) grid (9,6);
+      \draw [help lines] (-8,-2) grid (9,6);
       \draw [thick, <->] (-8.4,0) -- (9.4,0) node [right] {$x$};
-      \draw [thick, <->] (0,-4.4)--(0,6.4) node [above] {$y$};  
+      \draw [thick, <->] (0,-2.4)--(0,6.4) node [above] {$y$};  
       \draw [thick]
         (4,1) node[below] {$M$}--
         (8,1) node[below] {$A$}--
@@ -299,13 +305,18 @@
   \end{multicols}
 
   \begin{multicols}{2}
-    [\item What are the coordinates of the image of $C(7,0)$ after a rotation of $90^\circ$ counterclockwise around the origin?]  \vspace{0.5cm}
+    [\item What are the coordinates of the image of $C(4,0)$ after a rotation of $90^\circ$ counterclockwise around the origin?]  \vspace{0.5cm}
     \begin{enumerate}
-      \item $(7,7)$
-      \item $(0,7)$
-      \item $(-7,0)$
-      \item $(0,-7)$
+      \item $(4,4)$
+      \item $(0,4)$
+      \item $(-4,0)$
+      \item $(0,-4)$
     \end{enumerate}
+    \begin{tikzpicture}[scale=.48]
+      \draw [help lines] (-5,-5) grid (5,5);
+      \draw [thick, <->] (-5.4,0) -- (5.4,0) node [right] {$x$};
+      \draw [thick, <->] (0,-5.4)--(0,5.4) node [above] {$y$};   
+    \end{tikzpicture}
   \end{multicols}
 
 \newpage
