@@ -94,8 +94,146 @@
       \hspace{1cm} \alert{Answer:} $y \alert{-9}=\alert{2}(x \alert{+4})$
     \end{enumerate}
     \end{block}
-  
 }
 
+\section{11.3 Circle area and circumference, Tuesday 31 March} 
+\frame
+{
+  \frametitle{GQ: How do we calculate area \& circumference of circles?}
+  \framesubtitle{CCSS: HSG.GPE.A1 Geometry \& equations of conics \hfill \alert{11.3 Tuesday 31 March}}
+
+  \begin{block}{Do Now: Simple area and perimeter. (answer in G-Classroom)}
+    \begin{enumerate}
+      \item Find the area of the triangle.
+      \item Find the area and perimeter of the semi-circle.
+    \end{enumerate}
+    \end{block}
+    \begin{center}
+      \begin{tikzpicture}[scale=.4]
+        \draw [help lines] (-1,-1) grid (14,4);
+        %\draw [thick, ->] (-2.2,0) -- (8.4,0) node [below right] {$x$};
+        %\draw [thick, ->] (0,-1.2)--(0,7.4) node [left] {$y$};
+        \draw [thick] (7,0)--(13,0);
+        \draw [thick] (0,0)--(3,3)--(6,0)--cycle;
+        \draw [thick] (13,0) arc (0:180:3);
+        %\draw [thick] (0,0) arc (-110:-70:8.9);
+        %\draw [thick] (0,8) arc (-110:-70:8.9);
+        %\draw [dashed] (0,8) arc (110:70:8.9);
+        \draw [thick, <->] (-0.5,0)--(-0.5,3);
+        \node at (-1,1.5){$3$};
+        \draw [thick, <->] (7,-0.5)--(13,-0.5);
+        \node at (10,-1){$6$};
+      \end{tikzpicture}
+    \end{center}
+    Lesson: \\
+    \; Simple areas, compound shapes, ``negative'' space (subtracting) \\ 
+    Classwork: Deltamath (extra homework problems)\\ 
+    Daily math work: Khan Academy circle practice
+}
+
+\frame
+{
+  \frametitle{Do Now: Solutions of area and perimeter of simple shapes}
+  \begin{multicols}{2}
+      Triangle: $A=\frac{1}{2}bh$ \\[0.25cm]
+      \begin{flushright}
+      \begin{tikzpicture}[scale=.6]
+        \draw [help lines] (-1,-1) grid (7,3.25);
+        \draw [thick] (0,0)--(3,3)--(6,0)--cycle;
+        \draw [thick, <->] (-0.5,0)--(-0.5,3);
+        \node at (-1,1.5){$3$};
+        \draw [thick, <->] (0,-0.5)--(6,-0.5);
+        \node at (3,-1){$6$};
+      \end{tikzpicture}
+    \end{flushright}
+    \end{multicols}
+    \begin{multicols}{2}
+      Circle:  \\[0.25cm] $A=\pi r^2$ \qquad $C=\pi D = 2 \pi r$
+      \begin{flushright}
+      \begin{tikzpicture}[scale=.6]
+        \draw [help lines] (-1,-1) grid (7,3.25);
+        \draw [thick] (0,0)--(6,0);
+        \draw [thick] (6,0) arc (0:180:3);
+        \draw [thick, <->] (-0.5,0)--(-0.5,3);
+        \node at (-1,1.5){$3$};
+        \draw [thick, <->] (0,-0.5)--(6,-0.5);
+        \node at (3,-1){$6$};
+      \end{tikzpicture}
+    \end{flushright}
+    \end{multicols} \vspace{2cm}
+}
+
+\frame
+{
+  \frametitle{Compound shapes, ``negative space'' or subtracting areas}
+  \begin{multicols}{2}
+      Find the area of the shaded region.
+      \begin{flushright}
+      \begin{tikzpicture}[scale=.6]
+        \draw [help lines] (-1,-1) grid (7,3.25);
+        %\draw [dashed] (0,0)--(6,0);
+        \draw [dashed] (0,0)--(3,3)--(6,0)--cycle;
+        %\draw [thick] (6,0) arc (0:180:3);
+        \fill [gray] (6,0) arc (0:90:3)--(6,0);
+        \fill [gray] (0,0) arc (180:90:3)--(0,0);
+        \draw [thick, <->] (-0.5,0)--(-0.5,3);
+        \node at (-1,1.5){$3$};
+        \draw [thick, <->] (0,-0.5)--(6,-0.5);
+        \node at (3,-1){$6$};
+      \end{tikzpicture}
+    \end{flushright}
+    \end{multicols} \vspace{1cm}
+    \begin{multicols}{2}
+      Challenge: Find the area of the shaded regions.
+      \begin{flushright}
+      \begin{tikzpicture}[scale=.5]
+        \draw [help lines] (-3,-3) grid (3,3);
+        %\draw [dashed] (0,0)--(6,0);
+        \draw [thick, <->] (0,0)--(45:2.83);
+        %\draw [thick] (6,0) arc (0:180:3);
+        \fill [gray] (-45:2.83) arc (-45:45:2.83)--cycle;
+        \fill [gray] (45:2.83) arc (45:135:2.83)--cycle;
+        \fill [gray] (-45:2.83) arc (-45:-135:2.83)--cycle;
+        \fill [gray] (-135:2.83) arc (-135:-225:2.83)--cycle;
+        \node at (0,-0.5){$r=2 \sqrt{2}$};
+      \end{tikzpicture}
+    \end{flushright}
+    \end{multicols} \vspace{2cm}
+}
+
+\frame
+{
+  \frametitle{Do Now: Combine the areas of figures}
+  \framesubtitle{CCSS: HSG.GPE.A1 Equation of a circle of given center, radius \hfill \alert{8.11 Wednesday 12 Feb}}
+
+  \begin{itemize}
+    \item Copy definition: \alert{slant height} - the diagonal length of a triangle, cone, or pyramid
+    \item Find the area of the figure (triangle+rectangle+semi-circle)
+  \end{itemize}
+  \begin{flushright}
+    \begin{tikzpicture}[scale=.4]
+      %\draw [help lines] (-2,-4) grid (8,12);
+      %\draw [thick, ->] (-2.2,0) -- (8.4,0) node [below right] {$x$};
+      %\draw [thick, ->] (0,-1.2)--(0,7.4) node [left] {$y$};
+      \draw [thick] (0,0)--(0,4);
+      \draw [thick] (6,0)--(6,4);
+      \draw [] (0,4)--(3,7)--(6,4);
+      \draw [red] (3,7)--(6,4);
+      \draw [thick] (0,0) arc (180:360:3);
+      %\draw [thick] (0,0) arc (-110:-70:8.9);
+      \draw [dashed] (0,0) --(6,0);
+      \draw [dashed] (0,4) --(6,4);
+      \draw [dashed] (3,4) --(3,7);
+      %\draw [thick] (0,8) arc (-110:-70:8.9);
+      %\draw [dashed] (0,8) arc (110:70:8.9);
+      \draw [thick, <->] (6.5,-3)--(6.5,4);
+      \node at (7,1){$8$};
+      \draw [thick, <->] (6.5,4)--(6.5,7);
+      \node at (7,5){$3$};
+      \draw [thick, <->] (0,-3.5)--(6,-3.5);
+      \node at (3,-4){$6$};
+    \end{tikzpicture}
+  \end{flushright}
+}
 \end{document}
 
