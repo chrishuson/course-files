@@ -1,0 +1,82 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles}
+\usepackage{graphicx}
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepgfplotslibrary{statistics}
+%\usepackage{pgfplotstable}
+%\usepackage{tkz-fct}
+%\usepackage{venndiagram}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{%\thepage \\
+    Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry 10th Grade\\* Unit 11: Algebra II introduction \\ 7 May 2020}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+\subsubsection*{11.5 Problem set: Inverse trigonometry ratios}
+
+\begin{enumerate}
+
+
+\subsubsection*{Identify each true statement}
+
+  \item A right $\triangle ABC$ is shown with side lengths 6, 8, and 10, as marked. %\vspace{0.5cm}
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=0.4cm]
+      \item[$\square$ (a)] $\displaystyle \tan A=\frac{BC}{AC}$
+      \item[$\square$ (b)] $\displaystyle \cos A=\frac{6}{10}$
+      \item[$\square$ (c)] $\displaystyle \sin B= 0.8$
+      \item[$\square$ (d)] $\displaystyle \tan A= 0.75$
+      \item[$\square$ (e)] $\displaystyle \cos B=\frac{AC}{BC}$
+      \item[$\square$ (f)] $\sin A > \cos A$
+      \end{enumerate}
+        \begin{tikzpicture}[scale=1]
+          \draw [thick]
+          (0,0)node[left]{$A$}--
+          (6,0)node[ right]{$C$}--
+          (6,4.5)node[right]{$B$}--cycle;
+          \draw (6,0)++(-0.4,0)--++(0,0.4)--+(0.4,0);
+          \node at (3,0)[below]{$8$};
+          \node at (6,2)[right]{$6$};
+          \node at (3,2.5)[above]{$10$};
+        \end{tikzpicture}
+    \end{multicols} \vspace{0.5cm}
+
+  \subsubsection*{Finding trigonometric values using a calculator}
+
+  \item Calculate and round to the \emph{nearest thousandth}.
+  \begin{enumerate}
+    \begin{multicols}{2}
+      \item $\sin 35^\circ=$
+      \item $7 \times \cos 48^\circ=$
+    \end{multicols}
+    \end{enumerate} \vspace{1.cm}
+
+  \item Find $\theta$ and round to the \emph{nearest whole degree}.
+  \begin{enumerate}
+    \begin{multicols}{2}
+      \item $\theta = \cos^{-1} 0.810$ \vspace{2cm}
+      \item $\displaystyle \theta = \sin^{-1} \left(\frac{3}{4}\right)$
+      \item $\tan \theta = 0.153$ \vspace{2cm}
+      \item $\displaystyle \cos \theta = \left(\frac{1}{\sqrt{2}}\right)$    \end{multicols}
+    \end{enumerate} \vspace{4cm}
+
+\end{enumerate}
+\end{document}
+
