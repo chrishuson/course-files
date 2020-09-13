@@ -1,0 +1,111 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\newif\ifmeta
+\metatrue %print standards and topics tags
+
+\title{Regents Geometry}
+\author{Chris Huson}
+\date{September 2020}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+\raggedbottom
+
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[L]{BECA / Dr. Huson / Geometry 06-Analytic-geometry\\* pset ID: 78}
+
+\begin{document}
+
+\subsubsection*{6-12DN-tangent-trig-ratios}
+\begin{enumerate}
+\item Express the result to the nearest thousandth.  \vspace{.5cm}
+      \begin{multicols}{2}
+        \begin{enumerate}
+          \item $\tan 45^\circ = $ \vspace{1cm}
+          \item $\tan 58^\circ =$
+          \item $\tan 88^\circ = $ \vspace{1cm}
+          \item $\tan 30^\circ =$
+        \end{enumerate}
+      \end{multicols} \vspace{1cm}
+
+\item Given right $\triangle JKL$ with $\overline{JK} \perp \overline{KL}$, $JK=10$, $m\angle J=35^\circ$.
+      \begin{flushright}
+        \begin{tikzpicture}[scale=0.7]
+          \draw [thick](-1,0)--(7,0)--(7,3)--cycle;
+          \draw [fill] (-1,0) circle [radius=0.05] node[below]{$J$};
+          \draw [fill] (7,0) circle [radius=0.05] node[below]{$K$};
+          \draw [fill] (7,3) circle [radius=0.05] node[above right]{$L$};
+          %\draw [color=blue] (0,0) ++(0.75,0) arc [start angle=0, end angle=70, radius=0.75];
+          %\draw [color=blue] (4,0) ++(-0.22, 0.73) arc [start angle=110, end angle=180, radius=0.75];
+          %\draw [thick] (0.8,3.1)--(1.2,2.9); %tick mark
+          %\draw [thick] (2.8,2.9)--(3.2,3.1); %tick mark
+          %\node [right] at (3.25,2.5){$x+7$};
+          %\node [left] at (0.75,2.5){$2x+1$};
+        \end{tikzpicture} \vspace{1cm}
+      \end{flushright}
+      \begin{enumerate}
+        \item Use the tangent function to find the length $KL$\\[3cm]
+        \item Use the Pythagorean formula to find the length $JL$, to the \emph{nearest hundredth}.\\[3cm]
+
+      \end{enumerate}
+
+\newpage
+\item Given right $\triangle ABC$ with $AC=8.2, BC=5.1$, $m\angle C=90^\circ$. Find the value of $m\angle A$, expressed as a decimal to the nearest whole number.
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.7]
+      \draw [thick](0,0)--(6,0)--(6,3)--(0,0);
+      \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw [fill] (6,0) circle [radius=0.05] node[below]{$C$};
+      \draw [fill] (6,3) circle [radius=0.05] node[above right]{$B$};
+    \end{tikzpicture}
+  \end{flushright}  \vspace{0.5cm}
+
+\item Given right $\triangle JKL$ with $\overline{JK} \perp \overline{KL}$, $JK=17$, $m\angle J=28^\circ$. Find the length $KL$.
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.7]
+        \draw [thick](-1,0)--(7,0)--(7,3)--cycle;
+        \draw [fill] (-1,0) circle [radius=0.05] node[below]{$J$};
+        \draw [fill] (7,0) circle [radius=0.05] node[below]{$K$};
+        \draw [fill] (7,3) circle [radius=0.05] node[above right]{$L$};
+        %\draw [color=blue] (0,0) ++(0.75,0) arc [start angle=0, end angle=70, radius=0.75];
+        %\draw [color=blue] (4,0) ++(-0.22, 0.73) arc [start angle=110, end angle=180, radius=0.75];
+        %\draw [thick] (0.8,3.1)--(1.2,2.9); %tick mark
+        %\draw [thick] (2.8,2.9)--(3.2,3.1); %tick mark
+        %\node [right] at (3.25,2.5){$x+7$};
+        %\node [left] at (0.75,2.5){$2x+1$};
+      \end{tikzpicture} \vspace{0.5cm}
+    \end{flushright}
+
+\item Given right $\triangle ABC$ with $AC=8, BC=6$, $m\angle C=90^\circ$. Find the value of $m\angle B$, expressed as a decimal to the nearest thousandth.
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.7]
+      \draw [thick](0,0)--(6,0)--(6,3)--(0,0);
+      \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw [fill] (6,0) circle [radius=0.05] node[below]{$C$};
+      \draw [fill] (6,3) circle [radius=0.05] node[above right]{$B$};
+    \end{tikzpicture}
+  \end{flushright}  \vspace{0.5cm}
+
+\item Spicy: Given a rectangle with area 48, width $x$, and length $x+8$.
+      \begin{enumerate}
+        \item Find $x$.\\[2cm]
+        \item Find the perimeter of the rectangle.
+      \end{enumerate}
+
+\end{enumerate}
+\end{document}
