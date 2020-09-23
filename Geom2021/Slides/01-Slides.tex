@@ -132,7 +132,6 @@
           $x = 20 - 11$
         \end{multicols}
       \end{enumerate}
-      
   }
 
   \frame
@@ -159,7 +158,7 @@
 
   \frame
   {
-    \frametitle{Example 4: Segment addition postulate}
+    \frametitle{Example 4 (challenge): Segment addition postulate}
     
     Given $\overline{ABC}$, $AB=3x-7$, $BC=x+5$, $AC=14$. Find ${AB}$.\\[0.5in]
        \begin{tikzpicture}
@@ -168,14 +167,6 @@
         \draw [fill] (3,0) circle [radius=0.05] node[below]{$B$};
         \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
       \end{tikzpicture} \vspace{1cm}
-  \begin{enumerate}
-      \item<2-> Sketch and label the situation\\
-      \item<2-> Write a geometric equation\\
-      \item<2-> Substitute algebraic values\\
-      \item<2-> Solve for the unknown\\
-      \item<2-> Answer the question\\
-      \item<2-> Check your answer
-    \end{enumerate}
   }
 
   \section{1.2 Segment addition, midpoint, 23 Sept}
@@ -195,23 +186,119 @@
 
   \frame
   {
-    \frametitle{How do we add lengths? Segment addition postulate}
-    
-    Given $\overline{ABC}$, $AB=3x-7$, $BC=x+5$, $AC=14$. Find ${AB}$.\\[0.5in]
+    \frametitle{Review: points, segments, length} \vspace{0.2cm}
+    Give an example of each geometric object. Use proper notation.
+    \begin{enumerate}
+      \item point
+      \item line segment
+      \item end point
+      \item three collinear points
        \begin{tikzpicture}
-        \draw [-, thick] (0,0)--(7,0);
-        \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-        \draw [fill] (3,0) circle [radius=0.05] node[below]{$B$};
-        \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
-      \end{tikzpicture} \vspace{1cm}
+        \draw [fill] (6,2) circle [radius=0.05] node[below]{$Q$};
+        \draw [-, thick] (0,2)--(3,1);
+        \draw [fill] (0,2) circle [radius=0.05] node[below]{$R$};
+        \draw [fill] (3,1) circle [radius=0.05] node[below]{$S$};
+        \draw [-, thick] (4,0)--(7,3);
+        \draw [fill] (4,0) circle [radius=0.05] node[above left]{$T$};
+        \draw [fill] (7,3) circle [radius=0.05] node[below right]{$U$};
+      \end{tikzpicture}
+      \item Given $TQ=1.4$, $QU=0.6$. Find $TU$.
+    \end{enumerate}
+  }
+
+  \frame
+  {
+    \frametitle{More definitions: lines, rays, planes, } \vspace{0.2cm}
+    A \emph{line} extends infinitely in both directions, $\overleftrightarrow{AB}$. \\
+    (sometimes labeled with a small letter, for example, line $k$) \\[0.15in]
+    \begin{center}
+      \begin{tikzpicture}
+        \draw [<->, thick] (0,1)--(5,1);
+        \node at (0.25, 1)[above]{$k$};
+        \draw [fill] (1.5,1) circle [radius=0.05] node[below]{$A$};
+        \draw [fill] (3.5,1) circle [radius=0.05] node[below]{$B$};
+      \end{tikzpicture}
+    \end{center}
+      A \emph{ray} has one end point and extends infinitely in one direction, $\overrightarrow{CD}$. \\[0.15in]
+      \begin{center}
+          \begin{tikzpicture}
+        \draw [->, thick] (3,0)--(7,0);
+        \draw [fill] (3,0) circle [radius=0.05] node[below]{$C$};
+        \draw [fill] (5,0) circle [radius=0.05] node[below]{$D$};
+      \end{tikzpicture}
+    \end{center}
+      A \emph{plane} is flat and extends infinitely in two directions, $p$. \\[0.15in]
+      \begin{center}
+        \begin{tikzpicture}[scale=0.7]
+        \draw [thick](0,0) node[above right]{$\ p$} --(3,0)--(4,2)--(1,2)--(0,0);
+      \end{tikzpicture}
+    \end{center}
+  }
+
+  \frame
+  {
+    \frametitle{Several objects are shown in a plane}
+    \begin{enumerate}
+      \item T \quad F \quad The name of the plane is $m$
+      \item T \quad F \quad The line $\overleftrightarrow{WY}$ is in the plane
+      \item T \quad F \quad The ray $\overrightarrow{WX}$ is shown in the plane
+      \item T \quad F \quad Points $W$, $X$, and $Z$ are collinear
+      \end{enumerate}
+      \begin{center}
+        \begin{tikzpicture}
+        \draw [thick](0,0) node[above right]{$\ m$} --(6,0)--(8,4)--(2,4)--(0,0);
+        \draw [<-, thick] (1,1)--(5,2.6);
+        \draw [fill] (4, 3.5) circle [radius=0.05] node[below]{$Z \ $};
+        \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$W \ $};
+        \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$X$};
+        \draw [<->, thick] (2,3.5)--(5.25,.25);
+        \draw [fill] (5,0.5) circle [radius=0.05] node[above right]{$Y \ $};
+      \end{tikzpicture}
+    \end{center}
+  }
+
+  \frame
+  {
+    \frametitle{Solve for length using the Segment Addition postulate}
+    
+    Given $\overrightarrow{DEF}$, $DE=x+1$, $EF=9$, $DF=3x$. Find ${DE}$.\\[0.5in]
+    \begin{center}   
+    \begin{tikzpicture}
+        \draw [->, thick] (0,0)--(7,0);
+        \draw [fill] (0,0) circle [radius=0.05] node[below]{$D$};
+        \draw [fill] (2.5,0) circle [radius=0.05] node[below]{$E$};
+        \draw [fill] (6,0) circle [radius=0.05] node[below]{$F$};
+      \end{tikzpicture}
+    \end{center}
   \begin{enumerate}
       \item<2-> Sketch and label the situation\\
       \item<2-> Write a geometric equation\\
       \item<2-> Substitute algebraic values\\
-      \item<2-> Solve for the unknown\\
+      \item<2-> Solve for $x$\\
       \item<2-> Answer the question\\
       \item<2-> Check your answer
     \end{enumerate}
+  }
+
+  \frame
+  {
+    \frametitle{The midpoint of a line segment} \vspace{0.2cm}
+    \framesubtitle{Also called the bisector}
+    Given $\overline{ABC}$, with $AB=2x+2$, $AC=20$. $AB=BC$ \\[0.15in]
+    Find $x$.
+      \begin{center}
+        \begin{tikzpicture}
+          \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+          \draw [-, thick] (0,0)--(7,0);
+          \draw [fill] (3.5,0) circle [radius=0.05] node[below]{$B$};
+          \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+          \node at (1.7,0) [above]{$2x+2$};
+          %\node at (5.2,0) [above]{$?$};
+          \draw [<->, dashed] (0,-1)--(7,-1);
+          \node at (3.5,-1) [below]{$20$};
+        \end{tikzpicture}
+      \end{center} \vspace{2cm}
+      Definition: the \emph{midpoint} or \emph{bisector} of a line segment divides it exactly in half.
   }
 
 \section{1.3 Equilateral triangle construction, 25, 29 Sept}
