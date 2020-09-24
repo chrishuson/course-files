@@ -320,25 +320,42 @@
 
   \frame
   {
-    \frametitle{More definitions: lines, rays, planes}
-    Two lines \emph{intersect} if they cross. Their common point is the \emph{intersection}. \\
-    (sometimes labeled with a small letter, for example, line $k$)
-    %\begin{center}
-      %\begin{tikzpicture}
-          %\draw [<->, thick] (0,0)--(6,1);
-          %\draw [<->, thick] (3,1.333)--(5,0);
-          %\node at (0.25, 1)[above]{$k$};
-          %\node at (3, 2)[right]{$j$};
-          %\draw [fill] (4,0.666) circle [radius=0.05] node[below]{$P$};
+    \frametitle{More definitions: intersections, coplanar}
+    Two lines \emph{intersect} if they cross. Their common point is the \emph{intersection}. 
+    (shown here, lines $j$ and $k$ intersect at point $P$)
+    \begin{center}
+      \begin{tikzpicture}
+          \draw [<->, thick] (0,0)--(6,1);
+          \draw [<->, thick] (3,1.333)--(5,0);
+          \node at (0.25, 0.2)[above]{$k$};
+          \node at (3.3, 1.333)[right]{$j$};
+          \draw [fill] (4,0.666) circle [radius=0.05] node[below]{$P$};
           %\draw [fill] (3.5,1) circle [radius=0.05] node[below]{$B$};
-        %\end{tikzpicture}
-      %\end{center}
+        \end{tikzpicture}
+      \end{center}
       \emph{Coplanar} means to lie in the same plane. Three points are always coplanar, but four points may not be. \\[0.15in]
       \begin{center}
-        \begin{tikzpicture}[scale=0.7]
-        \draw [thick](0,0) node[above right]{$\ p$} --(3,0)--(4,2)--(1,2)--(0,0);
+        \begin{tikzpicture}[scale=1]
+        \draw [thick](0,0) node[above right]{$\ z$} --(3,0)--(4,2)--(1,2)--(0,0);
+        \draw [fill] (3,1.75) circle [radius=0.05] node[below]{$K$};
+        \draw [fill] (1.5,1.6) circle [radius=0.05] node[below]{$J$};
+        \draw [fill] (2,0.5) circle [radius=0.05] node[above right]{$L$};
       \end{tikzpicture}
     \end{center}
+  }
+
+  \frame
+  {
+    \frametitle{Formal meanings of sketch, draw, and construct}
+    \begin{enumerate}
+      \item \emph{Sketch} is to make a freehand diagram of important features. \\[0.15cm]
+      Use a pencil to write carefully in your notebook or on paper.  \smallskip
+      \item \emph{Draw}  is to depict with accurate measures using ruler, protractor, and compass.\\[0.15cm]
+      For example, draw a diagram of your room. \smallskip
+      \item \emph{Construct} is a formal, logical process to create geometric figures using only a straightedge and compass. \smallskip
+      \item Drawn to \emph{scale} means that all of the lengths are proportional. (e.g. a ``scale model'')\\[0.15cm]
+      Tests will often warn that diagrams are ``not drawn to scale''
+    \end{enumerate}
   }
 
   \frame
@@ -369,8 +386,8 @@
     \framesubtitle{Take the difference in the points' values}
     Given $\overleftrightarrow{PQ}$ as shown on the number line. \\[20pt] % Midpoint
       \begin{tikzpicture}
-        \draw [<->] (-4.5,0)--(6.5,0);
-        \foreach \x in {-4,...,6} %2 leading for diff!=1
+        \draw [<->] (-3.5,0)--(6.5,0);
+        \foreach \x in {-3,...,6} %2 leading for diff!=1
           \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
           \draw [fill] (2,0) circle [radius=0.05] node[above] {$P$};
           \draw [fill] (5,0) circle [radius=0.05] node[above] {$Q$};
@@ -382,21 +399,21 @@
   {
     \frametitle{Getting to know Classkick}
     Complete each item. Use the Classkick tool bar.
-    \begin{enumerate}
-      \item Circle the point $J$ with a red pen
-      \item T \quad F \quad The line $\overleftrightarrow{WY}$ is in the plane
-      \item T \quad F \quad The ray $\overrightarrow{WX}$ is shown in the plane
-      \item T \quad F \quad Points $W$, $X$, and $Z$ are collinear
-      \end{enumerate}
+    \begin{enumerate} 
+      \item Circle the point $H$ with a red pen
+      \item Use the highlighter tool to mark in yellow the ray $\overrightarrow{JL}$
+      \item Type your name in this box in blue
+      \end{enumerate} \vspace{1cm}
       \begin{center}
         \begin{tikzpicture}
         \draw [thick](0,0)--(6,0)--(8,4) node[below left]{$p \ $} --(2,4)--(0,0);
-        \draw [<-, thick] (1,1)--(5,2.6);
-        \draw [fill] (4, 3.5) circle [radius=0.05] node[below]{$J$};
-        \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$W \ $};
-        \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$X$};
+        \draw [->, thick] (2, 1.4)--(6,3);
+        \draw [fill] (4, 3.5) circle [radius=0.05] node[below]{$H$};
+        \draw [fill] (2, 1.4) circle [radius=0.05] node[below]{$J$};
+        \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$K \ $};
+        \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$L$};
         \draw [<->, thick] (2,3.5)--(5.25,.25);
-        \draw [fill] (5,0.5) circle [radius=0.05] node[above right]{$Y \ $};
+        \draw [fill] (5,0.5) circle [radius=0.05] node[above right]{$M \ $};
       \end{tikzpicture}
     \end{center}
   }
