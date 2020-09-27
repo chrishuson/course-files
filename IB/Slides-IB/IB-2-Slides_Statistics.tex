@@ -1,0 +1,466 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepgfplotslibrary{statistics}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%\rhead{\small{5 September 2018}}
+\lhead{\small{BECA / Dr. Huson / IB Math Unit 2}}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Chris Huson}
+\date{15 October 2019}
+
+\begin{document}
+\frame{\titlepage}
+\section[Outline]{}
+\frame{\tableofcontents}
+
+  \section{2.1 Intro to statistics 11 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we collect and organize data?}
+    \framesubtitle{CCSS: HSF.IF.C.7 Analyze functions \hfill \alert{2.1 Friday 11 Oct}}
+
+    \begin{block}{Do Now Handout: Analyze chart on p 45}
+    \begin{enumerate}
+        \item Income vs Health of the world's nations
+        \item Answer the questions
+    \end{enumerate}
+    \end{block}
+    Lesson: Statistics concepts and vocabulary pp 44-50 \\%*[5pt]
+    Homework: Problem set: Organizing data 2A p. 50
+  }
+
+  \section{2.2 Deltamath: statistics 15 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we quantify central tendency and dispersion?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{2.2 Tuesday 15 Oct}}
+
+    \begin{block}{Using spreadsheets for data, calculations, and display}
+      \begin{enumerate}
+        \item Boot up laptops, log in to email and Google Drive account
+        \item Download Excel ``Simple Calculator'' (explore)
+        \item Early finishers: model problem \#5, p. 56
+    \end{enumerate}
+    \end{block}
+    Deltamath practice\\ \smallskip
+    Homework: Complete Deltamath problems, 10:00PM deadline
+  }
+
+  \section{2.3 Descriptive statistics measures, 17 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we quantify central tendency and dispersion?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{2.3 Thursday 17 Oct}}
+
+    \begin{block}{Laptops: Statistical analysis in Excel}
+    \begin{enumerate}
+        \item Create a one-page report answering problem \#5 p.56
+        \item Replicate the ``raw data table'' with modifications for Excel
+        \item Use Excel functions for the required statistical calculations
+        \item Include text to answer the question with a short justification
+        \item Format in Excel (including MLA header) and ``print'' as pdf
+        \item Email Excel and pdf to me by 10:00pm today
+        \item Early finishers: Deltamath
+    \end{enumerate}
+    \end{block}
+  }
+
+  \section{2.4 Descriptive statistics measures, 18 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we quantify central tendency and dispersion?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{2.4 Friday 18 Oct}}
+
+    \begin{block}{Laptops: Statistical analysis with a handheld calculator}
+    \begin{enumerate}
+        \item Enter in your calculator problem \#5 p.56
+        \item Compare results to your Excel report
+        \item Prepare to discuss comparison of Excel to a handheld calculator
+    \end{enumerate}
+    \end{block}
+    Review Excel analysis and reporting \\
+    Lesson: Continuous data and and using frequency tables p 57\\ \smallskip
+    Homework: Practice exercises 2B \& 2C p. 55-56, 58 (class time tomorrow)
+  }
+
+  \section{2.5 Frequency tables of continuous variables 21 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we collect and organize data?}
+    \framesubtitle{CCSS: HSF.IF.C.7 Analyze functions \hfill \alert{2.5 Monday 21 Oct}}
+
+    \begin{block}{Do Now: \#13 P2, p 78}
+    \begin{enumerate}
+        \item Work on loose leaf paper you can turn in
+        \item Use a calculator
+        \item Use the definition of outlier on page 53
+        \item Draw the plot accurately
+    \end{enumerate}
+    \end{block}
+    Exploration paper scoring criterion: Personal Engagement \\
+    Review Excel analysis \\
+    Lesson: Continuous data and and using frequency tables p 57\\ \smallskip
+    Homework: Rework Excel file
+  }
+
+  \section{2.6 Revise Excel analysis summary page 22 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we communicate statistical results?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{2.6 Tuesday 22 Oct}}
+
+    \begin{block}{Using spreadsheets for data, calculations, and display}
+      \begin{enumerate}
+        \item Boot up laptops, log in to email and Google Drive account
+        \item Download your saved Excel model of Mr. Jones club scores
+        \item Complete and improve your analysis
+        \item Email the Excel file and a pdf version (1 page)
+    \end{enumerate}
+    \end{block}
+    Deltamath practice\\ \smallskip
+    Homework: Complete Deltamath problems, 10:00PM deadline
+  }
+
+  \section{2.6 Histograms and box plots 23 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we display data?}
+    \framesubtitle{CCSS: HSF.IF.C.7 Analyze functions \hfill \alert{2.6 Wednesday 23 Oct}}
+
+    \begin{block}{Do Now: \#3 p. 75}
+    \begin{enumerate}
+        \item Work on loose leaf paper you can turn in
+        \item Use a calculator
+        \item Explain (in writing) why your answers are estimates
+    \end{enumerate}
+    \end{block}
+    Real world, pseudo real world, \& pure math problems; implications \\
+    Birthday data analysis \\
+    Lesson: Box plots and histograms p 59-62\\ \smallskip
+    Homework: Textbook exercises 2D p. 62
+  }
+
+  \section{2.7 Cumulative frequency tables and graphs 24 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we display and interpret cumulative data?}
+    \framesubtitle{CCSS: HSF.IF.C.7 Analyze functions \hfill \alert{2.7 Thursday 24 Oct}}
+
+    \begin{block}{Do Now: \#4, p 75, continued on p. 76}
+    \begin{enumerate}
+        \item Work on loose leaf paper you can turn in
+        \item Use a calculator for calculations and to replicate the plot
+        \item Clearly answer parts \#4d.i and \#4d.ii
+    \end{enumerate}
+    \end{block}
+    Exploration paper scoring criterion: Personal Engagement\\
+    Review student birthday survey data \& analysis \\
+    Lesson: Cumulative frequency tables and graphs p 63-5\\ \smallskip
+    Homework: Textbook exercises 2E p. 64-5
+  }
+
+  \section{2.8 Revise Excel analysis summary page 25 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we communicate statistical results?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{2.8 Friday 25 Oct}}
+
+    \begin{block}{Mini Exploration: What is the best route to school?}
+      \begin{enumerate}
+        \item Based on Excel model of commuter data (math.huson.com)
+        \item Complete statistical calculations and written analysis
+        \item Email the Excel file and a pdf version of spreadsheet \& paper\\
+        (three attachments)
+    \end{enumerate}
+    \end{block}
+    Homework: Complete your paper, Sunday 10:00PM deadline
+  }
+
+  \section{2.9 Cumulative frequency tables and graphs 28 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we display and interpret cumulative data?}
+    \framesubtitle{CCSS: HSF.IF.C.7 Analyze functions \hfill \alert{2.9 Monday 28 Oct}}
+
+    \begin{block}{Do Now: Handout IB exam problems (paper 2, with calculator)}
+    \begin{enumerate}
+        \item Work on loose leaf paper you can turn in
+        \item Frequency distribution (table)
+        \item Box plot interpretation
+    \end{enumerate}
+    \end{block}
+    Peer review of draft of subway commute analysis \\
+    Lesson: Cumulative frequency tables and graphs, handout\\ \smallskip
+    Homework: Statistics exam problems handout
+  }
+
+  \section{2.10 Revise Excel analysis summary page 29 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we communicate statistical results?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{2.10 Tuesday 29 Oct}}
+
+    \begin{block}{Mini Exploration: What is the best route to school?}
+      \begin{enumerate}
+        \item Based on Excel model of commuter data (math.huson.com)
+        \item Complete written analysis
+        \item Email the Excel file and a pdf version of spreadsheet \& paper\\
+        (three attachments)
+    \end{enumerate}
+    \end{block}
+    Homework: Complete your paper, today 10:00PM deadline
+  }
+
+
+  \section{2.11 Review cumulative frequency tables and graphs 30 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we display and interpret cumulative data?}
+    \framesubtitle{CCSS: HSF.IF.C.7 Analyze functions \hfill \alert{Wednesday 30 Oct}}
+
+    \begin{block}{Do Now: Handout IB exam problems (paper 2, with calculator)}
+    \begin{enumerate}
+        \item Work on loose leaf paper you can turn in
+        \item Frequency distribution (table)
+        \item Cumulative distribution interpretation
+    \end{enumerate}
+    \end{block}
+    Lesson: Cumulative frequency tables and graphs, handout\\ \smallskip
+    Homework: Brainstorm exploration topic, complete statistics exam problems handout
+  }
+
+  \section{2.11 Bivariate data 30 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we employ mathematics to explore a topic?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{Thursday 31 Oct}}
+
+    \begin{block}{Do Now: Mr. Price's students, page 66}
+    \begin{enumerate}
+        \item Enter the data in the table on page 66 into your calculator
+        \item To graph the data pairs, what values for $x$ and $y$ are needed?
+        \item Plot the data on graph paper 
+        \item Interpretation the graph
+    \end{enumerate}
+    \end{block}
+    Mind map / brainstorming an exploration topic p. 743 \\
+    Lesson: 2.4 Comparing two sets of related quantities\\ \smallskip
+    Homework: Make at least one topic mind map (due tomorrow)\\
+    Exercises 2F, p. 71-72 (due Friday, share data for extra credit)
+  }
+
+  \section{2.11 Exploration project paper schedule 31 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we employ mathematics to explore a topic?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{Thursday 31 Oct}}
+    \begin{block}{Exploration: Schedule and deadlines}
+      \begin{enumerate}
+        \item Topic selection - Monday November 4th
+        \item Complete paper for peer review - Friday November 22nd
+        \item Complete paper for grade - Friday December 6th
+        \item Final paper - Friday January 17th
+      \end{enumerate}
+      \end{block}
+}
+
+\section{2.12 Cumulative distribution practice 1 Nov}
+\frame
+{
+  \frametitle{GQ: How do we display and interpret cumulative data?}
+  \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{Friday 1 Nov}}
+
+  \begin{block}{Do Now: Problem 1d Classwork 28 Oct}
+  \begin{enumerate}
+      \item Answer the questions 
+      \item Interpretation the graph
+      \item complete the table
+  \end{enumerate}
+  \end{block}
+  Lesson: Cumulative distributions\\ \smallskip
+  Homework: Exploration topic due
+}
+
+\section{2.13 Linear regression practice 4 Nov}
+\frame
+{
+  \frametitle{GQ: How do we display and interpret bivariate data?}
+  \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{12.13 Monday 4 Nov}}
+
+  \begin{block}{Do Now: Problem 10 page 77}
+  \begin{enumerate}
+    \item Plot the data and interpret the graph 
+    \item Answer the questions \emph{including} the outlier at first
+    \item Interpretation the graph
+    \item Organize and write the summary statistics near the plot
+  \end{enumerate}
+  \end{block}
+  Lesson: Linear regression applications\\ \smallskip
+  Homework: Deltamath regression practice. \\Read 
+  \href{https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxodXNvbmJlY2F8Z3g6NzRkYjQ2MzQ5MDNmMDUxMA}
+{example exploration paper (link)}. \\Begin outline of your exploration topic. 
+}
+
+\section{2.14 Linear regression practice 6 Nov}
+\frame
+{
+  \frametitle{GQ: How do we display and interpret bivariate data?}
+  \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{12.14 Wednesday 6 Nov}}
+
+  \begin{block}{Do Now: Problem 17 page 79}
+  \begin{enumerate}
+    \item Plot the data and interpret the graph 
+    \item Answer the questions
+    \item Interpretation the graph
+    \item Organize and write the summary statistics near the plot
+  \end{enumerate}
+  \end{block}
+  Discuss subway platform exploration \\ \smallskip
+  Lesson: Linear regression applications\\ \smallskip
+  Homework: Deltamath regression practice. \\ 
+  \href{https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxodXNvbmJlY2F8Z3g6NzRkYjQ2MzQ5MDNmMDUxMA}
+{example exploration paper (link)}. 
+}
+
+\section{2.15 Cumulative distribution practice 7 Nov}
+\frame
+{
+  \frametitle{GQ: How do we display and interpret cumulative data?}
+  \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{Thursday 7 Nov}}
+
+  \begin{block}{Do Now: Handout problem set}
+  \begin{enumerate}
+      \item Answer the questions 
+      \item Interpretation the graph
+      \item complete the table
+  \end{enumerate}
+  \end{block}
+  Lesson: Cumulative distributions\\ \smallskip
+  Homework: Develop exploration topic
+}
+
+
+\section{2.16 Cumulative distribution application, quiz 8 Nov}
+\frame
+{
+  \frametitle{GQ: How do we display and interpret cumulative data?}
+  \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{Friday 8 Nov}}
+
+  \begin{block}{2.16 Do Now Quiz: IB problems handout}
+  \begin{enumerate}
+      \item Write down your exploration topic 
+      \item Summarizing frequency table data
+      \item Interpreting box plots
+  \end{enumerate}
+  \end{block}
+  Lesson: Comparing quantitative data in Excel, an exploration\\
+  Make your own analysis of subway platform crowding versus delays. (use the raw data file on math.huson.com) \\ \smallskip
+  Homework: Write up analysis. Email Excel, Word, \& pdf files. Due 10:00 Sunday
+}
+
+
+\section{3.7 Frequency table, cumulative graphs review; re-Quiz 20 Nov}
+\frame
+{
+  \frametitle{GQ: How do we display and interpret cumulative data?}
+  \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{3.7 Wednesday 20 Nov}}
+
+  \begin{block}{2.16 Do Now: Handout practice of stats problems}
+  \begin{enumerate}
+      \item Frequency tables, univariate summary statistics
+      \item Bivariate data analysis
+  \end{enumerate}
+  \end{block}
+  Review stats quiz problems \\
+  Lesson: Cumulative plots \\ \smallskip
+  Exit note re-quiz: Univariate summary statistics \\ \smallskip
+  Homework: Statistics Pre-exam; Exploration paper
+}
+
+\section{3.8 Cumulative graphs, regression review 21 Nov}
+\frame
+{
+  \frametitle{GQ: How do we display and interpret cumulative data?}
+  \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{3.8 Thursday 21 Nov}}
+
+  \begin{block}{2.16 Do Now: Handout practice of stats problems}
+  \begin{enumerate}
+      \item Bivariate data analysis
+  \end{enumerate}
+  \end{block}
+  Review stats Pre-exam problems \\
+  Homework: Exploration paper
+}
+
+\section{2.19 Descriptive Statistics exam 25 Nov}
+\frame
+{
+  \frametitle{GQ: How do we display and interpret cumulative data?}
+  \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{2.19 Monday 25 Nov}}
+
+  \begin{block}{Descriptive Statistics exam}
+  \begin{enumerate}
+    \item Summary statistics, frequency tables
+    \item Dispersion, box plots
+    \item Cumulative distributions
+    \item Bivariate data analysis
+  \end{enumerate}
+  \end{block}
+  Homework: Exploration paper peer review
+}
+
+\section{Results of Descriptive Statistics exam 2 Dec}
+\frame
+{
+  \frametitle{GQ: How do we display summary statistics?}
+  \framesubtitle{CCSS: HSF Box plots, dispersion \hfill \alert{Monday 2 Dec}}
+
+  \begin{tikzpicture}
+    \begin{axis}[
+        title={Statistics Exam Scores},
+        axis lines=left,
+        xmin=0, xmax=50,
+        y=1cm,
+        ytick={1},
+        yticklabels={Overall class},
+      enlargelimits=0.05,
+        ]
+        %\addplot+ [boxplot]
+        %table {3-11_IB-exam.txt};
+       \addplot+ [
+        boxplot prepared={
+            lower whisker=11, lower quartile=21.25,
+            median=24,
+            upper quartile=36, upper whisker=45,
+            average=28,
+            },
+        ] coordinates {};
+    
+    \end{axis}
+    \end{tikzpicture}
+
+  }
+
+\end{document}

@@ -1,0 +1,262 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+\lhead{\small{BECA / Dr. Huson / 11.1 IB Math - Unit 8 Descriptive Statistics}}
+
+\title{11.1 IB Math - Unit 8 Descriptive Statistics}
+  \subtitle{Bronx Early College Academy}
+  \author{Christopher J. Huson PhD}
+  \date{6 May 2019}
+
+\begin{document}
+  \frame{\titlepage}
+  \section[Outline]{}
+  \frame{\tableofcontents}
+
+\section{8.1 Introduction and definitions Monday 6 May}
+  \frame
+  {
+    \frametitle{GQ: How do we determine the features of a population?}
+    \framesubtitle{HSS.ID.A.1-4 Summarize, represent, and interpret data on a single measurement variable \hfill \alert{8.1 Monday 6 May}}
+
+    \begin{block}{Do Now: Skills Check p. 254}
+    \end{block}
+    Lesson: Qualitative \& quantitative data, graphing, definitions p.255-9\\[1cm]
+    Homework: Exercises 8B p. 259
+  }
+
+\section{8.2 Deltamath summary statistics, Tuesday 6 May}
+  \frame
+  {
+    \frametitle{GQ: How do we determine the features of a population?}
+    \framesubtitle{CCSS: HSS.ID.A.1-4 Summarize, represent, and interpret data on a single measurement variable \hfill \alert{8.2 Tuesday 7 May}}
+
+    \begin{block}{Deltamath probability practice}
+    \end{block}
+    Homework: Complete Deltamath exercises
+  }
+
+\section{8.3 Central tendency Wednesday 8 May}
+  \frame
+  {
+    \frametitle{GQ: How do we determine the ``center" of a population?}
+    \framesubtitle{HSS.ID.A.1-4 Summarize, represent, and interpret data on a single measurement variable \hfill \alert{8.3 Wednesday 8 May}}
+
+    \begin{block}{Do Now: Sequences review}
+      \begin{enumerate}
+        \item An arithmetic sequence begins $4, k, 10, ...$. Find $k$.
+        \item Find the value of the 8th term of the sequence.
+        \item The sum of the first $n$ terms in the sequence is 589. Find $n$.
+    \end{enumerate}
+    \end{block}
+    Lesson: Measures of central tendency: mean, median, \& mode p. 260-7\\
+    Using class interval midpoints for frequency table calculations.\\[0.5cm]
+    Homework: Exercises 8C, 8D, 8E. Select an appropriate number of problems.
+  }
+
+\section{8.4 Central tendency Thursday 9 May}
+  \frame
+  {
+    \frametitle{GQ: How do we determine the ``spread" of a population?}
+    \framesubtitle{HSS.ID.A.1-4 Summarize, represent, and interpret data on a single measurement variable \hfill \alert{8.4 Thursday 9 May}}
+
+    \begin{block}{Do Now: Enter the frequency table data shown in a calculator. Answer the questions both with the calculator and by hand.}
+        \begin{tabular}{|l|r|r|r|r|r|}
+          \hline
+          Value & 0 & 1 & 2 & 3 & 4\\
+          \hline
+          Freq. & 2 & 6 & 4 & 2 & 1\\
+          \hline
+        \end{tabular}
+        \begin{enumerate}
+          \item How many data are there ($n=?$)? List them.
+          \item Write down the mode. Find the median and mean.
+          \item Sketch a histogram to represent the data.
+      \end{enumerate}
+    \end{block}
+
+    Lesson: 8.4 Measures of dispersion: max, min, range, quartiles, IQR, \& 5-figure summary p. 267-271\\
+    Using class interval midpoints for frequency table calculations.\\
+    Cumulative distributions p. 271-2\\[0.25cm]
+    Homework: Exercises 8F, 270-1 (8G).
+  }
+
+\section{8.5 Standard deviation Monday 13 May}
+  \frame
+  {
+    \frametitle{GQ: How do we quantify the dispersion of a population?}
+    \framesubtitle{HSS.ID.A.1-4 Summarize, represent, and interpret data on a single measurement variable \hfill \alert{8.5 Monday 13 May}}
+
+    \begin{block}{Do Now: The frequency table represents the scores of an IB class out of a 90-point exam.}
+        \begin{tabular}{|l|c|c|c|c|}
+          \hline
+          Score & $10 \leq x<30$ &
+            $30 \leq x<50$ & $50 \leq x<70$ & $70 \leq x<90$\\
+          \hline
+          Freq. & 4 & 6 & 3 & 2\\
+          \hline
+        \end{tabular}
+        \begin{enumerate}
+          \item How many students are there?
+          \item Write down the modal class.
+          \item Estimate the median, quartiles, and the mean.
+          \item Sketch a histogram to represent the data.
+      \end{enumerate}
+    \end{block}
+    Cumulative distributions, \#6 p. 275\\
+    Lesson: 8.6 Standard deviation p. 276-281\\[0.5cm]
+    Homework: Exercises 8H, 279-280.
+  }
+
+\section{8.6 Standard deviation Tuesday 14 May}
+  \frame
+  {
+    \frametitle{GQ: How do we ``rangle" a dataset?}
+    \framesubtitle{HSS.ID.A.1-4 Summarize, represent, and interpret data on a single measurement variable \hfill \alert{8.6 Tuesday 14 May}}
+
+    \begin{block}{Do Now: If you had access to the passenger roster of the Titanic, what interesting questions would you explore?}
+        \begin{enumerate}
+          \item Write down a question regarding the types of passengers on the Titanic's maiden voyage.
+          \item Write a question regarding who survived versus died.
+          \item Suggest calculations that answer the questions.
+          \item What types of graphs might you make?
+      \end{enumerate}
+    \end{block}
+    Cumulative distributions, \#6 p. 275\\
+    Lesson: Working with datasets using modern technology\\[0.5cm]
+    Homework: Review exercises 281-284.
+  }
+
+\section{8.7 Cumulative distributions Wednesday 15 May}
+  \frame
+  {
+    \frametitle{GQ: How do we understand a dataset as a cumulative distribution?}
+    \framesubtitle{HSS.ID.A.1-4 Summarize, represent, and interpret data on a single measurement variable \hfill \alert{8.7 Wednesday 15 May}}
+
+    \begin{block}{Do Now Quiz}
+        \begin{enumerate}
+          \item Sequences review
+          \item 5-figure summary
+          \item Cumulative distributions
+      \end{enumerate}
+    \end{block}
+    Lesson: Cumulative distributions, \#6 p. 275\\
+    Effect on statistical measures of scaling data values\\[0.5cm]
+    Homework: Pretest problem set
+  }
+
+\section{8.8 Cumulative distributions Thursday 16 May}
+  \frame
+  {
+    \frametitle{GQ: How do we use a cumulative distribution graph?}
+    \framesubtitle{HSS.ID.A.1-4 Summarize, represent, and interpret data on a single measurement variable \hfill \alert{8.8 Thursday 16 May}}
+
+    \begin{block}{Do Now: Handout}
+        \begin{enumerate}
+          \item Mean \& standard deviation, scaling
+          \item Interpreting a cumulative frequency graph
+          \item Spicy sequence problems
+      \end{enumerate}
+    \end{block}
+    Review pretest problems\\
+    Lesson: Interpreting cumulative distribution graphs, \#6 p. 275\\
+    Homework: Pretest problem set
+  }
+
+\section{9.1 Bivariate analysis Monday 20 May}
+  \frame
+  {
+    \frametitle{GQ: How do we compare two variables?}
+    \framesubtitle{HSS.ID.A.1-4 Summarize, represent, and interpret data of two measurement variables \hfill \alert{9.1 Monday 20 May}}
+
+    \begin{block}{Do Now: Handout}
+        \begin{enumerate}
+          \item Plotting two variables
+          \item Calculator use for two sets of data
+          \item Quiz corrections
+      \end{enumerate}
+    \end{block}
+    Review homework problems\\
+    Lesson: Interpreting cumulative distribution graphs, \#6 p. 333-338\\[0.5cm]
+    Homework: Textbook exercise 10A pp. 337-9 (use a calculator for \#4,5 instead of graphing by hand)
+  }
+
+\section{9.2 Line of best fit, using Desmos Tuesday 21 May}
+  \frame
+  {
+    \frametitle{GQ: How do we compare two variables?}
+    \framesubtitle{HSS.ID.A.1-4 Summarize, represent, and interpret data of two measurement variables \hfill \alert{9.2 Tuesday 21 May}}
+
+    \begin{block}{Do Now Handout: Interpreting scatter plot data}
+        \begin{enumerate}
+          \item Plotting two variables
+          \item Calculating the line of best fit's slope and $y$-intercept
+          \item Interpreting the parameters
+      \end{enumerate}
+    \end{block}
+    Introduction to Canvas: Word formatting practice\\
+    Lesson: Using Desmos, 10B\&C p. 341, 343\\[0.5cm]
+    Homework: Textbook exercise 10D pp. 344 (\alert{test Thursday})
+  }
+
+\section{9.3 Review logs, exponential functions, sequences for exam Wednesday 22 May}
+  \frame
+  {
+    \frametitle{GQ: How do we compare two variables?}
+    \framesubtitle{HSS.ID.A.1-4 Summarize, represent, and interpret data of two measurement variables \hfill \alert{9.3 Wednesday 22 May}}
+
+    \begin{block}{Do Now Handout: Interpreting cumulative distribution plots}
+        \begin{enumerate}
+          \item Interpreting the parameters
+      \end{enumerate}
+    \end{block}
+    Interpreting cumulative distribution graphs, \#6 p. 333-338\\
+    Lesson: Review logs, exponential functions, sequences for exam\\[0.5cm]
+    Homework: Study for (\alert{test tomorrow})
+  }
+
+\section{9.4 Statistics exam (sequences \& logs review) Thursday 23 May}
+  \frame
+  {
+    \frametitle{GQ: How do we compare two variables?}
+    \framesubtitle{HSS.ID.A.1-4 Summarize, represent, and interpret data of two measurement variables \hfill \alert{9.4 Thursday 23 May}}
+
+    Assessment: Descriptive statistics exam\\[0.5cm]
+    Homework: Weekend packet
+  }
+
+  \section{10.1 Scale \& applications of dilation Tuesday 28 May}
+    \frame
+    {
+      \frametitle{GQ: How do we use scale factors?}
+      \framesubtitle{CCSS: HSG.CO.D.12 Congruence, geometric constructions \hfill \alert{10.1 Tuesday 28 May}}
+
+      \begin{block}{Do Now: Handout}
+        \begin{enumerate}
+          \item Using scale factors
+          \item Real world situations
+        \end{enumerate}
+      \end{block}
+      Guest teacher, Mr. Segal. Applications of scale factors in finance.\\[0.25cm]
+      Homework: Problem set, test corrections due Thursday
+    }
+
+\end{document}

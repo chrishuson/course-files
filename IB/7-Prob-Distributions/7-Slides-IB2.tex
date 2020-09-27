@@ -1,0 +1,368 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%\rhead{\small{21 May 2018}}
+\lhead{\small{BECA / Dr. Huson / 12.1 IB Math - Unit 6 Trig \& Circular Functions}}
+
+%\vspace{1cm}
+
+\renewcommand{\headrulewidth}{0pt}
+
+
+\title{12.1 IB Math - Unit 9: Probability}
+\subtitle{Bronx Early College Academy}
+\author{Christopher J. Huson PhD}
+\date{18 March 2019}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{7.1 Venn diagrams, Monday 18 March}
+  \frame
+  {
+    \frametitle{GQ: How do we notate sample spaces with Venn diagrams?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill  \alert{7.1 Monday 18 March}}
+
+    \begin{block}{Do Now: Draw a Venn diagram of these 110 students:}
+      \begin{itemize}
+        \item 25 students took physics
+        \item 45 students took biology
+        \item 48 students took mathematics
+        \item 10 students took physics and mathematics
+        \item 8 students took biology and mathematics
+        \item 6 students took biology and physics
+        \item 5 students took all three subjects
+      \end{itemize}
+      How many took biology, but neither physics nor mathematics?\\
+      How many students did not take any of the three subjects?
+    \end{block}
+    Lesson: Sets, complements, union, intersection, empty set \\ \bigskip
+    Homework: Problem set
+  }
+
+\section{7.2 Deltamath probability review. Tuesday 19 March}
+  \frame
+  {
+    \frametitle{GQ: How do we notate sample spaces with Venn diagrams?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{7.2 Tuesday 19 March}}
+
+    \begin{block}{Do Now Quiz: Trig, calculus practice, with calculator}
+    \begin{enumerate}
+        \item \emph{Medium} Middling exam problems
+        \item \emph{Spicy} Middling and extended exam problems
+    \end{enumerate}
+    \end{block}
+
+    Lesson: Deltamath probability (trigonometry \& calculus) review\\
+    Homework: Complete Deltamath problem set, review quiz answers
+  }
+
+  \section{7.3 Expected value, Wednesday 20 March}
+    \frame
+    {
+      \frametitle{GQ: How do we calculate expected value?}
+      \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.3 Wednesday 20 March}}
+
+      \begin{block}{Do Now: Algebra practice, with calculator}
+      \end{block}
+
+      Lesson: Expected value \\
+      Homework: Problem set
+    }
+
+\section{7.4 Conditional probability, trees with \& without replacement, Thursday 21 March}
+  \frame
+  {
+    \frametitle{GQ: How do we add the probabilities of multiple events?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{7.4 Thursday 21 March}}
+
+    \begin{block}{Do Now Quiz: Trig, calculus practice, with calculator}
+    \begin{enumerate}
+        \item \emph{Medium} Middling exam problems
+        \item \emph{Spicy} Middling and extended exam problems
+    \end{enumerate}
+    \end{block}
+
+    Lesson: Conditional probability, trees with \& without replacement \\
+    Homework: Problem set
+  }
+
+\section{7.5 Binomial distribution, Friday 22 March}
+  \frame
+  {
+    \frametitle{GQ: How do we model a series of events?}
+    \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.5 Friday 22 March}}
+
+    \begin{block}{Do Now: Make a tree representing three coin flips}
+    \begin{enumerate}
+        \item What is the probability of each outcome?
+        \item If order doesn't matter, how can the results be consolidated into a probability distribution of the total number of heads?
+    \end{enumerate}
+    \end{block}
+    Lesson:  Binomial expansion p. 186-8\\%*[5pt]
+    Homework: Problem set
+  }
+
+\section{7.6 Binomial distribution, Monday 25 March}
+  \frame
+  {
+    \frametitle{GQ: How do we model a series of events?}
+    \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.6 Monday 25 March}}
+
+    \begin{block}{Do Now: Sequences review, Exercise 6L \#1-4 p. 182-3}
+    \begin{enumerate}
+        \item Use the sequences formulas on the formula sheet
+        \item The equation for compound interest (try to remember it first) is $P_n=P_0(1+\frac{i}{c})^{cn}$
+    \end{enumerate}
+    \end{block}
+    Lesson:  Binomial expansion p. 186-8\\
+    Assessment: Exercise 6N p. 187\\%*[5pt]
+    Homework: Exercise 6O p. 188
+  }
+
+\section{7.7 Deltamath binomial expansion review. Tuesday 26 March}
+  \frame
+  {
+    \frametitle{GQ: How do we model a series of events?}
+    \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.7 Tuesday 26 March}}
+
+    \begin{block}{Do Now Quiz: Trig Paper 1, without calculator}
+    \begin{enumerate}
+        \item \emph{Medium} Middling exam problems: Periodic functions
+        %\item \emph{Spicy} Middling and extended exam problems
+    \end{enumerate}
+    \end{block}
+
+    Lesson: Deltamath probability (trigonometry \& calculus) review\\
+    Homework: Complete Deltamath problem set, review quiz answers
+  }
+
+\section{7.8 Binomial expansion review. Thursday 28 March}
+  \frame
+  {
+    \frametitle{GQ: How do we model a series of events?}
+    \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.8 Thursday 28 March}}
+
+    \begin{block}{Do Now: Trig skills check, \emph{without calculator}}
+    \begin{enumerate}
+        \item What is the amplitude, midline, and period of $f(x)=2\sin \pi x+2$?
+        \item Sketch $g(x)=3\cos 2(x- \frac{\pi}{2})$ over $0 \leq x \leq 2 \pi$. Label its extrema as ordered pairs and the $x$-intercepts with their values.
+        \item Write down $\sin \frac{\pi}{6}$, $\cos \frac{2\pi}{3}$
+        \item Write down the solution set of $\sin x = \frac{1}{2}$ over $0 \leq x \leq 2 \pi$.
+    \end{enumerate}
+    \end{block}
+    Assessment: Enter spiral review scores in personal tracker grids\\
+    Homework review\\
+    Lesson: Expected values, binomial expansion, modeling problems\\
+    Homework: Calculus review problem set
+  }
+
+\section{7.9 Binomial expansion review. Friday 29 March}
+  \frame
+  {
+    \frametitle{GQ: How do we model a series of events?}
+    \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.9 Friday 29 March}}
+
+    \begin{block}{Do Now Quiz: Trig skills check, \emph{without calculator}}
+    \begin{enumerate}
+      \item What is the amplitude, midline, and period of $f(x)=5\sin 2 x-3$?
+      \item Sketch $g(x)=2\sin \pi(x- 1)$ over $0 \leq x \leq 4$. Label its extrema as ordered pairs and the $x$-intercepts with their values.
+      \item Write down $\sin \frac{\pi}{3}$, $\cos \frac{2\pi}{3}$
+      \item Write down the solution set of $\sin x = \frac{\sqrt{2}}{2}$ over $0 \leq x \leq 2 \pi$.
+    \end{enumerate}
+    \end{block}
+    Calculus homework review\\
+    Lesson: Expected values, binomial expansion, modeling problems\\
+    Homework: Problem set
+  }
+
+\section{7.10 Binomial expansion review. Monday 1 April}
+  \frame
+  {
+    \frametitle{GQ: How do we model a series of events?}
+    \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.10 Monday 1 April}}
+
+    \begin{block}{Do Now: Binomial expansion skills check, \emph{with calculator}}
+    \begin{enumerate}
+      \item Expand the polynomial function $f(x)=(x+1)^4$.
+      \item Write down the first five rows of Pascal's triangle (from memory).
+      \item What is the $x^3$ term when $f(x)=(2x+3)^5$ is expanded?
+      \item The probability of an event is $P(x)=0.2$. What is the probability of the event occurring exactly three times among five trials?
+    \end{enumerate}
+    \end{block}
+    Calculus homework review/copies; Trig DNQ results, progress grid\\
+    Lesson: IB exams, stationary\\
+    Homework: ``Take-home" mock exams
+  }
+
+\section{7.11 Binomial distribution expected value. Thursday 4 April}
+  \frame
+  {
+    \frametitle{GQ: How do we model a series of events?}
+    \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.11 Thursday 4 April}}
+
+    \begin{block}{Do Now: Binomial distribution applications p. 533 \emph{with calculator}}
+    \begin{enumerate}
+      \item Exercise 15D \#1, dice roll.
+      \item Exercise 15D \#2, use the calculator PDF \& CDF functions.
+    \end{enumerate}
+    \end{block}
+    Lesson: Expected value of a binomial distribution p. 535\\
+    Homework: Textbook exercises 15D \& 15F
+  }
+
+\section{7.12 Normal distribution. Friday 5 April}
+  \frame
+  {
+    \frametitle{GQ: How do we model a series of events?}
+    \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.12 Friday 5 April}}
+
+    \begin{block}{Do Now: Binomial expansion skills check, \emph{with calculator}}
+    \begin{enumerate}
+      \item The probability of an event is $P(x)=0.05$. What is the probability of the event occurring two or fewer times among 20 trials?
+      \item Exercise 15G \#5a,b; p. 537
+    \end{enumerate}
+    \end{block}
+    Lesson: 15.3 Normal distribution p. 538\\
+    Homework: Textbook exercises 15H
+  }
+
+\section{7.13 Deltamath binomial expansion review. Tuesday 9 April}
+  \frame
+  {
+    \frametitle{GQ: How do we model a series of events?}
+    \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.13 Tuesday 9 April}}
+
+    \begin{block}{Do Now: Deltamath}
+    \end{block}
+
+    Lesson: Deltamath probability distributions review\\
+    Homework: Complete Deltamath problem set
+  }
+
+\section{7.14 Normal distribution. Wednesday 10 April}
+  \frame
+  {
+    \frametitle{GQ: How do we model a large collection of random elements?}
+    \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.14 Wednesday 10 April}}
+
+    \begin{block}{Do Now: Normal distribution skills check, \emph{with calculator}}
+    \begin{enumerate}
+      \item Given the distribution $Z \sim \mathrm{N}(0,1)$ find
+      \begin{enumerate}
+        \item $\mathrm{P}(1<Z)$
+        \item $\mathrm{P}(-0.5<Z<1)$
+      \end{enumerate}
+      \item Given the distribution $X \sim \mathrm{N}(80,10)$ find $\mathrm{P}(90<X)$
+      \item Find $\displaystyle \int \frac{1}{\cos^2 x} \,\mathrm{d}x$ (use the formula booklet)
+    \end{enumerate}
+    \end{block}
+    Lesson: Applications of the normal distribution p. 542\\
+    Homework: Textbook exercises 15J p. 544
+  }
+
+\section{7.15 Inverse normal function. Thursday 11 April}
+  \frame
+  {
+    \frametitle{GQ: How do we model a large collection of random elements?}
+    \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.15 Thursday 11 April}}
+
+    \begin{block}{Do Now: Normal distribution handout}
+
+    \end{block}
+    Lesson: Finding inverse normal function values p. 544\\
+    Homework: Textbook exercises 15L p. 548
+  }
+
+\section{7.16 Inverse normal function. Friday 12 April}
+  \frame
+  {
+    \frametitle{GQ: How do we model a large collection of random elements?}
+    \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.16 Friday 12 April}}
+
+    \begin{block}{Do Now: Normal distribution \emph{calculator} skills\\Include a sketch with each exercise}
+    \begin{enumerate}
+      \item Handout exam problems
+    \end{enumerate}
+    \end{block}
+    Homework review: Finding inverse normal function values\\
+    Lesson: Applications of the normal distribution p. 548\\
+    Homework: Review exercises p. 551-2
+  }
+
+\section{7.17 Inverse normal function. Monday 15 April}
+  \frame
+  {
+    \frametitle{GQ: How do we model a large collection of random elements?}
+    \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.17 Monday 15 April}}
+
+    \begin{block}{Do Now: Normal distribution \emph{calculator} skills\\Include a sketch with each exercise}
+    \begin{enumerate}
+      \item Handout exam problems
+    \end{enumerate}
+    \end{block}
+    Homework review: Finding inverse normal function values\\
+    Lesson: Applications of the normal distribution p. 548\\
+    Homework: Complete handout (Review exercises p. 551-2)
+  }
+
+
+  \section{7.18 DeltaMath Binomial expansion Tuesday 16 April}
+    \frame
+    {
+      \frametitle{GQ: How do we model a large collection of random elements?}
+      \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.18 Tuesday 16 April}}
+
+      \begin{block}{Do Now: Check Skedula for end of Marking Period}
+      \end{block}
+      Lesson: DeltaMath probability distributions\\[1cm]
+      Homework: Complete Deltamath
+    }
+
+  \section{7.19 Review for exam Wednesday 17 April}
+    \frame
+    {
+      \frametitle{GQ: How do we model a large collection of random elements?}
+      \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.19 Wednesday 17 April}}
+
+      \begin{block}{Do Now: Review Exercises p. 189}
+        \begin{enumerate}
+          \item Review for exam
+      \end{enumerate}
+      \end{block}
+      Lesson: Test review, probability distributions\\[1cm]
+      Homework: Study for \alert{exam tomorrow}
+    }
+
+  \section{7.20 Exam Thursday 18 April}
+    \frame
+    {
+      \frametitle{GQ: How do we model a large collection of random elements?}
+      \framesubtitle{CCSS: HSS.MD.A.3 Develop a probability distribution for a random variable \hfill \alert{7.20 Thursday 18 April}}
+
+      Lesson: Test \\[1cm]
+      Homework: Vacation packet
+    }
+\end{document}

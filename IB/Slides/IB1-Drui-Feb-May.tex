@@ -1,0 +1,562 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%\rhead{\small{21 May 2018}}
+\lhead{\small{BECA / Dr. Huson / Mathematics}}
+
+%\vspace{1cm}
+
+\renewcommand{\headrulewidth}{0pt}
+
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Chris Huson}
+\date{28 August 2018}
+
+\begin{document}
+
+\frame{\titlepage}
+
+%\section[Outline]{}
+%\frame{\tableofcontents}
+
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we organize data using Venn diagrams?}
+    \framesubtitle{CCSS: HSS.CP.B.6 Probabilities}
+
+    \begin{block}{Do Now}
+    \begin{enumerate}
+        \item Find $_5C_1$.
+        \item Write down the first 5 rows of Pascal's triangle, and circle the coefficient nCr for $n=5, r=1$.
+    \end{enumerate}
+    Homework review \#3 p. 67
+    \end{block}
+    Lesson: Tools for counting, Venn diagrams (p. 68)\\*[5pt]
+    Task: unions, intersections, complements of sets\\*[5pt]
+    Assessment:  \\*[5pt]
+    Homework: p 71-2 3B \#1-6
+  }
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we organize data using Venn diagrams?}
+    \framesubtitle{CCSS: HSS.CP.B.6 Probabilities}
+
+    \begin{block}{Do Now}
+    \begin{enumerate}
+        \item Solve for $r$ given the volume of a sphere, $V=\frac{4}{3} \pi r^3$.
+        \item Make a tree diagram representing flipping a coin twice. Mark the edge probabilities, assuming a fair coin.
+        \item Problem 3B \#4 p. 71.
+    \end{enumerate}
+    Review/peer grade homework
+    \end{block}
+    Lesson: The addition rule, Examples 4, 5 (p. 73)\\*[5pt]
+    Task: Solving for the intersection of two sets\\*[5pt]
+    Assessment: Discuss the difference between dividing by $\frac{4}{3}$ and multiplying by $\frac{3}{4}$\\*[5pt]
+    Homework: p 74-5 3C \#1-8
+  }
+
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{How do we organize data using sample space diagrams?}
+    \framesubtitle{CCSS: HSS.CP.A.1 Probabilities: subsets of a sample space \qquad \alert{11.1}}
+
+    \begin{block}{Do Now (use a diagram or table to support your answer)}
+    \begin{enumerate}
+        \item If a coin is flipped twice, what is the probability of getting at least one heads?
+        \item How many ways are there to roll a 5 with two dice?
+    \end{enumerate}
+    \end{block}
+    Lesson: Probability concepts: bias and fairness, random variation, \& combinations\\*[5pt]
+    Task: Exercises 3F page 82.\\*[5pt]
+    Assessment: Two cards are drawn from a deck, without replacement. Are the events independent?\\*[5pt]
+    Homework: Handout review problems.
+  }
+
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{How do we calculate conditional probability?}
+    \framesubtitle{CCSS: HSS.CP.B.6 Find and interpret conditional probabilities \qquad \alert{11.1}}
+
+    \begin{block}{Do Now: From four aces, two cards are drawn at random}
+    \begin{enumerate}
+        \item What is the probability both will be red cards? (Assume with replacement)
+        \item Same question, without replacement
+    \end{enumerate}
+    \end{block}
+    Lesson: Conditional probability\\*[5pt]
+    Task: Example 11 p 86\\*[5pt]
+    Assessment: Two cards are drawn from a deck, without replacement. Are the events independent?\\*[5pt]
+    Homework: Exercises 3G p 86-8
+  }
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{How do we calculate conditional probability?}
+    \framesubtitle{CCSS: HSS.CP.B.6 Find and interpret conditional probabilities \qquad \alert{11.1}}
+
+    \begin{block}{Do Now: Draw a Venn diagram summarizing the situation.}
+    \begin{enumerate}
+        \item Of the 53 staff at a school, 36 drink tea, 18 drink coffee, and 10 drink neither.
+    \end{enumerate}
+    \end{block}
+    Lesson: Conditional probability, trees p. 89\\*[5pt]
+    Task: Example 12 p 89\\*[5pt]
+    Assessment: Two cards are drawn from a deck, without replacement. Are the events independent?\\*[5pt]
+    Homework: Exercises 3H p 90
+  }
+
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{How do we calculate conditional probability?}
+    \framesubtitle{CCSS: HSS.CP.B.6 Find and interpret conditional probabilities \qquad \alert{11.1}}
+
+    \begin{block}{Do Now: Review test results, answers}
+    \begin{enumerate}
+        \item Max 84 pts: 77, 72, 69, 68, 64 ...48, ...38, 34, 34, 28, 25, 15 \item Team performance bonus to two groups
+        \item Test corrections due Thursday before exam
+    \end{enumerate}
+    \end{block}
+    Homework review\\*[5pt]
+    Lesson: Functions, quadratics review\\*[5pt]
+    Task: Do review problems (packet)\\*[5pt]
+    Assessment: Self-review, answers tomorrow (check website)\\*[5pt]
+    Homework: Pretest (\alert{Trimester Final Exam Thursday})
+  }
+
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{What are the features of the function representing the multiplicative inverse?}
+    \framesubtitle{CCSS: HSS.IF.C.7d Graph and analyze rational functions \qquad \alert{11.1}}
+
+    \begin{block}{Do Now: Graph $f(x)=\frac{1}{x}$}
+    \begin{enumerate}
+        \item Have the calculator find the point where $x=100$, hence calculating $f(100)$. (you may have to resize the window)
+    \end{enumerate}
+    \end{block}
+    Homework review\\*[5pt]
+    Lesson: The reciprocal function and its asymptotes\\*[5pt]
+    Task: Show $x \xrightarrow{} \frac{1}{x}$ is a self-inverse\\*[5pt]
+    Assessment: Identify asymptotes under vertical and horizontal translations\\*[5pt]
+    Homework: Exercises 5B p. 146 (graph paper)
+  }
+
+
+
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{What are the asymptotes of a rational function?}
+    \framesubtitle{CCSS: HSS.IF.C.7d Graph and analyze rational functions \qquad \alert{11.1}}
+
+    \begin{block}{Do Now: Iodine-131 decay formula (time $t$ in days): \[N(t)=N_0 \left( \frac{1}{2} \right)^{\frac{t}{8}}\]}
+    \begin{enumerate}
+        \item $N_0=100$ grams, how much will decay in the first 8 days?
+        \item How much will decay in the second 8 days?
+        \item When will 10 grams remain?
+    \end{enumerate}
+    \end{block}
+    Lesson: IA Criterion A. Rational functions p. 147-151\\*[5pt]
+    Task: Identify asymptotes under vertical and horizontal translations\\*
+    Assessment: Exercise 5C \# 2i\\*
+    Homework: Write an aim \& rationale, with a plan outline to investigate geometric series. Exercise 5D \#1-2 p. 151
+  }
+
+
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{What are the rules for a geometric series?}
+    \framesubtitle{CCSS: HSA.SSE.B.4 Geometric series\qquad \alert{11.1}}
+
+    \begin{block}{Do Now: Given the parent function $f(x)=\frac{1}{x}$}
+    \begin{enumerate}
+        \item Write down the equations of $f$'s asymptotes.
+        \item The function $f$ is shifted to the right 3 to make the function $g$. What is the equation for $g(x)$?
+        \item $g$ is now shifted up 2 units to make $h$. Find $h(x)$.
+    \end{enumerate}
+    \end{block}
+    Lesson: Geometric sequences \& series formulas. p. 167-179\\*[5pt]
+    Task: Example 8 \& 9 (calculator) p. 168-9\\*
+    Assessment: Exercise 6D \#1d, e, f\\*
+    Homework: Exercise 6E \#1-6 p. 169
+  }
+
+
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{What are the rules for a geometric series?}
+    \framesubtitle{CCSS: HSA.SSE.B.4 Geometric series\qquad \alert{11.1}}
+
+    \begin{block}{Do Now: The rule of 72}
+    \begin{enumerate}
+        \item Create a table in your calculator of a geometric sequence with $u_1=500$ and $r=1.05$.
+        \item What is the first term in the sequence exceeding 1000? Write its value and the prior value.
+        \item Solve the same problem using logarithms.
+        \item Interpret the situation as a financial investment.
+    \end{enumerate}
+    \end{block}
+    Mini-IA paper review\\*
+    Lesson: The sum of a geometric series. p. 175-179\\*
+    Task: Example 17 \& 19 p. 176-7\\*
+    Assessment: Exercise 6J \#2\\*
+    Homework: Exercise 6F \#1-3 p. 171
+  }
+
+
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{What are the rules for an arithmetic series?}
+    \framesubtitle{CCSS: HSA.SSE.B.4 Arithmetic series\qquad \alert{11.1}}
+
+    \begin{block}{Do Now: Given a geometric sequence with $u_1=3$ and $r=2.25$}
+    \begin{enumerate}
+        \item Find $u_5$. ("Find" means you must show the appropriate values substituted into a formula)
+        \item Find $S_5$, the sum of the first five terms of the sequence.
+        \item $S_k=7980$. Find $k$ algebraically.
+        \item Create a table in your calculator to check your answer.
+    \end{enumerate}
+    \end{block}
+    Lesson: Arithmetic sequences and series, recursive formulas p. 162-6\\*
+    Task: Example 3 \& 5 p. 165-6\\*
+    Assessment: Exercise 6C \#1 p. 167\\*
+    Homework: Handout packet of IB problems (work on paper)
+  }
+
+
+
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{How do we solve for missing parameters given a series?}
+    \framesubtitle{CCSS: HSA.SSE.B.4 Arithmetic series\qquad \alert{11.1}}
+
+    \begin{block}{Do Now: Given an exponential function $y=A_0b^{kx}+c$}
+    \begin{enumerate}
+        \item Graph the function
+        \item What evidence from the graph indicates the function is growing versus decaying?
+        \item What algebraically features determine exponential growth versus decay?
+    \end{enumerate}
+    \end{block}
+    Review sequences and notation conventions\\*
+    Lesson: Solving for series variables p. 174 Example 15 \\*
+    Task: Exercises 6H p. 174\\*
+    Assessment: Exercise 6H \#3 p. 174 \alert{(test Thursday)}\\*
+    Homework: Handout packet of IB problems (pretest)
+  }
+
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{How do we solve for missing parameters given a series?}
+    \framesubtitle{CCSS: HSA.SSE.B.4 Arithmetic series\qquad \alert{11.1}}
+
+    \begin{block}{Do Now: Given the inverse function $f(x)=\frac{1}{x}$}
+    \begin{enumerate}
+        \item Find the inverse of the function, $f^{-1}(x)$
+        \item The function $g(x)$ is $f$ translated three units to the right. Find $g$
+        \item Find the inverse of $g$, $g^{-1}(x)$
+        \item Find $h(x)$, $g(x)$ translated up two
+    \end{enumerate}
+    \end{block}
+    Lesson: IA engagement \& reflection criteria\\*
+    Task: Review pretest solutions\\*
+    Assessment: \alert{(test Thursday)}\\*
+    Homework: Read \& score example IA
+  }
+
+
+
+  \section{11.1 Drui}
+  \frame
+  {
+    \frametitle{How do we summarize the features of a population?}
+    \framesubtitle{CCSS: HSS.IC.A.1 Understand statistics as a process for making inferences about a population \qquad \alert{11.1}}
+
+    \begin{block}{Do Now: Subway paper data}
+    \begin{enumerate}
+        \item Sketch two box \& whisker plots on the same axis, given the timing data
+        \item What can you conclude?
+    \end{enumerate}
+    \end{block}
+    Lesson: Review yesterday's DN p.2; compare aims, proposal requirements; Rules on page 281\\*
+    Task: Review pretest problems\\*
+    Assessment: Exam Tomorrow (Marking Period ``final")\\*
+    Homework: Study for exam\\
+    Subway comparison (proposal due tomorrow)\\
+  }
+
+  \section{11.1 IB Math SL Drui}
+  \frame
+  {
+    \frametitle{How do we compare two variables?}
+    \framesubtitle{CCSS: HSS.IC.A.1 Understand statistics as a process for making inferences about a population \qquad \alert{11.1}}
+
+    \begin{block}{Do Now: Bivariate plot}
+    \begin{enumerate}
+        \item Plot the given values as points on a graph
+        \item Compute $\bar{x}$ and $\bar{y}$
+    \end{enumerate}
+    \end{block}
+    Lesson: Picking an exploration topic\\*
+    Task: Logarithm and exam problem review\\*
+    Assessment: Test corrections due Monday April 30\\*
+    Homework: Study for SAT\\
+  }
+
+  \section{11.1 IB Math SL Drui}
+  \frame
+  {
+    \frametitle{How do we compare two variables?}
+    \framesubtitle{CCSS: HSS.IC.A.1 Understand statistics as a process for making inferences about a population \qquad \alert{11.1}}
+
+    \begin{block}{Do Now: Given two independent events with probability 0.6 and 0.5. }
+    \begin{enumerate}
+        \item What is the probability of both happening together?
+        \item Draw a Venn diagram representing their intersection.
+    \end{enumerate}
+    \end{block}
+    Lesson: Applying independence tests in a real world context. Picking an exploration topic\\*
+    Task: Regression of bivariate data. Exercise 10A \#4 p 339\\*
+    Assessment: Test corrections due today\\*
+    Homework: Statistics textbook problems 10B p. 341\\
+  }
+
+
+  \section{11.1 IB Math SL Drui}
+  \frame
+  {
+    \frametitle{How do we summarize from a frequency table?}
+    \framesubtitle{CCSS: HSS.IC.A.1 Understand statistics as a process for making inferences about a population \qquad \alert{11.1}}
+
+  \begin{block}{Do Now: An investment of \$1,500 earns a continuous interest rate of 2.25\%. }
+    \begin{enumerate}
+        \item Write down the value of the investment as a function of time in years: $f(t)=$
+        \item How much would the investment be worth after 10 years? How much of that is interest?
+        \item Use a graphing calculator to compare two functions: $y=1500 \times e^{(10x)}$ and $y=3000$.
+        \item For what $x$ are the functions equal? What does this point represent?
+    \end{enumerate}
+    \end{block}
+    Lesson: Solving complex equations with graphing calculators\\*
+    %Task: Handout IB cumulative distribution exam problem\\*
+    Assessment: Exam Thursday\\*
+    Homework: Handout of review problems\\
+  }
+
+
+
+  \section{11.1 IB Math SL Drui}
+  \frame
+  {
+    \frametitle{How do we summarize from a frequency table?}
+    \framesubtitle{CCSS: HSS.IC.A.1 Understand statistics as a process for making inferences about a population \qquad \alert{11.1}}
+
+  \begin{block}{Do Now: Exam review problems}
+    \begin{enumerate}
+      \item Evaluate $f(x)=\sqrt{x^2}$ for $x=-2, -1, 0, 1, 2$
+      \item Sketch the function for $x \in \mathbb{R}$.
+      \item Write down another representation of $f(x)$.
+      \item Solve for $a$ where $a^x=(e^{0.03925})^x$
+      \item Enter into a calculator stats table\\
+          \begin{tabular}{|c|r|r|r|r|r|}
+          \hline
+          $x$ & 2 & 4 & 6 & 8 & 10\\
+          \hline
+          $y$ & 12 & 20 & 30 & 36 & 52 \\
+          \hline
+          \end{tabular}
+          \item Calculate a linear regression. What do the numbers mean?
+      \end{enumerate}
+    \end{block}
+    Homework review\\
+    Lesson: Exam results, substituting into formulas, precision\\*
+    %Task: Handout IB cumulative distribution exam problem\\*
+    %Assessment: \\*
+    Homework: Test corrections due Wednesday\\
+  }
+
+  \section{11.1 IB Math SL Drui}
+  \frame
+  {
+    \frametitle{How do we calculate triangle ratios?}
+    \framesubtitle{HSF.TF.A.3 Use special right triangles to find sine \& cosine \qquad \alert{11.1}}
+
+  \begin{block}{Do Now: Linear regression practice}
+    \begin{enumerate}
+      \item Enter the following data into a calculator stats table\\
+          \begin{tabular}{|c|r|r|r|r|r|}
+          \hline
+          $x$ & 22 & 28 & 43 & 62 & 75\\
+          \hline
+          $y$ & 0.375 & 0.469 & 0.682 & 0.883 & 0.966 \\
+          \hline
+          \end{tabular}
+      \item Using the 2-variable function, find the ``mean point," $(\Bar{x}, \Bar{y})$.
+      \item Using the linear regression function, find the coefficients of fitted line $y=ax+b$ and the correlation, $r$. Characterize $r$.
+      \item Estimate $y$ for $x=45$
+      \end{enumerate}
+    \end{block}
+    Lesson: Trig function definitions, special right triangles\\*
+    Task: Textbook notes p. 362-9 \\*
+    Assessment: Calculator trig function, degree-radians switch\\*
+    Homework: Exercises 11A odds p. 367, 11B \#1-5 p. 368-9\\
+  }
+
+
+  \section{11.1 IB Math SL Drui}
+  \frame
+  {
+    \frametitle{How do we apply trig to solve problems?}
+    \framesubtitle{HSG Define trigonometric ratios and solve problems involving right triangles \qquad \alert{11.1}}
+
+  \begin{block}{Do Now: Right triangle relationships}
+    \begin{enumerate}
+      \item Write down (from memory, or derive using the Pythagorean formula) the values of $\sin{45^\circ}, \sin{30^\circ}, \sin{60^\circ}$
+      \item Given $\sin{x}=\frac{4}{5}$. Find $\cos{x}$
+      \item Draw a figure to explain why $\sin{x}=\cos{(90^\circ-x)}$
+      \end{enumerate}
+    \end{block}
+    Lesson: Compass bearings \& elevations p. 369-373 (7th)\\*
+    %Task: Textbook notes p. 362-9 \\*
+    Assessment: Exercise 11C \#1 p. 372\\*
+    Homework: Exercises 11C p. 372-3\\
+  }
+
+  \section{11.1 IB Math SL Drui}
+  \frame
+  {
+    \frametitle{How do we apply trig to solve problems?}
+    \framesubtitle{HSG Define trigonometric ratios and solve problems involving right triangles \qquad \alert{11.1}}
+
+  \begin{block}{Do Now Quiz: Right triangle relationships\\
+      \emph{Complete on lined paper to hand in. Work independently.}}
+    \begin{enumerate}
+      \item Sketch a $45^\circ, 45^\circ, 90^\circ$ triangle in standard position (with the right angle in the bottom right), label the legs of unit length.
+      \item Find the length of the hypotenuse.
+      \item Write down the values of $\sin{45^\circ}, \cos{45^\circ}$
+      \item Sketch an equilateral triangle with sides of length 2. Divide it into two $30^\circ, 60^\circ, 90^\circ$ triangles.
+      \item Find the altitude.
+      \item Write down $\sin{30^\circ}, \sin{60^\circ}, \cos{30^\circ}, \cos{60^\circ}$
+      %\item Given $\sin{x}=\frac{4}{5}$. Find $\cos{x}$
+      %\item Draw a figure to explain why $\sin{x}=\cos{(90^\circ-x)}$
+      \end{enumerate}
+    \end{block}
+    Lesson: Compass bearings \& elevations p. 369-373\\*
+    %Task: Textbook notes p. 362-9 \\*
+    Assessment: Exercise 11C \#1 p. 372\\*
+    Homework: Exercises 11C p. 372-3\\
+  }
+
+
+\section{11.1 IB Math SL Drui}
+\frame
+{
+  \frametitle{How do we apply trig to solve problems?}
+  \framesubtitle{HSG Define trigonometric ratios and solve problems involving right triangles \qquad \alert{11.1}}
+
+\begin{block}{Do Now handout: Sine graph, complex number review}
+    %\emph{Complete on lined paper to hand in. Work independently.}}
+  \begin{enumerate}
+    \item Confirm that your calculator is in radian mode
+    \item Use the Table $\xrightarrow{}$ SET (F5) function
+    \item For complex number problems, first write down the four powers of $i$
+    \end{enumerate}
+  \end{block}
+  Lesson: The Pythagorean identity p. 378. The sine rule p. 381\\*
+  %Task: Textbook notes p. 362-9 \\*
+  Assessment: Exercise 11G \#1a p. 383\\*
+  Homework: Read through p. 382; Exercises 11G \#1-4 p. 383\\
+}
+
+\frame
+{
+  \frametitle{Exercise 11C \#1}
+  %\framesubtitle{}
+  Isosceles triangle $ABC$ has base $AC = 10 \text{ cm}$ and sides $AB=CB=15 \text{ cm}$.
+\begin{itemize}
+      \item Find the height of the triangle
+      \item Find the sizes of $B\hat{A}C$ and $A\hat{B}C$
+\end{itemize}
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) node[anchor=north]{$A$}
+  -- (3,0) node[anchor=north]{$C$}
+  -- (1.5,4.2) node[anchor=south]{$B$}
+  -- cycle;
+  \draw [dashed] (1.5,0) -- (1.5,4.2);
+\end{tikzpicture}
+\end{center}
+ }
+
+\frame
+{
+  \frametitle{Unit circle}
+  %\framesubtitle{}
+  Circle with radius of one centered on the origin.
+%\begin{itemize}
+      %\item Find the height of the triangle
+      %\item Find the sizes of $B\hat{A}C$ and $A\hat{B}C$
+%\end{itemize}
+\begin{center}
+\begin{tikzpicture}[scale=3]
+  \draw[font=\scriptsize]
+    (-1.2, 0) -- (1.2, 0)
+    (0, -1.1) -- (0, 1.1)
+    %(0, 0) -- (0.866, .5)
+    (0, 0) circle[radius=1]
+    (-1, 0) node[below left] {$(-1,0)$}
+    (1, 0) node[above right] {$(1,0)$}
+    (1.1, 0) node[below right] {$\large{x}$}
+    ;
+\end{tikzpicture}
+\end{center}
+ }
+
+\section{11.1 IB Math SL Drui}
+\frame
+{
+  \frametitle{Graphing on a calculator to solve equations}
+
+\begin{block}{To solve an equation, separate the equality into two functions, \[f(x)=g(x)\]The intersection of their graphs is the solution.}
+  \begin{itemize}
+      \item Solve for $x$: $|x-1|-3 = -2x^2+x+3$.
+      \item As a check, first make a quick sketch of the functions.
+      %\item Use a graphing calculator to compare two functions: $y=1500 \times e^{(10x)}$ and $y=3000$.
+      %\item For what $x$ are the functions equal? What does this point represent?
+  \end{itemize}
+  \end{block}
+  Notes: \\Learn to resize the calculator window efficiently\\
+  Use the calculator's graph-solve function\\
+  Even simple equations can be solved this way. e.g. $e^{0.12x} = 5.25$
+}
+
+
+
+\end{document}

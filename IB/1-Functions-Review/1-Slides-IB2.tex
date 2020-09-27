@@ -1,0 +1,200 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%\rhead{\small{5 September 2018}}
+\lhead{\small{BECA / Dr. Huson / 12.1 IB Math Unit 1}}
+
+%\vspace{1cm}
+
+\renewcommand{\headrulewidth}{0pt}
+
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Chris Huson}
+\date{5-21 September 2018}
+
+\begin{document}
+
+\frame{\titlepage}
+
+%\section[Outline]{}
+%\frame{\tableofcontents}
+
+  \section{1.1 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we follow IB mathematics conventions?}
+    \framesubtitle{CCSS: MP.6 Attend to precision  \hspace{\stretch{1}} \alert{1.1}}
+
+    \begin{block}{Do Now Handout: precision, notation}
+    \begin{enumerate}
+        \item Welcome back to school!
+        \item Take out notebooks, formula sheets, \& calculators\\*
+    \end{enumerate}
+    \end{block}
+    Lesson: Identifying graphical features, average slope \\%*[5pt]
+    Homework: Problem set: sig figs
+  }
+%Prepare copies of formula sheets
+
+\section{1.2 Drui}
+  \frame
+  {
+    \frametitle{GQ: What is the average rate of change of a function?}
+    \framesubtitle{CCSS: HSF.IF.B.6 Calculate and interpret the rate of change of a function  \hspace{\stretch{1}} \alert{1.2}}
+
+    \begin{block}{Do Now: Substitution notation, Point-slope}
+    \begin{enumerate}
+        \item Show that the point $(3, 4)$ is on the line $y=2x-2$
+        \item $f(x)=x^2+7$ and $f(k)=11$. Solve for $k$.
+        \item Find the slope of the line through the points $(-3,0)$ and $(5, -5)$ \\
+        Find the slope of a line perpendicular to the given line.
+    \end{enumerate}
+    \end{block}
+    Lesson: Applying the concept of slope in non-linear problems.
+    Calculator deposits \$20
+    \\%*[5pt]
+    Homework: Average rate of change problems
+  }
+
+\section{1.3 Drui}
+  \frame
+  {
+    \frametitle{GQ: What is asymptotic behavior?}
+    \framesubtitle{CCSS: HSF.IF.B.4 Interpret key features of functions and their graphs  \hspace{\stretch{1}} \alert{1.3}}
+
+    \begin{block}{Do Now Quiz: Precision}
+    \begin{enumerate}
+        \item Handout
+    \end{enumerate}
+    \end{block}
+    Lesson: Rational functions, asymptotes, applications p. 147-156\\
+    (calculator graphing example)
+    \\[10pt]
+    Homework: Textbook Review exercises 1-5 page 155-6\\[10pt]
+    Peer edit of exploration papers.
+  }
+
+\section{1.4 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we graph quadratics?}
+    \framesubtitle{CCSS: HSF.IF.B.4 Interpret key features of functions and their graphs  \hspace{\stretch{1}} \alert{1.4}}
+
+    \begin{block}{Do Now: Factoring}
+    \begin{enumerate}
+        \item Find the intercepts, axis of symmetry, and minimum point of the graph of the function $f(x)=(x-1)(x-5)$?
+        \item Factor the function $g(x)=x^2-x-12$ to determine the features of its graph.
+        \item Convert the function $h(x)=x^2+4x+3$ to the vertex form, $h(x)=a(x-h)^2+k$. Write down its vertex.
+    \end{enumerate}
+    \end{block}
+    Lesson: $x-$ and $y-$intercepts; completing the square, vertex, axis of symmetry; discriminant; odd, even functions
+    \\%*[5pt]
+    Homework: Cubic functions and their graphical characteristics
+  }
+
+  \frame
+  {
+    \frametitle{How do we graph quadratics?}
+    \framesubtitle{CCSS: HSF.IF.B.4 Interpret key features of functions and their graphs  \hspace{\stretch{1}} \alert{1.4}}
+
+    \begin{block}{Consider the function $f(x)=-x^2+2x+3$}
+    \begin{enumerate}
+        \item Factor $f$ and state its zeros.
+        \item Restate $f$ in vertex form. Write down the vertex as an ordered pair.
+        \item Over what intervals is the function increasing, decreasing, and neither?
+        \item If $f(x)$ represents the height of a diver over the domain $0 \leq x \leq 3$, interpret $f(0)$, the vertex, and $f(3)$
+        \item What does the "slope" of the curve represent?
+    \end{enumerate}
+    \end{block}
+  }
+
+  \frame
+  {
+    \frametitle{GQ: How do we graph quadratics?}
+    \framesubtitle{CCSS: HSF.IF.B.4 Interpret key features of functions and their graphs  \hspace{\stretch{1}} \alert{1.4}}
+
+    \begin{block}{Symmetry of functions, graphically and algebraically}
+    \begin{enumerate}
+        \item Definition: a function is \emph{even} if it can be reflected onto itself across the $y-$axix. Equivalently, iff $f(x)=f(-x)$
+        \bigskip
+        \item Definition: a function is \emph{odd} if it can be reflected onto itself across the origin. Equivalently, iff $f(x)=-f(-x)$
+    \end{enumerate}
+    \end{block}
+    %graph examples
+  }
+
+\section{1.5 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate rates in context?}
+    \framesubtitle{CCSS: HSF.IF.B.6 Calculate and interpret the rate of change of a function  \hspace{\stretch{1}} \alert{1.5}}
+
+    \begin{block}{Do Now: Sketch the function $f(x)=x^3-9x$}
+      \begin{enumerate}
+      \item Either factor it by hand or use a graphing calculator .
+      \item "Sketch" is an IB "command term" meaning roughly show the key relationships.
+      \item Label the intersections, maximum, and minimum.
+      \item Add an axis caption of increasing ("++++") and decreasing ("- - - -") intervals
+      \end{enumerate}
+   \end{block}
+    Lesson: Quadratics applications, graphing pp. 53-56\\ \bigskip
+    Homework: Review exercise \#1-5 pp. 57-58
+  }
+
+\section{1.6 Drui - exponents, Friday Sept 14}
+  \frame
+  {
+    \frametitle{GQ: How do we simplify exponents?}
+    \framesubtitle{CCSS: HSF.LB.B.5 Interpret the parameters in an exponential function \hspace{\stretch{1}} \alert{1.6}}
+
+    \begin{block}{Do Now: Exponent warmup problems. Simplify. Try expanding the exponential expressions as multiplication, as an intermediate step.}
+      \begin{enumerate}
+      \item $2^3 \cdot 2^2$
+      \item $3^6 \div 3^2$
+      \item $(5^3)^2$
+      \item $\displaystyle \frac{x^2 \cdot x^4}{x^3}$
+      \end{enumerate}
+   \end{block}
+    Lesson: Exponent expressions pp. 100-107\\ \bigskip
+    Homework: Select exercises from  4A, 4B, 4C pp. 104-107
+  }
+
+\section{1.7 Drui - logarithms, Monday Sept 17}
+  \frame
+  {
+    \frametitle{GQ: How do we work with logarthms?}
+    \framesubtitle{CCSS: HSF.LB.B.5 Interpret the parameters in an exponential function \hspace{\stretch{1}} \alert{1.7}}
+
+    \begin{block}{Do Now: Exponent warmup problems. Simplify.}
+      \begin{enumerate}
+      \item $x^3 \cdot x^2$
+      \item $(ab)^6 \div a^2 b$
+      \item $(2m^3)^2$
+      \item $\displaystyle x^{-\frac{1}{2}}$
+      \end{enumerate}
+   \end{block}
+    Lesson: Properties of logarithms pp. 115-117\\ \bigskip
+    Homework: Select exercises from 4E p. 109: 1a, 1b, 2a, 2b, 3a, 3b; 4I pp. 117-118
+  }
+
+  \end{document}

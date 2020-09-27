@@ -1,0 +1,251 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%\rhead{\small{24 September 2018}}
+\lhead{\small{BECA / Dr. Huson / 12.1 IB Math}}
+
+%\vspace{1cm}
+
+\renewcommand{\headrulewidth}{0pt}
+
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Chris Huson}
+\date{22 October - 2 November 2018}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+
+\section{3.1 Drui - Intro to Vectors, Monday Oct 22}
+  \frame
+  {
+    \frametitle{GQ: What are the basic elements of vector algebra?}
+    \framesubtitle{CCSS: HSF.IF.B.4 Interpret key features of functions and their graphs \qquad \alert{3.1}}
+
+    \begin{block}{Do Now: Differentiate each function.}
+    \begin{enumerate}
+        \item $f(x)=x^3-4x$
+        \item $g(x)=\ln x$
+        \item $y=(x^3-4x)(\ln x)$
+        \item Write down the value of $\displaystyle \cos \frac{\pi}{3}$. (sketch first. no calculator)
+        \item Skills check \#1-3 p. 404-5
+    \end{enumerate}
+    \end{block}
+    Lesson: Vector concepts and notation pp. 406-410\\ \bigskip
+    Homework: Exercises 12A pp. 410-411
+  }
+
+\section{3.2 Drui - Deltamath differentiation practice, Tuesday Oct 23}
+  \frame
+  {
+    \frametitle{GQ: How do we differentiate functions?}
+    \framesubtitle{CCSS: HSF-IF.B.6 Interpret functions, and their rate of change \hspace{\stretch{1}} \alert{3.2}}
+
+    \begin{block}{Do Now quiz, mixed review.}
+      Complete the problem set without a calculator, then begin Deltamath.
+    \end{block} \bigskip
+
+    Lesson: Differentiation practice \\ \bigskip
+    Homework: Complete Deltamath problem set at home
+  }
+
+\section{3.3 Drui - Resultant vectors, Wednesday Oct 24}
+  \frame
+  {
+    \frametitle{GQ: How do we add vectors?}
+    \framesubtitle{CCSS: HSF.IF.B.4 Interpret key features of functions and their graphs \qquad \alert{3.3}}
+
+    \begin{block}{Do Now: Differentiate each function. $k \in \mathbb{R}$}
+    \begin{enumerate}
+        \item $f(x)=k x^2-4x^{-1}$
+        \item $g(x)=\ln kx$
+        \item $h(x)=e^{kx}$
+        \item Write down the value of $\displaystyle \cos \frac{2 \pi}{3}$. (sketch first. no calculator)
+    \end{enumerate}
+    \end{block}
+    Lesson: Parallelism, scalar multiplication, position, addition pp. 411-417\\ \bigskip
+    Homework: Exercises 12B (odds), 12C (odds), pp. 410-416
+  }
+
+\section{3.4 Drui - Distance, Thursday Oct 25}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate distance in space?}
+    \framesubtitle{CCSS: HSG.SRT.C.8 Use the Pythagorean theorem to solve applied problems \qquad \alert{3.4}}
+
+    \begin{block}{Do Now: Differentiate each function.}
+    \begin{enumerate}
+        \item $f(x)=x^{-1}-4x^{-2}$
+        \item $g(x)=\sin x^2$
+        \item $y=(x^3-4x) \div (\ln x)$
+        \item Write down the value of $\displaystyle \sin \frac{\pi}{4}$. (sketch first. no calculator)
+    \end{enumerate}
+    \end{block}
+    Lesson: Length calculation using the Pythagorean formula, unit vectors pp. 418-419\\ \bigskip
+    Homework: Exercises 12D p. 417, 12F odds p. 420.
+  }
+
+\section{3.5 Drui - Unit vectors, Friday Oct 26}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate distance in space?}
+    \framesubtitle{CCSS: HSG.SRT.C.8 Use the Pythagorean theorem to solve applied problems \qquad \alert{3.5}}
+
+    \begin{block}{Do Now: Let $\displaystyle g(x)=\frac{\ln x}{x^2}$ for $x>0$.}
+    \begin{enumerate}
+        \item Use the quotient rule to show that $\displaystyle g'(x)=\frac{1-2\ln x}{x^3}$
+        \item The graph of $g$ has a maximum point at $A$. Find the $x$-coordinate of $A$.
+        \item Given the point $P(4,5)$. State the position vector $\overrightarrow{OP}$ in unit vector form.
+        \item Find the magnitude of $\overrightarrow{OP}$.
+    \end{enumerate}
+    \end{block}
+    Lesson: Collinear points, unit vectors pp. 418-419\\ \bigskip
+    Homework: Exercises 12E p. 418.
+  }
+
+\section{3.6 Drui - Unit vectors, Monday Oct 29}
+  \frame
+  {
+    \frametitle{GQ: How do we add vectors?}
+    \framesubtitle{CCSS: HSG.SRT.C.8 Use the Pythagorean theorem to solve applied problems \qquad \alert{3.6}}
+
+    \begin{block}{Do Now: Let $f(x)=x e^x$.}
+    \begin{enumerate}
+        \item Find $f'(x)$
+        \item The graph of $f$ has a minimum point at $A$. Find the exact values of the $x$- and $y$-coordinates of $A$.
+        \item Given the point $A(5,12)$. State the position vector $\overrightarrow{OA}$ in unit vector form.
+        \item Find the unit vector parallel to $\overrightarrow{OA}$.
+    \end{enumerate}
+    \end{block}
+    Lesson: Adding vectors, the zero vector and equilibrium pp. 420-422\\ \bigskip
+    Homework: Exercises 12F (evens) p. 420, 12G (a and c) p. 422-423.
+  }
+
+\section{3.7 Drui - Deltamath differentiation practice, Tuesday Oct 30}
+  \frame
+  {
+    \frametitle{GQ: How do we differentiate functions?}
+    \framesubtitle{CCSS: HSF-IF.B.6 Interpret functions, and their rate of change \hspace{\stretch{1}} \alert{3.7}}
+
+    %\begin{block}{Do Now quiz, mixed review.}
+      %Complete the problem set without a calculator, then begin Deltamath.
+    %\end{block} \bigskip
+
+    Deltamath individualized work: Differentiation practice, vector algebra \\ \bigskip
+    Homework: Complete Deltamath problem set at home
+  }
+
+\section{3.8 Drui - Unit vectors, Wednesday Oct 31}
+  \frame
+  {
+    \frametitle{GQ: How do we use vector calculations in geometric proofs?}
+    \framesubtitle{CCSS: HSG.SRT.C.8 Use the Pythagorean theorem to solve applied problems \qquad \alert{3.8}}
+    \begin{block}{Do Now: Let $f(x)=x^2 \sin x$.}
+    \begin{enumerate}
+        \item Find $f'(x)$
+        \item Find the gradient of $f$ when $x= \frac{\pi}{2}$. (no calculator)
+        \item The graph of $f$ has a maximum point at $A$, $0 \leq x \leq 2\pi$. Find the $x$- and $y$-coordinates of $A$. (use a graphing calculator)
+        \item Sketch $f(x)$ over the domain $0 \leq x \leq 2\pi$, marking the sign of the derivative on an axis. Explain how the 1st derivative test applies (p. 233).
+      \end{enumerate}
+      \end{block}
+
+    Lesson: Geometric proofs pp. 423-424\\ \bigskip
+    Homework: Exercises 12H (pick 3) p. 424-5. (Deltamath)
+  }
+
+\section{3.9 Drui - Unit vectors, Monday Nov 5}
+  \frame
+  {
+    \frametitle{GQ: How do we use vector calculations in geometric proofs?}
+    \framesubtitle{CCSS: HSG.SRT.C.8 Use the Pythagorean theorem to solve applied problems \qquad \alert{3.9}}
+    \begin{block}{Do Now: Let $\displaystyle f(x)= \sin \frac{x}{2}$.}
+    \begin{enumerate}
+        \item Find $f'(x)$
+        \item Find the gradient of $f$ when $x= \frac{\pi}{2}$. (no calculator)
+        \item The graph of $f$ has a maximum point at $A$, $0 \leq x \leq 2\pi$. Find the $x$- and $y$-coordinates of $A$.
+        \item Sketch $f(x)$ over the domain $0 \leq x \leq 2\pi$, marking the sign of the derivative on an axis. Explain how the 1st derivative test applies (p. 233).
+    \end{enumerate}
+    \end{block}
+
+    Lesson: Geometric proofs pp. 423-425\\ \bigskip
+    Homework: Pretest handout. \alert{Exam next week}
+  }
+
+\section{3.10 Drui - Vector arithmetic, Friday Nov 9}
+  \frame
+  {
+    \frametitle{GQ: How do we use vector calculations in geometric proofs?}
+    \framesubtitle{CCSS: HSG.SRT.C.8 Use the Pythagorean theorem to solve applied problems \qquad \alert{3.10 Friday Nov 9}}
+
+    \begin{block}{Do Now: Let $f(x)= (2x^2-18)^3$.}
+    \begin{enumerate}
+        \item Find $f'(x)$
+        \item Find the three values of $x$ satisfying $f'(x)=0$.
+        \item Sketch a graph of $f$ and show the sign of the gradient with plusses and minuses on a parallel axis.
+        \item Determine whether each zero of $f'(x)$ is a maximum, minimum, or neither
+    \end{enumerate}
+    \end{block}
+
+    Lesson: Review pretest handout, Geometric proofs pp. 423-425\\ \bigskip
+    \alert{Exam next week}
+  }
+
+
+\section{3.11 Drui - Deltamath differentiation practice, Tuesday Nov 13}
+  \frame
+  {
+    \frametitle{GQ: How do we differentiate functions?}
+    \framesubtitle{CCSS: HSF-IF.B.6 Interpret functions, and their rate of change \hspace{\stretch{1}} \alert{3.11 Tuesday Nov 13}}
+
+    %\begin{block}{Do Now quiz, mixed review.}
+      %Complete the problem set without a calculator, then begin Deltamath.
+    %\end{block} \bigskip
+
+    Deltamath individualized work: Differentiation practice, vector algebra \\ \bigskip
+    Homework: Complete Deltamath problem set at home (10pm)\\
+    \alert{Exam Thursday}
+  }
+
+\section{3.12 Drui - Vector arithmetic, Wednesday Nov 14}
+  \frame
+  {
+    \frametitle{GQ: How do we use vector in geometric proofs?}
+    \framesubtitle{CCSS: HSG.SRT.C.8 Use the Pythagorean theorem on applied problems \qquad \alert{3.12 Wednesday Nov 14}}
+
+    \begin{block}{Do Now: Let $\displaystyle f(x)= \sin{x} \cos{x}$.}
+    \begin{enumerate}
+        \item Find $f'(x)$
+        \item Find the gradient of $f$ when $x= \frac{\pi}{6}$. (no calculator)
+        \item The graph of $f$ has a maximum point at $A$, $0 \leq x \leq 2\pi$. Find the $x$- and $y$-coordinates of $A$.
+        \item Sketch $f(x)$ over the domain $0 \leq x \leq 2\pi$, marking the sign of the derivative on an axis. Explain how the 1st derivative test applies (p. 233).
+    \end{enumerate}
+    \end{block}
+
+    Lesson: Law of cosines , review pretest, homework\\ \bigskip
+    \alert{Exam tomorrow}
+  }
+\end{document}

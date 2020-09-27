@@ -1,0 +1,105 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{tkz-fct}
+\usepackage{venndiagram}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{Name: \hspace{1.5in} }
+\lhead{BECA / Dr. Huson / Mathematics \\* 5 June 2019 \\* 11.1 IB Math SL}
+
+\vspace{1cm}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Worksheet and test template}
+\author{Chris Huson}
+\date{March 2018}
+
+\begin{document}
+
+\subsubsection*{\\* Classwork: Polynomials \& complex numbers}
+
+\begin{enumerate}
+
+\vspace{0.5 cm}
+
+
+\item What is the quotient when $x^2-3x-40$ is divided by $x + 5$?\\*[95pt]
+
+\item Given: $f(x)=2x^2+ x - 3$ and $g(x)=x-1$\\*[5pt]
+Express $f(x) \cdot g(x) - [f(x) + g(x)]$ as a polynomial in standard form.\\*[95pt] %Alg2 Regents Jan2018
+
+\item If $p(x)=2x^3-3x+5$, what is the remainder of $p(x) \div (x-5)$? %Alg2 Regents Jan2018 multiple choice
+\\*[95pt]
+
+\item Use long division to determine the quotient and remainder of $(x^3+4x^2-8x-6) \div (x+2)$.\\*[5pt]
+
+\newpage
+
+\item The zeros of a quartic polynomial function $h$ are  $-1,\pm 2, \text{ and } 3$. Sketch a graph of $y = h(x)$ on the grid below.\\*
+\begin{center}
+    \begin{tikzpicture}
+    \draw[step=0.25in,gray,very thin] (0,0) grid (12.7,12.7);
+    \end{tikzpicture}
+\end{center}
+
+\item What is the equation of the line with slope $-1$ passing through the point $(0, 2)$?\\*[25pt]
+
+
+\item Given the function $f(x)=(x-3)(x+3)$. State the $x$-intercepts of the graph of $f$. Find the coordinates of the vertex of the graph of $f$.\\*[5pt]
+
+
+\newpage
+
+\item The graph of the function $p(x)$ is sketched below.
+\begin{center}
+    \begin{tikzpicture}[scale=2.54/4]
+    \draw[thick,<->] (-4.5,0) -- (5.5,0) node[anchor=north west] {\textbf{x}};
+    \draw[thick,<->] (0,-3.5) -- (0,7.5) node[anchor=south east] {\textbf{p(x)}};
+    \foreach \x in {-1, 1} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {$\x$};
+    \foreach \x in {-4,-3,-2, 2, 3, 4} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {};
+    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
+    \tkzInit[xmin=-5,xmax=5,ymin=-7,ymax=7,ystep=1]
+    \tkzFct[color=black,very thick,<->,domain = -3.2:4] {0.2*(x*x-9)*(x-2)};
+    \end{tikzpicture}
+\end{center}
+Which equation could represent $p(x)$?
+\begin{enumerate}
+    \item $p(x)=(x^2- 9)(x-2)$
+    \item $p(x)=x^3 -2x^2+ 9x+18$
+    \item $p(x)=(x^2+ 9)(x-2)$
+    \item $p(x)=x^3 +2x^2- 9x-18$
+\end{enumerate} %Alg2 Regents Jun2017 multiple choice
+
+\item Simplify $4i(3-2i)$\\*[45pt]
+\item Simplify $(6+2i)-(3-2i)$\\*[45pt]
+\item Simplify $(3+2i)(3-2i)$\\*[45pt]
+
+\item Shade the region representing $A \cap B$ in the Venn diagram.\\*
+    \begin{venndiagram2sets}
+    \end{venndiagram2sets}
+\\*[15pt]
+
+\item Given independent events $A$ and $B$, with $\mathrm P(A)=0.4$ and $\mathrm P(B)=0.5$
+\begin{enumerate}
+    \item Find $\mathrm P(A \cap B)$\\*[45pt]
+    \item Find $\mathrm P(A \cup B)$\\*[45pt]
+\end{enumerate}
+
+
+\item Solve the following system of equations algebraically for all values of $x$, $y$, and $z$:
+\[x +y+ z=1\]
+\[2x+4y+6z=2\]
+\[-x+3y-5z=11\]
+
+
+\end{enumerate}
+\end{document}

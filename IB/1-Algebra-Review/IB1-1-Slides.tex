@@ -1,0 +1,215 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%\rhead{\small{5 September 2018}}
+\lhead{\small{BECA / Dr. Huson / 11.1 IB Math Unit 1}}
+
+%\vspace{1cm}
+
+\renewcommand{\headrulewidth}{0pt}
+
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Chris Huson}
+\date{5-21 September 2018}
+
+\begin{document}
+
+\frame{\titlepage}
+
+%\section[Outline]{}
+%\frame{\tableofcontents}
+
+  \section{1.1 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we define functions?}
+    \framesubtitle{CCSS: HSF.IF.C.7 Analyze functions  \hspace{\stretch{1}}  \alert{1.1}}
+
+    \begin{block}{Do Now Handout: Algebra skills check}
+    \begin{enumerate}
+        \item Welcome back to school!
+        \item Assigned seating: \alert{Without saying a word (!),} arrange yourself alphabetically by last name, left to right, front to back.
+        \item Take out notebooks (or blank paper) \& calculator
+        \item Complete handout problem set\\*
+    \end{enumerate}
+    \end{block}
+    Lesson: Linear functions, slope, solving; vertical line test p 4-6 \\%*[5pt]
+    Homework: Problem set: Function identification 1A \& 1B p. 6-7
+  }
+%Prepare copies of formula sheets
+
+  \section{1.2 Drui}
+  \frame
+  {
+    \frametitle{GQ: What are domain and range?}
+    \framesubtitle{CCSS: HSF.IF.C.7 Analyze functions  \hspace{\stretch{1}} \alert{1.2}}
+
+    \begin{block}{Do Now: Substitution notation}
+    \begin{enumerate}
+      \item Handout, IB exam problem
+      \item Challenge: %2 points Aug 2017
+        Verify the following Pythagorean identity for all values of $x$ and $y$:
+        \[(x^2+y^2)^2=(x^2-y^2)^2+(2xy)^2\]
+    \end{enumerate}
+    \end{block}
+    Lesson: Domain, range, slope, average rate applications\\[5pt]
+    Calculator deposits \$20
+    \\[5pt]
+    Homework: Average rate problems (Algebra II Regents)\\
+    Due: notebook, folder, calculator
+  }
+
+  \section{1.3 Drui}
+  \frame
+  {
+    \frametitle{GQ: What is asymptotic behavior?}
+    \framesubtitle{CCSS: HSF.IF.B.4 Interpret key features of functions and their graphs \hspace{\stretch{1}} \alert{1.3}}
+
+    \begin{block}{Do Now: Graphing functions}
+    \begin{enumerate}
+        \item Graph \#3a, p. 12 and one other from problem 3. Use 1 cm = 1 unit
+    \end{enumerate}
+    \end{block}
+    Review Average rate of change problem set\\ \bigskip
+    Lesson: Rational functions, factoring denominators, asymptotes pp. 8-11
+    \\%*[5pt]
+    Homework: Function substitution, domain and range
+  }
+
+\frame
+{
+  \frametitle{Domain and range of a function \hspace{\stretch{1}} \alert{1.3}}
+  %\framesubtitle{CCSS: HSF.IF.B.4 Interpret key features of functions and their graphs \hspace{\stretch{1}} \alert{1.3}}
+  \begin{enumerate}
+    \item Write down the domain and range of the function graphed\\*
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.35\textwidth]{discrete-domain-graph.jpeg}
+    \end{figure}
+
+    \item What is the range of this function modeling a bicycle wheel?
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.70\textwidth]{sine-bike-wheel.pdf}
+    \end{figure}
+  \end{enumerate}
+  }
+
+\frame
+{
+  \frametitle{Function substitution \hspace{\stretch{1}} \alert{1.3}}
+  Given $f(x)=3x+2$. What is $f(2x-1)$? \bigskip
+    \begin{enumerate}
+        \item Perform the substitution, putting $2x-1$ in parenthesis.\\*[20pt]
+        \item Simplify, beginning each line with a leading equals sign if it is equal to the line above.\\*[40pt]
+  \end{enumerate}
+  }
+
+  \section{1.4 Drui}
+  \frame
+  {
+    \frametitle{GQ: How do we solve quadratic equations?}
+    \framesubtitle{CCSS: HSF.IF.B.4 Interpret key features of functions and their graphs \hspace{\stretch{1}} \alert{1.4}}
+
+    \begin{block}{Do Now: Factoring}
+    \begin{enumerate}
+      \item Find the intercepts, axis of symmetry, and minimum point of the graph of the function $f(x)=(x-1)(x-5)$?
+      \item Factor the function $g(x)=x^2-x-12$ to determine the features of its graph.
+      \item Convert the function $h(x)=x^2+4x+3$ to the vertex form, $h(x)=a(x-h)^2+k$. Write down its vertex.
+    \end{enumerate}
+    \end{block}
+    Lesson: Factoring, setting $=0$, checking solutions, $x-$ and $y-$intercepts, vertex, axis of symmetry
+    \\ \bigskip
+    Homework: Factoring practice, completing the square, graphing\\
+    Skip around and do what you can by tomorrow
+  }
+
+  \section{1.5 Drui - Monday September 17}
+
+  \frame
+  {
+    \frametitle{How do we graph quadratics?}
+    \framesubtitle{CCSS: HSF.IF.B.4 Interpret key features of functions and their graphs \hspace{\stretch{1}} \alert{1.5}}
+
+    \begin{block}{Consider the function $f(x)=-x^2+2x+3$}
+    \begin{enumerate}
+        \item Factor $f$ and state its zeros.
+        \item Restate $f$ in vertex form. Write down the vertex as an ordered pair.
+        \item Over what intervals is the function increasing, decreasing, and neither?
+        \item If $f(x)$ represents the height of a diver over the domain $0 \leq x \leq 3$, interpret $f(0)$, the vertex, and $f(3)$
+        \item What does the "slope" of the curve represent?
+    \end{enumerate}
+    Lesson: Example 18 p. 54
+    \end{block}
+  }
+
+
+\section{1.6 Drui Tuesday September 18th, laptop cart D}
+  \frame
+  {
+    \frametitle{How do we communicate mathematical results?}
+    \framesubtitle{CCSS: MP.4 Model with mathematics \hspace{\stretch{1}} \alert{1.6}}
+
+    \begin{block}{Technical skills needed to communicate mathematics}
+    \begin{enumerate}
+        \item Word processing: Microsoft Word and equation editor
+        \item Computer calculators: Desmos; domain restriction, labeling
+        \item Cloud storage: Dropbox
+        \item Technical writing standards: MLA format (Purdue OWL)
+        \item Writing style: declarative
+        \item Assessment criteria: IB exploration criterion \emph{B: Mathematics Presentation}
+    \end{enumerate}
+    \end{block}
+    Lesson: Shared folder structure, graph copy/paste, MLA template\\ \bigskip
+    Homework: Pre-test
+  }
+
+\section{1.7 Drui Review Thursday September 20th}
+  \frame
+  {
+    \frametitle{GQ: How do we simplify exponents?}
+    \framesubtitle{CCSS: HSN.RN.A.2 Rewrite expressions involving radicals and rational exponents using the properties of exponents \hspace{\stretch{1}} \alert{1.7}}
+
+    \begin{block}{Do Now: Exponent and radicals practice}
+      \begin{enumerate}
+      \item Exponent product, quotient, and power rules
+      \item Fractional exponents
+      \item Negative exponents
+      \item Graphing exponential function
+      \end{enumerate}
+   \end{block}
+    Lesson: Product, quotient, power rules, $\sqrt{x^4}$ \\ \bigskip
+    Homework: Exponent and radicals practice
+  }
+
+\end{document}
+
+\section{1.8 Unit exam September 24th}
+  \frame
+  {
+    \frametitle{GQ: How do we use functions in algebra?}
+    \framesubtitle{CCSS: HSF.IF.B.4 Interpret key features of functions and their graphs \hspace{\stretch{1}} \alert{1.8}}
+
+  Exam \\ \bigskip
+  Homework: Pre-test
+  }

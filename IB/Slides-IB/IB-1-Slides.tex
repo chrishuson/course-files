@@ -1,0 +1,468 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%\rhead{\small{5 September 2018}}
+\lhead{\small{BECA / Dr. Huson / 11.1 IB Math Unit 1}}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Chris Huson}
+\date{5-21 September 2018}
+
+\begin{document}
+\frame{\titlepage}
+\section[Outline]{}
+\frame{\tableofcontents}
+
+  \section{1.1 First day of IB Mathematics 5 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we define functions?}
+    \framesubtitle{CCSS: HSF.IF.C.7 Analyze functions \hfill \alert{1.1 Thursday 5 Sept}}
+
+    \begin{block}{Do Now Handout: Algebra skills check}
+    \begin{enumerate}
+        \item Welcome back to school!
+        \item Assigned seating: arrange yourself alphabetically by last name, left to right, front to back.
+        \item Take out notebooks (or blank paper) \& calculator
+        \item Complete handout problem set\\*
+    \end{enumerate}
+    \end{block}
+    Lesson: Linear functions, slope, solving; vertical line test p 4-6 \\%*[5pt]
+    Homework: Problem set: Function identification 1A \& 1B p. 6-7
+  }
+%Prepare copies of formula sheets
+
+  \section{1.2 Function domain and range}
+  \frame
+  {
+    \frametitle{GQ: What are domain and range?}
+    \framesubtitle{CCSS: HSF.IF.C.7 Analyze functions \hfill \alert{1.2 Friday 6 Sept}}
+
+    \begin{block}{Do Now: Substitution notation}
+    \begin{enumerate}
+      \item Handout, IB exam problem
+      \item Challenge: %2 points Aug 2017
+        Verify the following Pythagorean identity for all values of $x$ and $y$:
+        \[(x^2+y^2)^2=(x^2-y^2)^2+(2xy)^2\]
+    \end{enumerate}
+    \end{block}
+    Homework review\\
+    Lesson: Domain, range, function review\\[5pt]
+    Calculator deposits \$20
+    \\[5pt]
+    Homework: Polynomial simplification, graphing linear functions\\
+    Due: notebook, folder, calculator
+  }
+
+  \section{1.3 Precision and significant figures, 9 Sept}
+  \frame
+  {
+    \frametitle{GQ: What is the appropriate precision for a calculation?}
+    \framesubtitle{CCSS: MP5 Attend to precision \hfill \alert{1.3 Monday 9 Sept}}
+
+    \begin{block}{Do Now: Textbook chapter warmup, use looseleaf paper}
+    \begin{enumerate}
+        \item Skills check \#1-3 p. 3
+    \end{enumerate}
+    \end{block}
+    Lesson: Rounding, significant figures, error bars pp. 1-5\\
+    Exercise 1A, \#1-2, p. 5
+    \\[0.5cm]
+    Homework: Calculation and rounding practice
+  }
+
+  \section{1.4 Error bounds, 10 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we measure the bounds of errors?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.4 Tuesday 10 Sept}}
+
+    \begin{block}{Do Now: Calculator practice}
+    \begin{enumerate}
+        \item Chapter review \#1 p. 39
+        \item Pay careful attention to saving calculator values, rather than copying to paper and reentering.
+        \item Check your answers in back of book, p. 766
+    \end{enumerate}
+    \end{block}
+    Lesson: Bounds and errors pp. 6-8\\ \bigskip
+    Practice exercises 1B p. 8-9\\
+    Homework: Function substitution, domain and range
+  }
+
+  \section{1.5 Exponents \& scientific notation, 11 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we write very large or small numbers?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.5 Wednesday 11 Sept}}
+
+    \begin{block}{Do Now: Precision practice}
+    \begin{enumerate}
+        \item Practice exercises 1B p. 8-9
+        \item Pay careful attention to saving calculator values, rather than copying to paper and reentering.
+        \item Check your answers in back of book, p. 765
+    \end{enumerate}
+    \end{block}
+    Lesson: Exponents \& scientific notation pp. 9-12\\ \smallskip
+    Note exponent rules top of page 11\\ \smallskip
+    Homework: Practice exercises 1C p. 12-13
+  }
+
+
+  \section{1.6 Right triangle trigonometry, 12 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the side lengths of a right triangle?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.6 Thursday 11 Sept}}
+
+    \begin{block}{Do Now: Precision practice}
+    \begin{enumerate}
+        \item Chapter review \#2 p. 39
+        \item Which will be easier to use, scientific notation or the fully expanded number?
+        \item Use proper notation to display your answer clearly
+    \end{enumerate}
+    \end{block}
+    Homework review \\
+    Lesson: Right triangle trigonometry pp. 13-15\\ \smallskip
+    Angle of elevation and depression page 11\\ \smallskip
+    Homework: Practice exercises 1D p. 16-17
+  }
+
+
+  \section{1.7 Sine rule, 13 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the side lengths of a non-right triangle?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.7 Friday 13 Sept}}
+
+    \begin{block}{Do Now: Precision practice}
+    \begin{enumerate}
+        \item Chapter review \#3 p. 39
+        \item Learn how to use the calculator to solve an equation. (multiple methods)
+    \end{enumerate}
+    \end{block}
+    Lesson: Non-right triangles and the sine rule pp. 17-21\\ \smallskip
+    The ambiguous case page 21\\ \smallskip
+    Homework: Practice exercises 1E p. 21-22
+  }
+
+  \section{1.8 Sine formula for the area of a triangle, 16 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the area of a triangle?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.8 Monday 16 Sept}}
+
+    \begin{block}{Do Now: Precision practice}
+    \begin{enumerate}
+        \item Chapter review \#4b p. 39
+        \item Note that both $\displaystyle \frac{15}{\sin 31}=\frac{13.4}{\sin R}$ and $\displaystyle \frac{\sin 31}{15}=\frac{\sin R}{13.4}$. \\ \bigskip
+        Which is easier to solve?
+    \end{enumerate}
+    \end{block}
+    Lesson: Practicing applying the sine rule pp. 17-21\\
+    The ambiguous case page 21\\
+    The sine formula for the area of a triangle page 22\\ \smallskip
+    Homework: Practice exercises 1E p. 21-22
+  }
+
+  \section{1.9 Deltamath: scientific notation, trig 17 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we practice the law of sines?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.9 Tuesday 17 Sept}}
+
+    \begin{block}{Deltamath practice: scientific notation, trig}
+      \begin{enumerate}
+        \item Laptops, login with Teacher ID \alert{546068}
+        \item Do Deltamath sections in order \\
+        Practice comes first, then new topics
+        \item Work extra problems on the skills you need to practice
+    \end{enumerate}
+    \end{block}
+    New material: The sine formula for the area of a triangle page 22\\
+    Radian / degree conversion; law of cosines\\ \smallskip
+    Homework: Complete Deltamath problems, 10:00PM deadline
+  }
+
+  \section{1.10 Cosine rule, 18 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the angles of a triangle?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.10 Wednesday 18 Sept}}
+
+    \begin{block}{Do Now: Precision practice}
+    \begin{enumerate}
+        \item Chapter review \#6 p. 39
+    \end{enumerate}
+    \end{block}
+    Lesson: The cosine rule pp. 23-24\\
+    The sine formula for the area of a triangle page 22\\ \smallskip
+    Homework: Practice exercises 1F p. 24-25
+  }
+
+
+  \section{1.11 Sine \& cosine rule practice, 19 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we ``solve" a triangle?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.11 Thursday 19 Sept}}
+
+    \begin{block}{Do Now: IB exam problems}
+    \begin{enumerate}
+        \item Applications of the sine and cosine rules
+    \end{enumerate}
+    \end{block}
+    Lesson: The cosine rule pp. 23-24\\
+    The sine formula for the area of a triangle page 22\\ \smallskip
+    Homework: Study Arc length and area of sector \\
+    Oxford textbook pp. 25-27 \\
+    Deltamath, practice circle sectors and arc length \\
+    Khan Academy, log in and use videos as resource (DrHuson)
+  }
+
+  \section{1.12 Circle sectors \& arc length, 20 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the angles of a triangle?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.12 Friday 20 Sept}}
+
+    Continue IB exam trig problems \\ \bigskip
+    Lesson: The cosine rule pp. 23-24\\
+    The sine formula for the area of a triangle page 22\\ \smallskip
+    Homework: Complete Khan videos and Deltamath problems if you haven't already. \\
+    Practice exercises 1G p. 26-27
+  }
+
+  \section{1.13 3-dimensional figures, volume, 23 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the volumes of objects?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.13 Monday 23 Sept}}
+
+    \begin{block}{Do Now: Developing inquiry skills, top of page 28}
+      \begin{enumerate}
+          \item Draw a scale model of the surveying of Mt. Everest on IB centimeter graph paper. (use a protractor)
+          \item Determine the height of the mountain by measuring your model
+          \item Calculate the height using trig formulas
+      \end{enumerate}
+      \end{block}
+  
+    Continue IB exam trig problems \\ \bigskip
+    Lesson: Solid geometry terminology, volume formulas\\ \smallskip
+    Homework: Practice exercises 1H p. 30-31 \\
+    Khan videos and Deltamath problems
+  }
+
+  \section{1.14 3-dimensional figures, surface area, nets, 24 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the volumes of objects?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.14 Tuesday 24 Sept}}
+
+    \begin{block}{Do Now: Calculate the volume of each object}
+      \begin{enumerate}
+          \item A sphere with a radius of 15 cm
+          \item A circular pond 40 meters in diameter with a depth of 20 centimeters
+          \item A cone with a height of 2 feet and diameter of 20 inches
+          \item Find the radius of a sphere with volume $215 \pi$
+      \end{enumerate}
+      \end{block}
+    Lesson: Solid geometry surface area, nets\\ \smallskip
+    Investigation 7, page 32 \\ \bigskip
+    Homework: Practice exercises 1I p. 35-36
+  }
+
+  \section{1.15 3-dimensional figures, internal angles, 25 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the slant angles and lengths?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.15 Wednesday 25 Sept}}
+
+    \begin{block}{Do Now: Calculate the surface area of each object}
+      \begin{enumerate}
+          \item A cylinder 4 cm in diameter with a height of 5 millimeters
+          \item A sphere with a radius of 15 cm
+          \item A pyramid with a height of 40 feet and base 50 feet by 50 feet
+          \item Find the radius of a sphere with surface area $72 \pi$
+      \end{enumerate}
+      \end{block}
+    Lesson: Solid geometry slant angles and lengths\\ \smallskip
+    Investigation 7, page 32 \\ \bigskip
+    Homework: Return and complete exercises 1E p. 21-22
+  }
+
+  \section{1.16 3-dimensional figures, internal angles, 26 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the slant angles and lengths?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.16 Thursday 26 Sept}}
+
+    \begin{block}{Do Now: Calculate the surface area of a cone}
+      \begin{enumerate}
+          \item Developing inquiry skills p. 38 (Mt. Everest)
+          \item What formula would apply?
+       \end{enumerate}
+      \end{block}
+    Lesson: Solid geometry, Chapter Summary\\ \smallskip
+    Homework: Chapter review 1-10 p. 39-40 (revisit problems)
+  }
+
+
+  \section{1.17 review, bounds, 27 Sept}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the bounds around a value?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.17 Friday 27 Sept}}
+
+    \begin{block}{Do Now Quiz: \href{https://www.smartbmicalculator.com/}{Calculate Body Mass Index} (link)}
+      BMI is a measure of a healthy personal weight, $\displaystyle BMI = \frac{w}{h^2}$ \\ \smallskip
+      $w$ is a person's weight in kilograms and $h$ is height in meters
+      \begin{enumerate} 
+          \item Given a height of 170 cm and weight of 77 kg, find the BMI
+          \item These measurements are not exact. Assuming the height is between 169-171 cm and weight 76-78 kg, find the bounds of the BMI.
+       \end{enumerate}
+      \end{block}
+    Lesson: Solid geometry, Chapter Summary\\ \smallskip
+    Homework: Chapter review 11-17 p. 39-40 (revisit problems)
+  }
+
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the bounds around a value?}
+    \framesubtitle{CCSS: MP5 attend to precision}
+
+    \begin{block}{Solution to Do Now Quiz: Calculate Body Mass Index 
+      \alert{(7)}}
+      \begin{enumerate} 
+          \item $\displaystyle BMI = \frac{77}{1.70^2}$ 
+          \hspace{3cm} \alert{M1 A1 allow $170^2$}\\ \smallskip
+            \hspace{0.8cm} $=26.64359 \dots$ \\
+          \hspace{0.8cm} $\approx 26.6$ 
+            \hspace{3.2cm} \alert{A1 (N2))}
+          \item Lowerbound: $\displaystyle BMI = \frac{76}{1.71^2}$ 
+          \hspace{0.8cm} \alert{M1 A1} \\ \smallskip
+          \hspace{0.8cm} $=25.9909 \dots$ \\
+          \hspace{0.8cm} $\approx 26.0$  \\ \smallskip
+          Upperbound: $\displaystyle BMI = \frac{78}{1.69^2}$ \\ \smallskip
+          \hspace{0.8cm} $=27.30996 \dots$ \\
+          \hspace{0.8cm} $\approx 27.3$  \hspace{3cm} \alert{A1 A1 (N3)} \\
+          \hspace{4cm} \alert{award M1 A1 f.t. for 26.6, 26.7}
+       \end{enumerate}
+      \end{block}
+    Proper header with full name, date, and title (5 percentage points)
+    
+  }
+
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the bounds around a value?}
+    \framesubtitle{CCSS: MP5 attend to precision}
+
+    \begin{block}{Quiz Corrections: Calculate Body Mass Index 
+      \alert{required}}
+      \begin{itemize} 
+          \item Proper header with full name, date, and title
+          \item Work downward in single column on left, in pen 
+            \\(you can add notes and diagrams on the right)
+          \item Skip a line and number the problem
+          \item Label to the left of equals sign (e.g. $BMI=$)
+          \item Show substitution step
+          \item Write the full calculator display (with ellipse)
+          \item Show the rounded value, 3 sig-figs (exact value is also ok)
+       \end{itemize}
+      \end{block}
+    Copy this checklist into your notebook
+    
+  }
+
+  \section{1.18 review, trig, 2 October}
+  \frame
+  {
+    \frametitle{GQ: How do we apply trig rules to situations?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.18 Wednesday 2 October}}
+
+    \begin{block}{Do Now: Classwork handout \#1}
+      \begin{itemize}
+          \item The area of a triangle
+          \item The cosine rule 
+          \item The sine rule, including the ambiguous case
+       \end{itemize}
+      \end{block}
+    Lesson: Circle sector situations\\ \smallskip
+    Homework: Complete handout. (revisit Chapter review 1-17 p. 38-40)
+  }
+
+  \section{1.19 review, trig, 3 October}
+  \frame
+  {
+    \frametitle{GQ: How do we apply trig rules to situations?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.19 Thursday 3 October}}
+
+    \begin{block}{Do Now: Classwork handout \#1}
+      \begin{itemize}
+          \item The area of a triangle
+          \item The cosine rule 
+          \item The sine rule, including the ambiguous case
+       \end{itemize}
+      \end{block}
+    Lesson: Circle sector situations\\ \smallskip
+    Homework: Complete handout. (revisit Chapter review 1-17 p. 38-40)
+  }
+
+  \section{1.20 test review, trig, 7 October}
+  \frame
+  {
+    \frametitle{GQ: How do we apply trig rules to situations?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.20 Monday 7 October}}
+
+    \begin{block}{Do Now: Review exit note quiz 1.16}
+      \begin{itemize}
+          \item Using the law of sines to solve a triangle
+          \item The Pythagorean theorem and slant height 
+          \item The area of a triangle, including the ambiguous case
+       \end{itemize}
+      \end{block}
+    Lesson: Review bounds, rounding (BMI quiz)\\ \smallskip
+    \hspace{2cm} Review trig law of sines, cosines, triangle area\\ \smallskip
+    Homework: Pretest \alert{(unit exam tomorrow)}
+  }
+
+  \section{1.21 unit test Trigonometry, marking period end, 8 October}
+  \frame
+  {
+    \frametitle{GQ: How do we apply trig rules to situations?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{1.21 Tuesday 8 October}}
+
+    \begin{block}{Unit Exam}
+      \begin{itemize}
+          \item Bounds of approximation, rounding (BMI application)
+          \item Using the law of cosines to find a $\triangle$ length or angle
+          \item Using the law of sines to solve a triangle
+          \item The area of a triangle, including the ambiguous case
+          \item The Pythagorean theorem and slant height 
+       \end{itemize}
+      \end{block}
+    Homework: Statistics concepts
+  }
+
+\end{document}

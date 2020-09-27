@@ -1,0 +1,212 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\lhead{\small{BECA / Huson / IB Math Unit 7 - Sequences \& exponential functions}}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Chris Huson}
+\date{24 March 2020}
+
+\begin{document}
+\frame{\titlepage}
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{7.1 Online startup - exponents \hfill Tuesday 24 March}
+  \frame
+  {
+    \frametitle{GQ: How do we use exponents (and logs)?}
+    \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{7.1 Tuesday 24 March}}
+    \begin{block}{Do Now: Welcome to Beca Online!}
+      \begin{itemize}
+        \item Complete the attendance question in Google Classroom
+        \item Write in your notebook my new email, chuson@beca324.org
+        \item Complete the G-Classroom "Do Now" questions
+      \end{itemize}
+  
+      \end{block}
+      BECA Online expectations \\[0.25cm]
+      Lesson: \\
+      Applications of exponential functions: log plots \\
+      Exit note: complete G-Classroom checkin survey \\
+      Homework: Kognity assignment, due by 10:00pm Thursday
+      }
+
+\section{7.2 Arithmetic sequences \hfill Friday 26 March}
+\frame
+{
+  \frametitle{GQ: How do we model sequences?}
+  \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{7.2 Friday 26 March}}
+  \begin{block}{Do Now: Study the COVID-19 Expert Forecast for the U.S.}
+    \begin{itemize}
+      \item When will the number of hospitalizations peak, in their opinion?
+      \item How much worse than the flu will this be in terms of annual deaths?
+      \item Give a short written answer by private Zoom chat
+    \end{itemize}
+
+    \end{block}
+    Kognity textbook feedback \\[0.25cm]
+    Lesson: \\
+    Analyzing the pandemic as frequencies, probabilities, \& sequences \\
+    Breakouts: infections, ER seasonality, hospitalizations, deaths \\
+    Project: Pandemic analysis, due 10:00pm Tuesday
+    }
+
+\frame
+{
+  \frametitle{GQ: How do we model sequences?}
+  \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{7.2 Friday 26 March}}
+
+  \begin{block}{Project: Pandemic analysis}
+    \begin{itemize}
+      \item Organize as an exploration: intro, body, conclusion, reflection, engagement
+      \item ``The aim of this exploration is to understand COVID-19 in NY State as a exponential or geometric process''
+      \item Select one metric: infections, hospitalizations, or deaths
+      \item Use a table(s) and/or chart(s) (pie, bar) as background
+      \item Fit an exponential function / geometric sequence to the NYC COVID-Tracking data
+    \end{itemize}
+    \end{block}
+    }
+
+\section{7.4 Arithmetic sequences and series \hfill Monday 6 April}
+\frame
+{
+  \frametitle{GQ: How do we model sequences?}
+  \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{7.4 Monday 6 April}}
+  \begin{block}{Do Now: Reported NY State COVID-19 deaths }
+    \begin{itemize}
+      \item On Thursday and Friday last week, NY State saw 562 and 630 fatalities respectively. Find the percent change.
+      \item Identify the key features of the Desmos model and graph (for discussion).
+    \end{itemize}
+
+    \end{block}
+    Kognity textbook arithmetic sequences and series problems \\[0.25cm]
+    Lesson: \\
+    Analyzing the pandemic as geometric sequence \\
+    Short writing exercise (Google docs)
+    }
+
+\frame
+{
+  \frametitle{Arithmetic sequences and series}
+  \[u_n=u_1+(n-1)d\]
+  \[S_n=\frac{n}{2}(2u_1+(n-1)d); \; S_n=\frac{n}{2}(u_1+u_n)\]
+  \begin{enumerate}
+    \item In an arithmetic sequence, the first term is 3 and the second term is 9.
+      \begin{enumerate}[(a)]
+          \item Find the common difference. \vspace{0.5cm}
+          \item Find the eighth term.\vspace{1cm}
+          \item Find the sum of the first eight terms of the sequence.
+      \end{enumerate}
+    \end{enumerate}\vspace{5cm}
+    }
+
+\frame
+{
+  \frametitle{Arithmetic sequences and series}
+  \begin{enumerate}
+    \item The first three terms of an arithmetic sequence are $u_1=16$, $u_2=13.5$, and $u_3=11$.
+      \begin{enumerate}[(a)]
+          \item Find the common difference. \vspace{1cm}
+          \item Find the eleventh term.\vspace{2cm}
+          \item Given that the $k$th term of the sequence, $u_k=1$. Find $k$.
+      \end{enumerate}
+    \end{enumerate}\vspace{8cm}
+    }
+
+\frame
+{
+  \frametitle{Arithmetic sequences and series}
+  \begin{enumerate}
+    \item In an arithmetic sequence, $u_2=14$ and $u_5=23$.
+      \begin{enumerate}[(a)]
+          \item Find the common difference and the first term. \vspace{2.5cm}
+          \item The sum of the first $k$ terms of the sequence $S_k=207$. Find $k$.
+      \end{enumerate}
+    \end{enumerate}\vspace{5cm}
+    }
+
+\section{7.5 Geometric sequences \hfill Monday 27 April}
+\frame
+{
+  \frametitle{GQ: How do we model geometric sequences?}
+  \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{7.5 Monday 27 April}}
+  \begin{block}{Do Now: Arithmetic sequence and series}
+      Given an arithmetic sequence, 19, 12, 5, ...
+        \begin{enumerate}[(a)]
+            \item Find the common difference.
+            \item Find the 14th term.
+            \item Find the sum of the first 14 terms of the sequence.
+        \end{enumerate}
+    \end{block}
+
+    Lesson: \\
+    Geometric sequences review \\
+    Deltamath practice in class. Written problem set due 10:00 PM\\[0.25cm]
+    Kognity textbook compound interest 
+    }
+
+\frame
+{
+  \frametitle{Geometric sequences and series: $u_n=u_1 \times r^{n-1}$}
+  \begin{enumerate}
+    \item Find the common ratio of each geometric sequence
+      \begin{enumerate}[(a)]
+          \item $u_1=6, u_2=2$ \vspace{1.5cm}
+          \item $2.5, -7.5, 22.5$\vspace{2cm}
+          \item $u_1=16, u_5=81$ \vspace{2cm}
+      \end{enumerate}
+    \end{enumerate}\vspace{5cm}
+    }
+    
+\frame
+{
+  \frametitle{Geometric sequences and series: $u_n=u_1 \times r^{n-1}$}
+
+  \begin{enumerate}
+    \item Given the geometric sequence, find the $7$th term \\
+          $\displaystyle \frac{1}{3}, -\frac{1}{9}, \frac{1}{27}, \dots$;  $u_7=?$ \vspace{2cm}
+    \item $u_1=31.25, r=\frac{4}{5}$, find $u_5$ \vspace{2cm}
+    \end{enumerate}\vspace{5cm}
+    }
+
+\frame
+{
+  \frametitle{Geometric sequences and series: $u_n=u_1 \times r^{n-1}$}
+
+  \begin{enumerate}
+    \item Given the geometric sequence, find the 1st term and the common ratio \\
+         $u_2=4.8, u_5=16.2$ \vspace{2cm}
+    \end{enumerate}\vspace{5cm}
+    }
+
+\frame
+{
+  \frametitle{Geometric sequences and series}
+  \[u_n=u_1 \times r^{n-1}\]
+  \[S_n=\frac{u_1  (r^{n}-1)}{r-1} =\frac{u_1  (1-r^{n})}{1-r} \]
+    }
+\end{document}
+
+

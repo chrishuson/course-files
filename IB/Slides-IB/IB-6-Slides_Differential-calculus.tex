@@ -1,0 +1,275 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\lhead{\small{BECA / Dr. Huson / IB Math Unit 6 - Differential Calculus}}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Chris Huson}
+\date{2 March 2020}
+
+\begin{document}
+\frame{\titlepage}
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{6.1 Intro to calculus \hfill Wednesday 26 February}
+\frame
+{
+  \frametitle{GQ: How do we graph tangents to functions?}
+  \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{6.1 Wednesday 26 February}}
+  \begin{block}{Do Now: Linear equation practice}
+    \begin{enumerate}
+      \item Write down the equation of the line through $(2,-3)$ with slope $m=2$
+      \item Write down the equation of the line through $(-1,0)$ perpendicular to the line with slope $m=2$
+      \item Sketch the function $f(x)=x^2+1$ and $g(x)=-2x$ on the same axes
+    \end{enumerate}
+    \end{block}
+    Lesson: Polynomial function terminology, the power rule
+    Homework: Deltamath calculus practice
+    }
+
+  \section{6.2 Intro to calculus \hfill Thursday 27 February}
+  \frame
+  {
+    \frametitle{GQ: How do we graph tangents to functions?}
+    \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{6.2  Thursday 27 February}}
+    \begin{block}{Do Now: Linear equation practice}
+      \begin{enumerate}
+        \item Write down the equation of the line through $(2,-3)$ with slope $m=2$
+        \item Write down the equation of the line through $(-1,0)$ perpendicular to the line with slope $m=2$
+        \item Sketch the function $f(x)=x^2+1$ and $g(x)=-2x$ on the same axes
+      \end{enumerate}
+      \end{block}
+      Lesson: Polynomial function terminology, the power rule
+      Homework: Deltamath calculus practice
+      }
+
+  \section{6.3 Power rule - Deltamath practice \hfill Friday 28 February}
+  \frame
+  {
+    \frametitle{GQ: How do we graph tangents to functions?}
+    \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{6.3  Friday 28 February}}
+    \begin{block}{Do Now: Differentiation of polynomials practice}
+      \begin{enumerate}
+        \item Find the derivative of $h(x)=x^2+5$
+        \item Given $g(x)=x^3 + 12x^2-1$. Find $g'(x)$
+        \item Given $f(x)=x^3 + 7$. 
+        \begin{enumerate}
+          \item Find $f(-1)$
+          \item Find $f'(x)$
+          \item Find the derivative of $f$ when $x=-1$.
+          \item Write down the equation of the tangent to $f$ at $x=-1$
+        \end{enumerate}
+      \end{enumerate}
+      \end{block}
+      Lesson: Apply the power rule for taking derivatives\\
+      Classwork: Deltamath calculus practice (finish for homework)
+      }
+
+  \section{6.4 Review calculator functions \hfill Monday 2 March}
+  \frame
+  {
+    \frametitle{GQ: How do we graph tangents to functions?}
+    \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{6.4 Monday 2 March}}
+    \begin{block}{Do Now: $f(x)=x^3-5x^2+5x+2$}
+      \begin{enumerate}
+        \item What point does $f$ go through when $x=1$?
+        \item Find $f'(x)$
+        \item What is the slope of the line tangent to the function when $x=1$?
+        \item Write down the equation of the tangent to $f$ at $x=1$
+        \item Graph the function and its tangent at $x=1$ on your calculator.
+        \item Sketch the graph.
+      \end{enumerate}
+      \end{block}
+      Lesson: Using the Casio to calculate derivatives\\
+      Classwork: Practice calculator functions (\alert{pop quiz warning!})
+      }
+      
+      \frame
+      {
+        \frametitle{GQ: How do we graph tangents to functions?}
+        \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{6.4 Monday 2 March}}
+        {Calculator practice}
+          \begin{enumerate}
+            \item Find the solutions for the system, $f(x)=g(x)$.\\
+                $f(x)=-2x^2+5x+7$ \qquad $g(x)=-2x+4$ \vspace{0.3cm}
+                % x=-0.386, 3.886
+            \item Perform a linear regression on the data, finding $y=ax+b$. 
+              \begin{center}
+              \begin{tabular}{|l|c|c|c|c|c|c|c|}
+                  \hline
+                  $x$ & 17 & 18 & 17 & 19 & 23 & 15 & 16 \\ 
+                  \hline 
+                  $y$ & 71.1 & 78.6 & 69.2 & 71.2 & 80.5 & 55.7 & 58.4 \\ 
+                  \hline 
+                  \end{tabular}
+              \end{center}
+              \begin{enumerate}
+                  \item Write down the value of $a$, $b$. %a=2.90629, b=17.3447
+                  \item Write down the correlation coefficient $r$.  %r=0.81267128
+                  \item Use your regression line to estimate $y$ for $x=22$.  %y=81.2832
+              \end{enumerate}
+            \item $a=12.3$, $b=14.7$, $\theta = 71^\circ$. Find the third side length, $c$.
+            \item $a=11.4$, $b=17.1$, $c=16.0$.
+          \end{enumerate}
+          }
+
+\section{6.5 Quiz calculator functions, Deltamath calculus \hfill Tuesday 3 March}
+  \frame
+  {
+    \frametitle{GQ: How do we graph tangents to functions?}
+    \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{6.5 Tuesday 3 March}}
+    \begin{block}{Do Now Quiz: Calculator functions D}
+      \begin{enumerate}
+        \item Solving systems of equations with handheld technology
+        \item Linear regression
+        \item Using the Casio to calculate derivatives
+      \end{enumerate}
+      \end{block}
+      Classwork: Deltamath calculus Equations of tangent lines \\
+      Homework: Complete Deltamath
+      }
+
+\section{6.6 Solve for extrema with derivative \hfill Thursday 5 March}
+  \frame
+  {
+    \frametitle{GQ: How do we solve for extrema?}
+    \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{6.6 Thursday 5 March}}
+    \begin{block}{Do Now: Calculator functions E}
+      \begin{enumerate}
+        \item Solving systems of equations with handheld technology
+        \item Statistical summary of frequency table data
+        \item Using the Casio to calculate derivatives
+      \end{enumerate}
+      \end{block}
+      Classwork: Solving for horizontal tangent lines\\
+      Homework: Practice calculator functions (\alert{quiz tomorrow!})
+      }
+
+\section{6.7 Solve for extrema with derivative \hfill Friday 6 March}
+  \frame
+  {
+    \frametitle{GQ: How do we solve for extrema?}
+    \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{6.7 Friday 6 March}}
+    \begin{block}{Do Now Quiz: Calculator functions F}
+      \begin{enumerate}
+        \item Tangent to a polynomial function
+        \item Solving systems of equations with handheld technology
+        \item Statistical summary of frequency table data
+        \item Using the Casio to calculate derivatives
+      \end{enumerate}
+      \end{block}
+      Classwork: Solving for horizontal tangent lines\\
+      Homework: Practice calculator functions
+      }
+
+\section{6.8 Solve for extrema with derivative \hfill Monday 9 March}
+  \frame
+  {
+    \frametitle{GQ: How do we solve for extrema?}
+    \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{6.8 Monday 9 March}}
+    \begin{block}{Do Now: Calculator functions G}
+      \begin{enumerate}
+        \item Tangent to a polynomial function
+        \item Solving systems of equations with handheld technology
+        \item Complex calculations: Law of cosine applications
+        \item Using the Casio to calculate derivatives
+      \end{enumerate}
+      \end{block}
+      Lesson: The derivative of a fractional or negative exponent \\ 
+      Solving for horizontal tangent lines; polynomial end behavior, roots \\
+      Homework: Deltamath differentiation practice \\ 
+      Practice calculator functions (\alert{quiz tomorrow?})
+      }
+
+\section{6.9 DN Quiz, Gradescope review \hfill Tuesday 10 March}
+  \frame
+  {
+    \frametitle{GQ: How do we solve for extrema?}
+    \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{6.9 Tuesday 10 March}}
+    \begin{block}{Do Now Quiz: Calculator functions H}
+      \begin{enumerate}
+        \item Tangent to a polynomial function
+        \item Solving systems of equations with handheld technology
+        \item Complex calculations: Law of cosine applications
+      \end{enumerate}
+      \end{block}
+      Lesson: Polynomial end behavior, roots \\
+      Classwork: Deltamath differentiation practice \\ 
+      Homework: complete Deltamath problem set
+      }
+
+\section{6.10 Derivatives of exp, trig function \hfill Thursday 12 March}
+  \frame
+  {
+    \frametitle{GQ: How do we differentiate exponential \& trig functions?}
+    \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{6.10 Thursday 12 March}}
+    \begin{block}{Do Now: Calculator functions J}
+      \begin{enumerate}
+        \item Tangent to a negative power of $x$
+        \item Solving systems of equations with handheld technology
+        \item Applications of sine function, radians and degrees
+      \end{enumerate}
+      \end{block}
+      Lesson: Polynomial end behavior, roots \\
+      Classwork: Solving for extrema algebraically \\ 
+      Homework: Study for quiz, complete Deltamath
+      }
+
+\section{6.11 Derivatives of exp, trig function \hfill Friday 13 March}
+  \frame
+  {
+    \frametitle{GQ: How do we differentiate exponential \& trig functions?}
+    \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{6.11 Friday 13 March}}
+    \begin{block}{Do Now: Exponential functions review}
+      \begin{enumerate}
+        \item Real world examples: finance, social networking, pandemics
+        \item Modeling exponential growth algebraically, graphically, numerically
+        \item Rate of growth calculation, the derivative
+      \end{enumerate}
+      \end{block}
+      Lesson: Derivatives formulas for the exponential and trig functions \\
+      Classwork: Deltamath ``Function Analysis'' \\ 
+      Homework: Complete Deltamath
+      }
+
+\section{6.12 Derivatives of exp, trig function \hfill Monday 16 March}
+  \frame
+  {
+    \frametitle{GQ: How do we differentiate exponential \& trig functions?}
+    \framesubtitle{CCSS: HSF.IF.C8.A Understanding rate of change \hfill \alert{6.12 Monday 16 March}}
+    \begin{block}{Do Now: Exponential functions review}
+      \begin{enumerate}
+        \item Real world examples: finance, social networking, pandemics
+        \item Modeling exponential growth algebraically, graphically, \& numerically
+        \item Rate of growth calculation, the derivative
+      \end{enumerate}
+      \end{block}
+      Lesson: Derivatives formulas for the exponential and trig functions \\
+      Classwork: Deltamath ``6.12 Exponential function basics'' \\ 
+      Homework: Complete Deltamath
+      }
+
+\end{document}
+

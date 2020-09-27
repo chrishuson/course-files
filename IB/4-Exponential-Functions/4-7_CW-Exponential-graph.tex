@@ -1,0 +1,67 @@
+\documentclass[]{book}
+
+\usepackage{import}
+\usepackage{preamble}
+\usepackage{tikz}
+
+\begin{document}
+
+\noindent BECA / Huson / 11.1 IB Math SL \hspace{2in} Name:\\*
+29 November 2018\\[0.5cm]
+Do Now: Exponential function graphing\\
+\textit{Simplify, leaving no negative or fractional exponents.}\\
+
+
+\begin{enumerate}
+
+  \item $5x^{-2}y \times 3x^5 y^{2}$\\*[55pt]
+  \item $\sqrt[3]{a^3 b^{-6}}$\\*[55pt]
+  \item $log_7 49$\\*[55pt]
+  \item $log_4 2 + log_4 8$\\*[55pt]
+
+
+  \item Let $f(x) = \sqrt{2x} +6$ and $g(x)=2x^2$
+  \begin{enumerate}
+      \item Find $(f \circ g)(x)$\\*[65pt]
+      \item Find $f^{-1}(x)$\\*[65pt]
+  \end{enumerate}
+
+\end{enumerate}
+\newpage
+\begin{enumerate}
+\subsubsection{Classwork}
+
+  \item The temperature of a hot iron as it cools is modeled by the function $T(x)=400e^{-0.05x}$ where $T(x)$ is the temperature in degrees Celsius and $x$ is the time in minutes.
+
+  \begin{enumerate}
+      \item Write down the initial temperature at time zero.\\*[25pt]
+      \item Find the temperature after one hour.\\*[45pt]
+      \item When will the temperature of the iron reach 100 degrees Celsius?\\*[55pt]
+      \item On the graph below, sketch the temperature of the iron, labeling the points above A, B, and C.
+  \end{enumerate}
+
+  \begin{figure}[!htbp]
+  \begin{center}
+  \begin{tikzpicture}[xscale= 0.2, yscale=0.015]
+
+  %grid
+  %\draw [thick, color=black,, xstep=1.0cm,ystep=1.0cm] (-5.5,-1.5) grid (5.5,16.5);
+  %\draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-5.5,-1.5) grid (5.5,16.5);
+
+  \foreach \x in {0,10,20,30,40,50,60}
+  \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below]  {$\x$};
+
+  \foreach \y in {0,100,200,300,400,500}
+  \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
+
+  \draw [thick, ->] (0,0) -- (60,0) node [right] {$x$};
+  \draw [thick, ->] (0,0) -- (0,500) node [right] {$T(x)$};
+
+  %\draw [<-, ->] plot[domain= 0:60] (\x, e^\x);
+
+  \end{tikzpicture}
+  \end{center}
+  \end{figure}
+
+\end{enumerate}
+\end{document}

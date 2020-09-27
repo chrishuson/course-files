@@ -1,0 +1,104 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+
+\usepackage{pgfplots}
+\pgfplotsset{width=9cm,compat=1.9}
+
+\usepackage{venndiagram}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / IB Mathematics\\* Unit 6: Differential Calculus functions\\* 9 March 2020}
+
+\begin{document}
+\begin{enumerate}
+    \subsubsection*{6.8 Do Now: Tangents, systems of equations, frequency tables \\ Calculator practice G}
+
+    \item A cubic function $f(x)=x^3-\frac{3}{2}x^2-6x+3$ is shown on the axes below.
+    \begin{center}
+    \begin{tikzpicture}[xscale=1.0, yscale=0.5]
+        \foreach \x in {-2,-1,1,2,3}
+          \draw[shift={(\x,0)},color=black] (0pt,-1pt) -- (0pt,4pt) node[below]  {$\x$};
+        %\foreach \y in {-5,-4,-3,-2,-1,1,2,3}
+          %\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
+          \draw [thick, ->] (-2.5,0) -- (+3.5,0) node [right] {$x$};
+          \draw [thick, ->] (0,-7) -- (0,6) node [right] {$y$};
+        %\fill (1,-4.5) circle[radius=2pt] node [below] {$P$};
+        %\fill (0,-4) circle[radius=2pt] node [right] {$Q$};
+        \draw [<->] plot[samples=50,domain= -2.4:3.5] (\x, {(\x*\x*\x-1.5*\x*\x - 6*\x +3)});
+        \draw [<->] plot[domain= -2.5:-1.5] (\x, {12*\x+25});
+        \draw [<->, dashed] plot[domain= -2.5:-0.5] (\x, {-1/12*\x+5/6});
+        \fill (-2,1) circle[radius=0.08cm] node[above left]{$P$};
+    \end{tikzpicture}
+    \end{center}
+    A tangent to the function at $x=-2$ is drawn with the point of tangency $P$.
+    \begin{enumerate}%[itemsep=0.8cm]
+      \item Write down the derivative of the function, $f'(x)$. \hfill [2]
+      \item Show that the gradient of the tangent line is $12$. \hfill [1]
+      \item Find the equation of the tangent line. \hfill [2]
+      \item Write down the slope of the perpendicular to the tangent line (the ``normal'') \hfill [1]
+      \item Find the $x$ values of 
+      \begin{enumerate}%[itemsep=0.8cm]
+        \item the local minimum and 
+        \item the local maximum of $f$. \hfill [2]
+        \end{enumerate}
+    \end{enumerate}
+    \begin{tikzpicture}
+      \draw (0,0) rectangle (15.2,7);
+      \draw (8,0) rectangle (15.2,5.5);
+      \node at (0,7)[below right]{\textbf{Working:}};
+      \node at (8,5.5)[below right]{\textbf{Answers:}};
+      \draw [dotted] (9,4.1)node[left]{(a)}--(15,4.1);
+      \draw [dotted] (9,3.2)node[left]{(c)}--(15,3.2);
+      \draw [dotted] (9,2.3)node[left]{(d)}--(15,2.3);
+      \draw [dotted] (9.35,1.4)node[left]{(e)(i)}--(15,1.4);
+      \draw [dotted] (9.3,0.5)node[left]{(ii)}--(15,0.5);
+  \end{tikzpicture}
+
+  \newpage
+    \item The function $\cos x$ equals $\frac{1}{2}$ twice in each period. Set your calculator for radians, and find the solutions for the system ($x$ such that $f(x)=g(x)$) over the domain $0 \leq x \leq 2 \pi$. Sketch the graph to show working.
+    \begin{multicols}{2}
+        \qquad $f(x)=\cos x$ \\[0.25cm] $g(x)=\frac{1}{2}$ \hfill [2] \vspace{0.3cm}
+        % x=-3.277, 067
+    \end{multicols}
+        \begin{tikzpicture}
+            \draw (0,0) rectangle (15.2,6);
+            \draw (8,0) rectangle (15.2,3);
+            \node at (0,6)[below right]{\textbf{Working:}};
+            \node at (8,3)[below right]{\textbf{Answers:}};
+            \draw [dotted] (9,1.7)node[left]{(a)}--(15,1.7);
+            \draw [dotted] (9,0.7)node[left]{(b)}--(15,0.7);
+        \end{tikzpicture}
+
+\item Apply the law of cosines, $c^2=a^2+b^2-2ab \cos \theta$.
+    \begin{enumerate}
+        \item $a=17.3$, $b=11.6$, $\theta = 48^\circ$. Find the third side length, $c$. \hfill [3]
+        \item $a=10.4$, $b=13.1$, $c=9.1$. Find $\hat{C}$ (the angle opposite side $c$). \hfill [3]
+    \end{enumerate}
+        \begin{tikzpicture}
+            \draw (0,0) rectangle (15.2,9);
+            \draw (8,0) rectangle (15.2,3);
+            \node at (0,9)[below right]{\textbf{Working:}};
+            \node at (8,3)[below right]{\textbf{Answers:}};
+            \draw [dotted] (9,1.7)node[left]{(a)}--(15,1.7);
+            \draw [dotted] (9,1)node[left]{(b)}--(15,1);
+        \end{tikzpicture}
+
+
+\end{enumerate}
+\end{document}

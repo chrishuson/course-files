@@ -1,0 +1,318 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+\lhead{\small{BECA / Dr. Huson / 11.1 IB Math - Unit 6 Probability}}
+
+\title{11.1 IB Math - Unit 6 Probability}
+\subtitle{Bronx Early College Academy}
+\author{Christopher J. Huson PhD}
+\date{30 January - 14 March 2019}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{6.1 Probability definitions, Wednesday 30 January}
+  \frame
+  {
+    \frametitle{GQ: How do we talk about probability?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.1 Wednesday 30 January}}
+
+    \begin{block}{Do Now: Skills check p. 62 \#1-2}
+    \end{block}
+    Lesson: History of the study of games of chance, sample space, frequency \\ \bigskip
+    Homework: Exercises 3A p. 67-68
+  }
+
+
+\section{6.2 Venn diagrams, Thursday 31 January}
+  \frame
+  {
+    \frametitle{GQ: How do we notate sample spaces with Venn diagrams?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill  \alert{6.2 Thursday 31 January}}
+
+    \begin{block}{Do Now: Probability handout}
+    \end{block}
+    Lesson: Sets, complements, union, intersection, empty set \\ \bigskip
+    Homework: Exercises 3B p. 71-72
+  }
+
+\section{6.3 Addition rule of probabilities, Monday 4 February}
+  \frame
+  {
+    \frametitle{GQ: How do we add the probabilities of multiple events?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.3 Monday 4 February}}
+
+    \begin{block}{Do Now: Draw a Venn diagram of these 110 students:}
+      \begin{itemize}
+        \item 25 students took physics
+        \item 45 students took biology
+        \item 48 students took mathematics
+        \item 10 students took physics and mathematics
+        \item 8 students took biology and mathematics
+        \item 6 students took biology and physics
+        \item 5 students took all three subjects
+      \end{itemize}
+      How many took biology, but neither physics nor mathematics?\\
+      How many students did not take any of the three subjects?
+    \end{block}
+    Lesson: The addition rule, probability \\
+    Homework: Exercises 3C p. 74-75 \alert{Unit test Thursday}
+  }
+
+  \section{6.4 Probability definitions, Wednesday 6 February}
+    \frame
+    {
+      \frametitle{GQ: How do we calculate probability?}
+      \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.4 Wednesday 6 February}}
+
+      \begin{block}{Do Now: Pretest review packet}
+      \end{block}
+      Lesson: Review for unit test \\ \bigskip
+      Homework: study for \alert{test tomorrow}. Arrive at 8:00 sharp!
+    }
+
+
+\section{6.5 Probability definitions, Thursday 7 February}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate probability?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.5 Thursday 7 February}}
+
+    %\begin{block}{Do Now: Pretest review packet}
+    %\end{block}
+    Assessment: Probability unit test \\ \bigskip
+    Homework: Handout practice problems
+  }
+
+\section{6.6 Sample space diagrams, Monday 11 February}
+  \frame
+  {
+    \frametitle{GQ: How do we add the probabilities of multiple events?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.6 Monday 11 February}}
+
+    \begin{block}{Do Now: A six-sided, fair die is rolled 100 times, with $x$ representing each value rolled. Draw a Venn diagram to represent the 100 events.}
+      \begin{itemize}
+        \item $\{x$ is an even number \} was rolled 57 times
+        \item $\{x: x <4\}$ occurred 44 times
+        \item $\{x: x =2\}$ occurred 15 times
+      \end{itemize}
+      How many times was $x=5$ rolled?
+    \end{block}
+    Test question review\\
+    Lesson: Mutually exclusive sets, sample space diagrams\\[0.5cm]
+    Homework: Exercises 3D p. 76-77, 3E \#1-2 p. 79
+  }
+
+\section{6.7 Sample space diagrams, Tuesday 12 February}
+  \frame
+  {
+    \frametitle{GQ: How do we add the probabilities of multiple events?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.7 Tuesday 12 February}}
+
+    \begin{block}{Deltamath probability practice}
+    \end{block}
+    Homework: Complete Deltamath exercises
+  }
+
+\section{6.8 Independence, Wednesday 13 February}
+  \frame
+  {
+    \frametitle{GQ: How do we multiply the probabilities of multiple events?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.8 Wednesday 13 February}}
+
+    \begin{block}{Do Now: 3E p. 80}
+      \begin{itemize}
+        \item medium: exercise \#3
+        \item spicy: exercise \#5
+      \end{itemize}
+    \end{block}
+    Test question review\\
+    Lesson: Independence and multiplying probabilities\\[0.5cm]
+    Homework: Exercises 3F p. 82-84
+  }
+
+\section{6.9 Conditional probability, Thursday 14 February}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate probability given another condition?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.9 Thursday 14 February}}
+
+    \begin{block}{Do Now: Read the Monty Hall problem, p. 88. Be prepared to discuss}
+    \end{block}
+    Test question review\\
+    Lesson: Conditional probability\\[0.5cm]
+    Homework: Exercises 3G p. 86-88
+  }
+
+\section{6.10 Conditional probability, Monday 25 February}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate probability given another condition?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.10 Monday 25 February}}
+
+    \begin{block}{Do Now: Read the Monty Hall problem, p. 84. Be prepared to discuss}
+    \end{block}
+    Lesson: Conditional probability\\[0.5cm]
+    Homework: Exercises 3G p. 86-88
+  }
+
+\section{6.11 Deltamath Conditional probability, Tuesday 26 February}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate probability given another condition?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.11 Tuesday 26 February}}
+
+    \begin{block}{Do Now: Deltamath probability practice}
+      \begin{itemize}
+        \item Differentiated skills practice
+        \item Probability applications review
+      \end{itemize}
+    \end{block}
+    Assessment: Homework review\\
+    Lesson: Conditional probability problem situations\\*[0.5cm]
+    Homework: Complete Deltamath exercises
+  }
+
+\section{6.12 Probability tree diagrams, Thursday 28 February}
+  \frame
+  {
+    \frametitle{GQ: How do we diagram a situation as a tree?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.12 Thursday 28 February}}
+
+    \begin{block}{Do Now: Re the Monty Hall problem, p. 84}
+      \begin{enumerate}
+        \item Given you pick door \#1, find the probabilities that the prize is behind each door.
+        \item Again, assuming you picked door \#1, for each case for where the prize is (i.e. 3 cases), which door might Monty reveal to you, and with what probability?
+        \item For homework 3G \#12 p. 88, diagram the situation as a 2-by-2 matrix
+      \end{enumerate}
+    \end{block}
+    Homework review\\
+    Lesson: Probability tree diagrams, with and without replacement\\[0.5cm]
+    Homework: Exercises 3H p. 90 (optional 3I p. 93)
+  }
+
+\section{6.13 Deltamath Conditional probability, Tuesday 5 March}
+  \frame
+  {
+    \frametitle{GQ: How do we tell if events are independent?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.13 Tuesday 5 March}}
+      \begin{block}{Do Now: Deltamath probability practice}
+        \begin{itemize}
+          \item Differentiated skills practice
+          \item Probability applications review
+          \item Logarithm review
+        \end{itemize}
+      \end{block}
+    Assessment: Homework review\\
+    Lesson: Independence related to conditional probabilities\\
+    \alert{Parent conferences this Thursday evening, Friday afternoon}\\*[0.5cm]
+    Homework: Complete Deltamath exercises
+  }
+
+\section{6.14 Trees without replacement + review, Wednesday 6 March}
+  \frame
+  {
+    \frametitle{GQ: How do we diagram a situation as a tree?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.14 Wednesday 6 March}}
+
+    \begin{block}{Do Now: Tree diagram handout}
+    \end{block}
+    Homework review\\
+    Lesson: Probability tree diagrams, with and without replacement\\[0.5cm]
+    Homework: Study for test (Exercises 3I p. 93)
+  }
+
+
+\section{6.15 Unit test Probability, Thursday 7 March}
+  \frame
+  {
+    \frametitle{GQ: How do we diagram a situation as a tree?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.15 Thursday 7 March}}
+
+    \begin{block}{Assessment Probability Unit Test}
+    \end{block}
+
+    Homework: Self-review
+  }
+
+\section{6.16 Formatting math work, Monday 11 March}
+  \frame
+  {
+    \frametitle{GQ: How do we communicate mathematics using formal notation?}
+    \framesubtitle{CCSS: MP.1 Make logical arguments \hfill \alert{6.16 Monday 11 March}}
+
+    \begin{block}{Probability symbolic manipulation worksheet}
+      \begin{itemize}
+        \item Write answers in designated space, labeling problem number
+        \item Write left to right, top down. Use \emph{white space}
+        \item Copy relevant formula sheet entries (optional)
+        \item Substitute given values, simplify, then conclude
+        \item Add diagrams and notes (generally to the right)
+    \end{itemize}
+    \end{block}
+    Test revision: rewrite your exam using proper notation\\
+    Homework: Review exercises \#1-5 (with calculator) p. 95-96
+  }
+
+
+\section{6.17 Deltamath Conditional probability, Tuesday 12 March}
+  \frame
+  {
+    \frametitle{GQ: How do we tell if events are independent?}
+    \framesubtitle{CCSS: HSS.CP.A.3 Understand conditional probability \hfill \alert{6.17 Tuesday 12 March}}
+      \begin{block}{Do Now: Deltamath probability practice}
+        \begin{itemize}
+          \item Differentiated skills practice
+          \item Probability applications review
+          \item Logarithm review
+        \end{itemize}
+      \end{block}
+    Lesson: Independence related to conditional probabilities\\
+    \alert{$\pi$ Day}\\*[0.5cm]
+    Homework: Review exercises \#1-5 (with calculator) p. 95-96
+  }
+
+\section{6.18 Test post-mortem, Thursday 14 March}
+  \frame
+  {
+    \frametitle{GQ: How do we represent \& solve probabilistic situations?}
+    \framesubtitle{CCSS: MP.1 Make logical arguments \hfill \alert{6.18 Thursday 14 March}}
+
+    \begin{block}{Do Now: Probability warmup -- survey}
+      \begin{itemize}
+        \item Venn diagrams \& tables of counts or probabilities
+        \item Tree diagrams for sequences of events, with and without replacement
+        \item Symbolic manipulation, definitions of independence and contingent probability
+    \end{itemize}
+    \end{block}
+    Test question review\\
+    Lesson: Probability challenge problems\\
+    \alert{$\pi$ Day}\\*[0.25cm]
+    Homework: Mixed review exam problems handout
+  }
+
+
+
+\end{document}
