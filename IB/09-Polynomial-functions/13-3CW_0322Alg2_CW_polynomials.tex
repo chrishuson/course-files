@@ -6,7 +6,6 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usepackage{tkz-fct}
 \usepackage{venndiagram}
 
 \usepackage{fancyhdr}
@@ -28,10 +27,6 @@
 \subsubsection*{\\* Classwork: Polynomials \& complex numbers}
 
 \begin{enumerate}
-
-\vspace{0.5 cm}
-
-
 \item What is the quotient when $x^2-3x-40$ is divided by $x + 5$?\\*[95pt]
 
 \item Given: $f(x)=2x^2+ x - 3$ and $g(x)=x-1$\\*[5pt]
@@ -58,26 +53,6 @@ Express $f(x) \cdot g(x) - [f(x) + g(x)]$ as a polynomial in standard form.\\*[9
 
 
 \newpage
-
-\item The graph of the function $p(x)$ is sketched below.
-\begin{center}
-    \begin{tikzpicture}[scale=2.54/4]
-    \draw[thick,<->] (-4.5,0) -- (5.5,0) node[anchor=north west] {\textbf{x}};
-    \draw[thick,<->] (0,-3.5) -- (0,7.5) node[anchor=south east] {\textbf{p(x)}};
-    \foreach \x in {-1, 1} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {$\x$};
-    \foreach \x in {-4,-3,-2, 2, 3, 4} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {};
-    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-    \tkzInit[xmin=-5,xmax=5,ymin=-7,ymax=7,ystep=1]
-    \tkzFct[color=black,very thick,<->,domain = -3.2:4] {0.2*(x*x-9)*(x-2)};
-    \end{tikzpicture}
-\end{center}
-Which equation could represent $p(x)$?
-\begin{enumerate}
-    \item $p(x)=(x^2- 9)(x-2)$
-    \item $p(x)=x^3 -2x^2+ 9x+18$
-    \item $p(x)=(x^2+ 9)(x-2)$
-    \item $p(x)=x^3 +2x^2- 9x-18$
-\end{enumerate} %Alg2 Regents Jun2017 multiple choice
 
 \item Simplify $4i(3-2i)$\\*[45pt]
 \item Simplify $(6+2i)-(3-2i)$\\*[45pt]

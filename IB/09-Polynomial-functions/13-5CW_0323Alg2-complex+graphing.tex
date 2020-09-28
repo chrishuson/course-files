@@ -6,7 +6,6 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usepackage{tkz-fct}
 \usepackage{venndiagram}
 
 \usepackage{fancyhdr}
@@ -28,22 +27,6 @@
 \subsubsection*{\\* Problem Set: Polynomials \& complex numbers}
 
 \begin{enumerate}
-
-\vspace{0.5 cm}
-
-
-\item The graph of the function $f(x)$ is sketched below. What are the roots of $f(x)$?
-\begin{center}
-    \begin{tikzpicture}[scale=2.54/4]
-    \draw[thick,<->] (-4.5,0) -- (5.5,0) node[anchor=north west] {\textbf{x}};
-    \draw[thick,<->] (0,-3.5) -- (0,7.5) node[anchor=south east] {\textbf{f(x)}};
-    \foreach \x in {-1, 1} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {$\x$};
-    \foreach \x in {-4,-3,-2, 2, 3, 4} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {};
-    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-    \tkzInit[xmin=-5,xmax=5,ymin=-7,ymax=7,ystep=1]
-    \tkzFct[color=black,very thick,<->,domain = -4:3.2] {0.2*(x*x-9)*(-x-2)};
-    \end{tikzpicture}
-\end{center}
 
 \item Simplify $2i(1-2i)$\\*[65pt]
 \item Simplify $(3+3i)-(2-3i)$\\*[65pt]

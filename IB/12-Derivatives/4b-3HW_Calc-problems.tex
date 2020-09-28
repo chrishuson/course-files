@@ -52,22 +52,17 @@ Let $h(x)=f(x)g(x)$
   \item Find $h'(5)$.
 \end{enumerate}
 
-
 \item A farmer wishes to create a rectangular enclosure, ABCD, of area 525 $m^2$, as shown below.
-
   \begin{figure}[!htbp]
-  \begin{center}
-  \begin{tikzpicture}
-
-    \draw [thick, -] (-3,3) -- (3,3) node [right] {$C$};
-    \draw [thick, -] (3,0) -- (-3,0) node [left] {$A$};
-    \draw [thick, -] (-3,0) -- (-3,3) node [left] {$D$};
-    \draw [thick, -] (3,3) -- (3,0) node [right] {$B$};
-
-  \end{tikzpicture}
-  \end{center}
+    \begin{center}
+    \begin{tikzpicture}
+      \draw [thick, -] (-3,3) -- (3,3) node [right] {$C$};
+      \draw [thick, -] (3,0) -- (-3,0) node [left] {$A$};
+      \draw [thick, -] (-3,0) -- (-3,3) node [left] {$D$};
+      \draw [thick, -] (3,3) -- (3,0) node [right] {$B$};
+    \end{tikzpicture}
+    \end{center}
   \end{figure}
-
   The fencing used for side AB costs \$11 per metre. The fencing for the other three sides costs \$3 per metre. The farmer creates an enclosure so that the cost is a minimum. Find this minimum cost.
 
 \item In an arithmetic sequence, $S_{40} =1900$ and $u_{40} =106$. Find the value of $u_1$ and of $d$.
@@ -91,27 +86,5 @@ Let $h(x)=f(x)g(x)$
   \end{enumerate}
 
 \end{enumerate}
-
-  \begin{figure}[!htbp]
-  \begin{center}
-  \begin{tikzpicture}
-
-    %grid 
-    \draw [black, xstep=1.0cm, ystep=1.0cm] (0,-5) grid (10,5);
-    \draw [gray, very thin, xstep=0.2cm, ystep=0.2cm] (0,-5) grid (10,5);
-
-    \foreach \x in {,1,2,3,4,5, 6, 7, 8, 9, 10}
-    \draw[shift={(\x,0)},color=black] (0pt,-1pt) -- (0pt,3pt) node[below]  {$\quad \x$};
-
-    \foreach \y in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
-    \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
-
-    \draw [thick, ->] (0,0) -- (10.5,0) node [right] {$x$};
-    \draw [thick, ->] (0,-5.5) -- (0,5.5) node [left] {$y$};
-
-  \end{tikzpicture}
-  \end{center}
-  \end{figure}
-
 
 \end{document}

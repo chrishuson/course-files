@@ -6,7 +6,6 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usepackage{tkz-fct}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -23,13 +22,8 @@
 \date{March 2018}
 
 \begin{document}
-
 \subsubsection*{\\* Note source to differentiate course application}
-
 \begin{enumerate}
-
-\vspace{0.5 cm}
-
 
 \subsubsection*{Topic="Writing Linear Equations"\\
 Source="cjh" 
@@ -89,26 +83,6 @@ Difficulty=5 Calc=2}
 \[G(t)=-0.0049t^4 + 0.0923t^3 - 0.56t^2 +1.166t+3.23 \text{, where } 0 \leq t \leq 10.\]
 If $G(t)$ is the average price of gas in dollars and $t$ represents the number of months since January 1st, the absolute maximum $G(t)$ reaches over the given domain is about what value, to the nearest cent? %Alg2 Regents Jan2018
 
-\item The graph of the function $p(x)$ is sketched below.
-\begin{center}
-    \begin{tikzpicture}[scale=2.54/4]
-    \draw[thick,<->] (-4.5,0) -- (5.5,0) node[anchor=north west] {\textbf{x}};
-    \draw[thick,<->] (0,-3.5) -- (0,7.5) node[anchor=south east] {\textbf{p(x)}};
-    \foreach \x in {-1, 1} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {$\x$};
-    \foreach \x in {-4,-3,-2, 2, 3, 4} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {};
-    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-    \tkzInit[xmin=-5,xmax=5,ymin=-7,ymax=7,ystep=1]   
-    \tkzFct[color=black,very thick,<->,domain = -3.2:4] {0.2*(x*x-9)*(x-2)};
-    \end{tikzpicture}
-\end{center}
-Which equation could represent $p(x)$?
-\begin{enumerate}
-    \item $p(x)=(x^2- 9)(x-2)$
-    \item $p(x)=x^3 -2x^2+ 9x+18$
-    \item $p(x)=(x^2+ 9)(x-2)$
-    \item $p(x)=x^3 +2x^2- 9x-18$
-\end{enumerate} %Alg2 Regents Jun2017 multiple choice
-
 \item On the axes below, sketch a possible function $p(x) = (x  -a)(x - b)(x + c)$, where $a$, $b$, and $c$ are positive, $a  >b$, and $p(x)$ has a positive $y$-intercept of $d$. Label all intercepts. 
 \begin{center}
     \begin{tikzpicture}[scale=2.54/4]
@@ -116,29 +90,6 @@ Which equation could represent $p(x)$?
     \draw[thick,<->] (0,-7.5) -- (0,7.5) node[anchor=south east] {\textbf{y}};
     \end{tikzpicture}
 \end{center} %Alg2 Regents Aug2017
-
-\item The zeros of a quartic polynomial function $h$ are  $-1,\pm 2, \text{ and } 3$. Sketch a graph of $y = h(x)$ on the grid below.\\*
-\begin{center}
-    \begin{tikzpicture}
-    \draw[step=0.25in,gray,very thin] (0,0) grid (12.7,12.7);
-    \end{tikzpicture}
-\end{center}
-\newpage
-Difficulty=6
-\item The graph of $y = f(x)$ is shown below. The function has a leading coefficient of 1.\\*
-\begin{center}
-    \begin{tikzpicture}[scale=2.54/4]
-    \draw[step=1cm,gray,very thin] (-7,-7) grid (7,7);
-    \draw[thick,<->] (-7.5,0) -- (7.5,0) node[anchor=north west] {\textbf{x}};
-    \draw[thick,<->] (0,-7.5) -- (0,7.5) node[anchor=south east] {\textbf{y}};
-    \foreach \x in {-2, 2} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-    \foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-    \tkzInit[xmin=-5,xmax=5,ymin=-7,ymax=7,ystep=1]   
-    \tkzFct[color=black,thick,<->,domain = -4.4:3.6] {0.1*(x+4)*x*x*(x-3)};
-    \end{tikzpicture}
-\end{center}
-Write an equation for $f(x)$.\\*[10pt]
-The function $g$ is formed by translating function $f$ left 2 units. Write an equation for $g(x)$.
 
 \item A polynomial equation of degree three, $p(x)$, is used to model the volume of a rectangular box. The graph of $p(x)$ has $x$ intercepts at  $-2$, 10, and 14. Which statements regarding $p(x)$ could be true?\\*
 A. The equation of $p(x) = (x - 2)(x + 10)(x +14)$.\\*
@@ -445,26 +396,6 @@ Difficulty=3}
     \item left $a$ units, down $b$ units
 \end{enumerate}%Alg2 Regents Jun2017 multiple choice
 
-\item Which equation is represented by the graph shown below?
-\begin{center}
-    \begin{tikzpicture}[scale=2]
-    \draw[thick,<->] (-0.5,0) -- (3.5,0) node[anchor=north west] {\textbf{x}};
-    \draw[thick,<->] (0,-1) -- (0,1) node[anchor=south east] {\textbf{y}};
-    \foreach \x in {1.57} \draw (\x cm,3pt) -- (\x cm,-3pt) node[anchor=north] {$\frac{\pi}{2}$};
-    \foreach \x in {3.14} \draw (\x cm,3pt) -- (\x cm,-3pt) node[anchor=north] {$\pi$};
-    \foreach \y in {-0.5, 0.5} \draw (3pt,\y cm) -- (-3pt,\y cm) node[anchor=east] {\y}; %{$\y$};
-    \tkzInit[xmin=-.5,xmax=4,ymin=-1,ymax=1,ystep=1]   
-    \tkzFct[color=black,very thick,domain = -0.4:3.5] {0.5*cos(2*x)};
-    \end{tikzpicture}
-\end{center}
-\begin{enumerate}
-    \item $y=\frac{1}{2} \cos 2x$
-    \item $y=\frac{1}{2} \cos x$
-    \item $y= \cos x$
-    \item $y=2 \cos \frac{1}{2}x$
-\end{enumerate} %Alg2 Regents Jun2017 multiple choice
-
-
 \item The hours of daylight, $y$, in Utica in days, $x$, from January 1, 2013 can be modeled by the equation $y = 3.06 \sin(0.017x-1.40) +12.23$. How many hours of daylight, to the \emph{nearest tenth}, does this model predict for February 14, 2013?
 
 \item Based on climate data that have been collected in Bar Harbor, Maine, the average monthly temperature, in degrees F, can be modeled by the equation $B(x)=23.914 \sin(0.508x-2.116)+55.300$. The same governmental agency collected average monthly temperature data for Phoenix, Arizona, and found the temperatures could be modeled by the equation $P(x)=20.238 \sin(0.525x-2.148)+86.729$.\\*
@@ -549,26 +480,6 @@ Calc=2
     \item $(-0.99, 1.96)$
     \item $(11.29, 32.87)$
 \end{enumerate}
-
-\subsubsection*{Topic="Graphing Logarithmic Functions"\\
-Source="IB" 
-Difficulty=5 
-Calc=2}
-
-\item Graph $y= \log_2(x+3)-5$ on the set of axes below. Use an appropriate scale to include both intercepts.
-\begin{center}
-    \begin{tikzpicture}[scale=2.54/4]
-    \draw[step=1cm,gray,very thin] (-10,-10) grid (10,10);
-    \draw[thick,<->] (-10.5,0) -- (10.5,0) node[anchor=north west] {\textbf{x}};
-    \draw[thick,<->] (0,-10.5) -- (0,10.5) node[anchor=south east] {\textbf{y}};
-%    \foreach \x in {-2, 2} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-%    \foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-%    \tkzInit[xmin=-5,xmax=5,ymin=-7,ymax=7,ystep=1]   
-%    \tkzFct[color=black,thick,<->,domain = -4.4:3.6] {0.1*(x+4)*x*x*(x-3)};
-    \end{tikzpicture}
-\end{center}
-
-Describe the behavior of the given function as $x$ approaches $-3$ and as $x$ approaches positive infinity. %Alg2 Regents Jun2017 
 
 \subsubsection*{Topic="Probability of Compound Events"\\
 Source="IB" 
