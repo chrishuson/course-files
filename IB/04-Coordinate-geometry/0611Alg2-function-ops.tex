@@ -6,7 +6,6 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usepackage{tkz-fct}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -23,35 +22,7 @@
 \date{June 2018}
 
 \begin{document}
-%\maketitle
-
-%\subsubsection*{\\* \textnormal{Answer in pen. Show work. Graph carefully using pencil.}}
-
 \begin{enumerate}
-\item For each polynomial graph, state 
-\begin{enumerate}
-\item its degree,
-\item how many distinct zeros it has, and
-\item the sign of its leading coefficient.
-\end{enumerate}
-\begin{tikzpicture}[scale=1.8/4]
-    %\draw[step=1cm,gray,very thin] (-7,-7) grid (7,7);
-    \draw[thick,<->] (-7.5,0) -- (7.5,0) node[anchor=north west] {\textbf{x}};
-    \draw[thick,<->] (0,-5.5) -- (0,7.5) node[anchor=south east] {\textbf{y}};
-    %\foreach \x in {-6, -4, -2, 2, 4, 6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-    \tkzInit[xmin=-6,xmax=6,ymin=-5,ymax=7,ystep=1]   
-    \tkzFct[color=black,thick,<->,domain = -4.3:5.0] {0.1*(x+3)*(x)*(x-4)};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=1.8/4]
-    %\draw[step=1cm,gray,very thin] (-7,-7) grid (7,7);
-    \draw[thick,<->] (-7.5,0) -- (7.5,0) node[anchor=north west] {\textbf{x}};
-    \draw[thick,<->] (0,-5.5) -- (0,7.5) node[anchor=south east] {\textbf{y}};
-    %\foreach \x in {-6, -4, -2, 2, 4, 6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-    \tkzInit[xmin=-6,xmax=6,ymin=-5,ymax=7,ystep=1]   
-    \tkzFct[color=black,thick,<->,domain = -3.3:5.2] {0.05*(x*x*x*x-3*x*x*x-9*x*x+10*x+20)};
-\end{tikzpicture}
 
 \item Given the function $f$ represented in the table below.\\*
 \begin{center}
@@ -87,30 +58,6 @@
 \item Given $i$ is the imaginary unit, simplify $(2-xi)^2$ to the form $a+bi$. \\[1.8in]%Alg2 Regents Jun2016
 
 \newpage
-
-\item Given the polynomial function $f(x)=2x^3-3x^2-14x$, as shown on the graph below, over the domain $-2 \leq x \leq 4$.
-\begin{center}
-    \begin{tikzpicture}[scale=2.25/4]
-    \draw[step=1cm,gray,very thin] (-7,-7) grid (7,7);
-    \draw[thick,<->] (-7.5,0) -- (7.5,0) node[anchor=north west] {\textbf{x}};
-    \draw[thick,<->] (0,-7.5) -- (0,7.5) node[anchor=south east] {\textbf{y}};
-    \foreach \x in {-6, -4, -2, 2, 4, 6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-    \foreach \y in {-4} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$-20$}; %{$\y$};
-    \foreach \y in {4} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$20$};
-    \tkzInit[xmin=-6,xmax=5,ymin=-5,ymax=7,ystep=1]   
-    \tkzFct[color=black,thick, domain = -2.0:4.0] {0.2*(2*x-7)*(x+2)*(x)};
-    \draw [dashed] (2,-4.8) node[anchor=north] {$(2,f(2))$} -- (4,4.8) node[anchor=west] {$(4,f(4))$};
-    \end{tikzpicture}
-\end{center}
-\begin{enumerate}
-    \item What is the range of the function, rounded to the nearest integer?\\[0.8in]
-    \item What is the value of $f(2)$?\\[0.8in]
-    \item What is the \emph{average rate of change} of the function between $x=2,4$.
-\end{enumerate}
-
-
-\newpage
-
 \item Consider the function $h(x) = 2\sin(x) + 1$.\\*
 What is the minimum value of $h(x)$ for the domain $[0,2\pi]$? Justify your answer by sketching a graph. \\[2in]%Alg2 Regents Jan2018
 
@@ -139,10 +86,6 @@ What is the sign of the function's leading coefficient?
     \draw[step=1cm,gray,very thin] (-10,-10) grid (10,10);
     \draw[thick,<->] (-10.5,0) -- (10.5,0) node[anchor=north west] {\textbf{x}};
     \draw[thick,<->] (0,-10.5) -- (0,10.5) node[anchor=south east] {\textbf{y}};
-    %\foreach \x in {-6, -4, -2, 2, 4, 6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50};
-    %\foreach \y in {-5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {-50};    \tkzInit[xmin=-5,xmax=5,ymin=-7,ymax=7,ystep=1]
-%    \tkzFct[color=black,thick,<->,domain = -3.4:7] {0.1*(x*x-4)*(x-5)};
     \end{tikzpicture} 
 \end{center} %Jun2016 Regents FR
 
@@ -154,10 +97,6 @@ What is the sign of the function's leading coefficient?
     \draw[step=1cm,gray,very thin] (-10,-10) grid (10,10);
     \draw[thick,<->] (-10.5,0) -- (10.5,0) node[anchor=north west] {\textbf{x}};
     \draw[thick,<->] (0,-10.5) -- (0,10.5) node[anchor=south east] {\textbf{y}};
-%    \foreach \x in {-2, 2} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-%    \foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-%    \tkzInit[xmin=-5,xmax=5,ymin=-7,ymax=7,ystep=1]   
-%    \tkzFct[color=black,thick,<->,domain = -4.4:3.6] {0.1*(x+4)*x*x*(x-3)};
     \end{tikzpicture}
 \end{center}
 
@@ -166,16 +105,3 @@ Describe the behavior of the given function as $x$ approaches $-3$ and as $x$ ap
 
 \end{enumerate}
 \end{document}
-
-
-\item The value of a certain small passenger car based on its use in years is modeled by $V(t) =28482.698(0.684)^t$, where $V(t)$ is the value in dollars and $t$ is the time in years. Zach had to take out a loan to purchase the small passenger car. The function $Z(t)=22151.327(0.778)^t$, where $Z(t)$ is measured in dollars, and $t$ is the time in years, models the unpaid amount of Zach’s loan over time.\\*[10pt]
-Graph $V(t)$ and $Z(t)$ over the interval $0 \leq t \leq 5$, on the set of axes below.
-\begin{center}
-    \begin{tikzpicture}
-    \draw[step=0.25in,gray,very thin] (0,0) grid (12.7,12.7);
-    \draw[thick,->] (0,0) -- (13,0);% node[anchor=north west] {x};
-    \draw[thick,->] (0,0) -- (0,13);% node[anchor=south east] {y};
-    \end{tikzpicture}
-\end{center}
-State when $V(t)=Z(t)$, to the \emph{nearest hundredth}, and interpret its meaning in the context of the problem.\\*[10pt]
- %Alg2 Regents Aug2017

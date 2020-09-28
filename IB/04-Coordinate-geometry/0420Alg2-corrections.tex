@@ -6,13 +6,11 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usepackage{tkz-fct}
 \usepackage{venndiagram}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-%\rhead{Name: \hspace{1.5in} }
 \lhead{BECA / Dr. Huson / 11.2 Algebra II \qquad Name:\\* 20 April 2018}
 
 \vspace{1cm}
@@ -42,26 +40,7 @@ Complete all of the problems for credit on test corrections.
 
 \item Simplify the expression $2ai(10-3i)$.Express the result in the form $a+bi$ where $a,b \ \epsilon \ R$.\\[40pt]
 
-\item Using the quadratic formula or otherwise, solve $2x^2-x-6=0$.%\\*[160pt]
-
-\newpage
-\item The graph of the cubic function $f(x)$ is shown. The leading coefficient of $f$ is one.
-\begin{enumerate}
-    %\item What are the zeros of $f(x)$?\\*[15pt]
-    \item Express $f(x)$ as the product of three factors.\\*[25pt]
-    \item Find $f(0)$.
-\end{enumerate}
-\begin{center}
-    \begin{tikzpicture}[scale=2.4/4]
-    \draw[thick,<->] (-5.5,0) -- (6.5,0) node[anchor=north west] {\textbf{x}};
-    \draw[thick,<->] (0,-4.0) -- (0,3.5) node[anchor=south east] {\textbf{f(x)}};
-    \foreach \x in {-1, 1} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {$\x$};
-    \foreach \x in {-5,-4,-3,-2, 2, 3, 4,5,6} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {};
-    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-    \tkzInit[xmin=-6,xmax=6,ymin=-7,ymax=7,ystep=1]   
-    \tkzFct[color=black,very thick,<->,domain = -4:2.5] {0.2*(x*x-4)*(x+3)};
-    \end{tikzpicture}
-\end{center}
+\item Using the quadratic formula or otherwise, solve $2x^2-x-6=0$.
 
 \item If $(x-2)$ is a factor of $f(x)=(x-2)(5x^2+13x+27)$, then what is the value of $f(2)$?\\*[35pt]
 
@@ -97,8 +76,8 @@ Complete all of the problems for credit on test corrections.
     %\foreach \x in {-1, 1} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {$\x$};
     \foreach \x in {-5,-4,-3,-2, 2, 3, 4,5,6} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {};
     %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-    \tkzInit[xmin=-5,xmax=5,ymin=-7,ymax=7,ystep=1]   
-    \tkzFct[color=black,very thick,<->,domain = -3.6:4.0] {-0.2*(x*x-9)*(x-1)};
+    %\tkzInit[xmin=-5,xmax=5,ymin=-7,ymax=7,ystep=1]   
+    %\tkzFct[color=black,very thick,<->,domain = -3.6:4.0] {-0.2*(x*x-9)*(x-1)};
     \end{tikzpicture}
 \end{center}
 \item Write the corresponding letter to the left of each numbered expression.
@@ -141,7 +120,6 @@ Complete all of the problems for credit on test corrections.
 \end{center}
 Is the function an example of exponential growth or exponential decay? Justify your answer algebraically.\\[45pt]
 
-%\item Explain why the expression $\displaystyle 16^{\frac{3}{4}}$ is equivalent  according to the rules of fractional exponents. 
 \newpage
 
 \item Use long division to determine the quotient and remainder of $f(x)=(x^3+4x^2-8x-6)$ divided by $g(x)=(x+2)$. Express your answer as $\displaystyle q(x)+\frac{r(x)}{g(x)}$\\*[20pt]

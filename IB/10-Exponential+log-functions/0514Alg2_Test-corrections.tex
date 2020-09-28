@@ -6,12 +6,6 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usepackage{tkz-fct}
-\usepackage{pgfplots}
-\pgfplotsset{width=10cm,compat=1.9}
-\usepgfplotslibrary{statistics}
-\usepackage{pgfplotstable}
-%\usepackage{venndiagram}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -24,29 +18,10 @@
 
 \begin{document}
 
-
-%\subsection*{Solve equations}
 \subsection*{Do all problems. The numbers have changed.}
-
-%Solve for the value of $x$.
 \vspace{1cm}
 
 \begin{enumerate}
-
-\item Given the function $f(x)=-x^3+2x^2+5x-6$. 
-\begin{enumerate}
-    \item Write down the $y$-intercept.\\*[10pt]
-    \item Find the $x$-intercepts, rounding to the nearest hundredth.\\*[10pt]
-    \item Describe the end behavior of the function. (use language like ``As $x$ goes to positive infinity, $y$ goes to...")\\*[30pt]
-    \item Graph the function on the grid below, carefully passing through the correct intercepts. 
-\end{enumerate}
-
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.75\textwidth]{regents-grid.pdf}
-\end{figure}
-
-\newpage
 
 \item The expression $(x + a)(x + b)$ can not be written as
 \begin{enumerate}
@@ -64,26 +39,6 @@
 
 
 \newpage
-\item The graph of the function $p(x)$ is sketched below.
-\begin{center}
-    \begin{tikzpicture}[scale=2.54/4]
-    \draw[thick,<->] (-4.5,0) -- (5.5,0) node[anchor=north west] {\textbf{x}};
-    \draw[thick,<->] (0,-5.5) -- (0,5.5) node[anchor=south east] {\textbf{p(x)}};
-    \foreach \x in {-1, 1} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {$\x$};
-    \foreach \x in {-4,-3,-2, 2, 3, 4} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {};
-    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-    \tkzInit[xmin=-5,xmax=5,ymin=-7,ymax=7,ystep=1]   
-    \tkzFct[color=black,very thick,<->,domain = -4:3.3] {0.2*(x*x-9)*(x+2)};
-    \end{tikzpicture}
-\end{center}
-Which equation could represent $p(x)$?
-\begin{enumerate}
-    \item $p(x)=(x^2- 9)(x-2)$
-    \item $p(x)=x^3 -2x^2+ 9x-18$
-    \item $p(x)=(x^2- 9)(x+2)$
-    \item $p(x)=x^3 +2x^2- 9x+18$
-\end{enumerate} %Alg2 Regents Jun2017 multiple choice
-
 \item The expression $(x + a)(x - b)$ can not be written as
 \begin{enumerate}
     \item $x(x + a)- b(x + a)$
@@ -156,8 +111,6 @@ The company’s profit, $P(x)=R(x)-C(x)$, could be modeled by what polynomial?  
     \foreach \y in {12.7} \draw (3pt,\y cm) -- (-3pt,\y cm) node[anchor=east] {400};
     \end{tikzpicture}
 \end{center} %Alg2 Regents Jun2017
-
-
 
 \item Explain how $\displaystyle (-27)^\frac{4}{3}$ can be evaluated using properties of rational exponents to result in an integer answer.
 

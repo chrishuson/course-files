@@ -6,13 +6,12 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usepackage{tkz-fct}
+%\usepackage{tkz-fct}
 \usepackage{venndiagram}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-%\rhead{Name: \hspace{1.5in} }
 \lhead{BECA / Dr. Huson / 11.2 Algebra II \qquad Name:\\* 19 April 2018}
 
 \vspace{1cm}
@@ -42,31 +41,6 @@ Write your answers in the space provided.
 \item What are the quotient and remainder when $x^3+5x^2+8x+9$ is divided by $x+2$?
 
 \newpage
-\item The graph of the function $f(x)$ is shown below. Which of the following could be $f(x)$?
-\begin{enumerate}
-    \item $f(x)=2x^2+4x-6$
-    \item $f(x)=-2x^3+2x^2+18x-9$
-    \item $f(x)=(x-3)(-x^3+x^2-7x+1)$
-    \item $f(x)=x^3-x^2+8x-4$
-\end{enumerate}
-\begin{center}
-    \begin{tikzpicture}[scale=2.4/4]
-    \draw[thick,<->] (-5.5,0) -- (6.5,0) node[anchor=north west] {\textbf{x}};
-    \draw[thick,<->] (0,-5.0) -- (0,4.5) node[anchor=south east] {\textbf{f(x)}};
-    %\foreach \x in {-1, 1} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {$\x$};
-    \foreach \x in {-5,-4,-3,-2, 2, 3, 4,5,6} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {};
-    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-    \tkzInit[xmin=-5,xmax=5,ymin=-7,ymax=7,ystep=1]   
-    \tkzFct[color=black,very thick,<->,domain = -3.6:4.0] {-0.2*(x*x-9)*(x-1)};
-    \end{tikzpicture}
-\end{center}
-\item Write the corresponding letter to the left of each numbered expression.
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=1.0\textwidth]{0419Test_WordedExpressions.pdf}
-\end{figure}
-
-\newpage
 
 \item Given the polynomial function $h(x)=(x-3)(x+1)(x+5)$. Sketch $y = h(x)$ on the grid below, accurately depicting the $x$- and $y$-intercepts.
 \begin{center}
@@ -75,9 +49,6 @@ Write your answers in the space provided.
     \draw[thick,<->] (0,-4.5) -- (0,4.5) node[anchor=south east] {\textbf{y}};
     \foreach \x in {-1, 1} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {$\x$};
     \foreach \x in {-5,-4,-3,-2, 2, 3, 4,5,6} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {};
-    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-    %\tkzInit[xmin=-5,xmax=5,ymin=-7,ymax=7,ystep=1]   
-    %\tkzFct[color=black,very thick,<->,domain = -2.5:5] {0.2*(x*x-4)*(x-4)};
     \end{tikzpicture}
 \end{center}
 
@@ -96,23 +67,6 @@ Write your answers in the space provided.
 
 
 \newpage
-\item The graph of the cubic function $f(x)$ is shown. The leading coefficient of $f$ is one.
-\begin{enumerate}
-    \item What are the zeros of $f(x)$?\\*[15pt]
-    \item Express $f(x)$ as the product of three factors.\\*[25pt]
-    \item Find $f(0)$.
-\end{enumerate}
-\begin{center}
-    \begin{tikzpicture}[scale=2.4/4]
-    \draw[thick,<->] (-5.5,0) -- (6.5,0) node[anchor=north west] {\textbf{x}};
-    \draw[thick,<->] (0,-2.0) -- (0,5.5) node[anchor=south east] {\textbf{f(x)}};
-    \foreach \x in {-1, 1} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {$\x$};
-    \foreach \x in {-5,-4,-3,-2, 2, 3, 4,5,6} \draw (\x cm,5pt) -- (\x cm,-5pt) node[anchor=north] {};
-    %\foreach \y in {5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {50}; %{$\y$};
-    \tkzInit[xmin=-6,xmax=6,ymin=-7,ymax=7,ystep=1]   
-    \tkzFct[color=black,very thick,<->,domain = -5.2:2] {0.2*(x*x-1)*(x+5)};
-    \end{tikzpicture}
-\end{center}
 
 \item When $g(x)$ is divided by $x+4$, the remainder is 0. Given $g(x)=x^4+3x^3- 6x^2- 6x-8$. Write down the value of $g(-4)$.\\*[15pt]
 
@@ -140,7 +94,6 @@ Write your answers in the space provided.
 \end{center}
 Is the function an example of exponential growth or exponential decay? Justify your answer algebraically.\\[45pt]
 
-%\item Explain why the expression $\displaystyle 16^{\frac{3}{4}}$ is equivalent  according to the rules of fractional exponents. 
 \newpage
 
 \item Using the quadratic formula or otherwise, solve $2x^2-3x-5=0$.\\*[160pt]
@@ -164,10 +117,6 @@ Is the function an example of exponential growth or exponential decay? Justify y
 \item What are the quotient and remainder when $x^3+3x^2-x+2$ is divided by $x - 1$?\\*[25pt]
 
 \item Given the function $f(x)=(x-1)(x+3)$. State the $x$-intercepts of the graph of $f$. Find the $y$-intercept of the graph of $f$.\\*[25pt]
-
-
-%\item If $(x-3)$ is a factor of $f(x)=(x-3)(ax^2+bx+c)$, then what is the value of $f(3)$?\\*[15pt]
-
 
 
 \end{enumerate}
