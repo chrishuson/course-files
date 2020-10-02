@@ -137,7 +137,6 @@
   \frame
   {
     \frametitle{Example 3: Segment addition postulate}
-    
     Given $\overline{JKL}$, $JK=2x+3$, $KL=5$, $JL=12$. Find ${x}$.\\[0.15in]
        \begin{tikzpicture}
         \draw [-, thick] (0,0)--(7,0);
@@ -487,6 +486,188 @@
   Can a length be a negative number? \vspace{2cm}  
   }
 
+  \section{1.5 Vocabulary and compass use, 1 October}
+  \frame
+  {
+    \frametitle{GQ: How do we construct an equilateral triangle?}
+    \framesubtitle{CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{1.5 Thursday 1 Oct}}
+  
+    \begin{block}{Welcome to in-person classes}
+    %\begin{enumerate}
+        %\item
+    %\end{enumerate}
+    \end{block}
+    Lesson: Compass use, introduction to constructions \\*[5pt]
+    Homework: Vocabulary worksheet practice 
+  }
 
+  \section{1.6 Review segment calculations, 2 October}
+  \frame
+  {
+    \frametitle{GQ: How do we measure line segments?}
+    \framesubtitle{CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{1.6 Friday 2 Oct}}
+  
+    \begin{block}{Do Now: complete assessments questions}
+    \begin{enumerate}
+        \item How do we work efficiently and be a good scholar
+        \item What should we know and be able to do
+    \end{enumerate}
+    \end{block}
+    Lesson: Review and practice of line segments and congruence %\\*[5pt]  
+  }
+
+  \frame
+  {
+    \frametitle{1) Complete each item. Use the Classkick tool bar.}
+    \begin{enumerate} 
+      \item Circle the point $A$ with a blue pen
+      \item Use the highlighter tool to mark in yellow the ray $\overrightarrow{BD}$
+      \item Type the name of the plane in red here $\rightarrow$
+      \end{enumerate} \vspace{1cm}
+      \begin{center}
+        \begin{tikzpicture}
+        \draw [thick](0,0)--(6,0)--(8,4) node[below left]{$q \ $} --(2,4)--(0,0);
+        \draw [->, thick] (2, 1.4)--(6,3);
+        \draw [fill] (4, 3.5) circle [radius=0.05] node[below]{$A$};
+        \draw [fill] (2, 1.4) circle [radius=0.05] node[below]{$B$};
+        \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$C \ $};
+        \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$D$};
+        \draw [<->, thick] (2,3.5)--(5.25,.25);
+        \draw [fill] (5,0.5) circle [radius=0.05] node[above right]{$E \ $};
+      \end{tikzpicture}
+    \end{center}
+  }
+
+  \frame
+  {
+    \frametitle{2) Sketch an isosceles triangle}
+    Mark the congruent sides with tick marks. \vspace{7cm}
+  }
+
+  \frame
+  {
+    \frametitle{3) Draw a ray. (careful! which direction does it go?)}
+    Given the points $X$ and $Y$, draw $\overrightarrow{YX}$.\\
+    \vspace{2cm}
+    \begin{center}
+      \begin{tikzpicture}
+      \draw [fill] (1,2) circle [radius=0.05] node[below]{$X$};
+      \draw [fill] (5,0) circle [radius=0.05] node[below]{$Y$};
+    \end{tikzpicture}
+    \end{center} \vspace{1cm}
+  }
+
+  \frame
+  {
+    \frametitle{4) Use proper notation (including the bar over the letters)}
+      Given $\triangle ABC$ write down two congruent line segments using proper notation.\\
+        \begin{tikzpicture}[scale=0.5]
+          \draw [thick](0,0)--(4,0)--(2,6)--(0,0);
+          \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+          \draw [fill] (4,0) circle [radius=0.05] node[below]{$B$};
+          \draw [fill] (2,6) circle [radius=0.05] node[above right]{$C$};
+          \draw [thick] (0.8,3)--(1.2,3); %tick mark
+          \draw [thick] (2.8,3)--(3.2,3); %tick mark
+        \end{tikzpicture}
+  }
+
+  \frame
+  {
+    \frametitle{5) On the diagram mark the congruent line segments with tick marks.}
+      Given $\triangle STU$ with $\overline{ST} \cong \overline{TU}$. 
+      \begin{center}
+      \begin{tikzpicture}[scale=0.3]
+        \draw [thick](0,0)--(9,0)--(4,8)--(0,0);
+        \draw [fill] (0,0) circle [radius=0.05] node[below]{$S$};
+        \draw [fill] (9,0) circle [radius=0.05] node[below]{$T$};
+        \draw [fill] (4,8) circle [radius=0.05] node[above right]{$U$};
+      \end{tikzpicture}
+      \end{center}
+  }
+
+  \frame
+  {
+    \frametitle{6) Apply the Segment Addition Postulate \\
+    Show your work by marking the diagram and writing an equation.}
+      Given $\overline{DEF}$, $DE=8.5$, and $EF=2.5$. Find ${DF}$.\\[0.75cm]
+        \begin{tikzpicture}
+          \draw [-, thick] (0,0)--(7,0);
+          \draw [fill] (0,0) circle [radius=0.05] node[below]{$D$};
+          \draw [fill] (5,0) circle [radius=0.05] node[below]{$E$};
+          \draw [fill] (7,0) circle [radius=0.05] node[below]{$F$};
+        \end{tikzpicture} \vspace{4cm}
+  }
+
+  \frame
+  {
+    \frametitle{7) Find the length of the line segment $\overline{PQ}$.}
+    Given $P(-2)$ and $Q(3)$, as shown on the number line. \\[0.25cm]
+      \begin{tikzpicture}
+        \draw [<->] (-3.5,0)--(6.5,0);
+        \draw [-, thick] (-2,0)--(3,0);
+        \foreach \x in {-3,...,6} %2 leading for diff!=1
+          \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+          \draw [fill] (-2,0) circle [radius=0.05] node[above] {$P$};
+          \draw [fill] (3,0) circle [radius=0.05] node[above] {$Q$};
+      \end{tikzpicture} \\
+      State an equation and the solution. \\
+  Check your work by counting the distance. Leave marks to show your work. \vspace{5cm}  
+  }
+
+  \frame
+  {
+    \frametitle{8) Solve for $x$ using the segment addition postulate}
+    Given $\overline{LMN}$, $LM=3x+1$, $MN=7$, $LN=17$. Find ${x}$.\\[0.15in]
+       \begin{tikzpicture}
+        \draw [-, thick] (0,0)--(7,0);
+        \draw [fill] (0,0) circle [radius=0.05] node[below]{$L$};
+        \draw [fill] (4,0) circle [radius=0.05] node[below]{$M$};
+        \draw [fill] (7,0) circle [radius=0.05] node[below]{$N$};
+        \node at (1.7,0) [above]{$3x+1$};
+        \node at (5.5,0) [above]{$7$};
+        \draw [<->, dashed] (0,-1)--(7,-1);
+        \node at (3.5,-1) [below]{$17$};
+      \end{tikzpicture} %\vspace{1cm}
+  \begin{enumerate}
+      \item Write down an equation to represent the situation. \vspace{0.5cm}
+      \item Solve for $x$. \vspace{2cm}
+      \item Check your answer. \vspace{1cm}
+    \end{enumerate}
+  }
+
+  \frame
+  {
+    \frametitle{9) Solve for $x$ given a bisector}
+    Given $M$ is the midpoint of $\overline{AB}$, $AM=5x+2$, $MB=20$.
+    \begin{enumerate}
+      \item Mark the diagram with the values and tick marks
+      \item Write an equation and solve for $x$
+      \item Check your result
+    \end{enumerate} \vspace{1cm}
+      \begin{center}
+        \begin{tikzpicture}
+          \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+          \draw [-, thick] (0,0)--(7,0);
+          \draw [fill] (3.5,0) circle [radius=0.05] node[below]{$B$};
+          \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+          %\node at (1.7,0.5) [above]{$x+2$};
+          %\node at (5.2,0.5) [above]{$11$};
+          %\draw [<->, dashed] (0,-1)--(7,-1);
+          %\node at (3.5,-1) [below]{$20$};
+        \end{tikzpicture}
+      \end{center} \vspace{4cm}
+  }
+
+  \frame
+  {
+    \frametitle{10) Mark the diagram and state your answer as a fraction}
+      Given $\overline{RST}$, $RS=3 \frac{2}{3}$, and $RT=9 \frac{1}{3}$. Find ${ST}$.\\[0.75cm]
+        \begin{tikzpicture}
+          \draw [-, thick] (0,0)--(7,0);
+          \draw [fill] (0,0) circle [radius=0.05] node[below]{$R$};
+          \draw [fill] (3,0) circle [radius=0.05] node[below]{$S$};
+          \draw [fill] (7,0) circle [radius=0.05] node[below]{$T$};
+        \end{tikzpicture} \vspace{5cm}
+  }
 
 \end{document}
