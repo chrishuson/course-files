@@ -1,0 +1,99 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%\rhead{\small{3 September 2019}}
+\lhead{\small{BECA / Dr. Huson / Geometry Unit 2}}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Christopher J. Huson PhD}
+\date{13 October 2020}
+
+\begin{document}
+\frame{\titlepage}
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{2.1 Angle vocabulary, 13 October}
+  \frame
+  {
+    \frametitle{GQ: How do we measure angles?}
+    \framesubtitle{CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{2.1 Tuesday 13 Oct}}
+  
+    \begin{block}{Do Now: Write down angle definitions}
+    \begin{enumerate}
+        \item \emph{Right angles} measure $90^\circ$
+        \item \emph{Perpendicular} lines meet at right angles. $\overline{AB} \perp \overline{CD}$
+        \item \emph{Acute} angles are $< 90^\circ$
+        \item \emph{Obtuse} angles are $90^\circ < \angle m < 180^\circ$
+        \item A \emph{straight line} or angle measures $180^\circ$
+    \end{enumerate}
+    \end{block}
+    \begin{multicols}{2}
+    \begin{tikzpicture}[scale=0.8]
+      \draw [<->, thick]
+        (3,-1) coordinate (a) node[right] {P}
+        -- (0,0) coordinate (b) node[left] {Q}
+        -- (2,2) coordinate (c) node[above right] {R}
+        pic["1", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
+        {angle=a--b--c};
+    \end{tikzpicture} \\
+    Point $Q$ is the \emph{vertex} \\[0.25cm]
+    The sides or \emph{legs} are $\overrightarrow{QR}$, $\overrightarrow{QP}$ \\[0.25cm]
+    Written $\angle 1$, $\angle Q$, or $\angle PQR$
+  \end{multicols}
+  }
+
+  \section{2.1 Angle relationships, 14 October}
+  \frame
+  {
+    \frametitle{GQ: How do we relate angles to each other?}
+    \framesubtitle{CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{2.2 Thursday 15 Oct}}
+  
+    \begin{block}{Do Now: Write down angle definitions}
+    \begin{enumerate}
+        \item \emph{Adjacent} measure $90^\circ$
+        \item \emph{Complementary} lines meet at right angles. $\overline{AB} \perp \overline{CD}$
+        \item \emph{Supplementary} angles are $< 90^\circ$
+        \item \emph{Vertical} or opposite angles are $90^\circ < \angle m < 180^\circ$
+        \item A \emph{straight line} or angle measures $180^\circ$
+    \end{enumerate}
+    \end{block}
+    \begin{multicols}{2}
+    \begin{tikzpicture}[scale=0.8]
+      \draw [<->, thick]
+        (3,-1) coordinate (a) node[right] {P}
+        -- (0,0) coordinate (b) node[left] {Q}
+        -- (2,2) coordinate (c) node[above right] {R}
+        pic["1", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
+        {angle=a--b--c};
+    \end{tikzpicture} \\
+    Point $Q$ is the \emph{vertex} \\[0.25cm]
+    The sides or \emph{legs} are $\overrightarrow{QR}$, $\overrightarrow{QP}$ \\[0.25cm]
+    Written $\angle 1$, $\angle Q$, or $\angle PQR$
+  \end{multicols}
+  }
+
+
+  \end{document}
