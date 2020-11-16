@@ -29,7 +29,7 @@
 
 \title{Math AI Worksheet Generator and Formative Assessment System}
 \author{Chris Huson}
-\date{October 2020}
+\date{November 2020}
 
 %\fancyhead[RE]{\thepage}
 %\fancyhead[RO]{\thepage \\ Name: \hspace{3cm}}
@@ -63,20 +63,11 @@
 \newpage
 \item Demonstrate your ability to classify angles and use standard terminology.
 \begin{enumerate}
-  \item The given angle $\angle UVW$ is which of the following: acute, obtuse, or right?
-  \begin{center}
-    \begin{tikzpicture}[scale=.8]
-      \draw  [<->, thick] (-3,0)--(0,0)--(135:3);
-      \draw [fill] (-2,0) circle [radius=0.05] node[below]{$U$};
-      \draw [fill] (0,0) circle [radius=0.05] node[below]{$V$};
-      \draw [fill] (135:2) circle [radius=0.05] node[above right]{$W$};
-    \end{tikzpicture}
-  \end{center}
   \item Which of the following are true with respect to the angle, $m\angle PQR$?
   \begin{multicols}{2}
-    True \hspace{0.25cm} False \hspace{0.25cm} It is an acute angle \\[0.5cm]
-    True \hspace{0.25cm} False \hspace{0.25cm} It's measure is $90^\circ$\\[0.5cm]
-    True \hspace{0.25cm} False \hspace{0.25cm} $\overrightarrow{QP} \perp \overrightarrow{QR}$ \\[0.5cm]
+    True \hspace{0.25cm} False \hspace{0.25cm} It is a right angle \\[0.5cm]
+    True \hspace{0.25cm} False \hspace{0.25cm} It's measure is $180^\circ$\\[0.5cm]
+    True \hspace{0.25cm} False \hspace{0.25cm} $\overrightarrow{QP}$ is perpendicular to $ \overrightarrow{QR}$ \\[0.5cm]
     \columnbreak
     \begin{tikzpicture}[scale=0.7, rotate=-20]
       \draw [<->, thick] (4,0)--(0,0)--(0,3);
@@ -91,10 +82,19 @@
   \begin{center}
     \begin{tikzpicture}[scale=.8, rotate=0]
       \draw  [<->, thick] (-3,0)--(3,0);
-      \draw [->, thick] (0,0)--(-1, 2) node[below left]{$D$};
+      \draw [->, thick] (0,0)--(2, 1) node[right]{$D$};
       \draw [fill] (-2,0) circle [radius=0.05] node[below]{$A$};
       \draw [fill] (0,0) circle [radius=0.05] node[below]{$B$};
       \draw [fill] (2,0) circle [radius=0.05] node[below]{$C$};
+    \end{tikzpicture}
+  \end{center}
+  \item The given angle $\angle UVW$ is which of the following: acute, obtuse, or right?
+  \begin{center}
+    \begin{tikzpicture}[scale=.8]
+      \draw  [<->, thick] (-3,0)--(0,0)--(35:3);
+      \draw [fill] (-2,0) circle [radius=0.05] node[below]{$U$};
+      \draw [fill] (0,0) circle [radius=0.05] node[below]{$V$};
+      \draw [fill] (35:2) circle [radius=0.05] node[above left]{$W$};
     \end{tikzpicture}
   \end{center}
   \end{enumerate}
@@ -105,26 +105,26 @@
 
 \item Apply the Angle Addition postulate. Write and equation to support your work.
   \begin{multicols}{2}
-    Given $m\angle CBD = 25^\circ$, $m\angle ABC = 90^\circ$. \\[0.5cm]
-    Find $m \angle ABD$. \\
+    Given $m\angle ABD = 75^\circ$, $m\angle ABC = 90^\circ$. \\[0.5cm]
+    Find $m \angle CBD$. \\
     \begin{tikzpicture}[scale=1.4]
       \draw [<->, thick]
         (0:3) coordinate (a) node[below left] {$C$}
         -- (0,0) coordinate (b) node[below left] {$B$}
-        -- (30:3) coordinate (c) node[below right] {$D$}
-        pic["$25^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
+        -- (20:3) coordinate (c) node[below right] {$D$}
+        pic["$?$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
         {angle=a--b--c};
         \draw [<-, thick]
         (90:2) coordinate (d) node[right] {$A$}
         -- (0,0) coordinate (e)
-        pic["$?$", <->, draw=black, angle eccentricity=1.25, angle radius=1cm]
+        pic["$75$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
         {angle=c--e--d};
       \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
     \end{tikzpicture}
   \end{multicols}
 
 \newpage
-\item A linear pair is formed by two angles, $m\angle RUT = 2x+15$ and $m\angle SUT = 65^\circ$. \\[0.5cm] 
+\item A linear pair is formed by two angles, $m\angle RUT = 110^\circ$ and $m\angle SUT = 5x + 20$. \\[0.5cm] 
   Write an equation, then solve for $x$. \vspace{0.5cm}
     \begin{flushright}
       \begin{tikzpicture}[scale=1]
@@ -132,12 +132,12 @@
           (0:5) coordinate (a) node[below left] {$S$}
           -- (0,0) coordinate (b) node[below] {$U$}
           -- (65:3) coordinate (c) node[above right] {$T$}
-          pic["$65^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          pic["$5x + 20$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
           {angle=a--b--c};
           \draw [<-, thick]
           (180:4) coordinate (d) node[below] {$R$}
           -- (0,0) coordinate (e)
-          pic["$2x+15$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          pic["$110^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
           {angle=c--e--d};
           %\draw [->, thick] (0,0)--(-180:2) node[below right]{$A$};
           %\draw (0,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
@@ -145,26 +145,26 @@
     \end{flushright}
      
 \newpage
-\item Given $m\angle ABD = 2x+25$, $m\angle DBC = 4x$, and $m \angle ABC = 115^\circ$, as shown. \\[0.25cm]
+\item Given $m\angle ABD = 4x-6$, $m\angle DBC = 5x+10$, and $m \angle ABC = 130^\circ$, as shown. \\[0.25cm]
   Model the situation with an equation, then solve for $x$. Check your solution for full credit.
   \begin{flushright}
-      \begin{tikzpicture}[scale=1.8, rotate=90]
+      \begin{tikzpicture}[scale=2, rotate=0]
         \draw [<->, thick]
-          (-10:1.5) coordinate (a) node[left] {$C$}
+          (-10:1.5) coordinate (a) node[below left] {$C$}
           -- (0,0) coordinate (b) node[below] {$B$}
-          -- (50:2) coordinate (c) node[above right] {$D$}
-          pic["$4x$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
+          -- (70:2) coordinate (c) node[above right] {$D$}
+          pic["$5x+10$", <->, draw=black, angle eccentricity=1.75, angle radius=1cm]
           {angle=a--b--c};
           \draw [<-, thick]
-          (100:1.75) coordinate (d) node[below left] {$A$}
+          (120:1.75) coordinate (d) node[below left] {$A$}
           -- (0,0) coordinate (e)
-          pic["$2x+25 \hspace{1cm}$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
+          pic["$4x-6$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
           {angle=c--e--d};
       \end{tikzpicture}
     \end{flushright}
 
 \newpage
-\item Given vertical angles, $m\angle APD = 6x-8$, $m\angle BPC = 5x+5$, as shown. \\[0.25cm]
+\item Given vertical angles, $m\angle APD = 3x-5$, $m\angle BPC = 2x+20$, as shown. \\[0.25cm]
   Find $x$. Check your solution for full credit.
   \begin{flushright}
       \begin{tikzpicture}[scale=1.8, rotate=0]
@@ -172,13 +172,13 @@
           (0:2) coordinate (a) node[below left] {$C$}
           -- (0,0) coordinate (b) node[below right] {$P$}
           -- (70:1.5) coordinate (c) node[below right] {$B$}
-          pic["$5x+5$", <->, draw=black, angle eccentricity=1.75, angle radius=1cm]
+          pic["$2x+20$", <->, draw=black, angle eccentricity=1.75, angle radius=1cm]
           {angle=a--b--c};
           \draw [<->, thick]
           (180:2) coordinate (d) node[above right] {$A$}
           -- (0,0) coordinate (e)
           -- (250:2) coordinate (f) node[above left] {$D$}
-          pic["$6x-8$", <->, draw=black, angle eccentricity=1.75, angle radius=1cm]
+          pic["$3x-5$", <->, draw=black, angle eccentricity=1.75, angle radius=1cm]
           {angle=d--e--f};
       \end{tikzpicture}
     \end{flushright}
@@ -188,19 +188,19 @@
   Find $x$. \\[0.25cm] 
   Show the check for full credit.\vspace{0.25cm}
     \begin{multicols}{2}
-      $m\angle DBE = 6x-16^\circ$ \\[0.25cm]
-      $m\angle EBC = 3x+7^\circ$ \\[0.25cm]
+      $m\angle DBE = 7x-1^\circ$ \\[0.25cm]
+      $m\angle EBC = 6x^\circ$ \\[0.25cm]
       \begin{tikzpicture}[scale=1]
         \draw [<->, thick]
           (0:5) coordinate (a) node[below left] {$C$}
           -- (0,0) coordinate (b) node[below] {$B$}
           -- (40:5) coordinate (c) node[below right] {$E$}
-          pic["$3x+7$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          pic["$6x$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
           {angle=a--b--c};
           \draw [<-, thick]
           (90:4) coordinate (d) node[right] {$D$}
           -- (0,0) coordinate (e)
-          pic["$6x-16$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          pic["$7x-1$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
           {angle=c--e--d};
           \draw [->, thick] (0,0)--(-180:2) node[below right]{$A$};
           \draw (0,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
@@ -208,40 +208,40 @@
     \end{multicols}
 
 \newpage
-\item Spicy: Given $\overleftrightarrow{ABC}$, right angle $\angle DBE$, $m\angle ABE = 4x+4$, and $m\angle CBD = 2x+2$. \\[0.5cm] 
+\item Spicy: Given $\overleftrightarrow{ABC}$, right angle $\angle DBE$, $m\angle ABE = 4x+12$, and $m\angle CBD = 3x-6$. \\[0.5cm] 
   Find $m\angle CBD$. \vspace{0.5cm}
     \begin{flushright}
-      \begin{tikzpicture}[scale=1, rotate=50]
+      \begin{tikzpicture}[scale=1, rotate=10]
         \draw [<->, thick]
           (-30:5) coordinate (a) node[below] {$C$}
           -- (0,0) coordinate (b) node[below] {$B$}
           -- (3,0) coordinate (c) node[above left] {$D$}
-          pic["$2x+2$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          pic["$3x-6$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
           {angle=a--b--c};
           \draw [<->, thick]
           (150:4) coordinate (d) node[below] {$A$}
           -- (0,0) -- (0, 3) coordinate (e) node[above right] {$E$}
-          pic["$4x+4$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          pic["$4x+12$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
           {angle=e--b--d};
           \draw (0,0)++(0.4,0)--++(0,0.4)--+(-0.4,0);
       \end{tikzpicture}
     \end{flushright}
 
 \newpage
-\item Spicy: Ray $\overrightarrow{BF}$ is the angle bisector of $\angle ABC$. Given that the angle measures are $m\angle ABF = 7x-5$ and $m\angle CBF = 5x+13$. \\[0.5cm] 
+\item Spicy: Ray $\overrightarrow{BF}$ is the angle bisector of $\angle ABC$. Given that the angle measures are $m\angle ABF = 7x+9$ and $m\angle CBF = 9x-13$. \\[0.5cm] 
   Find $m\angle ABC$. \vspace{0.5cm}
     \begin{flushright}
-      \begin{tikzpicture}[scale=1, rotate=20]
+      \begin{tikzpicture}[scale=1, rotate=40]
         \draw [<->, thick]
           (0:5) coordinate (a) node[above left] {$C$}
           -- (0,0) coordinate (b) node[below] {$B$}
-          -- (60:3) coordinate (c) node[above right] {$F$}
-          pic["$5x+13$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          -- (80:3) coordinate (c) node[above right] {$F$}
+          pic["$9x-13$", <->, draw=black, angle eccentricity=1.25, angle radius=1.5cm]
           {angle=a--b--c};
           \draw [<-, thick]
-          (120:4) coordinate (d) node[above right] {$A$}
+          (160:4) coordinate (d) node[above right] {$A$}
           -- (0,0) coordinate (e)
-          pic["$7x-5$", <->, draw=black, angle eccentricity=1.25, angle radius=1.5cm]
+          pic["$7x+9$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
           {angle=c--e--d};
           %\draw [->, thick] (0,0)--(-180:2) node[below right]{$A$};
           %\draw (0,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
@@ -249,8 +249,8 @@
     \end{flushright}
 
 \newpage
-\item Spicy: Ray $\overrightarrow{XL}$ is the angle bisector of $\angle KXM$. Given $m\angle JXN = 4x-23$. \\[0.5cm] 
-Find $m\angle KXL$.
+\item Spicy: Ray $\overrightarrow{XL}$ is the angle bisector of $\angle KXM$. Given $m\angle JXN = 2x+3$. \\[0.5cm] 
+Find $x$.
     \begin{center}
     \begin{tikzpicture}[scale=1, rotate=0]
       \draw [<->, thick] (-135:2)--(0,0)--(45:3);
