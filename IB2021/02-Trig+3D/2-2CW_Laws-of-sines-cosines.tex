@@ -7,33 +7,41 @@
 \usepackage{amssymb}
 \usepackage{tikz}
 \usetikzlibrary{quotes, angles}
-\usepackage{venndiagram}
+\usepackage{graphicx}
+\usepackage{enumitem}
 \usepackage{multicol}
+
+\newif\ifmeta
+\metatrue %print standards and topics tags
+
+\title{Regents Geometry}
+\author{Chris Huson}
+\date{September 2020}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+\raggedbottom
 
-%\fancyhead[RE]{\thepage}
-%\fancyhead[RO]{\thepage \\ Name: \hspace{3cm}}
-%\fancyhead[L]{BECA / Dr. Huson / IB Math\\* 7 October 2019}
 
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{3cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry 02-Trig+3D\\* pset ID: 1}
 
 \begin{document}
-\subsubsection*{2.2 Applications of the laws of sines and cosines}
 
+\subsubsection*{2-2CW-Law-of-sines-cosines}
 \begin{enumerate}
-
-  \item Express each value as a decimal, first writing the whole calculator display, and then the 3 sig-fig approximation. \hfill [4 marks]
+\item Express each value as a decimal, first writing the whole calculator display, and then the 3 sig-fig approximation. \hfill [4 marks]
   \begin{multicols}{2}
     \begin{enumerate}
     \item $\displaystyle \frac{2\pi}{3}$
     \item $\displaystyle \frac{\sqrt{3}}{2}$
     \end{enumerate}
-  \end{multicols} \vspace{2cm}
+  \end{multicols}
 
-  \item Express each value as a decimal, rounding to 3 sig-figs if necessary. \hfill [3 marks]
+\item Express each value as a decimal, rounding to 3 sig-figs if necessary. \hfill [3 marks]
   \begin{multicols}{2}
     \begin{enumerate}
     \item $4.561 \times 10^4$
@@ -41,8 +49,7 @@
     \end{enumerate}
   \end{multicols}
 
-  \newpage
-  \item $\triangle ABC$ is shown with $m\angle C=90^\circ$ and the lengths of the triangle's sides are $BC=8$, $AC=6$, and $AB=10$.
+\item $\triangle ABC$ is shown with $m\angle C=90^\circ$ and the lengths of the triangle's sides are $BC=8$, $AC=6$, and $AB=10$.
   \begin{multicols}{2}
         \begin{tikzpicture}[scale=0.6]
           \draw [thick]
@@ -55,33 +62,14 @@
           \node at (3,4.5)[above]{$10$};
         \end{tikzpicture}
         \begin{enumerate}
-        \item Write down the value of $\sin A$.  \\ \hfill [1 mark]\vspace{2cm}
+        \item Write down the value of $\sin A$.  \\ \hfill [1 mark]\vspace{1cm}
         \item Find the measure of $\angle A$.  \hfill [2 marks] \vspace{1cm}
       \end{enumerate}
     \end{multicols}
 
-\newpage
-   \item In right triangle $ABC$, hypotenuse $\overline{AB}$ has a length of 26 cm, and side $\overline{BC}$ has a length of 17.6 cm. What is the measure of angle $B$?
-
-\newpage
-\subsubsection*{Triangle area sine formula}
-\item Find the area of triangle $ABC$, with $AB=15$, $AC=17$, $m\angle A = 52^\circ$. \\[0.5cm]
-  Hint: To use the area formula $A = \frac{1}{2} bh$ first find the altitude using sine and the hypotenuse $AC=17$.
-  \begin{flushleft}
-    \begin{tikzpicture}[scale=0.3]
-      \draw [-, thick] (51.7:17) node[above right]{$C$}--
-        (0,0) node[left]{$A$}--
-        (15,0) node[right]{$B$}--cycle;
-      \node at (1, 0)[above right]{$52^\circ$};
-      \node at (5, 7)[above left]{$17$};
-      \node at (8, 0)[below]{$15$};
-    \draw [-, dashed] (51.7:17)--(10.54,0);
-    \end{tikzpicture}
-    \end{flushleft} 
-
-\newpage
-\subsubsection*{Law of sines}
-  \item Solve the given triangle (determine the values of all lengths and angles)
+\item In right triangle $ABC$, hypotenuse $\overline{AB}$ has a length of 26 cm, and side $\overline{BC}$ has a length of 17.6 cm. What is the measure of angle $B$?
+   
+\item Solve the given triangle (determine the values of all lengths and angles)
   \begin{center}
     \begin{tikzpicture}[scale=1.2]
       \draw [-, thick] (41:4.5) node[above right]{$C$}--
@@ -91,11 +79,11 @@
       \node at (4.8, 0)[above left]{$58^\circ$};
       \node at (2.5, 0)[below]{$112$};
     \end{tikzpicture}
-    \end{center}
+    \end{center} \vspace{1cm}
 
-\newpage
-\subsubsection*{Law of sines}
-  \item The following diagram shows triangle $ABC$ (not drawn to scale).
+   \newpage
+
+\item The following diagram shows triangle $ABC$ (not drawn to scale).
   \begin{center}
     \begin{tikzpicture}[scale=1.4, rotate=-25]
       \draw [-, thick] (50:3.5) node[above right]{$C$}--
@@ -112,8 +100,7 @@
       \item Find the area of triangle $ABC$. \hfill [3 marks]
     \end{enumerate}
 
-\newpage
-  \item The following diagram shows quadrilateral $ABCD$ (not drawn to scale).
+\item The following diagram shows quadrilateral $ABCD$ (not drawn to scale).
   \begin{center}
     \begin{tikzpicture}[scale=1.5, rotate=-20]
       \draw [-, thick] (100:3.5) node[above right]{$D$}--
@@ -135,9 +122,7 @@
       \item Find $A\hat{B}D$. \hfill [3 marks]
     \end{enumerate}
 
-\newpage
-\subsubsection*{Precision application}
-  \item BMI is a measure of a healthy personal weight, 
+\item BMI is a measure of a healthy personal weight, 
   \[\displaystyle BMI = \frac{w}{h^2}\]
     where \\
     $w$ is a person's weight in kilograms, and \\
@@ -147,24 +132,14 @@
         \item These measurements are not exact. Assuming the height is between 159-161 cm and weight 53-55 kg, find the bounds of the BMI.  \hfill [4 marks]
       \end{enumerate}
 
-\newpage
-\subsubsection*{Sine ambiguous case}
-  \item Triangle $ABC$ has an area of 25, with $AB=7$ and $AC=8$. 
-  \begin{enumerate}
-    \item Find the two possible measures for $\hat{A}$. \hfill [4 marks]
-    \item Given that $\hat{A}$ is obtuse, find $BC$. \hfill [3 marks]
-  \end{enumerate}
 
-\newpage
-\subsubsection*{Solid geometry}
+\item Triangle $ABC$ has an area of 25, with $AB=7$ and $AC=8$. 
+   \begin{enumerate}
+     \item Find the two possible measures for $\hat{A}$. \hfill [4 marks]
+     \item Given that $\hat{A}$ is obtuse, find $BC$. \hfill [3 marks]
+   \end{enumerate}
+
 \item Find the slant height of a pyramid with square base 4 meters on a side and height of 4 m. \hfill [3 marks]
-
-
-  \item Find the volume of a spherical balloon 36 meters in diameter. \hfill [3 marks]
-  
-  \item A cone has a height of 24 cm and volume of $220.5\pi \,\mathrm{ cm}^3$. Find its radius. \hfill [3 marks]
-  
-
-
+    
 \end{enumerate}
 \end{document}
