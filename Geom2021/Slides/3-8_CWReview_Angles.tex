@@ -1,0 +1,245 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=0.25in, head=30pt, headsep=0.1in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepgfplotslibrary{statistics}
+%\usepackage{pgfplotstable}
+%\usepackage{tkz-fct}
+%\usepackage{venndiagram}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+\raggedbottom
+\newif\ifmeta
+\metatrue %print standards and topics tags
+
+\title{Math AI Worksheet Generator and Formative Assessment System}
+\author{Chris Huson}
+\date{November 2020}
+
+%\fancyhead[RE]{\thepage}
+%\fancyhead[RO]{\thepage \\ Name: \hspace{3cm}}
+%\fancyhead[L]{BECA / Dr. Huson / 10th Grade Geometry\\* 7 June 2019}
+%
+%\begin{document}
+%\subsubsection*{13.7 Homework: Cross sections, distance applications}
+%\fancyhead[L]{BECA / Dr. Huson / Geometry 03-Volume+angle-bisectors\\* pset ID: 34}
+
+\begin{document}
+
+\subsubsection*{3.8 Review of angle addition; ``Do NOT Solve''}
+\begin{enumerate}
+
+\item Write down an equation stating the value of the given angle.
+    \begin{tikzpicture}[scale=0.7, rotate=-20]
+      \draw [<->, thick] (4,0)--(0,0)--(0,3);
+      \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+      %\draw [fill] (-1,2.5) circle [radius=0.05] node[left ]{$B$};
+      \draw [fill] (0,0) circle [radius=0.05] node[below]{$Q$};
+      \draw [fill] (0,2) circle [radius=0.05] node[right]{$P$};
+      \draw [fill] (3,0) circle [radius=0.05] node[above]{$R$};
+    \end{tikzpicture}
+
+\newpage
+  \item As shown below, two lines intersect making four angles. Write two equations, one for $x$ and one for $y$.
+      \begin{tikzpicture}[scale=0.7, rotate=20]
+      \draw [<->, thick] (0,-1.5)--(10,1.5);
+      \draw [<->, thick] (2,3.5)--(7,-3.5);
+      \node at (3,.4){$65^\circ$};
+      \node at (6,-.6){$x$};
+      \node at (5,1){$y$};
+    \end{tikzpicture}
+
+    \newpage
+    \item Write down an equation expressing the sum of the degree measures of this linear pair, $\angle ABD$ and $\angle CBD$.
+    \begin{center}
+      \begin{tikzpicture}[scale=.8, rotate=0]
+        \draw  [<->, thick] (-3,0)--(3,0);
+        \draw [->, thick] (0,0)--(-1, 2) node[below left]{$D$};
+        \draw [fill] (-2,0) circle [radius=0.05] node[below]{$A$};
+        \draw [fill] (0,0) circle [radius=0.05] node[below]{$B$};
+        \draw [fill] (2,0) circle [radius=0.05] node[below]{$C$};
+      \end{tikzpicture}
+    \end{center}
+  
+\newpage
+\item Apply the Angle Addition postulate. Given $m\angle CBD = 28^\circ$, $m\angle ABC = 90^\circ$.
+  \begin{multicols}{2}
+    Write an equation to represent the situation \\ (do not solve) \\
+    \begin{tikzpicture}[scale=1.4]
+      \draw [<->, thick]
+        (0:3) coordinate (a) node[below left] {$C$}
+        -- (0,0) coordinate (b) node[below left] {$B$}
+        -- (30:3) coordinate (c) node[below right] {$D$}
+        pic["$28^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
+        {angle=a--b--c};
+        \draw [<-, thick]
+        (90:2) coordinate (d) node[right] {$A$}
+        -- (0,0) coordinate (e)
+        pic["$?$", <->, draw=black, angle eccentricity=1.25, angle radius=1cm]
+        {angle=c--e--d};
+      \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+    \end{tikzpicture}
+  \end{multicols}
+
+\newpage
+\item A linear pair is formed by two angles, $m\angle RUT = 3x+35$ and $m\angle SUT = 62^\circ$. \\[0.5cm] 
+  Write an equation. \emph{Do not} solve for $x$. \vspace{0.5cm}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=1]
+        \draw [<->, thick]
+          (0:5) coordinate (a) node[below left] {$S$}
+          -- (0,0) coordinate (b) node[below] {$U$}
+          -- (65:3) coordinate (c) node[above right] {$T$}
+          pic["$62^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          {angle=a--b--c};
+          \draw [<-, thick]
+          (180:4) coordinate (d) node[below] {$R$}
+          -- (0,0) coordinate (e)
+          pic["$3x+35$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          {angle=c--e--d};
+          %\draw [->, thick] (0,0)--(-180:2) node[below right]{$A$};
+          %\draw (0,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
+      \end{tikzpicture}
+    \end{flushright}
+     
+\newpage
+\item Given $m\angle ABD = 3x+25$, $m\angle DBC = 4x+17$, and $m \angle ABC = 119^\circ$, as shown. \\[0.25cm]
+  Model the situation with an equation, but do not solve for $x$.
+  \begin{flushright}
+      \begin{tikzpicture}[scale=1.8, rotate=90]
+        \draw [<->, thick]
+          (-10:1.5) coordinate (a) node[left] {$C$}
+          -- (0,0) coordinate (b) node[below] {$B$}
+          -- (50:2) coordinate (c) node[above right] {$D$}
+          pic["$4x+17$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
+          {angle=a--b--c};
+          \draw [<-, thick]
+          (100:1.75) coordinate (d) node[below left] {$A$}
+          -- (0,0) coordinate (e)
+          pic["$3x+25 \hspace{1cm}$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
+          {angle=c--e--d};
+      \end{tikzpicture}
+    \end{flushright}
+
+\newpage
+\item Given vertical angles, $m\angle APD = 12x-8$, $m\angle BPC = 9x+35$, as shown. \\[0.25cm]
+  Write an equation that could be used to solve for $x$.
+  \begin{flushright}
+      \begin{tikzpicture}[scale=1.8, rotate=0]
+        \draw [<->, thick]
+          (0:2) coordinate (a) node[below left] {$C$}
+          -- (0,0) coordinate (b) node[below right] {$P$}
+          -- (70:1.5) coordinate (c) node[below right] {$B$}
+          pic["$9x+35$", <->, draw=black, angle eccentricity=1.75, angle radius=1cm]
+          {angle=a--b--c};
+          \draw [<->, thick]
+          (180:2) coordinate (d) node[above right] {$A$}
+          -- (0,0) coordinate (e)
+          -- (250:2) coordinate (f) node[above left] {$D$}
+          pic["$12x-8$", <->, draw=black, angle eccentricity=1.75, angle radius=1cm]
+          {angle=d--e--f};
+      \end{tikzpicture}
+    \end{flushright}
+ 
+\newpage
+\item In the diagram shown, $\overrightarrow{BD} \perp \overleftrightarrow{ABC}$ with angle measures marked. 
+  Find $x$. \\[0.25cm] 
+  Show the check for full credit.\vspace{0.25cm}
+    \begin{multicols}{2}
+      $m\angle DBE = 6x-16^\circ$ \\[0.25cm]
+      $m\angle EBC = 3x+7^\circ$ \\[0.25cm]
+      \begin{tikzpicture}[scale=1]
+        \draw [<->, thick]
+          (0:5) coordinate (a) node[below left] {$C$}
+          -- (0,0) coordinate (b) node[below] {$B$}
+          -- (40:5) coordinate (c) node[below right] {$E$}
+          pic["$3x+7$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          {angle=a--b--c};
+          \draw [<-, thick]
+          (90:4) coordinate (d) node[right] {$D$}
+          -- (0,0) coordinate (e)
+          pic["$6x-16$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          {angle=c--e--d};
+          \draw [->, thick] (0,0)--(-180:2) node[below right]{$A$};
+          \draw (0,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
+      \end{tikzpicture}
+    \end{multicols}
+
+\newpage
+\item Spicy: Given $\overleftrightarrow{ABC}$, right angle $\angle DBE$, $m\angle ABE = 4x+4$, and $m\angle CBD = 2x+2$. \\[0.5cm] 
+  Find $m\angle CBD$. \vspace{0.5cm}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=1, rotate=50]
+        \draw [<->, thick]
+          (-30:5) coordinate (a) node[below] {$C$}
+          -- (0,0) coordinate (b) node[below] {$B$}
+          -- (3,0) coordinate (c) node[above left] {$D$}
+          pic["$2x+2$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          {angle=a--b--c};
+          \draw [<->, thick]
+          (150:4) coordinate (d) node[below] {$A$}
+          -- (0,0) -- (0, 3) coordinate (e) node[above right] {$E$}
+          pic["$4x+4$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          {angle=e--b--d};
+          \draw (0,0)++(0.4,0)--++(0,0.4)--+(-0.4,0);
+      \end{tikzpicture}
+    \end{flushright}
+
+\newpage
+\item Spicy: Ray $\overrightarrow{BF}$ is the angle bisector of $\angle ABC$. Given that the angle measures are $m\angle ABF = 7x-5$ and $m\angle CBF = 5x+13$. \\[0.5cm] 
+  Find $m\angle ABC$. \vspace{0.5cm}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=1, rotate=20]
+        \draw [<->, thick]
+          (0:5) coordinate (a) node[above left] {$C$}
+          -- (0,0) coordinate (b) node[below] {$B$}
+          -- (60:3) coordinate (c) node[above right] {$F$}
+          pic["$5x+13$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          {angle=a--b--c};
+          \draw [<-, thick]
+          (120:4) coordinate (d) node[above right] {$A$}
+          -- (0,0) coordinate (e)
+          pic["$7x-5$", <->, draw=black, angle eccentricity=1.25, angle radius=1.5cm]
+          {angle=c--e--d};
+          %\draw [->, thick] (0,0)--(-180:2) node[below right]{$A$};
+          %\draw (0,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
+      \end{tikzpicture}
+    \end{flushright}
+
+\newpage
+\item Spicy: Ray $\overrightarrow{XL}$ is the angle bisector of $\angle KXM$. Given $m\angle JXN = 4x-23$. \\[0.5cm] 
+Find $m\angle KXL$.
+    \begin{center}
+    \begin{tikzpicture}[scale=1, rotate=0]
+      \draw [<->, thick] (-135:2)--(0,0)--(45:3);
+      \draw [<->, thick] (-4,0)--(3,0);
+      \draw [->, thick] (0,0)--(0,3);
+      \draw (0,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
+      %\draw [fill] (-1,2.5) circle [radius=0.05] node[left ]{$B$};
+      \draw [fill] (45:2) circle [radius=0.05] node[right]{$L$};
+      \draw [fill] (-3,0) circle [radius=0.05] node[above left]{$J$}; 
+      \draw [fill] (0,0) circle [radius=0.05] node[below right]{$X$};
+      \draw [fill] (0,2) circle [radius=0.05] node[left]{$K$};
+      \draw [fill] (2,0) circle [radius=0.05] node[below right]{$M$};
+      \draw [fill] (-135:1.5) circle [radius=0.05] node[right]{$N$};
+    \end{tikzpicture}
+    \end{center}
+
+
+\end{enumerate}
+\end{document}
