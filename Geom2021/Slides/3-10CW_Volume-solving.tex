@@ -158,16 +158,52 @@ $A = \frac{1}{2} \times b \times h = 78$
   \end{multicols}
 
 \newpage
-\item Find the length of the base of a rectangle with area $A=22 \frac{1}{2}$ and height $h=5$, expressed as a fraction. Start with the form (use $b$ or $x$): \\[0.5cm]
-$A = b \times h = 22 \frac{1}{2}$
+\item Find the base of a rectangle with area $A=16.8$ and height $h=4.8$, expressed as a decimal. First write an equation substituting the given values in the area formula.
   \begin{flushright}
   \begin{tikzpicture}[scale=1.25]
     \draw [-, thick] (0,0)--(3,0)--(3,3.5)--(0,3.5)--cycle;
-    \node at (3.5, 2){5};
-    \node at (1.5, -0.5){$?$};
-    \node at (1.5, 2){$A = 22 \frac{1}{2}$};
+    \node at (3.5, 2){$4.8$};
+    \node at (1.5, -0.5){$x$};
+    \node at (1.5, 2){$A = 16.8$};
   \end{tikzpicture}
   \end{flushright}
-  
+
+\newpage
+\item A rectangular prism (shown below) has a volume $V=925$ cubic feet. Calculate the area of its base and then solve for its height.
+\begin{multicols}{2}
+\begin{enumerate}
+  \item The base measures 12.5 by 4 in feet. Find its area.
+  \item Find the prism's height, $x$. \vspace{2cm}
+\end{enumerate}
+  \begin{flushright}
+    \begin{tikzpicture}[scale=1]
+      \draw [-, thick] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+      \draw [-, thick] (0,4)--(0.5,4.75)--(3.5,4.75)--(3,4);
+      \draw [-, thick] (3,0)--(3.5,0.75)--(3.5,4.75);
+      \node at (3.75, 2.75){$x$};
+      \node at (1.5, -0.25){$12.5$};
+      \node at (3.5, 0.25){$4$};
+    \end{tikzpicture}
+  \end{flushright}
+\end{multicols}
+
+\newpage
+\item Find the radius and circumference of circle $O$ with diameter $D=14$ centimeters.
+  \begin{multicols}{2}
+  \raggedcolumns
+  \begin{enumerate}
+    \item Write down the radius. \vspace{1.2cm}
+    \item State the circumference in terms of $\pi$ \vspace{1cm}
+    \item Express the circumference as a decimal, rounding to the nearest tenth.
+  \end{enumerate}
+  \columnbreak
+    \begin{tikzpicture}[scale=1]
+      \draw (0,0) circle[radius=3];
+      \draw [thick] (0:3)--(0,0)--(-3,0);
+      \draw [fill] (0,0) circle [radius=0.05] node[below]{$O$};
+      \draw (1.5,0) node[below] {$r$};
+    \end{tikzpicture}
+  \end{multicols}
+
 \end{enumerate}
 \end{document}
