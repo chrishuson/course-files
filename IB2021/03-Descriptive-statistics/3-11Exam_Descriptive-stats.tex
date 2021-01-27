@@ -1,0 +1,240 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles}
+
+\usepackage{pgfplots}
+\pgfplotsset{width=9cm,compat=1.9}
+\usepgfplotslibrary{statistics}
+\usepackage{pgfplotstable}
+
+\usepackage{venndiagram}
+\usepackage{multicol}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+%\renewcommand{\baselinestretch}{1.5}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{3cm}}
+\fancyhead[LO]{BECA / Dr. Huson / IB Math\\* 27 January 2021}
+
+
+\begin{document}
+\subsubsection*{3.11 Exam: Descriptive statistics}
+
+\begin{enumerate}
+\subsubsection*{Write your answers on the exam in the space provided (or use lined paper labeled clearly). Show work as required.}
+  
+\item The box-and-whisker plot represents the examination scores of a group of students.
+  %\includegraphics[width=9cm]{2-16exam-scores-box-plot.png}
+  \begin{center}
+  \begin{tikzpicture}[scale=1.0]
+    \begin{axis}[
+        title={Examination Scores},
+        axis lines=left,
+        xmin=30, xmax=80,
+        y=1cm,
+        ytick={1},
+        yticklabels={},
+      enlargelimits=0.25,
+        ]
+        %\addplot+ [boxplot]
+        %table {3-11_IB-exam.txt};
+       \addplot+ [
+        boxplot prepared={draw position=1,
+            lower whisker=33, lower quartile=40,
+            median=60,
+            upper quartile=66, upper whisker=80,
+            %average=28,
+            },
+        ] coordinates {};
+    
+    \end{axis}
+    \end{tikzpicture}
+  \end{center}
+
+  \begin{enumerate}
+    \item Write down the median score. \hfill [1 marks]\\[1.25cm]
+    The range of the scores is 47 marks, and the interquartile range is 26 marks.
+    \item Find the value of
+    \begin{enumerate}
+      \item the minimum score; \hfill [2 marks] \vspace{1.5cm}
+      \item the third quartile. \hfill [2 marks] \vspace{1.5cm}
+    \end{enumerate}
+  \end{enumerate}
+
+\item A box contains 100 cards. Each card has a number between one and six written on it. The following table shows the frequencies for each number.
+\begin{center}
+  \begin{tabular}{|l|r|r|r|r|r|r|}
+    \hline
+    Number & 1 & 2 & 3 & 4 & 5 & 6\\ 
+    \hline 
+    Frequency & 26 & 10 & 20 & $k$ & 29 & 11\\ 
+    \hline 
+  \end{tabular}
+\end{center}
+
+\begin{enumerate}
+  \item Calculate the value of $k$. \hfill [3 marks] \vspace{1.5cm}
+  \item Find
+  \begin{enumerate}
+    \item the median; \hfill [2 marks] \vspace{2cm}
+    \item the interquartile range. \hfill [3 marks]
+  \end{enumerate}
+\end{enumerate}
+
+  \newpage
+  \item Given the following set of 15 data:
+    \begin{center}
+    3, 4, 4, 5, 5, 5, 6, 8, 9, 11, 11, 15, 15, 16, 17
+  \end{center}
+  \begin{enumerate}
+    \item Write down the mode \hfill [1 marks] \vspace{1cm}
+    \item Find the median. \hfill [1 marks] \vspace{1.5cm}
+    \item Find the interquartile range. \hfill [2 marks] \vspace{3cm}
+    \item Draw a box and whiskers plot of the data on the axis below. \hfill [2 marks] \vspace{1cm}
+      \begin{center}
+        \begin{tikzpicture}[scale=.5]
+          \draw [help lines, dashed] (0,0) grid (20,4);
+          \draw [thick, ->] (0,0) -- (20.5,0) node [below right] {$x$};
+          \foreach \x in {0,2,4,6,8,10, 12, 14, 16, 18, 20}
+            \draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+          \draw [thick, -] (0,0)--(0,4);
+        \end{tikzpicture}
+      \end{center} \vspace{1cm}
+      \item Find the mean. \hfill [2 marks]
+    \end{enumerate}
+
+\newpage
+
+  \item There are 250 high school students at BECA ranging in age from 13 to 18 years old. The following table shows the frequencies of each age.
+    \begin{center}
+    \begin{tabular}{|l|r|r|r|r|r|r|}
+      \hline
+      Age (years) & 13 & 14 & 15 & 16 & 17 & 18\\ 
+      \hline 
+      Frequency & 27 & 53 & 60 & 55 & 43 & 12\\ 
+      \hline 
+      \end{tabular}
+    \end{center}
+
+  \begin{enumerate}
+    %\item Calculate the value of $k$. \hfill [1 mark] \vspace{1.5cm}
+    \item Write down the mode. \hfill [1 mark] \vspace{1.5cm}
+    \item Find the value of the range. \hfill [1 marks] \vspace{1.5cm}
+    \item Find the median. \hfill [1 marks] \vspace{1.5cm}
+    \item Find the mean. \hfill [2 marks] \vspace{1.5cm}
+    \item Find the standard deviation. \hfill [2 marks] \vspace{1.5cm}
+    \item Four years later the same 250 people have moved on to college and career. Find the new values of the 
+    \begin{enumerate}
+      \item mean; \hfill [1 marks] \vspace{1.5cm}
+      \item standard deviation. \hfill [1 marks]
+    \end{enumerate}
+  \end{enumerate}
+    
+\newpage
+  \item The histogram below shows the heart rate $x$ in beats per minute for 65 athletes after a fitness exercise.
+
+    \begin{center}
+      \begin{tikzpicture}
+      \begin{axis}[
+        xlabel=Heart rate (beats per minute),
+        ylabel=Frequency,
+        ybar interval=1,
+        xmin=60, xmax=195,
+        ymin=0, ymax=24,
+        xtick={70,90,110,130,150,170,190},
+        ytick={0,2,4,6,8,10,12,14,16,18,20,22},
+        axis lines = left,
+        ymajorgrids=true,
+        axis x discontinuity=crunch,
+      ]
+      \addplot+ [color=black, fill=lightgray]
+        coordinates {(80,9) (100,15)
+          (120,20) (140,14) 
+          (160,7) 
+          (180,3)}; %Last pair does not show
+      \end{axis}
+      \end{tikzpicture}
+    \end{center}
+
+    The following is the frequency table for the distribution of $x$. \\[0.25cm]
+      \begin{tabular}{|l|c|c|c|c|c|}
+        \hline
+        HR ($x$) & $70 \leq x < 90$ & $90 \leq x < 110$ & $110 \leq x < 130$ & $130 \leq x < 150$ & $150 \leq x < 170$ \\ 
+        \hline 
+        Freq & 9 & $p$ & 20 & 14 & 7  \\ 
+        \hline 
+        \end{tabular}
+      \begin{enumerate}
+        \item Write down the value of $p$. \hfill [1 mark] \vspace{1cm}
+        \item Write down the modal class. \hfill [2 marks] \vspace{1cm}
+        \item What percentage of the athletes have a heart rate of 130 beats per minute or greater? \hfill [2 marks] \vspace{1cm}
+        \item Consider the class interval $70 \leq x < 90$.
+        \begin{enumerate}
+          \item Write down the interval width. \hfill [1 mark] \vspace{1cm}
+          \item Write down the mid-interval value. \hfill [1 mark] 
+        \end{enumerate}
+        \item Hence find an estimate for the
+        \begin{enumerate}
+          \item mean; \hfill [2 marks] \vspace{1cm}
+          \item standard deviation. \hfill [2 marks] 
+        \end{enumerate}
+      \end{enumerate}
+
+\end{enumerate}
+\end{document}
+
+\item Consider the following frequency table.
+\begin{center}
+  \begin{tabular}{|c|c|}
+    \hline
+    $x$ & Frequency\\ 
+    \hline 
+    10 & 2 \\ 
+    \hline 
+    11 & 6 \\ 
+    \hline 
+    12 & 11 \\ 
+    \hline 
+    13 & 12 \\ 
+    \hline 
+    14 & 8 \\ 
+    \hline 
+    15 & 3 \\ 
+    \hline 
+    \end{tabular}
+\end{center}
+
+\begin{enumerate}
+  \item Write down the mode \hfill [1 marks] \vspace{1cm}
+  \item Find the value of the range. \hfill [2 marks] \vspace{1.5cm}
+  \item Find the value of the mean. \hfill [2 marks] \vspace{1cm}
+  \item Find the value of the standard deviation. \hfill [2 marks]
+\end{enumerate}
+\vspace{1cm}
+
+
+\item The scores of 30 students taking an IB Paper 2 are shown in the frequency table below.
+    
+\begin{tabular}{|l|c|c|c|c|}
+  \hline
+  Mark ($x$) & $10 \leq x < 30$ & $30 \leq x < 50$ & $50 \leq x < 70$ & $70 \leq x < 90$\\ 
+  \hline 
+  Frequency & 8 & 12 & 7 & 3\\ 
+  \hline 
+  \end{tabular}
+
+\begin{enumerate}
+  \item Write down the modal class.  \hfill [1 mark]  \vspace{2cm}
+  \item Estimate the mean score $\overline{x}$. \hfill [3 marks] \vspace{2cm}
+  \item Estimate the standard deviation of the scores, $\sigma$.  \hfill [3 marks] \vspace{1cm}
+\end{enumerate}
