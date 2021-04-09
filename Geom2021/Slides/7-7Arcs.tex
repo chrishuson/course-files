@@ -105,7 +105,8 @@ Graph the circle in Graspable Math or Geogebra and paste the image here.
   \end{multicols}
 
 \newpage
-\item Lesson: Any portion of the circumference of a circle is called an \emph{arc} and written $\wideparen{AB}$.
+\item Lesson: Any portion of the circumference of a circle is called an \emph{arc} and written $\wideparen{AB}$. \\[0.25cm]
+A \emph{sector} is part of a circle (``pie slice'') bounded by two radii and an arc.
     \begin{multicols}{2}
     \raggedcolumns
     \begin{enumerate}[itemsep=0.5cm]
@@ -151,7 +152,32 @@ Graph the circle in Graspable Math or Geogebra and paste the image here.
       \node at (-10:2.25) {$12$};
     \end{tikzpicture}
     \end{multicols}
-    
+
+\newpage
+\item A regular pentagon is inscribed in a circle with a radius $r=10$, as shown.
+    \begin{multicols}{2}
+    \raggedcolumns
+    \begin{enumerate}[itemsep=2cm]
+      \item Find the circle's area in terms of $\pi$. ($A=\pi r^2$)
+      \item What is the degree measure of the central angle $\angle AOB$?
+      \item What is the area of the sector bounded by $\overline {AO}$, $\overline {BO}$, and $\wideparen{AB}$?
+    \end{enumerate}
+    \begin{tikzpicture}[scale=0.8]
+      \fill [lightgray]
+      (0,0)--(0:4) arc (0:72:4)--(0,0);
+      \draw (0,0) circle[radius=4];
+      \draw [thick, dotted]
+      (0:4) node[above right] {$A$}--
+      (0,0) node[left] {$O$}--
+      (72:4) node[above right] {$B$};
+      \draw [thick]
+      (0:4) -- (72:4)-- (144:4)-- (216:4)-- (288:4)--cycle;
+      \fill (0,0) circle[radius=.1];
+      \node at (35:1) {$?$};
+      \node at (-10:2.25) {$10$};
+    \end{tikzpicture}
+    \end{multicols}
+
 \newpage
 \item What is an equation of circle O shown in the graph below?
   \begin{center}
