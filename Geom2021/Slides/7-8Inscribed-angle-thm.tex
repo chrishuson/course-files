@@ -93,7 +93,7 @@
 \end{multicols}
 
 \newpage
-\item Do Now: Given circle $O$, diameter $\overline {AC}$, radius $\overline {AC}$, and central angle $m\angle BOC= 80^\circ$.
+\item Do Now: Given circle $O$, diameter $\overline {AC}$, radius $\overline {BO}$, and central angle $m\angle BOC= 80^\circ$.
     \begin{multicols}{2}
     \raggedcolumns
     \begin{enumerate}[itemsep=1cm]
@@ -142,6 +142,28 @@
     \end{multicols}
 
 \newpage
+\item Given circle $P$ with $m \wideparen{AB}=40^\circ$.
+  \begin{multicols}{2}
+    \raggedcolumns
+    \begin{enumerate}
+      \item Write down the $m\angle APB$. \vspace{1.7cm}
+      \item Find the $m\angle AQB$. \vspace{2cm}
+    \end{enumerate}
+      \begin{tikzpicture}[scale=.65]
+        \draw (0,0) circle[radius=5];
+        \fill (0,0) circle[radius=.1];
+        \draw [thick]
+        (170:5) node[left] {$B$}--
+        (0,0) node[below] {$P$}--
+        (130:5) node[above left] {$A$};
+        \draw [thick] (0,0)--(-10:5) node[below left] {$Q$}--(130:5);
+        \draw (145:5) node[left]{$40^\circ$};
+        \draw [thick, <->] (130:1) arc (130:170:1);
+        \draw [thick, <->] (-10:3.5) arc (170:140:1);
+      \end{tikzpicture}
+  \end{multicols}
+
+\newpage
 \item Given circle $P$ with $m \wideparen{AB}=130^\circ$.
   \begin{multicols}{2}
     \raggedcolumns
@@ -149,118 +171,37 @@
       \item Write down the $m\angle APB$. \vspace{1.7cm}
       \item Find the $m\angle AQB$. \vspace{2cm}
     \end{enumerate}
-      \begin{tikzpicture}[scale=.5]
+      \begin{tikzpicture}[scale=.6]
         \draw (0,0) circle[radius=5];
         \draw [thick]
         (-20:5) node[right] {$B$}--
         (0,0) node[below] {$P$}--
         (110:5) node[above left] {$A$};
         \draw [thick] (-20:5)--(210:5) node[below left] {$Q$}--(110:5);
-        \draw (60:5) node[right]{$130^\circ$};
+        \draw (60:5.2) node[right]{$130^\circ$};
       \end{tikzpicture}
   \end{multicols}
 
 \newpage
-\item What is the equation of a circle with center $(-2,5)$ and radius $r=4$?\\[0.5cm]
-Graph the circle in Graspable Math or Geogebra and paste the image here.
-%https://graspablemath.com/canvas?load=_6116642654304917
-
-\newpage
-\item Given circle $O$ with points on the circle $A$, $B$, $C$, $D$ as shown. Find each central angle measure.
-  \begin{multicols}{2}
-    \begin{enumerate} 
-      \item $m\angle AOB =$
-      \item $m\angle BOC =$
-      \item $m\angle AOC =$
-      \item What is the measure of the \emph{reflex angle} $m\angle AOC =$, i.e. the one containing point $D$ that is $>180^\circ$
-      \end{enumerate}
-      \begin{tikzpicture}[scale=0.8]
-        \draw (0,0) circle[radius=4];
-        \draw [thick]
-        (-80:4) node[below left] {$B$}--
-        (0,0) node[above] {$O$}--
-        (-160:4) node[below left] {$A$};
-        \draw [thick]
-        (0,0) -- (-20:4) node[right] {$C$};
-        %\node at (0,0) {$\bullet$};
-        \fill (0,0) circle[radius=.1];
-        \fill (70:4) circle[radius=.1]node[above]{$D$};
-        \node at (-50:1.25) {$60^\circ$};
-        \node at (-115:1.2) {$70^\circ$};
-      \end{tikzpicture}
-  \end{multicols}
-
-\newpage
-\item Lesson: Any portion of the circumference of a circle is called an \emph{arc} and written $\wideparen{AB}$. \\[0.25cm]
-A \emph{sector} is part of a circle (``pie slice'') bounded by two radii and an arc.
+\item Given circle $O$, diameters $\overline {AC}$ and $\overline {BD}$, and arc measure $m \wideparen{BC}= 70^\circ$.
     \begin{multicols}{2}
     \raggedcolumns
-    \begin{enumerate}[itemsep=0.5cm]
-      \item Highlight arc $\wideparen{AB}$.
-      \item An arc's degree measure equals its corresponding central angle measure. \\[0.25cm]
-      If $m\angle AOB = 60^\circ$, what is the $m \wideparen{AB}$?
-      \item A \emph{semicircle} is half of a circle.
-      \item An arc smaller than half a circle is a \emph{minor} arc, one larger is a \emph{major} arc. \\[0.25cm]
-      Which is a major arc, $\wideparen{AB}$ or $\wideparen{ACB}$?
+    \begin{enumerate}[itemsep=1cm]
+      \item How do we know $\angle {AOD} \cong \angle {BOC}$?
+      \item What are the degree measures of $m \angle {BOC}$ and $m \angle {AOD}$?
+      \item Write down $m \wideparen{AD}$.
+      \item Find Write down $m \wideparen{AB}$
     \end{enumerate}
-    \begin{tikzpicture}[scale=0.8]
+    \begin{tikzpicture}[scale=0.7]
       \draw (0,0) circle[radius=4];
       \draw [thick]
-      (0:4) node[right] {$A$}--
-      (0,0) node[left] {$O$}--
-      (60:4) node[above right] {$B$};
-      \fill (130:4) circle[radius=.1]node[above]{$C$};
-      \fill (0,0) circle[radius=.1];
-      \node at (30:1.25) {$60^\circ$};
-    \end{tikzpicture}
-    \end{multicols}
-
-\newpage
-\item A regular hexagon is inscribed in a circle with a radius $r=12$, as shown.
-    \begin{multicols}{2}
-    \raggedcolumns
-    \begin{enumerate}[itemsep=2cm]
-      \item Find the circumference of the circle in terms of $\pi$. ($C=2\pi r$)
-      \item How long is the curved part of the circle from point $A$ to $B$, $\wideparen{AB}$?
-      \item What is the degree measure of the arc from point $A$ to $C$,  $m \wideparen{AC}$?
-    \end{enumerate}
-    \begin{tikzpicture}[scale=0.8]
-      \draw (0,0) circle[radius=4];
-      \draw [thick, dotted]
-      (0:4) node[above right] {$A$}--
-      (0,0) node[left] {$O$}--
-      (60:4) node[above right] {$B$};
+      (190:4) node[left] {$A$}--
+      (0,0) node[below right] {$O$}--
+      (10:4) node[right] {$C$};
       \draw [thick]
-      (0:4) -- (60:4)-- (120:4)-- (180:4)-- (240:4)-- (300:4)-- cycle;
-      \fill (120:4) circle[radius=.1]node[above]{$C$};
+      (-100:4) node[below] {$D$} -- (80:4) node[above] {$B$};
       \fill (0,0) circle[radius=.1];
-      \node at (30:1.25) {$60^\circ$};
-      \node at (-10:2.25) {$12$};
-    \end{tikzpicture}
-    \end{multicols}
-
-\newpage
-\item A regular pentagon is inscribed in a circle with a radius $r=10$, as shown.
-    \begin{multicols}{2}
-    \raggedcolumns
-    \begin{enumerate}[itemsep=2cm]
-      \item Find the circle's area in terms of $\pi$. ($A=\pi r^2$)
-      \item What is the degree measure of the central angle $\angle AOB$?
-      \item What is the area of the sector bounded by $\overline {AO}$, $\overline {BO}$, and $\wideparen{AB}$?
-    \end{enumerate}
-    \begin{tikzpicture}[scale=0.8]
-      \fill [lightgray]
-      (0,0)--(0:4) arc (0:72:4)--(0,0);
-      \draw (0,0) circle[radius=4];
-      \draw [thick, dotted]
-      (0:4) node[above right] {$A$}--
-      (0,0) node[left] {$O$}--
-      (72:4) node[above right] {$B$};
-      \draw [thick]
-      (0:4) -- (72:4)-- (144:4)-- (216:4)-- (288:4)--cycle;
-      \fill (0,0) circle[radius=.1];
-      \node at (35:1) {$?$};
-      \node at (-10:2.25) {$10$};
+      \node at (50:4.5) {$70^\circ$};
     \end{tikzpicture}
     \end{multicols}
 
@@ -271,38 +212,29 @@ A \emph{sector} is part of a circle (``pie slice'') bounded by two radii and an 
       \draw [thick, <->] (-4.5,0) -- (10.5,0) node [below right] {$x$};
       \draw [thick, <->] (0,-6.5)--(0,2.5) node [left] {$y$};
       \draw [help lines] (-4,-6) grid (10,2);
-      \draw (4,-2) circle[radius=3];
-      \fill (4,-2) circle[radius=.1]node[right]{$O$};
-      \draw [thick, <->] (1,-6.25) -- (1,2.25) node [above right] {$l$};
-      \fill (1,-2) circle[radius=.1]node[left]{$T$};
+      \draw (4,-3) circle[radius=3];
+      \fill (4,-3) circle[radius=.1]node[right]{$O$};
+      \draw [thick, <->] (7,-6.25) -- (7,2.25) node [above right] {$l$};
+      \fill (7,-3) circle[radius=.1]node[right]{$T$};
     \end{tikzpicture}
   \end{center}
   \begin{multicols}{2}
     \begin{enumerate}
-      \item $(x-4)^2+(y+2)^2=9$
-      \item $(x-4)^2+(y+2)^2=9^2$
-      \item $(x+2)^2+(y-4)^2=9$
-      \item $(x+2)^2+(y-4)^2=9^2$
+      \item $(x-4)^2+(y+3)^2=9$
+      \item $(x-4)^2+(y+3)^2=9^2$
+      \item $(x+2)^2+(y-3)^2=9$
+      \item $(x+2)^2+(y-3)^2=9^2$
     \end{enumerate}
   \end{multicols}
-  Write down the coordinates of the point of tangency $T$ and the equation of the tangent line $l$.
-     
+  The circle is tangent to line $l$ and the $x$-axis. Write down the equations of line $l$ and the $x$-axis.
+  
 \newpage
-\item What are the coordinates of the center and the length of the radius of the circle whose equation is $(x-4)^2+(y+3)^2=16$?
-    \begin{enumerate}
-      \item center $(-4,3)$ and radius 8
-      \item center $(4,-3)$ and radius 4
-      \item center $(-4,3)$ and radius 4
-      \item center $(4,-3)$ and radius 8
-    \end{enumerate}
+\item What is the equation of a circle with center $(3,-2)$ and radius $r=8$?\\[0.5cm]
+Graph the circle in Graspable Math or Geogebra and paste the image here.
+%https://graspablemath.com/canvas?load=_6116642654304917
 
 \newpage
-\item What is the equation of a circle with center $(5,0)$ and radius $r=5$?\\[0.5cm]
-  Graph the circle in Graspable Math or Geogebra and paste the image here.
-  %https://graspablemath.com/canvas?load=_6a89b545540e2be5
-
-\newpage
-\item Given the diameter of circle $C$ is $\overline{AB}$, $A(3,2)$ and $B(9,10)$, find the length of $\overline{AB}$ and hence, the radius of the circle.\\[0.25cm]
+\item Given the diameter of circle $C$ is $\overline{AB}$, $A(-2,2)$ and $B(6,8)$, find the length of $\overline{AB}$ and hence, the radius of the circle.\\[0.25cm]
 Find the equation of the circle. Graph the circle and its diameter.
 
 
