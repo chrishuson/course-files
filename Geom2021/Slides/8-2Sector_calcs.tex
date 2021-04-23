@@ -64,7 +64,7 @@
     (0,0)--(0:4) arc (0:36:4)--(0,0);
     \draw (0,0) circle[radius=4];
     \draw [thick, <->] (0:1) arc (0:36:1);
-    \draw [thick, <->] (0:4) arc (0:36:4);
+    \draw [thick] (0:4) arc (0:36:4);
     \draw [thick]
     (0:4) node[right] {$A$}--
     (0,0) node[below left] {$O$}--
@@ -114,8 +114,13 @@
     \end{multicols}
 
 \newpage
-\item Groupwork: Each member picks a different color and Greek letter. Hand write yours in the upper left quadrant.\\[0.25cm]
-Display screen and copy/paste each team member's name and letter into a different quadrant.
+\item Groupwork: Each member picks a different color and Greek letter to write on other members' slides. 
+\begin{enumerate}
+  \item Hand write yours in the upper left quadrant first.
+  \item In the breakout room, student with the shortest first name ``raises his/her hand'' and other members come to ``help'' him/her.
+  \item Each student writes his/her name and letter into a different quadrant. (better: copy/paste screenshot)
+  \item Repeat with each team member.
+\end{enumerate}
 \begin{center}
   \begin{tikzpicture}[scale=1, rotate=0]
   \draw [thick] (-5,0)--(5,0);
@@ -127,77 +132,43 @@ Display screen and copy/paste each team member's name and letter into a differen
 \end{tikzpicture}
 \end{center}
 Example Greek letters are 
-{\Large$\pi$, $\theta$, $\alpha$, $\Delta$, $\beta$, $\sigma$, $\Sigma$ \par}
-Group order: longest last name to shortest
+{\Large$\pi$, $\theta$, $\alpha$, $\Delta$, $\beta$, $\sigma$, $\Sigma$, $\epsilon$ \par}
 
 \newpage
-\item Lesson: The length of the arc of a unit circle is a measure of the central angle called \emph{radians}. The circumference of the full circle is $2 \pi = 360^\circ$.\\[0.25cm]
-Mark each angle with its radian measure.
+\item Lesson: \emph{Pie charts} represent proportions using sector areas and central angles.
   \begin{multicols}{2}
   \raggedcolumns
-  \begin{enumerate}
-    \item One half of a circle $180^\circ$\\
-    \begin{tikzpicture}[scale=0.6]
-      \fill [lightgray]
-      (0,0)--(0:4) arc (0:180:4)--(0,0);
-      \draw (0,0) circle[radius=4];
-      \draw [thick, <->] (0:0.75) arc (0:180:0.75);
-      \draw [thick, <->] (0:4) arc (0:180:4);
-      \draw [thick]
-      (0:4)--(0,0) node[below left] {$O$}--(180:4);
-      %\draw [thick, dotted](0:-4)--(0,0)--(120:4);
-      \fill (0,0) circle[radius=.1];
-      \node at (90:1.5) {$180^\circ$};
-      \node at (-10:2) {$1$};
-    \end{tikzpicture}
-    \item One sixth of the circle $60^\circ$\\
-    \begin{tikzpicture}[scale=0.6]
-      \fill [lightgray]
-      (0,0)--(0:4) arc (0:60:4)--(0,0);
-      \draw (0,0) circle[radius=4];
-      \draw [thick, <->] (0:0.75) arc (0:60:0.75);
-      \draw [thick, <->] (0:4) arc (0:60:4);
-      \draw [thick]
-      (0:4)--(0,0) node[below left] {$O$}--(60:4);
-      \draw [thick, dotted](0:-4)--(0,0)--(120:4);
-      \fill (0,0) circle[radius=.1];
-      \node at (30:1.5) {$60^\circ$};
-      \node at (-10:2) {$1$};
-    \end{tikzpicture}
-    \item One eighth of the circle $45^\circ$\\
-    \begin{tikzpicture}[scale=0.6]
-      \fill [lightgray]
-      (0,0)--(0:4) arc (0:45:4)--(0,0);
-      \draw (0,0) circle[radius=4];
-      \draw [thick, <->] (0:0.75) arc (0:45:0.75);
-      \draw [thick, <->] (0:4) arc (0:45:4);
-      \draw [thick]
-      (0:4)--(0,0) node[below left] {$O$}--(45:4);
-      \draw [thick, dotted](0:-4)--(0,0)--(90:4);
-      \fill (0,0) circle[radius=.1];
-      \node at (20:1.5) {$45^\circ$};
-      \node at (-10:2) {$1$};
-    \end{tikzpicture}
-    \item Two thirds of a circle $180^\circ$\\
-    \begin{tikzpicture}[scale=0.6]
-      \fill [lightgray]
-      (0,0)--(0:4) arc (0:120:4)--(0,0);
-      \draw (0,0) circle[radius=4];
-      \draw [thick, <->] (0:0.75) arc (0:120:0.75);
-      \draw [thick, <->] (0:4) arc (0:120:4);
-      \draw [thick]
-      (0:4)--(0,0) node[left] {$O$}--(120:4);
-      \draw [thick, dotted](240:4)--(0,0);
-      \fill (0,0) circle[radius=.1];
-      \node at (60:1.5) {$120^\circ$};
-      \node at (-10:2) {$1$};
-    \end{tikzpicture}
+  \begin{enumerate}%[itemsep=1.5cm]
+    \item Population of NY City is 8,340,000\\
+    Population of NY State is 19,500,000
+    \item Find the fraction of New Yorkers, $x$, who reside in NYC as a percentage. \vspace{2cm}
+    \item Find the central angle of the shaded area, $\theta = x \times 360^\circ$
   \end{enumerate}
+  \columnbreak
+  \begin{flushright}
+    New York State
+  \end{flushright}
+  \begin{tikzpicture}[scale=0.8]
+    \fill [lightgray]
+    (0,0)--(0:4) arc (0:152:4)--(0,0);
+    \draw (0,0) circle[radius=4];
+    \draw [thick, <->] (0:1) arc (0:152:1);
+    \draw [thick] (0:4) arc (0:152:4);
+    \draw [thick]
+    (0:4)--(0,0)--(152:4);
+    %\draw [thick, dotted](72:4)--(0,0)--(108:4);
+    %\draw [thick, dotted](144:4)--(0,0)--(180:4);
+    %\draw [thick, dotted](-72:4)--(0,0)--(-108:4);
+    %\draw [thick, dotted](-36:4)--(0,0)--(-144:4);
+    \fill (0,0) circle[radius=.1];
+    %\node at (18:4.5) {$?$};
+    \node at (80:2) {New York City};
+  \end{tikzpicture}
   \end{multicols}
 
 \newpage
-\item Lesson: Algebra view of \emph{radians} to \emph{degrees} using the formula $2 \pi = 360^\circ$ or $\pi = 180^\circ$.\\[0.25cm]
-Apply the appropriate formula.
+\item Practice: Convert between \emph{radians} to \emph{degrees} knowing $2 \pi = 360^\circ$ or $\pi = 180^\circ$.\\[0.25cm]
+Apply the appropriate formula. Leave radians in terms of $\pi$.
 \begin{multicols}{2}
 $\displaystyle r = d \times \frac{\pi}{180}$\\
 $\displaystyle d = r \times \frac{180}{\pi}$
@@ -205,47 +176,47 @@ $\displaystyle d = r \times \frac{180}{\pi}$
   \begin{multicols}{2}
   \raggedcolumns
   \begin{enumerate}
-    \item $60^\circ = \hspace{0.15cm} ?$ radians\\[0.5cm]
+    \item $36^\circ = \hspace{0.15cm} ?$ radians\\[0.5cm]
     \begin{tikzpicture}[scale=1]
-      \draw [thick, <->] (0:0.75) arc (0:60:0.75);
-      \draw [thick, <->] (0:4) arc (0:60:4);
+      \draw [thick, <->] (0:0.75) arc (0:36:0.75);
+      \draw [thick, <->] (0:4) arc (0:36:4);
       \draw [dashed](0,0)--(4,0);
       \draw [thick]
-      (0,0) node[below left] {$A$}--(60:4)--(2,0)--cycle;
+      (0,0) node[below left] {$A$}--(36:4)--(3.24,0)--cycle;
       \fill (0,0) circle[radius=.1];
-      \node at (30:1.5) {$60^\circ$};
+      \node at (20:1.5) {$36^\circ$};
     \end{tikzpicture}
-    \item $30^\circ = \hspace{0.15cm} ?$ radians\\[0.5cm]
+    \item $72^\circ = \hspace{0.15cm} ?$ radians\\[0.5cm]
     \begin{tikzpicture}[scale=1]
-      \draw [thick, <->] (0:0.75) arc (0:30:0.75);
-      \draw [thick, <->] (0:4) arc (0:30:4);
+      \draw [thick, <->] (0:0.75) arc (0:72:0.75);
+      \draw [thick, <->] (0:4) arc (0:72:4);
       \draw [dashed](0,0)--(4,0);
       \draw [thick]
-      (0,0) node[below left] {$A$}--(30:4)--(3.46,0)--cycle;
+      (0,0) node[below left] {$A$}--(72:4)--(1.24,0)--cycle;
       \fill (0,0) circle[radius=.1];
-      \node at (15:1.5) {$30^\circ$};
+      \node at (50:1.2) {$72^\circ$};
     \end{tikzpicture}
-    \item $\displaystyle \frac{\pi}{4}  = \hspace{0.15cm} ?$ degrees\\[0.5cm]
+    \item $\displaystyle \frac{\pi}{7}  = \hspace{0.15cm} ?$ degrees\\[0.5cm]
     \begin{tikzpicture}[scale=1]
-      \draw [thick, <->] (0:0.75) arc (0:45:0.75);
-      \draw [thick, <->] (0:4) arc (0:45:4);
+      \draw [thick, <->] (0:0.75) arc (0:26:0.75);
+      \draw [thick, <->] (0:4) arc (0:26:4);
       \draw [dashed](0,0)--(4,0);
       \draw [thick]
-      (0,0) node[below left] {$A$}--(45:4)--(2.82,0)--cycle;
+      (0,0) node[below left] {$A$}--(26:4)--(3.6,0)--cycle;
       \fill (0,0) circle[radius=.1];
-      \node at (22:1.5) {$?^\circ$};
-      \node at (22:4.5) {$\displaystyle \frac{\pi}{4}$};
+      \node at (12:1.5) {$?^\circ$};
+      \node at (12:4.5) {$\displaystyle \frac{\pi}{7}$};
     \end{tikzpicture}
-    \item $\displaystyle \frac{\pi}{8}  = \hspace{0.15cm} ?$ degrees\\[0.75cm]
+    \item $\displaystyle \frac{3\pi}{4}  = \hspace{0.15cm} ?$ degrees\\[0.75cm]
     \begin{tikzpicture}[scale=1]
-      \draw [thick, <->] (0:1) arc (0:22.5:1);
-      \draw [thick, <->] (0:4) arc (0:22.5:4);
+      \draw [thick, <->] (0:0.5) arc (0:135:0.5);
+      \draw [thick, <->] (0:4) arc (0:135:4);
       \draw [dashed](0,0)--(4,0);
       \draw [thick]
-      (0,0) node[below left] {$A$}--(22.5:4)--(3.7,0)--cycle;
+      (0,0) node[below left] {$A$}--(135:4)--(3.7,0)--cycle;
       \fill (0,0) circle[radius=.1];
-      \node at (12:1.8) {$?^\circ$};
-      \node at (12:4.5) {$\displaystyle \frac{\pi}{8}$};
+      \node at (45:1.) {$?^\circ$};
+      \node at (45:4.5) {$\displaystyle \frac{3\pi}{4}$};
     \end{tikzpicture}
   \end{enumerate}
   \end{multicols}
@@ -269,7 +240,7 @@ $\displaystyle d = r \times \frac{180}{\pi}$
       \draw[shift={(0,\y)},color=black] (-2pt,0pt) -- (2pt,0pt) node[left] {\footnotesize \; $\y$};
     \draw [-, thick] (0,0) node[below left] {$A$}
     --(5,0) node[above right] {$C$}
-    --(5,8)node[right] {$B (5,8)$}--cycle;
+    --(5,4)node[right] {$B (5,4)$}--cycle;
     \draw (5,0)++ (-0.5,0)-- +(0,0.5)-- +(0.5,0.5);
     %\draw [<->, thick] (-0.6,4.3)--(5,8.5);
   \end{tikzpicture}
