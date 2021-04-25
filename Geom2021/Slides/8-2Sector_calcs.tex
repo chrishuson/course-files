@@ -89,7 +89,8 @@
     \begin{multicols}{2}
     \raggedcolumns
     \begin{enumerate}
-      \item $72^\circ = \hspace{0.15cm} ?$ radians\\[0.5cm]
+      \item $72^\circ = \hspace{0.15cm} ?$ radians\\
+      Express in terms of $\pi$\\[0.5cm]
       \begin{tikzpicture}[scale=1]
         \draw [thick, <->] (0:0.75) arc (0:72:0.75);
         \draw [thick, <->] (0:4) arc (0:72:4);
@@ -125,7 +126,7 @@
   \begin{tikzpicture}[scale=1, rotate=0]
   \draw [thick] (-5,0)--(5,0);
   \draw [thick] (0,-4)--(0,4);
-  \node at (-4,4){Your letter:};
+  \node at (-4,4){Your name \& letter:};
   \node at (3,4){Member name \& letter:};
   \node at (3,-0.5){Member name \& letter:};
   \node at (-4,-0.5){Member name \& letter:};
@@ -138,32 +139,33 @@ Example Greek letters are
 \item Lesson: \emph{Pie charts} represent proportions using sector areas and central angles.
   \begin{multicols}{2}
   \raggedcolumns
+  Population of NY City is 8,340,000\\
+Population of NY State is 19,500,000
   \begin{enumerate}%[itemsep=1.5cm]
-    \item Population of NY City is 8,340,000\\
-    Population of NY State is 19,500,000
     \item Find the fraction of New Yorkers, $x$, who reside in NYC as a percentage. \vspace{2cm}
     \item Find the central angle of the shaded area, $\theta = x \times 360^\circ$
   \end{enumerate}
   \columnbreak
   \begin{flushright}
     New York State
-  \end{flushright}
+  
   \begin{tikzpicture}[scale=0.8]
     \fill [lightgray]
-    (0,0)--(0:4) arc (0:152:4)--(0,0);
+    (0,0)--(0:4) arc (0:154:4)--(0,0);
     \draw (0,0) circle[radius=4];
-    \draw [thick, <->] (0:1) arc (0:152:1);
-    \draw [thick] (0:4) arc (0:152:4);
+    \draw [thick, <->] (0:1) arc (0:154:1);
+    \draw [thick] (0:4) arc (0:154:4);
     \draw [thick]
-    (0:4)--(0,0)--(152:4);
+    (0:4)--(0,0)--(154:4);
     %\draw [thick, dotted](72:4)--(0,0)--(108:4);
     %\draw [thick, dotted](144:4)--(0,0)--(180:4);
     %\draw [thick, dotted](-72:4)--(0,0)--(-108:4);
     %\draw [thick, dotted](-36:4)--(0,0)--(-144:4);
     \fill (0,0) circle[radius=.1];
-    %\node at (18:4.5) {$?$};
-    \node at (80:2) {New York City};
+    \node at (40:1.4) {$\theta^\circ$};
+    \node at (90:2.5) {New York City};
   \end{tikzpicture}
+\end{flushright}
   \end{multicols}
 
 \newpage
