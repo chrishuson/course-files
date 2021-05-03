@@ -164,6 +164,43 @@
   \end{multicols}
 
 \newpage
+\item The \emph{pie chart} below represents the population of the city of New York, with each borough's population a proportional sector.
+  \begin{multicols}{2}
+  \raggedcolumns
+  Population of NY City is 8,336,000\\
+Population of Brooklyn is 1,629,000
+  \begin{enumerate}%[itemsep=1.5cm]
+    \item Find the fraction of New Yorkers, $x$, who reside in Brooklyn as a percentage. \vspace{2cm}
+    \item Find the central angle of the shaded area, $\theta = x \times 360^\circ$
+  \end{enumerate}
+  \columnbreak
+  \begin{flushright}
+    New York City
+  
+  \begin{tikzpicture}[scale=0.8]
+    \fill [lightgray]
+    (0,0)--(0:4) arc (0:110:4)--(0,0);
+    \draw (0,0) circle[radius=4];
+    \draw [thick, <->] (0:1) arc (0:110:1);
+    \draw [thick] (0:4) arc (0:110:4);
+    \draw [thick]
+    (0:4)--(0,0)--(110:4);
+    %\draw [thick, dotted](72:4)--(0,0)--(108:4);
+    %\draw [thick, dotted](144:4)--(0,0)--(180:4);
+    \draw [thick, dotted](208:4)--(0,0)--(278:4);
+    \draw [thick, dotted](-20:4)--(0,0)--(-82:4);
+    \fill (0,0) circle[radius=.1];
+    \node at (40:1.4) {$\theta^\circ$};
+    \node at (60:2.5) {Brooklyn};
+    \node at (170:2.5) {Queens};
+    \node at (240:2.5) {Manhattan};
+    \node at (-50:2.5) {Bronx};
+    \node at (-7:3.2) {Staten Island};
+  \end{tikzpicture}
+  \end{flushright}
+  \end{multicols}
+
+\newpage
 \item Right $\triangle ABC$ is drawn in \emph{standard position} with vertex $A$ on the origin and right $\angle C$ on the $x$-axis, as shown.
 \begin{multicols}{2}
   \raggedcolumns
@@ -181,9 +218,9 @@
     \foreach \y in {1,2,...,9}
       \draw[shift={(0,\y)},color=black] (-2pt,0pt) -- (2pt,0pt) node[left] {\footnotesize \; $\y$};
     \draw [-, thick] (0,0) node[below left] {$A$}
-    --(5,0) node[above right] {$C$}
-    --(5,8)node[right] {$B (5,8)$}--cycle;
-    \draw (5,0)++ (-0.5,0)-- +(0,0.5)-- +(0.5,0.5);
+    --(6,0) node[above right] {$C$}
+    --(6,9)node[right] {$B (6,9)$}--cycle;
+    \draw (6,0)++ (-0.5,0)-- +(0,0.5)-- +(0.5,0.5);
     %\draw [<->, thick] (-0.6,4.3)--(5,8.5);
   \end{tikzpicture}
 \end{multicols}
@@ -197,22 +234,22 @@ $\displaystyle d = r \times \frac{180}{\pi}$
   \begin{multicols}{2}
   \raggedcolumns
   \begin{enumerate}[itemsep=1.5cm]
-    \item $40^\circ = \hspace{0.15cm} ?$ radians
-    \item $\displaystyle \frac{\pi}{7}  = \hspace{0.15cm} ?$ degrees
+    \item $35^\circ = \hspace{0.15cm} ?$ radians
+    \item $\displaystyle \frac{\pi}{9}  = \hspace{0.15cm} ?$ degrees
     \item 1 foot = 12 inches\\[0.5cm]
-    3.5 feet = 
-    \item 54 inches = 
+    4.25 feet = 
+    \item 70 inches = 
     \item 1 euro = 1.21 dollars\\[0.5cm]
-    20 euro = 
-    \item 100 dollars = 
+    50 euro = 
+    \item 50 dollars = 
     \item 1 mile = 5,280 feet\\[0.5cm]
-    10,000 feet = 
-    \item $\frac{1}{2}$ mile =   
+    11,000 feet = 
+    \item $\displaystyle \frac{3}{4}$ mile =   
   \end{enumerate}
   \end{multicols}
     
 \newpage
-\item Line segment $\overline{AB}$, $A(1,8)$, $B(9,2)$, is the diameter of circle $M$. 
+\item Line segment $\overline{AB}$, $A(2,1)$, $B(10,7)$, is the diameter of circle $M$. 
 \begin{enumerate}
   \item On the grid, mark and label as a coordinate pair the midpoint of the segment, the circle center $M$. 
   \item Calculate the length of $\overline{AB}$ and hence, the radius of the circle.\
@@ -229,9 +266,9 @@ $\displaystyle d = r \times \frac{180}{\pi}$
     \foreach \y in {-1,0,1,...,9, 10}
       \draw[shift={(0,\y)},color=black] (-2pt,0pt) -- (2pt,0pt) node[left] {\footnotesize \; $\y$};
     %\draw [thick] (6,3) circle [radius=5];
-    \draw [fill] (1,8) circle [radius=0.1] node[below left] {$A$};
-    \draw [fill] (9,2) circle [radius=0.1] node[above right] {$B$};
-    \draw [-, thick] (1,8)--(9,2);
+    \draw [fill] (2,1) circle [radius=0.1] node[below left] {$A$};
+    \draw [fill] (10,7) circle [radius=0.1] node[above right] {$B$};
+    \draw [-, thick] (2,1)--(10,7);
     %\draw [<->, thick] (-0.6,4.3)--(5,8.5);
   \end{tikzpicture}
   \end{flushright}
