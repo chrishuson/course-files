@@ -168,7 +168,7 @@
   \begin{multicols}{2}
   \raggedcolumns
   Population of NY City is 8,336,000\\
-Population of Brooklyn is 1,629,000
+Population of Brooklyn is 2,560,000
   \begin{enumerate}%[itemsep=1.5cm]
     \item Find the fraction of New Yorkers, $x$, who reside in Brooklyn as a percentage. \vspace{2cm}
     \item Find the central angle of the shaded area, $\theta = x \times 360^\circ$
@@ -224,6 +224,7 @@ Population of Brooklyn is 1,629,000
     %\draw [<->, thick] (-0.6,4.3)--(5,8.5);
   \end{tikzpicture}
 \end{multicols}
+%https://graspablemath.com/canvas?load=_024bda2a5587c074
 
 \newpage
 \item Convert between units. \\[0.25cm]
@@ -274,6 +275,36 @@ $\displaystyle d = r \times \frac{180}{\pi}$
   \end{flushright}
   %https://graspablemath.com/canvas?load=_024bda2a5587c074
   %https://graspablemath.com/canvas?load=_6a89b545540e2be5
+
+\newpage
+\item Ten values from one to five are displayed as a dot plot below on the right. \\[0.5cm]
+The data is to be represented as a \emph{pie chart}. The red sector has been drawn to represent data with value equalling five. (Dotted lines divide the circle in ten equal sectors for reference.)
+  \begin{multicols}{2}
+  \begin{tikzpicture}[scale=0.8]
+    \filldraw [color=blue, fill=blue!20, thick]
+    (0,0)--(0:4) arc (0:30:4);
+    \draw (0,0) circle[radius=4];
+    \draw [thick, dashed, ->] (30:4) arc (30:45:4);
+    \draw [color=blue, dashed, thick, ->] (0:2) arc (0:50:2);
+    %\draw [thick]
+    %(0:4) node[right] {$A$}--
+    %(0,0) node[below left] {$O$}--
+    %(36:4) node[right] {$B$};
+    \draw [thick, dotted](72:4)--(0,0)--(108:4);
+    \draw [thick, dotted](144:4)--(0,0)--(180:4);
+    \draw [thick, dotted](-72:4)--(0,0)--(-108:4);
+    \draw [thick, dotted](0:4)--(0,0)--(-144:4);
+    \filldraw [color=red, fill=red!20, thick]
+    (0,0)--(0:4) arc (0:-72:4)--(0,0);
+    \node at (-35:2.5) {$5$};
+    \node [color=blue] at (35:3) {$1$};
+  \end{tikzpicture}
+  \includegraphics[width=5cm]{8-5_10DotPlot.png}
+  \end{multicols}
+  \begin{enumerate}
+    \item Shade the appropriate portion of the pie chart in blue to represent the data with value equalling one.
+    \item Complete the rest of the pie chart using other colors to mark sectors for the data equalling two, three, and four.
+  \end{enumerate}
 
 \end{enumerate}
 \end{document}
