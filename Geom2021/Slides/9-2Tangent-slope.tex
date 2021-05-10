@@ -95,9 +95,9 @@
 \item $\triangle ABC$ is shown with $m\angle C=90^\circ$ and the lengths of the triangle's sides are $BC=8$, $AC=15$, and $AB=17$. (not drawn to scale)
   \begin{multicols}{2}
     \begin{enumerate}
-      \item How long is the \emph{hypotenuse}? \vspace{0.5cm}
-      \item How long is the side \emph{opposite} $\angle A$? \vspace{0.5cm}
-      \item How long is the side \emph{adjacent} to $\angle A$? \vspace{0.5cm}
+      \item How long is the \emph{hypotenuse}? \vspace{0.75cm}
+      \item How long is the side \emph{opposite} $\angle A$? \vspace{0.75cm}
+      \item How long is the side \emph{adjacent} to $\angle A$? \vspace{0.75cm}
     \end{enumerate}
     \begin{tikzpicture}[scale=0.9]
       \draw [thick]
@@ -112,7 +112,7 @@
       \node at (3,2.2)[above]{$17$};
     \end{tikzpicture}
     \end{multicols}
-    Use Graspable Math to verify the tangent calculation:\\
+    Use Graspable Math to verify the tangent calculation.\\ (paste two lines below, the substituted values shown and the final equality)\\[0.25cm]
       $\displaystyle \tan 28.07^\circ = \frac{8}{15}$
     %https://graspablemath.com/canvas?load=_4aa5e9324049442c
 
@@ -142,7 +142,8 @@ Find the height $BC=x$.
   \raggedcolumns
 \begin{enumerate}
   \item Find the slope of the line segment $\overline{AB}$. \vspace{2cm}
-  \item Find the measure of $\angle A$. \vspace{2cm}
+  \item Find the measure of $\angle A$.\\
+  Hint: isosceles triangle \vspace{2cm}
   \item Find the length of the hypotenuse $AB$ using the Pythagorean Theorem $a^2 + b^2 = c^2$. (leave as a radical)
 \end{enumerate}
   \begin{tikzpicture}[scale=0.6]
@@ -165,6 +166,73 @@ Find the height $BC=x$.
   %https://graspablemath.com/canvas?load=_024bda2a5587c074
 
 \newpage
+\item $\triangle ABC$ is shown with $m\angle C=90^\circ$ and $m\angle A = x^\circ$. The lengths of the legs are $AC=10$ and $BC=7$.
+\begin{multicols}{2}
+  \raggedcolumns
+\begin{enumerate}
+  \item Express $\tan x$ as a fraction.\\[0.25cm]
+  $\displaystyle \tan x^\circ = \frac{?}{?}$ \vspace{1cm}
+  \item Which side is \emph{opposite} $\angle B$? \vspace{1cm}
+  \item Which leg is \emph{adjacent} to $\angle B$?
+\end{enumerate}
+\begin{center}
+    \begin{tikzpicture}[scale=0.9, rotate=20]
+      \draw [thick]
+      (0,0)node[left]{$A$}--
+      (6,0)node[ right]{$C$}--
+      (6,3.5)node[right]{$B$}--cycle;
+      \draw (6,0)++(-0.5,0)--++(0,0.5)--+(0.5,0);
+      \draw [thick, <->] (0:1) arc (0:32:1);
+      \node at (25:1.2)[right]{$x^\circ$};
+      \node at (3.5,0)[below]{$12$};
+      \node at (6,2)[right]{$7$};
+    \end{tikzpicture}
+    \end{center}
+  \end{multicols}
+    %https://graspablemath.com/canvas?load=_4aa5e9324049442c
+    
+\newpage
+\item $\triangle ABC$ is shown with $m\angle C=90^\circ$, $m\angle A = 55^\circ$, and the base with length $AC=14$.\\[0.25cm]
+Find the height $BC=x$. 
+\begin{center}
+    \begin{tikzpicture}[scale=0.6]
+      \draw [thick]
+      (0,0)node[left]{$A$}--
+      (6,0)node[ right]{$C$}--
+      (6,9)node[right]{$B$}--cycle;
+      \draw (6,0)++(-0.6,0)--++(0,0.6)--+(0.6,0);
+      \draw [thick, <->] (0:1) arc (0:55:1);
+      \node at (40:1.4)[right]{$55^\circ$};
+      \node at (3.5,0)[below]{$14$};
+      \node at (6,4)[right]{$x$};
+    \end{tikzpicture}
+    \end{center}
+    Use Graspable Math and paste the solution starting with the substitution step.
+    %https://graspablemath.com/canvas?load=_4aa5e9324049442c
+    
+\newpage
+\item $\triangle ABC$ is shown with $m\angle C=90^\circ$, $m\angle A = 60^\circ$, and height $AC=14$.\\[0.25cm]
+Find the base $AC=x$. 
+\begin{center}
+    \begin{tikzpicture}[scale=0.6]
+      \draw [thick]
+      (0,0)node[left]{$A$}--
+      (6,0)node[ right]{$C$}--
+      (6,9)node[right]{$B$}--cycle;
+      \draw (6,0)++(-0.6,0)--++(0,0.6)--+(0.6,0);
+      \draw [thick, <->] (0:1) arc (0:55:1);
+      \node at (40:1.4)[right]{$60^\circ$};
+      \node at (3.5,0)[below]{$x$};
+      \node at (6,4)[right]{$14$};
+    \end{tikzpicture}
+    \end{center}
+    Use Graspable Math and paste the solution starting with the substitution step.
+    %https://graspablemath.com/canvas?load=_4aa5e9324049442c
+    
+
+\end{enumerate}
+\end{document}
+
 \item The following diagram shows a pole BT 1.6 m tall on the roof of a vertical building. \\[0.25cm]
   The angle of elevation of the top of the building from A is  
   $25^\circ$ and the distance from point $A$ to the building is 40 feet. (not drawn to scale)
@@ -185,6 +253,3 @@ Find the height $BC=x$.
       \end{tikzpicture}
       \end{center}
       Find the height of the building to the \emph{nearest foot}.
-
-\end{enumerate}
-\end{document}
