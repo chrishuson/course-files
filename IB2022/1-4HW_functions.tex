@@ -33,72 +33,39 @@
 
 \subsubsection*{1.4 Homework: Functions}
 \begin{enumerate}
-\item In the following two problems, solve for the value of $x$.
-  \begin{multicols}{2}
-    \begin{enumerate}
-      \item   $x-5=12$ \vspace{6cm}
-      \item   $13-x=-3$ \vspace{6cm}
-    \end{enumerate}
-  \end{multicols}
-    \vspace{2.5cm}
-
-
-\item Given the linear function $f(x)=3x+4$.
-\begin{multicols}{2}
-  \begin{enumerate}
-    \item Find $f(0)$ \vspace{6cm}
-    \item   $f(x)=10$. Find $x$. \vspace{6cm}
-  \end{enumerate}
-\end{multicols}
-  \vspace{9cm}
-
-
-\item Given $g(x)=x^2-5x+15$. Simplify $g(0)$. \vspace{3cm}
-\item Given $f(x)=3x-2$. Solve for $x$ such that for $f(x)=13$. \vspace{4cm}  
-
-\item A line is shown on the grid below.
+\item The graph of a function $f$ is shown on the grid below.
 \begin{multicols}{2}
 \begin{enumerate}
-  \item Write down it's slope.\\ $m=$
+  \item Write down $f(-1)$
+  %\vspace{0.25cm}
+  \item Find $x$ for $f(x)=5$.
   \vspace{0.25cm}
-  \item Write down it's $y$-intercept.\\ $b=$
-  \vspace{0.25cm}
-  \item Write down the equation of the line.
-  \vspace{1cm}
-  \item State the coordinates of the point $P$.
+  \item Label which is the domain and which is the range.
+  \begin{enumerate}
+    \item $(0,5]$
+    \item $-2<x \leq 3$
+  \end{enumerate}
 \end{enumerate}
-  \begin{center} %4 quadrant regents grid w T-Chart
   \begin{tikzpicture}[scale=0.8]
-    \draw [help lines] (-3,-2) grid (4,6);
+    \draw [help lines] (-3,-1) grid (4,6);
     \draw [thick, ->] (-3.2,0) -- (4.4,0) node [below right] {$x$};
-    \draw [thick, ->] (0,-2.2)--(0,6.4) node [left] {$y$};
+    \draw [thick, ->] (0,-1.2)--(0,6.4) node [left] {$y$};
     \foreach \x in {-3, -2, ..., 4} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
     \foreach \y in {1, 2, 3, 4, 5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
-    \draw [thick, <->] (-3.5,-1.5) -- (4.2,6.2);
-    \fill (3,5) circle[radius=0.1] node[below right]{$P$};
+    \draw [thick] (-2,0) -- (0,4) -- (3,5);
+    \fill (3,5) circle[radius=0.1] node[below right]{$f$};
+    \fill [white] (-2,0) circle[radius=0.1];
+    \draw (-2,0) circle[radius=0.1];
   \end{tikzpicture}
-  \end{center}
 \end{multicols}
 
-\newpage
-\item The line $l$ has the equation $y=\frac{3}{2}x-1$. 
-\begin{enumerate}
-  \item Write down it's slope. $m=$
-  \vspace{0.5cm}
-  \item Write down it's $y$-intercept. $b=$
-  \vspace{0.5cm}
-  \item Is the point $(4, 4)$ on the line $l$? Justify your answer.
-\end{enumerate}
-\vspace{2.5cm}
-
-\item Draw a straight line through the points $A$ and $B$ shown on the grid below.
+\item A relation composed of four points is plotted on the graph below, and represented as a set of ordered pairs as $\{ (j,2),(1,4),(3,2),(4,k) \}$
 \begin{multicols}{2}
 \begin{enumerate}
-  \item Write down the line's $y$-intercept.\\ $b=$
-  \vspace{0.25cm}
-  \item Write down the slope of the line.\\ $m=$
-  \vspace{0.25cm}
-  \item Write down the equation of the line.
+  \item Write down $j$
+  \item Write down $k$
+  \item Is the relation a function? Why or why not. \vspace{2cm}
+  \item Add an ordered pair to the relation so that it would \emph{not} be a function.
 \end{enumerate}
   \begin{center} %4 quadrant regents grid w T-Chart
   \begin{tikzpicture}[scale=0.8]
@@ -108,21 +75,70 @@
     \foreach \x in {-2, -1, ..., 5} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
     \foreach \y in {1, 2, 3, 4, 5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
     %\draw [thick, <->] (-3.5,-1.5) -- (4.2,6.2);
-    \fill (0,4) circle[radius=0.1] node[above right]{$A (0,4)$};
-    \fill (4,2) circle[radius=0.1] node[above right]{$B (4,2)$};
+    \fill (1,4) circle[radius=0.1] node[above right]{$(1,4)$};
+    \fill (3,2) circle[radius=0.1] node[above]{$(3,2)$};
+    \fill (-2,2) circle[radius=0.1] node[above]{$(j,2)$};
+    \fill (4,1) circle[radius=0.1] node[above right]{$(4,k)$};
   \end{tikzpicture}
   \end{center}
 \end{multicols}
-\vspace{2.5cm}
+\vspace{0.25cm}
 
-\item Early finishers: Simplify each expression. (Leave it in radical form if necessary, not a decimal.)
+\item An athlete finds that the number of reps she can lift is a function of the weight. 
+\begin{center}
+  \begin{tabular}{|l|r|r|r|r|r|r|}
+    \hline
+    Weight (lbs) & 10 & 15 & 20 & 25 & 30\\ 
+    \hline 
+    Reps & 18 & 12 & 3 & 0 & 0\\ 
+    \hline 
+  \end{tabular}
+\end{center}
 \begin{enumerate}
-  \begin{multicols}{2}
-  \item   $\sqrt{25}$ \vspace{1.5cm}
-  \item   $\sqrt{24}$ \vspace{1.5cm}
-  \end{multicols}
+  \item How many times can she lift 20 pounds?\vspace{0.25cm}
+  \item What is the domain of the function shown in the table?\vspace{0.25cm}
+  \item Estimate the maximum weight she can lift.
 \end{enumerate}
-\vspace{0.5cm}
+
+\newpage
+\item In the following two problems, solve for the value of $x$.
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item   $2x-3=12-x$ \vspace{6cm}
+      \item   $(3x-2)+(x-6)=0$ \vspace{6cm}
+    \end{enumerate}
+  \end{multicols}
+    \vspace{3cm}
+
+\item Given the linear function $f(x)=5x-7$.
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item Find $f(-1)$ \vspace{6cm}
+    \item   $f(x)=8$. Find $x$. \vspace{6cm}
+  \end{enumerate}
+\end{multicols}
+  \vspace{6cm}
+
+\item Two functions $f$ and $g$ are shown on the grid below.
+\begin{multicols}{2}
+\begin{enumerate}
+  \item What is the equation of $f$?
+  %\vspace{0.25cm}
+  \item What is the equation of $g$?
+  \vspace{0.25cm}
+  \item What is the intersection of the lines as an ordered pair.
+\end{enumerate}
+  \begin{tikzpicture}[scale=0.8]
+    \draw [help lines] (-3,-1) grid (4,6);
+    \draw [thick, ->] (-3.2,0) -- (4.4,0) node [below right] {$x$};
+    \draw [thick, ->] (0,-1.2)--(0,6.4) node [left] {$y$};
+    \foreach \x in {-3, -2, ..., 4} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+    \foreach \y in {1, 2, 3, 4, 5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+    \draw [thick, <->] (-1.5,0.25) -- (3.5, 2.75) node[above]{$f$};
+    \draw [thick, <->] (-1.5,5.5) -- (3.5, 0.5) node[right]{$g$};
+    \fill (2,2) circle[radius=0.1];
+  \end{tikzpicture}
+\end{multicols}
 
 \end{enumerate}
 \end{document}
