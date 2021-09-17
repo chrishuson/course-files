@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 SEP 2021 13:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 SEP 2021 15:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/chris/GitHub/course-files/IB2022/1-7Quiz_Linear-equations.tex
-(/Users/chris/GitHub/course-files/IB2022/1-7Quiz_Linear-equations.tex
+**/Users/chris/GitHub/course-files/IB2022/1-4HW_functions.tex
+(/Users/chris/GitHub/course-files/IB2022/1-4HW_functions.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -437,8 +437,8 @@ Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count291
 \l__pdf_internal_box=\box105
-) (/Users/chris/GitHub/course-files/IB2022/1-7Quiz_Linear-equations.aux)
-\openout1 = `1-7Quiz_Linear-equations.aux'.
+) (/Users/chris/GitHub/course-files/IB2022/1-4HW_functions.aux)
+\openout1 = `1-4HW_functions.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
@@ -524,20 +524,20 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2] (/Users/chris/GitHub/course-files/IB2022/1-7Quiz_Linear-equations.aux) ) 
+] [2] [3] (/Users/chris/GitHub/course-files/IB2022/1-4HW_functions.aux) ) 
 Here is how much of TeX's memory you used:
  14401 strings out of 480608
- 279044 string characters out of 5903631
- 524381 words of memory out of 5000000
+ 278954 string characters out of 5903631
+ 523354 words of memory out of 5000000
  30029 multiletter control sequences out of 15000+600000
  537290 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,60p,476b,919s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,60p,467b,919s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/chris/GitHub/course-files/IB2022/1-7Quiz_Linear-equations.pdf (2 pages, 58962 bytes).
+Output written on /Users/chris/GitHub/course-files/IB2022/1-4HW_functions.pdf (3 pages, 59216 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 37 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
