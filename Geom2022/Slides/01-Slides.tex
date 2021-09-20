@@ -376,7 +376,7 @@ Two lines \emph{intersect} if they cross. Their common point is the \emph{inters
         \end{center}
     \end{block}
     1.3 Segments scores in Jumprope. Make up if absent \\*[5pt]
-    Lesson: Number lines, distance and length \\*[5pt]
+    Lesson: Number lines, distance and length, absolute value \\*[5pt]
     Practice midpoints and segment addition situations \\*[5pt]
   }
 
@@ -416,6 +416,22 @@ Two lines \emph{intersect} if they cross. Their common point is the \emph{inters
         \draw [fill] (5,0) circle [radius=0.05] node[above] {$Q$};
     \end{tikzpicture} \\ \bigskip
 What is the distance on the number line between the points $P$ and $Q$? \vspace{2cm}  
+}
+
+\frame
+{
+  \frametitle{Absolute value: the distance from a point to the origin}
+  \framesubtitle{Always a positive number (or zero)}
+    \begin{tikzpicture}[scale=0.8]
+      \draw [<->] (-6.5,0)--(6.5,0);
+      \foreach \x in {-6,...,6} %2 leading for diff!=1
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+        \draw [fill] (0,0) circle [radius=0.05] node[above] {origin};
+        \draw [fill] (5,0) circle [radius=0.05] node[above] {$A(5)$};
+        \draw [fill] (-3,0) circle [radius=0.05] node[above] {$B(-3)$};
+    \end{tikzpicture} \\[0.5cm]
+    The absolute value of 5 is 5. $|5|=5$ \\[0.5cm]
+    The absolute value of $-3$ is 3. $|-3|=3$
 }
 
 \frame
