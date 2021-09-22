@@ -33,44 +33,96 @@
 
 \subsubsection*{I can measure angles}
 \begin{enumerate}
-\item Given an angle with vertex $A$. Answer the questions and complete as directed.
-  \begin{enumerate}
-    \item Using a compass, measure angle $A$ in degrees. $m\angle A =$
-    \bigskip
-    \item Mark and label a point $B$ that is 4 centimeters from $A$ on the horizontal ray.
-    \bigskip
-    \item Draw a circle centered at $A$ with a radius of 4 centimeters. \bigskip
+  \item Do Now: Given $\overline{LMN}$, $LM=3x+1$, $MN=7$, $LN=17$. Find ${x}$.\\[0.15in]
+  \begin{tikzpicture}
+   \draw [-, thick] (0,0)--(7,0);
+   \draw [fill] (0,0) circle [radius=0.05] node[below]{$L$};
+   \draw [fill] (4,0) circle [radius=0.05] node[below]{$M$};
+   \draw [fill] (7,0) circle [radius=0.05] node[below]{$N$};
+   \node at (1.7,0) [above]{$3x+1$};
+   \node at (5.5,0) [above]{$7$};
+   \draw [<->, dashed] (0,-1)--(7,-1);
+   \node at (3.5,-1) [below]{$17$};
+ \end{tikzpicture} %\vspace{1cm}
+\begin{enumerate}
+ \item Write down an equation to represent the situation. \vspace{0.5cm}
+ \item Solve for $x$. \vspace{1.5cm}
+ \item Check your answer. \vspace{1.5cm}
+\end{enumerate}
+
+\item Given an angle with vertex $A$.
+  \begin{enumerate}[itemsep=0.5cm]
+    \item Using a protractor, measure angle $A$ in degrees. $m\angle A =$
+    \item Draw a ray $\overrightarrow{AB}$ that exactly bisects $\angle A$.
+    \item What is the measure of each half angle?
   \end{enumerate}
-  \vspace{3cm}
   \begin{center}
   \begin{tikzpicture}
-    \draw [<->, thick] (45:9)--(0,0)--(9,0);
+    \draw [<->, thick] (40:9)--(0,0)--(9,0);
     \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
     %\draw [fill] (7,0) circle [radius=0.05] node[below]{$N$};
   \end{tikzpicture}
   \end{center}
 
-\item Given the line segment $\overline{PQ}$ shown below. Answer the questions and complete as directed.
-  \begin{enumerate}
-    \item Measure the length of the segment in centimeters. $PQ=$
-    \bigskip
-    \item Is the segment horizontal, vertical, or diagonal?
-    \bigskip
-    \item With a compass, draw a circle centered at $P$ that passes through $Q$.
-    \bigskip
-    \item Draw a circle centered at $Q$ that passes through $P$.
-  \end{enumerate}
-  \vspace{7cm}
-  \begin{center}
+\newpage
+\subsubsection*{Angle measures using the Babylonian system of $360^\circ$ in a circle}
+A full rotation is $360^\circ$ (a full ``turn'').\\[0.5cm]
+A half turn (straight line) is $180^\circ$. \\[0.5cm]
+$90^\circ$ is a quarter turn or a \emph{right} angle. \\[0.5cm]
+\emph{Acute} angles measure less than $90^\circ$. \emph{Obtuse} angles measure more than $90^\circ$. \\[0.5cm]
+\emph{Adjacent} angles (``next to'' each other) share a common ray and are external to each other. \vspace{0.2cm}
+
+\item Write down the name of the \emph{three} angles shown in the diagram below and their angle measures, using your protractor. \vspace{1cm}
+    \begin{center}
+    \begin{tikzpicture}[scale=2]
+      \draw [->, thick] (0,0)--(4,3);
+      \draw [->, thick] (0,0)--(5,-.5);
+      \draw [->, thick] (0,0)--(-1.2,3);
+      \draw [fill] (-1,2.5) circle [radius=0.03] node[left ]{$B$};
+      \draw [fill] (2.66666,2) circle [radius=0.03] node[above left ]{$C$};
+      \draw [fill] (0,0) circle [radius=0.03] node[left]{$A$};
+      \draw [fill] (4,-0.4) circle [radius=0.03] node[above]{$D$};
+    \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}
+      \item  \rule{4cm}{0.15mm} \bigskip
+      \item  \rule{4cm}{0.15mm} \bigskip
+      \item  \rule{4cm}{0.15mm} \bigskip
+      \item What do you notice about the angle measures?
+    \end{enumerate}\vspace{1cm}
+
+\item In your notebook, draw an angle that measures $55^\circ$
+
+\newpage
+\item 
+\begin{enumerate}
+  \item Write down the name of the angle shown in the diagram below using proper geometric notation.
+  \item Find the measure of the angle in degrees with a protractor.
+  \item Is it an acute, obtuse, or right angle?
+\end{enumerate}
+    \begin{flushright}
+    \begin{tikzpicture}[scale=2]
+      \draw [->, thick] (0,0)--(4,3);
+      \draw [->, thick] (0,0)--(5,-1);
+      \draw [fill] (2.66666,2) circle [radius=0.025] node[above left ]{$D$};
+      \draw [fill] (0,0) circle [radius=0.025] node[above left]{$E$};
+      \draw [fill] (4,-0.8) circle [radius=0.025] node[above]{$F$};
+    \end{tikzpicture}
+    \end{flushright}
+    
+
+\newpage    
+\begin{center}
   \begin{tikzpicture}
-    \draw [-, thick] (0,0)--(6,0);
-    \draw [fill] (0,0) circle [radius=0.05] node[left]{$P$};
-    \draw [fill] (6,0) circle [radius=0.05] node[right]{$Q$};
+    \draw [<->, thick] (25:6)--(0,0)--(6,0);
+    \draw [->, thick] (0,0)--(75:4);
+    \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+    %\draw [fill] (7,0) circle [radius=0.05] node[below]{$N$};
   \end{tikzpicture}
   \end{center}
 
 \newpage
-\item Do Now: Given point $B$ is the midpoint of $\overline{AC}$, with $AB=x+2$, $BC=11$. \\[0.3cm]
+\item Given point $B$ is the midpoint of $\overline{AC}$, with $AB=x+2$, $BC=11$. \\[0.3cm]
     First write and equation representing the situation, then find $x$.\\[0.3cm]
       %\begin{center}
         \begin{tikzpicture}
@@ -85,55 +137,6 @@
         \end{tikzpicture}
       %\end{center} 
       \vspace{1cm}
-
-\item Do Now: The points shown are in a straight line, $\overline{XYZ}$. 
-\begin{enumerate}
-  \item Measure and label the lengths $XY$ and $YZ$ to the nearest centimeter.\\[1.5cm]
-    \begin{tikzpicture}
-      \draw [-, thick] (1,0)--(7,0);
-      \draw [fill] (1,0) circle [radius=0.05] node[below]{$X$};
-      \draw [fill] (5,0) circle [radius=0.05] node[below]{$Y$};
-      \draw [fill] (7,0) circle [radius=0.05] node[below]{$Z$};
-    \end{tikzpicture} \vspace{0.5cm}
-  \item Write an equation employing the Segment Addition Postulate.\\ (fill in the blanks with values in centimeters)\\[1cm]
-  $XZ=$ \rule{2cm}{0.15mm} $+$ \rule{2cm}{0.15mm} $=$ \rule{2cm}{0.15mm}
-\end{enumerate} \vspace{0.5cm}
-
-\item Do Now: Points that are all located on the same plane are $\rule{4cm}{0.15mm}$.
-
-\item Do Now: Write down the name of two line segments shown in the diagram below using proper geometric notation.
-  \begin{center}
-  \begin{tikzpicture}[scale=0.5]
-    \draw [->, thick] (0,0)--(4,4);
-    \draw [->, thick] (3,3)--(3,-1);
-    \draw [fill] (0,0) circle [radius=0.05] node[left]{$R$};
-    \draw [fill] (3,3) circle [radius=0.05] node[above left]{$S$};
-    \draw [fill] (3,0) circle [radius=0.05] node[right]{$T$};
-  \end{tikzpicture}
-  \end{center}
-
-\item Do Now: Identify two lines in the given plane.\\[0.25in]
-    \begin{tikzpicture}[scale=0.8]
-      \draw [thick](0,0) node[above right]{$\ p$} --(6,0)--(8,4)--(2,4)--(0,0);
-      \draw [<->, thick] (1,1)--(6,3);
-      \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$J \ $};
-      \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$K$};
-      \draw [<->, thick] (2,3.5)--(5.25,.25);
-      \draw [fill] (5,0.5) circle [radius=0.05] node[above right]{$L$};
-    \end{tikzpicture} %\vspace{2cm}
-
-\newpage
-\subsubsection*{Absolute value: the distance from a point to the origin (zero)}
-\begin{tikzpicture}
-  \draw [<->] (-6.5,0)--(6.5,0);
-  \foreach \x in {-6,...,6} %2 leading for diff!=1
-    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-    \draw [fill] (0,0) circle [radius=0.05] node[above] {origin};
-    \draw [fill] (5,0) circle [radius=0.05] node[above] {$A(5)$};
-    \draw [fill] (-3,0) circle [radius=0.05] node[above] {$B(-3)$};
-\end{tikzpicture} \\[0.5cm]
-The absolute value of 5 is 5. $|5|=5$ \\[0.5cm]
-The absolute value of $-3$ is 3. $|-3|=3$ \vspace{0.5cm}
 
 \item Find the value of each expression.
 \begin{multicols}{2}
@@ -169,8 +172,6 @@ The absolute value of $-3$ is 3. $|-3|=3$ \vspace{0.5cm}
     \draw [fill] (-1,0) circle [radius=0.05] node[above] {$M$};
     \draw [fill] (3,0) circle [radius=0.05] node[above] {$N$};
 \end{tikzpicture} \\ \bigskip
-What is the length of the segment $\overline{MN}$? Show your work as an equation.\\[1.5cm]
-Can a length be a negative number?
-
+What is the length of the segment $\overline{MN}$? Show your work as an equation.
 \end{enumerate}
 \end{document}
