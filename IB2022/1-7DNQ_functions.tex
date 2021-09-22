@@ -1,0 +1,106 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+\newif\ifmeta
+\metatrue %print standards and topics tags
+
+\title{IB Mathematics}
+\author{Chris Huson}
+\date{September 2021}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+\raggedbottom
+
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / IB Math 01-Linear functions\\* 22 September 2021}
+
+\begin{document}
+
+\subsubsection*{1.7 Do Now Quiz: Functions}
+\begin{enumerate}
+  \item More on the pyramid workout routine: Let $x$ be the set number with the number of repetitions (``reps") a function of $x$.
+  \begin{center}
+      Sample Bench Press Pyramid 
+      (\href{https://www.bodybuilding.com/content/build-muscle-and-strength-with-pyramid-training.html}{Bill Geiger})\\
+        Set 1: 135 lbs, 14 reps\\
+        Set 2: 185 lbs, 12 reps\\
+        Set 3: 205 lbs, 10 reps\\
+        Set 4: 225 lbs, 8 reps\\
+        Set 5: 245 lbs, 6 reps\\
+        Set 6: 265 lbs, 4 reps
+  \end{center}
+\begin{enumerate}[itemsep=0.5cm]
+  \item How many reps are planned for the second set, when $x=2$?
+  \item Which set has the fewest reps? \\(express your answer in the form $x=$ a number)
+  \item Explain what the ordered pair $(4,8)$ would refer to in this context.\vspace{1.5cm}
+  \item Do the reps increase by a constant amount with each set? Explain. \\(If so, what is the slope, or rate of change?) \vspace{1.5cm}
+\end{enumerate}
+
+\item Consider the function $f(x)=50 - 10x$.
+\begin{enumerate}
+  \item Write down the independent variable.
+  \item Calculate $f(1)$ \vspace{1cm}
+  \item Show that $f(3.5)= 15$ \vspace{1.5cm}
+  \item There is an $x$ for which $f(x)= -80$. \\ Find this value of $x$.
+\end{enumerate} \vspace{2cm}
+
+\newpage
+\subsubsection*{Early finishers}
+\item In the following two problems, solve for the value of $x$.
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item   $\displaystyle \frac{1}{2}x-5=3 \frac{1}{2}$ \vspace{6cm}
+      \item   $\displaystyle 4x-\frac{3}{4}=3+\frac{1}{4}x$  \vspace{6cm}
+    \end{enumerate}
+  \end{multicols}
+    \vspace{3cm}
+
+\item Given the linear function $f(x)=-\frac{2}{3}x+4$.
+\begin{enumerate}
+  \begin{multicols}{2}
+    \item Find $f(0)$ \vspace{6cm}
+    \item   $f(x)=0$. Find $x$. \vspace{6cm}
+  \end{multicols}\vspace{4cm}
+  \begin{multicols}{2}
+      \item Plot the answers to the first two parts, (a) and (b), as points on the grid and label them as ordered pairs. 
+      \item Draw a straight line through the points to represent the function.
+      \item Which answer, (a) or (b), is the $x$-intercept. Which is the $y$-intercept?
+      \begin{center}
+      \begin{tikzpicture}[scale=0.8]
+        %\draw [help lines] (-3,-2) grid (4,6);
+        \draw [thick, ->] (-1.2,0) -- (7.4,0) node [below right] {$x$};
+        \draw [thick, ->] (0,-1.2)--(0,6.4) node [left] {$y$};
+        \foreach \x in {-1, 1,2, ..., 7} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+        \foreach \y in {1, 2, 3, 4, 5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+      \end{tikzpicture}
+      \end{center}
+    \end{multicols}
+\end{enumerate}
+
+\item Simplify each expression. (Leave it in radical form if necessary, not a decimal.)
+\begin{enumerate}
+  \begin{multicols}{2}
+  \item   $\sqrt{81}$ \vspace{1.5cm}
+  \item   $\sqrt{27}$ \vspace{1.5cm}
+  \end{multicols}
+\end{enumerate}
+\vspace{0.5cm}
+
+\end{enumerate}
+\end{document}
