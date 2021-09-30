@@ -1,0 +1,178 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%\rhead{\small{5 September 2018}}
+\lhead{\small{BECA / Dr. Huson / 11.1 IB Math Unit 1}}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Chris Huson}
+\date{13-17 October 2021}
+
+\begin{document}
+\frame{\titlepage}
+\section[Outline]{}
+\frame{\tableofcontents}
+
+
+  \section{1.3 Precision and significant figures, 3 Oct}
+  \frame
+  {
+    \frametitle{Learning Target: What is the appropriate precision for a calculation?}
+    \framesubtitle{CCSS: MP5 Attend to precision \hfill \alert{2.1 Monday 4 Oct}}
+
+    \begin{block}{Do Now: Textbook chapter warmup, use looseleaf paper}
+    \begin{enumerate}
+        \item Skills check \#1-3 p. 3
+    \end{enumerate}
+    \end{block}
+    Lesson: Rounding, significant figures, error bars pp. 1-5\\
+    Exercise 1A, \#1-2, p. 5
+    \\[0.5cm]
+    Homework: Calculation and rounding practice
+  }
+
+  \section{1.4 Error bounds, 4 Oct}
+  \frame
+  {
+    \frametitle{Learning Target: How do we measure the bounds of errors?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{2.2 Tuesday 4 Oct}}
+
+    \begin{block}{Do Now: Calculator practice}
+    \begin{enumerate}
+        \item Chapter review \#1 p. 39
+        \item Pay careful attention to saving calculator values, rather than copying to paper and reentering.
+        \item Check your answers in back of book, p. 766
+    \end{enumerate}
+    \end{block}
+    Lesson: Bounds and errors pp. 6-8\\ \bigskip
+    Practice exercises 1B p. 8-9\\
+    Homework: Function substitution, domain and range
+  }
+
+  \section{1.5 Exponents \& scientific notation, 5 Oct}
+  \frame
+  {
+    \frametitle{Learning Target: How do we write very large or small numbers?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{2.3 Wednesday 5 Oct}}
+
+    \begin{block}{Do Now: Precision practice}
+    \begin{enumerate}
+        \item Practice exercises 1B p. 8-9
+        \item Pay careful attention to saving calculator values, rather than copying to paper and reentering.
+        \item Check your answers in back of book, p. 765
+    \end{enumerate}
+    \end{block}
+    Lesson: Exponents \& scientific notation pp. 9-12\\ \smallskip
+    Note exponent rules top of page 11\\ \smallskip
+    Homework: Practice exercises 1C p. 12-13
+  }
+
+  \section{1.9 Deltamath: scientific notation, trig 6 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we practice the law of sines?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{2.4 Thursday 6 Oct}}
+
+    \begin{block}{Deltamath practice: scientific notation, trig}
+      \begin{enumerate}
+        \item Laptops, login with Teacher ID \alert{546068}
+        \item Do Deltamath sections in order \\
+        Practice comes first, then new topics
+        \item Work extra problems on the skills you need to practice
+    \end{enumerate}
+    \end{block}
+    New material: The sine formula for the area of a triangle page 22\\
+    Radian / degree conversion; law of cosines\\ \smallskip
+    Homework: Complete Deltamath problems, 10:00PM deadline
+  }
+
+
+  \section{1.17 review, bounds, 7 Oct}
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the bounds around a value?}
+    \framesubtitle{CCSS: MP5 attend to precision \hfill \alert{2.5 Friday 7 Oct}}
+
+    \begin{block}{Do Now Quiz: \href{https://www.smartbmicalculator.com/}{Calculate Body Mass Index} (link)}
+      BMI is a measure of a healthy personal weight, $\displaystyle BMI = \frac{w}{h^2}$ \\ \smallskip
+      $w$ is a person's weight in kilograms and $h$ is height in meters
+      \begin{enumerate} 
+          \item Given a height of 170 cm and weight of 77 kg, find the BMI
+          \item These measurements are not exact. Assuming the height is between 169-171 cm and weight 76-78 kg, find the bounds of the BMI.
+       \end{enumerate}
+      \end{block}
+    Lesson: Solid geometry, Chapter Summary\\ \smallskip
+    Homework: Chapter review 11-17 p. 39-40 (revisit problems)
+  }
+
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the bounds around a value?}
+    \framesubtitle{CCSS: MP5 attend to precision}
+
+    \begin{block}{Solution to Do Now Quiz: Calculate Body Mass Index 
+      \alert{(7)}}
+      \begin{enumerate} 
+          \item $\displaystyle BMI = \frac{77}{1.70^2}$ 
+          \hspace{3cm} \alert{M1 A1 allow $170^2$}\\ \smallskip
+            \hspace{0.8cm} $=26.64359 \dots$ \\
+          \hspace{0.8cm} $\approx 26.6$ 
+            \hspace{3.2cm} \alert{A1 (N2))}
+          \item Lowerbound: $\displaystyle BMI = \frac{76}{1.71^2}$ 
+          \hspace{0.8cm} \alert{M1 A1} \\ \smallskip
+          \hspace{0.8cm} $=25.9909 \dots$ \\
+          \hspace{0.8cm} $\approx 26.0$  \\ \smallskip
+          Upperbound: $\displaystyle BMI = \frac{78}{1.69^2}$ \\ \smallskip
+          \hspace{0.8cm} $=27.30996 \dots$ \\
+          \hspace{0.8cm} $\approx 27.3$  \hspace{3cm} \alert{A1 A1 (N3)} \\
+          \hspace{4cm} \alert{award M1 A1 f.t. for 26.6, 26.7}
+       \end{enumerate}
+      \end{block}
+    Proper header with full name, date, and title (5 percentage points)
+    
+  }
+
+  \frame
+  {
+    \frametitle{GQ: How do we calculate the bounds around a value?}
+    \framesubtitle{CCSS: MP5 attend to precision}
+
+    \begin{block}{Quiz Corrections: Calculate Body Mass Index 
+      \alert{required}}
+      \begin{itemize} 
+          \item Proper header with full name, date, and title
+          \item Work downward in single column on left, in pen 
+            \\(you can add notes and diagrams on the right)
+          \item Skip a line and number the problem
+          \item Label to the left of equals sign (e.g. $BMI=$)
+          \item Show substitution step
+          \item Write the full calculator display (with ellipse)
+          \item Show the rounded value, 3 sig-figs (exact value is also ok)
+       \end{itemize}
+      \end{block}
+    Copy this checklist into your notebook
+    
+  }
+
+\end{document}
