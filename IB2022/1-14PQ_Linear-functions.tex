@@ -65,12 +65,11 @@ Gradient: $\displaystyle m=\frac{y_2-y_1}{x_2-x_1}$ \vspace{1cm}
 \item A line has a gradient (slope) of 3 and goes through the point $(1, 4)$. Find the equation of the line in the form $y=mx+b$.
 
 \newpage
-\item A line goes through the points $(2, 10)$ and $(5, 18)$. Find the gradient and the equation of the line in the form $y=mx+b$.
-
+\item A line goes through the points $(2, 3)$ and $(5, 12)$.
 \begin{enumerate}
   \begin{multicols}{2}
       \item Find the gradient of the line.
-      \item Find the equation of the line.\vspace{2cm}
+      \item Find the equation of the line in the form $y=mx+b$.\vspace{2cm}
       \begin{center}
       \begin{tikzpicture}[xscale=0.7, yscale=0.4]
         %\draw [help lines] (-3,-2) grid (4,6);
@@ -78,10 +77,13 @@ Gradient: $\displaystyle m=\frac{y_2-y_1}{x_2-x_1}$ \vspace{1cm}
         \draw [thick, ->] (0,-1.2)--(0,13.5) node [right] {$y$};
         \foreach \x in {-1, 1,2, ..., 7} \draw (\x cm,4pt) -- (\x cm,-4pt) node[anchor=north] {$\x$};
         \foreach \y in {2, 4, ..., 12} \draw (2pt,\y cm) -- (-2pt,\y cm) node[anchor=east] {$\y$};
+        \fill (2,3) circle[radius=0.1] node[below right]{$(2,3)$};
+        \fill (5,12) circle[radius=0.1] node[below right]{$(5,12)$};
+        \draw [thick, <->] (1.67,2)--(5.33,13);
       \end{tikzpicture}
       \end{center}
     \end{multicols}
-\end{enumerate}
+\end{enumerate} \vspace{3cm}
 
 \item Find the equation of the line through the points $(-2, 5)$ and $(3,  20)$. 
 
@@ -114,54 +116,31 @@ Gradient: $\displaystyle m=\frac{y_2-y_1}{x_2-x_1}$ \vspace{1cm}
   \end{enumerate}
 
 \newpage
-\item A linear function is such that $f(1)=5$ and $f(5)=1$.
-\begin{enumerate}[itemsep=1.5cm]
-  \item Name two of the function's points as ordered pairs.
-  \item Find the gradient (slope) for the function $f$
-  \item Substitute the slope and one point into the formula $f(x)=mx+c$
-  \item Solve for the $y$-intercept
-  \item Find $f(-3)$
-\end{enumerate} \vspace{1cm}
 
-\item Given the direct variation (and also a linear function) $f(x)=2x$. \hfill [6]
+\item A function $f(x)=\frac{3}{4}x+1$ is graphed below.
+\begin{multicols}{2}
 \begin{enumerate}
-  \begin{multicols}{2}
-    \item Find $f(3)$
-    \item   $f(x)=10$. Find $x$.
-  \end{multicols}\vspace{2cm}
-  \begin{multicols}{2}
-      \item Plot the answers to the first two parts, (a) and (b), as points on the grid and label them as ordered pairs. 
-      \item Draw a straight line through the points to represent the function.
-      \item What is the constant of proportionality? \vspace{2cm}
-      \begin{center}
-      \begin{tikzpicture}[xscale=0.7, yscale=0.4]
-        %\draw [help lines] (-3,-2) grid (4,6);
-        \draw [thick, ->] (-1.2,0) -- (7.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-1.2)--(0,13.5) node [right] {$y$};
-        \foreach \x in {-1, 1,2, ..., 7} \draw (\x cm,4pt) -- (\x cm,-4pt) node[anchor=north] {$\x$};
-        \foreach \y in {2, 4, ..., 12} \draw (2pt,\y cm) -- (-2pt,\y cm) node[anchor=east] {$\y$};
-      \end{tikzpicture}
-      \end{center}
-    \end{multicols}
-\end{enumerate}
+  \item Create a table of values for the function
+  \vspace{0.5cm}
+  \item Create a table of values for the inverse function.
+  \vspace{0.5cm}
+  \item Draw the inverse function on the graph.
+  \vspace{1cm}
+\end{enumerate} \vspace{.5cm}
+  \begin{center} 
+  \begin{tikzpicture}[scale=0.8]
+    \draw [help lines] (-3,-2) grid (4,6);
+    \draw [thick, ->] (-3.2,0) -- (4.4,0) node [below right] {$x$};
+    \draw [thick, ->] (0,-2.2)--(0,6.4) node [left] {$y$};
+    \foreach \x in {-3,-2,-1,1,2,...,4} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+    \foreach \y in {1, 2, 3, 4, 5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+    \draw [thick, <->] (-0.5,0.625) -- (4.5,4.375);
+    %\fill (2,3) circle[radius=0.1] node[below right]{$P$};
+  \end{tikzpicture}
+  \end{center}
+\end{multicols}  \vspace{2.5cm}
 
-\item The gasoline used by a car is the function of the distance driven in miles, as shown in the table.
-\begin{center}
-  \begin{tabular}{|l|r|r|r|r|r|r|}
-    \hline
-    Distance (miles) & 10 & 20 & 40 & 50 & 200 & 500\\ 
-    \hline 
-    Gas (gallons) & 0.5 & 1 & 2 & 2.5 & 10 & 25\\ 
-    \hline 
-  \end{tabular}
-\end{center}
-\begin{enumerate}[itemsep=1cm]
-  \item Is gas usage a linear function of distance driven? Explain.
-  \item Is it a direct variation?
-  \item What is the gradient? 
-  \item What is the gas mileage in terms of miles per gallon?
-  \item Discuss which is the independent and dependent variables.
-\end{enumerate}
+\item Find the inverse function using algebraic methods of the function $f(x)=\frac{3}{2}x-4$.
 
 \end{enumerate}
 \end{document}
