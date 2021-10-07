@@ -62,7 +62,7 @@ Gradient: $\displaystyle m=\frac{y_2-y_1}{x_2-x_1}$ \vspace{1cm}
 
 \item Write the linear equation $y-2=3(x+1)$ in the form $y=mx+c$. \vspace{4cm}
 
-\item A line has a gradient (slope) of 3 and goes through the point $(1, 4)$. Find the equation of the line in the form $y=mx+b$.
+\item A line has a gradient (slope) of $\displaystyle -\frac{3}{2}$ and passes through the point $(4, 1)$. Find the equation of the line in the form $y=mx+b$.
 
 \newpage
 \item A line goes through the points $(2, 3)$ and $(5, 12)$.
@@ -85,7 +85,7 @@ Gradient: $\displaystyle m=\frac{y_2-y_1}{x_2-x_1}$ \vspace{1cm}
     \end{multicols}
 \end{enumerate} \vspace{3cm}
 
-\item Find the equation of the line through the points $(-2, 5)$ and $(3,  20)$. 
+\item Find the equation of the line through the points $(4, 3)$ and $(-2, 18)$. 
 
   \newpage
   \item A function $f$ is shown in the table. \hfill [5]
@@ -117,30 +117,41 @@ Gradient: $\displaystyle m=\frac{y_2-y_1}{x_2-x_1}$ \vspace{1cm}
 
 \newpage
 
-\item A function $f(x)=\frac{3}{4}x+1$ is graphed below.
-\begin{multicols}{2}
+\item A function $\displaystyle f(x)=\frac{1}{2}x+1$ is graphed below.
 \begin{enumerate}
-  \item Create a table of values for the function
+  \item Complete the T-table of values for the function on the left.
   \vspace{0.5cm}
-  \item Create a table of values for the inverse function.
+  \item Write down the values for the inverse function in the right T-table.
   \vspace{0.5cm}
-  \item Draw the inverse function on the graph.
-  \vspace{1cm}
-\end{enumerate} \vspace{.5cm}
+  \item Draw the line for the inverse function on the graph.
+\end{enumerate}
   \begin{center} 
   \begin{tikzpicture}[scale=0.8]
-    \draw [help lines] (-3,-2) grid (4,6);
-    \draw [thick, ->] (-3.2,0) -- (4.4,0) node [below right] {$x$};
-    \draw [thick, ->] (0,-2.2)--(0,6.4) node [left] {$y$};
-    \foreach \x in {-3,-2,-1,1,2,...,4} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-    \foreach \y in {1, 2, 3, 4, 5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
-    \draw [thick, <->] (-0.5,0.625) -- (4.5,4.375);
-    %\fill (2,3) circle[radius=0.1] node[below right]{$P$};
+    \draw [help lines] (-3,-3) grid (6,6);
+    \draw [thick, ->] (-3.2,0) -- (6.4,0) node [below right] {$x$};
+    \draw [thick, ->] (0,-3.2)--(0,6.4) node [left] {$y$};
+    \foreach \x in {-3,-2,-1,1,2,...,6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+    \foreach \y in {-2,-1,1, 2, 3, 4, 5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+
+    \draw [thick, <->,smooth,samples=20,domain=-2.5:5.5] plot(\x,0.5*\x+1);
+
+    \draw [thick] (-7,-1) -- (-7,6);
+    \draw [thick] (-8.5,5) -- (-5.5,5);
+    \node at (-7,7){$f(x)$};
+    \draw [thick] (9,-1) -- (9,6);
+    \draw [thick] (7.5,5) -- (10.5,5);
+    \node at (9,7){$f^{-1}(x)$};
+    \node at (-8,4){$-2$}; \node at (-8,2.5){$0$}; 
+    \node at (-8,1){$2$}; 
+    \node at (-6,-0.5){$3$};
+    \fill (-2,0) circle[radius=0.1];
+    \fill (0,1) circle[radius=0.1];
+    \fill (2,2) circle[radius=0.1];
+    \fill (4,3) circle[radius=0.1];
   \end{tikzpicture}
   \end{center}
-\end{multicols}  \vspace{2.5cm}
 
-\item Find the inverse function using algebraic methods of the function $f(x)=\frac{3}{2}x-4$.
+\item Find the inverse function of $f(x)=\frac{3}{2}x-4$ using algebraic methods.
 
 \end{enumerate}
 \end{document}
