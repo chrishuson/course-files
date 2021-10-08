@@ -152,26 +152,31 @@ Gradient: $\displaystyle m=\frac{y_2-y_1}{x_2-x_1}$ \vspace{1cm}
 \item Find the inverse function of $\displaystyle f(x)=\frac{3}{5}x-6$ using algebraic methods. (state $f^{-1}$ in the form $y=mx+c$) \hfill [3]
 
 \newpage
-\item The function $f(x)=-x^{2}+6x-6$ is shown on the graph. \hfill [5]
+\item The function $f(x)=-x^{2}+6x-6$ is shown on the graph. \hfill [8]
 \begin{enumerate}
   \begin{multicols}{2}
-      \item Write down its vertex as an ordered pair.
-      \item Draw on the graph the function $g(x)=-x+4$.
-      \item Find the two ordered pairs that satisfy both $f$ and $g$.\vspace{2cm}
+      \item Write down its vertex as an ordered pair. \vspace{0.5cm}
+      \item Draw on the graph the function \\$g(x)=-x+4$.
+      \item Find the two ordered pairs that satisfy both $f$ and $g$. \vspace{3cm}
       \begin{center}
       \begin{tikzpicture}[scale=1]
-        \draw [help lines] (-1,-2) grid (6,5);
+        \draw [help lines] (-1,-3) grid (6,5);
         \draw [thick, ->] (-1.2,0) -- (6.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-2.2)--(0,5.5) node [right] {$y$};
+        \draw [thick, ->] (0,-3.2)--(0,5.5) node [right] {$y$};
         \foreach \x in {-1, 1,2, ..., 6} \draw (\x cm,4pt) -- (\x cm,-4pt) node[anchor=north] {$\x$};
         \foreach \y in {-2,-1,1,2,..., 5} \draw (2pt,\y cm) -- (-2pt,\y cm) node[anchor=east] {$\y$};
-        %\fill (3,3) circle[radius=0.1] node[above right]{$(3,3)$};
-        %\fill (6,-1) circle[radius=0.1] node[below left]{$(6,-1)$};
+        \fill (1.27,0) circle[radius=0.1] node[below right]{$j$};
+        \fill (4.73,0) circle[radius=0.1] node[below left]{$k$};
         \draw [thick, <->,smooth,samples=20,domain=0.5:5.5] plot(\x,-\x*\x+6*\x-6);
+        \node at (5.7,-2.5){$f$};
       \end{tikzpicture}
       \end{center}
-    \end{multicols}
+    \end{multicols} 
+    \vspace{2cm}
+    \item Find the exact values of $j$ and $k$, the $x$-intercepts of $f$. (as an expression with radicals, not a decimal)
 \end{enumerate} \vspace{3cm}
+
+\newpage
 
 \end{enumerate}
 \end{document}
