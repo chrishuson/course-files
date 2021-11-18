@@ -36,14 +36,28 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / IB Math 02-Descriptive Statistics\\* 17 November 2021}
+\fancyhead[LO]{BECA / IB Math 02-Descriptive Statistics\\* 19 November 2021}
 
 \begin{document}
 
-\subsubsection*{2.1: Frequency tables}
+\subsubsection*{2.1: Box and whisker plots}
 \begin{enumerate}
+\item Find the 5-figure summary statistics of the following data (without a calculator):
+  \begin{center}
+  5 14 3 6 15 11 9 7 14
+  \end{center}
+  \begin{enumerate}[itemsep=0.7cm]
+    \item Rewrite the data in order.
+    \item Minimum =
+    \item 1st Quartile =
+    \item Median =
+    \item 3rd Quartile =
+    \item Maximum =
+    \item Range =
+    \item IQR =
+  \end{enumerate} \vspace{0.5cm}
+
 \item The box-and-whisker plot represents the examination scores of a group of students.
-  %\includegraphics[width=9cm]{2-16exam-scores-box-plot.png}
   \begin{center}
   \begin{tikzpicture}[scale=1.0]
     \begin{axis}[
@@ -65,20 +79,39 @@
             %average=28,
             },
         ] coordinates {};
-    
     \end{axis}
     \end{tikzpicture}
   \end{center}
-
   \begin{enumerate}
-    \item Write down the median score. \hfill [1 marks]\\[.25cm]
-    The range of the scores is 47 marks, and the interquartile range is 26 marks.
+    \item Write down each value: \hfill [1 marks]
+    \begin{enumerate}
+      \begin{multicols}{3}
+        \item median =
+        \item $Q_1 = $
+        \item max =
+      \end{multicols}
+    \end{enumerate} \vspace{0.5cm}
+    The range of the scores is 47 marks, and the interquartile range is 26 marks. \vspace{0.5cm}
     \item Find the value of
     \begin{enumerate}
-      \item the minimum score; \hfill [2 marks] \vspace{.5cm}
-      \item the third quartile. \hfill [2 marks] \vspace{.5cm}
+      \item the minimum score; \hfill [2 marks] \vspace{1cm}
+      \item the third quartile. \hfill [2 marks]
     \end{enumerate}
   \end{enumerate}
+
+\newpage
+\item Draw a box and whiskers plot of the five-figure summary on the grid. Use a ruler for full credit. \hfill [2 marks] \vspace{0.25cm}\\
+min = 2, $Q_1=5$, median = 9, $Q_3=13$, maximum = 16
+
+\begin{center}
+  \begin{tikzpicture}[scale=.5]
+    \draw [help lines, dashed] (0,0) grid (20,4);
+    \draw [thick, ->] (0,0) -- (20.5,0) node [below right] {$x$};
+    \foreach \x in {0,2,4,6,8,10, 12, 14, 16, 18, 20}
+      \draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+    \draw [thick, -] (0,0)--(0,4);
+  \end{tikzpicture}
+\end{center} 
 
 \item Given the following set of 15 data:
     \begin{center}
