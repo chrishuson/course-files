@@ -139,6 +139,63 @@ Write the letter or letters for each corresponding object. \vspace{0.5cm}
     \end{flushright}
 
 \newpage
+  \item Given $\triangle WIN \cong \triangle W'I'N'$. Describe the rigid motion mapping $\triangle WIN \rightarrow \triangle W'I'N'$.
+  \begin{flushright}
+    \begin{tikzpicture}[scale=.48]
+      %\draw [help lines] (-10,-7) grid (10,7);
+      \draw [thick, <->] (-5.4,0) -- (5.4,0) node [right] {$x$};
+      \draw [thick, <->] (0,-4.4)--(0,4.4) node [above] {$y$};  
+      \draw [thick]
+      (1,0) node[above] {$W$}--
+      (4,3) node[right] {$I$}--
+      (4,-3) node[below right] {$N$}--cycle;
+      \draw [thick]
+      (-1,0) node[below] {$W'$}--
+      (-4,3) node[left] {$N'$}--
+      (-4,-3) node[below left] {$I'$}--cycle;
+    \end{tikzpicture}
+  \end{flushright}
+
+  \item Determine and state the sequence of transformations applied to map $BECA$ to $B''E''C''A''$.
+  \begin{flushright}
+      \begin{tikzpicture}[scale=.48]
+      \draw [help lines] (-8,-6) grid (10,6);
+      \draw [thick, <->] (-8.4,0) -- (10.4,0) node [right] {$x$};
+      \draw [thick, <->] (0,-6.4)--(0,6.4) node [above] {$y$};  
+      \draw [thick]
+        (3,1) node[left] {$B$}--
+        (3,5) node[above] {$E$}--
+        (7,4) node[above] {$C$}--
+        (7,2) node[right] {$A$}--cycle;
+      \draw [thick]
+        (-3,-1) node[left] {$B''$}--
+        (-3,-5) node[left] {$E''$}--
+        (1,-4) node[right] {$C''$}--
+        (1,-2) node[right] {$A''$}--cycle; 
+    \end{tikzpicture}
+  \end{flushright}
+
+  \item Determine and state the transformation mapping $\triangle NOP$ onto $\triangle QRP$. 
+    \begin{flushright}
+        \begin{tikzpicture}[scale=.48]
+        \draw [help lines] (-7,-5) grid (7,7);
+        \draw [thick, <->] (-7.4,0) -- (7.4,0) node [right] {$x$};
+        \draw [thick, <->] (0,-5.4)--(0,7.4) node [above] {$y$};  
+        \draw [thick]
+          (-1,5) node[above] {$N$}--
+          (-4,4) node[left] {$O$}--
+          (1,1) --cycle;
+        \draw [thick]
+        (3,-3) node[below] {$Q$}--
+        (6,-2) node[above right] {$R$}--
+        (1,1) node[above right] {$P$}--cycle;
+      \end{tikzpicture}
+    \end{flushright}
+
+\end{enumerate}
+\end{document}
+
+\newpage
   \item The quadrilateral $ROCK$ undergoes rigid motions, shown below. Describe the sequence of transformations applied.
   \begin{flushright}
       \begin{tikzpicture}[scale=.48]
@@ -187,60 +244,3 @@ Write the letter or letters for each corresponding object. \vspace{0.5cm}
         (-3,4) node[above] {$H'$}--cycle; 
     \end{tikzpicture}
   \end{multicols}
-
-\newpage
-  \item Given $\triangle WIN \cong \triangle W'I'N'$. Describe the rigid motion mapping $\triangle WIN \rightarrow \triangle W'I'N'$.
-  \begin{flushright}
-    \begin{tikzpicture}[scale=.48]
-      %\draw [help lines] (-10,-7) grid (10,7);
-      \draw [thick, <->] (-5.4,0) -- (5.4,0) node [right] {$x$};
-      \draw [thick, <->] (0,-4.4)--(0,4.4) node [above] {$y$};  
-      \draw [thick]
-      (1,0) node[above] {$W$}--
-      (4,3) node[right] {$I$}--
-      (4,-3) node[below right] {$N$}--cycle;
-      \draw [thick]
-      (-1,0) node[below] {$W'$}--
-      (-4,3) node[left] {$N'$}--
-      (-4,-3) node[below left] {$I'$}--cycle;
-    \end{tikzpicture}
-  \end{flushright}
-
-  \item Determine and state the sequence of transfromations applied to map $BECA$ to $B''E''C''A''$.
-  \begin{flushright}
-      \begin{tikzpicture}[scale=.48]
-      \draw [help lines] (-8,-6) grid (10,6);
-      \draw [thick, <->] (-8.4,0) -- (10.4,0) node [right] {$x$};
-      \draw [thick, <->] (0,-6.4)--(0,6.4) node [above] {$y$};  
-      \draw [thick]
-        (3,1) node[left] {$B$}--
-        (3,5) node[above] {$E$}--
-        (7,4) node[above] {$C$}--
-        (7,2) node[right] {$A$}--cycle;
-      \draw [thick]
-        (-3,-1) node[left] {$B''$}--
-        (-3,-5) node[left] {$E''$}--
-        (1,-4) node[right] {$C''$}--
-        (1,-2) node[right] {$A''$}--cycle; 
-    \end{tikzpicture}
-  \end{flushright}
-
-  \item Determine and state the transformation mapping $\triangle NOP$ onto $\triangle QRP$. 
-    \begin{flushright}
-        \begin{tikzpicture}[scale=.48]
-        \draw [help lines] (-7,-5) grid (7,7);
-        \draw [thick, <->] (-7.4,0) -- (7.4,0) node [right] {$x$};
-        \draw [thick, <->] (0,-5.4)--(0,7.4) node [above] {$y$};  
-        \draw [thick]
-          (-1,5) node[above] {$N$}--
-          (-4,4) node[left] {$O$}--
-          (1,1) --cycle;
-        \draw [thick]
-        (3,-3) node[below] {$Q$}--
-        (6,-2) node[above right] {$R$}--
-        (1,1) node[above right] {$P$}--cycle;
-      \end{tikzpicture}
-    \end{flushright}
-
-\end{enumerate}
-\end{document}
