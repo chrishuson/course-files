@@ -24,7 +24,6 @@
 \renewcommand{\headrulewidth}{0pt} % disable the underline of the header
 \raggedbottom
 
-
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
 \fancyhead[LO]{BECA / Dr. Huson / Geometry 5 Congruence Transformations}
@@ -33,34 +32,212 @@
 
 \subsubsection*{5.6 Classwork: Mixed congruence transformations \hfill CCSS.HSN.RN.A.2}
 \begin{enumerate}
-  \item Slide $\triangle ABC$ to the right three and up four. Label the image $\triangle A'B'C'$.
-  \begin{center}
-      \begin{tikzpicture}[scale=.48]
-      \draw [help lines] (-7,-4) grid (10,6);
-      \draw [thick, <->] (-7.4,0) -- (10.4,0) node [right] {$x$};
-      \draw [thick, <->] (0,-4.4)--(0,6.4) node [above] {$y$};  
-      \draw [thick]
-        (-1,-1) node[below left] {$A$}--
-        (5,-2) node[below] {$B$}--
-        (2,1) node[above right] {$C$}--cycle;  
+\item Do Now: Slide $\triangle ABC$ to the right three and up four. Label the image $\triangle A'B'C'$.
+\begin{center}
+    \begin{tikzpicture}[scale=.55]
+    \draw [help lines] (-7,-4) grid (10,6);
+    \draw [thick, <->] (-7.4,0) -- (10.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-4.4)--(0,6.4) node [above] {$y$};  
+    \draw [thick]
+      (-1,-1) node[below left] {$A$}--
+      (5,-2) node[below] {$B$}--
+      (2,1) node[above right] {$C$}--cycle;  
+  \end{tikzpicture}
+\end{center}
+
+\item A vector from the origin $\overrightarrow{OA}$ is shown rotated counterclockwise around $O$.
+      \begin{enumerate}
+        \item Using a protractor, measure the angle of rotation
+        \item Mark and label the point $B(3,-4)$. Draw $\overrightarrow{OB}$.
+        \item Find the measure of the combined angle, $m\angle A'OB$.
+      \end{enumerate}
+      \begin{center}
+      \begin{tikzpicture}[scale=1]
+      \draw [help lines] (-5,-5) grid (5,5);
+      \draw [<->] (-5.4,0) -- (5.4,0) node [right] {$x$};
+      \draw [thick, <->] (0,-5.4)--(0,5.4) node [above] {$y$};
+      \foreach \x in {-5,...,-1,1,2,3,4,5}
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \foreach \y in {-5,...,-1,1,2,3,4,5}
+        \draw[shift={(0,\y)},color=black] (-3pt,0pt) -- (3pt,0pt) node[left=5pt]  {$\y$};
+        \draw [dashed] (0,0) circle [radius=5cm];
+        \draw [line width=2pt, ->] (0,0)--(5,0) node [above left] {$A$};
+        \draw [line width=2pt, ->] (0,0)--(4,3) node [above right] {$A'$};
     \end{tikzpicture}
   \end{center}
 
-  \item Translate $\triangle DEF$ by $(x,y) \rightarrow (x+3, y-5)$. Label the image $\triangle D'E'F'$.
-  \begin{center}
-      \begin{tikzpicture}[scale=.48]
-      \draw [help lines] (-7,-5) grid (10,6);
-      \draw [thick, <->] (-7.4,0) -- (10.4,0) node [right] {$x$};
-      \draw [thick, <->] (0,-5.4)--(0,6.4) node [above] {$y$};  
+\newpage
+\item Translate $\triangle DEF$ by $(x,y) \rightarrow (x+3, y-5)$. Label the image $\triangle D'E'F'$.
+\begin{center}
+    \begin{tikzpicture}[scale=.48]
+    \draw [help lines] (-7,-5) grid (10,6);
+    \draw [thick, <->] (-7.4,0) -- (10.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-5.4)--(0,6.4) node [above] {$y$};  
+    \draw [thick]
+      (-4,4) node[below left] {$D$}--
+      (3,4) node[above] {$E$}--
+      (1,1) node[below] {$F$}--cycle;  
+  \end{tikzpicture}
+\end{center}
+
+\item A translation maps triangle $PQR$ onto triangle $STU$. %\vspace{0.5cm}
+  \begin{multicols}{2}
+    \begin{tikzpicture}[scale=0.9]
+      \coordinate [label=above left:$P$](A) at (95:2);
+      \coordinate [label=below:$Q$](B) at (0, 0);
+      \coordinate [label=right:$R$](C) at (-10:3.5);
+      \draw [thick] (A)--(B)--(C)--cycle;
+      \draw [thick, xshift=3cm, yshift=1.5cm] (95:2) node[above]{$S$}--
+      (0,0) node[below]{$T$}--
+      (-10:3.5) node[right]{$U$}--cycle;
+    \end{tikzpicture}\\
+    Write each corresponding object.
+    \begin{enumerate}
+      \item $Q \rightarrow$ \rule{2cm}{0.15mm}
+      \item $\angle QRP \cong$ \rule{2cm}{0.15mm}
+      \item \rule{2cm}{0.15mm} $\cong \overline {ST}$
+      \item Justify $\triangle PQR \cong \triangle STU$. Use the words ``rigid motion".
+    \end{enumerate}
+  \end{multicols}  \vspace{1.5cm}
+
+  \item In the diagram below, $\triangle ABC$ with sides of 13, 15, and 16, is mapped onto $\triangle DEF$ after a clockwise rotation of $90^\circ$ about point $P$. 
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item What is $A$ mapped to? $A \rightarrow$ \vspace{1.5cm}
+      \item What corresponds to $F$? \vspace{1.5cm}
+      \item Given $DF=3x+1$. Find $x$. \vspace{1.5cm}
+    \end{enumerate}
+    \begin{tikzpicture}[scale=.6, rotate=-30]
+      %\draw [thick, <->] (-7.4,0) -- (10.4,0) node [right] {$x$};
+      %draw [thick, <->] (0,-5.4)--(0,10.4) node [above] {$y$};
+      \fill (0,0) circle[radius=0.1] node[right]{$P$};
       \draw [thick]
-        (-4,4) node[below left] {$D$}--
-        (3,4) node[above] {$E$}--
-        (1,1) node[below] {$F$}--cycle;  
+        (-2,1) node[below left] {$A$}--
+        (-7,2) node[left] {$B$}--
+        (-4,5) node[above right] {$C$}--cycle;
+        \node at (-5,1.5)[below]{16};
+        \node at (-6,4){13};
+        \node at (-2.5,3.5){15};
+        \node at (3.25,2.25){$3x+1$};
+      \draw [thick]
+        (1,2) node[left] {$D$}--
+        (2,7) node[above] {$E$}--
+        (5,4) node[right] {$F$}--cycle;
+    \end{tikzpicture}
+  \end{multicols}
+  \vspace{2cm}
+
+\newpage
+\item On the axes below, graph the point $P(2,4)$ and its image, $P'$, after a rotation of $90^\circ$ counterclockwise around the origin. Label both points as a coordinate pair.
+    \begin{center}
+      \begin{tikzpicture}[scale=.7]
+      \draw [help lines] (-5,-5) grid (5,5);
+      \draw [thick, <->] (-5.4,0) -- (5.4,0) node [right] {$x$};
+      \draw [thick, <->] (0,-5.4)--(0,5.4) node [above] {$y$};
+      \foreach \x in {-5,...,-1,1,2,3,4,5}
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \foreach \y in {-5,...,-1,1,2,3,4,5}
+        \draw[shift={(0,\y)},color=black] (-3pt,0pt) -- (3pt,0pt) node[left=5pt]  {$\y$}; 
     \end{tikzpicture}
   \end{center}
 
+\item A transformation maps $\triangle ABC \rightarrow \triangle DEC$, shown below. 
+\begin{enumerate}
+  \item Fully specify the transformation. \vspace{1cm}
+\begin{multicols}{2}
+  \item Identify each corresponding object. 
+  \begin{enumerate}
+    \item $A \rightarrow$ \rule{2cm}{0.15mm}
+    \item $B \rightarrow$ \rule{2cm}{0.15mm}
+    \item $C \rightarrow$ \rule{2cm}{0.15mm}
+    \item $\angle ACB \cong$ \rule{2cm}{0.15mm}
+    \item \rule{2cm}{0.15mm} $\cong \overline {DE}$
+  \end{enumerate}
+  \begin{tikzpicture}[scale=.48]
+    \draw [help lines] (-2,-3) grid (9,8);
+    \draw [thick, <->] (-2.4,0) -- (9.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-3.4)--(0,8.4) node [above] {$y$};  
+    \draw [thick]
+    (4,-2) node[below left] {$A$}--
+    (7,1) node[right] {$B$}--
+    (1,1) node[below left] {$C$}--cycle;  
+    \draw [thick]
+    (4,4) node[right] {$D$}--
+    (1,7) node[left] {$E$}--
+    (1,1) --cycle; 
+  \end{tikzpicture}
+\end{multicols}
+\end{enumerate}
 
-  \item Plot and label $\triangle XYZ$ with $X(-1,2)$, $Y(3,4)$, and  $Z(1,-3)$. Then translate by $(x,y) \rightarrow (x-6, y-1)$, labeling the image $\triangle X'Y'Z'$.
+\item Check those transformations that are rigid motions.
+\begin{itemize}
+  \begin{multicols}{2}
+  \item[$\square$] Dilation
+  \item[$\square$] Translation
+  \item[$\square$] Reflection
+  \item[$\square$] Rotation
+  \item[$\square$] An isometry
+  \item[$\square$] Horizontal stretch
+  \end{multicols}
+\end{itemize}
+
+\newpage
+\item Reflect $\triangle TRS$ across the $y$-axis, labeling the image $\triangle T'R'S'$. Check those properties that are maintained by reflection.  \vspace{0.5cm}
+\begin{multicols}{2}
+  \begin{itemize}
+    \item[$\square$] Length
+    \item[$\square$] Angle measures
+    \item[$\square$] Orientation
+    \item[$\square$] Parallel relationships
+    \item[$\square$] Area
+  \end{itemize}
+  \begin{tikzpicture}[scale=.6]
+    \draw [help lines] (-7,-4) grid (7,5);
+    \draw [thick, <->] (-7.4,0) -- (7.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-4.4)--(0,5.4) node [above] {$y$};  
+    \draw [thick]
+    (4,-2) node[below left] {$T$}--
+    (5,1) node[right] {$R$}--
+    (2,2) node[below left] {$S$}--cycle;
+  \end{tikzpicture}
+\end{multicols}
+
+\item Draw the line of reflection that would map $\triangle ABC$ onto $\triangle A'B'C'$.
+\begin{center}
+    \begin{tikzpicture}[rotate=100]
+    %\draw [help lines] (-7,-2) grid (7,6);
+    %\draw [thick, <->] (-7.4,0) -- (7.4,0) node [right] {$x$};
+    %\draw [thick, <->] (0,-2.4)--(0,6.4) node [above] {$y$};  
+    \draw [thick]
+      (0,2) node[right] {$A$}--
+      (3,4) node[left] {$B$}--
+      (1,4) node[left] {$C$}--cycle;
+    \draw [thick]
+    (2,0) node[right] {$A'$}--
+    (4,3) node[above left] {$B'$}--
+    (4,1) node[right] {$C'$}--cycle;
+  \end{tikzpicture}
+\end{center}
+
+\item An isometry maps $\triangle JKL \rightarrow \triangle MNO$. $m\angle K = 40^\circ$ and $m\angle M = 100^\circ$.\\[0.25cm]
+  Find the measure of $\angle L$. 
+\begin{flushright}
+    \begin{tikzpicture}[scale=0.9]
+    \coordinate [label=above left:$L$](A) at (100:2);
+    \coordinate [label=below:$J$](B) at (0, 0);
+    \coordinate [label=right:$K$](C) at (0:3);
+    \draw [thick] (A)--(B)--(C)--cycle;
+    \draw [thick, xshift=3cm, yshift=1.5cm] (100:2) node[above]{$O$}--
+    (0,0) node[below]{$M$}--
+    (0:3) node[right]{$N$}--cycle;
+  \end{tikzpicture}
+\end{flushright}
+
+\end{enumerate}
+\end{document}
+
+
+\item Plot and label $\triangle XYZ$ with $X(-1,2)$, $Y(3,4)$, and  $Z(1,-3)$. Then translate by $(x,y) \rightarrow (x-6, y-1)$, labeling the image $\triangle X'Y'Z'$.
   \begin{center}
       \begin{tikzpicture}[scale=.48]
       \draw [help lines] (-10,-5) grid (6,6);
@@ -72,100 +249,3 @@
         (1,-3) node[below] {$Z$}--cycle;  
     \end{tikzpicture}
   \end{center}
-
-\newpage
-  \item What transformation maps $\triangle ABC$ onto $\triangle DEC$, shown below? Fully specify the transformation. Complete the table of mappings to  corresponding objects. \vspace{0.5cm}
-  \begin{multicols}{2}
-    \begin{enumerate}
-      \item $A \rightarrow$ \rule{2cm}{0.15mm}
-      \item $B \rightarrow$ \rule{2cm}{0.15mm}
-      \item $C \rightarrow$ \rule{2cm}{0.15mm}
-      \item $\angle ACB \cong$ \rule{2cm}{0.15mm}
-      \item \rule{2cm}{0.15mm} $\cong \overline {DE}$
-    \end{enumerate}
-    \begin{tikzpicture}[scale=.48]
-      \draw [help lines] (-4,-3) grid (9,8);
-      \draw [thick, <->] (-4.4,0) -- (9.4,0) node [right] {$x$};
-      \draw [thick, <->] (0,-3.4)--(0,8.4) node [above] {$y$};  
-      \draw [thick]
-      (4,-2) node[below left] {$A$}--
-      (7,1) node[right] {$B$}--
-      (1,1) node[below left] {$C$}--cycle;  
-      \draw [thick]
-      (4,4) node[right] {$D$}--
-      (1,7) node[left] {$E$}--
-      (1,1) --cycle; 
-    \end{tikzpicture}
-  \end{multicols}
-  
-  \item Reflect $\triangle TRS$ across the $y$-axis, labeling the image $\triangle T'R'S'$. Check those properties that are maintained by reflection.  \vspace{0.5cm}
-  \begin{multicols}{2}
-    \begin{itemize}
-      \item[$\square$] Length
-      \item[$\square$] Angle measures
-      \item[$\square$] Orientation
-      \item[$\square$] Parallel relationships
-      \item[$\square$] Area
-    \end{itemize}
-    \begin{tikzpicture}[scale=.48]
-      \draw [help lines] (-7,-4) grid (7,5);
-      \draw [thick, <->] (-7.4,0) -- (7.4,0) node [right] {$x$};
-      \draw [thick, <->] (0,-4.4)--(0,5.4) node [above] {$y$};  
-      \draw [thick]
-      (4,-2) node[below left] {$T$}--
-      (5,1) node[right] {$R$}--
-      (2,2) node[below left] {$S$}--cycle;
-    \end{tikzpicture}
-  \end{multicols}
-
-  \item A translation maps triangle $PQR$ onto triangle $STU$. \vspace{0.5cm}
-    \begin{multicols}{2}
-      \begin{tikzpicture}[scale=0.9]
-        \coordinate [label=above left:$P$](A) at (95:2);
-        \coordinate [label=below:$Q$](B) at (0, 0);
-        \coordinate [label=right:$R$](C) at (-10:3.5);
-        \draw [thick] (A)--(B)--(C)--cycle;
-        \draw [thick, xshift=3cm, yshift=1.5cm] (95:2) node[above]{$S$}--
-        (0,0) node[below]{$T$}--
-        (-10:3.5) node[right]{$U$}--cycle;
-      \end{tikzpicture}\\
-      Write each corresponding object.
-      \begin{enumerate}
-        \item $Q \rightarrow$ \rule{2cm}{0.15mm}
-        \item $\angle QRP \cong$ \rule{2cm}{0.15mm}
-        \item \rule{2cm}{0.15mm} $\cong \overline {ST}$
-        \item Justify $\triangle PQR \cong \triangle STU$. Use the words ``rigid motion".
-      \end{enumerate}
-    \end{multicols}  \vspace{2cm}
-
-    \item Check those transformations that are rigid motions.
-    \begin{itemize}
-      \item[$\square$] Dilation
-      \item[$\square$] Translation
-      \item[$\square$] Reflection
-      \item[$\square$] Rotation
-      \item[$\square$] An isometry
-      \item[$\square$] Horizontal stretch
-    \end{itemize}
-
-  \item A rigid motion maps $\triangle DEF$ onto $\triangle LMN$. Fill in the blanks. \vspace{0.5cm}
-  \begin{multicols}{2}
-    The following is given:\\*[0.5cm]
-      $DE=10$ \\
-      $m\angle E = 40^\circ$ \\
-      $m\angle F = 110^\circ$ \\[0.5cm]
-      \columnbreak
-      
-      \begin{enumerate}
-        \item $D \rightarrow$ \rule{2cm}{0.15mm}
-        \item $LM =$ \rule{2cm}{0.15mm}
-        \item $m\angle M =$ \rule{2cm}{0.15mm}
-        \item $\overline{LM} \cong$ \rule{2cm}{0.15mm}
-      \end{enumerate}
-    \end{multicols} 
-
-  \item Given $\triangle JKL \sim \triangle MNO$. $m\angle K = 40^\circ$ and $m\angle M = 100^\circ$.\\
-    Find the measure of $\angle J$. \vspace{3cm}
-    
-\end{enumerate}
-\end{document}
