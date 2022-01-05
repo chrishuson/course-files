@@ -54,13 +54,10 @@ $h(x)=a(x-h)^2+k$, with vertex $(h,k)$
           \draw [thick, ->] (-2.5,0) -- (+4,0) node [right] {$x$};
           \draw [thick, ->] (0,-13) -- (0,1.5) node [left] {$y$};
   
-          \draw (0.5,-12.5) circle[radius=2pt] node [below right] {$(0.5,-12.5)$};
-          \fill (0.5,-12.5) circle[radius=2pt];
-          \draw (-2,0) circle[radius=2pt] node [above left] {$(-2,0)$};
-          \fill (-2,0) circle[radius=2pt];
-          \draw (3,0) circle[radius=2pt] node [above left] {$(p,0)$};
-          \fill (3,0) circle[radius=2pt];
-          \draw [<->] plot[domain= -2.25:3.25] (\x, 2*\x*\x -2*\x -12);
+          \fill (0.5,-12.5) ellipse(2pt and 4pt) node [below right] {$(0.5,-12.5)$};
+          \fill (-2,0)  ellipse(2pt and 4pt) node [above left] {$(-2,0)$};
+          \fill (3,0) ellipse(2pt and 4pt) node [above left] {$(p,0)$};
+          \draw [<->] plot[smooth, domain= -2.25:3.25] (\x, 2*\x*\x -2*\x -12);
       \end{tikzpicture}
       \end{center}
   
