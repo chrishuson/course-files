@@ -79,7 +79,7 @@ $h(x)=a(x-h)^2+k$, with vertex $(h,k)$
     \begin{tikzpicture}
         \draw [thin, color=lightgray,, xstep=1.0cm,ystep=1.0cm] (-5.5,-5.5) grid (5.5,6.5);
         \foreach \x in {-5, -4, -3, -2, -1,1,2,3,4, 5}
-        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below]  {$\x$};
+        \draw (\x cm,3pt) -- (\x cm,-3pt) node[below] {$\x$};
         \foreach \y in {-5, -4, -3, -2, -1, 1,2,3,4, 5, 6}
         \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
         \draw [thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
@@ -113,7 +113,7 @@ $h(x)=a(x-h)^2+k$, with vertex $(h,k)$
     \begin{center}
     \begin{tikzpicture}
         \foreach \x in {-2, -1,1,2,3,4,5,6}
-        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below]  {$\x$};
+        \draw (\x cm,3pt) -- (\x cm,-3pt) node[below] {$\x$};
 
         \foreach \y in {-1,1,2,3,4,5,6}
         \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
