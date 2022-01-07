@@ -44,16 +44,13 @@
           \begin{center}
           \begin{tikzpicture}[scale=1]
             \draw [help lines] (-2,-2) grid (5,5);
-            \draw [thick, ->] (-2.2,0) -- (5.4,0) node [below right] {$x$};
+            \draw [thick, ->] (-2.2,0) -- (5.4,0) node [above] {$x$};
             \draw [thick, ->] (0,-2.2)--(0,5.5) node [right] {$y$};
-    
             \foreach \x in {-2,-1, 1,2, ...,5} \draw (\x cm,4pt) -- (\x cm,-4pt) node[below] {$\x$};
-    
             \foreach \y in {-2,...,-1,1,2,..., 5} \draw (2pt,\y cm) -- (-2pt,\y cm) node[left] {$\y$};
             %\fill (-1,0) circle[radius=0.1] node[above left]{$j$};
             %\fill (3,0) circle[radius=0.1] node[above right]{$k$};
             \draw [thick, <->,smooth,samples=20,domain=-1.3:3.3] plot(\x,-\x*\x+2*\x+3);
-            \node at (5.7,-2.5){$f$};
           \end{tikzpicture}
           \end{center}
         \end{multicols}
@@ -66,7 +63,7 @@
         \item Expand the function to standard form, $f(x)=ax^2+bx+c \text{ where } a, b, c \;  \epsilon \; \mathbb{R}$. \vspace{3.5cm}
         \begin{center}
             \begin{tikzpicture}
-                \draw [thick, ->] (-4.5,0) -- (+4.5,0) node [right] {$x$};
+                \draw [thick, ->] (-4,0) -- (+4,0) node [below left] {$x$};
                 \draw [thick, ->] (0,-5.5) -- (0,3.5) node [left] {$y$};
             \end{tikzpicture}
             \end{center}
@@ -116,61 +113,26 @@ The path of the ball can be modelled by the equation $h(t)=12t-4t^2$ where $h(t)
     \end{center}
     
 \newpage
-\item Let $f$ be a quadratic function. Part of the graph of $f$ is shown below.\\*
-The vertex is at $P(4,2)$ and the $y$-intercept is at $Q(0, 6)$.\\*
+\item The path of a football can be modeled by the quadratic equation\\[0.25cm]
+$h(x)=-0.0125x^2+0.65x-3.45$ \\[0.25cm]
+where $h(x)$ is the height of the ball in meters, and $x$ is the horizontal distance of the football in meters.
+    \begin{enumerate}
+        \item Sketch the graph below, labeling the coordinates of the vertex and axes intercepts.
+        \item Explain what the vertex represents in context. How high was the ball kicked?\vspace{2cm}
+        \item Find the $x$-intercepts and explain what these values represent. How far was the ball kicked?\vspace{2cm}
+    \end{enumerate}
     \begin{center}
-    \begin{tikzpicture}
-
-        \foreach \x in {1,2,3,4,5,6}
+    \begin{tikzpicture}[xscale=0.2]
+        \draw [thin, color=lightgray,, xstep=5.0cm,ystep=1.0cm] (0,-4) grid (50,8);
+        \foreach \x in {5,10,...,50}
         \draw (\x cm,3pt) -- (\x cm,-3pt) node[below] {$\x$};
-
-        \foreach \y in {-1,1,2,3,4,5,6}
+        \foreach \y in {-3,-2,-1,0,1,2,...,8}
         \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
-        \draw [thick, ->] (-2.5,0) -- (+6.5,0) node [right] {$x$};
-        \draw [thick, ->] (0,-1.5) -- (0,6.5) node [right] {$y$};
-        \fill (4,2) circle[radius=2pt] node [below] {$P$};
-        \fill (0,6) circle[radius=2pt] node [right] {$Q$};
-        \draw [<->] plot[domain= -0.25:6.5] (\x, .25*\x*\x -2*\x +6);
+        \draw [thick, ->] (0,0) -- (+51,0) node [above right] {$x$};
+        \draw [thick, ->] (0,-4) -- (0,8.4) node [right] {$h(x)$};
+        %\draw [thick, <->,smooth,domain=0:50] plot(\x,-0.0125*\x*\x+0.65*\x-3.45);
     \end{tikzpicture}
     \end{center}
-    \begin{enumerate}[itemsep=1.5cm]
-        \item Write down the equation of the axis of symmetry.
-        \item Write down the domain and range of $f$.
-        \item The function $f$ can be written in the form $f(x)=a(x-h)^2 +k$. \\*
-        Write down the value of $h$ and of $k$.
-        \item Find $a$.
-    \end{enumerate}
-
-\newpage
-\item Consider the function $f(x)=ax^2 + bx+c$. The graph of $y=f(x)$ is shown in the diagram. The vertex of the graph has coordinates $(0.5, -12.5)$. The graph intersects the $x$-axis at the two points, $(-2,0)$ and $(p,0)$.
-    \begin{flushright}
-        \bf{diagram not to scale}
-    \end{flushright}
-        \begin{center}
-        \begin{tikzpicture}[yscale=0.5]
-            %\foreach \x in {-2, -1,1,2,3,4,5,6}
-            %\draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below]  {$\x$};
-            %\foreach \y in {-1,1,2,3,4,5,6}
-            %\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
-            \draw [thick, ->] (-2.5,0) -- (+4,0) node [right] {$x$};
-            \draw [thick, ->] (0,-13) -- (0,1.5) node [left] {$y$};
-    
-            \fill (0.5,-12.5) ellipse(2pt and 4pt) node [below right] {$(0.5,-12.5)$};
-            \fill (-2,0)  ellipse(2pt and 4pt) node [above left] {$(-2,0)$};
-            \fill (3,0) ellipse(2pt and 4pt) node [above left] {$(p,0)$};
-            \draw [<->] plot[smooth, domain= -2.25:3.25] (\x, 2*\x*\x -2*\x -12);
-        \end{tikzpicture}
-        \end{center}
-        \begin{enumerate}
-            \item Find the value of $p$. \vspace{2.5cm}
-            \item Find the value of:
-            \begin{enumerate}[itemsep=1cm]
-                \item $a$.
-                \item $b$.
-                \item $c$.
-            \end{enumerate}\vspace{1.5cm}
-            \item Write down the equation of the axis of symmetry.
-        \end{enumerate}
 
 \end{enumerate}
 \end{document}
