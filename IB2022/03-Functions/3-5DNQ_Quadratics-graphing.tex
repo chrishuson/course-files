@@ -28,13 +28,27 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / IB Math 03-Quadratic functions\\* 7 January 2022}
+\fancyhead[LO]{BECA / IB Math 03-Quadratic functions\\* 11 January 2022}
 
 \begin{document}
 
-\subsubsection*{3.4 Graphing quadratic functions}
+\subsubsection*{3.5 Do Now Quiz: Graphing quadratic functions}
 \begin{enumerate}
-\item The function $f(x)=-x^{2}+2x+3$ is shown on the graph.
+\item   Given $f(x)=(x-3)(x+4)$
+    \begin{enumerate}[itemsep=0.9cm]
+        \begin{multicols}{2}
+        \item Sketch the function. Label the vertex as an ordered pair and mark the intercepts with their values.
+        \item Expand the function to standard form, $f(x)=ax^2+bx+c \text{ where } a, b, c \;  \epsilon \; \mathbb{R}$. \vspace{3.5cm}
+        \begin{center}
+            \begin{tikzpicture}
+                \draw [thick, ->] (-3.5,0) -- (+3.5,0) node [below left] {$x$};
+                \draw [thick, ->] (0,-4.5) -- (0,3) node [left] {$y$};
+            \end{tikzpicture}
+            \end{center}
+        \end{multicols}
+    \end{enumerate}
+
+\item The function $f(x)=-x^{2}+6x-5$ is shown on the graph.
     \begin{enumerate}[itemsep=1.2cm]
       \begin{multicols}{2}
           \item Write down its vertex as an ordered pair.
@@ -43,40 +57,25 @@
           \item Hence or otherwise, write $f$ in the form $f(x)=a(x-p)(x-q)$\vspace{3cm}
           \begin{center}
           \begin{tikzpicture}[scale=1]
-            \draw [help lines] (-2,-2) grid (5,5);
-            \draw [thick, ->] (-2.2,0) -- (5.4,0) node [above] {$x$};
-            \draw [thick, ->] (0,-2.2)--(0,5.5) node [right] {$y$};
-            \foreach \x in {-2,-1, 1,2, ...,5} \draw (\x cm,4pt) -- (\x cm,-4pt) node[below] {$\x$};
-            \foreach \y in {-2,...,-1,1,2,..., 5} \draw (2pt,\y cm) -- (-2pt,\y cm) node[left] {$\y$};
+            \draw [help lines] (-1,-5) grid (6,4);
+            \draw [thick, ->] (-1.2,0) -- (6.4,0) node [above] {$x$};
+            \draw [thick, ->] (0,-5.2)--(0,4.5) node [right] {$y$};
+            \foreach \x in {-1, 1,2, ...,6} \draw (\x cm,4pt) -- (\x cm,-4pt) node[below] {$\x$};
+            \foreach \y in {-5,...,-1,1,2,...,4} \draw (2pt,\y cm) -- (-2pt,\y cm) node[left] {$\y$};
             %\fill (-1,0) circle[radius=0.1] node[above left]{$j$};
             %\fill (3,0) circle[radius=0.1] node[above right]{$k$};
-            \draw [thick, <->,smooth,samples=20,domain=-1.3:3.3] plot(\x,-\x*\x+2*\x+3);
+            \draw [thick, <->,smooth,samples=20,domain=-0.1:5.8] plot(\x,-\x*\x+6*\x-5);
           \end{tikzpicture}
           \end{center}
         \end{multicols}
     \end{enumerate} \vspace{2cm}
     
-\item   Given $f(x)=(x+2)(x-6)$
-    \begin{enumerate}[itemsep=0.9cm]
-        \begin{multicols}{2}
-        \item Sketch the function. Label the vertex as an ordered pair and mark the intercepts with their values.
-        \item Expand the function to standard form, $f(x)=ax^2+bx+c \text{ where } a, b, c \;  \epsilon \; \mathbb{R}$. \vspace{3.5cm}
-        \begin{center}
-            \begin{tikzpicture}
-                \draw [thick, ->] (-4,0) -- (+4,0) node [below left] {$x$};
-                \draw [thick, ->] (0,-5.5) -- (0,3.5) node [left] {$y$};
-            \end{tikzpicture}
-            \end{center}
-        \end{multicols}
-    \end{enumerate}
-
 \newpage
-\item Consider the graph given by the equation $y=0.4x^2-2x-8$.
-    \begin{enumerate}[itemsep=1cm]
-        \item Find the coordinates where the graph crosses the $x$-axis.
-        \item Find the coordinates of the intercept with the $y$-axis.
-        \item Find the equation of the axis of symmetry of the curve.
-        \item Sketch the graph and the axis of symmetry, marking the intercepts and vertex.
+\item Given two functions, a quadratic function $f(x)=0.6x^2-2.4x-8$ and a linear function $g(x)=0.6x-4.4$.
+    \begin{enumerate}%[itemsep=1cm]
+        \item Graph the parabola $y=f(x)$, marking the $y$-intercept and the vertex as an ordered pair.
+        \item Find the coordinates of the two intercepts with the $x$-axis, the roots or zeros of $f(x)$.\vspace{1cm}
+        \item Plot the linear function, $y=g(x)$. Mark and label the two intersections of the two functions $f(x)=g(x)$ as ordered pairs.
     \end{enumerate}
     \begin{center}
     \begin{tikzpicture}[scale=0.8]
