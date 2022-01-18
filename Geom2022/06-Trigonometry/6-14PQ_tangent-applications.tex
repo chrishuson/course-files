@@ -32,68 +32,69 @@
 \subsubsection*{6.14 Pre-Quiz: Tangent applications \hfill CCSS.HSG.SRT.C.8}
 
 \begin{enumerate}
-\item The diagram shows a buildomg with student A on the ground waving up to student B. Point A is 19 feet from the base of the building, and the angle of elevation from A to B is $32^\circ$.
+\item Shown is a building with student $A$ on the ground waving up to student $B$. Point $A$ is 19 feet from the base of the building, and the angle of elevation from $A$ to $B$ is $32^\circ$.
  
-Find how high up student B is from the groundto the \emph{nearest foot}. \hfill (not drawn to scale)
+Find how high up student B is from the ground to the \emph{nearest foot}. \hfill (not to scale)
   \begin{flushright}
-    \begin{tikzpicture}[scale=0.4]
+    \begin{tikzpicture}[scale=0.3]
       %\draw [-, thick] (0,0)--(35:23);
       \draw [-, thick] (-4,0)--
       (0,0)--
         (17,0)--
         (22,0)--
         (22,10)--(17,10)--(17,0);
-      \draw [fill] (0,0) circle [radius=0.1] node[above]{$A$};
+      \draw [fill] (0,0) circle [radius=0.1] node[above left]{$A$};
       \draw [fill] (17,10) circle [radius=0.1] node[above right]{$B$};
       \draw [dashed] (0,0)--(17,10);
-      \node at (3, 0)[above]{$32^\circ$};
-      \node at (-3, 0)[above]{ground};
+      \node at (3.8, 0)[above]{$32^\circ$};
+      \node at (11, 0)[above]{distance = 19 ft};
       \node at (19.5, 5)[above]{school};
     \end{tikzpicture}
     \end{flushright}
 
 \item From the top of a subway station, a person is visible at an angle of depression of $21^\circ$. If the subway station is 60 feet tall, determine the distance from the person to the base of the subway station, x, to the \emph{nearest foot}.
-\begin{center}
+\begin{flushright}
     \begin{tikzpicture}[scale=1.1]
       \draw [thick] (10,0)--(0,0)--(10,2.0)--cycle;
       \draw [dashed, <-] (5,2)--(10,2.0);
       \draw [thick, ->] (8.5,2) arc [start angle=180, end angle=191.3, radius=1.5];
       \node at (5.5,2)[below]{Angle of depression $=21^\circ$};
-      \node at (10,1.2)[right]{height $=60$ feet};
+      \node at (10,1)[left]{$h=60$};
       \node at (6,0)[below]{$x$};
       \node at (0,0)[below]{Person};
     \end{tikzpicture}
-  \end{center} \vspace{2cm}
+  \end{flushright} \vspace{1.5cm}
 
-\item A child sleds from the top of a hill to a group of friends standing at the base of the hill. The hill is 21 feet tall, and the hill's incline is $13^\circ$. Find the distance, d, from the sledder to the group of friends to the \emph{nearest foot}.
+\item A child sleds from the top of a hill to a group of friends standing at the base of the hill. The hill is 21 feet tall, and the hill's incline is $13^\circ$. Find the distance, $d$, from the sledder to the group of friends to the \emph{nearest foot}.
 
-(hint: first find the distance to the from the group to the hill horizontally, then use the Pythagorean theorem to find the hypotenuse, d)\\[0.25cm]
+(hint: First find the horizontal distance, the base of the triangle. Then use the Pythagorean theorem to find the hypotenuse, $d$.)
+\begin{flushright}
   \begin{tikzpicture}[scale=1.1]
     \draw [thick] (10,0)--(0,0)--(10,2.0)--cycle;
     \draw [thick, ->] (1.5,0) arc [start angle=0, end angle=11.3, radius=1.5];
     \node at (1,0)[below]{Incline $=13^\circ$};
-    \node at (10,1.2)[right]{$30$};
-    \node at (5,1.6)[below]{d};
-  \end{tikzpicture} \vspace{4cm}
+    \node at (10,1.2)[left]{$21$};
+    \node at (5,1.6)[below]{$d$};
+  \end{tikzpicture} 
+\end{flushright}\vspace{4cm}
 
-  \newpage
-  \item A pirate is standing on a mast 8 meters tall. Looking down, the pirate sees an enemey ship 45 meters away.
-  
-  Find the pirate's angle of depression to the nearest degree.
-  
+\newpage
+\item A pirate, who is two meters tall, is standing on a mast 8 meters tall. Looking down, the pirate sees an enemy ship 45 meters away.
+
+  Find the angle of depression to the nearest degree.
   \begin{center}
       \begin{tikzpicture}[scale=1.1]
         \draw [thick] (10,0)--(0,0)--(10,2.0)--cycle;
         \draw [dashed, <-] (5,2)--(10,2.0);
         \draw [thick, ->] (8.5,2) arc [start angle=180, end angle=191.3, radius=1.5];
         \node at (5.5,2)[below]{Angle of depression $ =\theta^\circ$};
-        \node at (10,1.2)[right]{mast height $=8$ meters};
-        \node at (6,0)[below]{$x$};
-        \node at (0,0)[below]{Enemy Ship};
+        \node at (10,1.2)[right]{$h=8+2$ meters};
+        \node at (6,0)[below]{$45 \,\rm{meters}$};
+        \node at (0,0)[below right]{Enemy ship};
       \end{tikzpicture}
-    \end{center} \vspace{2cm}
+    \end{center} \vspace{4cm}
     
-    \item A snowman is standing 10 meters away from the base of a set of monkey bars, looking up at a boy 3 meters off the ground. The snowman is 1 meter tall.
+\item A snowman is standing 10 meters away from the base of a set of monkey bars, looking up at a boy 3 meters off the ground. The snowman is 1 meter tall.
 
     (a) Mark the triangle.
     
@@ -101,16 +102,17 @@ Find how high up student B is from the groundto the \emph{nearest foot}. \hfill 
     
      \hfill (not drawn to scale)
       \begin{flushright}
-        \begin{tikzpicture}[scale=0.3]
+        \begin{tikzpicture}[scale=0.6]
           \draw [-, dashed] (0,2)--(3,2);
           \draw [-, thick] (-4,0)--
           (0,0)--
-            (10,0)--(10,10)--(12,10);
-          \draw [fill] (0,0) circle [radius=0.1] node[above]{};
-          \draw [fill] (10,10) circle [radius=0.1] node[above right]{Boy};
-          \draw [dashed] (0,2)--(10,10);
+            (10,0)--(10,6)--(12,6);
+          \draw (0,0.75) circle [radius=0.75];
+          \draw (0,2) circle [radius=0.5];
+          \draw [fill] (10,6) circle [radius=0.1] node[above right]{Boy};
+          \draw [dashed] (0,2)--(10,6);
           \node at (3, 2)[above]{$ \theta^\circ$};
-          \node at (12, 0)[above]{Bars};
+          \node at (12, 2)[above]{Bars};
           \node at (12.5, 3)[above]{Monkey};
         \end{tikzpicture}
         \end{flushright}
