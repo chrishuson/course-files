@@ -42,7 +42,7 @@
       \node at (3,0)[below]{$10$};
       \node at (6,2.5)[right]{$x$};
       \draw [thick, ->] (0,0) arc [start angle=0, end angle=35.5, radius=1];
-      \node at (1,0)[above]{$9.7^\circ$};
+      \node at (1,0)[above]{$40^\circ$};
     \end{tikzpicture}
   \end{flushright}
 
@@ -51,7 +51,7 @@
   \begin{multicols}{2}
         \item $AC=$
         \item $BC=$
-        \item Express first as a radical, then approximate with a decimal rounded to two decimal places.\\[0.25cm]
+        \item For the hypotenuse, express the length as a radical, then round to the nearest hundredth.\\[0.25cm]
         (hint: use the Pythagorean theorem $a^2+b^2=c^2$)\\[0.25cm]
         $AB=$\vspace{2cm}
   \begin{center}
@@ -73,57 +73,47 @@
 \newpage
 \item Calculate each value. Round to the nearest thousandth.
   \begin{enumerate}
-  \begin{multicols}{2}
-  \item $\displaystyle \tan 39^\circ$ \vspace{5cm}
-  \item $\displaystyle \tan 11^\circ$
-  \end{multicols}
-\end{enumerate}
+    \begin{multicols}{2}
+    \item $\displaystyle \tan 39^\circ$ \vspace{5cm}
+    \item $\displaystyle \tan 11^\circ$
+    \end{multicols}
+  \end{enumerate}
   \vspace{1cm}
 
-  \item Find $\theta$. Round to the nearest whole degree.
+\item Find $\theta$. Round to the nearest whole degree.
   \begin{enumerate}
-  \begin{multicols}{2}
-  \item $\displaystyle \theta = \tan^{-1} (\frac{3}{10})$ \vspace{4cm}
-  \item $\displaystyle \tan \theta = \frac{2.6}{4.9}$ \vspace{4cm}
-  \end{multicols}
-\end{enumerate} \vspace{2cm}
+    \begin{multicols}{2}
+    \item $\displaystyle \theta = \tan^{-1} (\frac{3}{10})$ \vspace{4cm}
+    \item $\displaystyle \tan \theta = \frac{2.6}{4.9}$ \vspace{4cm}
+    \end{multicols}
+  \end{enumerate} \vspace{2cm}
 
 \item Convert radians and degrees. (nearest whole degree, nearest hundredth radian).\vspace{.25cm}
-\begin{multicols}{2}
-  \begin{enumerate}
-    \item $85^\circ = $ \vspace{1cm}
-    \item $\displaystyle 1.15 \,\rm{radians}=$ \vspace{1cm}
-  \end{enumerate}
-\end{multicols} \vspace{2cm}
-
-
-  \item Solve each equation for $x$, rounding to the nearest hundredth.
-  \begin{enumerate}
   \begin{multicols}{2}
-  \item $\displaystyle \tan 33^\circ = \frac{x}{21}$ \vspace{5cm}
-  \item $\displaystyle \tan 16^\circ = \frac{3.7}{x}$
-  \end{multicols}
-\end{enumerate}
+    \begin{enumerate}
+      \item $85^\circ = $ \vspace{1cm}
+      \item $\displaystyle 1.15 \,\rm{radians}=$ \vspace{1cm}
+    \end{enumerate}
+  \end{multicols} \vspace{2cm}
+
+
+\item Solve each equation for $x$, rounding to the nearest tenth.
+  \begin{enumerate}
+    \begin{multicols}{2}
+    \item $\displaystyle \tan 33^\circ = \frac{x}{21}$ \vspace{5cm}
+    \item $\displaystyle \tan 16^\circ = \frac{3.7}{x}$
+    \end{multicols}
+  \end{enumerate}
   \vspace{3cm}
 
 \newpage
-\item Given right $\triangle ABC$ with $\overline{AC} \perp \overline{BC}$, $BC=6$, $m\angle B=50^\circ$. Let $x=AC$.
-\begin{flushright}
-  \begin{tikzpicture}[scale=0.6]
-    \draw [thick](-1,0)--(6,0)--(6,5)--cycle;
-    \draw [fill] (-1,0) circle [radius=0.05] node[below]{$A$};
-    \draw [fill] (6,0) circle [radius=0.05] node[below]{$C$};
-    \draw [fill] (6,5) circle [radius=0.05] node[above right]{$B$};
-  \end{tikzpicture}
-\end{flushright}
-
-
 \item $\triangle ABC$ is shown with $m\angle C=90^\circ$ and the lengths of the triangle's sides are $AC=6$, $BC=9$.  \hfill (not drawn to scale)
   \begin{multicols}{2}
     \begin{enumerate}
       \item Write down the value of $\tan A$. \vspace{1.25cm}
       \item Find the measure of $\angle A$. \vspace{1cm}
-      \item Find $AB$.
+      \item Write down the value of $\tan A$. \vspace{1.25cm}
+      \item Find the measure of $\angle B$. \vspace{1cm}
     \end{enumerate}
     \begin{flushright}
     \begin{tikzpicture}[scale=0.5]
@@ -138,12 +128,14 @@
     \end{tikzpicture}
     \end{flushright}
   \end{multicols}
-  \vspace{3cm}
+  \vspace{2cm}
+  
 
 \item From the top of a hill a dog is visible at an angle of depression of $34^\circ$. If the hill is 11 meters tall, determine the distance from the dog to the base of the hill, \emph{x}, to the \emph{nearest foot}.
 \begin{flushright}
     \begin{tikzpicture}[scale=1.1]
       \draw [thick] (10,0)--(0,0)--(10,2.0)--cycle;
+      \draw (10,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
       \draw [dashed, <-] (5,2)--(10,2.0);
       \draw [thick, ->] (8.5,2) arc [start angle=180, end angle=191.3, radius=1.5];
       \node at (5.5,2)[below]{Angle of depression $=34^\circ$};
@@ -151,38 +143,52 @@
       \node at (6,0)[below]{$x$};
       \node at (0,0)[below]{Dog};
     \end{tikzpicture}
-  \end{flushright} \vspace{1.5cm}
+  \end{flushright} \vspace{4cm}
 
 \newpage
 \item A bear is standing 22 feet away from the base of a tree, looking up at a bat 16 feet off the ground. The bear is 5 feet tall.
 
-    (a) Mark the scenario.
+  (a) Mark the scenario.
+  
+  (b) Find the angle of elevation the bear views the bat, $\theta$, to the nearest tenth degree.
+  
+  \hfill (not drawn to scale)
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.6]
+      \draw [-, dashed] (0,2)--(3,2);
+      \draw [-, thick] (-4,0)--
+      (0,0)--
+        (10,0)--(10,6)--(12,6);
+      \draw (0,0.75) circle [radius=0.75];
+      \draw (0,2) circle [radius=0.5];
+      \draw [fill] (10,6) circle [radius=0.1] node[above right]{Bat};
+      \draw [dashed] (0,2)--(10,6);
+      \node at (3, 2)[above]{$ \theta^\circ$};
+      \node at (12, 2)[above]{Tree};
+      \node at (12.5, 3)[above]{};
+    \end{tikzpicture}
+    \end{flushright} \vspace{1cm}
+      
+\item The right $\triangle ABC$ has a base of $AC=6$ units. The area of the triangle is 15 square units. Find the lengths of all three sides and measures of all angles of the triangle. (``solve the triangle'')
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.6]
+      \draw [thick](0,0) node[below]{$A$}--
+      (6,0) node[below]{$C$}--
+      (6,5) node[above right]{$B$}--cycle;
+      \draw (6,0)++(-0.6,0)--++(0,0.6)--+(0.6,0);
+    \end{tikzpicture}
+  \end{flushright}
     
-    (b) Find the angle from the bear's head to the bat, $\theta$, to the nearest tenth degree.
-    
-     \hfill (not drawn to scale)
-      \begin{flushright}
-        \begin{tikzpicture}[scale=0.6]
-          \draw [-, dashed] (0,2)--(3,2);
-          \draw [-, thick] (-4,0)--
-          (0,0)--
-            (10,0)--(10,6)--(12,6);
-          \draw (0,0.75) circle [radius=0.75];
-          \draw (0,2) circle [radius=0.5];
-          \draw [fill] (10,6) circle [radius=0.1] node[above right]{Bat};
-          \draw [dashed] (0,2)--(10,6);
-          \node at (3, 2)[above]{$ \theta^\circ$};
-          \node at (12, 2)[above]{Tree};
-          \node at (12.5, 3)[above]{};
-        \end{tikzpicture}
-        \end{flushright}
-        
-
+            
+\newpage
 \item A drone flying at an altitude of 1,800 meters is observed twice. The first time the angle of elevation is $7.2^\circ$ and exactly one minute later the angle of elevation is $9.7^\circ$. \\[0.25cm]
 Find the distance the drone flies over the minute and its speed in kilometers per hour.
+
+\hfill (not drawn to scale)
 \begin{flushright}
   \begin{tikzpicture}[scale=1.1]
     \draw [thick] (10,0)--(0,0)--(10,2.0)--cycle;
+    \draw (10,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
     \draw [dashed] (0,0)--(7,2.0);
     \draw [dashed, <-] (6,2)--(10,2);
     \draw [thick, ->] (1.5,0) arc [start angle=0, end angle=11.3, radius=1.5];
@@ -194,15 +200,15 @@ Find the distance the drone flies over the minute and its speed in kilometers pe
     \node at (8,2)[above]{drone};
   \end{tikzpicture} 
 \end{flushright}
-\vspace{4cm}
+\vspace{6cm}
 
-\newpage
-\item Challenge: A square is partitioned into two rectangles. The sum of the perimeters of the two rectangles is 36. Find the area of the square.
+\item A square is partitioned into two rectangles. The sum of the perimeters of the two rectangles is 36. Find the area of the square.
+\begin{flushright}
 \begin{tikzpicture}%[scale=.635]
-  \draw [help lines] (0,0) grid (7,8);
-  \draw [thick, ->] (0,0) -- (7.4,0) node [below right] {$x$};
-  \draw [thick, ->] (0,0)--(0,8.4) node [left] {$y$};
+  \draw [thick]  (0,0) rectangle (6,6);
+  \draw [thick] (0,4)--(6,4);
 \end{tikzpicture}
+\end{flushright}
 
 
 \end{enumerate}
