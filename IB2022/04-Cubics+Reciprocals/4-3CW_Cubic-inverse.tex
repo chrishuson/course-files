@@ -74,8 +74,8 @@
     
 \newpage
 \item A cardboard box manufacturing company is building boxes with length represented by $x+1$, width by $5-x$, and height by $x-1$. The volume of the box is modeled by the function below.
-    \begin{center}
-        \begin{tikzpicture}[x=1cm, y=0.25cm]
+    \begin{multicols}{2}
+        \begin{tikzpicture}[x=1cm, y=0.25cm, scale=0.8]
             \draw [help lines] (-2,-8.1) grid (6,20);
             \draw [thick, ->] (-2.2,0) -- (6.4,0) node [below right] {$x$};
             \draw [thick, ->] (0,-8.2)--(0,20.8) node [right] {$y$};
@@ -85,40 +85,40 @@
                 \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]  {$\y$};
             \draw [<->,thick,smooth,domain=-1.4:5.2] plot(\x,{-(\x)^3+5*(\x)^2+(\x)-5});
         \end{tikzpicture}
-    \end{center}
-    \begin{enumerate}[itemsep=1cm]
+    
+    \begin{enumerate}[itemsep=0.75cm]
         \item Over what interval of positive $x$ values is the volume positive?
-        \item Estimate the maximum volume of the box possible.
-        \item Approximately what value of $x$ would maximize the volume of the box?
-    \end{enumerate}
+        \item Estimate the maximum possible volume of the box.
+        \item Approximately the value of $x$ would maximize the volume of the box.
+    \end{enumerate} 
+\end{multicols}
+%\vspace{0.5cm}
 
-    \item A relation composed of four points is plotted on the graph below, and represented as a set of ordered pairs as $\{ (-1,5),(j,1),(4,3),(5,k) \}$.
+\item A function composed of four points $\{ (-1,4),(j,1),(4,3),(5,k) \}$ is plotted on the below.
     \begin{multicols}{2}
     \begin{enumerate}
       \item Write down $j$
       \item Write down $k$
       \item Write down the domain.\vspace{0.5cm}
-      \item Is the relation a function? Why or why not. \vspace{2.5cm}
       \item Add an ordered pair to the relation so that it would \emph{not} be a function.
     \end{enumerate}
-      \begin{center} %4 quadrant regents grid w T-Chart
+      \begin{center}
       \begin{tikzpicture}[scale=0.8]
         %\draw [help lines] (-3,-2) grid (4,6);
         \draw [thick, ->] (-3.2,0) -- (5.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-1.2)--(0,6.4) node [left] {$y$};
+        \draw [thick, ->] (0,-0.5)--(0,5.4) node [left] {$y$};
         \foreach \x in {-2,-1,1,2,..., 5} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
         \foreach \y in {1, 2, 3, 4, 5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
         %\draw [thick, <->] (-3.5,-1.5) -- (4.2,6.2);
-        \fill (-1,5) circle[radius=0.1] node[above left]{$(-1,5)$};
+        \fill (-1,4) circle[radius=0.1] node[above left]{$(-1,4)$};
         \fill (2,1) circle[radius=0.1] node[above]{$(j,1)$};
         \fill (4,3) circle[radius=0.1] node[above]{$(4,3)$};
-        \fill (5,2) circle[radius=0.1] node[above right]{$(5,k)$};
+        \fill (5,1) circle[radius=0.1] node[above right]{$(5,k)$};
       \end{tikzpicture}
       \end{center}
     \end{multicols}
     
-    \newpage
-    \item The graph of a function $f$ is shown on the grid below.
+\item The graph of a function $f$ is shown on the grid below.
     \begin{multicols}{2}
     \begin{enumerate}
       \item Write down $f(2)$
@@ -128,7 +128,7 @@
       \item Write down the domain.
       \item Write down the range. \vspace{1cm}
     \end{enumerate}
-      \begin{tikzpicture}[scale=0.9]
+      \begin{tikzpicture}[scale=0.7]
         \draw [help lines] (-3,-2) grid (4,6);
         \draw [thick, ->] (-3.2,0) -- (4.4,0) node [below right] {$x$};
         \draw [thick, ->] (0,-2.2)--(0,6.4) node [left] {$y$};
