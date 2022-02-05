@@ -28,31 +28,49 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / IB Math 03-Quadratic functions\\* 4 February 2022}
+\fancyhead[LO]{BECA / IB Math 03-Quadratic functions\\* 7 February 2022}
 
 \begin{document}
 
-\subsubsection*{4.7 Classwork: Direct and inverse variation}
+\subsubsection*{4.8 Classwork: Direct and inverse variation}
 \begin{enumerate}
-\item The functions $f(x)=x^3-0.5x^2-3x+1$ and $g(x)=0.5x+2$ are defined over the domain $[-2,1]$ as shown on the grid below. Find the two points where $f(x)=g(x)$. (the intersections)
-    \begin{center}
-      \begin{tikzpicture}[scale=1.2]
+\item The inverse function $\displaystyle f(x)=\frac{1}{x-1}$, defined for $x>1$, and the linear function \\$g(x)=-x+4$ are graphed below. 
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item Find the solutions to $f(x)=g(x)$. \vspace{2cm}
+            \item Write down the equation of the vertical asymptote to $f$.
+        \end{enumerate} \vspace{1cm}
+        \begin{flushright}
+      \begin{tikzpicture}[scale=0.7]
         %\draw [help lines] (-3,-3) grid (3,4);
-        \draw [thick, ->] (-3.2,0) -- (2.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-3.2)--(0,3.4) node [left] {$y$};
-        \foreach \x in {-3,-2,-1,1,2} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-        \foreach \y in {-3,-2,-1,1,2,3} \draw (1pt,\y cm) -- (-1pt,\y cm) node[left] {$\y$};
-        %\draw [thick] (-2,0) -- (0,4) -- (3,5);
-        \draw [line width=1.5pt,smooth,samples=20,domain=-2:1] plot(\x,\x^3-0.5*\x*\x-3*\x+1);
-        \draw [line width=1.5pt,smooth,samples=20,domain=-2:1] plot(\x,0.5*\x+2);
-        \fill (-2,-3) circle[radius=0.05];
-        %\fill (-0.85,2.58) circle[radius=0.1] node [left]{$(-0.75,2.6)$};
-        \node at (-2.5,-2.5){$f$};
-        \node at (1,2){$g$};
-        \fill (1,-1.5) circle[radius=0.05];
+        \draw [thick, ->] (-0.2,0) -- (7.4,0) node [below right] {$x$};
+        \draw [thick, ->] (0,-0.2)--(0,6.4) node [right] {$y$};
+        \foreach \x in {1,...,7} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+        \foreach \y in {1,...,6} \draw (1pt,\y cm) -- (-1pt,\y cm) node[left] {$\y$};
+        \draw [<->,line width=1.0pt,smooth,samples=50,domain=1.15:5.5] plot(\x,{1/(\x-1)});
+        \draw [<->,line width=1.0pt,smooth,samples=20,domain=-1.5:5] plot(\x,-1*\x+4);
+        \node at (2,5){$f$};
+        \node at (-1,4.25){$g$};
       \end{tikzpicture}
-    \end{center}
+    \end{flushright}
+    \end{multicols}
 
+\item The total tuition charged by a college undergraduate program is proportional to the number of full-time semesters attended. (values are for Lehman College, ignoring aid.)
+\begin{enumerate}[itemsep=0.7cm]
+    \item Write down an equation to model the cost, using the variable $C$ as the total tuition cost and $s$ for the number of semesters.
+    \item Explain what the proportionality constant, $k$, means in this context.
+    \item If a student pays total tuition of \$27,720 over four years of full-time study, find the cost of a single semester.
+    \item A student takes an extra three semesters. Find the additional tuition cost.
+\end{enumerate} \vspace{1cm}
+
+\item Two friends share an apartment convenient to Lehman, each paying \$1,500 per month.
+\begin{enumerate}[itemsep=1.25cm]
+    \item Model the apartment cost as an inverse variation, with $r$ as each individual's monthly rent share and $f$ for the number of friends in the apartment.
+    \item Explain what the proportionality constant, $k$, means in this context.
+    \item If they add a third roommate, how much would that lower the monthly rent for the first two friends?
+\end{enumerate}
+
+\newpage
 \item A rational function of the form $\displaystyle f(x)=\frac{1}{x+p}+q$ is shown on the grid below. 
     \begin{multicols}{2}
         \begin{enumerate}[itemsep=1cm]
@@ -68,8 +86,8 @@
         \draw [thick, ->] (0,-6.2)--(0,6.4) node [right] {$y$};
         \foreach \x in {-6,...,-3,-2,-1,1,2,...,6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
         \foreach \y in {-6,...,-3,-2,-1,1,2,...,6} \draw (1pt,\y cm) -- (-1pt,\y cm) node[left] {$\y$};
-        \draw [<->,line width=1.5pt,smooth,samples=50,domain=-5.5:1.8] plot(\x,{1/(\x-2)+1});
-        \draw [<->,line width=1.5pt,smooth,samples=50,domain=2.2:5.5] plot(\x,{1/(\x-2)+1});
+        \draw [<->,line width=1.5pt,smooth,samples=50,domain=-5.5:2.8] plot(\x,{1/(\x-3)-1});
+        \draw [<->,line width=1.5pt,smooth,samples=50,domain=3.15:5.5] plot(\x,{1/(\x-3)-1});
         \end{tikzpicture}
     \end{multicols}
 
