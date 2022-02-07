@@ -91,45 +91,24 @@
         \end{tikzpicture}
     \end{multicols}
 
-\newpage
-\item A cardboard box manufacturing company is building boxes with length represented by $x+1$, width by $5-x$, and height by $x-1$. The volume of the box is modeled by the function below.
-\begin{multicols}{2}
-    \begin{tikzpicture}[x=1cm, y=0.25cm, scale=0.8]
-        \draw [help lines] (-2,-8.1) grid (6,20);
-        \draw [thick, ->] (-2.2,0) -- (6.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-8.2)--(0,20.8) node [right] {$y$};
-        \foreach \x in {-2,...,6}
-            \draw[shift={(\x,0)}] (0,3pt)--(0,-3pt) node[below] {$\x$};
-        \foreach \y in {-8,-4,...,20}
-            \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]  {$\y$};
-        \draw [<->,thick,smooth,domain=-1.4:5.2] plot(\x,{-(\x)^3+5*(\x)^2+(\x)-5});
+\item The temperature ($C^\circ$) over a 24 hour day starting at midnight is modeled by the function $f\left(t\right)=-0.0075t^{3}+0.17t^{2}+0.02t+5$.
+    \begin{enumerate}[itemsep=1cm]
+        \item Write down the temperature at midnight, when $t=0$.
+        \item Over what interval is the temperature increasing?
+        \item Find the maximum temperature during the day.  \vspace{1cm}
+    \end{enumerate}
+    \begin{center}
+    \begin{tikzpicture}[xscale=0.4, yscale=0.3]
+        \draw [thin, color=lightgray, xstep=4.0cm,ystep=2.0cm] (0,0) grid (24,20);
+        \foreach \x in {0,2,...,24}
+        \draw (\x cm,3pt) -- (\x cm,-3pt) node[below] {$\x$};
+        \foreach \y in {0,2,...,20}
+        \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
+        \draw [thick, ->] (0,0) -- (+24.4,0) node [above right] {$time$};
+        \draw [thick, ->] (0,0) -- (0,20.4) node [right] {$temp$};
+        \draw [thick, smooth,domain=0.:24] plot(\x,-0.0075*\x*\x*\x+0.17*\x*\x+0.02*\x+5);
     \end{tikzpicture}
-\begin{enumerate}[itemsep=0.75cm]
-    \item Over what interval of positive $x$ values is the volume positive?
-    \item Estimate the maximum possible volume of the box.
-    \item Approximately the value of $x$ would maximize the volume of the box.
-\end{enumerate} 
-\end{multicols}
-%\vspace{0.5cm}
-
-\item Shown in the plot below is the function $f(x)=x^3+4x^2-1x-4$.
-\begin{enumerate}
-    \item Write down the value of $f(0)$. On the graph, mark the point for $f(0)$ with a star.\vspace{0.75cm}
-    \item Write down the solutions to $f(x)=0$. Mark them with ``X'' marks on the graph.\vspace{0.75cm}
-    \item Mark the portion of the function that is \emph{decreasing} with a squiggly line.
-\end{enumerate}
-\begin{center}
-    \begin{tikzpicture}[x=1cm, y=0.5cm, scale=0.6]
-        \draw [help lines] (-5,-8.1) grid (5,10);
-        \draw [thick, ->] (-5.2,0) -- (5.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-8.2)--(0,10.4) node [right] {$y$};
-        \foreach \x in {-5,...,5}
-            \draw[shift={(\x,0)}] (0,3pt)--(0,-3pt) node[below] {$\x$};
-        \foreach \y in {-8,-6,...,10}
-            \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]  {$\y$};
-        \draw [<->,thick,smooth,domain=-4.4:1.6] plot(\x,{(\x)^3+4*(\x)^2-(\x)-4});
-    \end{tikzpicture}
-\end{center}
+    \end{center}
 
 \end{enumerate}
 \end{document}
