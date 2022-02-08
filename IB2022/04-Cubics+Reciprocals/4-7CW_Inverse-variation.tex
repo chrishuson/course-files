@@ -73,7 +73,25 @@
         \end{tikzpicture}
     \end{multicols}
 
-\newpage
+\item The functions $f(x)=x^3-0.5x^2-3x+1$ and $g(x)=0.5x+2$ are defined over the domain $[-2,1]$ as shown on the grid below. Find the two points where $f(x)=g(x)$. (the intersections)
+    \begin{center}
+      \begin{tikzpicture}[scale=1.2]
+        %\draw [help lines] (-3,-3) grid (3,4);
+        \draw [thick, ->] (-3.2,0) -- (2.4,0) node [below right] {$x$};
+        \draw [thick, ->] (0,-3.2)--(0,3.4) node [left] {$y$};
+        \foreach \x in {-3,-2,-1,1,2} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+        \foreach \y in {-3,-2,-1,1,2,3} \draw (1pt,\y cm) -- (-1pt,\y cm) node[left] {$\y$};
+        %\draw [thick] (-2,0) -- (0,4) -- (3,5);
+        \draw [line width=1.5pt,smooth,samples=20,domain=-2:1] plot(\x,\x^3-0.5*\x*\x-3*\x+1);
+        \draw [line width=1.5pt,smooth,samples=20,domain=-2:1] plot(\x,0.5*\x+2);
+        \fill (-2,-3) circle[radius=0.05];
+        %\fill (-0.85,2.58) circle[radius=0.1] node [left]{$(-0.75,2.6)$};
+        \node at (-2.5,-2.5){$f$};
+        \node at (1,2){$g$};
+        \fill (1,-1.5) circle[radius=0.05];
+      \end{tikzpicture}
+    \end{center}
+
 \item A cardboard box manufacturing company is building boxes with length represented by $x+1$, width by $5-x$, and height by $x-1$. The volume of the box is modeled by the function below.
 \begin{multicols}{2}
     \begin{tikzpicture}[x=1cm, y=0.25cm, scale=0.8]
