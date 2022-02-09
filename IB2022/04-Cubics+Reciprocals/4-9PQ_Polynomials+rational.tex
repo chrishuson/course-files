@@ -226,42 +226,43 @@
     \vspace{0.5cm}
 
 \newpage    
-\item A rational function of the form $\displaystyle f(x)=\frac{1}{x+p}+q$ is shown on the grid below. 
+\item A rational function of the form $\displaystyle f(x)=\frac{1}{x-p}+q$ is shown on the grid below. 
     \begin{multicols}{2}
-        \begin{enumerate}[itemsep=1cm]
+        \begin{enumerate}[itemsep=0.7cm]
             \item Write down the equation of the horizontal asymptote.
             \item  Write down the equation of the vertical asymptote.
             \item Hence, write down $p$ and $q$.
             \item Find $f(0)$.
-            \item Solve for $x$ such that $f(x)=0$.
+            \item Solve for $x$ such that $f(x)=0$. \vspace{1cm} \\ \,
         \end{enumerate}
         \begin{tikzpicture}[scale=0.6]
-        \draw [help lines] (-6,-6) grid (6,6);
+        \draw [help lines] (-6,-5) grid (6,6);
         \draw [thick, ->] (-6.2,0) -- (6.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-6.2)--(0,6.4) node [right] {$y$};
-        \foreach \x in {-6,...,-3,-2,-1,1,2,...,6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-        \foreach \y in {-6,...,-3,-2,-1,1,2,...,6} \draw (1pt,\y cm) -- (-1pt,\y cm) node[left] {$\y$};
-        \draw [<->,line width=1.5pt,smooth,samples=50,domain=-5.5:2.8] plot(\x,{1/(\x-3)-1});
-        \draw [<->,line width=1.5pt,smooth,samples=50,domain=3.15:5.5] plot(\x,{1/(\x-3)-1});
+        \draw [thick, ->] (0,-5.2)--(0,6.4) node [right] {$y$};
+        \foreach \x in {-6,...,-3,-2,-1,1,2,...,6} \draw (\x cm,3pt) -- (\x cm,-3pt) node[below] {$\x$};
+        \foreach \y in {-5,...,-3,-2,-1,1,2,...,6} \draw (3pt,\y cm) -- (-3pt,\y cm) node[left] {$\y$};
+        \clip (-6,-6) rectangle (6,6);
+        \draw [<->,line width=1.5pt,samples=50,domain=-5.5:1.8] plot(\x,{1/(\x-2)+1});
+        \draw [<->,line width=1.5pt,samples=50,domain=2.21:5.5] plot(\x,{1/(\x-2)+1});
         \end{tikzpicture}
     \end{multicols}
 
-\item The temperature ($C^\circ$) over a 24 hour day starting at midnight is modeled by the function $f\left(t\right)=-0.0075t^{3}+0.17t^{2}+0.02t+5$.
+\item The temperature ($C^\circ$) over a 24 hour day starting at midnight is modeled by the function $f\left(t\right)=-0.0063t^{3}+0.12t^{2}+0.38t+9$.
     \begin{enumerate}[itemsep=1cm]
         \item Write down the temperature at midnight, when $t=0$.
         \item Over what interval is the temperature increasing?
         \item Find the maximum temperature during the day.  \vspace{1cm}
     \end{enumerate}
     \begin{center}
-    \begin{tikzpicture}[xscale=0.4, yscale=0.3]
-        \draw [thin, color=lightgray, xstep=4.0cm,ystep=2.0cm] (0,0) grid (24,20);
+    \begin{tikzpicture}[xscale=0.4, yscale=0.3, scale=0.8]
+        \draw [thin, color=lightgray, xstep=4.0cm,ystep=2.0cm] (0,0) grid (24,22);
         \foreach \x in {0,2,...,24}
         \draw (\x cm,3pt) -- (\x cm,-3pt) node[below] {$\x$};
         \foreach \y in {0,2,...,20}
-        \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
-        \draw [thick, ->] (0,0) -- (+24.4,0) node [above right] {$time$};
-        \draw [thick, ->] (0,0) -- (0,20.4) node [right] {$temp$};
-        \draw [thick, smooth,domain=0.:24] plot(\x,-0.0075*\x*\x*\x+0.17*\x*\x+0.02*\x+5);
+        \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]{$\y$};
+        \draw [thick, ->] (0,0) -- (+24.4,0) node [above right]{$time$};
+        \draw [thick, ->] (0,0) -- (0,23.4) node [right]{$temperature$};
+        \draw [thick, smooth,domain=0.:24] plot(\x,-0.0063*\x*\x*\x+0.12*\x*\x+0.38*\x+9);
     \end{tikzpicture}
     \end{center}
 
