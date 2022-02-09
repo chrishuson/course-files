@@ -28,7 +28,7 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / IB Math 03-Quadratic functions\\* 9 February 2022}
+\fancyhead[LO]{BECA / IB Math 4-Polynomial and rational functions \\* 9 February 2022}
 
 \begin{document}
 
@@ -165,8 +165,8 @@
 \begin{multicols}{2}
     \begin{tikzpicture}[x=1cm, y=0.5cm, scale=1]
         \draw [help lines] (-3,0) grid (3,10);
-        \draw [thick, ->] (-3.2,0) -- (3.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-0.2)--(0,10.8) node [right] {$y$};
+        \draw [thick, ->] (-3.2,0) -- (3.4,0) node [above] {$x$};
+        \draw [thick, ->] (0,-0.2)--(0,10.8) node [right] {$h(x)$};
         \foreach \x in {-3,...,3}
             \draw[shift={(\x,0)}] (0,3pt)--(0,-3pt) node[below] {$\x$};
         \foreach \y in {2,4,...,10}
@@ -175,58 +175,57 @@
         \fill (-2.5,9.72) ellipse(2pt and 2pt) node [above]{$(-2.5,9.72)$};
         \fill (2.5,2.28) ellipse(2pt and 2pt) node [below]{$(2.5,2.28)$};
     \end{tikzpicture}
-    \begin{enumerate}[itemsep=0.75cm]
+    \begin{enumerate}[itemsep=0.5cm]
         \item The two ends of the ramp are marked as ordered pairs. How wide is the ramp in meters?
-        \item What is the total vertical descent from the top of the ramp to its lowest point? \vspace{1cm}
+        \item What is the total vertical descent from the top of the ramp to its lowest point? \vspace{1cm}\\ \, %answer 8.85m
     \end{enumerate} 
     \end{multicols}
 
 \newpage
-\item Shown in the plot below is the function $f(x)=x^3+4x^2-1x-4$.
+\item Shown in the plot below is the function $f(x)=x^3-x^2-9x+9$.
     \begin{enumerate}
         \item Write down the value of $f(0)$. On the graph, mark the point for $f(0)$ with a star.\vspace{0.75cm}
         \item Write down the solutions to $f(x)=0$. Mark them with ``X'' marks on the graph.\vspace{0.75cm}
         \item Mark the portion of the function that is \emph{decreasing} with a squiggly line.
     \end{enumerate}
     \begin{center}
-        \begin{tikzpicture}[x=1cm, y=0.5cm, scale=0.6]
-            \draw [help lines] (-5,-8.1) grid (5,10);
+        \begin{tikzpicture}[x=1cm, y=0.20cm, scale=0.8]
+            \draw [help lines] (-5,-15.1) grid (5,20);
             \draw [thick, ->] (-5.2,0) -- (5.4,0) node [below right] {$x$};
-            \draw [thick, ->] (0,-8.2)--(0,10.4) node [right] {$y$};
+            \draw [thick, ->] (0,-15.2)--(0,21.4) node [right] {$y$};
             \foreach \x in {-5,...,5}
                 \draw[shift={(\x,0)}] (0,3pt)--(0,-3pt) node[below] {$\x$};
-            \foreach \y in {-8,-6,...,10}
+            \foreach \y in {-15,-10,...,20}
                 \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]  {$\y$};
-            \draw [<->,thick,smooth,domain=-4.4:1.6] plot(\x,{(\x)^3+4*(\x)^2-(\x)-4});
+            \draw [<->,thick,smooth,domain=-3.5:4] plot(\x,{(\x)^3-(\x)^2-9*(\x)+9});
         \end{tikzpicture}
     \end{center}
 
-\item The graph of a function $f$ is shown on the grid below.
+\item The function $f(x)=ax^2+bx+c$ is graphed below over its domain, $p\leq x < q$.
     \begin{multicols}{2}
     \begin{enumerate}
-      \item Write down $f(2)$
-      %\vspace{0.25cm}
-      \item Find $x$ for $f(x)=6$.
-      \vspace{0.25cm}
-      \item Write down the domain.
-      \item Write down the range. \vspace{1cm}
+      \item Write down the value of $c$.
+      \item Write down $f(-2)$.
+      \item Find $x$ such that $f(x)=6$.
+      \item Write down the values of $p$, $q$.
+      \item Write down the range of $f$. \vspace{1cm}
     \end{enumerate}
-      \begin{tikzpicture}[scale=0.7]
-        \draw [help lines] (-3,-2) grid (4,6);
+      \begin{tikzpicture}[scale=0.8]
+        \draw [help lines] (-3,-4) grid (4,7);
         \draw [thick, ->] (-3.2,0) -- (4.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-2.2)--(0,6.4) node [left] {$y$};
-        \foreach \x in {-3,-2,-1,1,2, ..., 4} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-        \foreach \y in {-2,-1,1,2,3,4,5,6} \draw (1pt,\y cm) -- (-1pt,\y cm) node[left] {$\y$};
-        %\draw [thick] (-2,0) -- (0,4) -- (3,5);
-        \draw [thick,smooth,samples=20,domain=-2:4] plot(\x,0.5*\x*\x-2*\x);
-        \fill (-2,6) circle[radius=0.1];
-        \node at (-1.5,2.5){$f$};
-        \fill [white] (4,0) circle[radius=0.1];
-        \draw (4,0) circle[radius=0.1];
+        \draw [thick, ->] (0,-4)--(0,7.4) node [right] {$y$};
+        \foreach \x in {-3,-2,-1,1,2, ..., 4} \draw (\x cm,1pt) -- (\x cm,-1pt) node[below] {$\x$};
+        \foreach \y in {-3,-2,-1,1,2,...,7} \draw (3pt,\y cm) -- (-3pt,\y cm) node[left] {$\y$};
+        \draw [thick,samples=50,domain=-1:2] plot(\x,-2*\x*\x+4*\x+4);
+        \fill (-1,-2) circle[radius=0.1];
+        \node at (2.5,4.5){$f$};
+        \fill [white] (2,4) circle[radius=0.1];
+        \draw (2,4) circle[radius=0.1];
       \end{tikzpicture}
     \end{multicols}
     \vspace{0.5cm}
-    
+
+\newpage    
 \item A rational function of the form $\displaystyle f(x)=\frac{1}{x+p}+q$ is shown on the grid below. 
     \begin{multicols}{2}
         \begin{enumerate}[itemsep=1cm]
