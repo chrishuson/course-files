@@ -82,7 +82,6 @@
     \end{multicols}
 
 \newpage
-
 \item Accurately plot the function $h(x)=-x^{3}+3x^{2}+6x-8$. \\[0.5cm]
 Mark the local maximum and minimums as ordered pairs. %(-0.732, -10.4), (2.73, 10.4)
     \begin{center}
@@ -94,8 +93,8 @@ Mark the local maximum and minimums as ordered pairs. %(-0.732, -10.4), (2.73, 1
                 \draw[shift={(\x,0)}] (0,3pt)--(0,-3pt) node[below] {$\x$};
             \foreach \y in {-10,-8,...,10}
                 \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]  {$\y$};
-            \clip (-5,-11) rectangle (5,12);
-            \draw [<->,thick,smooth,domain=-2.4:4.4] plot(\x,{-(\x)^3+3*(\x)^2+6*(\x)-8});
+            %\clip (-5,-11) rectangle (5,12);
+            %\draw [<->,thick,smooth,domain=-2.4:4.4] plot(\x,{-(\x)^3+3*(\x)^2+6*(\x)-8});
         \end{tikzpicture}
     \end{center}
 
