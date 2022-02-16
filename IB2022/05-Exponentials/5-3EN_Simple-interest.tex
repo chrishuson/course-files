@@ -36,27 +36,7 @@
 I can calculate simple interest \hfill CCSS.HSF.IF.C.7
 
 \begin{enumerate}
-\item Do Now: Simplify each expression to the base raised to a power.
-    \begin{multicols}{2}
-    \begin{enumerate}[itemsep=0.5cm]
-        \item $5^2 \times 5^4$
-        \item $\displaystyle \frac{11^7}{11^5}$
-        \item $a^5 \times a^3$
-        \item $\displaystyle \left( \frac{x^6}{x^4}\right)^{3}$
-    \end{enumerate}
-    \end{multicols}
-
-\item A bank account earns interest at an annual interest rate of 3.925\%. The initial deposit is \$175. Which equation models the value of the balance?
-\begin{multicols}{2}
-    \begin{enumerate}[itemsep=0.5cm]
-        \item $FV=175 \cdot 3.925^{t}$
-        \item $FV=175 (1+0.03925)^{t}$
-        \item $\displaystyle FV=175 \cdot \left( \frac{3.925}{100}\right)^{t}$
-        \item $FV=175 \cdot e^{0.03925t}$
-    \end{enumerate}
-\end{multicols}
-
-\item Carlos puts \$12,500 into an investment account with an annual interest rate of 3.15\% what is the balance after 5 years? \vspace{2cm}
+\item Do Now: Carlos puts \$12,500 into an investment account with an annual interest rate of 3.15\%. What is the balance after 5 years? \vspace{2cm}
 
 \item The graph shows the exponential function $\displaystyle FV=1,250 \times \left( 1+\frac{4.25}{100} \right)^t$ representing the balance of an investment account earning a fixed rate of interest over $t$ in years.
 \begin{multicols}{2}
@@ -81,6 +61,51 @@ I can calculate simple interest \hfill CCSS.HSF.IF.C.7
 
 \newpage
 \subsubsection*{5.3 Exit Note: Simple interest rates}
+\item Simplify each expression to the base raised to a power.
+    \begin{multicols}{2}
+    \begin{enumerate}[itemsep=0.5cm]
+        \item $7^3 \times 7^6$
+        \item $\displaystyle \frac{5^8}{5^4}$
+        \item $x^2 \times x^9$
+        \item $\displaystyle \left( \frac{z^7}{z^2}\right)^{2}$
+    \end{enumerate}
+    \end{multicols}
+
+\item A bank account earns interest at an annual interest rate of 5.125\%. The initial deposit is \$225. Which equation models the value of the balance?
+\begin{multicols}{2}
+    \begin{enumerate}[itemsep=0.5cm]
+        \item $\displaystyle FV=225 \cdot \left( \frac{5.125}{100}\right)^{t}$
+        \item $FV=225 (1+5.125)^{t}$
+        \item $FV=225 \cdot 5.125^{t}$
+        \item $\displaystyle FV=225 \cdot \left(1+ \frac{5.125}{100}\right)^{t}$
+    \end{enumerate}
+\end{multicols}
+
+\item Carlos puts \$9,800 into an investment account with an annual interest rate of 2.75\%. What is the balance after 3 years, rounded to the nearest cent? \vspace{2cm}
+
+\item The graph shows the exponential function $\displaystyle FV=1,100 \times \left( 1+\frac{6.125}{100} \right)^t$ representing the balance of an investment account earning a fixed rate of interest over $t$ in years.
+\begin{multicols}{2}
+    \begin{enumerate}[itemsep=1cm]
+        \item Write down the initial deposit in the account.
+        \item What is the annual interest rate?
+        \item Approximately how much will the account hold at the end of ten years?
+        \item When will the balance be \$1,400?
+    \end{enumerate}
+    \begin{center}
+    \begin{tikzpicture}[x=1cm, y=0.01cm, scale=0.6]
+        \draw [thin, color=lightgray, xstep=1.0cm,ystep=1.0cm] (0,1000) grid (10,2000);
+        \draw [thick, ->] (0,1000) -- (+10.4,1000) node [above right]{$t$};
+        \draw [thick, ->] (0,1000) -- (0,2050) node [right]{$FV$};        \foreach \x in {0,1,...,10}
+            \draw (\x cm,1000) -- (\x cm,1000) node[below] {$\x$};
+        \foreach \y in {1000,1200,...,2000}
+            \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
+
+        \draw [thick, smooth,domain=0.:10] plot(\x,{1100*(1.06125^\x)});
+    \end{tikzpicture}
+    \end{center}
+    \end{multicols}
+
+\newpage
 \item An asset depreciates at a constant percentage rate, losing $5\%$ of its value each year. The asset's value is modeled by the exponential function $\displaystyle FV=2,000 \times \left( 1-\frac{5}{100} \right)^t$, shown below, where $t$ is the time in years.
 \begin{multicols}{2}
     \begin{enumerate}[itemsep=1cm]
