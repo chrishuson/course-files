@@ -38,26 +38,32 @@ I can calculate simple interest \hfill CCSS.HSF.IF.C.7
 \begin{enumerate}
 \item Do Now: Carlos puts \$12,500 into an investment account with an annual interest rate of 3.15\%. What is the balance after 5 years? \vspace{2cm}
 
-\item The graph shows the exponential function $\displaystyle FV=1,250 \times \left( 1+\frac{4.25}{100} \right)^t$ representing the balance of an investment account earning a fixed rate of interest over $t$ in years.
+\item The graph shows the exponential function $\displaystyle f(x)=1000 \times \left( 1.25 \right)^t$ representing growth with a base of 1.25 over $t$ periods.
 \begin{multicols}{2}
     \begin{enumerate}[itemsep=1cm]
-        \item Write down the initial deposit in the account.
-        \item How much will the account hold at the end of ten years, to the nearest \$000?
-        \item When will the balance be \$1,600?
+        \item Write down the initial value of the function.
+        \item Find $f(10)$
+        \item Find $x$ such that $y=6000$
     \end{enumerate}
     \begin{center}
-    \begin{tikzpicture}[x=1cm, y=0.01cm, scale=0.6]
-        \draw [thin, color=lightgray, xstep=1.0cm,ystep=1.0cm] (0,1000) grid (10,2000);
+    \begin{tikzpicture}[x=1cm, y=0.0015cm, scale=0.6]
+        \draw [thin, color=lightgray, xstep=1.0cm,ystep=0.75cm] (0,1000) grid (10,10000);
         \draw [thick, ->] (0,1000) -- (+10.4,1000) node [above right]{$t$};
-        \draw [thick, ->] (0,1000) -- (0,2050) node [right]{$FV$};        \foreach \x in {0,1,...,10}
+        \draw [thick, ->] (0,1000) -- (0,10050) node [right]{$y$};        \foreach \x in {0,1,...,10}
             \draw (\x cm,1000) -- (\x cm,1000) node[below] {$\x$};
-        \foreach \y in {1000,1200,...,2000}
+        \foreach \y in {1000,2000,...,10000}
             \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
-
-        \draw [thick, smooth,domain=0.:10] plot(\x,{1250*(1.0425^\x)});
+        
+        \draw [thick, smooth,domain=0.:10] plot(\x,{1000*(1.25^\x)});
     \end{tikzpicture}
     \end{center}
     \end{multicols}
+
+\item Radioactive elements decay over time, with one half of the atoms decaying over a fixed period of time, the ``half life.'' The half life of plutonium-238 is about 90 years. Use the formula $\displaystyle y=A \times \left( \frac{1}{2} \right)^{t/90}$. 
+\begin{enumerate}[itemsep=1.5cm]
+    \item Find the percentage of plutonium that would remain after 1000 years.
+    \item Find the number of years required for 99 percent of the plutonium to decay.
+\end{enumerate}
 
 \newpage
 \subsubsection*{5.3 Exit Note: Simple interest rates}
@@ -104,39 +110,6 @@ I can calculate simple interest \hfill CCSS.HSF.IF.C.7
     \end{tikzpicture}
     \end{center}
     \end{multicols}
-
-\newpage
-\item An asset depreciates at a constant percentage rate, losing $5\%$ of its value each year. The asset's value is modeled by the exponential function $\displaystyle FV=2,000 \times \left( 1-\frac{5}{100} \right)^t$, shown below, where $t$ is the time in years.
-\begin{multicols}{2}
-    \begin{enumerate}[itemsep=1cm]
-        \item Write down the initial value of the asset.
-        \item How much will the asset be valued at the end of ten years, to the nearest \$000?
-        \item When will the asset have lost one-quarter of its value?
-    \end{enumerate}
-    \begin{center}
-    \begin{tikzpicture}[x=1cm, y=0.01cm, scale=0.6]
-        \draw [thin, color=lightgray, xstep=1.0cm,ystep=1.0cm] (0,1000) grid (10,2000);
-        \draw [thick, ->] (0,1000) -- (+10.4,1000) node [above right]{$t$};
-        \draw [thick, ->] (0,1000) -- (0,2050) node [right]{$FV$};        \foreach \x in {0,1,...,10}
-            \draw (\x cm,1000)--(\x cm,1000) node[below] {$\x$};
-        \foreach \y in {1000,1100,...,2000}
-            \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
-        \draw [thick, smooth,domain=0.:10] plot(\x,{2000*(0.95^\x)});
-    \end{tikzpicture}
-    \end{center}
-    \end{multicols}
-
-\item Maria purchases an investment property for \$100,000. Under a special benefit in the tax code, she is allowed to depreciate the asset at $10\%$ annually. 
-\begin{enumerate}[itemsep=1cm]
-    \item How much can she deduct from her income for tax purposes the first year?
-    \item Write an algebraic expression to model the depreciated value of Maria's property.
-    \item If she holds it for three years, at what value will it be held on her books?
-    \item Make a sketch to represent the graph of the asset's depreciated value over ten years. \vspace{3cm}
-    \item She plans to sell the property when it is depreciated to one-half of the purchase value. Find the number of years she expects to hold the property and mark that point on your sketch.
-\end{enumerate}
-\vspace{2cm}
-
-
 
 \end{enumerate}
 \end{document}
