@@ -1,0 +1,63 @@
+\documentclass{beamer}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{width=10cm,compat=1.9}
+%\usepackage{pgfplotstable}
+
+\setlength{\headheight}{26pt}%doesn't seem to fix warning
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%\rhead{\small{13 September 2021}}
+\lhead{\small{BECA / Dr. Huson / Geometry Unit 2}}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{Mathematics Class Slides}
+\subtitle{Bronx Early College Academy}
+\author{Christopher J. Huson PhD}
+\date{4 October 2021}
+
+\begin{document}
+\frame{\titlepage}
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{2.8 Pretest Circles and Volume, 14 October}
+
+  \frame
+  {
+    \frametitle{Open Middle problem (fun) \\
+    Use digits from 0 to 9. Using a digit no more than once.}
+      The first two angle measures are complementary. The second two angles supplementary. (degrees)\\[0.75cm]
+        \begin{tikzpicture}
+          \draw (0,0) rectangle (1,1);
+          \draw (1.25,0) rectangle (2.25,1);
+          \draw (3.25,0) rectangle (4.25,1);
+          \draw (4.5,0) rectangle (5.5,1);
+
+          \draw (-1.25,-1.5) rectangle (-0.25,-0.5);
+          \draw (0,-1.5) rectangle (1,-0.5);
+          \draw (1.25,-1.5) rectangle (2.25,-0.5);
+          \draw (3.25,-1.5) rectangle (4.25,-0.5);
+          \draw (4.5,-1.5) rectangle (5.5,-0.5);
+        \end{tikzpicture} \vspace{5cm} 
+  }
+
+Using the integers $-9$ to 9 at most one time each, place a digit in each box to create endpoints for two different line segments whose midpoint is $(1, 3)$. One line segment should have a positive slope, and the other should have a negative slope. You may reuse all the integers for each line segment.
+
+Using the integers $-9$ to 9 at most one time each, place a digit in each box to create endpoints for the longest possible line segment whose midpoint is $(1, 3)$.
+
+\end{document}
