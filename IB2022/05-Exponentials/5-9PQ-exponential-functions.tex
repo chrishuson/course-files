@@ -47,7 +47,7 @@
     \item Find the final balance of principal and interest after three years.
 \end{enumerate} \vspace{1.5cm}
 
-\item Xi invested TWD 4000 (Taiwan dollars) in an account that pays 2.85\% interest per year compounded monthly. (show your working with a labeled sketch)
+\item Xi invested TWD 4000 (Taiwan dollars) in an account that pays 2.85\% interest per year compounded monthly. (show your working with a labeled sketch using the axes)
 \begin{multicols}{2}
     \begin{enumerate}[itemsep=1cm]
         \item Find how much Xi had in the account after 3 years.
@@ -63,90 +63,102 @@
 
 
 \newpage
-\item The graph shows the exponential function $\displaystyle FV=1,250 \times \left( 1+\frac{4.25}{100} \right)^t$ representing the balance of an investment account earning a fixed rate of interest over $t$ in years.
+\item The graph shows the exponential function $\displaystyle FV=1,350 \times \left( 1+\frac{5.10}{100} \right)^t$ representing the balance of an investment account earning a fixed rate of interest over $t$ in years.
 \begin{multicols}{2}
     \begin{enumerate}[itemsep=1cm]
         \item Write down the initial deposit in the account.
         \item Write down the annual interest rate.
-        \item How much will the account hold at the end of ten years, to the nearest \$000?
-        \item When will the balance be \$1,600?
-    \end{enumerate}
+        \item How much will the account hold at the end of ten years, to the nearest hundred dollars?
+        \item When will the balance be \$2000, to the nearest year?
+    \end{enumerate}\vspace{1cm}
     \begin{center}
-    \begin{tikzpicture}[x=1cm, y=0.01cm, scale=0.6]
-        \draw [thin, color=lightgray, xstep=1.0cm,ystep=1.0cm] (0,1000) grid (10,2000);
+    \begin{tikzpicture}[x=1cm, y=0.01cm, scale=0.55]
+        \draw [thin, color=lightgray, xstep=1.0cm,ystep=1.0cm] (0,1000) grid (10,2410);
         \draw [thick, ->] (0,1000) -- (+10.4,1000) node [above right]{$t$};
-        \draw [thick, ->] (0,1000) -- (0,2050) node [right]{$FV$};        \foreach \x in {0,1,...,10}
+        \draw [thick, ->] (0,1000) -- (0,2450) node [right]{$FV$};        \foreach \x in {0,1,...,10}
             \draw (\x cm,1000) -- (\x cm,1000) node[below] {$\x$};
-        \foreach \y in {1000,1200,...,2000}
+        \foreach \y in {1000,1200,...,2400}
             \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
-
-        \draw [thick, smooth,domain=0.:10] plot(\x,{1250*(1.0425^\x)});
+        \draw [thick, smooth,domain=0.:10] plot(\x,{1350*(1.0510^\x)});
     \end{tikzpicture}
     \end{center}
     \end{multicols}
 
-\item Radioactive elements decay over time, with one half of the atoms decaying over a fixed period of time, the ``half life.'' The half life of plutonium-238 is about 90 years. Use the formula $\displaystyle y=A \times \left( \frac{1}{2} \right)^{t/90}$. 
-    \begin{enumerate}[itemsep=1.5cm]
-        \item Find the percentage of plutonium that would remain after 1000 years.
-        \item Find the number of years required for 99 percent of the plutonium to decay.
-    \end{enumerate}
+\item The half life of radioactive iodine 131 is eight days. That is, one half of this isotope decays over this period of time. Given an intial amount of $I_{131}$ of $N_0$, use this formula for the amount remaining $N(t)$ as a function of time $t$ in days: \[\displaystyle N(t)=N_0 \times \left( \frac{1}{2} \right)^{t/8}\]  \vspace{0.25cm}
+    \begin{multicols}{2}
+        \begin{enumerate}[itemsep=0.5cm]
+            \item How long does it take for half of a given amount of $I_{131}$ to decay?
+            \item Find the fraction of iodine 131 that would remain after 30 days. \vspace{0.75cm}
+            \item Find the time for 99 percent to decay.
+        \end{enumerate} \vspace{0.5cm}
+        \begin{center}
+        \begin{tikzpicture}
+            \draw [thick, ->] (0,0)--(5,0);
+            \draw [thick, ->] (0,0)--(0,6);
+        \end{tikzpicture}\\[0.5cm]
+        Sketch a labeled graph as working.
+        \end{center}
+        
+    \end{multicols}
 
-\item The spread of a farm disease can be modeled by the equation $\displaystyle y= 6 + e^x$, where $x$ is the time in days. 
-    \begin{enumerate}[itemsep=1.5cm]
-        \item Find the number of animals with the disease after six days.
-        \item Find the number of days for 500 animals to be infected.
-    \end{enumerate}
+\newpage
+\item A fruit fly population doubles every 3 days. There are currently twelve fruit flies in a laboratory container. With $t$ representing time, in days, then the population of flies can be modeled by \[\displaystyle P(t)=A \times b^{t/3}\]
+    %Alg2 Regents Jan2017
+    \begin{enumerate}[itemsep=0.75cm]
+        \item Write down the value of $A$
+        \item Write down the value of $b$
+        \item About how many flies will there be in a week? \vspace{1.5cm}
+        \item Find the time needed to reach a population of 150.
+    \end{enumerate} \vspace{1.5cm}
     
-\item On the grid below draw the exponential function $\displaystyle f(t)=1700 \times \left( 1+0.095 \right)^t$ representing the growth of an investment over $t$ years.
+\item Graph $\displaystyle f(t)=80,000 \left( 1-0.20 \right)^t$, representing the depreciation of an asset over $t$ years.
 \begin{multicols}{2}
     \begin{enumerate}[itemsep=1.2cm]
-        \item Write down the initial value of the investment.
-        \item Write down the annual interest rate.
-        \item Find the value of the investment after ten years.\vspace{1cm}
-        \item Find the number of years it takes the investment to double in value.
+        \item Write down the initial cost of the asset.
+        \item Write down the percentage value lost each year.
+        \item Find the value of the investment after one year.\vspace{1cm}
+        \item Find the number of years to depreciate half of the value.
     \end{enumerate}
     \begin{center}
-    \begin{tikzpicture}[x=1cm, y=0.0025cm, scale=0.55]
-        \draw [thin, color=lightgray,xstep=1.0cm,ystep=1.25cm](0,0) grid (10,5100);
+    \begin{tikzpicture}[x=1cm, y=0.0002cm, scale=0.50]
+        \draw [thin, color=lightgray,xstep=1.0cm,ystep=1cm](0,0) grid (10,81000);
         \draw [thick, ->] (0,0) -- (+10.4,0) node [above right]{$t$};
-        \draw [thick, ->] (0,0) -- (0,5200) node [above right]{$f(t)$};        
+        \draw [thick, ->] (0,0) -- (0,85000) node [above right]{$f(t)$};        
         \foreach \x in {0,2,...,10}
             \draw (\x cm,0) -- (\x cm,0) node[below] {$\x$};
-        \foreach \y in {0,1000,...,5000}
-            \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
+        \foreach \y in {1,2,...,8}
+            \draw[shift={(0,2*\y cm)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y0,000$};
         %\draw [thick, smooth,domain=0:10] plot(\x,{1700*(1.095^\x)});
     \end{tikzpicture}
     \end{center}
     \end{multicols}
 
-\item A rabbit population doubles every 4 weeks. There are currently five rabbits in a restricted area. With $t$ representing time, in weeks, then the population of rabbits can be modeled by \[\displaystyle P(t)=A \times b^{t/4}\]
-    %Alg2 Regents Jan2017
-    \begin{enumerate}[itemsep=0.75cm]
-        \item Write down the value of $A$
-        \item Write down the value of $b$
-        \item About how many rabbits will there be in 98 days? \vspace{2cm}
-        \item After how many weeks will there be approximately 160 rabbits?
-    \end{enumerate}
+\newpage
+\item The spread of an internet meme can be modeled by $\displaystyle y= 20 e^x$, with $x$ the time in hours. 
+\begin{enumerate}[itemsep=1cm]
+    \item Find the quantity of the meme after two hours.
+    \item Find the number of hours for meme to spread to 1,000,000.
+\end{enumerate} \vspace{2cm}
 
-\item The temperature of a hot iron as it cools is modeled by the function 
-    \[ T(x)=350e^{-0.035x}+18 \] where $T(x)$
-    is the temperature in degrees Celsius and $x$ is the time in minutes.
+\item The temperature of cooling lava is modeled by the function 
+    \[ T(x)=750e^{-0.05x}+25 \] where $T(x)$
+    is the temperature in degrees Celsius and $x$ is the time in hours.
     \begin{enumerate}[itemsep=1cm]
         \item Write down the initial temperature at time zero.
-        \item Find the temperature after 20 minutes.
-        \item When will the temperature of the iron reach 75 degrees Celsius?
-        \item On the graph below, sketch the temperature of the iron, labeling the points above A, B, and C.
+        \item Find the temperature after 24 hours.
+        \item Find the time to cool to $100^\circ$C.
+        \item Graph the lava's temperature. Label each of your answers with their values.
     \end{enumerate}
     \begin{center}
     \begin{tikzpicture}[xscale= 0.2, yscale=0.015]
-        \draw [thick, ->] (0,0) -- (62,0) node [right] {$x$};
+        \draw [thin,color=lightgray,xstep=5cm,ystep=50cm](0,0) grid (75,500);
+        \draw [thick, ->] (0,0) -- (76,0) node [above] {$x$};
         \draw [thick, ->] (0,0) -- (0,550) node [right] {$T(x)$};
-        \foreach \x in {0,10,20,30,40,50,60}
-            \draw[shift={(\x,0)}] (0,10) -- (0,0) node[below]  {$\x$};
-        \foreach \y in {0,100,200,300,400,500}
-            \draw[shift={(0,\y)}] (0.5,0) -- (0,0) node[left]  {$\y$};
-        %\draw [<-, ->] plot[domain= 0:60] (\x,{350*exp(-0.035*\x) +18});
-        %\draw plot[domain=0:60] (\x, 75);
+        %\foreach \x in {0,10,20,30,40,50,60}
+            %\draw[shift={(\x,0)}] (0,10) -- (0,0) node[below]  {$\x$};
+        %\foreach \y in {0,100,200,300,400,500}
+            %\draw[shift={(0,\y)}] (0.5,0) -- (0,0) node[left]  {$\y$};
+        %\draw plot[domain=0:60] (\x,{375*exp(-0.05*\x) +12.5});
     \end{tikzpicture}
     \end{center}
 
