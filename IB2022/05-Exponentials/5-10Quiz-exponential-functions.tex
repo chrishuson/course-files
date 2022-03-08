@@ -31,7 +31,7 @@
 \fancyhead[LO]{BECA / IB Math 5 Exponential functions \\* 9 March 2022}
 
 \begin{document}
-\subsubsection*{5.10 Quiz: Exponential functions (DRAFT)}
+\subsubsection*{5.10 Quiz: Exponential functions}
 \emph{Round all currency amounts to the nearest hundredth.}
 \begin{enumerate}
 \item Frank puts \$2,000 into an investment account with an annual interest rate of 3.00\%. Find the balance after one year. \vspace{1.5cm}
@@ -50,8 +50,8 @@
 \item Lily invested SGD 2000 (Singapore dollars) in an account that pays 1.85\% interest per year compounded monthly. (show your working with a labeled sketch using the axes)
 \begin{multicols}{2}
     \begin{enumerate}[itemsep=1cm]
-        \item Find how much Xi had in the account after 3 years.
-        \item Find the number of years until he had SGD 3400 in the account.
+        \item Find how much Lily had in the account after 3 years.
+        \item Find the number of years until she had SGD 2150 in the account.
     \end{enumerate} \vspace{0.5cm}
     \begin{flushright}
     \begin{tikzpicture}
@@ -69,11 +69,11 @@
         \item Write down the initial deposit in the account.
         \item Write down the annual interest rate.
         \item How much will the account hold at the end of ten years, to the nearest hundred dollars?
-        \item When will the balance be \$1600, to the nearest year?
-    \end{enumerate}\vspace{1cm}
+        \item When will the balance be \$1350, to the nearest year?
+    \end{enumerate}
     \begin{center}
-    \begin{tikzpicture}[x=1cm, y=0.0125cm, scale=0.55]
-        \draw [thin, color=lightgray, xstep=1.0cm,ystep=1.0cm] (0,1000) grid (10,1810);
+    \begin{tikzpicture}[x=1cm, y=0.015cm, scale=0.55]
+        \draw [thin, color=lightgray, xstep=1.0cm,ystep=0.75cm] (0,1000) grid (10,1810);
         \draw [thick, ->] (0,1000) -- (+10.4,1000) node [above right]{$t$};
         \draw [thick, ->] (0,1000) -- (0,1850) node [right]{$FV$};        \foreach \x in {0,1,...,10}
             \draw (\x cm,1000) -- (\x cm,1000) node[below] {$\x$};
@@ -82,27 +82,27 @@
         \draw [thick, smooth,domain=0.:10] plot(\x,{1200*(1.03^\x)});
     \end{tikzpicture}
     \end{center}
-    \end{multicols}
+    \end{multicols} \vspace{1cm}
 
 \item The half life of radioactive iodine 131 is eight days. That is, one half of this isotope decays over this period of time. Given an intial amount of $I_{131}$ of $N_0$, use this formula for the amount remaining $N(t)$ as a function of time $t$ in days: \[\displaystyle N(t)=N_0 \times \left( \frac{1}{2} \right)^{t/8}\]  \vspace{0.25cm}
     \begin{multicols}{2}
-        \begin{enumerate}[itemsep=0.5cm]
+        \begin{enumerate}[itemsep=1.5cm]
             \item How long does it take for half of a given amount of $I_{131}$ to decay?
             \item Find the fraction of iodine 131 that would remain after 30 days. \vspace{0.75cm}
-            \item Find the time for 99 percent to decay.
+            %\item Find the time for 99 percent to decay.
         \end{enumerate} \vspace{0.5cm}
-        \begin{center}
+        \begin{flushright}
         \begin{tikzpicture}
-            \draw [thick, ->] (0,0)--(5,0);
+            \draw [thick, ->] (0,0)--(6,0);
             \draw [thick, ->] (0,0)--(0,6);
         \end{tikzpicture}\\[0.5cm]
         Sketch a labeled graph as working.
-        \end{center}
+        \end{flushright}
         
     \end{multicols}
 
 \newpage
-\item A fruit fly population doubles every 5 days. There are currently ten fruit flies in a laboratory container. With $t$ representing time, in days, then the population of flies can be modeled by \[\displaystyle P(t)=A \times b^{t/3}\]
+\item A fruit fly population doubles every 5 days. There are currently ten fruit flies in a laboratory container. With $t$ representing time, in days, then the population of flies can be modeled by \[\displaystyle P(t)=A \times b^{t/5}\]
     %Alg2 Regents Jan2017
     \begin{enumerate}[itemsep=0.75cm]
         \item Write down the value of $A$
@@ -117,7 +117,7 @@
         \item Write down the initial cost of the asset.
         \item Write down the percentage value lost each year.
         \item Find the value of the investment after one year.\vspace{1cm}
-        \item Find the number of years to depreciate half of the value.
+        \item Find the number of years to depreciate three quarters of the value.
     \end{enumerate}
     \begin{center}
     \begin{tikzpicture}[x=1cm, y=0.0002cm, scale=0.50]
@@ -136,18 +136,18 @@
 \newpage
 \item The spread of a virus in the lungs is modeled by $\displaystyle y= 15 e^x$, with $x$ the time in hours. 
 \begin{enumerate}[itemsep=1cm]
-    \item Find the quantity of the meme after two hours.
-    \item Find the number of hours for meme to spread to 33,000.
+    \item Find the quantity of the viruses after two hours.
+    \item Find the number of hours for viruses to spread to 45,000.
 \end{enumerate} \vspace{2cm}
 
-\item The temperature of hot ingot as it cools is modeled by the function 
+\item The temperature of hot metal bar as it cools is modeled by the function 
     \[ T(x)=150e^{-0.07x}+45 \] where $T(x)$
     is the temperature in degrees Celsius and $x$ is the time in hours.
     \begin{enumerate}[itemsep=1cm]
         \item Write down the initial temperature at time zero.
         \item Find the temperature after 24 hours.
         \item Find the time to cool to $100^\circ$C.
-        \item Graph the ingot's temperature. Label each of your answers with their values.
+        \item Graph the bar's temperature. Label each of your answers with their values.
     \end{enumerate}
     \begin{center}
     \begin{tikzpicture}[xscale= 0.2, yscale=0.015]
