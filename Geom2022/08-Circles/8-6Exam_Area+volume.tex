@@ -1,0 +1,182 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{yhmath}
+\usetikzlibrary{quotes, angles}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\newif\ifmeta
+\metatrue %print standards and topics tags
+
+\title{Regents Geometry}
+\author{Chris Huson}
+\date{March 2022}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+\raggedbottom
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\* Unit 8: Circles\\* 11 March 2022}
+
+\begin{document}
+\subsubsection*{8.6 Exam: Area, volume, solids, circles review}
+\emph{Unless otherwise instructed, find an exact answer, in terms of $\pi$ or using radicals if necessary.}
+ \begin{enumerate}
+
+  \item Use the formulas for the area and circumference of circles:
+  \[A=\pi r^2\]
+  \[C=\pi D = 2\pi r\]
+  
+  \item Given the circle centered at $O$ with radius $r=4$. Leave an exact answer, in terms of $\pi$ if necessary.
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item Find the circumference of circle $O$. %\vspace{1cm}
+      \item Find the area of the circle.\vspace{2cm}
+    \end{enumerate}
+    %\columnbreak
+    \begin{tikzpicture}[scale=.635]
+      \draw [help lines] (-5,-4) grid (5,4);
+      %\draw [thick, ->] (-2.2,0) -- (10.4,0) node [below right] {$x$};
+      %\draw [thick, ->] (0,-2.2)--(0,10.4) node [left] {$y$};
+      \draw (0,0) circle [radius=4] node[below]{$O$};
+      \draw [fill] (0,0) circle [radius=0.05];
+    \end{tikzpicture}
+  \end{multicols}
+
+  \item Find the radius of a circle having an area of $49 \pi$. \vspace{2cm}
+  
+  \item Find the area of the shape shown below composed of a rectangle and circular cap. Leave your answer as an exact value in terms of $\pi$.
+    \begin{flushright}
+    \begin{tikzpicture}[scale=.635]
+      \draw [help lines] (-2,-1) grid (8,7);
+      \draw [thick, ->] (-2.2,0) -- (8.4,0) node [below right] {$x$};
+      \draw [thick, ->] (0,-1.2)--(0,7.4) node [left] {$y$};
+      \draw [thick] (2,1)--(6,1)--(6,3)--(2,3)--cycle;
+      %\draw [thick] (3,4) arc (90:270:1);
+      \draw [thick] (6,3) arc (0:180:2);
+    \end{tikzpicture}
+  \end{flushright}\vspace{1cm}
+
+\newpage
+\item A regular hexagon (6 sides) is inscribed in circle $O$, having a radius $r=3$.
+    \begin{multicols}{2}
+    \raggedcolumns
+    \begin{enumerate}[itemsep=1.5cm]
+      \item Find the area of the sector $AOB$.
+      \item Find the perimeter of sector $AOB$. %\vspace{1.5cm}
+      \item Find the measure of central angle $\angle AOB$
+    \end{enumerate}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.9, rotate=0]
+        \draw (0,0) circle[radius=3];
+        \fill [lightgray]
+        (0,0)--(0:3) arc (0:60:3)--(0,0);
+        \draw [thick]
+        (0:3) node[right] {$B$}--
+        (0,0) node[below] {$O$}--
+        (60:3) node[above right] {$A$} arc (60:0:3);
+        \draw (1.5,0) node[below] {$3$};
+        \draw [thick] (0:3)--(60:3)--(2*60:3)--(3*60:3)--
+        (4*60:3)--(5*60:3)--cycle;
+        %\draw [thick] (0:3)--(51.4:3)--(2*51.4:3)--(3*51.4:3)--
+        %(4*51.4:3)--(5*51.4:3)--(6*51.4:3)--cycle;
+      \end{tikzpicture}
+    \end{flushright}
+    \end{multicols}
+
+    \vspace{1cm}
+
+    \item Given the circle with center $P$ with central angle $\angle APB$ and inscribed angle $\angle AQB$. The intercepted arc has a measure $m \wideparen{AB}=78^\circ$.
+  \begin{multicols}{2}
+    \raggedcolumns
+    \begin{enumerate}
+      \item Find $m\angle APB=$ \vspace{0.7cm}
+      \item Find $m\angle AQB=$ \vspace{0.7cm}\\
+      Circle True or False:
+      \begin{enumerate}[itemsep=0.3cm]
+        \item T \, F \, $\overline{AP}$ is a radius
+        \item T \, F \, $\overline{AQ}$ is a chord
+        \item T \, F \, $\angle APB$ is a central angle
+      \end{enumerate}
+    \end{enumerate}
+      \begin{tikzpicture}[rotate=100, scale=.5]
+        \draw (0,0) circle[radius=5];
+        \fill (0,0) circle[radius=0.1];
+        \draw [thick]
+        (-10:5) node[above] {$B$}--
+        (0,0) node[below] {$P$}--
+        (70:5) node[left] {$A$};
+        \draw [thick] (-10:5)--(200:5) node[below right] {$Q$}--(70:5);
+        \draw (30:5.2) node[left]{$78^\circ$};
+      \end{tikzpicture}
+  \end{multicols} \vspace{0.25cm}
+
+  \item Given $R(-1,1)$ and $S(3,4)$, find the length of $\overline{RS}$. Note: $l=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$. %\vspace{4cm}
+  
+\newpage
+  \item Perform each calculation, writing down the full calculator display and then rounding to the \emph{nearest hundredth}.
+  \begin{multicols}{2}
+  \begin{enumerate}
+    \item $V=\frac{1}{3} \pi (2.7)^2(1.1)$
+    \item $W=5.1 + \frac{1}{2} \pi (7.1)$  
+  \end{enumerate}
+  \end{multicols}\vspace{2cm}
+
+  \item Solve each equation for the appropriate variable. Do not round. Simplify radicals.
+  \begin{multicols}{2}
+  \begin{enumerate}[itemsep=2cm]
+    \item $A=\pi r^2=18\pi$
+    \item $V=\frac{1}{4}(2.2)^2h=12.1$
+  \end{enumerate}
+  \end{multicols}\vspace{5cm}
+
+  \subsubsection*{Model the situation with an equation. Use the formula sheet. You must start with a labeling variable. \hfill Do NOT solve!}
+
+  \item A spherical cork fishing net float has a volume of 1700 cubic centimeters. Find its radius. \vspace{2cm}
+  
+  \item A large concrete post in the shape of a cylinder has a volume of 190 cubic feet. Its height is 11 feet. Find the radius of the base of the post. \vspace{2cm}
+
+  \item The volume of a cone having a \textbf{diameter} of 9 inches is 48 cubic inches. Find the cone's height. \vspace{2cm}
+
+  \newpage
+  \subsubsection*{Applying density ratios}
+  \item A tank of gasoline holds 17 gallons. Find the cost to completely fill the tank if gasoline costs \$4.35 per gallon. \vspace{3cm}
+  \item A tub of lard has a volume of 100 cubic centimeters. If the density of lard is 0.85 grams per cubic centimeter, find the weight of the tub of lard. \vspace{3cm}
+  \item A large glass marble has a diameter of 2.8 cm. The density of glass is 3.10 $\mathrm{g/cm}^3$. Find the weight of the marble. \vspace{3cm}
+
+  \item A bar of solid gold is in the shape of a rectangular prism having a length of 18 cm, width of 8 cm, and thickness of 2.25 cm. The density of gold is 19.3 grams per cubic cm, and its approximate market value is \$55 per gram.
+  \begin{enumerate}
+    \item Find the weight of the bar of gold.  \vspace{3cm}
+    \item Find its value in dollars.
+  \end{enumerate}
+
+\newpage
+  \item Perform each calculation, writing down the full calculator display and then rounding to the \emph{nearest hundredth}.
+    \begin{multicols}{2}
+    \begin{enumerate}[itemsep=4cm]
+      \item $A=15.944732$
+      \item $W=3.4 \times 9.8 \times 4.3 \times 0.15$
+            
+      \item $V=\frac{1}{3} \pi (3.4)^2(6.1)$
+      \item $P=8.6 + \frac{1}{2} \pi (8.6)$  
+      \item $V=199.19711$
+      \item $W=\frac{1}{3} (13)  3.3^2 \times 1.175$
+      \item $V=\frac{1}{3} \pi (12.4)^2(8.1)$
+      \item $P=12 + \frac{1}{4} \pi (12)$ 
+    \end{enumerate}
+    \end{multicols}\vspace{2cm}
+
+
+\end{enumerate}
+\end{document}
