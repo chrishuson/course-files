@@ -6,7 +6,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usepackage{tkz-fct}
+%\usepackage{tkz-fct}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -39,7 +39,7 @@
     (0, 0) circle[radius=1]
     (-1, 0) node[below left] {$(-1,0)$}
     (1, 0) node[above right] {$(1,0)$}
-    (1.1, 0) node[below right] {$\large{x}$}
+    (1.1, 0) node[below right] {$x$}
     ;
 \end{tikzpicture}
 \end{center}
@@ -77,8 +77,8 @@
     \draw[thick,<->] (0,-7.5) -- (0,7.5) node[anchor=south east] {\textbf{y}};
     \foreach \x in {-6, -4, -2, 2, 4, 6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
     \foreach \y in {-3} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$-30$}; %{$\y$};
-    \tkzInit[xmin=-6,xmax=5,ymin=-7,ymax=7,ystep=1]   
-    \tkzFct[color=black,thick,<->,domain = -4.3:4.9] {0.1*(x+3)*(x+1)*(x-4)};
+%    \tkzInit[xmin=-6,xmax=5,ymin=-7,ymax=7,ystep=1]   
+%    \tkzFct[color=black,thick,<->,domain = -4.3:4.9] {0.1*(x+3)*(x+1)*(x-4)};
     \draw [dashed] (2,-3) -- (4,0);
     \end{tikzpicture}\\*[1.5in]
 \end{center}
