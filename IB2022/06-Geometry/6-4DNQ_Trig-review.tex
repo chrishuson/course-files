@@ -101,14 +101,14 @@ Do Now (PreQuiz)
   \end{multicols}
   \vspace{2cm}
   
-\item Given $\triangle ABC$ with $AC=9$ centimeters, altitude $h=7$ cm, and the base $AB=13 \frac{1}{2}$ cm. (diagram not to scale)
+\item Given $\triangle ABC$ with $AC=9$ centimeters, altitude $h=7$ cm, and the base $\hat{B} = 40^\circ$. (diagram not to scale)
 \begin{multicols}{2}
   \begin{enumerate}
-    \item Write down $\sin A$.
-    \item Find the measure of angle $\hat{A}$.
-    \item Find the area of $\triangle ABC$. 
+    \item Find $\hat{A}$ using $\displaystyle \hat{A}=\sin^{-1} \frac{7}{9}$.
+    \item Find $BC$ by solving the Law of Sines\\[0.5cm]
+    $\displaystyle \frac{BC}{\sin A} = \frac{9}{\sin B} $
   \end{enumerate}
-  \begin{tikzpicture}[scale=1.]
+  \begin{tikzpicture}[scale=1]
     \draw [thick]
       (2,0)node[below]{$A$}--
       (8,0)node[below]{$B$}--
@@ -117,39 +117,12 @@ Do Now (PreQuiz)
     \draw (4,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
     \node at (4,1.2)[right]{$h=7$};
     \node at (2.7,2)[below]{$9$};
-    \node at (5,0)[below]{$13 \frac{1}{2}$ cm};
+    \draw [thick, -] (7,0) arc [start angle=180, end angle=145, radius=1];
+    \node at (6.75,0)[above]{$40^\circ$};
+    %\node at (5,0)[below]{$13 \frac{1}{2}$ cm};
   \end{tikzpicture}  
 \end{multicols}
 \vspace{1cm}
-
-\newpage
-\item Triangle $ABC$ has $\hat{A}=40^\circ$, $AB=7 \text{ cm}$, $BC=6 \text{ cm}$. Find the measure of $\hat{C}$.
-  \begin{enumerate}[itemsep=3cm]
-        \item Write down the law of sines, substituting appropriate values.
-        \item Solve for the measure of angle $C$
-  \end{enumerate}
-  \begin{flushright}
-  \begin{tikzpicture}[scale=0.6]
-  \draw (0,0) node[anchor=north]{$A$}
-    -- (12,0) node[anchor=north]{$C$}
-    -- (6.75,6) node[anchor=south]{$B$}
-    -- cycle;
-    %(0,3) node[anchor=south]{$40^\circ$};
-    %\draw [dashed] (1.5,0) -- (1.5,4.2);
-  \end{tikzpicture}
-  \end{flushright}\vspace{2cm}
-
-\item The right $\triangle ABC$ has a base of $AC=6$ units. The area of the triangle is 15 square units. Find the lengths of all three sides and measures of all angles of the triangle. (``solve the triangle'')
-  \begin{flushright}
-    \begin{tikzpicture}[scale=0.6]
-      \draw [thick](0,0) node[below]{$A$}--
-      (6,0) node[below]{$C$}--
-      (6,5) node[above right]{$B$}--cycle;
-      \draw (6,0)++(-0.6,0)--++(0,0.6)--+(0.6,0);
-    \end{tikzpicture}
-  \end{flushright}
- 
-
 
 \end{enumerate}
 \end{document}
