@@ -94,9 +94,10 @@ Express each trigonometric ratio as a fraction.
 
 \newpage
 \subsubsection*{Given formulas}
-$\displaystyle \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$ \\[0.5cm]
-$c^2 = a^2+b^2- 2ab \cos C$ \\[0.5cm]
-Triangle area: $A=\frac{1}{2}ab \sin C$ \\[0.5cm]
+Sine rule: $\displaystyle \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$ \\[0.5cm]
+Cosine rule: $c^2 = a^2+b^2- 2ab \cos C$, \,
+$\displaystyle \cos C=\frac{a^2+b^2-c^2}{2ab}$\\[0.5cm]
+Area of a triangle: $\displaystyle A=\frac{1}{2}ab \sin C$ \\[0.5cm]
 
 \item Find the area of the given triangle.
 \begin{flushright}
@@ -104,56 +105,56 @@ Triangle area: $A=\frac{1}{2}ab \sin C$ \\[0.5cm]
     \draw [thick](0:4)node[right]{$C$}--
     (100:4)node[above left]{$B$}--
     (-115:3)node[below left]{$A$}--cycle;
-    \node at (55:3.5)[below]{$23$};
-    \node at (-50:2)[below]{$19$};
+    \node at (55:3.5)[below]{$18$};
+    \node at (-50:2)[below]{$15$};
     \draw [thick, -] (-7:3.2) arc [start angle=200, end angle=140, radius=1];
-    \node at (1.5:3.1)[left]{$71^\circ$};
+    \node at (1.5:3.1)[left]{$66^\circ$};
     \node at (50:5.5)[above]{\emph{diagram not to scale}};
   \end{tikzpicture}
 \end{flushright}
 
-\item The following diagram shows triangle $ABC$, with $A\hat{B}C=37^\circ$, $A\hat{C}B=52^\circ$, and $AC=18.5$ cm. \\[0.25cm]
+\item The following diagram shows triangle $ABC$, with $A\hat{B}C=42^\circ$, $A\hat{C}B=53^\circ$, and $AC=112$ cm. \\[0.25cm]
 Find $AB$. \hfill \emph{diagram not to scale}
   \begin{flushright}
     \begin{tikzpicture}[scale=1]
       \draw [thick](40:5)node[above]{$A$}--
       (0,0)node[left]{$B$}--
       (0:7)node[right]{$C$}--cycle;
-      \node at (25:6)[below]{$18.5$};
+      \node at (25:6)[below]{$112$};
       \draw [thick, -] (0:1.5) arc [start angle=0, end angle=40, radius=1.5];
-      \node at (0:1)[above]{$37^\circ$};
+      \node at (0:1)[above]{$42^\circ$};
       \draw [thick, -] (0:5.75) arc [start angle=180, end angle=146, radius=1.75];
-      \node at (0:6.2)[above]{$52^\circ$};
+      \node at (0:6.2)[above]{$53^\circ$};
     \end{tikzpicture}
   \end{flushright}\vspace{2cm}
 
 \newpage
-\item Triangle $ABC$ is drawn with $AC=33$ cm, $BC=27.5$ cm, and $A\hat{B}C=53^\circ$. \\[0.25cm]
+\item Triangle $ABC$ is drawn with $AC=10.5$ cm, $BC=11.0$ cm, and $A\hat{B}C=47^\circ$. \\[0.25cm]
 Find $B\hat{A}C$.
   \begin{flushright}
     \begin{tikzpicture}[scale=0.8, rotate=20]
       \draw [thick](0:4)node[right]{$B$}--
       (100:4)node[above left]{$C$}--
       (-135:4)node[below left]{$A$}--cycle;
-      \node at (55:3.5)[below]{$27.5$};
-      \node at (150:2.75)[below]{$33$};
+      \node at (55:3.5)[below]{$11.0$};
+      \node at (150:2.75)[below]{$10.5$};
       \draw [thick, -] (-5:3.2) arc [start angle=215, end angle=155, radius=1];
-      \node at (0:2.35)[above]{$53^\circ$};
+      \node at (0:2.35)[above]{$47^\circ$};
       \node at (50:5)[above]{\emph{diagram not to scale}};
     \end{tikzpicture}
-  \end{flushright} \vspace{3cm}
+  \end{flushright} \vspace{2cm}
   
-\item As shown in the diagram, triangle $ABC$ has $A\hat{B}C=29^\circ$, $AB=14.1$, and $BC=16.0$. \\[0.25cm]
+\item As shown in the diagram, triangle $ABC$ has $A\hat{B}C=31^\circ$, $AB=88$, and $BC=103$. \\[0.25cm]
 Find $AC$. \hfill \emph{diagram not to scale}
   \begin{flushright}
     \begin{tikzpicture}[scale=1, rotate=-10]
       \draw [thick](30:6)node[above]{$A$}--
       (0,0)node[below]{$B$}--
       (0:8)node[below]{$C$}--cycle;
-      \node at (40:4)[below]{$14.1$};
-      \node at (0:4)[below]{$16.0$};
+      \node at (40:4)[below]{$88$};
+      \node at (-1:4)[below]{$103$};
       \draw [thick, -] (0:1.5) arc [start angle=0, end angle=30, radius=1.5];
-      \node at (2:1.15)[above]{$29^\circ$};
+      \node at (2:1.15)[above]{$31^\circ$};
     \end{tikzpicture}
   \end{flushright}\vspace{3cm}
 
@@ -213,5 +214,31 @@ The area of the triangle $ABC$ is 75 $\rm{cm}^2$, $AB=15$ cm, $AC=x$ cm, and $B\
   \end{multicols}
   \vspace{1cm}
 
+\item The function $T(x)=A \sin (Bx)+D$ is used to model weather for a Caribean island with $x$ the time in months.
+  
+  \begin{center}
+    \begin{tikzpicture}[x=1cm, y=0.3cm, scale=0.75]
+        %\draw [thin, color=lightgray, xstep=1.0cm,ystep=0.75cm] (0,1000) grid (10,1810);
+        \draw [thick, ->] (0,0) -- (+10.4,0) node [above right]{$t$};
+        \draw [thick, ->] (0,0) -- (0,32) node [right]{$T$};        \foreach \x in {0,1,...,15}
+            \draw (\x cm,0) -- (\x cm,0) node[below] {$\x$};
+        \foreach \y in {0,5,...,30}
+            \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
+        \draw [thick, smooth,domain=0.:10] plot(\x,{5*(sin(deg(\x)))+20});
+    \end{tikzpicture}
+    \end{center}
+
 \end{enumerate}
 \end{document}
+
+\begin{center}
+  \begin{tikzpicture}[x=1cm, y=0.015cm, scale=0.55]
+      \draw [thin, color=lightgray, xstep=1.0cm,ystep=0.75cm] (0,1000) grid (10,1810);
+      \draw [thick, ->] (0,1000) -- (+10.4,1000) node [above right]{$t$};
+      \draw [thick, ->] (0,1000) -- (0,1850) node [right]{$FV$};        \foreach \x in {0,1,...,10}
+          \draw (\x cm,1000) -- (\x cm,1000) node[below] {$\x$};
+      \foreach \y in {1000,1200,...,1800}
+          \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
+      \draw [thick, smooth,domain=0.:10] plot(\x,{1200*(1.03^\x)});
+  \end{tikzpicture}
+  \end{center}
