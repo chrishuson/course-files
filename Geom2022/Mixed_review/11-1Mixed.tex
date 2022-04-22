@@ -32,6 +32,28 @@
 \begin{document}
 \subsubsection*{Regents review and practice \hfill January 2020}
 \begin{enumerate}[itemsep=0.5cm]
+\item In the diagram below, $\overline{FAD} \parallel \overline{EHC}$, and $\overline{ABH}$ and $\overline{BC}$ are drawn.
+\begin{center}
+  \begin{tikzpicture}[scale=1]
+    \draw [thick, <->] (0,0)--(10,0);
+    \draw [thick, <->] (0,3)--(10,3);
+    \draw [thick] (3,0)node[below]{$H$}--(6,3)node[above]{$A$};
+    \draw [thick] (4.4,1.4)node[above left]{$B$}--(8,0)node[below]{$C$};
+    \fill (0.5,0) circle [radius=0.08]node[below]{$E$};
+    \fill (0.5,3) circle [radius=0.08]node[above]{$F$};
+    \fill (9.5,3) circle [radius=0.08]node[above]{$D$};
+  \end{tikzpicture}
+  \end{center}
+If $m\angle FAB = 48^\circ$ and $m\angle ECB = 18^\circ$, what is $m\angle ABC$?
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $18^\circ$
+    \item $48^\circ$
+    \item $66^\circ$
+    \item $114^\circ$
+  \end{enumerate}
+\end{multicols}
+
 \item A cone has a volume of $108\pi$ and a base diameter of 12. What is the
 height of the cone?
 
@@ -70,8 +92,7 @@ B is twice the height of cone A. The volume of cone A is
   \item equal to half the volume of cone $B$
 \end{enumerate}
 
-\item A regular hexagon is rotated about its center. Which degree measure
-will carry the regular hexagon onto itself? 
+\item A regular hexagon is rotated about its center. Which degree measure will carry the regular hexagon onto itself? 
 \begin{multicols}{2}
   \begin{enumerate}
     \item $45^\circ$
@@ -202,6 +223,98 @@ Which equation is always true?
 \end{multicols}
 
 \newpage
+\item In the diagram below of right triangle $ABC$, $AC=8$, and $AB=17$.
+  \begin{center}
+    \begin{tikzpicture}[scale=1]
+    \draw [thick]
+      (0,0)node[below]{$A$}--
+      (-6,4)node[above]{$B$}--
+      (-6,0)node[below]{$C$}--cycle;
+      \draw (-6,0)++(0.5,0)--++(0,0.5)--+(-0.5,0);
+      \node at (-3,0)[below]{$8$};
+      \node at (-3,2.5){$17$};
+  \end{tikzpicture}
+  \end{center}
+Which equation woudl determine the value of angle $A$?
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item $\displaystyle \sin A = \frac{8}{17}$
+      \item $\displaystyle \tan A = \frac{8}{15}$
+      \item $\displaystyle \cos A = \frac{15}{17}$
+      \item $\displaystyle \tan A = \frac{15}{8}$
+    \end{enumerate}
+  \end{multicols}
+
+\item In diagram of quadrilateral $NAVY$ below, $m\angle YNA = 30^\circ$, $m\angle YAN = 38^\circ$,\\ $m\angle AVY = 94^\circ$, and $m\angle VAY = 46^\circ$.
+\begin{center}
+  \begin{tikzpicture}[scale=0.8]
+    \draw [thick] 
+      (0,0)node[below]{$N$}--
+      (10,0)node[below]{$A$}--
+      (9.5,4)node[above]{$V$}--
+      (6,4)node[above]{$Y$}--cycle;
+    \draw [dashed, thick] (6,4)--(10,0);
+    \node at (1.3,0.35){$30^\circ$};
+    \node at (9,0.35){$38^\circ$};
+    \node at (9.4,1.3){$46^\circ$};
+    \node at (9,3.5){$94^\circ$};
+  \end{tikzpicture}
+  \end{center}
+Which segment has the shortest length?
+  \begin{multicols}{2}
+  \begin{enumerate}
+    \item $\overline{AY}$
+    \item $\overline{NY}$
+    \item $\overline{VA}$
+    \item $\overline{VY}$
+  \end{enumerate}
+  \end{multicols}
+
+\newpage
+\item In the diagram below, $\triangle ABC$, altitude $\overline{CG}$, and median $\overline{CM}$ are drawn.
+\begin{center}
+  \begin{tikzpicture}[scale=.48]
+    \draw [help lines] (-6,-6) grid (10,10);
+    \draw [thick, <->] (-6.4,0) -- (10.4,0) node [below right] {$x$};
+    \draw [thick, <->] (0,-6.4)--(0,10.4) node [left] {$y$};
+    \draw [thick] 
+      (-1,-4)node[below left]{$A$}--
+      (7,-3)node[below right]{$C$}--
+      (5,8)node[above]{$B$}--cycle;
+    \draw [thick] 
+      (1,0)node[above left]{$G$}--
+      (7,-3)--
+      (2,2)node[left]{$M$};
+  \end{tikzpicture}
+\end{center}
+Which expression represents the area of $\triangle ABC$?
+  \begin{multicols}{2}
+  \begin{enumerate}
+    \item $\displaystyle \frac{(BC)(AC)}{2}$
+    \item $\displaystyle \frac{(GC)(BC)}{2}$
+    \item $\displaystyle \frac{(CM)(AB)}{2}$
+    \item $\displaystyle \frac{(GC)(AB)}{2}$
+  \end{enumerate}
+  \end{multicols}
+
+\item As shown in the diagram below, the radius of a cone is 2.5 cm and its slant height is 6.5 cm.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.9]
+    \draw [thick] (0,0)--(2.5,0)--(0,6)--cycle;
+    \draw (0,0)++(0.4,0)--++(0,0.4)--+(-0.4,0);
+    \draw [thick] (0,6)--(-2.5,0);
+    \node at (1,0)[below]{$2.5$};
+    \node at (1.7,3.2){$6.5$};
+    \draw [dashed] (0,0) ellipse [x radius=2.5,y radius=0.6];
+    \clip (-3,-2) rectangle (3,0);
+    \draw [thick] (0,0) ellipse [x radius=2.5,y radius=0.6];
+  \end{tikzpicture}
+  \end{center}
+How many cubic centimeters are in the volume of the cone? Express your answer in terms of $\pi$.
+
+
+
+\newpage
 \subsubsection*{Similarity \hfill January 2020}
 \item Triangle $JGR$ is similar to triangle $MST$. Which statement is \emph{not}
 always true?
@@ -227,8 +340,7 @@ always true?
     \node at (3.3, 1.5){$E$};
   \end{tikzpicture}
   \end{center}
-If $AE=5.2$, $AC=11.7$, and $CD=10.5$, what is the length of $\overline{AB}$,
-to \emph{the nearest tenth}?
+If $AE=5.2$, $AC=11.7$, and $CD=10.5$, what is the length of $\overline{AB}$, to \emph{the nearest tenth}?
 
 \item The line represented by $2y=x+8$ is dilated by a scale factor
 of $k$ centered at the origin, such that the image of the line has an
