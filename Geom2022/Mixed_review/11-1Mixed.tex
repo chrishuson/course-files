@@ -1,5 +1,5 @@
-\documentclass[12pt, twoside]{article}
-\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
+\documentclass[12pt, oneside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in, left=0.3in, right=2.5in]{geometry}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -25,13 +25,14 @@
 \renewcommand{\headrulewidth}{0pt} % disable the underline of the header
 \raggedbottom
 
-\fancyhead[LE]{\thepage}
-\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Dr. Huson / Geometry\\* Mixed Review\\* 2 May 2022}
+%\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name:}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry Regents Mixed Review}
+\cfoot{\thepage}
 
 \begin{document}
-\subsubsection*{Regents review and practice \hfill January 2020}
-\begin{enumerate}[itemsep=0.5cm]
+%\subsubsection*{Regents January 2020}
+\begin{enumerate}[itemsep=2cm]
 \item In the diagram below, $\overline{FAD} \parallel \overline{EHC}$, and $\overline{ABH}$ and $\overline{BC}$ are drawn.
 \begin{center}
   \begin{tikzpicture}[scale=1]
@@ -61,6 +62,17 @@ height of the cone?
 $P(-7,-5)$ and $Q(5,3)$. What are the coordinates of point $A$, on $\overline{PQ}$,
 that divide $\overline{PQ}$ into a ratio of 1:3?
 
+\item Jaden is comparing two cones. The radius of the base of cone A is
+twice as large as the radius of the base of cone B. The height of cone
+B is twice the height of cone A. The volume of cone A is
+\begin{enumerate}
+  \item twice the volume of cone $B$
+  \item four times the volume of cone $B$
+  \item equal to the volume of cone $B$
+  \item equal to half the volume of cone $B$
+\end{enumerate}
+
+\newpage
 \item Kayla was cutting right triangles from wood to use for an art project. Two of the right triangles she cut are shown below.
   \begin{center}
     \begin{tikzpicture}[scale=1]
@@ -79,17 +91,6 @@ that divide $\overline{PQ}$ into a ratio of 1:3?
   \end{tikzpicture}
   \end{center}
 If $\triangle ABC \sim \triangle DEF$, with right angles B and E, $BC=15$ cm, and $AC=17$ cm, what is the measure of $\angle F$, to the \emph{nearest degree}?
-
-\newpage
-\item Jaden is comparing two cones. The radius of the base of cone A is
-twice as large as the radius of the base of cone B. The height of cone
-B is twice the height of cone A. The volume of cone A is
-\begin{enumerate}
-  \item twice the volume of cone $B$
-  \item four times the volume of cone $B$
-  \item equal to the volume of cone $B$
-  \item equal to half the volume of cone $B$
-\end{enumerate}
 
 \item A regular hexagon is rotated about its center. Which degree measure will carry the regular hexagon onto itself? 
 \begin{multicols}{2}
@@ -121,7 +122,7 @@ Which statement is \emph{not} always true?
 
 \item In circle $B$ below, diameter $\overline{RT}$, radius $\overline{BE}$, and chord $\overline{RE}$ are drawn.
 \begin{center}
-  \begin{tikzpicture}[scale=0.7, rotate=0]
+  \begin{tikzpicture}[scale=0.8, rotate=0]
     \draw [thick] (0,0)--(100:2)node[above]{$R$}--
     (-45:2)node[right]{$E$}--cycle;
     \draw [thick] (0,0)--(-80:2)node[below]{$T$};
@@ -138,9 +139,10 @@ What is the number of degrees in the measure of the smaller angle?
 
 \item A rectangular tabletop will be made of maple wood that weighs 43 pounds per cubic foot. The tabletop will have a length of eight feet, a width of three feet, and a thickness of one inch. Determine and state the weight of the tabletop, in pounds.
 
-\item Determine and state an equation of the line perpendicular to the line $5x-4y=10$ and passing through the point $(5,12)$.
+\item Determine and state an equation of the line perpendicular to the line\\ $5x-4y=10$ and passing through the point $(5,12)$.
 
-\subsubsection*{Regents review and practice \hfill January 2019}
+\newpage
+%\subsubsection*{Regents review and practice \hfill January 2019}
 \item After a dilation with center $(0,0)$, the image of $\overline{DB}$ is $\overline{D'B'}$. If $DB=4.5$ and $D'B'=18$, then what is the scale factor of this dilation?
 
 \item In the diagram below of circle $O$, points $K$, $A$, $T$, $I$, and $E$ are on the circle, $\triangle KAE$ and $\triangle ITE$ are drawn, $\wideparen{KE} \cong \wideparen{EI}$, and $\angle EKA \cong \angle EIT$.
@@ -170,17 +172,9 @@ What is the number of degrees in the measure of the smaller angle?
 
 \item The area of a sector of a circle with a radius measuring 15 cm is $75\pi \; \rm{cm}^2$. What is the measure of the central angle that forms the sector?
 
+\newpage
 \item Point $M$ divides $\overline{AB}$ so that $AM:MB = 1:2$. If $A$ has coordinates $(-1,-3)$ and $B$ has coordinates $(8,9)$, what are the coordinates of $M$?
 
-\item In right triangle $ABC$, $m\angle C=90^\circ$ and $AC \ne BC$. Which trigonometric ratio is equivalent to $\sin B$?
-\begin{multicols}{2}
-  \begin{enumerate}
-    \item $\cos A$
-    \item $\cos B$
-    \item $\tan A$
-    \item $\tan B$
-  \end{enumerate}
-\end{multicols}
 
 \item What is an equation of the image of the line $\displaystyle y=\frac{3}{2}x-4$ after a dilation of a scale factor of $\displaystyle \frac{3}{4}$ centered at the origin?
 
@@ -192,10 +186,9 @@ What is the number of degrees in the measure of the smaller angle?
   \item a cylinder with a radius of 6 inches and a height of 5 inches
 \end{enumerate}
 
-\newpage
 \item In the diagram below of triangle $ABC$, $\overline{AC}$ is extended through point $C$ to point $D$, and $\overline{BE}$ is drawn to $\overline{AC}$.
   \begin{center}
-    \begin{tikzpicture}[scale=0.8]
+    \begin{tikzpicture}[scale=0.7]
     \draw [thick]
     (10,0)node[below]{$D$}--
     (0,0)node[below]{$A$}--
@@ -219,6 +212,17 @@ Which equation is always true?
     \item $\angle 5 = m\angle 3 - m\angle 2$ 
     \item $\angle 6 = m\angle 3 - m\angle 2$
     \item $\angle 7 = m\angle 3 + m\angle 2$
+  \end{enumerate}
+\end{multicols}
+
+\newpage
+\item In right triangle $ABC$, $m\angle C=90^\circ$ and $AC \ne BC$. Which trigonometric ratio is equivalent to $\sin B$?
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $\cos A$
+    \item $\cos B$
+    \item $\tan A$
+    \item $\tan B$
   \end{enumerate}
 \end{multicols}
 
@@ -372,7 +376,7 @@ is the volume of the tent, to the \emph{nearest cubic foot}?
   
 
 \newpage
-\subsubsection*{Similarity \hfill January 2020}
+%\subsubsection*{Similarity \hfill January 2020}
 \item Triangle $JGR$ is similar to triangle $MST$. Which statement is \emph{not}
 always true?
 \begin{multicols}{2}
