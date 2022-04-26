@@ -1,5 +1,5 @@
 
-|Chris Huson |Lesson Plan 11th Grade IB Math 16 February 2022|
+|Chris Huson |Lesson Plan 11th Grade IB Math 25 April 2022|
 |---|---|
 |**Learning Target**|I can calculate simple interest.
 |**Learning Standards**|HSF.IF.C.7 Use exponential functions to solve problems
