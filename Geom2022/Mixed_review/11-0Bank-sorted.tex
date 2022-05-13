@@ -76,6 +76,32 @@ If $m\angle EFG = 32^\circ$ and $m\angle AEG = 137^\circ$, what is $m\angle EGF$
   \end{enumerate}
 \end{multicols}
 
+\newpage
+\item In the diagram below, $\overline{AB} \parallel \overline{DEF}$, $\overline{AB}$ and $\overline{BD}$ intersect at $C$, $m\angle B = 43^\circ$, and $m\angle CEF = 152^\circ$.
+\begin{center}
+  \begin{tikzpicture}[scale=0.8]
+    \draw [->, thick] 
+      (0,0)node[below]{$E$}--
+      (-8,4)node[above left]{$A$}--
+      (-3.5,4)node[above right]{$B$}--
+      (-8,0)node[below]{$D$}--
+      (3,0)node[below left]{$F$};
+    \node at (-4.5, 2.7){$C$};
+    \node at (-4.4, 3.7){$43^\circ$};
+    \node at (0.8, 0.5){$152^\circ$};
+    \draw (0.4,0) arc (0:150:0.4);
+  \end{tikzpicture}
+  \end{center}
+Which statement is true?
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $m\angle D = 28^\circ$
+    \item $m\angle A = 43^\circ$
+    \item $m\angle ACD = 71^\circ$
+    \item $m\angle BCE = 109^\circ$
+  \end{enumerate}
+\end{multicols}
+
 \item In  $\triangle ABC$ shown below, side $\overline{AC}$ is extended to point $D$ with $m\angle DAB=(180-2x)^\circ$, $m\angle C=(x-10)^\circ$, and $m\angle B=(3x+10)^\circ$.
     \begin{center}
       \begin{tikzpicture}
@@ -427,16 +453,36 @@ B is twice the height of cone A. The volume of cone A is
       \item A clockwise rotation of $180^\circ$ about the intersection of the diagonals \hfill True \quad False
     \end{enumerate}
 
-\subsubsection*{Sector area}
+\subsubsection*{Sector area and arc length}
+\item The diagram below shows circle $O$ with radii $\overline{OA}$ and $\overline{OB}$. The measure of angle $AOB$ is $120^\circ$, and the length of a radius is 6 inches.
+\begin{center}
+  \begin{tikzpicture}[scale=1, rotate=0]
+    \draw [thick] (110:2)--(0,0)--(-10:2);
+    \draw [thick](0,0) circle [radius=2];
+    \fill (0,0) circle [radius=0.07] node[below]{$O$};
+    \node at (0.5,0.3){$120^\circ$};
+    \node at (-25:1){$6$};
+  \end{tikzpicture}
+  \end{center}
+  Which expression represents the length of arc $AB$, in inches?
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item $\displaystyle \frac{120}{360}(6\pi)$
+      \item $\displaystyle 120(6)$
+      \item $\displaystyle \frac{1}{3}(36\pi)$
+      \item $\displaystyle \frac{1}{3}(12\pi)$
+    \end{enumerate}
+  \end{multicols}
+
 \item The area of a sector of a circle with a radius measuring 15 cm is $75\pi \; \rm{cm}^2$. What is the measure of the central angle that forms the sector?
 
 \item A circle with a diameter of 10 cm and a central angle of $30^\circ$ is drawn below.
 \begin{center}
   \begin{tikzpicture}[scale=1, rotate=0]
+    \draw [thick](0,0) circle [radius=2];
     \draw [thick] (45:2)--(225:2);
     \draw [thick] (0,0)--(15:2);
     \draw [fill] (0,0) circle [radius=0.05];
-    \draw [thick](0,0) circle [radius=2];
     \node at (1,0.5){$30^\circ$};
     \node at (-0.3,0.2)[rotate=45]{$10 \; \rm{cm}$};
   \end{tikzpicture}
@@ -468,64 +514,6 @@ always true?
   \end{enumerate}
 \end{multicols}
 
-\item In trapezoid $ABCD$ below, $\overline{AB} \parallel \overline{CD}$.
-\begin{center}
-  \begin{tikzpicture}[scale=0.8]
-    \draw [-, thick] 
-      (0,0)node[below]{$D$}--
-      (8,0)node[below]{$C$}--
-      (5.5,3)node[above]{$B$}--
-      (0.5,3)node[above]{$A$}--cycle;
-    \draw [-, thick] (0,0)--(5.5,3);
-    \draw [-, thick] (0.5,3)--(8,0);
-    \node at (3.3, 1.5){$E$};
-  \end{tikzpicture}
-  \end{center}
-If $AE=5.2$, $AC=11.7$, and $CD=10.5$, what is the length of $\overline{AB}$, to \emph{the nearest tenth}?
-
-\item In quadrilateral $ABCD$ below, $\overline{AB} \parallel \overline{CD}$, and $E$, $H$, and $F$ are the midpoints of $\overline{AD}$, $\overline{AC}$,  and $\overline{BC}$, respectively.
-\begin{center}
-  \begin{tikzpicture}[scale=0.8]
-    \draw [-, thick] 
-      (0,0)node[below left]{$A$}--
-      (10,0)node[below right]{$B$}--
-      (8,4)node[above right]{$C$}--
-      (0,4)node[above left]{$D$}--cycle;
-    \draw [-, thick] (0,0)--(8,4);
-    \draw [-, thick] (0,2)node[left]{$E$}--(9,2)node[right]{$F$};
-    \node at (4,2.5){$H$};
-  \end{tikzpicture}
-  \end{center}
-If $AB=24$, $CD=18$, and $AH=10$, then what is $FH$?
-
-\item In the diagram of $\triangle ABC$ below, points $D$ and $E$ are on sides $\overline{AB}$ and $\overline{CB}$ respectively, such that $\overline{DE} \parallel \overline{AC}$.
-\begin{center}
-\begin{tikzpicture}[scale=0.6]
-  \draw [thick]
-  (0,0) node[right] {$B$}--
-  (160:10) node[above] {$A$}--
-  (-15,0) node[left] {$C$}--cycle;
-  \draw [thick]
-  (160:4) node[above right] {$D$}--
-  (-6,0) node[below] {$E$};
-\end{tikzpicture}
-\end{center}
-IF $EB$ is 3 more than $DB$, $AB=14$, and $CB=21$, what is the length of $\overline{AD}$?
-
-\item In the diagram below of $\triangle RST$, $L$ is a point on $\overline{RS}$, and $M$ is a point on $\overline{RT}$, such that $\overline{LM} \parallel \overline{ST}$.
-\begin{center}
-\begin{tikzpicture}[scale=0.7]
-  \draw [thick]
-  (0,0) node[below] {$R$}--
-  (45:10) node[above right] {$T$}--
-  (4,0) node[below] {$S$}--cycle;
-  \draw [thick]
-  (45:2.5) node[above] {$M$}--
-  (1,0) node[below] {$L$};
-\end{tikzpicture}
-\end{center}
-If $RL=2$, $LS=6$, $LM=4$, and $ST=x+2$, what is the length of $\overline{ST}$?
-
 \item In the diagram below, $\triangle ABC$ with sides of 10, 13, and 16, is mapped onto $\triangle DEF$ after a clockwise rotation of $90^\circ$ about point $P$. \\*[0.25cm]
   If $DE=3x+1$, what is the value of $x$? 
       \begin{flushright}
@@ -546,7 +534,61 @@ If $RL=2$, $LS=6$, $LM=4$, and $ST=x+2$, what is the length of $\overline{ST}$?
             (2,7) node[above] {$E$}--
             (5,4) node[right] {$F$}--cycle;
         \end{tikzpicture}
-      \end{flushright}  \vspace{1cm}
+      \end{flushright}
+
+\item In the diagram below of right triangle $AED$, $\overline{BC} \parallel \overline{DE}$.
+  \begin{center}
+    \begin{tikzpicture}[scale=1]
+      \draw [-, thick] (0,0) node[below]{$A$}--
+      (6,0) node[below]{$E$}--
+      (6,3) node[above]{$D$}--cycle;
+      \draw [thick] (4,0) node[below]{$C$}--
+      (4,2) node[above]{$B$};
+      \draw (4,0) ++(-0.4,0)--++(0,0.4)--++(0.4,0);
+      \draw (6,0) ++(-0.4,0)--++(0,0.4)--++(0.4,0);
+    \end{tikzpicture}
+  \end{center} 
+  Which statement is always true?
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=0.25cm]
+      \item $\displaystyle \frac{AC}{BC} = \frac{DE}{AE}$
+      \item $\displaystyle \frac{AB}{AD} = \frac{BC}{DE}$ 
+      \item $\displaystyle \frac{AC}{CE} = \frac{BC}{DE}$
+      \item $\displaystyle \frac{DE}{BC} = \frac{DB}{AB}$
+    \end{enumerate}
+  \end{multicols}
+
+
+\item put top-down dilation here
+
+
+\item In the diagram below of $\triangle RST$, $L$ is a point on $\overline{RS}$, and $M$ is a point on $\overline{RT}$, such that $\overline{LM} \parallel \overline{ST}$.
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+  \draw [thick]
+  (0,0) node[below] {$R$}--
+  (45:10) node[above right] {$T$}--
+  (4,0) node[below] {$S$}--cycle;
+  \draw [thick]
+  (45:2.5) node[above] {$M$}--
+  (1,0) node[below] {$L$};
+\end{tikzpicture}
+\end{center}
+If $RL=2$, $LS=6$, $LM=4$, and $ST=x+2$, what is the length of $\overline{ST}$?
+
+\item In the diagram of $\triangle ABC$ below, points $D$ and $E$ are on sides $\overline{AB}$ and $\overline{CB}$ respectively, such that $\overline{DE} \parallel \overline{AC}$.
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+  \draw [thick]
+  (0,0) node[right] {$B$}--
+  (160:10) node[above] {$A$}--
+  (-15,0) node[left] {$C$}--cycle;
+  \draw [thick]
+  (160:4) node[above right] {$D$}--
+  (-6,0) node[below] {$E$};
+\end{tikzpicture}
+\end{center}
+IF $EB$ is 3 more than $DB$, $AB=14$, and $CB=21$, what is the length of $\overline{AD}$?
 
 \item Given $\triangle ABP \sim \triangle JKP$ as shown below. $AB=9.6$, $AP=12.0$, $BP=6.3$, and $JP=27.0$. Find $JK$.
   \begin{flushright}
@@ -559,8 +601,75 @@ If $RL=2$, $LS=6$, $LM=4$, and $ST=x+2$, what is the length of $\overline{ST}$?
         (-2,0)node[left]{$A$}--cycle;
     \end{tikzpicture}
     \end{flushright}
-    \vspace{2cm}
 
+\item In the diagram below, $\overline{AF}$ and $\overline{DB}$ intersect at $C$, and $\overline{AD}$ and $\overline{FBE}$ are drawn such that $\textup{m}\angle D = 65^\circ$, $\textup{m}\angle CBE = 115^\circ$, $DC=7.2$, $AC=9.6$, and $FC=21.6$.
+  \begin{center}
+  \begin{tikzpicture}[scale=0.9]
+    \draw [thick]
+      (0,0)node[right]{$B$}--
+      (-5,2)node[above]{$D$}--
+      (-5,-0.5)node[below]{$A$}--
+      (0,5)node[above right]{$F$}--
+      (0,-1)node[right]{$E$};
+      \node at (-0.5, -0.3){$115^\circ$};
+      \node at (-4.6, 1.5){$65^\circ$};
+      \node at (-4, 2){$7.2$};
+      \node at (-3.8, 0.2){$9.6$};
+      \node at (-2.3, 3.3){$21.6$};
+  \end{tikzpicture}
+  \end{center}
+  What is the length of $\overline{CB}$?
+
+
+\item In $\triangle ABC$ shown below, $\angle ACB$ is a right angle, $E$ is a point on $\overline{AC}$, and $\overline{ED}$ is drawn perpendicular to hypotenuse $\overline{AB}$.
+\begin{center}
+  \begin{tikzpicture}[scale=0.7]
+    \draw [-, thick] (0,0) node[above left]{$A$}--
+    (10,0) node[below]{$C$}--
+    (10,6) node[above left]{$B$}--cycle;
+    \draw [thick] (6,0)--(4.41,2.65);
+    \node at (6,0) [below]{$E$};
+    \node at (4.41,2.65) [above left]{$D$};
+    \draw (10,0) ++(-0.5,0)--++(0,0.5)--++(0.5,0);
+    \draw (4.41,2.65) ++(-59:0.5)--++(-149:0.5)--++(121:0.5);
+    %\node at (4, 0) [below]{$12$};
+    %\node at (3,2) [above]{$9$};
+    %\node at (9, 3) [right]{$10$};
+    %\node at (5.5, 1.6) [right]{$6$}; \vspace{1cm}
+  \end{tikzpicture}
+\end{center} 
+If $AB = 9$, $BC = 6$, and $DE = 4$, what is the length of $\overline{AE}$?
+
+\item In trapezoid $ABCD$ below, $\overline{AB} \parallel \overline{CD}$.
+\begin{center}
+  \begin{tikzpicture}[scale=0.8]
+    \draw [-, thick] 
+      (0,0)node[below]{$D$}--
+      (8,0)node[below]{$C$}--
+      (5.5,3)node[above]{$B$}--
+      (0.5,3)node[above]{$A$}--cycle;
+    \draw [-, thick] (0,0)--(5.5,3);
+    \draw [-, thick] (0.5,3)--(8,0);
+    \node at (3.3, 1.5){$E$};
+  \end{tikzpicture}
+  \end{center}
+If $AE=5.2$, $AC=11.7$, and $CD=10.5$, what is the length of $\overline{AB}$, to \emph{the nearest tenth}?
+  
+\item In quadrilateral $ABCD$ below, $\overline{AB} \parallel \overline{CD}$, and $E$, $H$, and $F$ are the midpoints of $\overline{AD}$, $\overline{AC}$,  and $\overline{BC}$, respectively.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+      \draw [-, thick] 
+        (0,0)node[below left]{$A$}--
+        (10,0)node[below right]{$B$}--
+        (8,4)node[above right]{$C$}--
+        (0,4)node[above left]{$D$}--cycle;
+      \draw [-, thick] (0,0)--(8,4);
+      \draw [-, thick] (0,2)node[left]{$E$}--(9,2)node[right]{$F$};
+      \node at (4,2.5){$H$};
+    \end{tikzpicture}
+    \end{center}
+  If $AB=24$, $CD=18$, and $AH=10$, then what is $FH$?
+  
 \newpage
 \subsubsection*{Similarity (altitude of a right triangle)}
 \item Given right triangle $ABC$ with a right angle at $C$, $m\angle B=61^\circ$. Given right triangle $RST$ with a right angle at $T$, $m\angle R=29^\circ$.
@@ -924,6 +1033,23 @@ What is the value of $x$?
    \draw (0:1.5) node[below] {$20$};
   \end{tikzpicture}
 
+\item In the diagram below of circle $O$, chords  $\overline{AB}$ and $\overline{CD}$ intersect at $E$.
+\begin{center}
+  \begin{tikzpicture}[scale=0.5]
+   \draw (0,0) circle[radius=5];
+   \draw [thick]
+   (-10:5) node[right] {$B$}--
+   (110:5) node[above left] {$A$};
+   \draw [thick] (175:5) node[left] {$C$}--
+   (50:5) node[above right] {$D$};
+   \draw (80:2.7) node[below] {$E$};
+   \fill (0,0) circle[radius=0.1] node[below] {$O$};
+   \draw (135:5) node[left] {$72^\circ$};
+   \draw (105:3.7) node[below] {$58^\circ$};
+  \end{tikzpicture}
+\end{center}
+If $\textup{m}\wideparen{AC}=72^\circ$ and m$\angle AEC = 58^\circ$, how many degrees are in m$\wideparen{DB}$?
+
 \item The secants $\overline{ABC}$ and $\overline{ADE}$ intersect the circle $O$, as shown in the diagram. \\Given $m \wideparen{BD}=36^\circ$ and $m \wideparen{CE}=138^\circ$.
   \begin{enumerate}
     \item Find the $m\angle CDE$, $m\angle CBE$.
@@ -970,6 +1096,20 @@ What is the value of $x$?
 
 \newpage
 \subsubsection*{Analytic geometry}
+\item Triangle $DAN$ is graphed on the set of axes below. The vertices of $DAN$ have coordinates $D(-6,-1)$, $A(6,3)$, and $N(-3,10)$.
+\begin{center}
+  \begin{tikzpicture}[scale=.48]
+    \draw [help lines] (-10,-3) grid (10,10);
+    \draw [thick, <->] (-10.4,0) -- (10.4,0) node [below right] {$x$};
+    \draw [thick, <->] (0,-3.4)--(0,10.4) node [left] {$y$};
+    \draw [thick] 
+      (-6,-1)node[below left]{$D$}--
+      (6,3)node[right]{$A$}--
+      (-3,10)node[above]{$N$}--cycle;
+  \end{tikzpicture}
+\end{center}
+What is the area of $\triangle DAN$?
+
 \item In the diagram below, $\triangle ABC$, altitude $\overline{CG}$, and median $\overline{CM}$ are drawn.
 \begin{center}
   \begin{tikzpicture}[scale=.48]
