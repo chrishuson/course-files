@@ -1,0 +1,113 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[letterpaper, margin=1in, headsep=0.5in, left=0.3in, right=2.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{yhmath}
+\usetikzlibrary{quotes, angles}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\newif\ifmeta
+\metatrue %print standards and topics tags
+
+\title{Regents Geometry}
+\author{Chris Huson}
+\date{May 2022}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
+\raggedbottom
+
+%\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name:}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry Regents Mixed Review}
+\cfoot{\thepage}
+
+\begin{document}
+\subsubsection*{11.16 }
+\begin{enumerate}[itemsep=1.2cm]
+    \item In the diagram below, $\overline{AF}$ and $\overline{DB}$ intersect at $C$, and $\overline{AD}$ and $\overline{FBE}$ are drawn such that $\textup{m}\angle D = 65^\circ$, $\textup{m}\angle CBE = 115^\circ$, $DC=7.2$, $AC=9.6$, and $FC=21.6$.
+    \begin{center}
+    \begin{tikzpicture}[scale=0.9]
+      \draw [thick]
+        (0,0)node[right]{$B$}--
+        (-5,2)node[above]{$D$}--
+        (-5,-0.5)node[below]{$A$}--
+        (0,5)node[above right]{$F$}--
+        (0,-1)node[right]{$E$};
+        \node at (-0.5, -0.3){$115^\circ$};
+        \node at (-4.6, 1.5){$65^\circ$};
+        \node at (-4, 2){$7.2$};
+        \node at (-3.8, 0.2){$9.6$};
+        \node at (-2.3, 3.3){$21.6$};
+    \end{tikzpicture}
+    \end{center}
+    What is the length of $\overline{CB}$?
+
+\item The line represented by $2y=x+8$ is dilated by a scale factor of $k$ centered at the origin, such that the image of the line has an equation of $y - \frac{1}{2} x=2$. What is the scale factor?
+
+\item A rectangular tabletop will be made of maple wood that weighs 43 pounds per cubic foot. The tabletop will have a length of eight feet, a width of three feet, and a thickness of one inch. Determine and state the weight of the tabletop, in pounds.
+
+\item The equation of a cirle is $x^2+y^2-2x-14y=-14$. What are the center and radius of the circle?
+
+\item In the diagram below of $\triangle HAR$ and $\triangle NTY$, angles $H$ and $N$ are right angles, and $\triangle HAR \sim \triangle NTY$
+\begin{center}
+  \begin{tikzpicture}[scale=1]
+  \draw [thick, xshift=4cm, yshift=2cm, rotate=208]
+    (0,0)node[above]{$N$}--
+    (4,0)node[below]{$Y$}--
+    (0,2.13)node[right]{$T$}--cycle;
+    \draw [xshift=4cm, yshift=2cm, rotate=208]
+      (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+  \draw [thick]
+    (-1,-1)node[below]{$R$}--
+    (-7,2)node[above]{$A$}--
+    (-7,-1)node[below]{$H$}--cycle;
+    \draw (-7,-1)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+\end{tikzpicture}
+\end{center}
+If $AR=13$ and $HR=12$, what is the measure of $\angle Y$, to the \emph{nearest degree}?
+
+\item Directed line segment $DE$ has endpoints $D(-4, -2)$ and $E(1,8)$.
+Point $F$ divides such that $DF:FE$ is $2:3$. What are the coordinates
+of $F$?
+
+\item If an equilateral triangle is continuously rotated around one of its medians, which 3-dimensional object is generated?
+    \begin{enumerate}
+      \item cone
+      \item sphere
+      \item pyramid
+      \item prism
+    \end{enumerate}
+
+\item In diagram below of right triangle $ABC$, altitude $\overline{BD}$ is drawn.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.7]
+    \draw [thick]
+    (0,0)node[below]{$A$}--
+    (7,0)node[below]{$C$}--
+    (2,3.16)node[above]{$B$}--cycle;
+    \draw (2,3.16)++(-0.15*2,-0.15*3.16)--++(0.15*3.16,-0.15*2)--+(0.15*2,0.15*3.16);
+    \draw [thick](2,0)node[below]{$D$}--(2,3.16);
+  \end{tikzpicture}
+  \end{center}
+    Which ratio is always equivalent to $\cos A$?
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $\displaystyle \frac{AB}{BC}$
+        \item $\displaystyle \frac{BD}{BC}$ 
+        \item $\displaystyle \frac{BD}{AB}$
+        \item $\displaystyle \frac{BC}{AC}$
+    \end{enumerate}
+    \end{multicols}
+
+\end{enumerate}
+\end{document}
+  
