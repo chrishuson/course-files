@@ -218,6 +218,8 @@ Which statement is \emph{not} always true?
 \subsubsection*{Linear equations}
 \item Determine and state an equation of the line perpendicular to the line\\ $5x-4y=10$ and passing through the point $(5,12)$.
 
+\item Write an equation of the line that is parallel to the line whose equation is $3y+7=2x$ and passes through the point $(2,6)$.
+
 \item What is an equation of the image of the line $\displaystyle y=\frac{3}{2}x-4$ after a dilation of a scale factor of $\displaystyle \frac{3}{4}$ centered at the origin?
 
 \item Which equation represents a line that is perpendicular to the line represented by\\[0.25cm] $\displaystyle y=\frac{2}{3}x+1$?
@@ -453,6 +455,29 @@ B is twice the height of cone A. The volume of cone A is
       \item A clockwise rotation of $180^\circ$ about the intersection of the diagonals \hfill True \quad False
     \end{enumerate}
 
+\item The figure below shows a rhombus with noncongruent diagonals.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.7]
+      \coordinate (A) at (0, 0); %[label=above left:$P$]
+      \coordinate (B) at (4, 0);
+      \coordinate (C) at (5, 3.87);
+      \coordinate (D) at (1, 3.87);
+      \draw [thick] (A)--(B)--(C)--(D)--cycle;
+      \draw [thick] (A)--(C);
+      \draw [thick] (B)--(D);
+      %\draw [thick, xshift=2cm, yshift=2.5cm] (85:3);
+    \end{tikzpicture}
+  \end{center}
+  Which transformation would \emph{not} carry this rhombus onto itself?
+    \begin{enumerate}
+      \item a reflection over the shorter diagonal
+      \item a reflection over the longer diagonal
+      \item a clockwise rotation of $90^\circ$ about the intersection of the
+      diagonals
+      \item a counterclockwise rotation of $180^\circ$ about the intersection of the
+      diagonals
+    \end{enumerate}
+  
 \subsubsection*{Sector area and arc length}
 \item The diagram below shows circle $O$ with radii $\overline{OA}$ and $\overline{OB}$. The measure of angle $AOB$ is $120^\circ$, and the length of a radius is 6 inches.
 \begin{center}
@@ -514,6 +539,26 @@ always true?
   \end{enumerate}
 \end{multicols}
 
+\item Given $\triangle ABC \sim \triangle DEF$, $m\angle A=55^\circ$, and $m\angle B=95^\circ$. Find $m\angle E$. \vspace{1cm}
+
+\item In the diagram below $\triangle ABC \sim \triangle DEF$, $DE=10$, $AB=x$, $AC=3x$, $DF=2x+14$. \\[0.25cm] 
+Determine the length of $\overline{AB}$.
+  \begin{center}
+    \begin{tikzpicture}[scale=1]
+    \coordinate [label=above left:$A$](A) at (85:2);
+    \coordinate [label=below:$B$](B) at (0, 0);
+    \coordinate [label=right:$C$](C) at (-20:3);
+      \draw [thick] (A)--(B)--(C)--cycle;
+      \node at (95:1)[left]{$x$};
+      \node at (35:1.75)[right]{$3x$};
+      \draw [thick, xshift=5cm, yshift=0.5cm] (85:3) node[above]{$D$}--
+      (0,0) node[below]{$E$}--
+      (-20:4.5) node[right]{$F$}--cycle;
+      \draw [thick, xshift=5cm, yshift=0.5cm](90:1.5) node[left]{$10$};
+      \draw [thick, xshift=5cm, yshift=0.5cm](30:2.75) node[right]{$2x+14$};
+  \end{tikzpicture}
+  \end{center}
+
 \item In the diagram below, $\triangle ABC$ with sides of 10, 13, and 16, is mapped onto $\triangle DEF$ after a clockwise rotation of $90^\circ$ about point $P$. \\*[0.25cm]
   If $DE=3x+1$, what is the value of $x$? 
       \begin{flushright}
@@ -558,9 +603,38 @@ always true?
     \end{enumerate}
   \end{multicols}
 
-
-\item put top-down dilation here
-
+\newpage
+\item Triangle $ABC$ is dilated with a scale factor of $k$ centered at $A$, yielding $\triangle ADE$, as shown. Given $AB=10$, $BC=14$, $AC=16$, and $DE=21$. Find $CE$.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.6]
+      \draw [thick]
+      (0,0)node[left]{$B$}--
+      (8,0)node[above right]{$C$}--
+      (2,6)node[left]{$A$}--cycle;
+      \draw [thick]
+      (0,0)--
+      (-1,-3)node[left]{$D$}--
+      (11,-3)node[above right]{$E$}--(8,0);
+      \node at (4,0)[below]{$14$};
+      \node at (5.3, 3)[right]{$16$};
+      \node at (0.3, 2.8)[above]{$10$};
+      \node at (5,-3)[below]{$21$};
+    \end{tikzpicture}
+  \end{center}
+  
+\item In triangle $ABC$, points $D$ and $E$ are on sides of $\overline{AB}$ and $\overline{BC}$, respectively, such that $\overline{DE} \parallel \overline{AC}$, and $BD:DA = 5:3$.\\[0.5cm]
+If $DB=9.0$ and $DE=10.5$, what is the length of $\overline{AC}$, to the \emph{nearest tenth}?
+\begin{flushright}
+  \begin{tikzpicture}[scale=0.5, rotate=-11]
+    \draw [thick]
+    (0,0)node[above]{$B$}--
+    (-130:10)node[below]{$A$}--
+    (-40:8)node[below]{$C$}--cycle;
+    \draw [thick]
+    (-130:6)node[above left]{$D$}--
+    (-40:4.8)node[right]{$E$};
+  \end{tikzpicture}
+\end{flushright}
 
 \item In the diagram below of $\triangle RST$, $L$ is a point on $\overline{RS}$, and $M$ is a point on $\overline{RT}$, such that $\overline{LM} \parallel \overline{ST}$.
 \begin{center}
@@ -639,6 +713,38 @@ IF $EB$ is 3 more than $DB$, $AB=14$, and $CB=21$, what is the length of $\overl
   \end{tikzpicture}
 \end{center} 
 If $AB = 9$, $BC = 6$, and $DE = 4$, what is the length of $\overline{AE}$?
+
+\item The diagram below shows $\triangle ABC$, with $\overline{AEB}$, $\overline{ADC}$, and $\angle ACB \cong \angle AED$. $AB=14$, $AD=8$, and $DE=4$. What is the length of $\overline{BC}$?
+  \begin{center}
+    \begin{tikzpicture}[scale=1]
+      \draw [thick]
+      (0,0) node[above right] {$A$}--
+      (230:6) node[below left] {$B$}--
+      (260:4.75) node[below right] {$C$}--cycle;
+      \draw [thick]
+      (230:2.375) node[above left] {$E$}--
+      (260:3) node[right] {$D$}--cycle;
+    \end{tikzpicture}
+  \end{center}
+
+\item Triangle $ADE$ and its midline $\overline{BC}$ are drawn, with $B$ the midpoint of $\overline{AD}$ and $C$ the midpoint of $\overline{AE}$. The two medians $\overline{BE}$ and $\overline{CD}$ are drawn, as shown, intersecting in point $F$, the centroid. Given $BC=8$, $FE=10$. Find $BF$.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.55]
+      \draw [thick]
+      (0.5,1.5)node[left]{$B$}--
+      (6.5,1.5)node[above right]{$C$}--
+      (2,6)node[above]{$A$}--cycle;
+      \draw [thick]
+      (0.5,1.5)--
+      (-1,-3)node[left]{$D$}--
+      (11,-3)node[above right]{$E$}--(6.5,1.5);
+      \draw [thick] (0.5,1.5)--(11,-3);
+      \draw [thick] (6.5,1.5)--(-1,-3);
+      \node at (3,2.5)[below]{$8$};
+      \node at (3.5, -0.6)[right]{$F$};
+      \node at (6.6, -.9)[above]{$10$};
+    \end{tikzpicture}
+  \end{center}
 
 \item In trapezoid $ABCD$ below, $\overline{AB} \parallel \overline{CD}$.
 \begin{center}
@@ -1050,6 +1156,20 @@ What is the value of $x$?
 \end{center}
 If $\textup{m}\wideparen{AC}=72^\circ$ and m$\angle AEC = 58^\circ$, how many degrees are in m$\wideparen{DB}$?
 
+\item In the diagram below, secants $\overline{RST}$ and $\overline{RQP}$, drawn from point $R$, intersect circle $O$ at $S$, $T$, $Q$, and $P$.
+\begin{center}
+  \begin{tikzpicture}[scale=0.9]
+    \draw [thick] (0,0) circle[radius=3];
+    \fill (0,0) circle[radius=0.1]node[left]{$O$};
+    \draw [thick] (120:3)node[above left]{$T$}--
+      (40:5.5)node[right]{$R$}--
+      (-120:3)node[below left]{$P$};
+    \node at (77:3.5){$S$};
+    \node at (30:3.3){$Q$};
+  \end{tikzpicture}
+\end{center}
+If $RS=6$, $ST=4$, and $RP=15$, what is the length of $\overline{RQ}$?
+
 \item The secants $\overline{ABC}$ and $\overline{ADE}$ intersect the circle $O$, as shown in the diagram. \\Given $m \wideparen{BD}=36^\circ$ and $m \wideparen{CE}=138^\circ$.
   \begin{enumerate}
     \item Find the $m\angle CDE$, $m\angle CBE$.
@@ -1073,6 +1193,19 @@ If $\textup{m}\wideparen{AC}=72^\circ$ and m$\angle AEC = 58^\circ$, how many de
   \end{tikzpicture}
   \end{center}
 
+\item In the diagram below of circle $O$, secant $\overline{ABC}$ and tangent $\overline{AD}$ are drawn.
+\begin{center}
+  \begin{tikzpicture}[scale=0.8]
+    \draw (0,0) circle[radius=3];
+    \fill (0,0) circle[radius=0.1] node[left]{$O$};
+    \draw [thick, ->] (150:3) node[above left] {$C$}--
+      (20:9) node[right]{$A$}--(-92:4);
+    \node at (50:3.3){$B$};
+    \node at (-50:3.3){$D$};
+  \end{tikzpicture}
+\end{center}
+If $CA=12.5$ and $CB=4.5$, determine and state the length of $\overline{DA}$.
+
 \item \textbf{External lines:} Circle with center at point $O$, at right.
 \begin{multicols}{2}
   \begin{itemize}
@@ -1093,7 +1226,7 @@ If $\textup{m}\wideparen{AC}=72^\circ$ and m$\angle AEC = 58^\circ$, how many de
     \draw (170:3.8) node[below] {$G$};
   \end{tikzpicture}
   \end{multicols}
-
+  
 \newpage
 \subsubsection*{Analytic geometry}
 \item Triangle $DAN$ is graphed on the set of axes below. The vertices of $DAN$ have coordinates $D(-6,-1)$, $A(6,3)$, and $N(-3,10)$.
