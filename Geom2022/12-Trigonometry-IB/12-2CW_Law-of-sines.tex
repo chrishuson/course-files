@@ -90,51 +90,52 @@ Area of any triangle: $\displaystyle A=\frac{1}{2}ab \sin C$
 \end{flushright}
 \end{multicols*} \vspace{1cm}
 
-
 \newpage
-\item Given right $\triangle JKL$ with $\overline{JK} \perp \overline{KL}$, $JL=12.4$, $m\angle J=41^\circ$. Find the length $JK$, \emph{rounded to the nearest hundredth}.
+\item The following diagram shows triangle $ABC$, with $A\hat{B}C=60^\circ$, $A\hat{C}B=25^\circ$, and $AC=8$ cm. \\[0.25cm]
+Find $AB$. \hfill \emph{diagram not to scale}
   \begin{flushright}
-    \begin{tikzpicture}[scale=0.7]
-      \draw [thick]
-      (0,0) node[below]{$J$}--
-      (7,0)  node[below]{$K$}--
-      (7,3) node[above right]{$L$}--cycle;
+    \begin{tikzpicture}[scale=1]
+      \draw [thick](60:3)node[above]{$A$}--
+      (0,0)node[left]{$B$}--
+      (0:8)node[right]{$C$}--cycle;
+      \node at (25:5)[below]{$8$};
+      \draw [thick, -] (0:1) arc [start angle=0, end angle=60, radius=1];
+      \node at (0:0.6)[above]{$60^\circ$};
+      \draw [thick, -] (0:6.25) arc [start angle=180, end angle=158, radius=1.75];
+      \node at (0:6.6)[above]{$25^\circ$};
     \end{tikzpicture}
-  \end{flushright} \vspace{1.5cm}
+  \end{flushright}\vspace{1cm}
 
-\item Right triangle $ABC$ is shown with $AB=20$, $m\angle A=33^\circ$. Find the value of $BC=x$.
+\item As shown in the diagram, triangle $ABC$ has $A\hat{B}C=29^\circ$, $AB=14.1$, and $BC=16.0$. \\[0.25cm]
+Find the area of the triangle. \hfill \emph{diagram not to scale}
   \begin{flushright}
-    \begin{tikzpicture}[scale=0.6]
-      \draw [thick](0,0)node[below]{$A$}--
-      (6,0)node[below]{$C$}--
-      (6,4.5)node[above right]{$B$}--cycle;
-      \draw (6,0)++(-0.6,0)--++(0,0.6)--+(0.6,0);
-      \node at (3,3){$20$};
-      \node at (6,2.5)[right]{$x$};
-      \draw [thick, -] (1,0) arc [start angle=0, end angle=37, radius=1];
-      \node at (1.8,0)[above]{$33^\circ$};
+    \begin{tikzpicture}[scale=1, rotate=-10]
+      \draw [thick](30:6)node[above]{$A$}--
+      (0,0)node[below]{$B$}--
+      (0:8)node[below]{$C$}--cycle;
+      \node at (40:4)[below]{$14.1$};
+      \node at (0:4)[below]{$16.0$};
+      \draw [thick, -] (0:1.5) arc [start angle=0, end angle=30, radius=1.5];
+      \node at (2:1.15)[above]{$29^\circ$};
     \end{tikzpicture}
-  \end{flushright} \vspace{1.5cm}
+  \end{flushright}\vspace{1cm}
 
-\item Express the result to \emph{the nearest thousandth}.  \vspace{0.5cm}
-\begin{multicols}{2}
-  \begin{enumerate}
-    \item $\sin 32^\circ = $ \vspace{1cm}
-    \item $\cos 29^\circ =$
-    \item $\cos 58^\circ = $ \vspace{1cm}
-    \item $\sin 61^\circ =$
-  \end{enumerate}
-\end{multicols} \vspace{0.5cm}
+\item The following diagram shows triangle $ABC$, with $A\hat{B}C=48^\circ$, $A\hat{C}B=37^\circ$, and $AB=11.5$ cm. \\[0.25cm]
+Find $AC$. \hfill \emph{diagram not to scale}
+  \begin{flushright}
+    \begin{tikzpicture}[scale=1]
+      \draw [thick](50:4)node[above]{$A$}--
+      (0,0)node[below]{$B$}--
+      (0:8)node[below]{$C$}--cycle;
+      \node at (68:2.5)[below]{$11.5$};
+      \draw [thick, -] (0:1) arc [start angle=0, end angle=50, radius=1];
+      \node at (0:0.6)[above]{$48^\circ$};
+      \draw [thick, -] (0:6.25) arc [start angle=180, end angle=150, radius=1.75];
+      \node at (0:6.8)[above]{$37^\circ$};
+    \end{tikzpicture}
+  \end{flushright}\vspace{2cm}
 
-\item Express the result to \emph{the nearest whole degree}.  \vspace{0.5cm}
-\begin{multicols}{2}
-  \begin{enumerate}
-    \item $\sin^{-1} 0.420 = $ \vspace{1cm}
-    \item $\cos^{-1} 0.675 =$
-    \item $\cos^{-1} 0.850 = $ \vspace{1cm}
-    \item $\sin^{-1} 0.125 =$
-  \end{enumerate}
-\end{multicols}
+
 
 \end{enumerate}
 \end{document}
