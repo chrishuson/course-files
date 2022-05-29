@@ -198,7 +198,7 @@ The area of the triangle $ABC$ is 75 $\rm{cm}^2$, $AB=15$ cm, $AC=x$ cm, and $B\
   \begin{multicols}{2}
     \begin{enumerate}
       \item Find $x$.
-      \item Find $BC$.
+      \item Find $BC$. \vspace{1cm}
     \end{enumerate}
     \begin{tikzpicture}[scale=1]
       \draw [thick]
@@ -214,19 +214,28 @@ The area of the triangle $ABC$ is 75 $\rm{cm}^2$, $AB=15$ cm, $AC=x$ cm, and $B\
   \end{multicols}
   \vspace{1cm}
 
-\item The function $T(x)=A \sin (Bx)+D$ is used to model weather for a Caribean island with $x$ the time in months.
+\item The function $T(x)=A \sin (Bx)+D$ is used to model weather for a Caribean island with $x$ the time in months and $T(x)$ the daily high temperature in degrees Celsius.
   
   \begin{center}
     \begin{tikzpicture}[x=1cm, y=0.3cm, scale=0.75]
         %\draw [thin, color=lightgray, xstep=1.0cm,ystep=0.75cm] (0,1000) grid (10,1810);
-        \draw [thick, ->] (0,0) -- (+10.4,0) node [above right]{$t$};
-        \draw [thick, ->] (0,0) -- (0,32) node [right]{$T$};        \foreach \x in {0,1,...,15}
+        \draw [thick, ->] (0,0) -- (+12.4,0) node [above right]{$t$};
+        \draw [thick, ->] (0,0) -- (0,32) node [right]{$T$};        \foreach \x in {0,1,...,12}
             \draw (\x cm,0) -- (\x cm,0) node[below] {$\x$};
         \foreach \y in {0,5,...,30}
             \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
-        \draw [thick, smooth,domain=0.:10] plot(\x,{5*(sin(deg(\x)))+20});
+        \draw [thick, smooth,domain=0.:12] plot(\x,{5*(sin(deg(\x*pi/6)))+20});
+        \node at (3,25){$\bullet$};
+        \node at (3,25)[above]{$(3,25)$};
+        \node at (9,15){$\bullet$};
+        \node at (9,15)[below]{$(9,15)$};
     \end{tikzpicture}
     \end{center}
+    The modeled high and low temperatures are $25^\circ$ in the third month and $15^\circ$ in the ninth month, respectively.
+    \begin{enumerate}
+      \item Find the value of the parameter $D$. \vspace{1cm}
+      \item Find the value of the parameter $A$.
+      \end{enumerate}
 
 \end{enumerate}
 \end{document}
