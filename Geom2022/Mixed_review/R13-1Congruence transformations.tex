@@ -70,23 +70,24 @@
 \newpage
 \item Circle $O$ has chords $\overline{AD}$ and $\overline{BE}$ intersecting at $C$, as shown. Find $AC$.
 \begin{center}
-  \begin{tikzpicture}[scale=0.5]
+  \begin{tikzpicture}[scale=0.5, rotate=-30]
    \draw (0,0) circle[radius=5];
    \draw [thick]
    (-10:5) node[right] {$E$}--
-   (150:5) node[left] {$B$}--
-   (200:5) node[left] {$A$}--
-   (60:5) node[above right] {$D$}--cycle;
+   (150:5) node[above left] {$B$};
+   \draw [thick](200:5) node[left] {$A$}--
+   (60:5) node[above right] {$D$};
    \draw (140:1.4) node[below] {$C$};
-   \draw (125:4) node[below] {$20$};
-   \draw (90:4) node[below] {$30$};
-   \draw (0:1.5) node[below] {$40$};
+   \draw (130:4) node[below] {$12$};
+   \draw (90:4) node[below] {$18$};
+   \draw (0:1.5) node[below] {$24$};
   \end{tikzpicture}
 \end{center}
 
-\item Point $M$ divides $\overline{AB}$ so that $AM:MB = 1:4$. If $A$ has coordinates $(1,-1)$ and $B$ has coordinates $(6,9)$, what are the coordinates of $M$?
+\item Point $P$ divides $\overline{AB}$ so that $AP:PB = 1:3$. If $A$ has coordinates $(11,-1)$ and $B$ has coordinates $(-1,7)$, what are the coordinates of $P$?
+\vspace{1cm}
 
-\item From three miles away, the angle of elevation to the top of a radio tower is $4.0^\circ$. What is the height of the tower, to the \emph{nearest ten feet}? (1 mile = 5280 feet)
+\item From six miles away, the angle of elevation to a mountain peak is $11.5^\circ$. What is the height of the mountain above the observer, to the \emph{nearest hundred feet}? (1 mile = 5280 feet)
   \begin{center}
     \begin{tikzpicture}[scale=1]
     \draw [thick]
@@ -95,13 +96,13 @@
       (-7,0)node[below]{$C$}--cycle;
       \draw (-7,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
       \node at (-7.5,1){$h?$};
-      \node at (-2,0.25){$4.0^\circ$};
-      \node at (-4,-0.3){3 miles};
+      \node at (-2,0.25){$11.5^\circ$};
+      \node at (-4,-0.3){6 miles};
       \node at (0,3){\emph{not to scale}};
   \end{tikzpicture}
-  \end{center}
+  \end{center} \vspace{1cm}
 
-\item If a circular disk is continuously rotated around its diameter, what is the three-dimensional figure formed?
+\item If a rectangular sheet is continuously rotated around one of its longer edges, what is the three-dimensional figure formed?
   \begin{multicols}{2}
   \begin{enumerate}
     \item cone
@@ -112,64 +113,53 @@
 \end{multicols}
 
 \newpage
-\item Rotate the triangle $90^\circ$ counterclockwise around the origin, $\triangle ABC \rightarrow \triangle A'B'C'$. Complete the table of the coordinates and plot and label the image on the grid. \vspace{0.25cm}
-  \begin{multicols}{2}
-    $A(1,2) \rightarrow$ \\[0.7cm]
-    $B(3,5) \rightarrow$ \\[0.7cm]
-    $C(3,2) \rightarrow$ \\[0.7cm]
+\item Rotate the triangle $90^\circ$ clockwise around the origin, $\triangle ABC \rightarrow \triangle A'B'C'$. Plot and label the image on the grid.
+  \begin{center}
       \begin{tikzpicture}[scale=.75]
-      \draw [help lines] (-5,-5) grid (5,5);
-      \draw [thick, <->] (-5.4,0) -- (5.4,0) node [right] {$x$};
+      \draw [help lines] (-6,-5) grid (6,5);
+      \draw [thick, <->] (-6.4,0) -- (6.4,0) node [right] {$x$};
       \draw [thick, <->] (0,-5.4)--(0,5.4) node [above] {$y$};  
       \draw [thick]
         (1,2) node[below left] {$A$}--
         (3,5) node[above left] {$B$}--
         (3,2) node[below] {$C$}--cycle;  
       \end{tikzpicture}
-    \end{multicols}
+    \end{center}
     
-\item What is an equation of the line that passes through the point $(5,-2)$ and is perpendicular to a line with equation $y=\frac{3}{4}x+5$?
+\item What is an equation of the line that passes through the point $(1,-1)$ and is perpendicular to a line with equation $2x-y=5$?
 \begin{multicols}{2}
 \begin{enumerate}
-    \item $y-2=\frac{4}{3}(x+5)$
-    \item $y-2=-\frac{4}{3}(x+5)$ 
-    \item $y+2=\frac{4}{3}(x-5)$
-    \item $y+2=-\frac{4}{3}(x-5)$
+    \item $y-1=\frac{1}{2}(x+1)$
+    \item $y-1=-\frac{1}{2}(x+1)$ 
+    \item $y+1=\frac{1}{2}(x-1)$
+    \item $y+1=-\frac{1}{2}(x-1)$
 \end{enumerate}
 \end{multicols}
 
-\item The secants $\overline{ABC}$ and $\overline{ADE}$ intersect the circle $O$, as shown in the diagram. \\Given $m \wideparen{BD}=44^\circ$ and $m \wideparen{CE}=140^\circ$.
-  \begin{enumerate}
-    \item Find the $m\angle CDE$, $m\angle CBE$.
-    \item Find the $m\angle C$, $m\angle E$.
-    \item Find the $m\angle A$.
-    \item Two similar triangles are shown. Write a similarity statement, listing the triangles' vertices in corresponding order.
-  \end{enumerate}
+\item The secants $\overline{ABC}$ and $\overline{ADE}$ intersect the circle $O$, as shown in the diagram. \\Given $m \wideparen{BD}=32^\circ$ and $m \wideparen{CE}=126^\circ$.
   \begin{center}
-  \begin{tikzpicture}[scale=.4]
+  \begin{tikzpicture}[scale=.4, rotate=20]
     \draw (0,0) circle[radius=5];
     \draw [thick]
     (3,-4) node[below right] {$E$}--
     (-5,0) node[below left] {$D$}--
     (-9,2) node[left] {$A$}--
-    (55:5) node[above right] {$C$}--
-    (-5,0);
-    \draw [thick] (3,-4)--(145:5);
+    (55:5) node[above right] {$C$};
+    %\draw [thick] (3,-4)--(145:5);
     \draw (138:5) node[left] {$B$};
-    \draw (0:5) node[right] {$140^\circ$};
-    \draw (160:5) node[left] {$44^\circ$};
+    \draw (0:5) node[right] {$126^\circ$};
+    \draw (160:3) node[left] {$32^\circ$};
   \end{tikzpicture}
   \end{center}
 
-\item What is the equation of a circle with center $(4,-2)$ and radius $r=5$?
+\newpage
+\item What is the equation of a circle with center $(3,-5)$ and radius $r=4$?
 
+\item The area of a sector of a circle with diameter measuring 8 cm is $1.60\pi \; \rm{cm}^2$. What is the measure of the central angle that forms the sector?
 
-\item The area of a sector of a circle with diameter measuring 10 cm is $3.75\pi \; \rm{cm}^2$. What is the measure of the central angle that forms the sector?
+\item Find $x$ such that for the angles of a right triangle, $\sin (5x + 5)=\cos (25)$.
 
-\item In a right triangle, the acute angles have the relationship \\$\sin (3x + 4)=\cos (37)$.\\[0.25cm]
-    What is the value of $x$?
-
-\item In the diagram below of right triangle $KMI$, altitude $\overline{IG}$ is drawn to hypotenuse $\overline{KM}$.
+\item In the diagram below of right triangle $KMI$, altitude $\overline{IG}$ is drawn to hypotenuse $\overline{KM}$. If $KG=6$ and $GM=24$, what is the length of $\overline{IG}$?
 \begin{center}
   \begin{tikzpicture}[scale=0.7]
   \draw [thick]
@@ -181,19 +171,18 @@
   \draw (2,0)++(-0.5,0)--++(0,0.5)--+(0.5,0);
 \end{tikzpicture}
 \end{center}
-IF $KG=4$ and $IG=6$, what is the length of $\overline{IM}$?
-\vspace{2cm}
 
-\item Translate $\triangle DEF$ by $(x,y) \rightarrow (x+5, y-1)$, then reflect the result over the $x$-axis. Label the images $\triangle D'E'F'$ and $\triangle D''E''F''$ respectively.
+
+\item Translate $\triangle DEF$ by $(x,y) \rightarrow (x+3, y+1)$, then reflect the result over the $x$-axis. Label the images $\triangle D'E'F'$ and $\triangle D''E''F''$ respectively.
 \begin{center}
     \begin{tikzpicture}[scale=.6]
-    \draw [help lines] (-7,-5) grid (10,6);
-    \draw [thick, <->] (-7.4,0) -- (10.4,0) node [right] {$x$};
-    \draw [thick, <->] (0,-5.4)--(0,6.4) node [above] {$y$};  
+    \draw [help lines] (-10,-7) grid (10,6);
+    \draw [thick, <->] (-10.4,0) -- (10.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-7.4)--(0,6.4) node [above] {$y$};  
     \draw [thick]
       (-4,4) node[below left] {$D$}--
       (2,4) node[above] {$E$}--
-      (1,1) node[below] {$F$}--cycle;  
+      (2,1) node[below] {$F$}--cycle;  
   \end{tikzpicture}
 \end{center}
 
