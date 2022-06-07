@@ -28,14 +28,50 @@
 \fancyhead[LO]{BECA / Dr. Huson, Mr. Segal / Geometry\\* Unit 13: Data Analysis\\* 8 June 2022}
 
 \begin{document}
+\subsubsection*{13.3 Classwork: Sets and Venn diagrams}
+
 \begin{enumerate}
-\item Given: \\*
+\item Write each letter in the appropriate location in the Venn diagram.\\[0.25cm]
     \qquad $A = \{a, b, c, d, e\}$
     \qquad $B = \{a, e, i, o, u\}$
-    \begin{enumerate}
-        \item What is $A \cup B$?\\*[20pt]
-        \item What is $A \cap B$?\\*[20pt]
+    \begin{center}
+        \begin{venndiagram2sets}[tikzoptions={scale=1.5}]
+        \end{venndiagram2sets}U
+    \end{center}
+\begin{multicols}{2}
+        \begin{enumerate}
+        \item What is $A \cup B$?
+        \item What is $A \cap B$?
     \end{enumerate}
+\end{multicols} \vspace{0.5cm}
+
+\item Given the universal set $U$ is the set of positive integers less than 13. Subsets: \\[0.5cm]
+\qquad $A =$ \{integers that are multiples of 3\}\qquad 
+\qquad $B =$ \{prime numbers\} \\[0.5cm]
+\emph{(Prime numbers have only themselves and one as factors. One is not prime.)}
+\begin{enumerate}
+    \begin{multicols}{2}
+
+            %\item How many elements are in the universal set $U$?
+            \item List the members of $A$
+            \item List the members of $B$
+    \end{multicols} \vspace{1cm}
+
+    \item Place the elements of $A$ and $B$ in the appropriate regions in the Venn diagram.
+    \begin{center}
+        \begin{venndiagram2sets}[tikzoptions={scale=2.0}]
+        \end{venndiagram2sets}U
+        \end{center}
+
+        \item List the set $A \cap B$
+    \end{enumerate}
+
+\newpage
+\item Complete the Venn diagram with the colors of the flags of America ($A$), Italy ($B$), and China ($C$).
+    \begin{center}
+      \begin{venndiagram3sets}[tikzoptions={scale=1.7}]
+      \end{venndiagram3sets}U
+    \end{center}
 
 \item Suppose there are 19 species of fruit-eating monkeys in the western hemisphere. Their diets are as follows:
 \begin{itemize}
@@ -51,19 +87,23 @@ Complete the Venn diagram below, writing the number of species of fruit-eating m
 How many species have a diet that does not include apples nor bananas?
 
 \newpage
-\item The universal set $U$ is defined as the set of positive integers less than 13. The subsets $A$ and $B$ are defined as follows: \\*
-\qquad $A =$ \{integers that are multiples of 3\}\\*
-\qquad $B =$ \{prime numbers\} \\* [5pt]
-(note: Prime numbers have only themselves and one as factors. One is not considered a prime.)
-    \begin{enumerate}[itemsep=1.2cm]
-        \item How many elements are in the universal set $U$?
-        \item List the members of $A$
-        \item List the members of $B$
-        \item Place the elements of $A$ and $B$ in the appropriate regions in the Venn diagram below.\\*[5pt]
-            \begin{venndiagram2sets}[tikzoptions={scale=2.5}]
-            \end{venndiagram2sets}U\\*
-        \item List the items in the set $A \cap B$
-    \end{enumerate}
+\subsubsection*{Challenge}
+\item There are 90 juniors at a school taking courses as follows:
+\begin{itemize}
+  \item 27 are taking Algebra
+  \item 35 are taking Botany
+  \item 51 are taking Chemistry
+  \item 11 are taking Algebra and Chemistry
+  \item 6 are taking Algebra and Botany
+  \item 13 are taking Botany and Chemistry
+  \item 4 are taking all three subjects
+\end{itemize}
+Complete the Venn diagram below with the number of students in each region to represent the situation.
+  \begin{center}
+    \begin{venndiagram3sets}[tikzoptions={scale=2}]
+    \end{venndiagram3sets}U
+  \end{center}
+How many juniors are taking none of the three courses?
 
 \end{enumerate}
 \end{document}
