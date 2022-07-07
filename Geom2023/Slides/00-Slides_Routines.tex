@@ -1,5 +1,4 @@
 \documentclass{beamer}
-\usepackage{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{microtype}
 \usepackage{amsmath}
@@ -8,30 +7,25 @@
 \usepackage{yhmath} % for arcs, overparenth command
 \usepackage{tikz} %graphics
 \usetikzlibrary{quotes, angles}
-\usepackage{graphicx} %consider setting \graphicspath
-%\usepackage{enumitem} incompatible with beamer class
+%\usepackage{graphicx} already loaded by beamer class
+%consider setting \graphicspath{{images/}}
 \usepackage{multicol}
 \usepackage{venndiagram}
 
+\setbeamertemplate{headline}{\vskip2mm 
+  BECA / \insertshortauthor \, / \inserttitle
+  \hfill 
+  \insertsection
+  }
 
-\setlength{\headheight}{26pt}%doesn't seem to fix warning
-
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-
-%\rhead{\small{13 September 2021}}
-\lhead{\small{BECA / Dr. Huson / Routines and Expectations}}
-
-\renewcommand{\headrulewidth}{0pt}
-
-\title{Mathematics Class Slides}
-\subtitle{Bronx Early College Academy}
-\author{Christopher J. Huson PhD}
+\title{BECA / Dr. Huson / Routines and Expectations}
+\subtitle[BECA]{Bronx Early College Academy}
+\author[Huson]{Christopher J. Huson PhD}
 \date{2022-2023}
 
 \begin{document}
 \frame{\titlepage}
+
 \section[Outline]{}
 \frame{\tableofcontents}
 
