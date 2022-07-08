@@ -9,7 +9,7 @@
 \section[Outline]{}
 \frame{\tableofcontents}
 
-\section{1.1 Segment addition, 13-14 Sept}
+\section{1.1 Segment addition, 9 September}
 \begin{frame}{Learning Target: I can measure my world}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{1.1 Thursday 9 Sept}}
   \begin{block}{Do Now: Measurement}
@@ -27,65 +27,53 @@
   {This is an example diagram of a desk arrangement}
   %\includegraphics[]{desk-layout-diagram}
   \begin{block}{When making diagrams}
-    Include common elements: labels, titles, distances\\
+    Include common elements: labels, titles, distances \par
     \emph{Conventions}: standard ways of doing things to make it easier to work with other people
   \end{block} \vspace{1cm}
   Write down vocabulary and terminology in your notebook with definitions and examples. (e.g. I write important terms in \emph{italics})
 \end{frame}
 
-\frame
-{
-  \frametitle{Take class notes in a composition book}
-  \begin{block}{Use this notebook format (required)}
-    \begin{enumerate}
-      \item Vocabulary and notation
-      \item Copy definitions using your own words
-      \item Write down example diagrams and problems
-    \end{enumerate}
-    \end{block}
-    Definitions: \\
-  Point: a location, a dot, has no size; label with capital letter, $P$ \\[0.25cm]
-  Line segment: two points and all the points between them; label with \emph{end points} and a bar, $\overline{AB}$ \\
-}
-
-\frame
-{
-  \frametitle{Example: Points and line segments}
-  Shown points $P$, $A$, $B$, $C$, line segments $\overline{AB}$, $\overline{BC}$\\[0.15in]
+\begin{frame}{Example: Points and line segments}
+  Shown points $P$, $A$, $B$, $C$, line segments $\overline{AB}$, $\overline{BC}$
+  \vspace{1cm}
+  \begin{columns}
+    \column{0.7\textwidth}
       \begin{tikzpicture}
-      \draw [fill] (1,2) circle [radius=0.05] node[below]{$P$};
+      \draw [fill] (5,2) circle [radius=0.05] node[below]{$P$};
       \draw [-, thick] (0,1)--(3,1);
       \draw [fill] (0,1) circle [radius=0.05] node[below]{$A$};
       \draw [fill] (3,1) circle [radius=0.05] node[below]{$B$};
       \draw [-, thick] (3,0)--(7,0);
       \draw [fill] (3,0) circle [radius=0.05] node[below]{$B$};
       \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
-    \end{tikzpicture} \\ \vspace{0.5cm}
-    Given $AB=3$, $BC=4$.\\[0.5cm]
-    Notation: the length of a line segment is written as the two end points without a bar over them, $AB$.
-}
+    \end{tikzpicture}
 
-\frame
-{
-  \frametitle{A number line is useful for calculating length or distance}
-  \framesubtitle{Take the difference in the points' values}
-  Given $\overline{PQ}$ as shown on the number line. \\[20pt] % Midpoint
-    \begin{tikzpicture}
-      \draw [<->] (-3.5,0)--(6.5,0);
-      \draw [-, thick] (2,0)--(5,0);
-      \foreach \x in {-3,...,6} %2 leading for diff!=1
-        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-        \draw [fill] (2,0) circle [radius=0.05] node[above] {$P$};
-        \draw [fill] (5,0) circle [radius=0.05] node[above] {$Q$};
-    \end{tikzpicture} \\ \bigskip
-What is the distance on the number line between the points $P$ and $Q$? \vspace{2cm}  
-}
+    \column{0.3\textwidth}
+      Given:\par $AB=3$ \par $BC=4$
+  \end{columns} \vspace{1cm}
+    The \emph{length} of a line segment is the distance between the two end points. The length of segment $\overline{AB}$ is written $AB$ (no bar over).
+\end{frame}
 
-\frame
-{
-  \frametitle{Negative number practice on a number line}
-  \framesubtitle{Take the difference in the points' values. Check by counting the marks.}
-  Given $\overline{MN}$ with $M(-1)$ and $N(3)$, as shown on the number line. \\[0.25cm]
+\begin{frame}{A number line is useful for calculating length or distance}
+  {Take the difference in the points' values}
+  Given $\overline{PQ}$ as shown on the number line.
+\begin{center}
+  \begin{tikzpicture}
+    \draw [<->] (-3.5,0)--(6.5,0);
+    \draw [-, thick] (2,0)--(5,0);
+    \foreach \x in {-3,...,6} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (2,0) circle [radius=0.05] node[above] {$P$};
+      \draw [fill] (5,0) circle [radius=0.05] node[above] {$Q$};
+  \end{tikzpicture}
+\end{center}
+Find the distance on the number line between the points $P$ and $Q$. \vspace{2cm}
+\end{frame}
+
+\begin{frame}{Negative number practice on a number line}
+  {Take the difference in the points' values. Check by counting the marks.}
+  Given $\overline{MN}$ with $M(-1)$ and $N(3)$, as shown on the number line.
+\begin{center}
     \begin{tikzpicture}
       \draw [<->] (-3.5,0)--(6.5,0);
       \draw [-, thick] (-1,0)--(3,0);
@@ -93,16 +81,16 @@ What is the distance on the number line between the points $P$ and $Q$? \vspace{
         \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
         \draw [fill] (-1,0) circle [radius=0.05] node[above] {$M$};
         \draw [fill] (3,0) circle [radius=0.05] node[above] {$N$};
-    \end{tikzpicture} \\ \bigskip
-What is the length of the segment $\overline{MN}$? Show your work as an equation.\\[1.5cm]
+    \end{tikzpicture}
+  \end{center} \bigskip
+What is the length of the segment $\overline{MN}$? Show your work as an equation. \par \bigskip
 Can a length be a negative number? \vspace{2cm}  
-}
+\end{frame}
 
-\frame
-{
-  \frametitle{Decimal practice on a number line}
-  \framesubtitle{Mark the points then take the difference in the points' values.}
+\begin{frame}{Decimal practice on a number line}
+  {Mark the points then take the difference in the points' values.}
   Given $\overline{GH}$ with $G(1)$ and $H(4.5)$. \\[1.5cm]
+  \begin{center}
     \begin{tikzpicture}
       \draw [<->] (-3.5,0)--(6.5,0);
       %\draw [-, thick] (1,0)--(4.5,0);
@@ -111,16 +99,28 @@ Can a length be a negative number? \vspace{2cm}
         %\draw [fill] (1,0) circle [radius=0.05] node[above] {$M$};
         %\draw [fill] (4.5,0) circle [radius=0.05] node[above] {$N$};
     \end{tikzpicture}
+  \end{center}
     \begin{enumerate}
       \item Mark and label the points and segment on the number line.
       \item What is the length of the segment $\overline{GH}$? Show your work as an equation.
     \end{enumerate} \vspace{2cm}  
-}
+\end{frame}
 
-\frame
-{
-  \frametitle{Absolute value: the distance from a point to the origin}
-  \framesubtitle{Always a positive number (or zero)}
+\begin{frame}{Take class notes in a composition book}
+  {Copy definitions using your own words. Write down example diagrams and problems}
+  \begin{block}{Definitions:}
+    \begin{itemize}
+      \item Point: a location, a dot, has no size; label with capital letter, $P$
+      \item End point: point at the end of a segments
+      \item Line segment: two points and all the points between them; label with \emph{end points} and a bar, $\overline{AB}$
+      \item Distance or length: the positive difference between two points on a number line
+      \item Conventions: standard ways of doing things to make it easier to work with other people
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Absolute value: the distance from a point to the origin}
+  {Always a positive number (or zero)}
     \begin{tikzpicture}[scale=0.8]
       \draw [<->] (-6.5,0)--(6.5,0);
       \foreach \x in {-6,...,6} %2 leading for diff!=1
@@ -128,32 +128,31 @@ Can a length be a negative number? \vspace{2cm}
         \draw [fill] (0,0) circle [radius=0.05] node[above] {origin};
         \draw [fill] (5,0) circle [radius=0.05] node[above] {$A(5)$};
         \draw [fill] (-3,0) circle [radius=0.05] node[above] {$B(-3)$};
-    \end{tikzpicture} \\[0.5cm]
-    The absolute value of 5 is 5. $|5|=5$ \\[0.5cm]
+    \end{tikzpicture} \par \bigskip
+    The absolute value of 5 is 5. $|5|=5$ \par \bigskip
     The absolute value of $-3$ is 3. $|-3|=3$
-}
+\end{frame}
 
-\section{1.2 Segment addition, midpoint, 10 Sept}
-\frame
-{
-  \frametitle{Learning Target: I can solve for segment lengths}
-  \framesubtitle{CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{1.2 Friday 10 Sept}}
-  %\framesubtitle{Segment Addition Postulate}
-  Shown \emph{collinear} points $A$, $B$, $C$. Given $AB=3$, $BC=4$. \\[0.15in]
-  Find $AC$. \\[0.25in]
+\section{1.2 Segment addition, 10 September}
+\begin{frame}{Learning Target: I can solve for segment lengths}
+  {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{1.2 Friday 10 September}}
+  Shown \emph{collinear} points $A$, $B$, $C$. Given $AB=3$, $BC=4$. \par
+  Find $AC$.
+    \begin{center}
       \begin{tikzpicture}
-      \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-      \draw [-, thick] (0,0)--(7,0);
-      \draw [fill] (3,0) circle [radius=0.05] node[below]{$B$};
-      \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
-      \node at (1.5,0) [above]{$3$};
-      \node at (5,0) [above]{$4$};
-      \draw [<->, dashed] (0,-1)--(7,-1);
-      \node at (3.5,-1) [below]{$?$};
-    \end{tikzpicture} \\ \vspace{1cm}
-    
-    Definition: Points are \emph{collinear} when they lie on a straight line.
-}
+        \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+        \draw [-, thick] (0,0)--(7,0);
+        \draw [fill] (3,0) circle [radius=0.05] node[below]{$B$};
+        \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+        \node at (1.5,0) [above]{$3$};
+        \node at (5,0) [above]{$4$};
+        \draw [<->, dashed] (0,-1)--(7,-1);
+        \node at (3.5,-1) [below]{$?$};
+      \end{tikzpicture}
+    \end{center} \vspace{1cm}
+  Definition: Points are \emph{collinear} when they lie on a straight line. \par \medskip
+  \emph{Segment Addition Postulate}: lengths add. e.g. $AB+BC=AC$
+\end{frame}
 
 \frame
 {
