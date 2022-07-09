@@ -108,15 +108,28 @@ Can a length be a negative number? \vspace{2cm}
 
 \begin{frame}{Take class notes in a composition book}
   {Copy definitions using your own words. Write down example diagrams and problems}
-  \begin{block}{Definitions:}
-    \begin{itemize}
-      \item Point: a location, a dot, has no size; label with capital letter, $P$
-      \item End point: point at the end of a segments
-      \item Line segment: two points and all the points between them; label with \emph{end points} and a bar, $\overline{AB}$
-      \item Distance or length: the positive difference between two points on a number line
-      \item Conventions: standard ways of doing things to make it easier to work with other people
-    \end{itemize}
-  \end{block}
+  Definitions: \bigskip
+    \begin{description}
+      \item[Point] A location, has no size; label with capital letter, $P$
+      \item[End point] A point at the end of a line segment
+      \item[Segment] Two points and all the points between them; label with \emph{end points} and a bar, e.g. $\overline{AB}$
+      \item[Distance] The positive difference between two points on a number line (length is the same thing). $AB=3$ inches
+      \item[Conventions] Standard ways of doing things to make it easier to work with other people
+    \end{description}
+\end{frame}
+
+
+\begin{frame}{Take class notes in a composition book}
+  {Copy definitions using your own words. Write down example diagrams and problems}
+    \begin{definition}
+      \begin{itemize}
+        \item Point A location, has no size; label with capital letter, $P$
+        \item End point A point at the end of a line segment
+        \item Segment Two points and all the points between them; label with \emph{end points} and a bar, e.g. $\overline{AB}$
+        \item Distance The positive difference between two points on a number line (length is the same thing). $AB=3$ inches
+        \item Conventions Standard ways of doing things to make it easier to work with other people
+      \end{itemize}
+    \end{definition}
 \end{frame}
 
 \begin{frame}{Absolute value: the distance from a point to the origin}
@@ -574,29 +587,29 @@ Two lines \emph{intersect} if they cross. Their common point is the \emph{inters
   \end{center}
 \end{frame}
 
-  \begin{frame}{Apply the Segment Addition Postulate \\
-    Show your work by marking the diagram and writing an equation.}
-      Given $\overline{DEF}$, $DE=8.5$, and $EF=2.5$. Find ${DF}$.\\[0.75cm]
-        \begin{tikzpicture}
-          \draw [-, thick] (0,0)--(7,0);
-          \draw [fill] (0,0) circle [radius=0.05] node[below]{$D$};
-          \draw [fill] (5,0) circle [radius=0.05] node[below]{$E$};
-          \draw [fill] (7,0) circle [radius=0.05] node[below]{$F$};
-        \end{tikzpicture} \vspace{4cm}
-      \end{frame}
-
-  \begin{frame}{Find the length of the line segment $\overline{PQ}$.}
-    Given $P(-2)$ and $Q(3)$, as shown on the number line. \\[0.25cm]
+\begin{frame}{Apply the Segment Addition Postulate \\
+  Show your work by marking the diagram and writing an equation.}
+    Given $\overline{DEF}$, $DE=8.5$, and $EF=2.5$. Find ${DF}$.\\[0.75cm]
       \begin{tikzpicture}
-        \draw [<->] (-3.5,0)--(6.5,0);
-        \draw [-, thick] (-2,0)--(3,0);
-        \foreach \x in {-3,...,6} %2 leading for diff!=1
-          \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-          \draw [fill] (-2,0) circle [radius=0.05] node[above] {$P$};
-          \draw [fill] (3,0) circle [radius=0.05] node[above] {$Q$};
-      \end{tikzpicture} \\
-      State an equation and the solution. \\
-  Check your work by counting the distance. Leave marks to show your work. \vspace{5cm}  
+        \draw [-, thick] (0,0)--(7,0);
+        \draw [fill] (0,0) circle [radius=0.05] node[below]{$D$};
+        \draw [fill] (5,0) circle [radius=0.05] node[below]{$E$};
+        \draw [fill] (7,0) circle [radius=0.05] node[below]{$F$};
+      \end{tikzpicture} \vspace{4cm}
+    \end{frame}
+
+\begin{frame}{Find the length of the line segment $\overline{PQ}$.}
+  Given $P(-2)$ and $Q(3)$, as shown on the number line. \\[0.25cm]
+    \begin{tikzpicture}
+      \draw [<->] (-3.5,0)--(6.5,0);
+      \draw [-, thick] (-2,0)--(3,0);
+      \foreach \x in {-3,...,6} %2 leading for diff!=1
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+        \draw [fill] (-2,0) circle [radius=0.05] node[above] {$P$};
+        \draw [fill] (3,0) circle [radius=0.05] node[above] {$Q$};
+    \end{tikzpicture} \\
+    State an equation and the solution. \\
+Check your work by counting the distance. Leave marks to show your work. \vspace{5cm}  
 \end{frame}
 
 \begin{frame}{Segment addition practice}
@@ -621,7 +634,7 @@ Two lines \emph{intersect} if they cross. Their common point is the \emph{inters
   
 \begin{frame}{Solve for $x$ using the segment addition postulate}
   Given $\overline{LMN}$, $LM=3x+1$, $MN=7$, $LN=17$. Find ${x}$.\\[0.15in]
-      \begin{tikzpicture}
+    \begin{tikzpicture}
       \draw [-, thick] (0,0)--(7,0);
       \draw [fill] (0,0) circle [radius=0.05] node[below]{$L$};
       \draw [fill] (4,0) circle [radius=0.05] node[below]{$M$};
@@ -631,7 +644,7 @@ Two lines \emph{intersect} if they cross. Their common point is the \emph{inters
       \draw [<->, dashed] (0,-1)--(7,-1);
       \node at (3.5,-1) [below]{$17$};
     \end{tikzpicture} %\vspace{1cm}
-\begin{enumerate}
+  \begin{enumerate}
     \item Write down an equation to represent the situation. \vspace{0.5cm}
     \item Solve for $x$. \vspace{2cm}
     \item Check your answer. \vspace{1cm}
@@ -705,7 +718,6 @@ Two lines \emph{intersect} if they cross. Their common point is the \emph{inters
     \end{frame}
   
 \begin{frame}{Segment bisector example}
-
   \begin{block}{Given $M$ bisects $\overline{PQ}$, $PM=x+7$, $PQ=23$.}
     \begin{enumerate}
       \item Mark the diagram with the values and tick marks
@@ -721,6 +733,32 @@ Two lines \emph{intersect} if they cross. Their common point is the \emph{inters
         \end{tikzpicture}
       \end{center}
   \end{block}
+\end{frame}
+
+\section{Sandbox}
+\begin{frame}{Sandbox}
+  \begin{enumerate}[(i)]
+    \item one
+    \item two
+    \item three
+  \end{enumerate}
+
+  \fbox{box goes here \qquad xx \hspace{2cm} yy}
+
+  \begin{enumerate}[T \quad F \,]
+    \item one
+    \item two
+    \item three
+  \end{enumerate}
+
+  \begin{description}
+    \item[End point] The point at the end of a line segments
+    \item[Line] An infinite number of points extending in both directions forever 
+  \end{description}
+
+  \begin{definition}
+    A \alert{prime number} is a number that has exactly two divisors. 
+  \end{definition}
 \end{frame}
 
 \end{document}
