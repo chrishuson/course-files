@@ -140,6 +140,35 @@
   \end{block}
 \end{frame}
 
+\begin{frame}{Fraction and negatives+decimals practice problems}
+  \begin{enumerate}
+  \item Do Now: Given $\overline{DEFG}$, $DE=3 \frac{1}{4}$, $EF=6 \frac{1}{4}$, and $FG= 1 \frac{3}{4}$. (diagram not to scale)\\ [0.25cm]
+    Find ${DG}$, expressed as a fraction, not a decimal.
+    \begin{flushleft}
+        \begin{tikzpicture}
+          \draw [-, thick] (0,0)--(9,0);
+          \draw [fill] (0,0) circle [radius=0.05] node[below]{$D$};
+          \draw [fill] (3,0) circle [radius=0.05] node[below]{$E$};
+          \draw [fill] (7,0) circle [radius=0.05] node[below]{$F$};
+          \draw [fill] (9,0) circle [radius=0.05] node[below]{$G$};
+        \end{tikzpicture}
+      \end{flushleft}
+    
+    \item Given $P(-2.4)$ and $Q(1.8)$, as shown on the number line. 
+    Find the length of the line segment $\overline{PQ}$. 
+    \begin{flushright}
+      \begin{tikzpicture}
+        \draw [<->] (-4.5,0)--(4.5,0);
+        \draw [-, thick] (-2.4,0)--(1.8,0);
+        \foreach \x in {-4,...,4} %2 leading for diff!=1
+          \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+          \draw [fill] (-2.4,0) circle [radius=0.05] node[above] {$P$};
+          \draw [fill] (1.8,0) circle [radius=0.05] node[above] {$Q$};
+      \end{tikzpicture}
+    \end{flushright}
+    \end{enumerate}
+  \end{frame}
+
 \section{Sandbox}
 \begin{frame}{Sandbox}
   \begin{enumerate}[(i)]
