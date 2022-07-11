@@ -1,0 +1,36 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 19 Sept 2022}
+
+\begin{document}
+
+\subsubsection*{1.7 Exit Note Quiz: Length and perimeter, geometric notation}
+\begin{enumerate}
+\item Given $\overleftrightarrow{JK}$ as shown on the number line. \\[20pt] % Midpoint
+  \begin{tikzpicture}[scale=0.5]
+    \draw [<->] (49,0)--(71,0);
+    \foreach \x in {50, 52,...,70} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-6pt) -- (0pt,6pt) node[below=5pt]  {$\x$};
+      \draw [fill] (54,0) circle [radius=0.1] node[above] {$J$};
+      \draw [fill] (68,0) circle [radius=0.1] node[above] {$K$};
+  \end{tikzpicture} \\ \bigskip
+  What is the midpoint between the points $J$ and $K$? \vspace{4cm}  
+
+\item Given $\overline{RST}$, $S$ bisects $\overline{RT}$, $RS=17x-10$, $ST=13x-2$. Find ${RT}$.\\
+  Complete all the steps for full credit.\vspace{7cm}
+
+\item Given $\overline{FGHI}$, $FG=8 \frac{1}{6}$, $GH=12 \frac{1}{3}$, and $HI= 5 \frac{1}{2}$. (diagram not to scale)\\ [0.25cm]
+  Find ${FI}$.\\[.5in]
+      \begin{tikzpicture}
+        \draw [-, thick] (0,0)--(9,0);
+        \draw [fill] (0,0) circle [radius=0.05] node[below]{$F$};
+        \draw [fill] (3,0) circle [radius=0.05] node[below]{$G$};
+        \draw [fill] (7,0) circle [radius=0.05] node[below]{$H$};
+        \draw [fill] (9,0) circle [radius=0.05] node[below]{$I$};
+      \end{tikzpicture} \vspace{1cm}
+
+
+\end{enumerate}
+\end{document}
