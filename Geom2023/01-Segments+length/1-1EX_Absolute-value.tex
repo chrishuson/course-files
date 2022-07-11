@@ -1,0 +1,35 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 8 Sept 2022}
+
+\begin{document}
+
+\subsubsection*{1.1 Extension: Absolute value the distance from a point to the origin (zero)}
+\begin{enumerate}
+  \item
+  \begin{tikzpicture}
+    \draw [<->] (-6.5,0)--(6.5,0);
+    \foreach \x in {-6,...,6} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (0,0) circle [radius=0.05] node[above] {origin};
+      \draw [fill] (5,0) circle [radius=0.05] node[above] {$A(5)$};
+      \draw [fill] (-3,0) circle [radius=0.05] node[above] {$B(-3)$};
+  \end{tikzpicture} \\[0.5cm]
+  The absolute value of 5 is 5. $|5|=5$ \\[0.5cm]
+  The absolute value of $-3$ is 3. $|-3|=3$ \vspace{0.5cm}
+  
+\item Find the value of each expression.
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item $|11|=$ \bigskip
+      \item $|-7|=$
+      \item $|-4.75|=$
+      \item $|10-7|=$
+    \end{enumerate}
+  \end{multicols} \vspace{0.5cm}
+  
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,81 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 29 Sept 2022}
+
+\begin{document}
+
+\subsubsection*{2.2 Classwork: Angle addition}
+\begin{enumerate}
+\item Do Now: $m\angle ABD=30^\circ$, $m\angle DBC=45^\circ$. Find $m\angle ABC$.\vspace{0.5cm}
+  \begin{flushright}
+    \begin{tikzpicture}
+      \draw [<->, thick] (45:5)--(0,0)--(6,0);
+      \draw [->, thick] (0,0)--(75:4);
+      \draw [fill] (75:3) circle [radius=0.05] node[left]{$A$};
+      \draw [fill] (45:3) circle [radius=0.05] node[below right]{$D$};
+      \draw [fill] (0,0) circle [radius=0.05] node[below]{$B$};
+      \draw [fill] (4,0) circle [radius=0.05] node[below]{$C$};
+      \node at (1.5,0.5){$45^\circ$};
+      \node at (1,1.7){$30^\circ$};
+    \end{tikzpicture}
+    \end{flushright}
+
+\item Two lines intersect with $m\angle 1=80^\circ$. Find the measures of $\angle 2$, $\angle 3$, and $\angle 4$.
+  \begin{flushleft}
+  \begin{tikzpicture}[scale=0.8]
+    \draw [<->, thick] (0,-1.5)--(10,1.5);
+    \draw [<->, thick] (2,3.5)--(7,-3.5);
+    \node at (2,.4){$m\angle 1=80^\circ$};
+    \node at (6,-.6){3};
+    \node at (5,1){2};
+    \node at (4,-1){4};
+    %\draw [fill] (0,0) circle [radius=0.05] node[below]{$P$};
+    %\draw [fill] (6,0) circle [radius=0.05] node[below]{$R$};
+    %\draw [fill] (3,0) circle [radius=0.05] node[below]{$Q$};
+  \end{tikzpicture}
+  \end{flushleft}
+
+\item $\angle POQ$ and $\angle QOR$ are complementary angles. Given $m\angle POQ=51^\circ$, find $m\angle QOR$. \vspace{0.25cm}
+  \begin{center}
+  \begin{tikzpicture}[scale=1.2, rotate=0]
+    \draw [->, thick] (0,0)--(129:4);
+    \draw [<->, thick] (-5,0)--(5,0);
+    \draw [->, thick] (0,0)--(0,4);
+    \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+    \draw [fill] (129:3) circle [radius=0.05] node[below left]{$Q$};
+    \draw [fill] (-4,0) circle [radius=0.05] node[below]{$P$}; 
+    \draw [fill] (0,0) circle [radius=0.05] node[below right]{$O$};
+    \draw [fill] (0,3) circle [radius=0.05] node[right]{$R$};
+    \node at (-1,0.4){$51^\circ$};
+    \node at (-0.4,1.2){$x^\circ$};
+  \end{tikzpicture}
+  \end{center}
+
+\newpage
+\item Given $m\angle ADB=110^\circ$, $m\angle ADC = 75^\circ$, and $m\angle BDC = 3x+5$. Find $x$.
+  \begin{enumerate}
+    \begin{multicols}{2}
+    \item Label the diagram.
+    \item Write an equation.
+    \item Solve for $x$. \vspace{3cm}
+
+    \begin{flushright}
+    \begin{tikzpicture}[scale=1.2]
+      \draw [->, thick] (0,0)--(35:5);
+      \draw [->, thick] (0,0)--(4,0);
+      \draw [->, thick] (0,0)--(110:4);
+      \draw [fill] (110:3) circle [radius=0.05] node[left ]{$A$};
+      \draw [fill] (35:4) circle [radius=0.05] node[above left ]{$C$};
+      \draw [fill] (0,0) circle [radius=0.05] node[left]{$D$};
+      \draw [fill] (3,0) circle [radius=0.05] node[below]{$B$};
+    \end{tikzpicture}
+    \end{flushright}
+  \end{multicols}
+  \item Check your answer
+  \end{enumerate} \vspace{2cm}
+
+
+\end{enumerate}
+\end{document}

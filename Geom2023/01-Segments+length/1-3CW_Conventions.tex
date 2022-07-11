@@ -1,0 +1,62 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 11 Sept 2022}
+
+\begin{document}
+
+\subsubsection*{1.3 Classwork: Geometric conventions}
+\begin{enumerate}    
+\item Points that are all located on the same plane are $\rule{4cm}{0.15mm}$.
+
+\item Write down the name of two line segments shown in the diagram below using proper geometric notation.
+  \begin{center}
+  \begin{tikzpicture}[scale=0.5]
+    \draw [->, thick] (0,0)--(4,4);
+    \draw [->, thick] (3,3)--(3,-1);
+    \draw [fill] (0,0) circle [radius=0.05] node[left]{$R$};
+    \draw [fill] (3,3) circle [radius=0.05] node[above left]{$S$};
+    \draw [fill] (3,0) circle [radius=0.05] node[right]{$T$};
+  \end{tikzpicture}
+  \end{center}
+
+\item Identify two lines in the given plane.\\[0.25in]
+    \begin{tikzpicture}[scale=0.8]
+      \draw [thick](0,0) node[above right]{$\ p$} --(6,0)--(8,4)--(2,4)--(0,0);
+      \draw [<->, thick] (1,1)--(6,3);
+      \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$J \ $};
+      \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$K$};
+      \draw [<->, thick] (2,3.5)--(5.25,.25);
+      \draw [fill] (5,0.5) circle [radius=0.05] node[above right]{$L$};
+    \end{tikzpicture} %\vspace{2cm}
+    \item For each example, explain the error made drawing $\overrightarrow{JK}$.\\.\\
+    \vspace{0.5cm}
+      \begin{tikzpicture}[scale=.8]
+        \draw  [<-, thick] (0,2)--(4,0);
+        \draw [fill] (0,2) circle [radius=0.05] node[below]{$K$};
+        \draw [fill] (4,0) circle [radius=0.05] node[below]{$J$};
+        \node at (0,0) {(a)};
+      \end{tikzpicture}  \hspace{1cm}
+      \begin{tikzpicture}[scale=.8]
+        \draw  [<-, thick] (-1,2.5)--(4.4,-0.2);
+        \draw [fill] (0,2) circle [radius=0.05] node[below]{$K$};
+        \draw [fill] (4,0) circle [radius=0.05] node[below left]{$J$};
+        \node at (0,0) {(b)};
+      \end{tikzpicture} \hspace{1cm}
+      \begin{tikzpicture}[scale=.8]
+        \draw  [<-, thick] (-1,2.5)--(0,2)--(2,1.1)--(3,0.4)--(4,0);
+        \draw [fill] (0,2) circle [radius=0.05] node[below]{$K$};
+        \draw [fill] (4,0) circle [radius=0.05] node[below]{$J$};
+        \node at (0,0) {(c)};
+      \end{tikzpicture}
+      \vspace{4cm}
+     
+      
+\item Points that are all located on the same line are $\rule{4cm}{0.15mm}$. \bigskip
+\item Line segments that have the same length are $\rule{4cm}{0.15mm}$. \bigskip
+
+
+
+\end{enumerate}
+\end{document}

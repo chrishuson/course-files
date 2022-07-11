@@ -1,14 +1,12 @@
 \input{../preamble}
 
-
-
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 9 Sept 2022}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 8 Sept 2022}
 
 \begin{document}
 
-\subsubsection*{1-1 Classwork: Segment Addition, Vocabulary}
+\subsubsection*{1.1 Classwork: Segment addition, vocabulary}
 \begin{enumerate}
 \item Given $\overline{ABC}$, $AB=2$, and $AC=12$. Find ${BC}$.\par \vspace{1cm}
     \begin{tikzpicture}
@@ -49,6 +47,34 @@
   \item Check your answer
   \end{enumerate}
   %\vspace{2cm}
+
+\newpage
+\item Given $\overleftrightarrow{QS}$ as shown on the number line. \\[20pt] % Midpoint
+  \begin{tikzpicture}
+    \draw [<->] (-4.5,0)--(6.5,0);
+    \foreach \x in {-4,...,6} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (2,0) circle [radius=0.05] node[above] {$Q$};
+      \draw [fill] (6,0) circle [radius=0.05] node[above] {$S$};
+  \end{tikzpicture} \bigskip
+  \begin{enumerate}
+    \item In the given number line units, what is the distance between $Q$ and $S$? \\[0.5cm]
+    $QS=$
+    \bigskip
+    \item Mark the point $R$, the midpoint of $\overline{QS}$.
+  \end{enumerate}\vspace{1cm}
+
+\item Given $\overline{MN}$ with $M(-1)$ and $N(3)$, as shown on the number line. \\[0.25cm]
+\begin{tikzpicture}
+  \draw [<->] (-3.5,0)--(6.5,0);
+  \draw [-, thick] (-1,0)--(3,0);
+  \foreach \x in {-3,...,6} %2 leading for diff!=1
+    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+    \draw [fill] (-1,0) circle [radius=0.05] node[above] {$M$};
+    \draw [fill] (3,0) circle [radius=0.05] node[above] {$N$};
+\end{tikzpicture} \\ \bigskip
+What is the length of the segment $\overline{MN}$? Show your work as an equation.\\[1.5cm]
+Can a length be a negative number?
 
 \newpage
 \item Points that are all located on the same line are $\rule{4cm}{0.15mm}$.
@@ -127,6 +153,35 @@
   \end{tikzpicture}
   \end{center}
 
+\item Do Now: Given $\overline{RST}$, $RS=3 \frac{2}{3}$, and $RT=9 \frac{1}{3}$. Find ${ST}$.\\[1cm]
+  \begin{tikzpicture}
+    \draw [-, thick] (0,0)--(7,0);
+    \draw [fill] (0,0) circle [radius=0.05] node[below]{$R$};
+    \draw [fill] (3,0) circle [radius=0.05] node[below]{$S$};
+    \draw [fill] (7,0) circle [radius=0.05] node[below]{$T$};
+  \end{tikzpicture} \vspace{2cm}
+
+\item Given $\overline{ABC}$, $AB=3.8$, and $BC=1.7$.
+  \begin{enumerate}
+    \item Find ${AC}$.\\[1.cm]
+      \begin{tikzpicture}
+        \draw [-, thick] (1,0)--(7,0);
+        \draw [fill] (1,0) circle [radius=0.05] node[below]{$A$};
+        \draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
+        \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+      \end{tikzpicture} \vspace{1cm}
+    \item The postulate used in this problem is the \rule{6cm}{0.15mm}.
+  \end{enumerate}
+
+\item Given $\overline{FG}$ as shown. What is the distance on the number line between the points?\\[20pt]
+    \begin{tikzpicture}
+      \draw [<->] (-2.5,0)--(6.5,0);
+      \foreach \x in {-2,...,6} %2 leading for diff!=1
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+        \draw [thick] (1.25,0)--(5.5,0);
+        \draw [fill] (1.25,0) circle [radius=0.05] node[above] {$F(1.25)$};
+        \draw [fill] (5.5,0) circle [radius=0.05] node[above] {$G(5.5)$};
+    \end{tikzpicture}
 
 \end{enumerate}
 \end{document}
