@@ -224,6 +224,32 @@
 \end{tikzpicture}
 \end{flushleft} \vspace{1cm}
 
+\item On the graph, draw polygon ABCDEF with vertices A(1, 1), B(1, 4), C(3, 4), D(3, 7), E(8, 7), and F(8, 1). Find the perimeter and the area of the polygon.
+\begin{flushleft}
+  \begin{tikzpicture}[scale=.75]
+    \draw [help lines] (0,0) grid (10,10);
+    \draw [thick, ->] (0,0) -- (10.4,0) node [below right] {$x$};
+    \draw [thick, ->] (0,0)--(0,10.4) node [right] {$y$};
+    \foreach \x in {1,...,10}
+    \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt] {$\x$};
+    \foreach \y in {1,...,10}
+    \draw[shift={(0,\y)}] (-3pt,0pt)--(3pt,0pt) node[left=5pt] {$\y$};
+  \end{tikzpicture}
+  \end{flushleft}
+\vspace{2cm}
+
+\item Find the \emph{area} of the shape shown below composed of a rectangle and two semi-circular caps. Leave your answer as an exact value in terms of $\pi$.
+\begin{flushright}
+\begin{tikzpicture}[scale=.635]
+  \draw [help lines] (-1,-1) grid (7,7);
+  \draw [thick, ->] (-1.2,0) -- (7.4,0) node [below right] {$x$};
+  \draw [thick, ->] (0,-1.2)--(0,7.4) node [left] {$y$};
+  \draw [thick] (2,2)--(5,2)--(5,4)--(2,4)--cycle;
+  \draw [thick] (2,4) arc (90:270:1);
+  \draw [thick] (5,2) arc (-90:90:1);
+\end{tikzpicture}
+\end{flushright}
+
 
 \end{enumerate}
 \end{document}
