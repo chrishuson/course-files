@@ -191,5 +191,69 @@
       \end{tikzpicture}
   \end{multicols} \vspace{0.25cm}
 
+\item Given circle $P$ with $m \wideparen{AB}=130^\circ$.
+\begin{multicols}{2}
+  \raggedcolumns
+  \begin{enumerate}
+    \item Write down the $m\angle APB$. \vspace{1.7cm}
+    \item Find the $m\angle AQB$. \vspace{2cm}
+  \end{enumerate}
+    \begin{tikzpicture}[scale=.5]
+      \draw (0,0) circle[radius=5];
+      \draw [thick]
+      (-20:5) node[right] {$B$}--
+      (0,0) node[below] {$P$}--
+      (110:5) node[above left] {$A$};
+      \draw [thick] (-20:5)--(210:5) node[below left] {$Q$}--(110:5);
+      \draw (60:5) node[right]{$130^\circ$};
+    \end{tikzpicture}
+\end{multicols}
+
+\item Given circle $O$ with chords $\overline{AD}$ and $\overline{BE}$ intersecting at $C$, as shown in the diagram. Given $m \wideparen{AB}=45^\circ$, $m \wideparen{BD}=108^\circ$, and $m \wideparen{DE}=65^\circ$.
+  \begin{multicols}{2}
+  \raggedcolumns
+  \begin{enumerate}
+    \item Find the $m\angle BAD$. \vspace{1.7cm}
+    \item Find the $m\angle ACB$. \vspace{2cm}
+  \end{enumerate}
+  \begin{tikzpicture}[scale=.6]
+    \draw (0,0) circle[radius=5];
+    \draw [thick]
+    (-10:5) node[right] {$E$}--
+    (150:5) node[left] {$B$}--
+    (200:5) node[left] {$A$}--
+    (60:5) node[above right] {$D$}--cycle;
+    \draw (140:1.4) node[below] {$C$};
+    \draw (30:5) node[right] {$65^\circ$};
+    \draw (100:5) node[above] {$108^\circ$};
+    \draw (175:5) node[left] {$45^\circ$};
+  \end{tikzpicture}
+  \end{multicols}
+
+\newpage
+\item The secants $\overline{ABC}$ and $\overline{ADE}$ intersect the circle $O$, as shown in the diagram. \\Given $m \wideparen{BD}=28^\circ$ and $m \wideparen{CE}=136^\circ$.
+  \begin{enumerate}
+      \begin{multicols}{2}
+        \item Find the $m\angle CDE$.
+        \item Find the $m\angle BCD$.
+      \end{multicols}  \vspace{1.5cm}
+    \item Find the $m\angle A$. \vspace{0.5cm}
+  \end{enumerate}
+    \begin{center}
+    \begin{tikzpicture}[scale=.7]
+      \draw (0,0) circle[radius=5];
+      \draw [thick]
+      (3,-4) node[below right] {$E$}--
+      (-5,0) node[below left] {$D$}--
+      (-9,2) node[left] {$A$}--
+      (55:5) node[above right] {$C$}--
+      (-5,0);
+      \draw (138:5) node[left] {$B$};
+      \draw (0:5) node[right] {$136^\circ$};
+      \draw (160:5) node[left] {$28^\circ$};
+    \end{tikzpicture}
+  \end{center}
+
+
 \end{enumerate}
 \end{document}
