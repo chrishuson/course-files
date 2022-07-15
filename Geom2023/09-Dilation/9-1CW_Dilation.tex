@@ -79,7 +79,183 @@
 Definition of \emph{similar} triangles: Triangles that have the same shape, but not necessarily the same size, are similar. Their corresponding angles are congruent and their corresponding sides are proportional. \\[1cm]
 Dilation definition of similarity: Two figures are similar if one or more rigid motions and a dilation will carry one figure onto the other.
 
+\item Vocabulary: A dilation stretches or shrinks. It has a \emph{center} and a \emph{scale factor, k}. \\[0.5cm]
+A dilation centered at $A$ with scale factor $k=2$ maps $\triangle ABC \rightarrow \triangle ADE$. Given the sides of the preimage, $AC = 4$, $BC = 3$, $AB = 5$. \\[0.5cm]
+$DE = 6$, how long are $AD$ and $AE$?
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.8]
+        \draw [-, thick] (0,0)--
+        (8,0) node[below]{$E$}--
+        (8,6) node[above left]{$D$}--cycle;
+        \draw [thick] (4,0)--(4,3);
+        \draw [fill] (0,0) circle [radius=0.1] node[below] {$A$};
+        \node at (4,0) [below]{$C$};
+        \node at (4,3) [above left]{$B$};
+        \node at (2, 0) [below]{$4$};
+        \node at (2, 2) [above]{$5$};
+        \node at (8, 3) [right]{$6$};
+        \node at (4, 1.5) [right]{$3$};
+      \end{tikzpicture}
+    \end{flushright}
+
+\item Dilate $\triangle ABC \rightarrow \triangle A'B'C'$ by a factor of $k=2$ centered at the origin, $(x,y) \rightarrow (2x, 2y)$. Plot and label the image on the axes. Make a table of the vertices and their coordinates.
+\begin{flushright}
+    \begin{tikzpicture}[scale=1]
+    \draw [help lines] (-1,-2) grid (5,7);
+    \draw [thick, <->] (-1.4,0) -- (5.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-2.4)--(0,7.4) node [above] {$y$};  
+    \draw [thick]
+      (0,0) node[below left] {$A$}--
+      (2,3) node[above left] {$B$}--
+      (2,0) node[below] {$C$}--cycle;  
+  \end{tikzpicture}
+\end{flushright}
+
+\item Dilate $\triangle ABC \rightarrow \triangle A'B'C'$ by a factor of $k=3$ centered at the origin, $(x,y) \rightarrow (3x, 3y)$. Plot and label the image on the axes. Make a table of the vertices and their coordinates.
+\begin{flushright}
+    \begin{tikzpicture}[scale=1]
+    \draw [help lines] (-1,-3) grid (7,7);
+    \draw [thick, <->] (-1.4,0) -- (7.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-3.4)--(0,7.4) node [above] {$y$};  
+    \draw [thick]
+      (0,0) node[below left] {$A$}--
+      (2,2) node[above left] {$B$}--
+      (1,-1) node[below left] {$C$}--cycle;  
+  \end{tikzpicture}
+\end{flushright}
     
+
+\item A dilation centered at $A$ with scale factor $k=2$ maps $\triangle ABC \rightarrow \triangle ADE$. Given the sides of the preimage, $AC = 8$, $BC = 6$, $AB = 10$. \\[0.5cm]
+$DE = 12$, how long are $AD$ and $AE$?
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.8]
+        \draw [-, thick] (0,0)--
+        (8,0) node[below]{$E$}--
+        (8,6) node[above left]{$D$}--cycle;
+        \draw [thick] (4,0)--(4,3);
+        \draw [fill] (0,0) circle [radius=0.1] node[below] {$A$};
+        \node at (4,0) [below]{$C$};
+        \node at (4,3) [above left]{$B$};
+        \node at (2, 0) [below]{$8$};
+        \node at (2, 2) [above]{$10$};
+        \node at (8, 3) [right]{$12$};
+        \node at (4, 1.5) [right]{$6$};
+      \end{tikzpicture}
+    \end{flushright}
+
+\item Dilate $\triangle ABC \rightarrow \triangle A'B'C'$ by a factor of $k=1.5$ centered at the origin, $(x,y) \rightarrow (1.5x, 1.5y)$. Plot and label the image on the axes. Make a table of the vertices and their coordinates.
+\begin{flushright}
+    \begin{tikzpicture}[scale=1]
+    \draw [help lines] (-1,-2) grid (5,7);
+    \draw [thick, <->] (-1.4,0) -- (5.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-2.4)--(0,7.4) node [above] {$y$};  
+    \draw [thick]
+      (0,0) node[below left] {$A$}--
+      (2,4) node[above left] {$B$}--
+      (2,0) node[below] {$C$}--cycle;  
+  \end{tikzpicture}
+\end{flushright}
+
+\item A transformation is performed on a parallelogram, $BECA \rightarrow B'E'C'A'$, as shown in the diagram. \\[0.5cm]
+Fully characterize the transformation. (hint: Translations must include both $x$ and $y$ directions and magnitudes. Dilations must specify the center and scale factor.)
+\begin{flushright}
+    \begin{tikzpicture}[scale=1]
+    \draw [help lines] (-1,-3) grid (7,7);
+    \draw [thick, <->] (-1.4,0) -- (7.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-3.4)--(0,7.4) node [above] {$y$};  
+    \draw [thick]
+      (0,0) node[below left] {$B$}--
+      (1,2) node[above left] {$E$}--
+      (3,2) node[above left] {$C$}--
+      (2,0) node[below left] {$A$}--cycle;
+    \draw [thick]
+      (0,0) node[below right] {$B'$}--
+      (2,4) node[above right] {$E'$}--
+      (6,4) node[above right] {$C'$}--
+      (4,0) node[below right] {$A'$}--cycle;
+  \end{tikzpicture}
+\end{flushright}
+
+\item Dilate $\triangle ABC \rightarrow \triangle A'B'C'$ by a factor of $k=3$ centered at the origin, $(x,y) \rightarrow (3x, 3y)$. Plot and label the image on the axes. Make a table of the vertices and their coordinates.
+\begin{flushright}
+    \begin{tikzpicture}[scale=1]
+    \draw [help lines] (-1,-3) grid (7,7);
+    \draw [thick, <->] (-1.4,0) -- (7.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-3.4)--(0,7.4) node [above] {$y$};  
+    \draw [thick]
+      (0,0) node[below left] {$A$}--
+      (2,1) node[above left] {$B$}--
+      (1,-1) node[below left] {$C$}--cycle;  
+  \end{tikzpicture}
+\end{flushright}
+
+
+\item A dilation centered at $A$ with scale factor $k=2$ maps $\triangle ABC \rightarrow \triangle ADE$. Given the sides of the preimage, $AC = 10$, $BC = 7$, $AB = 12$. \\[0.5cm]
+  $DE = 14$, how long are $AD$ and $AE$?
+      \begin{flushright}
+        \begin{tikzpicture}[scale=0.8]
+          \draw [-, thick] (0,0)--
+          (8,0) node[below]{$E$}--
+          (8,6) node[above left]{$D$}--cycle;
+          \draw [thick] (4,0)--(4,3);
+          \draw [fill] (0,0) circle [radius=0.1] node[below] {$A$};
+          \node at (4,0) [below]{$C$};
+          \node at (4,3) [above left]{$B$};
+          \node at (2, 0) [below]{$10$};
+          \node at (2, 2) [above]{$12$};
+          \node at (8, 3) [right]{$14$};
+          \node at (4, 1.5) [right]{$7$};
+        \end{tikzpicture}
+      \end{flushright}
+
+\item Dilate $\triangle ABC \rightarrow \triangle A'B'C'$ by a factor of $k=1.5$ centered at the origin,\\
+$(x,y) \rightarrow (1.5x, 1.5y)$. Plot and label the image on the axes. Make a table of the vertices and their coordinates.
+\begin{flushright}
+    \begin{tikzpicture}[scale=0.8]
+    \draw [help lines] (-1,-2) grid (9,9);
+    \draw [thick, <->] (-1.4,0) -- (9.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-2.4)--(0,9.4) node [above] {$y$};  
+    \draw [thick]
+      (0,0) node[below left] {$A$}--
+      (2,4) node[above left] {$B$}--
+      (4,0) node[below] {$C$}--cycle;  
+  \end{tikzpicture}
+\end{flushright}
+
+\item A transformation is performed on a parallelogram, $MATH \rightarrow M'A'T'H'$, as shown in the diagram. \\[0.5cm]
+What is the transformation? (Hint: Is it a translation, reflection, rotation, or dilation? What is its center? What is the scale factor, $k$?)
+\begin{flushright}
+    \begin{tikzpicture}[scale=0.7]
+    \draw [help lines] (-1,-3) grid (10,7);
+    \draw [thick, <->] (-1.4,0) -- (10.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-3.4)--(0,7.4) node [above] {$y$};  
+    \draw [thick]
+      (0,0) node[below left] {$M$}--
+      (1,2) node[above left] {$A$}--
+      (3,2) node[above left] {$T$}--
+      (2,0) node[below right] {$H$}--cycle;
+    \draw [thick]
+      (0,0) node[below right] {$M'$}--
+      (3,6) node[above right] {$A'$}--
+      (9,6) node[above right] {$T'$}--
+      (6,0) node[below right] {$H'$}--cycle;
+  \end{tikzpicture}
+\end{flushright}
+
+\item Dilate $\triangle ABC \rightarrow \triangle A'B'C'$ by a factor of $k=2.5$ centered at the origin, \\
+$(x,y) \rightarrow (2.5x, 2.5y)$. Plot and label the image on the axes. (table optional)
+\begin{flushright}
+    \begin{tikzpicture}[scale=1]
+    \draw [help lines] (-1,-3) grid (8,8);
+    \draw [thick, <->] (-1.4,0) -- (8.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-3.4)--(0,8.4) node [above] {$y$};  
+    \draw [thick]
+      (0,0) node[below left] {$A$}--
+      (2,2) node[above left] {$B$}--
+      (2, 0) node[below left] {$C$}--cycle;  
+  \end{tikzpicture}
+\end{flushright}
+
 
 \end{enumerate}
 \end{document}
