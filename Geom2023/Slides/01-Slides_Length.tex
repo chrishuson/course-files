@@ -132,6 +132,34 @@ Can a length be a negative number? \vspace{2cm}
     \end{definition}
 \end{frame}
 
+\begin{frame}{Definition: \emph{Opposite rays} are collinear rays with a common end point.}
+  \begin{enumerate}
+    \item $\overrightarrow{BA}$ and $\overrightarrow{BC}$ are opposite rays
+    \hspace{2cm}
+      \begin{tikzpicture}[scale=.8]
+        \draw  [<->, thick] (0,2)--(4,0);
+        \draw [fill] (1,1.5) circle [radius=0.05] node[below]{$A$};
+        \draw [fill] (2,1) circle [radius=0.05] node[below]{$B$};
+        \draw [fill] (3,0.5) circle [radius=0.05] node[below]{$C$};
+      \end{tikzpicture}
+    \item These rays do not make a straight line.
+    \hspace{1cm}
+      \begin{tikzpicture}[scale=.8]
+        \draw  [<->, thick] (0,2)--(2,0)--(4,1);
+        \draw [fill] (1,1) circle [radius=0.05] node[below left]{$D$};
+        \draw [fill] (2,0) circle [radius=0.05] node[below]{$E$};
+        \draw [fill] (3,0.5) circle [radius=0.05] node[below]{$F$};
+      \end{tikzpicture}
+    \item The rays $\overrightarrow{GH}$ and $\overrightarrow{HG}$ do not share a common end point.
+      \begin{tikzpicture}[scale=.8]
+        \draw  [<->, thick] (0,-2)--(4,0);
+        \draw [fill] (1,-1.5) circle [radius=0.05] node[below]{$G$};
+        \draw [fill] (3,-0.5) circle [radius=0.05] node[below]{$H$};
+        %\draw [fill] (3,0.5) circle [radius=0.05] node[below]{$C$};
+      \end{tikzpicture}
+    \end{enumerate}
+\end{frame}
+
 \begin{frame}{Absolute value: the distance from a point to the origin}
   {Always a positive number (or zero)}
     \begin{tikzpicture}[scale=0.8]
