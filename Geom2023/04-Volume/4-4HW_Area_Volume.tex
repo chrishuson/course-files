@@ -1,49 +1,13 @@
-\documentclass[12pt, twoside]{article}
-\usepackage[letterpaper, margin=1in, head=30pt, headsep=0.1in]{geometry}
-\usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{tikz}
-\usetikzlibrary{quotes, angles}
+\input{../preamble}
 
-\usepackage{graphicx}
-\usepackage{enumitem}
-\usepackage{multicol}
-
-%\usepackage{pgfplots}
-%\pgfplotsset{width=10cm,compat=1.9}
-%\usepgfplotslibrary{statistics}
-%\usepackage{pgfplotstable}
-%\usepackage{tkz-fct}
-%\usepackage{venndiagram}
-
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
-\raggedbottom
-\newif\ifmeta
-\metatrue %print standards and topics tags
-
-\title{Math AI Worksheet Generator and Formative Assessment System}
-\author{Chris Huson}
-\date{January 2021}
-
-%\fancyhead[RE]{\thepage}
-%\fancyhead[RO]{\thepage \\ Name: \hspace{3cm}}
-%\fancyhead[L]{BECA / Dr. Huson / 10th Grade Geometry\\* 7 June 2019}
-%
-%\begin{document}
-%\subsubsection*{13.7 Homework: Cross sections, distance applications}
-%\fancyhead[L]{BECA / Dr. Huson / Geometry 03-Volume+angle-bisectors\\* pset ID: 34}
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 4: Volume and polyhedra \\* 14 October 2022}
 
 \begin{document}
 
-\subsubsection*{5.12 Skills ReQuiz: Area and volume situations}
+\subsubsection*{4.4 Homework: Area and volume situations}
 \begin{enumerate}
-
 \item Find the area of rectangle $ABCD$ having length $l=10$ and width $w=3 \frac{3}{4}$. Start with a formula of this form, substituting the given values: \\[0.5cm]
 $A = l \times w$
   \begin{flushright}
@@ -59,7 +23,6 @@ $A = l \times w$
   \end{tikzpicture}
   \end{flushright}
 
-\newpage
 \item Find the volume of a rectangular prism (box). Its length is $l=22$ inches, its height $h=12$ inches, and depth is $w=9$ inches. Start with the equation \\[0.5cm]
 $V = l \times w \times h$
   \begin{flushright}
@@ -72,8 +35,7 @@ $V = l \times w \times h$
       \node at (4.5, 0.25){$9$};
     \end{tikzpicture}
   \end{flushright}
-  
-\newpage
+
 \item A parallelogram is shown on the $x$-$y$ plane having a base $b=4.25$ and height $h=7.0$. 
   \begin{multicols}{2}
     Find its area, showing the calculation.
@@ -90,7 +52,6 @@ $V = l \times w \times h$
       \end{flushright}
   \end{multicols} 
 
-\newpage
 \item The $\triangle ABC$ is shown below with $A(3,1)$, $B(7,1)$, and $C(2,6)$. The length of the base of the triangle is $AB=4$.
   \begin{multicols}{2}
     \begin{enumerate}
@@ -114,7 +75,6 @@ $V = l \times w \times h$
       \end{flushright}
   \end{multicols} 
 
-\newpage
 \item Find the width of the base of a rectangle with area $A=75$ and height $h=15$. Start with the form (use $b$ or $x$): \\[0.5cm]
 $A = b \times h = 75$
   \begin{flushright}
@@ -126,7 +86,6 @@ $A = b \times h = 75$
   \end{tikzpicture}
   \end{flushright}
 
-\newpage
 \item Find the height of the $\triangle BLM$, having an area of $A=42$ and base $BL=7$.
   \begin{multicols}{2}
     Start by substituting values in the area formula: \\[0.5cm]
@@ -148,7 +107,6 @@ $A = b \times h = 75$
       \end{flushright}
   \end{multicols}
 
-\newpage
 \item The rectangular prism shown has a volume of $V=1815$ cubic centimeters. Its base measures $l=12.5$ cm by $w=8.8$ cm. \\[0.5cm]
 Find its height in centimeters. Begin by writing the following formula with values substituted: \\[0.5cm]
 $V = l \times w \times h = 1815$
@@ -163,7 +121,6 @@ $V = l \times w \times h = 1815$
   \end{tikzpicture}
 \end{flushright}
 
-\newpage
 \item Find the length of the base of a triangle with area $A=30$ and height $h=6 \frac{2}{3}$. Start with the form (use $b$ or $x$): \\[0.5cm]
 $A = \frac{1}{2} \times b \times h = 30$
   \begin{flushright}
@@ -175,7 +132,6 @@ $A = \frac{1}{2} \times b \times h = 30$
   \end{tikzpicture}
   \end{flushright}
 
-\newpage
 \item Find the area of the $\triangle ABC$, shown below, with $A(1,2)$, $B(7,4)$, and $C(4,8)$. 
   \begin{multicols}{2}
     Hint: Subtract the areas of the three right triangles from the area of the red square.
@@ -196,7 +152,6 @@ $A = \frac{1}{2} \times b \times h = 30$
       \end{flushright}
   \end{multicols} 
 
-\newpage
 \item A rectangular prism has a square base. Its volume is $V=162$ cubic centimeters and its height is $h=8$ cm.
   \begin{multicols}{2}
     Calculate the dimensions of its base.
