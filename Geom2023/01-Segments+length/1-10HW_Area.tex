@@ -1,49 +1,12 @@
-\documentclass[12pt, twoside]{article}
-\usepackage[letterpaper, margin=1in, head=30pt, headsep=0.1in]{geometry}
-\usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{tikz}
-\usetikzlibrary{quotes, angles}
+\input{../preamble}
 
-\usepackage{graphicx}
-\usepackage{enumitem}
-\usepackage{multicol}
-
-%\usepackage{pgfplots}
-%\pgfplotsset{width=10cm,compat=1.9}
-%\usepgfplotslibrary{statistics}
-%\usepackage{pgfplotstable}
-%\usepackage{tkz-fct}
-%\usepackage{venndiagram}
-
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
-\raggedbottom
-\newif\ifmeta
-\metatrue %print standards and topics tags
-
-\title{Math AI Worksheet Generator and Formative Assessment System}
-\author{Chris Huson}
-\date{November 2020}
-
-%\fancyhead[RE]{\thepage}
-%\fancyhead[RO]{\thepage \\ Name: \hspace{3cm}}
-%\fancyhead[L]{BECA / Dr. Huson / 10th Grade Geometry\\* 7 June 2019}
-%
-%\begin{document}
-%\subsubsection*{13.7 Homework: Cross sections, distance applications}
-%\fancyhead[L]{BECA / Dr. Huson / Geometry 03-Volume+angle-bisectors\\* pset ID: 34}
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 20 Sept 2022}
 
 \begin{document}
-
-\subsubsection*{3.11 Quiz: area and volume situations}
+\subsubsection*{1.10 Homework: Area situations}
 \begin{enumerate}
-
 \item Find the area of rectangle $ABCD$ having length $l=12$ and width $w=4 \frac{1}{2}$. Start with a formula of this form, substituting the given values: \\[0.5cm]
 $A = l \times w$
   \begin{flushright}
@@ -59,7 +22,6 @@ $A = l \times w$
   \end{tikzpicture}
   \end{flushright}
 
-\newpage
 \item A parallelogram is shown on the $x$-$y$ plane having a base $b=2.75$ and height $h=4.0$. 
   \begin{multicols}{2}
     Find its area, showing the calculation.
@@ -76,7 +38,6 @@ $A = l \times w$
       \end{flushright}
   \end{multicols} 
 
-\newpage
 \item The $\triangle ABC$ is shown below with $A(3,1)$, $B(7,1)$, and $C(1,5)$. The length of the base of the triangle is $AB=4$.
   \begin{multicols}{2}
     \begin{enumerate}
@@ -98,23 +59,8 @@ $A = l \times w$
         \node at (0.5,3)[right]{$h$};
       \end{tikzpicture}
       \end{flushright}
-  \end{multicols} 
+  \end{multicols}
 
-\newpage
-\item Find the volume of a rectangular prism (box). Its length is $l=21$ inches, its height $h=13$ inches, and depth is $w=9$ inches. Start with the equation \\[0.5cm]
-$V = l \times w \times h$
-  \begin{flushright}
-    \begin{tikzpicture}[scale=1.25]
-      \draw [-, thick] (0,0)--(4,0)--(4,2)--(0,2)--cycle;
-      \draw [-, thick] (0,2)--(0.5,2.75)--(4.5,2.75)--(4,2);
-      \draw [-, thick] (4,0)--(4.5,0.75)--(4.5,2.75);
-      \node at (4.75, 1.75){$13$};
-      \node at (2, -0.25){$21$};
-      \node at (4.5, 0.25){$9$};
-    \end{tikzpicture}
-  \end{flushright}
-
-\newpage
 \item Find the length of the base of a rectangle with area $A=80$ and height $h=10$. Start with the form (use $b$ or $x$): \\[0.5cm]
 $A = b \times h = 80$
   \begin{flushright}
@@ -126,7 +72,6 @@ $A = b \times h = 80$
   \end{tikzpicture}
   \end{flushright}
 
-\newpage
 \item Find the height of the $\triangle RST$, having an area of $A=117$ and base $RS=9$.
   \begin{multicols}{2}
     Start by substituting values in the area formula: \\[0.5cm]
@@ -148,22 +93,6 @@ $A = b \times h = 80$
       \end{flushright}
   \end{multicols}
 
-\newpage
-\item The rectangular prism shown has a volume of $V=735$ cubic feet. Its base measures $l=8.4$ feet by $w=6.25$ feet. \\[0.5cm]
-Find its height. Begin by writing the following formula with values substituted: \\[0.5cm]
-$V = l \times w \times h = 735$
-\begin{flushright}
-  \begin{tikzpicture}[scale=1]
-    \draw [-, thick] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
-    \draw [-, thick] (0,4)--(0.5,4.75)--(3.5,4.75)--(3,4);
-    \draw [-, thick] (3,0)--(3.5,0.75)--(3.5,4.75);
-    \node at (3.75, 2.75){$h$};
-    \node at (1.5, -0.25){$8.4$};
-    \node at (4, 0.25){$6.25$};
-  \end{tikzpicture}
-\end{flushright}
-
-\newpage
 \item Find the length of the base of a triangle with area $A=46.2$ and height $h=8.25$. Express your result as a decimal. Start with the form (use $b$ or $x$): \\[0.5cm]
 $A = \frac{1}{2} \times b \times h = 46.2$
   \begin{flushright}
@@ -175,7 +104,6 @@ $A = \frac{1}{2} \times b \times h = 46.2$
   \end{tikzpicture}
   \end{flushright}
 
-\newpage
 \item Find the area of circle $Q$ with radius $r=6$ centimeters, rounded to the \emph{nearest tenth}.
   Start with the formula\\[0.5cm]
   $A = \pi r^2$ 
@@ -189,7 +117,6 @@ $A = \frac{1}{2} \times b \times h = 46.2$
       \end{tikzpicture}
     \end{flushright}
 
-\newpage
 \item Find the radius and circumference of circle $O$ with diameter $D=15$ centimeters.
   \begin{multicols}{2}
   \raggedcolumns
@@ -207,7 +134,6 @@ $A = \frac{1}{2} \times b \times h = 46.2$
     \end{tikzpicture}
   \end{multicols}
 
-\newpage
 \item Given circle $O$ with area $A=64 \pi$ square centimeters.
   \begin{multicols}{2}
   \raggedcolumns
@@ -223,12 +149,10 @@ $A = \frac{1}{2} \times b \times h = 46.2$
     \end{tikzpicture}
   \end{multicols}
   
-\newpage
 \item Given circle $O$ with circumference $C=48 \pi$ centimeters.
   \begin{multicols}{2}
   \raggedcolumns
   Find the radius of circle, $OP$. \vspace{1.7cm}
-
     \begin{tikzpicture}[scale=1]
       \draw (0,0) circle[radius=3];
       \draw [thick]
@@ -238,7 +162,6 @@ $A = \frac{1}{2} \times b \times h = 46.2$
     \end{tikzpicture}
   \end{multicols}
 
-\newpage
 \item Spicy: Find the area of the $\triangle ABC$, shown below, with $A(2,2)$, $B(7,4)$, and $C(4,8)$. 
   \begin{multicols}{2}
     \begin{enumerate}
@@ -261,22 +184,6 @@ $A = \frac{1}{2} \times b \times h = 46.2$
         \node at (1.2,5)[right]{$6$};
       \end{tikzpicture}
       \end{flushright}
-  \end{multicols} 
-
-\newpage
-\item Spicy: A rectangular prism has a square base. Its volume is $V=507$ cubic centimeters and its height is $h=12$ cm.
-  \begin{multicols}{2}
-    Calculate the dimensions of its base.
-    \begin{flushright}
-      \begin{tikzpicture}[scale=1]
-        \draw [-, thick] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
-        \draw [-, thick] (0,4)--(0.5,4.75)--(3.5,4.75)--(3,4);
-        \draw [-, thick] (3,0)--(3.5,0.75)--(3.5,4.75);
-        \node at (3.75, 2.75){$12$};
-        \node at (1.5, -0.25){$x$};
-        \node at (3.5, 0.25){$x$};
-      \end{tikzpicture}
-    \end{flushright}
   \end{multicols}
 
 
