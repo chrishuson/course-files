@@ -457,6 +457,41 @@ Apply the appropriate formula.
   \end{enumerate}
 \end{multicols}
 
+\item Do Now: Convert units of \emph{radians} and \emph{degrees} ($2 \pi = 360^\circ$, $\pi = 180^\circ$).\\[0.25cm]
+  Apply the appropriate formula.
+  \begin{multicols}{2}
+    $\displaystyle d = r \times \frac{180}{\pi}$\\
+    $\displaystyle r = d \times \frac{\pi}{180}$
+  \end{multicols} \vspace{0.5cm}
+  \begin{multicols}{2}
+    \raggedcolumns
+    \begin{enumerate}
+      \item $\displaystyle m\angle A = \frac{\pi}{4}  =\hspace{0.15cm} ?$ degrees\\[0.75cm]
+      \begin{tikzpicture}[scale=1]
+        \draw [thick, <->] (0:1) arc (0:45:1);
+        \draw [thick, <->] (0:4) arc (0:45:4);
+        \draw [dashed](0,0)--(4,0);
+        \draw [thick]
+        (0,0) node[below left] {$A$}--(45:4)--(2.83,0)--cycle;
+        \fill (0,0) circle[radius=.1];
+        \node at (22:1.4) {$?^\circ$};
+        \node at (22:4.5) {$\displaystyle \frac{\pi}{4}$};
+      \end{tikzpicture}
+      \columnbreak
+      \item $m\angle B = 30^\circ = \hspace{0.15cm} ?$ radians \\
+      (in terms of $\pi$)\\[0.5cm]
+      \begin{tikzpicture}[scale=1]
+        \draw [thick, <->] (0:0.75) arc (0:30:0.75);
+        \draw [thick, <->] (0:4) arc (0:30:4);
+        \draw [dashed](0,0)--(4,0);
+        \draw [thick]
+        (0,0) node[below left] {$B$}--(30:4)--(3.46,0)--cycle;
+        \fill (0,0) circle[radius=.1];
+        \node at (12:1.4) {$30^\circ$};
+      \end{tikzpicture}
+    \end{enumerate}
+  \end{multicols}
+  
 \newpage
 \item Right $\triangle ABC$ is drawn in \emph{standard position} with vertex $A$ on the origin and right $\angle C$ on the $x$-axis, as shown.
 \begin{multicols}{2}
