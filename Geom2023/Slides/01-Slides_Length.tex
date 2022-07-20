@@ -12,84 +12,86 @@
 \section{1.1 Segment addition \hfill 8 September}
 \begin{frame}{Learning Target: I can measure my world}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{1.1 Thursday 8 Sept}}
-  \begin{block}{Do Now: Measurement}
+  \begin{block}{Do Now: Make simple measurements on paper}
     \begin{enumerate}
-        \item Diagram people closest to you and their distance
+        \item Diagram the desks closest to you and their distances
         \item Early finishers: Calculate diagonal distances
-        \item (add classroom desk image, diagram, test instructions)
+        \item [ToDo:] add classroom desk image, diagram
     \end{enumerate}
     \end{block}
     Lesson: Points, line segments, length; Segment addition postulate \\[0.25cm]
-    Homework: Write for me your ``math autobiography''
+    Homework: Write for me your ``math autobiography'' on looseleaf (due tomorrow)
 \end{frame}
 
 \begin{frame}{A \emph{diagram} is a simplied image representing a situation}
   {This is an example diagram of a desk arrangement}
   %\includegraphics[]{desk-layout-diagram}
   \begin{block}{When making diagrams}
-    Include common elements: labels, titles, distances \par
+    Include common elements: labels, titles, distances \par \vspace{0.5cm}
     \emph{Conventions}: standard ways of doing things to make it easier to work with other people
-  \end{block} \vspace{1cm}
-  Write down vocabulary and terminology in your notebook with definitions and examples. (e.g. I write important terms in \emph{italics})
+  \end{block} \vspace{2cm}
+  Write down vocabulary and terminology in your notebook with definitions and examples. (I write new terms in \emph{italics})
 \end{frame}
 
-\begin{frame}{Example: Points and line segments}
-  Shown points $P$, $A$, $B$, $C$, line segments $\overline{AB}$, $\overline{BC}$
-  \vspace{1cm}
-  \begin{columns}
-    \column{0.7\textwidth}
-      \begin{tikzpicture}
-      \draw [fill] (5,2) circle [radius=0.05] node[below]{$P$};
-      \draw [-, thick] (0,1)--(3,1);
-      \draw [fill] (0,1) circle [radius=0.05] node[below]{$A$};
-      \draw [fill] (3,1) circle [radius=0.05] node[below]{$B$};
-      \draw [-, thick] (3,0)--(7,0);
-      \draw [fill] (3,0) circle [radius=0.05] node[below]{$B$};
-      \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
-    \end{tikzpicture}
-
-    \column{0.3\textwidth}
-      Given:\par $AB=3$ \par $BC=4$
-  \end{columns} \vspace{1cm}
-    The \emph{length} of a line segment is the distance between the two end points. The length of segment $\overline{AB}$ is written $AB$ (no bar over).
+\begin{frame}{\emph{Line segments} and their \emph{endpoints}}
+  Points $P$, $A$, $B$, $C$, and line segments $\overline{AB}$, $\overline{BC}$ are shown. \vspace{1cm}
+    \begin{columns}
+      \column{0.7\textwidth}
+        \begin{tikzpicture}
+        \draw [fill] (5,2) circle [radius=0.05] node[below]{$P$};
+        \draw [-, thick] (0,1)--(3,1);
+        \draw [fill] (0,1) circle [radius=0.05] node[below]{$A$};
+        \draw [fill] (3,1) circle [radius=0.05] node[below]{$B$};
+        \draw [-, thick] (3,0)--(7,0);
+        \draw [fill] (3,0) circle [radius=0.05] node[below]{$B$};
+        \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+      \end{tikzpicture}
+      \column{0.3\textwidth}
+        \emph{Given}:\par $AB=3$ \par $BC=4$
+    \end{columns} \vspace{1cm}
+    The \emph{length} of a line segment is the distance between the two endpoints. The length of segment $\overline{AB}$ is written $AB$ (no bar over).
 \end{frame}
 
-\begin{frame}{A number line is useful for calculating length or distance}
+\begin{frame}{A \emph{number line} is useful for calculating length or distance}
   {Take the difference in the points' values}
   Given $\overline{PQ}$ as shown on the number line.
-\begin{center}
-  \begin{tikzpicture}
-    \draw [<->] (-3.5,0)--(6.5,0);
-    \draw [-, thick] (2,0)--(5,0);
-    \foreach \x in {-3,...,6} %2 leading for diff!=1
-      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-      \draw [fill] (2,0) circle [radius=0.05] node[above] {$P$};
-      \draw [fill] (5,0) circle [radius=0.05] node[above] {$Q$};
-  \end{tikzpicture}
-\end{center}
-Find the distance on the number line between the points $P$ and $Q$. \vspace{2cm}
+    \begin{center}
+      \begin{tikzpicture}
+        \draw [<->] (-3.5,0)--(6.5,0);
+        \draw [-, thick] (2,0)--(5,0);
+        \foreach \x in {-3,...,6} %2 leading for diff!=1
+          \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+          \draw [fill] (2,0) circle [radius=0.05] node[above] {$P$};
+          \draw [fill] (5,0) circle [radius=0.05] node[above] {$Q$};
+      \end{tikzpicture}
+    \end{center}
+    Find the distance on the number line between the points $P$ and $Q$. \par  \bigskip %\vspace{1cm}
+    \onslide<2> $$PQ = 5-2 =3$$ \par \bigskip
+    Can a length be a negative number? \par \vspace{1cm}
+    Most of the lengths on my problem sets are in centimeters.
 \end{frame}
 
 \begin{frame}{Negative number practice on a number line}
   {Take the difference in the points' values. Check by counting the marks.}
   Given $\overline{MN}$ with $M(-1)$ and $N(3)$, as shown on the number line.
-\begin{center}
-    \begin{tikzpicture}
-      \draw [<->] (-3.5,0)--(6.5,0);
-      \draw [-, thick] (-1,0)--(3,0);
-      \foreach \x in {-3,...,6} %2 leading for diff!=1
-        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-        \draw [fill] (-1,0) circle [radius=0.05] node[above] {$M$};
-        \draw [fill] (3,0) circle [radius=0.05] node[above] {$N$};
-    \end{tikzpicture}
-  \end{center} \bigskip
-What is the length of the segment $\overline{MN}$? Show your work as an equation. \par \bigskip
-Can a length be a negative number? \vspace{2cm}  
+    \begin{center}
+        \begin{tikzpicture}
+          \draw [<->] (-3.5,0)--(6.5,0);
+          \draw [-, thick] (-1,0)--(3,0);
+          \foreach \x in {-3,...,6} %2 leading for diff!=1
+            \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+            \draw [fill] (-1,0) circle [radius=0.05] node[above] {$M$};
+            \draw [fill] (3,0) circle [radius=0.05] node[above] {$N$};
+        \end{tikzpicture}
+      \end{center} \bigskip
+    What is the length of the segment $\overline{MN}$? Show your work as an equation. \par \bigskip
+    \onslide<2> $$MN=3- (-1)=4$$ \par \bigskip
+    Why is ``minus a negative'' like adding a positive?
 \end{frame}
 
 \begin{frame}{Decimal practice on a number line}
   {Mark the points then take the difference in the points' values.}
-  Given $\overline{GH}$ with $G(1)$ and $H(4.5)$. \\[1.5cm]
+  Given $\overline{GH}$ with $G(1)$ and $H(4.5)$. \\[1cm]
   \begin{center}
     \begin{tikzpicture}
       \draw [<->] (-3.5,0)--(6.5,0);
@@ -103,7 +105,9 @@ Can a length be a negative number? \vspace{2cm}
     \begin{enumerate}
       \item Mark and label the points and segment on the number line.
       \item What is the length of the segment $\overline{GH}$? Show your work as an equation.
-    \end{enumerate} \vspace{2cm}  
+    \end{enumerate}
+    \par \bigskip
+    \onslide<2> $$GH= 4.5 - 1 = 3.5$$ \vspace{2cm}
 \end{frame}
 
 \begin{frame}{Take class notes in a composition book}
@@ -111,57 +115,17 @@ Can a length be a negative number? \vspace{2cm}
   Definitions: \bigskip
     \begin{description}
       \item[Point] A location, has no size; label with capital letter, $P$
-      \item[End point] A point at the end of a line segment
-      \item[Segment] Two points and all the points between them; label with \emph{end points} and a bar, e.g. $\overline{AB}$
+      \item[Endpoint] A point at the end of a line segment
+      \item[Line segment] Two points and all the points between them; label with \emph{endpoints} and a bar, e.g. $\overline{AB}$
       \item[Distance] The positive difference between two points on a number line (length is the same thing). $AB=3$ inches
       \item[Conventions] Standard ways of doing things to make it easier to work with other people
+      \item[Diagram] Simplified image of a situation
+      \item[Number line] A line with lengths marked on it
     \end{description}
 \end{frame}
 
-
-\begin{frame}{Take class notes in a composition book}
-  {Copy definitions using your own words. Write down example diagrams and problems}
-    \begin{definition}
-      \begin{itemize}
-        \item Point A location, has no size; label with capital letter, $P$
-        \item End point A point at the end of a line segment
-        \item Segment Two points and all the points between them; label with \emph{end points} and a bar, e.g. $\overline{AB}$
-        \item Distance The positive difference between two points on a number line (length is the same thing). $AB=3$ inches
-        \item Conventions Standard ways of doing things to make it easier to work with other people
-      \end{itemize}
-    \end{definition}
-\end{frame}
-
-\begin{frame}{Definition: \emph{Opposite rays} are collinear rays with a common end point.}
-  \begin{enumerate}
-    \item $\overrightarrow{BA}$ and $\overrightarrow{BC}$ are opposite rays
-    \hspace{2cm}
-      \begin{tikzpicture}[scale=.8]
-        \draw  [<->, thick] (0,2)--(4,0);
-        \draw [fill] (1,1.5) circle [radius=0.05] node[below]{$A$};
-        \draw [fill] (2,1) circle [radius=0.05] node[below]{$B$};
-        \draw [fill] (3,0.5) circle [radius=0.05] node[below]{$C$};
-      \end{tikzpicture}
-    \item These rays do not make a straight line.
-    \hspace{1cm}
-      \begin{tikzpicture}[scale=.8]
-        \draw  [<->, thick] (0,2)--(2,0)--(4,1);
-        \draw [fill] (1,1) circle [radius=0.05] node[below left]{$D$};
-        \draw [fill] (2,0) circle [radius=0.05] node[below]{$E$};
-        \draw [fill] (3,0.5) circle [radius=0.05] node[below]{$F$};
-      \end{tikzpicture}
-    \item The rays $\overrightarrow{GH}$ and $\overrightarrow{HG}$ do not share a common end point.
-      \begin{tikzpicture}[scale=.8]
-        \draw  [<->, thick] (0,-2)--(4,0);
-        \draw [fill] (1,-1.5) circle [radius=0.05] node[below]{$G$};
-        \draw [fill] (3,-0.5) circle [radius=0.05] node[below]{$H$};
-        %\draw [fill] (3,0.5) circle [radius=0.05] node[below]{$C$};
-      \end{tikzpicture}
-    \end{enumerate}
-\end{frame}
-
-\begin{frame}{Absolute value: the distance from a point to the origin}
-  {Always a positive number (or zero)}
+\begin{frame}{Spicy: \emph{Absolute value} is the distance from a point to zero}
+  {``Spicy'', or extension topics, must be written in your notebook, but homework and tests are optional.}
     \begin{tikzpicture}[scale=0.8]
       \draw [<->] (-6.5,0)--(6.5,0);
       \foreach \x in {-6,...,6} %2 leading for diff!=1
@@ -171,7 +135,9 @@ Can a length be a negative number? \vspace{2cm}
         \draw [fill] (-3,0) circle [radius=0.05] node[above] {$B(-3)$};
     \end{tikzpicture} \par \bigskip
     The absolute value of 5 is 5. $|5|=5$ \par \bigskip
-    The absolute value of $-3$ is 3. $|-3|=3$
+    The absolute value of $-3$ is 3. $|-3|=3$ \par \bigskip
+    The absolute value of a number is always a positive number, or zero  \par \smallskip
+    Write the absolute value of a number $x$ using vertical bars $|x|$ or $abs(x)$
 \end{frame}
 
 \section{1.2 Solve for length \hfill 9 September}
@@ -337,7 +303,7 @@ Can a length be a negative number? \vspace{2cm}
   \begin{enumerate}
     \item point
     \item line segment
-    \item end point
+    \item endpoint
     \item three collinear points
       \begin{tikzpicture}
       \draw [-, thick] (0,2)--(3,1);
@@ -363,7 +329,7 @@ Can a length be a negative number? \vspace{2cm}
       \draw [fill] (3.5,1) circle [radius=0.05] node[below]{$B$};
     \end{tikzpicture}
   \end{center}
-    A \emph{ray} has one end point and extends infinitely in one direction, $\overrightarrow{CD}$.
+    A \emph{ray} has one endpoint and extends infinitely in one direction, $\overrightarrow{CD}$.
     \begin{center}
     \begin{tikzpicture}
       \draw [->, thick] (3,0)--(7,0);
@@ -377,6 +343,34 @@ Can a length be a negative number? \vspace{2cm}
       \draw [thick](0,0) node[above right]{$\ p$} --(3,0)--(4,2)--(1,2)--(0,0);
     \end{tikzpicture}
   \end{center}
+\end{frame}
+
+\begin{frame}{Definition: \emph{Opposite rays} are collinear rays with a common endpoint.}
+  \begin{enumerate}
+    \item $\overrightarrow{BA}$ and $\overrightarrow{BC}$ are opposite rays
+    \hspace{2cm}
+      \begin{tikzpicture}[scale=.8]
+        \draw  [<->, thick] (0,2)--(4,0);
+        \draw [fill] (1,1.5) circle [radius=0.05] node[below]{$A$};
+        \draw [fill] (2,1) circle [radius=0.05] node[below]{$B$};
+        \draw [fill] (3,0.5) circle [radius=0.05] node[below]{$C$};
+      \end{tikzpicture}
+    \item These rays do not make a straight line.
+    \hspace{1cm}
+      \begin{tikzpicture}[scale=.8]
+        \draw  [<->, thick] (0,2)--(2,0)--(4,1);
+        \draw [fill] (1,1) circle [radius=0.05] node[below left]{$D$};
+        \draw [fill] (2,0) circle [radius=0.05] node[below]{$E$};
+        \draw [fill] (3,0.5) circle [radius=0.05] node[below]{$F$};
+      \end{tikzpicture}
+    \item The rays $\overrightarrow{GH}$ and $\overrightarrow{HG}$ do not share a common endpoint.
+      \begin{tikzpicture}[scale=.8]
+        \draw  [<->, thick] (0,-2)--(4,0);
+        \draw [fill] (1,-1.5) circle [radius=0.05] node[below]{$G$};
+        \draw [fill] (3,-0.5) circle [radius=0.05] node[below]{$H$};
+        %\draw [fill] (3,0.5) circle [radius=0.05] node[below]{$C$};
+      \end{tikzpicture}
+    \end{enumerate}
 \end{frame}
 
 \begin{frame}{Several objects are shown in a plane}

@@ -8,63 +8,35 @@
 
 \subsubsection*{1.1 Classwork: Segment addition, vocabulary}
 \begin{enumerate}
-\item Given $\overline{ABC}$, $AB=2$, and $AC=12$. Find ${BC}$.\par \vspace{1cm}
-    \begin{tikzpicture}
-      \draw [-, thick] (1,0)--(7,0);
-      \draw [fill] (1,0) circle [radius=0.05] node[below]{$A$};
-      \draw [fill] (2,0) circle [radius=0.05] node[below]{$B$};
-      \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
-    \end{tikzpicture} \vspace{2cm}
-    
-\item Given $\overline{DEF}$, $DE=3 \frac{1}{3}$, and $EF=1$.
-  \begin{enumerate}
-  \item Find ${DF}$. \par \bigskip
-    \begin{tikzpicture}
-      \draw [-, thick] (1,0)--(7,0);
-      \draw [fill] (1,0) circle [radius=0.05] node[below]{$D$};
-      \draw [fill] (5,0) circle [radius=0.05] node[below]{$E$};
-      \draw [fill] (7,0) circle [radius=0.05] node[below]{$F$};
-    \end{tikzpicture} \bigskip
-  \item The postulate used in this problem is the \rule{6cm}{0.15mm}.
-  \end{enumerate}
+\item Use symbols to write the names of objects in the given figure.
+\begin{multicols}{2}
+  \begin{tikzpicture}
+  \draw [-, thick] (0,0)--(4,3);
+  \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+  \draw [fill] (4,3) circle [radius=0.05] node[below right]{$B$};
+\end{tikzpicture} \par
+\columnbreak
+\begin{enumerate}[itemsep=1cm]
+  \item The two endpoints
+  \item The name of the line segment
+  \item The length of the segment in centimeters (expressed as an equation)
+\end{enumerate}
+\end{multicols} \vspace{1cm}
 
-\item Given $\overline{PQR}$, $PQ=x-2$, $QR=x$, $PR=10$. Find ${PQ}$.
-  \begin{enumerate}
-  \item Label the diagram with the given values.
-  \begin{flushright}
-    \begin{tikzpicture}
-        \draw [-, thick] (0,0)--(7,0);
-        \draw [fill] (0,0) circle [radius=0.05] node[below]{$P$};
-        \draw [fill] (3,0) circle [radius=0.05] node[below]{$Q$};
-        \draw [fill] (7,0) circle [radius=0.05] node[below]{$R$};
-    \end{tikzpicture}
-  \end{flushright} \vspace{1cm}
-  \item Write an equation: \vspace{1cm}
-  \item Solve for $x$
-  \vspace{3cm}
-  \item Answer the question. \par
-  Find $PQ$ by substituting for $x$. \vspace{1.5cm}
-  \item Check your answer
-  \end{enumerate}
-  %\vspace{2cm}
+\item A(n) $\rule{4cm}{0.15mm}$ is a portion of a line that includes two points and all of the collinear points between the two points. \bigskip
 
-\newpage
-\item Given $\overleftrightarrow{QS}$ as shown on the number line. \\[20pt] % Midpoint
+\item Given $\overline{PQ}$ as shown on the number line. \par \smallskip
   \begin{tikzpicture}
     \draw [<->] (-4.5,0)--(6.5,0);
     \foreach \x in {-4,...,6} %2 leading for diff!=1
       \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-      \draw [fill] (2,0) circle [radius=0.05] node[above] {$Q$};
-      \draw [fill] (6,0) circle [radius=0.05] node[above] {$S$};
-  \end{tikzpicture} \bigskip
-  \begin{enumerate}
-    \item In the given number line units, what is the distance between $Q$ and $S$? \\[0.5cm]
-    $QS=$
-    \bigskip
-    \item Mark the point $R$, the midpoint of $\overline{QS}$.
-  \end{enumerate}\vspace{1cm}
+      \draw [fill] (2,0) circle [radius=0.05] node[above] {$P$};
+      \draw [fill] (6,0) circle [radius=0.05] node[above] {$Q$};
+  \end{tikzpicture} \par \smallskip
+  What is the distance between $P$ and $Q$? \par \smallskip
+    $PQ=$ \vspace{1cm}
 
-\item Given $\overline{MN}$ with $M(-1)$ and $N(3)$, as shown on the number line. \\[0.25cm]
+\item Two points $M(-1)$, $N(3)$ and the segment $\overline{MN}$ are shown on the number line. \par \smallskip
 \begin{tikzpicture}
   \draw [<->] (-3.5,0)--(6.5,0);
   \draw [-, thick] (-1,0)--(3,0);
@@ -72,108 +44,22 @@
     \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
     \draw [fill] (-1,0) circle [radius=0.05] node[above] {$M$};
     \draw [fill] (3,0) circle [radius=0.05] node[above] {$N$};
-\end{tikzpicture} \\ \bigskip
-What is the length of the segment $\overline{MN}$? Show your work as an equation.\\[1.5cm]
-Can a length be a negative number?
+\end{tikzpicture} \par \smallskip
+What is the length of the segment $\overline{MN}$? Show your work as an equation. \vspace{2cm}
+
+\item Can a length be a negative number? Can it be zero?
 
 \newpage
-\item Points that are all located on the same line are $\rule{4cm}{0.15mm}$.
-
-\item Use symbols to write the name of each geometric figure.
-  \begin{enumerate}
-  \item %Ray DE
-    \begin{tikzpicture}
-      \draw [->, thick] (0,0)--(3,1.5);
-      \draw [fill] (0,0) circle [radius=0.05] node[below]{$G$};
-      \draw [fill] (2,1) circle [radius=0.05] node[below]{$H$};
-    \end{tikzpicture} \bigskip
-  \item \hspace{1cm}%Line AB
-    \begin{tikzpicture}
-      \draw [<->, thick] (1,0)--(1,3);
-      \draw [fill] (1,0.5) circle [radius=0.05] node[right]{$A$};
-      \draw [fill] (1,2.5) circle [radius=0.05] node[right]{$B$};
-    \end{tikzpicture} \bigskip
-    \item %Line segment XY
-      \begin{tikzpicture}
-        \draw [-, thick] (1,0)--(0,2);
-        \draw [fill] (1,0) circle [radius=0.05] node[below]{$E$};
-        \draw [fill] (0,2) circle [radius=0.05] node[left]{$F$};
-      \end{tikzpicture}
-  \end{enumerate}
-
-\item A flat surface is a(n) $\rule{4cm}{0.15mm}$.\bigskip
-
-\item Two line segments or angles of equal measure are $\rule{4cm}{0.15mm}$.\bigskip
-
-\item Identify two rays in the given plane.\par
-  \begin{tikzpicture}
-    \draw [thick](0,0) node[above right]{$\ p$} --(6,0)--(8,4)--(2,4)--(0,0);
-    \draw [<->, thick] (1,1)--(6,3);
-    \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$W \ $};
-    \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$X$};
-    \draw [<->, thick] (2,3.5)--(5.25,.25);
-    \draw [fill] (5,0.5) circle [radius=0.05] node[below left]{$Y$};
-  \end{tikzpicture} %\vspace{2cm}
-
-\item Use symbols to write the name of the given figure.
-  \begin{tikzpicture}
-    \draw [-, thick] (0,0)--(4,1);
-    \draw [fill] (0,0) circle [radius=0.05] node[below]{$J$};
-    \draw [fill] (4,1) circle [radius=0.05] node[below]{$K$};
-  \end{tikzpicture} \bigskip
-
-\item A(n) $\rule{4cm}{0.15mm}$ is a portion of a line that includes two points and all of the collinear points between the two points.\smallskip
-
-\newpage
-\item Given $\triangle JKL$ with $\overline{JK} \cong \overline{KL}$. On the diagram mark the congruent line segments with tick marks.
-  \begin{center}
+\item Points $A=4$ and $B=16$ are shown below. Find ${AB}$. \par \smallskip
   \begin{tikzpicture}[scale=0.5]
-    \draw [thick](0,0)--(9,0)--(4,8)--(0,0);
-    \draw [fill] (0,0) circle [radius=0.05] node[below]{$J$};
-    \draw [fill] (9,0) circle [radius=0.05] node[below]{$K$};
-    \draw [fill] (4,8) circle [radius=0.05] node[above right]{$L$};
-  \end{tikzpicture}
-  \end{center}
-  
-\item Draw and label a line segment $\overline {AB}$ such that the distance between points $A$ and $B$ is 6 cm. \vspace{2cm}
-
-\item Given the rectangle $ABCD$ shown below.
-  \begin{enumerate}
-    \item Measure and mark the length and width of the rectangle in centimeters.
-    \item Calculate the area of the rectangle in square centimeters. (show your work)
-  \end{enumerate}
-  \vspace{2cm}
-  \begin{center}
-  \begin{tikzpicture}
-    \draw [-, thick] (0,0)--(9,0)--(9,3)--(0,3)--cycle;
-    \draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
-    \draw [fill] (9,0) circle [radius=0.05] node[right]{$B$};
-    \draw [fill] (9,3) circle [radius=0.05] node[right]{$C$};
-    \draw [fill] (0,3) circle [radius=0.05] node[left]{$D$};
-  \end{tikzpicture}
-  \end{center}
-
-\item Do Now: Given $\overline{RST}$, $RS=3 \frac{2}{3}$, and $RT=9 \frac{1}{3}$. Find ${ST}$.\\[1cm]
-  \begin{tikzpicture}
-    \draw [-, thick] (0,0)--(7,0);
-    \draw [fill] (0,0) circle [radius=0.05] node[below]{$R$};
-    \draw [fill] (3,0) circle [radius=0.05] node[below]{$S$};
-    \draw [fill] (7,0) circle [radius=0.05] node[below]{$T$};
+    \draw [<->] (-1,0)--(21,0);
+    \foreach \x in {0, 2,...,20} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-6pt) -- (0pt,6pt) node[below=5pt]  {$\x$};
+      \draw [fill] (4,0) circle [radius=0.1] node[above] {$A$};
+      \draw [fill] (16,0) circle [radius=0.1] node[above] {$B$};
   \end{tikzpicture} \vspace{2cm}
 
-\item Given $\overline{ABC}$, $AB=3.8$, and $BC=1.7$.
-  \begin{enumerate}
-    \item Find ${AC}$.\\[1.cm]
-      \begin{tikzpicture}
-        \draw [-, thick] (1,0)--(7,0);
-        \draw [fill] (1,0) circle [radius=0.05] node[below]{$A$};
-        \draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
-        \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
-      \end{tikzpicture} \vspace{1cm}
-    \item The postulate used in this problem is the \rule{6cm}{0.15mm}.
-  \end{enumerate}
-
-\item Given $\overline{FG}$ as shown. What is the distance on the number line between the points?\\[20pt]
+\item Given $\overline{FG}$ as shown. What is the distance on the number line between the points? \par \smallskip
     \begin{tikzpicture}
       \draw [<->] (-2.5,0)--(6.5,0);
       \foreach \x in {-2,...,6} %2 leading for diff!=1
@@ -181,7 +67,24 @@ Can a length be a negative number?
         \draw [thick] (1.25,0)--(5.5,0);
         \draw [fill] (1.25,0) circle [radius=0.05] node[above] {$F(1.25)$};
         \draw [fill] (5.5,0) circle [radius=0.05] node[above] {$G(5.5)$};
-    \end{tikzpicture}
+    \end{tikzpicture} \vspace{2cm}
+
+\item Given $J(-3.0)$ and $K(2.5)$, as shown on the number line. 
+Find the length of the line segment $\overline{JK}$. 
+\begin{center}
+  \begin{tikzpicture}
+    \draw [<->] (-4.5,0)--(4.5,0);
+    \draw [-, thick] (-2.4,0)--(1.8,0);
+    \foreach \x in {-4,...,4} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (-3.0,0) circle [radius=0.05] node[above] {$J$};
+      \draw [fill] (2.5,0) circle [radius=0.05] node[above] {$K$};
+  \end{tikzpicture}
+\end{center} \vspace{3cm}
+
+\item Terry is 63 inches tall and Steven is 68 inches tall. State who is taller and by how much.  \vspace{3cm}
+
+\item Dr. Huson bicycles from 80th Street to 164th Street (straight north). How many blocks is that?
 
 \end{enumerate}
 \end{document}
