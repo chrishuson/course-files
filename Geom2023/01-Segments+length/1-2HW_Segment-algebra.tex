@@ -1,0 +1,80 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 9 Sept 2022}
+
+\begin{document}
+
+\subsubsection*{1.2 Homework: Number line and algebra practice}
+\begin{enumerate}
+\item Given $\overline{PQ}$ as shown on the number line. \par \smallskip
+    \begin{tikzpicture}
+        \draw [<->] (-3.5,0)--(6.5,0);
+        \foreach \x in {-3,...,6}
+            \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+        \draw [fill] (0,0) circle [radius=0.05] node[above]{$P$};
+        \draw [fill] (5,0) circle [radius=0.05] node[above]{$Q$};
+        \draw [-, thick] (-0,0)--(5,0);
+    \end{tikzpicture} \par \smallskip
+    What is the length of the segment $\overline{PQ}$? \par \smallskip
+    $PQ=$ \vspace{2cm}
+
+\item Two points $R(-2)$, $S(4)$ are shown on the number line. \par \smallskip
+\begin{tikzpicture}
+    \draw [<->] (-3.5,0)--(6.5,0);
+    \foreach \x in {-3,...,6}
+        \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+    \draw [fill] (-2,0) circle [radius=0.05] node[above]{$R$};
+    \draw [fill] (4,0) circle [radius=0.05] node[above]{$S$};
+\end{tikzpicture} \par \smallskip
+What is the distance between $R$ and $S$? Show your work as an equation. \vspace{3cm}
+
+\item Measure the segment $\overline{TU}$. Write its length in centimeters (expressed as an equation). \vspace{1cm}
+    \begin{center}
+    \begin{tikzpicture}
+        \draw [-, thick] (0,0)--(12,5);
+        \draw [fill] (0,0) circle [radius=0.05] node[above left]{$T$};
+        \draw [fill] (12,5) circle [radius=0.05] node[below right]{$U$};
+    \end{tikzpicture}
+    \end{center} \vspace{1cm}
+
+\item Points that fall on the same straight line are $\rule{5cm}{0.15mm}$.
+
+\newpage
+%\emph{A check is required for all algebra solutions}
+\item Given $\overline{RST}$, $RS=3 \frac{2}{3}$, and $ST=4 \frac{2}{3}$. Find ${RT}$ (expressed as a fraction, not a decimal). \par \smallskip
+\begin{tikzpicture}
+\draw [-, thick] (0,0)--(7,0);
+\draw [fill] (0,0) circle [radius=0.05] node[below]{$R$};
+\draw [fill] (3,0) circle [radius=0.05] node[below]{$S$};
+\draw [fill] (7,0) circle [radius=0.05] node[below]{$T$};
+\end{tikzpicture} \vspace{2cm}
+
+\item As shown, three collinear points with $LM=2x+3$, $MN=7$, $LN=22$. Find ${x}$. \vspace{1cm}
+    \begin{center}
+    \begin{tikzpicture}
+        \draw [-, thick] (0,0)--(9,0);
+        \draw [fill] (0,0) circle [radius=0.05] node[below]{$L$};
+        \draw [fill] (6,0) circle [radius=0.05] node[below]{$M$};
+        \draw [fill] (9,0) circle [radius=0.05] node[below]{$N$};
+        \node at (3,0) [above]{$2x+3$};
+        \node at (7.5,0) [above]{$7$};
+        \draw [<->, dashed] (0,-1)--(9,-1);
+        \node at (4.5,-1) [below]{$22$};
+    \end{tikzpicture}
+    \end{center}
+   %\vspace{1cm}
+  \begin{enumerate}
+    \item Write down an equation to represent the situation. \vspace{0.5cm}
+    \item Solve for $x$. \vspace{2.5cm}
+    \item Check your answer. \vspace{2cm}
+  \end{enumerate}
+
+\item Two textbooks are stacked up. One is a heavy calculus book, two inches thick. The other is one inch thick, \emph{Topics in Topography}. How tall is the stack of both books? \vspace{3cm}
+
+\item Dr. Huson is 5 foot 7 inches tall. If he stepped up onto a 6 inch box how tall would he be then?
+
+  
+\end{enumerate}
+\end{document}

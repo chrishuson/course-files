@@ -5,31 +5,54 @@
 \fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 8 Sept 2022}
 
 \begin{document}
-
-\subsubsection*{1.1 Extension: Absolute value the distance from a point to the origin (zero)}
+\subsubsection*{1.1 Extension: Absolute value}
 \begin{enumerate}
-  \item
+\item Write down the distance of each point from the origin. Use absolute value notation. \par \bigskip
   \begin{tikzpicture}
     \draw [<->] (-6.5,0)--(6.5,0);
-    \foreach \x in {-6,...,6} %2 leading for diff!=1
-      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-      \draw [fill] (0,0) circle [radius=0.05] node[above] {origin};
-      \draw [fill] (5,0) circle [radius=0.05] node[above] {$A(5)$};
-      \draw [fill] (-3,0) circle [radius=0.05] node[above] {$B(-3)$};
-  \end{tikzpicture} \\[0.5cm]
-  The absolute value of 5 is 5. $|5|=5$ \\[0.5cm]
-  The absolute value of $-3$ is 3. $|-3|=3$ \vspace{0.5cm}
+    \foreach \x in {-6,...,6}
+      \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+      \draw[fill] (0,0) circle [radius=0.05] node[above]{origin};
+      \draw[fill] (3.7,0) circle [radius=0.05] node[above]{$B(3.7)$};
+      \draw[fill] (-4,0) circle [radius=0.05] node[above]{$A(-4)$};
+  \end{tikzpicture} \bigskip
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item[A.] $|-4|=$
+      \item[B.] $\rule{4cm}{0.15mm}$
+    \end{enumerate}
+  \end{multicols} \bigskip
   
 \item Find the value of each expression.
   \begin{multicols}{2}
-    \begin{enumerate}
-      \item $|11|=$ \bigskip
-      \item $|-7|=$
-      \item $|-4.75|=$
-      \item $|10-7|=$
+    \begin{enumerate}[itemsep=1cm]
+      \item $|-3|=$
+      \item $|5|=$
+      \item $|-2.75|=$
+      \item $|11-3|=$
+      \item $|3-11|=$
+      \item $|5+(-7)|=$
     \end{enumerate}
-  \end{multicols} \vspace{0.5cm}
-  
+  \end{multicols} \bigskip
+
+\item Circle true or false for each statement. \bigskip
+  \begin{itemize}[label={\textbf{T \; F \;}}, itemsep=0.5cm]
+    \item The absolute value of any number must be postive or zero.
+    \item In the equation $|x|=4$ the value of $x$ could be positive 4.
+    \item If $x=-5$ then $|x|=5$.
+    \item The following equation is never true for any $x$: $|x|=-10$.
+  \end{itemize} \bigskip
+
+\item Given that $x=-5$, find the value of each expression. \bigskip
+  \begin{multicols}{2} 
+    \begin{enumerate}[itemsep=1cm]
+      \item $|x+2|=$
+      \item $|-x|=$
+      \item $|2x|=$
+      \item $|6-x|=$
+    \end{enumerate}
+  \end{multicols}
+
 
 \end{enumerate}
 \end{document}
