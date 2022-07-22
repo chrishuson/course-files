@@ -73,16 +73,16 @@ What is the length of the segment $\overline{MN}$? Show your work as an equation
 Find the length of the line segment $\overline{JK}$. 
 \begin{center}
   \begin{tikzpicture}
-    \draw [<->] (-4.5,0)--(4.5,0);
-    \draw [-, thick] (-2.4,0)--(1.8,0);
-    \foreach \x in {-4,...,4} %2 leading for diff!=1
-      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-      \draw [fill] (-3.0,0) circle [radius=0.05] node[above] {$J$};
-      \draw [fill] (2.5,0) circle [radius=0.05] node[above] {$K$};
+    \draw[<->] (-4.5,0)--(4.5,0);
+    \foreach \x in {-4,...,4}
+      \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+    \draw[fill] (-3.0,0) circle [radius=0.05] node[above] {$J$};
+    \draw[fill] (2.5,0) circle [radius=0.05] node[above] {$K$};
+    \draw[-, thick] (-2.4,0)--(2.5,0);
   \end{tikzpicture}
 \end{center} \vspace{3cm}
 
-\item Terry is 63 inches tall and Steven is 68 inches tall. State who is taller and by how much.  \vspace{3cm}
+\item Terry is 63 inches tall and Steven is 68 inches tall. State who is taller and by how much. \vspace{3cm}
 
 \item Dr. Huson bicycles from 80th Street to 164th Street (straight north). How many blocks is that?
 

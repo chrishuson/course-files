@@ -14,7 +14,7 @@
   {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{1.1 Thursday 8 Sept}}
   \begin{block}{Do Now: Make simple measurements on paper}
     \begin{enumerate}
-        \item Diagram the desks closest to you and their distances
+        \item Diagram the desks \emph{adjacent} to yours and their distances
         \item Early finishers: Calculate diagonal distances
         \item [ToDo:] add classroom desk image, diagram
     \end{enumerate}
@@ -29,8 +29,11 @@
   %\includegraphics[]{desk-layout-diagram}
   \begin{block}{When making diagrams}
     Include common elements: labels, titles, distances \par \medskip
-    \emph{Conventions}: standard ways of doing things to make it easier to work with other people
-  \end{block} \vspace{2cm}
+  \end{block}
+  \begin{description}
+    \item[Conventions] Standard ways of doing things to make it easier to work with other people
+    \item[Adjacent] Positioned next to each other
+  \end{description} \vspace{2cm}
   Write down vocabulary and terminology in your notebook with definitions and examples. (I write new terms in \emph{italics})
 \end{frame}
 
@@ -99,13 +102,13 @@
     \end{enumerate}
     \begin{center}
       \begin{tikzpicture}
-        \draw [<->] (-3.5,0)--(6.5,0);
-        \foreach \x in {-3,...,6} %2 leading for diff!=1
-          \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-          \onslide<2> 
-            \draw [fill] (1,0) circle [radius=0.05] node[above] {$G$};
-            \draw [fill] (4.5,0) circle [radius=0.05] node[above] {$H$};
-            \draw [-, thick] (1,0)--(4.5,0);
+        \draw[<->] (-3.5,0)--(6.5,0);
+        \foreach \x in {-3,...,6}
+          \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+        \onslide<2> 
+          \draw[fill] (1,0) circle [radius=0.05] node[above]{$G$};
+          \draw[fill] (4.5,0) circle [radius=0.05] node[above]{$H$};
+          \draw[-, thick] (1,0)--(4.5,0);
       \end{tikzpicture}
     \end{center} \bigskip
     \onslide<2> {$$GH= 4.5 - 1 = 3.5$$} \vspace{2cm}
@@ -113,15 +116,16 @@
 
 \begin{frame}{Take class notes in a composition book}
   {Copy definitions using your own words. Write down example diagrams and problems}
-  Definitions: \bigskip
+  Terminology:
     \begin{description}
       \item[Point] A location, has no size; label with capital letter, $P$
       \item[Endpoint] A point at the end of a line segment
       \item[Line segment] Two points and all the points between them; label with \emph{endpoints} and a bar, e.g. $\overline{AB}$
       \item[Distance] The positive difference between two points on a number line (length is the same thing). $AB=3$ inches
+      \item[Number line] A line with lengths marked on it
       \item[Conventions] Standard ways of doing things to make it easier to work with other people
       \item[Diagram] Simplified image of a situation
-      \item[Number line] A line with lengths marked on it
+      \item[Adjacent] Positioned next to each other
     \end{description}
 \end{frame}
 
@@ -157,8 +161,8 @@
       \draw [-, thick] (1,0)--(6,0);
     \end{tikzpicture}
   \end{center} \vspace{1cm}
-  Lesson: segment addition, solving algebraic models \par \medskip
-  Homework: problem set 1.2 (plus optional spicy worksheet)
+  Lesson: Segment addition, solving algebraic models \par \medskip
+  Homework: Problem set 1.2 (plus optional spicy worksheet)
 \end{frame}
 
 \begin{frame}{Lengths add up on a straight line}
@@ -293,6 +297,20 @@
   \end{center} \vspace{3cm}
 \end{frame}
 
+\begin{frame}{Lengths in a straight line add up}
+  {Check your notebook for completeness}
+\begin{block}{Segment Addition Postulate}
+  Mathematics is constructed of fundamental rules or postulates, and basic objects like points, lines, and numbers.
+\end{block} \vspace{1cm}
+  Vocabulary:
+    \begin{description}
+      \item[Collinear] Points that lie on the same straight line
+      \item[Postulate] A rule that we assume is true (also called \emph{axioms})
+      \item[Modeling] Using an equation (algebra) to represent a situation in a simplified way
+      \item[Check] Substitute the value of $x$ into the equation to test whether it is correct
+    \end{description}
+\end{frame}
+
 \begin{frame}{Spicy: Fractional \emph{coefficients}}
   Given $\overline{ABC}$, $AB=\frac{1}{2}x$, $BC=x$, $AC=21$. Find ${x}$.\vspace{1cm}
   \begin{center}   
@@ -316,18 +334,18 @@
   Do Now: Given collinear points $A$, $B$, $C$, with $AB=7$, $AC=13$.
   \begin{center}
     \begin{tikzpicture}
-      \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-      \draw [-, thick] (0,0)--(7,0);
-      \draw [fill] (3.8,0) circle [radius=0.05] node[below]{$B$};
-      \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw[-, thick] (0,0)--(7,0);
+      \draw[fill] (3.8,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (7,0) circle [radius=0.05] node[below]{$C$};
       \node at (1.7,0) [above]{$7$};
       \node at (5.2,0) [above]{$x$};
-      \draw [<->, dashed] (0,-1)--(7,-1);
+      \draw[<->, dashed] (0,-1)--(7,-1);
       \node at (3.5,-1) [below]{$13$};
     \end{tikzpicture}
   \end{center}
   \begin{enumerate}
-    \item Circle the equation that most simply represents the situation.
+    \item Circle the equation that most simply represents the situation. \medskip
     \begin{columns}[c]
       \column{0.6\textwidth}
       \qquad \hspace{2cm} $7 + x = 13$
@@ -421,7 +439,7 @@
   \end{columns}
   \end{frame}
 
-\begin{frame}{Several objects are shown in a plane}
+\begin{frame}{Several objects are shown in a plane}{Circle true or false}
   \begin{enumerate}
     \item T \quad F \quad The name of the plane is $m$.
     \item T \quad F \quad The line $\overleftrightarrow{WY}$ is in the plane.
@@ -431,13 +449,13 @@
     \end{enumerate}
     \begin{center}
       \begin{tikzpicture}
-      \draw [thick](0,0) node[above right]{$\ m$} --(6,0)--(8,4)--(2,4)--(0,0);
-      \draw [<-, thick] (1,1)--(5,2.6);
-      \draw [fill] (4, 3.5) circle [radius=0.05] node[below]{$Z \ $};
-      \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$W \ $};
-      \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$X$};
-      \draw [<->, thick] (2,3.5)--(5.25,.25);
-      \draw [fill] (5,0.5) circle [radius=0.05] node[above right]{$Y \ $};
+      \draw[thick](0,0) node[above right]{$\ m$} --(6,0)--(8,4)--(2,4)--(0,0);
+      \draw[<-, thick] (1,1)--(5,2.6);
+      \draw[fill] (4, 3.5) circle [radius=0.05] node[below]{$Z \ $};
+      \draw[fill] (3.5,2) circle [radius=0.05] node[below]{$W \ $};
+      \draw[fill] (5,2.6) circle [radius=0.05] node[below]{$X$};
+      \draw[<->, thick] (2,3.5)--(5.25,.25);
+      \draw[fill] (5,0.5) circle [radius=0.05] node[above right]{$Y \ $};
     \end{tikzpicture}
   \end{center}
 \end{frame}
@@ -480,20 +498,26 @@
 \section{1.4 Midpoint and bisector \hfill 13 September}
 \begin{frame}{Learning Target: I can \emph{bisect} a length}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{1.4 Tuesday 13 Sept}}
-    \begin{block}{Do Now: Point $B$ is in the exact middle between $A$ and $C$}
-      Given $AB=x+2$, $BC=11$. Find $x$.
-        \begin{center}
-          \begin{tikzpicture}
-            \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-            \draw [-, thick] (0,0)--(7,0);
-            \draw [fill] (3.5,0) circle [radius=0.05] node[below]{$B$};
-            \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
-            \node at (1.7,0.5) [above]{$x+2$};
-            \node at (5.2,0.5) [above]{$11$};
-          \end{tikzpicture}
-        \end{center}
+    \begin{block}{Do Now: Circle or mark each object in the plane}
+      \begin{enumerate} 
+        \item The point $H$
+        \item The ray $\overrightarrow{JL}$
+        \item The name of the plane shown
+        \end{enumerate}
+      \begin{center}
+        \begin{tikzpicture}[scale=0.8]
+          \draw [thick](0,0)--(6,0)--(8,4) node[below left]{$p \ $} --(2,4)--(0,0);
+          \draw [->, thick] (2, 1.4)--(6,3);
+          \draw [fill] (4, 3.5) circle [radius=0.05] node[below]{$H$};
+          \draw [fill] (2, 1.4) circle [radius=0.05] node[below]{$J$};
+          \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$K \ $};
+          \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$L$};
+          \draw [<->, thick] (2,3.5)--(5.25,.25);
+          \draw [fill] (5,0.5) circle [radius=0.05] node[above right]{$M \ $};
+        \end{tikzpicture}
+      \end{center}
     \end{block}
-    Hint: The line segment is split into two equal lengths. \vspace{3cm}
+    Lesson: Midpoint, congruence, bisection
   \end{frame}
 
   \begin{frame}{The point $B$ \emph{bisects} the segment $\overline{AC}$}
@@ -536,10 +560,10 @@
   Find $x$.
     \begin{center}
       \begin{tikzpicture}
-        \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-        \draw [-, thick] (0,0)--(8,0);
-        \draw [fill] (4,0) circle [radius=0.05] node[below]{$B$};
-        \draw [fill] (8,0) circle [radius=0.05] node[below]{$C$};
+        \draw[-, thick] (0,0)--(8,0);
+        \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+        \draw[fill] (4,0) circle [radius=0.05] node[below]{$B$};
+        \draw[fill] (8,0) circle [radius=0.05] node[below]{$C$};
         \node at (1.7,0.5) [above]{$x+7$};
         \node at (6.2,0.5) [above]{$17$};
         \draw (1.8,-0.2)--(1.9,0.2);
@@ -553,27 +577,53 @@
     Mark congruent segments in diagrams with cross ``\emph{hash}" marks.
   \end{frame}
 
-\begin{frame}{Review: Identifying objects in a plane}
-  Circle or mark each item
-  \begin{enumerate} 
-    \item The point $H$
-    \item The ray $\overrightarrow{JL}$
-    \item The name of the plane shown
-    \end{enumerate} \vspace{1cm}
-    \begin{center}
-      \begin{tikzpicture}
-      \draw [thick](0,0)--(6,0)--(8,4) node[below left]{$p \ $} --(2,4)--(0,0);
-      \draw [->, thick] (2, 1.4)--(6,3);
-      \draw [fill] (4, 3.5) circle [radius=0.05] node[below]{$H$};
-      \draw [fill] (2, 1.4) circle [radius=0.05] node[below]{$J$};
-      \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$K \ $};
-      \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$L$};
-      \draw [<->, thick] (2,3.5)--(5.25,.25);
-      \draw [fill] (5,0.5) circle [radius=0.05] node[above right]{$M \ $};
+\begin{frame}{Check your notes}{$M$ bisects $\overline{PQ}$}
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[-, thick] (0,0)--(8,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$P$};
+      \draw[fill] (4,0) circle [radius=0.05] node[below]{$M$};
+      \draw[fill] (8,0) circle [radius=0.05] node[below]{$Q$};
+      \draw (1.8,-0.2)--(1.9,0.2);
+      \draw (2.1,-0.2)--(2.2,0.2);
+      \draw (5.8,-0.2)--(5.9,0.2);
+      \draw (6.1,-0.2)--(6.2,0.2);
     \end{tikzpicture}
-  \end{center}
+  \end{center} \vspace{1cm}
+  \begin{description}
+    \item[Bisect] Divide exactly in half
+    \item[Midpoint] The point in the exact middle of a line segment
+    \item[Congruent] Equal in length or measure. $\overline{AB} \cong \overline{BC}$
+    \item[Hash marks] Mark congruent segments with small crossways lines (also called ``tick'' marks)
+  \end{description}
 \end{frame}
 
+\begin{frame}{Spicy: \emph{Trisect} a segment into three congruent parts}
+  Points $B$ and $C$ trisect segment $\overline{AD}$ with segment lengths as shown. \par \medskip 
+  Find $x$.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.6]
+      \draw[-, thick] (0,0)--(12,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (4,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (8,0) circle [radius=0.05] node[below]{$C$};
+      \draw[fill] (12,0) circle [radius=0.05] node[below]{$D$};
+      \node at (1.7,0.5) [above]{$x+6$};
+      \node at (6.2,0.5) [above]{$12$};
+      \node at (10,0.5) [above]{$2x$};
+      \draw (1.8,-0.2)--(1.9,0.2);
+      \draw (2.1,-0.2)--(2.2,0.2);
+      \draw (5.8,-0.2)--(5.9,0.2);
+      \draw (6.1,-0.2)--(6.2,0.2);
+      \draw (9.8,-0.2)--(9.9,0.2);
+      \draw (10.1,-0.2)--(10.2,0.2);
+    \end{tikzpicture}
+  \end{center} \vspace{2cm}
+  \begin{description}
+    \item[Trisect] Divide exactly in three equal parts
+    \item[Partition] Cut into parts (not necessarily evenly)
+  \end{description}
+\end{frame}
 
 \section{1.5 Equilateral and isosceles triangles, perimeter \hfill 14 September}
 \begin{frame}{Learning Target: I can work with objects having congruent parts}
