@@ -304,8 +304,10 @@
     \end{tikzpicture}
   \end{center} \vspace{3cm}
   \begin{description}
+    \item[Term] An expression representing a number, for example $\frac{1}{2}x$
+    \item[Variable] The unknown value represented by a letter ($x$)
     \item[Coefficient] The fixed number in front of the variable. (e.g. $\frac{1}{2}$) 
-  \end{description}
+    \end{description}
 \end{frame}
 
 \section{1.3 Terminology and notation \hfill 12 September}
@@ -327,13 +329,14 @@
   \begin{enumerate}
     \item Circle the equation that most simply represents the situation.
     \begin{columns}[c]
-      \column{0.5\textwidth}
-      $7 + x = 13$
-      \column{0.5\textwidth}
+      \column{0.6\textwidth}
+      \qquad \hspace{2cm} $7 + x = 13$
+      \column{0.4\textwidth}
       $x = 13 - 7$
     \end{columns}
     \item Find $BC$.
-  \end{enumerate}
+  \end{enumerate} \vspace{2cm}
+  Lesson: Vocabulary and notation
   \end{frame}
 
 \begin{frame}{Write down an example of each geometric object.}
@@ -378,45 +381,53 @@
     A \emph{plane} is flat and extends infinitely in two directions, $p$.
     \begin{center}
       \begin{tikzpicture}[scale=0.7]
-      \draw [thick](0,0) node[above right]{$\ p$} --(3,0)--(4,2)--(1,2)--(0,0);
-    \end{tikzpicture}
-  \end{center}
+        \draw [thick](0,0) node[above right]{$\ p$} --(3,0)--(4,2)--(1,2)--(0,0);
+      \end{tikzpicture}
+      \end{center}
 \end{frame}
 
-\begin{frame}{Definition: \emph{Opposite rays} are collinear rays with a common endpoint.}
-  \begin{enumerate}
-    \item $\overrightarrow{BA}$ and $\overrightarrow{BC}$ are opposite rays
-    \hspace{2cm}
+\begin{frame}{\emph{Opposite rays} are collinear rays with a common endpoint.}
+  \begin{columns}
+    \column{0.4\textwidth} 
       \begin{tikzpicture}[scale=.8]
-        \draw  [<->, thick] (0,2)--(4,0);
-        \draw [fill] (1,1.5) circle [radius=0.05] node[below]{$A$};
-        \draw [fill] (2,1) circle [radius=0.05] node[below]{$B$};
-        \draw [fill] (3,0.5) circle [radius=0.05] node[below]{$C$};
+        \draw[<->, thick] (0,2)--(4,0);
+        \draw[fill] (1,1.5) circle [radius=0.05] node[below]{$A$};
+        \draw[fill] (2,1) circle [radius=0.05] node[below]{$B$};
+        \draw[fill] (3,0.5) circle [radius=0.05] node[below]{$C$};
       \end{tikzpicture}
-    \item These rays do not make a straight line.
-    \hspace{1cm}
+    \column{0.6\textwidth} 
+      $\overrightarrow{BA}$ and $\overrightarrow{BC}$ are opposite rays.
+  \end{columns}
+  \begin{columns}
+    \column{0.4\textwidth}
       \begin{tikzpicture}[scale=.8]
-        \draw  [<->, thick] (0,2)--(2,0)--(4,1);
-        \draw [fill] (1,1) circle [radius=0.05] node[below left]{$D$};
-        \draw [fill] (2,0) circle [radius=0.05] node[below]{$E$};
-        \draw [fill] (3,0.5) circle [radius=0.05] node[below]{$F$};
+        \draw[<->, thick] (0,2)--(2,0)--(4,1);
+        \draw[fill] (1,1) circle [radius=0.05] node[below left]{$D$};
+        \draw[fill] (2,0) circle [radius=0.05] node[below]{$E$};
+        \draw[fill] (3,0.5) circle [radius=0.05] node[below]{$F$};
       \end{tikzpicture}
-    \item The rays $\overrightarrow{GH}$ and $\overrightarrow{HG}$ do not share a common endpoint.
+    \column{0.6\textwidth}
+      These rays do not make a straight line.
+  \end{columns} \bigskip
+  \begin{columns}
+    \column{0.4\textwidth}
       \begin{tikzpicture}[scale=.8]
-        \draw  [<->, thick] (0,-2)--(4,0);
-        \draw [fill] (1,-1.5) circle [radius=0.05] node[below]{$G$};
-        \draw [fill] (3,-0.5) circle [radius=0.05] node[below]{$H$};
-        %\draw [fill] (3,0.5) circle [radius=0.05] node[below]{$C$};
+        \draw[<->, thick] (0,-2)--(4,0);
+        \draw[fill] (1,-1.5) circle [radius=0.05] node[below]{$G$};
+        \draw[fill] (3,-0.5) circle [radius=0.05] node[below]{$H$};
       \end{tikzpicture}
-    \end{enumerate}
-\end{frame}
+    \column{0.6\textwidth}
+      The rays $\overrightarrow{GH}$ and $\overrightarrow{HG}$ do not share a common endpoint.
+  \end{columns}
+  \end{frame}
 
 \begin{frame}{Several objects are shown in a plane}
   \begin{enumerate}
-    \item T \quad F \quad The name of the plane is $m$
-    \item T \quad F \quad The line $\overleftrightarrow{WY}$ is in the plane
-    \item T \quad F \quad The ray $\overrightarrow{WX}$ is shown in the plane
-    \item T \quad F \quad Points $W$, $X$, and $Z$ are collinear
+    \item T \quad F \quad The name of the plane is $m$.
+    \item T \quad F \quad The line $\overleftrightarrow{WY}$ is in the plane.
+    \item T \quad F \quad The ray $\overrightarrow{WX}$ is shown in the plane.
+    \item T \quad F \quad Points $W$, $X$, and $Z$ are collinear.
+    \item T \quad F \quad $\overleftrightarrow{WY}$ and $\overleftrightarrow{YW}$ are the same line.
     \end{enumerate}
     \begin{center}
       \begin{tikzpicture}
@@ -432,32 +443,43 @@
 \end{frame}
 
 \begin{frame}{More definitions: intersections, coplanar}
-Two lines \emph{intersect} if they cross. Their common point is the \emph{intersection}. 
-(shown here, lines $j$ and $k$ intersect at point $P$)
-\begin{center}
-  \begin{tikzpicture}
-      \draw [<->, thick] (0,0)--(6,1);
-      \draw [<->, thick] (3,1.333)--(5,0);
-      \node at (0.25, 0.2)[above]{$k$};
-      \node at (3.3, 1.333)[right]{$j$};
-      \draw [fill] (4,0.666) circle [radius=0.05] node[below]{$P$};
-    \end{tikzpicture}
-  \end{center}
-  \emph{Coplanar} means to lie in the same plane. Three points are always coplanar, but four points may not be.
-  \begin{center}
-    \begin{tikzpicture}[scale=1]
-    \draw [thick](0,0) node[above right]{$\ z$} --(3,0)--(4,2)--(1,2)--(0,0);
-    \draw [fill] (3,1.75) circle [radius=0.05] node[below]{$K$};
-    \draw [fill] (1.5,1.6) circle [radius=0.05] node[below]{$J$};
-    \draw [fill] (2,0.5) circle [radius=0.05] node[above right]{$L$};
-  \end{tikzpicture}
-\end{center}
+  Two lines \emph{intersect} if they cross. Their common point is the \emph{intersection}. 
+  (shown here, lines $j$ and $k$ intersect at point $P$)
+    \begin{center}
+      \begin{tikzpicture}
+          \draw [<->, thick] (0,0)--(6,1);
+          \draw [<->, thick] (3,1.333)--(5,0);
+          \node at (0.25, 0.2)[above]{$k$};
+          \node at (3.3, 1.333)[right]{$j$};
+          \draw [fill] (4,0.666) circle [radius=0.05] node[below]{$P$};
+        \end{tikzpicture}
+      \end{center}
+      \emph{Coplanar} means to lie in the same plane. Three points are always coplanar, but four points may not be.
+      \begin{center}
+        \begin{tikzpicture}[scale=1]
+        \draw [thick](0,0) node[above right]{$\ z$} --(3,0)--(4,2)--(1,2)--(0,0);
+        \draw [fill] (3,1.75) circle [radius=0.05] node[below]{$K$};
+        \draw [fill] (1.5,1.6) circle [radius=0.05] node[below]{$J$};
+        \draw [fill] (2,0.5) circle [radius=0.05] node[above right]{$L$};
+        \draw [fill] (4,1) circle [radius=0.05] node[above right]{$M$};
+      \end{tikzpicture}
+    \end{center}
+  \end{frame}
+
+\begin{frame}{Learn and practice using formal language and notation}
+  \begin{description}%[itemsep=1cm]
+    \item[Line] An infinite collection of points extending straight in both directions indefinitely, $\overleftrightarrow{AB}$ or $l$
+    \item[Ray] An endpoint and half of a straight line extending away from the endpoint, $\overrightarrow{JK}$
+    \item[Plane] A flat surface extending infinitely in two dimensions, $p$
+    \item[Opposite rays] Collinear rays with a common endpoint. 
+    \item[Coplanar] Points or objects all in the same plane
+    \item[Intersection] Where two lines cross, the common point
+  \end{description}
 \end{frame}
 
 \section{1.4 Midpoint and bisector \hfill 13 September}
 \begin{frame}{Learning Target: I can \emph{bisect} a length}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{1.4 Tuesday 13 Sept}}
-  
     \begin{block}{Do Now: Point $B$ is in the exact middle between $A$ and $C$}
       Given $AB=x+2$, $BC=11$. Find $x$.
         \begin{center}
@@ -473,6 +495,23 @@ Two lines \emph{intersect} if they cross. Their common point is the \emph{inters
     \end{block}
     Hint: The line segment is split into two equal lengths. \vspace{3cm}
   \end{frame}
+
+  \begin{frame}{The point $B$ \emph{bisects} the segment $\overline{AC}$}
+      \begin{block}{Point $B$ is in the exact middle between $A$ and $C$}
+        Given $AB=x+2$, $BC=11$. Find $x$.
+          \begin{center}
+            \begin{tikzpicture}
+              \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+              \draw [-, thick] (0,0)--(7,0);
+              \draw [fill] (3.5,0) circle [radius=0.05] node[below]{$B$};
+              \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+              \node at (1.7,0.5) [above]{$x+2$};
+              \node at (5.2,0.5) [above]{$11$};
+            \end{tikzpicture}
+          \end{center}
+      \end{block}
+      Hint: The line segment is split into two equal lengths. \vspace{3cm}
+    \end{frame}
 
 \begin{frame}{The \emph{midpoint} of a line segment}
     Given $\overline{ABC}$, with $AB=2x+2$, $AC=20$. $AB=BC$ \\[0.15in]
