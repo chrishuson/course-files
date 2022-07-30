@@ -794,7 +794,8 @@
     \item Perimeter and special shapes: 
     \begin{itemize}
       \item Scalene, isosceles, and equilateral $\triangle$s
-      \item Squares, rectangles, rhombuses, kites
+      \item Squares, rectangles, rhombuses, kites \par 
+      (quadrilateral side $\cong$s will be marked)
     \end{itemize}
     \item Modeling situations with algebra
     \item Solving algebraic equations for one variable
@@ -802,7 +803,7 @@
   \end{block}
 \end{frame}
 
-\begin{frame}{Identify each item.}
+\begin{frame}{1. Identify each item.}
   {Example of Topic 1: Conventions: terminology, notation, diagramming}
   \begin{enumerate} 
     \item The point $A$
@@ -823,23 +824,31 @@
   \end{center}
 \end{frame}
 
-\begin{frame}{Find the perimeter of the rectangle $ABCD$ \alert{finish}}
+\begin{frame}{2. Find the perimeter of the rectangle $ABCD$}
   {Example of Topic 2: Perimeter and special triangles and quadrilaterals}
   Given $AB=6$ inches, $BC=4$ inches.
-    \begin{center}
-      \begin{tikzpicture}
-      \draw [thick]
+  \begin{center}
+    \begin{tikzpicture}
+    \draw[thick]
       (0,0)node[below left]{$A$}--
       (6,0)node[below right]{$B$}--
       (6,4)node[above right]{$C$}--
-      (0,4)node[above left]{$D$}--(0,0);
-      \node at (3,-0.5){$6$ inches};
-      \draw (2.9, -0.2)--(2.9,0.2);
+      (0,4)node[above left]{$D$}--cycle;
+    \node at (3,-0.5){$6$ inches};
+    \node at (6.6,2.3){$4$ in};
+    \draw (2.9, -0.2)--(2.9,0.2);
+    \draw (2.9, 3.8)--(2.9,4.2);
+    \draw (-0.2, 1.9)--(0.2, 1.9);
+    \draw (-0.2, 2.1)--(0.2, 2.1);
+    \draw (-0.2, 1.9)--(0.2, 1.9);
+    \draw (-0.2, 2.1)--(0.2, 2.1);
+    \draw (5.8, 1.9)--(6.2, 1.9);
+    \draw (5.8, 2.1)--(6.2, 2.1);
     \end{tikzpicture}
   \end{center}
 \end{frame}
 
-\begin{frame}{Write down an equation to represent the situation}
+\begin{frame}{3. Write down an equation to represent the situation}
   {Example of Topic 3: Modeling situations with algebra}
   Given $M$ is the midpoint of $\overline{AB}$, $AM=4x+2$, $AB=20$. \par  \vspace{0.5cm}
   \emph{First mark the diagram with hash marks and values.} \vspace{1cm}
@@ -854,7 +863,7 @@
   \emph{Sometimes you will not be asked to solve the equation.}
 \end{frame}
 
-\begin{frame}{Solve for $x$}
+\begin{frame}{4. Solve for $x$}
   {Example of Topic 4: Solving algebraic equations for one variable}
   Given $\overline{LMN}$, $LM=3x+1$, $MN=7$, $LN=17$.
     \begin{flushleft}
@@ -876,22 +885,39 @@
 \section{1.7 Unit conversion, Exit note quiz \hfill 16 September}
 \begin{frame}{Learning Target: I can change units of length}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{1.7 Friday 16 September}}
-  Do Now: Mike is six feet tall. How many inches is that? \par \vspace{0.25cm}
-  Conversion ratio: 1 foot = 12 inches \par
+  Do Now: Mike is six feet tall. How many inches is that? \par \medskip
+  Conversion: 1 foot = 12 inches \par
   \vspace{3cm}
   \alert{Exit note quiz today}
 \end{frame}
 
-\begin{frame}{Formal meanings of sketch, draw, and construct}
-  \begin{enumerate}
-    \item \emph{Sketch} is to make a freehand diagram of important features. \\[0.15cm]
-    Use a pencil to write carefully in your notebook or on paper.  \smallskip
-    \item \emph{Draw}  is to depict with accurate measures using ruler, protractor, and compass.\\[0.15cm]
-    For example, draw a diagram of your room. \smallskip
-    \item \emph{Construct} is a formal, logical process to create geometric figures using only a straightedge and compass. \smallskip
-    \item Drawn to \emph{scale} means that all of the lengths are proportional. (e.g. a ``scale model'')\\[0.15cm]
-    Tests will often warn that diagrams are ``not drawn to scale''
-  \end{enumerate}
+\begin{frame}{Multiply by \emph{conversion factors} to change units}
+  {reference: \href{https://en.wikipedia.org/wiki/Dimensional_analysis}{Wikipedia Dimension analysis}}
+  Mike is six feet tall. How many inches is that? \par \medskip
+  $$H = 6 \,\mathrm{feet} \times \displaystyle \frac{12 \,\mathrm{inches}}{1 \,\mathrm{foot}} = 72 \,\mathrm{inches}$$
+  \begin{description}
+    \item[Conversion factor] is a ratio of units equal to one, for example, 
+  \end{description}
+  $$\displaystyle \frac{12 \,\mathrm{inches}}{1 \,\mathrm{foot}} = 1$$
+  \vspace{3cm}
 \end{frame}
+
+\begin{frame}{Numerator vs denominator of conversion factors}
+  An American football field is 100 yards long. How many feet is that?  \par \smallskip
+  $$1 \,\mathrm{yard} = 3 \,\mathrm{feet}$$ \par \medskip
+  \onslide<2> $$L = 100 \,\mathrm{yards} \times \displaystyle \frac{3 \,\mathrm{feet}}{1 \,\mathrm{yard}} = 300 \,\mathrm{feet}$$ \par \vspace{1cm}
+  Each conversion factor ratio has two forms: \par \medskip
+  $$\displaystyle  \frac{1 \,\mathrm{yards}}{3 \,\mathrm{feet}} = \frac{3 \,\mathrm{feet}}{1 \,\mathrm{yards}} = 1$$
+\end{frame}
+
+\begin{frame}{Cancel units when choosing correct conversion factor}
+  {reference: \href{https://www.nysedregents.org/geometryre/622/geom62022-exam.pdf}{NY State Regents Exam formula sheet}}
+  Stephen is 69 inches tall. How many meters is that? \par \smallskip
+   $$1 \,\mathrm{meter} = 39.37 \,\mathrm{inches}$$ \par \medskip
+   \onslide<2> $$H = 69 \,\mathrm{inches} \times \displaystyle \frac{1 \,\mathrm{meter}}{39.37 \,\mathrm{inches}} = 1.7526\dots \,\mathrm{meter}$$ \par \vspace{1cm}
+    Two conversion factor ratios: \par \medskip
+      $$\displaystyle  \frac{39.37 \,\mathrm{inches}}{1 \,\mathrm{meter}} = \frac{1 \,\mathrm{meter}}{39.37 \,\mathrm{inches}} = 1$$
+\end{frame}
+
 
 \end{document}
