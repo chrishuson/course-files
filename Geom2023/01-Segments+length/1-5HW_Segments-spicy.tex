@@ -8,49 +8,6 @@
 
 \subsubsection*{1.5 Homework: Segments, equilateral and isosceles triangles, perimeter}
 \begin{enumerate}
-\item Given point $A(-1)$ as shown below. Locate point, $B > 0$, on the number line such that ${AB}=3 \frac{1}{2}$. \\[1.5cm]
-    \begin{tikzpicture}
-      \draw [<->] (-2.5,0)--(6.5,0);
-      %\draw [-, thick] (1,0)--(4.5,0);
-      \foreach \x in {-2,...,6} %2 leading for diff!=1
-        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-        \draw [fill] (-1,0) circle [radius=0.05] node[above] {$A$};
-        %\draw [fill] (4.5,0) circle [radius=0.05] node[above] {$N$};
-    \end{tikzpicture}
-    \begin{enumerate}
-      \item Mark and label $B$.
-      \item State the value of $B$, writing an equation to support your work.
-    \end{enumerate} \vspace{3cm}  
-
-\item Given $M$ is the midpoint of $\overline{AB}$, $AM=5x+11$, $MB=x+21$.
-  \begin{enumerate}
-    \item Mark the diagram with the values and tick marks
-    \item Write an equation and solve for $x$
-    \item Check your result
-  \end{enumerate} \vspace{1cm}
-    \begin{center}
-      \begin{tikzpicture}
-        \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-        \draw [-, thick] (0,0)--(7,0);
-        \draw [fill] (3.5,0) circle [radius=0.05] node[below]{$M$};
-        \draw [fill] (7,0) circle [radius=0.05] node[below]{$B$};
-        %\node at (1.7,0.5) [above]{$x+2$};
-        %\node at (5.2,0.5) [above]{$11$};
-        %\draw [<->, dashed] (0,-1)--(7,-1);
-        %\node at (3.5,-1) [below]{$20$};
-      \end{tikzpicture}
-    \end{center} \vspace{4cm}
-
-\item Given $S(-1.3)$ and $T(3.3)$, as shown on the number line. \\[0.25cm]
-      Mark and label the midpoint $M$ that bisects $\overline{ST}$. \\[0.5cm]
-        \begin{tikzpicture}
-          \draw [<->] (-3.5,0)--(6.5,0);
-          \draw [-, thick] (-1.3,0)--(3.3,0);
-          \foreach \x in {-3,...,6} %2 leading for diff!=1
-            \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-            \draw [fill] (-1.3,0) circle [radius=0.05] node[above] {$S$};
-            \draw [fill] (3.3,0) circle [radius=0.05] node[above] {$T$};
-        \end{tikzpicture} \vspace{4cm}  
 
 \item The perimeter of the isosceles $\triangle FGH$ is 35 with $\overline{FH} \cong \overline{GH}$. If $FG=x+5$ and $FH=13 \frac{1}{2}$, find $x$.\\[0.25cm]
     Show your work with an equation for full credit.\\[0.5cm]
@@ -103,6 +60,17 @@
      %\draw [<->, dashed] (0,-1.3)--(9,-1.3);
      %\node at (4.5,-1.3) [below]{$15$};
    \end{tikzpicture} \vspace{3cm}
+
+\item Given $S(-1.3)$ and $T(3.3)$, as shown on the number line. \\[0.25cm]
+Mark and label the midpoint $M$ that bisects $\overline{ST}$. \\[0.5cm]
+  \begin{tikzpicture}
+    \draw [<->] (-3.5,0)--(6.5,0);
+    \draw [-, thick] (-1.3,0)--(3.3,0);
+    \foreach \x in {-3,...,6} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (-1.3,0) circle [radius=0.05] node[above] {$S$};
+      \draw [fill] (3.3,0) circle [radius=0.05] node[above] {$T$};
+  \end{tikzpicture} \vspace{4cm} 
 
 \item Given $A(-2.1)$ and $M(1.8)$, as shown on the number line. The point $B$ is such that $M$ bisects $\overline{AB}$. \\[0.25cm] 
 Find the value of $B$. Mark and label it on the number line.\\[0.5cm]
