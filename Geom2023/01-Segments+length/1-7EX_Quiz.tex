@@ -1,0 +1,71 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 16 Sept 2022}
+
+\begin{document}
+
+\subsubsection*{1.7 Extension Quiz: Absolute value, trisection, algebra}
+\begin{enumerate}
+\item Given $\overleftrightarrow{DG}$ as shown on the number line, with $D=11$ and $G=26$. \\[15pt]
+  \begin{tikzpicture}[scale=0.5]
+    \draw [<->] (9,0)--(31,0);
+    \foreach \x in {10, 12,...,30} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-6pt) -- (0pt,6pt) node[below=5pt]  {$\x$};
+      \draw [fill] (11,0) circle [radius=0.1] node[above] {$D$};
+      \draw [fill] (26,0) circle [radius=0.1] node[above] {$G$};
+  \end{tikzpicture} \\[10pt]
+  Points $E$ and $F$ trisect $\overline{DG}$. Find the values of $E$ and $F$ and mark and label them on the number line $\overleftrightarrow{DG}$. \vspace{6cm}
+
+
+\item Given $\overleftrightarrow{RS}$ as shown on the number line, with $R=-2.8$ and $S=4.4$. \\[5pt]
+\begin{tikzpicture}
+  \draw [<->] (-4.5,0)--(6.5,0);
+  \foreach \x in {-4,...,6} %2 leading for diff!=1
+    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+    \draw [fill] (-2.8,0) circle [radius=0.05] node[above] {$R$};
+    \draw [fill] (4.4,0) circle [radius=0.05] node[above] {$S$};
+\end{tikzpicture} \\ 
+The points $T$ and $U$ trisect $\overline{RS}$. Find their values, and mark and label them on the number line. \vspace{4cm}
+
+\newpage
+\item Given $\overline{PQR}$, with $PQ=\frac{1}{2} x+4$, $QR=x+3$, and $PR=2x+5$. Find ${PR}$.\\
+  Complete all the steps for full credit. \smallskip
+  \vspace{9cm}
+
+\item Given $\overline{ABC}$, $AB=\frac{2}{3}$, and $AC=3 \frac{1}{3}$.\\ [0.5cm]
+  Find ${BC}$.\\[1.5cm]
+      \begin{tikzpicture}
+        \draw [-, thick] (1,0)--(7,0);
+        \draw [fill] (1,0) circle [radius=0.05] node[below]{$A$};
+        \draw [fill] (2,0) circle [radius=0.05] node[below]{$B$};
+        \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+      \end{tikzpicture}
+
+\item Given $\overline{PQR}$, with $PQ=4x-4$, $QR=2x+3$, and $PR=5x+9$. Find ${PR}$.\\
+Complete all the steps for full credit. \smallskip
+\vspace{9cm}
+
+\item Given $\overline{DEF}$, $DF=75$ and $\overline{DE}$ is half the length of $\overline{EF}$. \\ [0.25cm]
+Find ${DE}$.\\[.5in]
+    \begin{tikzpicture}
+      \draw [-, thick] (1,0)--(8,0);
+      \draw [fill] (1,0) circle [radius=0.05] node[below]{$D$};
+      \draw [fill] (3.4,0) circle [radius=0.05] node[below]{$E$};
+      \draw [fill] (8,0) circle [radius=0.05] node[below]{$F$};
+    \end{tikzpicture} \vspace{2.5cm}
+
+\item Given $\overleftrightarrow{PQ}$ as shown on the number line. Divide segment $\overline{PQ}$ into five congruent segments by marking and labeling the points $R$, $S$, $T$, and $U$ on the numberline.\\[20pt] % Midpoint
+  \begin{tikzpicture}
+    \draw [<->] (-4.5,0)--(6.5,0);
+    \foreach \x in {-4,...,6} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (-4,0) circle [radius=0.05] node[above] {$P$};
+      \draw [fill] (6,0) circle [radius=0.05] node[above] {$Q$};
+  \end{tikzpicture}
+
+
+
+\end{enumerate}
+\end{document}

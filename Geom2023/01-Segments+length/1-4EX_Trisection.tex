@@ -2,76 +2,82 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 10 Sept 2022}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 13 Sept 2022}
 
 \begin{document}
 
-\subsubsection*{1.3 Extension: The distributive property of multiplication over addition}
+\subsubsection*{1.4 Extension: Trisecting a line segment}
 \begin{enumerate}
-\item Simplify each expression. (use fractions, not decimals)
-\begin{enumerate}[itemsep=2cm]
-  \begin{multicols}{2}
-    \item $\frac{1}{7}+\frac{3}{7}$
-    \item $4(\frac{1}{4}x + 2)$
-    \item $\frac{5}{3}-\frac{1}{6}$
-    \item $\frac{2}{3}(6x + 15)$
-  \end{multicols}
-\end{enumerate} \vspace{1cm}
+\item Points $B$ and $C$ trisect segment $\overline{AD}$ with segment lengths as shown. \par \smallskip 
+  Find $x$.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.6]
+      \draw[-, thick] (0,0)--(12,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (4,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (8,0) circle [radius=0.05] node[below]{$C$};
+      \draw[fill] (12,0) circle [radius=0.05] node[below]{$D$};
+      \node at (1.7,0.5) [above]{$x+6$};
+      \node at (6.2,0.5) [above]{$3x$};
+      \node at (10,0.5) [above]{$9$};
+      \draw (1.8,-0.2)--(1.9,0.2);
+      \draw (2.1,-0.2)--(2.2,0.2);
+      \draw (5.8,-0.2)--(5.9,0.2);
+      \draw (6.1,-0.2)--(6.2,0.2);
+      \draw (9.8,-0.2)--(9.9,0.2);
+      \draw (10.1,-0.2)--(10.2,0.2);
+    \end{tikzpicture}
+  \end{center} \vspace{2cm}
 
-\subsubsection*{Solve each equation twice, for (a) first distribute, and for (b)multiply both sides of the equation by the fraction's denominator first.}
-\begin{multicols}{2}
-  Distribute first \par 
-  Multiply by the denominator first
-\end{multicols}
-\item 
-  \begin{multicols}{2}
-    \begin{enumerate}
-      \item $\frac{1}{5}(x+8)=2$
-      \item $\frac{1}{5}(x+8)=2$
-    \end{enumerate}
-  \end{multicols} \vspace{3cm}
+\item Given $\overleftrightarrow{WZ}$ as shown on the number line. \par \medskip
+\begin{tikzpicture}[scale=0.5]
+  \draw[<->] (9,0)--(31,0);
+  \foreach \x in {10, 12,...,30}
+    \draw[shift={(\x,0)}] (0pt,-6pt)--(0pt,6pt) node[below=5pt]{$\x$};
+  \draw[fill] (12,0) circle [radius=0.1] node[above]{$W$};
+  \draw[fill] (24,0) circle [radius=0.1] node[above]{$Z$};
+  \end{tikzpicture} \par
+  Mark and label two points $X$ and $Y$ that trisect $\overline{WZ}$. \vspace{1cm}
 
-\item 
-  \begin{multicols}{2}
-    \begin{enumerate}
-      \item $\frac{1}{6}(6x+18)=11$
-      \item $\frac{1}{6}(6x+18)=11$
-    \end{enumerate}
-  \end{multicols} \vspace{3cm}
-
-\item Write down a rule for under what conditions is it more efficient to first distribute versus multiply by the denominator when solving an algebra equation.
+\item Given $\overleftrightarrow{RS}$ as shown on the number line, with $R=-1.0$ and $S=5.6$. \par \medskip
+  \begin{tikzpicture}
+    \draw[<->] (-4.5,0)--(6.5,0);
+    \foreach \x in {-4,...,6}
+      \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+    \draw[fill] (-1.0,0) circle [radius=0.05] node[above]{$R$};
+    \draw[fill] (5.6,0) circle [radius=0.05] node[above]{$S$};
+  \end{tikzpicture}
+  \begin{enumerate}
+    \item What is the exact distance on the number line between the points $R$ and $S$? \vspace{2cm} 
+    \item The points $T$ and $U$ trisect $\overline{RS}$. Find the values of $T$ and $U$, and mark and label them on the number line $\overleftrightarrow{RS}$. 
+  \end{enumerate} \vspace{3cm}  
 
 \newpage
-\emph{A check is required for all algebra solutions}
-\item Given the segment $\overline{PQR}$ with $PQ=\frac{1}{2}(x-3)$, $QR=x-3$, $QR=39$. Find $x$. \medskip
-\begin{flushleft}
-\begin{tikzpicture}
-    \draw[-, thick] (0,0)--(9,0);
-    \draw[fill] (0,0) circle [radius=0.05] node[below]{$P$};
-    \draw[fill] (3,0) circle [radius=0.05] node[below]{$Q$};
-    \draw[fill] (9,0) circle [radius=0.05] node[below]{$R$};
-    \node at (1.5,0) [above]{$\frac{1}{2}(x-3)$};
-    \node at (6,0) [above]{$x-3$};
-    \draw[<->, dashed] (0,-1)--(9,-1);
-    \node at (4.5,-1) [below]{$39$};
-\end{tikzpicture}
-\end{flushleft} \vspace{6cm}
+\item Given $\overline{DEFG}$, $DE=3 \frac{1}{3}$, $EF=4 \frac{2}{9}$, and $FG= 2 \frac{4}{9}$. (diagram not to scale) \par \smallskip
+  Find ${DG}$. \bigskip
+  \begin{center}
+  \begin{tikzpicture}
+      \draw[thick] (0,0)--(9,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$D$};
+      \draw[fill] (3,0) circle [radius=0.05] node[below]{$E$};
+      \draw[fill] (7,0) circle [radius=0.05] node[below]{$F$};
+      \draw[fill] (9,0) circle [radius=0.05] node[below]{$G$};
+    \end{tikzpicture}
+  \end{center} \vspace{4cm}
 
-\item Given $x=-2$ simplify each expression. (Do these problems in your head.)
+\item Solve for $x$. (use fractions, not decimals. Show the check.)
+\begin{enumerate}
   \begin{multicols}{2}
-    \begin{enumerate}[itemsep=1cm]
-      \item $|x+3|=$
-      \item $|10-x|=$
-      \item $2 \times |x|=$
-      \item $|-8|+x=$
-    \end{enumerate}
-  \end{multicols} \bigskip
+    \item $\frac{1}{2}(3x - 1)= 2 \frac{1}{2}$
+    \item $\frac{2}{5}(10x + 5)=10$
+  \end{multicols}
+\end{enumerate} \vspace{6cm}
 
-\item Find all values of $x$ that satisfy each equation. (show the check) \bigskip
+\item Rewrite the equation $|x+4|=7$ two ways (positive and negative 7). Then solve both equations to find all values of $x$ that satisfy $|x+4|=7$. (show the check for each solution)
   \begin{multicols}{2} 
     \begin{enumerate}
-      \item $|2x+3|=7$
-      \item $|x|-5=15$
+      \item positive
+      \item negative
     \end{enumerate}
   \end{multicols}
 
