@@ -22,7 +22,7 @@
     Lesson: Points, line segments, length; Segment addition postulate \par \medskip
     Homework: Write for me your ``math autobiography'' on looseleaf (due tomorrow) \par \medskip
     Optional homework: spicy absolute value worksheet
-\end{frame}
+  \end{frame}
 
 \begin{frame}{A \emph{diagram} is a simplied image representing a situation}
   {This is an example diagram of a desk arrangement}
@@ -35,63 +35,63 @@
     \item[Adjacent] Positioned next to each other
   \end{description} \vspace{2cm}
   Write down vocabulary and terminology in your notebook with definitions and examples. (I write new terms in \emph{italics})
-\end{frame}
+  \end{frame}
 
 \begin{frame}{\emph{Line segments} and their \emph{endpoints}}
   Points $P$, $A$, $B$, $C$, and line segments $\overline{AB}$, $\overline{BC}$ are shown. \vspace{1cm}
-    \begin{columns}
-      \column{0.7\textwidth}
-        \begin{tikzpicture}
-        \draw [fill] (5,2) circle [radius=0.05] node[below]{$P$};
-        \draw [-, thick] (0,1)--(3,1);
-        \draw [fill] (0,1) circle [radius=0.05] node[below]{$A$};
-        \draw [fill] (3,1) circle [radius=0.05] node[below]{$B$};
-        \draw [-, thick] (3,0)--(7,0);
-        \draw [fill] (3,0) circle [radius=0.05] node[below]{$B$};
-        \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
-      \end{tikzpicture}
-      \column{0.3\textwidth}
-        \emph{Given}:\par $AB=3$ \par $BC=4$
-    \end{columns} \vspace{1cm}
-    The \emph{length} of a line segment is the distance between the two endpoints. The length of segment $\overline{AB}$ is written $AB$ (no bar over).
-\end{frame}
+  \begin{columns}
+    \column{0.7\textwidth}
+      \begin{tikzpicture}
+      \draw[fill] (5,2) circle [radius=0.05] node[below]{$P$};
+      \draw[thick] (0,1)--(3,1);
+      \draw[fill] (0,1) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (3,1) circle [radius=0.05] node[below]{$B$};
+      \draw[thick] (3,0)--(7,0);
+      \draw[fill] (3,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (7,0) circle [radius=0.05] node[below]{$C$};
+    \end{tikzpicture}
+    \column{0.3\textwidth}
+      \emph{Given}:\par $AB=3$ \par $BC=4$
+  \end{columns} \vspace{1cm}
+  The \emph{length} of a line segment is the distance between the two endpoints. The length of segment $\overline{AB}$ is written $AB$ (no bar over).
+  \end{frame}
 
 \begin{frame}{A \emph{number line} is useful for calculating length or distance}
   {Take the difference in the points' values}
   Given $\overline{PQ}$ as shown on the number line.
     \begin{center}
       \begin{tikzpicture}
-        \draw [<->] (-3.5,0)--(6.5,0);
-        \draw [-, thick] (2,0)--(5,0);
-        \foreach \x in {-3,...,6} %2 leading for diff!=1
-          \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-          \draw [fill] (2,0) circle [radius=0.05] node[above] {$P$};
-          \draw [fill] (5,0) circle [radius=0.05] node[above] {$Q$};
+        \draw[<->] (-3.5,0)--(6.5,0);
+        \foreach \x in {-3,...,6}
+          \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+        \draw[fill] (2,0) circle [radius=0.05] node[above]{$P$};
+        \draw[fill] (5,0) circle [radius=0.05] node[above]{$Q$};
+        \draw[thick] (2,0)--(5,0);
       \end{tikzpicture}
     \end{center}
-    Find the distance on the number line between the points $P$ and $Q$. \par  \bigskip %\vspace{1cm}
+    Find the distance on the number line between the points $P$ and $Q$. \par \bigskip
     \onslide<2> $$PQ = 5-2 =3$$ \par \bigskip
     Can a length be a negative number? \par \vspace{1cm}
     Most of the lengths on our problem sets are in centimeters.
-\end{frame}
+  \end{frame}
 
 \begin{frame}{Negative number practice on a number line}
   {Take the difference in the points' values. Check by counting the marks.}
   Given $\overline{MN}$ with $M(-1)$ and $N(3)$, as shown on the number line.
     \begin{center}
-        \begin{tikzpicture}
-          \draw [<->] (-3.5,0)--(6.5,0);
-          \draw [-, thick] (-1,0)--(3,0);
-          \foreach \x in {-3,...,6} %2 leading for diff!=1
-            \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-            \draw [fill] (-1,0) circle [radius=0.05] node[above] {$M$};
-            \draw [fill] (3,0) circle [radius=0.05] node[above] {$N$};
-        \end{tikzpicture}
-      \end{center} \bigskip
+    \begin{tikzpicture}
+      \draw[<->] (-3.5,0)--(6.5,0);
+      \foreach \x in {-3,...,6}
+        \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+      \draw[fill] (-1,0) circle [radius=0.05] node[above]{$M$};
+      \draw[fill] (3,0) circle [radius=0.05] node[above]{$N$};
+      \draw[thick] (-1,0)--(3,0);
+    \end{tikzpicture}
+    \end{center} \bigskip
     What is the length of the segment $\overline{MN}$? Show your work as an equation. \par \bigskip
     \onslide<2> $$MN=3- (-1)=4$$ \par \bigskip
     Why is ``minus a negative'' like adding a positive?
-\end{frame}
+  \end{frame}
 
 \begin{frame}{Decimal practice on a number line}
   {Mark the points then take the difference in the points' values.} \vspace{1cm}
@@ -108,11 +108,11 @@
         \onslide<2> 
           \draw[fill] (1,0) circle [radius=0.05] node[above]{$G$};
           \draw[fill] (4.5,0) circle [radius=0.05] node[above]{$H$};
-          \draw[-, thick] (1,0)--(4.5,0);
+          \draw[thick] (1,0)--(4.5,0);
       \end{tikzpicture}
     \end{center} \bigskip
     \onslide<2> {$$GH= 4.5 - 1 = 3.5$$} \vspace{2cm}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{Take class notes in a composition book}
   {Copy definitions using your own words. Write down example diagrams and problems}
@@ -127,23 +127,23 @@
       \item[Diagram] Simplified image of a situation
       \item[Adjacent] Positioned next to each other
     \end{description}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{Spicy: \emph{Absolute value} is the distance from a point to zero}
   {``Spicy'', or extension topics, must be written in your notebook, but homework and tests are optional.}
     \begin{tikzpicture}[scale=0.8]
-      \draw [<->] (-6.5,0)--(6.5,0);
-      \foreach \x in {-6,...,6} %2 leading for diff!=1
-        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-        \draw [fill] (0,0) circle [radius=0.05] node[above] {origin};
-        \draw [fill] (5,0) circle [radius=0.05] node[above] {$A(5)$};
-        \draw [fill] (-3,0) circle [radius=0.05] node[above] {$B(-3)$};
+      \draw[<->] (-6.5,0)--(6.5,0);
+      \foreach \x in {-6,...,6}
+        \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+      \draw[fill] (0,0) circle [radius=0.05] node[above]{origin};
+      \draw[fill] (5,0) circle [radius=0.05] node[above]{$A(5)$};
+      \draw[fill] (-3,0) circle [radius=0.05] node[above]{$B(-3)$};
     \end{tikzpicture} \par \bigskip
     The absolute value of 5 is 5. $|5|=5$ \par \bigskip
     The absolute value of $-3$ is 3. $|-3|=3$ \par \bigskip
     The absolute value of a number is always a positive number, or zero  \par \smallskip
     Write the absolute value of a number $x$ using vertical bars $|x|$ or $abs(x)$
-\end{frame}
+  \end{frame}
 
 \section{1.2 Solve for length \hfill 9 September}
 \begin{frame}{Learning Target: I can solve for segment lengths}
@@ -152,18 +152,18 @@
   Write down $AB$, $BC$, and $AC$.
   \begin{center}
     \begin{tikzpicture}
-      \draw [<->] (-1.5,0)--(8.5,0);
+      \draw[<->] (-1.5,0)--(8.5,0);
       \foreach \x in {-1,...,8}
         \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
-      \draw [fill] (1,0) circle [radius=0.05] node[above] {$A$};
-      \draw [fill] (4,0) circle [radius=0.05] node[above] {$B$};
-      \draw [fill] (6,0) circle [radius=0.05] node[above] {$C$};
-      \draw [-, thick] (1,0)--(6,0);
+      \draw[fill] (1,0) circle [radius=0.05] node[above]{$A$};
+      \draw[fill] (4,0) circle [radius=0.05] node[above]{$B$};
+      \draw[fill] (6,0) circle [radius=0.05] node[above]{$C$};
+      \draw[thick] (1,0)--(6,0);
     \end{tikzpicture}
   \end{center} \vspace{1cm}
   Lesson: Segment addition, solving algebraic models \par \medskip
   Homework: Problem set 1.2 (plus optional spicy worksheet)
-\end{frame}
+  \end{frame}
 
 \begin{frame}{Lengths add up on a straight line}
   {\emph{Segment Addition Postulate}}
@@ -171,13 +171,13 @@
   Find $AC$.
     \begin{center}
       \begin{tikzpicture}
-        \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-        \draw [-, thick] (0,0)--(7,0);
-        \draw [fill] (3,0) circle [radius=0.05] node[below]{$B$};
-        \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+        \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+        \draw[thick] (0,0)--(7,0);
+        \draw[fill] (3,0) circle [radius=0.05] node[below]{$B$};
+        \draw[fill] (7,0) circle [radius=0.05] node[below]{$C$};
         \node at (1.5,0) [above]{$3$};
         \node at (5,0) [above]{$4$};
-        \draw [<->, dashed] (0,-1)--(7,-1);
+        \draw[<->, dashed] (0,-1)--(7,-1);
         \node at (3.5,-1) [below]{$?$};
       \end{tikzpicture}
     \end{center} \vspace{1cm}
@@ -186,7 +186,7 @@
       \item[Collinear] Points that lie on the same straight line
       \item[Postulate] A rule that we assume is true
     \end{description}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{Use a variable ($x$) to represent an unknown value}
   {An equation is a \emph{model} of a situation}
@@ -194,20 +194,20 @@
   Find $RS$.
   \begin{center}
     \begin{tikzpicture}
-      \draw [fill] (0,0) circle [radius=0.05] node[below]{$Q$};
-      \draw [-, thick] (0,0)--(7,0);
-      \draw [fill] (3.8,0) circle [radius=0.05] node[below]{$R$};
-      \draw [fill] (7,0) circle [radius=0.05] node[below]{$S$};
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$Q$};
+      \draw[thick] (0,0)--(7,0);
+      \draw[fill] (3.8,0) circle [radius=0.05] node[below]{$R$};
+      \draw[fill] (7,0) circle [radius=0.05] node[below]{$S$};
       \node at (1.7,0) [above]{$11$};
       \node at (5.2,0) [above]{$x$};
-      \draw [<->, dashed] (0,-1)--(7,-1);
+      \draw[<->, dashed] (0,-1)--(7,-1);
       \node at (3.5,-1) [below]{$20$};
     \end{tikzpicture}
   \end{center}
   \begin{enumerate}
     \item How would you check your answer?
     \item Which equation represents the situation? \medskip
-    \begin{columns}[c]
+    \begin{columns}
       \column{0.5\textwidth}
       \hspace{2cm} $11 + x = 20$
       \column{0.5\textwidth}
@@ -219,106 +219,106 @@
 \begin{frame}{Step-by-step modeling}
   Given $\overline{JKL}$, $JK=2x+3$, $KL=5$, $JL=12$. Find ${x}$.
   \begin{center}
-    \begin{tikzpicture}
-      \draw [-, thick] (0,0)--(7,0);
-      \draw [fill] (0,0) circle [radius=0.05] node[below]{$J$};
-      \draw [fill] (4,0) circle [radius=0.05] node[below]{$K$};
-      \draw [fill] (7,0) circle [radius=0.05] node[below]{$L$};
-      \node at (1.7,0) [above]{$2x+3$};
-      \node at (5.5,0) [above]{$5$};
-      \draw [<->, dashed] (0,-1)--(7,-1);
-      \node at (3.5,-1) [below]{$12$};
-    \end{tikzpicture}
+  \begin{tikzpicture}
+    \draw[thick] (0,0)--(7,0);
+    \draw[fill] (0,0) circle [radius=0.05] node[below]{$J$};
+    \draw[fill] (4,0) circle [radius=0.05] node[below]{$K$};
+    \draw[fill] (7,0) circle [radius=0.05] node[below]{$L$};
+    \node at (1.7,0) [above]{$2x+3$};
+    \node at (5.5,0) [above]{$5$};
+    \draw[<->, dashed] (0,-1)--(7,-1);
+    \node at (3.5,-1) [below]{$12$};
+  \end{tikzpicture}
   \end{center}
   \begin{enumerate}
     \item Write down an equation to represent the situation. \vspace{0.5cm}
     \item Solve for $x$. \vspace{0.5cm}
     \item Check your answer.
   \end{enumerate} \vspace{1cm}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{The diagram may be given, or you may have to sketch it}
   {Write the steps in your notebook}
   Given $\overline{JKL}$, $JK=2x+3$, $KL=5$, $JL=12$. Find ${x}$.
-    \begin{center}
-      \begin{tikzpicture}
-        \draw [-, thick] (0,0)--(7,0);
-        \draw [fill] (0,0) circle [radius=0.05] node[below]{$J$};
-        \draw [fill] (4,0) circle [radius=0.05] node[below]{$K$};
-        \draw [fill] (7,0) circle [radius=0.05] node[below]{$L$};
-        \node at (1.7,0) [above]{$2x+3$};
-        \node at (5.5,0) [above]{$5$};
-        \draw [<->, dashed] (0,-1)--(7,-1);
-        \node at (3.5,-1) [below]{$12$};
-      \end{tikzpicture}
-    \end{center}
-    \begin{columns}[]{}
-      \column{0.4\textwidth}
-        \[JK+KL=JL\]
-        \[(2x+3)+5=12\]
-        \[2x+8=12\]
-        \[2x=4\]
-        \[x=2\]
-        \[2(2)+3+5=12?\]
-      \column{0.6\textwidth}
-        \begin{enumerate}
-            \item Sketch and label the situation
-            \item Write a geometric equation
-            \item Substitute algebraic values
-            \item Solve for $x$
-            \item Answer the question
-            \item \alert{Check} your answer
-        \end{enumerate}
-      \end{columns}
-    \end{frame}
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[thick] (0,0)--(7,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$J$};
+      \draw[fill] (4,0) circle [radius=0.05] node[below]{$K$};
+      \draw[fill] (7,0) circle [radius=0.05] node[below]{$L$};
+      \node at (1.7,0) [above]{$2x+3$};
+      \node at (5.5,0) [above]{$5$};
+      \draw[<->, dashed] (0,-1)--(7,-1);
+      \node at (3.5,-1) [below]{$12$};
+    \end{tikzpicture}
+  \end{center}
+  \begin{columns}
+    \column{0.4\textwidth}
+      \[JK+KL=JL\]
+      \[(2x+3)+5=12\]
+      \[2x+8=12\]
+      \[2x=4\]
+      \[x=2\]
+      \[2(2)+3+5=12?\]
+    \column{0.6\textwidth}
+      \begin{enumerate}
+        \item Sketch and label the situation
+        \item Write a geometric equation
+        \item Substitute algebraic values
+        \item Solve for $x$
+        \item Answer the question
+        \item \alert{Check} your answer
+      \end{enumerate}
+    \end{columns}
+  \end{frame}
 
 \begin{frame}{Mark the diagram, find $x$, answer $AB=?$}
   Given $\overline{ABC}$, $AB=3x-7$, $BC=x+5$, $AC=14$. \vspace{1cm}
   \begin{center}
       \begin{tikzpicture}
-      \draw [-, thick] (0,0)--(7,0);
-      \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-      \draw [fill] (3,0) circle [radius=0.05] node[below]{$B$};
-      \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+      \draw[thick] (0,0)--(7,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (3,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (7,0) circle [radius=0.05] node[below]{$C$};
     \end{tikzpicture}
   \end{center} 
   Find ${AB}$.\vspace{3cm}
   \end{frame}
 
 \begin{frame}{More practice: Solve an equation with $x$ on both sides}
-  Given $\overrightarrow{DEF}$, $DE=x+1$, $EF=9$, $DF=3x$. Find ${DE}$.\vspace{1cm}
+  Given $\overrightarrow{DEF}$, $DE=x+1$, $EF=9$, $DF=3x$. Find ${DE}$. \vspace{1cm}
   \begin{center}   
   \begin{tikzpicture}
-      \draw [-, thick] (0,0)--(6,0);
-      \draw [fill] (0,0) circle [radius=0.05] node[below]{$D$};
-      \draw [fill] (2.5,0) circle [radius=0.05] node[below]{$E$};
-      \draw [fill] (6,0) circle [radius=0.05] node[below]{$F$};
+      \draw[thick] (0,0)--(6,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$D$};
+      \draw[fill] (2.5,0) circle [radius=0.05] node[below]{$E$};
+      \draw[fill] (6,0) circle [radius=0.05] node[below]{$F$};
     \end{tikzpicture}
   \end{center} \vspace{3cm}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{Lengths in a straight line add up}
   {Check your notebook for completeness}
-\begin{block}{Segment Addition Postulate}
-  Mathematics is constructed of fundamental rules or postulates, and basic objects like points, lines, and numbers.
-\end{block} \vspace{1cm}
-  Vocabulary:
+  \begin{block}{Segment Addition Postulate}
+    Mathematics is constructed of fundamental rules or postulates, and basic objects like points, lines, and numbers.
+  \end{block} \vspace{1cm}
+    Vocabulary:
     \begin{description}
       \item[Collinear] Points that lie on the same straight line
       \item[Postulate] A rule that we assume is true (also called \emph{axioms})
       \item[Modeling] Using an equation (algebra) to represent a situation in a simplified way
       \item[Check] Substitute the value of $x$ into the equation to test whether it is correct
     \end{description}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{Spicy: Fractional \emph{coefficients}}
   Given $\overline{ABC}$, $AB=\frac{1}{2}x$, $BC=x$, $AC=21$. Find ${x}$.\vspace{1cm}
   \begin{center}   
   \begin{tikzpicture}
-      \draw [-, thick] (0,0)--(6,0);
-      \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-      \draw [fill] (2,0) circle [radius=0.05] node[below]{$B$};
-      \draw [fill] (6,0) circle [radius=0.05] node[below]{$C$};
+      \draw[thick] (0,0)--(6,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (2,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (6,0) circle [radius=0.05] node[below]{$C$};
     \end{tikzpicture}
   \end{center} \vspace{3cm}
   \begin{description}
@@ -326,7 +326,7 @@
     \item[Variable] The unknown value represented by a letter ($x$)
     \item[Coefficient] The fixed number in front of the variable. (e.g. $\frac{1}{2}$) 
     \end{description}
-\end{frame}
+  \end{frame}
 
 \section{1.3 Terminology and notation \hfill 12 September}
 \begin{frame}{Learning Target: I can use geometric conventions}
@@ -335,7 +335,7 @@
   \begin{center}
     \begin{tikzpicture}
       \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
-      \draw[-, thick] (0,0)--(7,0);
+      \draw[thick] (0,0)--(7,0);
       \draw[fill] (3.8,0) circle [radius=0.05] node[below]{$B$};
       \draw[fill] (7,0) circle [radius=0.05] node[below]{$C$};
       \node at (1.7,0) [above]{$7$};
@@ -365,44 +365,44 @@
     \item endpoint
     \item three collinear points
       \begin{tikzpicture}
-      \draw [-, thick] (0,2)--(3,1);
-      \draw [fill] (0,2) circle [radius=0.05] node[below]{$R$};
-      \draw [fill] (3,1) circle [radius=0.05] node[below]{$S$};
-      \draw [-, thick] (5,0)--(8,3);
-      \draw [fill] (5,0) circle [radius=0.05] node[above left]{$T$};
-      \draw [fill] (7,2) circle [radius=0.05] node[above left]{$U$};
-      \draw [fill] (8,3) circle [radius=0.05] node[above left]{$V$};
+      \draw[thick] (0,2)--(3,1);
+      \draw[fill] (0,2) circle [radius=0.05] node[below]{$R$};
+      \draw[fill] (3,1) circle [radius=0.05] node[below]{$S$};
+      \draw[thick] (5,0)--(8,3);
+      \draw[fill] (5,0) circle [radius=0.05] node[above left]{$T$};
+      \draw[fill] (7,2) circle [radius=0.05] node[above left]{$U$};
+      \draw[fill] (8,3) circle [radius=0.05] node[above left]{$V$};
     \end{tikzpicture}
     \item Given $TU=1.4$, $UV=0.6$. Find $TV$. (label the diagram first)
   \end{enumerate}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{More definitions: lines, rays, planes}
   A \emph{line} extends infinitely in both directions, $\overleftrightarrow{AB}$. \par
   (sometimes labeled with a small letter, for example, line $k$)
   \begin{center}
     \begin{tikzpicture}
-      \draw [<->, thick] (0,1)--(5,1);
+      \draw[<->, thick] (0,1)--(5,1);
       \node at (0.25, 1)[above]{$k$};
-      \draw [fill] (1.5,1) circle [radius=0.05] node[below]{$A$};
-      \draw [fill] (3.5,1) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (1.5,1) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (3.5,1) circle [radius=0.05] node[below]{$B$};
     \end{tikzpicture}
   \end{center}
-    A \emph{ray} has one endpoint and extends infinitely in one direction, $\overrightarrow{CD}$.
+  A \emph{ray} has one endpoint and extends infinitely in one direction, $\overrightarrow{CD}$.
     \begin{center}
     \begin{tikzpicture}
-      \draw [->, thick] (3,0)--(7,0);
-      \draw [fill] (3,0) circle [radius=0.05] node[below]{$C$};
-      \draw [fill] (5,0) circle [radius=0.05] node[below]{$D$};
+      \draw[->, thick] (3,0)--(7,0);
+      \draw[fill] (3,0) circle [radius=0.05] node[below]{$C$};
+      \draw[fill] (5,0) circle [radius=0.05] node[below]{$D$};
       \end{tikzpicture}
     \end{center}
-    A \emph{plane} is flat and extends infinitely in two directions, $p$.
-    \begin{center}
-      \begin{tikzpicture}[scale=0.7]
-        \draw [thick](0,0) node[above right]{$\ p$} --(3,0)--(4,2)--(1,2)--(0,0);
-      \end{tikzpicture}
-      \end{center}
-\end{frame}
+  A \emph{plane} is flat and extends infinitely in two directions, $p$.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.7]
+      \draw[thick](0,0) node[above right]{$\ p$} --(3,0)--(4,2)--(1,2)--(0,0);
+    \end{tikzpicture}
+    \end{center}
+  \end{frame}
 
 \begin{frame}{\emph{Opposite rays} are collinear rays with a common endpoint.}
   \begin{columns}
@@ -458,28 +458,28 @@
       \draw[fill] (5,0.5) circle [radius=0.05] node[above right]{$Y \ $};
     \end{tikzpicture}
   \end{center}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{More definitions: intersections, coplanar}
   Two lines \emph{intersect} if they cross. Their common point is the \emph{intersection}. 
   (shown here, lines $j$ and $k$ intersect at point $P$)
     \begin{center}
       \begin{tikzpicture}
-          \draw [<->, thick] (0,0)--(6,1);
-          \draw [<->, thick] (3,1.333)--(5,0);
+          \draw[<->, thick] (0,0)--(6,1);
+          \draw[<->, thick] (3,1.333)--(5,0);
           \node at (0.25, 0.2)[above]{$k$};
           \node at (3.3, 1.333)[right]{$j$};
-          \draw [fill] (4,0.666) circle [radius=0.05] node[below]{$P$};
+          \draw[fill] (4,0.666) circle [radius=0.05] node[below]{$P$};
         \end{tikzpicture}
       \end{center}
       \emph{Coplanar} means to lie in the same plane. Three points are always coplanar, but four points may not be.
       \begin{center}
         \begin{tikzpicture}[scale=1]
-        \draw [thick](0,0) node[above right]{$\ z$} --(3,0)--(4,2)--(1,2)--(0,0);
-        \draw [fill] (3,1.75) circle [radius=0.05] node[below]{$K$};
-        \draw [fill] (1.5,1.6) circle [radius=0.05] node[below]{$J$};
-        \draw [fill] (2,0.5) circle [radius=0.05] node[above right]{$L$};
-        \draw [fill] (4,1) circle [radius=0.05] node[above right]{$M$};
+        \draw[thick](0,0) node[above right]{$\ z$} --(3,0)--(4,2)--(1,2)--(0,0);
+        \draw[fill] (3,1.75) circle [radius=0.05] node[below]{$K$};
+        \draw[fill] (1.5,1.6) circle [radius=0.05] node[below]{$J$};
+        \draw[fill] (2,0.5) circle [radius=0.05] node[above right]{$L$};
+        \draw[fill] (4,1) circle [radius=0.05] node[above right]{$M$};
       \end{tikzpicture}
     \end{center}
   \end{frame}
@@ -493,7 +493,7 @@
     \item[Coplanar] Points or objects all in the same plane
     \item[Intersection] Where two lines cross, the common point
   \end{description}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{Spicy: Which is the more efficient method, \\ \qquad \emph{distribute} or multiply both sides by 3?}
   \begin{columns}[c]
@@ -506,66 +506,65 @@
     \item[Denominator] The bottom of a fraction (i.e. $q$ in $\frac{p}{q}$)
     \item[LCD] Converting to the \emph{Lowest Common Denominator} is the most efficient way to add fractions
   \end{description}
-\end{frame}
+  \end{frame}
 
 \section{1.4 Midpoint and bisector \hfill 13 September}
 \begin{frame}{Learning Target: I can \emph{bisect} a length}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{1.4 Tuesday 13 Sept}}
-    \begin{block}{Do Now: Circle or mark each object in the plane}
-      \begin{enumerate} 
-        \item The point $H$
-        \item The ray $\overrightarrow{JL}$
-        \item The name of the plane shown
-        \end{enumerate}
-      \begin{center}
-        \begin{tikzpicture}[scale=0.8]
-          \draw [thick](0,0)--(6,0)--(8,4) node[below left]{$p \ $} --(2,4)--(0,0);
-          \draw [->, thick] (2, 1.4)--(6,3);
-          \draw [fill] (4, 3.5) circle [radius=0.05] node[below]{$H$};
-          \draw [fill] (2, 1.4) circle [radius=0.05] node[below]{$J$};
-          \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$K \ $};
-          \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$L$};
-          \draw [<->, thick] (2,3.5)--(5.25,.25);
-          \draw [fill] (5,0.5) circle [radius=0.05] node[above right]{$M \ $};
-        \end{tikzpicture}
-      \end{center}
+  \begin{block}{Do Now: Circle or mark each object in the plane}
+    \begin{enumerate} 
+      \item The point $H$
+      \item The ray $\overrightarrow{JL}$
+      \item The name of the plane shown
+      \end{enumerate}
+    \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+      \draw[thick](0,0)--(6,0)--(8,4) node[below left]{$p \ $} --(2,4)--(0,0);
+      \draw[->, thick] (2, 1.4)--(6,3);
+      \draw[fill] (4, 3.5) circle [radius=0.05] node[below]{$H$};
+      \draw[fill] (2, 1.4) circle [radius=0.05] node[below]{$J$};
+      \draw[fill] (3.5,2) circle [radius=0.05] node[below]{$K \ $};
+      \draw[fill] (5,2.6) circle [radius=0.05] node[below]{$L$};
+      \draw[<->, thick] (2,3.5)--(5.25,.25);
+      \draw[fill] (5,0.5) circle [radius=0.05] node[above right]{$M \ $};
+    \end{tikzpicture}
+    \end{center}
     \end{block}
     Lesson: Midpoint, congruence, bisection
   \end{frame}
 
-  \begin{frame}{The point $B$ \emph{bisects} the segment $\overline{AC}$}
-      \begin{block}{Point $B$ is in the exact middle between $A$ and $C$}
-        Given $AB=x+2$, $BC=11$. Find $x$.
-          \begin{center}
-            \begin{tikzpicture}
-              \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-              \draw [-, thick] (0,0)--(7,0);
-              \draw [fill] (3.5,0) circle [radius=0.05] node[below]{$B$};
-              \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
-              \node at (1.7,0.5) [above]{$x+2$};
-              \node at (5.2,0.5) [above]{$11$};
-            \end{tikzpicture}
-          \end{center}
-      \end{block}
-      Hint: The line segment is split into two equal lengths. \vspace{3cm}
-    \end{frame}
+\begin{frame}{The point $B$ \emph{bisects} the segment $\overline{AC}$}
+  \begin{block}{Point $B$ is in the exact middle between $A$ and $C$}
+    Given $AB=x+2$, $BC=11$. Find $x$.
+    \begin{center}
+    \begin{tikzpicture}
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw[thick] (0,0)--(7,0);
+      \draw[fill] (3.5,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (7,0) circle [radius=0.05] node[below]{$C$};
+      \node at (1.7,0.5) [above]{$x+2$};
+      \node at (5.2,0.5) [above]{$11$};
+    \end{tikzpicture}
+    \end{center}
+    \end{block}
+    Hint: The line segment is split into two equal lengths. \vspace{3cm}
+  \end{frame}
 
 \begin{frame}{The \emph{midpoint} of a line segment}
-    Given $\overline{ABC}$, with $AB=2x+2$, $AC=20$. $AB=BC$ \\[0.15in]
-    Find $x$.
-      \begin{center}
-        \begin{tikzpicture}
-          \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-          \draw [-, thick] (0,0)--(7,0);
-          \draw [fill] (3.5,0) circle [radius=0.05] node[below]{$B$};
-          \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
-          \node at (1.7,0) [above]{$2x+2$};
-          %\node at (5.2,0) [above]{$?$};
-          \draw [<->, dashed] (0,-1)--(7,-1);
-          \node at (3.5,-1) [below]{$20$};
-        \end{tikzpicture}
-      \end{center} \vspace{2cm}
-    \end{frame}
+  Given $\overline{ABC}$, with $AB=2x+2$, $AC=20$. $AB=BC$ \\[0.15in]
+  Find $x$.
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw[thick] (0,0)--(7,0);
+      \draw[fill] (3.5,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (7,0) circle [radius=0.05] node[below]{$C$};
+      \node at (1.7,0) [above]{$2x+2$};
+      \draw[<->, dashed] (0,-1)--(7,-1);
+      \node at (3.5,-1) [below]{$20$};
+    \end{tikzpicture}
+    \end{center} \vspace{2cm}
+  \end{frame}
 
 \begin{frame}{A \emph{bisector} creates two line segments with the same length}
   {\emph{Congruent} line segments are the same length}
@@ -573,7 +572,7 @@
   Find $x$.
     \begin{center}
       \begin{tikzpicture}
-        \draw[-, thick] (0,0)--(8,0);
+        \draw[thick] (0,0)--(8,0);
         \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
         \draw[fill] (4,0) circle [radius=0.05] node[below]{$B$};
         \draw[fill] (8,0) circle [radius=0.05] node[below]{$C$};
@@ -585,15 +584,15 @@
         \draw (6.1,-0.2)--(6.2,0.2);
       \end{tikzpicture}
     \end{center} \vspace{2cm}
-    The \emph{midpoint} or \emph{bisector} of a line segment divides it exactly in half. \par \medskip
-    \emph{Congruent} means equal in length, $\overline{AB} \cong \overline{BC}$ (also $AB=BC$)\par
-    Mark congruent segments in diagrams with cross ``\emph{hash}" marks.
+  The \emph{midpoint} or \emph{bisector} of a line segment divides it exactly in half. \par \medskip
+  \emph{Congruent} means equal in length, $\overline{AB} \cong \overline{BC}$ (also $AB=BC$)\par
+  Mark congruent segments in diagrams with cross ``\emph{hash}" marks.
   \end{frame}
 
 \begin{frame}{Check your notes}{$M$ bisects $\overline{PQ}$}
   \begin{center}
     \begin{tikzpicture}
-      \draw[-, thick] (0,0)--(8,0);
+      \draw[thick] (0,0)--(8,0);
       \draw[fill] (0,0) circle [radius=0.05] node[below]{$P$};
       \draw[fill] (4,0) circle [radius=0.05] node[below]{$M$};
       \draw[fill] (8,0) circle [radius=0.05] node[below]{$Q$};
@@ -609,14 +608,14 @@
     \item[Congruent] Equal in length or measure. $\overline{AB} \cong \overline{BC}$
     \item[Hash marks] Mark congruent segments with small crossways lines (also called ``tick'' marks)
   \end{description}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{Spicy: \emph{Trisect} a segment into three congruent parts}
   Points $B$ and $C$ trisect segment $\overline{AD}$ with segment lengths as shown. \par \medskip 
   Find $x$.
   \begin{center}
     \begin{tikzpicture}[scale=0.6]
-      \draw[-, thick] (0,0)--(12,0);
+      \draw[thick] (0,0)--(12,0);
       \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
       \draw[fill] (4,0) circle [radius=0.05] node[below]{$B$};
       \draw[fill] (8,0) circle [radius=0.05] node[below]{$C$};
@@ -636,7 +635,7 @@
     \item[Trisect] Divide exactly in three equal parts
     \item[Partition] Cut into parts (not necessarily evenly)
   \end{description}
-\end{frame}
+  \end{frame}
 
 \section{1.5 Equilateral and isosceles triangles, perimeter \hfill 14 September}
 \begin{frame}{Learning Target: I can work with objects having congruent parts}
@@ -675,7 +674,7 @@
   $$ST=4-(-2)=6$$
   \par \vspace{2cm}
   Why is ``minus a negative" the same as add a positive? 
-\end{frame}
+  \end{frame}
 
 \begin{frame}{An \emph{isosceles} triangle has two congruent sides}
   Given isosceles $\triangle ABC$. Which two sides are congruent? \par \medskip
@@ -770,7 +769,7 @@
       \draw[fill] (4,0) circle [radius=0.05] node[above]{$M$};
     \end{tikzpicture}
   \end{center}\vspace{2cm}
-\end{frame}
+  \end{frame}
 
 \section{1.6 Roundtable review \hfill 15 September}
 \begin{frame}{Learning Target: I can collaborate in review}
@@ -802,7 +801,7 @@
     \item Solving algebraic equations for one variable
   \end{enumerate}
   \end{block}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{1. Identify each item.}
   {Example of Topic 1: Conventions: terminology, notation, diagramming}
@@ -813,17 +812,17 @@
     \end{enumerate} \vspace{1cm}
     \begin{center}
       \begin{tikzpicture}
-      \draw [thick](0,0)--(6,0)--(8,4) node[below left]{$q \ $} --(2,4)--(0,0);
-      \draw [->, thick] (2, 1.4)--(6,3);
-      \draw [fill] (4, 3.5) circle [radius=0.05] node[below]{$A$};
-      \draw [fill] (2, 1.4) circle [radius=0.05] node[below]{$B$};
-      \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$C \ $};
-      \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$D$};
-      \draw [<->, thick] (2,3.5)--(5.25,.25);
-      \draw [fill] (5,0.5) circle [radius=0.05] node[above right]{$E \ $};
+      \draw[thick](0,0)--(6,0)--(8,4) node[below left]{$q \ $} --(2,4)--(0,0);
+      \draw[->, thick] (2, 1.4)--(6,3);
+      \draw[fill] (4, 3.5) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (2, 1.4) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (3.5,2) circle [radius=0.05] node[below]{$C \ $};
+      \draw[fill] (5,2.6) circle [radius=0.05] node[below]{$D$};
+      \draw[<->, thick] (2,3.5)--(5.25,.25);
+      \draw[fill] (5,0.5) circle [radius=0.05] node[above right]{$E \ $};
     \end{tikzpicture}
   \end{center}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{2. Find the perimeter of the rectangle $ABCD$}
   {Example of Topic 2: Perimeter and special triangles and quadrilaterals}
@@ -847,41 +846,41 @@
     \draw (5.8, 2.1)--(6.2, 2.1);
     \end{tikzpicture}
   \end{center}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{3. Write down an equation to represent the situation}
   {Example of Topic 3: Modeling situations with algebra}
-  Given $M$ is the midpoint of $\overline{AB}$, $AM=4x+2$, $AB=20$. \par  \vspace{0.5cm}
+  Given $M$ is the midpoint of $\overline{AB}$, $AM=4x+2$, $AB=20$. \par \medskip
   \emph{First mark the diagram with hash marks and values.} \vspace{1cm}
     \begin{center}
       \begin{tikzpicture}
-        \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-        \draw [-, thick] (0,0)--(7,0);
-        \draw [fill] (3.5,0) circle [radius=0.05] node[below]{$M$};
-        \draw [fill] (7,0) circle [radius=0.05] node[below]{$B$};
+        \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+        \draw[thick] (0,0)--(7,0);
+        \draw[fill] (3.5,0) circle [radius=0.05] node[below]{$M$};
+        \draw[fill] (7,0) circle [radius=0.05] node[below]{$B$};
       \end{tikzpicture}
     \end{center} \vspace{2cm}
   \emph{Sometimes you will not be asked to solve the equation.}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{4. Solve for $x$}
   {Example of Topic 4: Solving algebraic equations for one variable}
   Given $\overline{LMN}$, $LM=3x+1$, $MN=7$, $LN=17$.
     \begin{flushleft}
       \begin{tikzpicture}
-      \draw [-, thick] (0,0)--(7,0);
-      \draw [fill] (0,0) circle [radius=0.05] node[below]{$L$};
-      \draw [fill] (4,0) circle [radius=0.05] node[below]{$M$};
-      \draw [fill] (7,0) circle [radius=0.05] node[below]{$N$};
+      \draw[thick] (0,0)--(7,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$L$};
+      \draw[fill] (4,0) circle [radius=0.05] node[below]{$M$};
+      \draw[fill] (7,0) circle [radius=0.05] node[below]{$N$};
       \node at (1.7,0) [above]{$3x+1$};
       \node at (5.5,0) [above]{$7$};
-      \draw [<->, dashed] (0,-1)--(7,-1);
+      \draw[<->, dashed] (0,-1)--(7,-1);
       \node at (3.5,-1) [below]{$17$};
       \end{tikzpicture}
     \end{flushleft} \vspace{1cm}
   \large \[ 3x+7=17 \]  \vspace{1cm}
   \emph{You must check the solution.}
-\end{frame}
+  \end{frame}
 
 \section{1.7 Unit conversion, Exit note quiz \hfill 16 September}
 \begin{frame}{Learning Target: I can change units of length}
@@ -890,7 +889,7 @@
   Conversion: 1 foot = 12 inches \par
   \vspace{3cm}
   \alert{Exit note quiz today}
-\end{frame}
+  \end{frame}
 
 \begin{frame}{Multiply by \emph{conversion factors} to change units}
   {reference: \href{https://en.wikipedia.org/wiki/Dimensional_analysis}{Wikipedia Dimension analysis}}
@@ -900,8 +899,8 @@
     \item[Conversion factor] is a ratio of units equal to one, for example, 
   \end{description}
   $$\displaystyle \frac{12 \,\mathrm{inches}}{1 \,\mathrm{foot}} = 1$$
-  \vspace{3cm}
-\end{frame}
+    \vspace{3cm}
+  \end{frame}
 
 \begin{frame}{Numerator vs denominator of conversion factors}
   An American football field is 100 yards long. How many feet is that?  \par \smallskip
@@ -909,7 +908,7 @@
   \onslide<2> $$L = 100 \,\mathrm{yards} \times \displaystyle \frac{3 \,\mathrm{feet}}{1 \,\mathrm{yard}} = 300 \,\mathrm{feet}$$ \par \vspace{1cm}
   Each conversion factor ratio has two forms: \par \medskip
   $$\displaystyle  \frac{1 \,\mathrm{yards}}{3 \,\mathrm{feet}} = \frac{3 \,\mathrm{feet}}{1 \,\mathrm{yards}} = 1$$
-\end{frame}
+  \end{frame}
 
 \begin{frame}{Cancel units when choosing correct conversion factor}
   {reference: \href{https://www.nysedregents.org/geometryre/622/geom62022-exam.pdf}{NY State Regents Exam formula sheet}}
@@ -918,7 +917,7 @@
    \onslide<2> $$H = 69 \,\mathrm{inches} \times \displaystyle \frac{1 \,\mathrm{meter}}{39.37 \,\mathrm{inches}} = 1.7526\dots \,\mathrm{meter}$$ \par \vspace{1cm}
     Two conversion factor ratios: \par \medskip
       $$\displaystyle  \frac{39.37 \,\mathrm{inches}}{1 \,\mathrm{meter}} = \frac{1 \,\mathrm{meter}}{39.37 \,\mathrm{inches}} = 1$$
-\end{frame}
+  \end{frame}
 
 
 \end{document}
