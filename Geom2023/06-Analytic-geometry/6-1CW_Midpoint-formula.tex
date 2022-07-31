@@ -123,5 +123,28 @@
     \draw [fill] (1,0) circle [radius=0.05] node[above] {$M$};
 \end{tikzpicture}
 
+\item Given $S(-1.3)$ and $T(3.3)$, as shown on the number line. \\[0.25cm]
+Mark and label the midpoint $M$ that bisects $\overline{ST}$. \\[0.5cm]
+  \begin{tikzpicture}
+    \draw [<->] (-3.5,0)--(6.5,0);
+    \draw [-, thick] (-1.3,0)--(3.3,0);
+    \foreach \x in {-3,...,6} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+    \draw [fill] (-1.3,0) circle [radius=0.05] node[above] {$S$};
+    \draw [fill] (3.3,0) circle [radius=0.05] node[above] {$T$};
+  \end{tikzpicture} \vspace{4cm} 
+
+\item Given $A(-2.1)$ and $M(1.8)$, as shown on the number line. The point $B$ is such that $M$ bisects $\overline{AB}$. \\[0.25cm] 
+Find the value of $B$. Mark and label it on the number line.\\[0.5cm]
+  \begin{tikzpicture}
+    \draw [<->] (-3.5,0)--(8.5,0);
+    \draw [-, thick] (-2.1,0)--(1.8,0);
+    \foreach \x in {-3,...,8} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (-2.1,0) circle [radius=0.05] node[above] {$A$};
+      \draw [fill] (1.8,0) circle [radius=0.05] node[above] {$M$};
+  \end{tikzpicture} \vspace{4cm}  
+
+
 \end{enumerate}
 \end{document}
