@@ -1,0 +1,97 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 14 Sept 2022}
+
+\begin{document}
+
+\subsubsection*{1.5 Extension: Find an endpoint given the midpoint}
+\begin{enumerate}
+
+\item Given $M$ is the midpoint of $\overline{AB}$, with $A=0$ and $M=4$. Find the value of point $B$ and mark and label it on the number line. \par \medskip
+  \begin{tikzpicture}
+    \draw[<->] (-2.5,0)--(9.5,0);
+    \foreach \x in {-2,...,9}
+      \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+    \draw[fill] (0,0) circle [radius=0.05] node[above]{$A$};
+    \draw[fill] (4,0) circle [radius=0.05] node[above]{$M$};
+  \end{tikzpicture} \vspace{2cm}  
+
+\item Given collinear points with $Q$ the bisector of $\overline{PR}$, $Q(25)$ and $R(40)$. Find $P$, marking it and labeling it on the number line. \par \medskip
+\begin{tikzpicture}[scale=0.3]
+  \draw[<->] (4,0)--(46,0);
+  \foreach \x in {5, 10,...,45}
+    \draw[shift={(\x,0)}] (0pt,-8pt)--(0pt,8pt) node[below=5pt]{$\x$};
+  \draw[fill] (25,0) circle [radius=0.2] node[above]{$Q$};
+  \draw[fill] (40,0) circle [radius=0.2] node[above]{$R$};
+  \end{tikzpicture} \par \vspace{2cm}
+
+\item Given points $S(13)$ and $T(31)$, find the value of $U$ such that $T$ is the midpoint of $\overline{SU}$. Mark $U$ and label it on the number line. \par \medskip
+\begin{tikzpicture}[scale=0.2]
+  \draw[<->] (-3,0)--(73,0);
+  \foreach \x in {0, 10,...,70}
+    \draw[shift={(\x,0)}] (0pt,-8pt)--(0pt,8pt) node[below=5pt]{$\x$};
+  \draw[fill] (13,0) circle [radius=0.2] node[above]{$S(13)$};
+  \draw[fill] (31,0) circle [radius=0.2] node[above]{$T(31)$};
+  \end{tikzpicture} \par \vspace{2cm}
+
+\item The point $M(2.3)$ is the midpoint of segment $\overline{AB}$. Given $A(-1.5)$, find the value of $B$. Mark and label it below. \par \smallskip
+  \begin{tikzpicture}
+    \draw[<->] (-2.5,0)--(8.5,0);
+    \foreach \x in {-2,...,8}
+      \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+    \draw[fill] (-1.5,0) circle [radius=0.05] node[above]{$A(-1.5)$};
+    \draw[fill] (2.3,0) circle [radius=0.05] node[above]{$M(2.3)$};
+  \end{tikzpicture}
+
+\newpage
+\item Point $B$ bisects segment $\overline{AC}$, $AB=\frac{1}{2}x+7$ and $AC=26$.
+  Find $x$.
+  \begin{center}
+    \begin{tikzpicture}[scale=1]
+      \draw[thick] (0,0)--(8,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (4,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (8,0) circle [radius=0.05] node[below]{$C$};
+      \node at (2,0.7){$\frac{1}{2}x+7$};
+      \draw[<->, dashed] (0,-1)--(8,-1);
+      \node at (4,-1.5){$26$};
+      \draw (1.8,-0.2)--(1.9,0.2);
+      \draw (2.1,-0.2)--(2.2,0.2);
+      \draw (5.8,-0.2)--(5.9,0.2);
+      \draw (6.1,-0.2)--(6.2,0.2);
+    \end{tikzpicture}
+  \end{center} \vspace{4cm}
+
+\item Given the points $S$ and $T$ trisect the line segment $\overline{RU}$, as shown below. If $RT=7$, find $RU$.\\[1cm]
+  \begin{tikzpicture}[scale=0.75]
+    \draw[thick] (0,0)--(9,0);
+    \draw[fill] (0,0) circle [radius=0.05] node[below]{$R$};
+    \draw[fill] (3,0) circle [radius=0.05] node[below]{$S$};
+    \draw[fill] (6,0) circle [radius=0.05] node[below]{$T$};
+    \draw[fill] (9,0) circle [radius=0.05] node[below]{$U$};
+    \draw[thick] (1.4,-0.2)--(1.4,0.2);
+    \draw[thick] (1.55,-0.2)--(1.55,0.2);
+    \draw[thick] (4.4,-0.2)--(4.4,0.2);
+    \draw[thick] (4.55,-0.2)--(4.55,0.2);
+    \draw[thick] (7.4,-0.2)--(7.4,0.2);
+    \draw[thick] (7.55,-0.2)--(7.55,0.2);
+  \end{tikzpicture} \vspace{4cm}
+
+\item The point $Q$ lies on $\overline{AB}$ three quarters of the way from $A$ to $B$. Given $AB=28$.
+  \begin{enumerate}
+    \item Mark and label the location of $Q$. (measure)
+    \item Find ${AQ}$. State an equation for full credit.
+  \end{enumerate} \vspace{1cm} 
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[thick] (0,0)--(7,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (7,0) circle [radius=0.05] node[below]{$B$};
+    \end{tikzpicture} 
+  \end{center}
+
+
+\end{enumerate}
+\end{document}
