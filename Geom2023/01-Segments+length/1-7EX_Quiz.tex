@@ -7,147 +7,166 @@
 \begin{document}
 
 \subsubsection*{1.7 Extension Quiz: Absolute value, trisection, algebra}
+\emph{All algebraic solutions require a check for full credit.}
 \begin{enumerate}
-\item Given $\overleftrightarrow{DG}$ as shown on the number line, with $D=11$ and $G=26$. \\[15pt]
-  \begin{tikzpicture}[scale=0.5]
-    \draw [<->] (9,0)--(31,0);
-    \foreach \x in {10, 12,...,30} %2 leading for diff!=1
-      \draw[shift={(\x,0)},color=black] (0pt,-6pt) -- (0pt,6pt) node[below=5pt]  {$\x$};
-      \draw [fill] (11,0) circle [radius=0.1] node[above] {$D$};
-      \draw [fill] (26,0) circle [radius=0.1] node[above] {$G$};
-  \end{tikzpicture} \\[10pt]
-  Points $E$ and $F$ trisect $\overline{DG}$. Find the values of $E$ and $F$ and mark and label them on the number line $\overleftrightarrow{DG}$. \vspace{6cm}
-
-\item Given $\overleftrightarrow{RS}$ as shown on the number line, with $R=-2.8$ and $S=4.4$. \\[5pt]
+\item Given $\overline{DEF}$, $DE=3 \frac{2}{3}$, and $EF=1 \frac{2}{3}$. Find ${DF}$. \par \vspace{1cm}
 \begin{tikzpicture}
-  \draw [<->] (-4.5,0)--(6.5,0);
-  \foreach \x in {-4,...,6} %2 leading for diff!=1
-    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-    \draw [fill] (-2.8,0) circle [radius=0.05] node[above] {$R$};
-    \draw [fill] (4.4,0) circle [radius=0.05] node[above] {$S$};
-\end{tikzpicture} \\ 
-The points $T$ and $U$ trisect $\overline{RS}$. Find their values, and mark and label them on the number line. \vspace{4cm}
-
-\newpage
-\item Given $\overline{PQR}$, with $PQ=\frac{1}{2} x+4$, $QR=x+3$, and $PR=2x+5$. Find ${PR}$.\\
-  Complete all the steps for full credit. \smallskip
-  \vspace{9cm}
-
-\item Given $\overline{ABC}$, $AB=\frac{2}{3}$, and $AC=3 \frac{1}{3}$.\\ [0.5cm]
-  Find ${BC}$.\\[1.5cm]
-  \begin{tikzpicture}
-    \draw [-, thick] (1,0)--(7,0);
-    \draw [fill] (1,0) circle [radius=0.05] node[below]{$A$};
-    \draw [fill] (2,0) circle [radius=0.05] node[below]{$B$};
-    \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
-  \end{tikzpicture}
-
-\item Given $\overline{PQR}$, with $PQ=4x-4$, $QR=2x+3$, and $PR=5x+9$. Find ${PR}$.\\
-Complete all the steps for full credit. \smallskip
-\vspace{9cm}
-
-\item Given $\overline{DEF}$, $DF=75$ and $\overline{DE}$ is half the length of $\overline{EF}$. \\ [0.25cm]
-Find ${DE}$.\\[.5in]
-    \begin{tikzpicture}
-      \draw [-, thick] (1,0)--(8,0);
-      \draw [fill] (1,0) circle [radius=0.05] node[below]{$D$};
-      \draw [fill] (3.4,0) circle [radius=0.05] node[below]{$E$};
-      \draw [fill] (8,0) circle [radius=0.05] node[below]{$F$};
-    \end{tikzpicture} \vspace{2.5cm}
-
-\item Given $\overleftrightarrow{PQ}$ as shown on the number line. Divide segment $\overline{PQ}$ into five congruent segments by marking and labeling the points $R$, $S$, $T$, and $U$ on the numberline.\\[20pt] % Midpoint
-  \begin{tikzpicture}
-    \draw [<->] (-4.5,0)--(6.5,0);
-    \foreach \x in {-4,...,6} %2 leading for diff!=1
-      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-      \draw [fill] (-4,0) circle [radius=0.05] node[above] {$P$};
-      \draw [fill] (6,0) circle [radius=0.05] node[above] {$Q$};
-  \end{tikzpicture}
-
-  \item The perimeter of the isosceles $\triangle FGH$ is 35 with $\overline{FH} \cong \overline{GH}$. If $FG=x+5$ and $FH=13 \frac{1}{2}$, find $x$.\\[0.25cm]
-  Show your work with an equation for full credit.\\[0.5cm]
-    \begin{tikzpicture}[scale=0.5]
-      \draw [thick](0,0)--(4,0)--(2,6)--(0,0);
-      \draw [fill] (0,0) circle [radius=0.05] node[below left]{$F$};
-      \draw [fill] (4,0) circle [radius=0.05] node[below right]{$G$};
-      \draw [fill] (2,6) circle [radius=0.05] node[above right]{$H$};
-      \draw [thick] (0.8,3.1)--(1.2,3); %tick mark
-      \draw [thick] (2.8,3)--(3.2,3.1); %tick mark
-      \node at (2,0) [below]{$x+5$};
-      \node at (0.8,3.4) [left]{$13 \frac{1}{2}$};
-    \end{tikzpicture} \vspace{1cm}
-
-\item Given $\overline{PQR}$, $PQ=2x+11$, $QR=x+1$, $PR=x+26$. Find ${x}$.
-  \begin{center}
-    \begin{tikzpicture}
-    \draw [-, thick] (0,0)--(7,0);
-    \draw [fill] (0,0) circle [radius=0.05] node[below]{$P$};
-    \draw [fill] (5,0) circle [radius=0.05] node[below]{$Q$};
-    \draw [fill] (7,0) circle [radius=0.05] node[below]{$R$};
-    \node at (2,0) [above]{$2x+11$};
-    \node at (6,0) [above]{$x+1$};
-    \draw [<->, dashed] (0,-0.7)--(7,-0.7);
-    \node at (3.5,-0.7) [below]{$x+26$};
-  \end{tikzpicture}
-  \end{center}
-  \begin{enumerate}
-    \item Write down an equation to represent the situation. \vspace{0.5cm}
-    \item Solve for $x$. \vspace{1.5cm}
-    \item Check your answer. \vspace{2cm}
-  \end{enumerate}
-
-\item Given $\overline{DEF}$, $DE=3 \frac{1}{3}$, and $EF=1$. Find ${DF}$. \par \bigskip
-\begin{tikzpicture}
-  \draw [-, thick] (1,0)--(7,0);
-  \draw [fill] (1,0) circle [radius=0.05] node[below]{$D$};
-  \draw [fill] (5,0) circle [radius=0.05] node[below]{$E$};
-  \draw [fill] (7,0) circle [radius=0.05] node[below]{$F$};
+  \draw[thick] (1,0)--(7,0);
+  \draw[fill] (1,0) circle [radius=0.05] node[below]{$D$};
+  \draw[fill] (5,0) circle [radius=0.05] node[below]{$E$};
+  \draw[fill] (7,0) circle [radius=0.05] node[below]{$F$};
 \end{tikzpicture} \bigskip
 
-\item Given $P(-2.4)$ and $Q(1.8)$, as shown on the number line. 
+\item Given $P(-3.4)$ and $Q(1.7)$, as shown on the number line. 
   Find the length of the line segment $\overline{PQ}$. 
-  \begin{flushright}
+  \begin{center}
     \begin{tikzpicture}
       \draw[<->] (-4.5,0)--(4.5,0);
       \foreach \x in {-4,...,4}
         \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
-      \draw[fill] (-2.4,0) circle [radius=0.05] node[above]{$P$};
-      \draw[fill] (1.8,0) circle [radius=0.05] node[above]{$Q$};
+      \draw[fill] (-3.4,0) circle [radius=0.05] node[above]{$P(-3.4)$};
+      \draw[fill] (1.7,0) circle [radius=0.05] node[above]{$Q(1.7)$};
       \draw[thick] (-2.4,0)--(1.8,0);
     \end{tikzpicture}
-  \end{flushright} \vspace{1cm}
+  \end{center} \vspace{2cm}
 
-\item Given $\overline{DEFG}$, $DE=3 \frac{1}{4}$, $EF=6 \frac{1}{4}$, and $FG= 1 \frac{3}{4}$. (diagram not to scale) \par \smallskip
-Find ${DG}$, expressed as a fraction, not a decimal. \vspace{1cm}
+\item Given $x=-3$ simplify each expression.
+\begin{multicols}{2}
+  \begin{enumerate}[itemsep=1.5cm]
+    \item $|x-2|=$
+    \item $|-1-x|=$
+    \item $|x-1|+|x|=$
+    \item $3 \times |-x|+x=$
+  \end{enumerate}
+\end{multicols} \vspace{1cm}
+
+\item Find all values of $x$ satisfying the equation. (show the two cases for each problem) \bigskip
+\begin{multicols}{2} 
+  \begin{enumerate}
+    \item $|2x|=8$
+    \item $|x-2|+2 = 7$
+  \end{enumerate}
+\end{multicols}
+
+\newpage
+\item The segment $\overline{AC}$ is bisected by point $B$, $AB=\frac{1}{2}(3x+13)$ and $AC=22$.
+  Find $x$.
+  \begin{flushleft}
+    \begin{tikzpicture}[scale=1]
+      \draw[thick] (0,0)--(8,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (4,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (8,0) circle [radius=0.05] node[below]{$C$};
+      \node at (2,0.7){$\frac{1}{2}(3x+13)$};
+      \draw[<->, dashed] (0,-1)--(8,-1);
+      \node at (4,-1.5){$22$};
+      \draw (1.8,-0.2)--(1.9,0.2);
+      \draw (2.1,-0.2)--(2.2,0.2);
+      \draw (5.8,-0.2)--(5.9,0.2);
+      \draw (6.1,-0.2)--(6.2,0.2);
+    \end{tikzpicture}
+  \end{flushleft} \vspace{4cm}
+
+\item The perimeter of the isosceles $\triangle FGH$ is 35 with $\overline{FH} \cong \overline{GH}$. If $FG=x+5$ and $FH=13 \frac{1}{2}$, find $x$.  \par \smallskip
+  \begin{tikzpicture}[scale=0.5]
+    \draw[thick](0,0)--(4,0)--(2,6)--(0,0);
+    \draw[fill] (0,0) circle [radius=0.05] node[below left]{$F$};
+    \draw[fill] (4,0) circle [radius=0.05] node[below right]{$G$};
+    \draw[fill] (2,6) circle [radius=0.05] node[above right]{$H$};
+    \draw[thick] (0.8,3.1)--(1.2,3); %tick mark
+    \draw[thick] (2.8,3)--(3.2,3.1); %tick mark
+    \node at (2,0) [below]{$x+5$};
+    \node at (0.8,3.4) [left]{$13 \frac{1}{2}$};
+  \end{tikzpicture} \vspace{3cm}
+
+\item Given points $K(9)$ and $L(23)$, find the value of $M$ such that $L$ is the bisector of $\overline{KM}$. Mark $M$ and label it with its value on the number line. \par \medskip
+\begin{tikzpicture}[scale=0.3]
+  \draw[<->] (3,0)--(47,0);
+  \foreach \x in {5, 10,...,45}
+    \draw[shift={(\x,0)}] (0pt,-8pt)--(0pt,8pt) node[below=5pt]{$\x$};
+  \draw[fill] (9,0) circle [radius=0.2] node[above]{$K(9)$};
+  \draw[fill] (23,0) circle [radius=0.2] node[above]{$L(23)$};
+  \end{tikzpicture}
+
+\newpage
+\item The points $X$ and $Y$ trisect the line segment $\overline{WZ}$, as shown below. If $WY=14$, find $WZ$.
+\begin{center}
+  \begin{tikzpicture}[scale=1]
+    \draw[thick] (0,0)--(9,0);
+    \draw[fill] (0,0) circle [radius=0.05] node[below]{$W$};
+    \draw[fill] (3,0) circle [radius=0.05] node[below]{$X$};
+    \draw[fill] (6,0) circle [radius=0.05] node[below]{$Y$};
+    \draw[fill] (9,0) circle [radius=0.05] node[below]{$Z$};
+    \draw[thick] (1.4,-0.2)--(1.4,0.2);
+    \draw[thick] (1.55,-0.2)--(1.55,0.2);
+    \draw[thick] (4.4,-0.2)--(4.4,0.2);
+    \draw[thick] (4.55,-0.2)--(4.55,0.2);
+    \draw[thick] (7.4,-0.2)--(7.4,0.2);
+    \draw[thick] (7.55,-0.2)--(7.55,0.2);
+  \end{tikzpicture}
+\end{center} \vspace{3cm}
+
+\item The perimeter of rectangle $ABCD$ is 70 centimeters and its length is one and a half times its width. Find the rectangle's dimensions.
+  \begin{flushleft}
+  \begin{tikzpicture}[scale=0.7]
+    \draw[thick]
+      (0,0)node[below left]{$A$}--
+      (6,0)node[below right]{$B$}--
+      (6,4)node[above right]{$C$}--
+      (0,4)node[above left]{$D$}--cycle;
+    \node at (3,-0.8){$1 \frac{1}{2} \ x$ cm};
+    \node at (7,2.5){$x$ cm};
+    \draw (2.9, -0.2)--(2.9,0.2);
+    \draw (2.9, 3.8)--(2.9,4.2);
+    \draw (-0.2, 1.9)--(0.2, 1.9);
+    \draw (-0.2, 2.1)--(0.2, 2.1);
+    \draw (5.8, 1.9)--(6.2, 1.9);
+    \draw (5.8, 2.1)--(6.2, 2.1);
+    \end{tikzpicture}
+  \end{flushleft} \vspace{4cm}
+
+\item Given $\overleftrightarrow{DG}$ as shown on the number line, with $D=10$ and $G=28$. \par \smallskip
+  \begin{tikzpicture}[scale=0.5]
+    \draw[<->] (7,0)--(31,0);
+    \foreach \x in {8, 10,...,30}
+      \draw[shift={(\x,0)}] (0pt,-6pt)--(0pt,6pt) node[below=5pt]{$\x$};
+    \draw[fill] (10,0) circle [radius=0.1] node[above]{$D$};
+    \draw[fill] (28,0) circle [radius=0.1] node[above]{$G$};
+  \end{tikzpicture} \par \smallskip
+  Points $E$ and $F$ trisect $\overline{DG}$. Find the values of $E$ and $F$ and mark and label them on the number line $\overleftrightarrow{DG}$. \vspace{3cm}
+
+\newpage
+\item Given $\overline{PQR}$, $PQ=x-2$, $QR=\frac{1}{3}x$, $PR=\frac{1}{3}(3x+6)$. Find ${x}$.
   \begin{flushleft}
     \begin{tikzpicture}
-      \draw[thick] (0,0)--(9,0);
-      \draw[fill] (0,0) circle [radius=0.05] node[below]{$D$};
-      \draw[fill] (3,0) circle [radius=0.05] node[below]{$E$};
-      \draw[fill] (7,0) circle [radius=0.05] node[below]{$F$};
-      \draw[fill] (9,0) circle [radius=0.05] node[below]{$G$};
-    \end{tikzpicture}
-  \end{flushleft}
-  
-\item Given $\overline{FGHI}$, $FG=8 \frac{1}{6}$, $GH=12 \frac{1}{3}$, and $HI= 5 \frac{1}{2}$. (diagram not to scale) \par \smallskip
-Find ${FI}$.\\[.5in]
+    \draw[thick] (0,0)--(7,0);
+    \draw[fill] (0,0) circle [radius=0.05] node[below]{$P$};
+    \draw[fill] (5,0) circle [radius=0.05] node[below]{$Q$};
+    \draw[fill] (7,0) circle [radius=0.05] node[below]{$R$};
+    \node at (2,0) [above]{$x-2$};
+    \node at (6,0) [above]{$\frac{1}{3}x$};
+    \draw[<->, dashed] (0,-0.7)--(7,-0.7);
+    \node at (3.5,-0.7) [below]{$\frac{1}{3}(3x+6)$};
+  \end{tikzpicture}
+  \end{flushleft} \vspace{6cm}
+
+\item Given $\overline{DEF}$, $DF=75$ and $\overline{DE}$ is half the length of $\overline{EF}$. Find ${DE}$. \par \bigskip
   \begin{tikzpicture}
     \draw[thick] (0,0)--(9,0);
-    \draw[fill] (0,0) circle [radius=0.05] node[below]{$F$};
-    \draw[fill] (3,0) circle [radius=0.05] node[below]{$G$};
-    \draw[fill] (7,0) circle [radius=0.05] node[below]{$H$};
-    \draw[fill] (9,0) circle [radius=0.05] node[below]{$I$};
-  \end{tikzpicture} \vspace{1cm}
+    \draw[fill] (0,0) circle [radius=0.05] node[below]{$D$};
+    \draw[fill] (3,0) circle [radius=0.05] node[below]{$E$};
+    \draw[fill] (9,0) circle [radius=0.05] node[below]{$F$};
+  \end{tikzpicture} \vspace{6cm}
 
-\item Given $\overleftrightarrow{JK}$ as shown on the number line. \par \smallskip
-\begin{tikzpicture}[scale=0.5]
-  \draw[<->] (49,0)--(71,0);
-  \foreach \x in {50, 52,...,70}
-    \draw[shift={(\x,0)}] (0pt,-6pt)--(0pt,6pt) node[below=5pt]{$\x$};
-  \draw[fill] (54,0) circle [radius=0.1] node[above] {$J$};
-  \draw[fill] (68,0) circle [radius=0.1] node[above] {$K$};
-\end{tikzpicture} \par \bigskip
-What is the midpoint between the points $J$ and $K$?
+\subsubsection*{Academic integrity pledge}
+This assignment must be completed in one sitting. Use your notes and a calculator. \par \smallskip
+I have not received any human help on this assignment. \par \bigskip
+Signed: \rule{6cm}{0.15mm} \hfill \rule{6cm}{0.15mm}
+\begin{flushright}
+  Date, start time - end time
+\end{flushright}
+
 
 \end{enumerate}
 \end{document}
+
