@@ -18,7 +18,6 @@
   \end{tikzpicture} \\[10pt]
   Points $E$ and $F$ trisect $\overline{DG}$. Find the values of $E$ and $F$ and mark and label them on the number line $\overleftrightarrow{DG}$. \vspace{6cm}
 
-
 \item Given $\overleftrightarrow{RS}$ as shown on the number line, with $R=-2.8$ and $S=4.4$. \\[5pt]
 \begin{tikzpicture}
   \draw [<->] (-4.5,0)--(6.5,0);
@@ -36,12 +35,12 @@ The points $T$ and $U$ trisect $\overline{RS}$. Find their values, and mark and 
 
 \item Given $\overline{ABC}$, $AB=\frac{2}{3}$, and $AC=3 \frac{1}{3}$.\\ [0.5cm]
   Find ${BC}$.\\[1.5cm]
-      \begin{tikzpicture}
-        \draw [-, thick] (1,0)--(7,0);
-        \draw [fill] (1,0) circle [radius=0.05] node[below]{$A$};
-        \draw [fill] (2,0) circle [radius=0.05] node[below]{$B$};
-        \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
-      \end{tikzpicture}
+  \begin{tikzpicture}
+    \draw [-, thick] (1,0)--(7,0);
+    \draw [fill] (1,0) circle [radius=0.05] node[below]{$A$};
+    \draw [fill] (2,0) circle [radius=0.05] node[below]{$B$};
+    \draw [fill] (7,0) circle [radius=0.05] node[below]{$C$};
+  \end{tikzpicture}
 
 \item Given $\overline{PQR}$, with $PQ=4x-4$, $QR=2x+3$, and $PR=5x+9$. Find ${PR}$.\\
 Complete all the steps for full credit. \smallskip
@@ -104,6 +103,51 @@ Find ${DE}$.\\[.5in]
   \draw [fill] (5,0) circle [radius=0.05] node[below]{$E$};
   \draw [fill] (7,0) circle [radius=0.05] node[below]{$F$};
 \end{tikzpicture} \bigskip
+
+\item Given $P(-2.4)$ and $Q(1.8)$, as shown on the number line. 
+  Find the length of the line segment $\overline{PQ}$. 
+  \begin{flushright}
+    \begin{tikzpicture}
+      \draw[<->] (-4.5,0)--(4.5,0);
+      \foreach \x in {-4,...,4}
+        \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+      \draw[fill] (-2.4,0) circle [radius=0.05] node[above]{$P$};
+      \draw[fill] (1.8,0) circle [radius=0.05] node[above]{$Q$};
+      \draw[thick] (-2.4,0)--(1.8,0);
+    \end{tikzpicture}
+  \end{flushright} \vspace{1cm}
+
+\item Given $\overline{DEFG}$, $DE=3 \frac{1}{4}$, $EF=6 \frac{1}{4}$, and $FG= 1 \frac{3}{4}$. (diagram not to scale) \par \smallskip
+Find ${DG}$, expressed as a fraction, not a decimal. \vspace{1cm}
+  \begin{flushleft}
+    \begin{tikzpicture}
+      \draw[thick] (0,0)--(9,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$D$};
+      \draw[fill] (3,0) circle [radius=0.05] node[below]{$E$};
+      \draw[fill] (7,0) circle [radius=0.05] node[below]{$F$};
+      \draw[fill] (9,0) circle [radius=0.05] node[below]{$G$};
+    \end{tikzpicture}
+  \end{flushleft}
+  
+\item Given $\overline{FGHI}$, $FG=8 \frac{1}{6}$, $GH=12 \frac{1}{3}$, and $HI= 5 \frac{1}{2}$. (diagram not to scale) \par \smallskip
+Find ${FI}$.\\[.5in]
+  \begin{tikzpicture}
+    \draw[thick] (0,0)--(9,0);
+    \draw[fill] (0,0) circle [radius=0.05] node[below]{$F$};
+    \draw[fill] (3,0) circle [radius=0.05] node[below]{$G$};
+    \draw[fill] (7,0) circle [radius=0.05] node[below]{$H$};
+    \draw[fill] (9,0) circle [radius=0.05] node[below]{$I$};
+  \end{tikzpicture} \vspace{1cm}
+
+\item Given $\overleftrightarrow{JK}$ as shown on the number line. \par \smallskip
+\begin{tikzpicture}[scale=0.5]
+  \draw[<->] (49,0)--(71,0);
+  \foreach \x in {50, 52,...,70}
+    \draw[shift={(\x,0)}] (0pt,-6pt)--(0pt,6pt) node[below=5pt]{$\x$};
+  \draw[fill] (54,0) circle [radius=0.1] node[above] {$J$};
+  \draw[fill] (68,0) circle [radius=0.1] node[above] {$K$};
+\end{tikzpicture} \par \bigskip
+What is the midpoint between the points $J$ and $K$?
 
 \end{enumerate}
 \end{document}
