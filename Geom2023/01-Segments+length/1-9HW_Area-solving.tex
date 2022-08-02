@@ -12,11 +12,11 @@
 $A = b \times h = 15$
   \begin{flushright}
   \begin{tikzpicture}[scale=1.25]
-    \draw [-, thick] (0,0)--(4.5,0)--(4.5,2)--(0,2)--cycle;
-    \draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
-    \draw [fill] (4.5,0) circle [radius=0.05] node[right]{$B$};
-    \draw [fill] (4.5,2) circle [radius=0.05] node[right]{$C$};
-    \draw [fill] (0,2) circle [radius=0.05] node[left]{$D$};
+    \draw[thick] (0,0)--(4.5,0)--(4.5,2)--(0,2)--cycle;
+    \draw[fill] (0,0) circle [radius=0.05] node[left]{$A$};
+    \draw[fill] (4.5,0) circle [radius=0.05] node[right]{$B$};
+    \draw[fill] (4.5,2) circle [radius=0.05] node[right]{$C$};
+    \draw[fill] (0,2) circle [radius=0.05] node[left]{$D$};
     \node at (5, 1){?};
     \node at (2.25, -0.5){$6$};
     \node at (2.25, 1){$A = 15$};
@@ -29,15 +29,15 @@ $A = b \times h = 15$
     $\displaystyle A = \frac{1}{2} bh = 54$ \vspace{2cm}
       \begin{flushright}
       \begin{tikzpicture}[scale=.635]
-        %\draw [help lines] (-1,-1) grid (9,6);
-        \draw [thick, ->] (-1.2,0) -- (9.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-1.2)--(0,6.4) node [left] {$y$};
-        \draw [<->, thick] (0.5,1)--(0.5,5);
-        \draw [-, thick] (2,1)--(7,1)--(1,5)--cycle;
-        \draw [-, dashed] (7,1)--(6,5)--(1,5);
-        \draw [fill] (2,1) circle [radius=0.05] node[below] {$D$};
-        \draw [fill] (7,1) circle [radius=0.05] node[below] {$E$};
-        \draw [fill] (1,5) circle [radius=0.05] node[above right] {$F$};
+        %\draw[help lines] (-1,-1) grid (9,6);
+        \draw[thick, ->] (-1.2,0) -- (9.4,0) node [below right] {$x$};
+        \draw[thick, ->] (0,-1.2)--(0,6.4) node [left] {$y$};
+        \draw[<->, thick] (0.5,1)--(0.5,5);
+        \draw[thick] (2,1)--(7,1)--(1,5)--cycle;
+        \draw[dashed] (7,1)--(6,5)--(1,5);
+        \draw[fill] (2,1) circle [radius=0.05] node[below] {$D$};
+        \draw[fill] (7,1) circle [radius=0.05] node[below] {$E$};
+        \draw[fill] (1,5) circle [radius=0.05] node[above right] {$F$};
         \node at (4.5,1)[below]{$12$};
         \node at (0.5,3)[right]{$h$};
       \end{tikzpicture}
@@ -48,7 +48,7 @@ $A = b \times h = 15$
 $A = \frac{1}{2} \times b \times h = 78$
   \begin{flushright}
   \begin{tikzpicture}[scale=1.25]
-    \draw [-, thick] (0,0)--(3,0)--(2.5,3.5)--cycle;
+    \draw[thick] (0,0)--(3,0)--(2.5,3.5)--cycle;
     \node at (3.3, 1.5){20};
     \node at (1.5, -0.5){$?$};
     \node at (1.75, 1){$A = 78$};
@@ -66,7 +66,7 @@ $A = \frac{1}{2} \times b \times h = 78$
   \end{enumerate}
     \begin{tikzpicture}[scale=1]
       \draw (0,0) circle[radius=3];
-      \draw [thick]
+      \draw[thick]
       (0:3) node[right] {$P$}--
       (0,0) node[below] {$Q$};
       \draw (1.5,0) node[below] {$10$};
@@ -80,7 +80,7 @@ $A = \frac{1}{2} \times b \times h = 78$
   $A = \pi r^2 = 49 \pi$ \vspace{1.7cm}
     \begin{tikzpicture}[scale=1]
       \draw (0,0) circle[radius=3];
-      \draw [thick]
+      \draw[thick]
       (0:3) node[right] {$P$}--
       (0,0) node[below] {$O$};
       \draw (1.5,0) node[below] {$?$};
@@ -90,7 +90,7 @@ $A = \frac{1}{2} \times b \times h = 78$
 \item Find the base of a rectangle with area $A=16.8$ and height $h=4.8$, expressed as a decimal. First write an equation substituting the given values in the area formula.
   \begin{flushright}
   \begin{tikzpicture}[scale=1.25]
-    \draw [-, thick] (0,0)--(3,0)--(3,3.5)--(0,3.5)--cycle;
+    \draw[thick] (0,0)--(3,0)--(3,3.5)--(0,3.5)--cycle;
     \node at (3.5, 2){$4.8$};
     \node at (1.5, -0.5){$x$};
     \node at (1.5, 2){$A = 16.8$};
@@ -108,8 +108,8 @@ $A = \frac{1}{2} \times b \times h = 78$
   \columnbreak
     \begin{tikzpicture}[scale=1]
       \draw (0,0) circle[radius=3];
-      \draw [thick] (0:3)--(0,0)--(-3,0);
-      \draw [fill] (0,0) circle [radius=0.05] node[below]{$O$};
+      \draw[thick] (0:3)--(0,0)--(-3,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$O$};
       \draw (1.5,0) node[below] {$r$};
     \end{tikzpicture}
   \end{multicols}
@@ -120,11 +120,11 @@ $A = \frac{1}{2} \times b \times h = 78$
     Find its area, showing the calculation.
       \begin{flushright}
       \begin{tikzpicture}[scale=.635]
-        \draw [help lines] (-1,-1) grid (9,6);
-        \draw [thick, ->] (-1.2,0) -- (9.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-1.2)--(0,6.4) node [left] {$y$};
-        \draw [<->, thick] (1.5,1)--(1.5,4);
-        \draw [-, thick] (2,1)--(6,1)--(7,4)--(3,4)--cycle;
+        \draw[help lines] (-1,-1) grid (9,6);
+        \draw[thick, ->] (-1.2,0) -- (9.4,0) node [below right] {$x$};
+        \draw[thick, ->] (0,-1.2)--(0,6.4) node [left] {$y$};
+        \draw[<->, thick] (1.5,1)--(1.5,4);
+        \draw[thick] (2,1)--(6,1)--(7,4)--(3,4)--cycle;
         \node at (4,1)[below]{$4$};
         \node at (1.5,2.5)[left]{$3$};
       \end{tikzpicture}
@@ -139,15 +139,15 @@ $A = \frac{1}{2} \times b \times h = 78$
       \end{enumerate}
       \begin{flushright}
       \begin{tikzpicture}[scale=.635]
-        \draw [help lines] (-1,-1) grid (9,6);
-        \draw [thick, ->] (-1.2,0) -- (9.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-1.2)--(0,6.4) node [left] {$y$};
-        \draw [<->, thick] (0.5,1)--(0.5,5);
-        \draw [-, thick] (2,1)--(7,1)--(1,5)--cycle;
-        \draw [-, dashed] (7,1)--(6,5)--(1,5);
-        \draw [fill] (2,1) circle [radius=0.05] node[below] {$A$};
-        \draw [fill] (7,1) circle [radius=0.05] node[below] {$B$};
-        \draw [fill] (1,5) circle [radius=0.05] node[above right] {$C$};
+        \draw[help lines] (-1,-1) grid (9,6);
+        \draw[thick, ->] (-1.2,0) -- (9.4,0) node [below right] {$x$};
+        \draw[thick, ->] (0,-1.2)--(0,6.4) node [left] {$y$};
+        \draw[<->, thick] (0.5,1)--(0.5,5);
+        \draw[thick] (2,1)--(7,1)--(1,5)--cycle;
+        \draw[dashed] (7,1)--(6,5)--(1,5);
+        \draw[fill] (2,1) circle [radius=0.05] node[below] {$A$};
+        \draw[fill] (7,1) circle [radius=0.05] node[below] {$B$};
+        \draw[fill] (1,5) circle [radius=0.05] node[above right] {$C$};
         \node at (4.5,1)[below]{$5$};
         \node at (0.5,3)[right]{$h$};
       \end{tikzpicture}
@@ -163,15 +163,15 @@ $A = \frac{1}{2} \times b \times h = 78$
       \end{enumerate}
       \begin{flushright}
       \begin{tikzpicture}[scale=.635]
-        \draw [help lines] (-1,-1) grid (9,9);
-        \draw [thick, ->] (-1.2,0) -- (9.4,0) node [below right] {$x$};
-        \draw [thick, ->] (0,-1.2)--(0,9.4) node [left] {$y$};
-        %\draw [<->, thick] (0.5,1)--(0.5,5);
-        \draw [-, thick] (3,2)--(7,4)--(4,8)--cycle;
-        \draw [-, thick, red] (3,2)--(7,2)--(7,8)--(3,8)--cycle;
-        \draw [fill] (3,2) circle [radius=0.05] node[below left] {$A$};
-        \draw [fill] (7,4) circle [radius=0.05] node[right] {$B$};
-        \draw [fill] (4,8) circle [radius=0.05] node[above right] {$C$};
+        \draw[help lines] (-1,-1) grid (9,9);
+        \draw[thick, ->] (-1.2,0) -- (9.4,0) node [below right] {$x$};
+        \draw[thick, ->] (0,-1.2)--(0,9.4) node [left] {$y$};
+        %\draw[<->, thick] (0.5,1)--(0.5,5);
+        \draw[thick] (3,2)--(7,4)--(4,8)--cycle;
+        \draw[thick, red] (3,2)--(7,2)--(7,8)--(3,8)--cycle;
+        \draw[fill] (3,2) circle [radius=0.05] node[below left] {$A$};
+        \draw[fill] (7,4) circle [radius=0.05] node[right] {$B$};
+        \draw[fill] (4,8) circle [radius=0.05] node[above right] {$C$};
         \node at (5,2)[below]{$4$};
         \node at (2.2,5)[right]{$6$};
       \end{tikzpicture}

@@ -10,11 +10,11 @@
 \begin{enumerate}
 \item Find the area of $\triangle ABC$,  $Area= \frac{1}{2}bh$. The altitude $h$ of the triangle is 3 centimeters and the base $AB=6$ cm.\\[0.5cm]
    \begin{tikzpicture}[scale=1]
-     \draw [thick]
+     \draw[thick]
        (2,0)node[below]{$A$}--
        (8,0)node[below]{$B$}--
        (4,3)node[above]{$C$} --(2,0);
-    \draw [dashed] (4,0)--(4,3);
+    \draw[dashed] (4,0)--(4,3);
     \draw (4,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
     \node at (4,1.2)[right]{$h=3$};
     \node at (5,0)[below]{$6$ cm};
@@ -22,7 +22,7 @@
 
 \item Find the area of $\triangle ABC$ shown below (not actual size) with $m\angle C=90^\circ$ and the lengths of the triangle's sides as $a=50$, $b=87$, and $c=100$. \\ \vspace{0.1cm}
       \begin{tikzpicture}[scale=1.4]
-        \draw [thick]
+        \draw[thick]
         (0,0)node[left]{$A$}--
         (4,0)node[below right]{$C$}--
         (4,2.31)node[right]{$B$}--cycle;
@@ -40,11 +40,11 @@
 \item Given the rectangle $ABCD$, shown below, with $AB=11$ and $AD=5$. Find its area.
     \begin{flushright}
     \begin{tikzpicture}[scale=0.6]
-      \draw [-, thick] (0,0)--(7,0)--(7,4)--(0,4)--cycle;
-      \draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
-      \draw [fill] (7,0) circle [radius=0.05] node[right]{$B$};
-      \draw [fill] (7,4) circle [radius=0.05] node[right]{$C$};
-      \draw [fill] (0,4) circle [radius=0.05] node[left]{$D$};
+      \draw[thick] (0,0)--(7,0)--(7,4)--(0,4)--cycle;
+      \draw[fill] (0,0) circle [radius=0.05] node[left]{$A$};
+      \draw[fill] (7,0) circle [radius=0.05] node[right]{$B$};
+      \draw[fill] (7,4) circle [radius=0.05] node[right]{$C$};
+      \draw[fill] (0,4) circle [radius=0.05] node[left]{$D$};
       \node at (-0.5, 2){5};
       \node at (3.5, -0.5){11};
     \end{tikzpicture}
@@ -53,11 +53,11 @@
 \item Find the area of the rectangle $MATH$ shown below, with $MA=4.7$ and $MH=1.9$.
     \begin{flushleft}
     \begin{tikzpicture}
-      \draw [-, thick] (0,0)--(5,0)--(5,2)--(0,2)--cycle;
-      \draw [fill] (0,0) circle [radius=0.05] node[left]{$M$};
-      \draw [fill] (5,0) circle [radius=0.05] node[right]{$A$};
-      \draw [fill] (5,2) circle [radius=0.05] node[right]{$T$};
-      \draw [fill] (0,2) circle [radius=0.05] node[left]{$H$};
+      \draw[thick] (0,0)--(5,0)--(5,2)--(0,2)--cycle;
+      \draw[fill] (0,0) circle [radius=0.05] node[left]{$M$};
+      \draw[fill] (5,0) circle [radius=0.05] node[right]{$A$};
+      \draw[fill] (5,2) circle [radius=0.05] node[right]{$T$};
+      \draw[fill] (0,2) circle [radius=0.05] node[left]{$H$};
       \node at (-0.5, 1){1.9};
       \node at (2.5, -0.5){4.7};
     \end{tikzpicture}
@@ -66,8 +66,8 @@
 \item Find the combined area of the shape shown below, a rectangle and a square. The grid is in centimeters.
     \begin{flushleft}
       \begin{tikzpicture}[scale=1]
-        \draw [help lines] (-4,-4) grid (5,3);
-        \draw [thick, -] (-3,-3)--(4,-3)--(4,0)--(-1,0)--(-1,2)--(-3,2)--cycle;
+        \draw[help lines] (-4,-4) grid (5,3);
+        \draw[thick, -] (-3,-3)--(4,-3)--(4,0)--(-1,0)--(-1,2)--(-3,2)--cycle;
       \end{tikzpicture}
     \end{flushleft} \vspace{0.5cm} 
 
@@ -76,12 +76,8 @@
     \vspace{1cm} 
     \begin{flushleft}
     \begin{tikzpicture}
-      \draw [-, thick] (0,0)--(7,0)--(5,5)--(0,5)--cycle;
-      \draw [dashed] (5,0)--(5,5);
-      %\draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
-      %\draw [fill] (7,0) circle [radius=0.05] node[right]{$B$};
-      %\draw [fill] (7,2) circle [radius=0.05] node[right]{$C$};
-      %\draw [fill] (0,2) circle [radius=0.05] node[left]{$D$};
+      \draw[thick] (0,0)--(7,0)--(5,5)--(0,5)--cycle;
+      \draw[dashed] (5,0)--(5,5);
       \node at (6, -0.5){2};
       \node at (2.5, -0.5){5};
       \node at (-0.5, 2.5){5};
@@ -94,12 +90,8 @@
   \item Find the area $A$ and perimeter $P$ of the shape shown below. The grid is in centimeters.
       \begin{flushleft}
         \begin{tikzpicture}[scale=1]
-          \draw [help lines] (-4,-4) grid (5,3);
-          %\draw [thick, ->] (-2.2,0) -- (10.4,0) node [below right] {$x$};
-          %\draw [thick, ->] (0,-2.2)--(0,10.4) node [left] {$y$};
-          %\draw (0,0) circle [radius=3] node[below]{$C$};
-          %\draw [fill] (0,0) circle [radius=0.05];
-          \draw [thick, -] (-3,-3)--(4,-3)--(4,2)--(2,2)--(2,0)--(-1,0)--(-1,2)--(-3,2)--cycle;
+          \draw[help lines] (-4,-4) grid (5,3);
+          \draw[thick, -] (-3,-3)--(4,-3)--(4,2)--(2,2)--(2,0)--(-1,0)--(-1,2)--(-3,2)--cycle;
         \end{tikzpicture}
       \end{flushleft}
         
@@ -112,23 +104,23 @@
   Find the area $A$ and perimeter $P$ of combined shape.
   \begin{flushleft}
     \begin{tikzpicture}[scale=1]
-      \draw [help lines] (-4,-3) grid (5,3);
-      %\draw [thick, ->] (-2.2,0) -- (10.4,0) node [below right] {$x$};
-      %\draw [thick, ->] (0,-2.2)--(0,10.4) node [left] {$y$};
+      \draw[help lines] (-4,-3) grid (5,3);
+      %\draw[thick, ->] (-2.2,0) -- (10.4,0) node [below right] {$x$};
+      %\draw[thick, ->] (0,-2.2)--(0,10.4) node [left] {$y$};
       %\draw (0,0) circle [radius=3] node[below]{$C$};
-      %\draw [fill] (0,0) circle [radius=0.05];
-      %\draw [thick, -] (-3,-3)--(4,-3);
+      %\draw[fill] (0,0) circle [radius=0.05];
+      %\draw[thick, -] (-3,-3)--(4,-3);
     \end{tikzpicture}
   \end{flushleft}
 
 \item The rectangle $MATH$ has an area of 102, with length $MA=12$. Find the width of the rectangle $AT$.
 \begin{flushleft}
 \begin{tikzpicture}
-  \draw [-, thick] (0,0)--(4,0)--(4,3)--(0,3)--cycle;
-  \draw [fill] (0,0) circle [radius=0.05] node[left]{$M$};
-  \draw [fill] (4,0) circle [radius=0.05] node[right]{$A$};
-  \draw [fill] (4,3) circle [radius=0.05] node[right]{$T$};
-  \draw [fill] (0,3) circle [radius=0.05] node[left]{$H$};
+  \draw[thick] (0,0)--(4,0)--(4,3)--(0,3)--cycle;
+  \draw[fill] (0,0) circle [radius=0.05] node[left]{$M$};
+  \draw[fill] (4,0) circle [radius=0.05] node[right]{$A$};
+  \draw[fill] (4,3) circle [radius=0.05] node[right]{$T$};
+  \draw[fill] (0,3) circle [radius=0.05] node[left]{$H$};
   \node at (4.5, 1.5){?};
   \node at (2, -0.5){12};
 \end{tikzpicture}
@@ -136,11 +128,11 @@
 
 \item One side of the $\triangle ABC$ has a length $AB=8$. The triangle's area is 44. Find the length of the altitude $h$ of the triangle to vertex $C$ and perpendicular to side $\overline{AB}$.\\[0.5cm]
   \begin{tikzpicture}[scale=1, rotate=-40]
-    \draw [thick]
+    \draw[thick]
       (2,0)node[below]{$A$}--
       (8,0)node[below]{$B$}--
       (5,3)node[above]{$C$} --(2,0);
-    \draw [dashed] (5,0)--(5,3);
+    \draw[dashed] (5,0)--(5,3);
     \draw (5,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
     \node at (5,1)[right]{$h=?$};
     \node at (5,0)[below left]{$8$};
@@ -149,11 +141,11 @@
 
 \item Find the area of $\triangle ABC$. The altitude $h$ of the triangle is $8$ centimeters and the base $AB=10 \frac{1}{2}$ cm. (diagram not to scale) \\[0.5cm]
 \begin{tikzpicture}[scale=1.]
-  \draw [thick]
+  \draw[thick]
     (2,0)node[below]{$A$}--
     (8,0)node[below]{$B$}--
     (4,3)node[above]{$C$} --(2,0);
- \draw [dashed] (4,0)--(4,3);
+ \draw[dashed] (4,0)--(4,3);
  \draw (4,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
  \node at (4,1.2)[right]{$h=8$};
  \node at (5,0)[below]{$10 \frac{1}{2}$ cm};
@@ -163,12 +155,12 @@
     \vspace{0.5cm} 
     \begin{flushleft}
     \begin{tikzpicture}
-      \draw [-, thick] (0,0)--(7,0)--(5,3)--(0,3)--cycle;
-      \draw [dashed] (5,0)--(5,3);
-      %\draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
-      %\draw [fill] (7,0) circle [radius=0.05] node[right]{$B$};
-      %\draw [fill] (7,2) circle [radius=0.05] node[right]{$C$};
-      %\draw [fill] (0,2) circle [radius=0.05] node[left]{$D$};
+      \draw[thick] (0,0)--(7,0)--(5,3)--(0,3)--cycle;
+      \draw[dashed] (5,0)--(5,3);
+      %\draw[fill] (0,0) circle [radius=0.05] node[left]{$A$};
+      %\draw[fill] (7,0) circle [radius=0.05] node[right]{$B$};
+      %\draw[fill] (7,2) circle [radius=0.05] node[right]{$C$};
+      %\draw[fill] (0,2) circle [radius=0.05] node[left]{$D$};
       \node at (6, -0.5){2};
       \node at (2.5, -0.5){7};
       \node at (-0.5, 1.5){3};
@@ -179,11 +171,11 @@
 
 \item One side of the $\triangle ABC$ has a length $AB=12$. The triangle's area is 60. Find the length of the altitude $h$ of the triangle to vertex $C$ and perpendicular to side $\overline{AB}$.\\
 \begin{tikzpicture}[scale=0.9, rotate=30]
-  \draw [thick]
+  \draw[thick]
     (2,0)node[below]{$A$}--
     (8,0)node[below]{$B$}--
     (5,3)node[above]{$C$} --(2,0);
-  \draw [dashed] (5,0)--(5,3);
+  \draw[dashed] (5,0)--(5,3);
   \draw (5,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
   \node at (5.2,1.5)[right]{$h=?$};
   \node at (5,-0.5)[below left]{$12$};
@@ -192,7 +184,7 @@
 \item Find the area of $\triangle ABC$ shown below (not actual size) with $m\angle C=90^\circ$ and the lengths of the triangle's sides as $a=3$, $b=4$, and $c=5$. 
 \begin{flushright}
 \begin{tikzpicture}[scale=1.4]
-  \draw [thick]
+  \draw[thick]
   (0,0)node[left]{$A$}--
   (4,0)node[below right]{$C$}--
   (4,2.31)node[right]{$B$}--cycle;
@@ -207,11 +199,7 @@
 \item Find the area and perimeter of the shape shown below. Mark the missing side lengths first. All angles are $90^\circ$.\hfill \emph{(not drawn to scale)}
 \begin{flushleft}
 \begin{tikzpicture}[rotate=-90, scale=1.2]
-\draw [-, thick] (2,0)--(4.5,0)--(4.5,2.5)--(3,2.5)--(3,5)--(2,5)--cycle;
-%\draw [fill] (0,0) circle [radius=0.05] node[left]{$A$};
-%\draw [fill] (7,0) circle [radius=0.05] node[right]{$B$};
-%\draw [fill] (7,2) circle [radius=0.05] node[right]{$C$};
-%\draw [fill] (0,2) circle [radius=0.05] node[left]{$D$};
+\draw[thick] (2,0)--(4.5,0)--(4.5,2.5)--(3,2.5)--(3,5)--(2,5)--cycle;
 \node at (5.1, 1.2){6};
 \node at (4, 2.8){5};
 \node at (3.5, -0.5){7};
@@ -222,9 +210,9 @@
 \item On the graph, draw polygon ABCDEF with vertices A(1, 1), B(1, 4), C(3, 4), D(3, 7), E(8, 7), and F(8, 1). Find the perimeter and the area of the polygon.
 \begin{flushleft}
   \begin{tikzpicture}[scale=.75]
-    \draw [help lines] (0,0) grid (10,10);
-    \draw [thick, ->] (0,0) -- (10.4,0) node [below right] {$x$};
-    \draw [thick, ->] (0,0)--(0,10.4) node [right] {$y$};
+    \draw[help lines] (0,0) grid (10,10);
+    \draw[thick, ->] (0,0) -- (10.4,0) node [below right] {$x$};
+    \draw[thick, ->] (0,0)--(0,10.4) node [right] {$y$};
     \foreach \x in {1,...,10}
     \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt] {$\x$};
     \foreach \y in {1,...,10}
