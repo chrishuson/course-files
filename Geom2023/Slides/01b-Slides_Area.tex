@@ -23,17 +23,118 @@
     Extension: Scientific notation
   \end{frame}
 
+\begin{frame}{The \emph{area} of a rectangle is its base $\times$ height.}
+    {We also say ``length times width''}
+    Formula for the area of a rectangle:
+    {\large $$A=b \times h$$}
+        \begin{columns}
+            \column{0.5\textwidth}
+            \begin{tikzpicture}[scale=.5]
+                \draw[help lines] (0,0) grid (5,4);
+                \draw[thick] (0,0)--(5,0)--(5,4)--(0,4)--cycle;
+                \draw[<->, dashed] (0,-0.5)--(5,-0.5);
+                \node at (2.5, -1){$b=5$};
+                \draw[<->, dashed] (5.5,0)--(5.5,4);
+                \node at (7, 2){$h=4$};
+            \end{tikzpicture}
+            \column{0.5\textwidth}
+            $$A = 5 \times 4 = 20$$
+        \end{columns} \vspace{1.5cm}
+        \begin{description}
+            \item[Area] the quantity of unit squares that fill a shape
+        \end{description}
+    \end{frame}
+
+\begin{frame}{A parallelogram's area has the same formula as a rectangle.}
+    {Use the height, not the length of the slanted side.}
+    Formula for the area of a parallelogram:
+    {\large $$A=b \times h$$}
+        \begin{columns}
+            \column{0.5\textwidth}
+            \begin{tikzpicture}[scale=.5]
+                \draw[thick] (0,0)--(5,0)--(6,4)--(1,4)--cycle;
+                \draw[<->, dashed] (0,-0.5)--(5,-0.5);
+                \node at (2.5, -1){$b=5$};
+                \draw[<->, dashed] (6.5,0)--(6.5,4);
+                \node at (8, 2){$h=4$};
+                \begin{scope}
+                    \clip (0,0)--(5,0)--(6,4)--(1,4)--cycle;
+                        \draw[help lines] (0,0) grid (6,4);
+                \end{scope}
+                \onslide<2>
+                    \begin{scope}
+                        \clip (0,0)--(1,4)--(0,4)--cycle;
+                        \draw[dashed, blue] (0,0) grid (6,4);
+                    \end{scope}
+                    \begin{scope}
+                        \clip (5,0)--(6,4)--(5,4)--cycle;
+                        \draw[dashed, blue] (0,0) grid (6,4);
+                    \end{scope}
+                    \node at (4,-3){The two blue triangles match};
+            \end{tikzpicture}
+            \column{0.5\textwidth}
+            $$A = 5 \times 4 = 20$$
+        \end{columns} \vspace{1.5cm}
+    \end{frame}
+
+\begin{frame}{A triangle has half the area of its base times height.}
+    {Use the height, not the side length.}
+    Formula for the area of a triangle:
+    {\large $$A= \frac{1}{2} b \times h$$}
+        \begin{columns}
+            \column{0.5\textwidth}
+            \begin{tikzpicture}[scale=.5]
+                \draw[thick] (0,0)--(5,0)--(6,4)--(1,4)--cycle;
+                \draw[<->, dashed] (0,-0.5)--(5,-0.5);
+                \node at (2.5, -1){$b=5$};
+                \draw[<->, dashed] (6.5,0)--(6.5,4);
+                \node at (8, 2){$h=4$};
+                \fill [cyan] (0,0)--(5,0)--(1,4)--cycle;
+            \end{tikzpicture}
+            \column{0.5\textwidth}
+            $$A =  \frac{1}{2} (5 \times 4) = 10$$
+        \end{columns} \vspace{1.5cm}
+    \end{frame}
+
+\begin{frame}{Find a missing dimension using the area formula}
+    Given the area of a triangle is 40 and its base is 10, find its height. \vspace{1cm}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{tikzpicture}[scale=.7]
+            \draw[thick] (0,0)--(5,0)--(3,4)--cycle;
+            \draw[<->, dashed] (0,-0.5)--(5,-0.5);
+            \node at (2.5,-1){$b=10$};
+            \draw[<->, dashed] (5.5,0)--(5.5,4);
+            \node at (6.5,2){$h=$ ?};
+            \node at (2.5,1.5){$A=40$};
+        \end{tikzpicture}
+        \column{0.5\textwidth}
+        $$A =  \frac{1}{2} (10 \times h) = 40$$
+    \end{columns} \vspace{1.5cm}
+    \end{frame}
+
+\begin{frame}{Write formulas in notebook}
+        \begin{description}
+            \item[Rectangle] $A=b \times h$ (base times height or length times width)
+            \item[Parallelogram] $A=b \times h$
+            \item[Triangle] $A=\frac{1}{2} (b \times h)$ \vspace{0.5cm}
+            \item[Area] the quantity of unit squares that fill a shape
+            \item[Units] We say ``square units'', i.e. square inches (abbreviated $\rm{in}^2$), square miles, etc.
+        \end{description}
+    \end{frame}
+    
 \section{1.9 Rounding and circle area \hfill 20 September}
 \begin{frame}{Learning Target: I can calculate the area of a circle}
     {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{1.9 Tuesday 20 Sept}}
-        Do Now: Find the area of a triangle with base $b=10$ inches and height $h=8$ in.  \begin{center}
-            \begin{tikzpicture}[scale=0.3]
-              \draw[thick] (0,0)node[below]{$S$}--
-                (9,0) node[below]{$T$}--
-                (4,8) node[above]{$U$}--cycle;
+        Do Now: Two rectangles are shown. Calculate the area of each and the combined total area.
+        \begin{flushleft}
+            \begin{tikzpicture}[scale=.7]
+                \draw[help lines] (0,0) grid (5,2);
+                \draw[thick] (0,0)--(5,0)--(5,2)--(3,2)--(3,4)--(0,4)--cycle;
+                \draw[help lines] (0,2) grid (3,4);
+                \draw[thick] (0,2)--(3,2);
             \end{tikzpicture}
-            \end{center}
-
+          \end{flushleft}
         Lesson: Area of a circle, $\pi$, decimals, powers of ten, rounding \par \medskip
         Extension: Significant figures
     \end{frame}
