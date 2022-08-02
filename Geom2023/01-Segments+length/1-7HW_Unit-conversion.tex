@@ -1,0 +1,108 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area \\* 16 Septemper 2022}
+
+\begin{document}
+
+\subsubsection*{1.7 Homework: Unit conversion}
+\begin{multicols}{3}
+  1 inch = 2.54 centimeters\\
+  1 meter = 39.37 inches\\
+  1 mile = 5280 feet\\
+  1 mile = 1760 yards\\
+  1 mile = 1.609 kilometers\\
+  1 kilometer = 0.62 mile\\
+  1 pound = 16 ounces\\
+  1 pound = 0.454 kilogram \\
+  1 kilogram = 2.2 pounds \\
+  1 ton = 2000 pounds\\
+  1 cup = 8 fluid ounces \\
+  1 pint = 2 cups\\
+  1 quart = 2 pints\\
+  1 gallon = 4 quarts\\
+  1 gallon = 3.785 liters\\
+  1 liter = 0.264 gallon\\
+  1 liter = 1000 cubic centimeters
+\end{multicols}
+
+\begin{enumerate}
+
+\item Use the table above to answer this question, How many...
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=1cm]
+      \item ounces in a pound
+      \item inches in a meter
+    \end{enumerate}
+  \end{multicols}
+
+\item Use your personal knowledge to answer, How many...
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=1cm]
+      \item inches in a foot
+      \item minutes in an hour
+    \end{enumerate}
+  \end{multicols}
+
+\item Required notation: leading variable (capitalized), conversion ratio with units, answer with units. \par \smallskip
+  Example: Find the distance in feet of $D=4$ miles.
+  $$D = 4 \,\mathrm{miles} \times \displaystyle \frac{5280 \,\mathrm{feet}}{1 \,\mathrm{mile}} = 21,120 \,\mathrm{feet}$$
+  \begin{enumerate}[itemsep=2cm]
+    \item Find the width in centimeters of a screen having $W= 20$ inches.
+    \item Find number of minutes in a school day, $T=6$ hours.
+    \item Find the weight in kilograms of a person with weight $W=120$ pounds.
+    \item Find the length in feet of a New York City block whose length is $L=\frac{1}{20}$ miles.
+  \end{enumerate}
+
+\newpage
+\item The points $P(-8.25)$ and $Q(7.5)$ are shown on the number line. Find $PQ$. \par \smallskip
+\begin{tikzpicture}[scale=0.5]
+    \draw[<->] (-12,0)--(12,0);
+    \foreach \x in {-10,-8,...,10}
+        \draw[shift={(\x,0)}] (0pt,-6pt)--(0pt,6pt) node[below=5pt]{$\x$};
+    \draw[fill] (-8.25,0) circle [radius=0.08] node[above]{$P(-8.25)$};
+    \draw[fill] (7.5,0) circle [radius=0.08] node[above]{$Q(7.5)$};
+  \end{tikzpicture} \vspace{2cm}
+
+\item The perimeter of an equilateral triangle is 27 inches. Find the length of its sides. \vspace{2cm}
+
+\item Point $E$ bisects $\overline{DEF}$ and $DE=5x+20$, $EF=10x$. Find $DF$. (show check)
+\begin{flushleft}
+\begin{tikzpicture}
+    \draw[-, thick] (0,0)--(8,0);
+    \draw[fill] (0,0) circle [radius=0.05] node[below]{$D$};
+    \draw[fill] (4,0) circle [radius=0.05] node[below]{$E$};
+    \draw[fill] (8,0) circle [radius=0.05] node[below]{$F$};
+    \node at (2,0.5){$5x+20$};
+    \node at (6,0.5){$10x$};
+    \draw (1.8,-0.2)--(1.9,0.2);
+    \draw (2.1,-0.2)--(2.2,0.2);
+    \draw (5.8,-0.2)--(5.9,0.2);
+    \draw (6.1,-0.2)--(6.2,0.2);
+  \end{tikzpicture}
+  \end{flushleft} \vspace{6cm}
+
+\item Find the perimeter of rectangle $BECA$ given the dimensions as marked, $AB=8$, $BE=x-2$, $CE=x$.
+  \begin{flushleft}
+  \begin{tikzpicture}[scale=1]
+    \draw[thick]
+      (0,0)node[below left]{$B$}--
+      (3,0)node[below right]{$E$}--
+      (3,4)node[above right]{$C$}--
+      (0,4)node[above left]{$A$}--cycle;
+    \node at (1.5,-0.6){$x-2$};
+    \node at (-0.5,2.5){$8$};
+    \node at (3.5,2.5){$x$};
+    \draw (1.45, -0.2)--(1.55,0.2);
+    \draw (1.45, 3.8)--(1.55,4.2);
+    \draw (-0.2, 1.9)--(0.2, 1.9);
+    \draw (-0.2, 2.1)--(0.2, 2.1);
+    \draw (2.8, 1.9)--(3.2, 1.9);
+    \draw (2.8, 2.1)--(3.2, 2.1);
+    \end{tikzpicture}
+  \end{flushleft}
+
+
+\end{enumerate}
+\end{document}
