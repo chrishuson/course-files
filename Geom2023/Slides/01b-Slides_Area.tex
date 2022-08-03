@@ -89,7 +89,7 @@
                 \node at (2.5, -1){$b=5$};
                 \draw[<->, dashed] (6.5,0)--(6.5,4);
                 \node at (8, 2){$h=4$};
-                \fill [cyan] (0,0)--(5,0)--(1,4)--cycle;
+                \fill[blue!40] (0,0)--(5,0)--(1,4)--cycle;
             \end{tikzpicture}
             \column{0.5\textwidth}
             $$A =  \frac{1}{2} (5 \times 4) = 10$$
@@ -140,9 +140,6 @@
     \end{description}
     \end{frame}
 
-    
-    
-
 \section{1.9 Rounding and circle area \hfill 20 September}
 \begin{frame}{Learning Target: I can calculate the area of a circle}
     {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{1.9 Tuesday 20 Sept}}
@@ -153,11 +150,123 @@
                 \draw[thick] (0,0)--(5,0)--(5,2)--(3,2)--(3,4)--(0,4)--cycle;
                 \draw[help lines] (0,2) grid (3,4);
                 \draw[thick] (0,2)--(3,2);
+                \node at (5.5,1){2};
+                \node at (3.5,3){2};
+                \node at (2.5,-0.5){5};
+                \node at (1.5,4.5){3};
             \end{tikzpicture}
           \end{flushleft}
-        Lesson: Area of a circle, $\pi$, decimals, powers of ten, rounding \par \medskip
+        Lesson: Area of a circle, $\pi$, rounding \par \medskip
         Extension: Significant figures
     \end{frame}
+
+\begin{frame}{The \emph{area} and  \emph{circumference} of a circle are multiples of $\pi$.}
+    {$\pi$ is an \emph{irrational number}}
+    \begin{columns}
+        \column{0.5\textwidth}
+            Area of a circle:
+            {\large $$A=\pi r^2$$}
+        \column{0.5\textwidth}
+            Circumference (distance around):
+            {\large $$C=2 \pi r$$}
+        \end{columns}  \vspace{0.5cm}
+        \begin{columns}
+            \column{0.5\textwidth}
+            \begin{tikzpicture}[scale=.6]
+                \draw (0,0) circle [radius=3];
+                \draw[fill] (0,0) circle [radius=0.1] node[below right]{$A$};
+                \draw[thick, -{>[scale=1.5]}] (0,0)--(30:3);
+                \node at (2,0.5){$r=3$};
+                \clip (0,0) circle [radius=3];
+                  \draw[help lines] (-4,-4) grid (4,4);
+              \end{tikzpicture}
+            \column{0.5\textwidth}
+            Circle $A$ with radius $r=3$
+            $$A = \pi \times 3^2 = 9 \pi = 28.2743... $$
+            $$C = 2\pi \times 3 = 6 \pi = 18.8495... $$
+        \end{columns} \vspace{0.5cm}
+        \begin{description}
+            \item[Radius] Segment from the center to the edge of a circle, $r$
+            \item[Diameter] Segment/length across the whole circle, $D=2r$
+        \end{description}
+    \end{frame}
+
+\begin{frame}{Numbers don't always need to be exact}
+    Round up when the next digit is 5 or more \par 
+    Round down otherwise \par
+    \onslide<1> {\hspace{4cm}Is $\pi$ closer to three or four?} \par
+        $\pi = 3.{\color{red}1}415926... $
+    \onslide<2-> $\approx 3$ to the nearest whole number
+    \onslide<3-> $\pi = 3.1{\color{red}4}15926... \approx 3.1$ to the nearest tenth \par
+        $\pi = 3.14{\color{red}1}5926... \approx 3.14$ to the nearest hundredth \par
+        $\pi = 3.141{\color{red}5}926... \approx 3.14{\textbf 2}$ to the nearest thousandth \bigskip
+    \onslide<4-> 
+        \begin{description}
+        \item[Whole] The ones place, e.g. 3, 14, -15
+        \item[tenths] First digit after the decimal, 0.3, 6.8
+        \item[hundredths] Second decimal digit, 5.45
+        \item[thousandths] Third decimal place, 18.123
+        \item[Rounding] Writing an approximation of a number
+        \item[Approximate] About equal to, not exact, $\approx$
+    \end{description}
+    \end{frame}
+
+\begin{frame}{Use the symbol $\pi$ for an \emph{exact} answer}
+    \begin{columns}
+        \column{0.4\textwidth}
+        \begin{tikzpicture}[scale=.6]
+            \draw (0,0) circle [radius=3];
+            \draw[fill] (0,0) circle [radius=0.1] node[below left]{$O$};
+            \draw[thick, <->] (160:3)--(-20:3); %{<->[scale=1.5]}
+            \node at (0,0.8){$D=4$};
+            \end{tikzpicture}
+        \column{0.6\textwidth}
+        Circle $O$ with diameter $D=4$
+        \begin{enumerate}
+            \item Find the radius of the circle. \par \medskip
+            \onslide<2->  {$r = \frac{1}{2}D = \frac{4}{2} =2 $} \medskip
+            \item Find the exact circumference. \par \medskip
+            \onslide<3->  {$C = 2 \pi r = 2 \pi 2 = 4 \pi $} \medskip
+            \item Round to the nearest hundredth. \par \medskip
+            \onslide<4>  $C = 4 \pi = 6.28{\color{red}3}1853... \approx 6.28 $
+        \end{enumerate}
+    \end{columns} \vspace{2cm}
+    \begin{description}
+        \item[Exact solution] Written with symbols or an ellipse ($...$). \par 
+        Also said as ``give your answer \emph{in terms of} $\pi$''.
+    \end{description}
+    \end{frame}
+    
+\begin{frame}{Write formulas in notebook}
+    \begin{description}
+        \item[Circle] All points with equal distance from the circle center
+        \item[Radius] Distance from the circle center to its edge, $r$
+        \item[Diameter] Length across the whole circle, $D=2r$        
+        \item[Circle area] Formula $A=\pi r^2$
+        \item[Circumference] The distance around a circle (i.e. perimeter), $C=2\pi r$
+        \item[Semi-circle] Half of a circle
+        \item[{\Large $\pi$}] A special number, $\pi = 3.14159265358...$
+        \item[Irrational] Number that can not be written as a fraction, $\pi$, $\sqrt{2}$
+        \item[Exact solution] Written with symbols or an ellipse ($...$). \par 
+        Also said as ``give your answer \emph{in terms of} $\pi$''.
+        \end{description}
+    \end{frame}
+
+\begin{frame}{Extension: Three digits is usually exact enough}
+    {Scientists and engineers say \emph{significant figures}, or in IB, ``sig figs''}
+    Round to three digits
+    \begin{itemize}
+        \item $\pi = 3.14159265358... \approx 3.14$
+        \item $\sqrt{2}= 1.4142135... \approx 1.41$
+        \item Dr. Huson's height $h \approx 67.5$ inches
+        \item 365 days in a year (actually 365.2421897, \href{https://www.math.net/days-in-a-year}{source})
+        \item Avogadro's number $N_A \approx 6.02 \times 10^{23}$
+    \end{itemize} \vspace{1cm}
+    \begin{description}
+        \item[Sig figs] Significant figures, the number of digits required for the desired precision. In IB mathematics and most practical matters, the convention is 3 sig figs.
+    \end{description}
+    \end{frame}
+
 
 \section{1.10 Precision \hfill 21 September}
 \begin{frame}{Learning Target: I can quantify error in calculations}
@@ -183,15 +292,10 @@
     {``Roundtable'' of four students, with four topics assigned}
     \begin{block}{Geometry skills to study / teach}
         \begin{enumerate}
-        \item Conventions: terminology, notation, diagramming
-        \item Modeling situations with algebra
-        \item Perimeter and special shapes: 
-        \begin{itemize}
-        \item Scalene, isosceles, and equilateral $\triangle$s
-        \item Squares, rectangles, parallelograms, trapezoids, rhombuses, kites \par 
-        (quadrilateral side $\cong$s will be marked)
-        \end{itemize}
-        \item Solving algebraic equations for one variable
+        \item Line segments, length, number lines
+        \item Perimeter and area
+        \item Precision, percent error
+        \item Modeling situations and solving with algebra
     \end{enumerate}
     \end{block}
     \end{frame}

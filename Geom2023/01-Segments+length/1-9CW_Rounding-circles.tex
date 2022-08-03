@@ -57,7 +57,15 @@
 \item Find the area $A$ and circumference $C$ of a circle with radius 5 feet (in terms of $\pi$). 
   
 \newpage
-    
+\item In mathematics we commonly use the special, irrational number, $\pi = 3.14159265358...$. Mark and label $\pi$ on the number line below.\par \bigskip
+\begin{tikzpicture}[scale=3]
+  \draw[->] (0,0)--(5.1,0);
+  \foreach \x in {0, 0.1,...,5.0}
+    \draw[shift={(\x,0)}] (0pt,-1pt)--(0pt,1pt);
+  \foreach \x in {0, 0.5,...,5.0}
+    \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt)node[below=20pt]{$\x$};
+\end{tikzpicture} \vspace{1cm}
+
 \item Find the area of the shape shown below composed of a rectangle and circular cap. Leave your answer as an exact value in terms of $\pi$.
 \begin{flushright}
 \begin{tikzpicture}[scale=.635]
