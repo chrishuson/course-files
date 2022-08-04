@@ -8,32 +8,25 @@
 
 \subsubsection*{1.8 Homework: Area of rectangles, triangles, parallelograms}
 \begin{enumerate}
-\item Find the area of the parallelogram shown with a base $b=5$ and height $h=3$. \par \medskip
-  \begin{tikzpicture}[scale=.635]
-    \draw[help lines] (-1,-1) grid (9,6);
-    \draw[thick, ->] (-1.2,0) -- (9.4,0) node [below right]{$x$};
-    \draw[thick, ->] (0,-1.2)--(0,6.4) node [left]{$y$};
-    \draw[<->, thick] (1.5,1)--(1.5,4);
-    \draw[thick] (2,1)--(7,1)--(8,4)--(3,4)--cycle;
-    \node at (4.5,1)[below]{$5$};
-    \node at (1.5,2.5)[left]{$3$};
+\item Find the area of $\triangle ABC$. The altitude $h$ of the triangle is $8$ centimeters and the base $AB=10 \frac{1}{2}$ cm. (diagram not to scale) \par
+  \begin{tikzpicture}[scale=1]
+    \draw[thick]
+      (0,0)node[below]{$A$}--
+      (6,0)node[below]{$B$}--
+      (4,3)node[above]{$C$}--cycle;
+   \draw[dashed] (4,0)--(4,3);
+   \draw (4,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+   \node at (3.3,1.2){$h=8$};
+   \node at (3,0)[below]{$10 \frac{1}{2}$ cm};
   \end{tikzpicture}
 
-
-\item Rectangle $ABCD$ has area $A=21$ and base $AB=7$ but unknown height. Write an equation then solve. Start with this form (for the unknown, use $h$, $x$, or $BC$): \par \medskip
-$A = b \times h = 21$
-  \begin{flushright}
-  \begin{tikzpicture}[scale=1.25]
-    \draw[thick] (0,0)--(4.5,0)--(4.5,2)--(0,2)--cycle;
-    \draw[fill] (0,0) circle [radius=0.05] node[left]{$A$};
-    \draw[fill] (4.5,0) circle [radius=0.05] node[right]{$B$};
-    \draw[fill] (4.5,2) circle [radius=0.05] node[right]{$C$};
-    \draw[fill] (0,2) circle [radius=0.05] node[left]{$D$};
-    \node at (5, 1){?};
-    \node at (2.25, -0.5){$7$};
-    \node at (2.25, 1){$A = 21$};
-  \end{tikzpicture}
-  \end{flushright}
+\item Find the area $A$ and perimeter $P$ of the shape shown below. The grid is in centimeters.
+  \begin{flushleft}
+    \begin{tikzpicture}[scale=1]
+      \draw[help lines] (-4,-4) grid (5,3);
+      \draw[thick, -] (-3,-3)--(4,-3)--(4,2)--(2,2)--(2,0)--(-1,0)--(-1,2)--(-3,2)--cycle;
+    \end{tikzpicture}
+  \end{flushleft}
 
 \item Find the length of the base of a rectangle with area $A=22 \frac{1}{2}$ and height $h=5$, expressed as a fraction. Start with the form (use $b$ or $x$): \par \medskip
 $A = b \times h = 22 \frac{1}{2}$
@@ -41,36 +34,40 @@ $A = b \times h = 22 \frac{1}{2}$
   \begin{tikzpicture}[scale=1.25]
     \draw[thick] (0,0)--(3,0)--(3,3.5)--(0,3.5)--cycle;
     \node at (3.5, 2){5};
-    \node at (1.5, -0.5){$?$};
+    \node at (1.5, -0.3){$?$};
     \node at (1.5, 2){$A = 22 \frac{1}{2}$};
   \end{tikzpicture}
   \end{flushright}
 
-
-  \item Given circle $O$ with area $A=64 \pi$ square centimeters. Find the radius, $AB$.
-  \begin{multicols}{2}
-    \begin{tikzpicture}[scale=0.8]
-      \draw (0,0) circle[radius=3];
-      \draw[fill] (0,0) circle [radius=0.08];
-      \draw[thick, <->]
-        (0:3) node[right]{$B$}--
-        (0.1,0) node[left=5pt]{$A$};
-      \draw (1.5,0) node[below]{$r=?$};
-    \end{tikzpicture} \par
-   Start with the formula \par \smallskip
-  $A = \pi r^2 = 64 \pi$
-  \end{multicols} \vspace{1cm}
+\newpage
+\item The perimeter of a square is 40 centimeters. Find the length of the side of the square. \vspace{2cm}
 
 \item Find the length of the base of a triangle with area $A=35$ and height $h=10$. Start with the form (use $b$ or $x$): \par \medskip
-$A = \frac{1}{2} \times b \times h = 35$
+  $A = \frac{1}{2} \times b \times h = 35$
   \begin{flushright}
   \begin{tikzpicture}[scale=1.25]
     \draw[thick] (0,0)--(3,0)--(2.5,3.5)--cycle;
-    \node at (3.3, 1.5){10};
-    \node at (1.5, -0.5){$?$};
-    \node at (1.75, 1){$A = 35$};
+    \draw[<->,dashed] (3.3,0)--(3.3,3.5);
+    \node at (3.6,1.7){10};
+    \node at (1.5,0.3){$b=?$};
+    \node at (1.8,1.4){$A = 35$};
   \end{tikzpicture}
   \end{flushright}
+
+
+\item Find the area and perimeter of the combined rectangular shape shown below. Mark the missing side lengths first. \hfill \emph{(not drawn to scale)}
+  \begin{flushleft}
+  \begin{tikzpicture}[scale=1.3]
+    \draw[thick] (2,0)--(4.5,0)--(4.5,2.5)--(3,2.5)--(3,5)--(2,5)--cycle;
+    \node at (4.8, 1.2){6};
+    \node at (3.9, 2.8){5};
+    \node at (3.2, -0.3){7};
+    \node at (1.6, 2.5){11};
+  \end{tikzpicture}
+  \end{flushleft} 
+
+\item Rectangle $JKLM$ has area $A=21$ and base $JK=7$ but unknown height. Write an equation then solve. Start with this form (for the unknown, use $h$, $x$, or $KL$): \par \medskip
+  $A = b \times h = 21$
 
 
 \end{enumerate}
