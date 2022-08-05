@@ -271,20 +271,95 @@
 \section{1.10 Precision \hfill 21 September}
 \begin{frame}{Learning Target: I can quantify error in calculations}
     {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{1.10 Wednesday 21 Sept}}
-        Do Now: Find the area of a circle with radius $b=10$ centimeters, rounding to the nearest whole number. \par
-        circle image \\
-
+        Do Now: Find the area of a quarter circle with radius $r=20$ cm, rounding to the nearest whole number. \par \bigskip
+        \begin{columns}
+            \column{0.3\textwidth}
+            \begin{tikzpicture}[scale=.8]
+                \draw (0,0)--(3,0) arc (0:90:3)--cycle;
+                \draw[fill] (0,0) circle [radius=0.05];
+                \draw[thick, -{>[scale=1.5]}] (0,0)--(30:3);
+                \node at (2,0.5){$r=20$};
+              \end{tikzpicture}
+            \column{0.7\textwidth}
+            \onslide<2->
+            $A = \frac{1}{4} \pi \times 20^2 = 100 \pi$ \par \bigskip
+            $= 314.15926... \approx 314 \text{ square units}$
+        \end{columns} \vspace{1cm}
+        \onslide<1->
         Lesson: Percent error formula \par \medskip
         Extension: Confidence intervals
     \end{frame}  
 
+\begin{frame}{Quantify measurement and rounding inaccuracy as a percent}
+    {Convention: Treat all errors as a positive amount}
+    Given $v_a= \text{approximate value}$, $v_e= \text{exact value}$ \par \bigskip
+    Percent error
+    $$\epsilon = \left|\frac{v_a-v_e}{v_e}\right| \times 100\%$$
+    \bigskip    
+    Which is more accurate? %\bigskip
+        \begin{columns}
+            \column{0.5\textwidth}
+                $\pi \approx 3.14$ \par \bigskip
+                \onslide<2>{$\epsilon=\left|\frac{3.14-\pi}{\pi}\right| \times 100\%$ \par \medskip $ = 0.05069...\%$}
+            \column{0.5\textwidth}
+                $\pi \approx \frac{22}{7}$ \par \medskip
+                \onslide<2>{$\epsilon=\left|\frac{22/7-\pi}{\pi}\right| \times 100\%$ \par \medskip $ = 0.04024...\%$}
+        \end{columns}  \vspace{0.5cm}
+        \begin{description}
+            \item[Relative error] decimal format (i.e. $5\%$ versus 0.05)
+            \item[$\epsilon$] The Greek letter epsilon, meaning error
+        \end{description}
+    \end{frame}
+    
+\begin{frame}{Unit conversions are often approximate}
+    {39.3701 inches is a more exact value}
+    There are approximately 39 inches in a meter.
+    $$ 1 \text{ meter} \approx 39 \text{ inches}$$
+    Find the percent error in this conversion ratio. \vspace{1cm}
+    \onslide<2>
+    $$\epsilon = \left|\frac{39-39.3701}{39.3701}\right| \times 100\%$$
+    $$=1.945994...\% \approx 2\% \text{ error}$$
+    \end{frame}
+
+\begin{frame}{Quantify an error as interval around the best guess}
+   \begin{itemize}
+    \item What is a typical retirement age? $65 \pm 5 \text{ years}$
+    \item SUNY New Paltz SAT scores are between 1070 and 1260.
+    \item How much does it rain in New York City? 
+        \href{https://weatherspark.com/y/23912/Average-Weather-in-New-York-City-New-York-United-States-Year-Round\#Figures-Rainfall}{(WeatherSpark)}
+   \end{itemize}
+     \center{\textit{Average Monthly Rainfall in New York City} \par
+        \includegraphics[height=4cm]{../graphics/rainfall.png}}
+        \begin{description}
+            \item[Interval] A range, e.g. from 10 to 12
+            \item[Confidence] Not certain, but most likely range of values
+            \item[$\pm$] Plus or minus
+        \end{description}
+    \end{frame}
+    
 \section{1.11 Review \hfill 22 September}
 \begin{frame}{Learning Target: I can study together with my classmates}
     {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{1.11 Thursday 22 Sept}}
-        Do Now: Find the area of a circle with radius $b=10$ centimeters, rounding to the nearest whole number. \par
-        circle image \\
-
-        Lesson: Peer review, notebook check, homework inventory due \par \medskip
+        Do Now: Estimate the percentage of the square's area covered by the circe. (then calculate your percent error) \bigskip
+        \begin{columns}
+            \column{0.4\textwidth}
+            \begin{tikzpicture}[scale=1]
+                \draw (-2,-2) rectangle (2,2);
+                \draw (0,0) circle [radius=2];
+            \onslide<2>
+                \draw[fill] (0,0) circle [radius=0.05];
+                \draw[thick, -{>[scale=1.5]}] (0,0)--(0:2);
+                \node at (0,0.5){hint: make $r=1$};
+              \end{tikzpicture}
+    \column{0.6\textwidth}
+    \onslide<2>{ Guestimating three quarters, or $75\%$ \par \bigskip
+        \hspace{0.4cm} $A_{square} = 2 \times 2 = 4$ \par \medskip
+        \hspace{0.5cm} $A_{circle} = \pi \times 1^2 = \pi = 3.14159... $ \par \medskip
+        $\text{\% coverage}= \frac{\pi}{4} = 0.78539... \approx 78.5\%$ \par \medskip
+        $\epsilon = \left| \frac{75 - 78.539...}{78.539...} \right| \times 100\%$  \par \medskip 
+        \hspace{0.5cm} $= 4.5070...\% \approx 4.5\% \text{ error}$}
+        \end{columns} \bigskip
+        Lesson: Peer review, notebook check, homework inventory due \par \smallskip
         \alert{Unit test tomorrow}
     \end{frame} 
 
