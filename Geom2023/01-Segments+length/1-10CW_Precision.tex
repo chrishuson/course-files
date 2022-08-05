@@ -59,18 +59,18 @@
 \newpage
 \item A parallelogram is shown on the $x$-$y$ plane having a base $b=4$ and height $h=3$. 
   \begin{multicols}{2}
-    Find its area, showing the calculation.
-      \begin{flushright}
-      \begin{tikzpicture}[scale=.635]
-        \draw[help lines] (-1,-1) grid (9,6);
-        \draw[thick, ->] (-1.2,0) -- (9.4,0) node [below right]{$x$};
-        \draw[thick, ->] (0,-1.2)--(0,6.4) node [left]{$y$};
-        \draw[<->, thick] (1.5,1)--(1.5,4);
-        \draw[thick] (2,1)--(6,1)--(7,4)--(3,4)--cycle;
-        \node at (4,1)[below]{$4$};
-        \node at (1.5,2.5)[left]{$3$};
-      \end{tikzpicture}
-      \end{flushright}
+  Find its area, showing the calculation.
+    \begin{flushright}
+    \begin{tikzpicture}[scale=.635]
+      \draw[help lines] (-1,-1) grid (9,6);
+      \draw[thick, ->] (-1.2,0) -- (9.4,0) node [below right]{$x$};
+      \draw[thick, ->] (0,-1.2)--(0,6.4) node [left]{$y$};
+      \draw[<->, thick] (1.5,1)--(1.5,4);
+      \draw[thick] (2,1)--(6,1)--(7,4)--(3,4)--cycle;
+      \node at (4,1)[below]{$4$};
+      \node at (1.5,2.5)[left]{$3$};
+    \end{tikzpicture}
+    \end{flushright}
   \end{multicols} 
 
 \item The $\triangle ABC$ is shown below with $A(2,1)$, $B(7,1)$, and $C(1,5)$. The length of the base of the triangle is $AB=5$.
@@ -79,21 +79,21 @@
       \item Find the height $h$.
       \item Find its area, showing the calculation. \vspace{2cm}
       \end{enumerate}
-      \begin{flushright}
-      \begin{tikzpicture}[scale=.635]
-        \draw[help lines] (-1,-1) grid (9,6);
-        \draw[thick, ->] (-1.2,0) -- (9.4,0) node [below right]{$x$};
-        \draw[thick, ->] (0,-1.2)--(0,6.4) node [left]{$y$};
-        \draw[<->, thick] (0.5,1)--(0.5,5);
-        \draw[thick] (2,1)--(7,1)--(1,5)--cycle;
-        \draw[dashed] (7,1)--(6,5)--(1,5);
-        \draw[fill] (2,1) circle [radius=0.05] node[below]{$A$};
-        \draw[fill] (7,1) circle [radius=0.05] node[below]{$B$};
-        \draw[fill] (1,5) circle [radius=0.05] node[above right]{$C$};
-        \node at (4.5,1)[below]{$5$};
-        \node at (0.5,3)[right]{$h$};
-      \end{tikzpicture}
-      \end{flushright}
+    \begin{flushright}
+    \begin{tikzpicture}[scale=.635]
+      \draw[help lines] (-1,-1) grid (9,6);
+      \draw[thick, ->] (-1.2,0) -- (9.4,0) node [below right]{$x$};
+      \draw[thick, ->] (0,-1.2)--(0,6.4) node [left]{$y$};
+      \draw[<->, thick] (0.5,1)--(0.5,5);
+      \draw[thick] (2,1)--(7,1)--(1,5)--cycle;
+      \draw[dashed] (7,1)--(6,5)--(1,5);
+      \draw[fill] (2,1) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (7,1) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (1,5) circle [radius=0.05] node[above right]{$C$};
+      \node at (4.5,1)[below]{$5$};
+      \node at (0.5,3)[right]{$h$};
+    \end{tikzpicture}
+    \end{flushright}
   \end{multicols} 
 
 \item Rectangle $ABCD$ has area $A=15$ and base $b=6$ but unknown height. Write an equation then solve. Start with this form (for the unknown, use $h$, $x$, or $BC$) and state your answer as a fraction: \\[0.5cm]
@@ -167,7 +167,7 @@ $A = b \times h = 15$
     \node at (5,-0.5)[below left]{$12$};
   \end{tikzpicture}
   
-  \item Find the area of $\triangle ABC$ shown below (not actual size) with $m\angle C=90^\circ$ and the lengths of the triangle's sides as $a=3$, $b=4$, and $c=5$. 
+\item Find the area of $\triangle ABC$ shown below (not actual size) with $m\angle C=90^\circ$ and the lengths of the triangle's sides as $a=3$, $b=4$, and $c=5$. 
   \begin{flushright}
   \begin{tikzpicture}[scale=1.4]
     \draw[thick]
@@ -182,58 +182,59 @@ $A = b \times h = 15$
   \end{flushright}
   \vspace{1cm}
   
-  \item Find the area of $\triangle ABC$ shown below (not actual size) with $m\angle C=90^\circ$ and the lengths of the triangle's sides as $a=50$, $b=87$, and $c=100$. \par \medskip
-    \begin{tikzpicture}[scale=1.4]
-      \draw[thick]
-      (0,0)node[left]{$A$}--
-      (4,0)node[below right]{$C$}--
-      (4,2.31)node[right]{$B$}--cycle;
-      \draw (4,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
-      \node at (2,0)[below]{$b=87$};
-      \node at (4,1.2)[right]{$a=50$};
-      \node at (1.8,1.4)[above]{$c=100$};
-    \end{tikzpicture}
+\item Find the area of $\triangle ABC$ shown below (not actual size) with $m\angle C=90^\circ$ and the lengths of the triangle's sides as $a=50$, $b=87$, and $c=100$. \par \medskip
+  \begin{tikzpicture}[scale=1.4]
+    \draw[thick]
+    (0,0)node[left]{$A$}--
+    (4,0)node[below right]{$C$}--
+    (4,2.31)node[right]{$B$}--cycle;
+    \draw (4,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
+    \node at (2,0)[below]{$b=87$};
+    \node at (4,1.2)[right]{$a=50$};
+    \node at (1.8,1.4)[above]{$c=100$};
+  \end{tikzpicture}
   
-  \item The compound shape shown below is composed of a square with side length 5 cm and a triangle with base 2 cm. Find the total area of the combined shape.
-    \vspace{1cm} 
-    \begin{flushleft}
-    \begin{tikzpicture}
-      \draw[thick] (0,0)--(7,0)--(5,5)--(0,5)--cycle;
-      \draw[dashed] (5,0)--(5,5);
-      \node at (6, -0.5){2};
-      \node at (2.5, -0.5){5};
-      \node at (-0.5, 2.5){5};
-    \end{tikzpicture}
-    \end{flushleft} \vspace{1cm}
-  \item Repeat the calculation for the figure above using the trapezoid area formula. \vspace{1cm}
-  
-  \item On the grid below, accurately draw and label two adjacent squares, one with a side length of 4 cm, the other with a side length of 3 cm. The grid is in centimeters. \par \medskip
-    Find the area $A$ and perimeter $P$ of combined shape.
-    \begin{flushleft}
-      \begin{tikzpicture}[scale=0.2]
-        \draw[help lines] (-4,-3) grid (5,3);
-        %\draw[thick, ->] (-2.2,0) -- (10.4,0) node [below right]{$x$};
-        %\draw[thick, ->] (0,-2.2)--(0,10.4) node [left]{$y$};
-        %\draw (0,0) circle [radius=3] node[below]{$C$};
-        %\draw[fill] (0,0) circle [radius=0.05];
-        %\draw[thick, -] (-3,-3)--(4,-3);
-      \end{tikzpicture}
-    \end{flushleft}
-  
-  \item On the graph, draw polygon ABCDEF with vertices A(1, 1), B(1, 4), C(3, 4), D(3, 7), E(8, 7), and F(8, 1). Find the perimeter and the area of the polygon.
+\item The compound shape shown below is composed of a square with side length 5 cm and a triangle with base 2 cm. Find the total area of the combined shape.
+  \vspace{1cm} 
   \begin{flushleft}
-    \begin{tikzpicture}[scale=.2]
-      \draw[help lines] (0,0) grid (10,10);
-      \draw[thick, ->] (0,0) -- (10.4,0) node [below right]{$x$};
-      \draw[thick, ->] (0,0)--(0,10.4) node [right]{$y$};
-      \foreach \x in {1,...,10}
-        \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
-      \foreach \y in {1,...,10}
-        \draw[shift={(0,\y)}] (-3pt,0pt)--(3pt,0pt) node[left=5pt]{$\y$};
-    \end{tikzpicture}
-    \end{flushleft}
+  \begin{tikzpicture}
+    \draw[thick] (0,0)--(7,0)--(5,5)--(0,5)--cycle;
+    \draw[dashed] (5,0)--(5,5);
+    \node at (6, -0.5){2};
+    \node at (2.5, -0.5){5};
+    \node at (-0.5, 2.5){5};
+  \end{tikzpicture}
+  \end{flushleft} \vspace{1cm}
+
+\item Repeat the calculation for the figure above using the trapezoid area formula. \vspace{1cm}
   
-  \item Draw and label a triangle $\triangle ABC$ with base $\overline{AB}$ 8 centimeters long and altitude of 5 centimeters. (show the altitude as a dotted line, and make sure it is perpendicular to the base) 
+\item On the grid below, accurately draw and label two adjacent squares, one with a side length of 4 cm, the other with a side length of 3 cm. The grid is in centimeters. \par \medskip
+  Find the area $A$ and perimeter $P$ of combined shape.
+  \begin{flushleft}
+    \begin{tikzpicture}[scale=0.2]
+      \draw[help lines] (-4,-3) grid (5,3);
+      %\draw[thick, ->] (-2.2,0) -- (10.4,0) node [below right]{$x$};
+      %\draw[thick, ->] (0,-2.2)--(0,10.4) node [left]{$y$};
+      %\draw (0,0) circle [radius=3] node[below]{$C$};
+      %\draw[fill] (0,0) circle [radius=0.05];
+      %\draw[thick, -] (-3,-3)--(4,-3);
+    \end{tikzpicture}
+  \end{flushleft}
+  
+\item On the graph, draw polygon ABCDEF with vertices A(1, 1), B(1, 4), C(3, 4), D(3, 7), E(8, 7), and F(8, 1). Find the perimeter and the area of the polygon.
+\begin{flushleft}
+  \begin{tikzpicture}[scale=.2]
+    \draw[help lines] (0,0) grid (10,10);
+    \draw[thick, ->] (0,0) -- (10.4,0) node [below right]{$x$};
+    \draw[thick, ->] (0,0)--(0,10.4) node [right]{$y$};
+    \foreach \x in {1,...,10}
+      \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+    \foreach \y in {1,...,10}
+      \draw[shift={(0,\y)}] (-3pt,0pt)--(3pt,0pt) node[left=5pt]{$\y$};
+  \end{tikzpicture}
+  \end{flushleft}
+  
+\item Draw and label a triangle $\triangle ABC$ with base $\overline{AB}$ 8 centimeters long and altitude of 5 centimeters. (show the altitude as a dotted line, and make sure it is perpendicular to the base) 
   
   
 
