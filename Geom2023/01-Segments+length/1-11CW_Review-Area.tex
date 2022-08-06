@@ -2,11 +2,11 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 19 Sept 2022}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 22 Sept 2022}
 
 \begin{document}
 
-\subsubsection*{1.11 Review: Length and area}
+\subsubsection*{1.11 Pretest review: Length and area}
 \emph{Show units if given. Show calculation as an equation, starting with a capitalized variable.}
 \begin{enumerate}
   \subsubsection*{Line segments, length, number lines}
@@ -145,9 +145,37 @@
 
 \newpage
 \subsubsection*{Precision, percent error}
-\item tem;
+\item Round each value to the \emph{nearest hundredth}.
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item $\frac{2}{3}$
+      \item $\sqrt{5}$
+    \end{enumerate}
+  \end{multicols} \bigskip 
 
+\item Round each value to the nearest thousand.
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item 7,917.5 miles \par \medskip (diameter of the earth)
+      \item 2,159.1 miles \par \medskip (diameter of the moon)
+    \end{enumerate}
+  \end{multicols}
 
+\item Convert each measure, showing the conversion factor and units. \par \smallskip
+  \begin{enumerate}
+    \item Find the length in miles of a 10K race (10 kilometers). \vspace{2cm}
+    \item Find the height in inches of a person 1.8 meters tall.
+  \end{enumerate} \vspace{2cm}
+
+\item Find the number of minutes in a day. \vspace{2cm}
+
+\item Find the percent error for each approximation.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=4cm]
+      \item $7.753 \approx 8$ billion \par (population of the world)    
+      \item $4.571 \approx 4 \frac{1}{2}$ billion years \par (age of the solar system, \href{https://solarsystem.nasa.gov/solar-system/our-solar-system/in-depth/}{NASA})
+    \end{enumerate}
+  \end{multicols}
 
 \newpage
 \subsubsection*{Modeling situations and solving with algebra}
@@ -213,7 +241,24 @@
 \newpage
 \item The perimeter of a square is 10 inches. Find its area. \vspace{2cm}
 
-
+\item Archimedes used polygons to approximate $\pi$. He calculated the area of the inscribed hexagon below as $A_{hexagon} \approx 2.5981$.
+  \begin{multicols}{2}
+  \raggedcolumns
+  \begin{enumerate}[itemsep=2cm]
+    \item Find the area of the circle with $r=1$.
+    \item Find the percent error of Archimede's approximation using a hexagon.
+  \end{enumerate}
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.9, rotate=0]
+      \draw (0,0) circle[radius=3];
+      \filldraw[color=black,fill=lightgray!50] (0:3)--(60:3)--(2*60:3)--
+      (3*60:3)--(4*60:3)--(5*60:3)--cycle;
+      \fill (0,0) circle[radius=0.08];
+      \draw[<->,thick](0.1,0)--(2.95,0);
+      \draw (1.5,0) node[below]{$1$};
+    \end{tikzpicture}
+  \end{flushright}
+  \end{multicols}
 
 
 \newpage
@@ -278,17 +323,6 @@
   \end{tikzpicture}
   \end{flushleft} \vspace{1cm}
 
-\item The compound shape shown below is composed of a rectangle 6 inches by 11 inches, and a triangle with base 4 inches. Find the total area of the combined shape. \vspace{0.5cm} 
-  \begin{flushleft}
-  \begin{tikzpicture}[scale=0.8]
-    \draw[thick] (0,0)--(7,0)--(5,3)--(0,3)--cycle;
-    \draw[dashed] (5,0)--(5,3);
-    \node at (6, -0.5){4};
-    \node at (2.5, -0.5){11};
-    \node at (-0.5, 1.5){6};
-  \end{tikzpicture}
-  \end{flushleft}
-
 \item Find the area of $\triangle ABC$ shown below (not actual size) with $m\angle C=90^\circ$ and the lengths of the triangle's sides as $a=3$, $b=4$, and $c=5$. 
   \begin{flushright}
   \begin{tikzpicture}[scale=1.4]
@@ -328,6 +362,20 @@
     \node at (5,0)[below]{$9 \frac{1}{2}$ cm};
   \end{tikzpicture}
 
+\item Find the area of $\triangle ABC$. The altitude $h$ of the triangle is $7$ centimeters and the base $AB=13 \frac{1}{2}$ cm. (diagram not to scale) \par \medskip
+\begin{tikzpicture}[scale=1.]
+  \draw[thick]
+    (2,0)node[below]{$A$}--
+    (8,0)node[below]{$B$}--
+    (4,3)node[above]{$C$} --(2,0);
+ \draw[dashed] (4,0)--(4,3);
+ \draw (4,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+ \node at (4,1.2)[right]{$h=7$};
+ \node at (5,0)[below]{$13 \frac{1}{2}$ cm};
+\end{tikzpicture}  \vspace{1cm}
+
+
+\newpage
 \item The compound shape shown below is composed of a rectangle 6 inches by 11 inches, and a triangle with base 4 inches. Find the total area of the combined shape. \par \medskip
   \begin{flushleft}
   \begin{tikzpicture}[scale=0.8]
@@ -347,18 +395,7 @@
     \end{tikzpicture}
   \end{flushleft}
 
-\newpage
-\item Find the area of $\triangle ABC$. The altitude $h$ of the triangle is $7$ centimeters and the base $AB=13 \frac{1}{2}$ cm. (diagram not to scale) \par \medskip
-\begin{tikzpicture}[scale=1.]
-  \draw[thick]
-    (2,0)node[below]{$A$}--
-    (8,0)node[below]{$B$}--
-    (4,3)node[above]{$C$} --(2,0);
- \draw[dashed] (4,0)--(4,3);
- \draw (4,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
- \node at (4,1.2)[right]{$h=7$};
- \node at (5,0)[below]{$13 \frac{1}{2}$ cm};
-\end{tikzpicture}  \vspace{1cm}
+
 
 
 \end{enumerate}
