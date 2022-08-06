@@ -2,11 +2,11 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 22 Sept 2022}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 23 Sept 2022}
 
 \begin{document}
 
-\subsubsection*{1.11 Pretest review: Length and area}
+\subsubsection*{1.12 Test: Length and area}
 \emph{Show units if given. Show calculation as an equation, starting with a capitalized variable.}
 \begin{enumerate}
   \subsubsection*{Line segments, length, number lines}
@@ -270,6 +270,131 @@
     \node at (6.8, 1.5){$h=?$};
   \end{tikzpicture}
   \end{flushleft}
+
+\newpage
+\subsubsection*{Extra problems}
+\item A triangle has an area of 68 square centimeters. Its height is 16 centimeters. Find the length of its base. \vspace{2cm}
+
+\item A triangle has an area of 75 square centimeters. Its height is 12 centimeters. Find the length of its base. \vspace{2cm}
+
+\item The rectangle $BECA$ has an area of 77, with length $BE=11$.
+  \begin{enumerate}
+    \item Write an equation with the unknown $w$ as the width of the rectangle. 
+    \item Solve.
+  \end{enumerate}
+  \begin{flushright}
+  \begin{tikzpicture}
+    \draw[thick] (0,0)--(4,0)--(4,3)--(0,3)--cycle;
+    \draw[fill] (0,0) circle [radius=0.05] node[left]{$B$};
+    \draw[fill] (4,0) circle [radius=0.05] node[right]{$E$};
+    \draw[fill] (4,3) circle [radius=0.05] node[right]{$C$};
+    \draw[fill] (0,3) circle [radius=0.05] node[left]{$A$};
+    \node at (4.5, 1.5){?};
+    \node at (2, -0.5){11};
+  \end{tikzpicture}
+  \end{flushright}
+
+\item The rectangle $BECA$ has an area of 63, with length $BE=9$.
+  \begin{enumerate}
+    \item Write an equation with the unknown $w$ as the width of the rectangle. \par \medskip
+    \item Solve.
+  \end{enumerate}
+  \begin{flushright}
+  \begin{tikzpicture}
+    \draw[thick] (0,0)--(4,0)--(4,3)--(0,3)--cycle;
+    \draw[fill] (0,0) circle [radius=0.05] node[left]{$B$};
+    \draw[fill] (4,0) circle [radius=0.05] node[right]{$E$};
+    \draw[fill] (4,3) circle [radius=0.05] node[right]{$C$};
+    \draw[fill] (0,3) circle [radius=0.05] node[left]{$A$};
+    \node at (4.5, 1.5){?};
+    \node at (2, -0.5){9};
+  \end{tikzpicture}
+  \end{flushright}
+
+\item Find the area and perimeter of the shape shown below. Mark the missing side lengths first. All angles are $90^\circ$.\hfill \emph{(not drawn to scale)}
+\begin{flushleft}
+\begin{tikzpicture}[rotate=-90, scale=1.2]
+  \draw[thick] (2,0)--(4.5,0)--(4.5,2.5)--(3,2.5)--(3,5)--(2,5)--cycle;
+  \node at (5.1, 1.2){6};
+  \node at (4, 2.8){5};
+  \node at (3.5, -0.5){7};
+  \node at (1.4, 2.5){11};
+\end{tikzpicture}
+\end{flushleft} \vspace{1cm}
+
+\item Find the area and perimeter of the shape shown below. Mark the missing side lengths first. All angles are $90^\circ$.\hfill \emph{(not drawn to scale)}
+  \begin{flushleft}
+  \begin{tikzpicture}[rotate=90]
+    \draw[thick] (0,0)--(5,0)--(5,2)--(3,2)--(3,6)--(0,6)--cycle;
+    \node at (5.5, 1){3};
+    \node at (4, 2.5){4};
+    \node at (2.5, -0.5){10};
+    \node at (-0.5, 3){13};
+  \end{tikzpicture}
+  \end{flushleft} \vspace{1cm}
+
+\item Find the area of $\triangle ABC$ shown below (not actual size) with $m\angle C=90^\circ$ and the lengths of the triangle's sides as $a=3$, $b=4$, and $c=5$. 
+  \begin{flushright}
+  \begin{tikzpicture}[scale=1.4]
+    \draw[thick]
+    (0,0)node[left]{$A$}--
+    (4,0)node[below right]{$C$}--
+    (4,2.31)node[right]{$B$}--cycle;
+    \draw (4,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
+    \node at (2,0)[below]{$b=4$};
+    \node at (4,1.2)[right]{$a=3$};
+    \node at (1.8,1.4)[above]{$c=5$};
+  \end{tikzpicture}
+  \end{flushright}
+\vspace{1cm}
+
+\item Find the area of $\triangle ABC$. The altitude $h$ of the triangle is $7$ centimeters and the base $AB=13 \frac{1}{2}$ cm. (diagram not to scale) \par \medskip
+\begin{tikzpicture}[scale=1.]
+  \draw[thick]
+    (2,0)node[below]{$A$}--
+    (8,0)node[below]{$B$}--
+    (4,3)node[above]{$C$} --(2,0);
+ \draw[dashed] (4,0)--(4,3);
+ \draw (4,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+ \node at (4,1.2)[right]{$h=7$};
+ \node at (5,0)[below]{$13 \frac{1}{2}$ cm};
+\end{tikzpicture}
+
+\item Find the area of $\triangle ABC$. The altitude $h$ of the triangle is $4 \frac{3}{4}$ centimeters and the base $AB=9 \frac{1}{2}$ cm. (diagram not to scale) \par \medskip
+  \begin{tikzpicture}[scale=1.]
+    \draw[thick]
+      (2,0)node[below]{$A$}--
+      (8,0)node[below]{$B$}--
+      (4,3)node[above]{$C$} --(2,0);
+    \draw[dashed] (4,0)--(4,3);
+    \draw (4,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+    \node at (4,1.2)[right]{$h=4 \frac{3}{4}$};
+    \node at (5,0)[below]{$9 \frac{1}{2}$ cm};
+  \end{tikzpicture}
+
+\item Find the area of $\triangle ABC$. The altitude $h$ of the triangle is $7$ centimeters and the base $AB=13 \frac{1}{2}$ cm. (diagram not to scale) \par \medskip
+\begin{tikzpicture}[scale=1.]
+  \draw[thick]
+    (2,0)node[below]{$A$}--
+    (8,0)node[below]{$B$}--
+    (4,3)node[above]{$C$} --(2,0);
+ \draw[dashed] (4,0)--(4,3);
+ \draw (4,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+ \node at (4,1.2)[right]{$h=7$};
+ \node at (5,0)[below]{$13 \frac{1}{2}$ cm};
+\end{tikzpicture}
+
+
+\newpage
+\item Find the area $A$ of the shape shown below in terms of unit squares.
+  \begin{flushleft}
+    \begin{tikzpicture}[scale=0.6]
+      \draw[help lines] (-4,-4) grid (5,3);
+      \draw[thick, -] (-3,-3)--(4,-3)--(4,2)--(2,2)--(2,0)--(-1,0)--(-1,2)--(-3,2)--cycle;
+    \end{tikzpicture}
+  \end{flushleft}
+
+
 
 
 \end{enumerate}
