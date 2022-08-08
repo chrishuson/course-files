@@ -14,7 +14,7 @@
   {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{2.1 Wednesday 28 Sept}}
   \begin{block}{Do Now: On the clock face, which is more time, from the 1 to the 3, or from the 11 to the 2? (insert clock image)}
     \begin{tikzpicture}
-      \draw [->, thick] (0,0)--(-1,2);
+      \draw[->, thick] (0,0)--(-1,2);
       \draw (0,0) circle [radius=2];
     \end{tikzpicture} 
   \begin{enumerate}
@@ -29,10 +29,10 @@
   Written notation is $\angle ABC$ or $\angle B$. \\[0.75cm]
         \begin{center}
           \begin{tikzpicture}
-            \draw [<->, thick] (45:6)--(0,0)--(6,0);
-            \draw [fill] (45:4) circle [radius=0.05] node[below]{$A$};
-            \draw [fill] (0,0) circle [radius=0.05] node[below]{$B$};
-            \draw [fill] (4,0) circle [radius=0.05] node[below]{$C$};
+            \draw[<->, thick] (45:6)--(0,0)--(6,0);
+            \draw[fill] (45:4) circle [radius=0.05] node[below]{$A$};
+            \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
+            \draw[fill] (4,0) circle [radius=0.05] node[below]{$C$};
           \end{tikzpicture}
           \end{center}
     \end{frame}
@@ -47,39 +47,41 @@
     \end{itemize}
   \begin{center}
     \begin{tikzpicture}
-      \draw [<->, thick] (25:6)--(0,0)--(6,0);
-      \draw [->, thick] (0,0)--(75:3);
-      \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-      %\draw [fill] (7,0) circle [radius=0.05] node[below]{$N$};
+      \draw[<->, thick] (25:6)--(0,0)--(6,0);
+      \draw[->, thick] (0,0)--(75:3);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+      %\draw[fill] (7,0) circle [radius=0.05] node[below]{$N$};
     \end{tikzpicture}
     \end{center}
 \end{frame}
 
-\begin{frame}{Write definitions in your notebook}
-  \begin{block}{Angle terminology and notation}
-  \begin{enumerate}
-      \item \emph{Right angles} measure $90^\circ$
-      \item \emph{Perpendicular} lines meet at right angles. $\overline{AB} \perp \overline{CD}$
-      \item \emph{Acute} angles are $< 90^\circ$
-      \item \emph{Obtuse} angles are $90^\circ < \angle m < 180^\circ$
-      \item A \emph{straight line} or angle measures $180^\circ$
-  \end{enumerate}
-  \end{block}
-  \begin{multicols}{2}
-  \begin{tikzpicture}[scale=0.8]
-    \draw [<->, thick]
-      (3,-1) coordinate (a) node[right] {P}
-      -- (0,0) coordinate (b) node[left] {Q}
-      -- (2,2) coordinate (c) node[above right] {R}
-      pic["1", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
-      {angle=a--b--c};
-  \end{tikzpicture} \\
-  Point $Q$ is the \emph{vertex} \\[0.25cm]
-  The sides or \emph{legs} are $\overrightarrow{QR}$, $\overrightarrow{QP}$ \\[0.25cm]
-  Written $\angle 1$, $\angle Q$, or $\angle PQR$
-\end{multicols}
-
-\end{frame}
+\begin{frame}{Angle terminology and notation}
+  {Write definitions in your notebook}
+  \begin{columns}
+    \column{0.4\textwidth}
+    \begin{tikzpicture}[scale=0.8]
+      \draw[<->, thick]
+        (3,-1) coordinate (a) node[right] {P}
+        -- (0,0) coordinate (b) node[left] {Q}
+        -- (2,2) coordinate (c) node[above right] {R}
+        pic["1", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
+        {angle=a--b--c};
+    \end{tikzpicture}
+    \column{0.6\textwidth}
+    Angle $Q$, written $\angle Q$ (also $\angle PQR$, $\angle 1$) \par \medskip
+    Point $Q$ is the \emph{vertex} \par \medskip
+    The sides or \emph{legs} are $\overrightarrow{QR}$, $\overrightarrow{QP}$  \par \medskip
+      
+  \end{columns}
+  \begin{description}
+    \item[Right angles] measure $90^\circ$
+    \item[Perpendicular] lines meet at right angles. $\overline{AB} \perp \overline{CD}$
+    \item[Acute] angles measure $< 90^\circ$
+    \item[Obtuse] angles are $90^\circ < \angle m < 180^\circ$
+    \item[Straight angle]  or straight line  measures $180^\circ$
+    \item[Reflex angles]  measure $180^\circ < \angle m < 360^\circ$
+  \end{description}
+  \end{frame}
 
 \section{2.2 Angle addition \hfill 29 September}
 \begin{frame}{Learning Target: I can solve for angle measures}
@@ -88,12 +90,12 @@
   \begin{block}{Do Now: $m\angle ABD=30^\circ$, $m\angle DBC=45^\circ$. Find $m\angle ABC$.}\vspace{0.5cm}
           \begin{center}
             \begin{tikzpicture}
-              \draw [<->, thick] (45:5)--(0,0)--(6,0);
-              \draw [->, thick] (0,0)--(75:4);
-              \draw [fill] (75:3) circle [radius=0.05] node[left]{$A$};
-              \draw [fill] (45:3) circle [radius=0.05] node[below right]{$D$};
-              \draw [fill] (0,0) circle [radius=0.05] node[below]{$B$};
-              \draw [fill] (4,0) circle [radius=0.05] node[below]{$C$};
+              \draw[<->, thick] (45:5)--(0,0)--(6,0);
+              \draw[->, thick] (0,0)--(75:4);
+              \draw[fill] (75:3) circle [radius=0.05] node[left]{$A$};
+              \draw[fill] (45:3) circle [radius=0.05] node[below right]{$D$};
+              \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
+              \draw[fill] (4,0) circle [radius=0.05] node[below]{$C$};
               \node at (1.5,0.5){$45^\circ$};
               \node at (1,1.7){$30^\circ$};
             \end{tikzpicture}
@@ -111,10 +113,10 @@
     Angles whose measures sum to $90^\circ$ are \emph{complementary}.
     \begin{center}
       \begin{tikzpicture}
-        \draw [<->, thick] (45:3)--(0,0)--(4,0);
-        \draw [->, thick] (0,0)--(125:2);
-        \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-        %\draw [fill] (7,0) circle [radius=0.05] node[below]{$N$};
+        \draw[<->, thick] (45:3)--(0,0)--(4,0);
+        \draw[->, thick] (0,0)--(125:2);
+        \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+        %\draw[fill] (7,0) circle [radius=0.05] node[below]{$N$};
       \end{tikzpicture}
       \end{center}
 \end{frame}
@@ -126,15 +128,15 @@
     Definition: \emph{Vertical angles} are angles opposite each other when two lines intersect. $\angle 1$ and $\angle 3$ are vertical angles, as are $\angle 2$ and $\angle 4$.
   \begin{center}
   \begin{tikzpicture}[scale=0.5, rotate=15]
-    \draw [<->, thick] (0,-1.5)--(10,1.5);
-    \draw [<->, thick] (2,3.5)--(7,-3.5);
+    \draw[<->, thick] (0,-1.5)--(10,1.5);
+    \draw[<->, thick] (2,3.5)--(7,-3.5);
     \node at (3,.4){1};
     \node at (6,-.6){3};
     \node at (5,1){2};
     \node at (4,-1){4};
-    %\draw [fill] (0,0) circle [radius=0.05] node[below]{$P$};
-    %\draw [fill] (6,0) circle [radius=0.05] node[below]{$R$};
-    %\draw [fill] (3,0) circle [radius=0.05] node[below]{$Q$};
+    %\draw[fill] (0,0) circle [radius=0.05] node[below]{$P$};
+    %\draw[fill] (6,0) circle [radius=0.05] node[below]{$R$};
+    %\draw[fill] (3,0) circle [radius=0.05] node[below]{$Q$};
   \end{tikzpicture}
   \end{center}
     Lesson: Angle addition problems, vertical angles
@@ -152,13 +154,13 @@
   \end{block}
   \begin{multicols}{2}
   \begin{tikzpicture}[scale=0.8]
-    \draw [<->, thick]
+    \draw[<->, thick]
       (3,-1) coordinate (a) node[above right] {$k$}
       -- (0,0) coordinate (b) %node[left] {Q}
       -- (2,1.5) coordinate (c) node[below right] {$l$}
       pic["1", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
       {angle=a--b--c};
-      \draw [<->, thick]
+      \draw[<->, thick]
       (-2,0.67) coordinate (d) %node[right] {P}
       -- (0,0) coordinate (e) %node[left] {Q}
       -- (-2,-1.5) coordinate (f) %node[above right] {R}
@@ -166,13 +168,13 @@
       {angle=d--e--f};
   \end{tikzpicture}
   \begin{tikzpicture}[scale=0.8]
-    \draw [<->, thick]
+    \draw[<->, thick]
       (3,0) coordinate (a) node[above right] {$B$}
       -- (0,0) coordinate (b) %node[left] {Q}
       -- (2,1.5) coordinate (c) node[below right] {$C$}
       pic["4", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
       {angle=a--b--c};
-      \draw [<-, thick]
+      \draw[<-, thick]
       (-2,0) coordinate (d) node[below] {A}
       -- (0,0) coordinate (e)
       pic["3", <->, draw=black, angle eccentricity=0.75, angle radius=1cm]
@@ -190,13 +192,13 @@
     \begin{multicols}{2}
       \item Given vertical angles as shown. Find $x$. \\
       \begin{tikzpicture}[scale=0.8]
-        \draw [<->, thick]
+        \draw[<->, thick]
           (3,-1) coordinate (a) %node[above right] {$k$}
           -- (0,0) coordinate (b) %node[left] {Q}
           -- (2,1.5) coordinate (c) %node[below right] {$l$}
           pic["$\quad 5x$", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
           {angle=a--b--c};
-          \draw [<->, thick]
+          \draw[<->, thick]
           (-2,0.67) coordinate (d) %node[right] {P}
           -- (0,0) coordinate (e) %node[left] {Q}
           -- (-2,-1.5) coordinate (f) %node[above right] {R}
@@ -211,12 +213,12 @@
   \begin{block}{Triangle external angle situation}
     \begin{center}
     \begin{tikzpicture}
-      %\draw [->, thick] (0,0)--(5,5);
-      \draw [<-, thick] (-2,0)--(3,0)--(2,1.5)--(1,0);
-      \draw [fill] (-1,0) circle [radius=0.05] node[below]{$R$};
-      \draw [fill] (1,0) circle [radius=0.05] node[below]{$S$};
-      \draw [fill] (2,1.5) circle [radius=0.05] node[right]{$U$};
-      \draw [fill] (3,0) circle [radius=0.05] node[right]{$T$};
+      %\draw[->, thick] (0,0)--(5,5);
+      \draw[<-, thick] (-2,0)--(3,0)--(2,1.5)--(1,0);
+      \draw[fill] (-1,0) circle [radius=0.05] node[below]{$R$};
+      \draw[fill] (1,0) circle [radius=0.05] node[below]{$S$};
+      \draw[fill] (2,1.5) circle [radius=0.05] node[right]{$U$};
+      \draw[fill] (3,0) circle [radius=0.05] node[right]{$T$};
     \end{tikzpicture}
     \end{center}
     \begin{enumerate}
@@ -237,13 +239,13 @@
         \item \emph{Angle Addition Postulate}\\ Measures of adjacent angles sum to the resulting angle \\[0.25cm]
         $m\angle 1 + m\angle 2 = m \angle ABC$ \\
         \begin{tikzpicture}[scale=0.8]
-          \draw [<->, thick]
+          \draw[<->, thick]
             (3,0) coordinate (a) node[below left] {$C$}
             -- (0,0) coordinate (b) node[below left] {$B$}
             -- (2,1.5) coordinate (c) node[below right] {$Q$}
             pic["2", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
             {angle=a--b--c};
-            \draw [<-, thick]
+            \draw[<-, thick]
             (-1,2) coordinate (d) node[right] {$A$}
             -- (0,0) coordinate (e)
             pic["1", <->, draw=black, angle eccentricity=0.75, angle radius=1cm]
@@ -264,18 +266,84 @@
   As shown, $\overrightarrow{BD}$ bisects $\angle ABC$ if and only if $\angle ABD \cong \angle CBD$. 
   \begin{center}
     \begin{tikzpicture}
-      \draw [<->, thick] (40:4)--(0,0)--(4,0);
-      \draw [->, thick] (0,0)--(80:3);
-      \draw [fill] (40:3) circle [radius=0.05] node[below right]{$D$};
-      \draw [fill] (80:2) circle [radius=0.05] node[left]{$A$};
-      \draw [fill] (0,0) circle [radius=0.05] node[below]{$B$};
-      \draw [fill] (3,0) circle [radius=0.05] node[below]{$C$};
+      \draw[<->, thick] (40:4)--(0,0)--(4,0);
+      \draw[->, thick] (0,0)--(80:3);
+      \draw[fill] (40:3) circle [radius=0.05] node[below right]{$D$};
+      \draw[fill] (80:2) circle [radius=0.05] node[left]{$A$};
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (3,0) circle [radius=0.05] node[below]{$C$};
     \end{tikzpicture}
     \end{center}
   \end{frame}
 
 
 \section{2.5 Triangle sum; equilateral, isosceles $\triangle$ angles \hfill 4 October}
+\begin{frame}{LT: I can work with equilateral and isosceles-right $\triangle$s}
+  {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{2.5 Tuesday 4 October}}
+  Do Now: Given perpendiculars $\overrightarrow{AB} \perp \overleftrightarrow{BC}$, and that the ray $\overrightarrow{BD}$ bisects $\angle ABC$, making two angles, $\angle 1$ and $\angle 2$. \par \medskip
+  Find the measures of $\angle 1$, $\angle 2$.
+  \begin{flushleft}
+    \begin{tikzpicture}
+      \draw[<->, thick] (-2,0)--(0,0)--(4,0);
+      \draw[->, thick] (0,0)--(90:3);
+      \draw[->, dashed] (0,0)--(45:4);
+      \draw (0,0)++(-0.3,0)--++(0,0.3)--++(0.3,0);
+      \node at (1.2,0.5){$1$};
+      \node at (0.4,1.2){$2$};
+      \draw[fill] (45:3) circle [radius=0.05] node[below right]{$D$};
+      \draw[fill] (90:2.5) circle [radius=0.05] node[left]{$A$};
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (3,0) circle [radius=0.05] node[below]{$C$};
+    \end{tikzpicture}
+    \end{flushleft}
+    Lesson: Special triangles $60^\circ-60^\circ-60^\circ$, $30^\circ-60^\circ-90^\circ$, $45^\circ-45^\circ-90^\circ$
+  \end{frame}
+
+\begin{frame}{Equilateral $\triangle$, special relationships and measures}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{tikzpicture}[scale=1.5]
+      \draw[thick] (0,0)--(3,0)--(60:3)--cycle;
+      \draw (1.4,-0.2)--(1.4,0.2);
+      \draw (1.6,-0.2)--(1.6,0.2);
+      \draw (53:1.4)--(68:1.4);
+      \draw (53:1.6)--(67:1.6);
+      \draw (28:2.4)--(28:2.8);
+      \draw (32:2.4)--(32:2.8);
+      \node at (0.5,0.2){$60^\circ$};
+      \node at (1.5,2.1){$60^\circ$};
+      \node at (2.5,0.2){$60^\circ$};
+    \end{tikzpicture}
+    \center{$60^\circ-60^\circ-60^\circ$}
+  \column{0.5\textwidth}
+  \onslide<2->
+    \begin{tikzpicture}[scale=1.5]
+      \draw[thick] (0,0)--(1.5,0)--(60:3)--cycle;
+      \draw[dashed] (1.5,0)--(3,0)--(60:3);
+      \node at (0.5,0.2){$60^\circ$};
+      \node at (1.3,1.8){$30^\circ$};
+      \node at (1.3,0.2){$90^\circ$};
+      \draw (1.5,0)++(0.2,0)--++(0,0.2)--++(-0.2,0);
+    \end{tikzpicture} \par
+    \center{$30^\circ-60^\circ-90^\circ$}
+  \end{columns} \vspace{1cm}
+  \begin{description}
+    \item[Equiangular] means having equal angles
+    \item[Equilateral] having equal sides 
+  \end{description}
+  \end{frame}
+
+\begin{frame}{Isosceles-right triangles' angles measure $45^\circ$}
+  {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{2.5 Tuesday 4 October}}
+  \begin{tikzpicture}[scale=0.5]
+    \draw[thick](0,0)--(4,0)--(2,6)--cycle;
+    \draw[fill] (0,0) circle [radius=0.08] node[below]{$A$};
+    \draw[fill] (4,0) circle [radius=0.08] node[below]{$B$};
+    \draw[fill] (2,6) circle [radius=0.08] node[above right]{$C$};
+    \draw[thick] (0.7,3.2)--(1.3,3); %tick mark
+    \draw[thick] (2.7,3)--(3.3,3.2); %tick mark
+  \end{tikzpicture}
+  \end{frame}
 
 \section{2.6 Review \hfill 6 October}
 \begin{frame}{Angle relationships}
