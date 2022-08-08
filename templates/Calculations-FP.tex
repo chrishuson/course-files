@@ -1,65 +1,50 @@
 
 \input{../Geom2023/preamble}
-\usepackage[nomessages]{fp}% http://ctan.org/pkg/fp
-
 
 \begin{document}
-usepackage[nomessages]{fp}\% http://ctan.org/pkg/fp
+Requires FP package: usepackage[nomessages]{fp}
 
-\begin{enumerate}
+\begin{enumerate}[itemsep=0.25cm]
 \item \FPeval{\result}{(5*6)}
 $5*6=\result$
 \par This is the result: $\result$ (use clip or round)
 
 \item \FPeval{\result}{clip(5+6)}
 $5+6=\result$
-\par This is the result: $\result$
+\par This is the result: $\result$ (clipped of trailing zeros)
 
-\item \FPeval{\sumA}{clip(5+6)} \par
-$5+6=\sumA$
-\par This is the sumA: $\sumA$
-
+\subsubsection*{``pi'' and trig functions}
 \item \FPeval{\result}{round(2+3/5*pi,5)}
 $2+3/5\times\pi=\result$
-\par This is the result: $\result$
+\par This is the result: $\result$ (rounded)
 
-\item \FPeval{\result}{round(36*3.14159/180,5)}
-$36*3.14159/180=\result$
-\par This is the result: $\result$
+\item Radian conversion since functions take radian measures \par 
+\FPeval{\result}{(30*pi/180)}
+$30^\circ*\pi/180=\result$ radians \par
+ Rounded \FPeval{\tempval}{round(\result,6)} $\tempval$
 
-\item \FPeval{\result}{(36*pi/180)}
-$36*\pi/180=\result$
- \par This is the result: $\result$
+ \item Calling trig functions (radian inputs)
+ \begin{enumerate}
+    \item \FPeval{\trigresult}{sin(30*pi/180)}
+        $\sin (30*\pi / 180) = \trigresult$
+    \item \FPeval{\temp2}{round(cos(pi/6),5)} 
+        $\cos \pi/6 = \temp2$ (rounded)
+    \item \FPsin{\temp3}{0.5236} 
+        $\sin 30 = \temp3$ (FPsin doesnt seem to work)
+ \end{enumerate}
 
-\item \FPsin{\result2}{(36*pi/180)}%{{36*3.14159/180}}
-$\sin 36 = \result2$
-\par This is the result2: $\result2$
+\item Multi-step, passing values
+\begin{enumerate}
+    \item \FPeval{\temp4}{(pi/6)} 
+        $\pi/6 = \temp4$
+    \item \FPeval{\temp5}{round(\temp4,6)} 
+        $\pi/6 \approx \temp5$ rounded
+    \item \FPeval{\temp6}{sin(\temp5)} 
+        $\sin \text{temp5} = \temp6$
+\end{enumerate}
 
-\item \FPsin{\temp2}{(pi/6)} 
-$\sin \pi/6 = \temp2$
-
-\item \FPsin{\temp3}{30} 
-$\sin 30 = \temp3$
-
-\item \FPeval{\temp4}{(pi/6)} 
-$\sin \pi/6 = \temp4$
-
-\item \FPeval{\temp5}{round(\temp4,6)} 
-$round \pi/6 = \temp5$  rounded
-
-\item \FPsin{\temp6}{(\temp5)} 
-$\sin temp5 = \temp6$
-
-
-\item \FPeval{\temp7}{sin(0.5236)} 
-$\sin (0.5236) = \temp7$
-
-\item \FPeval{\temp8}{sin(pi/6)} 
-$\sin \pi/6 = \temp8$
-
-\item \FPeval{\temp9}{sin(36*pi/180)} 
-$\sin 36*\pi/180 = \temp9$
-
+\subsubsection*{Area of a polygon, Archimede's approximation of $\pi$}
+\item Decagon \par
 \FPeval{\inscr}{0.5*10*sin(36*pi/180)} 
 Inscribed area: $\inscr$ \par 
 
@@ -68,6 +53,7 @@ Cos inv multiplier: $\mul$
 
 \FPeval{\circum}{\inscr * \mul * \mul} 
 Circumscribed area: $\circum$
+
 
 \end{enumerate}
 \end{document}
