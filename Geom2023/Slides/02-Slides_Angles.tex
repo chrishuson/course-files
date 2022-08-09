@@ -29,35 +29,48 @@
   Lesson: Angle measures, internal, external, acute, obtuse, right
 \end{frame}
 
-\begin{frame}{Angle: two rays with a common endpoint or vertex}
-  Rays $\overrightarrow{BA}$ and $\overrightarrow{BC}$. Vertex $B$.
-  Written notation is $\angle ABC$ or $\angle B$. \\[0.75cm]
-        \begin{center}
-          \begin{tikzpicture}
-            \draw[<->, thick] (45:6)--(0,0)--(6,0);
-            \draw[fill] (45:4) circle [radius=0.05] node[below]{$A$};
-            \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
-            \draw[fill] (4,0) circle [radius=0.05] node[below]{$C$};
-          \end{tikzpicture}
-          \end{center}
-    \end{frame}
+\begin{frame}{Two rays with a common endpoint make an \emph{angle}}
+  Rays $\overrightarrow{BA}$ and $\overrightarrow{BC}$, \emph{vertex} $B$. \par \bigskip
+    \begin{tikzpicture}
+      \draw[<->, thick] (45:4)--(0,0)--(4,0);
+      \draw[fill] (45:3) circle [radius=0.05] node[above left]{$A$};
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (3,0) circle [radius=0.05] node[below]{$C$};
+      \node at (-0.5,0.5){Vertex};
+      \onslide<2->{\draw[<->, dashed] (2,0) arc (0:44:2);}
+    \end{tikzpicture}
+    \begin{description}
+      \item[Angle] Two rays with a common endpoint, $\angle ABC$ or $\angle B$
+      \item[Vertex] The common end point of two rays making an angle
+      \item[Interior] Inside, the area between the two rays
+      \item[Exterior] Outside, the area in the angle interior 
+      \onslide<2->{\item[m$\angle A$] The ``measure'' of angle $A$, how big it is}
+    \end{description}
+  \end{frame}
 
-\begin{frame}{Angle measures: the Babylonian system of $360^\circ$ in a circle}
-    \begin{itemize}
-      \item A full rotation is $360^\circ$ (a full ``turn'').
-      \item A half turn (straight line) is $180^\circ$.
-      \item $90^\circ$ is a quarter turn or a \emph{right} angle.
-      \item \emph{Acute} angles measure less than $90^\circ$. \emph{Obtuse} angles measure more than $90^\circ$.
-      \item \emph{Adjacent} angles (``next to'' each other) share a common ray and are external to each other.
-    \end{itemize}
+\begin{frame}{Babylonian measures: $360^\circ$ in a circle}
   \begin{center}
     \begin{tikzpicture}
-      \draw[<->, thick] (25:6)--(0,0)--(6,0);
-      \draw[->, thick] (0,0)--(75:3);
-      \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
-      %\draw[fill] (7,0) circle [radius=0.05] node[below]{$N$};
+      \draw[<->, thick] (90:3)node[above]{$90^\circ$} --(0,0)--
+        (3,0)node[below left]{$360^\circ$};
+      \draw[->,thick] (0,0)--(-3,0)node[above]{$180^\circ$};
+      \draw[fill] (0,0) circle [radius=0.05]node[below]{$V$};
+      \draw[->,dashed] (1:2.25) arc (0:89:2.25);
+      \draw[->,dashed] (1:1.75) arc (0:179:1.75);
+      \draw[->,dashed] (5:1.25) arc (5:355:1.25);
+      \onslide<2>
+        {\foreach \x in {15,30,...,75}
+          \node at (\x:3.2){\x};
+        \foreach \x in {15,30,...,75}
+          \draw (\x:2.6)--(\x:2.8);}
     \end{tikzpicture}
     \end{center}
+  \begin{description}
+    \item[Full turn] A complete rotation, $360^\circ$
+    \item[Half turn] A straight line, $180^\circ$
+    \item[Quarter turn] A \emph{right} angle, $90^\circ$
+    \item[Protractor] A tool for measuring angles
+  \end{description}
 \end{frame}
 
 \begin{frame}{Angle terminology and notation}
@@ -66,9 +79,9 @@
     \column{0.4\textwidth}
     \begin{tikzpicture}[scale=0.8]
       \draw[<->, thick]
-        (3,-1) coordinate (a) node[right] {P}
+        (3,-1) coordinate (a) node[above right] {P}
         -- (0,0) coordinate (b) node[left] {Q}
-        -- (2,2) coordinate (c) node[above right] {R}
+        -- (2,2) coordinate (c) node[below right] {R}
         pic["1", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
         {angle=a--b--c};
     \end{tikzpicture}
@@ -76,10 +89,10 @@
     Angle $Q$, written $\angle Q$ (also $\angle PQR$, $\angle 1$) \par \medskip
     Point $Q$ is the \emph{vertex} \par \medskip
     The sides or \emph{legs} are $\overrightarrow{QR}$, $\overrightarrow{QP}$  \par \medskip
-      
-  \end{columns}
+  \end{columns} \bigskip
   \begin{description}
-    \item[Right angles] measure $90^\circ$
+    \item[Right angle] Angle measuring $90^\circ$, mark as small square
+    \tikz{\draw[<->] (0.5,0)--(0,0)--(0,0.5); \draw[thin] (0.3,0)--(0.3,0.3)--(0,0.3); }
     \item[Perpendicular] lines meet at right angles. $\overline{AB} \perp \overline{CD}$
     \item[Acute] angles measure $< 90^\circ$
     \item[Obtuse] angles are $90^\circ < \angle m < 180^\circ$
@@ -89,24 +102,42 @@
   \end{frame}
 
 \section{2.2 Angle addition \hfill 29 September}
-\begin{frame}{Learning Target: I can solve for angle measures}
-  {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{2.2 Thursday 29 Sept}}
+  \begin{frame}{Learning Target: I can solve for angle measures}
+    {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{2.2 Thursday 29 Sept}}
+      Do Now: Given $\overline{LMN}$, $LM=2x-3$, $MN=x+7$, $LN=4x$. Find $x$
+        \begin{flushleft}
+          \begin{tikzpicture}
+          \draw[thick] (0,0)--(7,0);
+          \draw[fill] (0,0) circle [radius=0.05] node[below]{$L$};
+          \draw[fill] (3,0) circle [radius=0.05] node[below]{$M$};
+          \draw[fill] (7,0) circle [radius=0.05] node[below]{$N$};
+          \node at (1.3,0) [above]{$2x-3$};
+          \node at (5,0) [above]{$x+7$};
+          \draw[<->, dashed] (0,-1)--(7,-1);
+          \node at (3.5,-1) [below]{$4x$};
+          \end{tikzpicture}
+        \end{flushleft}
+        \vspace{2cm}
+      \emph{Don't forget to check the solution.} \par \bigskip 
+      What is the name of the geometry postulate this problem requires?
+    \end{frame}
 
-  \begin{block}{Do Now: $m\angle ABD=30^\circ$, $m\angle DBC=45^\circ$. Find $m\angle ABC$.}\vspace{0.5cm}
-          \begin{center}
-            \begin{tikzpicture}
-              \draw[<->, thick] (45:5)--(0,0)--(6,0);
-              \draw[->, thick] (0,0)--(75:4);
-              \draw[fill] (75:3) circle [radius=0.05] node[left]{$A$};
-              \draw[fill] (45:3) circle [radius=0.05] node[below right]{$D$};
-              \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
-              \draw[fill] (4,0) circle [radius=0.05] node[below]{$C$};
-              \node at (1.5,0.5){$45^\circ$};
-              \node at (1,1.7){$30^\circ$};
-            \end{tikzpicture}
-            \end{center}
-  \end{block}
+\begin{frame}{Angle addition postulate}
+  $m\angle ABD=30^\circ$, $m\angle DBC=45^\circ$. Find $m\angle ABC$. \vspace{0.5cm}
+    \begin{center}
+      \begin{tikzpicture}
+        \draw[<->, thick] (45:5)--(0,0)--(6,0);
+        \draw[->, thick] (0,0)--(75:4);
+        \draw[fill] (75:3) circle [radius=0.05] node[left]{$A$};
+        \draw[fill] (45:3) circle [radius=0.05] node[below right]{$D$};
+        \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
+        \draw[fill] (4,0) circle [radius=0.05] node[below]{$C$};
+        \node at (1.5,0.5){$45^\circ$};
+        \node at (1,1.7){$30^\circ$};
+      \end{tikzpicture}
+      \end{center}
   Lesson: Angle addition problems, vertical angles
+  %\item[Adjacent] ``next to'' each other. Adjacent angles share a common ray and are external to each other.
 \end{frame}
 
 \begin{frame}{Angle addition postulate}
