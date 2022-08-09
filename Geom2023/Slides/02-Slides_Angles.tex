@@ -12,15 +12,20 @@
 \section{2.1 Angle notation, measures \hfill 28 September}
 \begin{frame}{Learning Target: I can measure angles}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{2.1 Wednesday 28 Sept}}
-  \begin{block}{Do Now: On the clock face, which is more time, from the 1 to the 3, or from the 11 to the 2? (insert clock image)}
+  Do Now: Which takes longer, for a clock's hour hand to go from the 1 to the 4 or the 5 to the 9? \par \bigskip
     \begin{tikzpicture}
-      \draw[->, thick] (0,0)--(-1,2);
       \draw (0,0) circle [radius=2];
-    \end{tikzpicture} 
-  \begin{enumerate}
-    \item Write down an equation to represent the situation.
-  \end{enumerate}
-  \end{block}
+      \draw (0,0) circle [radius=0.1];
+      \foreach \x in {1,...,12}
+        \node at ({90+\x*-30}:1.8){\x};
+      \draw[->, thick] (0,0)--(60:1.5);
+      \onslide<2>
+        \draw[->,thick] (0,0)--(-30:1.5);
+        \draw[->,dashed] (60:1) arc (60:-30:1);
+        \draw[->,thick,red] (0,0)--(-60:1.5);
+        \draw[->,thick,red] (0,0)--(-180:1.5);
+        \draw[->,dashed,red] (-60:1) arc (-60:-180:1);
+    \end{tikzpicture} \par \bigskip
   Lesson: Angle measures, internal, external, acute, obtuse, right
 \end{frame}
 
@@ -260,22 +265,104 @@
 \section{2.4 Angle bisectors \hfill 3 October}
 \begin{frame}{Learning Target: I can bisect angles}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{2.4 Monday 3 October}}
-
-  Definition of angle bisector\\
-  \emph{Angle bisector:} a ray dividing an angle into two congruent angles.\\[0.5cm]
-  As shown, $\overrightarrow{BD}$ bisects $\angle ABC$ if and only if $\angle ABD \cong \angle CBD$. 
-  \begin{center}
-    \begin{tikzpicture}
-      \draw[<->, thick] (40:4)--(0,0)--(4,0);
-      \draw[->, thick] (0,0)--(80:3);
-      \draw[fill] (40:3) circle [radius=0.05] node[below right]{$D$};
-      \draw[fill] (80:2) circle [radius=0.05] node[left]{$A$};
-      \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
-      \draw[fill] (3,0) circle [radius=0.05] node[below]{$C$};
-    \end{tikzpicture}
-    \end{center}
+  Do Now: Given vertical angles measuring $4x+4$ and $52^\circ$. Find $x$. \par \bigskip
+  \begin{tikzpicture}[scale=1]
+    \draw[<->, thick]
+      (3,-1) coordinate (a) %node[above right] {$k$}
+      -- (0,0) coordinate (b) %node[left] {Q}
+      -- (2,1.5) coordinate (c) %node[below right] {$l$}
+      pic["$4x+4$", <->, draw=black, angle eccentricity=1.7, angle radius=1cm]
+      {angle=a--b--c};
+      \draw[<->, thick]
+      (-2,0.67) coordinate (d) %node[right] {P}
+      -- (0,0) coordinate (e) %node[left] {Q}
+      -- (-2,-1.5) coordinate (f) %node[above right] {R}
+      pic["$52^\circ$", <->, draw=black, angle eccentricity=1.4, angle radius=1cm]
+      {angle=d--e--f};
+  \end{tikzpicture} \par \bigskip
+  Lesson: Angle bisector situations
   \end{frame}
 
+\begin{frame}{Bisect an angle by dividing it exactly in half}
+    $\overrightarrow{BD}$ bisects $\angle ABC$ if and only if $\angle ABD \cong \angle CBD$. \par \bigskip
+    \begin{center}
+      \begin{tikzpicture}
+        \draw[<->, thick] (80:2.7) node[below right]{$A$}--
+          (0,0)node[below]{$B$}--
+          (4,0) node[below left]{$C$};
+        \draw[->, thick] (0,0)--(40:3.5)node[below right]{$D$};
+        \draw[<->] (1:1.5) arc (1:39:1.5);
+        \draw (17:1.3)--(17:1.7);
+        \draw (23:1.3)--(23:1.7);
+        \draw[<->] (41:1.5) arc (41:79:1.5);
+        \draw (57:1.3)--(57:1.7);
+        \draw (63:1.3)--(63:1.7);
+      \end{tikzpicture} 
+      \end{center}
+      \begin{description}
+        \item[Angle bisector] ray dividing an angle into two congruent angles
+        \item[Hash marks] mark congruent angles
+      \end{description}
+    \end{frame}
+
+\begin{frame}{Model angle situations with algebra, then solve}
+  Given angle bisector $\overrightarrow{BD}$ with m$\angle ABD =60^\circ$ and m$\angle CBD=2x+10$. Find $x$.
+  \begin{columns}
+    \column{0.6\textwidth}
+    \begin{tikzpicture}
+      \draw[<->, thick] (120:3.5) node[below left]{$A$}--
+        (0,0)node[below]{$B$}--
+        (3,0) node[below left]{$C$};
+      \draw[->, thick] (0,0)--(60:3)node[below right]{$D$};
+      \draw[<->] (1:1.5) arc (1:59:1.5);
+      \draw (27:1.3)--(27:1.7);
+      \draw (33:1.3)--(33:1.7);
+      \draw[<->] (61:1.5) arc (61:119:1.5);
+      \draw (87:1.3)--(87:1.7);
+      \draw (93:1.3)--(93:1.7);
+      \node at (30:2.5){$2x+10$};
+      \node at (90:2){$60^\circ$};
+    \end{tikzpicture} 
+    \column{0.4\textwidth}
+    \onslide<2>
+    Solution:
+    $$\angle ABD \cong \angle CBD$$
+    $$2x+10=60$$
+    $$2x=50$$
+    $$x=25$$
+    Check: \par
+    $2(25)+10=60$? \checkmark
+  \end{columns}
+  \end{frame}  
+
+\begin{frame}{Extension: Use angles for compass directions}
+  {North South East West, \href{https://en.wikipedia.org/wiki/Points_of_the_compass}{points of the compass}}
+  Directions are measured relative to North \bigskip
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{tikzpicture}[scale=0.9]
+      \draw[<->,thick] (-2,0)node[left]{W}--(2,0)node[right]{E};
+      \draw[<->,thick] (0,-2)node[left]{S}--(0,2)node[right]{N};
+      \foreach \x in {1,...,24}
+        \draw ({\x*15}:1)--({\x*15}:1.2);
+    \onslide<2->
+      \draw[->,dashed,red] (90:1.5) arc (90:45:1.5);
+      \draw[->,red] (45:0.1)--(45:2)node[right]{$45^\circ$};
+    \end{tikzpicture} 
+    \column{0.5\textwidth}
+    \onslide<2->{
+    ``Northeast,'' half way between north and east, i.e. bearing $45^\circ$ \par \bigskip
+    north is $0^\circ$ \par 
+    east is $90^\circ$ \par 
+    south is $180^\circ$ \par 
+    west is $270^\circ$ \par }
+  \end{columns} \bigskip
+  \begin{description}
+    \item[Bearing] The direction as an angle \emph{clockwise} from north
+    \item[Clockwise] The direction the clocks turn, ``to the right'' (tighten)
+    \item[Counterclockwise] Opposite of clocks, ``to the left'' (loosen)
+  \end{description}
+  \end{frame}  
 
 \section{2.5 Triangle sum; equilateral, isosceles $\triangle$ angles \hfill 4 October}
 \begin{frame}{LT: I can work with equilateral and isosceles-right $\triangle$s}
@@ -296,12 +383,12 @@
       \draw[fill] (3,0) circle [radius=0.05] node[below]{$C$};
     \end{tikzpicture}
     \end{flushleft}
-    Lesson: Special triangles $60^\circ-60^\circ-60^\circ$, $30^\circ-60^\circ-90^\circ$, $45^\circ-45^\circ-90^\circ$
+    Lesson: Isosceles base theorem, special triangles \par $60^\circ$ - $60^\circ$ - $60^\circ$, $30^\circ$ - $60^\circ$ - $90^\circ$, $45^\circ$ - $45^\circ$ - $90^\circ$
   \end{frame}
 
 \begin{frame}{Equilateral $\triangle$, special relationships and measures}
   \begin{columns}
-    \column{0.5\textwidth}
+  \column{0.5\textwidth}
     \begin{tikzpicture}[scale=1.5]
       \draw[thick] (0,0)--(3,0)--(60:3)--cycle;
       \draw (1.4,-0.2)--(1.4,0.2);
@@ -314,7 +401,7 @@
       \node at (1.5,2.1){$60^\circ$};
       \node at (2.5,0.2){$60^\circ$};
     \end{tikzpicture}
-    \center{$60^\circ-60^\circ-60^\circ$}
+    \center{$60^\circ$ - $60^\circ$ - $60^\circ$}
   \column{0.5\textwidth}
   \onslide<2->
     \begin{tikzpicture}[scale=1.5]
@@ -325,7 +412,7 @@
       \node at (1.3,0.2){$90^\circ$};
       \draw (1.5,0)++(0.2,0)--++(0,0.2)--++(-0.2,0);
     \end{tikzpicture} \par
-    \center{$30^\circ-60^\circ-90^\circ$}
+    \center{$30^\circ$ - $60^\circ$ - $90^\circ$}
   \end{columns} \vspace{1cm}
   \begin{description}
     \item[Equiangular] means having equal angles
@@ -333,16 +420,21 @@
   \end{description}
   \end{frame}
 
-\begin{frame}{Isosceles-right triangles' angles measure $45^\circ$}
-  {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{2.5 Tuesday 4 October}}
-  \begin{tikzpicture}[scale=0.5]
-    \draw[thick](0,0)--(4,0)--(2,6)--cycle;
-    \draw[fill] (0,0) circle [radius=0.08] node[below]{$A$};
-    \draw[fill] (4,0) circle [radius=0.08] node[below]{$B$};
-    \draw[fill] (2,6) circle [radius=0.08] node[above right]{$C$};
-    \draw[thick] (0.7,3.2)--(1.3,3); %tick mark
-    \draw[thick] (2.7,3)--(3.3,3.2); %tick mark
-  \end{tikzpicture}
+\begin{frame}{Isosceles-right triangles' angles measure $45^\circ$ - $45^\circ$ - $90^\circ$}
+  \begin{tikzpicture}[scale=1]
+    \draw[thick](0,0)--(4,0)--(0,4)--cycle;
+    \draw (0,0)++(0.4,0)--++(0,0.4)--++(-0.4,0);
+    \node at (3.2,0.3){$45^\circ$};
+    \node at (0.35,3.2){$45^\circ$};
+    \node at (2.7,2.5){hypotenuse};
+    \draw[thick] (1.7,-0.2)--(1.7,0.2);
+    \draw[thick] (1.9,-0.2)--(1.9,0.2);
+    \draw[thick] (-0.2,1.9)--(0.2,1.9);
+    \draw[thick] (-0.2,2.1)--(0.2,2.1);
+  \end{tikzpicture} \vspace{1cm}
+  \begin{description}
+    \item[Hypotenuse] the longest side of a right triangle, opposite the $90^\circ$ angle 
+  \end{description}
   \end{frame}
 
 \section{2.6 Review \hfill 6 October}
