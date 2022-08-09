@@ -91,73 +91,142 @@
     The sides or \emph{legs} are $\overrightarrow{QR}$, $\overrightarrow{QP}$  \par \medskip
   \end{columns} \bigskip
   \begin{description}
-    \item[Right angle] Angle measuring $90^\circ$, mark as small square
+    \item[Right angle] measuring $90^\circ$, mark as small square
     \tikz{\draw[<->] (0.5,0)--(0,0)--(0,0.5); \draw[thin] (0.3,0)--(0.3,0.3)--(0,0.3); }
     \item[Perpendicular] lines meet at right angles. $\overline{AB} \perp \overline{CD}$
     \item[Acute] angles measure $< 90^\circ$
-    \item[Obtuse] angles are $90^\circ < \angle m < 180^\circ$
-    \item[Straight angle]  or straight line  measures $180^\circ$
-    \item[Reflex angles]  measure $180^\circ < \angle m < 360^\circ$
+    \item[Obtuse] angles are $90^\circ < \text{m}\angle < 180^\circ$
+    \item[Straight angle] or a straight line  measures $180^\circ$
+    \item[Reflex angles] measure $180^\circ < \text{m}\angle < 360^\circ$
   \end{description}
   \end{frame}
 
-\section{2.2 Angle addition \hfill 29 September}
-  \begin{frame}{Learning Target: I can solve for angle measures}
-    {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{2.2 Thursday 29 Sept}}
-      Do Now: Given $\overline{LMN}$, $LM=2x-3$, $MN=x+7$, $LN=4x$. Find $x$
-        \begin{flushleft}
-          \begin{tikzpicture}
-          \draw[thick] (0,0)--(7,0);
-          \draw[fill] (0,0) circle [radius=0.05] node[below]{$L$};
-          \draw[fill] (3,0) circle [radius=0.05] node[below]{$M$};
-          \draw[fill] (7,0) circle [radius=0.05] node[below]{$N$};
-          \node at (1.3,0) [above]{$2x-3$};
-          \node at (5,0) [above]{$x+7$};
-          \draw[<->, dashed] (0,-1)--(7,-1);
-          \node at (3.5,-1) [below]{$4x$};
-          \end{tikzpicture}
-        \end{flushleft}
-        \vspace{2cm}
-      \emph{Don't forget to check the solution.} \par \bigskip 
-      What is the name of the geometry postulate this problem requires?
-    \end{frame}
+\section{2.2 Angle addition, angle pairs \hfill 29 September}
+\begin{frame}{Learning Target: I can solve for angle measures}
+  {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{2.2 Thursday 29 Sept}}
+    Do Now: Given $\overline{LMN}$, $LM=2x-3$, $MN=x+7$, $LN=4x$. \par  
+    Find $x$. \emph{Don't forget to check the solution.} \medskip 
+      \begin{flushleft}
+        \begin{tikzpicture}
+        \draw[thick] (0,0)--(7,0);
+        \draw[fill] (0,0) circle [radius=0.05] node[below]{$L$};
+        \draw[fill] (3,0) circle [radius=0.05] node[below]{$M$};
+        \draw[fill] (7,0) circle [radius=0.05] node[below]{$N$};
+        \node at (1.3,0) [above]{$2x-3$};
+        \node at (5,0) [above]{$x+7$};
+        \draw[<->, dashed] (0,-0.7)--(7,-0.7);
+        \node at (3.5,-1){$4x$};
+        \end{tikzpicture}
+      \end{flushleft}
+      \vspace{2cm}
+    Name the geometry \emph{postulate} that is the basis for this problem. \par \medskip 
+    Lesson: Angle addition postulate, complementary, supplementary angles, linear pairs
+  \end{frame}
 
 \begin{frame}{Angle addition postulate}
-  $m\angle ABD=30^\circ$, $m\angle DBC=45^\circ$. Find $m\angle ABC$. \vspace{0.5cm}
-    \begin{center}
+  $m\angle ABD=30^\circ$, $m\angle DBC=45^\circ$. Find $m\angle ABC$. \par \bigskip
+    \begin{tikzpicture}
+      \draw[<->, thick] (75:2.7) node[left]{$A$}--
+        (0,0)node[below]{$B$}--
+        (4,0) node[below left]{$C$};
+      \draw[->, thick] (0,0)--(45:3.5)node[below right]{$D$};
+      \draw[<->] (1:1.5) arc (1:44:1.5);
+      \draw[<->] (46:1.5) arc (46:74:1.5);
+      \node at (2,0.7){$45^\circ$};
+      \node at (1.1,1.6){$30^\circ$};
+    \end{tikzpicture} \vspace{1cm}
+    \begin{description}
+      \item[Angle addition] The sum of the measures of \emph{adjacent} angles is the measure of their combined angle. (postulate)
+      \item[Adjacent] ``next to'' each other. Adjacent angles share a common ray and are external to each other.
+    \end{description}
+  \end{frame}
+
+\begin{frame}{Special angle pairs}
+  \begin{columns}
+    \column{0.6\textwidth}
       \begin{tikzpicture}
-        \draw[<->, thick] (45:5)--(0,0)--(6,0);
-        \draw[->, thick] (0,0)--(75:4);
-        \draw[fill] (75:3) circle [radius=0.05] node[left]{$A$};
-        \draw[fill] (45:3) circle [radius=0.05] node[below right]{$D$};
-        \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
-        \draw[fill] (4,0) circle [radius=0.05] node[below]{$C$};
-        \node at (1.5,0.5){$45^\circ$};
-        \node at (1,1.7){$30^\circ$};
-      \end{tikzpicture}
-      \end{center}
-  Lesson: Angle addition problems, vertical angles
-  %\item[Adjacent] ``next to'' each other. Adjacent angles share a common ray and are external to each other.
+        \draw[<->, thick] (180:2) node[below left]{$A$}--
+        (0,0)node[below]{$B$}--
+        (2,0) node[below left]{$C$};
+        \fill (0,0) circle [radius=0.05];
+        \draw[->, thick] (0,0)--(60:2.2)node[above left]{$D$};
+        \draw[<->] (1:1) arc (1:58:1);
+        \draw[<->] (62:1) arc (62:178:1);
+        \node at (-1,1){$\angle 1$};
+        \node at (1.5,0.5){$\angle 2$};
+        \end{tikzpicture} \par 
+      Linear pair, supplementary $\angle$s
+    \column{0.4\textwidth}
+      \begin{tikzpicture}
+        \draw[<->, thick] (90:2) node[above left]{$J$}--
+        (0,0)node[below]{$K$}--
+        (2,0) node[below left]{$L$};
+        \fill (0,0) circle [radius=0.05];
+        \draw[<->, thick] (-1,0)--(0,0)--(35:2.2)node[above left]{$M$};
+        \draw (0,0)++(-0.3,0)--++(0,0.3)--++(0.3,0);
+        \draw[<->] (1:1) arc (1:34:1);
+        \draw[<->] (37:1) arc (37:88:1);
+        \node at (0.5,1.5){$\angle 3$};
+        \node at (1.5,0.5){$\angle 4$};
+      \end{tikzpicture} \par 
+      Complementary angles
+  \end{columns} \vspace{0.7cm}
+    \begin{description}
+      \item[Linear pair] Two adjacent angles that make a straight line
+      \item[Opposite rays] collinear with a common endpoint. $\overrightarrow{BA}$, $\overrightarrow{BC}$
+      \item[Supplementary] Angles whose measures sum to $180^\circ$
+      \item[Complementary] Angles whose measures sum to $90^\circ$
+      \item[Adjacent] ``next to'' each other. Adjacent angles share a common ray and are external to each other.
+    \end{description}
 \end{frame}
 
-\begin{frame}{Angle addition postulate}
-    For adjacent angles, the sum of their measures is the measure of their combined angle.\\
-    Special pairs of angles [make a new slide]\\
-    A \emph{linear pair} are two angles that make a straight line. \\
-    \emph{Opposite rays} have a common endpoint and make a line. (They form an angle measuring $180^\circ$).\\
-    Angles whose measures sum to $180^\circ$ are \emph{supplementary}. \\
-    Angles whose measures sum to $90^\circ$ are \emph{complementary}.
-    \begin{center}
+\begin{frame}{Given two supplementary angles, a linear pair.}
+  m$\angle ABD = 4x+16$, m$\angle CBD = 100$. Find $x$. \vspace{1cm}
+  \begin{columns}
+    \column{0.5\textwidth}
       \begin{tikzpicture}
-        \draw[<->, thick] (45:3)--(0,0)--(4,0);
-        \draw[->, thick] (0,0)--(125:2);
-        \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
-        %\draw[fill] (7,0) circle [radius=0.05] node[below]{$N$};
-      \end{tikzpicture}
-      \end{center}
-\end{frame}
+        \draw[<->, thick] (180:2) node[below left]{$A$}--
+        (0,0)node[below]{$B$}--
+        (2,0) node[below left]{$C$};
+        \fill (0,0) circle [radius=0.05];
+        \draw[->, thick] (0,0)--(110:2.2)node[above left]{$D$};
+        \draw[<->] (1:1) arc (1:108:1);
+        \draw[<->] (112:1) arc (112:178:1);
+        \node at (-1.5,1){$4x+16$};
+        \node at (1,1){$100$};
+        \end{tikzpicture} \par 
+    \column{0.5\textwidth} 
+      \onslide<2->{
+        Solution: 
+        $$\text{m}\angle ABD + \text{m}\angle CBD = 180$$ }
+        \onslide<3>{
+        $$(4x+16) + 100 = 180$$
+        $$\dots$$
+        $$x=16$$
+        Check: \par
+        $[4(16)+16] + 100 = 180$ \checkmark
+        }
+    \end{columns} \vspace{1cm}
+  \end{frame}
 
-\section{2.3 Angle pairs \hfill 30 September}
+\begin{frame}{Extension (optional problems)}
+  At midnight both the clock's minute hand and hour hand point at the same direction. When is the next time the clock hands coincide? \par \bigskip
+    \begin{tikzpicture}
+      \draw (0,0) circle [radius=2];
+      \draw (0,0) circle [radius=0.1];
+      \foreach \x in {1,...,12}
+        \node at ({90+\x*-30}:1.8){\x};
+      \draw[->, thick] (0,0)--(60:1.5);
+      \onslide<2>
+        \draw[->,thick] (0,0)--(-30:1.5);
+        \draw[->,dashed] (60:1) arc (60:-30:1);
+        \draw[->,thick,red] (0,0)--(-60:1.5);
+        \draw[->,thick,red] (0,0)--(-180:1.5);
+        \draw[->,dashed,red] (-60:1) arc (-60:-180:1);
+    \end{tikzpicture}
+  \end{frame}
+
+\section{2.3 Vertical angles \hfill 30 September}
 \begin{frame}{Learning Target: I can identify vertical angles}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{2.3 Friday 30 September}}
   
@@ -175,7 +244,7 @@
     %\draw[fill] (3,0) circle [radius=0.05] node[below]{$Q$};
   \end{tikzpicture}
   \end{center}
-    Lesson: Angle addition problems, vertical angles
+    Lesson: Vertical angles
   \end{frame}
   
 \begin{frame}{Write down definitions in your notebook}
