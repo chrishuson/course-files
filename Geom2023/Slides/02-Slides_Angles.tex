@@ -105,7 +105,7 @@
 \begin{frame}{Learning Target: I can solve for angle measures}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions \hfill \alert{2.2 Thursday 29 Sept}}
     Do Now: Given $\overline{LMN}$, $LM=2x-3$, $MN=x+7$, $LN=4x$. \par  
-    Find $x$. \emph{Don't forget to check the solution.} \medskip 
+    Find $x$. \hfill \emph{Don't forget to check the solution.} \medskip 
       \begin{flushleft}
         \begin{tikzpicture}
         \draw[thick] (0,0)--(7,0);
@@ -124,7 +124,7 @@
   \end{frame}
 
 \begin{frame}{Angle addition postulate}
-  $m\angle ABD=30^\circ$, $m\angle DBC=45^\circ$. Find $m\angle ABC$. \par \bigskip
+  m$\angle ABD=30^\circ$, m$\angle DBC=45^\circ$. Find m$\angle ABC$. \par \bigskip
     \begin{tikzpicture}
       \draw[<->, thick] (75:2.7) node[left]{$A$}--
         (0,0)node[below]{$B$}--
@@ -134,9 +134,10 @@
       \draw[<->] (46:1.5) arc (46:74:1.5);
       \node at (2,0.7){$45^\circ$};
       \node at (1.1,1.6){$30^\circ$};
-    \end{tikzpicture} \vspace{1cm}
+    \end{tikzpicture} \bigskip
     \begin{description}
       \item[Angle addition] The sum of the measures of \emph{adjacent} angles is the measure of their combined angle. (postulate)
+      $$\text{m}\angle ABD + \text{m}\angle DBC = \text{m}\angle ABC$$
       \item[Adjacent] ``next to'' each other. Adjacent angles share a common ray and are external to each other.
     \end{description}
   \end{frame}
@@ -153,7 +154,7 @@
         \draw[<->] (1:1) arc (1:58:1);
         \draw[<->] (62:1) arc (62:178:1);
         \node at (-1,1){$\angle 1$};
-        \node at (1.5,0.5){$\angle 2$};
+        \node at (1.3,0.8){$\angle 2$};
         \end{tikzpicture} \par 
       Linear pair, supplementary $\angle$s
     \column{0.4\textwidth}
@@ -173,7 +174,7 @@
   \end{columns} \vspace{0.7cm}
     \begin{description}
       \item[Linear pair] Two adjacent angles that make a straight line
-      \item[Opposite rays] collinear with a common endpoint. $\overrightarrow{BA}$, $\overrightarrow{BC}$
+      \item[Opposite rays] collinear with a common endpoint. e.g. $\overrightarrow{BA}$, $\overrightarrow{BC}$
       \item[Supplementary] Angles whose measures sum to $180^\circ$
       \item[Complementary] Angles whose measures sum to $90^\circ$
       \item[Adjacent] ``next to'' each other. Adjacent angles share a common ray and are external to each other.
@@ -181,7 +182,7 @@
 \end{frame}
 
 \begin{frame}{Given two supplementary angles, a linear pair.}
-  m$\angle ABD = 4x+16$, m$\angle CBD = 100$. Find $x$. \vspace{1cm}
+  m$\angle ABD = 4x+16$, m$\angle CBD = 100$. Find $x$. \bigskip
   \begin{columns}
     \column{0.5\textwidth}
       \begin{tikzpicture}
@@ -203,183 +204,132 @@
         $$(4x+16) + 100 = 180$$
         $$\dots$$
         $$x=16$$
-        Check: \par
-        $[4(16)+16] + 100 = 180$ \checkmark
+        Check:
+        $$[4(16)+16] + 100 = 180 \text{ \checkmark}$$ 
         }
     \end{columns} \vspace{1cm}
   \end{frame}
 
 \begin{frame}{Extension (optional problems)}
-  At midnight both the clock's minute hand and hour hand point at the same direction. When is the next time the clock hands coincide? \par \bigskip
+  At midnight both the clock's minute hand and hour hand point in the same direction. When is the next time the clock hands coincide? \par \bigskip
     \begin{tikzpicture}
       \draw (0,0) circle [radius=2];
       \draw (0,0) circle [radius=0.1];
       \foreach \x in {1,...,12}
         \node at ({90+\x*-30}:1.8){\x};
-      \draw[->, thick] (0,0)--(60:1.5);
-      \onslide<2>
-        \draw[->,thick] (0,0)--(-30:1.5);
-        \draw[->,dashed] (60:1) arc (60:-30:1);
-        \draw[->,thick,red] (0,0)--(-60:1.5);
-        \draw[->,thick,red] (0,0)--(-180:1.5);
-        \draw[->,dashed,red] (-60:1) arc (-60:-180:1);
+        \draw[->, ultra thick] (0,0)--(90:1);
+        \draw[->, gray] (0,0)--(90:1.5);
+      %\draw[->,thick] (0,0)--(-30:1.5);
+      \draw[->,dashed] (90:0.5) arc (90:-30:0.5);
+      %\draw[->,thick,red] (0,0)--(-60:1.5);
+      %\draw[->,thick,red] (0,0)--(-180:1.5);
+      %\draw[->,dashed,red] (-60:1) arc (-60:-180:1);
     \end{tikzpicture}
   \end{frame}
 
 \section{2.3 Vertical angles \hfill 30 September}
 \begin{frame}{Learning Target: I can identify vertical angles}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{2.3 Friday 30 September}}
-  
-    Definition: \emph{Vertical angles} are angles opposite each other when two lines intersect. $\angle 1$ and $\angle 3$ are vertical angles, as are $\angle 2$ and $\angle 4$.
-  \begin{center}
-  \begin{tikzpicture}[scale=0.5, rotate=15]
-    \draw[<->, thick] (0,-1.5)--(10,1.5);
-    \draw[<->, thick] (2,3.5)--(7,-3.5);
-    \node at (3,.4){1};
-    \node at (6,-.6){3};
-    \node at (5,1){2};
-    \node at (4,-1){4};
-    %\draw[fill] (0,0) circle [radius=0.05] node[below]{$P$};
-    %\draw[fill] (6,0) circle [radius=0.05] node[below]{$R$};
-    %\draw[fill] (3,0) circle [radius=0.05] node[below]{$Q$};
-  \end{tikzpicture}
-  \end{center}
+    Do Now: Check your knowledge of angle pairs
+      \begin{enumerate}
+        \item \emph{Complementary} angles sum to how many degrees?
+        \item \emph{Supplementary} angles sum to how many degrees?
+        \item Given complementary angles m$\angle A= 30^\circ$. Find m$\angle B$.
+        \item Given intersecting lines. m$\angle 1 = 110^\circ$. Find m$\angle 2$. \medskip
+          \begin{flushright}
+          \begin{tikzpicture}[scale=0.7]
+            \draw[<->, thick] (0:-2.5)--(0:2.5);
+            \draw[<->, thick] (-120:2)--(60:2);
+            \node at (160:1.7){m$\angle 1 = 110^\circ$};
+            \node at (20:1.8){m$\angle 2 = ?$};
+          \end{tikzpicture}          
+          \end{flushright}
+      \end{enumerate}
     Lesson: Vertical angles
   \end{frame}
-  
-\begin{frame}{Write down definitions in your notebook}
-  \begin{block}{Angle pairs}
-  \begin{enumerate}
-      \item \emph{Adjacent} angles share a leg (``next to each other'')
-      \item \emph{Complementary} angles measures sum to $90^\circ$
-      \item \emph{Supplementary} angles sum to $180^\circ$
-      \item \emph{Vertical} or opposite angles made by intersecting lines (1, 2)
-      \item \emph{Linear pairs}, adjacent angles making a straight line (3, 4)
-  \end{enumerate}
-  \end{block}
-  \begin{multicols}{2}
-  \begin{tikzpicture}[scale=0.8]
-    \draw[<->, thick]
-      (3,-1) coordinate (a) node[above right] {$k$}
-      -- (0,0) coordinate (b) %node[left] {Q}
-      -- (2,1.5) coordinate (c) node[below right] {$l$}
-      pic["1", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
-      {angle=a--b--c};
-      \draw[<->, thick]
-      (-2,0.67) coordinate (d) %node[right] {P}
-      -- (0,0) coordinate (e) %node[left] {Q}
-      -- (-2,-1.5) coordinate (f) %node[above right] {R}
-      pic["2", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
-      {angle=d--e--f};
-  \end{tikzpicture}
-  \begin{tikzpicture}[scale=0.8]
-    \draw[<->, thick]
-      (3,0) coordinate (a) node[above right] {$B$}
-      -- (0,0) coordinate (b) %node[left] {Q}
-      -- (2,1.5) coordinate (c) node[below right] {$C$}
-      pic["4", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
-      {angle=a--b--c};
-      \draw[<-, thick]
-      (-2,0) coordinate (d) node[below] {A}
-      -- (0,0) coordinate (e)
-      pic["3", <->, draw=black, angle eccentricity=0.75, angle radius=1cm]
-      {angle=c--e--d};
-  \end{tikzpicture}
-  \end{multicols}
-  \end{frame}
-  
-\begin{frame}{Angle pairs: check your knowledge}
-  \begin{enumerate}
-    \item \emph{Complementary} angles sum to how many degrees?
-    \item \emph{Supplementary} angles sum to how many degrees?
-    \item Given complementary angles $\angle A$ and $\angle B$ with $m\angle A = 30^\circ$. Find $m\angle B$. \vspace{0.25cm}
-    \item Given $m\angle A = 100^\circ$ and $m\angle B = 2x$. Find $x$ such that angles $\angle A$ and $\angle B$ are supplementary.  \vspace{0.75cm}
-    \begin{multicols}{2}
-      \item Given vertical angles as shown. Find $x$. \\
-      \begin{tikzpicture}[scale=0.8]
-        \draw[<->, thick]
-          (3,-1) coordinate (a) %node[above right] {$k$}
-          -- (0,0) coordinate (b) %node[left] {Q}
-          -- (2,1.5) coordinate (c) %node[below right] {$l$}
-          pic["$\quad 5x$", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
-          {angle=a--b--c};
-          \draw[<->, thick]
-          (-2,0.67) coordinate (d) %node[right] {P}
-          -- (0,0) coordinate (e) %node[left] {Q}
-          -- (-2,-1.5) coordinate (f) %node[above right] {R}
-          pic["$55^\circ \quad$", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
-          {angle=d--e--f};
-      \end{tikzpicture}
-    \end{multicols}
-    \end{enumerate} \vspace{1cm}
-  \end{frame}
 
-\begin{frame}{Angle pairs: apply your knowledge}
-  \begin{block}{Triangle external angle situation}
-    \begin{center}
-    \begin{tikzpicture}
-      %\draw[->, thick] (0,0)--(5,5);
-      \draw[<-, thick] (-2,0)--(3,0)--(2,1.5)--(1,0);
-      \draw[fill] (-1,0) circle [radius=0.05] node[below]{$R$};
-      \draw[fill] (1,0) circle [radius=0.05] node[below]{$S$};
-      \draw[fill] (2,1.5) circle [radius=0.05] node[right]{$U$};
-      \draw[fill] (3,0) circle [radius=0.05] node[right]{$T$};
-    \end{tikzpicture}
-    \end{center}
-    \begin{enumerate}
-      \item Given $m\angle RSU = 115^\circ$. Find $m\angle TSU$
-      \item Given $S$ bisects $\overline{RT}$, $RS=\frac{1}{5} (x+8)$ and $ST = x$. Find $RT$.
-  \end{enumerate}
-  \end{block}
-  \end{frame}
-  
-\begin{frame}{Write down definitions in your notebook}
-  \begin{block}{A postulate is a fundamental statement we agree is true}
-  \begin{enumerate}
-      \item \emph{Scalene} triangles have three unequal sides
-      \item \emph{Horizontal}, sideways or level
-      \item \emph{Vertical}, straight up and down
-      \item An angle's \emph{measure}, it's size, is written $m \angle$
-      \begin{multicols}{2}
-        \item \emph{Angle Addition Postulate}\\ Measures of adjacent angles sum to the resulting angle \\[0.25cm]
-        $m\angle 1 + m\angle 2 = m \angle ABC$ \\
-        \begin{tikzpicture}[scale=0.8]
-          \draw[<->, thick]
-            (3,0) coordinate (a) node[below left] {$C$}
-            -- (0,0) coordinate (b) node[below left] {$B$}
-            -- (2,1.5) coordinate (c) node[below right] {$Q$}
-            pic["2", <->, draw=black, angle eccentricity=1.2, angle radius=1cm]
-            {angle=a--b--c};
-            \draw[<-, thick]
-            (-1,2) coordinate (d) node[right] {$A$}
-            -- (0,0) coordinate (e)
-            pic["1", <->, draw=black, angle eccentricity=0.75, angle radius=1cm]
-            {angle=c--e--d};
-        \end{tikzpicture}
-      \end{multicols}
-        \end{enumerate}
-  \end{block} \vspace{1cm}
+\begin{frame}{Intersecting lines make two pairs of congruent angles}
+  Angles \emph{opposite} each other match: 
+    $$\angle 1 \cong \angle 3 \text{, } \angle 2 \cong \angle 4$$
+  \begin{center}
+  \begin{tikzpicture}[rotate=-40]
+    \draw[<->, thick] (0:-2.5)--(0:2.5);
+    \draw[<->, thick] (-120:2)--(60:2);
+    \node at (120:0.8){1};
+    \node at (30:1.2){2};
+    \node at (-60:1){3};
+    \node at (30:-1.2){4};
+  \end{tikzpicture}
+  \end{center}
+\begin{description}
+  \item[Vertical angles] Opposite each other when two lines intersect. \par 
+    $\angle 1$ and $\angle 3$ are vertical angles, as are $\angle 2$ and $\angle 4$.
+  \item[Opposite] Across from each other. (opposite angles and vertical angles means the same thing)
+\end{description}
 \end{frame}
 
+\begin{frame}{Use vertical angles to solve for $x$}
+  Given vertical angles measuring $4x+4$ and $52^\circ$. Find $x$. \par \vspace{1cm}
+  \begin{columns}
+    \column{0.6\textwidth}
+    \begin{tikzpicture}[rotate=-10]
+      \draw[<->, thick] (0:-2.5)--(0:2.5);
+      \draw[<->, thick] (-120:2)--(60:2);
+      \draw[<->] (2:1) arc (2:58:1);
+      \draw[<->] (2:-1) arc (2:58:-1);
+      \node at (200:1.8){$4x+4$};
+      \node at (20:1.6){$52^\circ$};
+    \end{tikzpicture}          
+    \column{0.4\textwidth}
+    \onslide<2>
+      Solution:
+        $$4x+4 = 52$$
+        $$x=12$$
+      Check:
+        $$4(12)+4=52 \text{ \checkmark}$$
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Extension: Use logic to show vertical angles are congruent}
+  Given intersecting lines making angles  
+    $\angle 1 \text{, } \angle 2 \text{, } \angle 3 \text{, } \angle 4$. \par \medskip Prove $\angle 2 \cong \angle 4$.
+  \begin{center}
+  \begin{tikzpicture}[scale=0.8, rotate=-25]
+    \draw[<->, thick] (0:-2.5)--(0:2.5);
+    \draw[<->, thick] (-120:2)--(60:2);
+    \node at (120:0.8){1};
+    \node at (30:1.2){2};
+    \node at (-60:1){3};
+    \node at (30:-1.2){4};
+  \end{tikzpicture}
+  \end{center}
+    Linear pairs are supplementary
+      $$\text{m}\angle 2 + \text{m}\angle 1 = 180$$
+      $$\text{m}\angle 4 + \text{m}\angle 1 = 180$$
+    Both equal 180, so they are equal (\emph{transitive property} of equality)
+      $$\text{m}\angle 2 + \text{m}\angle 1 = \text{m}\angle 4 + \text{m}\angle 1$$
+    Subtract $\text{m}\angle 1$ from both sides (\emph{cancellation} law) \hfill \href{https://mathworld.wolfram.com/QED.html}{link}
+      $$\angle 2 \cong \angle 4 \textit{ Q.E.D.}$$
+\end{frame}
 
 \section{2.4 Angle bisectors \hfill 3 October}
 \begin{frame}{Learning Target: I can bisect angles}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{2.4 Monday 3 October}}
-  Do Now: Given vertical angles measuring $4x+4$ and $52^\circ$. Find $x$. \par \bigskip
+  Do Now: Given vertical angles measuring $7x-2$ and $61^\circ$. Find $x$. \par \bigskip
   \begin{tikzpicture}[scale=1]
     \draw[<->, thick]
       (3,-1) coordinate (a) %node[above right] {$k$}
       -- (0,0) coordinate (b) %node[left] {Q}
       -- (2,1.5) coordinate (c) %node[below right] {$l$}
-      pic["$4x+4$", <->, draw=black, angle eccentricity=1.7, angle radius=1cm]
+      pic["$7x-2$", <->, draw=black, angle eccentricity=1.7, angle radius=1cm]
       {angle=a--b--c};
       \draw[<->, thick]
       (-2,0.67) coordinate (d) %node[right] {P}
       -- (0,0) coordinate (e) %node[left] {Q}
       -- (-2,-1.5) coordinate (f) %node[above right] {R}
-      pic["$52^\circ$", <->, draw=black, angle eccentricity=1.4, angle radius=1cm]
+      pic["$61^\circ$", <->, draw=black, angle eccentricity=1.4, angle radius=1cm]
       {angle=d--e--f};
-  \end{tikzpicture} \par \bigskip
+  \end{tikzpicture} \par \vspace{1cm}
   Lesson: Angle bisector situations
   \end{frame}
 
@@ -464,7 +414,7 @@
   \end{description}
   \end{frame}  
 
-\section{2.5 Triangle sum; equilateral, isosceles $\triangle$ angles \hfill 4 October}
+\section{2.5 Equilateral, isosceles $\triangle$ angles \hfill 4 October}
 \begin{frame}{LT: I can work with equilateral and isosceles-right $\triangle$s}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{2.5 Tuesday 4 October}}
   Do Now: Given perpendiculars $\overrightarrow{AB} \perp \overleftrightarrow{BC}$, and that the ray $\overrightarrow{BD}$ bisects $\angle ABC$, making two angles, $\angle 1$ and $\angle 2$. \par \medskip
@@ -520,6 +470,27 @@
   \end{description}
   \end{frame}
 
+\begin{frame}{The \emph{base} angles of an isosceles triangle are congruent}
+  \emph{Isosceles base theorem}: If $\overline{AC} \cong \overline{BC}$ then $\angle A \cong \angle B$
+  \begin{tikzpicture}
+    \draw[thick](0,0)node[below]{$A$}--
+      (2,0)node[below]{$B$}--
+      (1,3)node[above right]{$C$}--cycle;
+      \draw[thick] (0.3,1.5)--(0.7,1.4);
+      \draw[thick] (1.3,1.4)--(1.7,1.5);
+    \draw[red, thick] (0.5,0) arc (0:72:0.5);
+    \draw[red, thick] (1.5,0) arc (180:108:0.5);
+    \draw[red, thick] (36:0.3)--(36:0.7);
+    %\draw[red, thick, shift=(2,0)] (144:0.3)--(144:0.7);
+    \end{tikzpicture}
+  \begin{description}
+    \item[Base angles] Those opposite the congruent sides in an isosceles $\triangle$
+    \item[Included angle] The angle between two sides of a triangle \par
+      ($\angle C$ is included between $\overline{AC}$ and $\overline{BC}$)
+    \item[Theorem] Something we can prove using logic
+  \end{description}
+  \end{frame}
+
 \begin{frame}{Isosceles-right triangles' angles measure $45^\circ$ - $45^\circ$ - $90^\circ$}
   \begin{tikzpicture}[scale=1]
     \draw[thick](0,0)--(4,0)--(0,4)--cycle;
@@ -537,6 +508,26 @@
   \end{description}
   \end{frame}
 
+
+\begin{frame}{Angle pairs: apply your knowledge}
+  \begin{block}{Triangle external angle situation}
+    \begin{center}
+    \begin{tikzpicture}
+      %\draw[->, thick] (0,0)--(5,5);
+      \draw[<-, thick] (-2,0)--(3,0)--(2,1.5)--(1,0);
+      \draw[fill] (-1,0) circle [radius=0.05] node[below]{$R$};
+      \draw[fill] (1,0) circle [radius=0.05] node[below]{$S$};
+      \draw[fill] (2,1.5) circle [radius=0.05] node[right]{$U$};
+      \draw[fill] (3,0) circle [radius=0.05] node[right]{$T$};
+    \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}
+      \item Given m$\angle RSU = 115^\circ$. Find m$\angle TSU$
+      \item Given $S$ bisects $\overline{RT}$, $RS=\frac{1}{5} (x+8)$ and $ST = x$. Find $RT$.
+  \end{enumerate}
+  \end{block}
+  \end{frame}
+  
 \section{2.6 Review \hfill 6 October}
 \begin{frame}{Angle relationships}
   Review: Angle postulates and theorems you have learned. 
