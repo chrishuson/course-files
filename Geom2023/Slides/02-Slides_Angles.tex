@@ -534,16 +534,49 @@
   \end{columns} \vspace{1.5cm}
   \end{frame}
   
+\begin{frame}{Extension: Radian units for angle measures}
+  {Mathematicians use radians because calculations are simpler}
+    \begin{center}
+      \begin{tikzpicture}[scale=1.2]
+        \draw[<->, thick] (90:2.5)node[above left]{$90^\circ =\frac{\pi}{2}$} --(0,0)--
+          (3,0)node[below left]{$360^\circ$};
+        \draw[->,thick] (0,0)--(-3,0)node[below right]{$= 180^\circ$};
+        \node at (-2.75,0)[above]{$\pi$ radians};
+        \draw (0,0) circle [radius=0.1];
+        %\draw[->,dashed] (1:2.25) arc (0:89:2.25);
+        \draw[->,dashed] (1:1.25) arc (0:179:1.25);
+        \draw[->,dashed] (5:0.75) arc (5:355:0.75);
+          {\foreach \x in {15,30,...,75}
+            \node at (\x:2.2){\x};
+          \foreach \x in {15,30,...,75}
+            \draw (\x:2.5)--(\x:2.7);}
+        \node at (30:3){$\frac{\pi}{6}$};
+        \node at (45:3){$\frac{\pi}{4}$};
+        \node at (60:3){$\frac{\pi}{3}$};
+      \end{tikzpicture}        
+    \end{center}
+  Convert \emph{units}: $360^\circ = 2 \pi$ radians:
+    \begin{description}
+      \item[Degree] One 360th of a full turn
+      \item[Radian] A full circle is $2\pi$ radians. $1 \text{ radian} \approx 57^\circ$
+      \item[Gradian] One 400th of a full turn
+    \end{description}
+  \end{frame}
+  
 \section{2.6 Review \hfill 6 October}
 \begin{frame}{LT: I can review length and angle measures with peers}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{2.6 Thursday 6 October}}
-  Review: Angle postulates and theorems you have learned. 
+  Angle concepts and theorems you have learned
   \begin{enumerate}
-    \item $\perp$ lines and complementary $\angle$s make $90^\circ$
-    \item linear pairs add to $180^\circ$
-    \item vertical $\angle$s are $\cong$
-    \item definition of an angle bisector
-    %\item isosceles base angle theorem
+    \item Angle addition situations
+    \item Angle pairs
+    \begin{enumerate}
+      \item $\perp$ lines and complementary angles make $90^\circ$
+      \item Linear pairs and supplementary $\angle$s sum to $180^\circ$
+      \item Vertical $\angle$s are $\cong$
+    \end{enumerate}
+    \item Angle bisectors
+    \item Isosceles base angle theorem, special triangles
   \end{enumerate}
 \end{frame}
 
