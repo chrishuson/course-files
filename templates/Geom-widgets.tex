@@ -402,4 +402,40 @@ Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overli
   \node at (0.6,1.3) {$E$};
 \end{tikzpicture}
 
+\subsubsection*{foreach examples (circular)}
+Clockface
+\begin{tikzpicture}
+  \draw (0,0) circle [radius=2];
+  \draw (0,0) circle [radius=0.1];
+  \foreach \x in {1,...,12}
+    \node at ({90+\x*-30}:1.8){\x};
+  \draw[->, thick] (0,0)--(60:1.5);
+    \draw[->,thick] (0,0)--(-30:1.5);
+    \draw[->,dashed] (60:1) arc (60:-30:1);
+    \draw[->,thick,red] (0,0)--(-60:1.5);
+    \draw[->,thick,red] (0,0)--(-180:1.5);
+    \draw[->,dashed,red] (-60:1) arc (-60:-180:1);
+\end{tikzpicture}
+
+Use the image of the protractor to measure each of the angles. \par \medskip
+  \begin{tikzpicture}
+    \draw[thick] (-3,0)--(0,0)--(3,0);
+    \draw (4,0) arc (0:180:4);
+    \draw[thick] (0,0) circle [radius=0.1];
+    \foreach \x in {0,15,30,...,180}
+      \node at (\x:3.4){\x};
+    \foreach \x in {0,15,30,...,180}
+      \draw (\x:3.7)--(\x:4);
+    \foreach \x in {0,5,...,180}
+      \draw (\x:3.9)--(\x:4);
+    \draw[->,thick] (0,0)--(25:4.5)node[right]{$m\angle A = \rule{2cm}{0.1mm}$};
+    \draw[->,thick] (0,0)--(68:4.5)node[right]{$m\angle B = \rule{2cm}{0.1mm}$};
+    \draw[->,thick] (0,0)--(125:4.5)node[left]{$m\angle C = \rule{2cm}{0.1mm}$};
+  \end{tikzpicture}
+
+\subsubsection*{Images}
+\tikz{
+\node at (0,0) {\includegraphics[width=10cm]{../Geom2023/graphics/protractor.jpg}};}
+
+
 \end{document}
