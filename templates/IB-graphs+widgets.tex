@@ -26,7 +26,10 @@
 \subsubsection*{Homework: IB Differential calculus exam problems}
 
 \begin{enumerate}
-
+\item 
+$\underbrace{\overbrace{a+b+c}^6
+ \cdot \overbrace{d+e+f}^7}
+ _\text{meaning of life} = 42$
 
 \item The values for $f(x)$, $g(x)$, and their derivatives when $x=2$ and $x=5$ are given in the table. \\[0.5cm]
 \begin{tabular}{|c|c|c|c|c|}
@@ -46,43 +49,30 @@ Let $h(x)=f(x)g(x)$
 
 
 \item A farmer wishes to create a rectangular enclosure, ABCD, of area 525 $m^2$, as shown below.
-
   \begin{figure}[!htbp]
+    \caption{Farmer's field}
   \begin{center}
-  \begin{tikzpicture}
-
-    \draw [thick, -] (-3,3) -- (3,3) node [right] {$C$};
-    \draw [thick, -] (3,0) -- (-3,0) node [left] {$A$};
-    \draw [thick, -] (-3,0) -- (-3,3) node [left] {$D$};
-    \draw [thick, -] (3,3) -- (3,0) node [right] {$B$};
-
-  \end{tikzpicture}
+    \begin{tikzpicture}
+      \draw [thick, -] (-3,-1) rectangle (3,1) node [right] {$C$};
+    \end{tikzpicture}
   \end{center}
   \end{figure}
+
+\item Graph
+\begin{figure}[!htbp]
+  \begin{center}
+  \begin{tikzpicture}[scale=0.5]
+    \draw [black, xstep=1.0cm, ystep=1.0cm] (0,-5) grid (10,5);
+    \draw [gray, very thin, xstep=0.2cm, ystep=0.2cm] (0,-5) grid (10,5);
+    \draw [thick, ->] (0,0) -- (10.5,0) node [right] {$x$};
+    \draw [thick, ->] (0,-5.5) -- (0,5.5) node [left] {$y$};    \foreach \x in {1,...,10}
+      \draw[shift={(\x,0)}] (0pt,-1pt) -- (0pt,3pt) node[below]{$\quad \x$};
+    \foreach \y in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+      \draw[shift={(0,\y)}] (2pt,0pt) -- (-2pt,0pt) node[left]{$\y$};
+  \end{tikzpicture}
+  \end{center}
+\end{figure}
 
 
 \end{enumerate}
-
-  \begin{figure}[!htbp]
-  \begin{center}
-  \begin{tikzpicture}[scale=0.7]
-
-    %grid
-    \draw [black, xstep=1.0cm, ystep=1.0cm] (0,-5) grid (10,5);
-    \draw [gray, very thin, xstep=0.2cm, ystep=0.2cm] (0,-5) grid (10,5);
-
-    \foreach \x in {,1,2,3,4,5, 6, 7, 8, 9, 10}
-    \draw[shift={(\x,0)},color=black] (0pt,-1pt) -- (0pt,3pt) node[below]  {$\quad \x$};
-
-    \foreach \y in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
-    \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
-
-    \draw [thick, ->] (0,0) -- (10.5,0) node [right] {$x$};
-    \draw [thick, ->] (0,-5.5) -- (0,5.5) node [left] {$y$};
-
-  \end{tikzpicture}
-  \end{center}
-  \end{figure}
-
-
 \end{document}
