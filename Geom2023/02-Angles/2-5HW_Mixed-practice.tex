@@ -8,20 +8,6 @@
 
 \subsubsection*{2.5 Homework: Mixed practice}
 \begin{enumerate}
-\item The ray $\overrightarrow{BD}$ bisects $\angle ABC$. m$\angle ABD=3x+1$, m$\angle DBC=5x-25$. Find m$\angle ABC$.\vspace{0.5cm}
-  \begin{flushright}
-    \begin{tikzpicture}
-      \draw[<->, thick] (100:4)--(0,0)--(20:5);
-      \draw[->, thick] (0,0)--(60:4);
-      \draw[fill] (100:3) circle [radius=0.05] node[left]{$A$};
-      \draw[fill] (60:3) circle [radius=0.05] node[below right]{$D$};
-      \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
-      \draw[fill] (20:4) circle [radius=0.05] node[below]{$C$};
-      \node at (1.5,1){$5x-25$};
-      \node at (0.4,2){$3x+1$};
-    \end{tikzpicture}
-    \end{flushright} \vspace{1cm}
-
 \item Two lines intersect with vertical angles m$\angle 1=2x+20$ and m$\angle 3=3x-5$. Find m$\angle 2$.
   \begin{flushleft}
   \begin{tikzpicture}[scale=0.8, rotate=30]
@@ -68,27 +54,6 @@
   \end{center}
 \end{multicols}
 Copy the correct equation and solve for $x$. Check your answer. \vspace{2cm}
-
-\item The ray $\overrightarrow{KM}$ bisects $\angle JKL$. Given m$\angle JKM = 4x-20$ and \\m$\angle MKL = 3x+4$. Identify the true statement(s).
- \begin{multicols}{2}
-    \begin{enumerate}
-      \item $\angle JKM$ and $\angle MKL$ are a linear pair\\
-      $(4x-20) + (3x+4)=180^\circ$
-      \item $\angle JKM$, $\angle MKL$ are adjacent and\\
-      $4x-20 =90^\circ$
-      \item $\angle JKM \cong \angle MKL$\\
-      $4x-20 = 3x+4$
-  \end{enumerate}
-  \begin{center}
-    \begin{tikzpicture}[scale=0.6, rotate=-10]
-      \draw[<->, thick] (160:5)node[below left]{$J$} 
-      --(0,0)node[below left]{$K$}
-      --(10:5)node[above right]{$L$};
-      \draw[->, thick] (0,0)--(90:5)node[below left]{$M$};
-    \end{tikzpicture}
-  \end{center}
-\end{multicols}
-Copy the correct equation and find m$\angle JKL$. Check your answer. \vspace{2cm}
 
 \item As shown below, two lines intersect making four angles: $\angle 1$, $\angle 2$, $\angle 3$, and $\angle 4$. Given that m$\angle 1= x+32$ and m$\angle 3=2x-8$, find m$\angle 1$.
   \begin{flushright}
@@ -295,7 +260,7 @@ Copy the correct equation and find m$\angle JKL$. Check your answer. \vspace{2cm
           pic["$9x-13$", <->, draw=black, angle eccentricity=1.25, angle radius=1.5cm]
           {angle=a--b--c};
           \draw[<-, thick]
-          (160:4) coordinate (d) node[above right] {$A$}
+          (160:4) coordinate (d) node[above left] {$A$}
           -- (0,0) coordinate (e)
           pic["$7x+9$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
           {angle=c--e--d};

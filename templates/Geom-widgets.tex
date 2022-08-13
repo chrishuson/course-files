@@ -32,58 +32,56 @@ tikz grid command
 Axes
 
 \begin{tikzpicture}
-  \draw [<->] (-5.5,0)--(5.5,0);
-  \foreach \x in {-5,...,5} %2 leading for diff!=1
-    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-    \draw [fill] (-2,0) circle [radius=0.05] node[above] {$A$};
+  \draw[<->] (-5.5,0)--(5.5,0);
+  \foreach \x in {-5,...,5}
+    \draw[shift={(\x,0)}] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+    \draw[fill] (-2,0) circle [radius=0.05] node[above] {$A$};
 \end{tikzpicture}
 
 \begin{center} %4 quadrant regents grid
 \begin{tikzpicture}[scale=.25]%[scale=0.635]
-  \draw [help lines] (-10,-10) grid (10,10);
-  \draw [thick, ->] (-10.2,0) -- (10.4,0) node [below right] {$x$};
-  \draw [thick, ->] (0,-10.2)--(0,10.4) node [left] {$y$};
+  \draw[help lines] (-10,-10) grid (10,10);
+  \draw[thick, ->] (-10.2,0) -- (10.4,0) node [below right] {$x$};
+  \draw[thick, ->] (0,-10.2)--(0,10.4) node [left] {$y$};
   \draw[fill] (2,2) circle  [radius=0.05]
        node[below left] (4, 2) {$A$};
 \end{tikzpicture}
 \end{center}
 
 \begin{tikzpicture}[xscale=2.0]
-  \draw [help lines] (0,-4) grid (4,4);
-
+  \draw[help lines] (0,-4) grid (4,4);
   \foreach \i in {0.5,1.5,2.5,3.5}
-    \draw [help lines] (\i,-4)--(\i,4);
-
+    \draw[help lines] (\i,-4)--(\i,4);
   \foreach \x in {0,1,2,3,4}
-  \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below left]  {$\x$};
+    \draw[shift={(\x,0)}] (0pt,-3pt) -- (0pt,3pt) node[below left]  {$\x$};
 
   \foreach \y in {-4, -3, -2, -1, 1,2,3,4}
   \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
 
-  \draw [thick, ->] (-0.5,0) -- (+4.5,0) node [right] {$x$};
-  \draw [thick, ->] (0,-4.0) -- (0,4.5) node [left] {$y$};
+  \draw[thick, ->] (-0.5,0) -- (+4.5,0) node [right] {$x$};
+  \draw[thick, ->] (0,-4.0) -- (0,4.5) node [left] {$y$};
 
   \end{tikzpicture}
   
 \begin{center} %4 quadrant regents grid w T-chart
 \begin{tikzpicture}[scale=.635]%[scale=0.635]
-  \draw [thick, -] (-11, -2)--(-11,8);
-  \draw [thick, -] (-13,7)--(-8.25,7);
+  \draw[thick, -] (-11, -2)--(-11,8);
+  \draw[thick, -] (-13,7)--(-8.25,7);
   \node at (-12,7) [above] {$x$};
   \node at (-9.5,7) [above] {$y=x-2$};
-  \draw [help lines] (-8,-8) grid (8,8);
-  \draw [thick, ->] (-8.2,0) -- (8.4,0) node [below right] {$x$};
-  \draw [thick, ->] (0,-8.2)--(0,8.4) node [left] {$y$};
+  \draw[help lines] (-8,-8) grid (8,8);
+  \draw[thick, ->] (-8.2,0) -- (8.4,0) node [below right] {$x$};
+  \draw[thick, ->] (0,-8.2)--(0,8.4) node [left] {$y$};
 \end{tikzpicture}
 \end{center}
 
 Triangle $DAN$ is graphed on the set of axes below. % Regents June 2018 #15
 The vertices of $\triangle DAN$ have coordinates $D(-6,-1), A(6,3), \text{ and } N(-3,10)$.\\
 \begin{tikzpicture}[scale=.3]%[scale=0.635]
-  \draw [help lines] (-10,-5) grid (10,10);
-  \draw [thick, <->] (-10.4,0) -- (10.4,0) node [below right] {$x$};
-  \draw [thick, <->] (0,-5.4)--(0,10.4) node [left] {$y$};
-  \draw [-, thick] (-6,-1) node[below left]{$D$} --
+  \draw[help lines] (-10,-5) grid (10,10);
+  \draw[thick, <->] (-10.4,0) -- (10.4,0) node [below right] {$x$};
+  \draw[thick, <->] (0,-5.4)--(0,10.4) node [left] {$y$};
+  \draw[-, thick] (-6,-1) node[below left]{$D$} --
     (6,3) node[right]{$A$} --(-3,10) node[above]{$N$} --cycle;
 \end{tikzpicture}\\
 What is the area of $\triangle DAN$?
@@ -98,8 +96,8 @@ What is the area of $\triangle DAN$?
   \caption{$x$ and $y$ axes for grid}
   \centering
 \begin{tikzpicture}[scale=0.4]
-  \draw [help lines] (0,0) grid (10,10);
-  \draw [thick, <->] (0,10.4) node [left] {$y$}
+  \draw[help lines] (0,0) grid (10,10);
+  \draw[thick, <->] (0,10.4) node [left] {$y$}
        -- (0,0) -- (10.4,0) node [below right] {$x$};
   \draw[fill] (2,2) circle  [radius=0.05]
        node[below left] (2, 2) {$A$};
@@ -119,95 +117,94 @@ Use brackets around expressions, especially those having parenthesis\\
 
 Axis numbering\\
 \begin{tikzpicture}[scale=0.7] %grid with numbered axes, IB cm paper.
-  \draw [thick, color=black,, xstep=1.0cm,ystep=1.0cm] (-5.5,-1.5) grid (5.5,7.5);
-  \draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-5.5,-1.5) grid (5.5,7.5);
-  \draw [thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
-  \draw [thick, ->] (0,-1.0) -- (0,7.5) node [left] {$y$};
+  \draw[thick, color=black,, xstep=1.0cm,ystep=1.0cm] (-5.5,-1.5) grid (5.5,7.5);
+  \draw[thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-5.5,-1.5) grid (5.5,7.5);
+  \draw[thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
+  \draw[thick, ->] (0,-1.0) -- (0,7.5) node [left] {$y$};
   \foreach \x in {-5, -4, -3, -2, -1, 0,1,2,3,4,5}
     \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=3pt, fill=white]  {$\x$};
   \foreach \y in {-1,0,1,2,3,4,5, 6, 7}
     \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left, fill=white]  {$\y$};
 
-  \draw [<-, ->] plot[domain= -3:2] (\x, e^\x);
+  \draw[<-, ->] plot[domain= -3:2] (\x, e^\x);
 \end{tikzpicture}
 
 \newpage
-
 \begin{tikzpicture}[scale=1] %grid full page without axes, IB cm paper.
-  \draw [thick, color=black,, xstep=1.0cm,ystep=1.0cm] (0,0) grid (15,20);
-  \draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (0,0) grid (15,20);
+  \draw[thick, color=black,, xstep=1.0cm,ystep=1.0cm] (0,0) grid (15,20);
+  \draw[thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (0,0) grid (15,20);
   %\foreach \x in {-5, -4, -3, -2, -1, 0,1,2,3,4,5}
     %\draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below]  {$\x$};
   %\foreach \y in {-1,0,1,2,3,4,5, 6, 7}
     %\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
-  %\draw [thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
-  %\draw [thick, ->] (0,-1.0) -- (0,7.5) node [left] {$y$};
+  %\draw[thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
+  %\draw[thick, ->] (0,-1.0) -- (0,7.5) node [left] {$y$};
 
-  %\draw [<-, ->] plot[domain= -3:2] (\x, e^\x);
+  %\draw[<-, ->] plot[domain= -3:2] (\x, e^\x);
 \end{tikzpicture}
 
 \newpage
-
-
 \subsubsection*{Drawing lines and shapes}
 tikz draw command, node labeling function\\
 \begin{tikzpicture}
-  \draw [-, thick] (1,0)--(5,0);
-  \draw [fill] (1,0) circle [radius=0.05] node[below]{$A$};
-  \draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
-  \draw [fill] (3,0) circle [radius=0.05] node[below]{$M$};
+  \draw[-, thick] (1,0)--(5,0);
+  \draw[fill] (1,0) circle [radius=0.05] node[below]{$A$};
+  \draw[fill] (5,0) circle [radius=0.05] node[below]{$B$};
+  \draw[fill] (3,0) circle [radius=0.05] node[below]{$M$};
 \end{tikzpicture}
 
 \begin{tikzpicture}[scale=0.4]
-  \draw [help lines] (0,0) grid (10,10);
-  \draw [thick](0,0)--(8,0)--(8,6)--(0,0); %Triangle
-  \draw [fill] (8,0) circle [radius=0.05];
+  \draw[help lines] (0,0) grid (10,10);
+  \draw[thick](0,0)--(8,0)--(8,6)--(0,0); %Triangle
+  \draw[fill] (8,0) circle [radius=0.05];
   \node [below] at (8,0) {A}; %above, right, left
   %line through points
-  \draw [<->, thick] (2,8)--(6,8); % also thin, ultra thick, help lines, dashed, dotted, red
-  \draw [fill] (3,8) circle [radius=0.05] node[below]{$X$};
-  \draw [fill] (5,8) circle [radius=0.05] node[below]{$Y$};
+  \draw[<->, thick] (2,8)--(6,8); % also thin, ultra thick, help lines, dashed, dotted, red
+  \draw[fill] (3,8) circle [radius=0.05] node[below]{$X$};
+  \draw[fill] (5,8) circle [radius=0.05] node[below]{$Y$};
   %shapes
-  \draw [blue] (6,2) rectangle (7.5,7);
-  \draw [red, thick] (3,4) circle [radius=2];
+  \draw[blue] (6,2) rectangle (7.5,7);
+  \draw[red, thick] (3,4) circle [radius=2];
 \end{tikzpicture}
 
 \begin{tikzpicture}%[scale=0.4]
-  \draw [help lines] (0,0) grid (10,10);
-  \draw [<->, thick] (2,3)--(8,6);
-  \draw [fill] (3,3.5) circle [radius=0.05] node[below]{$X$};
-  \draw [fill] (7,5.5) circle [radius=0.05] node[below right]{$Y$};
-  \draw [color=blue] (3,3.5)--(3,3.5 |- 7,5.5)--(7,5.5);
-  \draw [color=red] (3,3.5)--(7,5.5 |- 3,3.5)--(7,5.5);
+  \draw[help lines] (0,2) grid (10,7);
+  \draw[<->, thick] (2,3)--(8,6);
+  \draw[fill] (3,3.5) circle [radius=0.05] node[below]{$X$};
+  \draw[fill] (7,5.5) circle [radius=0.05] node[below right]{$Y$};
+  \draw[color=blue] (3,3.5)--(3,3.5 |- 7,5.5)--(7,5.5);
+  \draw[color=red] (3,3.5)--(7,5.5 |- 3,3.5)--(7,5.5);
 \end{tikzpicture}
 
 \begin{tikzpicture}[scale=0.8]
   \draw[fill] (2,2) circle  [radius=0.05]
        node[below left] (2, 2) {$A$};
-  \draw [thick] (2,2)-- node[below]{$AC=3$} (5,2) node[right] {$C$} --(5,4) node[right] {$B$} --(2,2);
-  \draw [thick] (3.5,2.1)--(3.5,1.9); %tick mark
+  \draw[thick] (2,2)--node[below]{$AC=3$} (5,2)node[right]{$C$} --
+    (5,4)node[right]{$B$}--(2,2);
+  \draw[thick] (3.5,2.1)--(3.5,1.9); %tick mark
   \node [right] at (5,3) {$BC=2$};
-\end{tikzpicture}\vspace{1cm}
+  \fill[blue!40] (7,0)--(10,0)--(10,4)--cycle;
+\end{tikzpicture}
 
 Given $\triangle ABC$ with $\overline{AC} \cong \overline{BC}$. $AC=x+7$ and $BC=2x+1$. Find $AC$.\\[0.5cm]
 \begin{tikzpicture}[scale=0.5]
-  \draw [thick](0,0)--(4,0)--(2,6)--(0,0);
-  \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-  \draw [fill] (4,0) circle [radius=0.05] node[below]{$B$};
-  \draw [fill] (2,6) circle [radius=0.05] node[above right]{$C$};
-  \draw [thick] (0.8,3)--(1.2,3); %tick mark
-  \draw [thick] (2.8,3)--(3.2,3); %tick mark
+  \draw[thick](0,0)--(4,0)--(2,6)--(0,0);
+  \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+  \draw[fill] (4,0) circle [radius=0.05] node[below]{$B$};
+  \draw[fill] (2,6) circle [radius=0.05] node[above right]{$C$};
+  \draw[thick] (0.8,3)--(1.2,3); %tick mark
+  \draw[thick] (2.8,3)--(3.2,3); %tick mark
   \node [right] at (3.25,2.5){$x+7$};
   \node [left] at (0.75,2.5){$2x+1$};
 \end{tikzpicture}
 
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
-  \draw [->, thick] (0,0)--(4,4);
-  \draw [->, thick] (3,3)--(3,-1);
-  \draw [fill] (0,0) circle [radius=0.05] node[left]{$R$};
-  \draw [fill] (3,3) circle [radius=0.05] node[above left]{$S$};
-  \draw [fill] (3,0) circle [radius=0.05] node[right]{$T$};
+  \draw[->, thick] (0,0)--(4,4);
+  \draw[->, thick] (3,3)--(3,-1);
+  \draw[fill] (0,0) circle [radius=0.05] node[left]{$R$};
+  \draw[fill] (3,3) circle [radius=0.05] node[above left]{$S$};
+  \draw[fill] (3,0) circle [radius=0.05] node[right]{$T$};
 \end{tikzpicture}
 \end{center}
 
@@ -218,9 +215,9 @@ Shift using coordinates\\
   \coordinate [label=above:$A$](A) at (30:3);
   \coordinate [label=left:$B$](B) at (0, 0);
   \coordinate [label=right:$C$](C) at (-10:3.5);
-  \draw [thick] (A)--(B)--(C)--cycle;
+  \draw[thick] (A)--(B)--(C)--cycle;
 
-  \draw [thick, red, xshift=5cm, yshift=2cm] (A) node[above]{$D$}--
+  \draw[thick, red, xshift=5cm, yshift=2cm] (A) node[above]{$D$}--
   (0,0) node[left]{$E$}--
   (-10:3.5) node[right]{$F$}--cycle;
 \end{tikzpicture}
@@ -230,9 +227,9 @@ Shift and rotate\\
   \coordinate [label=above:$A$](A) at (30:3);
   \coordinate [label=left:$B$](B) at (0, 0);
   \coordinate [label=right:$C$](C) at (-10:3.5);
-  \draw [thick] (A)--(B)--(C)--cycle;
+  \draw[thick] (A)--(B)--(C)--cycle;
 
-  \draw [thick, red, xshift=5cm, yshift=2cm, rotate=45] (30:3) node[above]{$D$}--
+  \draw[thick, red, xshift=5cm, yshift=2cm, rotate=45] (30:3) node[above]{$D$}--
   (0,0) node[left]{$E$}--
   (-10:3.5) node[right]{$F$}--cycle;
 \end{tikzpicture}
@@ -242,21 +239,21 @@ Scale\\
   \coordinate [label=above:$A$](A) at (30:3);
   \coordinate [label=left:$B$](B) at (0, 0);
   \coordinate [label=right:$C$](C) at (-10:3.5);
-  \draw [thick] (A)--(B)--(C)--cycle;
+  \draw[thick] (A)--(B)--(C)--cycle;
 
-  \draw [dashed, red, scale=2] (30:3) node[above]{$D$}--
+  \draw[dashed, red, scale=2] (30:3) node[above]{$D$}--
   (0,0) node[left]{$E$}--
   (-10:3.5) node[right]{$F$}--cycle;
 \end{tikzpicture}
 
 Reflect\\
 \begin{tikzpicture}
-  \draw [help lines] (-5,-5) grid (5,5);
+  \draw[help lines] (-5,-5) grid (5,5);
   \coordinate [label=above:$A$](A) at (30:3);
   \coordinate [label=above right:$B$](B) at (0, 0);
   \coordinate [label=right:$C$](C) at (-70:5);
-  \draw [thick] (A)--(B)--(C)--cycle;
-  \draw [dashed, red, xscale=-1] (30:3) node[above]{$D$}--
+  \draw[thick] (A)--(B)--(C)--cycle;
+  \draw[dashed, red, xscale=-1] (30:3) node[above]{$D$}--
   (0,0) node[above left]{$E$}--
   (-70:5) node[right]{$F$}--cycle;
 \end{tikzpicture}
@@ -264,10 +261,10 @@ Reflect\\
 \subsubsection*{Complex Regents angle problems}
 
 \begin{tikzpicture}%[scale=0.5] %Regents June 2018 #2
-  \draw [->, thick] (6.5,0) node[below]{$E$} --
+  \draw[->, thick] (6.5,0) node[below]{$E$} --
     (0.5,3) node[left]{$A$} --(3.5,3) node[right]{$B$} --
     (0,0) node[below]{$D$} -- (9,0) node[below]{$F$} -- (9.5,0);
-  \draw [fill] (9,0) circle [radius=0.05];
+  \draw[fill] (9,0) circle [radius=0.05];
   \node at (2.9,2.1)[ ]{$C$};
   \node at (6.65,0)[above]{$152^\circ$};
   \node at (3.3,3.05)[below left]{$43^\circ$};
@@ -275,10 +272,10 @@ Reflect\\
 \end{tikzpicture}
 
 \begin{tikzpicture}[scale=1.2] %Regents June 2018 #4
-  \draw [-, thick] (4.5,0.5) node[right]{$B$} --
+  \draw[-, thick] (4.5,0.5) node[right]{$B$} --
     (4.5,5.5) node[above]{$F$} --(0,0) node[below]{$A$} --
     (0,2) node[above]{$D$} -- (4.5,0.5) node[below left]{$115^\circ$} -- (4.5,-0.5)node[below]{$E$};
-  %\draw [fill] (9,0) circle [radius=0.05];
+  %\draw[fill] (9,0) circle [radius=0.05];
   \node at (1.7,1.7)[ ]{$C$};
   \node at (0.3,1.6)[ ]{$65^\circ$};
   %\node at (3.3,3.05)[below left]{$43^\circ$};
@@ -288,17 +285,17 @@ Reflect\\
 
 Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overline{BC} \cong \overline{DA}$. $AB=x+7$ and $\displaystyle CD=\frac{4x+2}{2}$. Find $AB$.\\[0.5cm]
 \begin{tikzpicture}[scale=0.75]
-  \draw [thick](0,0)--(6,0)--(6,3)--(0,3)--cycle;
-  \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-  \draw [fill] (6,0) circle [radius=0.05] node[below]{$B$};
-  \draw [fill] (6,3) circle [radius=0.05] node[above right]{$C$};
-  \draw [fill] (0,3) circle [radius=0.05] node[above left]{$D$};
-  \draw [thick] (3,-0.2)--(3,0.2); %tick mark
-  \draw [thick] (3,2.8)--(3,3.2); %tick mark
-  \draw [thick] (-0.2,1.4)--(0.2,1.4); %tick mark
-  \draw [thick] (-0.2,1.6)--(0.2,1.6); %tick mark
-  \draw [thick] (5.8,1.4)--(6.2,1.4); %tick mark
-  \draw [thick] (5.8,1.6)--(6.2,1.6); %tick mark
+  \draw[thick](0,0)--(6,0)--(6,3)--(0,3)--cycle;
+  \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+  \draw[fill] (6,0) circle [radius=0.05] node[below]{$B$};
+  \draw[fill] (6,3) circle [radius=0.05] node[above right]{$C$};
+  \draw[fill] (0,3) circle [radius=0.05] node[above left]{$D$};
+  \draw[thick] (3,-0.2)--(3,0.2); %tick mark
+  \draw[thick] (3,2.8)--(3,3.2); %tick mark
+  \draw[thick] (-0.2,1.4)--(0.2,1.4); %tick mark
+  \draw[thick] (-0.2,1.6)--(0.2,1.6); %tick mark
+  \draw[thick] (5.8,1.4)--(6.2,1.4); %tick mark
+  \draw[thick] (5.8,1.6)--(6.2,1.6); %tick mark
   \node [below] at (2,0){$x+7$};
   \node [below] at (2,3){$\frac{4x+2}{2}$};
 \end{tikzpicture}
@@ -306,18 +303,18 @@ Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overli
 \subsection*{Plane geometry}
   Identify two lines in the given plane.\\
   \begin{tikzpicture}
-    \draw [thick](0,0) node[above right]{$\ p$} --(6,0)--(8,4)--(2,4)--cycle;
-    \draw [<->, thick] (1,1)--(6,3);
-    \draw [fill] (3.5,2) circle [radius=0.05] node[below]{$J \ $};
-    \draw [fill] (5,2.6) circle [radius=0.05] node[below]{$K$};
-    \draw [<->, thick] (2,3.5)--(5.25,.25);
-    \draw [fill] (5,0.5) circle [radius=0.05] node[below left]{$L$};
+    \draw[thick](0,0) node[above right]{$\ p$} --(6,0)--(8,4)--(2,4)--cycle;
+    \draw[<->, thick] (1,1)--(6,3);
+    \draw[fill] (3.5,2) circle [radius=0.05] node[below]{$J \ $};
+    \draw[fill] (5,2.6) circle [radius=0.05] node[below]{$K$};
+    \draw[<->, thick] (2,3.5)--(5.25,.25);
+    \draw[fill] (5,0.5) circle [radius=0.05] node[below left]{$L$};
   \end{tikzpicture} \vspace{2cm}
 
 \subsection*{Marking angles}
 \begin{tikzpicture} %[scale=3]
-  \draw [<->, thick] (37:5) node[above]{$A$} --(0,0)node[label=left:$B$]{} --(5,0);
-  \draw [color=blue] (0.75,0) arc [start angle=0, end angle=37, radius=0.75];
+  \draw[<->, thick] (37:5) node[above]{$A$} --(0,0)node[label=left:$B$]{} --(5,0);
+  \draw[color=blue] (0.75,0) arc [start angle=0, end angle=37, radius=0.75];
 \end{tikzpicture}\vspace{0.5cm}
 
 \begin{tikzpicture}
@@ -331,42 +328,42 @@ Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overli
   \coordinate (A) at (40:3);
   \coordinate (B) at (0, 0);
   \coordinate (C) at (-10:3);
-  \draw [<->, thick] (A)--(B)--(C)
+  \draw[<->, thick] (A)--(B)--(C)
   %pic [draw=black, angle radius=0.4, "$\theta$"]{angle = A--B--C};
   pic [draw=green!50!black, fill=green!20, angle radius=9mm,
              "$\alpha$"] {angle = C--B--A};
 \end{tikzpicture}
 
 \begin{tikzpicture} %[scale=3]
-  \draw [<->, thick] (3,0)--(0,0)--(60:4); %note polar coordinates
-  \draw [color=blue] (0.75,0) arc [start angle=0, end angle=60, radius=0.75];
+  \draw[<->, thick] (3,0)--(0,0)--(60:4); %note polar coordinates
+  \draw[color=blue] (0.75,0) arc [start angle=0, end angle=60, radius=0.75];
 \end{tikzpicture}\vspace{1cm}
 
 \begin{tikzpicture} %[scale=3] Isosceles, parallel marks, congruence marks
-  \draw [-, thick] (0,0)--(5,0)--(2.5,4)--cycle;
-  \draw [>->, thick] (1.0,1.6)--(1.25,2);
-  \draw [{Bar[]}-{Bar[]}, thick] (4,1.6)--(3.75,2);
-  \draw [color=blue] (0.75,0) arc [start angle=0, end angle=58, radius=0.75];
+  \draw[-, thick] (0,0)--(5,0)--(2.5,4)--cycle;
+  \draw[>->, thick] (1.0,1.6)--(1.25,2);
+  \draw[{Bar[]}-{Bar[]}, thick] (4,1.6)--(3.75,2);
+  \draw[color=blue] (0.75,0) arc [start angle=0, end angle=58, radius=0.75];
   \draw (5,0)-- +(-0.75,0) arc [start angle=180, end angle=122, radius=0.75];
 \end{tikzpicture}\vspace{1cm}
 
 \begin{tikzpicture}[scale=0.7]
-  \draw [thick](0,0)--(4,0)--(2,6)--(0,0);
-  \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-  \draw [fill] (4,0) circle [radius=0.05] node[below]{$B$};
-  \draw [fill] (2,6) circle [radius=0.05] node[above right]{$C$};
-  \draw [color=blue] (0,0) ++(0.75,0) arc [start angle=0, end angle=70, radius=0.75];
-  \draw [color=blue] (4,0) ++(-0.22, 0.73) arc [start angle=110, end angle=180, radius=0.75];
-  \draw [thick] (0.8,3.1)--(1.2,2.9); %tick mark
-  \draw [thick] (2.8,2.9)--(3.2,3.1); %tick mark
+  \draw[thick](0,0)--(4,0)--(2,6)--(0,0);
+  \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+  \draw[fill] (4,0) circle [radius=0.05] node[below]{$B$};
+  \draw[fill] (2,6) circle [radius=0.05] node[above right]{$C$};
+  \draw[color=blue] (0,0) ++(0.75,0) arc [start angle=0, end angle=70, radius=0.75];
+  \draw[color=blue] (4,0) ++(-0.22, 0.73) arc [start angle=110, end angle=180, radius=0.75];
+  \draw[thick] (0.8,3.1)--(1.2,2.9); %tick mark
+  \draw[thick] (2.8,2.9)--(3.2,3.1); %tick mark
   %\node [right] at (3.25,2.5){$x+7$};
   %\node [left] at (0.75,2.5){$2x+1$};
 \end{tikzpicture}
 
 \begin{tikzpicture} %[scale=3]
-  \draw [-, thick] (10:5)--(0,0)--(70:3)--cycle;
-  \draw [color=blue] (0,0) ++(10:0.75) arc [start angle=10, end angle=70, radius=0.75];
-  \draw [color=red] (10:5) ++(190:0.75) arc [start angle=190, end angle=160, radius=0.75];
+  \draw[-, thick] (10:5)--(0,0)--(70:3)--cycle;
+  \draw[color=blue] (0,0) ++(10:0.75) arc [start angle=10, end angle=70, radius=0.75];
+  \draw[color=red] (10:5) ++(190:0.75) arc [start angle=190, end angle=160, radius=0.75];
 \end{tikzpicture}\vspace{1cm}
 
 \tikz \draw (2,0) coordinate (A) -- (0,0) coordinate (B)
@@ -394,10 +391,10 @@ Given the rectangle $ABCD$ with $\overline{AB} \cong \overline{CD}$ and $\overli
 \end{tikzpicture}
 
 \begin{tikzpicture}
-  \draw [thick] (0,0) circle [radius=3cm] node[above]{$O$};
-  \draw [fill] (0,0) circle [radius=0.5mm];
-  \draw [-,thick] (170:3) node[left]{$C$} -- (45:3) node[right]{$D$};
-  \draw [-,thick] (100:3) node[above]{$A$} --  (-10:3) node[right]{$B$};
+  \draw[thick] (0,0) circle [radius=3cm] node[above]{$O$};
+  \draw[fill] (0,0) circle [radius=0.5mm];
+  \draw[-,thick] (170:3) node[left]{$C$} -- (45:3) node[right]{$D$};
+  \draw[-,thick] (100:3) node[above]{$A$} --  (-10:3) node[right]{$B$};
   \node at (0.5,1.8) {$58^\circ$};
   \node at (0.6,1.3) {$E$};
 \end{tikzpicture}
