@@ -56,12 +56,11 @@
     \item Name an angle that is supplementary to $\angle COB$: \rule{4cm}{0.15mm}
   \end{enumerate}
   \begin{center}
-  \begin{tikzpicture}[scale=1.3, rotate=20]
-    \draw[<->, thick] (-25:5)--(0,0)--(155:5);
+  \begin{tikzpicture}[scale=1, rotate=20]
     \draw[<->, thick] (-5,0)--(5,0);
     \draw[->, thick] (0,0)--(0,3);
     \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
-    %\draw[fill] (-1,2.5) circle [radius=0.05] node[left ]{$B$};
+    \draw[<->, thick] (-25:5)--(0,0)--(155:5);
     \draw[fill] (155:3) circle [radius=0.05] node[below left]{$B$};
     \draw[fill] (-4,0) circle [radius=0.05] node[below]{$A$}; 
     \draw[fill] (0,0) circle [radius=0.05] node[below left]{$O$};
@@ -81,9 +80,6 @@
       \node at (6.5,-.3){m$\angle 3=2x-10$};
       \node at (5,1){2};
       \node at (4,-1){4};
-      %\draw[fill] (0,0) circle [radius=0.05] node[below]{$P$};
-      %\draw[fill] (6,0) circle [radius=0.05] node[below]{$R$};
-      %\draw[fill] (3,0) circle [radius=0.05] node[below]{$Q$};
     \end{tikzpicture}
     \end{flushright}
 
@@ -91,11 +87,9 @@
   \begin{flushright}
   \begin{tikzpicture}[scale=1]
     \draw[<->, thick] (115:4)node[left]{$B$} 
-    --(0,0)node[below]{$A$}
-    --(10:5)node[below]{$D$};
+      --(0,0)node[below]{$A$}
+      --(10:5)node[below]{$D$};
     \draw[->, thick] (0,0)--(30:4)node[below right]{$C$};
-    %\draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
-    %\draw[fill] (5,0) circle [radius=0.05] node[below]{$B$};
   \end{tikzpicture}
   \end{flushright} \vspace{1cm}
 
@@ -103,11 +97,9 @@
     \begin{flushright}
     \begin{tikzpicture}[scale=0.6, rotate=30]
       \draw[<->, thick] (100:7)node[left]{$Q$} 
-      --(0,0)node[below]{$P$}
-      --(8,0)node[below]{$S$}--(9,0);
+        --(0,0)node[below]{$P$}
+        --(8,0)node[below]{$S$}--(9,0);
       \draw[->, thick] (0,0)--(50:7)node[below right]{$R$};
-      %\draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
-      %\draw[fill] (5,0) circle [radius=0.05] node[below]{$B$};
     \end{tikzpicture}
     \end{flushright}
 
@@ -123,9 +115,11 @@
 
 \item Which of the following are true with respect to the angle, m$\angle PQR$?
   \begin{multicols}{2}
-    True \hspace{0.25cm} False \hspace{0.25cm} It is an acute angle \\[0.5cm]
-    True \hspace{0.25cm} False \hspace{0.25cm} It's measure is $90^\circ$\\[0.5cm]
-    True \hspace{0.25cm} False \hspace{0.25cm} $\overrightarrow{QP} \perp \overrightarrow{QR}$ \\[0.5cm]
+    \begin{enumerate}
+      \item True \quad False \quad It is an acute angle
+      \item True \quad False \quad It's measure is $90^\circ$
+      \item True \quad False \quad $\overrightarrow{QP} \perp \overrightarrow{QR}$ 
+    \end{enumerate}
     \columnbreak
     \begin{tikzpicture}[scale=0.7, rotate=-20]
       \draw[<->, thick] (4,0)--(0,0)--(0,3);
@@ -199,8 +193,6 @@
         -- (0,0) coordinate (e)
         pic["$2x+15$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
         {angle=c--e--d};
-        %\draw[->, thick] (0,0)--(-180:2) node[below right]{$A$};
-        %\draw (0,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
     \end{tikzpicture}
   \end{flushright}
      
@@ -324,7 +316,6 @@ Find m$\angle KXL$.
     \begin{tikzpicture}[scale=0.7, rotate=-20]
       \draw[<->, thick] (4,0)--(0,0)--(0,3);
       \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
-      %\draw[fill] (-1,2.5) circle [radius=0.05] node[left ]{$B$};
       \draw[fill] (0,0) circle [radius=0.05] node[below]{$Q$};
       \draw[fill] (0,2) circle [radius=0.05] node[right]{$P$};
       \draw[fill] (3,0) circle [radius=0.05] node[above]{$R$};
