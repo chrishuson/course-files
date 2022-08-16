@@ -316,19 +316,13 @@
 \begin{frame}{Learning Target: I can bisect angles}
   {CCSS: HSG.CO.A.1 Know precise geometric definitions  \hfill \alert{2.4 Monday 3 October}}
   Do Now: Given vertical angles measuring $7x-2$ and $61^\circ$. Find $x$. \par \bigskip
-  \begin{tikzpicture}[scale=1]
-    \draw[<->, thick]
-      (3,-1) coordinate (a) %node[above right] {$k$}
-      -- (0,0) coordinate (b) %node[left] {Q}
-      -- (2,1.5) coordinate (c) %node[below right] {$l$}
-      pic["$7x-2$", <->, draw=black, angle eccentricity=1.7, angle radius=1cm]
-      {angle=a--b--c};
-      \draw[<->, thick]
-      (-2,0.67) coordinate (d) %node[right] {P}
-      -- (0,0) coordinate (e) %node[left] {Q}
-      -- (-2,-1.5) coordinate (f) %node[above right] {R}
-      pic["$61^\circ$", <->, draw=black, angle eccentricity=1.4, angle radius=1cm]
-      {angle=d--e--f};
+  \begin{tikzpicture}[scale=1, rotate=-30]
+    \draw[<->, thick] (0:-2.5)--(0:2.5);
+    \draw[<->, thick] (60:-2)--(60:2);
+      %\node at (120:0.8){1};
+      \node at (30:1.2){$7x-2$};
+      %\node at (-60:1){3};
+      \node at (30:-1.2){$61^\circ$};
   \end{tikzpicture} \par \vspace{1cm}
   Lesson: Angle bisector situations
   \end{frame}
