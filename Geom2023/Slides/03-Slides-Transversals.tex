@@ -18,43 +18,46 @@
       \item $\angle 2 \cong \angle 4$
       \item m$\angle 1 + \text{m}\angle 4=180^\circ$
       \item m$\angle 2 + \text{m}\angle 3=90^\circ$
-  \end{enumerate}
-  \begin{center}
-  \begin{tikzpicture}[scale=0.5, rotate=15]
-    \draw[<->, thick] (0,-1.5)--(10,1.5);
-    \draw[<->, thick] (2,3.5)--(7,-3.5);
-    \node at (3,.4){1};
-    \node at (6,-.6){3};
-    \node at (5,1){2};
-    \node at (4,-1){4};
-  \end{tikzpicture}
-  \end{center}
-\end{multicols}
-\end{block}
-    Review: Angle postulates and theorems you have learned. 
-    \begin{enumerate}
-      \item $\perp$ lines and complementary $\angle$s make $90^\circ$
-      \item linear pairs add to $180^\circ$
-      \item vertical $\angle$s are $\cong$
-      \item definition of an angle bisector
-      %\item isosceles base angle theorem
     \end{enumerate}
+    \begin{center}
+    \begin{tikzpicture}[scale=1, rotate=0]
+      \draw[<->, thick] (0:-2)--(0:2);
+      \draw[<->, thick] (70:-2)--(70:2);
+      \node at (120:0.8){1};
+      \node at (35:1.2){2};
+      \node at (-55:1){3};
+      \node at (35:-1.2){4};
+    \end{tikzpicture}
+    \end{center}
+  \end{multicols}
+  \end{block}
+    Lesson: Parallel lines crossed by a transverse line, horizontal and vertical directions
 \end{frame}
 
 \begin{frame}{New terminology for parallel lines}
   {Parallel lines are in the same plane and never intersect}
-    \begin{multicols}{2}
-      \begin{enumerate}
-        \item \emph{parallel lines}, symbol: $\parallel$ tick marks
-        \item \emph{transversal line}
-        \item \emph{interior, exterior} $\angle$s
-        \item \emph{same-side, alternate} $\angle$s
-        \item Horizontal and vertical
-      \end{enumerate}
+    \begin{columns}
+      \column{0.6\textwidth}
+      \begin{description}
+        \item[Parallel lines] $j \parallel k$, mark with arrows
+        \item[Transversal] Line  $l$, crosses parallel lines
+        \item[Interior] Inside ($\angle$s)
+        \item[Exterior] Outside ($\angle$s)
+        \item[Same-side] On the left or right of $l$
+        \item[Alternate] Across $l$ from each other
+        \item[Horizontal] Sideways direction
+        \item[Vertical] Up and down direction
+      \end{description}
+      \column{0.4\textwidth}
         \begin{tikzpicture}[scale=1]
-        \draw[<->, thick] (3,2)--(7,2);
-        \draw[<->, thick] (2,0)--(6,0);
-        \draw[<->, thick] (4,-1)--(5.5,3);
+        \draw[<->, thick] (3.5,2)--(7,2)node[above left]{$j$};
+        \draw[<->, thick] (3,0)--(6.5,0)node[above left]{$k$};
+        \draw[<->, thick] (4,-1)--(5.7,3.5)node[right]{$l$};
+        \draw[red] (5.2,-0.2)--(5.4,0)--(5.2,0.2);
+        \draw[red] (5.4,-0.2)--(5.6,0)--(5.4,0.2);
+        \draw[red] (5.8,1.8)--(6,2)--(5.8,2.2);
+        \draw[red] (6,1.8)--(6.2,2)--(6,2.2);
+      \onslide<2->
         \node at (4.5,0.3) [left]{$5$};
         \node at (4.5,0.3) [right]{$6$};
         \node at (4.3,-0.3) [left]{$7$};
@@ -64,23 +67,36 @@
         \node at (5,2) [below left]{$3$};
         \node at (5,2) [below right]{$4$};
       \end{tikzpicture}
-    \end{multicols}
+    \end{columns} \vspace{0.7cm}
+    \onslide<2->
+    {We often number the angles this way.}
   \end{frame}
 
 \begin{frame}{New theorems for parallel lines}
-  \begin{multicols}{2}
-    \begin{enumerate}
-      \item \emph{corresponding} $\angle$s of $\parallel$ lines are $\cong$\\
-        $\angle 2 \cong \angle 6$
-      \item \emph{same-side interior} $\angle$s are supplementary\\
-      m$\angle 3 + \text{m}\angle 5 =  180$
-      \item \emph{alternate exterior} $\angle$s are $\cong$\\
-      $\angle 2 \cong \angle 7$
-    \end{enumerate}
+  \begin{description}
+    \item[Corresponding]  Having the same position. e.g. $\angle 2$ and $\angle 6$
+    \item[Postulate] Corresponding $\angle$s of $\parallel$ lines are congruent, 
+    $\angle 2 \cong \angle 6$
+  \end{description} \bigskip
+    \begin{columns}
+    \column{0.6\textwidth}
+      \begin{enumerate}
+        \item Alternate interior  $\angle$s are $\cong$\\
+        $\angle 4 \cong \angle 5$
+        \item Same-side interior $\angle$s are supplementary\\
+        m$\angle 3 + \text{m}\angle 5 =  180$
+        \item Alternate exterior  $\angle$s are $\cong$\\
+        $\angle 1 \cong \angle 8$
+      \end{enumerate}
+    \column{0.4\textwidth}
       \begin{tikzpicture}[scale=1]
-      \draw[<->, thick] (3,2)--(7,2);
-      \draw[<->, thick] (2,0)--(6,0);
+      \draw[<->, thick] (3.5,2)--(7,2);
+      \draw[<->, thick] (3,0)--(6.5,0);
       \draw[<->, thick] (4,-1)--(5.5,3);
+      \draw (5.2,-0.2)--(5.4,0)--(5.2,0.2);
+      \draw (5.4,-0.2)--(5.6,0)--(5.4,0.2);
+      \draw (5.8,1.8)--(6,2)--(5.8,2.2);
+      \draw (6,1.8)--(6.2,2)--(6,2.2);
       \node at (4.5,0.3) [left]{$5$};
       \node at (4.5,0.3) [right]{$6$};
       \node at (4.3,-0.3) [left]{$7$};
@@ -89,30 +105,31 @@
       \node at (5.2,2) [above right]{$2$};
       \node at (5,2) [below left]{$3$};
       \node at (5,2) [below right]{$4$};
-    \end{tikzpicture}
-  \end{multicols}
-  Hint: There are only two angle measures, the acute angles and the obtuse angles\\ (and they add to $180^\circ$)
-\end{frame}
+      \end{tikzpicture}
+    \end{columns} \vspace{0.7cm}
+    There are only two angle measures, the acute $\angle$s and the obtuse $\angle$s \\
+    And they add to $180^\circ$, i.e. supplementary
+  \end{frame}
 
-\begin{frame}{New theorems for parallel lines}
-  Given two parallel lines and a transversal, as shown, with m$\angle 6 =  70^\circ$. Write down the value of each angle measure.
-  \begin{multicols}{3}
-    \begin{enumerate}[itemsep=0.5cm]
+\begin{frame}{Apply the theorems of parallel lines with a transversal}
+  Given two parallel lines and a transversal, with m$\angle 6 =  70^\circ$. Write down the value of each angle measure.
+  \begin{multicols}{2}
+    \begin{enumerate}
       \item m$\angle 1 = $
       \item m$\angle 2 = $
       \item m$\angle 3 = $
       \item m$\angle 4 = $
       \item m$\angle 5 = $
-      \item m$\angle 6 = $
+      \item m$\angle 6 = 70^\circ$
       \item m$\angle 7 = $
       \item m$\angle 8 = $
     \end{enumerate}
-      \begin{tikzpicture}[scale=0.8]
-      \draw[<->, thick] (3,2)--(8,2);
-      \draw[<->, thick] (2,0)--(7,0);
+      \begin{tikzpicture}[scale=0.9]
+      \draw[<->, thick] (3,2)--(7,2);
+      \draw[<->, thick] (2.5,0)--(6.5,0);
       \draw[<->, thick] (4,-1)--(5.5,3);
       \node at (4.5,0.3) [left]{$5$};
-      \node at (4.5,0.3) [right]{$6$};
+      \node at (4.6,0.4) [right]{m$\angle 6 = 70^\circ$};
       \node at (4.3,-0.3) [left]{$7$};
       \node at (4.3,-0.3) [right]{$8$};
       \node at (5.2,2) [above left]{$1$};
@@ -121,10 +138,14 @@
       \node at (5,2) [below right]{$4$};
     \end{tikzpicture}
   \end{multicols}
-
-
 \end{frame}
 
+\begin{frame}{Extension: Ratios are fractions}
+  {We often state proportions as ratios}
+  Example: Divide a distance into equal parts, i.e. $$1:1$$ 
+  We say ``one to one'', or ``in a one to one ratio.''\\
+A rectangle's length to width ratio is two to one. $2:1$
+\end{frame}
 
 \section{3.2 Transversals problems \hfill 12 October}
 \begin{frame}{Learning Target: I can calculate transversal angles}
