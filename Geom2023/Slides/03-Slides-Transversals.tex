@@ -128,14 +128,26 @@
       \draw[<->, thick] (3,2)--(7,2);
       \draw[<->, thick] (2.5,0)--(6.5,0);
       \draw[<->, thick] (4,-1)--(5.5,3);
+      \onslide<1>
+      {\node at (4.8,0.5) [red, right]{m$\angle 6 = 70^\circ$};
+      \draw[red] (4.9,0) arc (0:70:0.5);
       \node at (4.5,0.3) [left]{$5$};
-      \node at (4.6,0.4) [right]{m$\angle 6 = 70^\circ$};
       \node at (4.3,-0.3) [left]{$7$};
       \node at (4.3,-0.3) [right]{$8$};
       \node at (5.2,2) [above left]{$1$};
       \node at (5.2,2) [above right]{$2$};
       \node at (5,2) [below left]{$3$};
-      \node at (5,2) [below right]{$4$};
+      \node at (5,2) [below right]{$4$};}
+      \onslide<2>
+      {\node at (4.6,0.4) [red, right]{$70^\circ$};
+      \node at (4.5,0.4) [left]{$110^\circ$};
+      \node at (4.3,-0.3) [left]{$70^\circ$};
+      \node at (4.3,-0.3) [right]{$110^\circ$};
+      \node at (5.2,2) [above left]{$110^\circ$};
+      \node at (5.2,2) [above right]{$70^\circ$};
+      \node at (5,2) [below left]{$70^\circ$};
+      \node at (5,2) [below right]{$110^\circ$};
+      \node at (4,-2){Solution};}
     \end{tikzpicture}
   \end{multicols}
 \end{frame}
