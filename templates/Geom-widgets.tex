@@ -186,7 +186,25 @@ Negative arc radius \par
   \draw[-, thick] (10:5)--(0,0)--(70:3)--cycle;
   \draw[color=blue] (0,0)++(10:1) arc (10:70:1);
   \draw[color=red] (10:5)++(10:-1) arc (10:-27:-1);
-\end{tikzpicture}
+\end{tikzpicture} \vspace{0.5cm}
+
+Tick mark commands
+\newcommand\ticks{}
+  \def\ticks{{Bar[scale=2]}-{Bar[scale=2]}}
+\newcommand\paraticks{}
+  \def\paraticks{{Straight Barb[reversed, scale=2]}-{Straight Barb[scale=2]}}
+
+\begin{tikzpicture}
+  \draw[thick] (0,0)--(5,0);
+  \draw[thick, yshift=2cm] (0,0)--(5,0);
+    \draw[{Straight Barb[red,reversed, scale=2]}-{Straight Barb[red,scale=2]}] (2.5,0)--+(0.5,0);
+    \draw[\paraticks, yshift=2cm] (2.5,0)--+(0.5,0);
+  \draw[thick] (0,0)--(0,2);
+  \draw[thick, xshift=5cm] (0,0)--(0,2);
+    \draw[{Bar[scale=2]}-{Bar[scale=2]}] (0,1)--+(0,0.2);
+    \draw[\ticks, xshift=5cm] (0,1)--+(0,0.2);
+  \end{tikzpicture}
+
 \end{multicols}
 
 \subsubsection*{Using coordinates and ``pic'' command}
