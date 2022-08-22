@@ -49,7 +49,7 @@
         \item[Transversal] Line  $l$, crosses parallel lines
         \item[Interior] Inside ($\angle$s)
         \item[Exterior] Outside ($\angle$s)
-        \item[Same-side] On the left or right of $l$
+        \item[Same side] On the left or right of $l$
         \item[Alternate] Across $l$ from each other
         \item[Horizontal] Sideways direction
         \item[Vertical] Up and down direction
@@ -73,9 +73,9 @@
         \node at (5,2) [below left]{$3$};
         \node at (5,2) [below right]{$4$};
       \end{tikzpicture}
-    \end{columns} \vspace{0.7cm}
+    \end{columns} \vspace{0.5cm}
     \onslide<2->
-    {We often number the angles this way.}
+    {\flushright{We often number the angles this way.}}
   \end{frame}
 
 \begin{frame}{New theorems for parallel lines}
@@ -196,7 +196,26 @@ A rectangle's length to width ratio is two to one. $2:1$
   \end{center}
 \end{multicols}
 \end{block}
-Lesson: Triangle sum theorem
+Lesson: Solve for angle measures
+\end{frame}
+
+%Template
+\begin{frame}{Parallel lines intersected by a transversal. Find $x$.}
+  Alternate interior angles measure $100^\circ$ and $12x+16$, as shown.
+  \begin{flushleft}
+    \begin{tikzpicture}[scale=1]
+      \draw[<->, thick] (-1.5,2)--(3,2);
+      \draw[<->, thick] (-2,0)--(2.5,0);
+        \draw[\paraticks] (2,2)--(2.3,2);
+        \draw[\paraticks] (1.5,0)--(1.8,0);
+      \draw[<->, thick] (80:-1)--(80:3);
+      \draw (-0.4,0) arc (180:80:0.4);
+      \draw (0.4,0)++(80:2) arc (0:-100:0.4);
+      \node at (0,0)[above left=2mm]{$100^\circ$};
+      \node at (0,0)[yshift=2cm, below right=4mm]{$12x+16$};
+    \end{tikzpicture}
+    \end{flushleft} \vspace{1cm}
+    Are the angles congruent or supplementary?
 \end{frame}
 
 \begin{frame}{Parallel lines intersected by a transversal. Find $x$.}
@@ -215,11 +234,36 @@ Lesson: Triangle sum theorem
     State the postulate or theorem you are employing.
 \end{frame}
 
+%Template
+\begin{frame}{Parallel lines intersected by a transversal. Find $x$.}
+  Given: Same side interior angles measure $115^\circ$ and $15x-10$.
+  \begin{flushleft}
+    \begin{tikzpicture}[scale=1.2, rotate=20]
+      \draw[<->, thick] (-2.5,2)--(2,2);
+      \draw[<->, thick] (-2,0)--(2.5,0);
+        \draw[\paraticks] (1,2)--(1.3,2);
+        \draw[\paraticks] (1.5,0)--(1.8,0);
+      \draw[<->, thick] (1200:-1)--(120:3);
+      \draw (0.4,0) arc (0:120:0.4);
+      \draw (0.4,0)++(120:2.3) arc (0:-60:0.4);
+      \node at (0,0)[above right=3mm]{$115^\circ$};
+      \node at (120:2.3)[right=4mm]{$15x-10$};
+    \end{tikzpicture}
+    \end{flushleft} \vspace{1cm}
+    Remember the check.
+\end{frame}
+
+\begin{frame}{Extension: \emph{Partitioning} a segment or angle in a ratio}
+  Point $B$ divides $\overline{AC}$ in a $2:1$ ratio, i.e. $AB=2 BC$ \\
+  Ray $\overrightarrow{BD}$ divides $\angle ABC$ in a $2:1$ ratio. Find $x$.
+  
+\end{frame}
+
 \section{3.3 Triangle sum theorem \hfill 13 October}
 \begin{frame}{Learning Target: I can calculate triangle angles}
   {HSG.CO.C.9 Prove theorems about lines and angles  \hfill \alert{3.3 Thursday 13 October}}
 
-  Lesson: Sum of a triangle's interior angles is $180^\circ$
+  Lesson: Sum of a triangle's interior angles is $180^\circ$ (Triangle sum theorem)
 \end{frame}
 
 \begin{frame}
