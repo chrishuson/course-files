@@ -261,26 +261,124 @@ Lesson: Solve for angle measures
 
 \section{3.3 Triangle sum theorem \hfill 13 October}
 \begin{frame}{Learning Target: I can calculate triangle angles}
-  {HSG.CO.C.9 Prove theorems about lines and angles  \hfill \alert{3.3 Thursday 13 October}}
-
-  Lesson: Sum of a triangle's interior angles is $180^\circ$ (Triangle sum theorem)
+{HSG.CO.C.9 Prove theorems about lines and angles  \hfill \alert{3.3 Thursday 13 October}}
+  Do Now: 
+  \begin{columns}
+  \column{0.5\textwidth}
+    \begin{enumerate}
+      \item Given two parallel lines, two transversals
+      \item Find $x$, $y$
+      \item What relationship are you using? (e.g. vertical angles, same-side exterior angles, alternate interior angles)
+    \end{enumerate}
+  \column{0.5\textwidth}
+    \begin{tikzpicture}[scale=1]
+    \draw[<->, thick] (2.7,2)--(7,2);
+    \draw[<->, thick] (3.2,0)--(7,0);
+      \draw[\paraticks] (3.6,0)--(3.9,0);
+      \draw[\paraticks] (3.6,2)--(3.9,2);
+    \draw[<->, thick] (4,-1)--(5.5,3);
+    \draw[<->, thick] (6.5,-1)--(6,3);
+    \node at (4.5,0.3) [right]{$73^\circ$};
+    \node at (5.6,0.3) [right]{$82^\circ$};
+    \node at (5,2) [below left]{$x$};
+    \node at (6.2,2) [below right]{$y$};
+    \end{tikzpicture}
+  \end{columns} \vspace{0.8cm}
+  Lesson: The sum of a triangle's \emph{interior} angles is $180^\circ$ \par \medskip 
+  \hspace{1.2cm} \emph{Triangle sum theorem}
 \end{frame}
 
-\begin{frame}
-  Given parallel lines $\overleftrightarrow{AB} \parallel \overleftrightarrow{CDE}$ with $\overline{AC} \cong \overline{CD}$. If m$\angle BAD=80$ find m$\angle ACD$.
+\begin{frame}{Triangle sum theorem}
+  Given parallel lines $k \parallel l$, $\triangle ABC$, m$\angle B=65^\circ$, m$\angle C=55^\circ$. \par \smallskip
+  Find m$\angle BAC = x$.
   \begin{flushright}
-  \begin{tikzpicture}[scale=0.9]
-    \draw[<->, thick] (1,3)--(6.5,3) node[above left]{$B$};
-    \draw[<->, thick] (0,0)--(6,0) node[below left]{$E$};
-      \draw[\paraticks] (5.2,3)--(5.5,3);
-      \draw[\paraticks] (5,0)--(5.3,0);
-    \draw[-, thick] (1,0) node[below]{$C$}--
-      (2.5,3) node[above]{$A$}--
-      (4.35,0) node[below]{$D$};
+  \begin{tikzpicture}[scale=1.1]
+    \draw[<->, thick] (0,3)--(5.5,3)node[above left]{$k$};
+    \draw[<->, thick] (-1,0)--(5.2,0)node[below left]{$l$};
+      \draw[\paraticks] (4.2,3)--(4.5,3);
+      \draw[\paraticks] (4.2,0)--(4.5,0);
+    \draw[thick] (0,0) node[below]{$B$}--
+      (1.5,3) node[above]{$A$}node[below=4mm]{\Large{$x$}}--
+      (3.5,0) node[below]{$C$};
+    \draw[red] (0.5,0) arc (0:63:0.5)node[right=2mm]{$65^\circ$};
+    \draw[red] (1.0,3) arc (0:63:-0.5);%node[above right]{$70^\circ$};
+    \draw[blue] (3,0) arc (0:-56:-0.5)node[left]{$55^\circ$};
+    \draw[blue] (2,3) arc (0:-56:0.5);%node[left]{$55^\circ$};
   \end{tikzpicture}
-  \end{flushright} \vspace{1cm}
+  \end{flushright} \bigskip
+  \begin{description}
+    \item[Interior] The three angles that are \emph{inside} the triangle
+    \item[Theorem] The sum of the measures of the three internal angles of a triangle is $180^\circ$
+  \end{description}
   \end{frame}
 
+\begin{frame}{Mark 3 missing angle measures to make a straight angle}
+  An \emph{auxilary} line $l$ is drawn through $A$, parallel to triangle base $\overline{BC}$. \par \smallskip
+  Find m$\angle BAC$. \bigskip
+  \begin{columns}
+  \column{0.57\textwidth}
+    \begin{tikzpicture}[scale=1]
+      \draw[<->, dashed] (0,3)--(4.5,3)node[above left]{$l$};
+        \draw[\paraticks] (1.2,3)--(1.5,3);
+        \draw[\paraticks] (2.2,0)--(2.5,0);
+      \draw[thick] (0,0) node[below]{$B$}--
+        (3,3) node[above=2mm]{$A$}node[red,below=4mm]{\large{$x$}}--
+        (4,0) node[below]{$C$}--cycle;
+      \fill (3,3) circle [radius=0.7mm];
+      \draw (0.5,0) arc (0:45:0.5)node[right=1mm]{$43^\circ$};
+      \draw (2.5,3) arc (0:45:-0.5);
+      \draw (3.5,0) arc (0:-72:-0.5)node[left]{$72^\circ$};
+      \draw (3.5,3) arc (0:-72:0.5);
+      \draw (3,3)++(43:-0.4) arc (223:288:0.4);
+      \onslide<2>
+        \node at (2.2,2.6)[red]{$43^\circ$};
+        \node at (3,3)[red,below right=3mm]{$72^\circ$};
+    \end{tikzpicture}
+  \column{0.43\textwidth}
+    \onslide<2>{
+      $43+x+72 = 180$ \par \bigskip
+      \hspace{1.7cm} $x = 60^\circ$ \par \bigskip
+      Theorem: m$\angle A + \text{m}\angle B + \text{m}\angle C = 180^\circ$ \par
+      for any triangle }
+  \end{columns} \bigskip
+  \begin{description}
+    \item[Auxilary] An extra line added to a diagram
+    \item[Linear triple] Three adjacent angles that make a straight line
+  \end{description}
+  \end{frame}
+
+\begin{frame}{Find the missing angle measure}
+  Given $\triangle ABC$, m$\angle A=82^\circ$, m$\angle C=59^\circ$. Find  m$\angle B$. \vspace{1cm}
+  \begin{tikzpicture}
+    \draw[thick] (0,0)node[below]{$A$}--
+      (4,0)node[below]{$B$}--
+      (0.4,3)node[above]{$C$}--cycle;
+  \end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Triangle sum theorem ($180^\circ$)}
+  {Check your notes}
+    \begin{tikzpicture}[scale=1]
+      \draw[<->, dashed] (0,3)--(4.5,3)node[above left]{$l$};
+        \draw[\paraticks] (1.2,3)--(1.5,3);
+        \draw[\paraticks] (2.2,0)--(2.5,0);
+      \draw[thick] (0,0) node[below]{$B$}--
+        (3,3) node[above=2mm]{$A$}--
+        (4,0) node[below]{$C$}--cycle;
+      \fill (3,3) circle [radius=0.7mm];
+      \draw (0.5,0) arc (0:45:0.5);
+      \draw (3.5,0) arc (0:-72:-0.5);
+      \draw (3,3)++(43:-0.4) arc (223:288:0.4);
+    \end{tikzpicture} \smallskip
+  \begin{description}
+    \item[Auxilary line] An extra line added to a diagram
+    \item[Linear triple] Three adjacent angles that make a straight line
+    \item[Interior angles] The three angles that are inside the triangle
+    \item[Theorem] The sum of a triangle's angles is $180^\circ$ \par \smallskip
+    m$\angle A + \text{m}\angle B + \text{m}\angle C = 180^\circ$
+  \end{description}
+  \end{frame}
+ 
 \section{3.4 Parallelograms \hfill 14 October}
 \begin{frame}{Learning Target: I can define a parallelogram}
   {HSG.CO.C.9 Prove theorems about lines and angles  \hfill \alert{3.4 Friday 14 October}}
@@ -302,25 +400,27 @@ Lesson: Solve for angle measures
 \begin{frame}{Learning Target: I can calculate external triangle angles}
   {HSG.CO.C.9 Prove theorems about lines and angles  \hfill \alert{3.5 Monday 17 October}}
   Do Now: 
-  \begin{multicols}{2}
+  \begin{columns}
+  \column{0.5\textwidth}
     \begin{enumerate}
       \item Given two parallel lines, two transversals
       \item Find $x$, $y$
       \item What relationship are you using? (e.g. vertical angles, same-side exterior angles, alternate interior angles, etc.)
     \end{enumerate}
-      \begin{tikzpicture}[scale=1]
-      \draw[<->, thick] (2.7,2)--(7,2);
-      \draw[<->, thick] (3.2,0)--(7,0);
-        \draw[\paraticks] (3.6,0)--(3.9,0);
-        \draw[\paraticks] (3.6,2)--(3.9,2);
-      \draw[<->, thick] (4,-1)--(5.5,3);
-      \draw[<->, thick] (6.5,-1)--(6,3);
-      \node at (4.5,0.3) [right]{$73^\circ$};
-      \node at (5.6,0.3) [right]{$82^\circ$};
-      \node at (5,2) [below left]{$x$};
-      \node at (6.2,2) [below right]{$y$};
+  \column{0.5\textwidth}
+    \begin{tikzpicture}[scale=1]
+    \draw[<->, thick] (2.7,2)--(7,2);
+    \draw[<->, thick] (3.2,0)--(7,0);
+      \draw[\paraticks] (3.6,0)--(3.9,0);
+      \draw[\paraticks] (3.6,2)--(3.9,2);
+    \draw[<->, thick] (4,-1)--(5.5,3);
+    \draw[<->, thick] (6.5,-1)--(6,3);
+    \node at (4.5,0.3) [right]{$73^\circ$};
+    \node at (5.6,0.3) [right]{$82^\circ$};
+    \node at (5,2) [below left]{$x$};
+    \node at (6.2,2) [below right]{$y$};
     \end{tikzpicture}
-  \end{multicols}
+  \end{columns}
   Lesson: Triangle external angle theorem
 \end{frame}
 
