@@ -378,22 +378,71 @@ Lesson: Solve for angle measures
     m$\angle A + \text{m}\angle B + \text{m}\angle C = 180^\circ$
   \end{description}
   \end{frame}
- 
+
+\begin{frame}{Extension: Euclid's fifth postulate (the \href{https://mathworld.wolfram.com/ParallelPostulate.html}{Parallel Postulate})}
+  {Given a line and a point, there exists one line through the point parallel to the line.}
+    \begin{tikzpicture}[scale=0.8]
+      \draw[red,thick,<->] (0,3)--(4.5,3); %node[above left]{$l$};
+        \draw[\paraticks] (1.2,3)--(1.5,3);
+        \draw[\paraticks] (2.2,0)--(2.5,0);
+      \draw[<->,thick] (-1,0)--(5,0) node[above left]{$l$};
+      \draw[dashed] (0,0)--(3,3)--(4,0);
+      \fill (3,3) circle [radius=0.7mm] node[above]{$P$};
+    \end{tikzpicture} \smallskip
+  \begin{description}
+    \item[Euclid] Greek author of the most successful math book of all time, \emph{The Elements}
+    \item[Postulate] A statement we assume is true as the basis of all further mathematical theorems and proofs
+    \item[Non-Euclidean geometries] Alternative mathematics not using the Parallel Postulate. Lobachevsky (1826 Russian), Bolyai (1832 Hungarian), Einstein (1916 German)
+  \end{description}
+  \end{frame}
+
 \section{3.4 Parallelograms \hfill 14 October}
-\begin{frame}{Learning Target: I can define a parallelogram}
+\begin{frame}{Learning Target: I can find the angles of a parallelogram}
   {HSG.CO.C.9 Prove theorems about lines and angles  \hfill \alert{3.4 Friday 14 October}}
-  Two parallel lines intersect a transversal. Given corresponding angles  m$\angle 1 = 4.4x - 63$ and m$\angle 2 = 2.8x+9$, find the measure of $\angle 1$. 
-  \begin{flushright}
-    \begin{tikzpicture}[scale=0.9]
+  Do Now: Two parallel lines intersect a transversal. Given corresponding angles  m$\angle 1 = 4.4x - 63$ and m$\angle 2 = 2.8x+9$. \par \medskip
+  Find the measure of $\angle 1$. \bigskip
+  \begin{columns}
+    \column{0.55\textwidth}
+    \begin{tikzpicture}[scale=0.8]
       \draw[<->, thick] (3,0)--(9,0);
-      \draw[<->, thick] (2,2)--(8.5,2);
+      \draw[<->, thick] (2.5,2)--(8.5,2);
       \draw[<->, thick] (5,-1)--(3,3);
         \draw[\paraticks] (8.3,0)--(8.6,0);
         \draw[\paraticks] (7.6,2)--(7.9,2);
       \node at (5.3, 2.25){m$\angle 1 = 4.4x - 63$};
       \node at (6.1, 0.25){m$\angle 2 = 2.8x+9$};
     \end{tikzpicture}
-    \end{flushright}
+    \column{0.45\textwidth}
+    \onslide<2> Corresponding angles are $\cong$ \par \medskip
+      $4.4x - 63 = 2.8x+9$ \par
+      \hspace{0.7cm} $1.6x = 72$ \par
+      \hspace{1.2cm} $x = 45$ \par \medskip
+      $\text{m}\angle 1 = 4.4(45) - 63=135^\circ$ \par \bigskip
+      Check: $\text{m}\angle 2 = 2.8(45)+9=135$
+    \end{columns}
+\end{frame}
+
+\begin{frame}{A parallelogram's opposite sides are parallel and congruent}
+  {Consecutive angles are supplementary. Opposite angles are congruent.}
+  Find the other angle measures. \par
+    \begin{tikzpicture}[scale=0.9]
+      \draw[thick] (0,0)--(110:2.13)--+(5,0)--(5,0)--cycle;
+      \draw[<->, dashed] (-1,0)--(7,0);
+      \draw[<->, dashed] (-2,2)--(6.5,2);
+        \draw[\paraticks] (5.8,0)--+(0.3,0);
+        \draw[\paraticks] (6.0,0)--+(0.3,0);
+        \draw[\paraticks] (5.3,2)--+(0.3,0);
+        \draw[\paraticks] (5.5,2)--+(0.3,0);
+      \draw[<->, dashed] (110:-1)--(110:3);
+      \draw[<->, dashed, xshift=5cm] (110:-1)--(110:3);
+        \draw[\paraticks] (110:-0.5)--+(110:0.3);
+        \draw[\paraticks, xshift=5cm] (110:-0.5)--+(110:0.3);
+      \node at (-0.2, 1.7){$1$};
+      %\node at (1.5, 0.25){m$\angle 2 = 110^\circ$};
+      \node at (4.5, 0.25){$3$};
+      \node at (4.1, 1.7){$4$};
+      \draw (0.4,0) arc (0:110:0.4)node[pos=0.5, right]{m$\angle 2 = 110^\circ$};
+    \end{tikzpicture}
 \end{frame}
 
 \section{3.5 External angles \hfill 17 October}
@@ -507,7 +556,6 @@ Lesson: Solve for angle measures
       \draw[<->, thick, xshift=6cm] (110:-1)--(110:3);
         \draw[\paraticks] (110:-0.5)--+(110:0.3);
         \draw[\paraticks, xshift=6cm] (110:-0.5)--+(110:0.3);
-
       \node at (-0.2, 1.7){$1$};
       \node at (1.5, 0.25){m$\angle 2 = 2.8x+9$};
       \node at (5.5, 0.25){$3$};
