@@ -2,7 +2,7 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 29 Sept 2022}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 4 October 2022}
 
 \begin{document}
 
@@ -10,7 +10,7 @@
 \begin{enumerate}
 \item The size of an angle is its ``measure,'' which can be from $0^\circ$ to $360^\circ$
 \begin{enumerate}
-  \item Write down the name of this angle. Start with a less-than sign ``$<$''\\
+  \item Write down the name of this angle. Start with an angle symbol $\angle$. \\
   \hspace{1cm}
     \begin{tikzpicture}[scale=.8]
       \draw  [<->, thick] (0,2)--(2,0)--(4,1);
@@ -36,7 +36,7 @@
     \end{tikzpicture}
   \end{enumerate}
 
-\item Type your answers. Use the less than key (``$<$'') to represent an angle, followed by three letters. \vspace{0.25cm}
+\item Given the diagram, answer each using proper notation, including the angle symbol $\angle$. \par \vspace{0.3cm}
   \begin{enumerate}
     \item Name the ray opposite to $\overrightarrow{OR}$: \rule{4cm}{0.15mm} \bigskip
     \item What is the measure of $\angle POM$?  \rule{4cm}{0.15mm} \bigskip
@@ -45,7 +45,7 @@
     \item Spicy: Are $\angle NOP$ and $\angle QOR$ complementary, supplementary, or neither?
   \end{enumerate}
   \begin{center}
-  \begin{tikzpicture}[scale=1, rotate=-40]
+  \begin{tikzpicture}[scale=1, rotate=20]
     \draw[<->, thick] (-55:3)--(0,0)--(125:4);
     \draw[<->, thick] (-5,0)--(3,0);
     \draw[->, thick] (0,0)--(0,3);
@@ -59,23 +59,7 @@
   \end{tikzpicture}
   \end{center}
 
-\item As shown below, two lines intersect making four angles: $\angle 1$, $\angle 2$, $\angle 3$, and $\angle 4$.
-  \begin{multicols}{2}
-    Given m$\angle 1 = 70^\circ$.  
-    \begin{enumerate}
-      \item Find m$\angle 3$ \vspace{2cm}
-      \item Find m$\angle 4$ \vspace{2cm}
-    \end{enumerate}
-    \begin{tikzpicture}[scale=0.7, rotate=20]
-    \draw[<->, thick] (0,-1.5)--(10,1.5);
-    \draw[<->, thick] (2,3.5)--(7,-3.5);
-    \node at (3,.4){1};
-    \node at (6,-.6){3};
-    \node at (5,1){2};
-    \node at (4,-1){4};
-  \end{tikzpicture}
-  \end{multicols}
-
+\newpage
 \subsubsection*{Angle addition situations}
 \item Apply the Angle Addition postulate. Write and equation to support your work.
   \begin{multicols}{2}
@@ -136,65 +120,6 @@
           \draw (0,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
       \end{tikzpicture}
     \end{flushright}
-
-\item Two supplementary angles have measures m$\angle ABD = 2x$ and m$\angle DBC = 4x + 60^\circ$. \\[0.5cm] 
-  Write an equation, then find $x$. \vspace{0.5cm}
-    \begin{flushright}
-      \begin{tikzpicture}[scale=1]
-        \draw[<->, thick]
-          (0:5) coordinate (a) node[below left] {$C$}
-          -- (0,0) coordinate (b) node[below] {$B$}
-          -- (125:3) coordinate (c) node[above right] {$D$}
-          pic["$4x+60^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
-          {angle=a--b--c};
-          \draw[<-, thick]
-          (180:4) coordinate (d) node[below] {$A$}
-          -- (0,0) coordinate (e)
-          pic["$2x$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
-          {angle=c--e--d};
-      \end{tikzpicture}
-    \end{flushright}
-      
-\item Given the perpendicular situation shown, $\overrightarrow{BD} \perp \overleftrightarrow{ABC}$ and angle measures given. \\[0.5cm] 
-  Find $x$. \vspace{0.5cm}
-    \begin{multicols}{2}
-      m$\angle DBE = 35^\circ$ \\[0.25cm]
-      m$\angle EBC = 3x + 10^\circ$ \\[0.25cm]
-      \begin{tikzpicture}[scale=1]
-        \draw[<->, thick]
-          (0:5) coordinate (a) node[below left] {$C$}
-          -- (0,0) coordinate (b) node[below] {$B$}
-          -- (50:5) coordinate (c) node[below right] {$E$}
-          pic["$3x + 10$", <->, draw=black, angle eccentricity=2, angle radius=1cm]
-          {angle=a--b--c};
-          \draw[<-, thick]
-          (90:4) coordinate (d) node[right] {$D$}
-          -- (0,0) coordinate (e)
-          pic["$35^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
-          {angle=c--e--d};
-          \draw[->, thick] (0,0)--(-180:2) node[below right]{$A$};
-          \draw (0,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
-      \end{tikzpicture}
-    \end{multicols}
-
-\item A linear pair have measures m$\angle ABD = 7x + 16^\circ$ and m$\angle DBC = 5x + 20^\circ$. \\[0.5cm] 
-  Find m$\angle ABD$. \vspace{0.5cm}
-    \begin{flushright}
-      \begin{tikzpicture}[scale=1]
-        \draw[<->, thick]
-          (0:5) coordinate (a) node[below left] {$C$}
-          -- (0,0) coordinate (b) node[below] {$B$}
-          -- (75:3) coordinate (c) node[below right] {$D$}
-          pic["$5x + 20$", <->, draw=black, angle eccentricity=2, angle radius=1cm]
-          {angle=a--b--c};
-          \draw[<-, thick]
-          (180:4) coordinate (d) node[below] {$A$}
-          -- (0,0) coordinate (e)
-          pic["$7x + 16$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
-          {angle=c--e--d};
-      \end{tikzpicture}
-    \end{flushright}
-
 
 \end{enumerate}
 \end{document}

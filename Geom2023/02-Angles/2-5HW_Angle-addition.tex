@@ -2,7 +2,7 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 4 October 2022}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 12 October 2022}
 
 \begin{document}
 
@@ -14,10 +14,10 @@
     \item Name the angle vertical to $\angle LXM$: \rule{4cm}{0.15mm}  \bigskip 
     \item Name the ray opposite to $\overrightarrow{XJ}$: \rule{4cm}{0.15mm} \bigskip
     \item What is the measure of $\angle KXM$?  \rule{4cm}{0.15mm} \bigskip
-    \item Spicy: Are $\angle JXL$ and $\angle LXM$ complementary, supplementary, or neither?
+    \item Are $\angle JXL$ and $\angle LXM$ complementary, supplementary, or neither?
   \end{enumerate}
   \begin{center}
-  \begin{tikzpicture}[scale=1, rotate=30]
+  \begin{tikzpicture}[scale=0.7, rotate=30]
     \draw[<->, thick] (-110:2)--(0,0)--(70:3);
     \draw[<->, thick] (-4,0)--(3,0);
     \draw[->, thick] (0,0)--(0,3);
@@ -118,6 +118,7 @@
     \end{flushright}
     Show your check for full credit.
 
+\newpage
 \item Given $\overrightarrow{BD} \perp \overleftrightarrow{ABC}$, m$\angle DBE = 2x$, and m$\angle EBC = x - 15^\circ$, as shown below.  \par \bigskip 
   Write an equation and solve for $x$.
     \begin{flushright}
@@ -178,7 +179,8 @@
       \end{tikzpicture}
     \end{multicols}
 
-\item Spicy: Given $\overleftrightarrow{ABC}$, right angle $\angle DBE$, m$\angle ABE = 3x+6$, and m$\angle DBC = 2x-1$.  \par \bigskip 
+\newpage
+\item Given $\overleftrightarrow{ABC}$, right angle $\angle DBE$, m$\angle ABE = 3x+6$, and m$\angle DBC = 2x-1$.  \par \bigskip 
   Find m$\angle ABE$. \vspace{0.5cm}
     \begin{flushright}
       \begin{tikzpicture}[scale=1, rotate=30]
@@ -202,19 +204,39 @@
     \begin{flushright}
       \begin{tikzpicture}[scale=1]
         \draw[<->, thick]
-          (0:5) coordinate (a) node[below left] {$C$}
-          -- (0,0) coordinate (b) node[below] {$B$}
-          -- (70:3) coordinate (c) node[above right] {$F$}
+          (0:5) coordinate (a) node[below left]{$C$}
+          -- (0,0) coordinate (b) node[below]{$B$}
+          -- (70:3) coordinate (c) node[above right]{$F$}
           pic["$5x+10$", <->, draw=black, angle eccentricity=1.75, angle radius=1.5cm]
           {angle=a--b--c};
           \draw[<-, thick]
-          (140:4) coordinate (d) node[below] {$A$}
+          (140:4) coordinate (d) node[below left]{$A$}
           -- (0,0) coordinate (e)
           pic["$7x-14$", <->, draw=black, angle eccentricity=1.25, angle radius=1.5cm]
           {angle=c--e--d};
       \end{tikzpicture}
-    \end{flushright}
+    \end{flushright} \vfill
 
+\item Find the height of the $\triangle RST$, having an area of $A=117$ and base $RS=9$.
+\begin{multicols}{2}
+  Start by substituting values in the area formula: \\[0.5cm]
+  $\displaystyle A = \frac{1}{2} bh = 117$ \vspace{2cm}
+    \begin{flushright}
+    \begin{tikzpicture}[scale=.635]
+      %\draw[help lines] (-1,-1) grid (9,6);
+      \draw[thick, ->] (-1.2,0) -- (9.4,0) node [below right] {$x$};
+      \draw[thick, ->] (0,-1.2)--(0,8.4) node [left] {$y$};
+      \draw[<->, thick] (1.5,1)--(1.5,7);
+      \draw[thick] (2,1)--(6,1)--(4,7)--cycle;
+      \draw[dashed] (6,1)--(8,7)--(4,7);
+      \draw[fill] (2,1) circle [radius=0.05] node[below] {$R$};
+      \draw[fill] (6,1) circle [radius=0.05] node[below] {$S$};
+      \draw[fill] (4,7) circle [radius=0.05] node[above right] {$T$};
+      \node at (4,1)[below]{$9$};
+      \node at (1.5,4)[left]{$h$};
+    \end{tikzpicture}
+    \end{flushright}
+\end{multicols}
 
 \end{enumerate}
 \end{document}

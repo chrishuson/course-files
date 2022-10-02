@@ -2,13 +2,109 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 28 Sept 2022}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 3 October 2022}
 
 \begin{document}
+\subsubsection*{2.1 Homework: Length and area test review}
+\begin{enumerate}[itemsep=1.2cm]
+\item Find the distance between $P$ and $Q$. 
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[<->] (-4.5,0)--(5.5,0);
+      \foreach \x in {-4,...,5}
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+        \draw[fill] (-2,0) circle [radius=0.05] node[above] {$P(-2)$};
+        \draw[fill] (4,0) circle [radius=0.05] node[above] {$Q(4)$};
+    \end{tikzpicture}
+  \end{center}
 
-\subsubsection*{2.1 Homework: Angle measures and terminology}
-\begin{enumerate}
-  \item problems
+\item Find $RS$, given $R=0.7$ and $S=5.3$.
+\begin{flushleft}
+  \begin{tikzpicture}
+    \draw[<->] (-1.5,0)--(6.5,0);
+    \foreach \x in {-1,...,6}
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw[fill] (0.7,0) circle [radius=0.05] node[above] {$R$};
+      \draw[fill] (5.3,0) circle [radius=0.05] node[above] {$S$};
+  \end{tikzpicture}
+\end{flushleft}
+
+\item Find the area of $\triangle ABC$. The altitude $h$ of the triangle is $7$ centimeters and the base $AB=10$ cm. (diagram not to scale) \par \medskip
+  \begin{tikzpicture}[scale=1.]
+    \draw[thick]
+      (2,0)node[below]{$A$}--
+      (8,0)node[below]{$B$}--
+      (4,3)node[above]{$C$} --(2,0);
+  \draw[dashed] (4,0)--(4,3);
+  \draw (4,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+  \node at (4,1.2)[right]{$h=7$};
+  \node at (5,0)[below]{$10$ cm};
+  \end{tikzpicture}
+
+\item Solve each equation for $x$ then check your result.
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $(3x+4) + (x-2)=22$
+    \item $(6x-21) + (2x-3)=5x$
+  \end{enumerate}
+\end{multicols}
+
+\newpage
+\subsubsection*{Do Not Solve! Complete the diagram of the situation, model with an equation to the right, and circle where it states what to find.}
+\item The point $Q$ is on the segment $\overline{PR}$ with $PQ=2x$, $QR=11$, and $PR=21$. Find $x$. \vspace{0.5cm}
+  \begin{flushleft}
+    \begin{tikzpicture}
+    \draw[-, thick] (0,0)--(7,0);
+    \draw[fill] (0,0) circle [radius=0.05];
+    \draw[fill] (7,0) circle [radius=0.05];
+  \end{tikzpicture}
+  \end{flushleft}
+
+\item The point $Q$ is the midpoint of $\overline{PR}$, $PQ=11$, and $QR=2x+1$. Find $x$. \vspace{0.5cm}
+  \begin{flushleft}
+    \begin{tikzpicture}
+    \draw[-, thick] (0,0)--(7,0);
+    \draw[fill] (0,0) circle [radius=0.05];
+    \draw[fill] (7,0) circle [radius=0.05];
+  \end{tikzpicture}
+  \end{flushleft}
+
+\item Given $\overline{PQR}$, with $PQ=3x-7$, $QR=x+3$, and $PR=12$. Find $PQ$. \vspace{0.5cm}
+  \begin{flushleft}
+    \begin{tikzpicture}
+    \draw[-, thick] (0,0)--(7,0);
+    \draw[fill] (0,0) circle [radius=0.05];
+    \draw[fill] (7,0) circle [radius=0.05];
+  \end{tikzpicture}
+  \end{flushleft}
+
+\item Given that $Q$ bisects $\overline{PR}$. $PQ=2x-5$, $PR=42$. Find $x$. \vspace{0.5cm}
+  \begin{flushleft}
+    \begin{tikzpicture}
+    \draw[-, thick] (0,0)--(7,0);
+    \draw[fill] (0,0) circle [radius=0.05];
+    \draw[fill] (7,0) circle [radius=0.05];
+  \end{tikzpicture}
+  \end{flushleft}
+
+\item Given collinear points $P$, $Q$, $R$, and $S$. Also, $PQ=3x$ and $PS=72$. Furthermore, $\overline{PQ} \cong \overline{QR} \cong \overline{RS}$. Find ${x}$. \vspace{0.5cm}
+  \begin{flushleft}
+    \begin{tikzpicture}
+    \draw[-, thick] (0,0)--(7,0);
+    \draw[fill] (0,0) circle [radius=0.05];
+    \draw[fill] (7,0) circle [radius=0.05];
+  \end{tikzpicture}
+  \end{flushleft}
+
+\item The points $P$, $Q$, and $R$ are collinear, with $PQ=x+4$ and $PR=27$. $\overline{QR}$ is twice the length of $\overline{PQ}$. Find $QR$. \vspace{0.5cm}
+  \begin{flushleft}
+    \begin{tikzpicture}
+    \draw[-, thick] (0,0)--(7,0);
+    \draw[fill] (0,0) circle [radius=0.05];
+    \draw[fill] (7,0) circle [radius=0.05];
+  \end{tikzpicture}
+  \end{flushleft}
+
 
 \end{enumerate}
 \end{document}

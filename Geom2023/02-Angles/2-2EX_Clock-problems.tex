@@ -1,0 +1,54 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 4 October 2022}
+
+\begin{document}
+
+\subsubsection*{2.2 Extension: Clock problems}
+\begin{enumerate}
+
+\item Two supplementary angles have measures m$\angle ABD = 2x$ and m$\angle DBC = 4x + 60^\circ$. \\[0.5cm] 
+  Write an equation, then find $x$. \vspace{0.5cm}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=1]
+        \draw[<->, thick]
+          (0:5) coordinate (a) node[below left] {$C$}
+          -- (0,0) coordinate (b) node[below] {$B$}
+          -- (125:3) coordinate (c) node[above right] {$D$}
+          pic["$4x+60^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
+          {angle=a--b--c};
+          \draw[<-, thick]
+          (180:4) coordinate (d) node[below] {$A$}
+          -- (0,0) coordinate (e)
+          pic["$2x$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
+          {angle=c--e--d};
+      \end{tikzpicture}
+    \end{flushright}
+      
+\item Given the perpendicular situation shown, $\overrightarrow{BD} \perp \overleftrightarrow{ABC}$ and angle measures given. \\[0.5cm] 
+  Find $x$. \vspace{0.5cm}
+    \begin{multicols}{2}
+      m$\angle DBE = 35^\circ$ \\[0.25cm]
+      m$\angle EBC = 3x + 10^\circ$ \\[0.25cm]
+      \begin{tikzpicture}[scale=1]
+        \draw[<->, thick]
+          (0:5) coordinate (a) node[below left] {$C$}
+          -- (0,0) coordinate (b) node[below] {$B$}
+          -- (50:5) coordinate (c) node[below right] {$E$}
+          pic["$3x + 10$", <->, draw=black, angle eccentricity=2, angle radius=1cm]
+          {angle=a--b--c};
+          \draw[<-, thick]
+          (90:4) coordinate (d) node[right] {$D$}
+          -- (0,0) coordinate (e)
+          pic["$35^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
+          {angle=c--e--d};
+          \draw[->, thick] (0,0)--(-180:2) node[below right]{$A$};
+          \draw (0,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
+      \end{tikzpicture}
+    \end{multicols}
+
+
+\end{enumerate}
+\end{document}

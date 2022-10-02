@@ -2,7 +2,7 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 29 Sept 2022}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 4 October 2022}
 
 \begin{document}
 
@@ -27,17 +27,17 @@
   \item What do you notice about the angle measures?
 \end{enumerate}\vspace{1cm}
 
-\item m$\angle ABD=30^\circ$, m$\angle DBC=45^\circ$. Find m$\angle ABC$.\vspace{0.5cm}
+\item m$\angle ABD=25^\circ$, m$\angle DBC=50^\circ$. Find m$\angle ABC$.\vspace{0.5cm}
   \begin{flushright}
     \begin{tikzpicture}
-      \draw[<->, thick] (45:5)--(0,0)--(6,0);
+      \draw[<->, thick] (50:5)--(0,0)--(6,0);
       \draw[->, thick] (0,0)--(75:4);
       \draw[fill] (75:3) circle [radius=0.05] node[left]{$A$};
-      \draw[fill] (45:3) circle [radius=0.05] node[below right]{$D$};
+      \draw[fill] (50:3) circle [radius=0.05] node[below right]{$D$};
       \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
       \draw[fill] (4,0) circle [radius=0.05] node[below]{$C$};
-      \node at (1.5,0.5){$45^\circ$};
-      \node at (1,1.7){$30^\circ$};
+      \node at (1.5,0.7){$50^\circ$};
+      \node at (1,1.7){$25^\circ$};
     \end{tikzpicture}
     \end{flushright}
 
@@ -140,8 +140,9 @@
     \end{tikzpicture}
   \end{multicols}
 
-\item The ray $\overrightarrow{BD}$ makes a $90^\circ$ angle with the line $\overleftrightarrow{ABC}$, and m$\angle DBE = x^\circ$, m$\angle EBC = 25^\circ$. \\[0.5cm] 
-Find $x$, writing and equation to support your work.
+\newpage
+\item The ray $\overrightarrow{BD}$ makes a $90^\circ$ angle with the line $\overleftrightarrow{ABC}$, and m$\angle DBE = x^\circ$, m$\angle EBC = 25^\circ$. \\[0.3cm] 
+Find $x$. Start by writing an equation to support your work.
   \begin{flushright}
     \begin{tikzpicture}[scale=1.3]
       \draw[<->, thick]
@@ -151,7 +152,7 @@ Find $x$, writing and equation to support your work.
         pic["$25$", <->, draw=black, angle eccentricity=2, angle radius=1cm]
         {angle=a--b--c};
         \draw[<-, thick]
-        (90:3) coordinate (d) node[right] {$D$}
+        (90:2.5) coordinate (d) node[below right] {$D$}
         -- (0,0) coordinate (e)
         pic["$x^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
         {angle=c--e--d};
@@ -160,14 +161,14 @@ Find $x$, writing and equation to support your work.
     \end{tikzpicture}
   \end{flushright}
 
-\item Two supplementary angles have measures m$\angle ABD = 5x$ and m$\angle DBC = 125^\circ$. \\[0.5cm] 
-Write an equation, then find $x$. \vspace{0.5cm}
+\item Two supplementary angles have measures m$\angle ABD = 5x$ and m$\angle DBC = 125^\circ$. \\[0.3cm] 
+Write an equation, then solve for $x$.
   \begin{flushright}
     \begin{tikzpicture}[scale=1]
       \draw[<->, thick]
-        (0:5) coordinate (a) node[below left] {$C$}
+        (0:4) coordinate (a) node[below left] {$C$}
         -- (0,0) coordinate (b) node[below] {$B$}
-        -- (125:3) coordinate (c) node[above right] {$D$}
+        -- (125:3) coordinate (c) node[below left] {$D$}
         pic["$125^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
         {angle=a--b--c};
         \draw[<-, thick]
@@ -180,20 +181,19 @@ Write an equation, then find $x$. \vspace{0.5cm}
     \end{tikzpicture}
   \end{flushright}
       
-\item Given the perpendicular situation shown, $\overrightarrow{BD} \perp \overleftrightarrow{ABC}$ and angle measures given. \\[0.5cm] 
-Find $x$. \vspace{0.5cm}
+\item Given the angle measures and perpendicular situation shown, $\overrightarrow{BD} \perp \overleftrightarrow{ABC}$. Find $x$. \vspace{0.2cm}
   \begin{multicols}{2}
     m$\angle DBE = 40^\circ$ \\[0.25cm]
     m$\angle EBC = 3x + 5^\circ$ \\[0.25cm]
     \begin{tikzpicture}[scale=1]
       \draw[<->, thick]
-        (0:5) coordinate (a) node[below left] {$C$}
+        (0:4) coordinate (a) node[below left] {$C$}
         -- (0,0) coordinate (b) node[below] {$B$}
-        -- (50:5) coordinate (c) node[below right] {$E$}
+        -- (50:4) coordinate (c) node[below right] {$E$}
         pic["$3x + 5$", <->, draw=black, angle eccentricity=2, angle radius=1cm]
         {angle=a--b--c};
         \draw[<-, thick]
-        (90:4) coordinate (d) node[right] {$D$}
+        (90:3) coordinate (d) node[right] {$D$}
         -- (0,0) coordinate (e)
         pic["$40^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
         {angle=c--e--d};
@@ -202,18 +202,18 @@ Find $x$. \vspace{0.5cm}
     \end{tikzpicture}
   \end{multicols}
 
-\item A linear pair have measures m$\angle ABD = 7x + 16^\circ$ and m$\angle DBC = 5x + 20^\circ$. \\[0.5cm] 
+\item A linear pair have measures m$\angle ABD = 7x + 16^\circ$ and m$\angle DBC = 5x + 20^\circ$. \\[0.2cm] 
 Find m$\angle ABD$. \vspace{0.5cm}
   \begin{flushright}
     \begin{tikzpicture}[scale=1]
       \draw[<->, thick]
-        (0:5) coordinate (a) node[below left] {$C$}
+        (0:4) coordinate (a) node[below left] {$C$}
         -- (0,0) coordinate (b) node[below] {$B$}
         -- (75:3) coordinate (c) node[below right] {$D$}
         pic["$5x + 20$", <->, draw=black, angle eccentricity=2, angle radius=1cm]
         {angle=a--b--c};
         \draw[<-, thick]
-        (180:4) coordinate (d) node[below] {$A$}
+        (180:3) coordinate (d) node[below] {$A$}
         -- (0,0) coordinate (e)
         pic["$7x + 16$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
         {angle=c--e--d};

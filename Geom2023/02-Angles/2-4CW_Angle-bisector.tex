@@ -2,14 +2,14 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 3 October 2022}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 11 October 2022}
 
 \begin{document}
 
 \subsubsection*{2.4 Classwork: Angle bisector}
 \begin{enumerate}
 \item Given an angle with vertex $A$.
-  \begin{enumerate}[itemsep=0.5cm]
+  \begin{enumerate}[itemsep=0.3cm]
     \item Using a protractor, measure angle $A$ in degrees. m$\angle A =$
     \item Draw a ray $\overrightarrow{AB}$ that exactly bisects $\angle A$.
     \item What is the measure of each half angle?
@@ -17,19 +17,74 @@
   \begin{center}
   \begin{tikzpicture}
     \draw[<->, thick] (40:9)--(0,0)--(9,0);
-    \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+    \draw[fill] (0,0) circle [radius=0.05] node[above left]{$A$};
   \end{tikzpicture}
-  \end{center}
+  \end{center} \vspace{0.5cm}
 
+\item What is the measure of a straight angle in degrees?
+\item Given two congruent angles, with one having a measure of $28^\circ$. What is the measure of the other angle?
+\item Two perpendicular lines intersect at point $P$. What is the measure of angle $P$ in degrees? \vspace{0.5cm}
+
+\item The ray $\overrightarrow{BD}$ bisects $\angle ABC$. m$\angle ABD=2x+5$, m$\angle DBC=x+25$. Find m$\angle ABC$.\vspace{0.2cm}
+  \begin{flushright}
+  \begin{tikzpicture}[scale=1.3, rotate=-20]
+    \draw[<->, thick] (100:3.3)--(0,0)--(20:5);
+    \draw[->, thick] (0,0)--(60:4);
+    \draw[fill] (100:2.5) circle [radius=0.05] node[left]{$A$};
+    \draw[fill] (60:3) circle [radius=0.05] node[below right]{$D$};
+    \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
+    \draw[fill] (20:4) circle [radius=0.05] node[below]{$C$};
+    \node at (1.5,1){$x+25$};
+    \node at (0.4,2){$2x+5$};
+  \end{tikzpicture}
+  \end{flushright}
+
+\newpage
 \item An angle bisector is shown below, with $\overrightarrow{PR}$ bisecting $\angle QPS$. Given m$\angle QPR = 3x-12$ and m$\angle QPS = 5x+4$, find m$\angle QPS$.
   \begin{flushright}
-  \begin{tikzpicture}[scale=0.6, rotate=30]
+  \begin{tikzpicture}[scale=0.7, rotate=30]
     \draw[<->, thick] (230:5)node[left]{$Q$} 
     --(0,0)node[above right]{$P$}
-    --(110:6)node[above right]{$S$}--(110:7);
+    --(110:4)node[above right]{$S$}--(110:5.5);
     \draw[->, thick] (0,0)--(170:7)node[below right]{$R$};
   \end{tikzpicture}
   \end{flushright}
+
+\item Given the situation in the diagram, answer each question. Circle True or False. \vspace{0.25cm}
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item T or F: $\overrightarrow{PU}$ and $\overrightarrow{PT}$ are opposite rays.\bigskip
+      \item T or F: $\angle RPT$ and $\angle SPU$ are \\adjacent angles. \bigskip
+      \item T or F: $\angle TPU$ is an acute angle.\bigskip
+    \end{enumerate}
+    \begin{tikzpicture}[scale=1]
+      \draw[->, thick] (0,0)--(50:4);
+      \draw[<->, thick] (-3,0)--(3,0);
+      \draw[->, thick] (0,0)--(110:3);
+      \draw[fill] (110:2.5) circle [radius=0.05] node[left ]{$S$};
+      \draw[fill] (50:3) circle [radius=0.05] node[above left ]{$T$};
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$P$};
+      \draw[fill] (2,0) circle [radius=0.05] node[above]{$U$};
+      \draw[fill] (-2,0) circle [radius=0.05] node[above]{$R$};
+    \end{tikzpicture}
+    \end{multicols}
+
+\item Given a straight line and a ray, making two angles.
+  \begin{enumerate}[itemsep=0.5cm]
+    \item Write down the names of the two angles using proper notation.
+    \item Using a protractor, measure the two angles in degrees.
+    \item Do they sum to $180^\circ$?
+  \end{enumerate}
+  \begin{center}
+  \begin{tikzpicture}
+    \draw[<->, thick] (-6,0)--(6,0);
+    \draw[thick, ->] (0,0)--(60:5);
+    \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+    \draw[fill] (-4,0) circle [radius=0.05] node[below]{$B$};
+    \draw[fill] (4,0) circle [radius=0.05] node[below]{$D$};
+    \draw[fill] (60:4) circle [radius=0.05] node[right]{$C$};
+  \end{tikzpicture}
+  \end{center}
 
 \newpage
 \item \textbf{Do Not Solve}. Circle the appropriate equation. Cite a justification on the line.
@@ -41,7 +96,7 @@
       \item ``isosceles base angle theorem''
       \item ``$\perp$ rays  with complementary $\angle$s adding to $90^\circ$" 
     \end{itemize}
-  \end{multicols}
+  \end{multicols} \vspace{1cm}
 \begin{enumerate}
 \item $\overleftrightarrow{RPU}$ with ray $\overrightarrow{PS}$. \hspace{6cm}
   \begin{tikzpicture}[rotate=10, scale=0.6]
@@ -61,7 +116,7 @@
     \draw[fill] (3.25,3) circle [radius=0.05] node[right]{$U$};
     \draw[fill] (6,0) circle [radius=0.05] node[above]{$T$};
   \end{tikzpicture} \par \bigskip
-  $\angle UST \cong \angle RSU$ \hspace{0.5cm} m$\angle UST + \text{m}\angle RSU =  180$ \hspace{0.5cm} \rule{5cm}{0.15mm} \vspace{0.25cm}
+  $\angle UST \cong \angle RSU$ \hspace{0.5cm} m$\angle UST + \text{m}\angle RSU =  180$ \hspace{0.5cm} \rule{5cm}{0.15mm} \vspace{1cm}
 
 \item Given $m \angle 1 = 4x+6$, $m \angle 2 = 6x-32$. Find $m \angle 1$.
 \hspace{2cm}
@@ -72,7 +127,7 @@
   \node at (6,-.6){2};
 \end{tikzpicture} \par \bigskip
 $\angle 1 \cong \angle 2$ \hspace{1cm} m$\angle 1 + \text{m}\angle 2 =  180$ \hspace{0.5cm} \rule{6cm}{0.15mm}
-\vspace{0.5cm}
+\vspace{1cm}
 
 \item Given $\overrightarrow{BA} \perp \overrightarrow{BC}$, $m \angle ABD = 2x-5$, and $m \angle DBC = x-10$.
   \begin{tikzpicture}[scale=0.7]
@@ -88,29 +143,38 @@ $\angle 1 \cong \angle 2$ \hspace{1cm} m$\angle 1 + \text{m}\angle 2 =  180$ \hs
 \end{enumerate}
 
 \newpage
-\begin{multicols}{2}
-  \begin{itemize} 
-    \item ``alternate interior $\angle$s are $\cong$"
-    \item ``corresponding $\angle$s of $\parallel$ lines are $\cong$" 
-    \item ``same-side interior $\angle$s are supplementary" 
-  \end{itemize}
-\end{multicols}
+\item Write down the name of the \emph{three} angles shown in the diagram below and their angle measures, using your protractor.
+  \begin{center}
+  \begin{tikzpicture}[scale=2]
+    \draw[->, thick] (0,0)--(15:4);
+    \draw[->, thick] (0,0)--(95:3);
+    \draw[->, thick] (0,0)--(130:4);
+    \draw[fill] (15:3) circle [radius=0.03] node[below]{$B$};
+    \draw[fill] (95:2) circle [radius=0.03] node[right]{$C$};
+    \draw[fill] (0,0) circle [radius=0.03] node[left]{$A$};
+    \draw[fill] (130:2) circle [radius=0.03] node[left]{$D$};
+  \end{tikzpicture}
+  \end{center}
 
-\item Given two parallel lines and a transversal, as shown. \hspace{2cm}
-\begin{tikzpicture}[scale=0.7]
-  \draw[<->, thick] (3,2)--(8,2);
-  \draw[<->, thick] (2,0)--(7,0);
-  \draw[<->, thick] (4,-1)--(5.5,3);
-  \node at (4.5,0.3) [left]{$5$};
-  \node at (4.5,0.3) [right]{$6$};
-  \node at (4.3,-0.3) [left]{$7$};
-  \node at (4.3,-0.3) [right]{$8$};
-  \node at (5.2,2) [above left]{$1$};
-  \node at (5.2,2) [above right]{$2$};
-  \node at (5,2) [below left]{$3$};
-  \node at (5,2) [below right]{$4$};
-\end{tikzpicture} \\[0.5cm]
-$\angle 4 \cong \angle 5$ \hspace{1cm} m$\angle 3 + \text{m}\angle 6 =  180$ \hspace{0.5cm} \rule{6cm}{0.15mm}
+\item The $\triangle ABC$ is inscribed a semi-circle. Measure its angles and sides using a ruler and protractor.
+\begin{multicols}{2}
+  \begin{enumerate}[itemsep=0.2cm]
+    \item $AB=$
+    \item $AC=$
+    \item $BC=$
+    \item $m\angle A=$
+    \item $m\angle B=$
+    \item $m\angle C=$
+  \end{enumerate}
+\end{multicols}
+  \begin{center}
+  \begin{tikzpicture}[scale=1]
+    \draw (0,0) circle[radius=5];
+    \draw[thick] (0:5)node[right]{$B$}--(0,0)--(-5,0)node[left]{$A$}--
+    (106.25:5)node[above]{$C$}--cycle;
+    \draw[fill] (0,0) circle [radius=0.05] node[below]{$O$};
+  \end{tikzpicture}
+  \end{center}
 
 \end{enumerate}
 \end{document}
