@@ -9,6 +9,48 @@
 \subsubsection*{2.7 Test: Angle measures}
 \emph{Diagrams are not necessarily drawn to scale unless otherwise stated.}
 \begin{enumerate}
+\item Use the image of the protractor to measure each of the angles. \par \medskip
+  \begin{tikzpicture}
+    \draw[thick] (-3,0)--(0,0)--(3,0);
+    \draw (4,0) arc (0:180:4);
+    \draw[thick] (0,0) circle [radius=0.1];
+    \foreach \x in {0,15,30,...,180}
+      \node at (\x:3.4){\x};
+    \foreach \x in {0,15,30,...,180}
+      \draw (\x:3.7)--(\x:4);
+    \foreach \x in {0,5,...,180}
+      \draw (\x:3.9)--(\x:4);
+    \draw[->,thick] (0,0)--(30:4.5)node[right]{m$\angle A = \rule{2cm}{0.1mm}$};
+    \draw[->,thick] (0,0)--(50:4.5)node[right]{m$\angle B = \rule{2cm}{0.1mm}$};
+    \draw[->,thick] (0,0)--(120:4.5)node[left]{m$\angle C = \rule{2cm}{0.1mm}$};
+  \end{tikzpicture}
+
+\item Find the measure of the angle in degrees with a protractor.
+    \begin{flushright}
+    \begin{tikzpicture}[scale=2]
+      \draw[->, thick] (0,0)--(40:4);
+      \draw[->, thick] (0,0)--(-10:5);
+      \draw[fill] (40:3) circle [radius=0.025] node[above left ]{$D$};
+      \draw[fill] (0,0) circle [radius=0.025] node[above left]{$E$};
+      \draw[fill] (-10:4) circle [radius=0.025] node[above]{$F$};
+    \end{tikzpicture}
+    \end{flushright}
+
+\item Given m$\angle ABD=30^\circ$, m$\angle DBC=40^\circ$. Calculate m$\angle ABC$.\vspace{0.5cm}
+  \begin{flushright}
+    \begin{tikzpicture}
+      \draw[<->, thick] (40:5)--(0,0)--(6,0);
+      \draw[->, thick] (0,0)--(70:4);
+      \draw[fill] (70:3) circle [radius=0.05] node[left]{$A$};
+      \draw[fill] (40:3) circle [radius=0.05] node[below right]{$D$};
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (4,0) circle [radius=0.05] node[below]{$C$};
+      \node at (1.6,0.6){$40^\circ$};
+      \node at (1.2,1.7){$30^\circ$};
+    \end{tikzpicture}
+    \end{flushright}
+
+\newpage
 \item Given the situation in the diagram, answer each question. Circle True or False. \vspace{0.25cm}
   \begin{multicols}{2}
     \begin{enumerate}
