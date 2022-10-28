@@ -203,35 +203,6 @@ Find ${DG}$, expressed as a fraction, not a decimal. \vspace{1cm}
       \draw[fill] (9,0) circle [radius=0.05] node[below]{$G$};
     \end{tikzpicture}
   \end{flushleft} \vspace{1cm}
-  
-\item Given $\overline{FGHI}$, $FG=8 \frac{1}{6}$, $GH=12 \frac{1}{3}$, and $HI= 5 \frac{1}{2}$. (diagram not to scale) \par \smallskip
-Find ${FI}$. \par \bigskip
-  \begin{tikzpicture}
-    \draw[thick] (0,0)--(9,0);
-    \draw[fill] (0,0) circle [radius=0.05] node[below]{$F$};
-    \draw[fill] (3,0) circle [radius=0.05] node[below]{$G$};
-    \draw[fill] (7,0) circle [radius=0.05] node[below]{$H$};
-    \draw[fill] (9,0) circle [radius=0.05] node[below]{$I$};
-  \end{tikzpicture} \vspace{1cm}
-
-\item Given $\overleftrightarrow{JK}$ as shown on the number line. \par \smallskip
-  \begin{tikzpicture}[scale=0.5]
-    \draw[<->] (49,0)--(71,0);
-    \foreach \x in {50, 52,...,70}
-      \draw[shift={(\x,0)}] (0pt,-6pt)--(0pt,6pt) node[below=5pt]{$\x$};
-    \draw[fill] (54,0) circle [radius=0.1] node[above]{$J$};
-    \draw[fill] (68,0) circle [radius=0.1] node[above]{$K$};
-  \end{tikzpicture} \par \bigskip
-  What is the midpoint between the points $J$ and $K$? \vspace{2cm}
-
-\item The point $M(2.3)$ is the midpoint of segment $\overline{AB}$. Given $A(-1.5)$, find the value of $B$. Mark and label it below. \par \smallskip
-\begin{tikzpicture}
-  \draw[<->] (-2.5,0)--(8.5,0);
-  \foreach \x in {-2,...,8}
-    \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
-  \draw[fill] (-1.5,0) circle [radius=0.05] node[above]{$A(-1.5)$};
-  \draw[fill] (2.3,0) circle [radius=0.05] node[above]{$M(2.3)$};
-\end{tikzpicture} \vspace{1cm}
 
 \item Given $\overleftrightarrow{RS}$ as shown on the number line, with $R=-2.8$ and $S=4.4$. \par \smallskip
   \begin{tikzpicture}
@@ -355,21 +326,6 @@ Find the length of the line segment $\overline{PQ}$. State an equation for full 
         \draw[fill] (1.8,0) circle [radius=0.05] node[above] {$Q$};
     \end{tikzpicture}
   \end{center}
-
-\item Given $\overline{PQR}$, $PQ=3x+14$, $QR=2x+5$, $PR=4x+28$. \\[0.5cm]
-Write down an equation to represent the situation.
-  \begin{center}
-    \begin{tikzpicture}
-    \draw[-, thick] (0,0)--(7,0);
-    \draw[fill] (0,0) circle [radius=0.05] node[below]{$P$};
-    \draw[fill] (5,0) circle [radius=0.05] node[below]{$Q$};
-    \draw[fill] (7,0) circle [radius=0.05] node[below]{$R$};
-    \node at (2,0) [above]{$3x+14$};
-    \node at (6,0) [above]{$2x+5$};
-    \draw[<->, dashed] (0,-0.7)--(7,-0.7);
-    \node at (3.5,-0.7) [below]{$4x+28$};
-  \end{tikzpicture}
-  \end{center}
         
 \item Given $\overline{PQRS}$. $Q$ is the midpoint of $\overline{PS}$, and $R$ bisects $\overline{QS}$. \\[0.5cm] 
 If $PR= 4 \frac{1}{2}$ find ${PS}$. Justify your answer.
@@ -488,34 +444,8 @@ If $PR= 4 \frac{1}{2}$ find ${PS}$. Justify your answer.
     \node [right] at (3.25,2.5){$5x+7$};
     \node [left] at (0.75,2.5){$3x+17$};
   \end{tikzpicture}
-
-\item The isosceles $\triangle FGH$ is shown with $\overline{FH} \cong \overline{GH}$. Given $GH=2x+15$ and $FH=19$. \\[0.5cm]
-  Write an equation that could be used to find $x$.\\[0.25cm]
-    \begin{tikzpicture}[scale=0.5]
-      \draw[thick](0,0)--(4,0)--(2,6)--(0,0);
-      \draw[fill] (0,0) circle [radius=0.05] node[below left]{$F$};
-      \draw[fill] (4,0) circle [radius=0.05] node[below right]{$G$};
-      \draw[fill] (2,6) circle [radius=0.05] node[above right]{$H$};
-      \draw[thick] (0.8,3.1)--(1.2,3); %tick mark
-      \draw[thick] (2.8,3)--(3.2,3.1); %tick mark
-      \node at (3.5,3.4) [right]{$2x+15$};
-      \node at (0.8,3.4) [left]{$19$};
-    \end{tikzpicture}
   
 \newpage
-\item Given the rectangle $ABCD$ shown below, with $AB=6 \frac{1}{3}$ and $BC=2 \frac{1}{2}$. Find the area of the rectangle, expressing your result as a fraction.
-  \begin{flushright}
-  \begin{tikzpicture}[scale=1.25]
-    \draw[-, thick] (0,0)--(4.5,0)--(4.5,2)--(0,2)--cycle;
-    \draw[fill] (0,0) circle [radius=0.05] node[left]{$A$};
-    \draw[fill] (4.5,0) circle [radius=0.05] node[right]{$B$};
-    \draw[fill] (4.5,2) circle [radius=0.05] node[right]{$C$};
-    \draw[fill] (0,2) circle [radius=0.05] node[left]{$D$};
-    \node at (5, 1){$2 \frac{1}{2}$};
-    \node at (2.25, -0.5){$6 \frac{1}{3}$};
-  \end{tikzpicture}
-  \end{flushright}
-
 \item A triangle has an area of 68 square centimeters. Its height is 16 centimeters. Find the length of its base. \vspace{1cm}
 
 \item A triangle has an area of 75 square centimeters. Its height is 12 centimeters. Find the length of its base. \vspace{1cm}
@@ -715,18 +645,6 @@ If $PR= 4 \frac{1}{2}$ find ${PS}$. Justify your answer.
   \end{tikzpicture}
   \end{flushright}
   \vspace{1cm}
-    
-\item Find the area of $\triangle ABC$ shown below (not actual size) with $m\angle C=90^\circ$ and the lengths of the triangle's sides as $a=50$, $b=87$, and $c=100$. \par \medskip
-  \begin{tikzpicture}[scale=1.4]
-    \draw[thick]
-    (0,0)node[left]{$A$}--
-    (4,0)node[below right]{$C$}--
-    (4,2.31)node[right]{$B$}--cycle;
-    \draw (4,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
-    \node at (2,0)[below]{$b=87$};
-    \node at (4,1.2)[right]{$a=50$};
-    \node at (1.8,1.4)[above]{$c=100$};
-  \end{tikzpicture}
 
 \newpage
 \item A parallelogram is shown on the $x$-$y$ plane having a base $b=4$ and height $h=3$. 
