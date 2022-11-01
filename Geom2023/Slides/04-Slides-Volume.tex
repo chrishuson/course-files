@@ -1,0 +1,135 @@
+\input{preamble-slides169}
+
+%Tick mark commands
+\newcommand\ticks{}
+  \def\ticks{{Bar[scale=2]}-{Bar[scale=2]}}
+\newcommand\paraticks{}
+  \def\paraticks{{Straight Barb[reversed, scale=2]}-{Straight Barb[scale=2]}}
+
+\title{Geometry Unit 4: Volume}
+\date{31 October - 18 November 2022}
+
+\begin{document}
+\frame{\titlepage}
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{4.1 Nets \hfill 31 October \,}
+\begin{frame}{Learning Target: I can fold nets into 3-dimensional solids}
+  {HSG.CO.C.9 Prove theorems about lines and angles  \hfill \alert{4.1 Monday 31 October}}
+  \begin{block}{Do Now}
+    \begin{enumerate}
+      \item Review your Deltamath assignments
+      \item Check your Jumprope scores
+      \item Set a study goal
+      \item Answer survey in Google Classroom, ``Mark as Done''
+    \end{enumerate}
+  \end{block}
+    Lesson: Nets, Deltamath classwork practice \\
+    Homework: Area formulas review problem set
+\end{frame}
+
+\section{4.2 Rectangular prisms \hfill 1 November \,}
+\begin{frame}{Learning Target: I can calculate the volume of a \emph{rectangular prism}}
+  {HSG.CO.C.9 Prove theorems about lines and angles  \hfill \alert{4.2 Tuesday 1 November}}
+  \begin{block}{Do Now}
+    \begin{enumerate}
+      \item Find the area of a rectangle 4 inches by 6 inches
+      \item Find the length of a rectangle 7 inches wide with an area of 63 square inches
+    \end{enumerate}
+  \end{block}
+    Lesson: Prism definitions, volume formula \\
+    Homework: Deltamath  practice
+\end{frame}
+
+\begin{frame}{A prism is a polyhedron, a 3-dimensional shape}
+    \begin{columns}
+      \column{0.7\textwidth}
+      \begin{description}
+        \item[Solid] A 3-dimensional object
+        \item[Face] A flat surface of a geometric solid
+        \item[Edge] A line segment where two faces meet
+        \item[Vertex] A point where edges meet 
+        \item[Prism] A solid with two identical, parallel, bases and uniform cross section
+        \item[Base] Flat shapes that form the top and bottom or ends of a prism
+        \item[Lateral face] The sides of a prism, which are parallelograms
+        \item[Cross section] The shape of a plane's intersection with a solid
+      \end{description}
+      \column{0.3\textwidth}
+      \begin{tikzpicture}[scale=0.7]
+        \draw [-, thick] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+        \draw [-, thick] (0,4)--(0.5,4.75)--(3.5,4.75)--(3,4);
+        \draw [-, thick] (3,0)--(3.5,0.75)--(3.5,4.75);
+        \node at (3.75, 2.75){$8$};
+        \node at (1.5, -0.25){$5$};
+        \node at (3.5, 0.25){$3$};
+      \end{tikzpicture}
+    \end{columns} \vspace{0.5cm}
+  \end{frame}
+
+\begin{frame}{Common types of prisms, named by their base}
+  \begin{columns}
+    \column{0.7\textwidth}
+    \begin{description}
+      \item[Rectangular] Bases are rectangles (or squares)
+      \item[Triangular] Triangular base
+      \item[Hexagonal] Six-sided base, a hexagon
+      \item[Cylinder] Solid with two parallel circles as bases 
+      \item[Right] Lateral faces are a right angles to the base
+      \item[Oblique] Slanted
+    \end{description}
+    \column{0.3\textwidth}
+    \begin{tikzpicture}[scale=0.7]
+      \draw [-, thick] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+      \draw [-, thick] (0,4)--(0.5,4.75)--(3.5,4.75)--(3,4);
+      \draw [-, thick] (3,0)--(3.5,0.75)--(3.5,4.75);
+      \node at (3.75, 2.75){$8$};
+      \node at (1.5, -0.25){$5$};
+      \node at (3.5, 0.25){$3$};
+    \end{tikzpicture}
+  \end{columns} \vspace{0.5cm}
+  Math Monks link, https://mathmonks.com/prism
+\end{frame}
+
+\begin{frame}
+  \includegraphics[width=0.5\textwidth]{../graphics/prism-shapes-768x960.jpeg}
+\end{frame}
+
+\begin{frame}{Volume is a measure of space, the number of unit cubes a solid contains}
+  Given the area of the base $B$ and height $h$, \\
+  the volume of a prism is $V= B \times h$
+  \vspace{0.5cm}
+  \begin{columns}
+    \column{0.7\textwidth}
+    \begin{description}
+      \item[Rectangular] $V= l \times w \times h$
+      \item[Square] $V= s^2 \times h$
+      \item[Triangular] $V= \frac{1}{2} l \times w \times h$
+      \item[Cylinder] $V= \pi r^2 \times h$ 
+    \end{description}
+    \column{0.3\textwidth}
+    \begin{tikzpicture}[scale=0.7]
+      \draw [-, thick] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+      \draw [-, thick] (0,4)--(0.5,4.75)--(3.5,4.75)--(3,4);
+      \draw [-, thick] (3,0)--(3.5,0.75)--(3.5,4.75);
+      \node at (3.75, 2.75){$8$};
+      \node at (1.5, -0.25){$5$};
+      \node at (3.5, 0.25){$3$};
+    \end{tikzpicture}
+  \end{columns} \vspace{0.5cm}
+  \end{frame}
+
+\section{4.3 Surface area \hfill 3 November \,}
+  \begin{frame}{Learning Target: I can calculate the surface area of a rectangular prism}
+    {HSG.CO.C.9 Prove theorems about lines and angles  \hfill \alert{4.3 Thursday 3 November}}
+    \begin{block}{Do Now}
+      \begin{enumerate}
+        \item Find the volume of a rectangular prism 4 inches by 6 inches by 3.5 inches
+        \item Find the volume of a triangular prism with base 6 inches wide by 5 inches tall by 10 inches high
+      \end{enumerate}
+    \end{block}
+      Lesson: Surface area definition, formula \\
+      Homework: Deltamath  practice
+  \end{frame}
+
+\end{document}
