@@ -67,13 +67,15 @@
 \item The smaller pyramid for his wife, Queen Meretites, has a square base with an area of 2500 square meters. Find the length of the side of its base, $s$.
 
 \newpage
-\item Given the circle centered at $O$ with radius $r=4$.
+\item Given the circle centered at $O$ with radius $r=4$. Leave answers in terms of $\pi$.
   \begin{multicols}{2}
     \begin{enumerate}
-      \item Find the circumference of a circle. %\vspace{1cm}
-      \item Find the area of the circle.\vspace{3cm}
+      \item Write down the length of the circle's diameter.
+      \item Find the circumference of a circle. \vspace{1cm}
+      \item Find the area of the circle.\vspace{1cm}
     \end{enumerate}
-    %\columnbreak
+    \columnbreak
+    \begin{flushright}
     \begin{tikzpicture}[scale=.635]
       \draw [help lines] (-5,-5) grid (5,5);
       %\draw [thick, ->] (-2.2,0) -- (10.4,0) node [below right] {$x$};
@@ -81,9 +83,10 @@
       \draw (0,0) circle [radius=4] node[below]{$O$};
       \draw [fill] (0,0) circle [radius=0.05];
     \end{tikzpicture}
-  \end{multicols}
+  \end{flushright}
+  \end{multicols} \vspace{1cm}
 
-  \item Given the semi-circle shown with diameter $AB=6$. Find its area and perimeter.
+  \item Given the semi-circle shown with diameter $AB=6$. Find its perimeter in terms of $\pi$.
     \begin{flushright}
     \begin{tikzpicture}[scale=.635]
       \draw [help lines] (-5,-1) grid (5,4);
@@ -93,11 +96,43 @@
       \draw [fill] (-3,0) circle [radius=0.05];
       \draw [fill] (3,0) circle [radius=0.05];
     \end{tikzpicture}
-  \end{flushright} \vspace{1cm}
+  \end{flushright} \vspace{2cm}
 
-  \item Find the radius of a circle having an area of $25 \pi$. \vspace{2cm}
-  \item Find the diameter of a circle with a circumference of 31.416.
+\item The rectangular prism shown has a volume of $V=735$ cubic feet. Its base measures $l=8.4$ feet by $w=6.25$ feet. \\[0.25cm]
+Find its height. Begin by writing the following formula with values substituted: \\[0.25cm]
+$V = l \times w \times h = 735$
+\begin{flushright}
+  \begin{tikzpicture}[scale=0.9]
+    \draw [-, thick] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+    \draw [-, thick] (0,4)--(0.5,4.75)--(3.5,4.75)--(3,4);
+    \draw [-, thick] (3,0)--(3.5,0.75)--(3.5,4.75);
+    \node at (3.75, 2.75){$h$};
+    \node at (1.5, -0.25){$8.4$};
+    \node at (4, 0.25){$6.25$};
+  \end{tikzpicture}
+\end{flushright}
 
+\newpage
+\item A typical bill board measures 14 feet high by 48 feet wide. If billboard paper costs approximately 15 cents per square foot, how much would the paper cost to cover a typical billboard? \vspace{3cm}
+
+\item Find the population density of Brooklyn, (Kings County) in people per square mile.
+\begin{multicols}{2}
+  Population estimate: 2,559,903 (July 2019)\\
+  Source: US Census (census.gov) \\
+  Land area in square miles: 69.4 %\vspace{3cm}
+  \begin{flushright}
+    \includegraphics[width=7cm]{../graphics/04Brooklyn.png}\\
+    %https://graspablemath.com/canvas?load=_0b517bab59c981c7
+  \end{flushright}
+\end{multicols}
+
+\item The American Eagle gold coin is minted by the US Treasury. The one ounce coin has a radius of about $r=16$ millimeters and thickness $h=3$ mm. Given a density of $D = 0.014$ grams per cubic millimeter, find the coin's volume and weight. \\[0.25cm]
+  Show the substitution into both formulas for full credit.\\[0.5cm]
+  $\displaystyle V = \pi r^2 h$ and $W=VD$
+    \begin{flushright}
+      \includegraphics[width=5cm]{../graphics/04bcoin.png}
+      %https://graspablemath.com/canvas?load=_845e39ea582acd9e
+    \end{flushright}
 
 \end{enumerate}
 \end{document}
