@@ -172,26 +172,6 @@
     \end{tikzpicture}
   \end{flushright} \vspace{0.75cm}  
 
-\item Find $GH$, given $G=1.4$ and $H=6.1$.
-\begin{flushright}
-  \begin{tikzpicture}
-    \draw[<->] (-1.5,0)--(7.5,0);
-    \foreach \x in {-1,...,7}
-      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
-      \draw[fill] (1.4,0) circle [radius=0.05] node[above] {$G$};
-      \draw[fill] (6.1,0) circle [radius=0.05] node[above] {$H$};
-  \end{tikzpicture}
-\end{flushright} \vspace{1.75cm}
-
-\item Given $\overline{ABC}$, $AB=\frac{2}{3}$, and $AC=3 \frac{1}{3}$. \par \smallskip
-  Find ${BC}$. \par \smallskip
-  \begin{tikzpicture}
-    \draw[thick] (1,0)--(7,0);
-    \draw[fill] (1,0) circle [radius=0.05] node[below]{$A$};
-    \draw[fill] (2,0) circle [radius=0.05] node[below]{$B$};
-    \draw[fill] (7,0) circle [radius=0.05] node[below]{$C$};
-  \end{tikzpicture} \vspace{1cm}
-
 \item Given $\overline{DEFG}$, $DE=3 \frac{1}{4}$, $EF=6 \frac{1}{4}$, and $FG= 1 \frac{3}{4}$. (diagram not to scale) \par \smallskip
 Find ${DG}$, expressed as a fraction, not a decimal. \vspace{1cm}
   \begin{flushleft}
@@ -363,24 +343,6 @@ If $PR= 4 \frac{1}{2}$ find ${PS}$. Justify your answer.
       \draw[fill] (9,0) circle [radius=0.05] node[below]{$G$};
     \end{tikzpicture}
     \end{flushright}
-  
-\item Given $M$ is the midpoint of $\overline{AB}$, $AM=7x+1$, $MB=33-x$.
-  \begin{enumerate}
-    \item Mark the diagram with the values and tick marks
-    \item Write an equation that could be solved for $x$
-  \end{enumerate} \vspace{1cm}
-  \begin{center}
-    \begin{tikzpicture}
-      \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
-      \draw[-, thick] (0,0)--(7,0);
-      \draw[fill] (3.5,0) circle [radius=0.05] node[below]{$M$};
-      \draw[fill] (7,0) circle [radius=0.05] node[below]{$B$};
-      %\node at (1.7,0.5) [above]{$x+2$};
-      %\node at (5.2,0.5) [above]{$11$};
-      %\draw[<->, dashed] (0,-1)--(7,-1);
-      %\node at (3.5,-1) [below]{$20$};
-    \end{tikzpicture}
-  \end{center}
 
 \item Given points on the number line $E(1.2)$ and $G(5.6)$ as shown. Find the midpoint $F$ of $\overline{EG}$. Mark it on the number line and label it as an ordered pair.\\[20pt]
   \begin{tikzpicture}
@@ -431,19 +393,6 @@ If $PR= 4 \frac{1}{2}$ find ${PS}$. Justify your answer.
 \item Given that $K$ bisects $\overline{JL}$. $JK=3x+8$, $KL=17$. Find ${x}$.
 \item The point $M$ is the midpoint of $\overline{UV}$, $UM=x+7$, and $MV=2x+1$. Find ${UV}$.
 \item The points $P$, $Q$, and $R$ are collinear, with $PQ=6x+16$ and $PR=42$. $\overline{QR}$ is half the length of $\overline{PQ}$. Find ${x}$.
-
-\newpage
-\item Given isosceles $\triangle ABC$ with $\overline{AC} \cong \overline{BC}$. $AC=5x+7$ and $BC=3x+17$. \\ Find $AC$.\\[0.5cm]
-  \begin{tikzpicture}[scale=0.55]
-    \draw[thick](0,0)--(4,0)--(2,6)--(0,0);
-    \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
-    \draw[fill] (4,0) circle [radius=0.05] node[below]{$B$};
-    \draw[fill] (2,6) circle [radius=0.05] node[above right]{$C$};
-    \draw[thick] (0.8,3)--(1.2,3); %tick mark
-    \draw[thick] (2.8,3)--(3.2,3); %tick mark
-    \node [right] at (3.25,2.5){$5x+7$};
-    \node [left] at (0.75,2.5){$3x+17$};
-  \end{tikzpicture}
   
 \newpage
 \item A triangle has an area of 68 square centimeters. Its height is 16 centimeters. Find the length of its base. \vspace{1cm}
@@ -554,14 +503,6 @@ If $PR= 4 \frac{1}{2}$ find ${PS}$. Justify your answer.
     \node at (-0.5, 3){13};
   \end{tikzpicture}
   \end{flushleft} \vspace{1cm}
-
-\item Find the area $A$ of the shape shown below in terms of unit squares.
-  \begin{flushleft}
-    \begin{tikzpicture}[scale=0.6]
-      \draw[help lines] (-4,-4) grid (5,3);
-      \draw[thick, -] (-3,-3)--(4,-3)--(4,2)--(2,2)--(2,0)--(-1,0)--(-1,2)--(-3,2)--cycle;
-    \end{tikzpicture}
-  \end{flushleft}
  
 \item On the grid below, accurately draw and label two adjacent squares, one with a side length of 4 cm, the other with a side length of 3 cm. The grid is in centimeters. \par \medskip
   Find the area $A$ and perimeter $P$ of combined shape.
