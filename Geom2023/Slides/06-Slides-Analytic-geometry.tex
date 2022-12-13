@@ -182,4 +182,77 @@ Convert from standard to $y$-intercept form. Example:
   $$x+2y=6$$
 \end{frame}
 
+\section{6.4 Parallel and perpendicular slopes \hfill 13 December \,}
+\begin{frame}{Learning Target: I can find parallel and perpendicular slopes}
+  {HSG.CO.C.9 Prove theorems about lines and angles  \hfill \alert{6.4 Tuesday 13 December}}
+  \begin{columns}
+    \column{0.5\textwidth}
+      Do Now: Find the equation of $\overleftrightarrow{AB}$ \\
+      Challenge: find the $x$-intercept \\[1cm]
+      Lesson: Parallel and perpendicular lines, negative reciprocals \\
+      Homework: Deltamath problem set
+    \column{0.5\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.6]
+        \draw[help lines] (-2,-1) grid (5,6);
+        \draw[thick, <->] (-2.4,0) -- (5.4,0) node [below right] {$x$};
+        \draw[thick, <->] (0,-1.4)--(0,6.4) node [left] {$y$};
+        \draw[<->,domain=-2.3:4.8] plot (\x, 0.666*\x+1) ;
+        \draw[fill] (0,1) circle [radius=0.1] node[below right] {$A(0,1)$};
+        \draw[fill] (3,3) circle [radius=0.1] node[below right] {$B(3,3)$};
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Parallel lines have the same slope}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{description}
+      \item[Parallel] Lines in the same plane that never intersect
+      \item[Skew] Lines that do not intersect and are not parallel
+    \end{description} \bigskip
+    Lines $k$ and $l$ are parallel if and only if $m_k=m_l$, if their slopes are equal.
+    \column{0.5\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.6]
+        \draw[help lines] (-2,-1) grid (5,6);
+        \draw[thick, <->] (-2.4,0) -- (5.4,0) node [below right] {$x$};
+        \draw[thick, <->] (0,-1.4)--(0,6.4) node [left] {$y$};
+        \draw[<->,domain=-2.3:4.8] plot (\x, 0.666*\x+1) node[above left]{$l$};
+        \draw[fill] (0,1) circle [radius=0.1];
+        \draw[fill] (3,3) circle [radius=0.1];
+        \draw[<->,domain=-2.3:4.8] plot (\x, 0.666*\x+3) node[above left]{$k$};
+        \draw[fill] (0,3) circle [radius=0.1];
+        \draw[fill] (3,5) circle [radius=0.1];
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Perpendicular lines slopes' are negative reciprocals}
+  \begin{columns}
+    \column{0.55\textwidth}
+    \begin{description}
+      \item[Perpendicular] Lines that intersect at right angles
+      \item[Reciprocals] Two numbers whose product is 1
+      \item[Quarter turn] $90^\circ$ rotation, reversing the sign of the slope and the $x$ and $y$ coordinates
+    \end{description} \bigskip
+    Lines $k$ and $l$ are perpendicular if and only if $m_k \times m_l = -1$, if their slopes are negative reciprocals.
+    \column{0.45\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.6]
+        \draw[help lines] (-2,-1) grid (5,7);
+        \draw[thick, <->] (-2.4,0) -- (5.4,0) node [below right] {$x$};
+        \draw[thick, <->] (0,-1.4)--(0,7.4) node [left] {$y$};
+        \draw[<->,domain=-2.3:4.8] plot (\x, 0.666*\x+1) node[above left]{$l$};
+        \draw[fill] (0,1) circle [radius=0.1];
+        \draw[fill] (3,3) circle [radius=0.1];
+        \draw[<->,domain=0.5:4.8] plot (\x, -1.5*\x+7.5) node[right]{$k$};
+        \draw[fill] (1,6) circle [radius=0.1];
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
 \end{document}
