@@ -1,0 +1,80 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 6: Analytic geometry\\* 16 December 2022}
+
+\begin{document}
+
+\subsubsection*{6.6 Quiz: Slope-intercept form of linear equations \hfill 8.F.A.3}
+\begin{enumerate}
+
+\item Find the equation of the given line $\overleftrightarrow{AB}$, $A(0,-1)$, $B(3,5)$.
+\begin{multicols}{2}
+    \begin{enumerate}[itemsep=0.5cm]
+      \item Find the slope. \par
+          $m=$
+      \item Write down the $y$-intercept. \par 
+        $b=$
+      \item Write the equation of the line. \vspace{1cm}
+      \end{enumerate}
+    \begin{flushright}
+    \begin{tikzpicture}[scale=0.8]
+      \draw [help lines] (-1,-2) grid (6,5);
+      \draw [thick, ->] (-1.2,0) -- (6.4,0) node [below right] {$x$};
+      \draw [thick, ->] (0,-2.2)--(0,5.4) node [left] {$y$};
+      \draw [fill] (0,-1) circle [radius=0.05] node[below right] {$A(0,-1)$};
+      \draw [fill] (3,5) circle [radius=0.05] node[below right] {$B(3,5)$};
+      \draw [<->, thick, domain=-0.4:3.2] plot (\x,2*\x-1);
+    \end{tikzpicture}
+    \end{flushright}
+  \end{multicols}
+
+\item Is the point $(3,10)$ on the line $y=2x+4$? Support your answer algebraically. \vspace{3cm}
+
+\item Answer each statement about linear equations.
+\begin{enumerate}[itemsep=0.25cm]
+  \item What is the $y$-intercept of the line $y = -5x+5$?
+  \item What is the slope of a vertical line?
+  \item What is the $y$-intercept of the line $y = -2x-1$?
+  \item What is the slope of the line $y = -x+7$?
+  \item Which has a zero slope, a vertical or horizontal line?
+\end{enumerate} \vspace{0.5cm}
+
+\item A line has a slope of $-\frac{2}{3}$ and passes through the point $(0, 5)$. Write down the equation of the line in the form $y=mx+b$. \vspace{3cm}
+
+\newpage
+\subsubsection*{HSG.GPE.B.5 The slope criteria for parallel and perpendicular lines}
+\item The line $j$ has the equation $y=4x-1$.
+  \begin{enumerate}
+    \item What is the slope of the line $k$, given $k \parallel j$?
+    \vspace{1cm}
+    \item What is the slope of the line $l$, given $l \perp j$?
+    \vspace{1cm}
+  \end{enumerate}
+
+\item The line $l$ has the equation $y=\frac{3}{2}x+4$. To each line below, circle whether $l$ is parallel, perpendicular, or neither.
+\begin{enumerate}
+  \item parallel \quad perpendicular \quad neither \qquad $y=\frac{3}{2}x-4$
+  \vspace{0.5cm}
+  \item parallel \quad perpendicular \quad neither \qquad $y=\frac{2}{3}x+5$
+  \vspace{0.5cm}
+  \item parallel \quad perpendicular \quad neither \qquad $y=-\frac{3}{2}x+13$
+  \vspace{0.5cm}
+  \item parallel \quad perpendicular \quad neither \qquad $y=-\frac{2}{3}x+1$
+  \vspace{0.5cm}
+\end{enumerate}
+
+
+\item Write the linear equation $2x-3y=-12$ in the form $y=mx+c$. \vspace{4cm}
+
+\item The line has the equation $y=\frac{4}{5}x+10$. 
+\begin{enumerate}
+  \item Write down it's slope and $y$-intercept. \hspace{1cm} $m=$
+  \hspace{2cm} $b=$
+  \item Is the point $(-5, 6)$ on the line? Justify your answer.
+\end{enumerate}
+\vspace{4cm}
+
+\end{enumerate}
+\end{document}
