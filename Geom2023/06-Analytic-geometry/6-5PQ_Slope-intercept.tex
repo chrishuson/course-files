@@ -9,88 +9,39 @@
 \subsubsection*{6.5 PreQuiz: Slope-intercept form of linear equations}
 \begin{enumerate}
 
-\item Find the equation of the given line $\overleftrightarrow{AB}$, $A(0,4)$, $B(4,2)$.
+\item Find the equation of the given line $\overleftrightarrow{AB}$, $A(0,2)$, $B(3,5)$.
 \begin{multicols}{2}
-    \begin{enumerate}[itemsep=1cm]
-      \item Find the slope. \par \smallskip 
+    \begin{enumerate}[itemsep=0.5cm]
+      \item Find the slope. \par
           $m=$
-      \item Write down the $y$-intercept. \par \smallskip 
+      \item Write down the $y$-intercept. \par 
         $b=$
-      \item Write the equation of the line in the slope-intercept form\\[0.25cm]
-      $y=mx+b$
+      \item Write the equation of the line. \vspace{1cm}
       \end{enumerate}
     \begin{flushright}
     \begin{tikzpicture}[scale=0.8]
       \draw [help lines] (-1,-1) grid (6,6);
       \draw [thick, ->] (-1.2,0) -- (6.4,0) node [below right] {$x$};
       \draw [thick, ->] (0,-1.2)--(0,6.4) node [left] {$y$};
-      \draw [fill] (0,4) circle [radius=0.05] node[above right] {$A(0,4)$};
-      \draw [fill] (4,2) circle [radius=0.05] node[above right] {$B(4,2)$};
-      \draw [<->, thick] (-1,4.5)--(5.5,1.25);
+      \draw [fill] (0,2) circle [radius=0.05] node[below right] {$A(0,2)$};
+      \draw [fill] (3,5) circle [radius=0.05] node[below right] {$B(3,5)$};
+      \draw [<->, thick, domain=-1.2:4.2] plot (\x,\x+2);
     \end{tikzpicture}
     \end{flushright}
   \end{multicols}
 
+\item Is the point $(4,7)$ on the line $y=3x-5$? Support your answer algebraically. \vspace{3cm}
+
 \item Complete each statement about linear equations.
-\begin{enumerate}[itemsep=0.5cm]
+\begin{enumerate}[itemsep=0.25cm]
   \item What is the slope of a horizontal line?
   \item What is the $y$-intercept of the line $y = 2x + 3$?
   \item What is the slope of the line $y = x - 5$?
   \item Which has an undefined slope, a vertical or horizontal line?
   \item What is the $y$-intercept of the line $y = -2x$?
-\end{enumerate}
+\end{enumerate} \vspace{1cm}
 
-\newpage
-\item Given $\overleftrightarrow{PQ}$, $P(1,6)$, $Q(3,2)$. Find its slope, $y$-intercept, and equation.
-\begin{flushright}
-  \begin{tikzpicture}[scale=.65]
-    \draw [help lines] (0,0) grid (7,9);
-    \draw [thick, ->] (0,0) -- (7.4,0) node [below right] {$x$};
-    \draw [thick, ->] (0,0)--(0,9.4) node [right] {$y$};
-    \foreach \x in {1,...,7}
-    \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt] {$\x$};
-    \foreach \y in {1,...,9}
-    \draw[shift={(0,\y)}] (-3pt,0pt)--(3pt,0pt) node[left=5pt] {$\y$};
-    \draw [thick, <->] (-0.25,8.5)--(4.25,-0.5);
-    \draw [fill] (1,6) circle [radius=0.08] node[above right] {$P$};
-    \draw [fill] (3,2) circle [radius=0.08] node[above right] {$Q$};
-  \end{tikzpicture}
-  \end{flushright}
-  
-\item The line $l$ is shown on the grid below.
-\begin{multicols}{2}
-\begin{enumerate}
-  \item Write down it's slope, $y$-intercept.\\ $m=$
-  \hspace{2cm} $b=$
-  \vspace{0.25cm}
-  \item Write down the equation of line $l$.
-  \vspace{1cm}
-  \item Draw a line parallel to line $l$ though point $S$.
-  \item Write down the equation of the second line.
-\end{enumerate}
-  \begin{center}
-  \begin{tikzpicture}[scale=0.7]
-    \draw [help lines] (-1,-1) grid (7,6);
-    \draw [thick, ->] (-1.2,0) -- (7.4,0) node [below right] {$x$};
-    \draw [thick, ->] (0,-1.2)--(0,6.4) node [right] {$y$};
-    \foreach \x in {1, ..., 7} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-    \foreach \y in {1,...,6} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
-    \draw [thick, <->] (-1.5,3.5) -- (6.6,6.2) node[above]{$l$};
-    \fill (0,2) circle[radius=0.1] node[below right]{$S$};
-  \end{tikzpicture}
-  \end{center}
-\end{multicols}\vspace{0.5cm}
-
-\item The line has the equation $y=-x+7$. 
-\begin{enumerate}
-  \item Write down it's slope and $y$-intercept. \hspace{2cm} $m=$
-  \hspace{2cm} $b=$
-  \item Is the point $(4, 4)$ on the line? Justify your answer.
-\end{enumerate}
-\vspace{2cm}
-
-\newpage
-\item The line $j$ has the equation $y= 3x+2$.
+\item The line $j$ has the equation $y=2x-3$.
   \begin{enumerate}
     \item What is the slope of the line $k$, given $k \parallel j$?
     \vspace{1cm}
@@ -98,29 +49,14 @@
     \vspace{1cm}
   \end{enumerate}
 
-\item The line $l$ is shown on the grid below.
-\begin{multicols}{2}
+\newpage
+\item The line has the equation $y=-4x+11$. 
 \begin{enumerate}
-  \item Write down it's slope, $y$-intercept.\\ $m=$
+  \item Write down it's slope and $y$-intercept. \hspace{1cm} $m=$
   \hspace{2cm} $b=$
-  \vspace{0.25cm}
-  \item Write down the equation of line $l$.
-  \vspace{1cm}
-  \item Draw a line parallel to line $l$ though point $S$.
-  \item Write down the equation of the second line.
+  \item Is the point $(3, 1)$ on the line? Justify your answer.
 \end{enumerate}
-  \begin{center}
-  \begin{tikzpicture}[scale=0.7]
-    \draw [help lines] (-1,-1) grid (7,6);
-    \draw [thick, ->] (-1.2,0) -- (7.4,0) node [below right] {$x$};
-    \draw [thick, ->] (0,-1.2)--(0,6.4) node [right] {$y$};
-    \foreach \x in {1, ..., 7} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-    \foreach \y in {1,...,6} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
-    \draw [thick, <->] (-1.5,4.5) -- (3.5,-0.5) node[below]{$l$};
-    \fill (0,5) circle[radius=0.1] node[above right]{$S$};
-  \end{tikzpicture}
-  \end{center}
-\end{multicols}\vspace{0.5cm}
+\vspace{4cm}
 
 \item The line $l$ has the equation $y=-\frac{3}{5}x+4$. To each line below, circle whether $l$ is parallel, perpendicular, or neither.
 \begin{enumerate}
@@ -128,13 +64,16 @@
   \vspace{0.5cm}
   \item parallel \quad perpendicular \quad neither \qquad $y=\frac{5}{3}x+9$
   \vspace{0.5cm}
-  \item parallel \quad perpendicular \quad neither \qquad $3x-5y=-15$
-  \vspace{2cm}
-  \item parallel \quad perpendicular \quad neither \qquad $5x-3y=6$
-  \vspace{1.5cm}
+  \item parallel \quad perpendicular \quad neither \qquad $y=-\frac{3}{5}x+1$
+  \vspace{0.5cm}
+  \item parallel \quad perpendicular \quad neither \qquad $y=-\frac{5}{3}x-7$
+  \vspace{0.5cm}
 \end{enumerate}
 
-\newpage
+
+\item Write the linear equation $6x+2y=4$ in the form $y=mx+c$. \vspace{4cm}
+
+\item A line has a slope of $\displaystyle -\frac{3}{2}$ and passes through the point $(0, 2)$. Write down the equation of the line in the form $y=mx+b$. \vspace{3cm}
 
 
 \end{enumerate}
