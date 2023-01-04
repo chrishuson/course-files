@@ -130,107 +130,6 @@ $y=mx+b$, where $m$ is the slope and $b$ is the $y$-intercept
   \end{tikzpicture}
   \end{flushleft}
 
-\item Two lines are graphed below. 
-\begin{enumerate}
-  \item Complete the T-tables for each.
-  \item Write down the equations for each.
-\end{enumerate}
-  \begin{center} 
-  \begin{tikzpicture}[scale=0.8]
-    \draw [help lines] (-3,-2) grid (6,6);
-    \draw [thick, ->] (-3.2,0) -- (6.4,0) node [below right] {$x$};
-    \draw [thick, ->] (0,-2.2)--(0,6.4) node [left] {$y$};
-    \foreach \x in {-3,-2,-1,1,2,...,6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-    \foreach \y in {-1,1, 2, 3, 4, 5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
-
-    \draw [thick, <->,samples=20,domain=-2.5:5.5] plot(\x,0.5*\x+1);
-    \node at (5.7,3.3){$f$};
-    \draw [thick, <->,samples=20,domain=-1.5:5.5] plot(\x,-1*\x+4);
-    \node at (-1.5,4.5){$g$};
-
-    \draw [thick] (-7,-1) -- (-7,6);
-    \draw [thick] (-8.5,5) -- (-5.5,5);
-    \node at (-7,7){$f(x)$};
-    \node at (-8,5.5){$x$};
-    \node at (-6,5.5){$y$};
-    \draw [thick] (9,-1) -- (9,6);
-    \draw [thick] (7.5,5) -- (10.5,5);
-    \node at (9,7){$g(x)$};
-    \node at (-8,4){$-2$}; 
-    \node at (-8,2.5){$0$}; 
-    \node at (-8,1){$2$}; 
-    \node at (-6,-0.5){$3$};
-    \fill (-2,0) circle[radius=0.1];
-    \fill (0,1) circle[radius=0.1];
-    \fill (2,2) circle[radius=0.1];
-    \fill (4,3) circle[radius=0.1];
-  \end{tikzpicture}
-  \end{center}
-
-\item The line $l$ is graphed at right.
-  \begin{multicols}{2}
-  \begin{enumerate}
-    \item Write down the line's slope.\\ $m=$
-    \vspace{0.5cm}
-    \item Write down it's $y$-intercept.\\ $b=$
-    \vspace{0.5cm}
-    \item Write down the equation of the line.
-    \vspace{1.5cm}
-    \item Draw a line parallel to $l$ through point $P$. (use a straight edge for full credit)
-  \end{enumerate} \vspace{.5cm}
-    \begin{center} 
-    \begin{tikzpicture}[scale=0.8]
-      \draw [help lines] (-2,-1) grid (5,6);
-      \draw [thick, ->] (-2.2,0) -- (5.4,0) node [below right] {$x$};
-      \draw [thick, ->] (0,-1.2)--(0,6.4) node [left] {$y$};
-      \foreach \x in {-2,-1,1,2,...,5} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-      \foreach \y in {1, 2, 3, 4, 5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
-      \draw [thick, <->] (-1.5,2.5) -- (4.5,4.5)node[right]{$l$};
-      \fill (3,2) circle[radius=0.1] node[below right]{$P$};
-    \end{tikzpicture}
-    \end{center}
-  \end{multicols}
-  
-\item Write the linear equation $\displaystyle y-5=\frac{2}{3}(x-3)$ in the form $y=mx+c$. \vspace{4cm}
-  
-\newpage
-\item Two lines are graphed below. 
-  \begin{enumerate}
-    \item Complete the T-tables for each.
-    \item Write down the equations for each.
-  \end{enumerate}
-    \begin{center} 
-    \begin{tikzpicture}[scale=0.8]
-      \draw [help lines] (-3,-2) grid (6,6);
-      \draw [thick, ->] (-3.2,0) -- (6.4,0) node [below right] {$x$};
-      \draw [thick, ->] (0,-2.2)--(0,6.4) node [left] {$y$};
-      \foreach \x in {-3,-2,-1,1,2,...,6} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-      \foreach \y in {-1,1, 2, 3, 4, 5} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
-  
-      \draw [thick, <->,samples=20,domain=-2.5:5.5] plot(\x,0.5*\x+1);
-      \node at (5.7,3.3){$f$};
-      \draw [thick, <->,samples=20,domain=-1.5:5.5] plot(\x,-1*\x+4);
-      \node at (-1.5,4.5){$g$};
-  
-      \draw [thick] (-7,-1) -- (-7,6);
-      \draw [thick] (-8.5,5) -- (-5.5,5);
-      \node at (-7,7){$f(x)$};
-      \node at (-8,5.5){$x$};
-      \node at (-6,5.5){$y$};
-      \draw [thick] (9,-1) -- (9,6);
-      \draw [thick] (7.5,5) -- (10.5,5);
-      \node at (9,7){$g(x)$};
-      \node at (-8,4){$-2$}; 
-      \node at (-8,2.5){$0$}; 
-      \node at (-8,1){$2$}; 
-      \node at (-6,-0.5){$3$};
-      \fill (-2,0) circle[radius=0.1];
-      \fill (0,1) circle[radius=0.1];
-      \fill (2,2) circle[radius=0.1];
-      \fill (4,3) circle[radius=0.1];
-    \end{tikzpicture}
-    \end{center}
-
 \item The line $l$ is graphed at right.
   \begin{multicols}{2}
   \begin{enumerate}
@@ -254,13 +153,7 @@ $y=mx+b$, where $m$ is the slope and $b$ is the $y$-intercept
     \end{tikzpicture}
     \end{center}
   \end{multicols}
-
-\item Find the slope of the line through the points $(3, -2)$ and $(-3, 2)$. \vspace{4cm}
-
-\item Write the linear equation $\displaystyle y-5=\frac{2}{5}(x-10)$ in the form $y=mx+c$. \vspace{4cm}
-
-\item Is the point $(-4,1)$ on the line $\displaystyle y=\frac{1}{2}x+3$? Support your answer algebraically.
-
+  
 \newpage
 \item Two lines are graphed below. 
 \begin{enumerate}
@@ -298,6 +191,8 @@ $y=mx+b$, where $m$ is the slope and $b$ is the $y$-intercept
     \fill (4,4) circle[radius=0.1];
   \end{tikzpicture}
   \end{center}
+    
+\item Write the linear equation $\displaystyle y-5=\frac{2}{3}(x-3)$ in the form $y=mx+c$. \vspace{4cm}
 
 
     
