@@ -433,8 +433,7 @@ Convert from standard to $y$-intercept form. Example:
     \end{center}
 \end{frame}
 
-
-\section{6.8 Systems \hfill 4 January \,}
+\section{6.8 Systems word problems \hfill 4 January \,}
 \begin{frame}{Learning Target: I can solve linear systems in context}
   {HSG.REI.C.6 Solve systems of linear equations \hfill \alert{6.8 Wednesday 4 January}}
   Do Now:
@@ -442,12 +441,56 @@ Convert from standard to $y$-intercept form. Example:
     \item Laptop check: Raise your hand if your laptop has a 75+\% charge.
     \item Notebook check: find these formulas in your notebook \medskip
     \begin{enumerate}
-      \item Slopes are erpendicular when $m \times m_\perp = -1$ \bigskip
+      \item Slopes are perpendicular when $m \times m_\perp = -1$ \bigskip
       \item Distance $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$ \bigskip
       \item Midpoint $\displaystyle M = \bigl( \frac{x_1+x_2}{2}, \frac{y_1+y_2}{2} \bigr)$
     \end{enumerate}
   \end{itemize}
   Lesson: Solving word problems with systems of equations (Deltamath)
+\end{frame}
+
+\section{6.9 Word problems, quiz \hfill 6 January \,}
+\begin{frame}{Learning Target: I can solve linear systems in context}
+  {HSG.REI.C.6 Solve systems of linear equations \hfill \alert{6.9 Friday 6 January}}
+  Do Now: Write two equations that model the following situation
+  \begin{itemize}
+    \item The total of two values is 10
+    \item Twice one value plus five times the other totals 26. \medskip
+  \end{itemize}
+  Lesson: Solving word problems with systems of equations
+  Assessment: Pop Quiz 6.9 Graphing Systems of Equations
+\end{frame}
+
+\begin{frame}{Solution: Graphing a system of equations to solve a word problem}
+  \begin{columns}
+    \column{0.4\textwidth}
+    The total of two values is 10 \\
+    Twice one value plus five times the other totals 26.
+    \begin{align*}
+      x+y=10 \\
+      2x+5y=26
+    \end{align*}
+    Solution $x=8, y=2$ \par \medskip
+    Check:
+    \begin{align*}
+      (8)+(2)=10  \checkmark \\
+      2(8)+5(2)=26 \\
+      16+10=26 \checkmark
+    \end{align*}
+    \column{0.6\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.5]
+        \draw[help lines] (0,0) grid (13,10);
+        \draw[thick, ->] (0,0) -- (13.4,0) node [above right] {$x$};
+        \draw[thick, ->] (0,0)--(0,10.4) node [right] {$y$};
+        \foreach \x in {1,2,...,13} \draw (\x cm,1pt) -- (\x cm,-1pt) node[below=2pt] {$\x$};
+        \foreach \y in {1, 2, ...,10} \draw (1pt,\y cm) -- (-1pt,\y cm) node[left=2pt] {$\y$};
+        \draw[domain=0:10] plot (\x, 10-\x);
+        \draw[domain=0:13] plot (\x, -0.4*\x+5.2);
+        \draw[fill] (8,2) circle [radius=0.1] node[above right] {$S(8,2)$};
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
 \end{frame}
 
 \end{document}
