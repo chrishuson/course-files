@@ -16,7 +16,7 @@
 
 \section{6.1 Midpoint formula \hfill 8 December \,}
 \begin{frame}{Learning Target: I can plot a midpoint on the plane}
-  {HSG.CO.C.9 Prove theorems about lines and angles  \hfill \alert{6.1 Thursday 8 December}}
+  {HSG.GPE.B.6 Partition a line segment \hfill \alert{6.1 Thursday 8 December}}
   \begin{block}{Do Now}
     \begin{enumerate}
       \item Review your Jumprope grades
@@ -493,9 +493,8 @@ Convert from standard to $y$-intercept form. Example:
   \end{columns}
 \end{frame}
 
-
-\section{6.10 Quiz review \hfill 9 January \,}
-\begin{frame}{Learning Target: I can use the standard form of linear equations}
+\section{6.10 Quiz review, midpoint application \hfill 9 January \,}
+\begin{frame}{Learning Target: I can apply the midpoint formula}
   {8.F.A.3 Interpret $y=mx+b$ as a linear function, whose graph is a straight line \hfill \alert{6.10 Monday 9 January}}
   \begin{columns}
     \column{0.5\textwidth}
@@ -515,5 +514,55 @@ Convert from standard to $y$-intercept form. Example:
     \end{flushright}
   \end{columns}
 \end{frame}
+
+\section{6.11 Quiz review, midpoint application \hfill 10 January \,}
+\begin{frame}{Learning Target: I can use the point-slope form of linear equations}
+  {HSG.GPE.B.6 Partition a line segment \hfill \alert{6.11 Tuesday 10 January}}
+  \begin{columns}
+    \column{0.5\textwidth}
+      Do Now: Find the equation of the line through $P(3,4)$ with slope $m=\frac{2}{3}$ \\[1cm]
+      Lesson: Point-slope form \\
+      Homework: Deltamath practice problem set
+      Test Friday
+    \column{0.5\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.6]
+        \draw[help lines] (-2,-1) grid (5,6);
+        \draw[thick, <->] (-2.4,0) -- (5.4,0) node [below right] {$x$};
+        \draw[thick, <->] (0,-1.4)--(0,6.4) node [left] {$y$};
+        \draw[<->,domain=-2.3:4.8] plot (\x, 0.667*\x+2) ;
+        \draw[fill] (3,4) circle [radius=0.1] node[below right] {$P(3,4)$};
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Point-slope form}
+  A line through $P(x_0,y_0)$ with slope $m$ has equation $y-y_0=m(x-x_0)$
+  \begin{columns}
+    \column{0.5\textwidth}
+      \begin{align*}
+        y-4=\frac{2}{3}(x-3) \\
+        y-4=\frac{2}{3}x-2 \\
+        y=\frac{2}{3}x+2
+      \end{align*}
+      \begin{description}
+        \item[Point-slope] $y-y_0=m(x-x_0)$
+        \item[Standard form] $ax+by=c$
+        \item[Slope-intercept] $y=mx+b$
+      \end{description} \bigskip
+    \column{0.5\textwidth}
+      \begin{flushright}
+      \begin{tikzpicture}[scale=0.6]
+        \draw[help lines] (-2,-1) grid (5,6);
+        \draw[thick, <->] (-2.4,0) -- (5.4,0) node [below right] {$x$};
+        \draw[thick, <->] (0,-1.4)--(0,6.4) node [left] {$y$};
+        \draw[<->,domain=-2.3:4.8] plot (\x, 0.667*\x+2) ;
+        \draw[fill] (3,4) circle [radius=0.1] node[below right] {$P(3,4)$};
+      \end{tikzpicture}
+      \end{flushright}
+  \end{columns}
+\end{frame}
+
 
 \end{document}
