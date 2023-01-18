@@ -115,4 +115,59 @@
 \end{columns}
 \end{frame}
 
+\section{7.2 Reflection \hfill 18 January \,}
+\begin{frame}{Learning Target: I can reflect a figure}
+  {HSG.CO.A.5 Congruence transformations \hfill \alert{7.2 Wednesday 18 January}}
+  \begin{columns}
+    \column{0.6\textwidth}
+    Do Now: Find the lengths of the sides of $\triangle ABC$. \\
+    $AC=$ \\
+    $BC=$ \\
+    $AB=$ \\[0.5cm]
+    Lesson: Reflection, classwork practice \\
+    Homework: Complete classwork, Deltamath assignment
+    \column{0.4\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.6]
+        \draw[help lines] (-1,-1) grid (6,6);
+        \draw[thick, <->] (-1.4,0) -- (6.4,0) node [below right] {$x$};
+        \draw[thick, <->] (0,-1.4)--(0,6.4) node [left] {$y$};
+        \draw[thick] (1,1)--(4,5)--(4,1)--cycle;
+        \draw [fill] (1,1) circle [radius=0.1] node[below] {$A(1,1)$};
+        \draw [fill] (4,5) circle [radius=0.1] node[above] {$B(4,5)$};
+        \draw [fill] (4,1) circle [radius=0.1] node[below right] {$C(4,1)$};
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Reflect or flip an object across the $y$-axis}
+  {Reflection is a rigid motion.}
+  \begin{columns}
+    \column{0.5\textwidth}
+    $$\triangle ABC \rightarrow \triangle A'B'C'$$
+      \begin{description}
+        \item[Reflection] A transformation that flips an object across a line
+        \item[Line of reflection] The line across which the object is flipped
+        \item[Correspond] Parts that map to each other \\
+        $A$ corresponds to $A'$.
+      \end{description}
+      
+    \column{0.5\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.6]
+        \draw[help lines] (-5,-1) grid (5,6);
+        \draw[thick, <->] (-5.4,0) -- (5.4,0) node [below right] {$x$};
+        \draw[thick, <->] (0,-1.4)--(0,6.4) node [left] {$y$};
+        \draw[thick] (1,1)node[below] {$A$}--
+          (4,5)node[above] {$B$}--
+          (4,1)node[below] {$C$}--cycle;
+        \draw[thick] (-1,1)node[below] {$A'$}--
+          (-4,5)node[above] {$B'$}--
+          (-4,1)node[below] {$C'$}--cycle;
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
 \end{document}
