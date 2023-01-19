@@ -201,9 +201,9 @@
   Do Now: Rotate $\triangle ABC$ counterclockwise $90^\circ$ around the origin.  \vspace{0.5cm}
   \begin{columns}
     \column{0.5\textwidth}
-    $A(1,1) \rightarrow$ \\[0.3cm]
-    $B(1,2) \rightarrow$ \\[0.3cm]
-    $C(4,1) \rightarrow$ \\[0.3cm]
+    $A(0,0) \rightarrow$ \\[0.3cm]
+    $B(4,3) \rightarrow$ \\[0.3cm]
+    $C(4,0) \rightarrow$ \\[0.3cm]
     Lesson: Composition of transformations, mixed practice \\[0.5cm]
     Homework: Complete classwork, Deltamath assignment
     \column{0.5\textwidth}
@@ -215,6 +215,55 @@
         \draw [fill] (0,0) circle [radius=0.1] node[below right] {$A(0,0)$};
         \draw [fill] (4,3) circle [radius=0.1] node[above] {$B(4,3)$};
         \draw [fill] (4,0) circle [radius=0.1] node[below] {$C(4,0)$};
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Learning Target: I can employ multiple rigid motions}
+  Solution: Rotate $\triangle ABC$ counterclockwise $90^\circ$ around the origin.  \vspace{0.5cm}
+  \begin{columns}
+    \column{0.5\textwidth}
+      $A(0,0) \rightarrow A'(0,0)$ \\[0.3cm]
+      $B(4,3) \rightarrow B'(-3,4)$ \\[0.3cm]
+      $C(4,0) \rightarrow C'(0,4)$ \\[0.3cm]
+    \column{0.5\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.7]
+        \draw[thick, <->] (-3.4,0) -- (5.4,0) node [below right] {$x$};
+        \draw[thick, <->] (0,-1.4)--(0,5.4) node [left] {$y$};
+        \draw[thick] (0,0)--(4,3)--(4,0)--cycle;
+        \draw [fill] (0,0) circle [radius=0.1] node[below right] {$A(0,0)$};
+        \draw [fill] (4,3) circle [radius=0.1] node[above] {$B(4,3)$};
+        \draw [fill] (4,0) circle [radius=0.1] node[below] {$C(4,0)$};
+        \draw[thick, red] (0,0)node[below left]{$A'$}--
+          (-3,4)node[above]{$B'(-3,4)$}--
+          (0,4)node[right]{$C'(0,4)$}--cycle;
+        \draw[dashed,->,red] (2,0) arc (0:90:2);
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{A \emph{composition} is multiple transformations, one after the other}
+  Example: Translate $\triangle ABC$ to the right 5 units then reflect it over the $x$-axis.
+  \begin{columns}
+    \column{0.5\textwidth}
+    $ \hspace{1cm} T_{+5,0} \hspace{1cm} reflect_{ x-axis}$ \\[0.3cm]
+    $A(-1,2) \rightarrow A'(4,2) \rightarrow A'(4,-2)$ \\[0.3cm]
+    $B(-4,3) \rightarrow B'(1,3) \rightarrow B'(1,-3)$ \\[0.3cm]
+    $C(-4,2) \rightarrow C'(1,2) \rightarrow C'(1,-2)$ \\[0.3cm]
+    \column{0.5\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.7]
+        \draw[thick, <->] (-3.4,0) -- (5.4,0) node [below right] {$x$};
+        \draw[thick, <->] (0,-4.4)--(0,4.4) node [left] {$y$};
+        \draw[thick] (-1,2)--(-4,2)--(-4,3)--cycle;
+        \draw [fill] (-1,2) circle [radius=0.1] node[below] {$A(-1,2)$};
+        \draw [fill] (4,2) circle [radius=0.1] node[below] {$A'(4,2)$};
+        \draw [fill] (4,-2) circle [radius=0.1] node[above] {$A''(4,-2)$};
+        \draw[thick] (4,2)--(1,2)--(1,3)--cycle;
+        \draw[thick] (4,-2)--(1,-2)--(1,-3)--cycle;
       \end{tikzpicture}
     \end{flushright}
   \end{columns}
