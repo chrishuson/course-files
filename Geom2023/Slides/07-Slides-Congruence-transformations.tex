@@ -7,7 +7,7 @@
   \def\paraticks{{Straight Barb[reversed, scale=2]}-{Straight Barb[scale=2]}}
 
 \title{Geometry Unit 7: Congruence transformations}
-\date{17 January 2023 - 3 February 2023}
+\date{17 January 2023 - 10 February 2023}
 
 \begin{document}
 \frame{\titlepage}
@@ -309,6 +309,63 @@
           \draw[thick, <->] (0,-1.4)--(0,7.4) node [left] {$y$};
           \draw[thick] (1,3)node[above left]{$B$} --(1,1)node[below left]{$A$} --
               (3,1) node [right] {$C$} --cycle;
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\section{7.6 Using technology for transformations \hfill 3 February \,}
+\begin{frame}{Learning Target: I can record a transformation using geogebra}
+  {HSG.CO.A.5 Congruence transformations \hfill \alert{7.6 Friday 3 February}}
+  Do Now: Open the attached slide document and edit your name \\
+  Lesson: Use geogebra to perform a translation, reflection, and rotation \\
+  \begin{center}
+    \includegraphics[width=8cm]{../graphics/7-6Geogebra.png}
+  \end{center}
+\end{frame}
+
+\section{7.7 Transformations ``onto,'' symmetry \hfill 6 February \,}
+\begin{frame}{Learning Target: I can recognize symmetry}
+  {HSG.CO.A.5 Congruence transformations \hfill \alert{7.7 Monday 6 February}}
+  Do Now: Reflect the $\triangle$ across the $y$-axis.  \vspace{0.5cm}
+  \begin{columns}
+    \column{0.5\textwidth}
+    $A(-2,1) \rightarrow$ \\[0.3cm]
+    $B(0,4) \rightarrow$ \\[0.3cm]
+    $C(2,1) \rightarrow$ \\[0.3cm]
+    Lesson: Transformations ``onto,'' symmetry \\[0.5cm]
+    Homework: Complete classwork, Deltamath assignment
+    \column{0.5\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.6]
+          \draw[help lines] (-4,-1) grid (4,7);
+          \draw[thick, <->] (-4.4,0) -- (4.4,0) node [below right] {$x$};
+          \draw[thick, <->] (0,-1.4)--(0,7.4) node [left] {$y$};
+          \draw[thick] (0,4)node[above left]{$B$} --(-2,1)node[below left]{$A$} --
+              (2,1) node [below right] {$C$} --cycle;
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Learning Target: I can recognize symmetry}
+  Rotate the square $90^\circ$ counterclockwise around its center. \vspace{0.25cm}
+  \begin{columns}
+    \column{0.6\textwidth}
+\begin{description}
+  \item[onto] When the image of a figure is congruent to the original figure
+  \item[symmetry] When a figure is invariant under a transformation
+  \item[bilateral symmetry] When a figure is the same after a reflection across its mid-line
+  \item[radial symmetry] A shape is the same after a rotation around its center
+\end{description}
+    \column{0.4\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.6]
+          \draw[help lines] (-3,-3) grid (3,3);
+          \draw[thick, <->] (-3.4,0) -- (3.4,0) node [below right] {$x$};
+          \draw[thick, <->] (0,-3.4)--(0,3.4) node [left] {$y$};
+          \draw[thick] (-2,2)node[above left]{$B$} --(-2,-2)node[below left]{$C$} --
+              (2,-2) node [below right] {$D$} --(2,2) node [above right] {$A$} --cycle;
       \end{tikzpicture}
     \end{flushright}
   \end{columns}
