@@ -41,64 +41,63 @@
   \end{columns}
 \end{frame}
 
-\section{8.2 Reflection \hfill 15 February \,}
-\begin{frame}{Learning Target: I can reflect a figure}
-  {HSG.CO.A.5 Congruence transformations \hfill \alert{7.2 Wednesday 18 January}}
+\begin{frame}{Triangle angle theorems, internal and external angle measures}
+  {Find this information in your notebook (~October 24th)}
   \begin{columns}
     \column{0.6\textwidth}
-    Do Now: Find the lengths of the sides of $\triangle ABC$. \\
-    $AC=$ \\
-    $BC=$ \\
-    $AB=$ \\[0.5cm]
-    Lesson: Reflection, classwork practice \\
-    Homework: Complete classwork, Deltamath assignment
+      \begin{description}
+        \item[Triangle sum theorem] m$\angle A + \text{m}\angle B + \text{m}\angle C = 180^\circ$
+        \item[External angle theorem] m$\angle A + \text{m}\angle B = \text{m}\angle BCD$
+        \item[Linear pair] angles that make a straight line, $180^\circ$
+        \item[Supplementary] angles that sum to $180^\circ$
+        \item[Complementary] angles that sum to $90^\circ$
+        \item[Interior] Inside, internal
+        \item[Exterior] Outside, external
+      \end{description}
     \column{0.4\textwidth}
     \begin{flushright}
-      \begin{tikzpicture}[scale=0.6]
-        \draw[help lines] (-1,-1) grid (6,6);
-        \draw[thick, <->] (-1.4,0) -- (6.4,0) node [below right] {$x$};
-        \draw[thick, <->] (0,-1.4)--(0,6.4) node [left] {$y$};
-        \draw[thick] (1,1)--(4,5)--(4,1)--cycle;
-        \draw [fill] (1,1) circle [radius=0.1] node[below] {$A(1,1)$};
-        \draw [fill] (4,5) circle [radius=0.1] node[above] {$B(4,5)$};
-        \draw [fill] (4,1) circle [radius=0.1] node[below right] {$C(4,1)$};
+      \begin{tikzpicture}[scale=0.7]
+        \draw [thick]
+        (9,0)node[below]{$D$}--
+        (2,0)node[below]{$A$}--
+        (4,4)node[above]{$B$}--
+        (7,0)node[below]{$C$};
+        \draw [fill] (9,0) circle [radius=0.07];
+        \draw[<->] (8,0) arc (0:128:1);
+        %\node at (2.8,0.4){$52^\circ$};
+        %\node at (4.1,3.1){$48^\circ$};
       \end{tikzpicture}
     \end{flushright}
   \end{columns}
 \end{frame}
 
-\begin{frame}{Reflect or flip an object across the $y$-axis}
-  {Reflection is a rigid motion.}
+\section{8.2 Transversals and isosceles triangles \hfill 14 February \,}
+\begin{frame}{Learning Target: I can work with parallel lines}
+  {HSG.CO.A.5 Congruence transformations \hfill \alert{8.2 Tuesday 14 February}}
   \begin{columns}
-    \column{0.5\textwidth}
-    $$\triangle ABC \rightarrow \triangle A'B'C'$$
-      \begin{description}
-        \item[Reflection] A transformation that flips an object across a line
-        \item[Line of reflection] The line across which the object is flipped
-        \item[Correspond] Parts that map to each other \\
-        $A$ corresponds to $A'$.
-      \end{description}
-      
-    \column{0.5\textwidth}
+    \column{0.65\textwidth}
+    Do Now: Isosceles $\triangle ABC$ has two angles measuring $65^\circ$. Find the measure of the 3rd angle, m$\angle C$.\\[0.5cm]
+    Lesson: Isosceles triangles, parallel lines and transversals \\
+    Homework: Complete classwork, Deltamath assignment
+    \column{0.35\textwidth}
     \begin{flushright}
-      \begin{tikzpicture}[scale=0.6]
-        \draw[help lines] (-5,-1) grid (5,6);
-        \draw[thick, <->] (-5.4,0) -- (5.4,0) node [below right] {$x$};
-        \draw[thick, <->] (0,-1.4)--(0,6.4) node [left] {$y$};
-        \draw[thick] (1,1)node[below] {$A$}--
-          (4,5)node[above] {$B$}--
-          (4,1)node[below] {$C$}--cycle;
-        \draw[thick] (-1,1)node[below] {$A'$}--
-          (-4,5)node[above] {$B'$}--
-          (-4,1)node[below] {$C'$}--cycle;
+      \begin{tikzpicture}[scale=0.7]
+        \draw [thick](0,0)--(4,0)--(2,6)--(0,0);
+        \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+        \draw [fill] (4,0) circle [radius=0.05] node[below]{$B$};
+        \draw [fill] (2,6) circle [radius=0.05] node[right]{$C$};
+        \draw [thick] (0.8,3.1)--(1.2,3); %tick mark
+        \draw [thick] (2.8,3)--(3.2,3.1); %tick mark
+        \node at (0.8,0.4){$65^\circ$};
+        \node at (3.2,0.4){$65^\circ$};
       \end{tikzpicture}
     \end{flushright}
   \end{columns}
 \end{frame}
 
-\section{7.3 Rotation \hfill 20 January \,}
-\begin{frame}{Learning Target: I can rotate a figure}
-  {HSG.CO.A.5 Congruence transformations \hfill \alert{7.3 Friday 20 January}}
+\section{8.3 Midpoint, segment partition \hfill 16 February \,}
+\begin{frame}{Learning Target: I can partition a line segment}
+  {HSG.CO.A.5 Congruence transformations \hfill \alert{8.3 Thursday 16 February}}
   \begin{columns}
     \column{0.6\textwidth}
     Do Now: Find the angle measures of right $\triangle ABC$. \\
