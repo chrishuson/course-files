@@ -176,22 +176,73 @@
 \begin{frame}{Learning Target: I can calculate area and volume}
   {HSG.CO.A.5 Congruence transformations \hfill \alert{8.4 Monday 27 February}}
   \begin{columns}
-    \column{0.6\textwidth}
-    Do Now: Find the volume of the box $ABCD$. \\
+    \column{0.7\textwidth}
+    Do Now: Find the volume of the box with dimensions: \\
     length = 5 cm \\
     width = 3 cm\\
     height = 10 cm \\[0.5cm]
     Lesson: Area, perimeter, volume, density, solids, cross sections \\
     Homework: Complete classwork, Deltamath assignment
+    \column{0.3\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.7]
+        \draw [-, thick] (0,0)--(3,0)--(3,4)--(0,4)--cycle;
+        \draw [-, thick] (0,4)--(0.5,4.75)--(3.5,4.75)--(3,4);
+        \draw [-, thick] (3,0)--(3.5,0.75)--(3.5,4.75);
+        \node at (3.9, 2.75){$10$};
+        \node at (1.5, -0.25){$5$};
+        \node at (3.5, 0.25){$3$};
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Use the Regents formula sheet or your notebook for formulas}
+  $V_{cone}=\frac{1}{3}\pi r^2 h$
+  \begin{columns}
+    \column{0.5\textwidth}
+    Given a cone with radius $r=6$ inches, volume $V=96 \pi$ cubic inches, and density $D=0.0267$ pounds per cubic inch
+    \begin{enumerate}
+      \item Solve for the height $h$ of the cone
+      \item Find the \emph{slant height} $s$ using $a^2+b^2=c^2$
+      \item Find the cone's weight $W$ to the \emph{nearest pound}
+    \end{enumerate}
+    \column{0.5\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.9]
+        \draw [thick] (0,0)--(2.5,0)--(0,4)--cycle;
+        \draw (0,0)++(0.4,0)--++(0,0.4)--+(-0.4,0);
+        \draw [thick] (0,4)--(-2.5,0);
+        \node at (1,0)[below]{$6$};
+        \node at (-0.3,2){$h$};
+        \node at (1.7,1.8){$s$};
+        \draw [dashed] (0,0) ellipse [x radius=2.5,y radius=0.6];
+        \clip (-3,-2) rectangle (3,0);
+        \draw [thick] (0,0) ellipse [x radius=2.5,y radius=0.6];
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+  \begin{description}
+    \item[slant height] The diagonal length of the side of a cone or pyramid
+  \end{description}
+\end{frame}
+
+\begin{frame}{The study of 3-dimensional shapes are called solid geometry}
+  \begin{columns}
+    \column{0.6\textwidth}
+    What 3-dimensional shape is made when a right triangle is rotated around its longer edge? \vspace{1cm}
+    \begin{description}
+      \item[cross section] the shape made by a plane intersecting a solid
+    \end{description}
     \column{0.4\textwidth}
     \begin{flushright}
-      \begin{tikzpicture}[scale=0.6]
-        \draw[thick, <->] (-1.4,0) -- (6.4,0) node [below right] {$x$};
-        \draw[thick, <->] (0,-1.4)--(0,6.4) node [left] {$y$};
-        \draw[thick] (0,0)--(5,3)--(5,0)--cycle;
-        \draw [fill] (0,0) circle [radius=0.1] node[below right] {$A(0,0)$};
-        \draw [fill] (5,3) circle [radius=0.1] node[above] {$B(5,3)$};
-        \draw [fill] (5,0) circle [radius=0.1] node[below] {$C(5,0)$};
+      \begin{tikzpicture}[scale=0.7]
+        \draw [thick] (0,0)--(2.5,0)--(0,6)--cycle;
+        \draw (0,0)++(0.4,0)--++(0,0.4)--+(-0.4,0);
+        \draw [thick] (0,6)--(-2.5,0);
+        \draw [dashed] (0,0) ellipse [x radius=2.5,y radius=0.6];
+        \clip (-3,-2) rectangle (3,0);
+        \draw [thick] (0,0) ellipse [x radius=2.5,y radius=0.6];
       \end{tikzpicture}
     \end{flushright}
   \end{columns}
@@ -199,24 +250,18 @@
 
 \section{8.5 Analytic geometry graphing \hfill 28 February \,}
 \begin{frame}{Learning Target: I can graph linear equations and systems}
-  {HSG.CO.A.5 Congruence transformations \hfill \alert{8.4 Monday 27 February}}
+  {HSG.CO.A.5 Congruence transformations \hfill \alert{8.5 Tueday 28 February}}
   \begin{columns}
     \column{0.6\textwidth}
-    Do Now: Find the volume of the box $ABCD$. \\
-    length = 5 cm \\
-    width = 3 cm\\
-    height = 10 cm \\[0.5cm]
-    Lesson: Area, perimeter, volume, density, solids, cross sections \\
+    Do Now: Graph the line $y=\frac{1}{2}x+2$ \\[0.5cm]
+    Lesson: slope-intercept form, systems \\
     Homework: Complete classwork, Deltamath assignment
     \column{0.4\textwidth}
     \begin{flushright}
       \begin{tikzpicture}[scale=0.6]
+        \draw[help lines] (-1,-1) grid (6,6);
         \draw[thick, <->] (-1.4,0) -- (6.4,0) node [below right] {$x$};
         \draw[thick, <->] (0,-1.4)--(0,6.4) node [left] {$y$};
-        \draw[thick] (0,0)--(5,3)--(5,0)--cycle;
-        \draw [fill] (0,0) circle [radius=0.1] node[below right] {$A(0,0)$};
-        \draw [fill] (5,3) circle [radius=0.1] node[above] {$B(5,3)$};
-        \draw [fill] (5,0) circle [radius=0.1] node[below] {$C(5,0)$};
       \end{tikzpicture}
     \end{flushright}
   \end{columns}
@@ -224,24 +269,19 @@
 
 \section{8.6 Analytic geometry slope applications \hfill 2 March \,}
 \begin{frame}{Learning Target: I can use slope to solve problems}
-  {HSG.CO.A.5 Congruence transformations \hfill \alert{8.4 Monday 27 February}}
+  {HSG.CO.A.5 Congruence transformations \hfill \alert{8.5 Thursday 2 March}}
   \begin{columns}
     \column{0.6\textwidth}
-    Do Now: Find the volume of the box $ABCD$. \\
-    length = 5 cm \\
-    width = 3 cm\\
-    height = 10 cm \\[0.5cm]
-    Lesson: Area, perimeter, volume, density, solids, cross sections \\
+    Do Now: Find the slope and $y$-intercept of the line \\[0.5cm]
+    Lesson: Perpendicular and parallel slopes, applications \\
     Homework: Complete classwork, Deltamath assignment
     \column{0.4\textwidth}
     \begin{flushright}
       \begin{tikzpicture}[scale=0.6]
+        \draw[help lines] (-1,-1) grid (6,6);
         \draw[thick, <->] (-1.4,0) -- (6.4,0) node [below right] {$x$};
         \draw[thick, <->] (0,-1.4)--(0,6.4) node [left] {$y$};
-        \draw[thick] (0,0)--(5,3)--(5,0)--cycle;
-        \draw [fill] (0,0) circle [radius=0.1] node[below right] {$A(0,0)$};
-        \draw [fill] (5,3) circle [radius=0.1] node[above] {$B(5,3)$};
-        \draw [fill] (5,0) circle [radius=0.1] node[below] {$C(5,0)$};
+        \draw[thick, <->,domain=-0.7:6.4] plot(\x,-0.667*\x+5);
       \end{tikzpicture}
     \end{flushright}
   \end{columns}
@@ -249,24 +289,21 @@
 
 \section{8.7 Analytic geometry distance applications \hfill 6 March \,}
 \begin{frame}{Learning Target: I can calculate distance in context}
-  {HSG.CO.A.5 Congruence transformations \hfill \alert{8.4 Monday 27 February}}
+  {HSG.CO.A.5 Congruence transformations \hfill \alert{8.6 Monday 6 March}}
   \begin{columns}
     \column{0.6\textwidth}
-    Do Now: Find the volume of the box $ABCD$. \\
-    length = 5 cm \\
-    width = 3 cm\\
-    height = 10 cm \\[0.5cm]
-    Lesson: Area, perimeter, volume, density, solids, cross sections \\
+    Do Now: Find the distance between the intercepts of the line show on the graph \\[0.5cm]
+    Lesson: Distance formula, applications, simplifying radicals \\
     Homework: Complete classwork, Deltamath assignment
     \column{0.4\textwidth}
     \begin{flushright}
       \begin{tikzpicture}[scale=0.6]
+        \draw[help lines] (-1,-1) grid (6,6);
         \draw[thick, <->] (-1.4,0) -- (6.4,0) node [below right] {$x$};
         \draw[thick, <->] (0,-1.4)--(0,6.4) node [left] {$y$};
-        \draw[thick] (0,0)--(5,3)--(5,0)--cycle;
-        \draw [fill] (0,0) circle [radius=0.1] node[below right] {$A(0,0)$};
-        \draw [fill] (5,3) circle [radius=0.1] node[above] {$B(5,3)$};
-        \draw [fill] (5,0) circle [radius=0.1] node[below] {$C(5,0)$};
+        \draw[thick, <->,domain=-1.3:5.7] plot(\x,-1*\x+5);
+        \draw [fill] (5,0) circle [radius=0.1];
+        \draw [fill] (0,5) circle [radius=0.1];
       \end{tikzpicture}
     \end{flushright}
   \end{columns}
