@@ -248,9 +248,9 @@
   \end{columns}
 \end{frame}
 
-\section{8.5 Analytic geometry graphing \hfill 28 February \,}
+\section{8.5 Analytic geometry graphing \hfill 3 March \,}
 \begin{frame}{Learning Target: I can graph linear equations and systems}
-  {HSG.CO.A.5 Congruence transformations \hfill \alert{8.5 Tueday 28 February}}
+  {HSG.CO.A.5 Congruence transformations \hfill \alert{8.5 Friday 3 March}}
   \begin{columns}
     \column{0.6\textwidth}
     Do Now: Graph the line $y=\frac{1}{2}x+2$ \\[0.5cm]
@@ -267,9 +267,32 @@
   \end{columns}
 \end{frame}
 
-\section{8.6 Analytic geometry slope applications \hfill 2 March \,}
+\begin{frame}{Solving a system using a graphing calculator}
+  \begin{columns}
+    \column{0.6\textwidth}
+    $$f(x)=-\frac{1}{2}+6$$
+    $$g(x)=\frac{3}{4}x+1$$
+    \begin{description}
+      \item[system] two or more equations with the same variables
+      \item[intersection] the point where two lines cross, or the $(x,y)$ values that satisfy both equations
+    \end{description}
+    \column{0.4\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.6]
+        \draw[help lines] (-2,-1) grid (6,7);
+        \draw[thick, <->] (-2.4,0) -- (6.4,0) node [below right] {$x$};
+        \draw[thick, <->] (0,-1.4)--(0,7.4) node [left] {$y$};
+        \draw[thick, <->,domain=-1.6:5.7] plot(\x,-0.5*\x+6);
+        \draw[thick, <->,domain=-1.8:5.7] plot(\x,0.75*\x+1);
+        \draw [fill] (4,4) circle [radius=0.1];
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\section{8.6 Analytic geometry slope applications \hfill 6 March \,}
 \begin{frame}{Learning Target: I can use slope to solve problems}
-  {HSG.CO.A.5 Congruence transformations \hfill \alert{8.5 Thursday 2 March}}
+  {HSG.CO.A.5 Congruence transformations \hfill \alert{8.6 Monday 6 March}}
   \begin{columns}
     \column{0.6\textwidth}
     Do Now: Find the slope and $y$-intercept of the line \\[0.5cm]
@@ -308,5 +331,6 @@
     \end{flushright}
   \end{columns}
 \end{frame}
+
 
 \end{document}
