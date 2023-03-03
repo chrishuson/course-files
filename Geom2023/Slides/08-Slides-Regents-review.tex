@@ -298,16 +298,21 @@
   {HSG.CO.A.5 Congruence transformations \hfill \alert{8.6 Monday 6 March}}
   \begin{columns}
     \column{0.6\textwidth}
-    Do Now: Find the slope and $y$-intercept of the line \\[0.5cm]
+    Do Now: Solve the system in your graphing calculator: 
+      $$f(x)=-x+2$$
+      $$g(x)=-3x-2$$
     Lesson: Perpendicular and parallel slopes, applications \\
     Homework: Complete classwork, Deltamath assignment
     \column{0.4\textwidth}
     \begin{flushright}
       \begin{tikzpicture}[scale=0.6]
-        \draw[help lines] (-1,-1) grid (6,6);
-        \draw[thick, <->] (-1.4,0) -- (6.4,0) node [below right] {$x$};
-        \draw[thick, <->] (0,-1.4)--(0,6.4) node [left] {$y$};
-        \draw[thick, <->,domain=-0.7:6.4] plot(\x,-0.667*\x+5);
+        \draw[help lines] (-4,-3) grid (4,5);
+        \draw[thick, <->] (-4.4,0) -- (4.4,0) node [below right] {$x$};
+        \draw[thick, <->] (0,-3.4)--(0,5.4) node [left] {$y$};
+        \pause
+          \draw[thick, <->,domain=-3.2:3.7] plot(\x,-\x+2);
+          \draw[thick, <->,domain=-2.3:0.4] plot(\x,-3*\x-2);
+          \draw [fill] (-2,4) circle [radius=0.1]node[below left]{$(-2,4)$};
       \end{tikzpicture}
     \end{flushright}
   \end{columns}
