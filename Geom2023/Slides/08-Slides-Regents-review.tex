@@ -308,12 +308,40 @@
     \begin{flushright}
       \begin{tikzpicture}[scale=0.6]
         \draw[help lines] (-4,-3) grid (4,5);
-        \draw[thick, <->] (-4.4,0) -- (4.4,0) node [below right] {$x$};
+        \draw[thick, ->] (-4,0) -- (4.4,0) node [below right] {$x$};
         \draw[thick, <->] (0,-3.4)--(0,5.4) node [left] {$y$};
         \pause
           \draw[thick, <->,domain=-3.2:3.7] plot(\x,-\x+2);
           \draw[thick, <->,domain=-2.3:0.4] plot(\x,-3*\x-2);
           \draw [fill] (-2,4) circle [radius=0.1]node[below left]{$(-2,4)$};
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Use slopes to prove special polygons}
+  \begin{columns}
+    \column{0.6\textwidth}
+    Find each line's equation and their relationships
+    \begin{enumerate}
+      \item Find the equation of line $f$
+      \item Find the equation of line $k$
+      \item Show that $f \perp k$ because $m_f \times m_k = -1$
+      \item Find and label the slopes of $g$ and $l$
+      \item Show the polygon is a rectangle
+    \end{enumerate}
+    \column{0.4\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.6]
+        \draw[help lines] (-2,-2) grid (6,7);
+        \draw[thick, ->] (-2.0,0) -- (6.4,0) node [below right] {$x$};
+        \draw[thick, <->] (0,-2.4)--(0,7.4) node [left] {$y$};
+        \draw[thick, <->,domain=-1.2:3.7] plot(\x,-0.667*\x+2)node[right]{$f$};
+        \draw[thick, <->,domain=-1.2:2.8] plot(\x,1.5*\x+2)node[above]{$k$};
+        \draw[thick, <->,domain=-0.6:6.3] plot(\x,-0.667*\x+6.33)node[below right]{$g$};
+        \draw[thick, <->,domain=2:5.8] plot(\x,1.5*\x-4.5)node[above]{$l$};
+        \draw [fill] (2,5) circle [radius=0.1]node[right]{$(2,5)$};
+        \draw [fill] (5,3) circle [radius=0.1]node[right]{$(5,3)$};
       \end{tikzpicture}
     \end{flushright}
   \end{columns}
