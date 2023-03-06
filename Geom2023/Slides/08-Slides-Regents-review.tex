@@ -354,7 +354,8 @@
     \column{0.6\textwidth}
     Do Now: Find the distance between the intercepts of the line show on the graph \\[0.5cm]
     Lesson: Distance formula, applications, simplifying radicals \\
-    Homework: Complete classwork, Deltamath assignment
+    Homework: Complete classwork, Deltamath assignment \\[0.5cm]
+    \alert{Unit test Friday}, Deltamath and problem sets due
     \column{0.4\textwidth}
     \begin{flushright}
       \begin{tikzpicture}[scale=0.6]
@@ -369,5 +370,28 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}{Use distance to prove special polygons}
+  \begin{columns}
+    \column{0.6\textwidth}
+    Prove the quadrilateral is a rhombus
+    \begin{enumerate}
+      \item Apply the distance formula to each pair of points
+      \item State the equality of the side lengths and the congruence of the sides
+      \item State the conclusion, that the quadrilateral is a rhombus
+    \end{enumerate}
+    \column{0.4\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.6]
+        \draw[help lines] (-1,-2) grid (6,6);
+        \draw[thick, ->] (-1.2,0) -- (6.4,0) node [below right] {$x$};
+        \draw[thick, <->] (0,-2.4)--(0,6.4) node [left] {$y$};
+        \draw[thick] (0,2)node[left]{$(0,2)$}--
+          (3,4)node[above]{$(3,4)$}--
+          (6,2)node[right]{$(6,2)$}--
+          (3,0)node[below]{$(3,0)$} -- cycle;
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
 
 \end{document}
