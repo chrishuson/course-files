@@ -59,9 +59,9 @@
   \end{columns}
 \end{frame}
 
-\section{9.2 Solving for $k$, similarity \hfill 16 March \,}
+\section{9.2 Solving for $k$, similarity \hfill 15 March \,}
 \begin{frame}{Learning Target: I can identify and explain similarity}
-  {HSG.SRT.B.5 Use similarity criteria for triangles to solve problems \hfill \alert{9.2 Thursday 16 March}}
+  {HSG.SRT.B.5 Use similarity criteria for triangles to solve problems \hfill \alert{9.2 Wednesday 15 March}}
     Do Now: A triangle with side lengths 3, 4, and 5 is dilated by a factor of $k=2$ centered at one of its vertices. Find the lengths of the image's sides. \\[0.5cm]
     \begin{tikzpicture}[scale=0.7]
       \draw [thick] (0,0)--(4,0)--(4,3)--cycle;
@@ -93,6 +93,78 @@
           (95:2) node[above]{$D$}--
           (0,0) node[below]{$E$}--
           (-10:3.5) node[right]{$F$}--cycle;
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\section{9.3 Overlapping triangle practice \hfill 16 March \,}
+\begin{frame}{Learning Target: I can solve overlapping similar triangles}
+  {HSG.SRT.B.5 Use similarity criteria for triangles to solve problems \hfill \alert{9.3 Thursday 16 March}}
+  \begin{columns}
+    \column{0.5\textwidth}
+    Do Now: Given $\triangle ABC \sim \triangle DEF$, $k=2$ \\
+    If $BC=4$, find $EF$ \\
+    If m$\angle B = 80^\circ$, find m$\angle E$\\[0.5cm]
+    Lesson: Flexibly applying similarity to situations \\[0.5cm]
+    Homework: Complete the classwork practice, Deltamath problem set \\[0.5cm]
+    \column{0.5\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.7]
+        \coordinate [label=above left:$A$](A) at (80:2);
+        \coordinate [label=left:$B$](B) at (0, 0);
+        \coordinate [label=right:$C$](C) at (0:3.5);
+        \draw [thick] (A)--(B)--(C)--cycle;
+        \draw [thick, xshift=3cm, yshift=2cm, scale=1.5] 
+          (80:2) node[above]{$D$}--
+          (0,0) node[left]{$E$}--
+          (0:3.5) node[right]{$F$}--cycle;
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{``Solve'' a triangle by finding all of is sides' and angles' measures}
+    Given $\triangle ABC \sim \triangle DEF$ \\[0.2cm]
+    $BC=4$, $EF=6$, $AB=3$, $DF=8$\\[0.2cm]
+    m$\angle B = 55^\circ$, m$\angle D=70^\circ$\\[0.5cm]
+    \begin{center}
+      \begin{tikzpicture}[scale=0.8]
+        \coordinate [label=above left:$A$](A) at (50:3);
+        \coordinate [label=left:$B$](B) at (0, 0);
+        \coordinate [label=right:$C$](C) at (0:3.5);
+        \draw [thick] (A)--(B)--(C)--cycle;
+        \draw [thick, xshift=5cm, yshift=-1cm, scale=1.5] 
+          (50:3) node[above]{$D$}--
+          (0,0) node[left]{$E$}--
+          (0:3.5) node[right]{$F$}--cycle;
+      \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Apply a dilation centered at the origin with scale factor $k=\frac{1}{2}$}
+  \begin{columns}
+    \column{0.4\textwidth}
+    $\triangle ABC \rightarrow \triangle A'B'C'$\\[0.5cm]
+    $A(-2,0) \rightarrow $\\[0.5cm]
+    $B(4,2) \rightarrow$\\[0.5cm]
+    $C(1,-2) \rightarrow$\\[0.5cm]
+    \onslide<2>{Note: slope is invariant under dilation}
+    \column{0.6\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.8]
+        \draw [help lines] (-3,-4) grid (6,3);
+        \draw [thick, <->] (-3.4,0) -- (6.4,0) node [right] {$x$};
+        \draw [thick, <->] (0,-4.4)--(0,3.4) node [above] {$y$};  
+        \draw [thick]
+          (-2,0) node[below left] {$A$}--
+          (4,2) node[above left] {$B$}--
+          (2,-4) node[below right] {$C$}--cycle;
+        \pause
+          \draw [thick, red]
+          (-1,0) node[below] {$A'$}--
+          (2,1) node[below right] {$B'$}--
+          (1,-2) node[below] {$C'$}--cycle; 
       \end{tikzpicture}
     \end{flushright}
   \end{columns}
