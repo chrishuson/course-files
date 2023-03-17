@@ -126,16 +126,16 @@
 
 \begin{frame}{``Solve'' a triangle by finding all of is sides' and angles' measures}
     Given $\triangle ABC \sim \triangle DEF$ \\[0.2cm]
-    $BC=4$, $EF=6$, $AB=3$, $DF=8$\\[0.2cm]
+    $BC=4$, $EF=6$, $AB=3$\\[0.2cm]
     m$\angle B = 55^\circ$, m$\angle D=70^\circ$\\[0.5cm]
     \begin{center}
       \begin{tikzpicture}[scale=0.8]
-        \coordinate [label=above left:$A$](A) at (50:3);
+        \coordinate [label=above left:$A$](A) at (55:3);
         \coordinate [label=left:$B$](B) at (0, 0);
         \coordinate [label=right:$C$](C) at (0:3.5);
         \draw [thick] (A)--(B)--(C)--cycle;
         \draw [thick, xshift=5cm, yshift=-1cm, scale=1.5] 
-          (50:3) node[above]{$D$}--
+          (55:3) node[above]{$D$}--
           (0,0) node[left]{$E$}--
           (0:3.5) node[right]{$F$}--cycle;
       \end{tikzpicture}
