@@ -204,6 +204,23 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}{Find the area of the large and small rectangles}
+  {(use the areas of the small triangles)}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.7]
+        \draw [help lines] (-1,0) grid (9,8);
+        \draw [thick, <->] (-1.4,0) -- (9.4,0) node [right] {$x$};
+        \draw [thick, <->] (0,-0.4)--(0,8.4) node [above] {$y$};  
+        \draw [thick]
+          (1,4) node[below left] {$A(1,4)$}--
+          (3,7) node[above left] {$B(3,7)$}--
+          (9,3) node[right] {$C(9,3)$}--
+          (7,0) node[below left] {$D(7,0)$}--cycle;
+        \draw [thick, red] (1,7)--(9,7)--(9,0)--(1,0)--cycle;
+      \end{tikzpicture}
+    \end{flushright}
+\end{frame}
+
 \begin{frame}{Notebook check scoring}
   {Start quickly at the beginning of class: notebook, pencil, folder, calculator; get to work}
     Jumprope mastery score
