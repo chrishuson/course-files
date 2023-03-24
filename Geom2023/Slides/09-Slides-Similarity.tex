@@ -221,18 +221,6 @@
     \end{flushright}
 \end{frame}
 
-\begin{frame}{Notebook check scoring}
-  {Start quickly at the beginning of class: notebook, pencil, folder, calculator; get to work}
-    Jumprope mastery score
-    \begin{enumerate}
-      \item I have a notebook $\rightarrow$ 1
-      \item I have class notes $\rightarrow$ 2
-      \item I have stars indicating I quickly sit down and write the learning target $\rightarrow$ 3
-      \item I have stars and I complete the Do Now right away $\rightarrow$ 4
-    \end{enumerate} \bigskip
-\end{frame}
-
-
 \section{9.5 Composition \hfill 21 March \,}
 \begin{frame}{Learning Target: I can compose dilations with other transformations}
   {HSG.SRT.B.5 Use similarity criteria for triangles to solve problems \hfill \alert{9.5 Tuesday 21 March}}
@@ -267,38 +255,96 @@
   \end{columns}
 \end{frame}
 
-
-\section{9.6 Composition \hfill 22 March \,}
-\begin{frame}{Learning Target: I can calculate distance}
+\section{9.6 Midline and medians \hfill 22 March \,}
+\begin{frame}{Learning Target: I can plot triangle midlines and medians}
   {HSG.SRT.B.5 Use similarity criteria for triangles to solve problems \hfill \alert{9.6 Wednesday 22 March}}
   \begin{columns}
     \column{0.4\textwidth}
     Do Now:\\
-    The triangle is rotated around its longer leg. What 3-dimensional shape does it make? \\[0.5cm]
-    Lesson: Regent pointers (be on time tomorrow, with calculator) \\[0.5cm]
+    Rotating the triangle around its longer leg will make what 3-dimensional shape? \\[0.5cm]
+    Lesson: Regents pointers. Be on time tomorrow. \\[0.5cm]
     Homework: Complete the classwork practice, Deltamath problem set \\[0.5cm]
     \column{0.6\textwidth}
     \begin{flushright}
-      \begin{tikzpicture}[scale=0.8]
-        \draw [help lines] (-3,-4) grid (6,3);
-        \draw [thick, <->] (-3.4,0) -- (6.4,0) node [right] {$x$};
-        \draw [thick, <->] (0,-4.4)--(0,3.4) node [above] {$y$};  
-        \draw [thick]
-          (-2,0) node[below left] {$A$}--
-          (-2,-3) node[above left] {$B$}--
-          (0,-3) node[below left] {$C$}--cycle;
-        \pause
-          \draw [thick, red, dashed]
-            (2,0) node[above left] {$A'$}--
-            (2,-3) node[below right] {$B'$}--
-            (0,-3) node[below right] {$C'$}--cycle;
-          \draw [thick, red]
-            (5,1) node[above left] {$A''$}--
-            (5,-2) node[below right] {$B''$}--
-            (3,-2) node[below right] {$C''$}--cycle; 
+      \begin{tikzpicture}[scale=0.7]
+        \draw [thick] (0,0)--(4,0)--(4,3)--cycle;
+        \node at (2,-0.5){4};
+        \node at (2,2.2){5};
+        \node at (4.5,1.5){3};
+        \fill (0,0) circle[radius=0.1];
       \end{tikzpicture}
     \end{flushright}
   \end{columns}
+\end{frame}
+
+\section{9.7 Midline and medians \hfill 24 March \,}
+\begin{frame}{Learning Target: I can plot triangle midlines and medians}
+  {HSG.SRT.B.5 Use similarity criteria for triangles to solve problems \hfill \alert{9.7 Friday 24 March}}
+  \begin{columns}
+    \column{0.4\textwidth}
+    Do Now:\\
+    What sequence of transformations map similar triangles $\triangle ABP \rightarrow \triangle JKP$? \\[0.5cm]
+    Lesson: Midlines and triangle medians \\[0.5cm]
+    Homework: Complete the classwork practice, Deltamath problem set \\[0.5cm]
+    \column{0.6\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=1.0]
+          \draw [thick]
+            (0.25,-1)node[right]{$B$}--
+            (-0.5,2)node[left]{$K$}--
+            (4,0)node[right]{$J$}--
+            (0,0)node[above right]{$P$}--
+            (-2,0)node[left]{$A$}--cycle;
+          \fill (0,0) circle (0.08);
+          \node at (-1,0.2) {$4$};
+          \node at (1.75,0.2) {$8$};
+        \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Triangle midline and medians create similar triangles}
+  \begin{columns}
+    \column{0.6\textwidth}
+      \begin{description}
+        \item[Midpoint] The point on a segment that divides the segment into two equal parts.
+        \item[Midline] The line segment that connects the midpoints of two sides of a triangle.
+        \onslide<2>{\item[Medians] Segments connecting a vertex to the midpoint of the opposite side.
+        \item[Centroid] The point where the three medians intersect.}
+      \end{description}
+    \column{0.4\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.4]
+        \draw [thick]
+        (0.5,1.5)node[left]{$B$}--
+        (6.5,1.5)node[right]{$C$}--
+        (2,6)node[above]{$A$}--cycle;
+        \draw [thick] (0.5,1.5)--
+          (-1,-3)node[left]{$D$}--
+          (11,-3)node[right]{$E$}--(6.5,1.5);
+        \pause
+          \draw [thick] (2,6)--(5,-3);
+          \draw [thick] (0.5,1.5)--(11,-3);
+          \draw [thick] (6.5,1.5)--(-1,-3);
+          \fill (4,0) circle (0.2)node[left]{$M$};
+          \draw [dashed, thick, white] (0.5,1.5)--(6.5,1.5);
+        %\node at (3,2.5)[below]{$7$};
+        %\node at (2.1, 0)[above]{$4$};
+        %\node at (-0.7, -1)[above]{$5$};
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Notebook check scoring}
+  {Start quickly at the beginning of class: notebook, pencil, folder, calculator; get to work}
+    Jumprope mastery score
+    \begin{enumerate}
+      \item I have a notebook $\rightarrow$ 1
+      \item I have class notes $\rightarrow$ 2
+      \item I have stars indicating I quickly sit down and write the learning target $\rightarrow$ 3
+      \item I have stars and I complete the Do Now right away $\rightarrow$ 4
+    \end{enumerate} \bigskip
 \end{frame}
 
 \end{document}
