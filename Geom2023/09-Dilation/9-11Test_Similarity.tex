@@ -163,6 +163,79 @@ Find m$\angle ABC$ and m$\angle E$.
     \end{flushright}
 
 \newpage
+\item The line $\overleftrightarrow{AB}$ has the equation $y=\frac{1}{2}x-2$. Apply a dilation mapping $\overleftrightarrow{AB} \rightarrow \overleftrightarrow{A'B'}$ with a factor of $k=2.5$ centered at the origin. Draw and label the image on the grid. Write the equation of the line $\overleftrightarrow{A'B'}$.
+  \begin{flushright}
+  \begin{tikzpicture}[scale=.635]
+    \draw [help lines] (-1,-7) grid (10,1);
+    \draw [thick, ->] (-1.2,0) -- (10.4,0) node [below right] {$x$};
+    \draw [thick, ->] (0,-7.2)--(0,1.4) node [left] {$y$};
+    \draw [<->, thick] (-0.5,-2.25)--(4.5,0.25);
+    \draw [fill] (0,-2) circle [radius=0.1]node[above left]{$A$};
+    \draw [fill] (4,0) circle [radius=0.1]node[above left]{$B$};
+  \end{tikzpicture}
+  \end{flushright} \vspace{1cm}
+
+\item Triangle $ADE$ and its midline $\overline{BC}$ are drawn, with $B$ the midpoint of $\overline{AD}$ and $C$ the midpoint of $\overline{AE}$. The two medians $\overline{BE}$ and $\overline{CD}$ are drawn, as shown, intersecting in point $F$, the centroid. Given $BC=10$, $FE=15$.
+\begin{multicols}{2}
+\begin{enumerate}[itemsep=1.5cm]
+    \item Write down $DE$.
+    \item Given $\triangle FCB \sim \triangle FDE$ with scale factor $k=2$. \\[0.25cm]
+    Find $BF$.
+    \item Given the area of $\triangle ABC$ is 50, find the area of $\triangle ADE$.
+\end{enumerate}
+\begin{center}
+    \begin{tikzpicture}[scale=0.55]
+    \draw [thick]
+    (0.5,1.5)node[left]{$B$}--
+    (6.5,1.5)node[above right]{$C$}--
+    (2,6)node[above]{$A$}--cycle;
+    \draw [thick]
+    (0.5,1.5)--
+    (-1,-3)node[below]{$D$}--
+    (11,-3)node[below]{$E$}--(6.5,1.5);
+    \draw [thick] (0.5,1.5)--(11,-3);
+    \draw [thick] (6.5,1.5)--(-1,-3);
+    \node at (3,2.5)[below]{$10$};
+    \node at (3.5, -0.6)[right]{$F$};
+    \node at (6.6, -.9)[above]{$15$};
+    \end{tikzpicture}
+\end{center}
+\end{multicols}
+
+
+\newpage
+\item In the diagram below, the chords $\overline{AE}$ and $\overline{BD}$ intersect at $C$, with $\triangle ABC \sim \triangle DEC$, $BC=4$, $AC=5$, and $BD=11.5$. Determine the length of $\overline{CE}$.
+    \begin{center}
+    \begin{tikzpicture}[scale=.6]
+    \draw (0,0) circle[radius=5];
+    \draw [thick]
+    (20:5) node[right] {$A$}--
+    (160:5) node[left] {$E$}--
+    (210:5) node[left] {$D$}--
+    (50:5) node[above right] {$B$}--cycle;
+    \draw (75:1.8) node[above] {$C$};
+    \end{tikzpicture}
+\end{center} \vspace{2cm}
+
+\item In the diagram below $\triangle ABC \sim \triangle DEF$, $DE=x+4$, $AB=12$, $AC=21$, $DF=2x+4$. \\[0.25cm] 
+Determine the length of $\overline{AB}$.
+\begin{center}
+    \begin{tikzpicture}[scale=1]
+    \coordinate [label=above left:$A$](A) at (85:2);
+    \coordinate [label=below:$B$](B) at (0, 0);
+    \coordinate [label=right:$C$](C) at (-20:3);
+    \draw [thick] (A)--(B)--(C)--cycle;
+    \node at (95:1)[left]{$12$};
+    \node at (35:1.75)[right]{$21$};
+    \draw [thick, xshift=5cm, yshift=0.5cm] (85:3) node[above]{$D$}--
+    (0,0) node[below]{$E$}--
+    (-20:4.5) node[right]{$F$}--cycle;
+    \draw [thick, xshift=5cm, yshift=0.5cm](90:1.5) node[left]{$x+4$};
+    \draw [thick, xshift=5cm, yshift=0.5cm](30:2.75) node[right]{$2x+4$};
+\end{tikzpicture}
+\end{center}
+  
+\newpage
 \subsubsection*{Extra}
 
 \item Given $\triangle ABP \sim \triangle JKP$. $AB=7$, $AP=6.3$, $KP=8.8$, $JK=16.0$, $m\angle A=25^\circ$, $m\angle JPK = 105^\circ$. Solve the triangles (all angles and lengths).
