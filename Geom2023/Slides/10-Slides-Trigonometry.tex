@@ -143,52 +143,55 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{Find the base of a triangle with height $h=10$ and angle 60 degrees}
+\begin{frame}{Find the base of a triangle with height $h=10$ and angle 55 degrees}
   \begin{columns}
     \column{0.5\textwidth}
     \begin{center}
       $\displaystyle \tan(\theta)=\frac{opposite}{adjacent}$
       \end{center}
-      Substitute the given values and use your calculator for $\tan(60^\circ)$
+      Substitute the given values and use your calculator for $\tan(55^\circ)$
       \onslide<2>{\textcolor{red}{    
         \begin{center}
-        $\displaystyle \tan(60^\circ)=\frac{a}{10} \approx 1.732$\\[0.5cm]
-        $\displaystyle a=10\times 1.732 \approx 17.32$
+        $\displaystyle \tan(55^\circ)=\frac{10}{x}$\\[0.5cm]
+        $\displaystyle x (1.428\ldots) = 10$\\[0.5cm]
+        $\displaystyle x = \frac{10}{1.428\ldots} \approx 7.00 \ldots$
         \end{center}}}
     \column{0.5\textwidth}
     \begin{flushright}
       \begin{tikzpicture}[scale=0.7] 
         \draw [thick] (0,0)--(4,0)--(4,6)--cycle;
         \draw (4,0) ++(-0.5,0)--+(0,0.5)--+(0.5,0.5);
-        \node at (2,-0.5){$b=$?};
-        \onslide<1>{\node at (4.3,3.5){?};}
-        \onslide<2>{\node at (4.4,3.5){\textcolor{red}{17}};}
+        \node at (4.4,3.3){10};
+        \onslide<1>{\node at (2,-0.5){$x=$?};}
+        \onslide<2>{\node at (2,-0.5){$x= \;$\textcolor{red}{7.00\ldots}};}
         \draw (1,0) arc (0:55:1)node[pos=0.7, right] {$\theta = 55^\circ$};
       \end{tikzpicture}
     \end{flushright}
   \end{columns}
 \end{frame}
 
-\begin{frame}{Convert degrees and radians}
-  Right triangle $\triangle ABC$ with side lengths $a$, $b$, $c$. $m\angle A = \theta$
+\begin{frame}{Applications to real world situations}
+  For example: heights of trees, wires to a pole, lighthouses, buildings, airplanes...
   \begin{center}
   \begin{tikzpicture}[scale=0.55]
-    \draw [thick](0,0)node[above left]{$A$}--
-        (8,0)node[right]{$C$}--
-        (8,6)node[right]{$B$}--cycle;
-    \node at (1.75,0.75){$\theta$};
-    \draw (1.5,0) arc (0:37:1.5);
+    \draw [thick](-3,0)--
+        (8,0)--
+        (8,6)--cycle;
+    \draw [dashed, ->] (8,6)--(0,6);
+    \node at (-1.25,0.5)[red]{$\theta$};
+    \node at (6.25,5.5)[red]{$\theta$};
+    \draw [->, red] (-1.5,0) arc (0:29:1.5);
+    \draw [->, red] (6.5,6) arc (180:180+29:1.5);
     \draw (8,0) ++(-0.75,0)--+(0,0.75)--+(0.75,0.75);
-    \node at (4,0) [below]{$b$, the adjacent side};
-    \node at (8,3) [right]{$a$, the opposite side};
-    \node at (0.4,4) [right]{$c$, hypotenuse};
+    \node at (2.5,0) [below]{horizontal distance};
+    \node at (8,3) [right]{height or altitude};
+    \node at (0,2.5) [right, rotate=29]{diagonal length};
   \end{tikzpicture}
   \end{center}
   \begin{description}
-    \item[Opposite] The side across from the angle
-    \item[Adjacent] The side next to the angle
-    \item[Theta] A Greek letter used to represent the angle measure
-    \item[tangent] The ratio of the opposite side to the adjacent side
+    \item[Angle of elevation] The upward angle from the horizontal to line of sight
+    \item[Angle of declination] The downward angle from the horizon to the object on the ground
+    \item[Equal angles] The two alternate interior angles are congruent.
   \end{description}
 \end{frame}
 
