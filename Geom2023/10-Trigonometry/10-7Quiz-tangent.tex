@@ -50,8 +50,33 @@ You must write an equation before solving it. Figures are not necessarily drawn 
   \end{flushright}
 
 \newpage
-\subsubsection*{Mastery topic: Algebraic solution\\[0.5cm]
-Use your calculator and solve each equation for $x$, rounding to the nearest tenth.}
+\item The dimensions of right $\triangle ABC$ are $AC=12$ and $BC=5$. Find length of the hypotenuse $AB=x$.
+  \begin{flushright}
+  \begin{tikzpicture}[scale=1]
+    \draw[thick] (0,0)node[below]{$A$}--
+      (6,0)node[below]{$C$}--
+      (6,3)node[above]{$B$}--cycle;
+    \draw (6,0)++(-0.4,0)--++(0,0.4)--+(0.4,0);
+    \node at (3,0)[below]{$12$};
+    \node at (6,1.5)[right]{$5$};
+    \node at (3.1,2)[right]{$x$};
+  \end{tikzpicture}
+  \end{flushright}
+
+\item The base of right $\triangle ABC$ is 10.0 and its height is 17.3. Find the length of its hypotenuse $AB$, to the \emph{nearest tenth}.
+  \begin{flushright}
+  \begin{tikzpicture}[scale=0.7]
+    \draw[thick] (0,0)node[below]{$A$}--
+      (5,0)node[below]{$C$}--
+      (5,8)node[above]{$B$}--cycle;
+    \draw (5,0)++(-0.6,0)--++(0,0.6)--+(0.6,0);
+    \node at (2.5,0)[below]{$10.0$};
+    \node at (5,4)[right]{$17.3$};
+  \end{tikzpicture}
+  \end{flushright}
+
+\subsubsection*{Find $x$ to the \emph{nearest tenth}.}
+
 \item $\displaystyle \tan 75^\circ = \frac{x}{15}$ \vspace{3cm}
 \item $\displaystyle \tan 26^\circ = \frac{4}{x}$ \vspace{4cm}
 \item $\displaystyle x = \tan^{-1} (\frac{2}{3.5})$ \vspace{3cm}
@@ -102,19 +127,19 @@ Use your calculator and solve each equation for $x$, rounding to the nearest ten
       \end{enumerate}
     \end{multicols} \vspace{1cm}
 
-\subsubsection*{Mastery topic: Modeling. Do Not Solve}
-  \item Given right $\triangle JKL$ with $\overline{JK} \perp \overline{KL}$, $JK=11$, $m\angle J=18^\circ$. (mark the diagram)\\[0.5cm]
-    Let $x$ be the length of the side opposite $\angle J$, $x=KL$. Write an equation expressing $\tan \angle J$ as a ratio of \emph{opposite} over \emph{adjacent}.
-      \begin{flushright}
-          \begin{tikzpicture}[scale=0.7]
-            \draw [thick](-1,0)--(7,0)--(7,3)--cycle;
-            \draw [fill] (-1,0) circle [radius=0.05] node[below]{$J$};
-            \draw [fill] (7,0) circle [radius=0.05] node[below]{$K$};
-            \draw [fill] (7,3) circle [radius=0.05] node[above right]{$L$};
-          \end{tikzpicture}
-        \end{flushright}
-
-\newpage
+\subsubsection*{Mastery topic: Modeling situations with right triangles}
+\item A tree casts a shadow 12 feet long. The angle of elevation from the tip of the shadow to the top of the tree is $70^\circ$. To the nearest foot, how tall is the tree?
+  \begin{flushright}
+  \begin{tikzpicture}[scale=1]
+    \draw[thick] (0,0)--
+      (3,0)--
+      (3,7)--cycle;
+    \draw (3,0)++(-0.6,0)--++(0,0.6)--+(0.6,0);
+    \node at (1.5,0)[below]{$12$ feet};
+    \node at (3,3)[right]{$x$};
+    \draw (0.5,0) arc (0:65:0.5)node[pos=0.7,right]{$70^\circ$};
+  \end{tikzpicture}
+  \end{flushright}
 
 \end{enumerate}
 \end{document}
