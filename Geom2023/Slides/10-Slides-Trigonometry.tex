@@ -276,7 +276,86 @@
     Test: Use your notebook and calculator (no computers) \\[0.5cm]
     \emph{Do not share calculators} \\[0.5cm]
     Early finishers: Deltamath Regents review
+\end{frame}
 
+\section{10.8 Sine and cosine functions \hfill 3 May \,}
+\begin{frame}{Learning Target: I can use the sine and cosine functions}
+  {CCSS.HSG.SRT.C.8 Use trig ratios and the Pythagorean Theorem to solve problems \hfill \alert{10.8 Wednesday 3 May}}
+  \begin{columns}
+    \column{0.7\textwidth}
+    Do Now: Calculate the length of the base $x$ and the two angle measures. \\[0.5cm]
+    Lesson: Using $\sin \theta$ and $\cos \theta$ \\[0.5cm]
+    Homework: Complete the classwork practice, Deltamath \\
+    \column{0.3\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=1] 
+        \draw [thick] (0,0)--(3,0)--(3,4)--cycle;
+        \draw (3,0) ++(-0.5,0)--+(0,0.5)--+(0.5,0.5);
+        \node at (1.5,2.5){10};
+        \node at (1.7,-0.3){$x$};
+        \node at (3.3,2){8};
+        \draw (0.7,0) arc (0:53:0.7)node[pos=0.5, above right]{$A$};
+        \draw (3,3.3) arc (-90:-127:0.7)node[pos=0.1, below left]{$B$};
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Sine and cosine trigonometric functions}
+  Right triangle $\triangle ABC$ with side lengths $a$, $b$, $c$. $m\angle A = \theta$
+  \begin{center}
+  \begin{tikzpicture}[scale=0.55]
+    \draw [thick](0,0)node[above left]{$A$}--
+        (8,0)node[right]{$C$}--
+        (8,6)node[right]{$B$}--cycle;
+    \node at (1.75,0.75){$\theta$};
+    \draw (1.5,0) arc (0:37:1.5);
+    \draw (8,0) ++(-0.75,0)--+(0,0.75)--+(0.75,0.75);
+    \node at (4,0) [below]{$b$, the adjacent side};
+    \node at (8,3) [right]{$a$, the opposite side};
+    \node at (0.4,4) [right]{$c$, hypotenuse};
+  \end{tikzpicture}
+  \end{center}
+  \begin{description}
+    \item[tangent] The ratio of the opposite side to the adjacent side
+    \item[sine] The ratio of the opposite side to the hypotenuse
+    \item[cosine] The ratio of the adjacent side to the hypotenuse
+    \item[SOH CAH TOA] \emph{mnemonic device}
+  \end{description}
+\end{frame}
+
+\begin{frame}{Find the legs of a triangle with hypotenuse $c=20$ and angle 60 degrees}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{center}
+      $\displaystyle \sin(\theta)=\frac{opposite}{hypotenuse}=\frac{a}{c}$ \\[0.3cm]
+      $\displaystyle \cos(\theta)=\frac{adjacent}{hypotenuse}=\frac{b}{c}$
+      \end{center}
+      Substitute the given values and solve
+      \onslide<2>{\textcolor{red}{    
+        \begin{center}
+        $\displaystyle \sin(60^\circ)=\frac{a}{20} = 0.866 \ldots$\\[0.3cm]
+        $\displaystyle a=20\times 0.866 \ldots \approx 17.3$ \\[0.5cm]
+        $\displaystyle \cos(60^\circ)=\frac{b}{20} = 0.5$\\[0.3cm]
+        $\displaystyle b=20\times 0.5 = 10$
+        \end{center}}}
+    \column{0.5\textwidth}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.7]
+        \draw [thick, <->] (-1,0) -- (4.4,0) node [right] {$x$};
+        \draw [thick, <->] (0,-0.4)--(0,7.4) node [above] {$y$};  
+        \draw [thick] (0,0)--(4,0)--(4,7)--cycle;
+        \draw (4,0) ++(-0.5,0)--+(0,0.5)--+(0.5,0.5);
+        \node[rotate=60] at (2,4.3){$c=20$};
+        \onslide<1>{\node at (4.3,3.5){$a$};}
+        \onslide<2>{\node at (4.6,3.5){\textcolor{red}{17.3}};}
+        \onslide<1>{\node at (2,-0.5){$b$};}
+        \onslide<2>{\node at (2,-0.5){\textcolor{red}{10}};}
+        \fill (4,7) circle[radius=0.1] node[above] {$(h\cos \theta,h\sin \theta)$};
+        \draw (1,0) arc (0:60:1)node[pos=0.7, right] {$\theta = 60^\circ$};
+      \end{tikzpicture}
+    \end{flushright}
+  \end{columns}
 \end{frame}
 
 \end{document}
