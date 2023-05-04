@@ -1,12 +1,13 @@
+\documentclass[12pt, twoside]{article}
 \input{../preamble}
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 12: Trigonometry \\* 20 March 2023}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 10: Trigonometry \\* 5 May 2023}
 
 \begin{document}
 
-\subsubsection*{12.6 Special right triangles \hfill HSG.SRT.C.8}
+\subsubsection*{10.10 Special right triangles \hfill HSG.SRT.C.8}
 \begin{enumerate}
 \item Isosceles right $\triangle ABC$ is shown with legs $AC=BC=10$ as marked.\vspace{0.25cm}
   \begin{multicols}{2}
@@ -59,6 +60,44 @@
 \vspace{1cm}
 
 \newpage
+\item Shown is a building with student $A$ on the ground waving up to student $B$. Point $A$ is 40 feet from the base of the building, and the angle of elevation from $A$ to $B$ is $37^\circ$.
+
+Find how high up student B is from the ground to the \emph{nearest foot}. \hfill (not to scale)
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.3]
+      %\draw [-, thick] (0,0)--(35:23);
+      \draw [-, thick] (-4,0)--
+      (0,0)--
+        (17,0)--
+        (22,0)--
+        (22,10)--(17,10)--(17,0);
+      \draw [fill] (0,0) circle [radius=0.1] node[above left]{$A$};
+      \draw [fill] (17,10) circle [radius=0.1] node[above right]{$B$};
+      \draw [dashed] (0,0)--(17,10);
+      \node at (3.8, 0)[above]{$37^\circ$};
+      \node at (11, 0)[above]{distance = 40 ft};
+      \node at (19.5, 5)[above]{school};
+    \end{tikzpicture}
+    \end{flushright}
+
+\item Yolanda is making a springboard to use for gymnastics. She has 8-inch-tall springs and wants to form a $16.5$ angle with the base, as modeled in the diagram below.
+\begin{center}
+  \includegraphics[scale=0.6]{../graphics/trig-spring.png}
+\end{center}
+To the \emph{nearest tenth of an inch}, what will be the length of the springboard, $x$? \vspace{4cm}
+
+\item A child sleds from the top of a hill to a group of friends standing at the base of the hill. The hill is 20 feet tall, and the distance from the sledder to the group of friends is 110 feet. Find the angle of the incline $x$.
+\begin{flushright}
+  \begin{tikzpicture}[scale=1.1]
+    \draw [thick] (10,0)--(0,0)--(10,2.0)--cycle;
+    \draw [thick, ->] (1.5,0) arc [start angle=0, end angle=11.3, radius=1.5];
+    \node at (1,0)[below]{Incline $=x^\circ$};
+    \node at (10,1.2)[left]{$20$};
+    \node at (5,1.6)[below]{$110$};
+  \end{tikzpicture} 
+\end{flushright}\vspace{4cm}
+  
+\newpage
 \item In the diagram below, $\triangle ABC$ is inscribed in circle $O$. Show that $\overline{AB} \perp \overline{BC}$.
     \begin{flushright}
       \begin{tikzpicture}[scale=0.6]
@@ -96,6 +135,11 @@
         & & \\
         & & \\
       \end{tabular}
+
+\newpage
+\item The vertices of quadrilateral $MATH$ have coordinates $M(-4,2)$, $A(-1,-3)$, $T(9,3)$, and $H(6,8)$. \\[0.5cm]
+Prove that quadrilateral $MATH$ is a parallelogram.
+
 
 \end{enumerate}
 \end{document}
