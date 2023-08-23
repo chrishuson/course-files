@@ -1,10 +1,6 @@
 # Dr. Huson's Math Courses at BECA
 
-[PreCalculus](./precalc)
-
-[Career and Financial Management](./cfm)
-
-(note: *Test link with no index file in cfm subdirectory*)
+[Triangle pdf (link above /docs directory)](../ChatGPT.pdf)
 
 ## Course links without path
 
