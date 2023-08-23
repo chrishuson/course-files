@@ -10,11 +10,13 @@
 
 - [01 Algebra slides (pdf, no path)](01b-Slides-Algebra.pdf)
 
-- [13-1CW-Memoria-Day (nbconvert-generated html)](./13-1CW-Memorial-Day.slides.html)
+- [8-12SAT-free-response (manually rendered html file)](8-12SAT-free-response)
 
-- [13-1CW-Memoria-Day (nbconvert-generated html, with out ending)](./13-1CW-Memorial-Day.slides)
+- [13-1CW_Memorial-Day (nbconvert-generated html)](13-1CW_Memorial-Day.slides.html)
 
-- [13-1CW-Memoria-Day (nbconvert-generated html, with out ending, no path)](13-1CW-Memorial-Day.slides)
+- [13-1CW_Memorial-Day (nbconvert-generated html, without ending)](13-1CW_Memorial-Day.slides)
+
+- [13-1CW_Memorial-Day (nbconvert-generated html, with out ending, no path)](13-1CW_Memorial-Day.slides)
 
 ## Reference files
 
