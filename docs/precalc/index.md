@@ -1,6 +1,6 @@
 # BECA 11th grade mathematics: PreCalculus
 
-[Syllabus (above /docs directory)](https://raw.githubusercontent.com/chrishuson/course-files/master/IB2023/Plan-IB.pdf)
+[Syllabus (GitHub link to pdf)](https://raw.githubusercontent.com/chrishuson/course-files/master/IB2023/Plan-IB.pdf)
 
 ## Slides and files
 
@@ -8,9 +8,11 @@
 
 - [8.5 Test Prep (manually rendered html file)](8-5Test-prep)
 
-- [01 Algebra slides (pdf, no path)](01b-Slides-Algebra.pdf)
+- [01 Algebra slides (pdf, no path)](01b-Slides_Algebra.pdf)
 
 - [8-12SAT-free-response (manually rendered html file)](8-12SAT-free-response)
+
+- [8-12SAT-free-response (manually rendered html file)](8-12SAT-free-response.html)
 
 - [13-1CW_Memorial-Day (nbconvert-generated html)](13-1CW_Memorial-Day.slides.html)
 
