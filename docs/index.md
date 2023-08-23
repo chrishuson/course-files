@@ -1,9 +1,10 @@
 # Dr. Huson's Math Courses at BECA
 
-[Triangle pdf (link above /docs directory)](../ChatGPT.pdf)
+[11th grade: PreCalculus](precalc)
 
-## Course links without path
+[12th grade: Career and Financial Management](cfm)
 
-[PreCalculus](precalc)
+-----
+[Contact (points to .io files)](https://raw.githubusercontent.com/chrishuson/chrishuson.github.io/master/Contact)
 
-[Career and Financial Management](cfm)
+[Contact (math.huson.com handle)](https:/math.huson.com/Contact)

@@ -4,6 +4,4 @@
 
 ## Slides and files
 
-- [01 Algebra slides (markdown auto rendered)](../precalc/01-Slides-Algebra.md)
-
 - [01 Algebra slides (markdown auto rendered, no ending)](../precalc/01-Slides-Algebra)
