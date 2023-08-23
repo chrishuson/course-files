@@ -1,6 +1,6 @@
 # BECA 12th grade: Career and Financial Management
 
-[Syllabus (needs fix: linked to repo, not file directly)](https://github.com/chrishuson/course-files/blob/master/IB2023/Plan-IB.pdf)
+[Syllabus (actually readme file in root)](https://raw.githubusercontent.com/chrishuson/course-files/master/README)
 
 ## Slides and files
 
