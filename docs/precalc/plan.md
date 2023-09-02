@@ -25,11 +25,6 @@ Dates | Unit | Topics  | Project |  Days
 3/13 - 3/24 | 10. Trigonometric models | Period functions, unit circle | Cyclic functions in nature | 10 
 3/27 - 4/5 | 11. Differential calculus | Derivatives, tangent lines, optimization | Desmos tangent graphing | 8
 4/17 - 4/28 | 12. Integral calculus | Area under a curve, fundamental theorem of calculus | Casio integration functions | 9
-5/1 - 5/12 | IB Math Exams 5/8,9 | Paper 1 and Paper 2 | - | 6
-5/15 - 5/26 | Post-exam | Projects | 10
-5/30 - 6/13 | Post-exam | Projects | 10
-
-*129 classes prior to exam weeks*
 
 ## IBO Guide - Syllabus hours
 

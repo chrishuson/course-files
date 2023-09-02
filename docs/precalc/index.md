@@ -4,9 +4,7 @@ title: course-files
 
 # PreCalculus 11th grade
 
-[Syllabus (raw.GitHub link to pdf)](https://raw.githubusercontent.com/chrishuson/course-files/master/IB2023/Plan-IB.pdf)
-
-[Unit plan](plan)
+[Unit plan](plan) [pdf](plan.pdf)
 
 1. Unit: Precision
     1. [01 Algebra slides (markdown auto rendered)](01-Slides-Algebra)
