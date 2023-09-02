@@ -2,10 +2,6 @@
 title: course-files
 ---
 
-<style> blockquote { margin-left: 2em; margin-right: 0; padding: 0; border-left: none; } </style>
-
-BECA Mathematics, Dr. Huson $\hspace{1cm}$ <a href="https://chrishuson.github.io/">Home</a> $\hspace{1cm}$ [CFM](../cfm) $\hspace{1cm}$ <a href="https://chrishuson.github.io/Contact">About</a>$\hspace{1cm}$ [About](https://chrishuson.github.io/Contact)
-
 # PreCalculus 11th grade
 
 [Syllabus (raw.GitHub link to pdf)](https://raw.githubusercontent.com/chrishuson/course-files/master/IB2023/Plan-IB.pdf)
@@ -36,5 +32,5 @@ BECA Mathematics, Dr. Huson $\hspace{1cm}$ <a href="https://chrishuson.github.io
 
 - [13-1CW_Memorial-Day (nbconvert-generated html, with out ending, no path)](13-1CW_Memorial-Day.slides)
 
-> Blockquote
-> second line
+---
+BECA Mathematics, Dr. Huson - [Home](https://math.huson.com/) - [Precalc](../precalc) - [CFM](../cfm) - [Modeling](../modeling) - [About](https://math.huson.com/Contact)

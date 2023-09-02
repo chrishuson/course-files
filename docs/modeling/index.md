@@ -1,4 +1,6 @@
-BECA Mathematics, Dr. Huson $\hspace{1cm}$ <a href="https://chrishuson.github.io/">Home</a> $\hspace{1cm}$ [CFM](../cfm) $\hspace{1cm}$ <a href="https://chrishuson.github.io/Contact">About</a> &nbsp  &nbsp [About](https://chrishuson.github.io/Contact)
+---
+title: course-files
+---
 
 # Mathematical Modeling and Problem Solving
 
@@ -38,3 +40,6 @@ BECA Mathematics, Dr. Huson $\hspace{1cm}$ <a href="https://chrishuson.github.io
   - How to use calculus concepts such as limits, continuity, derivatives, integrals, differential equations, series, Taylor polynomials, Taylor series, power series, Fourier series, Laplace transforms, etc. to model complex phenomena?
   - How to use discrete mathematics concepts such as sets, logic, proofs, algorithms, recursion, induction, relations, functions, graphs, trees, networks, combinatorics, counting principles, binomial theorem, Pascal's triangle etc. to model discrete phenomena?
   - How to use cryptography concepts such as encryption, decryption, ciphers, codes, keys, public-key cryptography etc. to model secure communication?
+
+---
+BECA Mathematics, Dr. Huson - [Home](https://math.huson.com/) - [Precalc](../precalc) - [CFM](../cfm) - [Modeling](../modeling) - [About](https://math.huson.com/Contact)

@@ -1,3 +1,7 @@
+---
+title: course-files
+---
+
 # Dr. Huson's Math Courses at BECA
 
 [11th grade: PreCalculus](precalc)
