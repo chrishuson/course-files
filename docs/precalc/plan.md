@@ -18,7 +18,6 @@ Dates | Unit | Topics  | Project |  Days
 11/7 - 11/18 | 4. Coordinate geometry | Graphing linear equations, distance and midpoints, parallel and perpendicular slopes | Taxi fares | 8 
 11/21 - 12/2 | 5. Linear functions | Linear functions, arithmetic sequences | Amphitheater design project | 8  
 12/5 - 12/16 | 6. Correlation and regression | Bivariate data, line of best fit | Desmos regression | 10
-1/3 - 1/13 | Investigation Project | Mathematical exploration paper (Internal Assessment, ``IA") | - | 9
 1/17 - 2/3 | 7. Probability | Uncertainty, binomial and normal distributions | Simulations | 9
 2/6 - 2/17 | 8. Modeling with polynomial functions | Quadratics, cubics, inverse variation; graphs | Area vs perimeter model | 10
 2/27 - 3/10 | 9. Exponential models | Geometric sequences, compound interest, logarithms | Compound interest spreadsheet | 10 
