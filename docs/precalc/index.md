@@ -1,3 +1,7 @@
+---
+title: course-files
+---
+
 <style> blockquote { margin-left: 2em; margin-right: 0; padding: 0; border-left: none; } </style>
 
 BECA Mathematics, Dr. Huson $\hspace{1cm}$ <a href="https://chrishuson.github.io/">Home</a> $\hspace{1cm}$ [CFM](../cfm) $\hspace{1cm}$ <a href="https://chrishuson.github.io/Contact">About</a>$\hspace{1cm}$ [About](https://chrishuson.github.io/Contact)
