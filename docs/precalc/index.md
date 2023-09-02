@@ -1,3 +1,5 @@
+<style> blockquote { margin-left: 2em; margin-right: 0; padding: 0; border-left: none; } </style>
+
 BECA Mathematics, Dr. Huson $\hspace{1cm}$ <a href="https://chrishuson.github.io/">Home</a> $\hspace{1cm}$ [CFM](../cfm) $\hspace{1cm}$ <a href="https://chrishuson.github.io/Contact">About</a>$\hspace{1cm}$ [About](https://chrishuson.github.io/Contact)
 
 # PreCalculus 11th grade
@@ -29,3 +31,6 @@ BECA Mathematics, Dr. Huson $\hspace{1cm}$ <a href="https://chrishuson.github.io
 - [13-1CW_Memorial-Day (nbconvert-generated html, without ending)](13-1CW_Memorial-Day.slides)
 
 - [13-1CW_Memorial-Day (nbconvert-generated html, with out ending, no path)](13-1CW_Memorial-Day.slides)
+
+> Blockquote
+> second line
