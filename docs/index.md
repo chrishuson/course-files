@@ -12,7 +12,7 @@ title: course-files
 
 -----
 
-[About Me / Contact](https:/math.huson.com/Contact)
+[About Me / Contact](https://math.huson.com/Contact)
 
 <!--
 [common-errors](https://raw.githubusercontent.com/chrishuson/chrishuson.github.io/master/common-errors)
