@@ -4,8 +4,12 @@
 
 [12th grade: Career and Financial Management](cfm)
 
+[Mathematical Modeling and Problem Solving](modeling)
+
 -----
 
 [About Me / Contact](https:/math.huson.com/Contact)
 
+<!--
 [common-errors](https://raw.githubusercontent.com/chrishuson/chrishuson.github.io/master/common-errors)
+-->
