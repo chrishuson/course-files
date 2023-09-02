@@ -1,8 +1,18 @@
-# BECA 11th grade mathematics: PreCalculus
+BECA Mathematics, Dr. Huson $\hspace{1cm}$ <a href="https://chrishuson.github.io/">Home</a> $\hspace{1cm}$ [CFM](../cfm) $\hspace{1cm}$ <a href="https://chrishuson.github.io/Contact">About</a>$\hspace{1cm}$ [About](https://chrishuson.github.io/Contact)
 
-[Syllabus (GitHub link to pdf)](https://raw.githubusercontent.com/chrishuson/course-files/master/IB2023/Plan-IB.pdf)
+# PreCalculus 11th grade
 
-## Slides and files
+[Syllabus (raw.GitHub link to pdf)](https://raw.githubusercontent.com/chrishuson/course-files/master/IB2023/Plan-IB.pdf)
+
+[Syllabus](syllabus)
+
+1. Unit: Precision
+    1. [01 Algebra slides (markdown auto rendered)](01-Slides-Algebra)
+    2. [02 Algebra slides (markdown auto rendered)](02-Slides-Algebra)
+2. Unit: Functions
+3. Unit: Trigonometry
+
+## Test links
 
 - [01 Algebra slides (markdown auto rendered)](01-Slides-Algebra)
 
@@ -19,7 +29,3 @@
 - [13-1CW_Memorial-Day (nbconvert-generated html, without ending)](13-1CW_Memorial-Day.slides)
 
 - [13-1CW_Memorial-Day (nbconvert-generated html, with out ending, no path)](13-1CW_Memorial-Day.slides)
-
-## Reference files
-
-[Career and Financial Management](../cfm)
