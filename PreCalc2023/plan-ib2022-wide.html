@@ -1,0 +1,692 @@
+<!DOCTYPE html><html><head>
+      <title>Plan_IB-archive</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="prior-years-ib-math-scope-and-sequence">Prior years IB Math scope and sequence</h1>
+
+<h2 class="mume-header" id="2021-22-ib-math-applications-and-interpretations">2021-22 IB Math: Applications and Interpretations</h2>
+
+<p>One year course - Class of 2023 (juniors)</p>
+<p>Textbook: Oxford <em>IB Mathematics Standard Level</em>, Wathall et al.</p>
+<p>(paperback, online supplement)</p>
+<table>
+<thead>
+<tr>
+<th>Dates</th>
+<th>Unit</th>
+<th>Topics</th>
+<th>Project</th>
+<th style="text-align:right">Days</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9/13 - 11/5</td>
+<td>1. Linear functions</td>
+<td>Functions, linear equations, slope, graphing, arithmetic sequences</td>
+<td>Taxi fares, Amphitheater design projects</td>
+<td style="text-align:right">30</td>
+</tr>
+<tr>
+<td>10/18</td>
+<td>Prior knowledge quiz</td>
+<td>Algebra, fractions, rounding, absolute value, scientific notation, exponents, radicals, metric system, systems, probability, statistics, sets, Venn diagrams</td>
+<td>Casio calculator use</td>
+<td style="text-align:right">1</td>
+</tr>
+<tr>
+<td>11/8 - 11/23</td>
+<td>2. Descriptive statistics</td>
+<td>Frequency tables, central tendency, dispersion, box plots, histograms</td>
+<td>Spreadsheet use</td>
+<td style="text-align:right">12</td>
+</tr>
+<tr>
+<td>11/29 - 12/23</td>
+<td>IA Project</td>
+<td>Spreadsheets, G-docs, Desmos</td>
+<td>-</td>
+<td style="text-align:right">18</td>
+</tr>
+<tr>
+<td>1/3 - 1/21</td>
+<td>3. Functions</td>
+<td>Linear functions</td>
+<td>Graspable math</td>
+<td style="text-align:right">14</td>
+</tr>
+<tr>
+<td>1/24 - 2/11</td>
+<td>4. Cubics and reciprocals</td>
+<td>Quadratics, cubics, inverse function; graphs</td>
+<td>Area vs perimeter model</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>2/14 - 3/9</td>
+<td>5. Exponentials</td>
+<td>Geometric sequences, compound interest, logarithms</td>
+<td>Compound interest spreadsheet</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>3/14 - 4/14</td>
+<td>6. Geometry</td>
+<td>Linear equations, graphing; Sine, cosine rules, triangle area</td>
+<td>Geogebra 3D graphing</td>
+<td style="text-align:right">13</td>
+</tr>
+<tr>
+<td>5/6 - 5/9</td>
+<td>Exams: Paper 1 and Paper 2</td>
+<td>-</td>
+<td>-</td>
+<td style="text-align:right">5</td>
+</tr>
+<tr>
+<td>4/25 - 6/3 (exams)</td>
+<td>7. Data analysis projects</td>
+<td>Trip budget, apartments, demographics, taxes</td>
+<td>Spreadsheets, slide decks</td>
+<td style="text-align:right">18</td>
+</tr>
+</tbody>
+</table>
+<h2 class="mume-header" id="pre-covid-2018-19-scope-and-sequence">Pre-Covid (2018-19) scope and sequence</h2>
+
+<p>IB Mathematics SL - 1st year</p>
+<table>
+<thead>
+<tr>
+<th>Dates</th>
+<th>Unit (Textbook Chapter)</th>
+<th>Topics</th>
+<th>Project</th>
+<th style="text-align:right">Duration</th>
+<th style="text-align:center">IB Guide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9/5 - 9/21</td>
+<td>1. Algebra review (Chapter 1, 2, 4)</td>
+<td>Notation, domain, range, factoring, exponents; graphing</td>
+<td>Desmos plotting</td>
+<td style="text-align:right">8</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>9/24 - 10/5</td>
+<td>2. Statistics review  (Chapter 8, 10)</td>
+<td>Concepts, frequency, central tendency, scatter plots, line of best fit</td>
+<td>Desmos regression</td>
+<td style="text-align:right">8</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>10/9 - 10/19</td>
+<td>3. Functions (Chapter 1)</td>
+<td>Inverse, composition, transformations</td>
+<td>Inverse graphing</td>
+<td style="text-align:right">7</td>
+<td style="text-align:center">10</td>
+</tr>
+<tr>
+<td>10/22 - 11/2</td>
+<td>4. Quadratics (Chapter 2)</td>
+<td>Completing square, graphs, roots, quadratic formula, discriminant</td>
+<td>Ballistics application</td>
+<td style="text-align:right">8</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td>11/5 - 11/21</td>
+<td>5. Probability  (Chapter 3)</td>
+<td>Definitions, counting, conditionals, frequency, Venn diagrams, trees</td>
+<td>Simulation (binomial?), table, trees</td>
+<td style="text-align:right">9</td>
+<td style="text-align:center">10</td>
+</tr>
+<tr>
+<td>11/26 - 12/7</td>
+<td>6. Exponents  (Chapter 4)</td>
+<td>Solving, graphing, applications</td>
+<td>Desmos graph manual fit</td>
+<td style="text-align:right">7</td>
+<td style="text-align:center">10</td>
+</tr>
+<tr>
+<td>12/10 - 12/18</td>
+<td>7. Logarithms  (Chapter 4)</td>
+<td>Logarithms</td>
+<td></td>
+<td style="text-align:right">6</td>
+<td style="text-align:center">10</td>
+</tr>
+<tr>
+<td>1/2 - 1/18</td>
+<td>8. Polynomials (Chapter 6)</td>
+<td>Zeros, symmetry, end behavior, graphing, imaginary numbers</td>
+<td>Algebra 2 Mock Regents</td>
+<td style="text-align:right">10</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>1/29 - 2/15</td>
+<td>9. Rational functions (Chapter 5)</td>
+<td>Solving, graphs, asymptotes</td>
+<td>Reciprocal function graphing, asymptotes &amp; transformations</td>
+<td style="text-align:right">10</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>2/25 - 3/8</td>
+<td>10. Sequences &amp; series  (Chapter 6)</td>
+<td>Arithmetic, geometric, recursive</td>
+<td>Infinite geometric series</td>
+<td style="text-align:right">8</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td>3/11 - 3/22</td>
+<td>11. Descriptive statistics  (Chapter 8)</td>
+<td>Dispersion, cumulative frequency</td>
+<td>Subway comparison</td>
+<td style="text-align:right">8</td>
+<td style="text-align:center">5 (+10)</td>
+</tr>
+<tr>
+<td>3/25 - 4/5</td>
+<td>12. Bivariate analysis (Chapter 10)</td>
+<td>Correlation, regression</td>
+<td></td>
+<td style="text-align:right">8</td>
+<td style="text-align:center">8</td>
+</tr>
+<tr>
+<td>4/8 - 4/18</td>
+<td>13. Trig &amp; periodic functions (Chapter 11, 13)</td>
+<td>Trig ratios, unit circle, graphing</td>
+<td></td>
+<td style="text-align:right">7</td>
+<td style="text-align:center">8 (+8)</td>
+</tr>
+</tbody>
+</table>
+<p>(104) total instructional days (including projects and assessments)</p>
+<p>IB Mathematics SL - 2nd year</p>
+<table>
+<thead>
+<tr>
+<th>Dates</th>
+<th>Unit (Textbook Chapter)</th>
+<th>Topics</th>
+<th>Project</th>
+<th style="text-align:right">Duration</th>
+<th style="text-align:center">IB Guide recommendation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9/5 - 9/21</td>
+<td>1. Functions review (Chapter 1)</td>
+<td>Graphical features, in/decreasing, extrema (gradient), continuity; applications; sequences</td>
+<td></td>
+<td style="text-align:right">10</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>9/24 - 10/5</td>
+<td>2. Derivatives (Chapter 7)</td>
+<td>Limits, tangents/normals, differentiating polynomials</td>
+<td></td>
+<td style="text-align:right">10</td>
+<td style="text-align:center">10</td>
+</tr>
+<tr>
+<td>10/9 - 10/19</td>
+<td>3. Vectors (Chapter 12)</td>
+<td>Introduction, arithmetic, line equations, intersection, applications</td>
+<td></td>
+<td style="text-align:right">9</td>
+<td style="text-align:center">8</td>
+</tr>
+<tr>
+<td>10/22 - 11/2</td>
+<td>4. Calculus (Chapter 7)</td>
+<td>Graphical interpretations, kinematics, applications</td>
+<td></td>
+<td style="text-align:right">10</td>
+<td style="text-align:center">10</td>
+</tr>
+<tr>
+<td>11/5 - 11/21</td>
+<td>5. Trig &amp; periodic functions (Chapter 11, 13)</td>
+<td>Sine, cosine rules, transformations, applications, identities, derivatives</td>
+<td></td>
+<td style="text-align:right">11</td>
+<td style="text-align:center">8</td>
+</tr>
+<tr>
+<td>11/26 - 12/7</td>
+<td>6. Probability distributions (Chapter 15)</td>
+<td>Binomial expansion, expected value, normal distribution</td>
+<td></td>
+<td style="text-align:right">10</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>12/10 - 12/18</td>
+<td>7. Bivariate analysis (Chapter 10)</td>
+<td>Review cumulative frequency; scatter plots, regression</td>
+<td></td>
+<td style="text-align:right">7</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>1/2 - 1/18</td>
+<td>8. Integration (Chapter 9)</td>
+<td>Antiderivatives, areas, motion applications</td>
+<td></td>
+<td style="text-align:right">13</td>
+<td style="text-align:center">15</td>
+</tr>
+<tr>
+<td>1/29 - 2/15</td>
+<td>9. Calculus (Chapter 7)</td>
+<td>Product/quotient/chain rules, kinematics, graphical interpretation, applications</td>
+<td></td>
+<td style="text-align:right">13</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td>2/25 - 3/8</td>
+<td>10. Vectors (Chapter 12)</td>
+<td>Dot product, angles, applications</td>
+<td></td>
+<td style="text-align:right">10</td>
+<td style="text-align:center">8</td>
+</tr>
+<tr>
+<td>3/11 - 3/22</td>
+<td>11. Integration (Chapter 9)</td>
+<td>Definite integrals, areas, volumes, kinematics</td>
+<td></td>
+<td style="text-align:right">10</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>3/25 - 4/5</td>
+<td>12. Functions review (Chapter 1-4)</td>
+<td>Exponentials, logarithms, rational expressions, sequences &amp; series</td>
+<td></td>
+<td style="text-align:right">10</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>4/8 - 4/18</td>
+<td>13. Probability &amp; statistics review (Chapter 11, 13)</td>
+<td>Independence, conditional, frequency, cumulative, &amp; normal distributions</td>
+<td></td>
+<td style="text-align:right">9</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>4/29 - 5/3</td>
+<td>14. Review</td>
+<td></td>
+<td></td>
+<td style="text-align:right">5</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p>137 instructional days (30 more than projected actual)</p>
+<h2 class="mume-header" id="ib-math-sl-guide">IB Math SL - Guide</h2>
+
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Skills</th>
+<th style="text-align:right">Hours</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algebra</td>
+<td>Sequences, exponent &amp; log rules, binomial expansion</td>
+<td style="text-align:right">9</td>
+</tr>
+<tr>
+<td>Functions and equations</td>
+<td>Inverse, composition, graphing (max, min), transformations; quadratic, exponential, rational; applications</td>
+<td style="text-align:right">24</td>
+</tr>
+<tr>
+<td>Circular functions and trigonometry</td>
+<td>Radians, standard angles, identities, graphing; sine, cosine, area rules</td>
+<td style="text-align:right">16</td>
+</tr>
+<tr>
+<td>Vectors</td>
+<td>Operations, scalar product, angle calculation, line equations, intersections</td>
+<td style="text-align:right">16</td>
+</tr>
+<tr>
+<td>Statistics and probability</td>
+<td>Concepts, frequencies, cumulative, box plots, summary statistics, regression; probability, independence, conditional, sets, Venn diagrams, binomial &amp; normal distributions</td>
+<td style="text-align:right">35</td>
+</tr>
+<tr>
+<td>Calculus</td>
+<td>Limits, derivative, tangents, product, quotient, chain rules, extrema, inflection, graphs, applications; integrals, areas, volumes, kinematics</td>
+<td style="text-align:right">40</td>
+</tr>
+<tr>
+<td>Exploration</td>
+<td></td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td style="text-align:right">150</td>
+</tr>
+</tbody>
+</table>
+
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#prior-years-ib-math-scope-and-sequence">Prior years IB Math scope and sequence</a>
+<ul>
+<li><a href="#2021-22-ib-math-applications-and-interpretations">2021-22 IB Math: Applications and Interpretations</a></li>
+<li><a href="#pre-covid-2018-19-scope-and-sequence">Pre-Covid (2018-19) scope and sequence</a></li>
+<li><a href="#ib-math-sl-guide">IB Math SL - Guide</a></li>
+</ul>
+</li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">&#x2261;</a>
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>
