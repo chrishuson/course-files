@@ -6,6 +6,9 @@ title: course-files
 
 [Unit plan](plan) [(pdf)](plan.pdf)
 
+Textbook: *IB Mathematics Applications and Interpretations Standard Level*, Wathall et al. (Oxford)
+(paperback, online supplement)
+
 - Unit 1: Measurement and accuracy
   - Use precision, rounding, and significant figures in calculations and measurements
   - Apply right angle trigonometry to solve problems involving angles and lengths
