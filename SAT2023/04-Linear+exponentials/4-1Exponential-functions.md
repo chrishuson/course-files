@@ -20,8 +20,7 @@ $\hspace{5cm}$ Monday 31 October
 
 <!-- slide -->
 
-What is the result of dividing the circumference 
-
+What is the result of dividing the circumference
 of a pumpkin by its diameter?
 
 <!-- slide -->

@@ -1,7 +1,13 @@
-# course-files
+# High school mathematics course files
 
-This repository stores files for my high school mathematics courses. Three courses each have a directory (IB1, IB2, Geometry), which are then divided into unit folders.
+This repository hosts files for my high school mathematics courses. The Github Pages functionality renders the files as a website at <https://math.huson.com/course-files/>. The `/docs` directory contains this year's courses: Precalculus, Career Financial Management, and Modeling. Prior-year files are in the root directory.
 
-Some higher-level presentations and course plans are composed in markdown on StackEdit and backed up in the stackedit directory here. They are also "published" to a Github Pages repo under https://chrishuson.github.io/. Other general presentations are also hosted directly in that repository.  
+Most of the files are composed in markdown (class slides) or $\LaTeX$ (printed problem sets).
 
+## License
 
+See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
+
+## Contact
+
+If you have any questions or feedback about this project, you can contact me at chuson@schools.nyc.gov (work) or chris@huson.com (personal).
