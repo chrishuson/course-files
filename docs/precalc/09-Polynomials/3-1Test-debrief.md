@@ -90,7 +90,7 @@ $$y=(x-1)^2+3$$
 $$y=(x-1)^2+3$$
 
 Use this [Desmos link](https://www.desmos.com/calculator/seeud05djh) to graph $y=(x-h)^2+k$
-![desmos quadratics graph](../../images/vertex-form-graph.png)
+![desmos quadratics graph](../graphics/vertex-form-graph.png)
 
 <!-- slide -->
 
