@@ -8,8 +8,8 @@ presentation:
   controls: true
   align: left
   center: false
-  export_on_save:
-    html: true
+export_on_save:
+  html: true
 ---
 
 <!-- slide -->
@@ -43,6 +43,11 @@ $$x(x+40)=2100 \\ x^2+40x-2100=0 \\ (x-40)(x+70)=0 \\ x=40, -70$$ <!-- .element:
 
 <!-- slide -->
 
+@import "../graphics/ice-cream-datatable.png" {width="500px" height="150px" title="Ice Cream" alt="example data table"}
+@import "heights.csv"
+
+<!-- slide -->
+
 $$y=(x-1)^2+3$$
 
 Use this [Desmos link](https://www.desmos.com/calculator/seeud05djh) to graph $y=(x-h)^2+k$
@@ -55,4 +60,6 @@ Use this [Desmos link](https://www.desmos.com/calculator/seeud05djh) to graph $y
 ### Top of slide
 
 - left justify
+- superscripts 1^st^
+- subscripts H~2~O
 - not centered vertically
