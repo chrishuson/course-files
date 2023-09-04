@@ -38,7 +38,8 @@ $$y=4x-2$$
 
 <!-- slide -->
 
-Jumprope online survey
+### Jumprope online survey
+
 - Look up your grades in Jumprope
 - There is a mastery score (1 to 4) for math (70%)
 - and a score for "Professionalism" (30% of your grade)
