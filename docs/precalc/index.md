@@ -4,6 +4,9 @@ title: course-files
 
 # PreCalculus 11th grade
 
+[Routines](routines) [(pdf)](routines.pdf)
+[Lesson 1: Measurement and accuracy](01-Measure/1-1Area-calcs)
+
 [Unit plan](plan) [(pdf)](plan.pdf)
 
 Textbook: *IB Mathematics Applications and Interpretations Standard Level*, Wathall et al. (Oxford)
