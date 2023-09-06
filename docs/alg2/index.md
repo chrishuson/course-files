@@ -65,4 +65,4 @@ Textbook: *IB Mathematics Applications and Interpretations Standard Level*, Wath
   - Use Casio integration functions to calculate integrals numerically
 
 ---
-BECA Mathematics, Dr. Huson - [Home](https://math.huson.com/) - [Precalc](../precalc) - [CFM](../cfm) - [Modeling](../modeling) - [About](https://math.huson.com/Contact)
+BECA Mathematics, Dr. Huson - [Home](https://math.huson.com/) - [Algebra 2](../alg2) - [CFM](../cfm) - [Modeling](../modeling) - [About](https://math.huson.com/Contact)

@@ -4,7 +4,7 @@ title: course-files
 
 # Dr. Huson's Math Courses at BECA
 
-[11th grade: PreCalculus](precalc)
+[11th grade: Algebra 2](../alg2)
 
 [12th grade: Career and Financial Management](cfm)
 
