@@ -4,7 +4,8 @@ title: course-files
 
 # BECA 12th grade: Career and Financial Management
 
-[Routines](../precalc/routines) [(pdf)](../precalc/routines.pdf)
+[Routines](../precalc/00-Slides_Routines) [(pdf)](../precalc/00-Slides_Routines.pdf)
+
 [Lesson 1: Checkbook balancing](01-Measure/1-1Area-calcs)
 
 [Syllabus (actually readme file in root)](https://raw.githubusercontent.com/chrishuson/course-files/master/README)
