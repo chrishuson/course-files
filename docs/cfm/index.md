@@ -4,7 +4,7 @@ title: course-files
 
 # BECA 12th grade: Career and Financial Management
 
-[Routines](../precalc/01-Measure/00-Slides_Routines) [(pdf)](../precalc/01-Measure/00-Slides_Routines.pdf)
+[Routines(pdf)](../precalc/01-Measure/00-Slides_Routines.pdf)
 
 [Lesson 1: Checkbook balancing](01-Measure/1-1Area-calcs)
 
