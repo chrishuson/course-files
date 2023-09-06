@@ -4,7 +4,7 @@ title: course-files
 
 # PreCalculus 11th grade
 
-[Routines](../precalc/00-Slides_Routines) [(pdf)](../precalc/00-Slides_Routines.pdf)
+[Routines](../precalc/01-Measure/00-Slides_Routines) [(pdf)](../precalc/01-Measure/00-Slides_Routines.pdf)
 
 [Lesson 1: Measurement and accuracy](01-Measure/1-1Area-calcs)
 
