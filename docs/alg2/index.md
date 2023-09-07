@@ -2,7 +2,7 @@
 title: course-files
 ---
 
-# PreCalculus 11th grade
+# Algebra 2 - 9th & 11th grades
 
 [Routines (pdf)](01-Measure/00-Slides_Routines.pdf)
 

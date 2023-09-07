@@ -6,7 +6,7 @@ title: course-files
 
 [Routines(pdf)](00-Slides_Routines.pdf)
 
-[Lesson 1: Checkbook balancing](1-1Checking-accounts)
+[Lesson 1: Introduction to money](1-1Money)
 
 [Syllabus (Khan Academy Financial Literacy)](https://www.khanacademy.org/college-careers-more/financial-literacy)
 

@@ -1,5 +1,5 @@
 ---
-title: 1.1 Checking accounts
+title: 1.1 Introduction to money
 author: Chris Huson
 date: 7 September 2023
 presentation:
@@ -26,6 +26,16 @@ Do Now: Skills check $\hspace{6cm}$
 Lesson: Your financial knowledge and this course $\hspace{2cm}$
 
 Exit note: Goals statement $\hspace{5cm}$
+
+<!-- slide -->
+
+### Fun facts about cash money
+
+1. How much US dollar paper money do people hold in total, globally? [US Federal Reserve data](https://www.uscurrency.gov/life-cycle/data/circulation)
+2. How much on average does each person hold?
+3. Which denomination is most common?
+
+@import "graphics/100-dollar-bill.png" {width="700px" height="300px" title="$100 bill" alt="$100 bill"}
 
 <!-- slide -->
 
