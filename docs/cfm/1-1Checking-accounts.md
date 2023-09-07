@@ -17,17 +17,25 @@ $\hspace{5cm}$ Thursday 7 September
 
 #### 1.1 Learning Target: I can open a checking account
 
-Do Now: Skills check (pg. 3) $\hspace{5cm}$
+Do Now: Skills check $\hspace{6cm}$
 
-1. Find the circumference of a circle with radius $r=5.3$ cm.
-2. Find the area of a circle with radius $r=6.5$ cm.
-3. Find the areas of the following shapes:
-a. an isosceles triangle: congruent sides $s=15.4$ and
-height $h=5.5$
-b. a square with side 6.4 cm
-c. trapezoid with bases $b_1=20$, $b_2=12$, height $h=6.5$
+1. Name five ways to pay for something. (pay or receive money)
+2. Name five ways to save money. (store money)
+3. What are the costs and benefits of each method?
+
+Lesson: Your financial knowledge and this course $\hspace{2cm}$
 
 Exit note: Goals statement $\hspace{5cm}$
+
+<!-- slide -->
+
+#### The scope of this course
+
+Class activity:  $\hspace{5cm}$
+Brainstorm what you need to know or learn about
+Careers and Financial Management. $\hspace{1.5cm}$
+
+[Sal Khan introduction](https://www.khanacademy.org/college-careers-more/financial-literacy/xa6995ea67a8e9fdd:welcome-to-financial-literacy/xa6995ea67a8e9fdd:intro-to-financial-literacy/v/welcome-to-financial-literacy)
 
 <!-- slide -->
 
