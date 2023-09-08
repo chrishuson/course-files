@@ -31,4 +31,4 @@ Activity: [The Bean Game](1-1The-Bean-Game.pdf) $\hspace{5cm}$
 
 Discussion: [What do you value?](https://docs.google.com/document/d/1o0B4A-anf4GrbFNRwFPaj2cSyuipT5O6Ld1QhN-peFc/edit) $\hspace{4cm}$
 
-Article: [What do you value?](1-1What-do-you-value.pdf) $\hspace{4.5cm}$
+Article: [What do you value?](1-1What-Do-You-Value.pdf) $\hspace{4.5cm}$
