@@ -6,7 +6,9 @@ title: course-files
 
 [Routines(pdf)](00-Slides_Routines.pdf)
 
-[Lesson 1: Introduction to money](1-1Money)
+[Lesson 1-0: Introduction to money](1-1Money)
+
+[Lesson 1-1: Your values and money](1-1Values)
 
 [Syllabus (Khan Academy Financial Literacy)](https://www.khanacademy.org/college-careers-more/financial-literacy)
 
