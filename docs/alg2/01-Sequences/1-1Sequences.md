@@ -49,9 +49,9 @@ General form: $f(x)=mx+b$
 
 Find:
 
-1. $f(1)=2x+7$
-2. $g(-2)=3x-1$
-3. $h(0)=-5x+6$
+1. $f(x)=2x+7$, $x=1$
+2. $g(x)=3x-1$, $x=-2$
+3. $h(x)=-5x+6$, $x=0$
 
 <!-- slide -->
 ### Solutions

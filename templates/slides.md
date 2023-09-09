@@ -62,4 +62,5 @@ Use this [Desmos link](https://www.desmos.com/calculator/seeud05djh) to graph $y
 - left justify
 - superscripts 1^st^
 - subscripts H~2~O
+- a<sub>n</sub>, $a_n$
 - not centered vertically
