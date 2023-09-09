@@ -26,9 +26,41 @@ Do Now: Skills check (pg. 3) $\hspace{5cm}$
 Exit note: Goals statement $\hspace{5cm}$
 
 <!-- slide -->
-
 ### Definitions
 
 - Sequence: a list of numbers in a specific order
 - Geometric sequence: a sequence where each term is a constant multiple of the previous term
 - Arithmetic sequence: a sequence where each term is a constant addition of the previous term
+
+<!-- slide -->
+### Function notation
+
+- $y=f(x)$: we say "$f$ of $x$"
+- $f: x \rightarrow y$: we say "$f$ maps $x$ to $y$"
+- domain: the set of all possible inputs, examples: 
+  domain = $\{1,2,3,...\}$ 
+  ${x \in \mathbb{R}}$ (all real numbers)
+- range: the set of all possible outputs
+
+<!-- slide -->
+### Example: Linear functions
+
+General form: $f(x)=mx+b$
+
+Find:
+
+1. $f(1)=2x+7$
+2. $g(-2)=3x-1$
+3. $h(0)=-5x+6$
+
+<!-- slide -->
+### Solutions
+
+1. $f(1)=2x+7$
+$=2(1)+7 = 9$
+
+2. $g(-2)=3x-1$
+$=3(-2)-1 = -7$
+
+3. $h(0)=-5x+6$
+$=-5(0)+6 = 6$

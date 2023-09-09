@@ -21,7 +21,7 @@ Learning Target: I can read and interpret table data
 
 - Do Now: Is the point $(2,4)$ on the line
 $$y=4x-2$$
-- *Calculator checkss*
+- *Calculator checks*
 - Homework: Khan practice problems [link](https://www.khanacademy.org/mission/sat)
 - **Exit note: Jumprope surveys**
 
