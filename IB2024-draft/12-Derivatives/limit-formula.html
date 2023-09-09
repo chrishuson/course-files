@@ -1,0 +1,13 @@
+<!DOCTYPE html><script src="https://cdn.jsdelivr.net/npm/texme"></script><textarea>
+
+# The derivative as a limit
+
+Function $f(x)=x^2$ and a point on the curve $(x, x^2)$. Just a short distance $h$ away is the point $(x+h, (x+h)^2)$.
+
+The slope of a secant line through the points is
+
+$$m=\frac{\Delta y}{\Delta x}=\frac{(x+h)^2 - x^2}{(x+h)-x}=\frac{(x^2+2hx+h^2)-x^2}{h}= 2x+h$$
+
+As $h$ gets smaller the secant approaches a tangent line to the curve. We say that it gets as close as we like, "in the limit" it is the tangent.
+
+$$\frac{dy}{dx}=\lim_{h \rightarrow 0} \frac{f(x+h)-f(x)}{h}= \lim_{h \rightarrow 0} (2x+h) = 2x$$

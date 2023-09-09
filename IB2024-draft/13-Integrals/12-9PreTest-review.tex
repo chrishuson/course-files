@@ -1,0 +1,138 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\title{PreCalculus}
+\author{Chris Huson}
+\date{May 2023}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{3cm} \,\\}
+\fancyhead[LO]{BECA / Huson / Unit 12: Integral Calculus \\* 18 May 2023}
+
+\begin{document}
+
+\subsubsection*{12.9 Pre-Quiz: Integral calculus}
+
+Find the anti-derivative of each polynomial function (include the constant of integration)
+
+\begin{enumerate}
+\begin{multicols}{2}
+    \item $f(x)=4x^3+2x$ \\[0.2cm]
+    $F(x)=$ \vspace{1cm}
+    \item $f(x)=12x^3+9x^2-1$\\[0.2cm]
+    $F(x)=$ \vspace{1cm}
+\end{multicols} \vspace{1cm}
+
+
+\item A portion of the function $f(x)=2x+1$ is plotted below.
+    \begin{enumerate}
+      \item Write down a definite integral that represents the area of the shaded region $\mathbf{R}$. \vspace{1cm}
+      \item Calculate the area using geometric formulas.
+        \begin{flushright}
+          \begin{tikzpicture}[xscale=1,yscale=1]
+            \draw [thick, ->] (0,0) -- (3.5,0) node [below] {$x$};
+            \draw [thick, ->] (0,0) -- (0,6) node [left] {$y$};
+            \draw[thick, domain=1:3] plot[samples=100](\x, 2*\x+1);
+            \draw[dashed] (1, -.15)node[below]{$1$} --(1,3);
+            \draw[dashed] (3, -.15)node[below]{$3$} --(3,7);
+            \fill[gray,opacity=.3] (1,0)--plot[domain=1:3](\x, 2*\x+1)--(3,0);
+            \draw (2,2.5) node {$\mathbf{R}$};
+          \end{tikzpicture}
+        \end{flushright}
+      \item Find the area using a definite integral and the methods of calculus. \vspace{2cm}
+    \end{enumerate}
+
+\newpage
+    \item Let $f(x)=9-x^2$. Part of the graph of $f$ is shown in the following diagram.
+    \begin{center}
+      \begin{tikzpicture}[xscale=1,yscale=0.8]
+        \draw [thick, ->] (-3,0) -- (3,0) node [below] {$x$};
+        \draw [thick, ->] (0,-2) -- (0,6) node [left] {$y$};
+        \draw[thick, domain=-2.5:2.5] plot[samples=100](\x, {5-(\x)^2});
+        \fill (-5^0.5, 0) circle[radius=0.1] node[above left]{$A$};
+        \fill (5^0.5, 0) circle[radius=0.1] node[above right]{$B$};
+      \end{tikzpicture}
+    \end{center}
+  \begin{enumerate}
+    \item The graph crosses the $x$-axis at the points $A$ and $B$.\\
+    Find the $x$-coordinates of $A$ and of $B$. \vspace{3cm}
+    \item The region enclosed by the graph of $f$ and the $x$-axis has the area $A$. Write down a definite integral that represents $A$. \vspace{1.5cm}
+    \item Find $A$ by using the antiderivative and applying the fundamental theorem of calculus.
+  \end{enumerate}
+
+\newpage
+\subsubsection*{Calculator section}
+
+\item The following diagram shows part of the graph of $f(x)=x^2$.
+    \begin{center}
+    \begin{tikzpicture}[xscale=2,yscale=1]
+        \draw [thick, ->] (0,0) -- (2.8,0) node [below] {$x$};
+        \draw [thick, ->] (0,-1) -- (0,6) node [left] {$y$};
+        \draw[thick, domain=0:2.4] plot[samples=100](\x, {(\x)^2});
+        \draw[thick] (1, -.15)node[below]{$1$} --(1,1);
+        \draw[thick] (2.3, -.15)node[below]{$a$} --(2.3,2.3^2);
+        \fill[gray,opacity=.3] (1,0)--plot[domain=1:2.3](\x, {\x*\x})--(2.3,0);
+        \draw (1.7,1) node {$\mathbf{R}$};
+    \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}
+    \item Find $\displaystyle \int_0^1 f(x) \,\mathrm{d}x$ \vspace{3cm}
+
+    \item The shaded region $R$ is enclosed by the graph of $f$, the $x$-axis, and the lines $x=1$ and $x=a$. Find the value of $a$ so that $R \approx 4$.
+  \end{enumerate}
+
+\newpage
+
+
+\textbf{Evaluate the function and its derivative for a given value of $x$}
+\item Given $f(x)=4x^2+2x$
+\begin{enumerate}[itemsep=2cm]
+    \item Find $f(-1)$
+    \item Find $f'(x)$
+    \item Find $f'(-1)$
+\end{enumerate} \vspace{2cm}
+
+\newpage
+\item The graph shows the polynomial function $\displaystyle y=-x^3-2x^2+2x+3$. Its derivative is $\displaystyle \frac{dy}{dx}=-3x^2-4x+2$. 
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item Write down the coordinates of $P$. \vspace{1cm}
+        \item Find the slope of the tangent at $P$. \vspace{2cm}
+        \item Write down the equation of the tangent line through $P$. \vspace{1.5cm}
+        \item Draw the tangent line on the graph accurately with a straight edge.
+    \end{enumerate}
+        \begin{center}
+    \begin{tikzpicture}[x=1cm, y=1cm, scale=1]
+        \draw [thin, color=lightgray, xstep=1.0cm,ystep=1.0cm] (-4,-3.1) grid (3,5);
+        \draw [thick, ->] (-4,0) -- (+3.3,0) node [above left]{$x$};
+        \draw [thick, ->] (0,-3.2) -- (0,5.2) node [right]{$y$};
+        \foreach \x in {-4,...,3}
+            \draw (\x cm,0) -- (\x cm,0) node[below] {$\x$};
+        \foreach \y in {-3,...,5}
+            \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
+        \draw [thick,<->,smooth,domain=-2.8:1.6] plot(\x,{(-\x*\x*\x-2*\x*\x+2*\x+3)});
+        \fill (1,2) circle[radius=0.1] node[below left]{$P$};
+    \end{tikzpicture}
+    \end{center}
+\end{multicols}
+
+\item The function $y=x^{2}-3x+2$ is graphed on the grid below. Find its derivative and the equations of the tangent and normal lines through point $(3,2)$. Draw the lines.
+    \begin{flushright}
+        \begin{tikzpicture}[x=1cm, y=1cm, scale=0.9]
+            \draw [thin, color=lightgray, xstep=1.0cm,ystep=1.0cm] (-2,-2) grid (5,7);
+            \draw [thick, ->] (-2,0) -- (+5.3,0) node [above right]{$x$};
+            \draw [thick, ->] (0,-2.3) -- (0,7.3) node [right]{$y$};
+            \foreach \x in {-2,...,5}
+                \draw (\x cm,0) -- (\x cm,0) node[below] {$\x$};
+            \foreach \y in {-2,...,7}
+                \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
+            \draw [thick,<->,smooth,domain=-1.1:4.1] plot(\x,{(\x*\x-3*\x+2)});
+        \end{tikzpicture}
+    \end{flushright}
+
+
+\end{enumerate}
+\end{document}
+
+
+
