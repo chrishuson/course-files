@@ -2,7 +2,9 @@
 title: course-files
 ---
 
-# BECA 12th grade: Career and Financial Management
+# BECA 12th grade: Career and Financial Mathematics
+
+[Next Generation Personal Finance curriculum](https://www.ngpf.org/courses/trimester-course/)
 
 [Routines(pdf)](00-Slides_Routines.pdf)
 
