@@ -1,5 +1,5 @@
 ---
-title: 1.1 Geometric sequences
+title: 1.2 Geometric sequences
 author: Chris Huson
 date: 11 September 2023
 presentation:
@@ -13,17 +13,15 @@ export_on_save:
 ---
 
 <!-- slide -->
-$\hspace{5cm}$ Monday 11 September
+#### Standards
 
-#### 1.1 Learning Target: I can work with a geometric sequence
-
-Do Now: Skills check (pg. 3) $\hspace{5cm}$
-
-1. Find the circumference of a circle with radius $r=5.3$ cm.
-2. Find the area of a circle with radius $r=6.5$ cm.
-3. Find the areas of the following shapes
-
-Exit note: Goals statement $\hspace{5cm}$
+**Construct geometric and arithmetic sequences**
+**Write a recursive formula for a geometric sequence**
+  HSF-IF.A.3 Recognize that sequences are functions, sometimes defined recursively, whose domain is a subset of the integers.
+  HSF-BF.A.2 Write arithmetic and geometric sequences both recursively and with an explicit formula, use them to model situations, and translate between the two forms
+  HSF-LE.A.2 Construct linear and exponential functions, including arithmetic and geometric sequences, given a graph, a description of a relationship, or two input-output pairs
+**Find the sum of a finite geometric series**
+  HSA-SSE.B.4 Derive the formula for the sum of a finite geometric series, and use the formula to solve problems.
 
 <!-- slide -->
 ### Definitions
@@ -37,7 +35,7 @@ Exit note: Goals statement $\hspace{5cm}$
 
 - $y=f(x)$: we say "$f$ of $x$"
 - $f: x \rightarrow y$: we say "$f$ maps $x$ to $y$"
-- domain: the set of all possible inputs, examples: 
+- domain: the set of all possible inputs, examples:
   domain = $\{1,2,3,...\}$ 
   ${x \in \mathbb{R}}$ (all real numbers)
 - range: the set of all possible outputs

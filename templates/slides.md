@@ -11,6 +11,8 @@ presentation:
 export_on_save:
   html: true
 ---
+<!-- slide -->
+# Slides template
 
 <!-- slide -->
 $\hspace{5cm}$ Thursday 7 September

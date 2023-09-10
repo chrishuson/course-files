@@ -4,14 +4,15 @@ title: course-files
 
 # Algebra 2 - 9th & 11th grades
 
-[Routines (pdf)](01-Measure/00-Slides_Routines.pdf)
+Primary materials are in the Google Classroom. Find supplementary materials here.
 
-[Lesson 1: Measurement and accuracy](01-Measure/1-1Area-calcs)
+[Routines and expectations](01-Sequences/00-Slides_Routines.pdf)
+
+[Lesson 1: Measurement and accuracy](01-Sequences/1-01Area-calcs)
+
+[Lesson 2: Geometric sequences](01-Sequences/1-02Sequences)
 
 [Unit plan](plan) [(pdf)](plan.pdf)
-
-Textbook: *IB Mathematics Applications and Interpretations Standard Level*, Wathall et al. (Oxford)
-(paperback, online supplement)
 
 - Unit 1: Measurement and accuracy
   - Use precision, rounding, and significant figures in calculations and measurements
