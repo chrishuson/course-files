@@ -26,9 +26,9 @@ export_on_save:
 <!-- slide -->
 ### Definitions
 
-- Sequence: a list of numbers in a specific order
-- Geometric sequence: a sequence where each term is a constant multiple of the previous term
-- Arithmetic sequence: a sequence where each term is a constant addition of the previous term
+- **Sequence**: a list of numbers in a specific order
+- **Geometric sequence**: a sequence where each term is a constant multiple of the previous term
+- **Arithmetic sequence****: a sequence where each term is a constant addition of the previous term
 
 <!-- slide -->
 ### Function notation
@@ -37,7 +37,7 @@ export_on_save:
 - $f: x \rightarrow y$: we say "$f$ maps $x$ to $y$"
 - domain: the set of all possible inputs, examples:
   domain = $\{1,2,3,...\}$ 
-  ${x \in \mathbb{R}}$ (all real numbers)
+  ${x \in \mathbb{R}}$ ("$x$ is a member of the set of real numbers")
 - range: the set of all possible outputs
 
 <!-- slide -->
@@ -62,3 +62,10 @@ $=3(-2)-1 = -7$
 
 3. $h(0)=-5x+6$
 $=-5(0)+6 = 6$
+
+<!-- slide -->
+### Notation for arithmetic sequences
+
+Linear functions form: $f(x)=mx+b$ where 
+- $m$ is the slope or rate of change
+- $b$ is the $y$-intercept or initial value
