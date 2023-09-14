@@ -13,7 +13,7 @@ Primary materials are in the Google Classroom. Find supplementary materials here
 [Lesson 2: Geometric sequences](01-Sequences/1-02Sequences)  
 [homework](IM/Algebra2-1-2-Lesson-curated-practice-problem-set.pdf)
 
-[Lesson 3: Geometric sequences homework](IM/Algebra2-1-6-Lesson-curated-practice-problem-set.pdf)
+[Lesson 3: Geometric sequences homework](IM/Algebra2-1-3-Lesson-curated-practice-problem-set.pdf)
 
 Skip lesson 4 until we get laptops
 
