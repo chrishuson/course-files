@@ -1,4 +1,4 @@
-# Unit 1 Quiz: Sequences and series
+# Unit 1 Quiz: Sequences challenge problems
 
 Standards:
 

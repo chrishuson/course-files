@@ -19,6 +19,8 @@ Skip lesson 4 until we get laptops
 
 [Lesson 5: Geometric sequences homework](IM/Algebra2-1-5-Lesson-curated-practice-problem-set.pdf)
 
+[Quiz: Sequences challenge problems](01-Sequences/1-5Quiz_sequences)
+
 [Lesson 6: Geometric sequences homework](IM/Algebra2-1-6-Lesson-curated-practice-problem-set.pdf)
 
 [Lesson 7: Geometric sequences homework](IM/Algebra2-1-7-Lesson-curated-practice-problem-set.pdf)
