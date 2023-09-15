@@ -1,4 +1,4 @@
-# Unit test: Sequences and series
+# Unit 1 Quiz: Sequences and series
 
 Standards:
 
@@ -10,4 +10,13 @@ Standards:
 - Find the sum of a finite geometric series
   HSA-SSE.B.4 Derive the formula for the sum of a finite geometric series (when the common ratio is not 1), and use the formula to solve problems.
 
-## 1. Which of the following sequences is geometric?
+## 1. Use standard algebraic function notation
+
+1. Given the arithmetic sequence $f(n)$ whose first two terms are 4 and 9.
+a. Write down $f(2)$
+b. Write down the value of the common difference $d$
+c. Find $f(3)$
+d. Write and equation relating $f(5)$ and $f(6)$
+
+2. Given the geometric sequence $g(n)$ whose first term is 3 with a growth rate of $r=2$.
+a. Find the second term $g(2)$.
