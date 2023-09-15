@@ -20,3 +20,6 @@ d. Write and equation relating $f(5)$ and $f(6)$
 
 2. Given the geometric sequence $g(n)$ whose first term is 3 with a growth rate of $r=2$.
 a. Find the second term $g(2)$.
+b. State the value of the first term using function notation in an equation.
+c. Define $g$ recursively using function notation. (There should be two equations)
+d. Write down the value of $\displaystyle \frac{g(7)}{g(6)}$
