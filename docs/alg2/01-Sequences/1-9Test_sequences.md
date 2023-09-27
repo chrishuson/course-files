@@ -10,6 +10,60 @@ Standards:
 - Find the sum of a finite geometric series
   HSA-SSE.B.4 Derive the formula for the sum of a finite geometric series (when the common ratio is not 1), and use the formula to solve problems.
 
+## Identify sequences
+
+For each sequence, circle whether it is arithmetic, geometric, or neither.
+
+1. $2, 4, 6, 8, \dots$
+arithmetic, geometric, neither
+1. $1, 2, 4, 7, 11, \dots$
+arithmetic, geometric, neither
+1. $3, 6, 12, 24, \dots$
+arithmetic, geometric, neither
+1. $13, 10, 7, 4, 1, \dots$
+arithmetic, geometric, neither
+1. $\frac{1}{2}, \frac{1}{4}, \frac{1}{8}, \dots$
+arithmetic, geometric, neither
+
+## Writing recursive formulas
+
+1. Write a recursive formula for the sequence $5, 10, 15, 20, \dots$
+1. Write a recursive formula for the sequence $3, 9, 27, 81, \dots$
+
+## Applications of sequences
+
+1. A metal sculture is made from welded steel rods. The first rod is 3 feet long. Each successive rod is 80% of the length of the previous rod. Indicate whether each formula correctly defines the length $L(n)$ of the $n$th rod by circling True or False.
+  a. $L(n) = 3(0.8)^n$
+  True, False
+  b. $L(n) = 3(0.8)^{n-1}$
+  True, False
+  c. $L(n) = 3-0.20n$
+  True, False
+  d. $L(1) = 3$
+  $L(n) = L(n-1)(0.8)$
+  True, False
+
+## Fractions, percent, decimals
+
+Write each fraction as a percent and as a decimal.
+
+1. $\frac{1}{4}$
+1. $\frac{1}{2}$
+1. $\frac{1}{3}$
+
+Write each percent as a fraction.
+
+1. 75%
+1. $66 \frac{2}{3}\%$
+1. 150%
+
+## Operations on fractions
+
+1. $\frac{1}{2} + \frac{1}{3}=$
+1. $\frac{1}{2} - \frac{1}{3}=$
+1. $\frac{1}{2} \times \frac{1}{3}=$
+1. $\frac{1}{2} \div \frac{1}{3}=$
+
 ## 1. Use standard algebraic function notation
 
 1. Given the arithmetic sequence $f(n)$ whose first two terms are 4 and 9.

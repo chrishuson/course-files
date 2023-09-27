@@ -28,7 +28,7 @@ export_on_save:
 
 - **Sequence**: a list of numbers in a specific order
 - **Geometric sequence**: a sequence where each term is a constant multiple of the previous term
-- **Arithmetic sequence****: a sequence where each term is a constant addition of the previous term
+- **Arithmetic sequence**: a sequence where each term is a constant addition of the previous term
 
 <!-- slide -->
 ### Function notation
@@ -66,6 +66,12 @@ $=-5(0)+6 = 6$
 <!-- slide -->
 ### Notation for arithmetic sequences
 
-Linear functions form: $f(x)=mx+b$ where 
+Linear functions form: $f(n)=a + dn$ where
+
+- $d$ is the common difference or rate of change
+- $a$ is the initial term
+
+Linear functions form: $f(x)=mx+b$ where
+
 - $m$ is the slope or rate of change
 - $b$ is the $y$-intercept or initial value

@@ -33,6 +33,8 @@ Skip lesson 4 until we get laptops
 
 [Lesson 10: Geometric sequences homework](IM/Algebra2-1-10-Lesson-curated-practice-problem-set.pdf)
 
+[PreQuiz: Sequences and fractions](01-Sequences/1-9Test_sequences)
+
 [Lesson 11: Geometric sequences homework](IM/Algebra2-1-11-Lesson-curated-practice-problem-set.pdf)
 
 [Unit plan](plan) [(pdf)](plan.pdf)
