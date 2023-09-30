@@ -15,7 +15,7 @@ Primary materials are in the Google Classroom. Find supplementary materials here
 
 [Lesson 3: Geometric sequences homework](IM/Algebra2-1-3-Lesson-curated-practice-problem-set.pdf)
 
-Skip lesson 4 until we get laptops
+[Lesson 4: Geometric sequences homework](IM/Algebra2-1-4-Lesson-curated-practice-problem-set.pdf)
 
 [Lesson 5: Geometric sequences homework](IM/Algebra2-1-5-Lesson-curated-practice-problem-set.pdf)
 
@@ -36,6 +36,8 @@ Skip lesson 4 until we get laptops
 [PreQuiz: Sequences and fractions](01-Sequences/1-9Test_sequences)
 
 [Lesson 11: Geometric sequences homework](IM/Algebra2-1-11-Lesson-curated-practice-problem-set.pdf)
+
+[Review for test](01-Sequences/1-12Sequences-review)
 
 [Unit plan](plan) [(pdf)](plan.pdf)
 
