@@ -18,6 +18,8 @@ BECA / Huson / Algebra 2 Unit 1 Sequences $\hspace{4cm}$ Name:
     B. $f(n)= 2 + 3(n-1)$ for $n\ge 1$
     C. $f(n)= 2 \cdot 3^{n}$ for $n\ge 1$
     D. $f(n)= 2 \cdot 3^{n-1}$ for $n\ge 1$
+  &nbsp;
+  &nbsp;
 
 1. Here are some values of sequence $P$. Write a recursive definition for the sequence.
 
