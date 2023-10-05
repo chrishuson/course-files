@@ -37,9 +37,9 @@ Primary materials are in the Google Classroom. Find supplementary materials here
 
 [Lesson 11: Geometric sequences homework](IM/Algebra2-1-11-Lesson-curated-practice-problem-set.pdf)
 
-[Review for test](01-Sequences/1-12PreTest-sequences)
+[Review for test](01-Sequences/1-12Sequences-review)
 
-[PreTest](01-Sequences/1-12Sequences-review)
+[PreTest](01-Sequences/1-12PreTest-sequences)
 
 [Unit plan](plan) [(pdf)](plan.pdf)
 
