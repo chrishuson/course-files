@@ -5,7 +5,7 @@ BECA / Huson / Algebra 2 Unit 1 Sequences $\hspace{4cm}$ Name:
 
 1. Which defines the sequence $f(1)=5, f(2)=9, f(3)=13, f(4)=17, f(5)=21$?
 
-    A. $f(1)=5, f(n)= 4 + f(n-1)$ for $n\ge 2$
+    A. $f(1)=5, f(n)= 5 + f(n-1)$ for $n\ge 2$
     B. $f(1)=5, f(n)= 9 + f(n-1)$ for $n\ge 2$
     C. $f(1)=5, f(n)= 4 + f(n-1)$ for $n\ge 2$
     D. $f(1)=9, f(n)= 5 + f(n-1)$ for $n\ge 2$
