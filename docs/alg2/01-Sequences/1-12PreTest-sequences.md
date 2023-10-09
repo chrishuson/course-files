@@ -71,7 +71,7 @@ BECA / Huson / Algebra 2 Unit 1 Sequences $\hspace{4cm}$ Name:
     &nbsp;
     &nbsp;
 
-    C. For term $S(n)$, what are some values of $n$ that make sense to use? What are some values of that don't make sense to use? Explain your reasoning.
+    C. For term $S(n)$, what are some values of $n$ that make sense to use? What are some values of $n$ that don't make sense to use? Explain your reasoning.
     &nbsp;
     &nbsp;
     &nbsp;
@@ -98,7 +98,7 @@ BECA / Huson / Algebra 2 Unit 1 Sequences $\hspace{4cm}$ Name:
 
 6. The first two numbers in a sequence $g$ are $g(1)=3$ and $g(2)=9$.
 
-    A. If $g$ is an arithmetic sequence, What is the value of the third term $g(3)$?
+    A. If $g$ is an arithmetic sequence, what is the value of the third term $g(3)$?
     &nbsp;
     &nbsp;
     &nbsp;
