@@ -17,7 +17,6 @@ The degree of a polynomial in $x$ is the highest exponent occuring on $x$ when y
 A point on the graph of a function that is higher than any of the points around it.
 ![relative maximum](../graphics/relative-maximum.svg)
 
-
 **relative minimum**
 A point on the graph of a function that is lower than any of the points around it.
 ![relative minimum](../graphics/relative-minimum.svg)
