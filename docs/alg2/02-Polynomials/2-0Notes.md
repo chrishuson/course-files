@@ -11,7 +11,17 @@ $V(x) = (x)(11-2x)(8.5 - 2x)$
 The degree of a polynomial is the largest power of $x$ that appears in the expression. The leading term of a polynomial is the term with the highest power of $x$. The leading coefficient of a polynomial is the coefficient of the leading term. In the first example above, the degree is 3, the leading term is $5x^3$, and the leading coefficient is 5.
 
 **degree**
-The degree of a polynomial in $x$ is the highest exponent occuring on $x$ when you write the polynomial out as a sum of non-zero constants times powers of $x$ (with like terms collected).
+The degree, or the *order*, of a polynomial in $x$ is the highest exponent occuring on $x$ when you write the polynomial out as a sum of non-zero constants times powers of $x$ (with like terms collected).
+(*Illustrative Math* lesson 2.2 October 17th)
+
+
+**variable**
+A letter used to represent a value that may change or is unknown, for example $x$ or $t$. For a function, the input is the *independent* variable and the output is the *dependent* variable. 
+
+Example, $f$ is a second order polynomial function defined as $f: y = 2x^2+5$. Then $x$ is the independent variable and $y$ is the dependent variable.
+
+**coefficient**
+The value a variable is multiplied by. For example, the term $2x^2$ has a coefficient of $2$.
 
 **relative maximum**
 A point on the graph of a function that is higher than any of the points around it.
