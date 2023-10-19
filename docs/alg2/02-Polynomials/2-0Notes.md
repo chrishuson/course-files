@@ -14,7 +14,6 @@ The degree of a polynomial is the largest power of $x$ that appears in the expre
 The degree, or the *order*, of a polynomial in $x$ is the highest exponent occuring on $x$ when you write the polynomial out as a sum of non-zero constants times powers of $x$ (with like terms collected).
 (*Illustrative Math* lesson 2.2 October 17th)
 
-
 **variable**
 A letter used to represent a value that may change or is unknown, for example $x$ or $t$. For a function, the input is the *independent* variable and the output is the *dependent* variable. 
 
