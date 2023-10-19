@@ -22,6 +22,9 @@ Example, $f$ is a second order polynomial function defined as $f: y = 2x^2+5$. T
 **coefficient**
 The value a variable is multiplied by. For example, the term $2x^2$ has a coefficient of $2$.
 
+**constant**
+The coefficient for $x^0$. The constant is also the $y$-intercept of the function. For example, the polynomial $x^2 + 6x +5$ has a constant of $5$, and $(0,5)$ is the $y$-intercept because $f(0) = (0)^2 + 6(0) +5 = 5$
+
 **relative maximum**
 A point on the graph of a function that is higher than any of the points around it.
 ![relative maximum](../graphics/relative-maximum.svg)
