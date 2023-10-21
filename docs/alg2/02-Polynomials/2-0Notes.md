@@ -17,13 +17,17 @@ The degree, or the *order*, of a polynomial in $x$ is the highest exponent occur
 **variable**
 A letter used to represent a value that may change or is unknown, for example $x$ or $t$. For a function, the input is the *independent* variable and the output is the *dependent* variable. 
 
-Example, $f$ is a second order polynomial function defined as $f: y = 2x^2+5$. Then $x$ is the independent variable and $y$ is the dependent variable.
+Example, $f$ is a second order polynomial function defined as $f: y = 2x^2+5$, then $x$ is the independent variable and $y$ is the dependent variable.
 
 **coefficient**
 The value a variable is multiplied by. For example, the term $2x^2$ has a coefficient of $2$.
 
 **constant**
 The coefficient for $x^0$. The constant is also the $y$-intercept of the function. For example, the polynomial $x^2 + 6x +5$ has a constant of $5$, and $(0,5)$ is the $y$-intercept because $f(0) = (0)^2 + 6(0) +5 = 5$
+
+**solutions, zeros, *x*-intercepts**
+The solutions of a polynomial function are the values of $x$ for which the function equals zero, $f(x)=0$. The solutions are also called the zeros of the function, and they are $x$-intercepts of the graph of the function.
+(*Illustrative Math* lesson 2.4 October 23rd)
 
 **relative maximum**
 A point on the graph of a function that is higher than any of the points around it.
