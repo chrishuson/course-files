@@ -15,7 +15,10 @@
 - **Portfolio of stocks and/or bonds** bought for you by professionals
 - **Fees you pay:** Keep fees as low as possible (expense ratio, load fees, etc.)
 - **Benefits:** diversification, professional management, low cost
-- **Examples:** Vanguard, Fidelity, Schwab
+- **Examples:** 
+  - [Schwab S&P 500 Stock Index Fund](https://www.schwabassetmanagement.com/products/swppx)
+  - [Fidelity Total Bond ETF](https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=FBND)
+  - [Vanguard Target Date Retirement 2070 Fund](https://investor.vanguard.com/investment-products/mutual-funds/profile/vsvnx)
 
 **Types of accounts:** for investing
 
