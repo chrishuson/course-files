@@ -14,5 +14,7 @@ title: course-files
 
 [Syllabus (Khan Academy Financial Literacy)](https://www.khanacademy.org/college-careers-more/financial-literacy)
 
+[Investing test review](cfm-notes.md)
+
 ---
 BECA Mathematics, Dr. Huson - [Home](https://math.huson.com/) - [Algebra 2](../alg2) - [CFM](../cfm) - [Modeling](../modeling) - [About](https://math.huson.com/Contact)
