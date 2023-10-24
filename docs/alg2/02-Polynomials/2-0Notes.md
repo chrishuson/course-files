@@ -41,3 +41,7 @@ A point on the graph of a function that is lower than any of the points around i
 **distributive property of multiplication over addition**
 Multiplying a sum by a number is the same as multiplying each addend by the number and then adding the products. For example, $3x(x + 2) = 3x^2 + 6x$.
 (*Illustrative Math* lesson 2.4 October 23rd)
+
+**Zero product property**
+If the factors multiplied together equal zero for a specific value of $x$, at least one of the factors must also equal zero at that value of $x$.
+(*Illustrative Math* lesson 2.5 October 24th)
