@@ -38,7 +38,7 @@ A point on the graph of a function that is lower than any of the points around i
 ![relative minimum](../graphics/relative-minimum.svg)
 (*Illustrative Math* lesson 2.3 October 18th)
 
-**distributive property of multiplication over addition**
+**Distributive property of multiplication over addition**
 Multiplying a sum by a number is the same as multiplying each addend by the number and then adding the products. For example, $3x(x + 2) = 3x^2 + 6x$.
 (*Illustrative Math* lesson 2.4 October 23rd)
 
