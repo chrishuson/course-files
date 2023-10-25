@@ -1,0 +1,118 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{Algebra 2}
+\author{Chris Huson}
+\date{October 2023}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Huson / Algebra 2: Polynomials \\* 27 October 2023}
+
+\begin{document}
+
+\subsubsection*{2.7 Quiz: Operations on polynomials}
+\begin{enumerate}
+    \item Evaluate each polynomial for the given value of $x$.
+    \begin{multicols}{2}
+        \begin{enumerate}[itemsep=1cm]
+            \item $f(x)=-x^3+12x^2-x+4$, $x=1$ \\[0.25cm] 
+            $f(1) = $ \vspace{2cm}
+            \item $g(x)=2x^3+11x^2-3x+15$, $x=-1$ \\[0.25cm] 
+            $g(-8) = $ \vspace{2cm}
+        \end{enumerate}
+        \end{multicols}
+    
+    \item The polynomial function $A$, shown below, is used to model the value of an investment account. Three deposits were made which earned interest annually.  $$A(x)=200x^5+300x^4+150x^3$$ 
+    \begin{enumerate}[itemsep=1cm]
+        \item How much was the first deposit, and how long ago was it made? \vspace{1cm}
+        \item If the polynomial is evaluated for $x = 1.04$, what interest rate would that represent \emph{as a percentage}?
+        \item Find the value of $A(1.04)$ to the \emph{nearest cent}. \vspace{2cm}
+    \end{enumerate}
+
+\subsubsection*{A1-A.APR.1 Add, subtract, and multiply polynomials}
+\item Write a recursive formula for each sequence. Use subscript notation.
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $3, -6, 12, -24, 48, \dots$
+        \item $\displaystyle \frac{3}{4}, \frac{5}{4}, \frac{7}{4}, \frac{9}{4},  \dots$ 
+    \end{enumerate}
+    \end{multicols}
+
+\newpage
+\subsubsection*{A1-A.APR.1 Add, subtract, and multiply polynomials}
+
+\item Find the sum in standard form $(x^3-4x^2+2x+16)+(5x^3-2x^2-3x-12)$ \vspace{2cm}
+
+\item Find the difference $f(x)-g(x)$ as a polynomial in standard form, given \\[0.25cm]
+    $f(x)=x^4+2x^3-x-9$ and $g(x)=2x^3+x^2-3x-11$. \vspace{4cm}
+
+\item Multiply the two polynomials $f(x)=3x-2$ and $g(x)=x^2-5x+4$. First complete the grid and then collect terms to find the product as a polynomial in standard form. \\[0.25cm]
+\begin{tabular}{|p{1cm}|p{3cm}|p{3cm}|p{3cm}|}
+    \hline
+     & $x^2$ & $-5x$ & $4$ \\
+    \hline
+    $3x$ &  & & \\[0.5cm]
+    \hline
+    $-2$ &  & & \\[0.5cm]
+    \hline
+\end{tabular} \vspace{4cm}
+
+\item Select all of the expressions that are equivalent to $x^2-7x+12$.
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $(x-2)(x-6)$
+        \item $(x-6)(x-2)$ 
+        \item $(x+4)(x+3)$ 
+        \item $(x-3)(x-4)$ 
+        \item $(x-4)(x+3)$
+        \item $(x+3)(x+4)$ 
+        \item $(x-4)(x-3)$
+        \item $x^2+7x-12$
+    \end{enumerate} 
+    \end{multicols}
+    \vspace{0.25cm}
+
+\newpage
+\item Select all solutions to the equation $(x-3)(2x+1)=0$.
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $x=-\frac{1}{2}$
+        \item $x=3$
+        \item $x=-2$
+        \item $x=-0.5$
+        \item $x=-3$
+        \item $x=\frac{1}{2}$
+    \end{enumerate}
+    \end{multicols}
+    \vspace{0.25cm}
+
+\item Here is the graph of a quadratic function. Which of the following could be its equation?
+    \begin{center}
+    \begin{tikzpicture}[xscale=0.7, yscale=0.2]
+        \draw [thick, ->] (-5.2,0) -- (5.4,0) node [above] {$x$};
+        \draw [thick, ->] (0,-14.2)--(0,9.5) node [right] {$y$};
+        \foreach \x in {-4,-3,...,4} \draw (\x cm,10pt) -- (\x cm,-10pt) node[below] {$\x$};
+        %\foreach \y in {-8,-4,4, 8} \draw (2pt,\y cm) -- (-2pt,\y cm) node[left] {$\y$};
+        %\fill (-1,0) circle[radius=0.1] node[above left]{$j$};
+        %\fill (3,0) circle[radius=0.1] node[above right]{$k$};
+        \draw [thick, <->,smooth,samples=20,domain=-5:4] plot(\x,\x*\x+\x-12);
+    \end{tikzpicture}
+    \end{center}
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $y=(x+3)(x-4)$
+        \item $y=(x-3)(x+4)$
+        \item $y=(x+3)(x+4)$
+        \item $y=(x-3)(x-4)$
+    \end{enumerate}
+    \end{multicols}
+
+\item Find all of the solutions to the equation $x(x+5)(2x-9)(x-13)=0$. 
+
+\newpage
+
+
+\end{enumerate}
+\end{document}
