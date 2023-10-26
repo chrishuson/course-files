@@ -17,9 +17,9 @@
     \item Evaluate each polynomial for the given value of $x$.
     \begin{multicols}{2}
         \begin{enumerate}[itemsep=1cm]
-            \item $f(x)=-x^3+12x^2-x+4$, $x=1$ \\[0.25cm] 
-            $f(1) = $ \vspace{2cm}
-            \item $g(x)=2x^3+11x^2-3x+15$, $x=-1$ \\[0.25cm] 
+            \item $f(x)=-x^3+12x^2-x+4$, $x=0$ \\[0.25cm] 
+            $f(0) = $ \vspace{2cm}
+            \item $g(x)=2x^3+11x^2-3x+15$ \\[0.25cm] 
             $g(-8) = $ \vspace{2cm}
         \end{enumerate}
         \end{multicols}
@@ -31,7 +31,7 @@
         \item Find the value of $A(1.04)$ to the \emph{nearest cent}. \vspace{2cm}
     \end{enumerate}
 
-\subsubsection*{A1-A.APR.1 Add, subtract, and multiply polynomials}
+\subsubsection*{A2-F.BF.2 Write arithmetic and geometric sequences with recursive formulas}
 \item Write a recursive formula for each sequence. Use subscript notation.
     \begin{multicols}{2}
     \begin{enumerate}
@@ -75,6 +75,7 @@
     \vspace{0.25cm}
 
 \newpage
+\subsubsection*{A1-A.APR.3 Identify zeros of polynomials when factorizations are available.}
 \item Select all solutions to the equation $(x-3)(2x+1)=0$.
     \begin{multicols}{2}
     \begin{enumerate}
@@ -90,7 +91,7 @@
 
 \item Here is the graph of a quadratic function. Which of the following could be its equation?
     \begin{center}
-    \begin{tikzpicture}[xscale=0.7, yscale=0.2]
+    \begin{tikzpicture}[xscale=0.7, yscale=0.3]
         \draw [thick, ->] (-5.2,0) -- (5.4,0) node [above] {$x$};
         \draw [thick, ->] (0,-14.2)--(0,9.5) node [right] {$y$};
         \foreach \x in {-4,-3,...,4} \draw (\x cm,10pt) -- (\x cm,-10pt) node[below] {$\x$};
@@ -109,10 +110,37 @@
     \end{enumerate}
     \end{multicols}
 
-\item Find all of the solutions to the equation $x(x+5)(2x-9)(x-13)=0$. 
+\item Find all of the values of $x$ that make the equation true, the solutions. \\[0.25cm]
+$x(x+5)(2x-9)(x-13)=0$. 
 
 \newpage
+\item Given the polynomial function $f(x)=2x^4+5x^3-x^2+3x-6$. 
+    \begin{enumerate}[itemsep=0.7cm]
+        \item What is the degree of the polynomial?
+        \item Write down the leading coefficient of $f$.
+        \item What is the value of the constant term?
+        \item Find $f(1)$.
+    \end{enumerate} \vspace{0.7cm}
 
+\item The graph of a polynomial function is shown below. 
+    \begin{enumerate}[itemsep=0.7cm]
+        \item Write down the $x$-intercepts, the solutions to $f(x)=0$.
+        \item Write down the $y$-intercept as an ordered pair.
+        \item What term do we use to describe the point $p$ on the plot?
+    \end{enumerate} \vspace{0.7cm}
+    \begin{center}
+    \begin{tikzpicture}[xscale=1, yscale=0.9]
+        \draw [thick, ->] (-3.2,0) -- (5,0) node [above] {$x$};
+        \draw [thick, ->] (0,-5.2)--(0,6) node [right] {$y$};
+        \foreach \x in {-3,...,4} \draw (\x cm,3pt) -- (\x cm,-3pt) node[below] {$\x$};
+        \foreach \y in {-4,-2,2,4} \draw (3pt,\y cm) -- (-3pt,\y cm) node[left] {$\y$};
+        \fill (-2,0) circle[radius=0.08];
+        \fill (1,0) circle[radius=0.08];
+        \fill (4,0) circle[radius=0.08];
+        \fill (-0.732,5.2) circle[radius=0.08] node[above left]{$p$};
+        \draw [thick, <->,smooth,samples=20,domain=-2.3:4.2] plot(\x,{0.5*(\x+2)*(\x-1)*(\x-4)});
+    \end{tikzpicture}
+    \end{center}
 
 \end{enumerate}
 \end{document}
