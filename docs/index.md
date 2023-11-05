@@ -8,7 +8,7 @@ title: course-files
 
 [12th grade: Career and Financial Management](cfm)
 
-[Mathematical Modeling and Problem Solving](modeling)
+[Modeling and Mathematics Applications](modeling)
 
 -----
 

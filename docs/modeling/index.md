@@ -2,7 +2,7 @@
 title: course-files
 ---
 
-# Mathematical Modeling and Problem Solving
+# Modeling and Mathematics Applications
 
 [Course explanation for students and parents](https://math.huson.com/modeling/description)
 

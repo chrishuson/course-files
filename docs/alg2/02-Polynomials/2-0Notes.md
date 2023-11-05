@@ -38,6 +38,11 @@ A point on the graph of a function that is lower than any of the points around i
 ![relative minimum](../graphics/relative-minimum.svg)
 (*Illustrative Math* lesson 2.3 October 18th)
 
+**Adding and subtracting polynomials**
+To add or subtract polynomials, add or subtract the coefficients of like terms. For example, $(3x^2 + 4x + 1) + (2x^2 + 3x + 8) = 5x^2 + 7x + 9$.
+[Math is Fun](https://www.mathsisfun.com/algebra/polynomials-adding-subtracting.html)
+(*Illustrative Math* lesson 2.4 October 23th)
+
 **Distributive property of multiplication over addition**
 Multiplying a sum by a number is the same as multiplying each addend by the number and then adding the products. For example, $3x(x + 2) = 3x^2 + 6x$.
 (*Illustrative Math* lesson 2.4 October 23rd)
