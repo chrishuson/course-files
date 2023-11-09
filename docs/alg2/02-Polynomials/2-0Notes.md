@@ -50,3 +50,13 @@ Multiplying a sum by a number is the same as multiplying each addend by the numb
 **Zero product property**
 If the factors multiplied together equal zero for a specific value of $x$, at least one of the factors must also equal zero at that value of $x$.
 (*Illustrative Math* lesson 2.5 October 24th)
+
+**End behavior**
+In the graph of a polynomial, the direction in the vertical direction as $x$ increases without bound in the positive direction and in the negative direction. For example, in the case of the parabola $y=x^2$, $y$ increases positively as $x$ increases in either direction. (the curve is a "u" shape)
+
+Symbolically, we write
+$x \rightarrow + \infty$, $y \rightarrow + \infty$
+$x \rightarrow - \infty$, $y \rightarrow + \infty$
+
+**Multiplicity**
+In the factored form of a polynomial, the exponent of the factor. For example, in the polynomial $(x-4)^2 (x-3)$, the factor $(x-4)$ has multiplicity $2$ and the factor $(x-3)$ has multiplicity $1$.
