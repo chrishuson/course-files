@@ -1,0 +1,58 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{Algebra 2}
+\author{Chris Huson}
+\date{January 2024}
+
+\fancyhead[RO]{\\ Name: \hspace{3cm} \,\\}
+\fancyhead[LO]{BECA / Huson / Algebra 2: Polynomial \& Rational Functions \\* 9 January 2024}
+
+\begin{document}
+
+\subsubsection*{2.27 Homework: Rational expressions exam review}
+\begin{enumerate}
+\item Use polynomial long division to find an expression of the form $ax+b+\frac{c}{x+d}$ with $a,b,c,d$ integers that is equivalent to $\displaystyle \frac{3x^3 + 19x^2 + 15x}{x^2 + 4x}
+$ for $x \neq -4 \text{ or } 0$.
+\vspace{8cm}
+
+\item The polynomial $p$ is a function of $x$. The graph of $p$ has three zeros at $7$, $\frac{2}{3}$, and $-1$. Select $\bf{all}$ the expressions that could represent $p$. \vspace{0.25cm}
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $(x-7)(x-\frac{2}{3})(x+1)$
+        \item $(x-7)(3x-2)(x-1)$
+        \item $3(x-7)(x-\frac{2}{3})(x+1)$
+        \item $3x(x+7)(x+\frac{2}{3})(x-1)^2$
+        \item $(x-7)(x+\frac{2}{3})(x-1)$
+        \item $(x-7)(3x-2)(x+1)$
+        \item $3(x-7)(x-\frac{2}{3})(x-1)$
+        \item $3x(x+7)(x-\frac{2}{3})(x+1)^2$
+    \end{enumerate}
+    \end{multicols}
+        \vspace{0.5cm}
+
+\item Let $f$ be a polynomial function of $x$ where $f(x)=4x^3-11x^2-6x+9$. If $x-3$ is a factor of $f$, write an equation for $f$ as a product of linear factors.
+\vspace{5cm}
+
+\newpage
+\item Given the rational function $\displaystyle r(x)= -2 + \frac{x-1}{x+2}$. 
+    \begin{enumerate}[itemsep=0.25cm]
+        \item Sketch a graph of the function.
+        \item Mark the vertical asymptote as dotted line and label it with its equation.
+        \item Explain why the asymptote is located there.
+    \end{enumerate}
+    \begin{center}
+    \begin{tikzpicture}[xscale=0.7, yscale=0.7]
+        \draw [thick, ->] (-8.2,0) -- (8.5,0) node [above] {$x$};
+        \draw [thick, ->] (0,-8.2)--(0,8.5) node [right] {$y$};
+        \foreach \x in {-8,-6,-4,-2,2,4,6,8} \draw (\x cm,5pt)--(\x cm,-5pt) node at (\x,-0.5){\x};
+        \foreach \y in {-8,-6,-4,-2,2,4,6,8} \draw (5pt,\y cm)--(-5pt,\y cm) node at (-0.5,\y){\y};
+    \end{tikzpicture}
+    \end{center}
+
+\item  Find all values of $x$ that make the equation true.
+$$\frac{2x^2-3x-5}{x^2-4x-5}=\frac{2x+1}{x-5}$$ \vspace{4cm}
+
+\end{enumerate}
+\end{document}
