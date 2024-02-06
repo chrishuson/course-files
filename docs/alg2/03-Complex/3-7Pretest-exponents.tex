@@ -1,0 +1,131 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{Algebra 2}
+\author{Chris Huson}
+\date{January 2024}
+
+\fancyhead[RO]{\\ Name: \hspace{1.5cm} \,\\}
+\fancyhead[LO]{BECA/Huson/Algebra 2: Complex Numbers \& Rational Exponents \\* 6 February 2024}
+
+\begin{document}
+
+\subsubsection*{3.7 Pretest: Exponents \hfill A.SSE.3c Exponent properties}
+\emph{Do Not Use a Calculator}
+\begin{enumerate}
+\item Select all of the solutions to $x^2=16$.
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $x=4$
+        \item $x=-4$
+        \item $x=8$
+        \item $x=-8$
+        \item $x=16$
+        \item $x=-16$
+    \end{enumerate}
+    \end{multicols}
+
+    \item Find the value of each variable that makes the equation true.
+    \begin{multicols}{2}
+    \begin{enumerate}[itemsep=0.5cm]
+        \item $5^2 \cdot 5^3 = 5^a$
+        \item $\displaystyle \frac{3^7}{3^6} = 3^b$
+        \item $7^c=1$
+        \item $(4^3)^5 = 4^d$
+        \item $\displaystyle 2^e = \frac{1}{2}$
+        \item $3^4 \cdot f^4 = 15^4$
+    \end{enumerate}
+    \end{multicols} \vspace{0.5cm}
+
+\item Evaluate each expression.
+    \begin{multicols}{2}
+    \begin{enumerate}[itemsep=0.5cm]
+        \item $\displaystyle \frac{1}{4} \cdot 24$
+        \item $\displaystyle \frac{3}{2} \cdot 10$
+        \item $\displaystyle \frac{3}{5} \cdot 8 \cdot \frac{5}{3}$
+        \item $\displaystyle \frac{2}{3} \cdot \frac{5}{2} \cdot 9$
+    \end{enumerate}
+    \end{multicols} \vspace{0.5cm}
+
+\item $p = 3x +1$ and $q = 2x-5$. \\[0.5cm]
+For each expression, write an equivalent expression in standard form.
+    \begin{enumerate}[itemsep=0.5cm]
+        \item $p+q$
+        \item $p-q$
+        \item $pq$
+    \end{enumerate}
+
+
+\newpage
+\item Identify the expressions that are equal to $\displaystyle \frac{2^2}{2^4}$
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $2^6$
+        \item $\displaystyle \frac{1}{2^2}$
+        \item $2^{-2}$
+        \item $\frac{1}{4}$
+        \item $2^{2}$
+        \item $0.5$
+    \end{enumerate}
+    \end{multicols}
+
+\item Identify the expressions that are equal to $\displaystyle 2^{-3}$
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $2.333...$
+        \item $\sqrt{2}$
+        \item $\displaystyle \frac{1}{2^3}$
+        \item $\displaystyle \frac{1}{8}$
+        \item $6$
+        \item $0.125$
+    \end{enumerate}
+    \end{multicols}
+
+\item Identify the expressions that are equal to $\displaystyle 9^{\frac{1}{2}}$
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $9.5$
+        \item $\sqrt{3}$
+        \item $\sqrt{9}$
+        \item $3$
+        \item $81$
+        \item $4.5$
+    \end{enumerate}
+    \end{multicols}
+
+\subsubsection*{A2-F.BF.2 Write arithmetic and geometric sequences with recursive formulas}
+\item Write a recursive definition of the sequence $a_1 = 3$, $a_2 = 6$, $a_3 = 12$, $a_4 = 24, \ldots$ \vspace{2cm}
+
+\item A geometric sequence begins $1, 3, 9, \ldots$.
+\begin{enumerate}[itemsep=0.5cm]
+    \item Write the first six terms of the sequence.
+    \item Find the common ratio $r$. 
+    \item Find the sum of the first six terms of the sequence. \vspace{0.5cm}
+    \item Find the sum of the first 20 terms of the sequence.
+\end{enumerate}
+
+\newpage
+\item  Find all values of $x$ that make the equation true. \hfill (A.REI.4 Solve quadratics)
+$$x-1=\frac{12}{x}$$ \vspace{4cm}
+
+\item Given the rational function $\displaystyle r(x)=-1+\frac{x+2}{x-1}$. \hfill (F.IF.7d Graph rational functions)
+    \begin{enumerate}[itemsep=0.25cm]
+        \item Sketch a graph of the function.
+        \item Mark the vertical asymptote as dotted line and label it with its equation.
+        \item Explain why the asymptote is located there.
+    \end{enumerate}
+    \begin{center}
+    \begin{tikzpicture}[xscale=0.7, yscale=0.7]
+        \draw [thick, ->] (-8.2,0) -- (8.5,0) node [above] {$x$};
+        \draw [thick, ->] (0,-8.2)--(0,8.5) node [right] {$y$};
+        \foreach \x in {-8,-6,-4,-2,2,4,6,8} \draw (\x cm,5pt)--(\x cm,-5pt) node at (\x,-0.5){\x};
+        \foreach \x in {-7,-5,...,7} \draw (\x cm,5pt)--(\x cm,-5pt);
+        \foreach \y in {-8,-6,-4,-2,2,4,6,8} \draw (5pt,\y cm)--(-5pt,\y cm) node at (-0.5,\y){\y};
+        \foreach \y in {-7,-5,...,7} \draw (5pt,\y cm)--(-5pt,\y cm);
+    \end{tikzpicture}
+    \end{center}
+
+
+\end{enumerate}
+\end{document}
