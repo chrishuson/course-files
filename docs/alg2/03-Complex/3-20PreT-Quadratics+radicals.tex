@@ -14,6 +14,43 @@
 \subsubsection*{3.20 PreTest: Solving quadratics, complex numbers, radicals and exponents}
 \emph{Do Not Use a Calculator}\hfill A2.REI.4 Solve quadratic equations
 \begin{enumerate}
+
+\item Given the function $f(x)=(x-3)^2$. How many solutions are there to $f(x)=0$? Mark and label it on the graph.
+\begin{center}
+\begin{tikzpicture}[xscale=0.7, yscale=0.7]
+    \draw [thick, ->] (-1.2,0) -- (5,0) node [below] {$x$};
+    \draw [thick, ->] (0,-1.2)--(0,5.5) node [left] {$y$};
+    \foreach \x in {3} \draw (\x cm,5pt) -- (\x cm,-5pt)node[below]{$3$};
+    %\foreach \y in {-6,...,7} \draw (5pt,\y cm) -- (-5pt,\y cm);
+    \draw [<->, thick, smooth, domain=1:5] plot (\x, {(\x-3)^2});
+\end{tikzpicture}
+\end{center}
+
+\item How many solutions are there to $(x-3)^2=4$? Mark and label them on the graph.
+\begin{center}
+\begin{tikzpicture}[xscale=0.7, yscale=0.7]
+    \draw [thick, ->] (-1.2,0) -- (6,0) node [below] {$x$};
+    \draw [thick, ->] (0,-1.2)--(0,6.5) node [left] {$y$};
+    \foreach \x in {1,3,5} \draw (\x cm,5pt) -- (\x cm,-5pt)node[below]{$\x$};
+    \foreach \y in {4} \draw (5pt,\y cm) -- (-5pt,\y cm)node[above left]{$y=4$};
+    \draw [<->, thick, smooth, domain=0.5:5.5] plot (\x, {(\x-3)^2});
+    \draw [<->, thick, smooth, domain=-2:6] plot (\x, {4});
+\end{tikzpicture}
+\end{center}
+
+\item How many, if any, solutions are there to $(x-3)^2=-1$? Mark and label it on the graph.
+\begin{center}
+\begin{tikzpicture}[xscale=0.7, yscale=0.7]
+\draw [thick, ->] (-2.2,0) -- (6,0) node [below] {$x$};
+\draw [thick, ->] (0,-2.2)--(0,6.5) node [left] {$y$};
+\foreach \x in {1,3,5} \draw (\x cm,5pt) -- (\x cm,-5pt)node[below]{$\x$};
+\foreach \y in {-1} \draw (5pt,\y cm) -- (-5pt,\y cm);
+\draw [<->, thick, smooth, domain=0.5:5.5] plot (\x, {(\x-3)^2});
+\draw [<->, thick, smooth, domain=-1:6] plot (\x, {-1})node[below left]{$y=-1$};
+\end{tikzpicture}
+\end{center}
+
+\newpage
 \item Given the quadratic equation, complete the square to determine the number of solutions: $$x^2 + 6x + 7 = 0$$
     \begin{enumerate}
         \item Find $\displaystyle \frac{b}{2}=$
