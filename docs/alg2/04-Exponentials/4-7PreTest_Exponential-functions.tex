@@ -1,5 +1,6 @@
 \documentclass[12pt, twoside]{article}
 \input{../preamble}
+\usepackage{siunitx}
 
 \title{IB Mathematics}
 \author{Chris Huson}
@@ -69,14 +70,14 @@ PV is the present value, n is the number of years, \\
         \item Sketch the graph of the function.
     \end{enumerate}
     \begin{center}
-    \begin{tikzpicture}[x=1cm, y=0.005cm, xscale=1]
-        \draw [thin, color=lightgray, xstep=1cm,ystep=1cm] (0,0) grid (5,1605);
+    \begin{tikzpicture}[x=1cm, y=0.0005cm, xscale=1]
+        \draw [thin, color=lightgray, xstep=1cm,ystep=1cm] (0,0) grid (5,14050);
         \draw [thick, ->] (0,0) -- (+5.3,0) node [below]{$t$};
-        \draw [thick, ->] (0,0) -- (0,1700) node [right]{$y$};        
+        \draw [thick, ->] (0,0) -- (0,15000) node [right]{$y$};        
         \foreach \x in {0,1,...,5}
             \draw (\x cm,0) -- (\x cm,0) node[below] {$\x$};
-        \foreach \y in {0,200,...,1600}
-            \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
+        \foreach \y in {0,2000,...,14000}
+            \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{\num[group-separator={,}]{\y}};
         %\draw [thick, ->, smooth,domain=0.:5.2] plot(\x,{1200*(0.85^\x)});
     \end{tikzpicture}
     \end{center}
