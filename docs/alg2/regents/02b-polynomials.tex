@@ -55,7 +55,16 @@
 \end{enumerate}
 
 \item The graph of a quadratic function is shown below. %August 2023 Regents
-[graph]
+\begin{center}
+    \begin{tikzpicture}[scale=0.65]
+        \draw[thick,->] (-6,0) -- (6.5,0) node[below] {$x$};
+        \draw[thick,->] (0,-8) -- (0,6.5) node[above] {$y$};
+        \draw[thin,gray!50] (-6,-8) grid (6,6);
+        \draw[thick] (5pt,5)--(-5pt,5) node[left] {$5$};
+        \draw[thick] (5,5pt)--(5,-5pt) node[below] {$5$};
+        \draw[thick, domain=-2.5:4.5, samples=100] plot (\x, {-(\x)^2 + 2*\x + 4});
+    \end{tikzpicture}
+    \end{center}
 Then the graph of $x + y = 4$ is drawn on the same axes, one solution
 to this system is
 \begin{enumerate}
@@ -109,6 +118,25 @@ polynomial with these characteristics?
 
 \item Which graph shows a quadratic function with two imaginary zeros? \\ %January 2023 Regents
 \includegraphics*[width=8cm]{../graphics/regents-jan2023-24-polynomials.png}
+
+\item In the quadratic formula, $b^2-4ac$ is called the discriminant. The function $f(x)$ has a discriminant value of 8, and $g(x)$ has a discriminant value of $-16$. The quadratic graphs, $h(x)$ and $j(x)$, are shown below. \\
+\begin{tikzpicture}[scale=0.5]
+    \draw[thick,<->] (-5,0) -- (5.5,0) node[below] {$x$};
+    \draw[thick,<->] (0,-3) -- (0,7.5) node[above] {$h(x)$};
+    \draw[thick,<->, domain=-1.7:3.7, samples=100] plot (\x, {-(\x)^2 + 2*\x + 4});
+\end{tikzpicture} \;
+\begin{tikzpicture}[scale=0.5]
+    \draw[thick,<->] (-5,0) -- (4.5,0) node[below] {$x$};
+    \draw[thick,<->] (0,-3) -- (0,7.5) node[above] {$j(x)$};
+    \draw[thick,<->, domain=-3.3:1.3, samples=100] plot (\x, {(\x)^2 + 2*\x + 2});
+\end{tikzpicture} \\
+Which quadratic functions have imaginary roots?
+\begin{enumerate}
+    \item $g(x)$ and $h(x)$
+    \item $g(x)$ and $j(x)$
+    \item $f(x)$ and $h(x)$
+    \item $f(x)$ and $j(x)$
+\end{enumerate}
 
 \item Algebraically determine the zeros of the function below. %2 points January 2023 Regents
 $$r(x) = 3x^3+12x^2-3x-12$$
