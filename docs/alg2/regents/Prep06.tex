@@ -1,0 +1,52 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{siunitx}
+
+\title{IB Mathematics}
+\author{Chris Huson}
+\date{May 2024}
+
+%\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{1cm} \,\\}
+\fancyhead[LO]{BECA/Huson/Algebra II: Regents Prep \\* 6 May 2024}
+
+\begin{document}
+
+\subsubsection*{Practice Regents problems \#6}
+AII-F.BF.2: Write arithmetic and geometric sequences both recursively and with an explicit formula, use them to model situations, and translate between the two forms.
+
+\begin{enumerate}
+\item Given the sequence $a$: 2, 5, 8, 11, $\ldots$
+\begin{enumerate}[itemsep=4cm]
+    \item State whether the sequence is arithmetic, geometric, or neither. Justify your answer.
+    \item Write a recursive formula for $a$.
+    \item Write an explicit formula for the sequence.
+    \item Find the sum of the first three terms the sequence.
+\end{enumerate}
+
+\newpage
+AII-F.LE.2: Construct a linear or exponential function symbolically given: a graph, a description of the relationship, or two input-output pairs (include reading these from a table).
+
+\item The graph shows the amount of a medicine $m$, in milligrams, remaining in a patient's body $h$ hours after receiving an injection. The amount of the medicine decreases exponentially.
+    \begin{center}
+    \begin{tikzpicture}[x=1cm, y=0.15cm, xscale=2.5]
+        %\draw [thin, color=lightgray, xstep=0.5cm,ystep=0.75cm] (0,0) grid (3,40);
+        \draw [thick, ->] (0,0) -- (+2.8,0) node [below]{$h$};
+        \draw [thick, ->] (0,0) -- (0,36) node [left]{$m$};        
+        \foreach \x in {0,0.5,...,2.5}
+            \draw (\x cm,5pt) -- (\x cm,-5pt) node[below] {$\x$};
+        \foreach \y in {0,10,20,...,30}
+            \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
+        \draw [thick, ->, smooth,domain=0.:2.4] plot(\x,{32*(0.25^\x)});
+        \fill (0,32) ellipse [x radius=1pt, y radius=2.5pt]  node [right] {$(0,32)$};
+        \fill (1.5,4) ellipse [x radius=1pt, y radius=2.5pt] node [above right] {$(1.5,4)$};
+    \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}[itemsep=3cm]
+        \item By what factor did the medicine decrease in the first hour and a half? Explain how you know.
+        \item By what factor did the medicine decrease in the first half hour? What about in the first hour? Explain how you know. \vspace{1cm}
+        \item Write an equation relating $m$, the number of milligrams of the drug in the patient’s body, and $h$, the number of hours since the injection.
+    \end{enumerate}
+
+\end{enumerate}
+\end{document}
