@@ -39,35 +39,34 @@ $$\sum_{k=1}^{n} a_k = a_1 + a_2 + \ldots + a_n = a_1 \left( \frac{1-r^n}{1-r} \
 \newpage
 AII-F.LE.2: Construct a linear or exponential function symbolically given: a graph, a description of the relationship, or two input-output pairs (include reading these from a table).
 
-\item The area, in square meters, of a pond covered by an algae bloom decreases exponentially after a treatment is applied.
-\begin{enumerate}[itemsep=1cm]
-    \item Fill out the table, giving the area covered by the algae in square meters days after the treatment is applied.
+\item Two functions are compared, a linear function $f(x)$ and the exponential function $g(x)$.
+\begin{enumerate}%[itemsep=1cm]
+    \item Fill out the table for $f(x)$ and write an explicit formula for the linear function.
     \begin{center}
     \begin{tabular}{|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|}
         \hline
         Days & 0 & 1 & 2 & 3 & 4 \\
         \hline
-        Area & 150 & & 50 & & \\[0.25cm]
+        Area & 30 & & 60 & & \\[0.25cm]
         \hline
     \end{tabular}
-    \end{center}
-    \item Another pond has an algae bloom that is also decreasing exponentially. The
-    area of this bloom in square meters is given by the function $B(d)=120 \times 3^{-\frac{d}{3}}$, where $d$ is days since the first measurement of the bloom. 
+    \end{center} \vspace{2cm}
+    \item The geometric function is defined by $\displaystyle g(x) = 20 \cdot e^{\frac{x}{2}}$. On the grid below, sketch both functions, $f(x)$ and $g(x)$.
     \begin{center}
-        \begin{tikzpicture}[x=1cm, y=0.05cm, xscale=2.5]
-            \draw [thin, color=lightgray, xstep=0.5cm,ystep=0.5cm] (0,0) grid (4,160);
-            \draw [thick, ->] (0,0) -- (+4.3,0) node [below]{$d$};
-            \draw [thick, ->] (0,0) -- (0,165) node [left]{$Area$};        
+        \begin{tikzpicture}[x=1cm, y=0.075cm, xscale=2]
+            \draw [thin, color=lightgray, xstep=1cm,ystep=0.75cm] (0,0) grid (4,151);
+            \draw [thick, ->] (0,0) -- (+4.3,0) node [below]{$x$};
+            \draw [thick, ->] (0,0) -- (0,153) node [right]{$y$};        
             \foreach \x in {0,1,...,4}
                 \draw (\x cm,5pt) -- (\x cm,-5pt) node[below] {$\x$};
-            \foreach \y in {0,20,...,160}
+            \foreach \y in {0,30,...,150}
                 \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
             %\draw [thick, ->, smooth,domain=0.:4.1] plot(\x,{120*(0.333^(\x/3))});
             %\fill (0,90) ellipse [x radius=1pt, y radius=2.5pt]  node [right] {$(0,32)$};
             %\fill (2,30) ellipse [x radius=1pt, y radius=2.5pt] node [above right] {$(1.5,4)$};
         \end{tikzpicture}
         \end{center}
-    \item Which of the two algae blooms was larger initially? Which is decreasing more quickly? Explain how you know.
+    \item Mark the intersection of the two functions on the graph as an ordered pair, rounding to the \emph{nearest tenth}.
 \end{enumerate}
 
 
