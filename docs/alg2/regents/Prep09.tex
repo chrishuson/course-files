@@ -1,0 +1,77 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{siunitx}
+
+\title{IB Mathematics}
+\author{Chris Huson}
+\date{May 2024}
+
+%\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{1cm} \,\\}
+\fancyhead[LO]{BECA/Huson/Algebra II: Regents Prep \\* 9 May 2024}
+
+\begin{document}
+
+\subsubsection*{Practice Regents problems \#9}
+AII-F.BF.6 Represent and evaluate the sum of a finite arithmetic
+or finite geometric series, using summation (sigma) notation. For geometric series:
+$$\sum_{k=1}^{n} a_k = a_1 + a_2 + \ldots + a_n = a_1 \left( \frac{1-r^n}{1-r} \right)$$
+
+\begin{enumerate}
+\item Given the geometric sequence 55, 77, 107.8, 150.92, $\ldots$
+    %$\frac{3}{2}$, 3, $\frac{9}{2}$, 6, $\ldots$
+\begin{enumerate}[itemsep=2cm]
+    \item Find the common ratio $r$.
+    \item Write a recursive formula for the sequence.
+    \item Write an explicit formula for the sequence.
+    \item Find the sum of the first seven terms the sequence rounded to the \emph{nearest tenth}.
+\end{enumerate} \vspace{3cm}
+
+\item Express each of the following using rational or integer exponents. 
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\sqrt[3]{8x^4}$
+        \item $\sqrt[5]{x^{10}}\sqrt[3]{x^{-2}}$
+    \end{enumerate}
+\end{multicols}
+\vspace{3cm}
+
+\newpage
+\item Determine algebraically how long it would take an investment to double, to the \emph{nearest tenth of a year}, given 4.25\% interest rate, compounded continuously.
+
+\newpage
+AII-F.LE.2: Construct a linear or exponential function symbolically given: a graph, a description of the relationship, or two input-output pairs (include reading these from a table).
+
+\item Two functions are compared, a linear function $f(x)$ and the exponential function $g(x)$.
+\begin{enumerate}%[itemsep=1cm]
+    \item Fill out the table for $f(x)$ and write an explicit formula for the linear function.
+    \begin{center}
+    \begin{tabular}{|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|}
+        \hline
+        Days & 0 & 1 & 2 & 3 & 4 \\
+        \hline
+        Area & 30 & & 60 & & \\[0.25cm]
+        \hline
+    \end{tabular}
+    \end{center} \vspace{2cm}
+    \item The geometric function is defined by $\displaystyle g(x) = 20 \cdot e^{\frac{x}{2}}$. On the grid below, sketch both functions, $f(x)$ and $g(x)$.
+    \begin{center}
+        \begin{tikzpicture}[x=1cm, y=0.075cm, xscale=2]
+            \draw [thin, color=lightgray, xstep=1cm,ystep=0.75cm] (0,0) grid (4,151);
+            \draw [thick, ->] (0,0) -- (+4.3,0) node [below]{$x$};
+            \draw [thick, ->] (0,0) -- (0,153) node [right]{$y$};        
+            \foreach \x in {0,1,...,4}
+                \draw (\x cm,5pt) -- (\x cm,-5pt) node[below] {$\x$};
+            \foreach \y in {0,30,...,150}
+                \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
+            %\draw [thick, ->, smooth,domain=0.:4.1] plot(\x,{120*(0.333^(\x/3))});
+            %\fill (0,90) ellipse [x radius=1pt, y radius=2.5pt]  node [right] {$(0,32)$};
+            %\fill (2,30) ellipse [x radius=1pt, y radius=2.5pt] node [above right] {$(1.5,4)$};
+        \end{tikzpicture}
+        \end{center}
+    \item Mark the intersection of the two functions on the graph as an ordered pair, rounding to the \emph{nearest tenth}.
+\end{enumerate}
+
+
+\end{enumerate}
+\end{document}
