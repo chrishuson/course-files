@@ -36,43 +36,6 @@ $$\sum_{k=1}^{n} a_k = a_1 + a_2 + \ldots + a_n = a_1 \left( \frac{1-r^n}{1-r} \
 \end{multicols}
 \vspace{3cm}
 
-\newpage
-AII-F.LE.2: Construct a linear or exponential function symbolically given: a graph, a description of the relationship, or two input-output pairs (include reading these from a table).
-
-\item Given the quartic function $f(x) = a(x-1)(x-2)^2(x+3)$, graphed below.
-\begin{enumerate}[itemsep=1cm]
-    \item Is the leading coefficient $a$ positive or negative?
-    \item Write down the order of the function.
-    \item Over the interval $-1 < x < 0$, is the function increasing, decreasing, or constant? (make sure your answer is consistent with your answer to (a))
-    \item Find the average rate of change of the function over the interval from point $A$ to point $B$. \vspace{2cm}
-\end{enumerate}
-\begin{center}
-    \begin{tikzpicture}[scale=0.5]
-        \draw[lightgray,very thin] (-10,-9) grid (10,9);
-        \draw [thick,<->] (-10.5,0)--(10.5,0) node [right] {$x$};
-        \draw [thick,<->] (0,-9.5)--(0,9.5) node [above] {$f(x)$};
-        \draw [thick,<->] plot[smooth, domain=-3.3:2.7] (\x, {-0.5*(\x-2)*(\x-2)*(\x+3)*(\x+1)});
-        \fill (-1,0) circle[radius=0.15] node [above right] {$A(-1,0)$};
-        \fill (0,-6) circle[radius=0.15] node [below right] {$B(0,-6)$};
-    \end{tikzpicture}
-    \end{center}
-
-\newpage 
-\item Go through the steps to factor by grouping $f(x) = x^3+2x^2-x-2$
-\begin{enumerate}[itemsep=1cm]
-    \item Use your calculator to find the zeros of the function.
-    \item Write down the factors of the function.
-    \item Write the final row and complete the grouping step by filling in the blanks.
-    \begin{align*}
-        f(x) &= x^3+2x^2-x-2 \\[0.5cm]
-             &= (x^3+2x^2)-(x+2) \\[0.5cm]
-             &= \underline{\hspace{1cm}}\;(x+2) - \underline{\hspace{1cm}}\;(x+2) \\[0.5cm]
-             &= (x^2-1)(x+2) \\[0.5cm]
-             &=
-        \end{align*}
-\end{enumerate}
-
-\item Go through the steps to factor by grouping $f(x) = x^3+3x^2-4x-12$
 
 \end{enumerate}
 \end{document}
