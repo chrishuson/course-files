@@ -105,14 +105,14 @@ F.LE.2: Construct a linear or exponential function symbolically given: a graph, 
     \end{center} \vspace{1cm}
     \begin{enumerate}
         \item Add totals to the table.
-        \item Which class has the fewest students? \vspace{1cm}
+        \item Which class has the most students? \vspace{1cm}
         \item What percentage of all students turned in their homework on time? \vspace{2cm}
         \item Using the blank template below, translate the values above into decimal proportions of the whole student population rounded to \emph{the nearest thousandth}.
     \end{enumerate}
     \begin{center}
-        \begin{tabular}{|c|c|c|c|}
+        \begin{tabular}{|p{1cm}|p{2cm}|p{2cm}|p{2cm}|}
             \hline
-            Class & On time & \; Late \; & \; Total \; \\
+            Class & \; On time & \quad Late& \quad Total\\
             \hline
             11.1 & & & \\[0.25cm]
             \hline
@@ -143,11 +143,11 @@ F.LE.2: Construct a linear or exponential function symbolically given: a graph, 
 \newpage
 AII-F.LE.2: Construct a linear or exponential function symbolically given: a graph, a description of the relationship, or two input-output pairs (include reading these from a table).
 
-\item Given the quartic function $f(x) = a(x-1)(x-2)(x+j)(x+k)$, graphed below.
+\item Given the cubic function $f(x) = x^3-3x^2+x-3$, graphed below.
 \begin{enumerate}[itemsep=1cm]
-    \item Is the leading coefficient $a$ positive or negative?
-    \item Write down the values of $j$ and $k$.
-    \item Over the interval $0 < x < 1$, is the function increasing, decreasing, or constant?
+    \item How many real solutions are their to the equation $f(x)=0$?
+    \item Write down the real zeros of the function.
+    \item Over the interval $2 < x < 3$, is the function increasing, decreasing, or constant?
     \item Find the average rate of change of the function over the interval from point $A$ to point $B$. \vspace{2cm}
 \end{enumerate}
 \begin{center}
@@ -155,40 +155,47 @@ AII-F.LE.2: Construct a linear or exponential function symbolically given: a gra
         \draw[gray,thin] (-10,-9) grid (10,9);
         \draw [thick,<->] (-10.5,0)--(10.5,0) node [right] {$x$};
         \draw [thick,<->] (0,-9.5)--(0,9.5) node [above] {$f(x)$};
-        \draw [thick,<->] plot[smooth, domain=-3.3:2.5] (\x, {0.5*(\x-1)*(\x-2)*(\x+3)*(\x+1)});
-        \fill (-3,0) circle[radius=0.15] node [above left] {$A(-3,0)$};
-        \fill (-2,-6) circle[radius=0.15] node [below left] {$B(-2,-6)$};
+        \draw [thick,<->] plot[smooth, domain=-1.15:3.6] (\x, {(\x*\x+1)*(\x-3)});
+        \fill (0,-3) circle[radius=0.15] node [above left] {$A(0,-3)$};
+        \fill (2,-5) circle[radius=0.15] node [below right] {$B(2,-5)$};
     \end{tikzpicture}
     \end{center}
 
 \newpage 
-\item Go through the steps to factor by grouping $f(x) = x^3-4x^2-x+4$
+\item Go through the steps to factor by grouping $f(x) = x^3-2x^2-9x+18$
 \begin{enumerate}[itemsep=1cm]
     \item Use your calculator to find the zeros of the function.
     \item Write down the factors of the function.
     \item Write the final row and complete the grouping step by filling in the blanks.
     \begin{align*}
-        f(x) &= x^3-4x^2-x+4 \\[0.5cm]
-             &= (x^3-4x^2)-(x-4) \\[0.5cm]
-             &= \underline{\hspace{1cm}}\;(x-4) - \underline{\hspace{1cm}}\;(x-4) \\[0.5cm]
-             &= (x^2-1)(x-4) \\[0.5cm]
+        f(x) &= x^3-2x^2-9x+18 \\[0.5cm]
+             &= (x^3-2x^2)-(9x-18) \\[0.5cm]
+             &= \underline{\hspace{1cm}}\;(x-2) - \underline{\hspace{1cm}}\;(x-2) \\[0.5cm]
+             &= (x^2-9)(x-2) \\[0.5cm]
              &=
         \end{align*}
 \end{enumerate}
 
-\item Go through the steps to factor by grouping $f(x) = x^3+2x^2-4x-8$
+\item Go through the steps to factor by grouping $f(x) = x^3+4x^2-4x-16$
 
 \newpage
-\item Graph the function $f(x) = x^{3}-5x^{2}+3x+4$ over the domain $-1 \leq x \leq 4$. 
+\item Graph the continuous exponential function $f(x) = 2e^{0.12x}$ on the grid below. 
 \begin{center}
-    \begin{tikzpicture}[scale=0.65]
-        \draw[gray,thin] (-10,-10) grid (10,10);
-        \draw [thick,<->] (-10.5,0)--(10.5,0) node [right] {$x$};
-        \draw [thick,<->] (0,-10.5)--(0,10.5) node [above] {$f(x)$};
+    \begin{tikzpicture}[scale=1]
+        \draw[gray,thin] (0,0) grid (10,10);
+        \draw [thick,->] (0,0)--(10.5,0) node [right] {$x$};
+        \draw [thick,->] (0,0)--(0,10.5) node [above] {$f(x)$};
+        \foreach \x in {0,1,...,10}
+            \draw (\x cm,5pt) -- (\x cm,-5pt) node[below] {$\x$};
+        \foreach \y in {0,1,...,10}
+            \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
     \end{tikzpicture}
     \end{center}
-Mark the relative minimum at $x=3$ and label it as an ordered pair. \\[1cm]
-Is $x-4$ a factor of $f(x)$? Justify your answer.
+    \begin{enumerate}
+        \item Graph the line $y=4$. Mark the intersection of the line with $f$ and label it as an ordered pair, rounded \emph{the nearest whole number}.
+        \item The function $f(x)$ models the growth of an investment. Explain what the values of $2$ and $0.12$ represent in the context of the investment. \vspace{4cm}
+        \item How long will the investment take to double? 
+    \end{enumerate}
 
 \end{enumerate}
 \end{document}
