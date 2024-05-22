@@ -110,12 +110,12 @@ AII-F.BF.2: Write arithmetic and geometric sequences both recursively and with a
 For a geometric series:
 $$\sum_{k=1}^{n} a_k = a_1 + a_2 + \ldots + a_n = a_1 \left( \frac{1-r^n}{1-r} \right)$$
 
-\item Write a recursive formula for the sequence 2, 5, 8, 11, $\ldots$ \vspace{3cm}
+\item Write a recursive formula for the sequence 16, 8, 4, 2, $\ldots$ \vspace{3cm}
 
-\item Write an explicit formula for the sequence $14 \frac{1}{4}$, $8 \frac{3}{4}$, $3 \frac{1}{4}$, $-2 \frac{1}{4}$, $\ldots$ \vspace{3cm}
+\item Write an explicit formula for the sequence $1 \frac{1}{2}$, $4 \frac{1}{2}$, $13 \frac{1}{2}$, $40 \frac{1}{2}$, $\ldots$ \vspace{3cm}
 
 
-\item Given the sequence beginning  2, 6, 18, 54, $\ldots$, find the sum of the first 12 terms. \vspace{3cm}
+\item Given the sequence beginning  $-4$, 6, $-9$, $13 \frac{1}{2}$, $\ldots$, find the sum of the first 9 terms. \vspace{3cm}
 
 F.LE.2: Construct a linear or exponential function symbolically given: a graph, a description of the relationship, or two input-output pairs (including from a table).
 \item Complete the table for $f(x)$ and write an explicit formula for the exponential function.
@@ -124,7 +124,7 @@ F.LE.2: Construct a linear or exponential function symbolically given: a graph, 
         \hline
         $x$ & 0 & 1 & 2 & 3 & 4 \\
         \hline
-        $f(x)$ & 10 & 20 & & & \\[0.25cm]
+        $f(x)$ & 12 & 18 & & & \\[0.25cm]
         \hline
     \end{tabular}
     \end{center}
@@ -146,23 +146,24 @@ F.LE.2: Construct a linear or exponential function symbolically given: a graph, 
         \item Add totals to the table.
         \item Overall, what was the least favorite selection? \vspace{1cm}
         \item What percentage of the overall survey are middle school students? \vspace{2cm}
-        \item Complete the missing values in the table of proportions rounded to \emph{the nearest thousandth}.
+        \item What percentage of the middle school students prefer chicken? \vspace{2cm}
+        \item Complete the missing proportions in the table rounded to \emph{the nearest thousandth}.
     \end{enumerate}
     \begin{center}
         \begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
             \hline
             Class & Hot dog & Hamburger & Chicken & \quad Total\\
             \hline
-            Middle school  & & & & \\[0.25cm]
+            Middle school & 0.185 & 0.111 & 0.074 & 0.370 \\[0.25cm]
             \hline
-            High School &  & & & \\[0.25cm]
+            High School &  & 0.296 & 0.111 & 0.630 \\[0.25cm]
             \hline
-            Total & & & & \\[0.25cm]
+            Total & 0.407 & 0.185 & & 1.000 \\[0.25cm]
             \hline
         \end{tabular}
     \end{center} 
 
-\item Determine the average rate of change, in mph, from one to four hours on the graph.
+\item Determine the average rate of change, in mph, from zero to three hours on the graph.
     \begin{flushright}
         \begin{tikzpicture}[x=1cm, y=0.075cm, xscale=1.5]
             \draw [thin, color=lightgray, xstep=1cm,ystep=0.75cm] (0,0) grid (4,51);
@@ -172,19 +173,19 @@ F.LE.2: Construct a linear or exponential function symbolically given: a graph, 
                 \draw (\x cm,5pt) -- (\x cm,-5pt) node[below] {$\x$};
             \foreach \y in {0,10,...,50}
                 \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
-            \draw [thick, ->, smooth,domain=0.:4.2] plot(\x,{6.3*(4^(\x/3))});
-            \fill (1,10) ellipse [x radius=1.33pt, y radius=2pt];
-            \fill (4,40) ellipse [x radius=1.33pt, y radius=2pt];
+            \draw [thick, ->, smooth,domain=0.:4.2] plot(\x,{10*(3^(\x/3))});
+            \fill (0,10) ellipse [x radius=1.33pt, y radius=2pt];
+            \fill (3,30) ellipse [x radius=1.33pt, y radius=2pt];
         \end{tikzpicture}
         \end{flushright}
 \newpage
 AII-F.LE.2: Construct a linear or exponential function symbolically given: a graph, a description of the relationship, or two input-output pairs (include reading these from a table).
 
-\item Given the cubic function $f(x) = x^3-3x^2+x-3$, graphed below.
+\item Given the cubic function $f(x) = -x^3+4x^2+x-4$, graphed below.
 \begin{enumerate}[itemsep=1cm]
     \item How many real solutions are their to the equation $f(x)=0$?
     \item Write down the real zeros of the function.
-    \item Over the interval $2 < x < 3$, is the function increasing, decreasing, or constant?
+    \item Over the interval $3 < x < 4$, is the function increasing, decreasing, or constant?
     \item Find the average rate of change of the function over the interval from point $A$ to point $B$. \vspace{2cm}
 \end{enumerate}
 \begin{center}
@@ -192,14 +193,14 @@ AII-F.LE.2: Construct a linear or exponential function symbolically given: a gra
         \draw[gray,thin] (-10,-9) grid (10,9);
         \draw [thick,<->] (-10.5,0)--(10.5,0) node [right] {$x$};
         \draw [thick,<->] (0,-9.5)--(0,9.5) node [above] {$f(x)$};
-        \draw [thick,<->] plot[smooth, domain=-1.15:3.6] (\x, {(\x*\x+1)*(\x-3)});
-        \fill (0,-3) circle[radius=0.15] node [above left] {$A(0,-3)$};
-        \fill (2,-5) circle[radius=0.15] node [below right] {$B(2,-5)$};
+        \draw [thick,<->] plot[smooth, domain=-1.6:4.3] (\x, {-(\x*\x-1)*(\x-4)});
+        \fill (1,0) circle[radius=0.15] node [below right] {$A(1,0)$};
+        \fill (3,8) circle[radius=0.15] node [right] {$B(3,8)$};
     \end{tikzpicture}
     \end{center}
 
 \newpage
-\item Go through the steps to factor by grouping $f(x) = x^3+4x^2-4x-16$ \vspace{10cm}
+\item Factor the function $f(x) = x^3+4x^2-4x-16$ over the set of integers. \vspace{10cm}
 
 \item Given the function $f(x) = x^3-2x^2-9x+18$, find the value of $f(2)$.\\[5cm]
 Now identify the correct statement.
@@ -211,7 +212,7 @@ Now identify the correct statement.
 \end{enumerate}
 
 \newpage
-\item Graph the continuous exponential function $f(x) = 2e^{0.12x}$ on the grid below. 
+\item Graph the continuous exponential function $f(x) = 3e^{0.10x}$ on the grid below. 
 \begin{center}
     \begin{tikzpicture}[scale=1]
         \draw[gray,thin] (0,0) grid (10,10);
@@ -224,8 +225,8 @@ Now identify the correct statement.
     \end{tikzpicture}
     \end{center}
     \begin{enumerate}
-        \item Graph the line $y=4$. Mark the intersection of the line with $f$ and label it as an ordered pair, rounded \emph{the nearest whole number}.
-        \item The function $f(x)$ models the growth of an investment. Explain what the values of $2$ and $0.12$ represent in the context of the investment. \vspace{4cm}
+        \item Graph the line $y=6$. Mark the intersection of the line with $f$ and label it as an ordered pair, rounded \emph{the nearest whole number}.
+        \item The function $f(x)$ models the growth of an investment. Explain what the values of $3$ and $0.10$ represent in the context of the investment. \vspace{4cm}
         \item How long will the investment take to double? 
     \end{enumerate}
 
