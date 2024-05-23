@@ -141,7 +141,7 @@ Write an explicit formula for the sequence. \vspace{2cm}
             \draw [thin, color=lightgray, xstep=1cm,ystep=0.5cm] (0,0) grid (4,51);
             \draw [thick, ->] (0,0) -- (+4.3,0) node [below]{$x$};
             \draw [thick, ->] (0,0) -- (0,53) node [right]{$y$};        
-            \foreach \x in {0,1,...,4}
+            \foreach \x in {1}
                 \draw (\x cm,5pt) -- (\x cm,-5pt) node[below] {$\x$};
             \foreach \y in {0,10,...,50}
                 \draw[shift={(0,\y)}] (2pt,0pt)--(-2pt,0pt) node[left]{$\y$};
@@ -152,45 +152,45 @@ Write an explicit formula for the sequence. \vspace{2cm}
         \end{flushright}
     \end{multicols}
 \newpage
-AII-F.LE.2: Construct a linear or exponential function symbolically given: a graph, a description of the relationship, or two input-output pairs (include reading these from a table).
+%AII-F.LE.2: Construct a linear or exponential function symbolically given: a graph, a description of the relationship, or two input-output pairs (include reading these from a table).
 
-\item Given the cubic function $f(x) = -x^3+4x^2+x-4$, graphed below.
-\begin{enumerate}[itemsep=1cm]
-    \item How many real solutions are their to the equation $f(x)=0$?
-    \item Write down the real zeros of the function.
-    \item Over the interval $3 < x < 4$, is the function increasing, decreasing, or constant?
-    \item Find the average rate of change of the function over the interval from point $A$ to point $B$. \vspace{2cm}
+\item A manufacture of portable speakers finds that its profit varies depending on the number of speakers it makes. The profit, $p(x)$, in thousands of dollars as a function of the number of speakers, $x$, in thousands is modeled by $$p(x) = -x^3+7x^2+6x-25$$
+\begin{enumerate}
+    \item Graph $y=p(x)$, over the interval $0 \leq x \leq 8$ on the set of axes below.
+    \item Over the given interval, state the coordinates of the maximum of $p$ rounding all values to the \emph{nearest integer}. Explain what the point means in terms of the number of speakers and profit. \vspace{3cm}
 \end{enumerate}
 \begin{center}
-    \begin{tikzpicture}[scale=0.5]
-        \draw[gray,thin] (-10,-9) grid (10,9);
-        \draw [thick,<->] (-10.5,0)--(10.5,0) node [right] {$x$};
-        \draw [thick,<->] (0,-9.5)--(0,9.5) node [above] {$f(x)$};
-        \draw [thick,<->] plot[smooth, domain=-1.6:4.3] (\x, {-(\x*\x-1)*(\x-4)});
-        \fill (1,0) circle[radius=0.15] node [below right] {$A(1,0)$};
-        \fill (3,8) circle[radius=0.15] node [right] {$B(3,8)$};
+    \begin{tikzpicture}[yscale=0.1]
+        \draw[gray,thin, xstep=1cm,ystep=10cm] (-3,-41) grid (10,80);
+        \draw [thick,<->] (-3.5,0)--(10.5,0) node [right] {$x$};
+        \draw [thick,<->] (0,-45)--(0,85) node [above] {$y$};
+        \foreach \x in {1}
+            \draw[thick] (\x cm,50pt) -- (\x cm,-50pt) node[below] {$\x$};
+        \foreach \y in {20}
+            \draw[thick] (4pt,\y cm)--(-4pt,\y cm) node[left]{$\y$};
+        %\draw [thick,<->] plot[smooth, domain=-2.2:8] (\x, {-(\x*\x*\x)+7*(\x*\x)+6*(\x)-25});
     \end{tikzpicture}
     \end{center}
 
 \newpage
-\item Factor the function $f(x) = x^3+4x^2-4x-16$ over the set of integers. \vspace{10cm}
+\item Over the set of integers, factor the function $f(x) = x^4-5x^2+4$. \vspace{10cm}
 
-\item Given the function $f(x) = x^3-2x^2-9x+18$, find the value of $f(2)$.\\[5cm]
+\item Given the function $P(x) = x^3-3x^2-2x+4$, find the value of $P(-1)$ and $P(1)$.\\[5cm]
 Now identify the correct statement.
 \begin{enumerate}
-    \item $f(2)=0$ and $x-2$ is a factor of $f(x)$.
-    \item $f(2)=0$ and $x-2$ is not a factor of $f(x)$.
-    \item $f(2) \ne 0$ and $x-2$ is a factor of $f(x)$.
-    \item $f(2) \ne 0$ and $x-2$ is not a factor of $f(x)$.
+    \item $(x-1)$ is a factor because $P(-1)=2$.
+    \item $(x+1)$ is a factor because $P(-1)=2$.
+    \item $(x+1)$ is a factor because $P(1)=0$.
+    \item $(x-1)$ is a factor because $P(1)=0$.
 \end{enumerate}
 
 \newpage
-\item Graph the continuous exponential function $f(x) = 3e^{0.10x}$ on the grid below. 
+\item An investment of \$4000 earns a continuous interest rate of 8\%. On the axes below, graph the value of the investment $v(t)$ in thousands of dollars versus time $t$ in years. 
 \begin{center}
     \begin{tikzpicture}[scale=1]
         \draw[gray,thin] (0,0) grid (10,10);
-        \draw [thick,->] (0,0)--(10.5,0) node [right] {$x$};
-        \draw [thick,->] (0,0)--(0,10.5) node [above] {$f(x)$};
+        \draw [thick,->] (0,0)--(10.5,0) node [right] {$t$};
+        \draw [thick,->] (0,0)--(0,10.5) node [above] {$v(t)$};
         \foreach \x in {0,1,...,10}
             \draw (\x cm,5pt) -- (\x cm,-5pt) node[below] {$\x$};
         \foreach \y in {0,1,...,10}
@@ -198,9 +198,8 @@ Now identify the correct statement.
     \end{tikzpicture}
     \end{center}
     \begin{enumerate}
-        \item Graph the line $y=6$. Mark the intersection of the line with $f$ and label it as an ordered pair, rounded \emph{the nearest whole number}.
-        \item The function $f(x)$ models the growth of an investment. Explain what the values of $3$ and $0.10$ represent in the context of the investment. \vspace{4cm}
-        \item How long will the investment take to double? 
+        \item Find the value of the investment after 5 years rounding to the \emph{nearest dollar}. \vspace{3cm}
+        \item Find the time it will take the investment to double in value, rounded to the \emph{nearest tenth of a year}. 
     \end{enumerate}
 
 \newpage
