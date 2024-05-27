@@ -85,10 +85,10 @@ State an exponential regression equation to model these data, rounding all value
 \item Graph $c(x) = -9(3)^{x-4} + 2$ on the axes below. %4 points January 2023 Regents
     \begin{center}
     \begin{tikzpicture}[scale=0.7]
+        \draw[thin,gray] (-10,-10) grid (10,10);
         \draw[thick,->] (-10,0) -- (10.5,0) node[below] {$x$};
         \draw[thick,->] (0,-10) -- (0,10.5) node[above] {$c(x)$};
-        \draw[thin,gray!50] (-10,-10) grid (10,10);
-        %\draw[blue, thick, domain=-10:4.1, samples=100] plot (\x, {-9*(3^(\x-4)) + 2});
+        %\draw[<->,blue, thick, domain=-10.3:4.3, samples=100] plot (\x, {-9*(3^(\x-4)) + 2});
     \end{tikzpicture}
     \end{center}
     Describe the end behavior of $c(x)$ as $x$ approaches positive infinity. \\[2cm]
@@ -327,6 +327,65 @@ Which statement about the account is correct?
     \item Determine algebraically, to the nearest year, how long it will take for \(\frac{1}{10}\) of this substance to remain.
 \end{enumerate}
 
+% January 2019 Regents - Problem 6
+\item Julia deposits \$2000 into a savings account that earns 4\% interest per year. The exponential function that models this savings account is \( y = 2000(1.04)^t \), where \( t \) is the time in years. Which equation correctly represents the amount of money in her savings account in terms of the monthly growth rate?
+\begin{enumerate}
+    \item \( y = 166.67(1.04)^{0.12t} \)
+    \item \( y = 2000(1.01)^t \)
+    \item \( y = 2000(1.0032737)^{12t} \)
+    \item \( y = 166.67(1.0032737)^t \)
+\end{enumerate}
+
+% January 2019 Regents - Problem 17
+\item If \( f(x) = a^x \) where \( a > 1 \), then the inverse of the function is
+\begin{enumerate}
+    \item \( f^{-1}(x) = \log x a \)
+    \item \( f^{-1}(x) = \log_a x \)
+    \item \( f^{-1}(x) = a^{\log x} \)
+    \item \( f^{-1}(x) = x^{\log a} \)
+\end{enumerate}
+
+% January 2019 Regents - Problem 18
+\item Kelly-Ann has \$20,000 to invest. She puts half of the money into an account that grows at an annual rate of 0.9\% compounded monthly. At the same time, she puts the other half of the money into an account that grows continuously at an annual rate of 0.8\%. Which function represents the value of Kelly-Ann’s investments after \( t \) years?
+\begin{enumerate}
+    \item \( f(t) = 10,000(1.9)^t + 10,000e^{0.8t} \)
+    \item \( f(t) = 10,000(1.009)^t + 10,000e^{0.008t} \)
+    \item \( f(t) = 10,000(1.075)^{12t} + 10,000e^{0.8t} \)
+    \item \( f(t) = 10,000(1.00075)^{12t} + 10,000e^{0.008t} \)
+\end{enumerate}
+
+% January 2019 Regents - Problem 20
+\item Sodium iodide-131, used to treat certain medical conditions, has a half-life of 1.8 hours. The data table below shows the amount of sodium iodide-131, rounded to the nearest thousandth, as the dose fades over time.
+\[
+\begin{array}{|c|c|c|c|c|c|}
+\hline
+\text{Number of Half Lives} & 1 & 2 & 3 & 4 & 5 \\
+\hline
+\text{Amount of Sodium Iodide-131} & 139.000 & 69.500 & 34.750 & 17.375 & 8.688 \\
+\hline
+\end{array}
+\]
+What approximate amount of sodium iodide-131 will remain in the body after 18 hours?
+\begin{enumerate}
+    \item 0.001
+    \item 0.136
+    \item 0.271
+    \item 0.543
+\end{enumerate}
+
+% January 2019 Regents - Problem 37
+\item Tony is evaluating his retirement savings. He currently has \$318,000 in his account, which earns an interest rate of 7\% compounded annually. He wants to determine how much he will have in the account in the future, even if he makes no additional contributions to the account.
+    \begin{enumerate}
+        \item Write a function, \( A(t) \), to represent the amount of money that will be in his account in \( t \) years.
+        \item Graph \( A(t) \) where \( 0 \leq t \leq 20 \) on the set of axes below.
+    \end{enumerate}
+    \begin{center}
+    \begin{tikzpicture}[scale=0.7]
+        \draw[thin,gray] (0,0) grid (20,20);
+        \draw[thick,->] (0,0) -- (20.5,0) node[below] {$x$};
+        \draw[thick,->] (0,0) -- (0,20.5) node[above] {$A(x)$};
+    \end{tikzpicture}
+    \end{center}
 
 \end{enumerate}
 \end{document}
