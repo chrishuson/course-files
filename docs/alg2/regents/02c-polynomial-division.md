@@ -1,34 +1,30 @@
 # Regents Algebra 2
 
-## Prep 18 - Polynomial division
+## Prep 20 - Exponential function equivalence
 
-Tuesday 28 May 2024
-Learning Target: I can work with the factors of a polynomial
-### Do Now: Find the factors of the polynomial
+Thursday 30 May 2024
+Learning Target: I can determine equivalent exponential function expresssions
 
-$\hspace{0.3cm}$ $2y+6x=3$
-$\hspace{0.5cm}$ $y+3x=2$
+### Do Now: WNBA basketball player heights
 
-How many solutions $(x,y)$ are there to the system of equations above?
-    A. Zero
-    B. One
-    C. Two
-    D. More than two
+The mean height is $\bar{x} = 72.8$ inches
+The standard deviation is $\sigma = 3.4$ inches
 
-Hint: There are multiple ways to solve a system: calculate/guess, make a data table, eliminate a variable, substitute a variable, graph the system.
-
-Lesson: The Relationships Among Linear Equations, Lines in the Coordinate Plane, and the Contexts They Describe
-Homework: Practice systems of equations SAT practice problems in Khan Academy
-__________
-
-### Multiple choice strategies
-
-Easy substitions, $x=0$, $x=1$, $x=-1$
-
-$2 x^3 - 8 x^2 + 2 x + 17 = 0$
-* The lines intersect in one point. In this case, the system has a unique solution.
-* The lines are parallel. In this case, the system has no solution.
-* The lines are identical. In this case, every point on the line is a solution,
-and so the system has infinitely many solutions.
+Britney Griner is 6 foot 9 inches tall. Is that exceptionally tall for the WNBA? How about Caitlyn Clark at 6 foot even?
 
 __________
+
+### An investment of \$1000 earns 16\% annual interest rate
+
+$\hspace{0.3cm}$ $P(t)=1000 (1.16)^t$
+$\hspace{0.3cm}$ $P(t)=1000 (1.04)^{4t}$
+$\hspace{0.3cm}$ $P(t)=1000 (1.0378)^{4t}$
+$\hspace{0.3cm}$ $P(t)=1000 e^{0.16t}$
+
+Match each equation with its description
+    A. A continuously compounded rate
+    B. A quarterly compounded
+    C. An annual rate
+    D. An approximation expressed as a quarterly rate
+
+Hint: Calculate $P(1)$
