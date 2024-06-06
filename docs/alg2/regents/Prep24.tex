@@ -108,6 +108,63 @@ $$P(t)=5000(1+\frac{0.035}{12})^{12t}$$
 \vspace{2cm}
 
 \newpage
+\subsubsection*{Prep \#24 Periodic functions}
+\item The function $f(x)= \sin x$ is shown on the graph below. 
+\begin{center}
+    \begin{tikzpicture}[xscale=2]
+        \draw[gray,thin] (0,-3) grid[xstep=pi/8] (6.3,3);
+        \draw [thick,->] (0,0)--(6.5,0) node [right] {$x$};
+        \draw [thick,->] (0,-3)--(0,3.5) node [right] {$y$};
+        \foreach \x/\xtext in {0.5*pi/$\frac{1}{2}\pi$, pi/$\pi$, 1.5*pi/$\frac{3}{2}\pi$,2*pi/$2\pi$}
+            \draw (\x,5pt) -- (\x,-5pt) node[below] {\xtext};
+        \foreach \y in {-3,...,3}
+            \draw (2pt,\y cm)--(-2pt,\y cm) node[left]{$\y$};
+        \draw [thick,->, domain=0:2*pi+0.25,smooth,samples=100] plot (\x,{sin(\x r)});
+    \end{tikzpicture}
+    \end{center}
+    \begin{enumerate}
+        \item A second periodic function $g(x)$ has an amplitude of 2. Graph $g(x)=2\sin x$ on the same set of axes as $f(x)$.
+        \item Find $g(\frac{3}{4}\pi)$ as an exact value. Mark the point on the graph and label it as an ordered pair.
+    \end{enumerate}
+
+\item Graph the function $f(x)= 3 \sin x +5$. Draw and label the midline of $f$, $y=5$.
+\begin{center}
+    \begin{tikzpicture}[xscale=2, yscale=0.8]
+        \draw[gray,thin] (0,0) grid[xstep=pi/8] (6.3,9);
+        \draw [thick,->] (0,0)--(6.5,0) node [right] {$x$};
+        \draw [thick,->] (0,0)--(0,9.5) node [right] {$y$};
+        \foreach \x/\xtext in {0.5*pi/$\frac{1}{2}\pi$, pi/$\pi$, 1.5*pi/$\frac{3}{2}\pi$,2*pi/$2\pi$}
+            \draw (\x,5pt) -- (\x,-5pt) node[below] {\xtext};
+        \foreach \y in {0,...,9}
+            \draw (2pt,\y cm)--(-2pt,\y cm) node[left]{$\y$};
+    \end{tikzpicture}
+    \end{center}
+
+\newpage
+\item A periodic function $f(x)$ is shown on the graph below.
+\begin{enumerate}
+    \item Draw and label as an equation the midline of $f$.
+    \item Mark the maximum and minimum points of $f$ over the graphed domain, and label them as ordered pairs.
+    \item Write down an equation for the function in the form $f(x)=A \sin x+D$. \vspace{2cm}
+
+\begin{center}
+    \begin{tikzpicture}[xscale=2, yscale=0.4]
+        \draw[gray,thin] (0,0) grid[xstep=pi/8,ystep=2] (6.3,20);
+        \draw [thick,->] (0,0)--(6.5,0) node [right] {$x$};
+        \draw [thick,->] (0,0)--(0,20.5) node [above] {$f(x)$};
+        \foreach \x/\xtext in {0.5*pi/$\frac{1}{2}\pi$, pi/$\pi$, 1.5*pi/$\frac{3}{2}\pi$,2*pi/$2\pi$}
+            \draw (\x,5pt) -- (\x,-5pt) node[below] {\xtext};
+        \foreach \y in {0,2,...,20}
+            \draw (2pt,\y cm)--(-2pt,\y cm) node[left]{$\y$};
+        \draw [thick,->, domain=0:2*pi+0.25,smooth,samples=100] plot (\x,{6*sin(\x r)+10});
+        \fill (2,{6*sin(2 r)+10}) ellipse (1pt and 5pt);
+        \fill (3,{6*sin(3 r)+10}) ellipse (1pt and 5pt);
+        \end{tikzpicture}
+    \end{center}
+    \item Find the average rate of change of $f(x)$ over the interval $2 < x < 3$ rounded to the \emph{nearest hundredth}.
+\end{enumerate}
+
+\newpage
 \item Write a recursive formula for the sequence 1.45, 2.05, 2.55, 3.05, $\ldots$ \vspace{3cm}
 
 
