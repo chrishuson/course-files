@@ -4,11 +4,10 @@ title: course-files
 
 # Dr. Huson's Math Courses at BECA
 
-[11th grade: Algebra 2](alg2)
+[10th grade: Geometry](geom)
 
-[12th grade: Career and Financial Management](cfm)
-
-[Modeling and Mathematics Applications](modeling)
+[11th grade: Precalculus (Algebra 2)](alg2)
+    
 
 -----
 
