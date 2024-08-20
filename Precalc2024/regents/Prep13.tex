@@ -1,0 +1,90 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{siunitx}
+
+\title{IB Mathematics}
+\author{Chris Huson}
+\date{May 2024}
+
+%\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{1cm} \,\\}
+\fancyhead[LO]{BECA/Huson/Algebra II: Regents Prep \\* 15 May 2024}
+
+\begin{document}
+
+\subsubsection*{Practice Regents problems \#13}
+AII-F.BF.6 Represent and evaluate the sum of a finite arithmetic
+or finite geometric series, using summation (sigma) notation. For geometric series:
+$$\sum_{k=1}^{n} a_k = a_1 + a_2 + \ldots + a_n = a_1 \left( \frac{1-r^n}{1-r} \right)$$
+
+\begin{enumerate}
+\item Given the sequence $-48$, $36$, $-27$, $20 \frac{1}{4}$, $\ldots$
+    %$\frac{3}{2}$, 3, $\frac{9}{2}$, 6, $\ldots$
+\begin{enumerate}[itemsep=2cm]
+    \item Determine whether the sequence is arithmetic, geometric, or neither. If appropriate, find the common difference $d$ or the common ratio $r$.
+    \item Write a recursive formula for the sequence.
+    \item Write an explicit formula for the sequence.
+    \item Find the sum of the first ten terms the sequence, rounded to \emph{the nearest hundredth}.
+\end{enumerate} \vspace{3cm}
+
+\item Apply the rules of exponents to answer each question. 
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\sqrt{25x^6} = 5x^a$. Find $a$.
+        \item Express with exponents: $\displaystyle \frac{4\sqrt[3]{x^{8}y}}{\sqrt{4x^{4}y^2}}$
+    \end{enumerate}
+\end{multicols}
+\vspace{3cm}
+
+\newpage
+AII-F.LE.2: Construct a linear or exponential function symbolically given: a graph, a description of the relationship, or two input-output pairs (include reading these from a table).
+
+\item Given the quartic function $f(x) = a(x-1)(x-2)(x+j)(x+k)$, graphed below.
+\begin{enumerate}[itemsep=1cm]
+    \item Is the leading coefficient $a$ positive or negative?
+    \item Write down the values of $j$ and $k$.
+    \item Over the interval $0 < x < 1$, is the function increasing, decreasing, or constant?
+    \item Find the average rate of change of the function over the interval from point $A$ to point $B$. \vspace{2cm}
+\end{enumerate}
+\begin{center}
+    \begin{tikzpicture}[scale=0.5]
+        \draw[lightgray,very thin] (-10,-9) grid (10,9);
+        \draw [thick,<->] (-10.5,0)--(10.5,0) node [right] {$x$};
+        \draw [thick,<->] (0,-9.5)--(0,9.5) node [above] {$f(x)$};
+        \draw [thick,<->] plot[smooth, domain=-3.3:2.5] (\x, {0.5*(\x-1)*(\x-2)*(\x+3)*(\x+1)});
+        \fill (-3,0) circle[radius=0.15] node [above left] {$A(-3,0)$};
+        \fill (-2,-6) circle[radius=0.15] node [below left] {$B(-2,-6)$};
+    \end{tikzpicture}
+    \end{center}
+
+\newpage 
+\item Go through the steps to factor by grouping $f(x) = x^3-4x^2-x+4$
+\begin{enumerate}[itemsep=1cm]
+    \item Use your calculator to find the zeros of the function.
+    \item Write down the factors of the function.
+    \item Write the final row and complete the grouping step by filling in the blanks.
+    \begin{align*}
+        f(x) &= x^3-4x^2-x+4 \\[0.5cm]
+             &= (x^3-4x^2)-(x-4) \\[0.5cm]
+             &= \underline{\hspace{1cm}}\;(x-4) - \underline{\hspace{1cm}}\;(x-4) \\[0.5cm]
+             &= (x^2-1)(x-4) \\[0.5cm]
+             &=
+        \end{align*}
+\end{enumerate}
+
+\item Go through the steps to factor by grouping $f(x) = x^3+2x^2-4x-8$
+
+\newpage
+\item Graph the function $f(x) = x^{3}-5x^{2}+3x+4$ over the domain $-1 \leq x \leq 4$. 
+\begin{center}
+    \begin{tikzpicture}[scale=0.65]
+        \draw[lightgray,very thin] (-10,-10) grid (10,10);
+        \draw [thick,<->] (-10.5,0)--(10.5,0) node [right] {$x$};
+        \draw [thick,<->] (0,-10.5)--(0,10.5) node [above] {$f(x)$};
+    \end{tikzpicture}
+    \end{center}
+Mark the relative minimum at $x=3$ and label it as an ordered pair. \\[1cm]
+Is $x-4$ a factor of $f(x)$? Justify your answer.
+
+\end{enumerate}
+\end{document}

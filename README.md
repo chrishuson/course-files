@@ -1,6 +1,6 @@
 # High school mathematics course files
 
-This repository hosts files for my high school mathematics courses. The Github Pages functionality renders the files as a website at <https://math.huson.com/course-files/>. The `/docs` directory contains this year's courses: Precalculus, Career Financial Management, and Modeling. Prior-year files are in the root directory.
+This repository hosts files for my high school mathematics courses. The Github Pages functionality renders the files as a website at <https://math.huson.com/course-files/>. The `/docs` directory contains this year's courses: Geometry and Precalculus (Algebra 2). Prior-year files are in the root directory.
 
 Most of the files are composed in markdown (class slides) or $\LaTeX$ (printed problem sets).
 
