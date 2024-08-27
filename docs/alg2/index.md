@@ -4,7 +4,6 @@ title: course-files
 
 ## Algebra 2 - 9th & 11th grades
 
-
 At BECA we use the Illustrative Mathematics curriculum. Lessons are designed to be student-centered and inquiry-based. Course materials can be found on the publisher Kendall Hunt's website here: [Illustrative Mathematics](https://im.kendallhunt.com/HS/students/3/index.html)
 
 Students use our Google Classroom for assignments, quizzes, and tests. Parents can follow their student's progress and grades on [Jumprope](https://jumpro.pe/).
@@ -21,56 +20,53 @@ Students use our Google Classroom for assignments, quizzes, and tests. Parents c
 
 ### Syllabus
 
-- Unit 1: Measurement and accuracy
-  - Use precision, rounding, and significant figures in calculations and measurements
-  - Apply right angle trigonometry to solve problems involving angles and lengths
-  - Use Graspable and Google slides to create and present mathematical models
-- Unit 2: Non-right angle trigonometry, 3D geometry
-  - Use sine and cosine rules to solve problems involving non-right triangles
-  - Calculate the area, volume, and surface area of various 3D shapes
-  - Use Geogebra 3D graphing to visualize and explore 3D geometry
-- Unit 3: Prior knowledge review and assessment
-  - Review and practice the essential skills and concepts of algebra, fractions, rounding, absolute value, scientific notation, exponents, radicals, metric system, systems, probability, statistics, sets, and Venn diagrams
-  - Use Casio calculator to perform various mathematical operations and functions
-- Unit 4: Descriptive statistics
-  - Organize and display data using frequency tables, central tendency, dispersion, box plots, and histograms
-  - Analyze and interpret data using descriptive statistics
-  - Use spreadsheets and jupyter notebooks to manipulate and visualize data
-- Unit 5: Linear functions
-  - Define and graph linear functions using slope-intercept, point-slope, and standard forms
-  - Identify and model arithmetic sequences using linear functions
-  - Design an amphitheater using linear functions and geometry
-- Unit 6: Correlation and regression
-  - Collect and plot bivariate data using scatter plots
-  - Measure the strength and direction of the relationship between two variables using correlation coefficient
-  - Find and interpret the line of best fit using regression analysis
-  - Use Desmos regression to create and explore linear models
-- Unit 7: Probability
-  - Calculate and interpret the probability of simple and compound events using fractions, decimals, percentages, and ratios
-  - Use the binomial and normal distributions to model discrete and continuous random variables
-  - Use simulations to estimate probabilities and compare outcomes
-- Unit 8: Modeling with polynomial functions
-  - Define and graph polynomial functions using standard, factored, and vertex forms
-  - Identify and model quadratic, cubic, and inverse variation functions using polynomial functions
-  - Compare the area and perimeter of different shapes using polynomial functions and geometry
-- Unit 9: Exponential models
-  - Define and graph exponential functions using base, exponent, and growth/decay factors
-  - Identify and model geometric sequences, compound interest, and logarithms using exponential functions
-  - Create and analyze a compound interest spreadsheet using exponential functions and finance
-- Unit 10: Trigonometric models
-  - Define and graph periodic functions using amplitude, period, phase shift, and vertical shift
-  - Use the unit circle to find the values of sine, cosine, and tangent for any angle
-  - Model cyclic functions in nature using periodic functions and trigonometry
-- Unit 11: Differential calculus
-  - Find and interpret the derivative of a function using limits, rules, and notation
-  - Use the derivative to find the slope and equation of a tangent line to a curve at any point
-  - Use the derivative to optimize a function subject to constraints using calculus and algebra
-  - Use Desmos tangent graphing to visualize and explore derivatives and optimization problems
-- Unit 12: Integral calculus
-  - Find and interpret the integral of a function using antiderivatives, rules, and notation
-  - Use the integral to find the area under a curve using calculus and geometry
-  - Use the fundamental theorem of calculus to relate derivatives and integrals
-  - Use Casio integration functions to calculate integrals numerically
+#### Unit 1: Sequences and Functions
+
+- Understand and use arithmetic and geometric sequences
+- Model situations using sequences and functions
+- Analyze and interpret functions in various forms
+
+#### Unit 2: Polynomials and Rational Functions
+
+- Understand and use polynomial functions
+- Analyze and interpret the behavior of polynomial functions
+- Explore rational functions and their properties
+
+#### Unit 3: Complex Numbers and Rational Exponents
+
+- Understand and apply properties of linear functions
+- Explore and model exponential growth and decay
+- Solve problems involving linear and exponential functions
+
+#### Unit 4: Trigonometric Functions
+
+- Understand and use trigonometric functions
+- Model periodic phenomena using trigonometric functions
+- Solve problems involving trigonometric functions
+
+#### Unit 5: Modeling with Functions
+
+- Use functions to model real-world situations
+- Analyze and interpret models to make predictions
+- Explore different types of functions and their applications
+
+#### Unit 6: Inferences and Conclusions from Data
+
+- Understand and apply concepts of statistics and probability
+- Analyze data to make inferences and draw conclusions
+- Use statistical methods to solve problems
+
+#### Unit 7:s of Probabil of Probability
+
+- Understand and apply basic concepts of probability
+- Calculate probabilities of compound events using various methods
+- Use probability to make informed decisions and predictions
+
+#### Unit 8: Polynomial and Rational Relationships
+
+- Explore relationships between polynomial and rational functions
+- Analyze and interpret the behavior of these functions
+- Solve problems involving polynomial and rational relationships
 
 ---
 BECA Mathematics, Dr. Huson - [Home](https://math.huson.com/) - [Algebra 2](../alg2) - [CFM](../cfm) - [Modeling](../modeling) - [About](https://math.huson.com/Contact)
