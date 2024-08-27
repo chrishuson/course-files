@@ -2,46 +2,24 @@
 title: course-files
 ---
 
-# Algebra 2 - 9th & 11th grades
+## Algebra 2 - 9th & 11th grades
 
-Primary materials are in the Google Classroom. Find supplementary materials here.
+
+At BECA we use the Illustrative Mathematics curriculum. Lessons are designed to be student-centered and inquiry-based. Course materials can be found on the publisher Kendall Hunt's website here: [Illustrative Mathematics](https://im.kendallhunt.com/HS/students/3/index.html)
+
+Students use our Google Classroom for assignments, quizzes, and tests. Parents can follow their student's progress and grades on [Jumprope](https://jumpro.pe/).
+
+### Supply list
+
+- Composition book
+- Pocket folder, looseleaf
+- Pencils & pens
+- Ruler
+- Calculator (recommended: [Casio fx-9750GIII](https://www.casio.com/us/scientific-calculators/product.FX-9750GIII/) but other graphing calculators are acceptable)
 
 [Routines and expectations](01-Sequences/00-Slides_Routines.pdf)
 
-[Lesson 1: Measurement and accuracy](01-Sequences/1-01Area-calcs)
-
-[Lesson 2: Geometric sequences](01-Sequences/1-02Sequences)  
-[homework](IM/Algebra2-1-2-Lesson-curated-practice-problem-set.pdf)
-
-[Lesson 3: Geometric sequences homework](IM/Algebra2-1-3-Lesson-curated-practice-problem-set.pdf)
-
-[Lesson 4: Geometric sequences homework](IM/Algebra2-1-4-Lesson-curated-practice-problem-set.pdf)
-
-[Lesson 5: Geometric sequences homework](IM/Algebra2-1-5-Lesson-curated-practice-problem-set.pdf)
-
-[Quiz: Sequences challenge problems](01-Sequences/1-5Quiz_sequences)
-
-[Quiz results](01-Sequences/1-5Quiz_results.pdf)
-
-[Lesson 6: Geometric sequences homework](IM/Algebra2-1-6-Lesson-curated-practice-problem-set.pdf)
-
-[Lesson 7: Geometric sequences homework](IM/Algebra2-1-7-Lesson-curated-practice-problem-set.pdf)
-
-[Lesson 8: Geometric sequences homework](IM/Algebra2-1-8-Lesson-curated-practice-problem-set.pdf)
-
-[Lesson 9: Geometric sequences homework](IM/Algebra2-1-9-Lesson-curated-practice-problem-set.pdf)
-
-[Lesson 10: Geometric sequences homework](IM/Algebra2-1-10-Lesson-curated-practice-problem-set.pdf)
-
-[PreQuiz: Sequences and fractions](01-Sequences/1-9Test_sequences)
-
-[Lesson 11: Geometric sequences homework](IM/Algebra2-1-11-Lesson-curated-practice-problem-set.pdf)
-
-[Review for test](01-Sequences/1-12Sequences-review)
-
-[PreTest](01-Sequences/1-12PreTest-sequences)
-
-[Unit plan](plan) [(pdf)](plan.pdf)
+### Syllabus
 
 - Unit 1: Measurement and accuracy
   - Use precision, rounding, and significant figures in calculations and measurements
