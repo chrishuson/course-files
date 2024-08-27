@@ -1,0 +1,88 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 13 Sept 2022}
+
+\begin{document}
+
+\subsubsection*{1.4 Homework: Midpoints and bisectors}
+\begin{enumerate}
+\item Line segments that have the same length are $\rule{4cm}{0.15mm}$. \bigskip
+
+\item The length of the segment shown below is 10 centimeters. Bisect $\overline{AB}$ with point $M$. (Measure and mark it exactly. Label point $M$ and make the hash marks.) \par \bigskip
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[thick, -] (0,0)--(10,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[above]{$A$};
+      \draw[fill] (10,0) circle [radius=0.05] node[above]{$B$};
+    \end{tikzpicture} 
+  \end{center} \bigskip
+
+  \item Point $G$ bisects $\overline{FH}$, with $FG=4x-3$, $GH=13$. Find $x$. (remember to check) \par \medskip
+    \begin{tikzpicture}
+        \draw[fill] (0,0) circle [radius=0.05] node[below]{$F$};
+        \draw[-, thick] (0,0)--(8,0);
+        \draw[fill] (4,0) circle [radius=0.05] node[below]{$G$};
+        \draw[fill] (8,0) circle [radius=0.05] node[below]{$H$};
+        \node at (2,0.5) [above]{$4x-3$};
+        \node at (6,0.5) [above]{$13$};
+        \draw (1.8,-0.2)--(1.9,0.2);
+        \draw (2.1,-0.2)--(2.2,0.2);
+        \draw (5.8,-0.2)--(5.9,0.2);
+        \draw (6.1,-0.2)--(6.2,0.2);
+    \end{tikzpicture} \vspace{4cm}
+
+\item Given $M$ is the midpoint of $\overline{PQ}$, $PM=2x-2$, $MQ=14$.
+    \begin{enumerate}
+        \item Mark the diagram with the values and tick marks
+        \item Write an equation and solve for $x$
+        \item Check your result
+    \end{enumerate} \bigskip
+    \begin{center}
+    \begin{tikzpicture}
+        \draw [fill] (0,0) circle [radius=0.05] node[below]{$P$};
+        \draw [-, thick] (0,0)--(7,0);
+        \draw [fill] (3.5,0) circle [radius=0.05] node[below]{$M$};
+        \draw [fill] (7,0) circle [radius=0.05] node[below]{$Q$};
+    \end{tikzpicture}
+    \end{center}
+
+\newpage
+\item Given $\overline{DEF}$, $DE=3 \frac{1}{3}$, and $EF=1$. Find ${DF}$ (expressed as a mixed fraction). \par \bigskip
+  \begin{tikzpicture}
+    \draw [-, thick] (1,0)--(7,0);
+    \draw [fill] (1,0) circle [radius=0.05] node[below]{$D$};
+    \draw [fill] (5,0) circle [radius=0.05] node[below]{$E$};
+    \draw [fill] (7,0) circle [radius=0.05] node[below]{$F$};
+  \end{tikzpicture}  \vspace{1cm}
+
+\item The diagram shows $\overline{JKL}$ with $JK=4x+5$, $KL=x+1$, $JL=16$. Find ${x}$.
+  \begin{center}
+  \begin{tikzpicture}
+      \draw [-, thick] (0,0)--(9,0);
+      \draw [fill] (0,0) circle [radius=0.05] node[below]{$J$};
+      \draw [fill] (7,0) circle [radius=0.05] node[below]{$K$};
+      \draw [fill] (9,0) circle [radius=0.05] node[below]{$L$};
+      \node at (3.5,0) [above]{$4x+5$};
+      \node at (8,0) [above]{$x+1$};
+      \draw [<->, dashed] (0,-1)--(9,-1);
+      \node at (4.5,-1) [below]{$16$};
+  \end{tikzpicture}
+  \end{center} \vspace{6cm}
+
+\item New York's Central Park in Manhattan runs from 59th Street in Midtown to 110th Street in Harlem. The park's streets are diagrammed below. \par
+  \begin{tikzpicture}[scale=0.11]
+    \draw[->] (0,0)--(125,0) node[above=5pt]{\emph{north}};
+    \foreach \x in {0,10,...,120}
+      \draw[shift={(\x,0)}] (0pt,-16pt)--(0pt,16pt)node[below=5pt]{$\x$};
+      \draw[fill] (59,0) circle [radius=0.5] node[above=5pt]{59th};
+      \draw[fill] (110,0) circle [radius=0.5] node[above=5pt]{110th};
+  \end{tikzpicture}
+  \begin{enumerate}[itemsep=2cm]
+    \item How many blocks long is the park in the north-south direction?
+    \item The Metropolitan Museum of Art (the ``Met'') runs from 80th Street to 84th Street on the east side of the park. Is the Met located in the southern half of the park, the northern part, or in the middle? Justify your answer.
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}

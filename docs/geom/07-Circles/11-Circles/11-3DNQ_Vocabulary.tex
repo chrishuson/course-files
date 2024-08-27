@@ -1,0 +1,92 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 11: Circle angles, sectors, arcs \\* 1 March 2023}
+
+\begin{document}
+
+\subsubsection*{10.3 Vocabulary self-assessment: Circles (fill in the blank with the correct term)}
+ \begin{enumerate}
+  \item \textbf{Internal line segments:} Circle with center at point $P$, as shown.
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item  $\overline{AB}$ \quad \rule{3cm}{0.15mm} %Diameter
+        \item  $\overline{CP}$ \quad \rule{3cm}{0.15mm} %Radius
+        \item  $\overline{DE}$ \quad \rule{3cm}{0.15mm} %Chord
+        \item $\angle APC$ \quad \rule{3cm}{0.15mm} %Central angle 
+        \item  $\wideparen{AC}$ \quad \rule{3cm}{0.15mm} %(with measure $m\wideparen{AC} = 72^\circ$)Arc
+      \end{itemize}
+    \begin{tikzpicture}[scale=0.6]
+      \draw (0,0) circle[radius=3];
+      \draw [thick] (3,0) arc (0:72:3);
+      \draw [thick] (0:3) node[right] {$A$}--(180:3) node[left] {$B$};
+      \draw [thick] (0,0)--(72:3) node[above right] {$C$};
+      \draw [thick] (200:3) node[left] {$D$}--(300:3) node[below right] {$E$};
+      \fill (0,0) circle[radius=0.1] node[below]{$P$};
+      \draw (0.5,0) arc (0:72:0.5) node[right]{$\ 72^\circ$};
+      %\draw (35:5) node[right] {$\wideparen{AC}$};
+      %\draw (290:5) node[below] {$D$};
+    \end{tikzpicture}
+  \end{multicols}
+
+  \item \textbf{External lines:} Circle with center at point $O$, at right.
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item  $\overline{FGH}$ \quad \rule{3cm}{0.15mm} %Secant
+        \item  $\overline{OJ}$ \quad \rule{3cm}{0.15mm} %Radius
+        \item  $\overline{FJK}$ \quad \rule{3cm}{0.15mm} %Tangent
+        \item $J$ \quad \rule{3cm}{0.15mm} %Point of tangency 
+        %\item Note: $\overline{OJ} \perp \overline{FJK}$
+      \end{itemize}
+    \begin{tikzpicture}[scale=0.6, rotate=-20]
+      \draw (0,0) circle[radius=3];
+      \draw [thick, ->] (-7,-3) node[above] {$F$}--(4,-3) node[below left] {$K$};
+      \draw [thick] (-7,-3)--(72:3) node[above right] {$H$};
+      \draw [dashed] (0,-3) node[below] {$J$}--(0,0);
+      \fill (0,0) circle[radius=0.1] node[left]{$O$};
+      \fill (0,-3) circle[radius=0.1];
+      \draw (0,-3) ++(0.5,0)-- ++(0,0.5)--++(-0.5,0);
+      \draw (170:3.8) node[below] {$G$};
+    \end{tikzpicture}
+  \end{multicols}
+    
+  \item \textbf{Areas:} Circle with center at point $Q$.
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item  $\overline{RS}$ \quad \rule{3cm}{0.15mm} %Diameter
+        \item  $RST$ \quad \rule{3cm}{0.15mm} %Semi-circle
+        \item  $QUV$ \quad \rule{3cm}{0.15mm} %Sector
+      \end{itemize}
+    \begin{tikzpicture}[scale=0.5]
+      \draw [dashed](0,0) circle[radius=3];
+      \draw [thick] (0,0) ++(3,0) arc (0:180:3);
+      \draw [thick] (200:3) arc (200:240:3);
+      \draw [thick] (0:3) node[right] {$R$}--(180:3) node[left] {$S$};
+      \draw [thick] (0,0)--(200:3) node[left] {$U$};
+      \draw [thick] (0,0)--(240:3) node[below left] {$V$};
+      \fill (0,0) circle[radius=0.1] node[below right]{$Q$};
+      \draw (50:3.3) node[right] {$T$};
+    \end{tikzpicture}
+  \end{multicols}
+
+  \begin{multicols}{2}
+  \item \textbf{Polygons and angles in circles:} %Circle with triangle inscribed.
+      \begin{itemize}
+        \item  $\triangle XYZ$ \vspace{0.5cm} \quad \rule{3cm}{0.15mm} %Inscribed
+        \item  $\angle XYZ$ \quad \rule{3cm}{0.15mm} %Inscribed
+      \end{itemize} \hspace{1cm}
+    \begin{tikzpicture}[scale=0.5]
+      \draw (0,0) circle[radius=3];
+      \draw [thick] (140:3) ++(-60:0.75) arc (-60:-5:0.75);
+      \draw [thick] (30:3) node[right] {$X$}--(140:3) node[left] {$Y$}
+      --(280:3)node[below] {$Z$}--cycle;
+      %\draw [thick] (0,0)--(200:3) node[left] {$U$};
+      %\draw [thick] (0,0)--(240:3) node[below left] {$V$};
+      \fill (140:3) circle[radius=0.1];
+      %\draw (50:3.3) node[right] {$T$};
+    \end{tikzpicture}
+  \end{multicols}
+
+\end{enumerate}
+\end{document}

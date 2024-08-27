@@ -1,0 +1,121 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 3: Parallel lines and transversals\\* 18 October 2022}
+
+\begin{document}
+
+\subsubsection*{3.2 Homework: Mixed review}
+\begin{enumerate}
+\item Demonstrate your ability to classify angles and use standard terminology.
+\begin{enumerate}
+\item Which of the following are true with respect to the angle, m$\angle PQR$?
+  \begin{multicols}{2}
+    True \hspace{0.25cm} False \hspace{0.25cm} It is a right angle \par \bigskip
+    True \hspace{0.25cm} False \hspace{0.25cm} It's measure is $180^\circ$\par \bigskip
+    True \hspace{0.25cm} False \hspace{0.25cm} $\overrightarrow{QP}$ is perpendicular to $ \overrightarrow{QR}$ \par \bigskip
+    \columnbreak
+    \begin{tikzpicture}[scale=0.7, rotate=-20]
+      \draw[<->, thick] (4,0)--(0,0)--(0,3);
+      \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$Q$};
+      \draw[fill] (0,2) circle [radius=0.05] node[right]{$P$};
+      \draw[fill] (3,0) circle [radius=0.05] node[above]{$R$};
+    \end{tikzpicture}
+  \end{multicols}
+  \item What is the sum of the degree measures of this linear pair, $\angle ABD$ and $\angle CBD$?
+  \begin{center}
+    \begin{tikzpicture}[scale=.8, rotate=0]
+      \draw  [<->, thick] (-3,0)--(3,0);
+      \draw[->, thick] (0,0)--(2, 1) node[right]{$D$};
+      \draw[fill] (-2,0) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (2,0) circle [radius=0.05] node[below]{$C$};
+    \end{tikzpicture}
+  \end{center}
+  \item The given angle $\angle UVW$ is which of the following: acute, obtuse, or right?
+  \begin{center}
+    \begin{tikzpicture}[scale=.8]
+      \draw  [<->, thick] (-3,0)--(0,0)--(35:3);
+      \draw[fill] (-2,0) circle [radius=0.05] node[below]{$U$};
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$V$};
+      \draw[fill] (35:2) circle [radius=0.05] node[above left]{$W$};
+    \end{tikzpicture}
+  \end{center}
+  \end{enumerate}
+
+
+\item A linear pair is formed by two angles, m$\angle RUT = 110^\circ$ and m$\angle SUT = 5x + 20$. \par \bigskip 
+  Write an equation, then solve for $x$. \vspace{0.5cm}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=1]
+        \draw[<->, thick]
+          (0:3) coordinate (a) node[below left] {$S$}
+          -- (0,0) coordinate (b) node[below] {$U$}
+          -- (65:3) coordinate (c) node[above right] {$T$}
+          pic["$5x + 20$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          {angle=a--b--c};
+          \draw[<-, thick]
+          (180:3) coordinate (d) node[below] {$R$}
+          -- (0,0) coordinate (e)
+          pic["$110^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          {angle=c--e--d};
+      \end{tikzpicture}
+    \end{flushright}
+
+\newpage
+\item Given m$\angle ABD = 4x-6$, m$\angle DBC = 5x+10$, and $m \angle ABC = 130^\circ$, as shown. \par \medskip
+  Model the situation with an equation, then solve for $x$. Check your solution for full credit.
+  \begin{flushright}
+      \begin{tikzpicture}[scale=2, rotate=0]
+        \draw[<->, thick]
+          (-10:1.5) coordinate (a) node[below left] {$C$}
+          -- (0,0) coordinate (b) node[below] {$B$}
+          -- (70:2) coordinate (c) node[above right] {$D$}
+          pic["$5x+10$", <->, draw=black, angle eccentricity=1.75, angle radius=1cm]
+          {angle=a--b--c};
+          \draw[<-, thick]
+          (120:1.75) coordinate (d) node[below left] {$A$}
+          -- (0,0) coordinate (e)
+          pic["$4x-6$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
+          {angle=c--e--d};
+      \end{tikzpicture}
+    \end{flushright}
+
+\item Given vertical angles, m$\angle APD = 4x+7$, m$\angle BPC = 6x-17$, as shown. \par \medskip
+  Find $x$. Check your solution for full credit.
+  \begin{flushright}
+    \begin{tikzpicture}[scale=1.6, rotate=-35]
+      \draw[<->, thick] 
+        (0:-2)node[above right]{$A$}--
+        (0:2)node[below left]{$C$};
+      \draw[<->, thick] 
+        (60:-2)node[above left] {$D$}--node[below]{$P$}
+        (60:2)node[below right]{$B$};
+      \node at (30:1.2){$6x-17$};
+      \node at (30:-1.2){$4x+7$};
+    \end{tikzpicture} 
+    \end{flushright}
+   
+\item In the diagram shown, $\overrightarrow{BD} \perp \overleftrightarrow{ABC}$ with m$\angle DBE = 7x-1^\circ$ and m$\angle EBC = 6x^\circ$. 
+  Find $x$. Show the check for full credit. \par \medskip
+      \begin{tikzpicture}[scale=1]
+        \draw[<->, thick]
+          (0:5) coordinate (a) node[below left] {$C$}
+          -- (0,0) coordinate (b) node[below] {$B$}
+          -- (40:5) coordinate (c) node[below right] {$E$}
+          pic["$6x$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          {angle=a--b--c};
+          \draw[<-, thick]
+          (90:4) coordinate (d) node[right] {$D$}
+          -- (0,0) coordinate (e)
+          pic["$7x-1$", <->, draw=black, angle eccentricity=1.5, angle radius=1.5cm]
+          {angle=c--e--d};
+          \draw[->, thick] (0,0)--(-180:2) node[below right]{$A$};
+          \draw (0,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
+      \end{tikzpicture}
+
+
+\end{enumerate}
+\end{document}

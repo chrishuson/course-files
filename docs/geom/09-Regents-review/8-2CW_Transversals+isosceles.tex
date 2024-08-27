@@ -1,0 +1,217 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 8: Year-to-date Regents review\\* 14 February 2023}
+
+\begin{document}
+
+\subsubsection*{8.2 Classwork: Isosceles triangles and transversals}
+\begin{enumerate}
+\item Given isosceles $\triangle ABC$ with $\overline{AC} \cong \overline{BC}$,  m$\angle A=70^\circ$. Find m$\angle B$ and m$\angle C$.
+\begin{flushright}
+    \begin{tikzpicture}[scale=0.7]
+  \draw[thick](0,0)--(4,0)--(2,6)--(0,0);
+  \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+  \draw[fill] (4,0) circle [radius=0.05] node[below]{$B$};
+  \draw[fill] (2,6) circle [radius=0.05] node[above right]{$C$};
+  \draw[thick] (0.8,3.1)--(1.2,2.9); %tick mark
+  \draw[thick] (2.8,2.9)--(3.2,3.1); %tick mark
+\end{tikzpicture}
+\end{flushright}
+
+\item Shown below is isosceles $\triangle DEF$. Mark the congruent legs $\overline{DF} \cong \overline{DE}$. If m$\angle F=65^\circ$ then find the other two angle measures.\\[0.5cm]
+  \begin{tikzpicture}
+    \draw[-, thick] (0,0) node[below]{$D$}--
+      (5,0) node[below]{$E$}--(2.5,4) node[above]{$F$}--cycle;
+  \end{tikzpicture}
+
+\item Given the triangle shown with congruent sides marked and external angle measuring $104^\circ$. Find the measures of the base angles 1 and 2, and the measure of the vertex angle, $\angle V$. \\[0.5cm]
+  \begin{tikzpicture}[scale=1]
+    \draw[->,thick] (0,0)--(-2,4)--(-4,0)--(3,0);
+    \draw[fill] (0,0) circle [radius=0.05] node[above right]{$104^\circ$};
+    \draw[fill] (-2,4) circle [radius=0.05] node[above right]{$V$};
+    \draw[thick] (-0.8,2.1)--(-1.2,1.9); %tick mark
+    \draw[thick] (-2.8,1.9)--(-3.2,2.1); %tick mark
+    \node at (-3.6,0.3){1};
+    \node at (-0.4,0.3){$2$};
+  \end{tikzpicture}
+  
+\newpage
+\item Given circle with center $Z$ and isosceles $\triangle XYZ$. m$\angle Z=100$. Find m$\angle Y$.\\
+    \begin{tikzpicture}
+      \draw  (0,0) circle [radius=3] node[above]{$Z$};
+      \draw[-, thick] (220:3) node[left]{$X$}--(0,0)
+        --(320:3) node[right]{$Y$}--cycle;
+      \node at (0,-0.6){$100^\circ$};
+      \draw[fill] (0,0) circle [radius=0.05];
+    \end{tikzpicture}
+
+\item Given two parallel lines and a transversal, as shown, with $m\angle 6 =  70^\circ$. Write down the value of each angle measure.
+  \begin{multicols}{3}
+    \begin{enumerate}[itemsep=0.5cm]
+      \item $m\angle 1 = $
+      \item $m\angle 2 = $
+      \item $m\angle 3 = $
+      \item $m\angle 4 = $
+      \item $m\angle 5 = $
+      \item $m\angle 6 = $
+      \item $m\angle 7 = $
+      \item $m\angle 8 = $
+    \end{enumerate}
+      \begin{tikzpicture}[scale=0.8]
+      \draw [<->, thick] (3,2)--(8,2);
+      \draw [<->, thick] (2,0)--(7,0);
+      \draw [<->, thick] (4,-1)--(5.5,3);
+      \node at (4.5,0.3) [left]{$5$};
+      \node at (4.5,0.3) [right]{$6$};
+      \node at (4.3,-0.3) [left]{$7$};
+      \node at (4.3,-0.3) [right]{$8$};
+      \node at (5.2,2) [above left]{$1$};
+      \node at (5.2,2) [above right]{$2$};
+      \node at (5,2) [below left]{$3$};
+      \node at (5,2) [below right]{$4$};
+    \end{tikzpicture}
+  \end{multicols}
+
+\item Given two parallel lines and a transversal, as shown. Write down each value, given that $m\angle 5 =  120^\circ$.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=0.5cm]
+      \item $m\angle 3 = $
+      \item $m\angle 2 = $
+      \item $m\angle 4 = 2x$. Find $x$
+    \end{enumerate}
+      \begin{tikzpicture}[scale=0.8]
+      \draw [<->, thick] (3,2)--(8,2);
+      \draw [<->, thick] (2,0)--(7,0);
+      \draw [<->, thick] (4,-1)--(5.5,3);
+      \node at (4.5,0.3) [left]{$5$};
+      \node at (4.5,0.3) [right]{$6$};
+      \node at (4.3,-0.3) [left]{$7$};
+      \node at (4.3,-0.3) [right]{$8$};
+      \node at (5.2,2) [above left]{$1$};
+      \node at (5.2,2) [above right]{$2$};
+      \node at (5,2) [below left]{$3$};
+      \node at (5,2) [below right]{$4$};
+    \end{tikzpicture}
+  \end{multicols}
+
+\newpage
+\item Given two parallel lines and a transversal, with $m\angle 4 = 3x$ and $m\angle 5 = x + 70$. \\ Write an equation, then solve for $x$.
+  \begin{flushright}
+    \begin{tikzpicture}[scale=1]
+      \draw [<->, thick] (3,2)--(8,2);
+      \draw [<->, thick] (2,0)--(7,0);
+      \draw [<->, thick] (4,-1)--(5.5,3);
+      \node at (4.5,0.3) [left]{$5$};
+      \node at (4.5,0.3) [right]{$6$};
+      \node at (4.3,-0.3) [left]{$7$};
+      \node at (4.3,-0.3) [right]{$8$};
+      \node at (5.2,2) [above left]{$1$};
+      \node at (5.2,2) [above right]{$2$};
+      \node at (5,2) [below left]{$3$};
+      \node at (5,2) [below right]{$4$};
+    \end{tikzpicture}
+  \end{flushright} \vspace{2cm}
+
+\item Given parallel lines $\overleftrightarrow{AB} \parallel \overleftrightarrow{CF}$, $m\angle BAE=75^\circ$ and $m\angle DAE=55^\circ$. \\[0.5cm]
+  Find $m\angle ADC = x$ and $m\angle AEF = y$.
+  \begin{flushright}
+  \begin{tikzpicture}[scale=1.]
+    \draw [<->, thick] (0,3)--(6.5,3) node[above left]{$B$};
+    \draw [<->, thick] (-1,0) node[below right]{$C$}--
+      (5,0)--
+      (6,0) node[below left]{$F$};
+    \draw [-, thick] (1,0) node[below]{$D$}--
+      (2.5,3) node[above]{$A$}--
+      (4.35,0) node[below]{$E$};
+    \node at (2.6,2.4)[below]{$55^\circ$};
+    \node at (2.9,2.8)[below right]{$75^\circ$};
+    \node at (1,0)[above left]{$x$};
+    \node at (4.4,0)[above right]{$y$};
+  \end{tikzpicture}
+  \end{flushright}
+
+\item Two parallel lines intersect a transversal. Given corresponding angles  m$\angle 1 = 4.4x - 63$ and m$\angle 2 = 2.8x+9$, find the measure of $\angle 1$. 
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.9]
+      \draw [<->, thick] (3,0)--(9,0);
+      \draw [<->, thick] (2,2)--(8,2);
+      \draw [<->, thick] (5,-1)--(3,3);
+      \node at (5.3, 2.25){m$\angle 1 = 4.4x - 63$};
+      \node at (6.1, 0.25){m$\angle 2 = 2.8x+9$};
+    \end{tikzpicture}
+    \end{flushright}
+
+\newpage
+\item In the diagram below, $\overline{FAD} \parallel \overline{EHC}$, and $\overline{ABH}$ and $\overline{BC}$ are drawn.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.7]
+      \draw [thick, <->] (0,0)--(10,0);
+      \draw [thick, <->] (0,3)--(10,3);
+      \draw [thick] (3,0)node[below]{$H$}--(6,3)node[above]{$A$};
+      \draw [thick] (4.4,1.4)node[above left]{$B$}--(8,0)node[below]{$C$};
+      \fill (0.5,0) circle [radius=0.08]node[below]{$E$};
+      \fill (0.5,3) circle [radius=0.08]node[above]{$F$};
+      \fill (9.5,3) circle [radius=0.08]node[above]{$D$};
+    \end{tikzpicture}
+    \end{center}
+  If $m\angle FAB = 48^\circ$ and $m\angle ECB = 18^\circ$, what is $m\angle ABC$?
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item $18^\circ$
+      \item $48^\circ$
+      \item $66^\circ$
+      \item $114^\circ$
+    \end{enumerate}
+  \end{multicols}
+
+\item In the diagram below, $\overline{AEFB} \parallel \overline{CGD}$, and $\overline{GE}$ and $\overline{GF}$ are drawn.
+\begin{center}
+  \begin{tikzpicture}[scale=0.7]
+    \draw [thick] (0,0)node[below]{$C$}--(10,0)node[below]{$D$};
+    \draw [thick] (0,3)node[above]{$A$}--(10,3)node[above]{$B$};
+    \draw [thick] 
+      (1.5,3)node[above]{$E$}--
+      (4,0)node[below]{$G$}--
+      (8,3)node[above]{$F$};
+  \end{tikzpicture}
+  \end{center}
+If $m\angle EFG = 32^\circ$ and $m\angle AEG = 137^\circ$, what is $m\angle EGF$?
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $11^\circ$
+    \item $43^\circ$
+    \item $75^\circ$
+    \item $105^\circ$
+  \end{enumerate}
+\end{multicols}
+
+\item In the diagram below, $\overline{AB} \parallel \overline{DEF}$, $\overline{AB}$ and $\overline{BD}$ intersect at $C$, $m\angle B = 43^\circ$, and $m\angle CEF = 152^\circ$.
+\begin{center}
+  \begin{tikzpicture}[scale=0.7]
+    \draw [->, thick] 
+      (0,0)node[below]{$E$}--
+      (-8,4)node[above left]{$A$}--
+      (-3.5,4)node[above right]{$B$}--
+      (-8,0)node[below]{$D$}--
+      (3,0)node[below left]{$F$};
+    \node at (-4.5, 2.7){$C$};
+    \node at (-4.4, 3.7){$43^\circ$};
+    \node at (0.8, 0.5){$152^\circ$};
+    \draw (0.4,0) arc (0:150:0.4);
+  \end{tikzpicture}
+  \end{center}
+Which statement is true?
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $m\angle D = 28^\circ$
+    \item $m\angle A = 43^\circ$
+    \item $m\angle ACD = 71^\circ$
+    \item $m\angle BCE = 109^\circ$
+  \end{enumerate}
+\end{multicols}
+
+
+\end{enumerate}
+\end{document}

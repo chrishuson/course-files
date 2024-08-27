@@ -1,0 +1,161 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 3: Parallel lines and transversals\\* 18 October 2022}
+
+\begin{document}
+
+\subsubsection*{3.2 Extension: Ratio partition of a line segment}
+%The distance formula: $\displaystyle d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$
+\begin{enumerate}
+\item Do Now: Dr. Huson's commute is from 80th Street to 164th Street. 
+    \begin{enumerate}
+        \item On what block is he half way? Mark it and label it with the street number.
+        \item On the way to work, mark and label the block when he is three-quarters of the way to BECA.
+    \end{enumerate}
+    \begin{tikzpicture}[scale=1.25]
+    \draw [<->] (-4.5,0)--(6.5,0);
+    \foreach \x in {-3,-1,...,5} %2 leading for diff!=1
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt);% node[below=5pt]  {$\x$};
+        \draw [fill] (-3,0) circle [radius=0.05] node[above] {home};
+        \draw [fill] (5,0) circle [radius=0.05] node[above] {BECA};
+        \node at (-3,0) [below]{80};
+        \node at (5,0) [below]{164};
+    \end{tikzpicture}
+    \vspace{3cm}
+
+\item Find each pair of numbers with the given sum.
+\begin{enumerate}
+    \item Example: Two numbers with a ratio of $3:1$ that sum to 20 are $15:5$.
+    \item $2:1$, sum 9 \vspace{1cm}
+    \item $1:1$, sum 100 \vspace{1cm}
+    \item $2:3$, sum 20 \vspace{1cm}
+\end{enumerate}
+
+\item Divide (partition) $\overline{AB}$, $A=-3$ and $B=6$, into three equal parts. Mark and label the dividing points $P$ and $Q$. \\
+    \begin{tikzpicture}
+    \draw [<->] (-4.5,0)--(7.5,0);
+    \foreach \x in {-4,...,7} %2 leading for diff!=1
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+        \draw [fill] (-3,0) circle [radius=0.05] node[above] {$A$};
+        \draw [fill] (6,0) circle [radius=0.05] node[above] {$B$};
+    \end{tikzpicture}
+    \vspace{0.5cm}
+
+\item Partition $\overline{MN}$, $M=-3$ and $N=5$, in the ratio $3:1$ with point $P$. \\
+\begin{tikzpicture}
+\draw [<->] (-7.5,0)--(7.5,0);
+\foreach \x in {-7,...,7} %2 leading for diff!=1
+    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+    \draw [fill] (-3,0) circle [radius=0.05] node[above] {$M$};
+    \draw [fill] (5,0) circle [radius=0.05] node[above] {$N$};
+\end{tikzpicture}    
+
+\newpage
+\item Simplify as a fraction each expression.
+\begin{multicols}{2}
+    \begin{enumerate}[itemsep=1cm]
+      \item $\frac{1}{2}+\frac{1}{3}=$
+      \item $\frac{1}{2} \times \frac{1}{3}=$
+    \end{enumerate}
+  \end{multicols} \vspace{1cm}
+
+\subsubsection*{Review: Scientific notation}
+\emph{By ``scientific notation'' we mean in the form $a \times 10^{k}$ where $1\leq a <10$ and $k$ is an integer.}
+\item Convert each value to scientific notation.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=1cm]
+      \item 40,000
+      \item 560,000
+    \end{enumerate}
+  \end{multicols} \vspace{1cm}
+
+\item Expand each value to regular numeric form. (i.e. an integer)
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=1cm]
+      \item $7 \times 10^{3}$
+      \item $2.5 \times 10^{4}$
+    \end{enumerate}
+  \end{multicols} \vspace{1cm}
+
+\item Calculate each product. Leave in exponential form.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=1cm]
+      \item $10^{3} \times 10^{3}$
+      \item $10^{2} \times 10^{6}$
+    \end{enumerate}
+  \end{multicols} \vspace{1cm}
+
+\item Calculate and write as scientific notation.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=1cm]
+      \item $400 \times 9.5^2-1100$
+      \item The mean distance of the earth to the moon, 92,00,000 miles.
+    \end{enumerate}
+  \end{multicols} \vspace{1cm}
+
+\item The dimensions of an official ping pong table are 9 feet by 5 feet. Express the area of a table in square \emph{inches}.
+
+\newpage
+    \item In the diagram below $\angle BOC = 8x$ and $\angle DOE = 3x+13$. \hfill CCSSM.8.G.B.5 \\Find $m\angle AOB$.
+    \vspace{0.25cm}
+    \begin{flushright}
+    \begin{tikzpicture}[scale=1.3, rotate=0]
+    \draw [<->, thick] (-40:3)--(0,0)--(140:3);
+    \draw [<->, thick] (-3,0)--(3,0);
+    \draw [->, thick] (0,0)--(0,3);
+    \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+    %\draw [fill] (-1,2.5) circle [radius=0.05] node[left ]{$B$};
+    \draw [fill] (140:2) circle [radius=0.05] node[below left]{$B$};
+    \draw [fill] (-2,0) circle [radius=0.05] node[below]{$A$}; 
+    \draw [fill] (0,0) circle [radius=0.05] node[below left]{$O$};
+    \draw [fill] (0,2) circle [radius=0.05] node[left]{$C$};
+    \draw [fill] (2,0) circle [radius=0.05] node[below]{$D$};
+    \draw [fill] (-40:2) circle [radius=0.05] node[below]{$E$};
+    \end{tikzpicture}
+    \end{flushright}
+
+\newpage
+\item The point $B$ is two thirds of the way from $A=-1$ to $C=5$. Find the coordinate of $B$. Mark and label $B$ on the graph of $\overleftrightarrow{AC}$. \\[1cm]
+  \begin{tikzpicture}
+    \draw [<->] (-4.5,0)--(7.5,0);
+    \foreach \x in {-4,...,7} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (-1,0) circle [radius=0.05] node[above] {$A$};
+      \draw [fill] (5,0) circle [radius=0.05] node[above] {$C$};
+  \end{tikzpicture}
+  \vspace{1cm}
+
+\item Point $P$ partitions $\overline{MN}$, $M=-4$ and $N=6$, in the ratio $3:2$. Find the value of point $P$. Mark and label $P$ on the graph. \\[1cm]
+\begin{tikzpicture}
+\draw [<->] (-7.5,0)--(7.5,0);
+\foreach \x in {-7,...,7} %2 leading for diff!=1
+    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+    \draw [fill] (-4,0) circle [radius=0.05] node[above] {$M$};
+    \draw [fill] (6,0) circle [radius=0.05] node[above] {$N$};
+\end{tikzpicture}
+
+\item Point $P$ partitions $\overline{MN}$, $M=-5$ and $N=7$, in the ratio $3:1$. Find the value of point $P$. Mark and label $P$ on the graph. \\[1cm]
+\begin{tikzpicture}
+  \draw [<->] (-7.5,0)--(7.5,0);
+  \foreach \x in {-7,...,7} %2 leading for diff!=1
+    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+    \draw [fill] (-5,0) circle [radius=0.05] node[above] {$M$};
+    \draw [fill] (7,0) circle [radius=0.05] node[above] {$N$};
+\end{tikzpicture}
+
+\item Point $P$ partitions $\overline{MN}$, $M=-6$ and $N=4$, in the ratio $1:4$. Find the value of point $P$. Mark and label $P$ on the graph. \\[1cm]
+\begin{tikzpicture}
+  \draw [<->] (-7.5,0)--(7.5,0);
+  \foreach \x in {-7,...,7} %2 leading for diff!=1
+    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+    \draw [fill] (-6,0) circle [radius=0.05] node[above] {$M$};
+    \draw [fill] (4,0) circle [radius=0.05] node[above] {$N$};
+\end{tikzpicture} \vspace{2cm}
+
+\item In the line segment $\overline{ABC}$, $\overline{AB}$ is twice as long as $\overline{BC}$. $AB=12x-6$ and $AC=15x+9$. Find $BC$.
+\vspace{5cm}
+
+\end{enumerate}
+\end{document}

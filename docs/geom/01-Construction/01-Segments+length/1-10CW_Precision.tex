@@ -1,0 +1,79 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 23 Sept 2022}
+
+\begin{document}
+
+\subsubsection*{1.10 Classwork: Precision and percent error}
+\emph{Write formula for percent error in your notebook}
+$$\epsilon = \left|\frac{v_A-v_E}{v_E}\right| \times 100\%$$
+\begin{enumerate}
+\item Round each value to the \emph{nearest thousandth}.
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item $e=2.7182818...$ \par (Euler's number)
+      \item $\pi$
+      \item $\phi = 1.618033989...$ \par (the golden ratio)
+      \item $\sqrt{3}$
+    \end{enumerate}
+  \end{multicols} \bigskip 
+
+\item Round each value to the nearest hundred thousand.
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item 1,694,251 \par \bigskip (population of the Manhattan)
+      \item 2,405,464 \par \bigskip (population of Queens)
+    \end{enumerate}
+  \end{multicols}
+
+\item Find the percent error for each approximation.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=4cm]
+      \item $\displaystyle \pi \approx \frac{355}{113}$ (\href{https://en.wikipedia.org/wiki/Zu_Chongzhi}{Zu's ratio})
+      \item $365 \text{ days} \approx 52 \text{ weeks}$
+      \item $2^{10} 
+      \approx 1000$ (kilobyte)
+      \item $1 \text{ gallon} \approx 4 \text{ liters}$ \par (use conversion table's value)    
+    \end{enumerate}
+  \end{multicols}
+
+\newpage
+\item Convert each measure. Show the multiplication by the appropriate conversion factor (fraction), including units. \par \smallskip
+  Example: Approximate the number of weeks in $T=2$ years.
+  $$T = 2 \,\mathrm{years} \times \displaystyle \frac{52 \,\mathrm{weeks}}{1 \,\mathrm{year}} = 104 \,\mathrm{weeks}$$  \medskip
+  \begin{enumerate}[itemsep=2cm]
+    \item Find the length in yards of a quarter-mile track.
+    \item Find the number of liters in a 15 gallon gas tank.
+  \end{enumerate} \vspace{2cm}
+
+\item Find the number of hours in 4 weeks. (multiply by two conversion factors, weeks to days, then days to hours) \vspace{2cm}
+
+\item Find the area of the equilateral triangle two ways and quantify the error.
+  \begin{multicols}{2}
+  \begin{enumerate}[itemsep=2cm]
+    \item Use the exact height of the triangle, $h=\sqrt{3}$.
+    \item Assume the height is the same as the base, $h=2$.
+    \item Calculate the percent error.
+  \end{enumerate}
+  \columnbreak
+  \begin{flushright}
+      \begin{tikzpicture}[scale=1.3]
+    \draw[thick] (0,0)--(3,0)--(60:3)--cycle;
+      \draw (1.4,-0.2)--(1.4,0.2);
+      \draw (1.6,-0.2)--(1.6,0.2);
+      \draw (53:1.4)--(68:1.4);
+      \draw (53:1.6)--(67:1.6);
+      \draw (28:2.4)--(28:2.8);
+      \draw (32:2.4)--(32:2.8);
+    \node at (1.5, -0.5){$b=2$};
+    \draw[<->,dashed] (3.3,0)--(3.3,1.5*1.732);
+    \node at (4,1.5){$h=\sqrt{3}$};
+  \end{tikzpicture}
+  \end{flushright}
+\end{multicols}
+  
+
+\end{enumerate}
+\end{document}

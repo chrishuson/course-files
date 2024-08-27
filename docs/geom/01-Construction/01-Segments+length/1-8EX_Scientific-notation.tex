@@ -1,0 +1,79 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 1: Segments, length, and area\\* 20 Sept 2022}
+
+\begin{document}
+
+\subsubsection*{1.8 Extension: Scientific notation}
+\emph{By ``scientific notation'' we mean in the form $a \times 10^{k}$ where $1\leq a <10$ and $k$ is an integer.}
+\begin{enumerate}
+\item Convert each value to scientific notation.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=1cm]
+      \item 5000
+      \item 12,000
+      \item 450
+      \item 1,060,000
+    \end{enumerate}
+  \end{multicols} \vspace{1cm}
+
+\item Expand each value to regular numeric form. (i.e. an integer)
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=1cm]
+      \item $9 \times 10^{2}$
+      \item $1.5 \times 10^{5}$
+      \item $6.22 \times 10^{3}$
+      \item $1.41 \times 10^{2}$
+    \end{enumerate}
+  \end{multicols} \vspace{1cm}
+
+\item Calculate each product. Leave in exponential form.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=1cm]
+      \item $10^{2} \times 10^{2}$
+      \item $10^{3} \times 10^{5}$
+    \end{enumerate}
+  \end{multicols} \vspace{1cm}
+
+\item Calculate and write as scientific notation.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=1cm]
+      \item $22.5 \times 14^2-700$
+      \item The mean distance of the earth to the moon, 384,000 kilometers.
+    \end{enumerate}
+  \end{multicols} \vspace{1cm}
+
+\item The dimensions of an American football field are 360 feet by 160 feet. Express the area of a football field in square feet in scientific notation.
+
+\newpage
+\item A compound shape composed of two rectangles is shown with dimensions marked, both having heights of 8.5 and with base lengths of 3 and 7 respectively.
+\begin{multicols}{2}
+  \begin{tikzpicture}
+    \draw[thick] (0,0) rectangle (6,5);
+    \draw[thick] (2,0) -- (2,5);
+    \node at (6.5,3){8.5};
+    \node at (1,-0.4){3};
+    \node at (4,-0.4){7};
+  \end{tikzpicture}
+  \begin{enumerate}
+    \item Find the perimeter of the smaller rectangle on the left. \vspace{2cm}
+    \item Find the total area of the combined rectangles
+    \end{enumerate}
+  \end{multicols} \vspace{1cm}
+
+\item Given $\overleftrightarrow{PQ}$ as shown on the number line. Divide segment $\overline{PQ}$ into five congruent segments by marking and labeling the points $R$, $S$, $T$, and $U$ on the numberline. \par \vspace{1cm}
+  \begin{tikzpicture}
+    \draw[<->] (-4.5,0)--(6.5,0);
+    \foreach \x in {-4,...,6}
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+    \draw[fill] (-4,0) circle [radius=0.05] node[above]{$P$};
+    \draw[fill] (6,0) circle [radius=0.05] node[above]{$Q$};
+  \end{tikzpicture} \vspace{1cm}
+
+\item Given $\overline{PQR}$, with $PQ=4x-4$, $QR=2x+3$, and $PR=5x+9$. Find ${PR}$. \par (show the check)
+
+
+\end{enumerate}
+\end{document}

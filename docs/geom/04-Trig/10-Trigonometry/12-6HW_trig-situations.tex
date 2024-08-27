@@ -1,0 +1,51 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 12: Trigonometry \\* 20 March 2023}
+
+\begin{document}
+
+\subsubsection*{12.6 Trigonometric situations \hfill HSG.SRT.C.8}
+\begin{enumerate}
+\item A pirate, who is two meters tall, is standing on a mast 8 meters tall. Looking down, the pirate sees an enemy ship 45 meters away.
+
+  Find the angle of depression to the nearest degree.
+  \begin{center}
+      \begin{tikzpicture}[scale=1.1]
+        \draw [thick] (10,0)--(0,0)--(10,2.0)--cycle;
+        \draw [dashed, <-] (5,2)--(10,2.0);
+        \draw [thick, ->] (8.5,2) arc [start angle=180, end angle=191.3, radius=1.5];
+        \node at (5.5,2)[below]{Angle of depression $ =\theta^\circ$};
+        \node at (10,1.2)[right]{$h=8+2$ meters};
+        \node at (6,0)[below]{$45 \,\rm{meters}$};
+        \node at (0,0)[below right]{Enemy ship};
+      \end{tikzpicture}
+    \end{center} \vspace{4cm}
+    
+\item A snowman is standing 6 meters away from the base of a set of monkey bars, looking up at a boy $x$ meters off the ground. The snowman is 1 meter tall and the angle of elevation of his view to the boy is $18.5^\circ$.
+
+Find the height of the boy off the ground.
+
+  \hfill (not drawn to scale)
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.6]
+      \draw [-, dashed] (0,2)--(3,2);
+      \draw [-, thick] (-4,0)--
+      (0,0)--
+        (10,0)--(10,6)--(12,6);
+      \draw (0,0.75) circle [radius=0.75];
+      \draw (0,2) circle [radius=0.5];
+      \draw [fill] (10,6) circle [radius=0.1] node[above right]{Boy};
+      \draw [dashed] (0,2)--(10,6);
+      \node at (3, 2)[above]{$18.5^\circ$};
+      \node at (12, 2)[above]{Bars};
+      \node at (12.5, 3)[above]{Monkey};
+    \end{tikzpicture}
+    \end{flushright}
+
+
+\end{enumerate}
+\end{document}
+  

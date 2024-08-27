@@ -1,0 +1,125 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 4 October 2022}
+
+\begin{document}
+
+\subsubsection*{2.2 Homework: Angle addition}
+\begin{enumerate}
+\item The size of an angle is its ``measure,'' which can be from $0^\circ$ to $360^\circ$
+\begin{enumerate}
+  \item Write down the name of this angle. Start with an angle symbol $\angle$. \\
+  \hspace{1cm}
+    \begin{tikzpicture}[scale=.8]
+      \draw  [<->, thick] (0,2)--(2,0)--(4,1);
+      \draw[fill] (1,1) circle [radius=0.05] node[below left]{$D$};
+      \draw[fill] (2,0) circle [radius=0.05] node[below]{$E$};
+      \draw[fill] (3,0.5) circle [radius=0.05] node[below]{$F$};
+    \end{tikzpicture}
+  \item What is the degree measure made by these two opposite rays, $\overrightarrow{BA}$ and $\overrightarrow{BC}$? \\[0.25cm]
+  \hspace{5cm}
+    \begin{tikzpicture}[scale=.8]
+      \draw  [<->, thick] (0,2)--(4,0);
+      \draw[fill] (1,1.5) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (2,1) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (3,0.5) circle [radius=0.05] node[below]{$C$};
+    \end{tikzpicture}
+    \item What is the degree measure of the angle, m$\angle XYZ$? \\[0.25cm]
+    \begin{tikzpicture}[scale=0.7, rotate=20]
+      \draw[<->, thick] (5,0)--(0,0)--(0,3);
+      \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[below]{$Y$};
+      \draw[fill] (0,2) circle [radius=0.05] node[right]{$X$};
+      \draw[fill] (4,0) circle [radius=0.05] node[below]{$Z$};
+    \end{tikzpicture}
+  \end{enumerate}
+
+\item Given the diagram, answer each using proper notation, including the angle symbol $\angle$. \par \vspace{0.3cm}
+  \begin{enumerate}
+    \item Name the ray opposite to $\overrightarrow{OR}$: \rule{4cm}{0.15mm} \bigskip
+    \item What is the measure of $\angle POM$?  \rule{4cm}{0.15mm} \bigskip
+    \item Name a right angle: \rule{4cm}{0.15mm} \bigskip
+    \item Name the angle adjacent to $\angle QOR$: \rule{4cm}{0.15mm}
+    \item Spicy: Are $\angle NOP$ and $\angle QOR$ complementary, supplementary, or neither?
+  \end{enumerate}
+  \begin{center}
+  \begin{tikzpicture}[scale=1, rotate=20]
+    \draw[<->, thick] (-55:3)--(0,0)--(125:4);
+    \draw[<->, thick] (-5,0)--(3,0);
+    \draw[->, thick] (0,0)--(0,3);
+    \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+    \draw[fill] (125:3) circle [radius=0.05] node[below left]{$N$};
+    \draw[fill] (-4,0) circle [radius=0.05] node[below]{$M$}; 
+    \draw[fill] (0,0) circle [radius=0.05] node[below left]{$O$};
+    \draw[fill] (0,2) circle [radius=0.05] node[right]{$P$};
+    \draw[fill] (2,0) circle [radius=0.05] node[below]{$Q$};
+    \draw[fill] (-55:2) circle [radius=0.05] node[below left]{$R$};
+  \end{tikzpicture}
+  \end{center}
+
+\newpage
+\subsubsection*{Angle addition situations}
+\item Apply the Angle Addition postulate. Write an equation to support your work.
+  \begin{multicols}{2}
+    Given m$\angle ABD = 50^\circ$, m$\angle ABC = 90^\circ$. \\[0.5cm]
+    Find $m \angle DBC$. \\
+    \begin{tikzpicture}[scale=1.4]
+      \draw[<->, thick]
+        (0:3) coordinate (a) node[below left] {$C$}
+        -- (0,0) coordinate (b) node[below left] {$B$}
+        -- (35:3) coordinate (c) node[below right] {$D$}
+        pic["$?$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
+        {angle=a--b--c};
+        \draw[<-, thick]
+        (90:2) coordinate (d) node[right] {$A$}
+        -- (0,0) coordinate (e)
+        pic["$\; 50^\circ$", <->, draw=black, angle eccentricity=1.25, angle radius=1cm]
+        {angle=c--e--d};
+      \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+    \end{tikzpicture}
+  \end{multicols}
+
+\item Given the angle measures and situation shown, write an equation and solve for $x$.
+  \begin{multicols}{2}
+    m$\angle ABD = 2x$ \\[0.25cm]
+    m$\angle DBC = 2x + 15^\circ$ \\[0.25cm]
+    $m \angle ABC = 115^\circ$ \\
+    \begin{tikzpicture}[scale=2]
+      \draw[<->, thick]
+        (-20:2.5) coordinate (a) node[below left] {$C$}
+        -- (0,0) coordinate (b) node[below left] {$B$}
+        -- (30:3) coordinate (c) node[below right] {$D$}
+        pic["\hspace{1cm}$2x + 15^\circ$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
+        {angle=a--b--c};
+        \draw[<-, thick]
+        (80:2) coordinate (d) node[right] {$A$}
+        -- (0,0) coordinate (e)
+        pic["$2x$", <->, draw=black, angle eccentricity=1.5, angle radius=1cm]
+        {angle=c--e--d};
+    \end{tikzpicture}
+  \end{multicols}
+
+\item The ray $\overrightarrow{BD}$ makes a $90^\circ$ angle with the line $\overleftrightarrow{ABC}$. Given the complementary angles' measures are m$\angle DBE = 3x + 20^\circ$ and m$\angle EBC = 25^\circ$. \\[0.25cm] 
+  Find $x$, writing an equation to support your work.
+    \begin{flushright}
+      \begin{tikzpicture}[scale=1.3]
+        \draw[<->, thick]
+          (0:5) coordinate (a) node[below left] {$C$}
+          -- (0,0) coordinate (b) node[below] {$B$}
+          -- (35:5) coordinate (c) node[below right] {$E$}
+          pic["$25$", <->, draw=black, angle eccentricity=2, angle radius=1cm]
+          {angle=a--b--c};
+          \draw[<-, thick]
+          (90:3) coordinate (d) node[right] {$D$}
+          -- (0,0) coordinate (e)
+          pic["\hspace{0.3cm}$3x + 20^\circ$", <->, draw=black, angle eccentricity=1.6, angle radius=1cm]
+          {angle=c--e--d};
+          \draw[->, thick] (0,0)--(-180:2) node[below right]{$A$};
+          \draw (0,0)++(-0.3,0)--++(0,0.3)--+(0.3,0);
+      \end{tikzpicture}
+    \end{flushright}
+
+\end{enumerate}
+\end{document}

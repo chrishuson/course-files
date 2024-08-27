@@ -1,0 +1,108 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 8: Year-to-date Regents review\\* 13 February 2023}
+
+\begin{document}
+
+\subsubsection*{8.1 Classwork: External angles}
+\begin{enumerate}
+\item A triangle has two angles measuring $70^\circ$ and $60^\circ$ respectively. Find the measure of the third angle. \vspace{2cm}
+
+\item Given  $\triangle LMN$ with $m\angle L=2x+20$, $m\angle N=3x-5$, and $m\angle M=x+15$. Find $x$.
+  \begin{flushright}
+  \begin{tikzpicture}[scale=0.8]
+    %\draw [->, thick] (0,0)--(5,5);
+    \draw [-, thick] (0,0) node[below]{$L$}--
+      (2.5,3) node[above]{$M$}--
+      (5,0) node[below]{$N$}--cycle;
+  \end{tikzpicture}
+  \end{flushright} \vspace{2cm}
+
+\item The measures in degrees of the three angles of a triangle are $2x$, $x+10$, and $3x-40$. Find $x$. \vspace{4cm}
+
+\item As shown below, triangle $ABC$ has $m\angle A = 52^\circ$ and $m\angle B = 48^\circ$. Find the measure of the external angle $\angle BCD = x$.
+  \begin{flushleft}
+    \begin{tikzpicture}[scale=0.7]
+    \draw [thick]
+    (10,0)node[below]{$D$}--
+    (2,0)node[below]{$A$}--
+    (4,4)node[above]{$B$}--
+    (7,0)node[below]{$C$};
+    \draw [fill] (10,0) circle [radius=0.07];
+    %\draw [thick](2,0)node[below]{$E$}--(4,4);
+    \node at (2.8,0.4){$52^\circ$};
+    \node at (7.3,0.3){$x$};
+    \node at (4.1,3.1){$48^\circ$};
+  \end{tikzpicture}
+  \end{flushleft}
+  
+\newpage
+\item Given $\triangle ABC$ with $\overrightarrow{ACD}$.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.5]
+    \draw [thick, <-]
+    (10,0)node[below]{$D$}--
+    (0,0)node[below]{$A$}--
+    (4,4)node[above]{$B$}--
+    (7,0)node[below]{$C$};
+    \node at (0.9,0.4){1};
+    \node at (6.2,0.4){3};
+    \node at (7.2,0.4){4};
+    \node at (4,3.3){2};
+  \end{tikzpicture}
+  \end{center}
+  Which equation is always true?
+  \begin{multicols}{2}
+  \begin{enumerate}
+    \item $m\angle 3 = m\angle 1 + m\angle 2$
+    \item $m\angle 3 = m\angle 1 - m\angle 2$ 
+    \item $m\angle 4 = m\angle 1 + m\angle 2$
+    \item $m\angle 4 = m\angle 3 - m\angle 2$
+  \end{enumerate}
+  \end{multicols}
+
+\item In $\triangle ABC$ shown below, side $\overline{AC}$ is extended to point $D$ with $m\angle DAB=(180-2x)^\circ$, $m\angle C=(x-10)^\circ$, and $m\angle B=(3x+10)^\circ$. Solve for $x$.
+  \begin{flushleft}
+    \begin{tikzpicture}[scale=0.8]
+      \draw [thick](-0.5,0)node[below]{$D$}--
+        (1.8,0)node[below]{$A$}--
+        (9,0)node[below left]{$C$}--
+        (4,3)node[above]{$B$} --(2,0);
+        \node at (2.3,0)[above left]{$(180-2x)^\circ$};
+        \node at (8.1,0)[above left]{$(x-10)^\circ$};
+        \node at (4.5,2.2)[below]{$(3x+10)^\circ$};
+    \end{tikzpicture}
+  \end{flushleft} \vspace{2cm}
+
+\item A regular hexagon is rotated about its center. Which degree measure will carry the regular hexagon onto itself? 
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $45^\circ$
+    \item $90^\circ$
+    \item $120^\circ$
+    \item $135^\circ$
+  \end{enumerate}
+\end{multicols}
+
+\item What is the smallest non-zero angle of rotation about its center that would map the octagon onto itself?
+\begin{center}
+    \begin{tikzpicture}[rotate=22.5, scale=1]
+      \draw [thick]
+      (0:2)--
+      (45:2)--
+      (90:2)--
+      (135:2)--
+      (180:2)--
+      (225:2)--
+      (270:2)--
+      (315:2)--cycle;
+    \end{tikzpicture}
+  \end{center}
+
+
+
+
+\end{enumerate}
+\end{document}

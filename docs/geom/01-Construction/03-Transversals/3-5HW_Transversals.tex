@@ -1,0 +1,206 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 3: Parallel lines and transversals\\* 17 October 2022}
+
+\begin{document}
+
+\subsubsection*{3.5 Homework: Transversals practice}
+\begin{enumerate}
+  \item Review: Angle postulates and theorems you have learned. 
+  \begin{enumerate}
+    \item $\perp$ lines and complementary $\angle$s make $90^\circ$
+    \item linear pairs add to $180^\circ$
+    \item vertical $\angle$s are $\cong$
+    \item definition of an angle bisector
+    \item isosceles base angle theorem
+  \end{enumerate}
+
+\item New theorems for parallel lines
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item \emph{corresponding} $\angle$s of $\parallel$ lines are $\cong$\\
+        $\angle 2 \cong \angle 6$
+      \item \emph{same-side interior} $\angle$s are supplementary\\
+      $m\angle 3 + m\angle 5 =  180$
+      \item \emph{alternate exterior} $\angle$s are $\cong$\\
+      $\angle 2 \cong \angle 7$
+    \end{enumerate}
+      \begin{tikzpicture}[scale=1]
+      \draw [<->, thick] (3,2)--(8,2);
+      \draw [<->, thick] (2,0)--(7,0);
+      \draw [<->, thick] (4,-1)--(5.5,3);
+      \node at (4.5,0.3) [left]{$5$};
+      \node at (4.5,0.3) [right]{$6$};
+      \node at (4.3,-0.3) [left]{$7$};
+      \node at (4.3,-0.3) [right]{$8$};
+      \node at (5.2,2) [above left]{$1$};
+      \node at (5.2,2) [above right]{$2$};
+      \node at (5,2) [below left]{$3$};
+      \node at (5,2) [below right]{$4$};
+    \end{tikzpicture}
+  \end{multicols}
+  Hint: There are only two angle measures, the acute angles and the obtuse angles\\ (and they add to $180^\circ$)
+
+\item Given two parallel lines and a transversal, as shown, with $m\angle 6 =  70^\circ$. Write down the value of each angle measure.
+  \begin{multicols}{3}
+    \begin{enumerate}[itemsep=0.5cm]
+      \item $m\angle 1 = $
+      \item $m\angle 2 = $
+      \item $m\angle 3 = $
+      \item $m\angle 4 = $
+      \item $m\angle 5 = $
+      \item $m\angle 6 = $
+      \item $m\angle 7 = $
+      \item $m\angle 8 = $
+    \end{enumerate}
+      \begin{tikzpicture}[scale=0.8]
+      \draw [<->, thick] (3,2)--(8,2);
+      \draw [<->, thick] (2,0)--(7,0);
+      \draw [<->, thick] (4,-1)--(5.5,3);
+      \node at (4.5,0.3) [left]{$5$};
+      \node at (4.5,0.3) [right]{$6$};
+      \node at (4.3,-0.3) [left]{$7$};
+      \node at (4.3,-0.3) [right]{$8$};
+      \node at (5.2,2) [above left]{$1$};
+      \node at (5.2,2) [above right]{$2$};
+      \node at (5,2) [below left]{$3$};
+      \node at (5,2) [below right]{$4$};
+    \end{tikzpicture}
+  \end{multicols}
+
+\item Given two parallel lines and a transversal, with $m\angle 4 = 3x$ and $m\angle 5 = x + 70$. \\ Write an equation, then solve for $x$.
+\begin{flushright}
+  \begin{tikzpicture}[scale=1]
+    \draw [<->, thick] (3,2)--(8,2);
+    \draw [<->, thick] (2,0)--(7,0);
+    \draw [<->, thick] (4,-1)--(5.5,3);
+    \node at (4.5,0.3) [left]{$5$};
+    \node at (4.5,0.3) [right]{$6$};
+    \node at (4.3,-0.3) [left]{$7$};
+    \node at (4.3,-0.3) [right]{$8$};
+    \node at (5.2,2) [above left]{$1$};
+    \node at (5.2,2) [above right]{$2$};
+    \node at (5,2) [below left]{$3$};
+    \node at (5,2) [below right]{$4$};
+  \end{tikzpicture}
+\end{flushright}
+
+\item Two parallel lines intersect a transversal. Given corresponding angles  $m\angle 1 = 4.4x - 63$ and $m\angle 2 = 2.8x+9$, find the measure of $\angle 1$. 
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.9]
+      \draw [<->, thick] (3,0)--(9,0);
+      \draw [<->, thick] (2,2)--(8,2);
+      \draw [<->, thick] (5,-1)--(3,3);
+      %\draw [<->, thick] (11,-1)--(9,3);
+      %\node at (4, 1.7){$1$};
+      \node at (5.3, 2.25){$m\angle 1 = 4.4x - 63$};
+      \node at (6.1, 0.25){$m\angle 2 = 2.8x+9$};
+      %\node at (10, 0.25){$3$};
+    \end{tikzpicture}
+    \end{flushright}
+
+\item Given parallel lines $\overleftrightarrow{AB} \parallel \overleftrightarrow{CDE}$ with $\overline{AC} \cong \overline{CD}$. If $m\angle BAD=80$ find $m\angle ACD$.
+  \begin{flushright}
+  \begin{tikzpicture}[scale=0.9]
+    \draw [<->, thick] (1,3)--(6.5,3) node[above left]{$B$};
+    \draw [<->, thick] (0,0)--
+      (5,0)--
+      (6,0) node[below left]{$E$};
+    \draw [-, thick] (1,0) node[below]{$C$}--
+      (2.5,3) node[above]{$A$}--
+      (4.35,0) node[below]{$D$};
+  \end{tikzpicture}
+  \end{flushright} \vspace{1cm}
+
+\item Two parallel lines intersect a second set of parallel lines. Given $m\angle 2 = 2.8x+9$ and $m\angle 4 = 4.4x - 63$, find the measure of $\angle 1$. 
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.9]
+      \draw [<->, thick] (3,0)--(12,0);
+      \draw [<->, thick] (2,2)--(11,2);
+      \draw [<->, thick] (5,-1)--(3,3);
+      \draw [<->, thick] (11,-1)--(9,3);
+      \node at (4, 1.7){$1$};
+      \node at (6.1, 0.25){$m\angle 2 = 2.8x+9$};
+      \node at (10, 0.25){$3$};
+      \node at (7.6, 1.7){$m\angle 4 = 4.4x - 63$};
+    \end{tikzpicture}
+    \end{flushright}
+
+\item Given two parallel lines and a transversal intersecting them, creating eight angles labeled as shown. Identify each angle.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=0.75cm]
+      \item The angle that is opposite $\angle 2$
+      \item An angle that makes a linear pair with $\angle 7$
+      \item An acute angle
+      \item The vertical angle to $\angle 5$
+      \item An obtuse angle
+    \end{enumerate}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=1.3]
+      \draw [<->, thick] (4,2)--(7,2);
+      \draw [<->, thick] (3,0)--(6,0);
+      \draw [<->, thick] (4,-1)--(5.5,3);
+      \node at (4.5,0.3) [left]{$5$};
+      \node at (4.5,0.3) [right]{$6$};
+      \node at (4.3,-0.3) [left]{$7$};
+      \node at (4.3,-0.3) [right]{$8$};
+      \node at (5.2,2) [above left]{$1$};
+      \node at (5.2,2) [above right]{$2$};
+      \node at (5,2) [below left]{$3$};
+      \node at (5,2) [below right]{$4$};
+    \end{tikzpicture}
+  \end{flushright}
+  \end{multicols}
+
+\item Name the angle labeled in the diagram of two parallel lines crossed by a transversal.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=0.75cm]
+      \item The angle \emph{corresponding} to $\angle 6$
+      \item The \emph{alternate exterior} angle with $\angle 8$
+      \item The \emph{same-side interior} angle to $\angle 5$
+      \item The \emph{alternate interior} angle with $\angle 4$
+    \end{enumerate}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=1.3]
+      \draw [<->, thick] (4,2)--(7,2);
+      \draw [<->, thick] (3,0)--(6,0);
+      \draw [<->, thick] (4,-1)--(5.5,3);
+      \node at (4.5,0.3) [left]{$5$};
+      \node at (4.5,0.3) [right]{$6$};
+      \node at (4.3,-0.3) [left]{$7$};
+      \node at (4.3,-0.3) [right]{$8$};
+      \node at (5.2,2) [above left]{$1$};
+      \node at (5.2,2) [above right]{$2$};
+      \node at (5,2) [below left]{$3$};
+      \node at (5,2) [below right]{$4$};
+    \end{tikzpicture}
+  \end{flushright}
+  \end{multicols}
+
+\item Given two parallel lines and a transversal, as shown. Write down each value, given that $m\angle 5 =  120^\circ$.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=0.5cm]
+      \item $m\angle 3 = $
+      \item $m\angle 2 = $
+      \item $m\angle 4 = 2x$. Find $x$
+    \end{enumerate}
+      \begin{tikzpicture}[scale=0.8]
+      \draw [<->, thick] (3,2)--(8,2);
+      \draw [<->, thick] (2,0)--(7,0);
+      \draw [<->, thick] (4,-1)--(5.5,3);
+      \node at (4.5,0.3) [left]{$5$};
+      \node at (4.5,0.3) [right]{$6$};
+      \node at (4.3,-0.3) [left]{$7$};
+      \node at (4.3,-0.3) [right]{$8$};
+      \node at (5.2,2) [above left]{$1$};
+      \node at (5.2,2) [above right]{$2$};
+      \node at (5,2) [below left]{$3$};
+      \node at (5,2) [below right]{$4$};
+    \end{tikzpicture}
+  \end{multicols}
+
+
+\end{enumerate}
+\end{document}

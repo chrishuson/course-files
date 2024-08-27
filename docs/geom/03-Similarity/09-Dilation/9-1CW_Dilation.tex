@@ -1,0 +1,153 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 9: Dilation \\* 13 March 2023}
+
+\begin{document}
+
+\subsubsection*{9.1 Classwork: Dilation \hfill CCSS.HSG.SRT.B.5}
+\begin{enumerate}
+\item Plot and label the triangle $A'B'C'$. $A'(0,0)$, $B'(8,0)$, $C'(8,4)$.\\[0.5cm]
+Make a list of comparisons of the two triangles: their sides' lengths, location, their angles, orientation, area and perimeter. \\
+  \begin{tikzpicture}[scale=.7]
+    \draw [help lines] (-1,-2) grid (9,5);
+    \draw [thick, ->] (-1.2,0) -- (9.4,0) node [below right] {$x$};
+    \draw [thick, ->] (0,-2.2)--(0,5.4) node [left] {$y$};
+    \draw [thick] (0,0)node[below right]{$A$}--
+      (4,0)node[below]{$B$}--
+        (4,2)node[above left]{$C$}--cycle;
+    \draw [fill] (0,0) circle [radius=0.1];
+  \end{tikzpicture}
+  \vspace{1cm}
+  
+\begin{multicols}{2}
+[\item Find the missing angle measures. Are $\triangle CAT$ and $\triangle DOG$ congruent?] \vspace{0.5cm}
+  \begin{tikzpicture}[scale=0.9]
+    \coordinate [label=above left:$C$](A) at (95:2);
+    \coordinate [label=below:$A$](B) at (0, 0);
+    \coordinate [label=right:$T$](C) at (-10:3.5);
+    \draw [thick] (A)--(B)--(C)--cycle;
+    \draw [thick, xshift=3cm, yshift=1.5cm, scale=1.5] 
+      (95:2) node[above]{$D$}--
+      (0,0) node[below]{$O$}--
+      (-10:3.5) node[right]{$G$}--cycle;
+  \end{tikzpicture}\\
+  \begin{enumerate}
+    \item $m\angle C =45^\circ$, $m\angle A =105^\circ$\\[0.25cm]
+    .\hspace{1cm} $m\angle T =$ \rule{2cm}{0.15mm}
+    \item $m\angle G =30^\circ$, $m\angle O =105^\circ$\\[0.5cm]
+    .\hspace{1cm} $m\angle D =$ \rule{2cm}{0.15mm}
+  \end{enumerate}
+  \end{multicols}
+
+\item A rectangle has a length and width of $4$ and $3$, giving it an area of $A=4 \times 3 = 12$ and perimeter of $P=4+4+3+3=14$. It is dilated by a scale factor of $k=2$.
+  \begin{enumerate}[itemsep=1cm]
+    \item Find the length and width of the dilated figure.
+    \item Find the area of the dilated figure.
+    \item Find the perimeter of the dilated figure.
+  \end{enumerate}
+
+\newpage
+\item \begin{enumerate}
+  \item Graph and label $\triangle ABC$ with $A(0,0)$, $B(3,2)$, and $C(3,0)$.
+  \begin{center}
+    \begin{tikzpicture}%[scale=.635]
+      \draw [help lines] (0,0) grid (10,6);
+      \draw [thick, ->] (0,0) -- (10.4,0) node [below right] {$x$};
+      \draw [thick, ->] (0,0)--(0,6.4) node [left] {$y$};
+    \end{tikzpicture}
+  \end{center}
+  \item Dilate or stretch the triangle by a factor of $k=3$ centered at the origin.\\ $\triangle ABC \rightarrow \triangle A'B'C'$
+  \item Find each ratio or fraction. \\[0.5cm]
+    $\displaystyle \frac{A'C'}{AC}=$ \hfill
+    $\displaystyle \frac{B'C'}{BC}=$ \hfill
+    $\displaystyle \frac{A'B'}{AB}=$ \hspace{2cm}
+\vspace{1cm}
+\end{enumerate}
+
+\item Triangle $ABC$ is dilated with a scale factor of $k=\frac{5}{3}$ centered at $A$, yielding $\triangle ADE$, as shown. Given $AB=9$, $BC=12$, and $AC=15$. \\[0.25cm] Find $AD$, $AE$, and $DE$. \vspace{0.5cm}
+  \begin{center}
+  \begin{tikzpicture}[scale=0.4]
+    \draw [thick]
+    (0,0)node[left]{$B$}--
+    (8,0)node[above right]{$C$}--
+    (2,6)node[left]{$A$}--cycle;
+    \draw [thick]
+    (0,0)--
+    (-1,-3)node[left]{$D$}--
+    (11,-3)node[above right]{$E$}--(8,0);
+    \node at (4,0)[below]{$12$};
+    \node at (5.3, 3)[right]{$15$};
+    \node at (0.3, 2.8)[above]{$9$};
+  \end{tikzpicture}
+  \end{center}
+
+\newpage
+\item A dilation centered at $A$ with scale factor $k=2$ maps $\triangle ABC \rightarrow \triangle ADE$. Given the sides of the preimage, $AC = 4$, $BC = 3$, $AB = 5$. \\[0.5cm]
+$DE = 6$, how long are $AD$ and $AE$?
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.8]
+      \draw [-, thick] (0,0)--
+      (8,0) node[below]{$E$}--
+      (8,6) node[above left]{$D$}--cycle;
+      \draw [thick] (4,0)--(4,3);
+      \draw [fill] (0,0) circle [radius=0.1] node[below] {$A$};
+      \node at (4,0) [below]{$C$};
+      \node at (4,3) [above left]{$B$};
+      \node at (2, 0) [below]{$4$};
+      \node at (2, 2) [above]{$5$};
+      \node at (8, 3) [right]{$6$};
+      \node at (4, 1.5) [right]{$3$};
+    \end{tikzpicture}
+  \end{flushright}
+
+\item Dilate $\triangle ABC \rightarrow \triangle A'B'C'$ by a factor of $k=2$ centered at the origin, $(x,y) \rightarrow (2x, 2y)$. Plot and label the image on the axes. Make a table of the vertices and their coordinates.
+  \begin{flushright}
+    \begin{tikzpicture}[scale=1]
+    \draw [help lines] (-1,-2) grid (5,7);
+    \draw [thick, <->] (-1.4,0) -- (5.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-2.4)--(0,7.4) node [above] {$y$};  
+    \draw [thick]
+      (0,0) node[below left] {$A$}--
+      (2,3) node[above left] {$B$}--
+      (2,0) node[below] {$C$}--cycle;  
+  \end{tikzpicture}
+  \end{flushright}
+
+\newpage
+\item Dilate $\triangle ABC \rightarrow \triangle A'B'C'$ by a factor of $k=3$ centered at the origin, $(x,y) \rightarrow (3x, 3y)$. Plot and label the image on the axes. Make a table of the vertices and their coordinates.
+\begin{flushright}
+    \begin{tikzpicture}[scale=1]
+    \draw [help lines] (-1,-3) grid (7,7);
+    \draw [thick, <->] (-1.4,0) -- (7.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-3.4)--(0,7.4) node [above] {$y$};  
+    \draw [thick]
+      (0,0) node[below left] {$A$}--
+      (2,2) node[above left] {$B$}--
+      (1,-1) node[below left] {$C$}--cycle;  
+  \end{tikzpicture}
+\end{flushright}
+    
+\item A dilation centered at $A$ with scale factor $k=2$ maps $\triangle ABC \rightarrow \triangle ADE$. Given the sides of the preimage, $AC = 8$, $BC = 6$, $AB = 10$. \\[0.5cm]
+$DE = 12$, how long are $AD$ and $AE$?
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.8]
+      \draw [-, thick] (0,0)--
+      (8,0) node[below]{$E$}--
+      (8,6) node[above left]{$D$}--cycle;
+      \draw [thick] (4,0)--(4,3);
+      \draw [fill] (0,0) circle [radius=0.1] node[below] {$A$};
+      \node at (4,0) [below]{$C$};
+      \node at (4,3) [above left]{$B$};
+      \node at (2, 0) [below]{$8$};
+      \node at (2, 2) [above]{$10$};
+      \node at (8, 3) [right]{$12$};
+      \node at (4, 1.5) [right]{$6$};
+    \end{tikzpicture}
+  \end{flushright}
+
+
+\end{enumerate}
+\end{document}

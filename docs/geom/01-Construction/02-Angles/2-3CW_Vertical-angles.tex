@@ -1,0 +1,121 @@
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 2: Angles\\* 7 October 2022}
+
+\begin{document}
+
+\subsubsection*{2.3 Classwork: Vertical angles}
+\begin{enumerate}
+\item As shown below, two lines intersect making four angles: $\angle 1$, $\angle 2$, $\angle 3$, and $\angle 4$.
+  \begin{center}
+  \begin{tikzpicture}[scale=0.6, rotate=15]
+    \draw[<->, thick] (0,-1.5)--(10,1.5);
+    \draw[<->, thick] (2,3.5)--(7,-3.5);
+    \node at (3,.4){1};
+    \node at (6,-.6){3};
+    \node at (5,1){2};
+    \node at (4,-1){4};
+  \end{tikzpicture}
+  \end{center}
+  \begin{enumerate}
+    \item Which angle is opposite $\angle 1$? \rule{4cm}{0.15mm} \bigskip
+    \item Name an angle that is adjacent to $\angle 4$. \rule{4cm}{0.15mm} \bigskip
+    \item True or false, $\angle 2$ and $\angle 4$ are vertical angles. \rule{3cm}{0.15mm}
+  \end{enumerate}
+
+\item Two lines intersect with m$\angle 1=80^\circ$. Find and mark the measures of $\angle 2$, $\angle 3$, and $\angle 4$.
+  \begin{flushleft}
+  \begin{tikzpicture}[scale=0.6]
+    \draw[<->, thick] (0,-1.5)--(10,1.5);
+    \draw[<->, thick] (2,3.5)--(7,-3.5);
+    \node at (2,.4){m$\angle 1=80^\circ$};
+    \node at (6,-.6){3};
+    \node at (5,1){2};
+    \node at (4,-1){4};
+  \end{tikzpicture}
+  \end{flushleft}
+
+\item Given the situation in the diagram, answer each question. Circle True or False.
+  \begin{center}
+  \begin{tikzpicture}[scale=1, rotate=20]
+    \draw[->, thick] (0,0)--(37:4);
+    \draw[<->, thick] (-2.5,0)--(5,0);
+    \draw[->, thick] (0,0)--(-1.2,3);
+    \draw[fill] (-1,2.5) circle [radius=0.05] node[below left]{$S$};
+    \draw[fill] (2.66666,2) circle [radius=0.05] node[above left ]{$T$};
+    \draw[fill] (0,0) circle [radius=0.05] node[below]{$P$};
+    \draw[fill] (4,0) circle [radius=0.05] node[above]{$U$};
+    \draw[fill] (-2,0) circle [radius=0.05] node[above]{$R$};
+  \end{tikzpicture}
+  \end{center} \bigskip
+  \begin{enumerate}
+    \item True or False: $\overrightarrow{RP}$ and $\overrightarrow{UP}$ are opposite rays.
+    \item True or False: $\angle TPR$ is an obtuse angle.
+    \item True or False: $\angle RPS$ and $\angle SPU$ are supplementary angles.
+    \item True or False: $\angle RPS$ and $\angle SPT$ are adjacent angles.
+  \end{enumerate}
+
+\newpage
+\item Identify the true statements
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item $\angle 1 \cong \angle 2$
+      \item $\angle 2 \cong \angle 4$
+      \item m$\angle 1 + \text{m}\angle 4=180^\circ$
+      \item m$\angle 2 + \text{m}\angle 3=90^\circ$
+    \end{enumerate}
+  \begin{center}
+  \begin{tikzpicture}[scale=0.5, rotate=15]
+    \draw[<->, thick] (0,-1.5)--(10,1.5);
+    \draw[<->, thick] (2,3.5)--(7,-3.5);
+    \node at (3,.4){1};
+    \node at (6,-.6){3};
+    \node at (5,1){2};
+    \node at (4,-1){4};
+  \end{tikzpicture}
+  \end{center}
+  \end{multicols}
+
+\item Measure the required angles of the diagram below and answer the questions. \vspace{0.25cm}
+  \begin{enumerate}
+    \item  $m \angle AOB = $ \rule{2cm}{0.15mm} \hspace{0.5cm} $m \angle BOC = $ \rule{2cm}{0.15mm} \hspace{0.5cm} $m \angle DOE = $ \rule{2cm}{0.15mm} \bigskip
+    \item Name an angle that is vertical to $\angle DOE$: \rule{4cm}{0.15mm}
+    \bigskip
+    \item Name an angle that is complementary to $\angle AOB$: \rule{4cm}{0.15mm} 
+  \end{enumerate}
+  \vspace{0.5cm}
+  \begin{center}
+  \begin{tikzpicture}[scale=1, rotate=20]
+    \draw[<->, thick] (-55:3)--(0,0)--(125:5);
+    \draw[<->, thick] (-5,0)--(6,0);
+    \draw[->, thick] (0,0)--(0,4);
+    \draw (0,0)++(0.3,0)--++(0,0.3)--+(-0.3,0);
+    \draw[fill] (125:4) circle [radius=0.05] node[below left]{$B$};
+    \draw[fill] (-4,0) circle [radius=0.05] node[below]{$A$}; 
+    \draw[fill] (0,0) circle [radius=0.05] node[below left]{$O$};
+    \draw[fill] (0,3) circle [radius=0.05] node[left]{$C$};
+    \draw[fill] (5,0) circle [radius=0.05] node[below]{$D$};
+    \draw[fill] (-55:2) circle [radius=0.05] node[below left]{$E$};
+  \end{tikzpicture}
+  \end{center}
+
+\item Angles $APC$ and $CPD$ form a linear pair. m$\angle APC = 10x+15$ and m$\angle CPD = 3x-4$. Find m$\angle CPD$. Check your answer for full credit.
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.8, rotate=-10]
+      \draw[->, thick] (0,0)--(35:5);
+      \draw[<->, thick] (-3.5,0)--(4,0);
+      \draw[->, thick] (0,0)--(0,3);
+      \draw (0,0)++(0.4,0)--++(0,0.4)--+(-0.4,0);
+      \draw[fill] (35:4) circle [radius=0.05] node[below right]{$C$};
+      \draw[fill] (-3,0) circle [radius=0.05] node[below]{$A$};
+      \draw[fill] (0,0) circle [radius=0.05] node[below left]{$P$};
+      \draw[fill] (0,2) circle [radius=0.05] node[left]{$B$};
+      \draw[fill] (3,0) circle [radius=0.05] node[below]{$D$};
+    \end{tikzpicture}
+    \end{flushright}
+
+
+\end{enumerate}
+\end{document}
