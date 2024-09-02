@@ -2,7 +2,7 @@
 title: course-files
 ---
 
-## Algebra 2 - 9th & 11th grades
+## Precalculus - 11th grade
 
 At BECA we use the Illustrative Mathematics curriculum. Lessons are designed to be student-centered and inquiry-based. Course materials can be found on the publisher Kendall Hunt's website here: [Illustrative Mathematics](https://im.kendallhunt.com/HS/students/3/index.html)
 
@@ -30,43 +30,44 @@ Students use our Google Classroom for assignments, quizzes, and tests. Parents c
 
 - Understand and use polynomial functions
 - Analyze and interpret the behavior of polynomial functions
-- Explore rational functions and their properties
+- Rational functions
+- Rational equations
+- Polynomial Identities
 
 #### Unit 3: Complex Numbers and Rational Exponents
 
-- Understand and apply properties of linear functions
-- Explore and model exponential growth and decay
-- Solve problems involving linear and exponential functions
+- Exponent Properties
+- Solving Equations with Square and Cube Roots
+- A New Kind of Number
+- Solving Quadratics with Complex Numbers
 
-#### Unit 4: Trigonometric Functions
+#### Unit 4: Exponential Functions and Equations
 
-- Understand and use trigonometric functions
-- Model periodic phenomena using trigonometric functions
-- Solve problems involving trigonometric functions
+- Growing and Shrinking
+- Understanding Non-Integer Inputs
+- Missing Exponents
+- The Constant *e*
+- Logarithmic Functions and Graphs
 
-#### Unit 5: Modeling with Functions
+#### Unit 5: Transformations of Functions
 
-- Use functions to model real-world situations
-- Analyze and interpret models to make predictions
-- Explore different types of functions and their applications
+- Translations, Reflections, and Symmetry
+- Scaling Outputs and Inputs
+- Putting It All Together
 
-#### Unit 6: Inferences and Conclusions from Data
+#### Unit 6: Trigonometric Functions
 
-- Understand and apply concepts of statistics and probability
-- Analyze data to make inferences and draw conclusions
-- Use statistical methods to solve problems
+- The Unit Circle
+- Periodic Functions
+- Trigonometry Transformations
+- Putting It All Together
 
-#### Unit 7:s of Probabil of Probability
+#### Unit 7: Statistical Inferences
 
-- Understand and apply basic concepts of probability
-- Calculate probabilities of compound events using various methods
-- Use probability to make informed decisions and predictions
-
-#### Unit 8: Polynomial and Rational Relationships
-
-- Explore relationships between polynomial and rational functions
-- Analyze and interpret the behavior of these functions
-- Solve problems involving polynomial and rational relationships
+- Study Types
+- Distributions
+- Not All Samples Are the Same
+- Analyzing Experimental Data
 
 ---
-BECA Mathematics, Dr. Huson - [Home](https://math.huson.com/) - [Algebra 2](../alg2) - [CFM](../cfm) - [Modeling](../modeling) - [About](https://math.huson.com/Contact)
+BECA Mathematics, Dr. Huson - [Home](https://math.huson.com/) - [Precalculus](../alg2) - [Geometry](../geom) - [About](https://math.huson.com/Contact)

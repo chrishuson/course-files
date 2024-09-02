@@ -59,3 +59,6 @@ Students use our Google Classroom for assignments, quizzes, and tests. Parents c
   - Understand and apply basic concepts of probability
   - Calculate probabilities of compound events using various methods
   - Use probability to make informed decisions and predictions
+
+---
+BECA Mathematics, Dr. Huson - [Home](https://math.huson.com/) - [Precalculus](../alg2) - [Geometry](../geom) - [About](https://math.huson.com/Contact)
