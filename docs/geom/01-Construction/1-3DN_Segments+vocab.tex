@@ -1,0 +1,91 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\\ First and last name: \hspace{2.5cm} \,\\ Section: \hspace{2.5cm} \,}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry: Construction\\* 9 Sept 2024}
+
+\begin{document}
+
+\subsubsection*{1.3 Do Now: Segment addition, vocabulary}
+\begin{enumerate}
+\item Use symbols to write the names of objects in the given figure.
+\begin{multicols}{2}
+  \begin{tikzpicture}
+  \draw [-, thick] (0,0)--(4,3);
+  \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+  \draw [fill] (4,3) circle [radius=0.05] node[below right]{$B$};
+\end{tikzpicture} \par
+\columnbreak
+\begin{enumerate}[itemsep=1cm]
+  \item The two endpoints
+  \item The name of the line segment
+  \item Measure the segment. Write its length in centimeters (expressed as an equation).
+\end{enumerate}
+\end{multicols} \vspace{1cm}
+
+\item A(n) $\rule{4cm}{0.15mm}$ is a portion of a straight line that includes two points and all of the points between the two points. \bigskip
+
+\item Given $\overline{PQ}$ as shown on the number line. \par \smallskip
+  \begin{tikzpicture}
+    \draw [<->] (-4.5,0)--(6.5,0);
+    \foreach \x in {-4,...,6} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (2,0) circle [radius=0.05] node[above] {$P$};
+      \draw [fill] (6,0) circle [radius=0.05] node[above] {$Q$};
+  \end{tikzpicture} \par \smallskip
+  What is the distance between $P$ and $Q$? \par \smallskip
+    $PQ=$ \vspace{1cm}
+
+\item Two points $M(-1)$, $N(3)$ and the segment $\overline{MN}$ are shown on the number line. \par \smallskip
+\begin{tikzpicture}
+  \draw [<->] (-3.5,0)--(6.5,0);
+  \draw [-, thick] (-1,0)--(3,0);
+  \foreach \x in {-3,...,6} %2 leading for diff!=1
+    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+    \draw [fill] (-1,0) circle [radius=0.05] node[above] {$M$};
+    \draw [fill] (3,0) circle [radius=0.05] node[above] {$N$};
+\end{tikzpicture} \par \smallskip
+What is the length of the segment $\overline{MN}$? Show your work as an equation. \vspace{2cm}
+
+\item Can a length be a negative number? Can it be zero?
+
+\newpage
+\item Points $A=4$ and $B=16$ are shown below. Find ${AB}$. \par \smallskip
+  \begin{tikzpicture}[scale=0.5]
+    \draw [<->] (-1,0)--(21,0);
+    \foreach \x in {0, 2,...,20} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-6pt) -- (0pt,6pt) node[below=5pt]  {$\x$};
+      \draw [fill] (4,0) circle [radius=0.1] node[above] {$A$};
+      \draw [fill] (16,0) circle [radius=0.1] node[above] {$B$};
+  \end{tikzpicture} \vspace{2cm}
+
+\item Given $\overline{FG}$ as shown. What is the distance on the number line between the points? \par \smallskip
+    \begin{tikzpicture}
+      \draw [<->] (-2.5,0)--(6.5,0);
+      \foreach \x in {-2,...,6} %2 leading for diff!=1
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+        \draw [thick] (1.25,0)--(5.5,0);
+        \draw [fill] (1.25,0) circle [radius=0.05] node[above] {$F(1.25)$};
+        \draw [fill] (5.5,0) circle [radius=0.05] node[above] {$G(5.50)$};
+    \end{tikzpicture} \vspace{2cm}
+
+\item Given $J(-3.0)$ and $K(2.5)$, as shown on the number line. 
+Find the length of the line segment $\overline{JK}$. 
+\begin{center}
+  \begin{tikzpicture}
+    \draw[<->] (-4.5,0)--(4.5,0);
+    \foreach \x in {-4,...,4}
+      \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+    \draw[fill] (-3.0,0) circle [radius=0.05] node[above] {$J$};
+    \draw[fill] (2.5,0) circle [radius=0.05] node[above] {$K$};
+    \draw[-, thick] (-3,0)--(2.5,0);
+  \end{tikzpicture}
+\end{center} \vspace{3cm}
+
+\item Terry is 63 inches tall and Steven is 68 inches tall. State who is taller and by how much. \vspace{3cm}
+
+\item Dr. Huson bicycles from 80th Street to 164th Street (straight north). How many blocks is that?
+
+\end{enumerate}
+\end{document}
