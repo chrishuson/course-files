@@ -1,0 +1,109 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{Algebra 2}
+\author{Chris Huson}
+\date{September 2024}
+
+\fancyhead[RO]{\\ First and last name: \hspace{2.5cm} \,\\ Section: \hspace{2.5cm} \,}
+\fancyhead[LO]{BECA/Huson/Geometry: Construction \\* 27 September 2024}
+
+\begin{document}
+\subsubsection*{1.16 Quiz: Transformations and constructions}
+\begin{enumerate}[itemsep=0.5cm]
+
+
+\item Reflect $\triangle ABC$ across the $y$-axis. Label the image $\triangle A'B'C'$.
+\begin{center}
+    \begin{tikzpicture}[scale=.48]
+    \draw [help lines] (-7,-4) grid (7,6);
+    \draw [thick, <->] (-7.4,0) -- (7.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-4.4)--(0,6.4) node [above] {$y$};  
+    \draw [thick]
+      (6,-2) node[below] {$A$}--
+      (3,4) node[above] {$B$}--
+      (3,-2) node[below] {$C$}--cycle;  
+\end{tikzpicture}
+\end{center}
+
+\item Rotate $\triangle ABC$ $90^\circ$ counterclockwise around the origin. Label the image $\triangle A'B'C'$.
+  \begin{center}
+      \begin{tikzpicture}[scale=.48]
+      \draw [help lines] (-6,-4) grid (6,7);
+      \draw [thick, <->] (-6.4,0) -- (6.4,0) node [right] {$x$};
+      \draw [thick, <->] (0,-4.4)--(0,7.4) node [above] {$y$};  
+      \draw [thick]
+        (0,0) node[below left] {$A$}--
+        (5,3) node[right] {$B$}--
+        (0,3) node[above right] {$C$}--cycle;  
+    \end{tikzpicture}
+  \end{center}
+  
+
+\item Use the function $f(x) = -2x+7$ to answer the questions.
+  \begin{multicols}{2}
+  \begin{enumerate}[itemsep=2cm]
+      \item What is $f(2)$?
+      \item Find $f(\frac{3}{2})$
+      \item Solve for $x$ if $f(x) = -11$.
+  \end{enumerate}
+  \end{multicols} \vspace{1cm}
+
+\newpage
+\subsubsection*{Constructions: Use only a compass \& straightedge}
+
+\begin{multicols}{2}
+  \item Construct an equilateral triangle \\ with one side $\overline{AB}$.  
+  \vspace{4cm}
+  \begin{flushleft}
+  \begin{tikzpicture}
+    \draw [-, thick] (0,0)--(5,0);
+    \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+    \draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
+  \end{tikzpicture}
+  \end{flushleft}
+
+  \item Construct a perpendicular bisector of $\overline{PQ}$.  
+  \vspace{4cm}
+  \begin{flushright}
+  \begin{tikzpicture}
+    \draw [-, thick] (0,0)--(5,0);
+    \draw [fill] (0,0) circle [radius=0.05] node[below]{$P$};
+    \draw [fill] (5,0) circle [radius=0.05] node[below]{$Q$};
+  \end{tikzpicture}
+  \end{flushright} 
+\end{multicols} \vspace{3cm}
+
+\item Construct an angle bisector the given angle.
+  \vspace{2cm}
+  \begin{center}
+  \begin{tikzpicture}
+    \draw [<->, thick] (-1,6)--(0,0)--(8,3);
+    %\draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+  \end{tikzpicture}
+  \end{center} \vspace{1cm}
+
+\item Fill in the blank:
+``Slow and \rule{3cm}{0.15mm}  wins the race."
+
+\newpage
+\item Construct a perpendicular bisector of side $\overline{AC}$ of the triangle. Label the midpoint of $\overline{AC}$ as $M$. Connect the points $M$ and $B$ with a line, a median of the triangle.  
+    \vspace{5cm}
+    \begin{center}
+    \begin{tikzpicture}
+        \draw [-, thick] (0,0)--(10,0)--(8,5)--cycle;
+        \draw [fill] (0,0) circle [radius=0.05] node[above left]{$A$};
+        %\node at (8.5,-0.4){$l$};
+        \draw [fill] (10,0) circle [radius=0.05] node[below right]{$B$};
+        \draw [fill] (8,5) circle [radius=0.05] node[above right]{$C$};
+
+    \end{tikzpicture}
+    \end{center}
+    \vspace{2cm}
+
+
+
+
+\end{enumerate}
+\end{document}
