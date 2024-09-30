@@ -2,15 +2,12 @@
 \input{../preamble}
 \usepackage{float}
 
-\title{Algebra 2}
-\author{Chris Huson}
-\date{September 2024}
-
-\fancyhead[RO]{\\ First and last name: \hspace{2.5cm} \,\\ Section: \hspace{2.5cm} \,}
-\fancyhead[LO]{BECA/Huson/Geometry: Construction \\* 27 September 2024}
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First and last name: \hspace{2.5cm} \,\\ Section: \hspace{2.5cm} \,}
+\fancyhead[LO]{BECA/Huson/Geometry: Construction \\* 2 October 2024}
 
 \begin{document}
-\subsubsection*{1.16 Quiz: Transformations and constructions}
+\subsubsection*{1.20 Classwork: Transformations and constructions}
 \begin{enumerate}[itemsep=0.5cm]
 
 
@@ -52,62 +49,46 @@
 
 \newpage
 \subsubsection*{Constructions: Use only a compass \& straightedge}
-
-\begin{multicols}{2}
-  \item Construct an equilateral triangle \\ with one side $\overline{AB}$.  
-  \vspace{5cm}
-  \begin{flushleft}
-  \begin{tikzpicture}
-    \draw [-, thick] (0,0)--(5,0);
-    \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-    \draw [fill] (5,0) circle [radius=0.05] node[below]{$B$};
-  \end{tikzpicture}
-  \end{flushleft}
-
-  \item Construct a perpendicular bisector of $\overline{PQ}$.  
-  \vspace{4cm}
-  \begin{flushright}
-  \begin{tikzpicture}
-    \draw [-, thick] (0,0)--(4,0);
-    \draw [fill] (0,0) circle [radius=0.05] node[below]{$P$};
-    \draw [fill] (4,0) circle [radius=0.05] node[below]{$Q$};
-  \end{tikzpicture}
-  \end{flushright} 
-\end{multicols} \vspace{3cm}
-
 \item Construct an angle bisector of the given angle.
-  \vspace{1cm}
+  \vspace{3cm}
   \begin{center}
   \begin{tikzpicture}
-    \draw [<->, thick] (-1,6)--(0,0)--(8,3);
+    \draw [<->, thick] (-7,5)--(0,0)--(3,5);
     %\draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
   \end{tikzpicture}
   \end{center} \vspace{1cm}
 
-\item Fill in the blank:
-``Slow and \rule{3cm}{0.15mm}  wins the race."
+\item Construct a perpendicular bisector of $\overline{PQ}$.  
+\vspace{4cm}
+\begin{center}
+\begin{tikzpicture}
+  \draw [-, thick] (0,0)--(5,2);
+  \draw [fill] (0,0) circle [radius=0.05] node[below]{$P$};
+  \draw [fill] (5,2) circle [radius=0.05] node[below]{$Q$};
+\end{tikzpicture}
+\end{center} 
+\vspace{3cm}
 
 \newpage
+\item Construct an equilateral triangle with one side $\overline{AB}$.  
+\vspace{5cm}
+\begin{center}
+\begin{tikzpicture}
+  \draw [-, thick] (0,0)--(5,-1);
+  \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+  \draw [fill] (5,-1) circle [radius=0.05] node[below]{$B$};
+\end{tikzpicture}
+\end{center}
+
 \item Construct a perpendicular to line $l$ through the point $P$.  
-    \vspace{5cm}
+    \vspace{4cm}
     \begin{center}
     \begin{tikzpicture}
         \draw [<->, thick] (0,0)--(10,6) node [below right]{$l$};
-        \draw [fill] (3,4) circle [radius=0.05] node[right]{$P$};
+        \draw [fill] (4,2.4) circle [radius=0.05] node[below right]{$P$};
     \end{tikzpicture}
     \end{center}
 
-
-\newpage
-\item Construct a square with one side $\overline{AB}$.  
-  \vspace{10cm}
-  \begin{center}
-  \begin{tikzpicture}
-    \draw [-, thick] (0,0)--(6,0);
-    \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
-    \draw [fill] (6,0) circle [radius=0.05] node[below]{$B$};
-  \end{tikzpicture}
-  \end{center}
 
 \end{enumerate}
 \end{document}
