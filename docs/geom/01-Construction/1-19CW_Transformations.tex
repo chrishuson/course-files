@@ -7,7 +7,7 @@
 
 \begin{document}
 
-\subsubsection*{1.19 Classwork: Rotation \hfill CCSS.HSG.CO.A.5}
+\subsubsection*{1.19 Classwork: Rotation, translation, \& reflection \hfill CCSS.HSG.CO.A.5}
 \begin{enumerate}
   \item Rotate $\triangle JKL$ counterclockwise $90^\circ$ around the origin, labeling the image $\triangle J'K'L'$.
   \begin{center}
@@ -82,6 +82,106 @@ Write the letter or letters for each corresponding object. \vspace{0.5cm}
       \draw [fill] (5,1) circle [radius=0.1] node[right] {$C(5,1)$};
     \end{tikzpicture}
     \end{flushright}
+\end{multicols}
+
+\newpage
+\item On the axes below, plot the point $A(-4,-1)$ and its image, $A'$, after the translation $(x,y) \rightarrow (x+6,y-3)$. Label the image as a coordinate pair.
+    \begin{center}
+      \begin{tikzpicture}[scale=.48]
+      \draw [help lines] (-5,-5) grid (5,5);
+      \draw [thick, <->] (-5.4,0) -- (5.4,0) node [right] {$x$};
+      \draw [thick, <->] (0,-5.4)--(0,5.4) node [above] {$y$};   
+    \end{tikzpicture}
+  \end{center}
+
+\item The image of triangle $ABC$ after a translation is $\triangle A'B'C'$. Is the area of the triangle greater, smaller, or the same after the translation? Justify your answer. \vspace{4cm}
+
+\item Find the result after the point $B(-2,5)$ is translated first to the right five and down one, and then by a second translation to the right one and down three. \par 
+Use proper notation and show all three points--$B$, $B'$, and $B''$--as ordered pairs. \vspace{3cm}
+
+\item What translation would map $P(4,7)\rightarrow P'(6,2)$?
+
+\newpage
+\item Reflect the point $A(4)$ across the origin. (flip the number line) Mark and label it $A'$.
+  \begin{center}
+      \begin{tikzpicture}
+        \draw [<->] (-7.5,0)--(7.5,0);
+        \foreach \x in {-7,...,7}
+          \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+          \draw [fill] (4,0) circle [radius=0.05] node[above] {$A(4)$};
+      \end{tikzpicture}
+    \end{center}
+
+  \item On the axes below, graph the point $P(-4,3)$ and its image, $P'$, after a reflection across the $x$-axis. Mark $P'$ and write it down as a coordinate pair.
+    \begin{center}
+      \begin{tikzpicture}[scale=.6]
+      \draw [help lines] (-5,-5) grid (5,5);
+      \draw [thick, <->] (-5.4,0) -- (5.4,0) node [right] {$x$};
+      \draw [thick, <->] (0,-5.4)--(0,5.4) node [above] {$y$};
+      \foreach \x in {-5,...,-1,1,2,3,4,5}
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \foreach \y in {-5,...,-1,1,2,3,4,5}
+        \draw[shift={(0,\y)},color=black] (-3pt,0pt) -- (3pt,0pt) node[left=5pt]  {$\y$}; 
+    \end{tikzpicture}
+  \end{center}
+
+\item A reflection maps $Q(4,3)$ onto $Q'(4,-3)$. Is the reflection across the $x$-axis or the $y$-axis? \vspace{1cm}
+
+\item Reflect $\triangle JKL$ across the $y$-axis, labeling the image $\triangle J'K'L'$.
+\begin{center}
+    \begin{tikzpicture}[scale=.48]
+    \draw [help lines] (-8,-6) grid (8,6);
+    \draw [thick, <->] (-8.4,0) -- (8.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-6.4)--(0,6.4) node [above] {$y$};  
+    \draw [thick]
+      (4,3) node[above right] {$J$}--
+      (2,-3) node[below] {$K$}--
+      (6,0) node[below right] {$L$}--cycle;  
+  \end{tikzpicture}
+\end{center}
+
+\newpage
+\item Triangle $A'B'C'$ is the image of triangle $ABC$ after a reflection. Is triangle $ABC$ congruent to $A'B'C'$? Explain why. \vspace{3cm}
+
+\item In the graph below, a transformation maps $\triangle PQR$ onto $\triangle STU$.
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item Completely identify the transformation.
+    \item What point corresponds to $T$?
+    \item Is $R$ the image of $U$, or its preimage? \vspace{1cm}
+  \end{enumerate}
+    \begin{tikzpicture}[scale=.6]
+    \draw [help lines] (-6,-4) grid (6,7);
+    \draw [thick, <->] (-6.4,0) -- (6.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-4.4)--(0,7.4) node [above] {$y$};  
+    \draw [thick]
+      (-1,5) node[above] {$P$}--
+      (-4,4) node[left] {$Q$}--
+      (-2,1) node[below left] {$R$}--cycle;
+    \draw [thick]
+    (1,5) node[above] {$S$}--
+    (4,4) node[above] {$T$}--
+    (2,1) node[below right] {$U$}--cycle;
+  \end{tikzpicture}
+\end{multicols}
+
+\item In the graph below, a transformation maps $\triangle ABC \rightarrow \triangle A'B'C'$.
+\begin{multicols}{2}
+Angie says the triangle must have been reflected across the $y$-axis. Robbie says it might have been reflected, but it could also have been translated to the right.\\[0.25cm] 
+Who is correct? Justify your answer.
+    \begin{tikzpicture}[scale=.6]
+    \draw [help lines] (-6,-4) grid (6,7);
+    \draw [thick, <->] (-6.4,0) -- (6.4,0) node [right] {$x$};
+    \draw [thick, <->] (0,-4.4)--(0,7.4) node [above] {$y$};  
+    \draw [thick]
+      (-2,5) node[above] {$A$}--
+      (-3,1) node[below] {$B$}--
+      (-1,1) node[below] {$C$}--cycle;
+    \draw [thick]
+    (2,5) node[above] {$A'$}--
+    (3,1) node[below] {$B'$}--
+    (1,1) node[below] {$C'$}--cycle;
+  \end{tikzpicture}
 \end{multicols}
 
 \newpage
