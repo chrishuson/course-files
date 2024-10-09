@@ -8,7 +8,7 @@
 
 \fancyhead[LE]{\thepage}
 \fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
-\fancyhead[LO]{BECA / Huson / Algebra 2: Polynomials \\* 10 October 2024}
+\fancyhead[LO]{BECA / Huson / Algebra 2: Polynomials \\* 17 November 2023}
 
 \begin{document}
 
@@ -128,9 +128,8 @@
         \draw[lightgray,very thin] (-4,-5) grid (4,4);
         \draw [thick, ->] (-4.2,0) -- (4.8,0) node [above] {$x$};
         \draw [thick, ->] (0,-5.2)--(0,4.5) node [right] {$y$};
-        \foreach \x in {-4,-2,4} \draw (\x cm,-10pt) -- (\x cm,10pt) node[above] {$\x$};
-        \foreach \y in {-4,4} \draw (5pt,\y cm) -- (-5pt,\y cm) node[left] {\pgfmathparse{int(\y*5)}\pgfmathresult};
-        %\draw (5pt,4 cm) -- (-5pt,4 cm) node[left] {$20$};
+        \foreach \x in {-4,4} \draw (\x cm,-10pt) -- (\x cm,10pt) node[above] {$\x$};
+        \draw (5pt,4 cm) -- (-5pt,4 cm) node[left] {$20$};
         \draw [thick, <->,smooth,samples=20,domain=-4.2:2.4] plot(\x,{0.2*(\x-2)*(\x+3)^2});
     \end{tikzpicture}
 \end{multicols}
