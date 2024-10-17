@@ -1,0 +1,198 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First and last name: \hspace{2.5cm} \,\\ Section: \hspace{2.5cm} \,}
+\fancyhead[LO]{BECA/Huson/Geometry: Congruence \\* 17 October 2024}
+
+\begin{document}
+\subsubsection*{2.3 Classwork: Segment lengths}
+\begin{enumerate}[itemsep=0.5cm]
+\item Use symbols to write the names of objects in the given figure.
+\begin{multicols}{2}
+  \begin{tikzpicture}
+  \draw [-, thick] (0,0)--(4,3);
+  \draw [fill] (0,0) circle [radius=0.05] node[below]{$A$};
+  \draw [fill] (4,3) circle [radius=0.05] node[below right]{$B$};
+\end{tikzpicture} \par
+\columnbreak
+\begin{enumerate}[itemsep=1cm]
+  \item The two endpoints
+  \item The name of the line segment
+  \item Measure the segment. Write its length in centimeters (expressed as an equation).
+\end{enumerate}
+\end{multicols} \vspace{0.25cm}
+
+\item A(n) $\rule{4cm}{0.15mm}$ is a portion of a straight line that includes two points and all of the points between the two points.
+
+\item Given $\overline{PQ}$ as shown on the number line. \par \smallskip
+  \begin{tikzpicture}
+    \draw [<->] (-4.5,0)--(6.5,0);
+    \foreach \x in {-4,...,6} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+      \draw [fill] (2,0) circle [radius=0.05] node[above] {$P$};
+      \draw [fill] (6,0) circle [radius=0.05] node[above] {$Q$};
+  \end{tikzpicture} \par \smallskip
+  What is the distance between $P$ and $Q$? \par \smallskip
+    $PQ=$ \vspace{1cm}
+  
+\item Two points $M(-1)$, $N(3)$ and the segment $\overline{MN}$ are shown on the number line. \par \smallskip
+\begin{tikzpicture}
+  \draw [<->] (-3.5,0)--(6.5,0);
+  \draw [-, thick] (-1,0)--(3,0);
+  \foreach \x in {-3,...,6} %2 leading for diff!=1
+    \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+    \draw [fill] (-1,0) circle [radius=0.05] node[above] {$M$};
+    \draw [fill] (3,0) circle [radius=0.05] node[above] {$N$};
+\end{tikzpicture} \par \smallskip
+What is the length of the segment $\overline{MN}$? Show your work as an equation. \vspace{2cm}
+
+\item Can a length be a negative number? Can it be zero?
+
+\newpage
+\item Points $A=4$ and $B=16$ are shown below. Find ${AB}$. \par \smallskip
+  \begin{tikzpicture}[scale=0.5]
+    \draw [<->] (-1,0)--(21,0);
+    \foreach \x in {0, 2,...,20} %2 leading for diff!=1
+      \draw[shift={(\x,0)},color=black] (0pt,-6pt) -- (0pt,6pt) node[below=5pt]  {$\x$};
+      \draw [fill] (4,0) circle [radius=0.1] node[above] {$A$};
+      \draw [fill] (16,0) circle [radius=0.1] node[above] {$B$};
+  \end{tikzpicture} \vspace{2cm}
+
+\item Given $\overline{FG}$ as shown. What is the distance on the number line between the points? \par \smallskip
+    \begin{tikzpicture}
+      \draw [<->] (-2.5,0)--(6.5,0);
+      \foreach \x in {-2,...,6} %2 leading for diff!=1
+        \draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below=5pt]  {$\x$};
+        \draw [thick] (1.25,0)--(5.5,0);
+        \draw [fill] (1.25,0) circle [radius=0.05] node[above] {$F(1.25)$};
+        \draw [fill] (5.5,0) circle [radius=0.05] node[above] {$G(5.50)$};
+    \end{tikzpicture} \vspace{2cm}
+  
+\item Given $J(-3.0)$ and $K(2.5)$, as shown on the number line. 
+Find the length of the line segment $\overline{JK}$. 
+\begin{center}
+  \begin{tikzpicture}
+    \draw[<->] (-4.5,0)--(4.5,0);
+    \foreach \x in {-4,...,4}
+      \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+    \draw[fill] (-3.0,0) circle [radius=0.05] node[above] {$J$};
+    \draw[fill] (2.5,0) circle [radius=0.05] node[above] {$K$};
+    \draw[-, thick] (-3,0)--(2.5,0);
+  \end{tikzpicture}
+\end{center} \vspace{3cm}
+
+\item Terry is 63 inches tall and Steven is 68 inches tall. State who is taller and by how much. \vspace{2cm}
+
+\item Dr. Huson bicycles from 80th Street to 164th Street (straight north). How many blocks is that?
+  
+
+\newpage
+\item Given $\overline{RST}$, $RS=5$, and $RT=7 \frac{1}{2}$. Find ${ST}$.\par  \vspace{0.5cm}
+  \begin{tikzpicture}
+    \draw [-, thick] (1,0)--(7,0);
+    \draw [fill] (1,0) circle [radius=0.05] node[below]{$R$};
+    \draw [fill] (5,0) circle [radius=0.05] node[below]{$S$};
+    \draw [fill] (7,0) circle [radius=0.05] node[below]{$T$};
+  \end{tikzpicture}  \vspace{2cm}
+
+
+\item Given $\overline{DEF}$, $DE=x+4$, $EF=x+2$, $DF=14$. Find ${DE}$.
+  \begin{enumerate}
+  \item Label the diagram with the given values.
+  \begin{flushright}
+    \begin{tikzpicture}
+        \draw [-, thick] (0,0)--(6,0);
+        \draw [fill] (0,0) circle [radius=0.05] node[below]{$D$};
+        \draw [fill] (3.25,0) circle [radius=0.05] node[below]{$E$};
+        \draw [fill] (6,0) circle [radius=0.05] node[below]{$F$};
+    \end{tikzpicture}
+  \end{flushright} \vspace{0.5cm}
+  \item Write an equation: \vspace{0.5cm}
+  \item Solve for $x$
+  \vspace{3cm}
+  \item Answer the question. \par \smallskip
+  Find $DE$ by substituting for $x$. \vspace{1.5cm}
+  \item Check your answer
+  \end{enumerate} \vspace{1cm}
+
+\item Points $P=14$ and $Q=47$ are shown below. Find ${PQ}$. \par \smallskip
+  \begin{tikzpicture}[scale=0.22]
+    \draw [<->] (-2,0)--(62,0);
+    \foreach \x in {0, 5,...,60}
+      \draw[shift={(\x,0)}] (0pt,-16pt)--(0pt,16pt)node[below=5pt]  {$\x$};
+      \draw [fill] (14,0) circle [radius=0.2] node[above] {$P$};
+      \draw [fill] (47,0) circle [radius=0.2] node[above] {$Q$};
+  \end{tikzpicture} \vspace{2cm}
+
+\newpage
+\subsubsection*{2.3 Extension: Absolute value}
+\item Write down the distance of each point from the origin. Use absolute value notation. \par \bigskip
+  \begin{tikzpicture}
+    \draw [<->] (-6.5,0)--(6.5,0);
+    \foreach \x in {-6,...,6}
+      \draw[shift={(\x,0)}] (0pt,-3pt)--(0pt,3pt) node[below=5pt]{$\x$};
+      \draw[fill] (0,0) circle [radius=0.05] node[above]{origin};
+      \draw[fill] (3.7,0) circle [radius=0.05] node[above]{$B(3.7)$};
+      \draw[fill] (-4,0) circle [radius=0.05] node[above]{$A(-4)$};
+  \end{tikzpicture} \bigskip
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item[A.] $|-4|=$
+      \item[B.] $\rule{4cm}{0.15mm}$
+    \end{enumerate}
+  \end{multicols}
+  
+\item Find the value of each expression.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=1cm]
+      \item $|-3|=$
+      \item $|5|=$
+      \item $|-2.75|=$
+      \item $|11-3|=$
+      \item $|3-11|=$
+      \item $|5+(-7)|=$
+    \end{enumerate}
+  \end{multicols}
+
+\item Circle true or false for each statement. \bigskip
+  \begin{itemize}[label={\textbf{T \; F \;}}, itemsep=0.5cm]
+    \item The absolute value of any number must be postive or zero.
+    \item In the equation $|x|=4$ the value of $x$ could be positive 4.
+    \item If $x=-5$ then $|x|=5$.
+    \item The following equation is never true for any $x$: $|x|=-10$.
+  \end{itemize} \bigskip
+
+\item Given that $x=-5$, find the value of each expression. \bigskip
+  \begin{multicols}{2} 
+    \begin{enumerate}[itemsep=1cm]
+      \item $|x+2|=$
+      \item $|-x|=$
+      \item $|2x|=$
+      \item $|6-x|=$
+    \end{enumerate}
+  \end{multicols}
+
+
+\end{enumerate}
+\end{document}
+
+
+\item Given $\overline{LMN}$, $LM=3x+1$, $MN=7$, $LN=17$. Find ${x}$.\\[0.15in]
+  \begin{tikzpicture}
+   \draw [-, thick] (0,0)--(7,0);
+   \draw [fill] (0,0) circle [radius=0.05] node[below]{$L$};
+   \draw [fill] (4,0) circle [radius=0.05] node[below]{$M$};
+   \draw [fill] (7,0) circle [radius=0.05] node[below]{$N$};
+   \node at (1.7,0) [above]{$3x+1$};
+   \node at (5.5,0) [above]{$7$};
+   \draw [<->, dashed] (0,-1)--(7,-1);
+   \node at (3.5,-1) [below]{$17$};
+ \end{tikzpicture} %\vspace{1cm}
+  \begin{enumerate}
+  \item Write down an equation to represent the situation. \vspace{0.5cm}
+  \item Solve for $x$. \vspace{1.5cm}
+  \item Check your answer. \vspace{1.5cm}
+  \end{enumerate}
+
