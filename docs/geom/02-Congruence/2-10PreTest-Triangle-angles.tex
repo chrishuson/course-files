@@ -1,0 +1,136 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First and last name: \hspace{2.5cm} \,\\ Section: \hspace{2.5cm} \,}
+\fancyhead[LO]{BECA/Huson/Geometry: Construction \\* 6 November 2024}
+
+\begin{document}
+\subsubsection*{2.10 PreTest: Applying triangle theorems}
+\begin{enumerate}[itemsep=0.5cm]
+
+\item A triangle has two angles measuring $80^\circ$ and $60^\circ$ respectively. Find the measure of the third angle. \vspace{2cm}
+
+\item Given  $\triangle LMN$ with $m\angle L=2x+20$, $m\angle N=3x+5$, and $m\angle M=5x+5$. Find $x$.
+  \begin{flushright}
+  \begin{tikzpicture}[scale=0.8]
+    %\draw [->, thick] (0,0)--(5,5);
+    \draw [-, thick] (0,0) node[below]{$L$}--
+      (2.5,3) node[above]{$M$}--
+      (5,0) node[below]{$N$}--cycle;
+  \end{tikzpicture}
+  \end{flushright} \vspace{2cm}
+
+\item The measures in degrees of the three angles of a triangle are $3x$, $\frac{1}{2}x+7$, and $5x-65$. Find $x$. \vspace{4cm}
+
+\item Given $\triangle RSU$. If $m\angle UST=155^\circ$ and $m\angle R=60^\circ$, find $m\angle U$.
+  \begin{flushright}
+  \begin{tikzpicture}[scale=0.8]
+    %\draw [->, thick] (0,0)--(5,5);
+  \draw [<-, thick] (8,0)--
+    (7,0) node[below]{$T$}--
+    (0,0) node[below]{$R$}--
+    (2.5,3) node[above]{$U$}--
+    (5,0) node[below]{$S$};
+  \end{tikzpicture}
+  \end{flushright} \vspace{2cm}
+
+\newpage
+\item Given $\triangle RSU$. If $m\angle UST=x$ and $m\angle R=x-80$, and $m\angle U=x-50$. Find $x$.
+  \begin{flushright}
+  \begin{tikzpicture}[scale=0.8]
+    %\draw [->, thick] (0,0)--(5,5);
+  \draw [<-, thick] (8,0)--
+    (7,0) node[below]{$T$}--
+    (0,0) node[below]{$R$}--
+    (2.5,3) node[above]{$U$}--
+    (5,0) node[below]{$S$};
+  \end{tikzpicture}
+  \end{flushright} \vspace{4cm}
+
+\item In  $\triangle ABC$ shown below, side $\overline{AC}$ is extended to point $D$ with \\ $m\angle DAB=(11x+12)^\circ$, $m\angle C=(3x+3)^\circ$, and $m\angle B=(9x+2)^\circ$. \\[0.25cm]
+Find $m\angle BAC$.
+\begin{flushright}
+    \begin{tikzpicture}
+      \draw [thick](0,0)node[below]{$D$}--
+        (1.8,0)node[below]{$A$}--
+        (9,0)node[below]{$C$}--
+        (4,3)node[above]{$B$} --(2,0);
+        \node at (2.2,0)[above left]{$(11x+12)^\circ$};
+        \node at (8.2,0)[above left]{$(3x+3)^\circ$};
+        \node at (4.4,2.4)[below]{$(9x-2)^\circ$};
+    \end{tikzpicture}
+  \end{flushright} \vspace{1cm}
+
+\newpage
+  \item Given $\triangle ABC$. $\overline{AC} \cong \overline{BC}$,  m$\angle A=55$. Find m$\angle C$.\\[0.5cm]
+  \begin{tikzpicture}[scale=0.7]
+    \draw[thick](0,0)--(4,0)--(2,6)--(0,0);
+    \draw[fill] (0,0) circle [radius=0.05] node[below]{$A$};
+    \draw[fill] (4,0) circle [radius=0.05] node[below]{$B$};
+    \draw[fill] (2,6) circle [radius=0.05] node[above right]{$C$};
+    %\draw[color=blue] (0,0) ++(0.75,0) arc [start angle=0, end angle=70, radius=0.75];
+    %\draw[color=blue] (4,0) ++(-0.22, 0.73) arc [start angle=110, end angle=180, radius=0.75];
+    \draw[thick] (0.8,3.1)--(1.2,2.9); %tick mark
+    \draw[thick] (2.8,2.9)--(3.2,3.1); %tick mark
+    %\node [right] at (3.25,2.5){$x+7$};
+    %\node [left] at (0.75,2.5){$2x+1$};
+  \end{tikzpicture}%\vspace{1cm}
+  
+  \item Given $\triangle DEF$. $\overline{DF} \cong \overline{EF}$,  m$\angle F=72$. Find m$\angle D$.\\[0.5cm]
+    \begin{tikzpicture} %[scale=3] Isosceles, parallel marks, congruence marks
+      \draw[-, thick] (0,0) node[below]{$D$}--
+        (5,0) node[below]{$E$}--(2.5,4) node[above]{$F$}--cycle;
+      %\draw[>->, thick] (1.0,1.6)--(1.25,2);
+      %\draw[{Bar[]}-{Bar[]}, thick] (4,1.6)--(3.75,2);
+      %\draw[color=blue] (0.75,0) arc [start angle=0, end angle=58, radius=0.75];
+      %\draw (5,0)-- +(-0.75,0) arc [start angle=180, end angle=122, radius=0.75];
+    \end{tikzpicture}%\vspace{1cm}
+  
+  \item Given the triangle shown with congruent sides marked.  m$\angle 1=110$. Find m$\angle 2$\\
+  Spicy: Find the measure of the vertex angle. \\[0.5cm]
+    \begin{tikzpicture}[scale=0.7]
+      \draw[thick](0,0)--(4,0)--(2,6)--(0,0);
+      \draw[->, thick](0,0)--(4,0) node[above right]{1}--(7,0);
+      \draw[fill] (0,0) circle [radius=0.05] node[above right]{$2$};
+      %\draw[fill] (4,0) circle [radius=0.05] node[below]{$B$};
+      \draw[fill] (2,6) circle [radius=0.05] node[above right]{$V$};
+      %\draw[color=blue] (0,0) ++(0.75,0) arc [start angle=0, end angle=70, radius=0.75];
+      %\draw[color=blue] (4,0) ++(-0.22, 0.73) arc [start angle=110, end angle=180, radius=0.75];
+      \draw[thick] (0.8,3.1)--(1.2,2.9); %tick mark
+      \draw[thick] (2.8,2.9)--(3.2,3.1); %tick mark
+      %\node [right] at (3.25,2.5){$x+7$};
+      %\node [left] at (0.75,2.5){$2x+1$};
+    \end{tikzpicture}
+  
+  \newpage
+  \item Given circle with center $Z$ and isosceles $\triangle XYZ$. m$\angle Z=100$. Find m$\angle Y$.\\[1cm]
+      %\hspace{1cm} Given the line  $l$ and point $P$.
+      \begin{tikzpicture}
+        %\draw[-, thick] (-6,0) node[left]{$A$}--(0,0);
+        \draw  (0,0) circle [radius=3] node[above]{$Z$};
+        \draw[-, thick] (220:3) node[left]{$X$}--(0,0)
+          --(320:3) node[right]{$Y$}--cycle;
+        \node at (0,-0.6){$100^\circ$};
+        \draw[fill] (0,0) circle [radius=0.05];
+      \end{tikzpicture}
+  
+  \item Given circle $O$ with inscribed $\triangle SLO$. m$\angle S=x+17$ and m$\angle L=2x-18$. Find $x$.\\
+  For full credit, check your answer.\\[1cm]
+      %\hspace{1cm} Given the line  $l$ and point $P$.
+      \begin{tikzpicture}
+        %\draw[-, thick] (-6,0) node[left]{$A$}--(0,0);
+        \draw  (0,0) circle [radius=3] node[left]{$O$};
+        \draw[-, thick] (15:3) node[right]{$L$}--(0,0)
+          --(97:3) node[above]{$S$}--cycle;
+        %\node at (8.5,-0.4){$l$};
+        \draw[fill] (0,0) circle [radius=0.05];
+      \end{tikzpicture}
+      \vspace{1cm}
+  
+  \item Writing to learn: Why do we write down the theorems that justify each step to solve a problem?
+
+
+\end{enumerate}
+\end{document}
