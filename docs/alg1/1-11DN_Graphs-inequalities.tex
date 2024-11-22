@@ -1,0 +1,53 @@
+\documentclass[12pt, twoside]{article}
+\input{preamble}
+\usepackage{float}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First and last name: \hspace{2.5cm} \,\\ Section: \hspace{2.5cm} \,}
+\fancyhead[LO]{BECA / Dr. Huson / Regents Prep: Graphs\\* 22 November 2024}
+
+\begin{document}
+
+\subsubsection*{1.11 Do Now: Graphing inequalities}
+\begin{enumerate}
+  \item Graph and label the two equations. Mark their intersection as an ordered pair.
+
+  \begin{multicols}{2}
+    $y > \frac{1}{2}x+4$ \\
+    $3x+y \leq -3$
+    \end{multicols} \vspace{1cm}
+
+  \begin{center} %4 quadrant regents grid w T-Chart
+  \begin{tikzpicture}[scale=.635]
+    \draw [help lines] (-10,-10) grid (10,10);
+    \draw [thick, ->] (-10.2,0) -- (10.4,0) node [below right] {$x$};
+    \draw [thick, ->] (0,-10.2)--(0,10.4) node [left] {$y$};
+  \end{tikzpicture}
+  \end{center}
+
+For each equation, lightly shade the side of the line that satisfies the inequality. Use a solid line for equalities and a dashed line for strict inequalities.
+
+\newpage
+\item In the following problems, solve for the value of $x$, then check your answer.
+\begin{multicols}{2}
+  \begin{enumerate}[itemsep=4cm]
+    \item $2x + 5 = x + 9$
+    \item $\frac{4}{5}x = 8$
+    \item $5x - 4 = x + 8$
+    \item $\frac{1}{2}(x - 4) = 3$
+    \item $\frac{1}{3} x - 4 = -2$
+    \item $\frac{2}{3}(x + 4) = x - 2$
+  \end{enumerate}
+  \end{multicols} \vspace{4cm}
+
+\item Factor each equation and solve for the values of $x$.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=5cm]
+    \item $x^2-5x+4=0$
+    \item $x^2+7x+10=0$
+  \end{enumerate}
+  \end{multicols}
+
+
+\end{enumerate}
+\end{document}
