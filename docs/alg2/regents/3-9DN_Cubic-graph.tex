@@ -1,0 +1,53 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First and last name: \hspace{2.5cm} \,\\ Section: \hspace{2.5cm} \,}
+\fancyhead[LO]{BECA / Dr. Huson / Regents Prep: Graphs\\* 26 November 2024}
+
+\begin{document}
+
+\subsubsection*{3.9 Do Now: Graphing 3rd order polynomials}
+\begin{enumerate}
+\item Graph the cubic function $f(x) = x^{3}+5x^{2}+3x-9$ on the grid below. 
+  \begin{enumerate}
+      \item Mark and label the $x$-intercepts. 
+      \item Write the function in factored form. \vspace{1.5cm}
+      \item Characterize the end behavior of the function. Use the notation \\
+      ``as $x \rightarrow \pm \infty$ $y \rightarrow\pm \infty$"    
+      \item Over the interval $-3<x<-1$, is the function increasing or decreasing? 
+  \end{enumerate} \hspace{2cm}
+  
+    \begin{center}
+    \begin{tikzpicture}[scale=.635]
+      \draw [help lines] (-10,-10) grid (10,10);
+      \draw [thick, ->] (-10.2,0) -- (10.4,0) node [below right] {$x$};
+      \draw [thick, ->] (0,-10.2)--(0,10.4) node [left] {$y$};
+      %\draw[thick, <->,smooth, domain=-3.3:2.1] plot (\x, {2.5*(\x)^2 + 3*\x - 7});
+    \end{tikzpicture}
+    \end{center}
+
+\newpage
+\item In the following problems, solve for the value of $x$, then check your answer.
+\begin{multicols}{2}
+  \begin{enumerate}[itemsep=3cm]
+    \item $\frac{1}{4}(x - 8) = 2$
+    \item $\frac{1}{5} x - 3 = -1$
+    \item $\frac{3}{4}(x + 2) = x - 1$
+    \item $\displaystyle \frac{3}{7x} = 6$
+    \end{enumerate}
+    \end{multicols} \vspace{4cm}
+
+\item Factor each equation and solve for the values of $x$.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=5cm]
+    \item $x^2-9x+14=0$
+    \item $x^2+14x+49=0$
+  \end{enumerate}
+  \end{multicols} \vspace{4cm}
+
+\item Solve $\displaystyle 1 = \frac{1}{x^2+2x} + \frac{x-1}{x}$ 
+
+\end{enumerate}
+\end{document}
