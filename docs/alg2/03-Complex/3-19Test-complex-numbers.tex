@@ -118,7 +118,7 @@ f(x) = x^4 - 3x^3 - 3x^2 - 2x + 5 \quad \text{and} \quad g(x) = 2x^4 - x^3 + 2x 
     \end{enumerate}
     \vspace{2cm}
 
-\item Solve for $x$. $\displaystyle \frac{2}{x+3} = \frac{x+1}{x}$ \vspace{5cm}
+\item Solve for $x$. $\displaystyle \frac{8}{x+3} = \frac{x+1}{x}$ \vspace{5cm}
 
 
 \subsubsection*{A2-F.BF.2 Write arithmetic and geometric sequences with recursive formulas}
@@ -188,18 +188,18 @@ $3$ & $-25$ \\
 \end{multicols}
 
 \newpage
-\item The graph of the function $f(x) = x^3 - 3x^2 - 10x + 24$ is shown. Write the function in factored form. 
+\item The graph of the function $f(x) = x^4 - 4x^3 + x^2 + 6x$ is shown. Write the function in factored form. 
     \begin{flushright}
-    \begin{tikzpicture}[xscale=1, yscale=0.25]
+    \begin{tikzpicture}[xscale=1, yscale=0.35]
         \draw [thick, ->] (-4.2,0) -- (5,0) node [above] {$x$};
-        \draw [thick, ->] (0,-8.2)--(0,10) node [right] {$y$};
+        \draw [thick, ->] (0,-4.2)--(0,9) node [right] {$y$};
         \foreach \x in {-3,...,4} \draw (\x cm,12pt) -- (\x cm,-12pt) node[below] {$\x$};
         %\foreach \y in {-8,-6,4,8} \draw (3pt,\y cm) -- (-3pt,\y cm) node[left] {$\y$};
-        \draw [thick, <->,smooth,samples=20,domain=-3.6:4.6] plot(\x,{0.3*(\x-2)*(\x-4)*(\x+3)});
+        \draw [thick, <->,smooth,samples=20,domain=-1.6:3.6] plot(\x,{0.5*\x*(\x-2)*(\x+1)*(\x-3)});
     \end{tikzpicture}
     \end{flushright}
 
-\item Let $j(x)= (x+4)(x+1)(x-4)^2$ be a polynomial function. 
+\item Let $j(x)= x(x+3)(x-2)(x-5)$ be a polynomial function. 
     \begin{center}
     \begin{tikzpicture}[xscale=0.7, yscale=0.7]
         \draw [thick, ->] (-7.2,0) -- (7.5,0) node [above] {$x$};
@@ -228,13 +228,21 @@ $3$ & $-25$ \\
 \newpage
 
 \subsubsection*{A2.N.CN.2 Apply the properties of complex numbers}
+\item Write each expression in the form $a+bi$ with $a,b$ real numbers. \\[0.25cm]
+Given  $s = 2 - 5i $ and $t = 9 - 3i$.
+    \begin{enumerate}[itemsep=1.5cm]
+        \item $s+t =$
+        \item $s-t =$
+        \item $st =$
+    \end{enumerate} \vspace{3cm}
+
 \item If \((6 - ki)^2 = 27 - 36i\), the value of \(k\) is
 \begin{enumerate}
     \item \(-36\)
     \item \(-3\)
     \item \(3\)
     \item \(6\)
-\end{enumerate} \vspace{1cm}
+\end{enumerate} \vspace{2cm}
 
 \item Does the equation $x^2 - 4x + 13 = 0$ have imaginary solutions? Justify your answer.
 
