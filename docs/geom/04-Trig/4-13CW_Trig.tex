@@ -1,0 +1,125 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Name: \hspace{4cm} \,\\}
+\fancyhead[LO]{BECA / Dr. Huson / Geometry\\*  Unit 4: Trigonometry \\* 28 January 2025}
+
+\begin{document}
+
+\subsubsection*{10.15 Classwork: Unit review \hfill HSG.SRT.C.8}
+\begin{enumerate}
+\item As shown, right $\triangle ABC$ has $AC=8, BC=15, AB=17$, m$\angle C=90^\circ$. \\[0.25cm] 
+Express each trigonometric ratio as a fraction.
+  \begin{multicols}{2}
+    \begin{enumerate}[itemsep=0cm]
+      \item $\sin A =$
+      \item $\cos A =$
+      \item $\tan A =$
+      \item Find $m\angle A$, to the \emph{nearest degree}.
+    \end{enumerate}
+    \begin{center}
+      \begin{tikzpicture}[scale=0.6]
+        \draw [thick](0,0) node[below]{$A$}--
+        (4,0) node[below]{$C$}--
+        (4,8) node[above right]{$B$}--cycle;
+        \node at (2,0)[below]{$8$};
+        \node at (4,4)[right]{$15$};
+        \node at (2,4)[left]{$17$};
+        \draw (4,0)++(-0.6,0)--++(0,0.6)--+(0.6,0);
+        \draw (0.75,0) arc [start angle=0, end angle=63, radius=0.75];
+      \end{tikzpicture}
+    \end{center}
+  \end{multicols} \vspace{1cm}
+
+\item Right triangle $\triangle ABC$ is shown with measures as marked.\vspace{0.25cm}
+\begin{multicols}{2}
+  \begin{enumerate}[itemsep=0.5cm]
+    \item Write down $\sin A$.
+    \item Find the length of side $AC$.\vspace{1.5cm}
+    \item Find the angle measure of $\angle A$, rounded to the \emph{nearest degree}.
+    \vspace{1cm}
+  \end{enumerate}
+\begin{flushright}
+        \begin{tikzpicture}[scale=1]
+        \draw [thick]
+        (0,0)node[left]{$A$}--
+        (4,0)node[below right]{$C$}--
+        (4,3)node[right]{$B$}--cycle;
+        \draw (4,0)++(-0.5,0)--++(0,0.5)--+(0.5,0);
+        \node at (4,1.5)[right]{$3$};
+        \node at (1.9,1.8){$5$};
+      \end{tikzpicture}
+\end{flushright}
+\end{multicols} \vspace{1cm}
+
+
+\item In a right triangle, the acute angles have the relationship $\sin(2x + 7) =\cos (33)$. \\[0.25cm]
+Find the value of $x$.
+
+\newpage
+\item Right $\triangle ABC$ has base $AC=1$, height $BC=\sqrt{3}$, and hypotenuse $AB=2$ as marked. (A reflection $\triangle ABC$ of is also shown.)\vspace{0.25cm}
+\begin{enumerate}[itemsep=0.6cm]
+  \begin{multicols}{2}
+    \item Write down the angle measure of $\angle A$.
+    \item Write down the angle measure of $\angle ABC$.
+\item Write down $\cos A$.
+\begin{flushright}
+        \begin{tikzpicture}[scale=0.8]
+        \draw [thick]
+        (0,0)node[below]{$A$}--
+        (3,0)node[below]{$C$}--
+        (60:6)node[above]{$B$}--cycle;
+        \draw (3,0)++(-0.5,0)--++(0,0.5)--+(0.5,0);
+        \draw [dashed] (3,0)--(6,0)--(60:6);
+        \node at (1.5,0)[below]{$1$};
+        \node at (62:3)[left]{$2$};
+        \node at (3,2)[right]{$\sqrt{3}$};
+      \end{tikzpicture}
+\end{flushright}
+\end{multicols}
+\end{enumerate}
+\vspace{1cm}
+
+\item At an angle of elevation of $17^\circ$, the top of a structure $B$ is visible from point $A$ on the ground 100 meters away, as shown below.
+
+Find the height $h$ of the structure to the \emph{nearest meter}. \hfill (not to scale)
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.3]
+      %\draw [-, thick] (0,0)--(35:23);
+      \draw [-, thick] (-4,0)--
+      (0,0)--
+        (17,0)--
+        (22,0)--
+        (22,10)--(17,10)--(17,0);
+      \draw [fill] (0,0) circle [radius=0.1] node[above left]{$A$};
+      \draw [fill] (17,10) circle [radius=0.1] node[above right]{$B$};
+      \draw [dashed] (0,0)--(17,10);
+      \node at (3.8, 0)[above]{$17^\circ$};
+      \node at (11, 0)[below]{100 m};
+      \node at (17, 5)[right]{$h$};
+    \end{tikzpicture}
+    \end{flushright}
+
+
+\item A pirate is looking down from the top of a mast with a height of 12 meters. Below him, the pirate sees an enemy ship 100 meters away.
+
+  Find the angle of depression to the \emph{nearest degree}.
+  \begin{center}
+      \begin{tikzpicture}[scale=1.1]
+        \draw [thick] (10,0)--(0,0)--(10,2.0)--cycle;
+        \draw [dashed, <-] (5,2)--(10,2.0);
+        \draw [thick, ->] (8.5,2) arc [start angle=180, end angle=191.3, radius=1.5];
+        \node at (5.5,2)[below]{Angle of depression $ =\theta^\circ$};
+        \node at (10,1.2)[right]{$h=12$ meters};
+        \node at (6,0)[below]{$100 \,\rm{meters}$};
+        \node at (0,0)[below right]{Enemy ship};
+      \end{tikzpicture}
+    \end{center} \vspace{4cm}
+
+
+
+
+\end{enumerate}
+\end{document}
+  
