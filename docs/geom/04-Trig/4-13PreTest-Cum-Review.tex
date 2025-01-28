@@ -9,7 +9,7 @@
 \begin{document}
 \subsubsection*{4.13 PreTest: Cumulative review}
 \begin{enumerate}[itemsep=0.5cm]
-\item Given $\overline{DEF}$, $DE=11 \frac{1}{4} $, and $EF= 4$. Find ${DF}$. \par \bigskip
+\item Given $\overline{DEF}$, $DE=17 \frac{1}{4} $, and $EF= 6$. Find ${DF}$. \par \bigskip
   \begin{tikzpicture}`'
     \draw [-, thick] (1,0)--(7,0);
     \draw [fill] (1,0) circle [radius=0.05] node[below]{$D$};
@@ -17,14 +17,14 @@
     \draw [fill] (7,0) circle [radius=0.05] node[below]{$F$};
   \end{tikzpicture}  \vspace{1cm}
 
-\item Point $G$ bisects $\overline{FH}$, with $FG=7x + 5$, $GH=19$. Find $x$. \par \medskip
+\item Point $G$ bisects $\overline{FH}$, with $FG=6x - 8$, $GH=10$. Find $x$. \par \medskip
   \begin{tikzpicture}
       \draw[fill] (0,0) circle [radius=0.05] node[below]{$F$};
       \draw[-, thick] (0,0)--(8,0);
       \draw[fill] (4,0) circle [radius=0.05] node[below]{$G$};
       \draw[fill] (8,0) circle [radius=0.05] node[below]{$H$};
-      \node at (2,0.5) [above]{$7x + 5$};
-      \node at (6,0.5) [above]{$19$};
+      \node at (2,0.5) [above]{$6x-8$};
+      \node at (6,0.5) [above]{$10$};
       \draw (1.8,-0.2)--(1.9,0.2);
       \draw (2.1,-0.2)--(2.2,0.2);
       \draw (5.8,-0.2)--(5.9,0.2);
@@ -63,7 +63,7 @@
       \draw [thick]
         (2,3) node[below left] {$A$}--
         (6,3) node[right] {$B$}--
-        (5,1) node[below] {$C$}--
+        (6,-1) node[below] {$C$}--
         cycle;
     \end{tikzpicture}
   \end{flushright}
@@ -76,28 +76,28 @@
         \draw [help lines] (-8,-7) grid (8,7);
         \draw [thick, <->] (-8.4,0) -- (8.4,0) node [below right] {$x$};
         \draw [thick, <->] (0,-7.4)--(0,7.4) node [left] {$y$};
-        \draw [thick] (-2,-2) node[left] {$A$}--
-          (6,-4) node[right] {$B$}--
+        \draw [thick] (-1,-3) node[below] {$A$}--
+          (6,-1) node[right] {$B$}--
           (3,5) node[above right] {$C$}--
           cycle;
       \end{tikzpicture}
       \end{center}
   
-\item A translation is applied to $\triangle ABC$ moving it to the up 5 and right 1.
+\item A translation is applied to $\triangle ABC$ moving it to the right 2 and down 5.
   \begin{enumerate}
     \item Write as coordinate pairs the vertices of the image, $\triangle A'B'C'$ \\[0.3cm]
-    $A(2,0) \rightarrow$ \\[0.7cm]
-    $B(-5,-3) \rightarrow$ \\[0.7cm]
-    $C(-2,2) \rightarrow$ %\\[0.2cm]
+    $A(3,1) \rightarrow$ \\[0.7cm]
+    $B(-1,-3) \rightarrow$ \\[0.7cm]
+    $C(-2,7) \rightarrow$ \\[0.1cm]
     \item Which triangle is larger, or are they the same size? Justify your answer.
   \end{enumerate} \vspace{2cm}
   
   
-\item A translation maps $D(2,3) \rightarrow D'(-3,3)$. What is the image of $E(4,-1)$ under the same translation? \vspace{2cm}
+\item A translation maps $D(-2,3) \rightarrow D'(5,1)$. What is the image of $E(-1,2)$ under the same translation? \vspace{2cm}
 
-  \newpage
-  \item Dilate $\triangle ABC \rightarrow \triangle A'B'C'$ by a factor of $k=3$ centered at the origin, \\
-  $(x,y) \rightarrow (3x, 3y)$. Plot and label the image on the axes.
+\newpage
+\item Dilate $\triangle ABC \rightarrow \triangle A'B'C'$ by a factor of $k=2.5$ centered at the origin, \\
+$(x,y) \rightarrow (2.5x, 2.5y)$. Plot and label the image on the axes.
   \begin{center}
       \begin{tikzpicture}[scale=1]
       \draw [help lines] (-1,-2) grid (8,8);
@@ -110,21 +110,21 @@
       \end{tikzpicture}
   \end{center}
 
-\item A dilation centered at $A$ with scale factor $k=2$ maps $\triangle ABC \rightarrow \triangle ADE$. Given the lengths $AC = 10$, $BC = 7$, $AB = 12$, and $DE = 14$. \\[0.25cm]
+\item A dilation centered at $A$ with scale factor $k=2$ maps $\triangle ABC \rightarrow \triangle ADE$. Given the lengths $AC = 9$, $BC = 6$, $AB = 12$, and $DE = 14$. \\[0.25cm]
   How long are $AD$ and $AE$?
       \begin{flushright}
       \begin{tikzpicture}[scale=0.8]
           \draw [-, thick] (0,0)--
           (8,0) node[below]{$E$}--
-          (8,6) node[right]{$D$}--cycle;
-          \draw [thick] (4,0)--(4,3);
+          (9,6) node[right]{$D$}--cycle;
+          \draw [thick] (4,0)--(4.5,3);
           \draw [fill] (0,0) circle [radius=0.1] node[below] {$A$};
           \node at (4,0) [below]{$C$};
-          \node at (4,3) [above left]{$B$};
-          \node at (2, 0) [below]{$10$};
-          \node at (2, 2) [above]{$12$};
-          \node at (8, 3) [right]{$14$};
-          \node at (4, 1.5) [right]{$7$};
+          \node at (4,3) [above]{$B$};
+          \node at (2, 0) [below]{$9$};
+          \node at (2, 1.8) [above]{$12$};
+          \node at (8.5, 3) [right]{$14$};
+          \node at (4.5, 1.5) [right]{$6$};
       \end{tikzpicture}
       \end{flushright}
 
