@@ -7,7 +7,7 @@
 \fancyhead[LO]{BECA/Huson/Geometry: Trigonometry \\* 31 January 2025}
 
 \begin{document}
-\subsubsection*{4.14 Test: Trigonometry and Cumulative Review}
+\subsubsection*{4.14 Exam: Trigonometry and Cumulative Review}
 \begin{enumerate}[itemsep=0.5cm]
 \item Point $G$ bisects $\overline{FH}$, with $FG=5x + 7$, $GH=22$. Find $x$. \par \medskip
   \begin{tikzpicture}
@@ -69,7 +69,6 @@
     \item Which triangle is larger, or are they the same size? Justify your answer.
   \end{enumerate} \vspace{2cm}
 
-
 \newpage
 \item Apply a counter clockwise rotation of $90^\circ$ centered at the origin to $\triangle ABC$. Plot and label the image on the axes below.
   \begin{center}
@@ -100,52 +99,33 @@ $(x,y) \rightarrow (2x, 2y)$. Plot and label the image on the axes.
   \end{center}
 
 \newpage
-\item A dilation centered at $A$ with scale factor $k=2 \frac{1}{3}$ maps $\triangle ABC \rightarrow \triangle ADE$. Given the lengths $AC = 9$, $BC = 6$, $AB = 12$, and $DE = 14$. \\[0.25cm]
-  How long are $AD$ and $AE$?
-      \begin{flushright}
-      \begin{tikzpicture}[scale=0.8]
-          \draw [-, thick] (0,0)--
-          (8,0) node[below]{$E$}--
-          (9,6) node[right]{$D$}--cycle;
-          \draw [thick] (4,0)--(4.5,3);
-          \draw [fill] (0,0) circle [radius=0.1] node[below] {$A$};
-          \node at (4,0) [below]{$C$};
-          \node at (4,3) [above]{$B$};
-          \node at (2, 0) [below]{$9$};
-          \node at (2, 1.8) [above]{$12$};
-          \node at (8.5, 3) [right]{$14$};
-          \node at (4.5, 1.5) [right]{$6$};
-      \end{tikzpicture}
-      \end{flushright}
+\subsubsection*{Similarity}
+\item Given $\triangle ABC \sim \triangle DEF$, $m\angle A=45^\circ$, and $m\angle F=110^\circ$. Find $m\angle D$. \vspace{4cm}
 
-\newpage
-\item Given $\triangle ABC \sim \triangle DEF$, $m\angle A=35^\circ$, and $m\angle F=105^\circ$. Find $m\angle C$. \vspace{4cm}
 
-\item What is the transformation mapping parallelogram $BECA \rightarrow B'E'C'A'$, as shown in the diagram. (hint: Dilations must specify the center and scale factor.)
-    \begin{flushright}
-        \begin{tikzpicture}[scale=1]
-        \draw [help lines] (-1,-1) grid (7,6);
-        \draw [thick, <->] (-1.4,0) -- (7.4,0) node [right] {$x$};
-        \draw [thick, <->] (0,-1.4)--(0,6.4) node [above] {$y$};  
-        \draw [thick]
-            (0,0) node[below left] {$B$}--
-            (1,2) node[above left] {$E$}--
-            (3,2) node[above right] {$C$}--
-            (2,0) node[below right] {$A$}--cycle;
-        \draw [thick]
-            (0,0) node[below right] {$B'$}--
-            (2,4) node[above left] {$E'$}--
-            (6,4) node[above right] {$C'$}--
-            (4,0) node[below right] {$A'$}--cycle;
-        \end{tikzpicture}
-    \end{flushright}
+\item Two triangles are shown with $P$ the intersection of $\overline{AJ}$ and $\overline{BK}$.
+\begin{multicols}{2}
+  \begin{enumerate}
+      \item What theorem can be used to justify $\angle APB \cong \angle JPK$?
+      \item What angle must be congruent to $\angle J$ to prove $\triangle ABP \sim \triangle JKP$ by \emph{angle-angle similarity}? \vspace{3cm}
+      \end{enumerate}
+  \begin{tikzpicture}[rotate=-20, scale=1.4]
+      \draw [thick]
+        (-0.25,-1)node[below left]{$B$}--
+        (0.5,2)node[left]{$K$}--
+        (4,0)node[below left]{$J$}--
+        (0,0)node[above]{$P$}--
+        (-2,0)node[left]{$A$}--cycle;
+    \end{tikzpicture}
+  \end{multicols}
+    \vspace{1cm}
 
-\item A dilation maps $\triangle ABC \rightarrow \triangle ADE$. Given $AB=9$, $AC=11.1$, $BC=6$, $DE=14$. 
+\item A dilation maps $\triangle ABC \rightarrow \triangle ADE$. Given $AB=12$, $AC=14$, $BC=10$, $DE=25$. 
 \begin{multicols}{2}
     Find the scale factor and side lengths:\\[0.5cm]
     $k=$\\[1cm]
-    $AD=$\\[1cm]
     $AE=$\\[1cm]
+    $AD=$\\[1cm]
     $BD=$\\
     \begin{flushright}
     \begin{tikzpicture}[scale=1.]
@@ -156,53 +136,22 @@ $(x,y) \rightarrow (2x, 2y)$. Plot and label the image on the axes.
         \draw [thick]
         (0:2.4)node[below]{$B$}--
         (30:3.2)node[above left]{$C$};
-        \node at (0:1.5)[below]{$9.0$};
-        \node at (15:2.7)[right]{$6.0$};
-        \node at (15:6.75)[right]{$14.0$};
-        \node at (35:1.7)[above]{$11.1$};
+        \node at (0:1.5)[below]{$12$};
+        \node at (15:2.7)[right]{$10$};
+        \node at (15:6.75)[right]{$25$};
+        \node at (35:1.7)[above]{$14$};
     \end{tikzpicture}
     \end{flushright}
 \end{multicols}\vspace{0.25cm}
 
-\newpage
-\item Reflect $\triangle ABC$ across the $x$-axis. Then, dilate $\triangle A'B'C'$ by a factor of k = 2 centered at the origin to produce $\triangle A''B''C''$. Plot and label the two triangles in the graph below.
-\begin{center}
-  \begin{tikzpicture}[scale=.7]
-    \draw [help lines] (-9,-8) grid (9,8);
-    \draw [thick, <->] (-9.4,0) -- (9.4,0) node [right] {$x$};
-    \draw [thick, <->] (0,-8.4)--(0,8.4) node [above] {$y$};
-    \draw [thick]
-      (0,0) node[above right] {$A$}--
-      (-3,-2) node[below] {$B$}--
-      (-4,0) node[above left] {$C$}--
-      cycle;
-  \end{tikzpicture}
-\end{center}
-
-\item Two triangles are shown with $P$ the intersection of $\overline{AJ}$ and $\overline{BK}$.
-\begin{multicols}{2}
-  \begin{enumerate}
-      \item Justify $\angle APB \cong \angle JPK$.
-      \item What angle must be congruent to $\angle B$ to prove $\triangle ABP \sim \triangle JKP$ by \emph{angle-angle similarity}? \vspace{2cm}
-      \end{enumerate}
-  \begin{tikzpicture}[rotate=-30, scale=1.4]
-      \draw [thick]
-        (-0.25,-1)node[below left]{$B$}--
-        (0.5,2)node[left]{$K$}--
-        (4,0)node[below left]{$J$}--
-        (0,0)node[above]{$P$}--
-        (-2,0)node[left]{$A$}--cycle;
-    \end{tikzpicture}
-  \end{multicols}
-    \vspace{1cm}
     
 \newpage
 
-\item Triangle $ADE$ is drawn with $\overline{BC} \parallel \overline{DE}$, as shown. Given $AB=5$, $BC=8$, $AC=8$, and $BD=5$. $m\angle A = 72^\circ$.
+\item Triangle $ADE$ is drawn with $\overline{BC} \parallel \overline{DE}$, as shown. Given $AB=6$, $BC=9$, $AC=10$, and $BD=6$.
 \begin{multicols}{2}
   \begin{enumerate}
     \item Find $DE$. \vspace{1.5cm}
-    \item Find m$\angle ABC$ and m$\angle E$.
+    \item Find $AE$.
   \end{enumerate}
 
 %Find $CE$, $AE$, and $DE$. Find and mark all of the angle measures of the triangle.\vspace{1cm}
@@ -216,28 +165,24 @@ $(x,y) \rightarrow (2x, 2y)$. Plot and label the image on the axes.
         (0.5,1.5)--
         (-1,-3)node[left]{$D$}--
         (11,-3)node[below left]{$E$}--(6.5,1.5);
-        \node at (3,1.5)[below]{$8$};
-        \node at (4.5, 4)[right]{$8$};
-        \node at (0.6, 3.3)[above]{$5$};
-        \node at (-0.7, -1)[above]{$5$};
+        \node at (3,1.5)[below]{$9$};
+        \node at (4.5, 4)[right]{$10$};
+        \node at (0.6, 3.3)[above]{$6$};
+        \node at (-0.7, -1)[above]{$6$};
         \end{tikzpicture}
     \end{flushright}
-  \end{multicols} \vspace{2cm}
+  \end{multicols} \vspace{1cm}
 
-\item Given $\triangle ABP \sim \triangle JKP$ as shown below. $AB=10$, $AP=9.0$, $PK=12.5$, and $JK=25$. Find $JP$ and $BP$.
-\begin{flushright}
-\begin{tikzpicture}[scale=1.6]
-    \draw [thick]
-      (-0.25,-1)node[below left]{$B$}--
-      (0.5,2)node[left]{$K$}--
-      (4,0)node[below left]{$J$}--
-      (0,0)node[above left]{$P$}--
-      (-2,0)node[left]{$A$}--cycle;
-  \end{tikzpicture}
-  \end{flushright}
+\item In the diagram below, the chords $\overline{AE}$ and $\overline{BD}$ intersect at $C$, with $\triangle ABC \sim \triangle DEC$.
+\begin{multicols}{2}
+  \begin{enumerate}
 
-\newpage
-\item In the diagram below, the chords $\overline{AE}$ and $\overline{BD}$ intersect at $C$, with $\triangle ABC \sim \triangle DEC$, $BC=4$, $AC=5$, and $BD=11.5$. Determine the length of $\overline{CE}$.
+    \item $m\angle A = 70^\circ$ and $m\angle B = 85^\circ$.\\ 
+    Find  $m\angle D$.
+    \item $BC=10$, $CD=20$, and $CE=15$.\\ 
+    Find $AC$. 
+  \end{enumerate}
+
     \begin{center}
     \begin{tikzpicture}[scale=.6]
     \draw (0,0) circle[radius=5];
@@ -249,24 +194,73 @@ $(x,y) \rightarrow (2x, 2y)$. Plot and label the image on the axes.
     \draw (75:1.8) node[above] {$C$};
     \end{tikzpicture}
 \end{center} \vspace{2cm}
+\end{multicols} 
 
-\item In the diagram below $\triangle ABC \sim \triangle DEF$, $DE=x+4$, $AB=12$, $AC=21$, $DF=2x+4$. \\[0.25cm] 
-Solve for $x$.
-\begin{center}
-    \begin{tikzpicture}[scale=1]
-    \coordinate [label=above left:$A$](A) at (85:2);
-    \coordinate [label=below:$B$](B) at (0, 0);
-    \coordinate [label=right:$C$](C) at (-20:3);
-    \draw [thick] (A)--(B)--(C)--cycle;
-    \node at (95:1)[left]{$12$};
-    \node at (35:1.75)[right]{$21$};
-    \draw [thick, xshift=5cm, yshift=0.5cm] (85:3) node[above]{$D$}--
-    (0,0) node[below]{$E$}--
-    (-20:4.5) node[right]{$F$}--cycle;
-    \draw [thick, xshift=5cm, yshift=0.5cm](90:1.5) node[left]{$x+4$};
-    \draw [thick, xshift=5cm, yshift=0.5cm](30:2.75) node[right]{$2x+4$};
-\end{tikzpicture}
-\end{center}
+\newpage
+\subsubsection*{HSG.SRT.C.8 Trigonometry}
+\item As shown, right $\triangle ABC$ has $AC=5, BC=12, AB=13$, m$\angle C=90^\circ$. \\[0.25cm] 
+Express each trigonometric ratio as a fraction.
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item $\sin A =$
+      \item $\cos A =$
+      \item $\tan A =$ 
+      \item Find the angle measure of $\angle A$ rounded to the \emph{nearest whole degree}. \vspace{1cm}
+    \end{enumerate}
+    \begin{center}
+      \begin{tikzpicture}[scale=0.4]
+        \draw [thick](0,0) node[below]{$A$}--
+        (4,0) node[below]{$C$}--
+        (4,9) node[above right]{$B$}--cycle;
+        \node at (2,-1){$5$};
+        \node at (4,4)[right]{$12$};
+        \node at (1,4.5){$13$};
+        \draw (4,0)++(-0.6,0)--++(0,0.6)--+(0.6,0);
+        \draw (0.75,0) arc [start angle=0, end angle=63, radius=0.75];
+      \end{tikzpicture}
+    \end{center}
+  \end{multicols}
+
+\item Isosceles right $\triangle ABC$ is shown with legs $AC=BC=1$ as marked.\vspace{0.25cm}
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item Write down $\theta$.
+      \item Find the length of hypotenuse $AB$ as an exact expression.\vspace{2cm}
+    \end{enumerate}
+    \begin{flushright}
+      \begin{tikzpicture}[scale=0.7]
+        \draw [thick](0,0)node[below]{$A$}--
+        (5,0)node[below]{$C$}--
+        (5,5)node[above right]{$B$}--cycle;
+        \draw (5,0)++(-0.6,0)--++(0,0.6)--+(0.6,0);
+        \node at (2.5,0)[below]{$1$};
+        \node at (5,2.5)[right]{$1$};
+        \draw [thick, -] (1,0) arc [start angle=0, end angle=45, radius=1];
+        \node at (1.2,0.1)[above]{$\theta$};
+      \end{tikzpicture}
+    \end{flushright}
+  \end{multicols}
+
+\item At an angle of elevation of $15^\circ$, the top of a structure $B$ is visible from point $A$ on the ground 50 meters away, as shown below.
+
+Find the height $h$ of the structure to the \emph{nearest tenth of a meter}. \hfill (not to scale)
+  \begin{flushright}
+    \begin{tikzpicture}[scale=0.3]
+      %\draw [-, thick] (0,0)--(35:23);
+      \draw [-, thick] (-4,0)--
+      (0,0)--
+        (17,0)--
+        (22,0)--
+        (22,10)--(17,10)--(17,0);
+      \draw [fill] (0,0) circle [radius=0.1] node[above left]{$A$};
+      \draw [fill] (17,10) circle [radius=0.1] node[above right]{$B$};
+      \draw [dashed] (0,0)--(17,10);
+      \node at (3.8, 0)[above]{$15^\circ$};
+      \node at (11, 0)[below]{50 m};
+      \node at (17, 5)[right]{$h$};
+    \end{tikzpicture}
+    \end{flushright} \vspace{3cm}
+
 
 
 
