@@ -2,12 +2,11 @@
 title: course-files
 ---
 
-# Dr. Huson's Math Courses at BECA
+# Dr. Huson's Math Courses at La Scuola d'Italia
 
-[10th grade: Geometry](geom)
+[11th grade: IB Mathematics 1st year](ib)
 
-[11th grade: Precalculus (Algebra 2)](alg2)
-    
+[12th grade: IB Mathematics 2nd year](ib)
 
 -----
 
