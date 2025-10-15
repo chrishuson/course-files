@@ -1,0 +1,103 @@
+
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=black}
+\setlength{\parskip}{0.6em}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+{\LARGE \textbf{Sandwich Truck Startup: Simplified Balance Sheet}}\\
+{\large Back-of-the-envelope capitalization with minimal equity and a bank loan}
+
+\section*{Initial Outlays (Setup Budget)}
+\begin{tabular}{@{}p{0.44\linewidth}p{0.36\linewidth}r@{}}
+\toprule
+\textbf{Item} & \textbf{Purpose / Balance-Sheet Line} & \textbf{Amount (USD)}\\
+\midrule
+Used truck & Vehicle (Asset) & 20{,}000\\
+Initial food \& paper stock & Inventory (Asset) & 2{,}000\\
+Business licenses \& permits & Prepaid expense / Intangible (Asset) & 1{,}000\\
+Insurance (first period) & Prepaid expense (Asset) & 1{,}000\\
+Cash on hand & Cash (Asset) & 2{,}000\\
+\midrule
+\textbf{Total setup outlays} & & \textbf{26{,}000}\\
+\bottomrule
+\end{tabular}
+
+\section*{Financing}
+\begin{tabular}{@{}p{0.56\linewidth}r@{}}
+\toprule
+\textbf{Source} & \textbf{Amount (USD)}\\
+\midrule
+Bank loan secured by truck (\emph{note payable}) & 20{,}000\\
+Partner A (Student operator) capital contribution & 1{,}000\\
+Partner B (\emph{Aunt}) capital contribution & 5{,}000\\
+\midrule
+\textbf{Total financing} & \textbf{26{,}000}\\
+\bottomrule
+\end{tabular}
+
+\section*{Simplified Balance Sheet at Startup (Day 0)}
+\begin{tabular}{@{}p{0.45\linewidth}r@{\hspace{1.8cm}}p{0.35\linewidth}r@{}}
+\toprule
+\multicolumn{2}{@{}l}{\textbf{Assets}} & \multicolumn{2}{l@{}}{\textbf{Liabilities \& Equity}}\\
+\midrule
+Cash & 2{,}000 & \textbf{Liabilities} & \\
+Inventory & 2{,}000 & Bank loan (note payable) & 20{,}000\\
+Prepaid licenses \& permits & 1{,}000 & & \\
+Prepaid insurance & 1{,}000 & \textbf{Equity} & \\
+Vehicle (food truck) & 20{,}000 & Partner A capital (student) & 1{,}000\\
+ &  & Partner B capital (aunt) & 5{,}000\\
+\midrule
+\textbf{Total Assets} & \textbf{26{,}000} & \textbf{Total Liabilities \& Equity} & \textbf{26{,}000}\\
+\bottomrule
+\end{tabular} \vspace{1cm}
+
+\textbf{Liabilities + Equity = Assets}. The setup shows how outside money (debt) and owner money (equity) finance the assets.
+
+\newpage 
+\section*{Annotation: Linking Everyday Terms to Capital-Market Language}
+\begin{itemize}
+  \item \textbf{Partnership agreement (50/50 ownership and profit split)} $\rightarrow$ \textbf{Equity}. In corporations, this would be \emph{issued stock} that can be bought/sold. Shares (stock) is issued through a legal process of registering with a government agency (e.g. SEC in the U.S.).
+  \item \textbf{Bank loan for the truck} $\rightarrow$ \textbf{Debt}. On the balance sheet this appears as a \emph{note payable}. In bond markets, similar borrowing can be issued as \emph{bonds}. Bonds are also registered and can easily be bought and sold.
+  \item \textbf{Inventory, cash, prepaid items, and the truck} $\rightarrow$ \textbf{Assets}. These are resources used to generate future sales.
+
+\end{itemize}
+\subsection*{Security / Collateral - legal language excerpt}
+
+\textbf{Grant of Security Interest.} The Borrower hereby grants to the Lender a security interest in the Vehicle described in Section~1 (make, model, VIN, etc.) as collateral to secure repayment of the Loan and all obligations under this Agreement. Upon an Event of Default, the Lender shall have the right to take possession of and sell the Vehicle, apply the net proceeds to the outstanding balance, and hold the Borrower liable for any deficiency. The Borrower authorizes the Lender to file any financing statements (e.g. UCC-1) necessary to perfect this security interest.
+https://esign.com/loan-agreement/auto/
+
+\section*{Snam S.p.A. (Italy): Simplified Balance Sheet}
+{\large Approximate, rounded figures in EUR billions}
+Snam builds and operates Italy’s natural-gas pipelines and storage systems.  
+It finances long-term infrastructure with both debt and equity.
+
+
+\section*{Balance Sheet (Illustrative, end of year)}
+\begin{tabular}{@{}p{0.45\linewidth}r@{\hspace{1.8cm}}p{0.35\linewidth}r@{}}
+\toprule
+\multicolumn{2}{@{}l}{\textbf{Assets}} & \multicolumn{2}{l@{}}{\textbf{Liabilities \& Equity}}\\
+\midrule
+\textbf{Assets} & & \textbf{Liabilities} & \\
+Cash and equivalents & 1 & Bonds outstanding & 10 \\
+Accounts receivable and other current assets & 2 & Bank loans & 3 \\
+Property, plant, and equipment (pipelines, compressors, storage) & 18 & Commercial paper and short-term debt & 2 \\
+\midrule
+\textbf{Total Assets} & \textbf{23} & \textbf{Total Liabilities} & \textbf{15} \\
+ &  & \textbf{Equity} & 8 \\
+\midrule
+ &  & \textbf{Liabilities + Equity} & \textbf{23}\\
+\bottomrule
+\end{tabular}
+
+
+
+\end{document}
