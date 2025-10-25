@@ -1,0 +1,47 @@
+# Demo
+
+A file to practice various markdown formatting and come up the learning curve on Zettlr markdown editor
+
+- [x] Bullets and numbering
+- [x] text formatting (e.g. italics)
+- [ ] formulas
+- [ ] images
+- [ ] tables
+
+## Rendering
+
+and printing
+
+[Huson Math site link](https://math.huson.com)
+
+| Column heading | Heading 1 |
+|:--------------:|-----------|
+| Row 1          | a         |
+| Row 2          | b         |
+| Row 3          | c         |
+
+## Format
+
+- _italics_
+- **bold**
+- normal font
+
+1. Numbering
+2. Two
+3. Three
+
+## Formula
+
+1. numbered lists, and
+1. bullets
+
+## Mathematics in LaTeX
+
+Centered with double dollar signs
+$$a^2+b^2=c^2$$
+$\sin^2 \theta + \cos^2 \theta = 1$
+$\triangle ABC \rightarrow \triangle A'B'C'$
+$\sqrt{b^2-4ac}$
+$\int x^2 dx = \frac{1}{3}x^3+C$
+
+$\displaystyle \sum_{k=1}^{100} k$
