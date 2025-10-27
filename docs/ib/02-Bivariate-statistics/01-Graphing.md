@@ -4,7 +4,7 @@ La Scuola d'Italia / Huson / IB Math: Bivariate Statistics
 
 ## 2.1 Classwork: Graphing Linear Relationships  
 
-## Instructions
+### Instructions
 
 - Enter paired data into the TI-Nspire CX II.  
 - Sketch a scatter diagram.  
@@ -59,7 +59,7 @@ La Scuola d'Italia / Huson / IB Math: Bivariate Statistics
    - Move cursor to x-axis → select `size`; y-axis → select `rent`.  
 4. **Add Mean Lines:**  
    - `Menu → Analyze → Plot Function → Mean Lines`  
-   - or manually note \(\bar{x}\) and \(\bar{y}\) from calculator (`Menu → Stat Calculations → 1-Var Stats`).  
+   - or manually note $\bar{x}$ and $\bar{y}$ from calculator (`Menu → Stat Calculations → 1-Var Stats`).  
 5. **Estimate Line of Best Fit by Eye:**  
    - Sketch on paper.  
    - Compare with regression in later lessons (`Menu → Analyze → Regression → Show Linear`).  
