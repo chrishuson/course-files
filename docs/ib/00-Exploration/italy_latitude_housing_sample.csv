@@ -1,0 +1,12 @@
+City,Region,Latitude_degN,Price_EUR_per_m2_Sep2025,Price_Source_ID,Lat_Source_ID,Implied_Price_for_80m2_EUR
+Milan,Lombardy,45.464664,5564,turn2view0,turn4search9,445120
+Venice,Veneto,45.43713,3319,turn8search0,turn6search3,265520
+Turin,Piedmont,45.07049,2108,turn5search3,turn4search12,168640
+Bologna,Emilia-Romagna,44.49381,3685,turn8search1,turn4search14,294800
+Florence,Tuscany,43.77925,4669,turn5search0,turn6search0,373520
+Rome,Lazio,41.902782,3641,turn3search0,turn4search0,291280
+Bari,Apulia,41.11148,2229,turn5search2,turn4search13,178320
+Naples,Campania,40.85631,2977,turn3search1,turn4search18,238160
+Cagliari,Sardinia,39.23054,2648,turn7search0,turn7search3,211840
+Palermo,Sicily,38.13205,1519,turn5search1,turn4search11,121520
+Catania,Sicily,37.49223,1301,turn9search0,turn4search15,104080

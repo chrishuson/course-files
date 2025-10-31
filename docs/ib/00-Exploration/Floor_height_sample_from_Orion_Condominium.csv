@@ -1,0 +1,9 @@
+source,source_ref,building,address,unit,floor,beds,baths,sqft,price_amount,price_unit,listing_type,notes
+StreetEasy building page,turn3view0,ORION Condominium,"350 West 42nd Street, New York, NY 10036",35B,35,2,2,,7450,USD/month,rent,Base rent; same line as 42B and 57B
+StreetEasy building page,turn3view0,ORION Condominium,"350 West 42nd Street, New York, NY 10036",42B,42,2,2,,7900,USD/month,rent,Base rent; same line as 35B and 57B
+StreetEasy building page,turn3view0,ORION Condominium,"350 West 42nd Street, New York, NY 10036",53H,53,1,1,,5495,USD/month,rent,Base rent; same line as 54H
+StreetEasy building page,turn3view0,ORION Condominium,"350 West 42nd Street, New York, NY 10036",54H,54,1,1,,5300,USD/month,rent,Base rent; same line as 53H
+StreetEasy building page,turn3view0,ORION Condominium,"350 West 42nd Street, New York, NY 10036",57B,57,2,2,,7999,USD/month,rent,Base rent; same line as 35B and 42B
+StreetEasy building page,turn3view0,ORION Condominium,"350 West 42nd Street, New York, NY 10036",46E,46,1,1,778.0,1250000,USD,sale,Reported 778 ft²; same line as 48E and 59E
+StreetEasy building page,turn3view0,ORION Condominium,"350 West 42nd Street, New York, NY 10036",48E,48,1,1,778.0,1300000,USD,sale,Reported 778 ft²; same line as 46E and 59E
+StreetEasy building page,turn3view0,ORION Condominium,"350 West 42nd Street, New York, NY 10036",59E,59,1,1,780.0,1349000,USD,sale,Reported 780 ft²; same line as 46E and 48E
