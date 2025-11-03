@@ -2,7 +2,7 @@ La Scuola d'Italia / Huson / IB Math: Bivariate Statistics
 
 29 October 2025
 
-# 2.1 Classwork: Stats intro; markdown solutions due Friday 31 October
+### 2.1 Classwork: Stats intro; markdown solutions due 31 October
 
 1. Given a geometric sequence with $u_1=9$ and $r=\frac{4}{3}$
 
@@ -19,9 +19,7 @@ La Scuola d'Italia / Huson / IB Math: Bivariate Statistics
     Solution:
     $\displaystyle S_8 = 9 \cdot \frac{\left(\frac{4}{3}\right)^{8}-1}{\frac{4}{3}-1}$
 
-    $= \frac{58975}{243} = 242.695 \dots$
-
-    $\approx 243$
+    $= \frac{58975}{243} = 242.695 \dots$ $\approx 243$
 
     3. $S_k \approx 825.37$. Find $k$ algebraically.
 
@@ -30,8 +28,7 @@ La Scuola d'Italia / Huson / IB Math: Bivariate Statistics
         \begin{aligned}
         S_k = 9 \cdot \frac{\left(\frac{4}{3}\right)^{k}-1}{\frac{4}{3}-1} &= 825.37 \\
         \left(\frac{4}{3}\right)^{k} &= 36.5693 \dots \\
-        k &= \log_{\frac{4}{3}} 36.5693 \dots  \\
-                &\approx 12
+        k &= \log_{\frac{4}{3}} 36.5693 \dots  \approx 12
         \end{aligned}
         $$
 2. Consider the following set of data:
@@ -42,17 +39,25 @@ La Scuola d'Italia / Huson / IB Math: Bivariate Statistics
 
     1. Write down the coordinates of the mean point $(\bar{x}, \bar{y} )$.
 
+    Solution: $(6,8)$
+
     2. A linear regression of $y$ on $x$ gives the equation $y = ax + b$. Write down the values of $a$ and $b$.
+
+    Solution: $a=1.3, b=0.2$
 
     3. Write down the value of $r$ , the Pearson’s product-moment correlation coefficient for this set of data.
 
+    Solution: $r = 0.919239 \ldots \approx 0.919$
+
     4. Characterize the correlation coefficient by choosing one of the following: strong positive correlation, weak positive correlation, no correlation, weak negative correlation, strong negative correlation.
+
+    Solution: Strong positive correlation.
 
 4. Find each value as an integer (no calculator).
 
-   1. $\log_{3} 27$
-   2. $\log_{3} 9 + \log_{3} 3$
-   3. $\log_{3} 9 - \log_{3} 81$
+   1. $\log_{3} 27 = 3$
+   2. $\log_{3} 9 + \log_{3} 3 = 2+1=3$
+   3. $\log_{3} 9 - \log_{3} 81 = 2-4 = -2$
 
 2. Consider the following set of data:
 
@@ -62,19 +67,41 @@ La Scuola d'Italia / Huson / IB Math: Bivariate Statistics
 
     1. Write down the coordinates of the mean point $(\bar{x}, \bar{y} )$.
 
+    Solution: $(45,380)$
+
     2. A linear regression of y on x gives the equation $y = ax + b$. Write down the values of $a$ and $b$.
+
+    Solution: $a=-3.2623 \ldots \approx -3.26, b=526.803 \ldots \approx 527$
 
     3. Write down the value of r , the Pearson’s product-moment correlation coefficient for this set of data.
 
+    Solution: $r = -0.9978 \ldots \approx - 0.998$
+
     4. Characterize the correlation of the data.
+
+    Solution: Strong negative correlation.
 
 3. Three consecutive terms of a geometric sequence are $x-1$, $4$, and $x+5$.
    Find the possible values of $x$.
 
-4. Find each value as an integer (no calculator).
-
-   1. $\log_{3} 27$
-   2. $\log_{3} 9 + \log_{3} 3$
-   3. $\log_{3} 9 - \log_{3} 81$
+    Solution: $$\displaystyle r = \frac{4}{x-1} = \frac{x+5}{4}$$
+    $$\begin{aligned}
+    16 &= (x-1)(x+5) \\
+    0 &= x^2 + 4x - 21 \\
+    0 &= (x-3)(x+7) \\
+    x &= 3 \text{ or } x = -7
+    \end{aligned}$$
 
 5. Solve $\log_{2} x + \log_{2} (x-6) = 4$ for $x>6$.
+
+    Solution:
+    $$
+    \begin{aligned}
+    \log_{2} x + \log_{2} (x-6) &= 4 \\
+    \log_{2} [x(x-6)] &= 4 \\
+    x(x-6) &= 16 \\
+    x^2 - 6x - 16 &= 0 \\
+    (x-8)(x+2) &= 0 \\
+    x &= 8 \text{ (since } x>6 \text{, discard } x=-2\text{)}
+    \end{aligned}
+    $$
