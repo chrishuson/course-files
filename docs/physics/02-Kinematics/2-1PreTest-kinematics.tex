@@ -1,217 +1,171 @@
-\documentclass[12pt]{article}
-\usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb}
-\usepackage{siunitx}
-\sisetup{per-mode=symbol}
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
 
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
+\title{IB}
+\author{Chris Huson}
+\date{November 2025}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First \& last name: \hspace{2.25cm} \,\\ Grade: \hspace{2.25cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 4 November 2025}
 
 \begin{document}
 
-\begin{center}
-{\Large Physics 9 Homework: Measurement, Units, and Intro to Motion}\\[4pt]
-Name:\ \rule{2.5in}{0.4pt} \hfill Date:\ \rule{1.5in}{0.4pt}
-\end{center}
+\subsubsection*{2.1 PreTest: Precision, Scientific Notation, Vectors, Kinematics Intro}
+
+\begin{enumerate}[itemsep=0.5cm]
+
+\item Round each value to three significant figures.
+  \begin{multicols}{2}
+  \begin{enumerate}[itemsep=0.5cm]
+    \item 0.003297 m
+    \item 93.085 kg
+    \item 5.9998 s
+    \item 12,450 N
+  \end{enumerate}
+  \end{multicols}
+  \vspace{0.5cm}
+
+\item Write each number in proper scientific notation ($1 \le a < 10$).
+  \begin{multicols}{2}
+  \begin{enumerate}[itemsep=0.5cm]
+    \item 0.00045
+    \item 38,200
+    \item 602,000,000
+    \item 0.00875
+  \end{enumerate}
+  \end{multicols}
+  \vspace{0.5cm}
+
+\item Express in standard (long) form.
+  \begin{multicols}{2}
+  \begin{enumerate}[itemsep=0.5cm]
+    \item $6.07\times10^{-4}$
+    \item $1.002\times10^{5}$
+  \end{enumerate}
+  \end{multicols}
+  \vspace{0.5cm}
+
+\item Perform each operation and give the answer to 3 significant figures.
+  \begin{multicols}{2}
+  \begin{enumerate}[itemsep=1cm]
+    \item $(3.2\times10^{3}) + (7.5\times10^{2})$
+    \item $(6.40\times10^{-2}) \times (2.5\times10^{3})$
+    \item $\dfrac{4.5\times10^{5}}{9.0\times10^{2}}$
+  \end{enumerate}
+  \end{multicols}
+  \vspace{0.5cm}
+
+\item A board’s width is measured as $12.4 \pm 0.2~\text{cm}$.
+  \begin{enumerate}[itemsep=0.5cm]
+    \item What is the range of possible values?
+    \item What is the percent uncertainty? (show work)
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\newpage
+\item A mass is measured as $0.815~\text{kg}$ with an uncertainty of $\pm 0.005~\text{kg}$.
+  \begin{enumerate}[itemsep=0.5cm]
+    \item Calculate the percent uncertainty.
+    \item Which measurement (the board or this mass) is more precise? Explain briefly.
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\subsubsection*{Unit Conversions}
+
+\item Convert each value. Show one line of work using unit factors.
+  \begin{multicols}{2}
+  \begin{enumerate}[itemsep=1.5cm]
+    \item $2.35~\text{m}$ to cm
+    \item $7.20~\text{km}$ to m
+    \item $18.0~\text{in}$ to cm  \hfill (1 in = 2.54 cm)
+    \item $0.650~\text{kg}$ to g
+    \item $4.20\times10^{3}~\text{g}$ to kg
+    \item $15.5~\text{lb}$ to kg  \hfill (1 lb = 0.454 kg)
+  \end{enumerate}
+  \end{multicols}
+  \vspace{0.5cm}
+
+\item Convert each speed.
+  \begin{enumerate}[itemsep=1.8cm]
+    \item $55.0~\text{mi/h}$ to m/s \hfill (1 mi = 1609 m)
+    \item $4.20~\text{m/s}$ to km/h
+    \item A car moves at $22.5~\text{m/s}$. How long does it take to travel $1.00~\text{km}$?
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\newpage
+\subsubsection*{Order of Magnitude Estimation}
+
+\item Choose the best order of magnitude.
+  \begin{enumerate}[itemsep=0.5cm]
+    \item Mass of a textbook: \quad A) $10^{-3}$ kg \quad B) $10^{-1}$ kg \quad C) $10^{0}$ kg \quad D) $10^{2}$ kg
+    \item Length of a classroom: \quad A) $10^{-2}$ m \quad B) $10^{0}$ m \quad C) $10^{1}$ m \quad D) $10^{3}$ m
+    \item Time for light to cross 10 m: \quad A) $10^{-8}$ s \quad B) $10^{-6}$ s \quad C) $10^{-3}$ s \quad D) $10^{0}$ s
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\subsubsection*{One-Dimensional Motion and Vectors}
+
+\item A student walks along a straight hallway (forward is $+$). Start $x_0 = 2.0$ m.
+  \begin{enumerate}[itemsep=0.75cm]
+    \item To $x = 7.5$ m, find displacement $\Delta x$.
+    \item From $x=7.5$ m back to $x=4.0$ m, find $\Delta x$.
+    \item Total displacement from start to finish.
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\item A cart moves from $x_1 = 1.2$ m at $t_1=0.0$ s to $x_2 = 5.8$ m at $t_2 = 3.0$ s.
+  \begin{enumerate}[itemsep=0.75cm]
+    \item Find displacement.
+    \item Find average velocity $v_\text{avg}$.
+    \item State the units for $v_\text{avg}$.
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\item A cyclist rides east, then west:
+  \begin{enumerate}[itemsep=0.5cm]
+    \item From $x=0$ m to $x=30$ m in 12 s.
+    \item Then back to $x=18$ m at $t=20$ s.
+    \item Find each displacement, total displacement, and total distance traveled.
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\item One-dimensional vector additions (east is $+$).
+  \begin{multicols}{2}
+  \begin{enumerate}[itemsep=0.5cm]
+    \item $\Delta x_1 = +12$ m, $\Delta x_2 = -5$ m
+    \item $+0.85$ km, $+1.40$ km, $-0.50$ km
+  \end{enumerate}
+  \end{multicols}
+  \vspace{0.5cm}
+  Why is distance not always equal to displacement?
+  \vspace{0.5cm}
+
+\item A car travels at $88~\text{km/h}$. The driver looks away for $1.6~\text{s}$.
+  \begin{enumerate}[itemsep=1cm]
+    \item Convert $88~\text{km/h}$ to m/s.
+    \item How far does the car move in $1.6~\text{s}$?
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\item A cart starts from rest and accelerates at $0.80~\text{m/s}^2$.
+  \begin{enumerate}[itemsep=1cm]
+    \item Find its speed after $5.0~\text{s}$.
+    \item Interpret physically what $0.80~\text{m/s}^2$ means.
+    \item If displacement is $10.0$ m, find average velocity.
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\item A drone flies north at $12.0~\text{m/s}$ for $45.0~\text{s}$.
+  \begin{enumerate}[itemsep=1cm]
+    \item Convert $12.0~\text{m/s}$ to km/h.
+    \item Find distance traveled.
+    \item If south is negative, what sign would you assign to this displacement?
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\end{enumerate}
 
-\hrule
-\vspace{0.5cm}
-
-% ----------------------------------------------------------
-\textbf{1. Rounding to 3 significant figures}
-
-a) 0.003297 m \hfill Answer: \rule{1.5in}{0.4pt}
-
-b) 93.085 kg \hfill Answer: \rule{1.5in}{0.4pt}
-
-c) 5.9998 s \hfill Answer: \rule{1.5in}{0.4pt}
-
-d) 12{,}450 N \hfill Answer: \rule{1.5in}{0.4pt}
-
-\vspace{0.6cm}
-
-% ----------------------------------------------------------
-\textbf{2. Scientific notation (write each in the form $a\times10^n$ with $1\le a<10$)}
-
-a) 0.000\,45 \hfill \rule{2in}{0.4pt}
-
-b) 38{,}200 \hfill \rule{2in}{0.4pt}
-
-c) 6.07 $\times 10^{-4}$ (write in standard/long form) \hfill \rule{2in}{0.4pt}
-
-d) 1.002 $\times 10^{5}$ (write in standard/long form) \hfill \rule{2in}{0.4pt}
-
-\vspace{0.6cm}
-
-% ----------------------------------------------------------
-\textbf{3. Operations in scientific notation}
-
-Carry out the operation and give the answer to \emph{3 significant figures}.
-
-a) $(3.2\times10^{3}) + (7.5\times10^{2}) =$ \rule{2.5in}{0.4pt}
-
-b) $(6.40\times10^{-2}) \times (2.5\times10^{3}) =$ \rule{2.5in}{0.4pt}
-
-c) $\dfrac{4.5\times10^{5}}{9.0\times10^{2}} =$ \rule{2.5in}{0.4pt}
-
-\vspace{0.6cm}
-
-% ----------------------------------------------------------
-\textbf{4. Percent uncertainty / percent precision}
-
-A length is measured as $12.4 \text{ cm} \pm 0.2 \text{ cm}$.
-
-a) What is the range of possible values? \hfill \rule{2.5in}{0.4pt}
-
-b) What is the percent uncertainty? (show setup) \vspace{1cm}
-
-A mass is quoted as $0.815 \text{ kg}$ and the instrument is reliable to $\pm 0.005 \text{ kg}$.  
-c) Percent uncertainty for the mass = \rule{2.5in}{0.4pt}
-
-\vspace{0.6cm}
-
-% ----------------------------------------------------------
-\textbf{5. Unit conversions: length}
-
-Show your factor(s). Keep 3 sig figs.
-
-a) Convert $2.35 \text{ m}$ to cm. \hfill \rule{2.5in}{0.4pt}
-
-b) Convert $7.20 \text{ km}$ to m. \hfill \rule{2.5in}{0.4pt}
-
-c) Convert $18.0 \text{ in}$ to cm. (Use $1~\text{in} = 2.54~\text{cm}$ exactly.) \hfill \rule{2.5in}{0.4pt}
-
-\vspace{0.6cm}
-
-% ----------------------------------------------------------
-\textbf{6. Unit conversions: mass}
-
-a) Convert $0.650 \text{ kg}$ to g. \hfill \rule{2.5in}{0.4pt}
-
-b) Convert $4.20 \times 10^{3} \text{ g}$ to kg. \hfill \rule{2.5in}{0.4pt}
-
-c) A backpack has a mass of $15.5 \text{ lb}$. Using $1~\text{lb} = 0.454~\text{kg}$, find its mass in kg to 3 sig figs. \hfill \rule{2.5in}{0.4pt}
-
-\vspace{0.6cm}
-
-% ----------------------------------------------------------
-\textbf{7. Unit conversions: speed}
-
-a) Convert $55.0~\text{mi/h}$ to m/s. (Use $1~\text{mi} = 1609~\text{m}$ and $1~\text{h} = 3600~\text{s}$.) \vspace{1cm}
-
-b) A runner moves at $4.20~\text{m/s}$. What is this speed in km/h? \hfill \rule{2.5in}{0.4pt}
-
-c) A car moves at $22.5~\text{m/s}$. How many seconds does it take to travel $1.00~\text{km}$ at this speed? \hfill \rule{2.5in}{0.4pt}
-
-\vspace{0.6cm}
-
-% ----------------------------------------------------------
-\textbf{8. Order-of-magnitude quick check} (circle one)
-
-1) The mass of a textbook is closest to  
-A) $10^{-3}$ kg \quad B) $10^{-1}$ kg \quad C) $10^{0}$ kg \quad D) $10^{2}$ kg
-
-2) The length of a classroom is closest to  
-A) $10^{-2}$ m \quad B) $10^{0}$ m \quad C) $10^{1}$ m \quad D) $10^{3}$ m
-
-3) The time for light to cross a classroom ($\sim 10$ m) is closest to  
-A) $10^{-8}$ s \quad B) $10^{-6}$ s \quad C) $10^{-3}$ s \quad D) $10^{0}$ s
-
-\vspace{0.6cm}
-
-% ----------------------------------------------------------
-\textbf{9. One-dimensional displacement}
-
-A student walks along a straight hallway. Take forward (to the right) as $+$.  
-He starts at $x_0 = \SI{2.0}{m}$.
-
-a) He walks to $x = \SI{7.5}{m}$. What is his displacement $\Delta x$? \hfill \rule{2in}{0.4pt}
-
-b) From $x = \SI{7.5}{m}$ he walks back to $x = \SI{4.0}{m}$. What is his displacement for this part? \hfill \rule{2in}{0.4pt}
-
-c) What is his \emph{total} displacement from the start at \SI{2.0}{m} to the end at \SI{4.0}{m}? \hfill \rule{2in}{0.4pt}
-
-\vspace{0.6cm}
-
-% ----------------------------------------------------------
-\textbf{10. Average velocity from position--time}
-
-A cart is at $x_1 = \SI{1.2}{m}$ at $t_1 = \SI{0.0}{s}$ and later is at $x_2 = \SI{5.8}{m}$ at $t_2 = \SI{3.0}{s}$.
-
-a) Find the displacement. \hfill \rule{2.5in}{0.4pt}
-
-b) Find the average velocity $v_\text{avg}$ during this interval. \hfill \rule{2.5in}{0.4pt}
-
-c) Write the units for $v_\text{avg}$ clearly. \hfill \rule{1.5in}{0.4pt}
-
-\vspace{0.6cm}
-
-% ----------------------------------------------------------
-\textbf{11. Motion with a direction change}
-
-A cyclist rides east at constant speed. She is at $x = \SI{0}{m}$ at $t = \SI{0}{s}$. After \SI{12}{s} she is at $x = \SI{30}{m}$. She then turns around and rides west and is at $x = \SI{18}{m}$ at $t = \SI{20}{s}$.
-
-a) Displacement from $t=0$ to $t=12~\text{s}$: \rule{2in}{0.4pt}
-
-b) Average velocity from $t=0$ to $t=12~\text{s}$: \rule{2in}{0.4pt}
-
-c) Displacement from $t=12~\text{s}$ to $t=20~\text{s}$: \rule{2in}{0.4pt}
-
-d) Total displacement from $t=0$ to $t=20~\text{s}$: \rule{2in}{0.4pt}
-
-e) Total distance traveled from $t=0$ to $t=20~\text{s}$: \rule{2in}{0.4pt}
-
-\vspace{0.6cm}
-
-% ----------------------------------------------------------
-\textbf{12. Simple ``one-dimensional vector'' additions}
-
-Treat right/east as $+$ and left/west as $-$.
-
-a) $\Delta x_1 = +\SI{12}{m}$ and $\Delta x_2 = -\SI{5}{m}$. Net displacement = \rule{1.5in}{0.4pt}
-
-b) A car drives $+0.85~\text{km}$, then $+1.40~\text{km}$, then $-0.50~\text{km}$. Net displacement (in km) = \rule{1.5in}{0.4pt}
-
-c) Explain in one sentence why distance traveled is not always equal to displacement. \vspace{1cm}
-
-\vspace{0.4cm}
-
-% ----------------------------------------------------------
-\textbf{13. Short application, like the textbook but with new numbers}
-
-A car travels at $88~\text{km/h}$ along a straight road. The driver looks down at the radio for $1.6~\text{s}$.
-
-a) Convert $88~\text{km/h}$ to m/s. \hfill \rule{2.5in}{0.4pt}
-
-b) How far does the car travel in $1.6~\text{s}$ at this speed? Give 3 sig figs. \hfill \rule{2.5in}{0.4pt}
-
-c) Why is it important to keep track of units in every step? \vspace{1cm}
-
-\vspace{0.6cm}
-
-% ----------------------------------------------------------
-\textbf{14. Intro acceleration (very simple)}
-
-A cart starts from rest and speeds up in a straight line with a constant acceleration of $0.80~\text{m/s}^2$.
-
-a) What is its speed after $5.0~\text{s}$? (Use $v = v_0 + at$.) \hfill \rule{2.5in}{0.4pt}
-
-b) In words, what does the number $0.80~\text{m/s}^2$ tell you about the motion? \vspace{1cm}
-
-c) If the cart’s displacement in that time was $\SI{10.0}{m}$, what was its average velocity? \hfill \rule{2.5in}{0.4pt}
-
-\vspace{0.6cm}
-
-% ----------------------------------------------------------
-\textbf{15. Mixed practice (convert + compute)}
-
-A small drone flies north at $12.0~\text{m/s}$ for $45.0~\text{s}$.
-
-a) Convert $12.0~\text{m/s}$ to km/h. \hfill \rule{2.5in}{0.4pt}
-
-b) How far (in m) does it travel in $45.0~\text{s}$? \hfill \rule{2.5in}{0.4pt}
-
-c) If we choose south as the negative direction, what sign should we give to the displacement you found in part (b)? Explain. \vspace{1cm}
-
-% ----------------------------------------------------------
 \end{document}
