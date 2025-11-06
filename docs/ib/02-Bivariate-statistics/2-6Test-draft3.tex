@@ -1,0 +1,299 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+
+\title{IB Math AA/AI Mixed Practice Draft\\(Sequences, Interest, Regression, Functions, Logs)}
+\author{Chris Huson}
+\date{November 2025}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First \& last name: \hspace{2.25cm} \,\\ Grade: \hspace{2.25cm} \,}
+%\fancyhead[RO]{First \& last name: \hspace{2.25cm} \,\\ \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / IB Math: Sequences \\* 5 November 2025}
+
+\begin{document}
+
+\subsubsection*{2.5 Test: Draft}
+\begin{enumerate}[itemsep=0.1cm]
+
+
+% --------------------------------------------------
+% 1. Music academy regression (table)
+% --------------------------------------------------
+\item Eight piano students reported their average weekly practice time and their diploma score (out of 150). The data are shown below.
+
+\begin{center}
+\begin{tabular}{c|cccccccc}
+\textbf{Practice time $h$ (h)} & 28 & 13 & 45 & 33 & 17 & 29 & 39 & 36 \\
+\hline
+\textbf{Diploma score $D$}     & 115 & 82 & 120 & 116 & 79 & 101 & 110 & 121
+\end{tabular}
+\end{center}
+
+The relationship between $h$ and $D$ is modelled by a regression line $D = ah + b$.
+
+\begin{enumerate}[itemsep=0.25cm]
+  \item Find the Pearson product–moment correlation coefficient $r$ for these data.
+  \item Write down the values of $a$ and $b$ from your GDC regression output.
+  \item One of the students says she would have practised 5 more hours per week. Using the model, estimate how her score might have changed.
+\end{enumerate}
+\vspace{0.25cm}
+
+% --------------------------------------------------
+% 2. 5000 m race: age vs time
+% --------------------------------------------------
+\item A runner collects data to see whether the time to run $5000$ m depends on the runner’s age. For eight male runners he records:
+
+\begin{center}
+\begin{tabular}{c|cccccccc}
+\textbf{Age $x$ (years)}     & 18 & 24 & 28 & 36 & 40 & 46 & 52 & 62 \\
+\hline
+\textbf{Time $t$ (minutes)}  & 29.4 & 29.2 & 31.1 & 33.6 & 32.2 & 33.1 & 35.2 & 40.4
+\end{tabular}
+\end{center}
+
+(There is also a scatter diagram showing time increasing with age.)
+
+\begin{enumerate}[itemsep=0.25cm]
+  \item Find the Pearson correlation coefficient $r$.
+  \item A sports science book gives the following guidance:
+
+  \begin{quote}
+    $0 \le |r| < 0.4$: weak,\quad
+    $0.4 \le |r| < 0.8$: moderate,\quad
+    $0.8 \le |r| \le 1$: strong.
+  \end{quote}
+
+  Comment on the strength of the correlation for this data.
+  \item Write down the regression line of $t$ on $x$ in the form $t = ax + b$.
+  \item Estimate the time for a $57$-year-old runner using your regression line.
+\end{enumerate}
+\vspace{0.25cm}
+
+% --------------------------------------------------
+% 3. Mould growth (exponential)
+% --------------------------------------------------
+\item In an experiment the area of a mould patch is modelled by
+\[
+P(t) = A e^{kt},
+\]
+where $P$ is the area in mm$^2$ and $t$ is the time in days. At $t=0$ the area is $112$ mm$^2$, and after $5$ days the area is $360$ mm$^2$.
+
+\begin{enumerate}[itemsep=0.25cm]
+  \item Write down the value of $A$.
+  \item Find the value of $k$.
+\end{enumerate}
+\vspace{0.25cm}
+
+% --------------------------------------------------
+% 4. Kite on coordinate axes
+% --------------------------------------------------
+\item Dilara is designing a kite $ABCD$ on a coordinate plane (1 unit = 10 cm). The points are
+\[
+A(2,0), \quad B(0,4), \quad C(4,6),
+\]
+and point $D$ lies on the $x$–axis. Segment $AC$ is perpendicular to segment $BD$.
+
+\begin{enumerate}[itemsep=0.25cm]
+  \item Find the gradient of the line through $A$ and $C$.
+  \item Hence write down the gradient of the line through $B$ and $D$.
+  \item Find the equation of line $BD$ in the form $ax + by + d = 0$, where $a,b,d$ are integers.
+  \item Write down the $x$–coordinate of $D$.
+\end{enumerate}
+\vspace{0.25cm}
+
+% --------------------------------------------------
+% 5. University applications (geometric + linear)
+% --------------------------------------------------
+\item A new university records the number of applications in its first two years:
+
+\begin{center}
+\begin{tabular}{c|cc}
+Year $n$ & 1 & 2 \\
+\hline
+Applications $u_n$ & 12\,300 & 12\,669
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.25cm]
+  \item Calculate the percentage increase in applications from year 1 to year 2.
+  \item Assume that the applications follow a geometric sequence $(u_n)$.
+    \begin{enumerate}[itemsep=0.25cm]
+      \item Write down the common ratio.
+      \item Find a formula for $u_n$.
+      \item Find the number of applications expected in year $11$, giving your answer to the nearest integer.
+    \end{enumerate}
+  \item In year 1 there are $10\,380$ places available. The number of places increases by $600$ each year. Let $(v_n)$ be the number of places in year $n$. Write down a formula for $v_n$.
+  \item For the first $10$ years every place is filled. Each student who takes a place pays an \$80 acceptance fee. Find the total amount of acceptance fees received in the first $10$ years.
+  \item Let $n = k$ be the first year in which the number of places available exceeds the number of applications. Find $k$.
+  \item State whether for all $n > k$ the university will have places for all applicants. Justify your answer briefly.
+\end{enumerate}
+\vspace{0.25cm}
+
+  \item Give all numerical answers correct to two decimal places.
+
+A person places \$30\,000 in an account on 1 January 2005. The account pays \emph{simple} interest at a fixed annual rate. On 1 January 2007 the balance is \$31\,650.
+
+\begin{enumerate}
+  \item Find the annual simple interest rate.
+  \vspace{0.25cm}
+
+  \item A second person also invests \$30\,000 on 1 January 2005, but in an account that pays a nominal annual rate of $2.5\%$ compounded annually. Find the balance after two years.
+  \vspace{0.25cm}
+
+  \item Determine the number of complete years from 1 January 2005 until the compound-interest account first has a greater balance than the simple-interest account.
+  \vspace{0.25cm}
+
+  \item On 1 January 2007 the first person reinvests $80\%$ of the money from the simple-interest account into a new account paying $3\%$ per year, compounded quarterly.
+    \begin{enumerate}
+      \item Calculate the amount reinvested on 1 January 2007.
+      \vspace{0.25cm}
+      \item Find the number of complete years it will take for the balance in this new account to exceed \$30\,000.
+      \vspace{0.25cm}
+    \end{enumerate}
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\item In a geometric sequence, the fourth term is 8 times the first term. The sum of the
+first 10 terms is 2557.5. Find the 10th term of this sequence.
+
+\item A population of rare birds, $P_t$, can be modelled by the equation
+$$P_t = P_0 e^{kt},$$
+where $P_0$ is the initial population and $t$ is measured in decades. After one decade it is estimated that
+$$\frac{P_1}{P_0} = 0.9.$$
+
+\begin{enumerate}[itemsep=0.25cm]
+  \item
+  \begin{enumerate}[itemsep=0.25cm]
+    \item Find the value of $k$.
+    \item Interpret the meaning of the value of $k$ in the context of the population.
+  \end{enumerate}
+
+  \item Find the least number of whole years for which
+  $$\frac{P_t}{P_0} < 0.75.$$
+\end{enumerate}
+\vspace{0.25cm}
+
+\item The price of a used car depends partly on the distance it has travelled. The following table shows the distance and the price for seven cars on 1 January 2010.
+
+\begin{center}
+\begin{tabular}{c|ccccccc}
+\textbf{Distance, $x$ km} & 11500 & 7500 & 13600 & 10800 & 9500 & 12200 & 10400 \\ \hline
+\textbf{Price, $y$ dollars} & 15000 & 21500 & 12000 & 16000 & 19000 & 14500 & 17000
+\end{tabular}
+\end{center}
+\vspace{0.25cm}
+
+The relationship between $x$ and $y$ can be modelled by the regression equation $y = ax + b$.
+
+\begin{enumerate}[itemsep=0.25cm]
+  \item 
+  \begin{enumerate}[itemsep=0.25cm]
+    \item Find the correlation coefficient.
+    \item Write down the value of $a$ and of $b$.
+  \end{enumerate}
+
+  \item On 1 January 2010, Lina buys a car which has travelled $11000$ km. Use the regression equation to estimate the price of Lina's car, giving your answer to the nearest \$100.
+
+  \item The price of a car decreases by $5\%$ each year. Calculate the price of Lina's car after $6$ years.
+
+  \item Lina will sell her car when its price reaches \$10\,000. Find the year when Lina sells her car.
+\end{enumerate}
+\vspace{0.25cm}
+
+% =========================================================
+% Problem 2 -- Sequences (Geometric + Arithmetic)
+% (in PDF this was numbered 3 with Part A and Part B)
+% =========================================================
+\section*{2. Sequences: geometric and arithmetic}
+
+\textbf{Part A (geometric sequence)}
+
+A geometric sequence has first term $1024$ and fourth term $128$.
+
+\begin{enumerate}
+  \item Show that the common ratio is $\dfrac{1}{2}$.
+  \vspace{0.25cm}
+
+  \item Find the eleventh term of the sequence.
+  \vspace{0.25cm}
+
+  \item Find the sum of the first eight terms.
+  \vspace{0.25cm}
+
+  \item Find the smallest number of terms for which the sum of the sequence first exceeds $2047.968$.
+  \vspace{0.25cm}
+\end{enumerate}
+
+\textbf{Part B (arithmetic sequence)}
+
+Consider the arithmetic sequence
+\[
+1,\ 4,\ 7,\ 10,\ 13,\ \dots
+\]
+
+\begin{enumerate}
+  \item Find the eleventh term.
+  \vspace{0.25cm}
+
+  \item The sum of the first $n$ terms of this sequence is given by
+  \[
+    S_n = \frac{n(3n-1)}{2}.
+  \]
+  \begin{enumerate}
+    \item Find the sum of the first $100$ terms.
+    \vspace{0.25cm}
+    \item The sum of the first $n$ terms is $477$.
+      \begin{enumerate}
+        \item Show that $3n^2 - n - 954 = 0$.
+        \vspace{0.25cm}
+        \item Hence find the value of $n$. You may use your GDC.
+        \vspace{0.25cm}
+      \end{enumerate}
+  \end{enumerate}
+\end{enumerate}
+
+\vspace{1cm}
+
+\item The mass $M$ of a decaying substance is measured at one–minute intervals. The points $(t, \ln M)$ are plotted for $0 \le t \le 10$, where $t$ is in minutes. The line of best fit is drawn. This is shown in the diagram.
+
+\begin{tikzpicture}[xscale=0.7,yscale=1.2]
+  % axes
+  \draw[->] (0,3.4) -- (11,3.4) node[below] {$t$};
+  \draw[->] (0,3.3) -- (0,4.9) node[left] {$\ln M$};
+
+  % y ticks
+  \foreach \y/\label in {3.5/{3.5},4/{4},4.5/{4.5}}
+    \draw (0,\y) -- (-0.1,\y) node[left] {\label};
+
+  % x ticks
+  \foreach \x in {2,4,6,8,10}
+    \draw (\x,3.4) -- (\x,3.3) node[below] {\x};
+
+  % line of best fit: ln M = 4.67 - 0.12 t
+  \draw[thick] (0,4.67) -- (10,3.47);
+
+  % sample plotted points near the line
+  \foreach \t in {0.5,2,3.5,5,6.5,8,9.5}{
+    \pgfmathsetmacro{\y}{4.67 - 0.12*\t}
+    \fill (\t,\y) circle (1.2pt);
+  }
+\end{tikzpicture}
+
+The correlation coefficient for this linear model is $r = -0.998$.
+
+\begin{enumerate}[itemsep=0.25cm]
+  \item State two words that describe the linear correlation between $\ln M$ and $t$.
+  \item The equation of the line of best fit is
+  \[
+    \ln M = -0.12t + 4.67.
+  \]
+  Given that $M = a \times b^{t}$, find the value of $b$.
+\end{enumerate}
+\vspace{0.25cm}
+
+\end{enumerate}
+\end{document}
+
