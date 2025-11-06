@@ -1,0 +1,206 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+
+\title{IB Math AA Test: Sequences, Interest, Regression, Functions, Logs}
+\author{Chris Huson}
+\date{November 2025}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First \& last name: \hspace{2.25cm} \,\\ Grade: \hspace{2.25cm} \,}
+%\fancyhead[RO]{First \& last name: \hspace{2.25cm} \,\\ \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / IB Math: Sequences \\* 6 November 2025}
+
+\begin{document}
+
+\subsubsection*{2.6 Test: Sequences, Regression, Interest, Functions, Logs}
+\begin{enumerate}[itemsep=0.1cm]
+
+
+\item A geometric sequence has first term $24$ and common ratio $\frac{1}{2}$. \hfill [10 marks]
+\begin{enumerate}
+  \item Write down the second and third terms.
+  \item Write an expression for the sum of the first $n$ terms, $S_n$.
+  \item Hence or otherwise find the sum of the first 10 terms of the sequence $S_{10}$.
+\vspace{0.5cm}
+
+An arithmetic sequence has a first term $150$ and fourth term $111$.
+  \item Find the common difference $d$.
+  \item Find the number of the first negative term in the arithmetic sequence, i.e. $n$ such that $u_n < 0$.
+\end{enumerate}
+\vspace{0.1cm}
+    \begin{tikzpicture}
+        \draw (0,2) rectangle (15.5,11);
+        \draw [dotted] (1,10)--(14,10);
+        \draw [dotted] (1,9)--(14,9);
+        \draw [dotted] (1,8)--(14,8);
+        \draw [dotted] (1,7)--(14,7);
+        \draw [dotted] (1,6)--(14,6);
+    \end{tikzpicture}
+\newpage
+% --------------------------------------------------
+% 1. Music academy regression (table)
+% --------------------------------------------------
+\item Six piano students reported their average weekly practice time and their Music class grade (out of 100). The data are shown below. \hfill [7 marks]
+  \begin{center}
+  \begin{tabular}{|c|cccccc|}
+    \hline
+  Practice time ($h$) & 8 & 3 & 5 & 3 & 7 & 9 \\
+    \hline
+  Grade ($G$) & 85 & 70 & 75 & 85 & 90 & 95 \\
+    \hline
+  \end{tabular}
+  \end{center}
+
+  \begin{enumerate}[itemsep=0.1cm]
+    \item Find the Pearson product–moment correlation coefficient $r$ for these data.
+    \item Based on the following guidance:
+
+    \begin{quote}
+      $0 \le |r| < 0.4$: weak,\quad
+      $0.4 \le |r| < 0.8$: moderate,\quad
+      $0.8 \le |r| \le 1$: strong.
+    \end{quote}
+
+    Comment on the strength of the correlation for this data.
+    \item The relationship between $h$ and $G$ can be modelled by a regression equation $G = ah + b$. Write down the values of $a$ and $b$.
+    \item One of the students says she should have practised more. Based on the data and assuming that she practiced 6 hours per week, estimate what her score would have been.
+  \end{enumerate}
+  \vspace{0.25cm}
+      \begin{tikzpicture}
+          \draw (0,2) rectangle (15.5,11);
+          \draw [dotted] (1,10)--(14,10);
+          \draw [dotted] (1,9)--(14,9);
+          \draw [dotted] (1,8)--(14,8);
+          \draw [dotted] (1,7)--(14,7);
+          \draw [dotted] (1,6)--(14,6);
+      \end{tikzpicture}
+
+\newpage
+
+\item Give all numerical answers correct to two decimal places. \hfill [8 marks]
+
+    Sofia invests \$1000 in an annuity on 1 January 2020. The investment earns a fixed amount of \$60 per year.
+
+    \begin{enumerate}
+    \item Find the value of her investment on 1 January 2022. \\[0.5cm]
+    Rafael also invests \$1000 on 1 January 2020. He deposits his funds in a bank account that pays a nominal annual rate of $5\%$ compounded monthly. 
+    \item Find his balance after two years.
+    \item Determine the number of complete years from 1 January 2020 until Rafael's account first has a greater balance than Sofia's investment.
+  \end{enumerate}
+
+    \vspace{0.5cm}
+    \begin{tikzpicture}
+        \draw (0,2) rectangle (15.5,11);
+        \draw [dotted] (1,10)--(14,10);
+        \draw [dotted] (1,9)--(14,9);
+        \draw [dotted] (1,8)--(14,8);
+        \draw [dotted] (1,7)--(14,7);
+        \draw [dotted] (1,6)--(14,6);
+    \end{tikzpicture}
+\newpage
+
+% --------------------------------------------------
+% 3. Bacteria growth (exponential)
+% --------------------------------------------------
+\item In an experiment the area of a bacteria culture is modelled by \hfill [4 marks]
+\[
+P(t) = A e^{kt},
+\]
+where $P$ is the area in mm$^2$ and $t$ is the time in hours. At $t=0$ the area is $80$ mm$^2$, and after $11$ hours the area is $612$ mm$^2$.
+
+\begin{enumerate}[itemsep=0.25cm]
+  \item Write down the value of $A$.
+  \item Find the value of $k$.
+\end{enumerate}
+\vspace{0.25cm}
+    \begin{tikzpicture}
+        \draw (0,2) rectangle (15.5,11);
+        \draw [dotted] (1,10)--(14,10);
+        \draw [dotted] (1,9)--(14,9);
+        \draw [dotted] (1,8)--(14,8);
+        \draw [dotted] (1,7)--(14,7);
+        \draw [dotted] (1,6)--(14,6);
+    \end{tikzpicture}
+\newpage
+
+% --------------------------------------------------
+% 4. Kite on coordinate axes
+% --------------------------------------------------
+\item Camilla is designing a kite $ABCD$ on a coordinate plane (1 unit = 10 cm). The points are 
+$A(3,0), \; B(0,5), \; C(5,8)$, and point $D$ lies on the $x$–axis. Segment $AC$ is perpendicular to segment $BD$.  \hfill [6 marks]
+  \begin{center}
+  \begin{tikzpicture}[scale=0.5,>=stealth]
+    % axes
+    \draw[->] (0,0) -- (0,9) node[left] {$y$};
+    \draw[->] (0,0) -- (22,0) node[below] {$x$};
+
+    % coordinates (chosen to match the problem)
+    \coordinate (B) at (0,5);
+    \coordinate (A) at (3,0);
+    \coordinate (C) at (5,8);
+    \coordinate (D) at (20,0);
+
+    % sides of the figure
+    \draw (B) -- (C) -- (D) -- (A) -- cycle;   % outer shape BAD + CD
+    \draw (B) -- (A);                           % BA
+    \draw (B) -- (D);                           % BD
+    \draw (A) -- (C);                           % AC
+
+    % intersection of AC and BD for right-angle mark
+  %  \path [name path=AC] (A) -- (C);
+  %  \path [name path=BD] (B) -- (D);
+  %  \path [name intersections={of=AC and BD, by=E}];
+
+    % right angle at intersection
+  %  \draw ($(E)!0.15!(B)$) -- ($(E)!0.15!(A)$) -- ($(E)!0.15!(D)$);
+
+    % points
+    \fill (A) circle (2pt) node[below] {$A$};
+    \fill (B) circle (2pt) node[left] {$B$};
+    \fill (C) circle (2pt) node[above] {$C$};
+    \fill (D) circle (2pt) node[below] {$D$};
+
+    % note
+    \node[anchor=west] at (15,6.5) {\small diagram not to scale};
+  \end{tikzpicture}
+  \end{center}
+  \begin{enumerate}
+    \item Find the gradient of the line through $A$ and $C$.
+    \item Hence write down the gradient of the line through $B$ and $D$.
+    \item Find the equation of line $BD$ in the form $ax + by + d = 0$, where $a,b,d$ are integers.
+    \item Write down the $x$–coordinate of $D$.
+  \end{enumerate}
+  \vspace{0.25cm}
+      \begin{tikzpicture}
+          \draw (0,2) rectangle (15.5,11);
+          \draw [dotted] (1,10)--(14,10);
+          \draw [dotted] (1,9)--(14,9);
+          \draw [dotted] (1,8)--(14,8);
+          \draw [dotted] (1,7)--(14,7);
+          \draw [dotted] (1,6)--(14,6);
+    \end{tikzpicture}
+
+\newpage
+\item Solve the following, giving exact values when possible. \hfill [6 marks]
+\begin{enumerate}[itemsep=0.1cm]
+  \item $3^{x}=243$.
+  \item $\log_{5}(2x-1)=2$.
+  \item $\ln(4) - \ln(x) = \ln(2)$.
+\end{enumerate}
+\vspace{0.1cm}
+  \vspace{0.25cm}
+      \begin{tikzpicture}
+          \draw (0,2) rectangle (15.5,11);
+          \draw [dotted] (1,10)--(14,10);
+          \draw [dotted] (1,9)--(14,9);
+          \draw [dotted] (1,8)--(14,8);
+          \draw [dotted] (1,7)--(14,7);
+          \draw [dotted] (1,6)--(14,6);
+    \end{tikzpicture}
+
+
+\end{enumerate}
+\end{document}
+
