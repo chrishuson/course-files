@@ -4,7 +4,7 @@ La Scuola d'Italia / Huson / IB Math: Exploration Project
 
 # Exploration Project—initial planning
 
-This form should be completed and returned by Friday November 7th
+This form should be completed and returned by Tuesday December 2nd
 
 1. Area of interest
 2. Topic
