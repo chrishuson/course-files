@@ -1,0 +1,81 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{IB Math AA SL}
+\author{Chris Huson}
+\date{January 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First \& last name: \hspace{2.25cm} \,\\ Grade: \hspace{2.25cm} \,}
+%\fancyhead[RO]{First \& last name: \hspace{2.25cm} \,\\ \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / IB Math: Probability \\* 15 January 2026}
+
+\begin{document}
+
+\subsubsection*{4.8 Pop Quiz: Venn diagrams \& sets}
+\begin{enumerate}[itemsep=0.1cm]
+
+\item For each Venn diagram, write an expression representing the shaded area.
+\begin{enumerate}
+    \item For example, for this diagram \\*
+    %\\*
+    \begin{venndiagram2sets}
+        \fillA
+        \fillB
+    \end{venndiagram2sets}
+    Expression:  %\\*
+    \item %\\*[15pt]
+    \begin{venndiagram2sets}
+        \fillACapB
+    \end{venndiagram2sets}
+    Expression: %\\*
+    \item %\\*[15pt]
+    \begin{venndiagram2sets}
+    \fillBNotA
+    \end{venndiagram2sets}
+    Expression: %\\*
+    \item %\*[15pt]
+    \begin{venndiagram3sets}
+    \fillA
+    \fillCCapB
+    \end{venndiagram3sets}
+    Expression: %\\*
+\end{enumerate}
+
+\item Shade the area representing $A' \cap B'$ \hspace{1cm}
+    \begin{venndiagram2sets}
+    \end{venndiagram2sets}
+
+
+\newpage
+\item Given: \\*
+\qquad $A = \{a, b, c, d, e\}$
+\qquad $B = \{a, e, i, o, u\}$
+\begin{enumerate}
+    \item What is $A \cup B$?\\*[20pt]
+    \item What is $A \cap B$?\\*[20pt]
+\end{enumerate}
+
+\item Suppose there are 19 species of fruit-eating monkeys in the western hemisphere. Their diets are as follows:
+\begin{itemize}
+  \item 16 species of monkeys eat bananas
+  \item 12 species eat apples
+  \item 11 eat both apples and bananas
+\end{itemize}
+Complete the Venn diagram below, writing the number of species of fruit-eating monkeys in each region to represent the situation. (Use ``A" for apple, ``B" for banana)
+  \begin{center}
+    \begin{venndiagram2sets}[tikzoptions={scale=1.5}]
+    \end{venndiagram2sets}U
+  \end{center}
+How many species have a diet that does not include apples nor bananas?
+
+
+\item A survey question has three possible responses, $A$, $B$, and $C$. Among 100 surveys, the frequencies of the answers collected were $n(A)=40, n(B)=35, \text{ and } n(C)=25$.
+\begin{enumerate}
+    \item If a survey is selected at random, what this the probability the response was $B$?\\*[20pt]
+    \item What is the probability a survey selected at random was an answer other than $C$?\\*[20pt]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}

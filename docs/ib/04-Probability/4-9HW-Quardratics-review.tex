@@ -1,108 +1,21 @@
 \documentclass[12pt, twoside]{article}
-\usepackage[letterpaper, margin=1in, headsep=0.5in]{geometry}
-\usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{tikz}
-\usepackage{venndiagram}
+\input{../preamble}
+\usepackage{float}
 
+\title{IB Math AA SL}
+\author{Chris Huson}
+\date{January 2026}
 
-\usepackage{graphicx}
-\usepackage{enumitem}
-\usepackage{multicol}
-
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt} % disable the underline of the header
-
-\fancyhead[RE]{\thepage}
-\fancyhead[RO]{\thepage \\ Name: \hspace{3cm}}
-\fancyhead[L]{BECA / Dr. Huson / 11.1 IB Math SL\\* 7 February 2018 \\* Unit Test: Probability \& review topics}
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First \& last name: \hspace{2.25cm} \,\\ Grade: \hspace{2.25cm} \,}
+%\fancyhead[RO]{First \& last name: \hspace{2.25cm} \,\\ \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / IB Math: Probability \\* 15 January 2026}
 
 \begin{document}
 
-\begin{enumerate}
+\subsubsection*{4.9 Homework: Quadratics review}
+\begin{enumerate}[itemsep=0.1cm]
 
-\item For each Venn diagram, write an expression representing the shaded area.
-\begin{enumerate}
-    \item For example, for this diagram \\*
-    %\\*
-    \begin{venndiagram2sets}
-        \fillA
-        \fillB
-    \end{venndiagram2sets}
-    Expression:  %\\*
-    \item %\\*[15pt]
-    \begin{venndiagram2sets}
-        \fillACapB
-    \end{venndiagram2sets}
-    Expression: %\\*
-    \item %\\*[15pt]
-    \begin{venndiagram2sets}
-    \fillBNotA
-    \end{venndiagram2sets}
-    Expression: %\\*
-    \item %\*[15pt]
-    \begin{venndiagram3sets}
-    \fillA
-    \fillCCapB
-    \end{venndiagram3sets}
-    Expression: %\\*
-\end{enumerate}
-
-\item Shade the area representing $A' \cap B'$ \hspace{1cm}
-    \begin{venndiagram2sets}
-    \end{venndiagram2sets}
-
-
-\newpage
-\item Given: \\*
-\qquad $A = \{a, b, c, d, e\}$
-\qquad $B = \{a, e, i, o, u\}$
-\begin{enumerate}
-    \item What is $A \cup B$?\\*[20pt]
-    \item What is $A \cap B$?\\*[20pt]
-\end{enumerate}
-
-\item Suppose there are 19 species of fruit-eating monkeys in the western hemisphere. Their diets are as follows:
-\begin{itemize}
-  \item 16 species of monkeys eat bananas
-  \item 12 species eat apples
-  \item 11 eat both apples and bananas
-\end{itemize}
-Complete the Venn diagram below, writing the number of species of fruit-eating monkeys in each region to represent the situation. (Use ``A" for apple, ``B" for banana)
-  \begin{center}
-    \begin{venndiagram2sets}[tikzoptions={scale=1.5}]
-    \end{venndiagram2sets}U
-  \end{center}
-How many species have a diet that does not include apples nor bananas?
-
-
-\item A survey question has three possible responses, $A$, $B$, and $C$. Among 100 surveys, the frequencies of the answers collected were $n(A)=40, n(B)=35, \text{ and } n(C)=25$.
-\begin{enumerate}
-    \item If a survey is selected at random, what this the probability the response was $B$?\\*[20pt]
-    \item What is the probability a survey selected at random was an answer other than $C$?\\*[20pt]
-\end{enumerate}
-
-\newpage
-\item The universal set $U$ is defined as the set of positive integers less than 13. The subsets $A$ and $B$ are defined as follows: \\*
-\qquad $A =$ \{integers that are multiples of 3\}\\*
-\qquad $B =$ \{prime numbers\} \\* [5pt]
-(note: Prime numbers have only themselves and one as factors. One is not considered a prime.)
-\begin{enumerate}
-    \item List the members of $A$\\*[20pt]
-    \item List the members of $B$\\*[20pt]
-    \item Place the elements of $A$ and $B$ in the appropriate regions in the Venn diagram below.\\*[5pt]
-        \begin{venndiagram2sets}[tikzoptions={scale=2.5}]
-        \end{venndiagram2sets}U\\*
-    \item List the items in the set $(A \cup B)^\prime $\\*[20pt]
-    \item If an element is selected at random, what is the probability that it is a member of the set $A \cap B$?
-\end{enumerate}
-
-\newpage
 \item Let $f(x) = x^2+x-2$ and $g(x)=x+2$
 \begin{enumerate}
     \item Rewrite $f$ in vertex form and state the vertex as an ordered pair.\\*[35pt]
