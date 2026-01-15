@@ -1,0 +1,101 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{IB Math AA SL}
+\author{Chris Huson}
+\date{January 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First \& last name: \hspace{2.25cm} \,\\ Grade: \hspace{2.25cm} \,}
+%\fancyhead[RO]{First \& last name: \hspace{2.25cm} \,\\ \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / IB Math: Probability \\* 15 January 2026}
+
+\begin{document}
+
+\subsubsection*{4.8 Classwork: Quadratics review, exponents}
+\begin{enumerate}[itemsep=0.1cm]
+
+\item Let $y = x^2-5x+4$ and $2x+y=4$
+\begin{enumerate}
+    \item Rewrite quadratic in vertex form and state the vertex as an ordered pair.\\*[35pt]
+    \item Factor the quadratic function and write down its roots.\\*[35pt]
+    \item Graph the parabola, labeling it. Mark the intercepts and graph the axis of symmetry as a dotted line, labeling it with its equation.
+    \item Graph linear equation and label it with its name or equation.
+    \item Mark the intersections of the two equations as ordered pairs.
+
+\end{enumerate}
+
+
+\begin{figure}[!htbp]
+\begin{center}
+\begin{tikzpicture}[scale=1.1]
+
+%grid
+\draw [thick, color=black,, xstep=1.0cm,ystep=1.0cm] (-5.5,-4.5) grid (5.5,6.5);
+\draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-5.5,-4.5) grid (5.5,6.5);
+
+\foreach \x in {-5, -4, -3, -2, -1, 0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,-1pt) -- (0pt,3pt) node[below]  {$\quad \x$};
+
+\foreach \y in {-4, -3, -2,-1,0,1,2,3,4, 5, 6}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
+
+\draw [thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
+\draw [thick, ->] (0,-4.5) -- (0,6.5) node [left] {$y$};
+
+%\draw [<-, ->] plot[domain= -3.5:2.5] (\x, \x*\x +\x -2);
+%\draw [<-, ->] plot[domain= -5.5:3] (\x, \x+2);
+
+\end{tikzpicture}
+\end{center}
+\end{figure}
+
+\newpage
+Simplify, leaving no negative or fractional exponents.
+
+\item $2x^{-3}y \times \frac{1}{4}x^2 y^{-1}$\\*[45pt]
+\item $\displaystyle a^{\frac{3}{4}} \times (\frac{\sqrt{a}}{b^4})^{\frac{1}{2}}$\\*[55pt]
+\item $\ln{e^4}$\\*[35pt]
+\item $\log 5^2 + \log 4$\\*[55pt]
+\item $(2x^2-x-5)(x-3)-(x^2+3x-5)(2x-3)$\\*[85pt]
+\item Factor the expression and then solve for $x$: $2x^3-2x^2-24x=0$
+
+\newpage
+\item Let $f(x) = 2x -5$ and $g(x)=(x-1)^2$
+\begin{enumerate}
+    \item Find $(f \circ g)(x)$\\*[65pt]
+    \item Find $f^{-1}(x)$\\*[65pt]
+\end{enumerate}
+
+\item The function $f(x)=e^x$ is shown on the graph. Sketch $g(x)=f(x-2)+3$. Plot and label the asymptote(s).
+
+\begin{figure}[!htbp]
+\begin{center}
+\begin{tikzpicture}
+
+%grid
+%\draw [thick, color=black,, xstep=1.0cm,ystep=1.0cm] (-5.5,-1.5) grid (5.5,16.5);
+%\draw [thin, color=lightgray,, xstep=0.2cm,ystep=0.2cm] (-5.5,-1.5) grid (5.5,16.5);
+
+\foreach \x in {-5, -4, -3, -2, -1, 0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,-3pt) -- (0pt,3pt) node[below]  {$\x$};
+
+\foreach \y in {-1,0,1,2,3,4,5, 6, 7}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left]  {$\y$};
+
+\draw [thick, ->] (-5.5,0) -- (+5.5,0) node [right] {$x$};
+\draw [thick, ->] (0,-1.0) -- (0,7.5) node [left] {$y$};
+
+\draw [<->] plot[domain= -3.5:2] (\x, e^\x);
+
+\end{tikzpicture}
+\end{center}
+\end{figure}
+
+\end{enumerate}
+
+\end{document}
+
+
+\item Using a calculator, find how many sets of three elements can be selected from a set of 8, when order does not matter, i.e. $_{8}\mathrm C_3$. \\*[20pt]
