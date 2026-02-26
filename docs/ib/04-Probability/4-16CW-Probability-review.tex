@@ -1,0 +1,108 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First \& last name: \hspace{2.25cm} \,\\  \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / IB Math: Probability \\* 26 February 2026}
+
+\begin{document}
+
+\subsubsection*{4.16 Classwork:Probability Review}
+\begin{enumerate}[itemsep=0.1cm]
+
+%--- Problem 1: Venn diagram reading and shading ---
+\item
+\begin{enumerate}
+    \item For each Venn diagram below, write an expression for the shaded region.
+    \begin{multicols}{2}
+        \begin{venndiagram2sets}[tikzoptions={scale=0.8}]
+            \fillACapB
+        \end{venndiagram2sets}
+
+        \columnbreak
+        \begin{venndiagram2sets}[tikzoptions={scale=0.8}]
+            \fillANotB
+        \end{venndiagram2sets}
+
+    \end{multicols} \vspace{0.5cm}
+
+\item Shade the region representing $A' \cup B$ in the diagram below.
+    \begin{center}
+        \begin{venndiagram2sets}[tikzoptions={scale=0.85}]
+        \end{venndiagram2sets}
+    \end{center}
+\end{enumerate}
+
+%--- Problem 2: Venn with numbers ---
+\item In a survey of 50 students, 32 own a dog, 18 own a cat, and 8 own both.
+\begin{enumerate}
+    \item Complete the Venn diagram below, writing the number of students in each region.
+    \begin{center}
+        \begin{venndiagram2sets}[tikzoptions={scale=1.3}, labelA=$Dog$, labelB=$Cat$]
+        \end{venndiagram2sets}
+    \end{center}
+    \item A student is selected at random. Find the probability they own a dog but not a cat.  \vspace{1.7cm}
+    \item Find the probability they own neither a dog nor a cat.
+\end{enumerate}
+
+\newpage
+%--- Problem 3: Combined events with formulas ---
+\item Events $A$ and $B$ are such that $\mathrm{P}(A) = 0.6$, $\mathrm{P}(B) = 0.5$, and
+$\mathrm{P}(A \cap B) = 0.2$.
+\begin{enumerate}[itemsep=3cm]
+    \item Find $\mathrm{P}(A \cup B)$. (Show substitution into a formula.)
+    \item Find $\mathrm{P}(A' \cap B')$.
+    \item Find $\mathrm{P}(A \mid B)$. (Show substitution into a formula.)
+    \item Determine whether $A$ and $B$ are independent. Justify your answer.
+\end{enumerate}
+
+\newpage
+
+%--- Problem 4: Independent events with probability table ---
+\item Events $A$ and $B$ are independent, with $\mathrm{P}(A) = 0.4$ and $\mathrm{P}(B) = 0.7$.
+\begin{enumerate}[itemsep=1.2cm]
+    \item Find $\mathrm{P}(A \cap B)$.
+    \item Complete the probability table below, including all totals.
+    \renewcommand{\arraystretch}{2}
+    \begin{center}
+    \begin{tabular}{r|p{1.5cm}|p{1.5cm}|p{1.5cm}}
+        & $A$ & $A'$ & Total \\
+        \hline
+        $B$      & & & \\
+        \hline
+        $B'$     & & & \\
+        \hline
+        Total    & & & \\
+    \end{tabular}
+    \end{center}
+    \item Find $\mathrm{P}(A \cup B)$.
+    \item Find $\mathrm{P}(B \mid A')$.
+\end{enumerate} \vspace{1.5cm}
+
+%--- Problem 5: Mutually exclusive ---
+\item Events $A$ and $B$ are mutually exclusive, with $\mathrm{P}(A) = 0.35$ and $\mathrm{P}(B) = 0.25$.
+\begin{enumerate}[itemsep=1.5cm]
+    \item Write down $\mathrm{P}(A \cap B)$.
+    \item Find $\mathrm{P}(A \cup B)$.
+    \item Find $\mathrm{P}(A' \cap B')$.
+\end{enumerate} \vspace{0.5cm}
+
+\newpage
+%--- Problem 6: Tree diagram and conditional probability ---
+\item In a bag of marbles, 60\% are red and 40\% are blue. When a red marble is
+selected, the probability that it is large is 0.3. When a blue marble is selected,
+the probability that it is large is 0.5. A marble is selected at random.
+\begin{enumerate}[itemsep=2.5cm]
+    \item In the space below, draw a fully labelled tree diagram for this situation,
+    including all branch probabilities.
+
+    \vspace{6cm}
+
+    \item Find the probability that the marble is red and large.
+    \item Find the probability that the marble is large.
+    \item Given that the marble is large, find the probability that it is red.
+\end{enumerate}
+
+\end{enumerate}
+\end{document}

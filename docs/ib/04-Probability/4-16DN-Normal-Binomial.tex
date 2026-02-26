@@ -1,0 +1,64 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First \& last name: \hspace{2.25cm} \,\\ 12th Grade \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / IB Math: Distributions \\* 26 February 2026}
+
+\begin{document}
+
+\subsubsection*{4.16 Do Now: Normal and Binomial Distribution Practice}
+\begin{enumerate}[itemsep=0.1cm]
+
+\item The heights, $H$ cm, of sunflowers grown in a garden competition are normally distributed
+with a mean of 148\,cm and a standard deviation of 11\,cm.
+
+\begin{enumerate}[itemsep=0.25cm]
+    \item Find $\mathrm{P}(H < 140)$. \hfill [2]
+    \item Find $\mathrm{P}(135 < H < 160)$. \hfill [2]
+    \item The tallest 20\% of sunflowers receive a prize. Find the minimum height, in cm,
+    required to receive a prize. \hfill [2]
+    \item Given that a sunflower does not receive a prize, find the probability that it is
+    taller than 150\,cm. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+    \draw (0,0) rectangle (15.5,13);
+    \foreach \y in {1,2,...,12} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+\item A city bus arrives on time at a particular stop with probability 0.65. Over a period
+of one week, the bus makes 20 scheduled arrivals. The number of times the bus arrives
+on time is denoted by $X$.
+
+\begin{enumerate}[itemsep=0.25cm]
+    \item Find $\mathrm{P}(X = 13)$. \hfill [2]
+    \item Find $\mathrm{P}(X \geq 15)$. \hfill [2]
+    \item Find $\mathrm{E}(X)$ and $\mathrm{Var}(X)$. \hfill [2]
+    \item Find the greatest integer value of $n$ such that $\mathrm{P}(X \geq n) > 0.95$. \hfill [3]
+    \item Explain in the context of the problem what the value of $n$ found in \\
+    part (d) represents. \hfill [1]
+\end{enumerate}
+
+\begin{tikzpicture}
+    \draw (0,0) rectangle (15.5,13);
+    \foreach \y in {1,2,...,12} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}
+
+Solutions
+  Page 1 — Normal distribution, H ~ N(148, 11²):
+  - (a) P(H < 140) ≈ 0.234
+  - (b) P(135 < H < 160) ≈ 0.743
+  - (c) Min height for prize (top 20%): invNorm(0.80, 148, 11) ≈ 157.3 cm
+  - (d) P(H > 150 | not prize) = P(150 < H < 157.3) / 0.80 ≈ 0.285
+
+  Page 2 — Binomial, X ~ B(20, 0.65):
+  - (a) P(X = 13) ≈ 0.184
+  - (b) P(X ≥ 15) ≈ 0.245
+  - (c) E(X) = 13, Var(X) = 4.55
+  - (d) Least n: P(X ≤ 15) ≈ 0.882 < 0.95, P(X ≤ 16) ≈ 0.956 > 0.95 → n = 16
