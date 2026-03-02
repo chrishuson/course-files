@@ -1,0 +1,161 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{eurosym}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First \& last name: \hspace{2.25cm} \,\\ 11th Grade \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / IB Math: Linear Regression \\* 2 March 2026}
+
+\begin{document}
+
+\subsubsection*{2.7 Classwork: Linear Regression}
+\begin{enumerate}[itemsep=0.1cm]
+
+%--- Problem 1: Scatter plot, line of best fit, regression line, r ---
+\item The table shows six paired observations of variables $x$ and $y$. \hfill [5 marks]
+
+\begin{center}
+\begin{tabular}{|c|cccccc|}
+  \hline
+  $x$ & 2 & 6 & 9 & 13 & 17 & 21 \\
+  \hline
+  $y$ & 5 & 15 & 11 & 14 & 19 & 22 \\
+  \hline
+\end{tabular}
+\end{center}
+
+A scatter diagram of the data is shown below.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=7.5cm, height=7.5cm,
+  axis lines=left,
+  xlabel={$x$},
+  ylabel={$y$},
+  xmin=0, xmax=25,
+  ymin=0, ymax=25,
+  xtick={0,5,...,25},
+  ytick={0,5,...,25},
+  grid=both,
+  grid style={dashed, gray!30},
+  tick label style={font=\small},
+]
+\addplot[only marks, mark=*, mark size=2pt] coordinates {
+  (2,5) (6,15) (9,11) (13,14) (17,19) (21,22)
+};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[itemsep=0.25cm]
+  \item On the scatter diagram above, draw a line of best fit. \hfill [1]
+
+  \item Using your line, write down the approximate equation in the form $y = ax + b$. \hfill [1]
+
+  \vspace{1.2cm}
+
+  \item Use your GDC to find: \hfill [2]
+  \begin{enumerate}[label=(\roman*), itemsep=0.5cm]
+    \item the equation of the regression line of $y$ on $x$, giving $a$ and $b$ correct to
+    three significant figures;
+    \item the value of Pearson's product-moment correlation coefficient, $r$.
+  \end{enumerate}
+
+  \vspace{1.5cm}
+
+  \item Use the guidance below to describe the correlation between $x$ and $y$. \hfill [1]
+
+  \begin{quote}
+    $0 \le |r| < 0.4$: weak, \quad
+    $0.4 \le |r| < 0.8$: moderate, \quad
+    $0.8 \le |r| \le 1$: strong.
+  \end{quote}
+
+  \vspace{0.8cm}
+
+\end{enumerate}
+
+\newpage
+
+%--- Problem 2: Italian cities, latitude vs. salary ---
+\item Eight Italian cities were surveyed to investigate the relationship between
+latitude and average annual salary. The data are shown in the table below.
+\hfill [7 marks]
+
+\begin{center}
+\begin{tabular}{|l|c|r|}
+  \hline
+  City & Latitude, $L$ ($^\circ$N) & Average salary, $S$ (\euro/year) \\
+  \hline
+  Milano  & 45.5 & 37,189 \\
+  Torino  & 45.1 & 26,840 \\
+  Bologna & 44.5 & 29,300 \\
+  Genova  & 44.4 & 27,000 \\
+  Firenze & 43.8 & 28,646 \\
+  Roma    & 41.9 & 28,000 \\
+  Napoli  & 40.9 & 24,000 \\
+  Palermo & 38.1 & 22,000 \\
+  \hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.25cm]
+
+  \item Find the value of Pearson's product-moment correlation coefficient, $r$.
+  \hfill [1]
+
+  \vspace{1.2cm}
+
+  \item Use the guidance below to describe the correlation between latitude and
+  average annual salary. \hfill [1]
+
+  \begin{quote}
+    $0 \le |r| < 0.4$: weak, \quad
+    $0.4 \le |r| < 0.8$: moderate, \quad
+    $0.8 \le |r| \le 1$: strong.
+  \end{quote}
+
+  \vspace{0.6cm}
+
+  \item Write down the equation of the regression line of $S$ on $L$, in the
+  form $S = aL + b$, where $a$ and $b$ are given to three significant figures.
+  \hfill [2]
+
+  \vspace{2cm}
+
+  \item Bari is an Italian city at latitude $41.1^\circ$N. Use your regression
+  line to estimate the average annual salary in Bari. \hfill [2]
+
+  \vspace{2cm}
+
+  \item Interpret the gradient of your regression line in the context of
+  this problem. \hfill [1]
+
+  \vspace{2cm}
+
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
+
+Solutions
+  Problem 1 — Linear regression, data: (2,5), (6,15), (9,11), (13,14), (17,19), (21,22)
+  - (a) Line of best fit: should pass roughly through (0, 6) and (21, 22); accept any reasonable line
+  - (b) Approximate equation: answers vary; e.g. y ≈ 0.8x + 5 (accept a wide range)
+  - (c)(i) Regression line: y = 0.767x + 5.64  (a = 0.767, b = 5.64, both to 3 s.f.)
+  - (c)(ii) r = 0.905 (3 s.f.)
+  - (d) Strong positive correlation (0.8 ≤ r ≤ 1)
+
+  Problem 2 — Italian cities: latitude (L, °N) vs. average annual salary (S, €/year)
+  - (a) r = 0.746 (3 s.f.)
+  - (b) Moderate positive correlation (0.4 ≤ 0.746 < 0.8)
+       Note: Milan is an outlier — similar latitude to Turin but ~€10,000 higher salary,
+       which weakens r relative to expectation.
+  - (c) S = 1320L − 28800  (a = 1320, b = −28800, both to 3 s.f.)
+  - (d) Using GDC stored values: S(41.1) ≈ €25,300
+       Using 3 s.f. coefficients: S = 1320 × 41.1 − 28800 = €25,500 (accept either)
+  - (e) For each additional degree of latitude (1° northward), average annual salary
+        is predicted to increase by approximately €1320.
