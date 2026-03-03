@@ -1,0 +1,88 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / IB Math: Distributions --- Solutions \\* 26 February 2026}
+
+\begin{document}
+
+\subsubsection*{4.16 Do Now: Normal and Binomial Distribution Practice --- Solutions}
+\begin{enumerate}[itemsep=0.1cm]
+
+%--- Problem 1 ---
+\item The heights, $H$ cm, of sunflowers grown in a garden competition are normally distributed
+with a mean of 148\,cm and a standard deviation of 11\,cm.
+
+\begin{enumerate}[itemsep=0.25cm]
+    \item Find $\mathrm{P}(H < 140)$. \hfill [2]
+    \item Find $\mathrm{P}(135 < H < 160)$. \hfill [2]
+    \item The tallest 20\% of sunflowers receive a prize. Find the minimum height, in cm,
+    required to receive a prize. \hfill [2]
+    \item Given that a sunflower does not receive a prize, find the probability that it is
+    taller than 150\,cm. \hfill [2]
+\end{enumerate}
+
+\vspace{1cm}
+%\vfill
+
+\noindent\fbox{%
+\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule}
+\vspace{0.15cm}
+\textbf{Solutions}\\[0.2cm]
+\textbf{(a)}\enspace
+  $\mathrm{normCdf}(0,\;140,\;148,\;11) = 0.23352\ldots \\[0.25cm] \approx \mathbf{0.234}$\\[1.5cm]
+\textbf{(b)}\enspace
+  $\mathrm{normCdf}(135,\;160,\;148,\;11) = 0.74370\ldots \approx \mathbf{0.744}$\\[1.5cm]
+\textbf{(c)}\enspace
+  $\mathrm{invNorm}(0.80,\;148,\;11) = 157.258\ldots \approx \mathbf{157}$ cm\\[1.5cm]
+\textbf{(d)}\enspace
+  $\mathrm{normCdf}(150,\;157.258\ldots,\;148,\;11) = 0.22786\ldots$\\[0.5cm]
+  \hspace*{2.5em}
+  $\dfrac{0.22786\ldots}{0.80} = 0.28482\ldots \approx \mathbf{0.285}$
+\vspace{0.2cm}
+\end{minipage}}
+
+\newpage
+
+%--- Problem 2 ---
+\item A city bus arrives on time at a particular stop with probability 0.65. Over a period
+of one week, the bus makes 20 scheduled arrivals. The number of times the bus arrives
+on time is denoted by $X$.
+
+\begin{enumerate}[itemsep=0.25cm]
+    \item Find $\mathrm{P}(X = 13)$. \hfill [2]
+    \item Find $\mathrm{P}(X \geq 15)$. \hfill [2]
+    \item Find $\mathrm{E}(X)$ and $\mathrm{Var}(X)$. \hfill [2]
+    \item Find the greatest integer value of $n$ such that $\mathrm{P}(X \geq n) > 0.95$. \hfill [3]
+    \item Explain in the context of the problem what the value of $n$ found in \\
+    part (d) represents. \hfill [1]
+\end{enumerate}
+
+\vfill
+
+\noindent\fbox{%
+\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule}
+\vspace{0.15cm}
+\textbf{Solutions}\\[0.2cm]
+\textbf{(a)}\enspace
+  $\mathrm{binomPdf}(20,\;0.65,\;13) = 0.18440\ldots \approx \mathbf{0.184}$\\[0.25cm]
+\textbf{(b)}\enspace
+  $1 - \mathrm{binomCdf}(20,\;0.65,\;14) = 0.24539\ldots \approx \mathbf{0.245}$\\[0.25cm]
+\textbf{(c)}\enspace
+  $\mathrm{E}(X) = np = 20 \times 0.65 = \mathbf{13}$
+  \hspace{2em}
+  $\mathrm{Var}(X) = np(1-p) = 20 \times 0.65 \times 0.35 = \mathbf{4.55}$\\[0.25cm]
+\textbf{(d)}\enspace
+  $\mathrm{P}(X \geq 9)\;  = 1 - \mathrm{binomCdf}(20,\;0.65,\;8) = 0.98042\ldots > 0.95$ \checkmark\\[0.15cm]
+  \hspace*{2.5em}
+  $\mathrm{P}(X \geq 10) = 1 - \mathrm{binomCdf}(20,\;0.65,\;9) = 0.94683\ldots < 0.95$
+  \quad so $n = \mathbf{9}$\\[0.25cm]
+\textbf{(e)}\enspace
+  There is a greater than 95\% probability that the bus arrives on time
+  at least 9 times in 20 scheduled arrivals.
+\vspace{0.2cm}
+\end{minipage}}
+
+\end{enumerate}
+\end{document}
