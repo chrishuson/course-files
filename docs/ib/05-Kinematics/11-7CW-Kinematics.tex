@@ -1,0 +1,150 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 7 March 2026}
+
+\begin{document}
+\subsubsection*{5.7 Classwork: Introduction to Kinematics}
+
+\textbf{Key definitions.}
+A \emph{particle} moves along a straight line.
+Its \textbf{position} $s$ is measured from a fixed origin, with positive to the right.
+
+\smallskip
+\begin{tabular}{r@{\;---\;}l@{\qquad}l}
+  \textbf{Displacement} & change in position & \emph{vector} (has sign: direction matters) \\
+  \textbf{Distance}     & total length of path & \emph{scalar} (always $\geq 0$) \\
+  \textbf{Velocity}     & rate of change of displacement &
+    $v = \dfrac{\Delta s}{\Delta t}$ \;(vector) \\[4pt]
+  \textbf{Speed}        & magnitude of velocity & $|v|$ \;(scalar, always $\geq 0$) \\
+  \textbf{Acceleration} & rate of change of velocity &
+    $a = \dfrac{\Delta v}{\Delta t}$ \;(vector)
+\end{tabular}
+
+\medskip
+
+\begin{enumerate}[itemsep=0.25cm]
+
+%--- Problem 1: displacement vs distance ---
+\item A runner jogs 400\,m east and then 150\,m west.
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the total \textbf{distance} the runner travels. \hfill [1]
+  \item Find the runner's \textbf{displacement} from the starting point.
+        State the direction. \hfill [2]
+  \item Explain why these two answers are different. \hfill [1]
+\end{enumerate}
+
+%--- Problem 2: velocity from position-time graph ---
+\item The graph below shows the position $s$ (metres) of a particle
+      at time $t$ (seconds).
+
+\begin{center}
+\vspace{-0.3cm}
+\begin{tikzpicture}[scale=0.6]
+  \draw[-{Stealth}] (-0.5,0) -- (9,0) node[right] {$t$ (s)};
+  \draw[-{Stealth}] (0,-2.5) -- (0,5.5) node[above] {$s$ (m)};
+  \foreach \x in {1,...,8} \draw[gray!30] (\x,-2.5)--(\x,5.5);
+  \foreach \y in {-2,...,5} \draw[gray!30] (-0.5,\y)--(9,\y);
+  \foreach \x in {1,2,...,8} \draw (\x,0.1)--(\x,-0.1) node[below]{\small\x};
+  \foreach \y in {-2,-1,1,2,3,4,5} \draw (0.1,\y)--(-0.1,\y) node[left]{\small\y};
+  \node[below left] at (0,0) {\small 0};
+  \draw[very thick, blue]
+    (0,0) -- (2,4) -- (5,4) -- (7,-2) -- (8,-2);
+  \foreach \pt in {(0,0),(2,4),(5,4),(7,-2),(8,-2)}
+    \fill[blue] \pt circle (2.5pt);
+\end{tikzpicture}
+\vspace{-0.3cm}
+\end{center}
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the velocity of the particle during $0 \leq t \leq 2$. \hfill [2]
+  \item Describe the motion of the particle during $2 \leq t \leq 5$. \hfill [1]
+  \item Find the velocity during $5 \leq t \leq 7$. \hfill [2]
+  \item Find the total \textbf{distance} travelled from $t=0$ to $t=7$. \hfill [2]
+  \item Find the \textbf{displacement} from $t=0$ to $t=7$. \hfill [1]
+\end{enumerate}
+
+\newpage
+
+%--- Problem 3: velocity-time graph, acceleration ---
+\item The velocity $v$ (m\,s$^{-1}$) of a particle is shown below.
+
+\begin{center}
+\vspace{-0.3cm}
+\begin{tikzpicture}[scale=0.6]
+  \draw[-{Stealth}] (-0.5,0) -- (9,0) node[right] {$t$ (s)};
+  \draw[-{Stealth}] (0,-1.5) -- (0,5.5) node[above] {$v$ (m\,s$^{-1}$)};
+  \foreach \x in {1,...,8} \draw[gray!30] (\x,-1.5)--(\x,5.5);
+  \foreach \y in {-1,...,5} \draw[gray!30] (-0.5,\y)--(9,\y);
+  \foreach \x in {1,2,...,8} \draw (\x,0.1)--(\x,-0.1) node[below]{\small\x};
+  \foreach \y in {-1,1,2,3,4,5} \draw (0.1,\y)--(-0.1,\y) node[left]{\small\y};
+  \node[below left] at (0,0) {\small 0};
+  \draw[very thick, red]
+    (0,0) -- (3,3) -- (6,3) -- (8,0);
+  \foreach \pt in {(0,0),(3,3),(6,3),(8,0)}
+    \fill[red] \pt circle (2.5pt);
+\end{tikzpicture}
+\vspace{-0.3cm}
+\end{center}
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the acceleration during $0 \leq t \leq 3$. \hfill [2]
+  \item State the acceleration during $3 \leq t \leq 6$. \hfill [1]
+  \item Find the acceleration during $6 \leq t \leq 8$. \hfill [2]
+  \item Is the particle slowing down during $6 \leq t \leq 8$?
+        Explain your answer. \hfill [1]
+\end{enumerate}
+
+\medskip
+
+%--- Problem 4: scalar vs vector identification ---
+\item For each quantity, state whether it is a \textbf{scalar} or a \textbf{vector}. \hfill [4]
+\begin{multicols}{2}
+\begin{enumerate}[itemsep=0.1cm]
+  \item A car travels at 60\,km/h.
+  \item A car drives 3\,km north.
+  \item Velocity $v = -5$\,m\,s$^{-1}$.
+  \item Temperature is $22^\circ$C.
+\end{enumerate}
+\end{multicols}
+
+%--- Problem 5: negative velocity interpretation ---
+\item A particle moves along a line. At time $t=4$\,s, its velocity is $v = -3$\,m\,s$^{-1}$.
+\begin{enumerate}[itemsep=0.15cm]
+  \item What does the negative sign tell you about the particle's motion? \hfill [1]
+  \item Find the speed of the particle at $t=4$. \hfill [1]
+\end{enumerate}
+
+%--- Problem 6: calculate velocity and acceleration from table ---
+\item The table shows the position of a particle at different times.
+
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  $t$ (s) & 0 & 1 & 2 & 3 & 4 \\
+  \hline
+  $s$ (m) & 2 & 5 & 8 & 11 & 14 \\
+  \hline
+\end{tabular}
+\end{center}
+\vspace{-0.2cm}
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the velocity of the particle. \hfill [2]
+  \item Find the acceleration of the particle. \hfill [1]
+  \item Describe the motion in words. \hfill [1]
+\end{enumerate}
+
+%--- Problem 7: synthesis ---
+\item A cyclist starts from rest and accelerates uniformly at
+      $2$\,m\,s$^{-2}$ for 5 seconds.
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the velocity of the cyclist at $t=5$\,s. \hfill [2]
+  \item Sketch a velocity--time graph for $0 \leq t \leq 5$. \hfill [2]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
