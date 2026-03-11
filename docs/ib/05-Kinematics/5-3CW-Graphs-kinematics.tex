@@ -1,0 +1,118 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math: Kinematics \\* 11 March 2026}
+
+\begin{document}
+\subsubsection*{5.3 Classwork: Interpreting Motion Graphs}
+
+\begin{enumerate}[itemsep=0.4cm]
+
+%--- Problem 1: Displacement-time graph ---
+\item The displacement $s$ (metres) of a particle from the origin is shown
+      for $0 \leq t \leq 10$.
+
+\begin{center}
+\vspace{-0.3cm}
+\begin{tikzpicture}[scale=0.5]
+  \draw[-{Stealth}] (-0.5,0) -- (11,0) node[right] {$t$ (s)};
+  \draw[-{Stealth}] (0,-4.5) -- (0,6.5) node[above] {$s$ (m)};
+  \foreach \x in {1,...,10} \draw[gray!30] (\x,-4.5)--(\x,6.5);
+  \foreach \y in {-4,...,6} \draw[gray!30] (-0.5,\y)--(11,\y);
+  \foreach \x in {2,4,6,8,10} \draw (\x,0.1)--(\x,-0.1) node[below]{\small\x};
+  \foreach \y in {-4,-2,2,4,6} \draw (0.1,\y)--(-0.1,\y) node[left]{\small\y};
+  \node[below left] at (0,0) {\small 0};
+  \draw[very thick]
+    (0,2) -- (3,6) -- (6,6) -- (8,-2) -- (10,-4);
+  \foreach \pt in {(0,2),(3,6),(6,6),(8,-2),(10,-4)}
+    \fill \pt circle (3pt);
+\end{tikzpicture}
+\vspace{-0.3cm}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down the initial displacement of the particle. \hfill [1]
+  \item Find the velocity during $0 \leq t \leq 3$. \hfill [2]
+  \item Describe the motion of the particle during $3 \leq t \leq 6$. \hfill [1]
+  \item Find the velocity during $6 \leq t \leq 8$. \hfill [2]
+  \item At what time does the particle pass through the origin? \hfill [2]
+  \item Find the total \textbf{distance} travelled from $t = 0$ to $t = 10$. \hfill [3]
+  \item Find the \textbf{displacement} from $t = 0$ to $t = 10$. \hfill [1]
+\end{enumerate}
+
+
+%--- Problem 2: Matching graphs ---
+\item The graphs below show the displacement and velocity of a particle.
+      Match each description (i)--(iv) to the correct time interval. \hfill [4]
+
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+  \draw[-{Stealth}] (-0.5,0) -- (9,0) node[right] {$t$};
+  \draw[-{Stealth}] (0,-1.5) -- (0,5.5) node[left] {$s$};
+  \foreach \x in {2,4,6,8} \draw (\x,0.1)--(\x,-0.1) node[below]{\small\x};
+  \draw[very thick]
+    (0,0) -- (2,4) -- (4,4) -- (6,2) -- (8,2);
+  \foreach \pt in {(0,0),(2,4),(4,4),(6,2),(8,2)}
+    \fill \pt circle (3pt);
+  \node[above] at (4.5,5.5) {\textbf{Displacement--time graph}};
+\end{tikzpicture}
+\hspace{1.5cm}
+\begin{tikzpicture}[scale=0.5]
+  \draw[-{Stealth}] (-0.5,0) -- (9,0) node[right] {$t$};
+  \draw[-{Stealth}] (0,-2.5) -- (0,4.5) node[above] {$v$};
+  \foreach \x in {2,4,6,8} \draw (\x,0.1)--(\x,-0.1) node[below]{\small\x};
+  \draw[very thick]
+    (0,2) -- (2,2) -- (2,0) -- (4,0) -- (4,-1) -- (6,-1) -- (6,0) -- (8,0);
+  \node[above] at (4.5,4.5) {\textbf{Velocity--time graph}};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[label=(\roman*), itemsep=0.1cm]
+  \item The particle is moving forward at constant speed.
+  \item The particle is stationary.
+  \item The particle is moving backward at constant speed.
+  \item The particle is stationary (for the second time).
+\end{enumerate}
+
+\newpage
+
+%--- Problem 3: Velocity-time graph ---
+\item The velocity $v$ (m\,s$^{-1}$) of a cyclist is shown for $0 \leq t \leq 12$ seconds.
+
+\begin{center}
+\vspace{-0.3cm}
+\begin{tikzpicture}[scale=0.55]
+  \draw[-{Stealth}] (-0.5,0) -- (13,0) node[right] {$t$ (s)};
+  \draw[-{Stealth}] (0,-3.5) -- (0,7.5) node[above] {$v$ (m\,s$^{-1}$)};
+  \foreach \x in {1,...,12} \draw[gray!30] (\x,-3.5)--(\x,7.5);
+  \foreach \y in {-3,...,7} \draw[gray!30] (-0.5,\y)--(13,\y);
+  \foreach \x in {2,4,6,8,10,12} \draw (\x,0.1)--(\x,-0.1) node[below]{\small\x};
+  \foreach \y in {-2,2,4,6} \draw (0.1,\y)--(-0.1,\y) node[left]{\small\y};
+  \node[below left] at (0,0) {\small 0};
+  \draw[very thick]
+    (0,0) -- (4,6) -- (8,6) -- (10,0) -- (12,-2);
+  \foreach \pt in {(0,0),(4,6),(8,6),(10,0),(12,-2)}
+    \fill \pt circle (3pt);
+\end{tikzpicture}
+\vspace{-0.3cm}
+\end{center}
+
+\begin{enumerate}[itemsep=0.5cm]
+  \item Find the acceleration during $0 \leq t \leq 4$. \hfill [2]
+  \item Describe the motion during $4 \leq t \leq 8$. \hfill [1]
+  \item Find the acceleration during $8 \leq t \leq 10$. \hfill [2]
+  \item Find the total distance travelled from $t = 0$ to $t = 10$.
+
+  \emph{Hint: the distance is the area under the velocity curve.} \hfill [3]
+  \vspace{1.5cm}
+  \item The cyclist continues with constant acceleration after $t = 10$.
+        What does the negative velocity during $10 < t \leq 12$ tell you
+        about the cyclist's motion? \hfill [1]
+  \item Find the total distance travelled from $t = 0$ to $t = 12$. \hfill [2]
+  \item Find the average speed of the cyclist over the 12-second interval. \hfill [2]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
