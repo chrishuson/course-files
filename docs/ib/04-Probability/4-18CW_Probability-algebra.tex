@@ -1,0 +1,84 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math Probability \\* 12 March 2026}
+
+\begin{document}
+\subsubsection*{4.18 Probability Review (Algebra)}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Independence with algebra ---
+\item Events $A$ and $B$ are independent. It is given that
+      $\mathrm{P}(A) = 2\,\mathrm{P}(B)$ and $\mathrm{P}(A \cup B) = 0.52$.
+
+      Let $x = \mathrm{P}(B)$.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Show that $2x^{2} - 3x + 0.52 = 0$. \hfill [3]
+  \item Hence find $\mathrm{P}(B)$. \hfill [2]
+  \item Find $\mathrm{P}(A \cap B)$. \hfill [1]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,13);
+  \foreach \y in {1,2,...,12} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Conditional probability + Venn ---
+\item In a school, 100 students were surveyed about activities $A$ and $B$.
+
+\begin{itemize}[itemsep=0.1cm]
+  \item $\mathrm{P}(A) = 0.6$
+  \item $\mathrm{P}(B \mid A) = 0.25$
+  \item $\mathrm{P}(A' \cap B') = 0.15$
+\end{itemize}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find $\mathrm{P}(A \cap B)$. \hfill [2]
+  \item Find $\mathrm{P}(B)$. \hfill [2]
+  \item Complete the Venn diagram below, showing the number
+        of students \\in each region. \hfill [2]
+  \item Determine whether events $A$ and $B$ are independent.
+        Justify your answer. \hfill [2]
+\end{enumerate}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+  \draw (0,0) rectangle (6.5,3.2);
+  \draw (2.0,1.6) circle (1.3);
+  \draw (4.0,1.6) circle (1.3);
+  \node at (1.0,2.9) {$A$};
+  \node at (5.0,2.9) {$B$};
+  \node[anchor=north west] at (6.5,3.2) {$U$};
+\end{tikzpicture}
+\end{center}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,9);
+  \foreach \y in {1,2,...,8} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}
+
+Solutions
+  Problem 1 — Independence + algebra:
+  - (a) P(A∪B) = P(A) + P(B) - P(A∩B)
+        Since independent: P(A∩B) = P(A)·P(B) = 2x · x = 2x²
+        So: 2x + x - 2x² = 0.52 → 3x - 2x² = 0.52 → 2x² - 3x + 0.52 = 0
+  - (b) Quadratic formula: x = (3 ± √(9-4.16))/4 = (3 ± √4.84)/4 = (3 ± 2.2)/4
+        x = 1.3 (reject, probability > 1) or x = 0.2
+        P(B) = 0.2
+  - (c) P(A∩B) = P(A)·P(B) = 0.4 × 0.2 = 0.08
+
+  Problem 2 — Conditional probability + Venn:
+  - (a) P(A∩B) = P(B|A)·P(A) = 0.25 × 0.6 = 0.15
+  - (b) P(A∪B) = 1 - P(A'∩B') = 1 - 0.15 = 0.85
+        P(B) = P(A∪B) - P(A) + P(A∩B) = 0.85 - 0.6 + 0.15 = 0.4
+  - (c) Venn: A only = 45, A∩B = 15, B only = 25, neither = 15. Total = 100 ✓
+  - (d) P(A)·P(B) = 0.6 × 0.4 = 0.24 ≠ 0.15 = P(A∩B) → not independent
