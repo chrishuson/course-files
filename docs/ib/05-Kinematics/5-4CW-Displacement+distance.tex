@@ -1,0 +1,123 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math: Kinematics \\* 18 March 2026}
+
+\begin{document}
+\subsubsection*{5.4 Classwork: Displacement and Distance from Velocity Curves}
+
+\begin{enumerate}[itemsep=0.4cm]
+
+%--- Problem 1: Displacement-time curve ---
+\item The displacement $s$ (metres) of a particle from the origin is shown
+      for $0 \leq t \leq 7$.
+
+\begin{center}
+\vspace{-0.3cm}
+\begin{tikzpicture}[xscale=0.9, yscale=0.4]
+  \draw[-{Stealth}] (-0.5,0) -- (8,0) node[right] {$t$ (s)};
+  \draw[-{Stealth}] (0,-8.5) -- (0,10.5) node[above] {$s$ (m)};
+  \foreach \x in {1,...,7} \draw[gray!30] (\x,-8)--(\x,10);
+  \foreach \y in {-8,-6,-4,-2,2,4,6,8,10} \draw[gray!30] (-0.5,\y)--(8,\y);
+  \foreach \x in {1,2,...,7} \draw (\x,0.15)--(\x,-0.15) node[below]{\small\x};
+  \foreach \y in {-6,-4,-2,2,4,6,8} \draw (0.12,\y)--(-0.12,\y) node[left]{\small\y};
+  \node[below left] at (0,0) {\small 0};
+  % s(t) = -t^2 + 6t
+  \draw[very thick, smooth] plot coordinates {
+    (0,0) (0.5,2.75) (1,5) (1.5,6.75) (2,8) (2.5,8.75)
+    (3,9) (3.5,8.75) (4,8) (4.5,6.75) (5,5) (5.5,2.75)
+    (6,0) (6.5,-3.25) (7,-7)};
+  \node[circle, fill, inner sep=1.5pt] at (0,0) {};
+  \node[circle, fill, inner sep=1.5pt] at (7,-7) {};
+\end{tikzpicture}
+\vspace{-0.3cm}
+\end{center}
+
+\begin{enumerate}[itemsep=0.4cm]
+  \item Write down the initial displacement of the particle. \hfill [1]
+  \item At what time is the displacement greatest?
+        Write down the maximum displacement, rounded to the nearest metre. \hfill [2]
+  \item At what time is the velocity of the particle equal to zero?
+        Explain how you can tell from the graph. \hfill [2]
+  \item At what time does the particle return to the origin? \hfill [1]
+  \item Is the particle moving toward or away from the origin at $t = 5$?
+        Explain your reasoning. \hfill [2]
+\end{enumerate}
+
+\newpage
+
+%--- Problem 2: Velocity curve with labeled areas ---
+\item A particle moves along a straight line with velocity
+      $v(t) = t^2 - 6t + 5$\;m\,s$^{-1}$, for $0 \leq t \leq 6$.
+
+The graph of $v$ against $t$ is shown below. The shaded regions between the
+curve and the $t$-axis have areas $A$, $B$, and $C$.
+
+\begin{center}
+\vspace{-0.3cm}
+\begin{tikzpicture}[xscale=1, yscale=0.45]
+  % Shaded regions (draw first so grid shows through)
+  % A: t=0 to t=1, above axis
+  \fill[gray!20] (0,0) -- plot[smooth] coordinates {
+    (0,5) (0.25,3.8125) (0.5,2.75) (0.75,1.8125) (1,0)} -- cycle;
+  % B: t=1 to t=5, below axis
+  \fill[gray!35] (1,0) -- plot[smooth] coordinates {
+    (1,0) (1.5,-1.75) (2,-3) (2.5,-3.75) (3,-4)
+    (3.5,-3.75) (4,-3) (4.5,-1.75) (5,0)} -- cycle;
+  % C: t=5 to t=6, above axis
+  \fill[gray!20] (5,0) -- plot[smooth] coordinates {
+    (5,0) (5.25,1.8125) (5.5,2.75) (5.75,3.8125) (6,5)} -- (6,0) -- cycle;
+  % Grid
+  \foreach \x in {1,...,6} \draw[gray!30] (\x,-4.5)--(\x,5.5);
+  \foreach \y in {-4,-3,-2,-1,1,2,3,4,5} \draw[gray!30] (-0.5,\y)--(6.8,\y);
+  % Axes
+  \draw[-{Stealth}] (-0.5,0) -- (6.8,0) node[right] {$t$ (s)};
+  \draw[-{Stealth}] (0,-4.8) -- (0,5.8) node[above] {$v$ (m\,s$^{-1}$)};
+  \foreach \x in {1,2,...,6} \draw (\x,0.12)--(\x,-0.12) node[below]{\small\x};
+  \foreach \y in {-4,-2,2,4} \draw (0.1,\y)--(-0.1,\y) node[left]{\small\y};
+  \node[below left] at (0,0) {\small 0};
+  % Curve
+  \draw[very thick, smooth] plot coordinates {
+    (0,5) (0.5,2.75) (1,0) (1.5,-1.75) (2,-3) (2.5,-3.75)
+    (3,-4) (3.5,-3.75) (4,-3) (4.5,-1.75) (5,0)
+    (5.5,2.75) (6,5)};
+  % Area labels
+  \node at (0.35, 2.2) {\large$A$};
+  \node at (3, -1.8) {\large$B$};
+  \node at (5.65, 2.2) {\large$C$};
+\end{tikzpicture}
+\vspace{-0.3cm}
+\end{center}
+
+\begin{enumerate}[itemsep=0.3cm]
+  \item Write down the times when the particle is at rest. \hfill [1]
+  \item State the time interval during which the particle moves
+        in the negative direction. \hfill [1]
+  \item Using the labeled areas, write down an expression for:
+    \begin{enumerate}[itemsep=0.1cm]
+      \item the displacement of the particle from $t = 0$ to $t = 6$ \hfill [1]
+      \item the total distance travelled from $t = 0$ to $t = 6$ \hfill [1]
+    \end{enumerate}
+  \item Find $\displaystyle\int_0^6 v(t)\,dt$. \hfill [3]
+  \item Find $\displaystyle\int_1^5 v(t)\,dt$. \hfill [2]
+  \item Hence find the total distance travelled from $t = 0$ to $t = 6$. \hfill [3]
+\end{enumerate}
+
+\vspace{0.3cm}
+
+%--- Problem 3: Conceptual ---
+\item The velocity of a particle is $v(t)$\;m\,s$^{-1}$ for $0 \leq t \leq 8$.
+      The particle changes direction when $t = 5$, and $v(t) > 0$ for $0 \leq t < 5$.
+
+It is known that $\displaystyle\int_0^5 v(t)\,dt = 12$
+and $\displaystyle\int_5^8 v(t)\,dt = -5$.
+
+\begin{enumerate}[itemsep=0.3cm]
+  \item Find the displacement of the particle from $t = 0$ to $t = 8$. \hfill [2]
+  \item Find the total distance travelled from $t = 0$ to $t = 8$. \hfill [2]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
