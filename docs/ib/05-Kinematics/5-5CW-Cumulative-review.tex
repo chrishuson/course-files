@@ -1,0 +1,164 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 23 March 2026}
+
+\begin{document}
+\subsubsection*{5.5 Classwork: Cumulative Review}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Sequences and Series (Topic 1) ---
+\item An arithmetic sequence has first term $u_1 = 5$ and common difference $d = 3$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find $u_{20}$, the 20th term of the sequence. \hfill [2]
+  \item Find $S_{20}$, the sum of the first 20 terms. \hfill [2]
+\end{enumerate}
+
+\medskip
+A geometric sequence has the same first term $u_1 = 5$ and common ratio $r = 1.1$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \setcounter{enumii}{2}
+  \item Find the 20th term of the geometric sequence. \hfill [2]
+  \item Find the sum of the first 20 terms of the geometric sequence. \hfill [2]
+  \item After how many terms does the geometric sequence first exceed 50?
+        Show your working. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,10);
+  \foreach \y in {1,2,...,9} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Linear Regression (Topic 4 / Bivariate Stats) ---
+\item A student records the number of hours spent studying ($x$) and the
+      test score ($y$) for eight classmates. The results are shown below.
+
+\renewcommand{\arraystretch}{1.6}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+  \hline
+  $x$ (hours) & 1.5 & 2.0 & 3.0 & 3.5 & 4.0 & 5.0 & 5.5 & 6.0 \\
+  \hline
+  $y$ (score) & 42 & 48 & 56 & 55 & 65 & 68 & 74 & 78 \\
+  \hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Use your GDC to find the equation of the regression line $y$ on $x$.
+        Write the equation in the form $y = mx + c$, giving $m$ and $c$
+        to three significant figures. \hfill [3]
+  \item Write down the value of the Pearson correlation coefficient, $r$. \hfill [1]
+  \item Describe the correlation between hours studied and test score. \hfill [1]
+  \item Use your regression line to estimate the test score for a student
+        who studies for 4.5 hours. \hfill [2]
+  \item Explain why it would not be appropriate to use this model to predict the
+        score for a student who studies for 15 hours. \hfill [1]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,9);
+  \foreach \y in {1,2,...,8} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: Kinematics (Topic 5) ---
+\item A particle moves along a straight line with velocity
+      $v(t) = 3t^2 - 12t + 9$\;m\,s$^{-1}$, for $t \geq 0$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the times when the particle is at rest. \hfill [3]
+  \item Find the average acceleration from $t = 0$ to $t = 1$. \hfill [2]
+  \item Find the velocity when $t = 2$. State which direction the particle is
+        moving at this instant. Justify your answer. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,10);
+  \foreach \y in {1,2,...,9} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: Probability (Topic 4) ---
+\item In a class of 30 students, 18 study Biology and 15 study Chemistry.
+      Every student studies at least one of these subjects.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the number of students who study both Biology and Chemistry. \hfill [2]
+  \item Draw a Venn diagram to represent this information. \hfill [2]
+\end{enumerate}
+
+\medskip
+A student is chosen at random from the class.
+Let $B$ be the event ``the student studies Biology'' and
+$C$ be the event ``the student studies Chemistry.''
+
+\begin{enumerate}[itemsep=0.15cm]
+  \setcounter{enumii}{2}
+  \item Find $\mathrm{P}(B \cap C)$. \hfill [1]
+  \item Find $\mathrm{P}(B \mid C)$. \hfill [2]
+  \item Determine whether the events $B$ and $C$ are independent.
+        Justify your answer. \hfill [3]
+\end{enumerate}
+
+\medskip
+It is known that 70\% of the Biology students and 40\% of the Chemistry-only
+students passed their most recent exam.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \setcounter{enumii}{5}
+  \item A student is chosen at random and is found to have passed.
+        Find the probability that this student studies Biology. \hfill [4]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,8);
+  \foreach \y in {1,2,...,7} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}
+Solutions
+  Problem 1 — Arithmetic and Geometric Sequences:
+  - (a) u_20 = 5 + 19(3) = 62
+  - (b) S_20 = 20/2 × (5 + 62) = 670
+  - (c) u_20 = 5 × 1.1^19 = 5 × 6.1159... = 30.6 (3 s.f.)
+  - (d) S_20 = 5(1.1^20 - 1)/(1.1 - 1) = 5(6.7275... - 1)/0.1 = 286 (3 s.f.)
+  - (e) 5 × 1.1^(n-1) > 50 → 1.1^(n-1) > 10 → n-1 > ln10/ln1.1 = 24.16...
+        → n > 25.16 → n = 26
+
+  Problem 2 — Linear Regression:
+  - (a) y = 7.54x + 31.6 (values may vary slightly by GDC)
+  - (b) r ≈ 0.987
+  - (c) Strong positive correlation
+  - (d) y = 7.54(4.5) + 31.6 = 65.5
+  - (e) Extrapolation beyond the data range; the model may not hold
+
+  Problem 3 — Kinematics:
+  - (a) 3t² - 12t + 9 = 0 → 3(t-1)(t-3) = 0 → t = 1, t = 3
+  - (b) a(t) = 6t - 12
+  - (c) a(2) = 12 - 12 = 0. v(2) = 12 - 24 + 9 = -3 < 0.
+        Acceleration is zero, so the particle is neither speeding up nor slowing down.
+  - (d) Need to split at t = 1 and t = 3 (where v changes sign).
+        ∫₀¹ v dt = [t³ - 6t² + 9t]₀¹ = 1 - 6 + 9 = 4
+        ∫₁³ v dt = [t³ - 6t² + 9t]₁³ = (27-54+27) - (1-6+9) = 0 - 4 = -4
+        Total distance = |4| + |-4| = 8 m
+
+  Problem 4 — Probability:
+  - (a) n(B∩C) = 18 + 15 - 30 = 3
+  - (b) Venn: B only = 15, B∩C = 3, C only = 12
+  - (c) P(B∩C) = 3/30 = 1/10
+  - (d) P(B|C) = P(B∩C)/P(C) = (3/30)/(15/30) = 3/15 = 1/5
+  - (e) P(B) × P(C) = (18/30)(15/30) = 270/900 = 3/10 ≠ 1/10 = P(B∩C)
+        So B and C are not independent.
+  - (f) P(passed) = 0.70(18/30) + 0.40(12/30) = 0.42 + 0.16 = 0.58
+        P(Biology | passed) = 0.42/0.58 = 21/29 ≈ 0.724
