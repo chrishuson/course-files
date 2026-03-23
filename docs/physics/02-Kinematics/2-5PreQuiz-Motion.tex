@@ -1,0 +1,121 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{Physics}
+\author{Chris Huson}
+\date{March 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First \& last name: \hspace{2.25cm} \,\\  \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 23 March 2026}
+
+\begin{document}
+
+\subsubsection*{2.5 PreQuiz: Motion, Lab Skills, and Spreadsheets}
+
+\begin{enumerate}[itemsep=0.5cm]
+
+\item Round each value to three significant figures.
+  \begin{multicols}{2}
+  \begin{enumerate}[itemsep=0.5cm]
+    \item 0.004817 m
+    \item 63.249 kg
+    \item 7.0036 s
+    \item 21,560 N
+  \end{enumerate}
+  \end{multicols}
+  \vspace{0.5cm}
+
+\item Perform each operation and give the answer to 3 significant figures.
+  \begin{multicols}{2}
+  \begin{enumerate}[itemsep=1cm]
+    \item $(3.2\times10^{4}) + (7.5\times10^{3})$
+    \item $(8.40\times10^{-3}) \times (2.0\times10^{4})$
+    \item $\dfrac{6.3\times10^{5}}{9.0\times10^{2}}$
+  \end{enumerate}
+  \end{multicols}
+  \vspace{0.5cm}
+
+\item Convert each value. Show one line of work using unit factors.
+  \begin{enumerate}[itemsep=1.5cm]
+    \item $36.0~\text{km/h}$ to m/s
+    \item $15.0~\text{m/s}$ to km/h
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\item A student jogs along a straight track (forward is $+$). Start $x_0 = 5.0$ m.
+  \begin{enumerate}[itemsep=0.5cm]
+    \item She jogs to $x = 17.0$ m. Find displacement $\Delta x$.
+    \item From $x=17.0$ m she turns back to $x=9.0$ m. Find $\Delta x$.
+    \item Find total displacement from start to finish.
+    \item Find total distance traveled.
+  \end{enumerate}
+
+\newpage
+\subsubsection*{Kinematics Equations}
+
+\textbf{Formulas:} \quad $v = v_0 + at$ \quad\quad $d = v_0 t + \frac{1}{2}at^2$ \quad\quad $v^2 = v_0^2 + 2ad$ \quad\quad $d = \frac{1}{2}(v_0 + v)t$
+
+\vspace{1cm}
+
+\item A bicycle accelerates uniformly from rest at $1.5~\text{m/s}^2$.
+  \begin{enumerate}[itemsep=3cm]
+    \item What is its velocity after $4.0~\text{s}$?
+    \item How far does it travel during this time?
+  \end{enumerate}
+  \vspace{2cm}
+
+\item A ball is thrown vertically upward with an initial velocity of $12~\text{m/s}$. Use $g = 10~\text{m/s}^2$.
+  \begin{enumerate}[itemsep=3cm]
+    \item How long does it take to reach its maximum height?
+    \item What is the maximum height reached?
+  \end{enumerate}
+
+\newpage
+\subsubsection*{Lab and Technology Skills}
+
+In this section you will use the \textbf{Graphical Analysis} app at \texttt{graphicalanalysis.app}.
+
+\vspace{0.5cm}
+
+\item Open the Graphical Analysis app and enter the following data for a cart moving along a track. Time is in seconds; position is in meters.
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Time (s)} & \textbf{Position (m)} \\
+\hline
+0.0 & 0.20 \\
+0.5 & 0.24 \\
+1.0 & 0.36 \\
+1.5 & 0.56 \\
+2.0 & 0.84 \\
+2.5 & 1.20 \\
+3.0 & 1.64 \\
+\hline
+\end{tabular}
+\end{center}
+
+  \begin{enumerate}[itemsep=1.5cm]
+    \item Create a graph of Position vs.\ Time. Label the axes and give the graph a title.
+    \item Apply a \textbf{quadratic curve fit} to the data. Write the equation and the values of the fit parameters $A$, $B$, and $C$ below.
+    \vspace{1cm}
+    \item Recall: for constant acceleration, $x = \frac{1}{2}at^2 + v_0 t + x_0$. Using the value of $A$ from your fit, calculate the acceleration $a$.
+    \vfill
+    \item Save the .gambl file to the shared Google Drive folder. Include your name in the file name. You will take a \textbf{screenshot} of your graph with the curve fit displayed for the next problem.
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\newpage
+\item Spreadsheet skills. Open a new spreadsheet (Google Sheets or Excel).
+  \begin{enumerate}[itemsep=0.75cm]
+    \item \textbf{Paste} your Graphical Analysis screenshot into the spreadsheet.
+    \item In a cell, type the acceleration you calculated: label it ``Acceleration (m/s$^2$)''.
+    \item In the next column, enter the cart mass $m = 0.390$ kg. Label it ``Mass (kg)''.
+    \item Write a \textbf{formula} in a third column to calculate the net force: $F = m \times a$. Label it ``Force (N)''.
+    \item What value does the spreadsheet calculate for the force? \rule{3cm}{0.4pt}
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}
