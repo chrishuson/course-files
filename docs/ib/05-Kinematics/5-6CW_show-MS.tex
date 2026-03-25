@@ -1,0 +1,191 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 25 March 2026}
+\fancyhead[RO]{Markscheme}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{5.6 Classwork: ``Show That'' Problems --- Markscheme}
+
+\begin{enumerate}[itemsep=0.2cm]
+
+%--- Problem 1: Kinematics integration (2021 Nov P1 Q7) [16 marks] ---
+\item \textbf{[Maximum mark: 16]}
+
+A particle $P$ moves along the $x$-axis. The velocity of $P$ is $v$\;m\,s$^{-1}$
+at time $t$ seconds, where
+\[v(t) = 4 + 4t - 3t^2 \quad \text{for } 0 \leq t \leq 3.\]
+When $t = 0$, $P$ is at the origin $O$.
+
+\begin{enumerate}[itemsep=0.3cm]
+  \item (i) \; Find the value of $t$ when $P$ reaches its maximum velocity. \hfill [7]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  Maximum velocity when $v'(t) = 0$\\[0.15cm]
+  $v'(t) = 4 - 6t = 0$\\[0.15cm]
+  $t = \dfrac{2}{3}$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(M1)}\\[0.15cm]
+  ~\\[0.15cm]
+  \textbf{(A1)}
+  \end{minipage}
+
+  \medskip
+  (ii) Show that the distance of $P$ from $O$ at this time is
+       $\dfrac{88}{27}$ metres.
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $s(t) = \displaystyle\int v\,dt = 4t + 2t^2 - t^3 \; (+c)$\\[0.2cm]
+  $s(0) = 0 \Rightarrow c = 0$\\[0.15cm]
+  $s\!\left(\dfrac{2}{3}\right) = 4\!\left(\dfrac{2}{3}\right)
+    + 2\!\left(\dfrac{2}{3}\right)^{\!2}
+    - \left(\dfrac{2}{3}\right)^{\!3}$\\[0.2cm]
+  $= \dfrac{8}{3} + \dfrac{8}{9} - \dfrac{8}{27}$\\[0.2cm]
+  $= \dfrac{72 + 24 - 8}{27} = \dfrac{88}{27}$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(M1)}\\[0.2cm]
+  \textbf{(A1)(A1)}\\[0.15cm]
+  \textbf{(M1)}\\[1.1cm]
+  \textbf{(A1)} \textbf{(AG)}
+  \end{minipage}
+
+  \bigskip
+  \item Sketch a graph of $v$ against $t$, clearly showing any points of
+        intersection with the axes. \hfill [4]
+
+  \begin{minipage}[t]{0.55\textwidth}
+  $v(0) = 4$ (intercept)\\[0.15cm]
+  $v(t) = 0$: $3t^2 - 4t - 4 = 0$\\[0.1cm]
+  $(3t + 2)(t - 2) = 0 \Rightarrow t = 2$ \;($t > 0$)\\[0.15cm]
+  Maximum at $t = \frac{2}{3}$:
+  $v\!\left(\frac{2}{3}\right) = 4 + \frac{8}{3} - \frac{4}{3} = \frac{16}{3}$
+  \end{minipage}%
+  \begin{minipage}[t]{0.42\textwidth}\raggedleft
+  \textbf{(A1)}\\[0.15cm]
+  ~\\[0.1cm]
+  \textbf{(A1)}\\[0.15cm]
+  \textbf{(A1)}
+  \end{minipage}
+
+  \medskip
+  \begin{center}
+  \begin{tikzpicture}[xscale=1.8, yscale=0.55]
+    \draw[-{Stealth}] (-0.3,0) -- (3.5,0) node[right] {$t$};
+    \draw[-{Stealth}] (0,-5.5) -- (0,6.5) node[above] {$v$};
+    % grid ticks
+    \foreach \x in {1,2,3} {
+      \draw (\x,0.15)--(\x,-0.15) node[below]{\small$\x$};
+    }
+    \foreach \y in {-4,-2,2,4} {
+      \draw (0.08,\y)--(-0.08,\y) node[left]{\small$\y$};
+    }
+    % curve v(t) = 4 + 4t - 3t^2
+    \draw[thick, domain=0:3, samples=60]
+      plot (\x, {4 + 4*\x - 3*\x*\x});
+    % key points
+    \fill (0,4) circle (2pt) node[left] {\small$4$};
+    \fill (2,0) circle (2pt) node[above right] {\small$(2,0)$};
+    \fill (0.667, 5.333) circle (2pt)
+      node[above right] {\small$\left(\frac{2}{3},\,\frac{16}{3}\right)$};
+  \end{tikzpicture}
+  \end{center}
+  \hfill \textbf{(A1)} shape
+
+  \bigskip
+  \item Find the total distance travelled by $P$. \hfill [5]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  Recognize $v$ changes sign at $t = 2$\\[0.15cm]
+  $\displaystyle\int_0^2 v\,dt = \left[4t + 2t^2 - t^3\right]_0^2$\\[0.2cm]
+  $= 8 + 8 - 8 = 8$\\[0.15cm]
+  $\displaystyle\int_2^3 v\,dt = \left[4t + 2t^2 - t^3\right]_2^3$\\[0.2cm]
+  $= (12 + 18 - 27) - 8 = -5$\\[0.15cm]
+  Total distance $= 8 + |-5| = 13$\;m
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(M1)}\\[0.15cm]
+  \textbf{(M1)}\\[0.2cm]
+  \textbf{(A1)}\\[0.15cm]
+  ~\\[0.2cm]
+  \textbf{(A1)}\\[0.15cm]
+  \textbf{(A1)}
+  \end{minipage}
+\end{enumerate}
+
+\hfill \emph{IB AA SL 2021 Nov P1 Q7}
+
+\newpage
+%--- Problem 2: Quotient rule (2021 May P1 TZ1 Q8) [13 marks] ---
+\item \textbf{[Maximum mark: 13]}
+
+Let $\displaystyle y = \frac{\ln x}{x^4}$ for $x > 0$.
+
+\begin{enumerate}[itemsep=0.3cm]
+  \item Show that $\displaystyle \frac{dy}{dx} = \frac{1 - 4\ln x}{x^5}$. \hfill [3]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  Quotient rule: $\dfrac{dy}{dx} = \dfrac{x^4 \cdot \frac{1}{x} - \ln x \cdot 4x^3}{(x^4)^2}$\\[0.3cm]
+  $= \dfrac{x^3 - 4x^3 \ln x}{x^8}$\\[0.2cm]
+  $= \dfrac{x^3(1 - 4\ln x)}{x^8} = \dfrac{1 - 4\ln x}{x^5}$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(M1)}\\[0.3cm]
+  \textbf{(A1)}\\[0.2cm]
+  \textbf{(A1)} \textbf{(AG)}
+  \end{minipage}
+
+  \bigskip
+  \item The graph of $f$ has a horizontal tangent at point $P$.
+        Find the coordinates of $P$. \hfill [5]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $f'(x) = 0 \Rightarrow 1 - 4\ln x = 0$\\[0.15cm]
+  $\ln x = \dfrac{1}{4}$\\[0.15cm]
+  $x = e^{1/4}$\\[0.15cm]
+  $y = \dfrac{\ln e^{1/4}}{(e^{1/4})^4} = \dfrac{\frac{1}{4}}{e} = \dfrac{1}{4e}$\\[0.2cm]
+  $P\!\left(e^{1/4},\; \dfrac{1}{4e}\right)$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(M1)}\\[0.15cm]
+  \textbf{(A1)}\\[0.15cm]
+  \textbf{(A1)}\\[0.15cm]
+  \textbf{(M1)}\\[0.2cm]
+  \textbf{(A1)}
+  \end{minipage}
+
+  \bigskip
+  \item Given that $\displaystyle f''(x) = \frac{20\ln x - 9}{x^6}$,
+        show that $P$ is a local maximum point. \hfill [3]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $f''\!\left(e^{1/4}\right) = \dfrac{20 \cdot \frac{1}{4} - 9}{(e^{1/4})^6}
+    = \dfrac{5 - 9}{e^{3/2}} = \dfrac{-4}{e^{3/2}}$\\[0.3cm]
+  $f''\!\left(e^{1/4}\right) < 0$\\[0.15cm]
+  Therefore $P$ is a local maximum.
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(M1)}\\[0.3cm]
+  \textbf{(A1)}\\[0.15cm]
+  \textbf{(R1)} \textbf{(AG)}
+  \end{minipage}
+
+  \bigskip
+  \item Solve $f(x) > 0$ for $x > 0$. \hfill [2]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $\dfrac{\ln x}{x^4} > 0 \Rightarrow \ln x > 0$ \quad (since $x^4 > 0$)\\[0.2cm]
+  $x > 1$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(A1)}\\[0.2cm]
+  \textbf{(A1)}
+  \end{minipage}
+\end{enumerate}
+
+\hfill \emph{Adapted from IB AA SL 2021 May P1 TZ1 Q8}
+
+\end{enumerate}
+\end{document}
