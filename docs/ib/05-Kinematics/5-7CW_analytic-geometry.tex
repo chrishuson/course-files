@@ -1,0 +1,93 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 26 March 2026}
+
+\begin{document}
+\subsubsection*{5.7 Classwork: Analytic Geometry (no calculator)}
+
+\begin{enumerate}[itemsep=0.2cm]
+
+%--- Problem 1: Line through axes [8 marks] ---
+\item A straight line $L$ passes through the points $A(6, 0)$ and $B(0, -4)$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the gradient of $L$. \hfill [2]
+  \item Write down the $y$-intercept of $L$. \hfill [1]
+  \item Find the equation of $L$ in the form $ax + by + d = 0$,
+        where $a$, $b$, $d \in \mathbb{Z}$. \hfill [2]
+  \item A second line $L_2$ is perpendicular to $L$ and passes through the
+        point $A$. Find the equation of $L_2$. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,11);
+  \foreach \y in {1,2,...,10} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Parabola properties [9 marks] ---
+\item The graph of $f(x) = x^2 - 6x + 5$ is a parabola.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the $x$-intercepts of the graph of $f$. \hfill [2]
+  \item Write $f(x)$ in the form $(x - h)^2 + k$. \hfill [2]
+  \item Hence write down the coordinates of the vertex of the parabola. \hfill [1]
+  \item The graph of $f$ is translated by the vector $\displaystyle\binom{3}{2}$.
+        Find the equation of the new graph in the form $y = x^2 + bx + c$. \hfill [4]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,10);
+  \foreach \y in {1,2,...,9} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: Line tangent to parabola / discriminant [10 marks] ---
+\item The line $y = 2x + k$ is tangent to the parabola $y = x^2 - 4x + 7$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Write down an equation whose solutions are the $x$-coordinates
+        of the points of intersection of the line and the parabola. \hfill [2]
+  \item Hence show that $x^2 - 6x + (7 - k) = 0$. \hfill [1]
+  \item State the condition on the discriminant for the line to be tangent\\
+        to the parabola. \hfill [1]
+  \item Find the value of $k$. \hfill [3]
+  \item Find the coordinates of the point of tangency. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,10);
+  \foreach \y in {1,2,...,9} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: Kinematics (pre-calculus) [9 marks] ---
+\item A ball is thrown vertically upward. Its height $h$\;metres above the ground
+at time $t$ seconds is modelled by
+\[h(t) = -5t^2 + 20t + 1, \quad \text{for } t \geq 0.\]
+
+The velocity of the ball at time $t$ is given by the gradient of the
+tangent to the curve $h(t)$. For a quadratic $h(t) = at^2 + bt + c$,
+the gradient of the tangent at $t$ is $h'(t) = 2at + b$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Write down the height of the ball when $t = 0$. \hfill [1]
+  \item Find $h'(t)$, the velocity of the ball at time $t$. \hfill [2]
+  \item Find the time when the ball reaches its maximum height. \hfill [2]
+  \item Find the maximum height. \hfill [2]
+  \item Find the time when the ball hits the ground. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,10);
+  \foreach \y in {1,2,...,9} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}
