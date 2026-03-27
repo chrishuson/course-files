@@ -1,0 +1,252 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 27 March 2026}
+\fancyhead[RO]{Markscheme}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{5.8 Classwork: Calculus and Statistics (no calculator) --- Markscheme}
+
+\begin{enumerate}[itemsep=0.2cm]
+
+%--- Problem 1: Differentiation + tangent + stationary points [8 marks] ---
+\item Let $f(x) = x^3 - 3x + 2$.
+
+\begin{enumerate}[itemsep=0.3cm]
+  \item Find $f'(x)$. \hfill [1]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $f'(x) = 3x^2 - 3$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(A1)}
+  \end{minipage}
+
+  \medskip
+  \item Find the gradient of the graph of $f$ at $x = 2$. \hfill [2]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $f'(2) = 3(4) - 3$\\[0.15cm]
+  $= 9$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(M1)}\\[0.15cm]
+  \textbf{(A1)}
+  \end{minipage}
+
+  \medskip
+  \item Find the equation of the tangent line to the graph of $f$ at $x = 2$.
+        Give your answer in the form $y = mx + c$. \hfill [3]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $f(2) = 8 - 6 + 2 = 4$\\[0.15cm]
+  $y - 4 = 9(x - 2)$\\[0.15cm]
+  $y = 9x - 14$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(A1)}\\[0.15cm]
+  \textbf{(M1)}\\[0.15cm]
+  \textbf{(A1)}
+  \end{minipage}
+
+  \medskip
+  \item Find the coordinates of the stationary points of $f$. \hfill [2]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $3x^2 - 3 = 0 \Rightarrow x^2 = 1 \Rightarrow x = \pm 1$\\[0.15cm]
+  $f(1) = 0$, \quad $f(-1) = 4$\\[0.15cm]
+  Stationary points: $(1,\; 0)$ and $(-1,\; 4)$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(A1)}\\[0.15cm]
+  \textbf{(A1)}
+  \end{minipage}
+\end{enumerate}
+
+\newpage
+
+%--- Problem 2: Integration + area [8 marks] ---
+\item Let $f(x) = 3x^2 - 6x$.
+
+\begin{enumerate}[itemsep=0.3cm]
+  \item Find $\displaystyle\int (3x^2 - 6x)\,\mathrm{d}x$. \hfill [2]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $\displaystyle\int (3x^2 - 6x)\,\mathrm{d}x = x^3 - 3x^2 + c$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(A1)(A1)}
+  \end{minipage}
+
+  \medskip
+  \item Show that $f(x) = 0$ when $x = 0$ and $x = 2$. \hfill [1]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $f(0) = 0 - 0 = 0$\\[0.15cm]
+  $f(2) = 3(4) - 6(2) = 12 - 12 = 0$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(A1)} \textbf{(AG)}
+  \end{minipage}
+
+  \medskip
+  \item Find the area of the region enclosed by the graph of $f$
+        and the $x$-axis, between $x = 0$ and $x = 2$. \hfill [3]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $\displaystyle\int_0^2 (3x^2 - 6x)\,\mathrm{d}x
+    = \bigl[x^3 - 3x^2\bigr]_0^2$\\[0.3cm]
+  $= (8 - 12) - (0) = -4$\\[0.15cm]
+  Area $= |-4| = 4$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(M1)}\\[0.3cm]
+  \textbf{(A1)}\\[0.15cm]
+  \textbf{(A1)}
+  \end{minipage}
+
+  \medskip
+  \item A function $g$ has derivative $g'(x) = 3x^2 - 6x$ and
+        $g(1) = 5$. Find $g(x)$. \hfill [2]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $g(x) = x^3 - 3x^2 + c$\\[0.15cm]
+  $g(1) = 1 - 3 + c = 5 \Rightarrow c = 7$\\[0.15cm]
+  $g(x) = x^3 - 3x^2 + 7$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(M1)}\\[0.15cm]
+  ~\\[0.15cm]
+  \textbf{(A1)}
+  \end{minipage}
+\end{enumerate}
+
+\newpage
+
+%--- Problem 3: Normal distribution (z-score) + binomial [8 marks] ---
+\item A manufacturer produces items. Each item is independently classified as
+defective or non-defective.
+
+\begin{enumerate}[itemsep=0.3cm]
+  \item In a random sample of 3 items, the probability that any one item is
+        defective is $\dfrac{1}{3}$. Let $X$ be the number of defective items.
+  \begin{enumerate}[itemsep=0.2cm]
+    \item[(i)] Write down the distribution of $X$. \hfill [1]
+
+    \begin{minipage}[t]{0.62\textwidth}
+    $X \sim \mathrm{B}\!\left(3,\; \dfrac{1}{3}\right)$
+    \end{minipage}%
+    \begin{minipage}[t]{0.35\textwidth}\raggedleft
+    \textbf{(A1)}
+    \end{minipage}
+
+    \medskip
+    \item[(ii)] Find $\mathrm{P}(X \leq 1)$. \hfill [3]
+
+    \begin{minipage}[t]{0.62\textwidth}
+    $\mathrm{P}(X = 0) = \left(\dfrac{2}{3}\right)^{\!3} = \dfrac{8}{27}$\\[0.3cm]
+    $\mathrm{P}(X = 1) = \dbinom{3}{1}\!\left(\dfrac{1}{3}\right)\!\left(\dfrac{2}{3}\right)^{\!2}
+      = 3 \cdot \dfrac{1}{3} \cdot \dfrac{4}{9} = \dfrac{12}{27}$\\[0.3cm]
+    $\mathrm{P}(X \leq 1) = \dfrac{8}{27} + \dfrac{12}{27} = \dfrac{20}{27}$
+    \end{minipage}%
+    \begin{minipage}[t]{0.35\textwidth}\raggedleft
+    \textbf{(A1)}\\[0.3cm]
+    \textbf{(M1)}\\[0.3cm]
+    \textbf{(A1)}
+    \end{minipage}
+  \end{enumerate}
+
+  \medskip
+  \item The mass of items follows a normal distribution with mean $50$\;g
+        and standard deviation $\sigma$\;g. It is known that $2.28\%$ of items
+        have mass greater than $56$\;g.
+
+        \emph{You are given that $\mathrm{P}(Z > 2.00) = 0.0228$}.
+  \begin{enumerate}[itemsep=0.2cm]
+    \item[(i)] Find the value of $\sigma$. \hfill [2]
+
+    \begin{minipage}[t]{0.62\textwidth}
+    $z = \dfrac{56 - 50}{\sigma} = 2$\\[0.3cm]
+    $\sigma = \dfrac{6}{2} = 3$
+    \end{minipage}%
+    \begin{minipage}[t]{0.35\textwidth}\raggedleft
+    \textbf{(M1)}\\[0.3cm]
+    \textbf{(A1)}
+    \end{minipage}
+
+    \medskip
+    \item[(ii)] Find $\mathrm{P}(\text{mass} < 44)$. \hfill [2]
+
+    \begin{minipage}[t]{0.62\textwidth}
+    $z = \dfrac{44 - 50}{3} = -2$\\[0.15cm]
+    By symmetry, $\mathrm{P}(Z < -2) = \mathrm{P}(Z > 2) = 0.0228$
+    \end{minipage}%
+    \begin{minipage}[t]{0.35\textwidth}\raggedleft
+    \textbf{(M1)}\\[0.15cm]
+    \textbf{(A1)}
+    \end{minipage}
+  \end{enumerate}
+\end{enumerate}
+
+\newpage
+
+%--- Problem 4: Stationary points + increasing/decreasing [8 marks] ---
+\item Let $f(x) = x^3 - 6x^2 + 9x + 1$.
+
+\begin{enumerate}[itemsep=0.3cm]
+  \item Find $f'(x)$. \hfill [1]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $f'(x) = 3x^2 - 12x + 9$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(A1)}
+  \end{minipage}
+
+  \medskip
+  \item Find the $x$-coordinates of the stationary points. \hfill [2]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $3x^2 - 12x + 9 = 0$\\[0.15cm]
+  $x^2 - 4x + 3 = 0 \Rightarrow (x - 1)(x - 3) = 0$\\[0.15cm]
+  $x = 1$ and $x = 3$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(M1)}\\[0.15cm]
+  ~\\[0.15cm]
+  \textbf{(A1)}
+  \end{minipage}
+
+  \medskip
+  \item Use the second derivative to determine the nature of each
+        stationary point. \hfill [3]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $f''(x) = 6x - 12$\\[0.15cm]
+  $f''(1) = 6 - 12 = -6 < 0 \Rightarrow$ local maximum\\[0.15cm]
+  $f''(3) = 18 - 12 = 6 > 0 \Rightarrow$ local minimum
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(A1)}\\[0.15cm]
+  \textbf{(R1)}\\[0.15cm]
+  \textbf{(R1)}
+  \end{minipage}
+
+  \medskip
+  \item Find the $y$-coordinates and hence state the local maximum
+        and local minimum of $f$. \hfill [2]
+
+  \begin{minipage}[t]{0.62\textwidth}
+  $f(1) = 1 - 6 + 9 + 1 = 5$\\[0.15cm]
+  $f(3) = 27 - 54 + 27 + 1 = 1$\\[0.15cm]
+  Local max at $(1,\; 5)$, local min at $(3,\; 1)$
+  \end{minipage}%
+  \begin{minipage}[t]{0.35\textwidth}\raggedleft
+  \textbf{(A1)}\\[0.15cm]
+  \textbf{(A1)}
+  \end{minipage}
+\end{enumerate}
+
+\end{enumerate}
+\end{document}

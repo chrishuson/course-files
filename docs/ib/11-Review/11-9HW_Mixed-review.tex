@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper, margin=0.5in]{geometry}
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+
+\pagestyle{empty}
+
+\fancypagestyle{firstpage}{%
+  \fancyhf{}
+  \fancyhead[L]{\textbf{\,\\ \quad \, La Scuola d'Italia / Dr.\ Huson / IB Math \\ \quad \, 11.9 Homework: Mixed Review \\ \quad \, 27 March 2026}}
+  \fancyhead[R]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+  \renewcommand{\headrulewidth}{0.4pt}
+}
+
+\newcommand{\exampath}{/Users/chris/Documents/Professional/IB_Math/claude-ib-project/source-files}
+
+\begin{document}
+
+% Problem 1: Integration with initial condition — 2021 Nov P1 Q2 (5.10, 4 marks, no calc)
+\includepdf[pages={4}, pagecommand={\thispagestyle{firstpage}}]{\exampath/2021Nov/AA_SL_2021_Nov_P1.pdf}
+
+% Problem 2: Integration — 2022 Nov P1 Q5 (5.11, 5 marks, no calc)
+\includepdf[pages={7}]{\exampath/2022Nov/AA_SL_2022_Nov_P1.pdf}
+
+% Problem 3: Kinematics velocity — 2022 May P2 TZ2 Q6 (5.12, 7 marks, calculator)
+\includepdf[pages={9}]{\exampath/2022May/AA_SL_2022_May_P2_TZ2.pdf}
+
+% Problem 4: Normal distribution IQR — 2023 May P2 TZ1 Q5 (4.11, 5 marks, calculator)
+\includepdf[pages={7}]{\exampath/2023May/AA_SL_2023_May_P2_TZ1.pdf}
+
+% Problem 5: Discrete RV expected value — 2022 May P2 TZ1 Q4 (4.8, 6 marks, calculator)
+\includepdf[pages={7}]{\exampath/2022May/AA_SL_2022_May_P2_TZ1.pdf}
+
+% Problem 6: Exponential function + sketch — 2021 Nov P2 Q2 (2.9, 5 marks, calculator)
+\includepdf[pages={4}]{\exampath/2021Nov/AA_SL_2021_Nov_P2.pdf}
+
+\end{document}

@@ -1,0 +1,128 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 27 March 2026}
+
+\begin{document}
+\subsubsection*{5.8 Classwork: Calculus and Statistics (no calculator)}
+
+\begin{enumerate}[itemsep=0.2cm]
+
+%--- Problem 1: Differentiation + tangent + stationary points [8 marks] ---
+\item Let $f(x) = x^3 - 3x + 2$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find $f'(x)$. \hfill [1]
+  \item Find the gradient of the graph of $f$ at $x = 2$. \hfill [2]
+  \item Find the equation of the tangent line to the graph of $f$ at $x = 2$.
+        Give your answer in the form $y = mx + c$. \hfill [3]
+  \item Find the coordinates of the stationary points of $f$. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,11);
+  \foreach \y in {1,2,...,10} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Integration + area [8 marks] ---
+\item Let $f(x) = 3x^2 - 6x$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find $\displaystyle\int (3x^2 - 6x)\,\mathrm{d}x$. \hfill [2]
+  \item Show that $f(x) = 0$ when $x = 0$ and $x = 2$. \hfill [1]
+  \item Find the area of the region enclosed by the graph of $f$
+        and the $x$-axis, between $x = 0$ and $x = 2$. \hfill [3]
+  \item A function $g$ has derivative $g'(x) = 3x^2 - 6x$ and
+        $g(1) = 5$. Find $g(x)$. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,11);
+  \foreach \y in {1,2,...,10} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: Normal distribution (z-score) + binomial [8 marks] ---
+\item A manufacturer produces items. Each item is independently classified as
+defective or non-defective.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item In a random sample of 3 items, the probability that any one item is
+        defective is $\dfrac{1}{3}$. Let $X$ be the number of defective items.
+  \begin{enumerate}[itemsep=0.1cm]
+    \item[(i)] Write down the distribution of $X$. \hfill [1]
+    \item[(ii)] Find $\mathrm{P}(X \leq 1)$. \hfill [3]
+  \end{enumerate}
+
+  \medskip
+  \item The mass of items follows a normal distribution with mean $50$\;g
+        and standard deviation $\sigma$\;g. It is known that $2.28\%$ of items
+        have mass greater than $56$\;g.
+
+        \emph{You are given that $\mathrm{P}(Z > 2.00) = 0.0228$}.
+  \begin{enumerate}[itemsep=0.1cm]
+    \item[(i)] Find the value of $\sigma$. \hfill [2]
+    \item[(ii)] Find $\mathrm{P}(\text{mass} < 44)$. \hfill [2]
+  \end{enumerate}
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,10);
+  \foreach \y in {1,2,...,9} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: Stationary points + increasing/decreasing [8 marks] ---
+\item Let $f(x) = x^3 - 6x^2 + 9x + 1$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find $f'(x)$. \hfill [1]
+  \item Find the $x$-coordinates of the stationary points. \hfill [2]
+  \item Use the second derivative to determine the nature of each
+        stationary point. \hfill [3]
+  \item Find the $y$-coordinates and hence state the local maximum
+        and local minimum of $f$. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,11);
+  \foreach \y in {1,2,...,10} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}
+
+Solutions
+  Problem 1 — f(x) = x³ - 3x + 2:
+  - (a) f'(x) = 3x² - 3
+  - (b) f'(2) = 3(4) - 3 = 9
+  - (c) f(2) = 8 - 6 + 2 = 4. Tangent: y - 4 = 9(x - 2) → y = 9x - 14
+  - (d) f'(x) = 0: 3x² - 3 = 0, x² = 1, x = ±1
+        f(1) = 1 - 3 + 2 = 0 → (1, 0)
+        f(-1) = -1 + 3 + 2 = 4 → (-1, 4)
+
+  Problem 2 — f(x) = 3x² - 6x:
+  - (a) ∫(3x² - 6x)dx = x³ - 3x² + c
+  - (b) f(0) = 0. f(2) = 12 - 12 = 0. ✓
+  - (c) [x³ - 3x²]₀² = (8 - 12) - 0 = -4. Area = |-4| = 4
+  - (d) g(x) = x³ - 3x² + c. g(1) = 1 - 3 + c = 5 → c = 7. g(x) = x³ - 3x² + 7
+
+  Problem 3 — Normal + Binomial:
+  - (a)(i) X ~ B(3, 1/3)
+  - (a)(ii) P(X=0) = (2/3)³ = 8/27. P(X=1) = 3(1/3)(2/3)² = 12/27.
+            P(X ≤ 1) = 20/27
+  - (b)(i) z = (56-50)/σ = 2. σ = 3
+  - (b)(ii) z = (44-50)/3 = -2. P(Z < -2) = P(Z > 2) = 0.0228
+
+  Problem 4 — f(x) = x³ - 6x² + 9x + 1:
+  - (a) f'(x) = 3x² - 12x + 9
+  - (b) 3x² - 12x + 9 = 0 → x² - 4x + 3 = 0 → (x-1)(x-3) = 0 → x = 1, x = 3
+  - (c) f''(x) = 6x - 12. f''(1) = -6 < 0 → local max. f''(3) = 6 > 0 → local min.
+  - (d) f(1) = 1 - 6 + 9 + 1 = 5. f(3) = 27 - 54 + 27 + 1 = 1.
+        Local max at (1, 5). Local min at (3, 1).
