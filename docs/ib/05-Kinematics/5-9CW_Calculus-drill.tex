@@ -1,0 +1,88 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 28 March 2026}
+
+\begin{document}
+\subsubsection*{5.9 Classwork: Differentiation and Integration Drill (no calculator)}
+
+Find the derivative or integral as indicated. Show your working.
+
+\textbf{--- Differentiation ---}
+\bigskip
+\begin{enumerate}[itemsep=0.3cm]
+
+
+\item Find $f'(x)$ given $f(x) = 4x^3 - 6x + 7$.
+\vspace{1.2cm}
+
+\item Find $\dfrac{\mathrm{d}y}{\mathrm{d}x}$ given $y = 5\sin x - 2\cos x$.
+\vspace{1.2cm}
+
+\item Find $f'(x)$ given $f(x) = 3e^{2x}$.
+\vspace{1.2cm}
+
+\item Differentiate $y = 4\ln x + \dfrac{3}{x}$.
+\vspace{1.5cm}
+
+\item Find $f'(x)$ given $f(x) = \sin(3x + 1)$.
+\hfill \emph{(chain rule)}
+\vspace{1.5cm}
+
+\item Find $\dfrac{\mathrm{d}y}{\mathrm{d}x}$ given $y = e^{x^2 - 1}$.
+\hfill \emph{(chain rule)}
+\vspace{1.5cm}
+
+\item Find $f'(x)$ given $f(x) = x^2 \ln x$, for $x > 0$.
+\hfill \emph{(product rule)}
+\vspace{1.5cm}
+
+\newpage
+\textbf{--- Integration ---}
+
+\item Find $\displaystyle\int (6x^2 + 4x - 1)\,\mathrm{d}x$.
+\vspace{1.5cm}
+
+\item Find $\displaystyle\int \left(3\cos x + \frac{1}{x}\right)\mathrm{d}x$,
+\quad for $x > 0$.
+\vspace{1.5cm}
+
+\item Find $\displaystyle\int 5e^{3x}\,\mathrm{d}x$.
+\vspace{1.5cm}
+
+\item Find $\displaystyle\int_0^{\pi} 2\sin x\,\mathrm{d}x$.
+\vspace{2cm}
+
+\item Find $\displaystyle\int_1^2 \left(\frac{3}{x} + 2x\right)\mathrm{d}x$.
+\vspace{2cm}
+
+\item Given that $f'(x) = 4x + e^x$ and $f(0) = 3$, find $f(x)$.
+\vspace{2cm}
+
+\item Find $f'(x)$ given $f(x) = (2x+1)e^x$.
+Hence find $\displaystyle\int (2x + 3)e^x\,\mathrm{d}x$.
+\hfill \emph{(product rule, then reverse)}
+
+\end{enumerate}
+\end{document}
+
+Solutions
+  Differentiation:
+  1. f'(x) = 12x² - 6
+  2. dy/dx = 5cos(x) + 2sin(x)
+  3. f'(x) = 6e^(2x)
+  4. dy/dx = 4/x - 3/x² = (4x - 3)/x²
+  5. f'(x) = 3cos(3x + 1)
+  6. dy/dx = 2x · e^(x²-1)
+  7. f'(x) = 2x·ln(x) + x²·(1/x) = 2x·ln(x) + x = x(2ln(x) + 1)
+
+  Integration:
+  8. 2x³ + 2x² - x + c
+  9. 3sin(x) + ln(x) + c
+  10. (5/3)e^(3x) + c
+  11. [-2cos(x)]₀^π = -2(-1) - (-2)(1) = 2 + 2 = 4
+  12. [3ln(x) + x²]₁² = (3ln2 + 4) - (0 + 1) = 3ln2 + 3
+  13. f(x) = 2x² + e^x + c. f(0) = 0 + 1 + c = 3, c = 2. f(x) = 2x² + e^x + 2
+  14. f'(x) = 2e^x + (2x+1)e^x = (2x+3)e^x. Hence ∫(2x+3)e^x dx = (2x+1)e^x + c

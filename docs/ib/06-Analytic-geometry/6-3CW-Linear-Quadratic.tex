@@ -1,0 +1,112 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 30 March 2026}
+
+\begin{document}
+\subsubsection*{6.3 Classwork: Linear and Quadratic Functions}
+
+\begin{enumerate}[itemsep=0.2cm]
+
+%--- Problem 1: Line through two points [8 marks] ---
+\item A straight line $L$ passes through the points $A(-2, 5)$ and $B(4, -1)$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the gradient of $L$. \hfill [2]
+  \item Find the equation of $L$ in the form $y = mx + c$. \hfill [2]
+  \item Find the $x$-intercept of $L$. \hfill [2]
+  \item A second line $L_2$ is parallel to $L$ and passes through the
+        point $(0, 7)$. Find the equation of $L_2$. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,11);
+  \foreach \y in {1,2,...,10} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Factoring and properties of quadratic [8 marks] ---
+\item Let $f(x) = x^2 - 4x - 12$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Factorise $f(x)$. \hfill [2]
+  \item Hence find the $x$-intercepts of the graph of $f$. \hfill [1]
+  \item Find the coordinates of the vertex of the parabola. \hfill [3]
+  \item Write down the $y$-intercept. \hfill [1]
+  \item Write down the range of $f$. \hfill [1]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,11);
+  \foreach \y in {1,2,...,10} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: Line forms and perpendicular [9 marks] ---
+\item The line $L_1$ has equation $2x + y - 8 = 0$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Write the equation of $L_1$ in the form $y = mx + c$. \hfill [2]
+  \item Write down the gradient and the $y$-intercept of $L_1$. \hfill [1]
+  \item The line $L_2$ is perpendicular to $L_1$ and passes through the
+        point $(2, -1)$. Find the equation of $L_2$ in the form
+        $ax + by + d = 0$, where $a$, $b$, $d \in \mathbb{Z}$. \hfill [3]
+  \item Find the coordinates of the point of intersection of $L_1$
+        and $L_2$. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,10);
+  \foreach \y in {1,2,...,9} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: Vertex form and reflection [8 marks] ---
+\item Let $g(x) = 2x^2 - 8x + 6$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Write $g(x)$ in the form $a(x - h)^2 + k$. \hfill [3]
+  \item Write down the coordinates of the vertex of the parabola. \hfill [1]
+  \item Find the $x$-intercepts of the graph of $g$. \hfill [2]
+  \item The graph of $g$ is reflected in the $x$-axis. Write the equation
+        of the new graph in the form $y = ax^2 + bx + c$. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (15.5,11);
+  \foreach \y in {1,2,...,10} \draw [dotted] (0.5,\y)--(15,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}
+
+Solutions
+  Problem 1 — Line through two points:
+  - (a) m = (-1 - 5)/(4 - (-2)) = -6/6 = -1
+  - (b) y - 5 = -1(x + 2) -> y = -x + 3
+  - (c) 0 = -x + 3 -> x = 3. x-intercept: (3, 0)
+  - (d) Parallel: m = -1, through (0, 7): y = -x + 7
+
+  Problem 2 — Quadratic factoring:
+  - (a) f(x) = (x - 6)(x + 2)
+  - (b) x = 6 and x = -2
+  - (c) Axis: x = 4/2 = 2. f(2) = 4 - 8 - 12 = -16. Vertex = (2, -16)
+  - (d) f(0) = -12. y-intercept: (0, -12)
+  - (e) f(x) >= -16
+
+  Problem 3 — Perpendicular lines:
+  - (a) y = -2x + 8
+  - (b) Gradient = -2, y-intercept = 8
+  - (c) Perp gradient = 1/2. y + 1 = 1/2(x - 2) -> y = 1/2 x - 2 -> x - 2y - 4 = 0
+  - (d) -2x + 8 = 1/2 x - 2 -> -4x + 16 = x - 4 -> 5x = 20 -> x = 4, y = 0. Point (4, 0)
+
+  Problem 4 — Vertex form:
+  - (a) g(x) = 2(x^2 - 4x) + 6 = 2(x^2 - 4x + 4) - 8 + 6 = 2(x - 2)^2 - 2
+  - (b) Vertex = (2, -2)
+  - (c) 2(x - 2)^2 = 2 -> (x - 2)^2 = 1 -> x = 1 or x = 3
+  - (d) y = -g(x) = -2x^2 + 8x - 6
