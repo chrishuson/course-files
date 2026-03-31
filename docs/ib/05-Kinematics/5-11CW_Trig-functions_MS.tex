@@ -1,0 +1,130 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 1 April 2026}
+\fancyhead[RO]{Markscheme}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{5.11 Classwork: Trigonometric Functions, Identities, and Integration
+--- Markscheme}
+
+\begin{enumerate}[itemsep=0.4cm]
+
+\item $f(x) = \sin x$, \quad $0 \leq x \leq 2\pi$.
+
+(a) $\displaystyle\int_0^{\pi} \sin x \,\mathrm{d}x
+= \bigl[-\cos x\bigr]_0^{\pi}$ \hfill \textbf{(M1)(A1)}
+
+$= -\cos\pi - (-\cos 0) = 1 + 1 = 2$ \hfill \textbf{(A1)}
+
+\medskip
+(b) $\displaystyle\int_{\pi}^{2\pi} \sin x \,\mathrm{d}x = -2$
+\hfill \textbf{(A1)}
+
+\emph{(by symmetry, or}
+$\bigl[-\cos x\bigr]_{\pi}^{2\pi} = -1 - 1 = -2$\emph{)}
+
+\medskip
+(c) $2 + (-2) = 0$. The definite integral measures \emph{signed} area:
+$R_1$ contributes $+2$ and $R_2$ contributes $-2$; they cancel.
+\hfill \textbf{(R1)(R1)}
+
+\medskip
+(d) Total area $= |2| + |-2| = 4$ \hfill \textbf{(A1)}
+
+\bigskip
+
+\item $f(x) = \cos^2 x$.
+
+(a) $\cos 2x = 2\cos^2 x - 1$ \hfill \textbf{(M1)}
+
+$\cos^2 x = \dfrac{\cos 2x + 1}{2} = \dfrac{1}{2}(1 + \cos 2x)$
+\hfill \textbf{(AG)}
+
+\medskip
+(b) $\displaystyle\int \cos^2 x \,\mathrm{d}x
+= \int \tfrac{1}{2}(1 + \cos 2x)\,\mathrm{d}x$ \hfill \textbf{(M1)}
+
+$= \dfrac{x}{2} + \dfrac{\sin 2x}{4} + c$ \hfill \textbf{(A1)(A1)}
+
+\medskip
+(c) $\left[\dfrac{x}{2} + \dfrac{\sin 2x}{4}\right]_0^{\pi/4}$
+\hfill \textbf{(M1)}
+
+$= \left(\dfrac{\pi}{8} + \dfrac{\sin(\pi/2)}{4}\right) - 0
+= \dfrac{\pi}{8} + \dfrac{1}{4}$ \hfill \textbf{(A1)}
+
+$= \dfrac{\pi + 2}{8}$ \hfill \textbf{(A1)}
+
+\bigskip
+
+\item $g(x) = \sin^2 x$, \quad $h(x) = \cos^2 x$.
+
+(a) $\sin^2\!\dfrac{\pi}{4}
+= \left(\dfrac{\sqrt{2}}{2}\right)^{\!2} = \dfrac{1}{2}$
+\hfill \textbf{(A1)}
+
+$\cos^2\!\dfrac{\pi}{4}
+= \left(\dfrac{\sqrt{2}}{2}\right)^{\!2} = \dfrac{1}{2}$
+\hfill \textbf{(A1)}
+
+Both equal $\frac{1}{2}$, so the graphs intersect at
+$x = \frac{\pi}{4}$. \checkmark
+
+\medskip
+(b) $\cos 2x = 1 - 2\sin^2 x$ \hfill \textbf{(M1)}
+
+$\sin^2 x = \dfrac{1 - \cos 2x}{2} = \dfrac{1}{2}(1 - \cos 2x)$
+\hfill \textbf{(AG)}
+
+\medskip
+(c) $\displaystyle\int_0^{\pi} \sin^2 x \,\mathrm{d}x
+= \int_0^{\pi} \tfrac{1}{2}(1 - \cos 2x)\,\mathrm{d}x$
+\hfill \textbf{(M1)}
+
+$= \left[\dfrac{x}{2} - \dfrac{\sin 2x}{4}\right]_0^{\pi}$
+\hfill \textbf{(A1)(A1)}
+
+$= \left(\dfrac{\pi}{2} - \dfrac{\sin 2\pi}{4}\right) - 0
+= \dfrac{\pi}{2}$ \hfill \textbf{(A1)}
+
+\medskip
+(d) $\sin^2 x + \cos^2 x = 1$, so
+$\displaystyle\int_0^{\pi} \cos^2 x \,\mathrm{d}x
+= \int_0^{\pi}(1 - \sin^2 x)\,\mathrm{d}x$ \hfill \textbf{(M1)}
+
+$= \pi - \dfrac{\pi}{2} = \dfrac{\pi}{2}$ \hfill \textbf{(A1)}
+
+\bigskip
+
+\item $f(x) = 4\sin x\cos x$.
+
+(a) $f(x) = 4\sin x\cos x = 2(2\sin x\cos x) = 2\sin 2x$
+\hfill \textbf{(M1)(AG)}
+
+\medskip
+(b) Period $= \dfrac{2\pi}{2} = \pi$ \hfill \textbf{(A1)}
+
+\medskip
+(c) Area $= \displaystyle\int_0^{\pi/2} 2\sin 2x \,\mathrm{d}x$
+\hfill \textbf{(M1)}
+
+$= \bigl[-\cos 2x\bigr]_0^{\pi/2}$ \hfill \textbf{(A1)(A1)}
+
+$= -\cos\pi - (-\cos 0) = 1 + 1 = 2$ \hfill \textbf{(A1)}
+
+\medskip
+(d) By symmetry the negative arch from $\frac{\pi}{2}$ to $\pi$ has
+the same shape. \hfill \textbf{(R1)}
+
+Total area $= 2 + 2 = 4$ \hfill \textbf{(A1)}
+
+\medskip
+(e) $f'(x) = 4\cos 2x$ \hfill \textbf{(A1)}
+
+$f'(x) = 0 \Rightarrow \cos 2x = 0 \Rightarrow 2x = \frac{\pi}{2}
+\Rightarrow x = \frac{\pi}{4}$ \hfill \textbf{(A1)}
+
+\end{enumerate}
+\end{document}
