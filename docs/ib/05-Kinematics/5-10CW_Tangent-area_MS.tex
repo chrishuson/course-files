@@ -1,0 +1,125 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{pgfplots}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=1.16}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 31 March 2026}
+\fancyhead[RO]{Markscheme}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{5.10 Classwork: Tangent Lines and Enclosed Area --- Markscheme}
+
+\begin{enumerate}[itemsep=0.4cm]
+
+\item $f(x) = 4x - x^2$, tangent at $P(1, 3)$.
+
+(a) $f'(x) = 4 - 2x$ \hfill \textbf{(A1)}
+
+$f'(1) = 2$, so gradient of $L$ is $2$.
+
+$y - 3 = 2(x - 1) \Rightarrow y = 2x + 1$ \hfill \textbf{(AG)}
+
+\medskip
+(b) Area $= \displaystyle\int_0^1 \bigl((2x + 1) - (4x - x^2)\bigr)\,\mathrm{d}x$
+\hfill \textbf{(M1)}
+
+$= \displaystyle\int_0^1 (x^2 - 2x + 1)\,\mathrm{d}x
+= \int_0^1 (x - 1)^2\,\mathrm{d}x$ \hfill \textbf{(A1)}
+
+$= \left[\dfrac{(x-1)^3}{3}\right]_0^1 = 0 - \left(\dfrac{-1}{3}\right)$
+\hfill \textbf{(A1)}
+
+$= \dfrac{1}{3}$ \hfill \textbf{(A1)}
+
+\bigskip
+
+\item $f(x) = e^x$, tangent at $P(1, e)$.
+
+(a) $f'(x) = e^x$ \hfill \textbf{(A1)}
+
+\medskip
+(b) $f'(1) = e$ \hfill \textbf{(M1)}
+
+$y - e = e(x - 1) \Rightarrow y = ex$ \hfill \textbf{(AG)}
+
+\medskip
+(c) Area $= \displaystyle\int_0^1 \bigl(e^x - ex\bigr)\,\mathrm{d}x$
+\hfill \textbf{(M1)}
+
+$= \left[e^x - \dfrac{ex^2}{2}\right]_0^1$ \hfill \textbf{(A1)(A1)}
+
+$= \left(e - \dfrac{e}{2}\right) - (1 - 0)
+= \dfrac{e}{2} - 1$ \hfill \textbf{(A1)}
+
+\bigskip
+
+\item $f(x) = x^3$, tangent at $P(1, 1)$.
+
+(a) $f'(x) = 3x^2$ \hfill \textbf{(A1)}
+
+\medskip
+(b) $f'(1) = 3$ \hfill \textbf{(M1)}
+
+$y - 1 = 3(x - 1) \Rightarrow y = 3x - 2$ \hfill \textbf{(AG)}
+
+\medskip
+(c) $x^3 = 3x - 2$ \hfill \textbf{(M1)}
+
+$x^3 - 3x + 2 = 0$
+
+$(x - 1)^2(x + 2) = 0$ \hfill \textbf{(A1)}
+
+$Q = (-2,\; -8)$ \hfill \textbf{(A1)}
+
+\medskip
+(d) Area $= \displaystyle\int_{-2}^{1} \bigl(x^3 - (3x - 2)\bigr)\,\mathrm{d}x$
+\hfill \textbf{(M1)}
+
+$= \displaystyle\int_{-2}^{1} (x^3 - 3x + 2)\,\mathrm{d}x$
+
+$= \left[\dfrac{x^4}{4} - \dfrac{3x^2}{2} + 2x\right]_{-2}^{1}$
+\hfill \textbf{(A1)(A1)}
+
+$= \left(\dfrac{1}{4} - \dfrac{3}{2} + 2\right)
+  - \left(\dfrac{16}{4} - \dfrac{12}{2} - 4\right)$
+\hfill \textbf{(M1)}
+
+$= \dfrac{3}{4} - (-6) = \dfrac{27}{4}$ \hfill \textbf{(A1)}
+
+\bigskip
+
+\item $f(x) = 6e^{-0.5x}$, tangent at $A(0, 6)$.
+
+(a) $A = (0,\; 6)$ \hfill \textbf{(A1)}
+
+\medskip
+(b) $f'(x) = 6 \times (-0.5)\, e^{-0.5x}$ \hfill \textbf{(M1)}
+
+$= -3e^{-0.5x}$ \hfill \textbf{(A1)}
+
+\medskip
+(c) $f'(0) = -3$ \hfill \textbf{(A1)}
+
+$y - 6 = -3(x - 0) \Rightarrow y = -3x + 6$ \hfill \textbf{(AG)}
+
+\medskip
+(d) $0 = -3x + 6 \Rightarrow x = 2$
+
+$B = (2,\; 0)$ \hfill \textbf{(A1)}
+
+\medskip
+(e) Area $= \displaystyle\int_0^2 \bigl(6e^{-0.5x} - (-3x + 6)\bigr)\,\mathrm{d}x$
+\hfill \textbf{(M1)}
+
+\emph{GDC:} $= 1.5854\ldots$ \hfill \textbf{(A1)}
+
+$\approx 1.59$ \hfill \textbf{(A1)}
+
+\medskip
+\emph{Exact form:} $\bigl[-12e^{-0.5x} + \tfrac{3}{2}x^2 - 6x\bigr]_0^2
+= (-12e^{-1} + 6 - 12) - (-12) = 6 - 12e^{-1}$
+
+\end{enumerate}
+\end{document}
