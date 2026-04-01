@@ -1,0 +1,239 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math / Calculus \\* 4 April 2026}
+\fancyhead[RO]{Markscheme}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{5.12 Homework: Integration Review (no calculator) --- Markscheme}
+
+\begin{enumerate}[itemsep=0.4cm]
+
+%% Q1 — 2023 May P1 TZ2, Q2 (6 marks)
+\item Consider an arithmetic sequence with $u_1 = 0.6$ and $u_4 = 0.15$.
+
+(a) Find the common difference, $d$.
+
+$u_1 + 3d = u_4$ \hfill \textbf{(M1)}
+
+$0.6 + 3d = 0.15$
+
+$d = -0.15$ \hfill \textbf{(A1)}
+
+\medskip
+(b) Find the value of $k$.
+
+$u_2 = 0.45$, $u_3 = 0.3$ \hfill \textbf{(A1)}
+
+Sum of probabilities equals 1: \hfill \textbf{(M1)}
+
+$\dfrac{0.6}{k} + \dfrac{0.45}{k} + \dfrac{0.3}{k} + \dfrac{0.15}{k} = 1$ \hfill \textbf{(A1)}
+
+$\dfrac{1.5}{k} = 1$
+
+$k = 1.5$ \hfill \textbf{(A1)}
+
+\textbf{[6 marks]}
+
+\bigskip
+
+%% Q2 — 2022 Nov P1, Q4 (5 marks)
+\item Let $a$ be a constant, where $a > 1$.
+
+(a) Show that $a^2 + \left(\dfrac{a^2 - 1}{2}\right)^2 = \left(\dfrac{a^2 + 1}{2}\right)^2$.
+
+Expanding the LHS: \hfill \textbf{(M1)}
+
+$a^2 + \dfrac{a^4 - 2a^2 + 1}{4} = \dfrac{4a^2 + a^4 - 2a^2 + 1}{4}$ \hfill \textbf{(A1)}
+
+$= \dfrac{a^4 + 2a^2 + 1}{4} = \left(\dfrac{a^2 + 1}{2}\right)^2$ \hfill \textbf{(A1)}
+
+\medskip
+(b) Find an expression for the area of the triangle in terms of $a$.
+
+The right angle is opposite the hypotenuse $\dfrac{a^2+1}{2}$, so the legs are $a$ and $\dfrac{a^2-1}{2}$. \hfill \textbf{(M1)}
+
+$\text{Area} = \dfrac{1}{2} \cdot a \cdot \dfrac{a^2-1}{2} = \dfrac{a^3 - a}{4} = \dfrac{a(a^2 - 1)}{4}$ \hfill \textbf{(A1)}
+
+\textbf{[5 marks]}
+
+\bigskip
+
+%% Q3 — 2023 May P1 TZ1, Q2 (7 marks)
+\item The function $f$ is defined by $f(x) = \dfrac{7x + 7}{2x - 4}$ for $x \in \mathbb{R}$, $x \neq 2$.
+
+(a) Recognizing $f(x) = 0$: \hfill \textbf{(M1)}
+
+$7x + 7 = 0 \implies x = -1$ \hfill \textbf{(A1)}
+
+\medskip
+(b)(i) Vertical asymptote: $x = 2$ \hfill \textbf{(A1)}
+
+(b)(ii) Horizontal asymptote: $y = \dfrac{7}{2}$ \hfill \textbf{(A1)}
+
+\medskip
+(c) Interchanging $x$ and $y$: \hfill \textbf{(M1)}
+
+$x = \dfrac{7y + 7}{2y - 4}$
+
+$2xy - 4x = 7y + 7$
+
+$2xy - 7y = 4x + 7$ \hfill \textbf{(A1)}
+
+$y(2x - 7) = 4x + 7$
+
+$f^{-1}(x) = \dfrac{4x + 7}{2x - 7}$ \hfill \textbf{(A1)}
+
+\textbf{[7 marks]}
+
+\bigskip
+
+%% Q4 — 2023 May P1 TZ1, Q4 (6 marks)
+\item (a) Show that $\cos 2x = \sin x$ can be written as $2\sin^2 x + \sin x - 1 = 0$.
+
+Using $\cos 2x = 1 - 2\sin^2 x$:
+
+$1 - 2\sin^2 x = \sin x$
+
+$2\sin^2 x + \sin x - 1 = 0$ \hfill \textbf{(A1)}
+
+\medskip
+(b) Solve $\cos 2x = \sin x$ for $-\pi \leq x \leq \pi$.
+
+Factoring: $(2\sin x - 1)(\sin x + 1) = 0$ \hfill \textbf{(M1)}
+
+$\sin x = \dfrac{1}{2}$ or $\sin x = -1$ \hfill \textbf{(M1)}
+
+From $\sin x = -1$: $x = -\dfrac{\pi}{2}$ \hfill \textbf{(A1)}
+
+From $\sin x = \dfrac{1}{2}$: $x = \dfrac{\pi}{6}$, $x = \dfrac{5\pi}{6}$ \hfill \textbf{(A1)}
+
+$x = -\dfrac{\pi}{2},\; \dfrac{\pi}{6},\; \dfrac{5\pi}{6}$ \hfill \textbf{(A1)}
+
+\textbf{[6 marks]}
+
+\bigskip
+
+%% Q5 — 2022 May P1 TZ2, Q5 (5 marks)
+\item Find the least positive value of $x$ for which $\cos\!\left(\dfrac{x}{2} + \dfrac{\pi}{3}\right) = \dfrac{1}{\sqrt{2}}$.
+
+Let $\theta = \dfrac{x}{2} + \dfrac{\pi}{3}$.
+
+Reference angle for $\cos\theta = \dfrac{1}{\sqrt{2}}$: $\dfrac{\pi}{4}$ \hfill \textbf{(A1)}
+
+$\theta = \dfrac{\pi}{4}$ gives $\dfrac{x}{2} = \dfrac{\pi}{4} - \dfrac{\pi}{3} = -\dfrac{\pi}{12}$, so $x = -\dfrac{\pi}{6}$ (negative, rejected) \hfill \textbf{(M1)(R1)}
+
+$\theta = 2\pi - \dfrac{\pi}{4} = \dfrac{7\pi}{4}$ \hfill \textbf{(A1)}
+
+$\dfrac{x}{2} = \dfrac{7\pi}{4} - \dfrac{\pi}{3} = \dfrac{21\pi - 4\pi}{12} = \dfrac{17\pi}{12}$
+
+$x = \dfrac{17\pi}{6}$ \hfill \textbf{(A1)}
+
+\textbf{[5 marks]}
+
+\bigskip
+
+%% Q6 — 2022 Nov P1, Q6 (6 marks)
+\item Events $A$ and $B$ are such that $\mathrm{P}(A) = 0.3$ and $\mathrm{P}(B) = 0.8$.
+
+(a) If independent: $\mathrm{P}(A \cap B) = 0.3 \times 0.8 = 0.24$ \hfill \textbf{(A1)}
+
+\medskip
+(b) $\mathrm{P}(A \cup B) = \mathrm{P}(A) + \mathrm{P}(B) - \mathrm{P}(A \cap B) = 1.1 - \mathrm{P}(A \cap B)$ \hfill \textbf{(A1)}
+
+Since $\mathrm{P}(A \cup B) \leq 1$: \hfill \textbf{(M1)}
+
+$1.1 - \mathrm{P}(A \cap B) \leq 1$
+
+Minimum value of $\mathrm{P}(A \cap B) = 0.1$ \hfill \textbf{(A1)}
+
+\medskip
+(c) $A$ is a subset of $B$ (since $\mathrm{P}(A) < \mathrm{P}(B)$), so $\mathrm{P}(A \cap B) = \mathrm{P}(A)$. \hfill \textbf{(R1)}
+
+Maximum value of $\mathrm{P}(A \cap B) = 0.3$ \hfill \textbf{(A1)}
+
+\textbf{[6 marks]}
+
+\bigskip
+
+%% Q7 — 2021 Nov P1, Q2 (4 marks)
+\item Given that $\dfrac{\mathrm{d}y}{\mathrm{d}x} = \cos\!\left(x - \dfrac{\pi}{4}\right)$ and $y = 2$ when $x = \dfrac{3\pi}{4}$.
+
+Recognizing integration is needed: \hfill \textbf{(M1)}
+
+$y = \sin\!\left(x - \dfrac{\pi}{4}\right) + c$ \hfill \textbf{(A1)}
+
+Substituting $x = \dfrac{3\pi}{4}$, $y = 2$: \hfill \textbf{(M1)}
+
+$2 = \sin\!\left(\dfrac{3\pi}{4} - \dfrac{\pi}{4}\right) + c = \sin\dfrac{\pi}{2} + c = 1 + c$
+
+$c = 1$
+
+$y = \sin\!\left(x - \dfrac{\pi}{4}\right) + 1$ \hfill \textbf{(A1)}
+
+\textbf{[4 marks]}
+
+\bigskip
+
+%% Q8 — 2021 May P1 TZ1, Q5 (7 marks)
+\item Consider $f(x) = -(x-h)^2 + 2k$ and $g(x) = e^{x-2} + k$.
+
+(a) $f'(x) = -2(x - h)$ \hfill \textbf{(A1)}
+
+\medskip
+(b) $g'(x) = e^{x-2}$, so $g'(3) = e$ \hfill \textbf{(A1)}
+
+Common tangent at $x = 3$ means $f'(3) = g'(3)$: \hfill \textbf{(M1)}
+
+$-2(3 - h) = e$
+
+$3 - h = -\dfrac{e}{2}$
+
+$h = 3 + \dfrac{e}{2} = \dfrac{e + 6}{2}$ \hfill \textbf{(A1)}
+
+\medskip
+(c) Common tangent means $f(3) = g(3)$: \hfill \textbf{(M1)}
+
+$-(3 - h)^2 + 2k = e^{3-2} + k$
+
+$-\left(-\dfrac{e}{2}\right)^2 + 2k = e + k$ \hfill \textbf{(A1)}
+
+$-\dfrac{e^2}{4} + 2k = e + k$
+
+$k = e + \dfrac{e^2}{4}$ \hfill \textbf{(A1)}
+
+\textbf{[7 marks]}
+
+\bigskip
+
+%% Q9 — 2023 May P1 TZ2, Q5 (6 marks)
+\item $\displaystyle A = \int_0^c \frac{x}{x^2 + 2}\,\mathrm{d}x$
+
+Using substitution $u = x^2 + 2$, $\mathrm{d}u = 2x\,\mathrm{d}x$: \hfill \textbf{(M1)}
+
+$= \dfrac{1}{2}\displaystyle\int \frac{\mathrm{d}u}{u} = \dfrac{1}{2}\ln|u| = \dfrac{1}{2}\ln(x^2 + 2)$ \hfill \textbf{(A1)}
+
+$\left[\dfrac{1}{2}\ln(x^2 + 2)\right]_0^c = \dfrac{1}{2}\ln(c^2 + 2) - \dfrac{1}{2}\ln 2$ \hfill \textbf{(M1)}
+
+Setting equal to $\ln 3$:
+
+$\dfrac{1}{2}\ln\!\left(\dfrac{c^2 + 2}{2}\right) = \ln 3$ \hfill \textbf{(M1)}
+
+$\ln\!\left(\dfrac{c^2 + 2}{2}\right) = \ln 9$
+
+$\dfrac{c^2 + 2}{2} = 9$ \hfill \textbf{(A1)}
+
+$c^2 = 16$
+
+$c = 4$ \hfill \textbf{(A1)}
+
+(Since $c > 0$, reject $c = -4$.)
+
+\textbf{[6 marks]}
+
+\bigskip
+\textbf{Total: 52 marks}
+
+\end{enumerate}
+\end{document}

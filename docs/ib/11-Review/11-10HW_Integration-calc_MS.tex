@@ -1,0 +1,252 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math / Calculus \\* 4 April 2026}
+\fancyhead[RO]{Markscheme}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{5.12 Homework: Integration Review (calculator) --- Markscheme}
+
+\begin{enumerate}[itemsep=0.4cm]
+
+%% PROBLEM 1 %%
+\item Plant growth regression. Data: $(d, h)$ pairs for 7 days.
+
+(a) \emph{GDC: Enter data into lists and run linear regression.}
+
+$a = 1.93258\ldots, \quad b = 7.21662\ldots$
+
+$a = 1.93, \quad b = 7.22$ \hfill \textbf{(A1)(A1)}
+
+\medskip
+(b) $r = 0.991087\ldots$
+
+$r = 0.991$ \hfill \textbf{(A1)}
+
+\medskip
+(c) Substitute $d = 20$ into the regression line: \hfill \textbf{(M1)}
+
+$h = 1.93(20) + 7.22 = 45.8$
+
+$h = 45.9$ cm (using unrounded values: $1.93258 \times 20 + 7.21662 = 45.868\ldots$)
+\hfill \textbf{(A1)}
+
+\hfill Total [5 marks]
+
+\bigskip
+
+%% PROBLEM 2 %%
+\item Sam invests \$1700, nominal rate 2.74\% compounded half-yearly.
+
+Note: All answers must be given correct to two decimal places.
+
+\medskip
+(a) \emph{GDC: Finance solver with $N = 20$, $I\% = 2.74$, $PV = -1700$,
+$P/Y = 2$, $C/Y = 2$.}
+
+OR $1700\!\left(1 + \dfrac{0.0274}{2}\right)^{2 \times 10}$ \hfill \textbf{(M1)(A1)}
+
+$= \$2231.71$ \hfill \textbf{(A1)}
+
+\medskip
+(b) \emph{GDC: Finance solver with $N = 10$, $PV = -1700$, $FV = 2231.71$,
+$P/Y = 1$, $C/Y = 1$.}
+
+OR $1700\!\left(1 + \dfrac{r}{100}\right)^{10} = 2231.71$ \hfill \textbf{(M1)}
+
+$r = 2.75876\ldots$
+
+$r = 2.76$ \hfill \textbf{(A1)}
+
+\medskip
+(c) Interest $= 2231.71 - 1700 = \$531.71$ \hfill \textbf{(A1)}
+
+\hfill Total [6 marks]
+
+\bigskip
+
+%% PROBLEM 3 %%
+\item Geometric sequence: $u_1 = 50$, $u_4 = 86.4$.
+
+$50r^3 = 86.4$ \hfill \textbf{(A1)}
+
+$r = \sqrt[3]{\dfrac{86.4}{50}} = 1.2$ \hfill \textbf{(A1)}
+
+$S_n = \dfrac{50(1.2^n - 1)}{0.2} > 33\,500$ \hfill \textbf{(A1)}
+
+\emph{GDC: Solve $250(1.2^n - 1) = 33500$ or use table/graph.} \hfill \textbf{(M1)}
+
+$n > 26.9045\ldots$ \quad (or $S_{26} = 28368.8$, $S_{27} = 34092.6$)
+
+$n = 27$ \hfill \textbf{(A1)}
+
+\hfill Total [5 marks]
+
+\bigskip
+
+%% PROBLEM 4 %%
+\item Two buildings with $PA = 150$, $PB = 90$, $AB = 154$.
+
+(a) Cosine rule: \hfill \textbf{(M1)}
+
+$154^2 = 150^2 + 90^2 - 2(150)(90)\cos(\angle APB)$ \hfill \textbf{(A1)}
+
+$\cos(\angle APB) = \dfrac{150^2 + 90^2 - 154^2}{2(150)(90)}
+= \dfrac{22500 + 8100 - 23716}{27000} = \dfrac{6884}{27000}$
+
+$\angle APB = 75.2286\ldots^\circ$
+
+$\angle APB = 75.2^\circ$ (or $1.31$ radians) \hfill \textbf{(A1)}
+
+\medskip
+(b) Since both angles of elevation are $\theta$: \hfill \textbf{(M1)}
+
+$\theta = \dfrac{180^\circ - 75.2286\ldots^\circ}{2} = 52.3856\ldots^\circ$ \hfill \textbf{(M1)}
+
+$h = 150\sin\theta = 150\sin(52.3856\ldots^\circ) = 118.820\ldots$
+
+$h = 119$ m \hfill \textbf{(A1)}
+
+\hfill Total [6 marks]
+
+\bigskip
+
+%% PROBLEM 5 %%
+\item Ferris wheel: diameter 110\,m, lowest point 10\,m, period 20\,min.
+
+$h(t) = a\cos(bt) + c$
+
+Amplitude $= \dfrac{110}{2} = 55$ \hfill \textbf{(A1)}
+
+Since P starts at the lowest point: $a = -55$ \hfill \textbf{(A1)}
+
+Centre height: $c = 10 + 55 = 65$ \hfill \textbf{(A1)}
+
+$\dfrac{2\pi}{b} = 20$ \hfill \textbf{(M1)}
+
+$b = \dfrac{\pi}{10} \;(= 0.314\ldots)$ \hfill \textbf{(A1)}
+
+\hfill Total [5 marks]
+
+\bigskip
+
+%% PROBLEM 6 %%
+\item Drug decay: $A(t) = 500e^{-kt}$.
+
+(a) $A(0) = 500$ mg \hfill \textbf{(A1)}
+
+\medskip
+(b) $280 = 500e^{-3k}$ \hfill \textbf{(A1)}
+
+$k = -\dfrac{1}{3}\ln\!\left(\dfrac{280}{500}\right) = 0.193272\ldots$
+
+$k = 0.193$ \hfill \textbf{(A1)}
+
+\medskip
+(c) $500e^{-0.193272\ldots T} = 140$ \hfill \textbf{(A1)}
+
+$T = -\dfrac{1}{0.193272}\ln\!\left(\dfrac{140}{500}\right) = 6.58636\ldots$
+
+$T = 6.59$ hours \hfill \textbf{(A1)}
+
+\hfill Total [5 marks]
+
+\bigskip
+
+%% PROBLEM 7 %%
+\item Carbon-14: $A = A_0 e^{-kt}$, 100 units at death, half-life 5730 years.
+
+(a) At $t = 0$: $A = A_0 e^{0} = A_0 = 100$ \hfill \textbf{(A1)(AG)}
+
+\medskip
+(b) $50 = 100e^{-5730k}$ \hfill \textbf{(M1)}
+
+$e^{-5730k} = \dfrac{1}{2}$
+
+$-5730k = \ln\dfrac{1}{2} = -\ln 2$ \hfill \textbf{(A1)}
+
+$k = \dfrac{\ln 2}{5730}$ \hfill \textbf{(A1)(AG)}
+
+\medskip
+(c) 25\% has decayed $\Rightarrow$ 75\% remains, i.e.\ $A = 75$ \hfill \textbf{(A1)}
+
+$75 = 100e^{-(\ln 2/5730)\,t}$ \hfill \textbf{(M1)}
+
+$t = -\dfrac{5730}{\ln 2}\ln(0.75) = 2378.16\ldots$
+
+$t = 2380$ years (to the nearest 10) \hfill \textbf{(A1)}
+
+\hfill Total [7 marks]
+
+\bigskip
+
+%% PROBLEM 8 %%
+\item Kinematics: $v = \dfrac{(t^2+1)\cos t}{4}$, \; $0 \leq t \leq 3$.
+
+(a) Direction changes when $v = 0$: \hfill \textbf{(M1)}
+
+$\cos t = 0 \Rightarrow t = \dfrac{\pi}{2} = 1.57079\ldots$
+
+\emph{GDC: solve $v(t) = 0$ for $0 \leq t \leq 3$.}
+
+$t = 1.57$ s $\;\left(= \dfrac{\pi}{2}\right)$ \hfill \textbf{(A1)}
+
+\medskip
+(b) Acceleration $a(t) = v'(t)$. \hfill \textbf{(M1)}
+
+\emph{GDC: solve $v'(t) = -1.9$ for $0 \leq t \leq 3$.}
+
+$t_1 = 2.26277\ldots, \quad t_2 = 2.95736\ldots$
+
+$t = 2.26$ s, \; $t = 2.96$ s \hfill \textbf{(A1)(A1)}
+
+\medskip
+(c) \emph{GDC: The speed $|v|$ is greatest at $t = 3$.} \hfill \textbf{(A1)}
+
+$a(3) = v'(3) = -1.83778\ldots$
+
+$a = -1.84$ m\,s$^{-2}$ \hfill \textbf{(A1)}
+
+\hfill Total [7 marks]
+
+\bigskip
+
+%% PROBLEM 9 %%
+\item Kinematics:
+$v(t) = 4e^{-t/3}\cos\!\left(\dfrac{t}{2} - \dfrac{\pi}{4}\right)$,
+\; $0 \leq t \leq 4\pi$.
+
+(a) Acceleration is zero when $v'(t) = 0$. \hfill \textbf{(M1)}
+
+\emph{GDC: solve $v'(t) = 0$.}
+
+$t_1 = 0.394791\ldots$
+
+$t_1 = 0.395$ s $\;\left(= \arctan\dfrac{5}{12}\right)$ \hfill \textbf{(A1)}
+
+\medskip
+(b) Particle at rest when $v(t) = 0$. \hfill \textbf{(M1)}
+
+First zero: $t = \dfrac{3\pi}{2} = 4.71238\ldots$
+
+Second zero: $t = \dfrac{7\pi}{2} = 10.9955\ldots$
+
+$t_2 = 11.0$ s $\;\left(= \dfrac{7\pi}{2}\right)$ \hfill \textbf{(A1)}
+
+\medskip
+(c) \emph{GDC: Distance} $= \displaystyle\int_{t_1}^{t_2} |v(t)|\,\mathrm{d}t$
+\hfill \textbf{(A1)}
+
+$= \displaystyle\int_{0.395}^{4.712} v\,\mathrm{d}t
+ - \int_{4.712}^{10.996} v\,\mathrm{d}t
+= 6.538\ldots + 1.293\ldots$
+
+$= 7.83118\ldots$
+
+Distance $= 7.83$ m \hfill \textbf{(A1)}
+
+\hfill Total [6 marks]
+
+\end{enumerate}
+\end{document}
