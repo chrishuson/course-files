@@ -1,0 +1,230 @@
+\documentclass[12pt, twoside]{article}
+
+\usepackage[letterpaper, margin=1in, headsep=0.2in]{geometry}
+\setlength{\headheight}{0.6in}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[nomessages]{fp}
+\usepackage{siunitx}
+\usepackage{yhmath}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles, arrows, arrows.meta}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{venndiagram}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\raggedbottom
+\hfuzz=2mm
+\usepackage{hyperref}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usepgfplotslibrary{fillbetween}
+
+\fancyhead[LO]{AA SL 2023 May P1 TZ1}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{AA SL 2023 May P1 TZ1 (no calculator)}
+
+Full marks are not necessarily awarded for a correct answer with no working. Answers must be supported by working and/or explanations. Where an answer is incorrect, some marks may be given for a correct method, provided this is shown by written working. You are therefore advised to show all working.
+
+\subsubsection*{Section A}
+Answer all questions. Answers must be written within the answer boxes provided. Working may be continued below the lines, if necessary.
+
+\begin{enumerate}[itemsep=0.2cm]
+
+\item[1.] [Maximum mark: 5]
+
+Point $P$ has coordinates $(-3, 2)$, and point $Q$ has coordinates $(15, -8)$. Point $M$ is the midpoint of $[PQ]$.
+
+\begin{enumerate}[itemsep=0.1cm]
+    \item[(a)] Find the coordinates of $M$. \hfill [2]
+\end{enumerate}
+
+Line $L$ is perpendicular to $[PQ]$ and passes through $M$.
+
+\begin{enumerate}[itemsep=0.1cm]
+    \item[(b)] Find the gradient of $L$. \hfill [2]
+    \item[(c)] Hence, write down the equation of $L$. \hfill [1]
+\end{enumerate}
+
+\newpage
+
+\item[2.] [Maximum mark: 7]
+
+The function $f$ is defined by
+\[
+    f(x) = \frac{7x + 7}{2x - 4}
+\]
+for $x \in \mathbb{R}$, $x \neq 2$.
+
+\begin{enumerate}[itemsep=0.1cm]
+    \item[(a)] Find the zero of $f(x)$. \hfill [2]
+    \item[(b)] For the graph of $y=f(x)$, write down the equation of
+    \begin{enumerate}[itemsep=0.1cm]
+        \item[(i)] the vertical asymptote; \hfill [1]
+        \item[(ii)] the horizontal asymptote. \hfill [1]
+    \end{enumerate}
+    \item[(c)] Find $f^{-1}(x)$, the inverse function of $f(x)$. \hfill [3]
+\end{enumerate}
+
+\newpage
+
+\item[3.] [Maximum mark: 6]
+
+On a Monday at an amusement park, a sample of $40$ visitors was randomly selected as they were leaving the park. They were asked how many times that day they had been on a ride called The Dragon. This information is summarized in the following frequency table.
+
+\renewcommand{\arraystretch}{1.35}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Number of times on The Dragon} & \textbf{Frequency} \\
+\hline
+$0$ & $6$ \\
+$1$ & $16$ \\
+$2$ & $13$ \\
+$3$ & $2$ \\
+$4$ & $3$ \\
+\hline
+\end{tabular}
+\end{center}
+\renewcommand{\arraystretch}{1.0}
+
+It can be assumed that this sample is representative of all visitors to the park for the following day.
+
+\begin{enumerate}[itemsep=0.1cm]
+    \item[(a)] For the following day, Tuesday, estimate
+    \begin{enumerate}[itemsep=0.1cm]
+        \item[(i)] the probability that a randomly selected visitor will ride The Dragon;
+        \item[(ii)] the expected number of times a visitor will ride The Dragon. \hfill [4]
+    \end{enumerate}
+\end{enumerate}
+
+It is known that $1000$ visitors will attend the amusement park on Tuesday. The Dragon can carry a maximum of $10$ people each time it runs.
+
+\begin{enumerate}[itemsep=0.1cm]
+    \item[(b)] Estimate the minimum number of times The Dragon must run to satisfy demand. \hfill [2]
+\end{enumerate}
+
+\newpage
+
+\item[4.] [Maximum mark: 6]
+
+\begin{enumerate}[itemsep=0.1cm]
+    \item[(a)] Show that the equation $\cos 2x = \sin x$ can be written in the form $2\sin^2 x + \sin x - 1 = 0$. \hfill [1]
+    \item[(b)] Hence, solve $\cos 2x = \sin x$, where $-\pi \leq x \leq \pi$. \hfill [5]
+\end{enumerate}
+
+\newpage
+
+\item[5.] [Maximum mark: 6]
+
+Find the range of possible values of $k$ such that $e^{2x} + \ln k = 3e^x$ has at least one real solution.
+
+\newpage
+
+\item[6.] [Maximum mark: 6]
+
+The function $f$ is defined by $f(x) = \sin qx$, where $q > 0$. The following diagram shows part of the graph of $f$ for $0 \leq x \leq 4m$, where $x$ is in radians. There are $x$-intercepts at $x = 0$, $2m$ and $4m$.
+
+\begin{center}
+\includegraphics[width=0.82\textwidth]{figures/q6_graph.png}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+    \item[(a)] Find an expression for $m$ in terms of $q$. \hfill [2]
+\end{enumerate}
+
+The function $g$ is defined by
+\[
+    g(x) = 3\sin\!\left(\frac{2qx}{3}\right), \qquad 0 \leq x \leq 6m.
+\]
+
+\begin{enumerate}[itemsep=0.1cm]
+    \item[(b)] On the axes above, sketch the graph of $g$. \hfill [4]
+\end{enumerate}
+
+\newpage
+
+\subsubsection*{Section B}
+Answer all questions in the answer booklet provided. Please start each question on a new page.
+
+\item[7.] [Maximum mark: 13]
+
+The function $h$ is defined by $h(x) = 2xe^x + 3$, for $x \in \mathbb{R}$. The following diagram shows part of the graph of $h$, which has a local minimum at point $A$.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{figures/q7_graph.png}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+    \item[(a)] Find the value of the $y$-intercept. \hfill [2]
+    \item[(b)] Find $h'(x)$. \hfill [2]
+    \item[(c)] Hence, find the coordinates of $A$. \hfill [5]
+    \item[(d)]
+    \begin{enumerate}[itemsep=0.1cm]
+        \item[(i)] Show that $h''(x) = (2x+4)e^x$. \hfill [2]
+        \item[(ii)] Find the values of $x$ for which the graph of $h$ is concave-up. \hfill [2]
+    \end{enumerate}
+\end{enumerate}
+
+\newpage
+
+\item[8.] [Maximum mark: 14]
+
+Consider the arithmetic sequence $u_1, u_2, u_3, \ldots$.
+
+The sum of the first $n$ terms of this sequence is given by $S_n = n^2 + 4n$.
+
+\begin{enumerate}[itemsep=0.1cm]
+    \item[(a)]
+    \begin{enumerate}[itemsep=0.1cm]
+        \item[(i)] Find the sum of the first five terms.
+        \item[(ii)] Given that $S_6 = 60$, find $u_6$. \hfill [4]
+    \end{enumerate}
+    \item[(b)] Find $u_1$. \hfill [2]
+    \item[(c)] Hence or otherwise, write an expression for $u_n$ in terms of $n$. \hfill [3]
+\end{enumerate}
+
+Consider a geometric sequence, $v_n$, where $v_2 = u_1$ and $v_4 = u_6$.
+
+\begin{enumerate}[itemsep=0.1cm]
+    \item[(d)] Find the possible values of the common ratio, $r$. \hfill [3]
+    \item[(e)] Given that $v_{99} < 0$, find $v_5$. \hfill [2]
+\end{enumerate}
+
+\newpage
+
+\item[9.] [Maximum mark: 17]
+
+An object moves along a straight line. Its velocity, $v\,\mathrm{m}\,\mathrm{s}^{-1}$, at time $t$ seconds is given by
+\[
+    v(t) = -t^3 + \frac{7}{2}t^2 - 2t + 6, \qquad 0 \leq t \leq 4.
+\]
+The object first comes to rest at $t = k$.
+
+The graph of $v$ is shown in the following diagram.
+
+\begin{center}
+\includegraphics[width=0.56\textwidth]{figures/q9_graph.png}
+\end{center}
+
+At $t=0$, the object is at the origin.
+
+\begin{enumerate}[itemsep=0.1cm]
+    \item[(a)] Find the displacement of the object from the origin at $t=1$. \hfill [5]
+    \item[(b)] Find an expression for the acceleration of the object. \hfill [2]
+    \item[(c)] Hence, find the greatest speed reached by the object before it comes to rest. \hfill [5]
+    \item[(d)] Find the greatest speed reached by the object for $0 \leq t \leq 4$. \hfill [2]
+    \item[(e)] Write down an expression that represents the distance travelled by the object while its speed is increasing. Do not evaluate the expression. \hfill [3]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
