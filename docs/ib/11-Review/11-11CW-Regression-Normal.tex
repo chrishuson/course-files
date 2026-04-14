@@ -1,0 +1,73 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math: Practice \\* 14 April 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize First \& Last name:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{11.11 Classwork: Regression and Normal Distribution (calculator)}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Linear Regression [7 marks] ---
+\item[1.] [Maximum mark: 7]
+
+A sports scientist is studying the relationship between the age of an athlete, $a$ years,
+and their reaction time, $r$ milliseconds. The following table shows the data collected
+from eight athletes.
+
+\renewcommand{\arraystretch}{1.2}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+$a$ & 18 & 21 & 25 & 28 & 33 & 36 & 40 & 45 \\
+\hline
+$r$ & 155 & 159 & 176 & 178 & 198 & 199 & 215 & 226 \\
+\hline
+\end{tabular}
+\end{center}
+\renewcommand{\arraystretch}{1.0}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item[(a)] Find the regression line of $r$ on $a$ in the form $r = ma + c$,
+  where $m$ and $c$ are constants.
+  Give $m$ and $c$ correct to three significant figures. \hfill [3]
+  \item[(b)] Write down the value of Pearson's product-moment correlation
+  coefficient, $r$. \hfill [1]
+  \item[(c)] Use the regression line to estimate the reaction time
+  of an athlete who is 30 years old. \hfill [2]
+  \item[(d)] State whether this estimate is an example of interpolation or
+  extrapolation. Give a reason for your answer. \hfill [1]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,13);
+  \foreach \y in {1,2,...,12} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Normal + Binomial + Conditional [8 marks] ---
+\item[2.] [Maximum mark: 8]
+
+The time, $T$ minutes, that customers wait in line at a coffee shop
+is normally distributed with a mean of 4.5 minutes and a standard deviation
+of 1.2 minutes.
+
+\begin{enumerate}[itemsep=0.25cm]
+  \item[(a)] Find $\mathrm{P}(T > 6)$. \hfill [2]
+  \item[(b)] Find $\mathrm{P}(3 < T < 6)$. \hfill [2]
+  \item[(c)] On a particular morning, 10 customers each wait in line independently.
+  Find the probability that exactly 2 of them wait more than 6 minutes. \hfill [2]
+  \item[(d)] A customer is selected at random. Given that they waited more than
+  3 minutes, find the probability that they waited more than 6 minutes. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,13);
+  \foreach \y in {1,2,...,12} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

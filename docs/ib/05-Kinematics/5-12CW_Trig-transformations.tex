@@ -1,0 +1,138 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{pgfplots}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=1.16}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math: Calculus \\* 14 April 2026}
+
+\begin{document}
+\subsubsection*{5.12 Classwork: Trigonometric Transformations \& Derivatives
+(no calculator)}
+
+\begin{enumerate}
+
+%--- Problem 1: Ferris wheel transformation [7 marks] ---
+\item A Ferris wheel has a diameter of 80 metres. The lowest point of the wheel
+is 5 metres above the ground. The wheel completes one full revolution every
+16 minutes. A seat starts at the lowest point at time $t = 0$.
+
+The height, $h$ metres, of the seat above the ground after $t$ minutes is modelled by
+$$h(t) = a\cos(bt) + d$$
+where $a$, $b$, $d \in \mathbb{R}$.
+
+\begin{enumerate}
+\item[(a)] Find the value of $a$, $b$, and $d$. \hfill [4]
+\vspace{3.5cm}
+\item[(b)] Find the height of the seat after 4 minutes. \hfill [2]
+\vspace{2cm}
+\item[(c)] Find $h'(t)$ and state what it represents in context. \hfill [2]
+\end{enumerate}
+\vspace{2.5cm}
+
+\newpage
+
+%--- Problem 2: Transformations of sin graph [8 marks] ---
+\item The graph of $y = \sin x$ is transformed to give the graph of
+$y = 3\sin\!\left(2\!\left(x - \dfrac{\pi}{4}\right)\right) + 1$.
+
+\begin{enumerate}
+\item[(a)] Describe the following transformations applied to $y = \sin x$:
+\begin{enumerate}
+\item[(i)] the vertical stretch, \hfill [1]
+\item[(ii)] the horizontal compression, \hfill [1]
+\item[(iii)] the horizontal translation, \hfill [1]
+\item[(iv)] the vertical translation. \hfill [1]
+\end{enumerate}
+\vspace{1cm}
+\item[(b)] For the transformed function, write down:
+\begin{enumerate}
+\item[(i)] the amplitude, \hfill [1]
+\item[(ii)] the period. \hfill [1]
+\end{enumerate}
+\vspace{1cm}
+\item[(c)] On the axes below, sketch the graph of
+$y = 3\sin\!\left(2\!\left(x - \dfrac{\pi}{4}\right)\right) + 1$
+for $0 \leq x \leq 2\pi$. Clearly label any intercepts and maximum/minimum points. \hfill [4]
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    width=14cm, height=7cm,
+    axis lines=middle,
+    xlabel={$x$}, ylabel={$y$},
+    xmin=-0.3, xmax=7,
+    ymin=-3, ymax=5,
+    xtick={0.7854, 1.5708, 2.3562, 3.1416, 3.927, 4.7124, 5.4978, 6.2832},
+    xticklabels={$\frac{\pi}{4}$, $\frac{\pi}{2}$, $\frac{3\pi}{4}$, $\pi$,
+      $\frac{5\pi}{4}$, $\frac{3\pi}{2}$, $\frac{7\pi}{4}$, $2\pi$},
+    ytick={-2, -1, 0, 1, 2, 3, 4},
+    minor y tick num=0,
+    grid=major,
+    grid style={dotted, gray!50},
+    tick label style={font=\small},
+    every axis x label/.style={at={(ticklabel* cs:1)}, anchor=west},
+    every axis y label/.style={at={(ticklabel* cs:1)}, anchor=south},
+]
+% Comment: solution curve
+%\addplot[thick, domain=0:6.2832, samples=200]
+%    {3*sin(deg(2*(x - 0.7854))) + 1};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{enumerate}
+
+\newpage
+
+%--- Problem 3: Derivatives of trig functions [7 marks] ---
+\item Find the derivative of each function.
+
+\begin{enumerate}
+\item[(a)] $f(x) = 3\sin x + 2\cos x$ \hfill [2]
+\vspace{3cm}
+\item[(b)] $g(x) = 4\cos(3x)$ \hfill [2]
+\vspace{3cm}
+\item[(c)] $h(x) = \sin^2 x$ \hfill [3]
+
+\textit{Hint: Write $\sin^2 x = (\sin x)^2$ and use the chain rule.}
+\vspace{4cm}
+\end{enumerate}
+
+\item The function $f$ is defined by $f(x) = 2\sin(3x) - 1$ for $0 \leq x \leq \pi$.
+
+\begin{enumerate}
+\item[(a)] Find $f'(x)$. \hfill [2]
+\vspace{2.5cm}
+\item[(b)] Find the $x$-coordinates of the points where $f$ has a maximum and a
+minimum value. \hfill [3]
+\vspace{3cm}
+\item[(c)] Find the maximum and minimum values of $f$. \hfill [2]
+\end{enumerate}
+
+\newpage
+
+%--- Problem 4: Trig equation + transformation [6 marks] ---
+\item The function $g$ is defined by $g(x) = a\sin(bx) + c$ for
+$0 \leq x \leq 2\pi$, where $a$, $b$, $c \in \mathbb{Z}^+$.
+The graph of $g$ has a maximum value of 7, a minimum value of 1,
+and a period of $\dfrac{2\pi}{3}$.
+
+\begin{enumerate}
+\item[(a)] Find the values of $a$, $b$, and $c$. \hfill [3]
+\vspace{3cm}
+\item[(b)] Find $g'\!\left(\dfrac{\pi}{6}\right)$. \hfill [3]
+\end{enumerate}
+\vspace{3.5cm}
+
+\item Consider the function $f(x) = \cos 2x + 2\sin x$ for $0 \leq x \leq 2\pi$.
+
+\begin{enumerate}
+\item[(a)] Show that $f'(x) = 2\cos x(1 - 2\sin x)$. \hfill [3]
+\vspace{4cm}
+\item[(b)] Hence find the values of $x$ for which $f'(x) = 0$. \hfill [3]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
