@@ -1,0 +1,93 @@
+[
+  {
+    "problem_number": 1,
+    "problem_id": "AA_SL_2023_May_P2_TZ1_Q02",
+    "source": "AA SL 2023 May Paper 2 TZ1, Question 2",
+    "total_marks": 6,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Annual rate of depreciation",
+        "expected": {"answer": "9%"},
+        "tolerance": "Accept 0.09 or 9%.",
+        "notes": "A1 for 9% (or 0.09). Accept '1 - 0.91 = 0.09'."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Value of car on 1 January 2028",
+        "expected": {"answer": 24961},
+        "tolerance": "24961 (3 s.f.). Accept 24900 to nearest hundred.",
+        "notes": "M1 for substituting t = 5. A1 for correct answer (3 s.f.)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find extra amount M",
+        "expected": {
+          "alvie_account": 17389,
+          "answer": 7570
+        },
+        "tolerance": "7570 (3 s.f.). Follow through from parts (a) and (b).",
+        "notes": "M1 for compound interest setup 15000(1.03)^5. A1 for Alvie's account value. A1 for M."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "problem_id": "AA_SL_2021_May_P2_TZ1_Q07",
+    "source": "AA SL 2021 May Paper 2 TZ1, Question 7",
+    "total_marks": 16,
+    "parts": [
+      {
+        "label": "a_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Amelia's investment after 5 years",
+        "expected": {"answer": 12600},
+        "tolerance": "12600 (nearest hundred).",
+        "notes": "M1 for 9000(1.07)^5. A1 for 12600."
+      },
+      {
+        "label": "a_ii",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Years for Amelia to reach target",
+        "expected": {"answer": 12},
+        "tolerance": "12 years (must be integer, rounded up).",
+        "notes": "M1 for equation or log approach. A1 for n = 11.8. A1 for 12 years."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Minimum r for Bill (monthly compounding)",
+        "expected": {"answer": 8.02},
+        "tolerance": "8.02 (to 2 d.p., rounded up).",
+        "notes": "M1 for monthly compounding setup. A1 for solving. A1 for 8.02."
+      },
+      {
+        "label": "c_i",
+        "marks": 4,
+        "mark_codes": ["M1", "M1", "A1", "R1"],
+        "description": "Show Chris never reaches target with $9000",
+        "expected": {"S_infinity": 18000},
+        "tolerance": "Show that.",
+        "notes": "M1 for geometric series. M1 for S_infinity formula. A1 for 18000. R1 for conclusion (18000 < 20000)."
+      },
+      {
+        "label": "c_ii",
+        "marks": 4,
+        "mark_codes": ["M1", "M1", "A1", "A1"],
+        "description": "Initial deposit for 5-year target",
+        "expected": {"answer": 10323},
+        "tolerance": "10323 (nearest dollar, rounded up).",
+        "notes": "M1 for S_5 formula. M1 for setting equal to 20000. A1 for solving. A1 for 10323."
+      }
+    ]
+  }
+]

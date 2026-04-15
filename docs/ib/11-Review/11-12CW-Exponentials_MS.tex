@@ -1,0 +1,110 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math: Practice \\* 15 April 2026}
+\fancyhead[RO]{Markscheme}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{11.12 Classwork: Exponential Functions and Compound Interest (calculator) --- Markscheme}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Car depreciation + compound interest [6 marks] ---
+%--- Source: AA SL 2023 May P2 TZ1 Q02 ---
+\item[1.] [Maximum mark: 6]
+
+The value of a car is given by the function $C = 40\,000(0.91)^t$,
+where $t$ is in years since 1 January 2023 and $C$ is in USD (\$).
+
+\begin{enumerate}[itemsep=0.3cm]
+  \item Write down the annual rate of depreciation of the car. \hfill [1]
+
+  $1 - 0.91 = 0.09 = 9\,\%$ \hfill \textbf{(A1)}
+
+  \item Find the value of the car on 1 January 2028. \hfill [2]
+
+  $t = 5$: $C = 40\,000(0.91)^5$ \hfill \textbf{(M1)}
+
+  $= 40\,000 \times 0.62403\ldots = 24\,961.29\ldots \approx \$24\,961$ (3 s.f.) \hfill \textbf{(A1)}
+
+  \item[(c)] Find the value of $M$. \hfill [3]
+
+  \textit{Alvie's account after 5 years:}
+
+  $A = 15\,000(1.03)^5 = 15\,000 \times 1.15927\ldots = 17\,389.11\ldots$ \hfill \textbf{(M1)(A1)}
+
+  $M = 24\,961.29\ldots - 17\,389.11\ldots = 7572.17\ldots \approx \$7570$ (3 s.f.) \hfill \textbf{(A1)}
+
+  \textit{Follow through from parts (a) and (b).}
+\end{enumerate}
+
+\newpage
+
+%--- Problem 2: Compound interest + geometric series [16 marks] ---
+%--- Source: AA SL 2021 May P2 TZ1 Q07 ---
+\item[2.] [Maximum mark: 16]
+
+Two friends Amelia and Bill, each set themselves a target of saving \$20\,000.
+They each have \$9000 to invest.
+
+\begin{enumerate}[itemsep=0.3cm]
+  \item Amelia invests her \$9000 at 7\,\% per annum compounded annually.
+
+  \begin{enumerate}[itemsep=0.2cm]
+    \item[(i)] $A = 9000(1.07)^5 = 9000 \times 1.40255\ldots$ \hfill \textbf{(M1)}
+
+    $= 12\,622.97\ldots \approx \$12\,600$ \hfill \textbf{(A1)}
+
+    \item[(ii)] $9000(1.07)^n = 20\,000$ \hfill \textbf{(M1)}
+
+    $(1.07)^n = \dfrac{20\,000}{9000} = 2.2222\ldots$
+
+    $n = \dfrac{\ln 2.2222\ldots}{\ln 1.07} = \dfrac{0.7985\ldots}{0.06766\ldots} = 11.80\ldots$ \hfill \textbf{(A1)}
+
+    $n = 12$ years \hfill \textbf{(A1)}
+
+    \textit{Award \textbf{(M1)} for setting up the equation.
+    Final answer must be a whole number (round up).}
+  \end{enumerate}
+
+  \item Bill invests \$9000 at $r$\,\% compounded monthly. \hfill [3]
+
+  $9000\left(1 + \dfrac{r}{1200}\right)^{120} = 20\,000$ \hfill \textbf{(M1)}
+
+  $\left(1 + \dfrac{r}{1200}\right)^{120} = \dfrac{20\,000}{9000} = 2.2222\ldots$
+
+  $1 + \dfrac{r}{1200} = (2.2222\ldots)^{1/120} = 1.006681\ldots$ \hfill \textbf{(A1)}
+
+  $r = 1200 \times 0.006681\ldots = 8.02\ldots$
+
+  $r = 8.02$ (to 2 d.p.) \hfill \textbf{(A1)}
+
+  \textit{Accept 8.02. Must be to 2 decimal places as stated.}
+
+  \item Chris: deposits $a$ initially, then $\frac{a}{2}$, $\frac{a}{4}$, $\frac{a}{8}$, \ldots\
+  each year. No interest.
+
+  \begin{enumerate}[itemsep=0.2cm]
+    \item[(i)] Geometric series with $u_1 = 9000$, $r = \frac{1}{2}$. \hfill \textbf{(M1)}
+
+    $S_\infty = \dfrac{9000}{1 - \frac{1}{2}} = \dfrac{9000}{\frac{1}{2}} = 18\,000$ \hfill \textbf{(M1)(A1)}
+
+    Since $S_\infty = 18\,000 < 20\,000$, Chris can never reach
+    the target. \hfill \textbf{(R1)(AG)}
+
+    \item[(ii)] After 5 years (deposits at $t = 0, 1, 2, 3, 4$), total is: \hfill \textbf{(M1)}
+
+    $S_5 = \dfrac{a(1 - (0.5)^5)}{1 - 0.5} = \dfrac{a(1 - 0.03125)}{0.5}
+    = \dfrac{0.96875a}{0.5} = 1.9375a$ \hfill \textbf{(M1)(A1)}
+
+    $1.9375a = 20\,000 \implies a = \dfrac{20\,000}{1.9375} = 10\,322.58\ldots$
+
+    $a = \$10\,323$ (to nearest dollar) \hfill \textbf{(A1)}
+
+    \textit{Must round up to ensure target is reached.}
+  \end{enumerate}
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
