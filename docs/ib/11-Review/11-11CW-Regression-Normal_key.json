@@ -1,0 +1,115 @@
+[
+  {
+    "problem_number": 1,
+    "problem_id": "custom_regression_reaction_time",
+    "source": "original (modeled on IB AA SL P2 regression style)",
+    "total_marks": 7,
+    "answer_box": {"x_right": 430, "y_top": 380, "y_bottom": 748},
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Find regression line r = ma + c (3 s.f.)",
+        "expected": {
+          "m": 2.70,
+          "c": 105,
+          "equation": "r = 2.70a + 105"
+        },
+        "tolerance": "3 significant figures",
+        "notes": "A1 for m, A1 for c, A1 for equation in correct form. Accept m = 2.70 (3 s.f.) and c = 105 (3 s.f.)."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down Pearson's r",
+        "expected": {
+          "r": 0.994
+        },
+        "tolerance": "3 significant figures: 0.994",
+        "notes": "A1 for correct value to 3 s.f. Accept full GDC display (e.g. 0.993676) shown as working, but final answer must be 0.994."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Estimate reaction time at a = 30",
+        "expected": {
+          "substitution": "r = 2.70(30) + 105",
+          "answer": 186
+        },
+        "tolerance": "186 (using rounded values) or 186.0 (using unrounded m, c). Accept 3 s.f.",
+        "notes": "M1 for substituting a = 30 into their regression equation. A1 for correct answer. Follow through from their m and c."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["R1"],
+        "description": "Interpolation or extrapolation with reason",
+        "expected": {
+          "answer": "Interpolation",
+          "reason": "30 is within the data range (18 to 45)"
+        },
+        "notes": "R1 for 'interpolation' with correct reason referencing the data range. Do not award if reason is missing."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "problem_id": "custom_normal_binomial_conditional",
+    "source": "original (modeled on IB AA SL P2 Normal+Binomial pipeline)",
+    "total_marks": 8,
+    "answer_box": {"x_right": 430, "y_top": 300, "y_bottom": 668},
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find P(T > 6)",
+        "expected": {
+          "distribution": "T ~ N(4.5, 1.2^2)",
+          "answer": 0.106
+        },
+        "tolerance": "0.106 (3 s.f.). Accept full GDC display as working.",
+        "notes": "M1 for correct probability setup or GDC input. A1 for correct answer."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find P(3 < T < 6)",
+        "expected": {
+          "answer": 0.789
+        },
+        "tolerance": "0.789 (3 s.f.). Accept full GDC display as working.",
+        "notes": "M1 for correct approach (difference or direct GDC). A1 for correct answer."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Binomial: P(exactly 2 of 10 wait > 6 min)",
+        "expected": {
+          "distribution": "X ~ B(10, 0.1056)",
+          "answer": 0.206
+        },
+        "tolerance": "0.206 (3 s.f.). Accept full GDC display as working.",
+        "notes": "M1 for recognizing binomial with n=10 and p from part (a). A1 for correct answer. Follow through from part (a)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Conditional: P(T > 6 | T > 3)",
+        "expected": {
+          "formula": "P(T > 6) / P(T > 3)",
+          "P_T_gt_3": 0.894,
+          "answer": 0.118
+        },
+        "tolerance": "0.118 (3 s.f.). Accept full GDC display as working.",
+        "notes": "M1 for correct conditional probability formula. A1 for correct answer."
+      }
+    ]
+  }
+]
