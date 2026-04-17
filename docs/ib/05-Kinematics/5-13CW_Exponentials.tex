@@ -1,0 +1,52 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 15 April 2026}
+
+\begin{document}
+\subsubsection*{5.13 Classwork: Exponential Differentiation (no calculator)}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Chain rule with e^(x^2+1) [4 marks] ---
+%--- Source: AA SL 2022 Nov P1 Q02 ---
+\item[1.] [Maximum mark: 4]
+
+The function $g$ is defined by $g(x) = e^{x^2 + 1}$, where $x \in \mathbb{R}$.
+
+Find $g'(-1)$.
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,5);
+  \foreach \y in {1,2,...,4} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+%--- Problem 2: Quotient rule with ln x / x^4 [16 marks] ---
+%--- Source: AA SL 2021 May P1 TZ1 Q08 ---
+\item[2.] [Maximum mark: 16]
+
+Let $y = \dfrac{\ln x}{x^4}$ for $x > 0$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Show that $\dfrac{\mathrm{d}y}{\mathrm{d}x} = \dfrac{1 - 4\ln x}{x^5}$. \hfill [3]
+\end{enumerate}
+
+Consider the function defined by $f(x) = \dfrac{\ln x}{x^4}$ for $x > 0$
+and its graph $y = f(x)$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item[(b)] The graph of $f$ has a horizontal tangent at point $P$.
+  Find the coordinates of $P$. \hfill [5]
+  \item[(c)] Given that $f''(x) = \dfrac{20\ln x - 9}{x^6}$, show that $P$
+  is a local maximum point. \hfill [3]
+  \item[(d)] Solve $f(x) > 0$ for $x > 0$. \hfill [2]
+  \item[(e)] Sketch the graph of $f$, showing clearly the value of the
+  $x$-intercept and the approximate position of point $P$. \hfill [3]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}

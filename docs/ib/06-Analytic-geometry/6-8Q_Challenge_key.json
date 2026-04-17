@@ -1,0 +1,164 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 7,
+    "parts": [
+      {
+        "label": "a_i",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "x-intercepts of f(x) = -2(x+2)(x-4)",
+        "expected": {"answer": "x = -2 and x = 4"},
+        "tolerance": "Accept (-2, 0) and (4, 0) or just x = -2, x = 4.",
+        "notes": "A1 for each correct value."
+      },
+      {
+        "label": "a_ii",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Coordinates of the vertex",
+        "expected": {"answer": "(1, 18)"},
+        "tolerance": "Accept from axis of symmetry or completing the square.",
+        "notes": "M1 for axis of symmetry x = (-2+4)/2 = 1. A1 for f(1) = 18. A1 for (1, 18)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Values of h and k in f(x) = -2(x-h)^2 + k",
+        "expected": {"answer": "h = 1, k = 18"},
+        "notes": "A1 for h = 1. A1 for k = 18. Follow through from (a)(ii)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 7,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Show that x^2 - mx + 9 = 0 at intersection",
+        "expected": {"answer": "x^2 - mx + 9 = 0"},
+        "tolerance": "Show that (answer given). Must equate x^2 + 9 = mx and rearrange.",
+        "notes": "A1 for correct algebraic rearrangement to AG."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Discriminant in terms of m",
+        "expected": {"answer": "m^2 - 36"},
+        "notes": "A1 for m^2 - 36."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Values of m for tangency",
+        "expected": {"answer": "m = 6 and m = -6"},
+        "tolerance": "Accept m = ±6.",
+        "notes": "M1 for setting discriminant = 0. A1 for m = ±6."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Coordinates of each point of tangency",
+        "expected": {"answer": "(3, 18) and (-3, 18)"},
+        "notes": "M1 for substituting m into x^2 - mx + 9 = 0. A1 for (3, 18). A1 for (-3, 18)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 7,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Write f(x) = 2x^2 - 8x + 3 in vertex form a(x-h)^2 + k",
+        "expected": {"answer": "2(x - 2)^2 - 5"},
+        "notes": "M1 for factoring 2 from first two terms. M1 for completing the square inside. A1 for 2(x-2)^2 - 5."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Coordinates of the vertex",
+        "expected": {"answer": "(2, -5)"},
+        "notes": "A1 for (2, -5). Follow through from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Discriminant of f(x) = 0",
+        "expected": {"answer": "40"},
+        "tolerance": "Accept Delta = 40 or discriminant = 40.",
+        "notes": "A1 for Delta = (-8)^2 - 4(2)(3) = 64 - 24 = 40."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["A1", "R1"],
+        "description": "Number of x-intercepts with justification",
+        "expected": {"answer": "Two x-intercepts"},
+        "tolerance": "Must state number AND justify using discriminant.",
+        "notes": "A1 for stating two x-intercepts. R1 for justification that Delta = 40 > 0 implies two distinct real roots."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 8,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show that (x+3) is a factor of p(x) = 2x^3 + x^2 - 13x + 6",
+        "expected": {"answer": "p(-3) = 0"},
+        "tolerance": "Show that (answer given). Must evaluate p(-3) and conclude by factor theorem.",
+        "notes": "M1 for substituting x = -3. A1 for showing p(-3) = -54 + 9 + 39 + 6 = 0 with conclusion."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Express p(x) = (x+3)(ax^2 + bx + c)",
+        "expected": {"answer": "(x + 3)(2x^2 - 5x + 2)"},
+        "tolerance": "Accept a = 2, b = -5, c = 2 stated separately.",
+        "notes": "M1 for polynomial division or inspection. A1 for correct quotient 2x^2 - 5x + 2."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Factorise p(x) completely into three linear factors",
+        "expected": {"answer": "(x + 3)(2x - 1)(x - 2)"},
+        "notes": "M1 for factoring 2x^2 - 5x + 2. A1 for (x + 3)(2x - 1)(x - 2)."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "All solutions to p(x) = 0",
+        "expected": {"answer": "x = -3, x = 1/2, x = 2"},
+        "tolerance": "Accept x = 0.5 for x = 1/2.",
+        "notes": "A1 for all three correct values."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "y-intercept of y = p(x)",
+        "expected": {"answer": "(0, 6)"},
+        "tolerance": "Accept y = 6 or 6.",
+        "notes": "A1 for 6."
+      }
+    ]
+  }
+]

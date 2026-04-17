@@ -1,0 +1,158 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 15 April 2026}
+
+\begin{document}
+\subsubsection*{5.13 Classwork: Exponential Differentiation --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Chain rule with e^(x^2+1) [4 marks] ---
+%--- Source: AA SL 2022 Nov P1 Q02 ---
+\item[1.] [Maximum mark: 4]
+
+The function $g$ is defined by $g(x) = e^{x^2 + 1}$, where $x \in \mathbb{R}$.
+Find $g'(-1)$.
+
+\textbf{Solution:}
+
+Differentiate using the chain rule:
+
+$g'(x) = e^{x^2 + 1} \cdot 2x$ \hfill \textbf{(M1)(A1)}
+
+\smallskip
+Substitute $x = -1$:
+
+$g'(-1) = e^{(-1)^2 + 1} \cdot 2(-1) = e^2 \cdot (-2)$ \hfill \textbf{(A1)}
+
+$g'(-1) = -2e^2$ \hfill \textbf{(A1)}
+
+\bigskip
+
+\hrule
+
+\bigskip
+
+%--- Problem 2: Quotient rule with ln x / x^4 [16 marks] ---
+%--- Source: AA SL 2021 May P1 TZ1 Q08 ---
+\item[2.] [Maximum mark: 16]
+
+Let $y = \dfrac{\ln x}{x^4}$ for $x > 0$.
+
+\medskip
+
+\textbf{(a)} Show that $\dfrac{\mathrm{d}y}{\mathrm{d}x}
+= \dfrac{1 - 4\ln x}{x^5}$. \hfill [3]
+
+\textbf{Solution:}
+
+Using the quotient rule with $u = \ln x$, $v = x^4$:
+
+$\dfrac{\mathrm{d}y}{\mathrm{d}x}
+= \dfrac{\frac{1}{x} \cdot x^4 - \ln x \cdot 4x^3}{(x^4)^2}$ \hfill \textbf{(M1)}
+
+$= \dfrac{x^3 - 4x^3 \ln x}{x^8}$ \hfill \textbf{(A1)}
+
+$= \dfrac{x^3(1 - 4\ln x)}{x^8}
+= \dfrac{1 - 4\ln x}{x^5}$ \hfill \textbf{(A1)(AG)}
+
+\newpage
+
+\textbf{(b)} The graph of $f$ has a horizontal tangent at point $P$.
+Find the coordinates of $P$. \hfill [5]
+
+\textbf{Solution:}
+
+Horizontal tangent: $f'(x) = 0$ \hfill \textbf{(M1)}
+
+$\dfrac{1 - 4\ln x}{x^5} = 0$
+
+Since $x^5 > 0$ for $x > 0$: \quad $1 - 4\ln x = 0$ \hfill \textbf{(A1)}
+
+$\ln x = \dfrac{1}{4} \implies x = e^{1/4}$ \hfill \textbf{(A1)}
+
+Substitute into $f(x)$: \hfill \textbf{(M1)}
+
+$y = \dfrac{\ln(e^{1/4})}{(e^{1/4})^4}
+= \dfrac{\frac{1}{4}}{e} = \dfrac{1}{4e}$
+
+$P = \left(e^{1/4},\; \dfrac{1}{4e}\right)$ \hfill \textbf{(A1)}
+
+\bigskip
+
+\textbf{(c)} Given that $f''(x) = \dfrac{20\ln x - 9}{x^6}$,
+show that $P$ is a local maximum point. \hfill [3]
+
+\textbf{Solution:}
+
+Substitute $x = e^{1/4}$ into $f''(x)$:
+\quad $\ln(e^{1/4}) = \dfrac{1}{4}$ \hfill \textbf{(M1)}
+
+$f''(e^{1/4}) = \dfrac{20 \cdot \frac{1}{4} - 9}{(e^{1/4})^6}
+= \dfrac{5 - 9}{e^{3/2}} = \dfrac{-4}{e^{3/2}}$ \hfill \textbf{(A1)}
+
+Since $\dfrac{-4}{e^{3/2}} < 0$, $P$ is a local maximum point. \hfill \textbf{(R1)(AG)}
+
+\bigskip
+
+\textbf{(d)} Solve $f(x) > 0$ for $x > 0$. \hfill [2]
+
+\textbf{Solution:}
+
+$\dfrac{\ln x}{x^4} > 0$
+
+Since $x^4 > 0$ for all $x > 0$, the sign depends on $\ln x$. \hfill \textbf{(R1)}
+
+$\ln x > 0 \iff x > 1$
+
+Answer: $x > 1$ \hfill \textbf{(A1)}
+
+\newpage
+
+\textbf{(e)} Sketch the graph of $f$, showing clearly the value of the
+$x$-intercept and the approximate position of point $P$. \hfill [3]
+
+\textbf{Solution:}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  axis lines=middle,
+  xlabel={$x$},
+  ylabel={$y$},
+  xmin=0, xmax=5,
+  ymin=-1.1, ymax=0.6,
+  xtick={1,2,3,4,5},
+  ytick={-1,-0.5,0, 0.5},
+  width=10cm,
+  height=12cm,
+  every axis x label/.style={at={(ticklabel* cs:1.0)}, anchor=west},
+  every axis y label/.style={at={(ticklabel* cs:1.0)}, anchor=south},
+]
+  \addplot[thick, domain=0.65:5, samples=100] {ln(x)/(x^4)};
+  % x-intercept
+  \node[circle, fill, inner sep=1.8pt] at (axis cs:1,0) {};
+  \node[anchor=south east] at (axis cs:1.05,0.01) {$(1, 0)$};
+  % Maximum point P
+  \node[circle, fill, inner sep=1.8pt] at (axis cs:1.284,0.092) {};
+  \node[anchor=south west] at (axis cs:1.6,0.1) {$P\!\left(e^{1/4},
+    \frac{1}{4e}\right)$};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\textbf{(A1)} for correct general shape (increasing from negative,
+crossing axis, reaching max, decreasing toward~$0$)
+
+\textbf{(A1)} for $x$-intercept at $x = 1$
+
+\textbf{(A1)} for point $P$ approximately positioned
+(just right of $x = 1$, small positive $y$)
+
+\end{enumerate}
+\end{document}

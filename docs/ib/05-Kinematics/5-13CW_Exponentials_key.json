@@ -1,0 +1,72 @@
+[
+  {
+    "problem_number": 1,
+    "problem_id": "AA_SL_2022_Nov_P1_Q02",
+    "source": "AA SL 2022 Nov Paper 1, Question 2",
+    "total_marks": 4,
+    "parts": [
+      {
+        "label": null,
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "A1", "A1"],
+        "description": "Find g'(-1) for g(x) = e^(x^2+1)",
+        "expected": {"answer": "-2e^2"},
+        "tolerance": "Exact value -2e^2 required. Accept -2e^2 only.",
+        "notes": "M1 for chain rule attempt. A1 for g'(x) = 2x e^(x^2+1). A1 for correct substitution x = -1. A1 for -2e^2."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "problem_id": "AA_SL_2021_May_P1_TZ1_Q08",
+    "source": "AA SL 2021 May Paper 1 TZ1, Question 8",
+    "total_marks": 16,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Show that dy/dx = (1 - 4 ln x) / x^5",
+        "expected": {"answer": "(1 - 4 ln x) / x^5"},
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for quotient rule (or product rule with x^{-4}) attempt. A1 for correct derivatives: d/dx(ln x) = 1/x and d/dx(x^4) = 4x^3. A1 for correct algebraic simplification to given answer. Answer given (AG)."
+      },
+      {
+        "label": "b",
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "A1", "M1", "A1"],
+        "description": "Find coordinates of point P (horizontal tangent)",
+        "expected": {"x": "e^(1/4)", "y": "1/(4e)", "answer": "(e^(1/4), 1/(4e))"},
+        "tolerance": "Exact values required. Accept e^(0.25) for x.",
+        "notes": "M1 for setting f'(x) = 0. A1 for 1 - 4 ln x = 0 leading to ln x = 1/4. A1 for x = e^(1/4). M1 for substituting into f(x). A1 for y = 1/(4e)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "R1"],
+        "description": "Show that P is a local maximum",
+        "expected": {"f_double_prime": "-4/e^(3/2)"},
+        "tolerance": "Show that (answer given). Must include conclusion.",
+        "notes": "M1 for substituting x = e^(1/4) into f''(x). A1 for f''(e^(1/4)) = -4/e^(3/2). R1 for concluding that since f'' < 0, P is a local maximum."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["R1", "A1"],
+        "description": "Solve f(x) > 0 for x > 0",
+        "expected": {"answer": "x > 1"},
+        "tolerance": "Accept x > 1 or (1, infinity).",
+        "notes": "R1 for recognizing x^4 > 0 so sign depends on ln x. A1 for x > 1."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Sketch graph of f",
+        "expected": {"x_intercept": 1, "max_point": "(e^(1/4), 1/(4e))"},
+        "tolerance": "Sketch. Qualitative features assessed.",
+        "notes": "A1 for correct general shape (from negative, crosses axis, max, decreasing toward 0). A1 for x-intercept at x = 1. A1 for point P approximately positioned (just right of 1, small positive y)."
+      }
+    ]
+  }
+]

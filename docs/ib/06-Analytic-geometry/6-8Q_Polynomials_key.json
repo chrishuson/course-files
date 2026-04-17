@@ -1,0 +1,179 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 7,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Factor f(x) = x^2 - 4x - 12",
+        "expected": {"answer": "(x - 6)(x + 2)"},
+        "tolerance": "Accept (x + 2)(x - 6) or equivalent. Accept (x - 6)(x - (-2)).",
+        "notes": "M1 for factoring attempt. A1 for correct factors."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "x-intercepts",
+        "expected": {"answer": "x = -2 and x = 6"},
+        "tolerance": "Accept (-2, 0) and (6, 0) or just x = -2, x = 6.",
+        "notes": "A1 for both correct values. Follow through from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "y-intercept",
+        "expected": {"answer": "(0, -12)"},
+        "tolerance": "Accept y = -12 or -12.",
+        "notes": "A1 for -12."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Vertex form",
+        "expected": {"answer": "(x - 2)^2 - 16"},
+        "tolerance": "Accept (x - 2)^2 + (-16).",
+        "notes": "A1 for correct vertex form. Follow through from factored form."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Coordinates of vertex",
+        "expected": {"answer": "(2, -16)"},
+        "tolerance": "Accept from vertex form or axis of symmetry method.",
+        "notes": "A1 for x = 2. A1 for (2, -16). Follow through from (d)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 7,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Vertex of g(x) = -(x-3)^2 + 16",
+        "expected": {"answer": "(3, 16)"},
+        "notes": "A1 for (3, 16)."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Axis of symmetry",
+        "expected": {"answer": "x = 3"},
+        "notes": "A1 for x = 3."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show that g(x) = -x^2 + 6x + 7",
+        "expected": {"answer": "-x^2 + 6x + 7"},
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for expanding (x-3)^2 = x^2 - 6x + 9. A1 for correct simplification to AG."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Solve g(x) = 0",
+        "expected": {"answer": "x = -1 and x = 7"},
+        "tolerance": "Accept (-1, 0) and (7, 0).",
+        "notes": "M1 for setting = 0 and rearranging to x^2 - 6x - 7 = 0. A1 for factoring (x-7)(x+1). A1 for both values."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 7,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show intersection satisfies x^2 - 3x - 4 = 0",
+        "expected": {"answer": "x^2 - 3x - 4 = 0"},
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for equating x^2 - 4 = 3x. A1 for correct rearrangement to AG."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Show two distinct real roots",
+        "expected": {"discriminant": 25},
+        "tolerance": "Must compute discriminant and state > 0.",
+        "notes": "A1 for Delta = 9 + 16 = 25 > 0 with conclusion."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Factorise x^2 - 3x - 4",
+        "expected": {"answer": "(x - 4)(x + 1)"},
+        "notes": "A1 for correct factorisation."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "x-coordinates of intersection",
+        "expected": {"answer": "x = 4 and x = -1"},
+        "notes": "A1 for both values."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Coordinates of both intersection points",
+        "expected": {"answer": "(4, 12) and (-1, -3)"},
+        "notes": "A1 for (4, 12). A1 for (-1, -3). Substitute into y = 3x."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 7,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Discriminant in terms of k",
+        "expected": {"answer": "k^2 - 144"},
+        "notes": "A1 for k^2 - 144."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find values of k for equal roots",
+        "expected": {"answer": "k = 12 and k = -12"},
+        "notes": "M1 for k^2 - 144 = 0. A1 for k = ±12."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Repeated root for k = 12",
+        "expected": {"answer": "x = 2"},
+        "notes": "M1 for substituting k = 12 into 3x^2 - 12x + 12 = 0. A1 for x = 2."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Values of k for no real roots",
+        "expected": {"answer": "-12 < k < 12"},
+        "notes": "M1 for k^2 < 144. A1 for -12 < k < 12."
+      }
+    ]
+  }
+]
