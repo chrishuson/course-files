@@ -1,0 +1,74 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 5,
+    "source": "AA SL 2022 May P1 TZ1 Q05",
+    "parts": [
+      {
+        "label": null,
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "A1", "M1", "A1"],
+        "description": "Find k given product rule derivative equals slope of line",
+        "expected": {"answer": "k = 3"},
+        "notes": "M1 for product rule. A1 for correct derivative e^{kx}(2kx-k+2). A1 for evaluating at x=1 to get e^k(k+2). M1 for equating to 5e^k. A1 for k=3."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 9,
+    "source": "AA SL 2021 May P1 TZ2 Q05",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find exact value of a where f(a) = 0",
+        "expected": {"answer": "a = sqrt(17)"},
+        "tolerance": "Accept a = 17^(1/2).",
+        "notes": "M1 for setting ln(a^2-16)=0. A1 for a^2=17. A1 for a=sqrt(17)."
+      },
+      {
+        "label": "b",
+        "marks": 6,
+        "mark_codes": ["M1", "A1", "M1", "A1", "A1", "A1"],
+        "description": "Find x-coordinate of B where gradient is 1/3",
+        "expected": {"answer": "x = 8"},
+        "notes": "M1 for attempting to differentiate. A1 for f'(x)=2x/(x^2-16). M1 for setting f'(x)=1/3. A1 for 6x=x^2-16. A1 for (x-8)(x+2)=0. A1 for x=8."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 14,
+    "source": "Math SL 2019 Nov P1 Q10",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Coordinates of B (reflection of A in y=x)",
+        "expected": {"answer": "B = (a, 0)"},
+        "tolerance": "Accept B(q+1, 0).",
+        "notes": "A1 for recognising a = q+1. A1 for B = (a, 0)."
+      },
+      {
+        "label": "b",
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "M1", "A1", "A1"],
+        "description": "Equation of L1 in terms of x, p, q",
+        "expected": {"answer": "y = (1/ln p)(x - q - 1)"},
+        "tolerance": "Accept y = x/ln(p) - (q+1)/ln(p).",
+        "notes": "M1 for using point-gradient form. A1 for substituting B and gradient. M1 for substituting a=q+1. A1 for correct rearrangement. A1 for final equation."
+      },
+      {
+        "label": "c",
+        "marks": 7,
+        "mark_codes": ["M1", "A1", "A1", "A1", "A1", "A1", "A1"],
+        "description": "Find equation of L1 in terms of x",
+        "expected": {"answer": "y = (1/ln 3)(x - 2 ln 3 + 2)"},
+        "notes": "M1 for using normal gradient relation. A1 for ln p = ln 3. A1 for p = 3. A1 for substituting (-2,-2) into L2. A1 for q = -3 + 2 ln 3. A1 for a = -2 + 2 ln 3. A1 for final L1 equation."
+      }
+    ]
+  }
+]

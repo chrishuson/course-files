@@ -2,6 +2,7 @@
   {
     "problem_number": 1,
     "total_marks": 7,
+    "answer_box_top_frac": 0.37,
     "parts": [
       {
         "label": "a",
@@ -53,6 +54,7 @@
   {
     "problem_number": 2,
     "total_marks": 7,
+    "answer_box_top_frac": 0.31,
     "parts": [
       {
         "label": "a",
@@ -93,6 +95,7 @@
   {
     "problem_number": 3,
     "total_marks": 7,
+    "answer_box_top_frac": 0.37,
     "parts": [
       {
         "label": "a",
@@ -141,6 +144,7 @@
   {
     "problem_number": 4,
     "total_marks": 7,
+    "answer_box_top_frac": 0.31,
     "parts": [
       {
         "label": "a",
