@@ -1,0 +1,214 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 12,
+    "source": "original, modeled on AA SL 2022 Nov P1 Q8(a) and Math SL 2018 Nov P1 Q4",
+    "parts": [
+      {
+        "label": "a_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Evaluate log_4(1/64)",
+        "expected": {"answer": "-3"},
+        "notes": "M1 for rewriting 1/64 as a power of 4 (or equivalent). A1 for -3."
+      },
+      {
+        "label": "a_ii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Evaluate log_25(5)",
+        "expected": {"answer": "1/2"},
+        "tolerance": "Accept 0.5.",
+        "notes": "M1 for recognising 5 = 25^(1/2) (or equivalent). A1 for 1/2."
+      },
+      {
+        "label": "a_iii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Evaluate log_2(sqrt(32))",
+        "expected": {"answer": "5/2"},
+        "tolerance": "Accept 2.5.",
+        "notes": "M1 for rewriting sqrt(32) as 2^(5/2) (or equivalent). A1 for 5/2."
+      },
+      {
+        "label": "b_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Express log_3(m^2) in terms of c = log_3(m)",
+        "expected": {"answer": "2c"},
+        "notes": "M1 for applying log(m^n) = n log(m). A1 for 2c."
+      },
+      {
+        "label": "b_ii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Express log_3(27m) in terms of c",
+        "expected": {"answer": "3 + c"},
+        "tolerance": "Accept c + 3.",
+        "notes": "M1 for applying log(ab) = log(a) + log(b) with log_3(27) = 3. A1 for 3 + c."
+      },
+      {
+        "label": "b_iii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Express log_9(m) in terms of c",
+        "expected": {"answer": "c/2"},
+        "tolerance": "Accept (1/2)c or 0.5c.",
+        "notes": "M1 for change of base (log_3 m)/(log_3 9) or equivalent. A1 for c/2."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 7,
+    "source": "original, modeled on Math SL 2019 May P1 TZ2 Q6",
+    "parts": [
+      {
+        "label": null,
+        "marks": 7,
+        "mark_codes": ["M1", "A1", "M1", "A1", "A1", "R1", "A1"],
+        "description": "Solve log_2(x-3) = log_4(x+9)",
+        "expected": {"answer": "x = 7"},
+        "tolerance": "x = 0 is extraneous (fails domain x > 3).",
+        "notes": "M1 for change of base (log_4 = (1/2) log_2) or equivalent. A1 for 2 log_2(x-3) = log_2(x+9). M1 for equating arguments: (x-3)^2 = x+9. A1 for x^2 - 7x = 0. A1 for x = 0 or x = 7. R1 for rejecting x = 0 using domain x > 3. A1 for x = 7."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 15,
+    "source": "AA SL 2022 May P1 TZ1 Q08",
+    "parts": [
+      {
+        "label": "a_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show p = ±1/sqrt(3) for geometric series",
+        "expected": {"answer": "p^2 = 1/3, so p = ±1/sqrt(3)"},
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for setting up common ratio equation p = 1/(3p) or equivalent. A1 for p^2 = 1/3. AG."
+      },
+      {
+        "label": "a_ii",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find x given p = 1/sqrt(3) and S_infinity = 3 + sqrt(3)",
+        "expected": {"answer": "x = e^2"},
+        "notes": "M1 for applying S_infinity = a/(1-r). A1 for ln(x) = 2 (or equivalent). A1 for x = e^2."
+      },
+      {
+        "label": "b_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show p = 2/3 for arithmetic series",
+        "expected": {"answer": "p = 2/3"},
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for equal-difference setup: p ln x - ln x = (1/3) ln x - p ln x. A1 for 2p = 4/3. AG."
+      },
+      {
+        "label": "b_ii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write d in form k ln x",
+        "expected": {"answer": "d = -(1/3) ln x"},
+        "tolerance": "Accept k = -1/3.",
+        "notes": "A1 for d = -(1/3) ln x."
+      },
+      {
+        "label": "b_iii",
+        "marks": 7,
+        "mark_codes": ["M1", "A1", "A1", "M1", "A1", "A1", "A1"],
+        "description": "Find n such that S_n = -3 ln x",
+        "expected": {"answer": "n = 9"},
+        "notes": "M1 for applying S_n = (n/2)[2a + (n-1)d]. A1 for substituting a = ln x and d = -(1/3) ln x. A1 for simplified S_n = n(7-n) ln(x)/6. M1 for setting equal to -3 ln x and dividing by ln x. A1 for n^2 - 7n - 18 = 0. A1 for factored form (n-9)(n+2) = 0. A1 for n = 9 (rejecting n = -2).",
+        "follow_through": "If candidate's d from (b)(ii) is wrong but they correctly apply S_n formula, award M1 A1 M1 for the method."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 14,
+    "source": "Math SL 2019 Nov P1 Q10",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Coordinates of B (reflection of A in y=x)",
+        "expected": {"answer": "B = (a, 0)"},
+        "tolerance": "Accept B(q+1, 0).",
+        "notes": "A1 for recognising a = q+1. A1 for B = (a, 0)."
+      },
+      {
+        "label": "b",
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "M1", "A1", "A1"],
+        "description": "Equation of L1 in terms of x, p, q",
+        "expected": {"answer": "y = (1/ln p)(x - q - 1)"},
+        "tolerance": "Accept y = x/ln(p) - (q+1)/ln(p).",
+        "notes": "M1 for using point-gradient form at B(a, 0) with gradient 1/ln(p). A1 for substituting B and gradient. M1 for substituting a = q+1. A1 A1 for final equation.",
+        "follow_through": "Award A1 A1 for final equation using candidate's a from part (a)."
+      },
+      {
+        "label": "c",
+        "marks": 7,
+        "mark_codes": ["M1", "A1", "A1", "A1", "A1", "A1", "A1"],
+        "description": "Find equation of L1 in terms of x",
+        "expected": {"answer": "y = (1/ln 3)(x - 2 ln 3 + 2)"},
+        "notes": "M1 for using normal-gradient relation (gradients multiply to -1). A1 for ln(p) = ln 3. A1 for p = 3. A1 for substituting (-2,-2) into L2 equation. A1 for q = -3 + 2 ln 3. A1 for a = -2 + 2 ln 3. A1 for final L1 equation."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "total_marks": 16,
+    "source": "AA SL 2022 Nov P2 Q7",
+    "requires_calculator": true,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Initial displacement s(0)",
+        "expected": {"answer": "6 metres"},
+        "notes": "M1 for substituting t = 0 into s(t) = 3(t+2)cos(t). A1 for 6 (metres)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Velocity at t = 2",
+        "expected": {"answer": "v(2) ≈ -12.2 m/s"},
+        "tolerance": "Accept -12.16 or equivalent to 3 s.f.",
+        "notes": "M1 for derivative v(t) = 3cos(t) - 3(t+2)sin(t). A1 for GDC-evaluated value at t = 2."
+      },
+      {
+        "label": "c",
+        "marks": 5,
+        "mark_codes": ["A1", "M1", "A1", "A1", "A1"],
+        "description": "Intervals when particle is moving away from P",
+        "expected": {"answer": "0 ≤ t < 0.402, π/2 < t < 3.33, 3π/2 < t < 6.41"},
+        "tolerance": "Accept endpoints to 3 s.f.",
+        "notes": "A1 for zeros of s at t = π/2 and 3π/2. M1 for using GDC to solve v(t) = 0. A1 for zeros of v at t ≈ 0.402, 3.33, 6.41. A1 for method of checking sign of s and v (same sign means moving away). A1 for three correct intervals."
+      },
+      {
+        "label": "d",
+        "marks": 4,
+        "mark_codes": ["M1", "M1", "A1", "A1"],
+        "description": "Find b and c where acceleration is zero",
+        "expected": {"answer": "b ≈ 2.03, c ≈ 4.99"},
+        "tolerance": "Accept to 3 s.f.",
+        "notes": "M1 for a(t) = -6sin(t) - 3(t+2)cos(t). M1 for solving a(t) = 0 with GDC. A1 for b. A1 for c."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Total distance travelled for b ≤ t ≤ c",
+        "expected": {"answer": "≈ 31.7 m"},
+        "tolerance": "Accept 31.6 to 31.8 m.",
+        "notes": "M1 for splitting at v = 0 at t ≈ 3.33 in (b, c) and using |s(3.33) - s(b)| + |s(c) - s(3.33)|. A1 for intermediate s values. A1 for total distance ≈ 31.7 m."
+      }
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 22 April 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize First \& Last name:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{5.15 Classwork: Logarithms (no calculator)}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Logarithm evaluation and variable expressions [12 marks] ---
+%--- Source: original, modeled on AA SL 2022 Nov P1 Q8(a) and Math SL 2018 Nov P1 Q4 ---
+\item[1.] [Maximum mark: 12]
+
+\begin{enumerate}[itemsep=0.2cm]
+  \item Calculate the value of each of the following logarithms:
+  \begin{enumerate}[itemsep=0.1cm, label=(\roman*)]
+    \item $\log_4 \dfrac{1}{64}$
+    \item $\log_{25} 5$
+    \item $\log_2 \sqrt{32}$ \hfill [6]
+  \end{enumerate}
+
+  \item Let $c = \log_3 m$, where $m > 0$. Write down each of the
+  following expressions in terms of $c$.
+  \begin{enumerate}[itemsep=0.1cm, label=(\roman*)]
+    \item $\log_3 m^2$
+    \item $\log_3 27m$
+    \item $\log_9 m$ \hfill [6]
+  \end{enumerate}
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,9);
+  \foreach \y in {1,2,...,8} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Log equation with base conversion [7 marks] ---
+%--- Source: original, modeled on Math SL 2019 May P1 TZ2 Q6 ---
+\item[2.] [Maximum mark: 7]
+
+Solve $\log_2(x - 3) = \log_4(x + 9)$.
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,14);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+\noindent Answer all questions on lined paper.
+Please start each question on a new page.
+
+\medskip
+
+%--- Problem 3: Log series geometric/arithmetic [15 marks] ---
+%--- Source: AA SL 2022 May P1 TZ1 Q08 ---
+\item[3.] [Maximum mark: 15]
+
+Consider the series $\ln x + p \ln x + \dfrac{1}{3} \ln x + \ldots$,
+where $x \in \mathbb{R}$, $x > 1$ and $p \in \mathbb{R}$, $p \neq 0$.
+
+\begin{enumerate}[itemsep=0.2cm]
+  \item Consider the case where the series is geometric.
+  \begin{enumerate}[itemsep=0.1cm, label=(\roman*)]
+    \item Show that $p = \pm \dfrac{1}{\sqrt{3}}$.
+    \item Given that $p > 0$ and $S_{\infty} = 3 + \sqrt{3}$,
+    find the value of $x$. \hfill [5]
+  \end{enumerate}
+
+  \item Now consider the case where the series is arithmetic
+  with common difference $d$.
+  \begin{enumerate}[itemsep=0.1cm, label=(\roman*)]
+    \item Show that $p = \dfrac{2}{3}$.
+    \item Write down $d$ in the form $k \ln x$, where
+    $k \in \mathbb{R}$.
+    \item The sum of the first $n$ terms of the series is
+    $-3 \ln x$. Find the value of $n$. \hfill [10]
+  \end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+%--- Problem 4: Exponential function and inverse [14 marks] ---
+%--- Source: Math SL 2019 Nov P1 Q10 ---
+\item[4.] [Maximum mark: 14]
+
+Let $g(x) = p^x + q$, for $x, \, p, \, q \in \mathbb{R}$, $p > 1$.
+The point $A(0, a)$ lies on the graph of $g$.
+
+Let $f(x) = g^{-1}(x)$. The point $B$ lies on the graph
+of $f$ and is the reflection of point $A$ in the line $y = x$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Write down the coordinates of $B$. \hfill [2]
+\end{enumerate}
+
+The line $L_1$ is tangent to the graph of $f$ at $B$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item[(b)] Given that $f'(a) = \dfrac{1}{\ln p}$, find the equation
+  of $L_1$ in terms of $x$, $p$ and $q$. \hfill [5]
+\end{enumerate}
+
+The line $L_2$ is tangent to the graph of $g$ at $A$ and has
+equation $y = (\ln p)\, x + q + 1$.
+
+The line $L_2$ passes through the point $(-2, -2)$.
+
+The gradient of the normal to $g$ at $A$ is
+$\dfrac{1}{\ln \frac{1}{3}}$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item[(c)] Find the equation of $L_1$ in terms of $x$. \hfill [7]
+\end{enumerate}
+
+\newpage
+
+%--- Problem 5: Kinematics, displacement function [16 marks] ---
+%--- Source: AA SL 2022 Nov P2 Q7 ---
+\item[5.] [Maximum mark: 16]
+
+A particle moves in a straight line. Its displacement, $s$ metres,
+from a fixed point $P$ at time $t$ seconds is given by
+$s(t) = 3(t + 2)^{\cos t}$, for $0 \leq t \leq 6.8$, as shown in the
+following graph.
+
+\begin{center}
+\begin{tikzpicture}[x=1.2cm, y=0.18cm]
+  \draw[->] (-0.3, 0) -- (7.3, 0) node[right] {$t$};
+  \draw[->] (0, -1) -- (0, 28) node[above] {$s$};
+  \node[below left] at (0, 0) {$0$};
+  \draw (6.8, -0.8) -- (6.8, 0.8);
+  \node[below] at (6.8, -0.8) {$6.8$};
+  \draw[thick, samples=200, domain=0:6.8, smooth] 
+    plot (\x, {3*(\x+2)^(cos(deg(\x)))});
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the particle's initial displacement from the point $P$.
+  \hfill [2]
+  \item[(b)] Find the particle's velocity when $t = 2$. \hfill [2]
+  \item[(c)] Determine the intervals of time when the particle is
+  moving away from  \\[0.25cm]
+  the point $P$. \hfill [5]
+\end{enumerate}
+
+The acceleration of the particle is zero when $t = b$ and $t = c$,
+where $b < c$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item[(d)] Find the value of $b$ and the value of $c$. \hfill [4]
+  \item[(e)] Find the total distance travelled by the particle for
+  $b \leq t \leq c$. \hfill [3]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}

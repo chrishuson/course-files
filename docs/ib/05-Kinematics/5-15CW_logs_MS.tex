@@ -1,0 +1,342 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 22 April 2026}
+
+\begin{document}
+\subsubsection*{5.15 Classwork: Logarithms --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Logarithm evaluation and variable expressions [12 marks] ---
+%--- Source: original, modeled on AA SL 2022 Nov P1 Q8(a) and Math SL 2018 Nov P1 Q4 ---
+\item[1.] [Maximum mark: 12]
+
+\medskip
+
+\textbf{(a)} Calculate the value of each of the following logarithms. \hfill [6]
+
+\textbf{(i)} $\log_4 \dfrac{1}{64}$
+
+$\dfrac{1}{64} = 4^{-3}$ \hfill \textbf{M1}
+
+$\log_4 \dfrac{1}{64} = -3$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(ii)} $\log_{25} 5$
+
+$5 = 25^{1/2}$ \hfill \textbf{M1}
+
+$\log_{25} 5 = \dfrac{1}{2}$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(iii)} $\log_2 \sqrt{32}$
+
+$\sqrt{32} = 2^{5/2}$ \hfill \textbf{M1}
+
+$\log_2 \sqrt{32} = \dfrac{5}{2}$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Let $c = \log_3 m$. Write each expression in terms of $c$. \hfill [6]
+
+\textbf{(i)} $\log_3 m^2 = 2 \log_3 m$ \hfill \textbf{M1}
+
+$= 2c$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(ii)} $\log_3 27m = \log_3 27 + \log_3 m$ \hfill \textbf{M1}
+
+$= 3 + c$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(iii)} $\log_9 m = \dfrac{\log_3 m}{\log_3 9}$ \hfill \textbf{M1}
+
+$= \dfrac{c}{2}$ \hfill \textbf{A1}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 2: Log equation with base conversion [7 marks] ---
+%--- Source: original, modeled on Math SL 2019 May P1 TZ2 Q6 ---
+\item[2.] [Maximum mark: 7]
+
+Solve $\log_2(x - 3) = \log_4(x + 9)$.
+
+\textbf{Solution:}
+
+Change of base: $\log_4(x+9) = \dfrac{1}{2} \log_2(x+9)$ \hfill \textbf{M1}
+
+$2 \log_2(x-3) = \log_2(x+9)$ \hfill \textbf{A1}
+
+$\log_2\!\bigl((x-3)^2\bigr) = \log_2(x+9)$
+
+Equating arguments: $(x-3)^2 = x + 9$ \hfill \textbf{M1}
+
+$x^2 - 6x + 9 = x + 9$
+
+$x^2 - 7x = 0$ \hfill \textbf{A1}
+
+$x(x - 7) = 0$
+
+$x = 0$ or $x = 7$ \hfill \textbf{A1}
+
+Domain requires $x - 3 > 0$, so $x > 3$.
+Reject $x = 0$. \hfill \textbf{R1}
+
+$x = 7$ \hfill \textbf{A1}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 3: Log series geometric/arithmetic [15 marks] ---
+%--- Source: AA SL 2022 May P1 TZ1 Q08 ---
+\item[3.] [Maximum mark: 15]
+
+\medskip
+
+\textbf{(a)} Series is geometric. \hfill [5]
+
+\textbf{(i)} Show that $p = \pm \dfrac{1}{\sqrt{3}}$.
+
+\textbf{Solution:}
+
+Common ratio: $\dfrac{p \ln x}{\ln x} = \dfrac{(1/3)\ln x}{p \ln x}$ \hfill \textbf{M1}
+
+$p = \dfrac{1}{3p} \implies p^2 = \dfrac{1}{3}$ \hfill \textbf{A1}
+
+$p = \pm \dfrac{1}{\sqrt{3}}$ \hfill \textbf{AG}
+
+\medskip
+
+\textbf{(ii)} Given $p > 0$ and $S_{\infty} = 3 + \sqrt{3}$, find $x$.
+
+\textbf{Solution:}
+
+$r = \dfrac{1}{\sqrt{3}}$, \; $a = \ln x$
+
+$S_{\infty} = \dfrac{\ln x}{1 - \frac{1}{\sqrt{3}}}
+= \dfrac{\sqrt{3}\, \ln x}{\sqrt{3} - 1}
+= \dfrac{\sqrt{3}(\sqrt{3}+1)\, \ln x}{2}
+= \dfrac{(3 + \sqrt{3})\, \ln x}{2}$ \hfill \textbf{M1}
+
+$\dfrac{(3 + \sqrt{3})\, \ln x}{2} = 3 + \sqrt{3}$
+
+$\ln x = 2$ \hfill \textbf{A1}
+
+$x = e^2$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Series is arithmetic with common difference $d$. \hfill [10]
+
+\textbf{(i)} Show that $p = \dfrac{2}{3}$.
+
+\textbf{Solution:}
+
+$p \ln x - \ln x = \dfrac{1}{3} \ln x - p \ln x$ \hfill \textbf{M1}
+
+$(p - 1)\ln x = \left(\dfrac{1}{3} - p\right)\ln x$
+
+Since $\ln x \neq 0$: $\; 2p = \dfrac{4}{3}$ \hfill \textbf{A1}
+
+$p = \dfrac{2}{3}$ \hfill \textbf{AG}
+
+\medskip
+
+\textbf{(ii)} Write down $d$ in the form $k \ln x$.
+
+\textbf{Solution:}
+
+$d = \left(\dfrac{2}{3} - 1\right) \ln x = -\dfrac{1}{3} \ln x$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(iii)} Sum of first $n$ terms is $-3 \ln x$. Find $n$.
+
+\textbf{Solution:}
+
+$S_n = \dfrac{n}{2}\bigl[\,2a + (n-1)d\,\bigr]$ \hfill \textbf{M1}
+
+Substituting $a = \ln x$ and $d = -\dfrac{1}{3}\ln x$:
+
+$S_n = \dfrac{n}{2}\left[\,2\ln x - \dfrac{n-1}{3}\ln x\,\right]$ \hfill \textbf{A1}
+
+$= \dfrac{n \ln x}{6}\,(7 - n)$ \hfill \textbf{A1}
+
+Set equal to $-3 \ln x$ (and divide by $\ln x > 0$): \hfill \textbf{M1}
+
+$\dfrac{n(7 - n)}{6} = -3$
+
+$n^2 - 7n - 18 = 0$ \hfill \textbf{A1}
+
+$(n - 9)(n + 2) = 0$ \hfill \textbf{A1}
+
+$n = 9$ \hfill \textbf{A1}
+
+\emph{Reject $n = -2$ since $n \in \mathbb{Z}^+$.}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 4: Exponential function and inverse [14 marks] ---
+%--- Source: Math SL 2019 Nov P1 Q10 ---
+\item[4.] [Maximum mark: 14]
+
+Let $g(x) = p^x + q$, for $x, \, p, \, q \in \mathbb{R}$, $p > 1$.
+The point $A(0, a)$ lies on the graph of $g$.
+Let $f(x) = g^{-1}(x)$.
+
+\medskip
+
+\textbf{(a)} Write down the coordinates of $B$. \hfill [2]
+
+\textbf{Solution:}
+
+$g(0) = p^0 + q = 1 + q$, so $a = q + 1$ \hfill \textbf{A1}
+
+$B$ is the reflection of $A(0, a)$ in $y = x$, so $B = (a, 0)$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Given $f'(a) = \dfrac{1}{\ln p}$, find the equation of
+$L_1$ in terms of $x$, $p$ and $q$. \hfill [5]
+
+\textbf{Solution:}
+
+$L_1$ passes through $B(a, 0)$ with gradient $\dfrac{1}{\ln p}$ \hfill \textbf{M1}
+
+$y - 0 = \dfrac{1}{\ln p}(x - a)$ \hfill \textbf{A1}
+
+Substituting $a = q + 1$: \hfill \textbf{M1}
+
+$y = \dfrac{1}{\ln p}(x - q - 1)$ \hfill \textbf{A1A1}
+
+\emph{FT: award A1A1 for the final equation using the candidate's $a$
+from part (a).}
+
+\medskip
+
+\textbf{(c)} Find the equation of $L_1$ in terms of $x$. \hfill [7]
+
+\textbf{Solution:}
+
+\emph{Finding $p$:}
+
+Gradient of normal to $g$ at $A$ is $\dfrac{1}{\ln \frac{1}{3}}
+= -\dfrac{1}{\ln 3}$ \hfill \textbf{M1}
+
+$(\ln p) \cdot \left(-\dfrac{1}{\ln 3}\right) = -1$ \hfill \textbf{A1}
+
+$\ln p = \ln 3 \implies p = 3$ \hfill \textbf{A1}
+
+\emph{Finding $q$:}
+
+$L_2$ passes through $(-2, -2)$:
+
+$-2 = (\ln 3)(-2) + q + 1$ \hfill \textbf{A1}
+
+$q = -3 + 2\ln 3$ \hfill \textbf{A1}
+
+\emph{Finding $L_1$:}
+
+$a = q + 1 = -2 + 2\ln 3$ \hfill \textbf{A1}
+
+$L_1: \; y = \dfrac{1}{\ln 3}\,(x - 2\ln 3 + 2)$ \hfill \textbf{A1}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 5: Kinematics, displacement function [16 marks] ---
+%--- Source: AA SL 2022 Nov P2 Q7 ---
+\item[5.] [Maximum mark: 16]
+
+\medskip
+
+\emph{Note: parts (b)--(e) require a GDC; values quoted to 3 s.f.}
+
+\smallskip
+
+\textbf{(a)} Initial displacement. \hfill [2]
+
+$s(0) = 3(0 + 2)\cos 0 = 3 \cdot 2 \cdot 1$ \hfill \textbf{M1}
+
+$s(0) = 6$ metres \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Velocity at $t = 2$. \hfill [2]
+
+$v(t) = s'(t) = 3\cos t - 3(t + 2)\sin t$ \hfill \textbf{M1}
+
+$v(2) = 3\cos 2 - 12\sin 2 \approx -12.2$ m/s \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} Intervals when the particle is moving away from $P$. \hfill [5]
+
+Moving away from $P$ means $|s|$ is increasing, i.e.\ $s$ and $v$
+have the same sign.
+
+Zeros of $s$: $\cos t = 0 \Rightarrow t = \dfrac{\pi}{2},\;
+\dfrac{3\pi}{2}$ \hfill \textbf{A1}
+
+Zeros of $v$ (GDC): $t \approx 0.402,\; 3.33,\; 6.41$ \hfill \textbf{M1 A1}
+
+Checking signs of $s$ and $v$ on each subinterval: \hfill \textbf{A1}
+
+\begin{center}
+\begin{tabular}{lcc}
+Interval & sign of $s$ & sign of $v$ \\ \hline
+$0 \leq t < 0.402$ & $+$ & $+$ \\
+$0.402 < t < \pi/2$ & $+$ & $-$ \\
+$\pi/2 < t < 3.33$ & $-$ & $-$ \\
+$3.33 < t < 3\pi/2$ & $-$ & $+$ \\
+$3\pi/2 < t < 6.41$ & $+$ & $+$ \\
+$6.41 < t < 6.8$ & $+$ & $-$ \\
+\end{tabular}
+\end{center}
+
+Moving away (same sign): \hfill \textbf{A1}
+
+$0 \leq t < 0.402,\quad \dfrac{\pi}{2} < t < 3.33,\quad
+\dfrac{3\pi}{2} < t < 6.41$
+
+\medskip
+
+\textbf{(d)} Find $b$ and $c$ where acceleration is zero. \hfill [4]
+
+$a(t) = v'(t) = -6\sin t - 3(t + 2)\cos t$ \hfill \textbf{M1}
+
+Solving $a(t) = 0$ on $[0, 6.8]$ (GDC): \hfill \textbf{M1}
+
+$b \approx 2.03$ \hfill \textbf{A1}
+
+$c \approx 4.99$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(e)} Total distance for $b \leq t \leq c$. \hfill [3]
+
+On $(b, c)$, $v = 0$ once at $t \approx 3.33$. Total distance
+$= |s(3.33) - s(b)| + |s(c) - s(3.33)|$ \hfill \textbf{M1}
+
+$s(2.03) \approx -5.38$, \; $s(3.33) \approx -15.7$, \;
+$s(4.99) \approx 5.73$ \hfill \textbf{A1}
+
+\nopagebreak
+
+Total distance $\approx 10.3 + 21.4 \approx 31.7$ m \hfill \textbf{A1}
+
+\end{enumerate}
+\end{document}
