@@ -1,0 +1,221 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 12,
+    "answer_box_top_frac": 0.25,
+    "source": "adapted from 7-1CW_Intro_logs Q1",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Evaluate log_4(1/64)",
+        "expected": {"answer": "-3"},
+        "notes": "M1 for rewriting 1/64 as 4^-3 or equivalent. A1 for -3."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Evaluate log_25(5)",
+        "expected": {"answer": "1/2"},
+        "tolerance": "Accept 0.5.",
+        "notes": "M1 for recognising 5 = 25^(1/2) or equivalent. A1 for 1/2."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Evaluate log_2(sqrt(32))",
+        "expected": {"answer": "5/2"},
+        "tolerance": "Accept 2.5.",
+        "notes": "M1 for rewriting sqrt(32) as 2^(5/2) or equivalent. A1 for 5/2."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Evaluate log_5(125)",
+        "expected": {"answer": "3"},
+        "notes": "M1 for rewriting 125 as 5^3. A1 for 3."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Evaluate log_16(1/4)",
+        "expected": {"answer": "-1/2"},
+        "tolerance": "Accept -0.5.",
+        "notes": "M1 for rewriting 1/4 as 16^(-1/2) or equivalent. A1 for -1/2."
+      },
+      {
+        "label": "f",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Evaluate log_3(sqrt(81))",
+        "expected": {"answer": "2"},
+        "notes": "M1 for rewriting sqrt(81) as 3^2. A1 for 2."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 12,
+    "answer_box_top_frac": 0.31,
+    "source": "adapted from 7-1CW_Intro_logs Q2",
+    "parts": [
+      {
+        "label": "a_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Express log_3(m^2) in terms of c = log_3(m)",
+        "expected": {"answer": "2c"},
+        "notes": "M1 for applying log(m^n) = n log(m). A1 for 2c."
+      },
+      {
+        "label": "a_ii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Express log_3(27m) in terms of c",
+        "expected": {"answer": "3 + c"},
+        "tolerance": "Accept c + 3.",
+        "notes": "M1 for applying log(ab) = log(a) + log(b) with log_3(27) = 3. A1 for 3 + c."
+      },
+      {
+        "label": "a_iii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Express log_9(m) in terms of c",
+        "expected": {"answer": "c/2"},
+        "tolerance": "Accept (1/2)c or 0.5c.",
+        "notes": "M1 for change of base (log_3 m)/(log_3 9) or equivalent. A1 for c/2."
+      },
+      {
+        "label": "b_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Express log_2(m^3) in terms of a = log_2(m)",
+        "expected": {"answer": "3a"},
+        "notes": "M1 for applying log(m^n) = n log(m). A1 for 3a."
+      },
+      {
+        "label": "b_ii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Express log_2(8m) in terms of a",
+        "expected": {"answer": "3 + a"},
+        "tolerance": "Accept a + 3.",
+        "notes": "M1 for applying log(ab) = log(a) + log(b) with log_2(8) = 3. A1 for 3 + a."
+      },
+      {
+        "label": "b_iii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Express log_4(m) in terms of a",
+        "expected": {"answer": "a/2"},
+        "tolerance": "Accept (1/2)a or 0.5a.",
+        "notes": "M1 for change of base (log_2 m)/(log_2 4) or equivalent. A1 for a/2."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 12,
+    "answer_box_top_frac": 0.32,
+    "source": "adapted from 7-1CW_Intro_logs Q3",
+    "parts": [
+      {
+        "label": "a_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Expand log(100x) in terms of log x and log y",
+        "expected": {"answer": "2 + log x"},
+        "notes": "M1 for product law log(100x)=log(100)+log(x). A1 for 2 + log x."
+      },
+      {
+        "label": "a_ii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Expand log(x^2/y) in terms of log x and log y",
+        "expected": {"answer": "2 log x - log y"},
+        "notes": "M1 for quotient and/or power law. A1 for 2 log x - log y."
+      },
+      {
+        "label": "a_iii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Expand log sqrt(xy^3) in terms of log x and log y",
+        "expected": {"answer": "(1/2)log x + (3/2)log y"},
+        "notes": "M1 for square-root as power 1/2 and product law. A1 for (1/2)log x + (3/2)log y."
+      },
+      {
+        "label": "b_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Condense log_2 x + log_2 y",
+        "expected": {"answer": "log_2(xy)"},
+        "notes": "M1 for applying product law. A1 for log_2(xy)."
+      },
+      {
+        "label": "b_ii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Condense 2log_7 a - log_7 b",
+        "expected": {"answer": "log_7(a^2/b)"},
+        "notes": "M1 for applying power and quotient laws. A1 for log_7(a^2/b)."
+      },
+      {
+        "label": "b_iii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Condense (1/2)ln p + ln q",
+        "expected": {"answer": "ln(q sqrt(p))"},
+        "tolerance": "Accept ln(sqrt(p) q) or ln(p^(1/2) q).",
+        "notes": "M1 for applying power and product laws. A1 for ln(q sqrt(p)) or equivalent."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 12,
+    "answer_box_top_frac": 0.25,
+    "source": "adapted from 7-1CW_Intro_logs Q4",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Solve log_2(x - 3) = log_4(x + 9)",
+        "expected": {"answer": "x = 7"},
+        "tolerance": "x = 0 is extraneous because the domain requires x > 3.",
+        "notes": "M1 for converting log_4(x+9) to (1/2)log_2(x+9). M1 for equating arguments after applying log laws. A1 for x=7 with extraneous root rejected."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Solve log_3 x = 2",
+        "expected": {"answer": "x = 9"},
+        "notes": "M1 for converting to x=3^2. A1 for 3^2. A1 for x=9."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Solve log_5(2x) = 1",
+        "expected": {"answer": "x = 5/2"},
+        "tolerance": "Accept 2.5.",
+        "notes": "M1 for converting to 2x=5. A1 for dividing by 2. A1 for x=5/2."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Solve log_2(x+1) + log_2(x-1) = 3",
+        "expected": {"answer": "x = 3"},
+        "tolerance": "x = -3 is extraneous because the domain requires x > 1.",
+        "notes": "M1 for combining logarithms. M1 for setting x^2 - 1 = 8. A1 for x=3 with extraneous root rejected."
+      }
+    ]
+  }
+]
