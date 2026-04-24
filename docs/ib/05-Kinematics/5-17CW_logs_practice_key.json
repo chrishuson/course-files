@@ -2,7 +2,7 @@
   {
     "problem_number": 1,
     "total_marks": 12,
-    "answer_box_top_frac": 0.25,
+    "answer_box_top_frac": 0.422,
     "source": "adapted from 7-1CW_Intro_logs Q1",
     "parts": [
       {
@@ -61,7 +61,7 @@
   {
     "problem_number": 2,
     "total_marks": 12,
-    "answer_box_top_frac": 0.31,
+    "answer_box_top_frac": 0.435,
     "source": "adapted from 7-1CW_Intro_logs Q2",
     "parts": [
       {
@@ -121,7 +121,7 @@
   {
     "problem_number": 3,
     "total_marks": 12,
-    "answer_box_top_frac": 0.32,
+    "answer_box_top_frac": 0.459,
     "source": "adapted from 7-1CW_Intro_logs Q3",
     "parts": [
       {
@@ -178,7 +178,7 @@
   {
     "problem_number": 4,
     "total_marks": 12,
-    "answer_box_top_frac": 0.25,
+    "answer_box_top_frac": 0.307,
     "source": "adapted from 7-1CW_Intro_logs Q4",
     "parts": [
       {

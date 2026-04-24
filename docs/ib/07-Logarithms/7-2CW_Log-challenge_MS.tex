@@ -1,0 +1,130 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 24 April 2026}
+
+\begin{document}
+\subsubsection*{7.2 Classwork: Log Challenge --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Log equation with base conversion [7 marks] ---
+%--- Source: original, modeled on Math SL 2019 May P1 TZ2 Q6 ---
+\item[1.] [Maximum mark: 7]
+
+Solve $\log_2(x - 3) = \log_4(x + 9)$.
+
+\textbf{Solution:}
+
+Change of base: $\log_4(x+9) = \dfrac{1}{2} \log_2(x+9)$ \hfill \textbf{M1}
+
+$2 \log_2(x-3) = \log_2(x+9)$ \hfill \textbf{A1}
+
+$\log_2\!\bigl((x-3)^2\bigr) = \log_2(x+9)$
+
+Equating arguments: $(x-3)^2 = x + 9$ \hfill \textbf{M1}
+
+$x^2 - 6x + 9 = x + 9$
+
+$x^2 - 7x = 0$ \hfill \textbf{A1}
+
+$x(x - 7) = 0$
+
+$x = 0$ or $x = 7$ \hfill \textbf{A1}
+
+Domain requires $x - 3 > 0$, so $x > 3$.
+Reject $x = 0$. \hfill \textbf{R1}
+
+$x = 7$ \hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 2: Log series geometric/arithmetic [15 marks] ---
+%--- Source: AA SL 2022 May P1 TZ1 Q08 ---
+\item[2.] [Maximum mark: 15]
+
+\textbf{(a)} Series is geometric. \hfill [5]
+
+\textbf{(i)} Show that $p = \pm \dfrac{1}{\sqrt{3}}$.
+
+\textbf{Solution:}
+
+Common ratio: $\dfrac{p \ln x}{\ln x} = \dfrac{(1/3)\ln x}{p \ln x}$ \hfill \textbf{M1}
+
+$p = \dfrac{1}{3p} \implies p^2 = \dfrac{1}{3}$ \hfill \textbf{A1}
+
+$p = \pm \dfrac{1}{\sqrt{3}}$ \hfill \textbf{AG}
+
+\medskip
+
+\textbf{(ii)} Given $p > 0$ and $S_{\infty} = 3 + \sqrt{3}$, find $x$.
+
+\textbf{Solution:}
+
+$r = \dfrac{1}{\sqrt{3}}$, \; $a = \ln x$
+
+$S_{\infty} = \dfrac{\ln x}{1 - \frac{1}{\sqrt{3}}}
+= \dfrac{\sqrt{3}\, \ln x}{\sqrt{3} - 1}
+= \dfrac{\sqrt{3}(\sqrt{3}+1)\, \ln x}{2}
+= \dfrac{(3 + \sqrt{3})\, \ln x}{2}$ \hfill \textbf{M1}
+
+$\dfrac{(3 + \sqrt{3})\, \ln x}{2} = 3 + \sqrt{3}$
+
+$\ln x = 2$ \hfill \textbf{A1}
+
+$x = e^2$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Series is arithmetic with common difference $d$. \hfill [10]
+
+\textbf{(i)} Show that $p = \dfrac{2}{3}$.
+
+\textbf{Solution:}
+
+$p \ln x - \ln x = \dfrac{1}{3} \ln x - p \ln x$ \hfill \textbf{M1}
+
+$(p - 1)\ln x = \left(\dfrac{1}{3} - p\right)\ln x$
+
+Since $\ln x \neq 0$: $\; 2p = \dfrac{4}{3}$ \hfill \textbf{A1}
+
+$p = \dfrac{2}{3}$ \hfill \textbf{AG}
+
+\medskip
+
+\textbf{(ii)} Write down $d$ in the form $k \ln x$.
+
+\textbf{Solution:}
+
+$d = \left(\dfrac{2}{3} - 1\right) \ln x = -\dfrac{1}{3} \ln x$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(iii)} Sum of first $n$ terms is $-3 \ln x$. Find $n$.
+
+\textbf{Solution:}
+
+$S_n = \dfrac{n}{2}\bigl[\,2a + (n-1)d\,\bigr]$ \hfill \textbf{M1}
+
+Substituting $a = \ln x$ and $d = -\dfrac{1}{3}\ln x$:
+
+$S_n = \dfrac{n}{2}\left[\,2\ln x - \dfrac{n-1}{3}\ln x\,\right]$ \hfill \textbf{A1}
+
+$= \dfrac{n \ln x}{6}\,(7 - n)$ \hfill \textbf{A1}
+
+Set equal to $-3 \ln x$ (and divide by $\ln x > 0$): \hfill \textbf{M1}
+
+$\dfrac{n(7 - n)}{6} = -3$
+
+$n^2 - 7n - 18 = 0$ \hfill \textbf{A1}
+
+$(n - 9)(n + 2) = 0$ \hfill \textbf{A1}
+
+$n = 9$ \hfill \textbf{A1}
+
+\emph{Reject $n = -2$ since $n \in \mathbb{Z}^+$.}
+
+\end{enumerate}
+\end{document}

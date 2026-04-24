@@ -1,0 +1,71 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 7,
+    "answer_box_top_frac": 0.215,
+    "source": "original, modeled on Math SL 2019 May P1 TZ2 Q6",
+    "parts": [
+      {
+        "label": null,
+        "marks": 7,
+        "mark_codes": ["M1", "A1", "M1", "A1", "A1", "R1", "A1"],
+        "description": "Solve log_2(x-3) = log_4(x+9)",
+        "expected": {"answer": "x = 7"},
+        "tolerance": "x = 0 is extraneous because the domain requires x > 3.",
+        "notes": "M1 for change of base (log_4 = (1/2)log_2) or equivalent. A1 for 2log_2(x-3)=log_2(x+9). M1 for equating arguments: (x-3)^2=x+9. A1 for x^2-7x=0. A1 for x=0 or x=7. R1 for rejecting x=0 using domain x>3. A1 for x=7."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 15,
+    "answer_box_top_frac": 0.355,
+    "source": "AA SL 2022 May P1 TZ1 Q08",
+    "parts": [
+      {
+        "label": "a_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show p = +/-1/sqrt(3) for geometric series",
+        "expected": {"answer": "p^2 = 1/3, so p = +/-1/sqrt(3)"},
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for setting up common ratio equation p = 1/(3p) or equivalent. A1 for p^2 = 1/3. AG."
+      },
+      {
+        "label": "a_ii",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find x given p = 1/sqrt(3) and S_infinity = 3 + sqrt(3)",
+        "expected": {"answer": "x = e^2"},
+        "notes": "M1 for applying S_infinity = a/(1-r). A1 for ln(x) = 2 or equivalent. A1 for x = e^2."
+      },
+      {
+        "label": "b_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show p = 2/3 for arithmetic series",
+        "expected": {"answer": "p = 2/3"},
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for equal-difference setup: p ln x - ln x = (1/3)ln x - p ln x. A1 for 2p = 4/3. AG."
+      },
+      {
+        "label": "b_ii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write d in form k ln x",
+        "expected": {"answer": "d = -(1/3) ln x"},
+        "tolerance": "Accept k = -1/3.",
+        "notes": "A1 for d = -(1/3)ln x."
+      },
+      {
+        "label": "b_iii",
+        "marks": 7,
+        "mark_codes": ["M1", "A1", "A1", "M1", "A1", "A1", "A1"],
+        "description": "Find n such that S_n = -3 ln x",
+        "expected": {"answer": "n = 9"},
+        "notes": "M1 for applying S_n = (n/2)[2a + (n-1)d]. A1 for substituting a = ln x and d = -(1/3)ln x. A1 for simplified S_n = n(7-n)ln(x)/6. M1 for setting equal to -3ln x and dividing by ln x. A1 for n^2 - 7n - 18 = 0. A1 for factored form (n-9)(n+2)=0. A1 for n=9, rejecting n=-2.",
+        "follow_through": "If candidate's d from (b)(ii) is wrong but they correctly apply S_n formula, award M1 A1 M1 for the method."
+      }
+    ]
+  }
+]

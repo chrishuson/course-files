@@ -1,0 +1,62 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 24 April 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize First \& Last name:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{7.2 Classwork: Log Challenge (no calculator)}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Log equation with base conversion [7 marks] ---
+%--- Source: original, modeled on Math SL 2019 May P1 TZ2 Q6 ---
+\item[1.] [Maximum mark: 7]
+
+Solve $\log_2(x - 3) = \log_4(x + 9)$.
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,14);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Log series geometric/arithmetic [15 marks] ---
+%--- Source: AA SL 2022 May P1 TZ1 Q08 ---
+\item[2.] [Maximum mark: 15]
+
+\begingroup
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+
+Consider the series $\ln x + p \ln x + \dfrac{1}{3} \ln x + \ldots$,
+where $x \in \mathbb{R}$, $x > 1$ and $p \in \mathbb{R}$, $p \neq 0$.
+
+\begin{enumerate}[itemsep=0.05cm, topsep=0.05cm]
+  \item Consider the case where the series is geometric.
+  \begin{enumerate}[itemsep=0.02cm, topsep=0.02cm, label=(\roman*)]
+    \item Show that $p = \pm \dfrac{1}{\sqrt{3}}$.
+    \item Given that $p > 0$ and $S_{\infty} = 3 + \sqrt{3}$,
+    find the value of $x$. \hfill [5]
+  \end{enumerate}
+
+  \item Now consider the case where the series is arithmetic with common
+  difference $d$.
+  \begin{enumerate}[itemsep=0.02cm, topsep=0.02cm, label=(\roman*)]
+    \item Show that $p = \dfrac{2}{3}$.
+    \item Write down $d$ in the form $k \ln x$, where $k \in \mathbb{R}$.
+    \item The sum of the first $n$ terms of the series is $-3 \ln x$.
+    Find the value of $n$. \hfill [10]
+  \end{enumerate}
+\end{enumerate}
+\endgroup
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,12);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}
