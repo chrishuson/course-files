@@ -1,0 +1,198 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 27 April 2026}
+
+\begin{document}
+\subsubsection*{7.3 Classwork: Graphs of Logarithmic Functions --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Warmup [10 marks] ---
+\item[1.] [Maximum mark: 10]
+
+\textbf{(a)} Evaluate.
+
+\textbf{(i)} $\log_4 32 = \log_4 (4^{5/2}) = \dfrac{5}{2}$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(ii)} $\log_8 4 = \log_8 (8^{2/3}) = \dfrac{2}{3}$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(iii)} $\log_{1/2} 8$: \quad $\left(\tfrac{1}{2}\right)^{-3} = 8$, so
+$\log_{1/2} 8 = -3$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(iv)} $\log_3 \sqrt[3]{9} = \log_3 9^{1/3} = \dfrac{1}{3}\log_3 9
+= \dfrac{1}{3}\cdot 2 = \dfrac{2}{3}$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Let $a > 1$ and $b > 0$. Write each in terms of $\log_a b$.
+
+\textbf{(i)} $\log_a (a^2 b) = \log_a a^2 + \log_a b = 2 + \log_a b$
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(ii)} $\log_a \!\left(\dfrac{b}{a}\right) = \log_a b - \log_a a
+= \log_a b - 1$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(iii)} $\log_a \sqrt{a\, b^3} = \dfrac{1}{2}\log_a (a\, b^3)
+= \dfrac{1}{2}\bigl(1 + 3 \log_a b\bigr)$ \hfill \textbf{M1}
+
+$= \dfrac{1}{2} + \dfrac{3}{2}\log_a b$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(iv)} Change of base: $\log_{a^2} b = \dfrac{\log_a b}{\log_a a^2}
+= \dfrac{\log_a b}{2}$ \hfill \textbf{M1}
+
+$= \dfrac{1}{2}\log_a b$ \hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 2: Inverse and reflection across y = x [9 marks] ---
+\item[2.] [Maximum mark: 9]
+
+\textbf{(a)} Sketch of $y = 2^x$:
+\begin{itemize}\setlength\itemsep{0pt}
+  \item Correct shape (increasing exponential through $(0,1)$ and rising to
+  the upper-right) \hfill \textbf{A1}
+  \item $y$-intercept labelled $(0, 1)$ and horizontal asymptote $y = 0$
+  \hfill \textbf{A1}
+\end{itemize}
+
+\smallskip
+
+\textbf{(b)} Sketch of $y = \log_2 x$ (reflection of $y = 2^x$ across
+$y = x$):
+\begin{itemize}\setlength\itemsep{0pt}
+  \item Correct shape (passes through $(1,0)$, increasing, concave down)
+  \hfill \textbf{A1}
+  \item $x$-intercept labelled $(1, 0)$ and vertical asymptote $x = 0$
+  \hfill \textbf{A1}
+\end{itemize}
+
+\smallskip
+
+\textbf{(c)} Domain and range:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{| l | c | c |}
+\hline
+ & Domain & Range \\
+\hline
+$y = 2^x$ & $x \in \mathbb{R}$ & $y > 0$ \\
+\hline
+$y = \log_2 x$ & $x > 0$ & $y \in \mathbb{R}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{A1} for each correct cell (\textbf{A1 A1 A1 A1}).
+
+\smallskip
+
+\textbf{(d)} Reflection across $y = x$ swaps coordinates. The point on
+$y = \log_2 x$ corresponding to $(3, 8)$ on $y = 2^x$ is $(8, 3)$.
+\hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 3: Transformations of y = log_2 x [9 marks] ---
+\item[3.] [Maximum mark: 9]
+
+The parent graph is $f(x) = \log_2 x$ with vertical asymptote $x = 0$.
+
+\textbf{(a)} $g(x) = \log_2(x - 2)$ \quad — horizontal shift right by $2$.
+
+\begin{itemize}\setlength\itemsep{0pt}
+  \item Correct sketch (parent shape, shifted $+2$ in $x$; passes through
+  $(3, 0)$, $(4, 1)$, $(6, 2)$) \hfill \textbf{A1}
+  \item Vertical asymptote $x = 2$ \hfill \textbf{A1}
+\end{itemize}
+
+\smallskip
+
+\textbf{(b)} $h(x) = \log_2 x + 3$ \quad — vertical shift up by $3$.
+
+\begin{itemize}\setlength\itemsep{0pt}
+  \item Correct sketch (parent shape, shifted $+3$ in $y$; passes through
+  $(1, 3)$, $(2, 4)$, $(4, 5)$) \hfill \textbf{A1}
+  \item Vertical asymptote $x = 0$ \hfill \textbf{A1}
+\end{itemize}
+
+\smallskip
+
+\textbf{(c)} $k(x) = -\log_2 x$ \quad — reflection across the $x$-axis.
+
+\begin{itemize}\setlength\itemsep{0pt}
+  \item Correct sketch (parent reflected; passes through $(1, 0)$,
+  $(2, -1)$, $(4, -2)$, $(8, -3)$) \hfill \textbf{A1}
+  \item Vertical asymptote $x = 0$ \hfill \textbf{A1}
+\end{itemize}
+
+\smallskip
+
+\textbf{(d)} New $x$-intercept of $g$: $\log_2(x - 2) = 0
+\Rightarrow x - 2 = 1 \Rightarrow x = 3$, so $(3, 0)$. \hfill \textbf{A1}
+
+\smallskip
+
+\textbf{(e)} $f(a) = \dfrac{1}{4} \Rightarrow \log_2 a = \dfrac{1}{4}
+\Rightarrow a = 2^{1/4} = \sqrt[4]{2}$ \hfill \textbf{A1}
+
+Point marked on graph at $\left(\sqrt[4]{2},\, \dfrac{1}{4}\right)
+\approx (1.19,\, 0.25)$. \hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 4: Identify base from a single point [3 marks] ---
+\item[4.] [Maximum mark: 3]
+
+\textbf{(a)} $\log_b 27 = 3 \Rightarrow b^3 = 27$ \hfill \textbf{M1}
+
+$b = 3$ \hfill \textbf{A1}
+
+\smallskip
+
+\textbf{(b)} The $x$-intercept of $y = \log_3 x$ is where $\log_3 x = 0$,
+i.e.\ $x = 3^0 = 1$. The curve crosses the $x$-axis at $(1, 0)$.
+\hfill \textbf{A1}
+
+%--- Problem 5: Equation from features and sketch [6 marks] ---
+\item[5.] [Maximum mark: 6]
+
+$y = \log_3(x - h) + k$ \quad has vertical asymptote $x = h$.
+
+\textbf{(a)} Asymptote is $x = 2$, so $h = 2$. \hfill \textbf{A1}
+
+\smallskip
+
+\textbf{(b)} Substitute $(5, 4)$ into $y = \log_3(x - 2) + k$:
+
+$4 = \log_3(5 - 2) + k = \log_3 3 + k = 1 + k$ \hfill \textbf{M1}
+
+$k = 3$ \hfill \textbf{A1}
+
+\smallskip
+
+\textbf{(c)} Sketch of $y = \log_3(x - 2) + 3$:
+\begin{itemize}\setlength\itemsep{0pt}
+  \item Vertical asymptote drawn at $x = 2$ \hfill \textbf{A1}
+  \item Correct shape (parent $\log_3 x$ shape, shifted right $2$ and up
+  $3$; passes through $(3, 3)$, $(5, 4)$, $(11, 5)$) \hfill \textbf{A1}
+  \item Point $(5, 4)$ marked on the curve \hfill \textbf{A1}
+\end{itemize}
+
+\end{enumerate}
+\end{document}

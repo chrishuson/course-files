@@ -1,0 +1,240 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 10,
+    "answer_box_top_frac": 0.18,
+    "source": "original (warmup, modeled on 7-1CW patterns)",
+    "parts": [
+      {
+        "label": "a_i",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Evaluate log_4(32)",
+        "expected": {"answer": "5/2"},
+        "tolerance": "Accept 2.5 or 5/2.",
+        "notes": "A1 for 5/2. Method: 32 = 4^(5/2), or change of base 5 ln(2)/(2 ln(2))."
+      },
+      {
+        "label": "a_ii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Evaluate log_8(4)",
+        "expected": {"answer": "2/3"},
+        "tolerance": "Accept exact 2/3 only; not 0.667.",
+        "notes": "A1 for 2/3. Method: 4 = 8^(2/3), or 2 ln(2)/(3 ln(2))."
+      },
+      {
+        "label": "a_iii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Evaluate log_(1/2)(8)",
+        "expected": {"answer": "-3"},
+        "notes": "A1 for -3. Negative base-(1/2) log: (1/2)^(-3) = 8."
+      },
+      {
+        "label": "a_iv",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Evaluate log_3(cube root of 9)",
+        "expected": {"answer": "2/3"},
+        "tolerance": "Accept exact 2/3 only.",
+        "notes": "A1 for 2/3. Method: log_3(9^(1/3)) = (1/3) log_3(9) = (1/3)(2)."
+      },
+      {
+        "label": "b_i",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write log_a(a^2 b) in terms of log_a(b)",
+        "expected": {"answer": "2 + log_a(b)"},
+        "tolerance": "Accept log_a(b) + 2.",
+        "notes": "A1 for 2 + log_a(b). Splits as log_a(a^2) + log_a(b)."
+      },
+      {
+        "label": "b_ii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write log_a(b/a) in terms of log_a(b)",
+        "expected": {"answer": "log_a(b) - 1"},
+        "notes": "A1 for log_a(b) - 1. Splits as log_a(b) - log_a(a)."
+      },
+      {
+        "label": "b_iii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Write log_a(sqrt(a b^3)) in terms of log_a(b)",
+        "expected": {"answer": "1/2 + (3/2) log_a(b)"},
+        "tolerance": "Accept (1 + 3 log_a(b))/2 or any algebraically equivalent form.",
+        "notes": "M1 for using power and product laws to reach (1/2)(1 + 3 log_a(b)) or equivalent. A1 for 1/2 + (3/2) log_a(b)."
+      },
+      {
+        "label": "b_iv",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Write log_(a^2)(b) in terms of log_a(b)",
+        "expected": {"answer": "(1/2) log_a(b)"},
+        "tolerance": "Accept log_a(b)/2.",
+        "notes": "M1 for change of base log_(a^2)(b) = log_a(b)/log_a(a^2) = log_a(b)/2. A1 for (1/2) log_a(b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 9,
+    "answer_box_top_frac": 0.10,
+    "source": "original (inverse / reflection across y=x)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Sketch y = 2^x on the provided axes; label y-intercept and HA",
+        "expected": {"answer": "increasing exponential through (0,1) approaching y=0 from above"},
+        "tolerance": "Accept any clearly-increasing exponential that passes through (0,1) and stays above y=0 with the asymptote indicated.",
+        "notes": "A1 for correct shape (passes through (0,1), strictly increasing, concave up). A1 for labelling the y-intercept (0,1) AND the horizontal asymptote y=0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Sketch y = log_2(x); label x-intercept and VA",
+        "expected": {"answer": "increasing log curve through (1,0), VA at x=0"},
+        "tolerance": "Sketch should be the reflection of (a) across y=x. Accept curves that pass through (1,0), (2,1), (4,2).",
+        "notes": "A1 for correct shape (passes through (1,0), increasing, concave down). A1 for labelling the x-intercept (1,0) AND the vertical asymptote x=0."
+      },
+      {
+        "label": "c",
+        "marks": 4,
+        "mark_codes": ["A1", "A1", "A1", "A1"],
+        "description": "Domain and range of y=2^x and y=log_2(x)",
+        "expected": {
+          "exp_domain": "x in R",
+          "exp_range": "y > 0",
+          "log_domain": "x > 0",
+          "log_range": "y in R"
+        },
+        "tolerance": "Accept any clear notation for 'all real numbers' (R, (-inf, inf), 'all reals'). For y > 0 accept (0, inf) or 'positive reals'.",
+        "notes": "A1 per cell, four cells total. Independent A1's — award each cell that is correct."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "State point on y=log_2(x) corresponding to (3,8) on y=2^x",
+        "expected": {"answer": "(8, 3)"},
+        "notes": "A1 for (8, 3). Coordinates swap under reflection across y=x."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 9,
+    "answer_box_top_frac": 0.18,
+    "source": "original (transformations of log_2 x: shift, shift, reflection)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Sketch g(x)=log_2(x-2); state VA",
+        "expected": {"answer": "VA: x = 2"},
+        "tolerance": "Sketch should pass through (3,0), (4,1), (6,2).",
+        "notes": "A1 for correct sketch shape (parent shifted right 2, passes through (3,0) and (4,1)). A1 for VA x = 2."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Sketch h(x)=log_2(x)+3; state VA",
+        "expected": {"answer": "VA: x = 0"},
+        "tolerance": "Sketch should pass through (1,3), (2,4), (4,5).",
+        "notes": "A1 for correct sketch shape (parent shifted up 3). A1 for VA x = 0 (unchanged by vertical shift)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Sketch k(x)=-log_2(x); state VA",
+        "expected": {"answer": "VA: x = 0"},
+        "tolerance": "Sketch should pass through (1,0), (2,-1), (4,-2), (8,-3).",
+        "notes": "A1 for correct sketch shape (parent reflected across x-axis; decreasing, concave up). A1 for VA x = 0 (unchanged by reflection across x-axis)."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "x-intercept of g(x)=log_2(x-2)",
+        "expected": {"answer": "(3, 0)"},
+        "tolerance": "Accept x = 3.",
+        "notes": "A1 for (3, 0) or x = 3. Solve log_2(x-2) = 0 => x-2 = 1 => x = 3."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "If f(a) = 1/4, find a and mark the point on the parent f graph",
+        "expected": {"answer": "a = 2^(1/4) (= fourth root of 2 ≈ 1.19)", "point": "(2^(1/4), 1/4)"},
+        "tolerance": "Accept a = 2^(1/4), 4th root of 2, or 1.19 (3 s.f.). Point is on the parent f, between x=1 and x=2.",
+        "notes": "A1 for a = 2^(1/4) (or equivalent exact form). A1 for marking the corresponding point on the graph of f."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 3,
+    "answer_box_top_frac": 0.10,
+    "source": "original (identify base from a single point)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find b given log_b(27) = 3",
+        "expected": {"answer": "b = 3"},
+        "notes": "M1 for converting to exponential form b^3 = 27. A1 for b = 3."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Coordinates of the x-intercept of y = log_3(x)",
+        "expected": {"answer": "(1, 0)"},
+        "tolerance": "Accept x = 1.",
+        "notes": "A1 for (1, 0). True for any log_b(x): the x-intercept is always (1, 0)."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "total_marks": 6,
+    "answer_box_top_frac": 0.50,
+    "source": "original (find h, k for transformed log_3 graph from features)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "h from VA x=2 in y=log_3(x-h)+k",
+        "expected": {"h": 2},
+        "notes": "A1 for h = 2. VA of log_b(x-h)+k is x = h."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "k given the curve passes through (5, 4)",
+        "expected": {"k": 3},
+        "notes": "M1 for substituting (5,4) into y = log_3(x-2) + k to get 4 = log_3(3) + k. A1 for k = 3."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Sketch y = log_3(x-2) + 3 with VA and the point (5,4)",
+        "expected": {"answer": "VA at x=2; curve passes through (3,3), (5,4), (11,5)"},
+        "tolerance": "Sketch should pass through (3,3) and (5,4); VA drawn explicitly.",
+        "notes": "A1 for VA drawn at x=2 (e.g. dashed vertical line). A1 for correct shape (parent log_3 shape, shifted right 2 and up 3; passes through (3,3) and (5,4)). A1 for the point (5,4) marked on the curve.",
+        "follow_through": "Award all three sketch marks based on the candidate's h and k from (a) and (b), even if those values are wrong."
+      }
+    ]
+  }
+]
