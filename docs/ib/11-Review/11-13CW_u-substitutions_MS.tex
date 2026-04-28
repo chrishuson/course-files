@@ -1,0 +1,166 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 28 April 2026}
+
+\begin{document}
+\subsubsection*{11.13 Classwork: Algebra (no calculator) --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: u = ln x ---
+\item[1.] [Maximum mark: 4]
+
+Solve $2(\ln x)^2 = 7\ln x - 3$.
+
+\medskip
+
+Let $u = \ln x$. Then $2u^2 - 7u + 3 = 0$. \hfill \textbf{M1}
+
+$(2u - 1)(u - 3) = 0$
+
+$u = \dfrac{1}{2}$ or $u = 3$ \hfill \textbf{A1}
+
+$\ln x = \dfrac{1}{2} \;\Rightarrow\; x = e^{1/2} = \sqrt{e}$ \hfill \textbf{A1}
+
+$\ln x = 3 \;\Rightarrow\; x = e^3$ \hfill \textbf{A1}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 2: u = ln x with log property ---
+\item[2.] [Maximum mark: 5]
+
+Solve $\ln(x^2) = (\ln x)^2 - 3$ for $x > 0$.
+
+\medskip
+
+$\ln(x^2) = 2\ln x$ \quad (for $x > 0$) \hfill \textbf{M1}
+
+Let $u = \ln x$:
+
+$2u = u^2 - 3$
+
+$u^2 - 2u - 3 = 0$ \hfill \textbf{M1}
+
+$(u - 3)(u + 1) = 0$
+
+$u = 3$ or $u = -1$ \hfill \textbf{A1}
+
+$\ln x = 3 \;\Rightarrow\; x = e^3$ \hfill \textbf{A1}
+
+$\ln x = -1 \;\Rightarrow\; x = e^{-1} = \dfrac{1}{e}$ \hfill \textbf{A1}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 3: u = e^x ---
+\item[3.] [Maximum mark: 5]
+
+Solve $3e^{2x} + 2 = 7e^x$.
+
+\medskip
+
+Let $u = e^x$, so $e^{2x} = u^2$:
+
+$3u^2 + 2 = 7u$
+
+$3u^2 - 7u + 2 = 0$ \hfill \textbf{M1}
+
+$(3u - 1)(u - 2) = 0$ \hfill \textbf{M1}
+
+$u = \dfrac{1}{3}$ or $u = 2$ \hfill \textbf{A1}
+
+$e^x = \dfrac{1}{3} \;\Rightarrow\; x = \ln \dfrac{1}{3} = -\ln 3$ \hfill \textbf{A1}
+
+$e^x = 2 \;\Rightarrow\; x = \ln 2$ \hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 4: trig with double-angle ---
+\item[4.] [Maximum mark: 6]
+
+Solve $\cos 2x = 3\cos x - 2$ for $0 \le x \le 2\pi$.
+
+\medskip
+
+Use $\cos 2x = 2\cos^2 x - 1$:
+
+$2\cos^2 x - 1 = 3\cos x - 2$ \hfill \textbf{M1}
+
+$2\cos^2 x - 3\cos x + 1 = 0$
+
+Let $u = \cos x$:
+
+$(2u - 1)(u - 1) = 0$ \hfill \textbf{M1}
+
+$u = \dfrac{1}{2}$ or $u = 1$
+
+$\cos x = \dfrac{1}{2}$: \quad $x = \dfrac{\pi}{3}$ \hfill \textbf{A1}
+
+\hphantom{$\cos x = \dfrac{1}{2}$:\quad} $x = \dfrac{5\pi}{3}$ \hfill \textbf{A1}
+
+$\cos x = 1$: \quad $x = 0$ \hfill \textbf{A1}
+
+\hphantom{$\cos x = 1$:\quad} $x = 2\pi$ \hfill \textbf{A1}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 5: u = 2^x with index manipulation ---
+\item[5.] [Maximum mark: 5]
+
+Solve $4^x + 16 = 5 \cdot 2^{x+1}$.
+
+\medskip
+
+$4^x = (2^x)^2$ and $5 \cdot 2^{x+1} = 10 \cdot 2^x$.
+
+Let $u = 2^x$:
+
+$u^2 + 16 = 10u$
+
+$u^2 - 10u + 16 = 0$ \hfill \textbf{M1}
+
+$u = \dfrac{10 \pm \sqrt{100 - 64}}{2} = \dfrac{10 \pm 6}{2}$ \hfill \textbf{M1}
+
+$u = 2$ or $u = 8$ \hfill \textbf{A1}
+
+$2^x = 2 \;\Rightarrow\; x = 1$ \hfill \textbf{A1}
+
+$2^x = 8 \;\Rightarrow\; x = 3$ \hfill \textbf{A1}
+
+\emph{Accept factoring $(u - 2)(u - 8) = 0$ in place of the quadratic formula for the second M1.}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 6: u = sqrt(x) ---
+\item[6.] [Maximum mark: 4]
+
+Solve $2x + 3 = 7\sqrt{x}$.
+
+\medskip
+
+Let $u = \sqrt{x}$ (so $u \ge 0$ and $x = u^2$):
+
+$2u^2 + 3 = 7u$
+
+$2u^2 - 7u + 3 = 0$ \hfill \textbf{M1}
+
+$(2u - 1)(u - 3) = 0$ \hfill \textbf{M1}
+
+$u = \dfrac{1}{2}$ or $u = 3$
+
+$\sqrt{x} = \dfrac{1}{2} \;\Rightarrow\; x = \dfrac{1}{4}$ \hfill \textbf{A1}
+
+$\sqrt{x} = 3 \;\Rightarrow\; x = 9$ \hfill \textbf{A1}
+
+\end{enumerate}
+\end{document}
