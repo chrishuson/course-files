@@ -1,0 +1,150 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 8,
+    "answer_box_top_frac": 0.18,
+    "source": "original (technique drill: solve b^x = c with calculator, 3 s.f.)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Solve 3^x = 17, 3 s.f.",
+        "expected": {"answer": "x = 2.58"},
+        "tolerance": "Accept exact form x = log_3(17) or log(17)/log(3) for full credit. Numerical: 2.58 (3 s.f.). Accept 2.579 with rounding mention.",
+        "notes": "M1 for taking a logarithm of both sides (any base) or rewriting as x = log_3(17). A1 for the numerical value 2.58 to 3 s.f."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Solve 4^(x-2) = 30, 3 s.f.",
+        "expected": {"answer": "x = 4.45"},
+        "tolerance": "Accept exact form x = 2 + log_4(30) or 2 + log(30)/log(4). Numerical: 4.45 (3 s.f.).",
+        "notes": "M1 for (x-2) log 4 = log 30 (or equivalent log step). A1 for x = 4.45 (3 s.f.)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Solve 2^(3x+1) = 100, 3 s.f.",
+        "expected": {"answer": "x = 1.88"},
+        "tolerance": "Accept exact form x = (log_2(100) - 1)/3 or (2/log(2) - 1)/3. Numerical: 1.88 (3 s.f.).",
+        "notes": "M1 for (3x+1) log 2 = log 100. A1 for x = 1.88 (3 s.f.)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Solve 5^x = 7^(x-1), 3 s.f.",
+        "expected": {"answer": "x = 5.79"},
+        "tolerance": "Accept exact form x = log(7) / (log(7) - log(5)) or x = log_(7/5)(7). Numerical: 5.79 (3 s.f.). Sign-error mid-computation that yields 5.79 still receives both marks since the final value is correct.",
+        "notes": "M1 for taking log of both sides AND collecting x-terms: x(log 7 - log 5) = log 7 (or equivalent). A1 for x = 5.79 (3 s.f.). The M1 covers both the take-log step and the collect-terms step since they're inseparable for this equation."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 7,
+    "answer_box_top_frac": 0.10,
+    "source": "original (bacteria growth, P(t) = 200 * 3^(t/10))",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Initial population P(0)",
+        "expected": {"answer": "200"},
+        "notes": "A1 for 200. From P(0) = 200 * 3^0 = 200."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "P(24), nearest integer",
+        "expected": {"answer": "2793"},
+        "tolerance": "Accept 2793 or 2794 (rounding from 2793.3...).",
+        "notes": "M1 for substituting t=24 to get 200 * 3^2.4. A1 for 2793 (or 2794 if rounding differs)."
+      },
+      {
+        "label": "c",
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "M1", "A1"],
+        "description": "Find t when P = 5000, 1 d.p.",
+        "expected": {"answer": "t = 29.3 hours"},
+        "tolerance": "Accept exact form t = 10 log_3(25) or 10 log(25)/log(3). Numerical: 29.3 (1 d.p.).",
+        "notes": "M1 for setting up 200 * 3^(t/10) = 5000. A1 for isolating 3^(t/10) = 25. M1 for taking log to get t/10 = log(25)/log(3). A1 for t = 29.3 (1 d.p.)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 7,
+    "answer_box_top_frac": 0.18,
+    "source": "original (radioactive decay, iodine-131 half-life model)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "M(20) for M(t) = 50 * (1/2)^(t/8), 3 s.f.",
+        "expected": {"answer": "8.84 g"},
+        "tolerance": "Accept exact form 50 * 2^(-2.5) or 50/(4*sqrt(2)). Numerical: 8.84 g (3 s.f.); accept also 8.839 with rounding.",
+        "notes": "M1 for substituting t=20 into 50 * (0.5)^(t/8) to get 50 * (0.5)^2.5. A1 for 8.84 g (3 s.f.). Units 'g' or 'grams' should be present but absence is not penalised here."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Time when 60% has decayed (40% remains), 3 s.f.",
+        "expected": {"answer": "t = 10.6 days"},
+        "tolerance": "Accept exact form t = 8 log(0.4)/log(0.5) or 8 log_(1/2)(0.4). Numerical: 10.6 days (3 s.f.).",
+        "notes": "M1 for recognising 40% remains (i.e. M(t) = 20) and writing (0.5)^(t/8) = 0.40. M1 for taking log of both sides to isolate t/8. A1 for t = 10.6 days (3 s.f.)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Time when only 1 g remains, nearest day",
+        "expected": {"answer": "t = 45 days"},
+        "tolerance": "Accept exact form t = 8 log(0.02)/log(0.5) or 8 log_2(50). Numerical: 45 days (or 45.15... rounded). 46 days only if candidate has rounded their intermediate value differently.",
+        "notes": "M1 for setting up (0.5)^(t/8) = 1/50 = 0.02. A1 for t ≈ 45 days (rounded from 45.15...)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 6,
+    "answer_box_top_frac": 0.10,
+    "source": "original (cooling tea, T(t) = 20 + 65*(0.9)^t)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Initial temperature T(0)",
+        "expected": {"answer": "85 C"},
+        "tolerance": "Accept 85 degrees C, 85°C, or just 85.",
+        "notes": "A1 for 85°C. T(0) = 20 + 65*1 = 85."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "T(15), 3 s.f.",
+        "expected": {"answer": "33.4 C"},
+        "tolerance": "Accept 33.4°C (3 s.f.) or 33.38 with rounding mention.",
+        "notes": "M1 for substituting t=15 into 20 + 65*(0.9)^15. A1 for 33.4°C (3 s.f.)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Time at which T = 40 C, 3 s.f.",
+        "expected": {"answer": "t = 11.2 minutes"},
+        "tolerance": "Accept exact form t = log(4/13)/log(0.9) or log(20/65)/log(0.9). Numerical: 11.2 minutes (3 s.f.).",
+        "notes": "M1 for setting T(t) = 40 and isolating (0.9)^t = 20/65 = 4/13. M1 for taking log of both sides. A1 for t = 11.2 minutes (3 s.f.)."
+      }
+    ]
+  }
+]
