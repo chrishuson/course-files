@@ -1,0 +1,307 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 29 April 2026}
+
+\begin{document}
+\subsubsection*{11.15 Classwork: Periodic Function Modeling (calculator) --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: trig kinematics warmup [7 marks] ---
+%--- Source: AA SL 2022 May P2 TZ1 Q05 ---
+\item[1.] [Maximum mark: 7]
+
+A particle moves along a straight line so that its velocity, $v$ m s$^{-1}$, after $t$ seconds is given by
+$$v(t) = e^{\sin t} + 4\sin t, \text{ for } 0 \le t \le 6.$$
+
+\medskip
+
+\textbf{(a)} Find the value of $t$ when the particle is at rest. \hfill [2]
+
+\medskip
+
+Recognising at rest $v = 0$. \hfill \textbf{M1}
+
+\textit{GDC: solve $e^{\sin t} + 4 \sin t = 0$ on $[0, 6]$.}
+
+$t = 3.34692\ldots = 3.35$ (seconds) \hfill \textbf{A1}
+
+\textit{Note: Award M1A0 for additional solutions to $v = 0$ (e.g.\ $t = -0.205$ or $t = 6.08$).}
+
+\medskip
+
+\textbf{(b)} Find the acceleration of the particle when it changes direction. \hfill [3]
+
+\medskip
+
+Recognising particle changes direction when $v = 0$ OR when $t = 3.347\ldots$ \hfill \textbf{M1}
+
+\textit{GDC: evaluate $\dfrac{dv}{dt}$ at $t = 3.347\ldots$.}
+
+$a = -4.71439\ldots$
+
+$a = -4.71$ (m s$^{-2}$) \hfill \textbf{A2}
+
+\medskip
+
+\textbf{(c)} Find the total distance travelled by the particle. \hfill [2]
+
+\medskip
+
+distance travelled $= \displaystyle\int_0^6 |v(t)|\,dt$ \hfill \textbf{A1}
+
+\textit{GDC: split at $t = 3.347$ since $v$ changes sign there.}
+
+$\displaystyle\int_0^{3.347} v(t)\,dt - \int_{3.347}^{6} v(t)\,dt = 14.310\ldots + 6.443\ldots = 20.753\ldots$
+
+$= 20.8$ (metres) \hfill \textbf{A1}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 2: spring oscillation [13 marks] ---
+%--- Source: AA SL 2023 May P2 TZ2 Q08 ---
+\item[2.] [Maximum mark: 13]
+
+$H(t) = a\cos(7.8\,t) + b$, $\quad 0 \le t \le 10$. Min at $1$ m, max at $1.8$ m.
+
+\medskip
+
+\textbf{(a)} Find the period of the function. \hfill [2]
+
+\medskip
+
+$7.8 = \dfrac{2\pi}{\text{period}}$ \hfill \textbf{M1}
+
+period $= \dfrac{2\pi}{7.8} = \dfrac{10\pi}{39} \approx 0.806$ (seconds) \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Find (i) $a$; \quad (ii) $b$. \hfill [3]
+
+\medskip
+
+\emph{METHOD 1.} Amplitude $= \dfrac{\max - \min}{2} = \dfrac{1.8 - 1}{2} = 0.4$. \hfill \textbf{M1}
+
+The weight is released at $t = 0$ at the minimum, and $\cos(0) = 1$, so $H(0) = a + b = 1$ — therefore $a < 0$.
+
+(i) $a = -0.4$ \hfill \textbf{A1}
+
+(ii) $b = \dfrac{\max + \min}{2} = \dfrac{1.8 + 1}{2} = 1.4$ \hfill \textbf{A1}
+
+\medskip
+
+\emph{METHOD 2.} Form two simultaneous equations: $H(0) = a + b = 1$ and $H(\pi/7.8) = -a + b = 1.8$. \hfill \textbf{M1}
+
+$a = -0.4$, $b = 1.4$ \hfill \textbf{A1A1}
+
+\medskip
+
+\textbf{(c)} Find the number of times the weight reaches its maximum height in the first 5 seconds. \hfill [2]
+
+\medskip
+
+EITHER $\dfrac{5}{\text{period}} = \dfrac{5}{0.8055\ldots} = 6.207\ldots < 6\tfrac{1}{2}$ \hfill \textbf{(A1)}
+
+OR maximums occur at $t = 0.403, 1.21, 2.01, 2.82, 3.62, 4.43$ \hfill \textbf{(A1)}
+
+THEN $6$ times \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(d)} Find the first time the weight reaches a height of $1.5$ metres. \hfill [2]
+
+\medskip
+
+Recognising $H(t) = 1.5$. \hfill \textbf{M1}
+
+$-0.4 \cos(7.8 t) + 1.4 = 1.5 \;\Rightarrow\; \cos(7.8 t) = -0.25$
+
+\textit{GDC: solve on $[0, 10]$.}
+
+$t = 0.234$ (seconds) \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(e)} Find the probability the height is $> 1.5$ metres at the picture time. \hfill [4]
+
+\medskip
+
+Find the second time $H = 1.5$ in the first period: $t = 0.572$. \hfill \textbf{M1}
+
+In each period, $H > 1.5$ for $0.572 - 0.234 = 0.338$ seconds. \hfill \textbf{(A1)}
+
+\textit{Equivalently: total time $> 1.5$ in $[0, 5]$ is $\approx 2.028$ seconds (six full crossings).}
+
+Multiply by $6$ and divide by $5$: \hfill \textbf{M1}
+
+$P(H > 1.5) = \dfrac{0.338 \times 6}{5} = 0.4055\ldots = 0.406$ \hfill \textbf{A1}
+
+\bigskip
+\hrule
+\bigskip
+
+\newpage
+
+%--- Problem 3: harbour tide [13 marks] ---
+%--- Source: AA SL 2021 Nov P2 Q08 ---
+\item[3.] [Maximum mark: 13]
+
+$H(t) = a\sin(b(t-c)) + d$. First high tide 04:30, period 12 hours, $H \in [2.2, 6.8]$.
+
+\medskip
+
+\textbf{(a)} Show that $b = \dfrac{\pi}{6}$. \hfill [1]
+
+\medskip
+
+$12 = \dfrac{2\pi}{b}$, so $b = \dfrac{2\pi}{12} = \dfrac{\pi}{6}$. \hfill \textbf{A1 AG}
+
+\medskip
+
+\textbf{(b)} Find $a$. \hfill [2]
+
+\medskip
+
+$a = \dfrac{\max - \min}{2} = \dfrac{6.8 - 2.2}{2}$ \hfill \textbf{M1}
+
+$= 2.3$ (m) \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} Find $d$. \hfill [2]
+
+\medskip
+
+$d = \dfrac{\max + \min}{2} = \dfrac{6.8 + 2.2}{2}$ \hfill \textbf{M1}
+
+$= 4.5$ (m) \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(d)} Find the smallest possible value of $c$. \hfill [3]
+
+\medskip
+
+\emph{METHOD 1.} Substitute $t = 4.5$, $H = 6.8$: \hfill \textbf{(A1)}
+
+$6.8 = 2.3 \sin\!\left(\dfrac{\pi}{6}(4.5 - c)\right) + 4.5 \;\Rightarrow\; \sin\!\left(\dfrac{\pi}{6}(4.5 - c)\right) = 1$
+
+\hfill \textbf{M1}
+
+$\dfrac{\pi}{6}(4.5 - c) = \dfrac{\pi}{2} \;\Rightarrow\; 4.5 - c = 3 \;\Rightarrow\; c = 1.5$ \hfill \textbf{A1}
+
+\medskip
+
+\emph{METHOD 2.} Standard sine peaks one quarter-period after the inflection at $t = c$. Quarter-period $= 3$, so $4.5 - c = 3$. \hfill \textbf{(A1)(M1)}
+
+$c = 1.5$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(e)} Find the height of the water at 12:00. \hfill [2]
+
+\medskip
+
+Substitute $t = 12$ (graphically or algebraically): \hfill \textbf{M1}
+
+$H(12) = 2.3 \sin\!\left(\dfrac{\pi}{6}(12 - 1.5)\right) + 4.5 = 2.3 \sin(5.4977\ldots) + 4.5 = 2.87$ (m) \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(f)} Number of hours over a 24-hour period when tide is higher than $5$ m. \hfill [3]
+
+\medskip
+
+Solve $5 = 2.3\sin\!\left(\dfrac{\pi}{6}(t - 1.5)\right) + 4.5$. \hfill \textbf{M1}
+
+\textit{GDC: $t = 1.919, 7.082$ in $[0, 12]$, then $t = 13.919, 19.082$ in $[12, 24]$.} \hfill \textbf{(A1)}
+
+Total: $2(7.082 - 1.919) = 10.326$. \hfill \textbf{A1}
+
+$\approx 10.3$ hours.
+
+\bigskip
+\hrule
+\bigskip
+
+\newpage
+
+%--- Problem 4: windmill blade [13 marks] ---
+%--- Source: AA SL 2021 May P2 TZ2 Q07 ---
+\item[4.] [Maximum mark: 13]
+
+\textbf{(a)} Find the height of point $C$ above the ground. \hfill [2]
+
+\medskip
+
+$\tan(0.6) = \dfrac{h}{12}$ \hfill \textbf{M1}
+
+$h = 12 \tan(0.6) = 8.20964\ldots = 8.21$ (m) \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Find the angle of elevation of point $C$ from $B$. \hfill [2]
+
+\medskip
+
+Distance from $B$ to base $= 12 - 7 = 5$ m. \hfill \textbf{(A1)}
+
+$\tan(\angle B) = \dfrac{8.21}{5} = 1.6419\ldots \;\Rightarrow\; \angle B = 1.024$ (rad) \hfill \textbf{A1}
+
+\textit{Accept $58.7°$.}
+
+\medskip
+
+\textbf{(c)} Find the length of each blade. \hfill [2]
+
+\medskip
+
+Let $x$ be the blade length: $x + 1.8 + 2.5 = 8.21$ \hfill \textbf{(A1)}
+
+$x = 3.91$ (m) \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(d)} Find $p$ and $q$ in $h(t) = p\cos\!\left(\dfrac{3\pi}{10}t\right) + q$. \hfill [4]
+
+\medskip
+
+\emph{METHOD 1.}
+
+Blade length = amplitude: $p = \dfrac{\max - \min}{2}$ \hfill \textbf{M1}
+
+$p = 3.91$ \hfill \textbf{A1}
+
+Centre of windmill = vertical shift: $q = \dfrac{\max + \min}{2}$ \hfill \textbf{M1}
+
+$q = 8.21$ \hfill \textbf{A1}
+
+\medskip
+
+\emph{METHOD 2.} Two equations from max and min positions: \hfill \textbf{M1 M1}
+
+$12.12 = p\cos(0) + q$, $\quad 4.30 = p\cos(\pi) + q$
+
+$p = 3.91$, $q = 8.21$ \hfill \textbf{A1A1}
+
+\medskip
+
+\textbf{(e)} Find $n$, the number of times $D$ passes overhead in 1 minute. \hfill [3]
+
+\medskip
+
+Period $= \dfrac{2\pi}{3\pi/10} = \dfrac{20}{3} \approx 6.667$ seconds. \hfill \textbf{M1}
+
+Rotations per minute $= \dfrac{60}{\text{period}}$ \hfill \textbf{M1}
+
+$n = 9$ (must be an integer) \hfill \textbf{A1}
+
+\textit{Accept $n = 10$, $n = 18$, $n = 19$.}
+
+\end{enumerate}
+\end{document}

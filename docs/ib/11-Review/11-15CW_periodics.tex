@@ -44,7 +44,7 @@ $$H(t) = a\cos(7.8\,t) + b, \quad a, b \in \mathbb{R}, \quad 0 \le t \le 10,$$
 where $t$ is the time in seconds after the weight is released.
 
 \begin{center}
-\includegraphics[width=0.30\textwidth]{../graphics/AA\space SL\space 2023\space May\space P2\space TZ2_Q8a.png}
+\includegraphics[width=0.30\textwidth]{../graphics/AA_SL_2023_May_P2_TZ2_Q08a_spring.png}
 \end{center}
 
 \begin{enumerate}[itemsep=0.05cm]
@@ -53,8 +53,28 @@ where $t$ is the time in seconds after the weight is released.
 
 The weight is released when its base is at a minimum height of $1$ metre above the ground, and it reaches a maximum height of $1.8$ metres above the ground. The graph of $H$ is shown in the following diagram.
 
+%\begin{center}
+%\includegraphics[width=0.50\textwidth]{../graphics/AA_SL_2023_May_P2_TZ2_Q08b_spring-graph.png}
+%\end{center}
+
 \begin{center}
-\includegraphics[width=0.50\textwidth]{../graphics/AA\space SL\space 2023\space May\space P2\space TZ2_Q8b.png}
+\begin{tikzpicture}
+\begin{axis}[
+    width=10cm, height=4.5cm,
+    axis lines=middle,
+    xlabel={$t$}, ylabel={$H$},
+    xlabel style={at={(ticklabel* cs:1)}, anchor=west},
+    ylabel style={at={(ticklabel* cs:1)}, anchor=south},
+    xmin=-0.4, xmax=10.8,
+    ymin=0, ymax=2.2,
+    xtick={10}, xticklabels={10},
+    ytick={0.5, 1, 1.5, 2},
+    tick label style={font=\small},
+    samples=400,
+]
+\addplot[thick, domain=0:10] {-0.4*cos(deg(7.8*x)) + 1.4};
+\end{axis}
+\end{tikzpicture}
 \end{center}
 
 \begin{enumerate}[itemsep=0.1cm]
@@ -82,8 +102,27 @@ where $t$ is the number of hours after midnight, and $a$, $b$, $c$, $d$ are cons
 
 The following graph shows the height of the water for 13 hours, starting at midnight.
 
+%\begin{center}
+%\includegraphics[width=0.5\textwidth]{../graphics/AA_SL_2021_Nov_P2_Q08_tide.png}
+%\end{center}
+
 \begin{center}
-\includegraphics[width=0.5\textwidth]{../graphics/AA\space SL\space 2021\space Nov\space P2_Q8.png}
+\begin{tikzpicture}
+\begin{axis}[
+    width=10cm, height=5cm,
+    axis lines=middle,
+    xlabel={$t$}, ylabel={$H(t)$},
+    xlabel style={at={(ticklabel* cs:1)}, anchor=west},
+    ylabel style={at={(ticklabel* cs:1)}, anchor=south},
+    xmin=-0.5, xmax=14,
+    ymin=0, ymax=10,
+    xtick={5, 10}, ytick={5, 10},
+    tick label style={font=\small},
+    samples=300,
+]
+\addplot[thick, domain=0:13] {2.3*sin(deg((pi/6)*(x - 1.5))) + 4.5};
+\end{axis}
+\end{tikzpicture}
 \end{center}
 
 The first high tide occurs at 04:30 and the next high tide occurs $12$ hours later. Throughout the day, the height of the water fluctuates between $2.2$ m and $6.8$ m. All heights are given correct to one decimal place.
@@ -107,7 +146,7 @@ The first high tide occurs at 04:30 and the next high tide occurs $12$ hours lat
 The six blades of a windmill rotate around a centre point $C$. Points $A$ and $B$ and the base of the windmill are on level ground, as shown in the following diagram.
 
 \begin{center}
-\includegraphics[width=0.65\textwidth]{../graphics/AA\space SL\space 2021\space May\space P2\space TZ2_Q7.png}
+\includegraphics[width=0.65\textwidth]{../graphics/AA_SL_2021_May_P2_TZ2_Q07_windmill.png}
 \end{center}
 
 From point $A$ the angle of elevation of point $C$ is $0.6$ radians.

@@ -1,0 +1,196 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 7,
+    "answer_box_top_frac": 0.27,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find t when v = e^(sin t) + 4 sin t = 0 on [0, 6]",
+        "expected": {"answer": "t = 3.35"},
+        "tolerance": "Accept t = 3.347 or 3.34692.",
+        "notes": "M1 for recognising at rest v = 0. A1 for t = 3.35 seconds. Award M1A0 for additional solutions outside [0,6], e.g. t = -0.205 or t = 6.08."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find acceleration when particle changes direction",
+        "expected": {"answer": "a = -4.71 m/s^2"},
+        "tolerance": "Accept -4.71439 or any 3 s.f. equivalent.",
+        "notes": "M1 for recognising direction change at v = 0 (or t = 3.347). A2 for a = -4.71 m/s^2 (GDC differentiation of v at t = 3.347)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Find total distance travelled by particle on [0, 6]",
+        "expected": {"answer": "20.8 m"},
+        "tolerance": "Accept 20.7534 or 20.75.",
+        "notes": "A1 for setting up integral split at t = 3.347 (since v changes sign). A1 for total distance = 14.310 + 6.443 = 20.8 m."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 13,
+    "answer_box_top_frac": 0.10,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find period of H(t) = a cos(7.8t) + b",
+        "expected": {"answer": "0.806 seconds"},
+        "tolerance": "Accept 10*pi/39 (exact) or 0.8055.",
+        "notes": "M1 for 7.8 = 2*pi/period. A1 for period = 0.806."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find a and b given min = 1, max = 1.8",
+        "expected": {"a": -0.4, "b": 1.4},
+        "tolerance": "Accept |a| = 0.4 with sign justified by H(0) = min = 1.",
+        "notes": "M1 for amplitude = (max - min)/2 OR for system of two equations using H(0) = 1 and H(pi/7.8) = 1.8. A1 for a = -0.4. A1 for b = 1.4."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Number of times weight reaches maximum in first 5 seconds",
+        "expected": {"answer": "6"},
+        "tolerance": "Must be 6.",
+        "notes": "A1 for 5/period = 6.207 OR enumeration of t = 0.403, 1.21, 2.01, 2.82, 3.62, 4.43. A1 for 6 times."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "First time the base reaches H = 1.5 m",
+        "expected": {"answer": "t = 0.234 seconds"},
+        "tolerance": "Accept 0.2338 to 4 s.f.",
+        "notes": "M1 for setting H(t) = 1.5 and solving on [0, 10]. A1 for t = 0.234."
+      },
+      {
+        "label": "e",
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "M1", "A1"],
+        "description": "Probability H > 1.5 m at random time in first 5 seconds",
+        "expected": {"answer": "0.406"},
+        "tolerance": "Accept 0.4055 or equivalent.",
+        "notes": "M1 for finding second time H = 1.5 (t = 0.572). A1 for noting H > 1.5 for 0.338 s per period (or total 2.028 s in 5 seconds). M1 for multiplying by 6 / dividing by 5. A1 for P = 0.406."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 13,
+    "answer_box_top_frac": 0.10,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Show b = pi/6",
+        "expected": {"answer": "b = pi/6"},
+        "tolerance": "Show that (answer given). Must derive from period = 12.",
+        "notes": "A1 for 12 = 2*pi/b leading to b = pi/6 (AG)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find a (amplitude)",
+        "expected": {"answer": "a = 2.3"},
+        "notes": "M1 for a = (max - min)/2 = (6.8 - 2.2)/2. A1 for 2.3 (m)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find d (vertical shift)",
+        "expected": {"answer": "d = 4.5"},
+        "notes": "M1 for d = (max + min)/2 = (6.8 + 2.2)/2. A1 for 4.5 (m)."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["A1", "M1", "A1"],
+        "description": "Smallest possible value of c, given first high tide at t = 4.5",
+        "expected": {"answer": "c = 1.5"},
+        "notes": "A1 for substituting t = 4.5, H = 6.8 (or recognising quarter-period = 3). M1 for solving sin(pi/6 * (4.5 - c)) = 1, i.e., 4.5 - c = 3. A1 for c = 1.5."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Height of water at 12:00",
+        "expected": {"answer": "H = 2.87 m"},
+        "tolerance": "Accept 2.87365.",
+        "notes": "M1 for substituting t = 12 (graphically or algebraically). A1 for H = 2.87 m."
+      },
+      {
+        "label": "f",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Hours per 24-hour period when tide > 5 m",
+        "expected": {"answer": "10.3 hours"},
+        "tolerance": "Accept 10 or 10.3258.",
+        "notes": "M1 for solving H(t) = 5. A1 for crossing times t = 1.919 and 7.082 (with 13.919 and 19.082 in second period). A1 for total = 2(7.082 - 1.919) = 10.3 hours."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 13,
+    "answer_box_top_frac": 0.10,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Height of point C above ground",
+        "expected": {"answer": "8.21 m"},
+        "tolerance": "Accept 8.2096.",
+        "notes": "M1 for tan(0.6) = h/12. A1 for h = 12*tan(0.6) = 8.21 m."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Angle of elevation of C from B",
+        "expected": {"answer": "1.02 radians"},
+        "tolerance": "Accept 58.7 degrees.",
+        "notes": "A1 for tan(angle B) = 8.21/5. A1 for angle B = 1.02 rad (or 58.7 deg)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Length of each blade",
+        "expected": {"answer": "3.91 m"},
+        "notes": "A1 for x + 1.8 + 2.5 = 8.21. A1 for x = 3.91 m."
+      },
+      {
+        "label": "d",
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "M1", "A1"],
+        "description": "Find p and q in h(t) = p cos(3pi/10 * t) + q (max at t=0)",
+        "expected": {"p": 3.91, "q": 8.21},
+        "notes": "M1 for blade length = amplitude (or system of two equations). A1 for p = 3.91. M1 for centre of windmill = vertical shift. A1 for q = 8.21."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Number n of times D passes overhead in 1 minute",
+        "expected": {"answer": "n = 9"},
+        "tolerance": "Accept n = 10, 18, or 19 (per official MS).",
+        "notes": "M1 for period = 2pi/(3pi/10) = 20/3 ~ 6.667 s. M1 for rotations per minute = 60/period. A1 for n = 9 (must be integer)."
+      }
+    ]
+  }
+]
