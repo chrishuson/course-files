@@ -1,0 +1,118 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 6,
+    "answer_box_top_frac": 0.30,
+    "parts": [
+      {
+        "label": null,
+        "marks": 6,
+        "mark_codes": ["M1", "A1", "A1", "M1", "A1", "A1"],
+        "description": "Find n and k for binomial expansion (1+kx)^n = 1 + 9x/2 + 15k^2 x^2 + ... + k^n x^n. No calculator.",
+        "expected": {"n": 6, "k": "3/4"},
+        "tolerance": "Accept k = 0.75.",
+        "notes": "M1 for applying binomial expansion (Pascal's triangle, general term, or expansion). A1 for nk = 9/2 from coefficient of x. A1 for binomial(n,2) = 15 from 15k^2 x^2 (k^2 cancels). M1 for valid attempt to solve n^2 - n - 30 = 0. A1 for n = 6 (taking the positive integer root). A1 for k = 3/4. If candidate finds n = 6 with no working, award M1A0A0M1A1A0; if both n = 6 and k = 3/4 with no working, award M1A0A0M1A1A1.",
+        "source_qb_id": "23N.1.SL.TZ1.6"
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 4,
+    "answer_box_top_frac": 0.65,
+    "parts": [
+      {
+        "label": null,
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "A1", "A1"],
+        "description": "Coefficient of x^6 in (2x - 5)^9.",
+        "expected": {"answer": -672000},
+        "tolerance": "Must be -672000 (the coefficient, not -672000 x^6).",
+        "notes": "M1 for forming the general term binomial(9,r)(2x)^(9-r)(-5)^r OR for binomial(9,3)(2x)^6(-5)^3. A1 for identifying r = 3 OR for the term binomial(9,3)(2x)^6(-5)^3. A1 for binomial(9,3) = 84 (or 2^6 = 64 and (-5)^3 = -125 visible). A1 for -672000. Award A0 for final answer -672000 x^6.",
+        "source_qb_id": "24N.2.SL.TZ2.2"
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 7,
+    "answer_box_top_frac": 0.30,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 4,
+        "mark_codes": ["M1", "M1", "A1", "A1"],
+        "description": "Two machines manufacture semiconductors (A: 10% defective, B: 5% defective), 10 units made by a randomly selected machine, both equally likely. Find P(exactly 2 defective).",
+        "expected": {"answer": 0.134},
+        "tolerance": "Accept 0.1342, 0.13417, or any 3 s.f. equivalent.",
+        "notes": "M1 for recognition of binomial distribution X ~ B(10, p) (just stating 'binomial' suffices; do not require correct parameters). M1 for considering BOTH machines: p = 0.1 AND p = 0.05. A1 for the weighted sum 0.5(0.1937...) + 0.5(0.0746...). A1 for 0.134 (3 s.f.). Accept use of calculator notation such as binompdf.",
+        "source_qb_id": "25N.2.SL.TZ1.6"
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Given exactly two semiconductors are defective, find the probability they were manufactured by machine A.",
+        "expected": {"answer": 0.722},
+        "tolerance": "Accept 0.7218, 0.723, or 0.724 from using 3 s.f. values from part (a).",
+        "notes": "M1 for recognition of conditional probability (must show context, not just generic P(A|B)). A1 for the ratio P(A and 2 def)/P(2 def) = (0.5 * 0.1937)/0.1342. A1 for 0.722 (3 s.f.).",
+        "follow_through": "Award FT marks if candidate uses their own (incorrect) value of P(2 defective) from part (a) consistently.",
+        "source_qb_id": "25N.2.SL.TZ1.6"
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.21,
+    "parts": [
+      {
+        "label": null,
+        "marks": 5,
+        "mark_codes": ["A1", "M1", "A1", "A1", "A1"],
+        "description": "D ~ N(32, sigma^2), IQR = 0.28. Find sigma.",
+        "expected": {"answer": 0.208},
+        "tolerance": "Accept 0.2076 or 0.20756.",
+        "notes": "METHOD 1: A1 for Q1 = 31.86 or Q3 = 32.14 (using IQR centered on mean). M1 for recognition that P(D < Q1) = 0.25. A1 for z = -0.6745 (or 0.6745). A1 for the equation (31.86 - 32)/sigma = -0.6745. A1 for sigma = 0.208. METHOD 2: M1 for recognition that IQR spans 0.5 of probability mass (or 0.25 each tail). A1 for z = +/-0.6745. A2 for the equation 2 * 0.6745 * sigma = 0.28 (split A1 + A1). A1 for sigma = 0.208. Accept either method.",
+        "source_qb_id": "23M.2.SL.TZ1.5"
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "total_marks": 8,
+    "answer_box_top_frac": 0.40,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Given regression of F on A: F = 0.335A - 32.6, and regression of A on F: A = 2.89F + 99.3. Estimate arm span for foot length 19.8 cm.",
+        "expected": {"answer": 157},
+        "tolerance": "Accept 156.5 or 156.522 (cm). Must use the A-on-F line (predicting A from F).",
+        "notes": "M1 for substituting F = 19.8 into the A-on-F regression line. A1 for A = 156.522 ~ 157 cm. Award M0A0 if candidate uses the wrong regression line (F on A) and gets A ~ 156.",
+        "source_qb_id": "25M.2.SL.TZ1.5"
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find mean arm span and mean foot length. Regression lines intersect at the mean point.",
+        "expected": {"mean_A": 160, "mean_F": 20.9},
+        "tolerance": "Accept mean_A = 159.686 and mean_F = 20.8948 to 3 s.f.",
+        "notes": "M1 for recognising that the two regression lines intersect at the mean point (may be seen on a sketch or by setting up the system of equations). A1 for mean arm span = 160 cm (159.686...). A1 for mean foot length = 20.9 cm (20.8948...).",
+        "source_qb_id": "25M.2.SL.TZ1.5"
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "H ~ N(163, sigma^2), with 88% between 153 and 173. Find sigma.",
+        "expected": {"answer": 6.43},
+        "tolerance": "Accept 6.4318 or 6.43181 to 3 s.f.",
+        "notes": "METHOD 1 (z-score): M1 for symmetry argument: P(H < 153) = 0.06 or P(H < 173) = 0.94. A1 for z = invNorm(0.06) = -1.5548 (or +1.5548). A1 for sigma = 10/1.5548 = 6.43 cm. METHOD 2 (GDC): M1 for setting up normCdf(153, 173, 163, sigma) = 0.88 and solving on GDC. A2 for sigma = 6.43.",
+        "source_qb_id": "25M.2.SL.TZ1.5"
+      }
+    ]
+  }
+]

@@ -1,0 +1,103 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math AA SL \\* 5 May 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{4cm}\footnotesize First \& Last name:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{11.16 Classwork: Distributions}
+
+Problems 1 and 2 are no calculator. Problems 3, 4, 5 calculator allowed.
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: 23N.1.SL.TZ1.6 (P1 SL, no calc) ---
+\item The binomial expansion of $(1 + kx)^{n}$ is given by
+      \[ 1 + \tfrac{9x}{2} + 15k^{2}x^{2} + \cdots + k^{n}x^{n}, \]
+      where $n \in \mathbb{Z}^{+}$ and $k \in \mathbb{Q}$.
+
+      Find the value of $n$ and the value of $k$. \hfill [6]
+
+\begin{tikzpicture}
+  \draw (-0.4,0) rectangle (15,7);
+  \foreach \y in {1,...,6} \draw[dotted] (0,\y)--(14.5,\y);
+\end{tikzpicture}
+
+%--- Problem 2: 24N.2.SL.TZ2.2 (P2 SL, calc allowed; doable by hand) ---
+\item Find the coefficient of $x^{6}$ in the expansion of $(2x - 5)^{9}$. \hfill [4]
+
+\begin{tikzpicture}
+  \draw (-0.4,0) rectangle (15,7);
+  \foreach \y in {1,...,6} \draw[dotted] (0,\y)--(14.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: 25N.2.SL.TZ1.6 (P2 SL, calc) ---
+\item Two machines are used in a factory to manufacture semiconductors.
+      Machine A manufactures defective semiconductors $10\%$ of the time,
+      while machine B manufactures defective semiconductors $5\%$ of the time.
+      A randomly selected machine manufactures ten semiconductors.
+      Both machines are equally likely to be selected.
+
+      \begin{enumerate}[itemsep=0.1cm]
+        \item Find the probability that exactly two semiconductors are defective. \hfill [4]
+        \item Given that exactly two semiconductors are defective, find the
+              probability that they were manufactured by machine A. \hfill [3]
+      \end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.4,0) rectangle (15,12);
+  \foreach \y in {1,...,11} \draw[dotted] (0,\y)--(14.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: 23M.2.SL.TZ1.5 (P2 SL, calc; uses z-score) ---
+\item A company manufactures metal tubes for bicycle frames.
+      The diameters of the tubes, $D$ mm, are normally distributed with
+      mean $32$ and standard deviation $\sigma$. The interquartile range
+      of the diameters is $0.28$.
+
+      Find the value of $\sigma$. \hfill [5]
+
+\begin{tikzpicture}
+  \draw (-0.4,0) rectangle (15,12);
+  \foreach \y in {1,...,11} \draw[dotted] (0,\y)--(14.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 5: 25M.2.SL.TZ1.5 (P2 SL, calc; regression + normal+z) ---
+\item In a study, measurements for arm span, $A$ cm, and foot length,
+      $F$ cm, are taken from a large group of adults.
+
+      For this group, the regression line of $F$ on $A$ is
+      $F = 0.335A - 32.6$, and the regression line of $A$ on $F$ is
+      $A = 2.89F + 99.3$. Each regression line passes through the mean point.
+
+      \begin{enumerate}[itemsep=0.1cm]
+        \item By using an appropriate regression line, find an estimate of the
+              arm span for an adult with a foot length of $19.8$\,cm. \hfill [2]
+        \item For this group of adults, find the mean arm span and the
+              mean foot length. \hfill [3]
+      \end{enumerate}
+
+      The heights, $H$ cm, of adults in the group can be modelled by a normal
+      distribution with mean $163$\,cm and standard deviation $\sigma$\,cm.
+      It is found that $88\%$ of the group have a height between $153$\,cm
+      and $173$\,cm.
+
+      \begin{enumerate}[itemsep=0.1cm,resume]
+        \setcounter{enumii}{2}
+        \item Find the value of $\sigma$. \hfill [3]
+      \end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.4,0) rectangle (15,12);
+  \foreach \y in {1,...,11} \draw[dotted] (0,\y)--(14.5,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

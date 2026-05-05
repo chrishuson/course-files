@@ -1,0 +1,191 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math AA SL \\* 5 May 2026}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{11.16 Classwork: Distributions --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: 23N.1.SL.TZ1.6 [6 marks, no calc] ---
+\item[1.] [Maximum mark: 6] \quad \emph{No calculator.}
+
+The binomial expansion of $(1 + kx)^{n}$ is given by
+$1 + \dfrac{9x}{2} + 15k^{2}x^{2} + \cdots + k^{n}x^{n}$, where
+$n \in \mathbb{Z}^{+}$ and $k \in \mathbb{Q}$. Find $n$ and $k$. \hfill [6]
+
+\medskip
+
+Apply the binomial expansion. \hfill \textbf{M1}
+
+$(1 + kx)^{n} = 1 + \binom{n}{1}kx + \binom{n}{2}k^{2}x^{2} + \cdots$
+
+Coefficient of $x$:\; $nk = \dfrac{9}{2}$ \hfill \textbf{A1}
+
+Coefficient of $x^{2}$:\; $\binom{n}{2}k^{2} = 15k^{2} \;\Rightarrow\; \dbinom{n}{2} = 15$ \hfill \textbf{A1}
+
+\medskip
+
+$\dfrac{n(n-1)}{2} = 15 \;\Rightarrow\; n^{2} - n - 30 = 0$
+
+Valid attempt to solve. \hfill \textbf{M1}
+
+$(n - 6)(n + 5) = 0$, and $n \in \mathbb{Z}^{+}$, so $n = 6$. \hfill \textbf{A1}
+
+Substitute back: $6k = \dfrac{9}{2}$, so $k = \dfrac{3}{4}$. \hfill \textbf{A1}
+
+\medskip
+
+%--- Problem 2: 24N.2.SL.TZ2.2 [4 marks] ---
+\item[2.] [Maximum mark: 4]
+
+Find the coefficient of $x^{6}$ in the expansion of $(2x - 5)^{9}$. \hfill [4]
+
+\medskip
+
+General term:\; $\binom{9}{r}(2x)^{9-r}(-5)^{r}$. \hfill \textbf{M1}
+
+For $x^{6}$, need $9 - r = 6$, so $r = 3$.
+
+Term:\; $\binom{9}{3}(2x)^{6}(-5)^{3}$. \hfill \textbf{A1}
+
+\medskip
+
+$\binom{9}{3} = 84$, \;\; $(2)^{6} = 64$, \;\; $(-5)^{3} = -125$. \hfill \textbf{A1}
+
+Coefficient $= 84 \times 64 \times (-125) = -672000$. \hfill \textbf{A1}
+
+\textit{Note: Award A0 for final answer $-672000\,x^{6}$.}
+
+\medskip
+
+%--- Problem 3: 25N.2.SL.TZ1.6 [7 marks] ---
+\item[3.] [Maximum mark: 7]
+
+\textbf{(a)} Probability that exactly two semiconductors are defective. \hfill [4]
+
+\medskip
+
+Recognition of binomial distribution; let $X \sim B(10, p)$. \hfill \textbf{M1}
+
+\textit{GDC: \texttt{binomPdf(10, p, 2)} for each machine.}
+
+For machine A ($p = 0.10$): $\;P(X = 2) = \binom{10}{2}(0.10)^{2}(0.90)^{8} = 0.193710\ldots$
+
+For machine B ($p = 0.05$): $\;P(X = 2) = \binom{10}{2}(0.05)^{2}(0.95)^{8} = 0.0746347\ldots$
+
+Attempt to consider both machines using $p = 0.1$ \textbf{AND} $p = 0.05$. \hfill \textbf{M1}
+
+$P(\text{2 defective}) = 0.5(0.193710\ldots) + 0.5(0.0746347\ldots)$ \hfill \textbf{A1}
+
+$= 0.134172\ldots = 0.134$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Given exactly two defective, find $P(\text{machine A})$. \hfill [3]
+
+\medskip
+
+Recognition of conditional probability. \hfill \textbf{M1}
+
+$P(A \mid \text{2 def}) = \dfrac{P(A \cap \text{2 def})}{P(\text{2 def})} = \dfrac{0.5 \times 0.193710\ldots}{0.134172\ldots} = \dfrac{0.0968\ldots}{0.1342\ldots}$ \hfill \textbf{A1}
+
+$= 0.72187\ldots = 0.722$ \hfill \textbf{A1}
+
+\textit{Note: Accept $0.723$ or $0.724$ from using 3 s.f.\ values from part (a).}
+
+\medskip
+
+%--- Problem 4: 23M.2.SL.TZ1.5 [5 marks] ---
+\item[4.] [Maximum mark: 5]
+
+$D \sim N(32,\, \sigma^{2})$, IQR $= 0.28$. Find $\sigma$. \hfill [5]
+
+\medskip
+
+\textbf{METHOD 1 (using quartile values).}
+
+By symmetry, $Q_{1} = 32 - 0.14 = 31.86$ \;or\; $Q_{3} = 32 + 0.14 = 32.14$. \hfill \textbf{A1}
+
+Recognition that $P(D < Q_{1}) = 0.25$ (or $P(D > Q_{3}) = 0.25$). \hfill \textbf{M1}
+
+$z$-score for the lower quartile:\; $z = \text{invNorm}(0.25) = -0.674489\ldots$ \hfill \textbf{A1}
+
+\textit{GDC: \texttt{invNorm(0.25, 0, 1)}.}
+
+Standardise: $\;\dfrac{31.86 - 32}{\sigma} = -0.674489\ldots$ \hfill \textbf{A1}
+
+$\sigma = \dfrac{0.14}{0.674489\ldots} = 0.207564\ldots = 0.208$ (mm) \hfill \textbf{A1}
+
+\medskip
+
+\textbf{METHOD 2 (using IQR directly).}
+
+Recognition that IQR $= Q_{3} - Q_{1} = 2 \times 0.674489\ldots \times \sigma$ (areas $0.25$ each side). \hfill \textbf{M1}
+
+$z = \pm 0.674489\ldots$ \hfill \textbf{A1}
+
+$2 \times 0.674489 \times \sigma = 0.28$ \hfill \textbf{A1A1}
+
+$\sigma = 0.207564\ldots = 0.208$ (mm) \hfill \textbf{A1}
+
+\medskip
+
+%--- Problem 5: 25M.2.SL.TZ1.5 [8 marks] ---
+\item[5.] [Maximum mark: 8]
+
+\textbf{(a)} Estimate arm span for adult with foot length $19.8$\,cm. \hfill [2]
+
+\medskip
+
+Substitute $F = 19.8$ into the regression line for $A$ on $F$ (we are predicting $A$). \hfill \textbf{M1}
+
+$A = 2.89(19.8) + 99.3 = 156.522$ \;cm
+
+Arm span $\approx 157$ cm. \hfill \textbf{A1}
+
+\textit{Note: Award M0A0 if candidate uses $F$ on $A$ regression instead, giving $A \approx 156$.}
+
+\medskip
+
+\textbf{(b)} Find mean arm span and mean foot length. \hfill [3]
+
+\medskip
+
+Recognition that the two regression lines intersect at the mean point $(\bar A, \bar F)$. \hfill \textbf{M1}
+
+\textit{GDC: solve the system $F = 0.335 A - 32.6$ and $A = 2.89 F + 99.3$.}
+
+Substituting: $A = 2.89(0.335 A - 32.6) + 99.3$
+
+$A(1 - 0.96815) = -94.214 + 99.3$
+
+$\bar A = 159.686\ldots \approx 160$ cm \hfill \textbf{A1}
+
+$\bar F = 0.335(159.686) - 32.6 = 20.8948\ldots \approx 20.9$ cm \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} Find $\sigma$ for $H \sim N(163,\, \sigma^{2})$, given $P(153 < H < 173) = 0.88$. \hfill [3]
+
+\medskip
+
+By symmetry of the normal curve about $163$, the tails total $0.12$,
+so $P(H < 153) = 0.06$ (or $P(H < 173) = 0.94$). \hfill \textbf{M1}
+
+$z$-score:\; $z = \text{invNorm}(0.06) = -1.55477\ldots$ \hfill \textbf{A1}
+
+\textit{GDC: \texttt{invNorm(0.06, 0, 1)}.}
+
+Standardise: $\;\dfrac{153 - 163}{\sigma} = -1.55477$, so $\sigma = \dfrac{10}{1.55477\ldots}$
+
+$\sigma = 6.43181\ldots = 6.43$ cm \hfill \textbf{A1}
+
+\textit{Note: Accept METHOD 2 — solve \texttt{normCdf(153, 173, 163, $\sigma$) = 0.88} on the GDC.}
+
+\end{enumerate}
+\end{document}
