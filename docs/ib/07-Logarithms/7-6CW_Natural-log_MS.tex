@@ -1,0 +1,206 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 6 May 2026}
+
+\begin{document}
+\subsubsection*{7.6 Classwork: Natural Logarithms and $\exp$ --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Warmup --- evaluate logs + log-law expressions [8 marks] ---
+\item[1.] [Maximum mark: 8]
+
+\textbf{(a)} Evaluate.
+
+\textbf{(i)} $\log_9 27$. \;Let $x = \log_9 27$, so $9^x = 27$, i.e.\
+$3^{2x} = 3^3$. Hence $x = \dfrac{3}{2}$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(ii)} $\log_{27} 9 = \dfrac{2}{3}$ \;(since
+$27^{2/3} = (3^3)^{2/3} = 3^2 = 9$). \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(iii)} $\log_{1/3} 27 = -3$ \;(since
+$(1/3)^{-3} = 3^3 = 27$). \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(iv)} $\log_2 \sqrt[4]{8} = \log_2 \!\left(2^{3/4}\right)
+= \dfrac{3}{4}$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Let $L = \log_a b$.
+
+\textbf{(i)} $\log_a(a^3 b) = \log_a a^3 + \log_a b
+= 3 + \log_a b$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(ii)} $\log_a\!\left(\dfrac{b^2}{a}\right)
+= 2\log_a b - \log_a a
+= 2\log_a b - 1$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(iii)} $\log_a \sqrt{a^3 b}
+= \dfrac{1}{2}\log_a(a^3 b)
+= \dfrac{1}{2}\!\left(3 + \log_a b\right)
+= \dfrac{3}{2} + \dfrac{1}{2}\log_a b$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(iv)} $\log_{a^3} b = \dfrac{\log_a b}{\log_a a^3}
+= \dfrac{1}{3}\log_a b$. \hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 2: Simplify expressions with e and ln (exact) [5 marks] ---
+\item[2.] [Maximum mark: 5]
+
+\textbf{(a)} $\ln\!\left(e^{\,4}\right) = 4$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} $e^{\,\ln 7} = 7$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} $\ln\!\left(e^{\,2x+1}\right) = 2x + 1$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(d)} $e^{\,3\ln 2} = e^{\,\ln 2^3} = e^{\,\ln 8}$.
+\hfill \textbf{M1}
+
+$= 8$. \hfill \textbf{A1}
+
+\emph{M1 may also be awarded for
+$e^{\,3\ln 2} = \!\left(e^{\,\ln 2}\right)^{\!3} = 2^3$.}
+
+%--- Problem 3: Solve equations with e and ln (exact) [6 marks] ---
+\item[3.] [Maximum mark: 6]
+
+\textbf{(a)} $e^{\,x} = 12 \;\Rightarrow\; x = \ln 12$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} $\ln x = 5 \;\Rightarrow\; x = e^{\,5}$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} $e^{\,2x-1} = 9$. \;Take $\ln$ of both sides:
+$2x - 1 = \ln 9$. \hfill \textbf{M1}
+
+$x = \dfrac{1 + \ln 9}{2}$. \hfill \textbf{A1}
+
+\emph{Accept $\tfrac{1}{2} + \ln 3$ \;(since $\ln 9 = 2\ln 3$).}
+
+\medskip
+
+\textbf{(d)} $\ln(3x + 1) = 2$. \;Exponentiate: $3x + 1 = e^{\,2}$.
+\hfill \textbf{M1}
+
+$x = \dfrac{e^{\,2} - 1}{3}$. \hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 4: Exponential growth (bacteria, continuous) [13 marks] ---
+\item[4.] [Maximum mark: 13]
+
+$N(t) = 250\, e^{\,kt}$, with $N(3) = 1000$.
+
+\textbf{(a)} $N(0) = 250\, e^{\,0} = 250$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Substitute $t = 3$ and $N = 1000$:
+$1000 = 250\, e^{\,3k}$. \hfill \textbf{M1}
+
+$e^{\,3k} = 4$. \hfill \textbf{A1}
+
+$3k = \ln 4 \;\Rightarrow\; k = \dfrac{1}{3}\ln 4$. \hfill \textbf{A1\;AG}
+
+\medskip
+
+\textbf{(c)} $N(5) = 250\, e^{\,5k} = 250 \cdot 4^{\,5/3}$.
+\hfill \textbf{M1}
+
+$4^{\,5/3} = 10.0794\ldots$ \hfill \textbf{A1}
+
+$N(5) = 250 \times 10.0794\ldots = 2519.84\ldots \approx 2520$.
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(d)} Set $250\, e^{\,kt} = 10\,000$, so
+$e^{\,kt} = 40$. \hfill \textbf{M1}
+
+$kt = \ln 40 \;\Rightarrow\; t = \dfrac{\ln 40}{k}
+= \dfrac{3\ln 40}{\ln 4}$. \hfill \textbf{M1}
+
+$t = 7.9829\ldots \approx 7.98$ hours (3 s.f.). \hfill \textbf{A1}
+
+\emph{M1\,M1 may also be awarded for solving
+$250\, e^{\,kt} = 10\,000$ with a graphing-calculator intersect or
+solver.}
+
+\medskip
+
+\textbf{(e)} Doubling: $2N_0 = N_0\, e^{\,kt}
+\;\Rightarrow\; e^{\,kt} = 2$. \hfill \textbf{M1}
+
+$t = \dfrac{\ln 2}{k} = \dfrac{\ln 2}{(1/3)\ln 4}
+= \dfrac{3\ln 2}{2\ln 2} = \dfrac{3}{2}$. \hfill \textbf{M1}
+
+$t = 1.50$ hours. \hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 5: Continuous vs annual compound interest [12 marks] ---
+\item[5.] [Maximum mark: 12]
+
+$A(t) = 5000\, e^{\,0.06\, t}$.
+
+\textbf{(a)} $A(4) = 5000\, e^{\,0.24}$. \hfill \textbf{M1}
+
+$= 5000 \times 1.27124915\ldots = 6356.245\ldots
+\approx \$6356.25$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} $5000\, e^{\,0.06\, t} = 8000
+\;\Rightarrow\; e^{\,0.06\, t} = 1.6$. \hfill \textbf{M1}
+
+$0.06\, t = \ln 1.6 \;\Rightarrow\; t = \dfrac{\ln 1.6}{0.06}$.
+\hfill \textbf{M1}
+
+$t = 7.8333\ldots \approx 7.83$ years (3 s.f.). \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} Doubling: $2 = e^{\,0.06\, t}$. \hfill \textbf{M1}
+
+$t = \dfrac{\ln 2}{0.06}$. \hfill \textbf{M1}
+
+$t = 11.552\ldots \approx 11.6$ years (3 s.f.). \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(d)} Annual compounding:
+$A_{\text{ann}}(4) = 5000\,(1.06)^{\,4}$. \hfill \textbf{M1}
+
+$= 5000 \times 1.26247696 = \$6312.38$. \hfill \textbf{A1}
+
+Difference: $\$6356.25 - \$6312.38 = \$43.87$
+\;(or $\$43.86$ from unrounded subtraction). \hfill \textbf{M1\;A1}
+
+\emph{Accept \$43.86 or \$43.87.}
+
+\end{enumerate}
+\end{document}

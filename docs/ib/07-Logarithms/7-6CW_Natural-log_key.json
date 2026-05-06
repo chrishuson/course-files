@@ -1,0 +1,265 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 8,
+    "answer_box_top_frac": 0.20,
+    "source": "original (warmup: evaluate logs with integer/rational answers; apply log laws to expressions in log_a b)",
+    "parts": [
+      {
+        "label": "a_i",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Evaluate log_9 27 (no calculator).",
+        "expected": {"answer": "3/2"},
+        "tolerance": "Accept 3/2, 1.5, or 1 1/2.",
+        "notes": "A1 for 3/2. Method: 9^x = 27, so 3^(2x) = 3^3, x = 3/2."
+      },
+      {
+        "label": "a_ii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Evaluate log_27 9 (no calculator).",
+        "expected": {"answer": "2/3"},
+        "tolerance": "Accept 2/3 or 0.667 (3 s.f.).",
+        "notes": "A1 for 2/3. Method: 27^x = 9, so 3^(3x) = 3^2, x = 2/3."
+      },
+      {
+        "label": "a_iii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Evaluate log_(1/3) 27 (no calculator).",
+        "expected": {"answer": "-3"},
+        "tolerance": "Accept -3 only (sign required).",
+        "notes": "A1 for -3. Method: (1/3)^x = 27, so 3^(-x) = 3^3, x = -3."
+      },
+      {
+        "label": "a_iv",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Evaluate log_2 (8^(1/4)) (no calculator).",
+        "expected": {"answer": "3/4"},
+        "tolerance": "Accept 3/4 or 0.75.",
+        "notes": "A1 for 3/4. Method: 8^(1/4) = 2^(3/4), so log_2 2^(3/4) = 3/4."
+      },
+      {
+        "label": "b_i",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write log_a(a^3 b) in terms of L = log_a b.",
+        "expected": {"answer": "3 + log_a b"},
+        "tolerance": "Accept 3 + L or log_a b + 3.",
+        "notes": "A1 for 3 + log_a b. Uses product rule: log_a(a^3) + log_a(b)."
+      },
+      {
+        "label": "b_ii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write log_a(b^2 / a) in terms of L = log_a b.",
+        "expected": {"answer": "2 log_a b - 1"},
+        "tolerance": "Accept 2L - 1 or -1 + 2 log_a b.",
+        "notes": "A1 for 2 log_a b - 1. Uses quotient + power rules."
+      },
+      {
+        "label": "b_iii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write log_a sqrt(a^3 b) in terms of L = log_a b.",
+        "expected": {"answer": "3/2 + (1/2) log_a b"},
+        "tolerance": "Accept 3/2 + (1/2) L, or (1/2)(3 + log_a b), or (3 + log_a b)/2.",
+        "notes": "A1 for 3/2 + (1/2) log_a b. Uses sqrt as ^(1/2), then product + power rules."
+      },
+      {
+        "label": "b_iv",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write log_(a^3) b in terms of L = log_a b.",
+        "expected": {"answer": "(1/3) log_a b"},
+        "tolerance": "Accept L/3 or (log_a b)/3.",
+        "notes": "A1 for (1/3) log_a b. Uses change-of-base: log_(a^3) b = log_a b / log_a a^3 = L/3."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.10,
+    "source": "original (simplify expressions using inverse identities ln(e^x) = x and e^(ln x) = x)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Simplify ln(e^4).",
+        "expected": {"answer": "4"},
+        "notes": "A1 for 4. Inverse identity ln(e^x) = x."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Simplify e^(ln 7).",
+        "expected": {"answer": "7"},
+        "notes": "A1 for 7. Inverse identity e^(ln x) = x."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Simplify ln(e^(2x+1)).",
+        "expected": {"answer": "2x + 1"},
+        "tolerance": "Accept 2x+1 or 1+2x.",
+        "notes": "A1 for 2x + 1. Inverse identity applied to expression-valued exponent."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Simplify e^(3 ln 2).",
+        "expected": {"answer": "8"},
+        "tolerance": "Accept 8 only.",
+        "notes": "M1 for rewriting 3 ln 2 = ln 2^3 = ln 8 (or for (e^(ln 2))^3 = 2^3). A1 for 8."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 6,
+    "answer_box_top_frac": 0.45,
+    "source": "original (solve simple e^x and ln equations; exact answers in terms of e or ln)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Solve e^x = 12 (exact answer).",
+        "expected": {"answer": "x = ln 12"},
+        "tolerance": "Accept ln 12 or log_e 12. Numerical 2.4849... not required for full credit; exact form expected.",
+        "notes": "A1 for x = ln 12. Direct application of taking ln of both sides."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Solve ln x = 5 (exact answer).",
+        "expected": {"answer": "x = e^5"},
+        "tolerance": "Accept e^5. Numerical 148.4... not required for full credit.",
+        "notes": "A1 for x = e^5. Direct application of exponentiating both sides."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Solve e^(2x-1) = 9 (exact answer).",
+        "expected": {"answer": "x = (1 + ln 9) / 2"},
+        "tolerance": "Accept (1 + ln 9)/2, 1/2 + ln 3, or (1 + 2 ln 3)/2 (all equivalent).",
+        "notes": "M1 for taking ln to get 2x - 1 = ln 9. A1 for x = (1 + ln 9)/2 or equivalent simplified form."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Solve ln(3x + 1) = 2 (exact answer).",
+        "expected": {"answer": "x = (e^2 - 1) / 3"},
+        "tolerance": "Accept (e^2 - 1)/3.",
+        "notes": "M1 for exponentiating to get 3x + 1 = e^2. A1 for x = (e^2 - 1)/3."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 13,
+    "answer_box_top_frac": 0.30,
+    "source": "original (exponential growth: bacteria N(t) = 250 e^(kt), N(3) = 1000)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down N when t = 0.",
+        "expected": {"answer": "250"},
+        "notes": "A1 for 250. From N(0) = 250 e^0 = 250."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Show that k = (1/3) ln 4.",
+        "expected": {"answer": "k = (1/3) ln 4"},
+        "tolerance": "Show that k = (1/3) ln 4 (answer given). Accept also k = ln(4^(1/3)) or k = (ln 4)/3.",
+        "notes": "M1 for substituting t=3, N=1000 to get 1000 = 250 e^(3k). A1 for simplifying to e^(3k) = 4. A1 (AG) for taking ln to obtain 3k = ln 4 and dividing by 3."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find N(5) to the nearest integer.",
+        "expected": {"answer": "2520"},
+        "tolerance": "Accept 2519 or 2520 depending on rounding. Exact form 250 * 4^(5/3) acceptable as intermediate.",
+        "notes": "M1 for substituting t=5 into 250 e^(kt) (using k = (1/3) ln 4 or equivalent). A1 for evaluating e^(5k) = 4^(5/3) ≈ 10.079. A1 for N(5) ≈ 2520."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Find t when N(t) = 10,000 (3 s.f.).",
+        "expected": {"answer": "t = 7.98 hours"},
+        "tolerance": "Accept exact form t = 3 ln(40) / ln(4) or ln(40)/k. Numerical: 7.98 (3 s.f.). Accept also 7.99 with rounding mention. Graphing-calculator intersect/solver methods earn full credit.",
+        "notes": "M1 for setting 250 e^(kt) = 10000 and isolating to e^(kt) = 40. M1 for taking ln to get t = ln(40)/k = 3 ln(40)/ln(4). A1 for t ≈ 7.98 hours (3 s.f.). M1+M1 may also be awarded for a GDC-based solve."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Find the doubling time of the population (3 s.f.).",
+        "expected": {"answer": "t = 1.50 hours"},
+        "tolerance": "Accept exact form t = 3/2 = 1.5 hours, or equivalently 3 ln 2 / ln 4. Numerical: 1.50 (3 s.f.).",
+        "notes": "M1 for setting up doubling condition 2 = e^(kt). M1 for isolating t = ln(2)/k = 3 ln 2 / ln 4 = 3/2. A1 for t = 1.50 hours."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "total_marks": 12,
+    "answer_box_top_frac": 0.18,
+    "source": "original (continuous compound interest A(t) = 5000 e^(0.06 t); compare with annual compounding for part d)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find A(4), nearest cent.",
+        "expected": {"answer": "$6356.25"},
+        "tolerance": "Accept $6356.25 or 6356.25 (with or without $ sign). 5000 * e^0.24.",
+        "notes": "M1 for substituting t=4 into 5000 e^(0.06 t). A1 for $6356.25 (rounding 6356.2457... to nearest cent)."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Find t when A(t) = 8000 (3 s.f.).",
+        "expected": {"answer": "t = 7.83 years"},
+        "tolerance": "Accept exact form t = ln(1.6)/0.06 or (50/3) ln(1.6). Numerical: 7.83 (3 s.f.). Graphing-calculator solve methods earn full credit.",
+        "notes": "M1 for setting 5000 e^(0.06 t) = 8000 and isolating to e^(0.06 t) = 1.6. M1 for taking ln to get t = ln(1.6)/0.06. A1 for t ≈ 7.83 years (3 s.f.)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Find doubling time for the continuous account (3 s.f.).",
+        "expected": {"answer": "t = 11.6 years"},
+        "tolerance": "Accept exact form t = ln(2)/0.06 or (50/3) ln 2. Numerical: 11.6 (3 s.f.). Accept 11.55 with rounding mention.",
+        "notes": "M1 for setting up 2 = e^(0.06 t). M1 for taking ln to isolate t = ln(2)/0.06. A1 for t ≈ 11.6 years (3 s.f.)."
+      },
+      {
+        "label": "d",
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "M1", "A1"],
+        "description": "Find value of second account (annual compounding 6%) after 4 years, and difference from continuous account. Both to nearest cent.",
+        "expected": {"annual": "$6312.38", "difference": "$43.87"},
+        "tolerance": "Accept annual value $6312.38. Accept difference $43.86 or $43.87 (depending on whether subtraction uses rounded or unrounded values; 6356.25 - 6312.38 = 43.87, while unrounded gives 43.86).",
+        "notes": "M1 for setting up 5000 (1.06)^4. A1 for $6312.38. M1 for subtracting the two account values. A1 for difference $43.86 or $43.87 (both accepted).",
+        "follow_through": "Award the second M1 and A1 for difference even if candidate's value in (a) was incorrect — accept any difference computed correctly from candidate's continuous-account value and their annual value."
+      }
+    ]
+  }
+]
