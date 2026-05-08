@@ -1,0 +1,191 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 8 May 2026}
+
+\begin{document}
+\subsubsection*{7.9 Classwork: Exponential and Logarithmic Word Problems
+--- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Bacteria growth N(t) = 200 e^(kt), N(2) = 800 [13 marks] ---
+\item[1.] [Maximum mark: 13]
+
+$N(t) = 200\, e^{\,kt}$, with $N(2) = 800$.
+
+\medskip
+
+\textbf{(a)} $N(0) = 200\, e^{\,0} = 200$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Substitute $t = 2$ and $N = 800$:
+$800 = 200\, e^{\,2k}$. \hfill \textbf{M1}
+
+$e^{\,2k} = 4$. \hfill \textbf{A1}
+
+$2k = \ln 4 \;\Rightarrow\; k = \dfrac{1}{2}\ln 4$. \hfill \textbf{A1\;AG}
+
+\emph{Note: $k = \tfrac{1}{2}\ln 4 = \ln 2$ (equivalent forms).}
+
+\medskip
+
+\textbf{(c)} $N(5) = 200\, e^{\,5k} = 200 \cdot 4^{\,5/2}$. \hfill \textbf{M1}
+
+$4^{\,5/2} = 32$. \hfill \textbf{A1}
+
+$N(5) = 200 \times 32 = 6400$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(d)} Set $200\, e^{\,kt} = 5000$, so $e^{\,kt} = 25$. \hfill \textbf{M1}
+
+$kt = \ln 25 \;\Rightarrow\; t = \dfrac{\ln 25}{k}
+= \dfrac{2\ln 25}{\ln 4}$. \hfill \textbf{M1}
+
+$t = 4.6439\ldots \approx 4.64$ hours (3 s.f.). \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(e)} Doubling: $2 N_{0} = N_{0}\, e^{\,kt}
+\;\Rightarrow\; e^{\,kt} = 2$. \hfill \textbf{M1}
+
+$t = \dfrac{\ln 2}{k} = \dfrac{\ln 2}{(1/2)\ln 4}
+= \dfrac{2\ln 2}{2\ln 2} = 1$. \hfill \textbf{M1}
+
+$t = 1.00$ hour. \hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 2: Annual + continuous compounding [12 marks] ---
+\item[2.] [Maximum mark: 12]
+
+\$3000 at $4.5\,\%$ per annum, compounded annually.
+
+\medskip
+
+\textbf{(a)} Value after 1 year $= 3000 \times 1.045 = \$3135$.
+\hfill \textbf{AG}
+
+\medskip
+
+\textbf{(b)} $V(6) = 3000\,(1.045)^{\,6}$. \hfill \textbf{M1}
+
+$(1.045)^{\,6} = 1.30226\ldots$ \hfill \textbf{A1}
+
+$V(6) = 3000 \times 1.30226\ldots = 3906.78\ldots \approx \$3907$.
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} $3000\,(1.045)^{\,n} > 5000 \;\Rightarrow\;
+(1.045)^{\,n} > \dfrac{5}{3}$. \hfill \textbf{M1}
+
+$n > \dfrac{\ln(5/3)}{\ln 1.045} = 11.604\ldots$ \hfill \textbf{M1}
+
+Smallest integer $n = 12$ years. \hfill \textbf{A1}
+
+\emph{Verification: $V(11) \approx \$4868.55 < 5000$; $V(12) \approx
+\$5087.66 > 5000$. Award A1 for $n = 12$ regardless of method.}
+
+\medskip
+
+\textbf{(d)} Continuous: $A(6) = 3000\, e^{\,0.27}$. \hfill \textbf{M1}
+
+$e^{\,0.27} = 1.30996\ldots$, so $A(6) = 3929.8838\ldots
+\approx \$3929.88$. \hfill \textbf{A1}
+
+Difference:
+$\$3929.88 - \$3906.78 = \$23.10$. \hfill \textbf{M1\;A1}
+
+\emph{Accept \$23.10 or \$23.11 depending on intermediate rounding.}
+
+\hfill \textbf{A1} (presentation: both values stated to nearest cent)
+
+\newpage
+
+%--- Problem 3: Cesium-137 decay M(t) = 64 (1/2)^(t/30) [7 marks] ---
+\item[3.] [Maximum mark: 7]
+
+$M(t) = 64\,(1/2)^{\,t/30}$.
+
+\medskip
+
+\textbf{(a)} $M(50) = 64\,(0.5)^{\,50/30} = 64\,(0.5)^{\,5/3}$.
+\hfill \textbf{M1}
+
+$= 64 \times 0.31498\ldots = 20.158\ldots \approx 20.2$ g (3 s.f.).
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} $64\,(0.5)^{\,t/30} = 8 \;\Rightarrow\;
+(0.5)^{\,t/30} = \dfrac{1}{8} = (0.5)^{\,3}$. \hfill \textbf{M1}
+
+$\dfrac{t}{30} = 3 \;\Rightarrow\; t = 90$ years. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} $5\,\%$ remaining means $M(t) = 0.05 \times 64 = 3.2$:
+
+$64\,(0.5)^{\,t/30} = 3.2 \;\Rightarrow\; (0.5)^{\,t/30} = 0.05$.
+\hfill \textbf{M1}
+
+Take $\ln$:
+$\dfrac{t}{30} = \dfrac{\ln 0.05}{\ln 0.5} = 4.3219\ldots$,
+\;so\; $t = 129.66\ldots$. \hfill \textbf{M1}
+
+$t \approx 130$ years (nearest year). \hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 4: Coffee cooling T(t) = 22 + 64 e^(-kt), T(4) = 54 [11 marks] ---
+\item[4.] [Maximum mark: 11]
+
+$T(t) = 22 + 64\, e^{-kt}$, with $T(4) = 54$.
+
+\medskip
+
+\textbf{(a)} $T(0) = 22 + 64 = 86\,^{\circ}$C. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Room temperature $= 22\,^{\circ}$C \;(the limit as
+$t \to \infty$). \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} $54 = 22 + 64\, e^{-4k}
+\;\Rightarrow\; 64\, e^{-4k} = 32$. \hfill \textbf{M1}
+
+$e^{-4k} = \dfrac{1}{2}$. \hfill \textbf{A1}
+
+$-4k = \ln\tfrac{1}{2} = -\ln 2 \;\Rightarrow\; k = \dfrac{1}{4}\ln 2$.
+\hfill \textbf{A1\;AG}
+
+\medskip
+
+\textbf{(d)} $T(10) = 22 + 64\, e^{-10 k}
+= 22 + 64\, e^{-(5/2)\ln 2}$. \hfill \textbf{M1}
+
+$= 22 + 64 \cdot 2^{-5/2} = 22 + \dfrac{64}{4\sqrt{2}}
+= 22 + 8\sqrt{2}$. \hfill \textbf{A1}
+
+$= 33.314\ldots \approx 33.3\,^{\circ}$C (3 s.f.). \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(e)} Set $T(t) = 30$:
+$30 = 22 + 64\, e^{-kt} \;\Rightarrow\; 64\, e^{-kt} = 8
+\;\Rightarrow\; e^{-kt} = \dfrac{1}{8}$. \hfill \textbf{M1}
+
+$-kt = -3\ln 2 \;\Rightarrow\; t = \dfrac{3\ln 2}{k}
+= \dfrac{3\ln 2}{(1/4)\ln 2} = 12$. \hfill \textbf{M1}
+
+$t = 12$ minutes. \hfill \textbf{A1}
+
+\end{enumerate}
+\end{document}

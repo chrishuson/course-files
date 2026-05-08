@@ -1,0 +1,187 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 13,
+    "answer_box_top_frac": 0.50,
+    "source": "original (population growth N(t) = 200 e^(kt), N(2) = 800)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down N(0).",
+        "expected": {"answer": "200"},
+        "notes": "A1 for 200. From N(0) = 200 e^0 = 200."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Show that k = (1/2) ln 4.",
+        "expected": {"answer": "k = (1/2) ln 4"},
+        "tolerance": "Show that k = (1/2) ln 4 (answer given). Accept also k = ln 2 (since (1/2) ln 4 = ln 2).",
+        "notes": "M1 for substituting t=2, N=800 to get 800 = 200 e^(2k). A1 for simplifying to e^(2k) = 4. A1 (AG) for taking ln to obtain 2k = ln 4 and dividing by 2."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find N(5) to the nearest integer.",
+        "expected": {"answer": "6400"},
+        "tolerance": "Accept 6400 only (exact integer; no rounding).",
+        "notes": "M1 for substituting t=5 into 200 e^(kt) using k = (1/2) ln 4. A1 for evaluating 4^(5/2) = 32. A1 for N(5) = 200 * 32 = 6400."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Find t when N(t) = 5000 (3 s.f.).",
+        "expected": {"answer": "t = 4.64 hours"},
+        "tolerance": "Accept exact form t = 2 ln(25)/ln(4) = ln(25)/ln(2) = log_2(25). Numerical: 4.64 (3 s.f.). Graphing-calculator solve methods earn full credit.",
+        "notes": "M1 for setting 200 e^(kt) = 5000 and isolating to e^(kt) = 25. M1 for taking ln to get t = ln(25)/k. A1 for t ~= 4.64 hours (3 s.f.). M1+M1 may also be awarded for a GDC-based solve."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Find the doubling time of the culture (3 s.f.).",
+        "expected": {"answer": "t = 1.00 hour"},
+        "tolerance": "Accept exact form t = 1 hour (since k = ln 2 makes ln 2 / k = 1 exactly). Numerical: 1.00 (3 s.f.).",
+        "notes": "M1 for setting up doubling condition 2 = e^(kt). M1 for isolating t = ln(2)/k = 2 ln 2 / ln 4 = 1. A1 for t = 1.00 hour."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 12,
+    "answer_box_top_frac": 0.45,
+    "source": "original (compound interest: $3000 at 4.5% annual, plus continuous comparison)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Show that value at end of year 1 is $3135.",
+        "expected": {"answer": "$3135"},
+        "tolerance": "Show that V(1) = 3000 * 1.045 = 3135 (answer given).",
+        "notes": "AG. Direct multiplication; one-line justification expected."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find value of account after 6 years (nearest dollar).",
+        "expected": {"answer": "$3907"},
+        "tolerance": "Accept $3907 (rounding 3906.78... to nearest dollar). Accept $3906 if candidate uses the rounded $3135 from (a) and compounds; explain in notes if seen.",
+        "notes": "M1 for setting up V(6) = 3000 * (1.045)^6. A1 for (1.045)^6 ~= 1.30226 (or for V(6) = 3906.78). A1 for $3907."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Find smallest n for value to first exceed $5000.",
+        "expected": {"answer": "n = 12"},
+        "tolerance": "Accept 12 only.",
+        "notes": "M1 for setting 3000 (1.045)^n > 5000 (or equivalent inequality). M1 for taking log/ln of both sides to isolate n. A1 for n = 12 (smallest integer satisfying the inequality). Accept GDC table-based approach: M1+M1 for tabulating V(11) and V(12), A1 for n = 12."
+      },
+      {
+        "label": "d",
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "M1", "A1", "A1"],
+        "description": "Find value after 6 years with continuous compounding at 4.5%; state difference between accounts.",
+        "expected": {"continuous": "$3929.88", "difference": "$23.10"},
+        "tolerance": "Accept continuous value $3929.88 (rounding 3929.8838 to nearest cent). Accept difference $23.10 or $23.11 depending on intermediate rounding (unrounded subtraction yields 23.10; subtracting rounded values may give 23.11). Accept both.",
+        "notes": "M1 for setting up A(6) = 3000 e^0.27. A1 for $3929.88. M1 for computing the difference. A1 for difference value ($23.10 or $23.11). A1 for stating both account values to the nearest cent (presentation mark).",
+        "follow_through": "Award the second M1 and A1 for difference even if candidate's value in (b) was incorrect — accept any difference computed correctly from candidate's annual value and the continuous value."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 7,
+    "answer_box_top_frac": 0.40,
+    "source": "original (radioactive decay: cesium-137, half-life 30 yrs, M_0 = 64 g)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find M(50), 3 s.f.",
+        "expected": {"answer": "20.2 g"},
+        "tolerance": "Accept 20.2 g (3 s.f.). Accept also 20.16 with rounding mention. Exact form 64 * 2^(-5/3) acceptable as intermediate.",
+        "notes": "M1 for substituting t=50 into 64 (0.5)^(t/30) to get 64 (0.5)^(5/3). A1 for 20.2 g (3 s.f.). Units 'g' or 'grams' should be present but absence is not penalised."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find time when mass has decayed to 8 g.",
+        "expected": {"answer": "t = 90 years"},
+        "tolerance": "Accept 90 years (exact). Recognising that 8 = 64/8 = 1/8 of initial = (1/2)^3 of initial leads to t/30 = 3 directly.",
+        "notes": "M1 for setting 64 (0.5)^(t/30) = 8 and recognising (0.5)^(t/30) = 1/8 = (0.5)^3 (or for taking log of both sides). A1 for t = 90 years."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Find time after which only 5% of original mass remains (nearest year).",
+        "expected": {"answer": "t = 130 years"},
+        "tolerance": "Accept 130 years (rounding 129.66... to nearest year). Accept exact form t = 30 ln(0.05)/ln(0.5) or 30 log_(1/2)(0.05).",
+        "notes": "M1 for recognising 5% remaining means M(t) = 3.2 (or for setting (0.5)^(t/30) = 0.05). M1 for taking log of both sides to isolate t/30 = ln(0.05)/ln(0.5). A1 for t = 130 years (nearest year, from 129.66...)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 11,
+    "answer_box_top_frac": 0.45,
+    "source": "original (Newton's cooling: T(t) = 22 + 64 e^(-kt), T(4) = 54)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "State temperature when poured (T(0)).",
+        "expected": {"answer": "86 C"},
+        "tolerance": "Accept 86°C, 86 degrees C, or 86 (with implied units).",
+        "notes": "A1 for 86°C. T(0) = 22 + 64 = 86."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "State the room temperature.",
+        "expected": {"answer": "22 C"},
+        "tolerance": "Accept 22°C, 22 degrees C, or 22 (with implied units).",
+        "notes": "A1 for 22°C. The asymptote of T(t) as t -> infinity is 22, which is the room temperature."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Show that k = (1/4) ln 2.",
+        "expected": {"answer": "k = (1/4) ln 2"},
+        "tolerance": "Show that k = (1/4) ln 2 (answer given). Accept also k = ln(2^(1/4)) or k = (ln 2)/4.",
+        "notes": "M1 for substituting t=4, T=54 to get 54 = 22 + 64 e^(-4k) and isolating to 64 e^(-4k) = 32. A1 for e^(-4k) = 1/2. A1 (AG) for taking ln to get -4k = -ln 2 and dividing by -4."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find T(10), 3 s.f.",
+        "expected": {"answer": "33.3 C"},
+        "tolerance": "Accept 33.3°C (3 s.f.). Accept exact form 22 + 8 sqrt(2). Accept 33.31 with rounding mention.",
+        "notes": "M1 for substituting t=10 into 22 + 64 e^(-kt) using k = (1/4) ln 2. A1 for evaluating to exact form 22 + 8 sqrt(2) (or numerical 33.314). A1 for 33.3°C (3 s.f.)."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Find time when T = 30°C.",
+        "expected": {"answer": "t = 12 minutes"},
+        "tolerance": "Accept 12 minutes (exact). Decimal 12.0 also acceptable.",
+        "notes": "M1 for setting 22 + 64 e^(-kt) = 30 and isolating to e^(-kt) = 1/8. M1 for taking ln to get t = 3 ln 2 / k = 3 ln 2 / ((1/4) ln 2) = 12. A1 for t = 12 minutes."
+      }
+    ]
+  }
+]

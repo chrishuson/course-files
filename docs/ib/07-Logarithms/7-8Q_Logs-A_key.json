@@ -1,0 +1,106 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.30,
+    "source": "original (parallel to 7-7PreQuiz Q1, version A: ln 5+ln 6, 2 ln 3, -ln(1/4))",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Express ln 5 + ln 6 in form ln k.",
+        "expected": {"answer": "ln 30"},
+        "tolerance": "Accept ln 30 only.",
+        "notes": "A1 for ln 30. Direct application of product rule ln a + ln b = ln(ab)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Express 2 ln 3 in form ln k.",
+        "expected": {"answer": "ln 9"},
+        "tolerance": "Accept ln 9.",
+        "notes": "A1 for ln 3^2 (intermediate, application of power rule). A1 for ln 9."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Express -ln(1/4) in form ln k.",
+        "expected": {"answer": "ln 4"},
+        "tolerance": "Accept ln 4.",
+        "notes": "A1 for an intermediate step such as ln(1/4)^(-1), -(ln 1 - ln 4), or -ln 4^(-1). A1 for ln 4."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.65,
+    "source": "original (parallel to 7-7PreQuiz Q2, version A: log_10 2 = p, log_10 5 = q)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Express log_10(40) in terms of p = log_10(2) and q = log_10(5).",
+        "expected": {"answer": "3p + q"},
+        "tolerance": "Accept 3p + q. Argument 40 must be decomposed as 2^3 * 5.",
+        "notes": "M1 for correct application of product rule and/or power rule. A1 for an intermediate expression in log_10 2 and log_10 5 with arguments 2 and 5. A1 for 3p + q."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Express log_5(4) in terms of p = log_10(2) and q = log_10(5).",
+        "expected": {"answer": "2p / q"},
+        "tolerance": "Accept 2p/q.",
+        "notes": "A1 for log_10(4)/log_10(5) or 2 log_10(2)/log_10(5) (change of base). A1 for 2p/q."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.30,
+    "source": "original (parallel to 7-7PreQuiz Q3, version A: log_10 a = 1/2)",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Find log_10(1/a) given log_10(a) = 1/2.",
+        "expected": {"answer": "-1/2"},
+        "tolerance": "Accept -1/2 or -0.5.",
+        "notes": "A1 for an intermediate form (log_10 1 - log_10 a, or log_10 a^(-1) = -log_10 a, or log_10 10^(-1/2)). A1 for -1/2."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Find log_100(a) given log_10(a) = 1/2.",
+        "expected": {"answer": "1/4"},
+        "tolerance": "Accept 1/4 or 0.25.",
+        "notes": "A1 for change of base log_100 a = log_10 a / log_10 100. A1 for substituting log_10 a = 1/2 and log_10 100 = 2 to get (1/2)/2. A1 for 1/4."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.65,
+    "source": "original (parallel to 7-7PreQuiz Q4, version A: solve 2 ln x = ln 25 + 6)",
+    "parts": [
+      {
+        "label": null,
+        "marks": 5,
+        "mark_codes": ["M1", "M1", "A1", "A1", "A1"],
+        "description": "Solve 2 ln x = ln 25 + 6. Give answer as x = p e^q with p, q in Z+.",
+        "expected": {"answer": "x = 5 e^3", "p": 5, "q": 3},
+        "tolerance": "Accept x = 5 e^3 or x = 5e^3 or (p, q) = (5, 3). Other equivalent forms (e.g. sqrt(25 e^6)) earn intermediate marks but the requested form is x = pe^q with p, q positive integers.",
+        "notes": "M1 for using m ln x = ln x^m to write ln x^2 = ln 25 + 6. M1 for using ln a - ln b = ln(a/b) to combine into a single logarithmic expression. A1 for x^2/25 = e^6 (or x^2 = 25 e^6). A1 for x = sqrt(25 e^6) = 5 e^3 (with x > 0 noted). A1 for stating p = 5, q = 3. Method 2 (express 6 as 6 ln e first) earns the same marks."
+      }
+    ]
+  }
+]

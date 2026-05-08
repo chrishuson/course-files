@@ -1,0 +1,125 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 8 May 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize First \& Last name:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{7.9 PreQuiz: Exponential and Logarithmic Word Problems
+(calculator)}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Population growth (continuous) ---
+\item[1.] A bacteria culture begins with $200$ cells. The number of
+cells $N$, $t$ hours after the start of the experiment, is modelled by
+$$N(t) \;=\; 200\, e^{\,k t}, \qquad k > 0.$$
+After $2$ hours, the culture contains $800$ cells.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Write down the value of $N$ when $t = 0$.
+
+  \item Show that $k = \dfrac{1}{2}\ln 4$.
+
+  \item Find the number of cells after $5$ hours, to the nearest
+  integer.
+
+  \item Find the time, in hours, at which the number of cells first
+  reaches $5000$. Give your answer correct to three significant
+  figures.
+
+  \item Find the doubling time of the culture. Give your answer correct
+  to three significant figures.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,11);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Compound interest (annual + continuous comparison) ---
+\item[2.] Marco deposits \$3000 in a savings account that pays interest
+of $4.5\,\%$ per annum, compounded annually. No further deposits or
+withdrawals are made.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Show that the value of the account at the end of the first
+  year is \$3135.
+
+  \item Find the value of the account at the end of $6$ years, correct
+  to the nearest dollar.
+
+  \item Find the smallest number of full years required for the value
+  of the account to first exceed \$5000.
+
+  \item Suppose that, instead, the interest is compounded continuously
+  at a nominal annual rate of $4.5\,\%$, so that the value after $t$
+  years is $A(t) = 3000\, e^{\,0.045\, t}$. Find the value of this
+  account at the end of $6$ years, correct to the nearest cent, and
+  state the difference between the two accounts at that time.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,10);
+  \foreach \y in {1,2,...,9} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: Radioactive decay (cesium-137) ---
+\item[3.] Cesium-137 is a radioactive isotope used in some medical
+treatments. The mass remaining, in grams, $t$ years after a sample is
+prepared is modelled by
+$$M(t) \;=\; M_{0}\, \!\left(\dfrac{1}{2}\right)^{\!t/T},$$
+where $M_{0}$ is the initial mass and $T$ is the half-life. For
+cesium-137, $T = 30$ years. A sample is prepared with $M_{0} = 64$
+grams.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the mass remaining after $50$ years. Give your answer
+  correct to three significant figures.
+
+  \item Find the time at which the mass has decayed to $8$ grams.
+
+  \item Find, to the nearest year, the time after which only $5\,\%$
+  of the original mass remains.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,12);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: Newton's cooling (coffee) ---
+\item[4.] A cup of coffee is poured. Its temperature $T$, in degrees
+Celsius, $t$ minutes after pouring, is modelled by
+$$T(t) \;=\; 22 \;+\; 64\, e^{-k t}, \qquad k > 0.$$
+After $4$ minutes, the temperature of the coffee is $54\,^{\circ}$C.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item State the temperature of the coffee at the moment it is
+  poured.
+
+  \item State the temperature of the room.
+
+  \item Show that $k = \dfrac{1}{4}\ln 2$.
+
+  \item Find the temperature of the coffee after $10$ minutes. Give
+  your answer correct to three significant figures.
+
+  \item The coffee is comfortable to drink when its temperature
+  reaches $30\,^{\circ}$C. Find the time at which this occurs.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,10);
+  \foreach \y in {1,2,...,9} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

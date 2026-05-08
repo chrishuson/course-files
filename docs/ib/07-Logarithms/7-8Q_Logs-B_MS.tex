@@ -1,0 +1,109 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 8 May 2026}
+
+\begin{document}
+\subsubsection*{7.8 Quiz: Logarithms (Version B) --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Express in form ln k [5 marks] ---
+\item[1.] [Maximum mark: 5]
+
+\textbf{(a)} $\ln 4 + \ln 7 = \ln(4 \cdot 7) = \ln 28$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} $2\ln 5 = \ln 5^{2}$ \hfill \textbf{A1}
+
+$= \ln 25$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} $-\ln\dfrac{1}{6} = \ln\!\left(\dfrac{1}{6}\right)^{\!-1}$
+\hfill \textbf{A1}
+
+$= \ln 6$. \hfill \textbf{A1}
+
+\emph{Accept also $-\ln\tfrac{1}{6} = -(\ln 1 - \ln 6) = \ln 6$, or
+$-\ln\tfrac{1}{6} = -\ln 6^{-1} = \ln 6$.}
+
+\medskip
+
+%--- Problem 2: log_10 expressions in p, q [5 marks] ---
+\item[2.] [Maximum mark: 5]
+
+$\log_{10} 3 = p$, $\log_{10} 5 = q$.
+
+\medskip
+
+\textbf{(a)} $\log_{10} 45 = \log_{10}(3^{2} \cdot 5)
+= \log_{10} 3^{2} + \log_{10} 5$. \hfill \textbf{M1}
+
+$= 2\log_{10} 3 + \log_{10} 5$. \hfill \textbf{A1}
+
+$= 2p + q$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Change of base:
+$\log_{3} 25 = \dfrac{\log_{10} 25}{\log_{10} 3}
+= \dfrac{2\log_{10} 5}{\log_{10} 3}$. \hfill \textbf{A1}
+
+$= \dfrac{2q}{p}$. \hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 3: log_10 b = 2/3 [5 marks] ---
+\item[3.] [Maximum mark: 5]
+
+$\log_{10} b = \dfrac{2}{3}$, $b > 0$.
+
+\medskip
+
+\textbf{(a)} $\log_{10}\!\left(\dfrac{1}{b}\right) = -\log_{10} b$.
+\hfill \textbf{A1}
+
+$= -\dfrac{2}{3}$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Change of base:
+$\log_{1000} b = \dfrac{\log_{10} b}{\log_{10} 1000} = \dfrac{\log_{10} b}{3}$.
+\hfill \textbf{A1}
+
+$= \dfrac{2/3}{3}$ \hfill \textbf{A1}
+
+$= \dfrac{2}{9}$. \hfill \textbf{A1}
+
+\medskip
+
+%--- Problem 4: Solve 2 ln x = ln 16 + 4 [5 marks] ---
+\item[4.] [Maximum mark: 5]
+
+$2\ln x = \ln 16 + 4$, $x = p e^{q}$, $p, q \in \mathbb{Z}^{+}$.
+
+\medskip
+
+$2\ln x - \ln 16 = 4$. \;Use $m\ln x = \ln x^{m}$:
+$\ln x^{2} - \ln 16 = 4$. \hfill \textbf{M1}
+
+Use $\ln a - \ln b = \ln\dfrac{a}{b}$:
+$\ln\dfrac{x^{2}}{16} = 4$. \hfill \textbf{M1}
+
+Exponentiate:
+$\dfrac{x^{2}}{16} = e^{4} \;\Rightarrow\; x^{2} = 16 e^{4}$.
+\hfill \textbf{A1}
+
+Since $x > 0$: $x = \sqrt{16 e^{4}} = 4 e^{2}$. \hfill \textbf{A1}
+
+So $p = 4, \; q = 2$. \hfill \textbf{A1}
+
+\emph{Accept any valid method, including expressing $4 = 4\ln e$ first
+to combine all terms as a single log before exponentiating.}
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,109 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 8 May 2026}
+
+\begin{document}
+\subsubsection*{7.8 Quiz: Logarithms (Version A) --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Express in form ln k [5 marks] ---
+\item[1.] [Maximum mark: 5]
+
+\textbf{(a)} $\ln 5 + \ln 6 = \ln(5 \cdot 6) = \ln 30$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} $2\ln 3 = \ln 3^{2}$ \hfill \textbf{A1}
+
+$= \ln 9$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} $-\ln\dfrac{1}{4} = \ln\!\left(\dfrac{1}{4}\right)^{\!-1}$
+\hfill \textbf{A1}
+
+$= \ln 4$. \hfill \textbf{A1}
+
+\emph{Accept also $-\ln\tfrac{1}{4} = -(\ln 1 - \ln 4) = \ln 4$, or
+$-\ln\tfrac{1}{4} = -\ln 4^{-1} = \ln 4$.}
+
+\medskip
+
+%--- Problem 2: log_10 expressions in p, q [5 marks] ---
+\item[2.] [Maximum mark: 5]
+
+$\log_{10} 2 = p$, $\log_{10} 5 = q$.
+
+\medskip
+
+\textbf{(a)} $\log_{10} 40 = \log_{10}(2^{3} \cdot 5)
+= \log_{10} 2^{3} + \log_{10} 5$. \hfill \textbf{M1}
+
+$= 3\log_{10} 2 + \log_{10} 5$. \hfill \textbf{A1}
+
+$= 3p + q$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Change of base:
+$\log_{5} 4 = \dfrac{\log_{10} 4}{\log_{10} 5}
+= \dfrac{2\log_{10} 2}{\log_{10} 5}$. \hfill \textbf{A1}
+
+$= \dfrac{2p}{q}$. \hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 3: log_10 a = 1/2 [5 marks] ---
+\item[3.] [Maximum mark: 5]
+
+$\log_{10} a = \dfrac{1}{2}$, $a > 0$.
+
+\medskip
+
+\textbf{(a)} $\log_{10}\!\left(\dfrac{1}{a}\right) = -\log_{10} a$.
+\hfill \textbf{A1}
+
+$= -\dfrac{1}{2}$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Change of base:
+$\log_{100} a = \dfrac{\log_{10} a}{\log_{10} 100} = \dfrac{\log_{10} a}{2}$.
+\hfill \textbf{A1}
+
+$= \dfrac{1/2}{2}$ \hfill \textbf{A1}
+
+$= \dfrac{1}{4}$. \hfill \textbf{A1}
+
+\medskip
+
+%--- Problem 4: Solve 2 ln x = ln 25 + 6 [5 marks] ---
+\item[4.] [Maximum mark: 5]
+
+$2\ln x = \ln 25 + 6$, $x = p e^{q}$, $p, q \in \mathbb{Z}^{+}$.
+
+\medskip
+
+$2\ln x - \ln 25 = 6$. \;Use $m\ln x = \ln x^{m}$:
+$\ln x^{2} - \ln 25 = 6$. \hfill \textbf{M1}
+
+Use $\ln a - \ln b = \ln\dfrac{a}{b}$:
+$\ln\dfrac{x^{2}}{25} = 6$. \hfill \textbf{M1}
+
+Exponentiate:
+$\dfrac{x^{2}}{25} = e^{6} \;\Rightarrow\; x^{2} = 25 e^{6}$.
+\hfill \textbf{A1}
+
+Since $x > 0$: $x = \sqrt{25 e^{6}} = 5 e^{3}$. \hfill \textbf{A1}
+
+So $p = 5, \; q = 3$. \hfill \textbf{A1}
+
+\emph{Accept any valid method, including expressing $6 = 6\ln e$ first
+to combine all terms as a single log before exponentiating.}
+
+\end{enumerate}
+\end{document}

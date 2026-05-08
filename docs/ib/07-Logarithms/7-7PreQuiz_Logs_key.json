@@ -1,0 +1,177 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.30,
+    "source": "AA SL 25M P1 TZ1 Q1 (qb_id 25M.1.SL.TZ1.1) — express expressions in form ln k",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Express ln 3 + ln 4 in form ln k.",
+        "expected": {"answer": "ln 12"},
+        "tolerance": "Accept ln 12 only.",
+        "notes": "A1 for ln 12. Direct application of the product rule ln a + ln b = ln(ab)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Express 3 ln 2 in form ln k.",
+        "expected": {"answer": "ln 8"},
+        "tolerance": "Accept ln 8.",
+        "notes": "A1 for ln 2^3 (intermediate, application of power rule m ln x = ln x^m). A1 for ln 8."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Express -ln(1/2) in form ln k.",
+        "expected": {"answer": "ln 2"},
+        "tolerance": "Accept ln 2.",
+        "notes": "A1 for an intermediate step such as ln(1/2)^(-1), -(ln 1 - ln 2), or -ln 2^(-1). A1 for ln 2."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.22,
+    "source": "AA SL 25M P1 TZ3 Q2 (qb_id 25M.1.SL.TZ3.2) — log_{10} expressions in p, q",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Express log_10(24) in terms of p = log_10(2) and q = log_10(3).",
+        "expected": {"answer": "3p + q"},
+        "tolerance": "Accept 3p + q. Argument 24 must be decomposed as 2^3 * 3 with arguments 2 and 3 (not 4, 6, 8, etc.).",
+        "notes": "M1 for correct application of product rule and/or power rule (log_a(xy) = log_a x + log_a y, log_a(x^m) = m log_a x). A1 for an intermediate expression in log_10 2 and log_10 3 with arguments 2 and 3. A1 for 3p + q."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Express log_3(8) in terms of p = log_10(2) and q = log_10(3).",
+        "expected": {"answer": "3p / q"},
+        "tolerance": "Accept 3p/q.",
+        "notes": "A1 for log_10(8)/log_10(3) or 3 log_10(2)/log_10(3) (change of base). A1 for 3p/q."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.30,
+    "source": "AA SL 24M P1 TZ1 Q3 (qb_id 24M.1.SL.TZ1.3) — log_{10} a = 1/3, find related logs",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Find log_10(1/a) given log_10(a) = 1/3.",
+        "expected": {"answer": "-1/3"},
+        "tolerance": "Accept -1/3 or -0.333... (but exact form preferred).",
+        "notes": "A1 for an intermediate form such as log_10 1 - log_10 a, log_10(a^(-1)) = -log_10 a, or log_10(10^(-1/3)). A1 for -1/3."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Find log_1000(a) given log_10(a) = 1/3.",
+        "expected": {"answer": "1/9"},
+        "tolerance": "Accept 1/9 only.",
+        "notes": "A1 for change of base log_1000 a = log_10 a / log_10 1000. A1 for substituting log_10 a = 1/3 and log_10 1000 = 3 to get (1/3)/3. A1 for 1/9."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.13,
+    "source": "AA SL Exemplar P1 Q2 (qb_id EXN.1.SL.TZ0.2) — solve 2 ln x = ln 9 + 4",
+    "parts": [
+      {
+        "label": null,
+        "marks": 5,
+        "mark_codes": ["M1", "M1", "A1", "A1", "A1"],
+        "description": "Solve 2 ln x = ln 9 + 4. Give answer as x = p e^q with p, q in Z+.",
+        "expected": {"answer": "x = 3 e^2", "p": 3, "q": 2},
+        "tolerance": "Accept x = 3 e^2 or x = 3e^2 or (p, q) = (3, 2). Other equivalent forms (e.g. sqrt(9 e^4)) earn intermediate marks but the requested form is x = pe^q with p, q positive integers.",
+        "notes": "M1 for using m ln x = ln x^m (or equivalent power rule) to write ln x^2 = ln 9 + 4. M1 for using ln a - ln b = ln(a/b) (or equivalent quotient rule) to combine logs into a single logarithmic expression. A1 for x^2/9 = e^4 (or x^2 = 9 e^4). A1 for x = sqrt(9 e^4) = 3 e^2 (with x > 0 noted). A1 for stating p = 3, q = 2. Accept Method 2 (express 4 as 4 ln e then combine) or Method 3 (similar) per the source markscheme — equivalent path earns the same marks."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.18,
+    "source": "AA SL 25N P1 TZ3 Q6 (qb_id 25N.1.SL.TZ3.6) — solve 3 log_8(10x) - log_4(x) = 1",
+    "parts": [
+      {
+        "label": null,
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "M1", "A1", "A1"],
+        "description": "Solve 3 log_8(10x) - log_4(x) = 1 for x > 0.",
+        "expected": {"answer": "x = 1/25"},
+        "tolerance": "Accept x = 1/25 or 0.04. Reject decimal approximations 3 s.f. or higher (e.g. 0.0400 is fine; 0.04 is fine).",
+        "notes": "M1 for change-of-base attempt (any common base; base 2 used in MS). A1 for correct equation with same base in all logarithms (e.g. log_2(10x) - (1/2) log_2 x = 1, or log_2(10x) - log_2 x^(1/2) = 1, or equivalent). M1 for applying power rule and quotient rule (or product rule) to reduce to a single logarithm. A1 for a correct equation without logarithms (e.g. 10 sqrt(x) = 2 or sqrt(x) = 1/5). A1 for x = 1/25. The MS notes the M-marks are independent and may be awarded in any order; this scoring respects that."
+      }
+    ]
+  },
+  {
+    "problem_number": 6,
+    "total_marks": 14,
+    "answer_box_top_frac": 0.30,
+    "source": "AA SL 24N P1 TZ1 Q8 (qb_id 24N.1.SL.TZ1.8) — f(x)=log_2(8x), inverse, transformations. Spans pages 6-7 of the worksheet (parts a-c on page 6, part d on page 7).",
+    "parts": [
+      {
+        "label": "a_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find f(2) where f(x) = log_2(8x).",
+        "expected": {"answer": "4"},
+        "tolerance": "Accept 4 only.",
+        "notes": "M1 for substituting x = 2 to get log_2(8 * 2) = log_2 16. A1 for 4."
+      },
+      {
+        "label": "a_ii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find f(1/8) where f(x) = log_2(8x).",
+        "expected": {"answer": "0"},
+        "tolerance": "Accept 0 only.",
+        "notes": "A1 for 0. Substitution gives log_2(8 * 1/8) = log_2 1 = 0."
+      },
+      {
+        "label": "b",
+        "marks": 4,
+        "mark_codes": ["M1", "M1", "A1", "A1"],
+        "description": "Find an expression for f^{-1}(x).",
+        "expected": {"answer": "f^{-1}(x) = 2^x / 8 = 2^(x-3)"},
+        "tolerance": "Accept 2^x/8 or 2^(x-3) (equivalent). Accept y = 2^x/8 or y = 2^(x-3). Both forms acceptable.",
+        "notes": "M1 for swapping x and y to get x = log_2(8y) (or for x = 3 + log_2 y after expanding). M1 for converting to exponential form 2^x = 8y. A1 for an intermediate (e.g. 2^x = 8y or y = 2^x/8). A1 for the final simplified expression."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find f^{-1}(0) using the inverse from (b).",
+        "expected": {"answer": "1/8"},
+        "tolerance": "Accept 1/8 or 0.125.",
+        "notes": "A1 for 1/8 (substitute x = 0 into 2^x/8).",
+        "follow_through": "Award A1 for f^{-1}(0) computed correctly from candidate's expression in (b)."
+      },
+      {
+        "label": "d",
+        "marks": 6,
+        "mark_codes": ["M1", "A1", "M1", "A1", "A1", "A1"],
+        "description": "Describe the two transformations that map y = log_2 x onto y = f(4x^2) = log_2(32x^2), specifying the order.",
+        "expected": {"answer": "Vertical stretch (dilation) by scale factor 2, then vertical translation 5 units upward. f(4x^2) simplifies to 5 + 2 log_2 x."},
+        "tolerance": "Accept any phrasing that names (1) a vertical stretch/dilation by factor 2 and (2) a vertical translation/shift up by 5 units, in that order. Reject if order is reversed (apply the translation first then stretch — would give 2(log_2 x + 5) = 2 log_2 x + 10, not 2 log_2 x + 5).",
+        "notes": "M1 for using the addition rule for logs on log_2(32 x^2). A1 for correct intermediate (e.g. log_2 32 + log_2 x^2 = 5 + log_2 x^2). M1 for using the exponent property log_2 x^2 = 2 log_2 x. A1 for f(4x^2) = 5 + 2 log_2 x. A1+A1 (= A2) for stating both transformations correctly with the correct order (stretch first, then translate). If both transformations are correct but the order is reversed or unspecified, award A1 only for the transformations line."
+      }
+    ]
+  }
+]
