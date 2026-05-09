@@ -1,0 +1,454 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 8 May 2026}
+
+\begin{document}
+\subsubsection*{12.1 Quiz: Complex Numbers --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Cartesian algebra with a complex quadratic [5 marks] ---
+%--- Source: AA HL 2023 Nov P1 TZ1 Q07 ---
+\item[1.] \makebox[\linewidth][s]{[Maximum mark: 5]\hfill {\small AA HL 2023 Nov P1 TZ1 Q07}}
+
+It is given that $z = 5 + qi$ satisfies
+$z^2 + iz = -p + 25i$, where $p, q \in \mathbb{R}$.
+Find $p$ and $q$.
+
+\textbf{Solution:}
+
+Substitute $z = 5 + qi$: \hfill \textbf{M1}
+
+$(5 + qi)^2 + i(5 + qi) = -p + 25i$
+
+$25 - q^2 + 10qi + 5i - q = -p + 25i$ \hfill \textbf{A1}
+
+Equate imaginary parts: \hfill \textbf{M1}
+
+$10q + 5 = 25$
+
+$q = 2$ \hfill \textbf{A1}
+
+Equate real parts:
+
+$25 - q^2 - q = -p$
+
+$25 - 4 - 2 = -p$
+
+$p = -19$ \hfill \textbf{A1}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 2: Polar multiplication and integer condition [7 marks] ---
+%--- Source: AA HL 2021 May P2 TZ1 Q08 ---
+\item[2.] \makebox[\linewidth][s]{[Maximum mark: 7]\hfill {\small AA HL 2021 May P2 TZ1 Q08}}
+
+\textbf{(a)} Find the modulus of $zw$. \hfill [1]
+
+\textbf{Solution:}
+
+$|zw| = |z||w| = 2 \cdot 8 = 16$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Find the argument of $zw$ in terms of $k$. \hfill [2]
+
+\textbf{Solution:}
+
+$\arg z = \dfrac{\pi}{5}$ and $\arg w = -\dfrac{2k\pi}{5}$ \hfill \textbf{M1}
+
+$\arg(zw) = \dfrac{\pi}{5} - \dfrac{2k\pi}{5}
+= \dfrac{(1 - 2k)\pi}{5}$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} Suppose that $zw \in \mathbb{Z}$. Find the minimum value of $k$. \hfill [3]
+
+\textbf{Solution:}
+
+For $zw$ to be an integer, $\arg(zw)$ must be a multiple of $\pi$. \hfill \textbf{A1}
+
+$\dfrac{(1 - 2k)\pi}{5} = m\pi$, where $m \in \mathbb{Z}$ \hfill \textbf{M1}
+
+$1 - 2k = 5m$
+
+The least positive integer value is $k = 3$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(d)} For the value of $k$ found in part (c), find $zw$. \hfill [1]
+
+\textbf{Solution:}
+
+When $k = 3$, $\arg(zw) = -\pi$, so $zw = -16$. \hfill \textbf{A1}
+
+\emph{FT: award A1 for the value of $zw$ obtained from the candidate's value of $k$ in part (c).}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 3: Square roots and exact tangent value [22 marks] ---
+%--- Source: AA HL 2025 Nov P1 TZ1 Q11 ---
+\item[3.] \makebox[\linewidth][s]{[Maximum mark: 22]\hfill {\small AA HL 2025 Nov P1 TZ1 Q11}}
+
+Consider $w = \dfrac{4i}{1 + i\sqrt{3}}$.
+
+\textbf{(a)} Show that $w = \sqrt{3} + i$. \hfill [2]
+
+\textbf{Solution:}
+
+$\dfrac{4i}{1 + i\sqrt{3}} \cdot \dfrac{1 - i\sqrt{3}}{1 - i\sqrt{3}}$ \hfill \textbf{M1}
+
+$= \dfrac{4\sqrt{3} + 4i}{4} = \sqrt{3} + i$ \hfill \textbf{A1 AG}
+
+\medskip
+
+\textbf{(b)(i)} Find $|w|$. \hfill [2]
+
+\textbf{Solution:}
+
+$|w| = \sqrt{(\sqrt{3})^2 + 1^2}$ \hfill \textbf{M1}
+
+$|w| = 2$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)(ii)} Find $\arg w$. \hfill [1]
+
+\textbf{Solution:}
+
+$\arg w = \dfrac{\pi}{6}$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} Use de Moivre's theorem to find the two square roots of $w$. \hfill [4]
+
+\textbf{Solution:}
+
+$w = 2e^{i\pi/6}$, so one square root is \hfill \textbf{M1}
+
+$\sqrt{2}e^{i\pi/12}$ \hfill \textbf{A1}
+
+The other root is obtained by adding or subtracting $\pi$ to the argument. \hfill \textbf{M1}
+
+$\sqrt{2}e^{-11\pi i/12}$ \hfill \textbf{A1}
+
+\emph{Accept $\sqrt{2}e^{13\pi i/12}$ if the requested argument range is not enforced.}
+
+\medskip
+
+\textbf{(d)(i)} Show that $a^2 = \dfrac{\sqrt{3}}{2} + 1$. \hfill [6]
+
+\textbf{Solution:}
+
+$(a + bi)^2 = a^2 - b^2 + 2abi = \sqrt{3} + i$ \hfill \textbf{M1}
+
+$a^2 - b^2 = \sqrt{3}$ and $2ab = 1$ \hfill \textbf{A1}
+
+$b = \dfrac{1}{2a}$, so
+$a^2 - \left(\dfrac{1}{2a}\right)^2 = \sqrt{3}$ \hfill \textbf{M1}
+
+$4a^4 - 4\sqrt{3}a^2 - 1 = 0$ \hfill \textbf{A1}
+
+Solving as a quadratic in $a^2$ gives
+$a^2 = \dfrac{\sqrt{3}}{2} \pm 1$. \hfill \textbf{M1}
+
+Since $a^2 > 0$, $a^2 = \dfrac{\sqrt{3}}{2} + 1$. \hfill \textbf{R1 AG}
+
+\medskip
+
+\textbf{(d)(ii)} Find the value of $b^2$. \hfill [2]
+
+\textbf{Solution:}
+
+$b^2 = a^2 - \sqrt{3}$ \hfill \textbf{M1}
+
+$b^2 = 1 - \dfrac{\sqrt{3}}{2}$ \hfill \textbf{A1}
+
+\emph{FT: award A1 for $b^2$ correctly found from the candidate's value of $a^2$ in part (d)(i).}
+
+\medskip
+
+\textbf{(e)} Hence express $\tan\dfrac{\pi}{12}$ in the form $p + q\sqrt{3}$. \hfill [5]
+
+\textbf{Solution:}
+
+$a + bi$ is a square root of $w$ with argument $\dfrac{\pi}{12}$, so
+$\tan\dfrac{\pi}{12} = \dfrac{b}{a}$ \hfill \textbf{M1}
+
+$\tan\dfrac{\pi}{12} = \sqrt{\dfrac{b^2}{a^2}}$ \hfill \textbf{A1}
+
+Substitute the values of $a^2$ and $b^2$: \hfill \textbf{M1}
+
+$\tan\dfrac{\pi}{12}
+= \sqrt{\dfrac{1 - \frac{\sqrt{3}}{2}}{1 + \frac{\sqrt{3}}{2}}}
+= \sqrt{\dfrac{2 - \sqrt{3}}{2 + \sqrt{3}}}$ \hfill \textbf{A1}
+
+$\tan\dfrac{\pi}{12} = 2 - \sqrt{3}$ \hfill \textbf{A1}
+
+\emph{FT: award the substitution marks for consistent use of the candidate's values from part (d).}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 4: Fourth roots, Argand geometry, and midpoints [20 marks] ---
+%--- Source: AA HL 2024 Nov P1 TZ0 Q12 ---
+\item[4.] \makebox[\linewidth][s]{[Maximum mark: 20]\hfill {\small AA HL 2024 Nov P1 TZ0 Q12}}
+
+\textbf{(a)} Find $z_1$, $z_2$, $z_3$ and $z_4$. \hfill [6]
+
+\textbf{Solution:}
+
+$|16i| = 16$ and $\arg(16i) = \dfrac{\pi}{2}$ \hfill \textbf{A1}
+
+Use de Moivre's theorem. \hfill \textbf{M1}
+
+$z_1 = 2\left(\cos\dfrac{\pi}{8} + i\sin\dfrac{\pi}{8}\right)$ \hfill \textbf{A1}
+
+Other roots are found by adding $\dfrac{\pi}{2}$ to the argument. \hfill \textbf{M1}
+
+$z_2 = 2\left(\cos\dfrac{5\pi}{8} + i\sin\dfrac{5\pi}{8}\right)$ \hfill \textbf{A1}
+
+$z_3 = 2\left(\cos\dfrac{9\pi}{8} + i\sin\dfrac{9\pi}{8}\right)$,
+$z_4 = 2\left(\cos\dfrac{13\pi}{8} + i\sin\dfrac{13\pi}{8}\right)$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Find the common ratio in Cartesian form. \hfill [3]
+
+\textbf{Solution:}
+
+$\dfrac{z_2}{z_1}$ \hfill \textbf{M1}
+
+$= \cos\dfrac{\pi}{2} + i\sin\dfrac{\pi}{2}$ \hfill \textbf{A1}
+
+$= i$ \hfill \textbf{A1}
+
+\emph{FT: award marks for the ratio computed from the candidate's roots in part (a).}
+
+\medskip
+
+\textbf{(c)} Plot A, B, C and D on an Argand diagram. \hfill [3]
+
+\textbf{Solution:}
+
+Point A approximately in the first quadrant. \hfill \textbf{A1}
+
+All four points approximately the same distance from the origin. \hfill \textbf{A1}
+
+Approximate angular separation of $\dfrac{\pi}{2}$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(d)} Determine $a$ and $b$ for the conjugate-root equation. \hfill [3]
+
+\textbf{Solution:}
+
+For each root, $(z_j^{*})^4 = (z_j^4)^{*}$ \hfill \textbf{A1}
+
+$= (16i)^{*}$ \hfill \textbf{A1}
+
+Therefore $v^4 = -16i$, so $a = 0$ and $b = -16$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(e)} Find the least possible value of $p$ and the corresponding value of $q$. \hfill [5]
+
+\textbf{Solution:}
+
+The first midpoint has argument
+$\dfrac{\pi}{8} + \dfrac{\pi}{8} = \dfrac{3\pi}{8}$. \hfill \textbf{A1}
+
+The modulus of each midpoint is $\sqrt{2}$. \hfill \textbf{A1}
+
+For $(\sqrt{2}e^{3\pi i/8})^p$ to be positive real, the argument must be
+a multiple of $2\pi$. \hfill \textbf{M1}
+
+The least possible value is $p = 16$. \hfill \textbf{A1}
+
+Then $(\sqrt{2})^{16} = 2^8$, so $q = 8$. \hfill \textbf{A1}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 5: Exponential form, cubic equation, reciprocal transformation [22 marks] ---
+%--- Source: AA HL 2023 May P1 TZ2 Q11 ---
+\item[5.] \makebox[\linewidth][s]{[Maximum mark: 22]\hfill {\small AA HL 2023 May P1 TZ2 Q11}}
+
+\textbf{(a)} Show that $u = 2e^{i\frac{2\pi}{3}}$. \hfill [3]
+
+\textbf{Solution:}
+
+$|u| = \sqrt{(-1)^2 + (\sqrt{3})^2} = 2$ \hfill \textbf{A1}
+
+Reference angle $\dfrac{\pi}{3}$, with $u$ in quadrant II. \hfill \textbf{M1}
+
+$\arg u = \dfrac{2\pi}{3}$, so $u = 2e^{i\frac{2\pi}{3}}$. \hfill \textbf{A1 AG}
+
+\medskip
+
+\textbf{(b)(i)} Find the smallest positive integer $n$ such that $u^n$ is real. \hfill [3]
+
+\textbf{Solution:}
+
+$u^n = 2^n e^{i\frac{2n\pi}{3}}$ is real when
+$\sin\dfrac{2n\pi}{3} = 0$. \hfill \textbf{M1}
+
+Thus $\dfrac{2n\pi}{3} = k\pi$, where $k \in \mathbb{Z}$. \hfill \textbf{A1}
+
+The smallest positive integer is $n = 3$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)(ii)} Find the value of $u^n$ for this value of $n$. \hfill [2]
+
+\textbf{Solution:}
+
+$u^3 = 2^3e^{2\pi i}$ \hfill \textbf{M1}
+
+$u^3 = 8$ \hfill \textbf{A1}
+
+\emph{FT: award marks for substituting the candidate's multiple-of-3 value from part (b)(i).}
+
+\medskip
+
+\textbf{(c)(i)} Given that $u$ is a root, find the other roots. \hfill [5]
+
+\textbf{Solution:}
+
+Since coefficients are real, $-1 - \sqrt{3}i$ is also a root. \hfill \textbf{A1}
+
+Let the third root be $c$. Use the sum of roots. \hfill \textbf{M1}
+
+$(-1 + \sqrt{3}i) + (-1 - \sqrt{3}i) + c = -5$ \hfill \textbf{A1}
+
+$-2 + c = -5$ \hfill \textbf{A1}
+
+$c = -3$, so the other roots are $-1 - \sqrt{3}i$ and $-3$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)(ii)} Find the roots of $1 + 5w + 10w^2 + 12w^3 = 0$. \hfill [4]
+
+\textbf{Solution:}
+
+Compare with $z^3 + 5z^2 + 10z + 12 = 0$ using $z = \dfrac{1}{w}$. \hfill \textbf{A1A1}
+
+Thus $w = \dfrac{1}{z}$ for each root. \hfill \textbf{M1}
+
+$w = -\dfrac{1}{3}$ and
+$w = \dfrac{1}{-1 \pm \sqrt{3}i} = \dfrac{-1 \mp \sqrt{3}i}{4}$. \hfill \textbf{A1}
+
+\emph{Accept $-\frac13$, $\frac{-1+\sqrt{3}i}{4}$ and $\frac{-1-\sqrt{3}i}{4}$.}
+
+\medskip
+
+\textbf{(d)} Solve $z^2 = 2z^{*}$, $z \neq 0$. \hfill [5]
+
+\textbf{Solution:}
+
+Let $z = a + bi$. Then $(a + bi)^2 = 2(a - bi)$. \hfill \textbf{A1}
+
+Equate real and imaginary parts:
+$a^2 - b^2 = 2a$ and $2ab = -2b$. \hfill \textbf{M1}
+
+$2b(a + 1) = 0$ \hfill \textbf{M1}
+
+If $b = 0$, then $a^2 = 2a$, so $a = 2$ since $z \neq 0$. \hfill \textbf{A1}
+
+If $a = -1$, then $1 - b^2 = -2$, so $b = \pm\sqrt{3}$.
+The roots are $2$ and $-1 \pm \sqrt{3}i$. \hfill \textbf{A1}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 6: Argand geometry, conjugates, and equilateral triangle condition [18 marks] ---
+%--- Source: AA HL 2022 May P1 TZ2 Q12 ---
+\item[6.] \makebox[\linewidth][s]{[Maximum mark: 18]\hfill {\small AA HL 2022 May P1 TZ2 Q12}}
+
+\textbf{(a)} Show that $z_1z_2^{*} = r_1r_2e^{i(\alpha-\theta)}$. \hfill [2]
+
+\textbf{Solution:}
+
+$z_2^{*} = r_2e^{-i\theta}$ \hfill \textbf{A1}
+
+$z_1z_2^{*} = r_1e^{i\alpha}r_2e^{-i\theta}
+= r_1r_2e^{i(\alpha-\theta)}$ \hfill \textbf{A1 AG}
+
+\medskip
+
+\textbf{(b)} Show that $\mathrm{Z}_1\mathrm{OZ}_2$ is right-angled. \hfill [2]
+
+\textbf{Solution:}
+
+$\operatorname{Re}(z_1z_2^{*}) = r_1r_2\cos(\alpha-\theta) = 0$ \hfill \textbf{A1}
+
+Since $r_1, r_2 > 0$ and $0 < \alpha-\theta < \pi$,
+$\alpha-\theta = \dfrac{\pi}{2}$, so the triangle is right-angled. \hfill \textbf{A1 AG}
+
+\medskip
+
+\textbf{(c)(i)} Express $z_1$ in terms of $z_2$. \hfill [2]
+
+\textbf{Solution:}
+
+For an equilateral triangle, $r_1 = r_2$ and $\alpha-\theta = \dfrac{\pi}{3}$. \hfill \textbf{M1}
+
+$z_1 = z_2e^{i\pi/3}$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)(ii)} Hence show that $z_1^2 + z_2^2 = z_1z_2$. \hfill [4]
+
+\textbf{Solution:}
+
+Substitute $z_1 = z_2e^{i\pi/3}$ into the left-hand side. \hfill \textbf{M1}
+
+$z_1^2 + z_2^2 = z_2^2e^{2\pi i/3} + z_2^2
+= z_2^2(e^{2\pi i/3} + 1)$ \hfill \textbf{A1}
+
+$e^{2\pi i/3} + 1 = e^{\pi i/3}$ \hfill \textbf{A1}
+
+$z_1^2 + z_2^2 = z_2^2e^{\pi i/3} = z_2(z_2e^{\pi i/3}) = z_1z_2$ \hfill \textbf{A1 AG}
+
+\medskip
+
+\textbf{(d)} Use part (c)(ii) to show that $a^2 - 3b = 0$. \hfill [5]
+
+\textbf{Solution:}
+
+For roots $z_1$ and $z_2$, $z_1 + z_2 = -a$ and $z_1z_2 = b$. \hfill \textbf{A1}
+
+$a^2 = (z_1 + z_2)^2$ \hfill \textbf{A1}
+
+$a^2 = z_1^2 + z_2^2 + 2z_1z_2$ \hfill \textbf{A1}
+
+Using part (c)(ii), $a^2 = z_1z_2 + 2z_1z_2$. \hfill \textbf{M1}
+
+$a^2 = 3b$, so $a^2 - 3b = 0$. \hfill \textbf{A1 AG}
+
+\medskip
+
+\textbf{(e)} Deduce that only one equilateral triangle can be formed. \hfill [3]
+
+\textbf{Solution:}
+
+With $b = 12$, $a^2 - 3(12) = 0$, so $a = \pm 6$. \hfill \textbf{A1}
+
+For $a = -6$, the roots are $3 \pm \sqrt{3}i$, which do not satisfy
+$0 < \alpha-\theta < \pi$ with the required orientation. \hfill \textbf{R1}
+
+For $a = 6$, the roots are $-3 \pm \sqrt{3}i$ and
+$\alpha-\theta = \dfrac{\pi}{3}$, so only one equilateral triangle is possible. \hfill \textbf{A1 AG}
+
+\end{enumerate}
+\end{document}

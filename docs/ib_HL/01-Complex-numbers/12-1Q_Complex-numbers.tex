@@ -1,0 +1,235 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 8 May 2026}
+
+\begin{document}
+\subsubsection*{12.1 Quiz: Complex Numbers}
+
+Answer four problems in total. Use the spaces provided for Problems 1 and 2.
+Answer Problems 3--6 on lined paper.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Cartesian algebra with a complex quadratic [5 marks] ---
+%--- Source: AA HL 2023 Nov P1 TZ1 Q07 ---
+\item[1.] \makebox[\linewidth][s]{[Maximum mark: 5]\hfill {\small AA HL 2023 Nov P1 TZ1 Q07}}
+
+It is given that $z = 5 + qi$ satisfies the equation
+\[
+z^2 + iz = -p + 25i,
+\]
+where $p, q \in \mathbb{R}$.
+
+Find the value of $p$ and the value of $q$.
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,12);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Polar multiplication and integer condition [7 marks] ---
+%--- Source: AA HL 2021 May P2 TZ1 Q08 ---
+\item[2.] \makebox[\linewidth][s]{[Maximum mark: 7]\hfill {\small AA HL 2021 May P2 TZ1 Q08}}
+
+Consider the complex numbers
+\[
+z = 2\left(\cos\frac{\pi}{5} + i\sin\frac{\pi}{5}\right)
+\]
+and
+\[
+w = 8\left(\cos\frac{2k\pi}{5} - i\sin\frac{2k\pi}{5}\right),
+\]
+where $k \in \mathbb{Z}^{+}$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the modulus of $zw$. \hfill [1]
+  \item Find the argument of $zw$ in terms of $k$. \hfill [2]
+  \item Suppose that $zw \in \mathbb{Z}$. Find the minimum value of $k$. \hfill [3]
+  \item For the value of $k$ found in part (c), find the value of $zw$. \hfill [1]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,12);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: Square roots and exact tangent value [22 marks] ---
+%--- Source: AA HL 2025 Nov P1 TZ1 Q11 ---
+\item[3.] \makebox[\linewidth][s]{[Maximum mark: 22]\hfill {\small AA HL 2025 Nov P1 TZ1 Q11}}
+
+Consider the complex number
+\[
+w = \frac{4i}{1 + i\sqrt{3}}.
+\]
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Show that $w = \sqrt{3} + i$. \hfill [2]
+  \item Find
+  \begin{enumerate}[itemsep=0.15cm]
+    \item[(i)] $|w|$; \hfill [2]
+    \item[(ii)] $\arg w$. \hfill [1]
+  \end{enumerate}
+  \item Use de Moivre's theorem to find the two square roots of $w$.
+  Give your answers in the form $re^{i\theta}$, where $r > 0$ and
+  $-\pi < \theta \leq \pi$. \hfill [4]
+\end{enumerate}
+
+The complex number $w$ can be expressed in the form $(a + bi)^2$,
+where $a, b \in \mathbb{R}^{+}$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item[(d)] \begin{enumerate}[itemsep=0.15cm]
+    \item[(i)] Show that $a^2 = \dfrac{\sqrt{3}}{2} + 1$. \hfill [6]
+    \item[(ii)] Find the value of $b^2$. \hfill [2]
+  \end{enumerate}
+  \item[(e)] Hence, express $\tan\frac{\pi}{12}$ in the form
+  $p + q\sqrt{3}$, where $p, q \in \mathbb{Z}$. \hfill [5]
+\end{enumerate}
+
+\newpage
+
+%--- Problem 4: Fourth roots, Argand geometry, and midpoints [20 marks] ---
+%--- Source: AA HL 2024 Nov P1 TZ0 Q12 ---
+\item[4.] \makebox[\linewidth][s]{[Maximum mark: 20]\hfill {\small AA HL 2024 Nov P1 TZ0 Q12}}
+
+Consider the equation $z^4 = 16i$, where $z \in \mathbb{C}$.
+
+The equation has four roots $z_1$, $z_2$, $z_3$, $z_4$, where
+\[
+z_j = r\left(\cos\theta_j + i\sin\theta_j\right), \quad r > 0
+\]
+and
+\[
+0 \leq \theta_1 < \theta_2 < \theta_3 < \theta_4 < 2\pi.
+\]
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{../extracted/qb/24N.1.AHL.TZ0.12/figures/fig1.png}
+\end{center}
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find $z_1$, $z_2$, $z_3$ and $z_4$. \hfill [6]
+  \item The roots $z_1$, $z_2$, $z_3$ and $z_4$ form a geometric sequence.
+  Find the common ratio of the sequence, expressing your answer in Cartesian
+  form. \hfill [3]
+  \item The roots $z_1$, $z_2$, $z_3$ and $z_4$ are represented by the
+  points A, B, C and D respectively on an Argand diagram. Plot the points
+  A, B, C and D on an Argand diagram. \hfill [3]
+  \item The equation $v^4 = a + bi$, where $v \in \mathbb{C}$ and
+  $a, b \in \mathbb{R}$, has roots $z_1^{*}$, $z_2^{*}$, $z_3^{*}$ and
+  $z_4^{*}$. Determine the value of $a$ and the value of $b$. \hfill [3]
+\end{enumerate}
+
+The midpoint of $[\mathrm{AB}]$ is $\mathrm{A}'$, the midpoint of
+$[\mathrm{BC}]$ is $\mathrm{B}'$, the midpoint of $[\mathrm{CD}]$ is
+$\mathrm{C}'$ and the midpoint of $[\mathrm{DA}]$ is $\mathrm{D}'$.
+
+Consider the equation $w^p = 2^q$, where $w \in \mathbb{C}$ and
+$p, q \in \mathbb{Z}^{+}$.
+
+Four of the roots of $w^p = 2^q$ are represented by the points
+$\mathrm{A}'$, $\mathrm{B}'$, $\mathrm{C}'$ and $\mathrm{D}'$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item[(e)] Find the least possible value of $p$ and the corresponding
+  value of $q$. \hfill [5]
+\end{enumerate}
+
+\newpage
+
+%--- Problem 5: Exponential form, cubic equation, reciprocal transformation [22 marks] ---
+%--- Source: AA HL 2023 May P1 TZ2 Q11 ---
+\item[5.] \makebox[\linewidth][s]{[Maximum mark: 22]\hfill {\small AA HL 2023 May P1 TZ2 Q11}}
+
+Consider the complex number $u = -1 + \sqrt{3}i$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item By finding the modulus and argument of $u$, show that
+  $u = 2e^{i\frac{2\pi}{3}}$. \hfill [3]
+  \item \begin{enumerate}[itemsep=0.15cm]
+    \item[(i)] Find the smallest positive integer $n$ such that $u^n$ is
+    a real number. \hfill [3]
+    \item[(ii)] Find the value of $u^n$ when $n$ takes the value found in
+    part (b)(i). \hfill [2]
+  \end{enumerate}
+\end{enumerate}
+
+Consider the equation
+\[
+z^3 + 5z^2 + 10z + 12 = 0,
+\]
+where $z \in \mathbb{C}$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item[(c)] \begin{enumerate}[itemsep=0.15cm]
+    \item[(i)] Given that $u$ is a root of
+    $z^3 + 5z^2 + 10z + 12 = 0$, find the other roots. \hfill [5]
+    \item[(ii)] By using a suitable transformation from $z$ to $w$, or
+    otherwise, find the roots of the equation
+    \[
+    1 + 5w + 10w^2 + 12w^3 = 0,
+    \]
+    where $w \in \mathbb{C}$. \hfill [4]
+  \end{enumerate}
+  \item[(d)] Consider the equation $z^2 = 2z^{*}$, where
+  $z \in \mathbb{C}$, $z \neq 0$. By expressing $z$ in the form
+  $a + bi$, find the roots of the equation. \hfill [5]
+\end{enumerate}
+
+\newpage
+
+%--- Problem 6: Argand geometry, conjugates, and equilateral triangle condition [18 marks] ---
+%--- Source: AA HL 2022 May P1 TZ2 Q12 ---
+\item[6.] \makebox[\linewidth][s]{[Maximum mark: 18]\hfill {\small AA HL 2022 May P1 TZ2 Q12}}
+
+In the following Argand diagram, the points $\mathrm{Z}_1$, O and
+$\mathrm{Z}_2$ are the vertices of triangle $\mathrm{Z}_1\mathrm{OZ}_2$
+described anticlockwise.
+
+The point $\mathrm{Z}_1$ represents the complex number
+$z_1 = r_1e^{i\alpha}$, where $r_1 > 0$. The point $\mathrm{Z}_2$
+represents the complex number $z_2 = r_2e^{i\theta}$, where $r_2 > 0$.
+
+Angles $\alpha, \theta$ are measured anticlockwise from the positive
+direction of the real axis such that $0 \leq \alpha, \theta < 2\pi$ and
+$0 < \alpha - \theta < \pi$.
+
+\begin{center}
+\includegraphics[width=0.55\textwidth]{../extracted/qb/22M.1.AHL.TZ2.12/figures/fig1.png}
+\end{center}
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Show that $z_1z_2^{*} = r_1r_2e^{i(\alpha-\theta)}$, where
+  $z_2^{*}$ is the complex conjugate of $z_2$. \hfill [2]
+  \item Given that $\operatorname{Re}\left(z_1z_2^{*}\right) = 0$, show
+  that $\mathrm{Z}_1\mathrm{OZ}_2$ is a right-angled triangle. \hfill [2]
+\end{enumerate}
+
+In parts (c), (d) and (e), consider the case where
+$\mathrm{Z}_1\mathrm{OZ}_2$ is an equilateral triangle.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item[(c)] \begin{enumerate}[itemsep=0.15cm]
+    \item[(i)] Express $z_1$ in terms of $z_2$. \hfill [2]
+    \item[(ii)] Hence show that $z_1^2 + z_2^2 = z_1z_2$. \hfill [4]
+  \end{enumerate}
+  \item[(d)] Let $z_1$ and $z_2$ be the distinct roots of the equation
+  $z^2 + az + b = 0$ where $z \in \mathbb{C}$ and
+  $a, b \in \mathbb{R}$. Use the result from part (c)(ii) to show that
+  $a^2 - 3b = 0$. \hfill [5]
+  \item[(e)] Consider the equation $z^2 + az + 12 = 0$, where
+  $z \in \mathbb{C}$ and $a \in \mathbb{R}$. Given that
+  $0 < \alpha - \theta < \pi$, deduce that only one equilateral triangle
+  $\mathrm{Z}_1\mathrm{OZ}_2$ can be formed from the point O and the
+  roots of this equation. \hfill [3]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
