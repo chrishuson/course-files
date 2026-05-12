@@ -98,8 +98,8 @@
         "mark_codes": ["M1", "M1", "A1", "A1", "A1"],
         "description": "Solve 2 ln x = ln 25 + 6. Give answer as x = p e^q with p, q in Z+.",
         "expected": {"answer": "x = 5 e^3", "p": 5, "q": 3},
-        "tolerance": "Accept x = 5 e^3 or x = 5e^3 or (p, q) = (5, 3). Other equivalent forms (e.g. sqrt(25 e^6)) earn intermediate marks but the requested form is x = pe^q with p, q positive integers.",
-        "notes": "M1 for using m ln x = ln x^m to write ln x^2 = ln 25 + 6. M1 for using ln a - ln b = ln(a/b) to combine into a single logarithmic expression. A1 for x^2/25 = e^6 (or x^2 = 25 e^6). A1 for x = sqrt(25 e^6) = 5 e^3 (with x > 0 noted). A1 for stating p = 5, q = 3. Method 2 (express 6 as 6 ln e first) earns the same marks."
+        "tolerance": "Accept x = 5 e^3 or x = 5e^3. A separate 'p = 5, q = 3' statement is NOT required; writing the answer in the form 5 e^3 suffices for full marks. Other equivalent forms (e.g. sqrt(25 e^6)) earn intermediate marks but the requested form is x = pe^q with p, q positive integers.",
+        "notes": "M1 for using m ln x = ln x^m to write ln x^2 - ln 25 = 6. M1 for using ln a - ln b = ln(a/b) to combine into a single logarithmic expression ln(x^2/25) = 6. A1 for x^2 = 25 e^6 (after exponentiating). A1 for x = sqrt(25 e^6) (with x > 0 noted). A1 for the simplification to 5 e^3 (i.e. answer in the requested form p e^q). Do NOT require an explicit 'p = 5, q = 3' line. Method 2 (express 6 as 6 ln e first) earns the same marks."
       }
     ]
   }

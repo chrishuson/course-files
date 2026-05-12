@@ -1,0 +1,155 @@
+[
+  {
+    "problem_number": 1,
+    "source_qb_id": "23N.1.SL.TZ2.7",
+    "total_marks": 17,
+    "response_mode": "lined_paper",
+    "answer_box_top_frac": null,
+    "parts": [
+      {
+        "label": "a_i",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find p in the grouped frequency table.",
+        "expected": {"answer": "p = 9"},
+        "notes": "A1 for p = 9."
+      },
+      {
+        "label": "a_ii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the modal class.",
+        "expected": {"answer": "600 < n <= 800"},
+        "tolerance": "Accept equivalent interval notation. Do not accept 700.",
+        "notes": "A1 for modal class, not midpoint."
+      },
+      {
+        "label": "b_i",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Use cumulative frequency curve to estimate median tickets sold.",
+        "expected": {"answer": 600},
+        "notes": "A1 for median = 600."
+      },
+      {
+        "label": "b_ii",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Estimate performances where at least 80% of 800 tickets were sold.",
+        "expected": {"capacity_80_percent": 640, "cumulative_below_640": 40, "answer": 20},
+        "notes": "A1 for 640. A1 for reading about 40 below 640. A1 for 60 - 40 = 20."
+      },
+      {
+        "label": "c_i",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "State disadvantage of surveying only first 5% leaving.",
+        "expected": {"answer": "biased sample with valid contextual reason"},
+        "tolerance": "Accept same section/group/priority seating/convenience sampling. Do not accept only 'not representative' without a reason.",
+        "notes": "A1 for valid contextual bias explanation."
+      },
+      {
+        "label": "c_ii",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Describe systematic sampling for 5% of audience.",
+        "expected": {"answer": "survey every 20th person"},
+        "notes": "A1 for regular intervals. A1 for interval length 20."
+      },
+      {
+        "label": "c_iii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Sampling method representative of children/adults.",
+        "expected": {"answer": "quota sampling"},
+        "notes": "A1 for quota sampling."
+      },
+      {
+        "label": "d_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Estimate number who spent between $3 and $25.",
+        "expected": {"proportion": "75%", "answer": 27000},
+        "notes": "M1 for recognizing Q1 to max is 75%. A1 for 27000."
+      },
+      {
+        "label": "d_ii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Half audience spent less than $a; estimate a.",
+        "expected": {"answer": 7},
+        "notes": "A1 for a = 7."
+      },
+      {
+        "label": "e_i",
+        "marks": 3,
+        "mark_codes": ["A1", "M1", "A1"],
+        "description": "Mean tickets expected this year after +17 per performance.",
+        "expected": {"old_mean": 600, "increase": 17, "answer": 617},
+        "notes": "A1 for old mean 600. M1 for adding 17 to the mean or equivalent total setup. A1 for 617."
+      },
+      {
+        "label": "e_ii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Effect of adding 17 to every value on variance.",
+        "expected": {"answer": "no effect"},
+        "notes": "A1 for no effect."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "source_qb_id": "23N.2.SL.TZ1.9",
+    "total_marks": 16,
+    "response_mode": "lined_paper",
+    "answer_box_top_frac": null,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find P(82.4 < H < 87.3) given P(H<82.4)=0.213 and P(H>87.3)=0.409.",
+        "expected": {"answer": 0.378},
+        "notes": "M1 for probabilities summing to 1. A1 for 0.378."
+      },
+      {
+        "label": "b",
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "A1", "M1", "A1"],
+        "description": "Find mu and sigma for H ~ N(mu, sigma^2) from two probability statements.",
+        "expected": {"mu": 86.2, "sigma": 4.78},
+        "tolerance": "Accept mu = 86.201... and sigma = 4.775... or appropriate rounding.",
+        "notes": "M1 for inverse normal/GDC approach. A1A1 for two correct equations or z-values. M1 for solving simultaneous equations. A1 for both final values clearly identified."
+      },
+      {
+        "label": "c_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "For X ~ B(100, 0.409), find P(X=32).",
+        "expected": {"answer": 0.0158},
+        "tolerance": "Accept 0.0157931... or 3 s.f. equivalent.",
+        "notes": "M1 for recognizing binomial distribution. A1 for 0.0158."
+      },
+      {
+        "label": "c_ii",
+        "marks": 4,
+        "mark_codes": ["A1", "M1", "A1", "A1"],
+        "description": "Given X<44, find P(X=32).",
+        "expected": {"p_x_less_44": 0.702975, "answer": 0.0225},
+        "tolerance": "Accept 0.0224661... or 3 s.f. equivalent.",
+        "notes": "A1 for P(X<44)=0.702975... M1 for conditional probability in context. A1 for P(X=32)/P(X<44). A1 for 0.0225.",
+        "follow_through": "Award marks for correct conditional setup using candidate's value from part (c)(i)."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["A1", "M1", "A1"],
+        "description": "For F ~ N(92.8, d^2) with IQR 4.52, find d.",
+        "expected": {"answer": 3.35},
+        "tolerance": "Accept 3.35068... or appropriate 3 s.f. rounding.",
+        "notes": "A1 for Q1=90.54 or Q3=95.06. M1 for using P(F<Q1)=0.25 or P(F<Q3)=0.75. A1 for d=3.35."
+      }
+    ]
+  }
+]

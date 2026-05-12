@@ -1,0 +1,233 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math AA SL \\* 12 May 2026}
+\fancyfoot[C]{\thepage}
+
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+\subsubsection*{11.17 Classwork: Cumulative Frequency and Normal Models --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: AA SL 2023 Nov P1 TZ2 Q7 [17 marks] ---
+\item[1.] \makebox[\linewidth][s]{[Maximum mark: 17]\hfill {\small AA SL 2023 Nov P1 TZ2 Q7}}
+
+\textbf{(a)(i)} Find $p$. \hfill [1]
+
+$p=60-3-18-30=9$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(a)(ii)} Write down the modal class. \hfill [1]
+
+$600<n\leq 800$ \hfill \textbf{A1}
+
+\emph{Do not accept $700$.}
+
+\medskip
+
+\textbf{(b)(i)} Estimate the median number of tickets sold. \hfill [1]
+
+The median is the 30th performance. From the cumulative frequency graph,
+the median is $600$ tickets. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)(ii)} Estimate the number of performances where at least
+$80\%$ of the tickets were sold. \hfill [3]
+
+$80\%$ of $800$ is $640$. \hfill \textbf{A1}
+
+From the cumulative frequency graph, about $40$ performances sold fewer
+than $640$ tickets. \hfill \textbf{A1}
+
+Therefore $60-40=20$ performances sold at least $80\%$ of the tickets.
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)(i)} State one disadvantage of surveying only the first
+$5\%$ of the audience as they leave. \hfill [1]
+
+Any reasonable answer identifying bias, with a reason. For example:
+the first people leaving may come from the same section, group, or
+priority seating area, so the sample may not represent the whole
+audience. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)(ii)} Describe how to collect feedback from $5\%$ of the
+audience using systematic sampling. \hfill [2]
+
+Select people at regular intervals. \hfill \textbf{A1}
+
+Since $5\%=\dfrac{1}{20}$, survey every 20th person. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)(iii)} State the sampling method which should be used if the
+survey is to be representative of the number of children and adults.
+\hfill [1]
+
+Quota sampling \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(d)(i)} Estimate the number of people who spent between $\$3$
+and $\$25$. \hfill [2]
+
+From the box plot, $\$3$ is the lower quartile and $\$25$ is the maximum,
+so this interval contains $75\%$ of the audience. \hfill \textbf{M1}
+
+$0.75\times 36\,000=27\,000$ people. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(d)(ii)} Half the audience spent less than $\$a$. Estimate $a$.
+\hfill [1]
+
+The median amount spent is $\$7$, so $a=7$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(e)(i)} Calculate the mean number of tickets expected this year.
+\hfill [3]
+
+Last year the total number of tickets sold was $36\,000$, so the old
+mean was
+\[
+\frac{36\,000}{60}=600.
+\]
+Old mean is $600$ tickets. \hfill \textbf{A1}
+
+Adding $17$ tickets to each performance adds $17$ to the mean.
+\hfill \textbf{M1}
+
+New mean $=600+17=617$ tickets. \hfill \textbf{A1}
+
+\emph{Alternative: compute
+$\dfrac{36\,000+60(17)}{60}=617$.}
+
+\medskip
+
+\textbf{(e)(ii)} State the effect on the variance. \hfill [1]
+
+Adding the same constant to every value has no effect on the variance.
+\hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 2: AA SL 2023 Nov P2 TZ1 Q9 [16 marks] ---
+\item[2.] \makebox[\linewidth][s]{[Maximum mark: 16]\hfill {\small AA SL 2023 Nov P2 TZ1 Q9}}
+
+\textbf{(a)} Find $P(82.4 < H < 87.3)$. \hfill [2]
+
+Recognize that the three probabilities sum to $1$. \hfill \textbf{M1}
+
+\[
+0.213+P(82.4<H<87.3)+0.409=1
+\]
+
+\[
+P(82.4<H<87.3)=0.378
+\]
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Find $\mu$ and $\sigma$. \hfill [5]
+
+Use inverse normal with $P(H<82.4)=0.213$ and
+$P(H<87.3)=1-0.409=0.591$. \hfill \textbf{M1}
+
+\[
+\mu+z_{1}\sigma=82.4,\qquad \mu+z_{2}\sigma=87.3
+\]
+where $z_1=\text{invNorm}(0.213)=-0.796055\ldots$ and
+$z_2=\text{invNorm}(0.591)=0.230118\ldots$. \hfill \textbf{A1A1}
+
+Attempt to solve the two equations in $\mu$ and $\sigma$. \hfill \textbf{M1}
+
+\[
+\mu=86.2011\ldots,\qquad \sigma=4.77502\ldots
+\]
+
+\[
+\mu=86.2,\qquad \sigma=4.78
+\]
+\hfill \textbf{A1}
+
+\emph{Accept equivalent GDC setup using normal CDF or inverse normal.}
+
+\medskip
+
+\textbf{(c)(i)} Find the probability that exactly $32$ plants are ready
+to harvest. \hfill [2]
+
+Recognition of binomial distribution. \hfill \textbf{M1}
+
+\[
+X\sim B(100,0.409)
+\]
+
+\[
+P(X=32)=0.0157931\ldots=0.0158
+\]
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)(ii)} Given that fewer than $44$ plants are ready to harvest,
+find the probability that exactly $32$ plants are ready to harvest.
+\hfill [4]
+
+\[
+P(X<44)=0.702975\ldots
+\]
+\hfill \textbf{A1}
+
+Recognition of conditional probability in context. \hfill \textbf{M1}
+
+\[
+P(X=32\mid X<44)=\frac{P(X=32)}{P(X<44)}
+\]
+\hfill \textbf{A1}
+
+\[
+\frac{0.0157931\ldots}{0.702975\ldots}=0.0224661\ldots=0.0225
+\]
+\hfill \textbf{A1}
+
+\emph{FT: award marks for correct conditional setup using the
+candidate's binomial probability from part (c)(i).}
+
+\medskip
+
+\textbf{(d)} Find $d$. \hfill [3]
+
+Since the IQR is $4.52$, the quartiles are
+\[
+Q_1=92.8-2.26=90.54,\qquad Q_3=92.8+2.26=95.06.
+\]
+One correct quartile value may be seen. \hfill \textbf{A1}
+
+Use the fact that $P(F<90.54)=0.25$ or $P(F<95.06)=0.75$.
+\hfill \textbf{M1}
+
+\[
+\frac{90.54-92.8}{d}=-0.674489\ldots
+\]
+
+\[
+d=3.35068\ldots=3.35
+\]
+\hfill \textbf{A1}
+
+\emph{Accept equivalent GDC method solving for $d$.}
+
+\end{enumerate}
+\end{document}

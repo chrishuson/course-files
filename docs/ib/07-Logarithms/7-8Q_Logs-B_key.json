@@ -98,8 +98,8 @@
         "mark_codes": ["M1", "M1", "A1", "A1", "A1"],
         "description": "Solve 2 ln x = ln 16 + 4. Give answer as x = p e^q with p, q in Z+.",
         "expected": {"answer": "x = 4 e^2", "p": 4, "q": 2},
-        "tolerance": "Accept x = 4 e^2 or x = 4e^2 or (p, q) = (4, 2). Other equivalent forms (e.g. sqrt(16 e^4)) earn intermediate marks but the requested form is x = pe^q with p, q positive integers.",
-        "notes": "M1 for using m ln x = ln x^m to write ln x^2 = ln 16 + 4. M1 for using ln a - ln b = ln(a/b) to combine into a single logarithmic expression. A1 for x^2/16 = e^4 (or x^2 = 16 e^4). A1 for x = sqrt(16 e^4) = 4 e^2 (with x > 0 noted). A1 for stating p = 4, q = 2. Method 2 (express 4 as 4 ln e first) earns the same marks."
+        "tolerance": "Accept x = 4 e^2 or x = 4e^2. A separate 'p = 4, q = 2' statement is NOT required; writing the answer in the form 4 e^2 suffices for full marks. Other equivalent forms (e.g. sqrt(16 e^4)) earn intermediate marks but the requested form is x = pe^q with p, q positive integers.",
+        "notes": "M1 for using m ln x = ln x^m to write ln x^2 - ln 16 = 4. M1 for using ln a - ln b = ln(a/b) to combine into a single logarithmic expression ln(x^2/16) = 4. A1 for x^2 = 16 e^4 (after exponentiating). A1 for x = sqrt(16 e^4) (with x > 0 noted). A1 for the simplification to 4 e^2 (i.e. answer in the requested form p e^q). Do NOT require an explicit 'p = 4, q = 2' line. Method 2 (express 4 as 4 ln e first) earns the same marks."
       }
     ]
   }
