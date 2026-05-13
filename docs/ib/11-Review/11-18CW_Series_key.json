@@ -1,0 +1,201 @@
+[
+  {
+    "problem_number": 1,
+    "source_qb_id": "24M.1.SL.TZ1.6",
+    "source": "AA SL 2024 May P1 TZ1 Q6",
+    "total_marks": 5,
+    "response_mode": "answer_box",
+    "answer_box_top_frac": 0.42,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find S_n for a geometric sequence with first term 1 and common ratio 10.",
+        "expected": {"answer": "S_n = (10^n - 1)/9"},
+        "notes": "A1 for S_n = (10^n - 1)/9."
+      },
+      {
+        "label": "b",
+        "marks": 4,
+        "mark_codes": ["A1", "M1", "A1", "A1"],
+        "description": "Show that the sum S_1 + ... + S_n equals [10(10^n - 1) - 9n]/81.",
+        "expected": {"answer": "[10(10^n - 1) - 9n]/81"},
+        "tolerance": "Show that (answer given).",
+        "notes": "A1 for writing the sum of S_i terms. M1 for using the geometric series formula and collecting the -1 terms. A1 for the powers-of-10 sum and -n. A1 for a correct intermediate expression leading to the given result."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "source_qb_id": "25M.1.SL.TZ1.6",
+    "source": "AA SL 2025 May P1 TZ1 Q6",
+    "total_marks": 8,
+    "response_mode": "answer_box",
+    "answer_box_top_frac": 0.39,
+    "parts": [
+      {
+        "label": "a_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show that the area of frame F_n is 20(9/4)^(n-1) cm^2.",
+        "expected": {"answer": "20(9/4)^(n-1) cm^2"},
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for recognizing width and height scale by 3/2 or that areas are geometric. A1 for first term 20 and common ratio 9/4."
+      },
+      {
+        "label": "a_ii",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the mean area of ten frames in the requested form.",
+        "expected": {"answer": "(8/5)((9/4)^10 - 1) cm^2", "p": "8/5", "a": 10},
+        "notes": "M1 for using a geometric sum. A1 for sum = 16((9/4)^10 - 1). A1 for dividing by 10 to get (8/5)((9/4)^10 - 1)."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the median area of the ten picture frames.",
+        "expected": {"answer": "(65/2)(9/4)^4 cm^2", "q": "65/2"},
+        "notes": "M1 for recognizing the median is between the fifth and sixth terms. A1 for the correct average setup. A1 for q = 65/2."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "source_qb_id": "25M.2.SL.TZ1.8",
+    "source": "AA SL 2025 May P2 TZ1 Q8",
+    "total_marks": 16,
+    "response_mode": "lined_paper",
+    "answer_box_top_frac": null,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down t_3 from the card pyramid diagrams.",
+        "expected": {"answer": 15},
+        "notes": "A1 for t_3 = 15."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find t_4.",
+        "expected": {"answer": 26},
+        "notes": "M1 for adding 11 cards to t_3 or considering all four rows. A1 for 26."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Show that t_n = n(3n+1)/2.",
+        "expected": {"answer": "n(3n+1)/2"},
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for recognizing an arithmetic sum such as 2+5+8+... . M1 for using the sum formula. A1 for obtaining n(3n+1)/2."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the maximum rows possible from 14 full packs.",
+        "expected": {"answer": 21},
+        "notes": "M1 for solving n(3n+1)/2 <= 728 or equivalent. A1 for critical value 21.864... or checking t_21 and t_22. A1 for 21 rows."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the minimum rows for a complete pyramid stack using full packs with no cards left over.",
+        "expected": {"answer": 13},
+        "notes": "M1 for listing sufficient t_n values or recognizing n(3n+1)/(2*52) must be an integer. A1 for 13."
+      },
+      {
+        "label": "f",
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "M1", "A1", "A1"],
+        "description": "Find the minimum number of cards for a stack with vertical height more than 2 metres.",
+        "expected": {"rows": 27, "answer": 1107},
+        "notes": "M1 for using trigonometry/Pythagoras to find row height. A1 for 44sqrt(3) mm. M1 for solving 44n sqrt(3) > 2000 or equivalent. A1 for 27 rows. A1 for t_27 = 1107."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "source_qb_id": "25N.2.SL.TZ3.7",
+    "source": "AA SL 2025 Nov P2 TZ3 Q7",
+    "total_marks": 12,
+    "response_mode": "lined_paper",
+    "answer_box_top_frac": null,
+    "parts": [
+      {
+        "label": "a_i",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Monthly interest Andy receives on $5000 at 0.315% of the initial investment.",
+        "expected": {"answer": 15.75},
+        "notes": "A1 for 15.75."
+      },
+      {
+        "label": "a_ii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Annual interest Andy receives.",
+        "expected": {"answer": 189},
+        "notes": "A1 for 189."
+      },
+      {
+        "label": "a_iii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Expression for Andy's amount after n years.",
+        "expected": {"answer": "5000 + 189n"},
+        "notes": "A1 for 5000 + 189n."
+      },
+      {
+        "label": "a_iv",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Show Andy has $5945 after 5 years.",
+        "expected": {"answer": 5945},
+        "tolerance": "Show that (answer given).",
+        "notes": "A1 for substituting n=5 into 5000+189n to get 5945."
+      },
+      {
+        "label": "b_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Amount in Jess's account after 5 years at 3% compounded annually.",
+        "expected": {"answer": 5796},
+        "tolerance": "Accept 5796.37... before rounding.",
+        "notes": "M1 for 5000(1.03)^5 or equivalent GDC setup. A1 for 5796 to nearest dollar."
+      },
+      {
+        "label": "b_ii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Interest Jess receives over 5 years.",
+        "expected": {"answer": 796},
+        "tolerance": "Accept 796.37... before rounding.",
+        "notes": "A1 for 796."
+      },
+      {
+        "label": "c_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Expression for Jess's amount after n years.",
+        "expected": {"answer": "5000(1.03)^n"},
+        "notes": "M1 for compound-interest model with annual compounding. A1 for 5000(1.03)^n."
+      },
+      {
+        "label": "c_ii",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Smallest complete number of years for Jess to have more money than Andy.",
+        "expected": {"answer": 17},
+        "notes": "M1 for setting 5000(1.03)^n > 5000+189n or equivalent. M1 for solving/checking crossover values. A1 for 17 years.",
+        "follow_through": "Award marks for correct comparison using candidate's expressions from parts (a)(iii) and (c)(i)."
+      }
+    ]
+  }
+]

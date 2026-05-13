@@ -1,0 +1,318 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math AA SL \\* 13 May 2026}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{11.18 Classwork: Series --- Markscheme}
+
+\begin{enumerate}[itemsep=0.35cm]
+
+%--- Problem 1: Geometric sums and sums of partial sums [5 marks] ---
+%--- Source: AA SL 2024 May P1 TZ1 Q6 ---
+\item[1.] [Maximum mark: 5]
+
+\textbf{(a)} Find $S_n$. \hfill [1]
+
+\[
+S_n=\frac{10^n-1}{9}
+\]
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Show that
+$S_1+S_2+\cdots+S_n=\dfrac{10(10^n-1)-9n}{81}$. \hfill [4]
+
+\[
+S_1+S_2+\cdots+S_n
+=\frac{10-1}{9}+\frac{10^2-1}{9}+\cdots+\frac{10^n-1}{9}
+\]
+\hfill \textbf{A1}
+
+\[
+=\frac{(10+10^2+\cdots+10^n)-n}{9}
+\]
+\hfill \textbf{M1}
+
+\[
+10+10^2+\cdots+10^n=\frac{10(10^n-1)}{10-1}, \qquad
+(-1)+(-1)+\cdots+(-1)=-n
+\]
+\hfill \textbf{A1}
+
+\[
+S_1+S_2+\cdots+S_n
+=\frac{\frac{10(10^n-1)}{9}-n}{9}
+=\frac{10(10^n-1)-9n}{81}
+\]
+\hfill \textbf{A1 AG}
+
+\newpage
+
+%--- Problem 2: Geometric areas, mean, and median [8 marks] ---
+%--- Source: AA SL 2025 May P1 TZ1 Q6 ---
+\item[2.] [Maximum mark: 8]
+
+\textbf{(a)(i)} Show that the area of $F_n$ is
+$20\left(\dfrac{9}{4}\right)^{n-1}\text{ cm}^2$. \hfill [2]
+
+The width and height each have common ratio $\dfrac{3}{2}$, so the areas
+form a geometric sequence with first term $20$ and common ratio
+\[
+\left(\frac{3}{2}\right)^2=\frac{9}{4}.
+\]
+\hfill \textbf{M1 A1}
+
+\[
+A_n=20\left(\frac{9}{4}\right)^{n-1}
+\]
+\hfill \textbf{AG}
+
+\medskip
+
+\textbf{(a)(ii)} Find the mean area. \hfill [3]
+
+\[
+\sum_{n=1}^{10} A_n
+=\frac{20\left(\left(\frac{9}{4}\right)^{10}-1\right)}
+{\frac{9}{4}-1}
+\]
+\hfill \textbf{M1}
+
+\[
+=16\left(\left(\frac{9}{4}\right)^{10}-1\right)
+\]
+\hfill \textbf{A1}
+
+Therefore the mean area is
+\[
+\frac{1}{10}\cdot 16\left(\left(\frac{9}{4}\right)^{10}-1\right)
+=\frac{8}{5}\left(\left(\frac{9}{4}\right)^{10}-1\right)\text{ cm}^2.
+\]
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Find the median area. \hfill [3]
+
+The median is the mean of the $5$th and $6$th areas. \hfill \textbf{M1}
+
+\[
+\text{median}
+=\frac{20\left(\frac{9}{4}\right)^4+
+20\left(\frac{9}{4}\right)^5}{2}
+\]
+\hfill \textbf{A1}
+
+\[
+=\frac{20\left(\frac{9}{4}\right)^4\left(1+\frac{9}{4}\right)}{2}
+=\frac{65}{2}\left(\frac{9}{4}\right)^4\text{ cm}^2.
+\]
+\hfill \textbf{A1}
+
+\newpage
+
+%--- Problem 3: Card pyramids and arithmetic sums [16 marks] ---
+%--- Source: AA SL 2025 May P2 TZ1 Q8 ---
+\item[3.] [Maximum mark: 16]
+
+\textbf{(a)} Write down $t_3$. \hfill [1]
+
+\[
+t_3=15
+\]
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Find $t_4$. \hfill [2]
+
+\[
+t_4=15+11
+\]
+\hfill \textbf{M1}
+
+\[
+t_4=26
+\]
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} Show that $t_n=\dfrac{n(3n+1)}{2}$. \hfill [3]
+
+The row totals form the arithmetic sequence
+\[
+2+5+8+11+\cdots .
+\]
+\hfill \textbf{M1}
+
+\[
+t_n=\frac{n}{2}\left(2(2)+3(n-1)\right)
+\]
+\hfill \textbf{M1}
+
+\[
+t_n=\frac{n}{2}(3n+1)=\frac{n(3n+1)}{2}
+\]
+\hfill \textbf{A1 AG}
+
+\medskip
+
+\textbf{(d)} Find the maximum number of rows from $14$ full packs.
+\hfill [3]
+
+\[
+\frac{n(3n+1)}{2}\leq 14(52)=728
+\]
+\hfill \textbf{M1}
+
+Solving gives $n=21.8642\ldots$, or checking:
+\[
+t_{21}=672,\qquad t_{22}=737.
+\]
+\hfill \textbf{A1}
+
+The maximum number of rows is $21$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(e)} Find the minimum number of rows using full packs with no
+cards left over. \hfill [2]
+
+We need
+\[
+\frac{\frac{1}{2}n(3n+1)}{52}\in\mathbb{Z}.
+\]
+\hfill \textbf{M1}
+
+The minimum number of rows is $13$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(f)} Find the minimum number of cards for height more than
+$2$ metres. \hfill [5]
+
+The vertical height of one triangular row is
+\[
+88\sin 60^\circ=44\sqrt{3}\text{ mm}.
+\]
+\hfill \textbf{M1 A1}
+
+We need
+\[
+44n\sqrt{3}>2000.
+\]
+\hfill \textbf{M1}
+
+\[
+n>26.2431\ldots,
+\]
+so the minimum number of rows is $27$. \hfill \textbf{A1}
+
+\[
+t_{27}=\frac{27(3(27)+1)}{2}=1107.
+\]
+\hfill \textbf{A1}
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 4: Simple and compound interest comparison [12 marks] ---
+%--- Source: AA SL 2025 Nov P2 TZ3 Q7 ---
+\item[4.] [Maximum mark: 12]
+
+\textbf{(a)(i)} Monthly interest for Andy. \hfill [1]
+
+\[
+5000(0.00315)=15.75
+\]
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(a)(ii)} Annual interest for Andy. \hfill [1]
+
+\[
+12(15.75)=189
+\]
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(a)(iii)} Andy's amount after $n$ years. \hfill [1]
+
+\[
+5000+189n
+\]
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(a)(iv)} Show Andy has $\$5945$ after $5$ years. \hfill [1]
+
+\[
+5000+189(5)=5945
+\]
+\hfill \textbf{A1 AG}
+
+\medskip
+
+\textbf{(b)(i)} Jess's account after $5$ years. \hfill [2]
+
+\[
+5000(1.03)^5
+\]
+\hfill \textbf{M1}
+
+\[
+=5796.37\ldots \approx \$5796
+\]
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)(ii)} Jess's interest over $5$ years. \hfill [1]
+
+\[
+5796.37\ldots-5000=796.37\ldots \approx \$796
+\]
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)(i)} Jess's amount after $n$ years. \hfill [2]
+
+Use the compound-interest model with annual compounding. \hfill \textbf{M1}
+
+\[
+5000(1.03)^n
+\]
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)(ii)} Smallest number of complete years. \hfill [3]
+
+\[
+5000(1.03)^n>5000+189n
+\]
+\hfill \textbf{M1}
+
+Solving or checking values:
+\[
+5000(1.03)^{16}=8023.53\ldots<8024,
+\qquad
+5000(1.03)^{17}=8264.23\ldots>8213.
+\]
+\hfill \textbf{M1}
+
+Therefore the smallest number of complete years is $17$. \hfill \textbf{A1}
+
+\end{enumerate}
+\end{document}
