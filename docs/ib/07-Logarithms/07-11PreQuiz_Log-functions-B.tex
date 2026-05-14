@@ -1,0 +1,61 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[L]{La Scuola d'Italia / Dr.\ Huson / IB Math (b) \\* 14 March 2026}
+\fancyhead[R]{\fbox{\begin{minipage}{6cm}\footnotesize Student ID:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{7.11 PreQuiz: Logarithmic and Exponential Functions
+(calculator)}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Quarterly compound interest [6 marks] ---
+%--- Source: Original, modelled on 7-10PreQuiz_Log-functions problem 4 ---
+\item[1.] [Maximum mark: 6]
+
+Lina invests \$2400 in an account that pays interest of $6\,\%$ per
+annum, compounded quarterly. No further deposits or withdrawals are made.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down the quarterly growth factor for the value of the
+  account. \hfill [1]
+  \item Find the value of the account at the end of $5$ years, correct
+  to the nearest cent. \hfill [2]
+  \item Find the smallest number of full years required for the value of
+  the account to first exceed \$3400. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,11);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Continuous exponential growth [6 marks] ---
+%--- Source: Original, modelled on 7-10PreQuiz_Log-functions problem 3 ---
+\item[2.] [Maximum mark: 6]
+
+The number of members of an online study group is modelled by
+$$M(t) = 5000 e^{kt}, \qquad k > 0$$
+where $t$ is the number of years after the group is created. After
+$2$ years there are $7200$ members.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the value of $k$. \hfill [2]
+  \item Find the number of members after $6$ years, correct to the
+  nearest whole number. \hfill [2]
+  \item Find the time, in years, when the number of members first
+  reaches $10\,000$. Give your answer correct to two decimal places.
+  \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,12);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}
