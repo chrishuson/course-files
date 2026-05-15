@@ -1,0 +1,146 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 15 March 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize First \& Last name:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{7.12 Quiz: Logarithmic and Exponential Functions}
+
+\textit{\small Problems 1--2: no calculator. Problems 3--6: calculator
+allowed.}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Express in form ln k [5 marks, no calculator] ---
+\item[1.] [Maximum mark: 5]
+
+Write each of the following expressions in the form $\ln k$, where
+$k \in \mathbb{Z}^{+}$.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item $\ln 8 + \ln 9$ \hfill [1]
+  \item $2\ln 6 - \ln 4$ \hfill [2]
+  \item $\ln 48 - 2\ln 2 - \ln 3$ \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,11);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Solve exponential and logarithmic equations [5 marks, no calculator] ---
+\item[2.] [Maximum mark: 5]
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Solve the equation $3^{\,2x} = 27$. \hfill [2]
+  \item Solve the equation
+  $\log_{2}(x + 3) + \log_{2}(x - 3) = 4$, where $x > 3$. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,12);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: Log function and its inverse [6 marks, calculator] ---
+\item[3.] [Maximum mark: 6]
+
+Let $g(x) = 2 + \log_{3}(x - 1)$.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item State the equation of the vertical asymptote of the graph of
+  $g$. \hfill [1]
+  \item Find the $x$-intercept of the graph of $g$. \hfill [2]
+  \item Find an expression for $g^{-1}(x)$. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,12);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: Continuous exponential growth (algae) [6 marks, calculator] ---
+\item[4.] [Maximum mark: 6]
+
+An algae bloom is spreading across a small lake. The mass of algae,
+$A$, in kilograms, $t$ days after the bloom is first measured, is
+modelled by
+$$A(t) \;=\; 8\, e^{\,k t}, \qquad k > 0.$$
+After $4$ days, the mass of algae is $32$ kg.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Show that $k = \tfrac{1}{2}\ln 2$. \hfill [2]
+  \item Find the mass of algae after $11$ days. Give your answer
+  correct to the nearest integer. \hfill [2]
+  \item Find the time, in days, at which the mass of algae first
+  reaches $1000$ kg. Give your answer correct to two decimal places.
+  \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,11);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 5: Compound interest, monthly compounding [6 marks, calculator] ---
+\item[5.] [Maximum mark: 6]
+
+Hugo opens a savings account that pays interest at a nominal annual
+rate of $4.8\,\%$, compounded monthly. He deposits \$5000 and makes no
+further deposits or withdrawals. Let $V(t)$ be the value of the
+account, in dollars, $t$ years after the deposit.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down a formula for $V(t)$. \hfill [1]
+  \item Find the value of the account at the end of $6$ years, correct
+  to the nearest cent. \hfill [2]
+  \item Find the smallest number of full years required for the value
+  of the account to first exceed \$8000. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,11);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 6: Decibel logarithmic scale [6 marks, calculator] ---
+\item[6.] [Maximum mark: 6]
+
+The sound intensity level, $L$, measured in decibels (dB), of a sound
+of intensity $I$, in watts per square metre, is given by
+$$L \;=\; 10\,\log_{10}\!\left(\dfrac{I}{I_{0}}\right),$$
+where $I_{0} = 10^{-12}$ W/m\textsuperscript{2} is the threshold of
+human hearing.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item A vacuum cleaner produces a sound of intensity
+  $I = 3.2 \times 10^{-5}$ W/m\textsuperscript{2}. Find its sound
+  intensity level, in decibels, correct to one decimal place.
+  \hfill [2]
+  \item A jet engine produces a sound intensity level of $130$ dB.
+  Find the sound intensity $I$, in W/m\textsuperscript{2}. Give your
+  answer in the form $a \times 10^{k}$, where $1 \le a < 10$ and
+  $k \in \mathbb{Z}$. \hfill [2]
+  \item Show that doubling the intensity of a sound increases its
+  sound intensity level by approximately $3.01$ dB. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,11);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

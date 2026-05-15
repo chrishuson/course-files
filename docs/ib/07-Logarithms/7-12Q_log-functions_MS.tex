@@ -1,0 +1,208 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 15 May 2026}
+
+\begin{document}
+\subsubsection*{7.12 Quiz: Logarithmic and Exponential Functions ---
+Markscheme}
+
+\textit{\small Problems 1--2: no calculator. Problems 3--6: calculator
+allowed.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Express in form ln k [5 marks, no calculator] ---
+\item[1.] [Maximum mark: 5]
+
+\medskip
+
+\textbf{(a)} $\ln 8 + \ln 9 = \ln(8 \cdot 9) = \ln 72$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} $2\ln 6 = \ln 6^{2} = \ln 36$. \hfill \textbf{A1}
+
+$\ln 36 - \ln 4 = \ln\dfrac{36}{4} = \ln 9$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} $2\ln 2 = \ln 4$, so
+$\ln 48 - 2\ln 2 - \ln 3 = \ln 48 - \ln 4 - \ln 3$. \hfill \textbf{A1}
+
+$= \ln\dfrac{48}{4 \cdot 3} = \ln 4$. \hfill \textbf{A1}
+
+\emph{Accept any valid ordering of the product/quotient rules, e.g.\
+$\ln 48 - \ln(4 \cdot 3) = \ln(48/12) = \ln 4$.}
+
+\newpage
+
+%--- Problem 2: Solve exponential and logarithmic equations [5 marks, no calculator] ---
+\item[2.] [Maximum mark: 5]
+
+\medskip
+
+\textbf{(a)} $3^{\,2x} = 27 = 3^{3}$, so $2x = 3$. \hfill \textbf{M1}
+
+$x = \dfrac{3}{2}$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Use $\log_{2} a + \log_{2} b = \log_{2}(ab)$:
+
+$\log_{2}\!\bigl[(x+3)(x-3)\bigr] = 4$. \hfill \textbf{M1}
+
+Exponentiate: $(x+3)(x-3) = 2^{4} = 16$, so $x^{2} - 9 = 16$.
+\hfill \textbf{A1}
+
+$x^{2} = 25$. Since $x > 3$: $x = 5$. \hfill \textbf{A1}
+
+\emph{Reject $x = -5$ (outside the stated domain $x > 3$).}
+
+\newpage
+
+%--- Problem 3: Log function and its inverse [6 marks, calculator] ---
+\item[3.] [Maximum mark: 6]
+
+$g(x) = 2 + \log_{3}(x - 1)$.
+
+\medskip
+
+\textbf{(a)} Vertical asymptote where the argument of the log is zero:
+$x - 1 = 0$, so $x = 1$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} Set $g(x) = 0$: $\log_{3}(x - 1) = -2$. \hfill \textbf{M1}
+
+$x - 1 = 3^{-2} = \dfrac{1}{9}$, so $x = \dfrac{10}{9}$. \hfill \textbf{A1}
+
+\emph{Accept $x \approx 1.11$ (3 s.f.) or the point $(\tfrac{10}{9},\, 0)$.}
+
+\medskip
+
+\textbf{(c)} Let $y = 2 + \log_{3}(x - 1)$. Interchange $x$ and $y$:
+$x = 2 + \log_{3}(y - 1)$. \hfill \textbf{M1}
+
+$\log_{3}(y - 1) = x - 2$, so $y - 1 = 3^{\,x - 2}$. \hfill \textbf{A1}
+
+$g^{-1}(x) = 1 + 3^{\,x - 2}$. \hfill \textbf{A1}
+
+\emph{Accept equivalent forms, e.g.\ $g^{-1}(x) = 1 + \dfrac{3^{x}}{9}$.}
+
+\newpage
+
+%--- Problem 4: Continuous exponential growth (algae) [6 marks, calculator] ---
+\item[4.] [Maximum mark: 6]
+
+$A(t) = 8\, e^{\,kt}$, $k > 0$, with $A(4) = 32$.
+
+\medskip
+
+\textbf{(a)} $8\, e^{\,4k} = 32$, so $e^{\,4k} = 4$. \hfill \textbf{M1}
+
+$4k = \ln 4 = 2\ln 2$. \hfill \textbf{A1}
+
+$k = \tfrac{1}{2}\ln 2$. \hfill \textbf{AG}
+
+\medskip
+
+\textbf{(b)} $A(11) = 8\, e^{\,11k} = 8 \cdot 2^{\,11/2} = 256\sqrt{2}$.
+\hfill \textbf{M1}
+
+\emph{GDC: } $256 \times 1.41421\ldots = 362.038\ldots$
+
+$A(11) \approx 362$ kg (nearest integer). \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} Set $8\, e^{\,kt} = 1000$, so $e^{\,kt} = 125$.
+
+$kt = \ln 125$, hence
+$t = \dfrac{\ln 125}{\tfrac{1}{2}\ln 2} = \dfrac{2\ln 125}{\ln 2}$.
+\hfill \textbf{M1}
+
+$t = 13.9316\ldots \approx 13.93$ days (2 d.p.). \hfill \textbf{A1}
+
+\emph{Accept $t = 6\log_{2} 5$ as an equivalent exact form; GDC solve
+of $8\, e^{(t/2)\ln 2} = 1000$ also acceptable.}
+
+\newpage
+
+%--- Problem 5: Compound interest, monthly compounding [6 marks, calculator] ---
+\item[5.] [Maximum mark: 6]
+
+Principal $\$5000$, nominal annual rate $4.8\%$, compounded monthly.
+
+\medskip
+
+\textbf{(a)} $V(t) = 5000\!\left(1 + \dfrac{0.048}{12}\right)^{\!12t}
+= 5000\,(1.004)^{\,12t}$. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} $V(6) = 5000\,(1.004)^{72}$. \hfill \textbf{M1}
+
+\emph{GDC: } $5000 \times 1.332989\ldots = 6664.95$.
+
+$V(6) = \$6664.95$ (nearest cent). \hfill \textbf{A1}
+
+\emph{Accept $\$6664.96$ from full-precision evaluation.}
+
+\medskip
+
+\textbf{(c)} Need the smallest integer $n$ with
+$5000\,(1.004)^{12n} > 8000$, i.e.\ $(1.004)^{12n} > 1.6$.
+\hfill \textbf{M1}
+
+Take logs: $12n > \dfrac{\ln 1.6}{\ln 1.004} = 117.737\ldots$, so
+$n > 9.811\ldots$ \hfill \textbf{A1}
+
+Smallest full-year $n = 10$ years. \hfill \textbf{A1}
+
+\emph{GDC check: $V(9) = 5000\,(1.004)^{108} = \$7695.03$ (under);
+$V(10) = 5000\,(1.004)^{120} = \$8072.62$ (over). Two-row table earns
+full marks; single-row table earns full marks with a feedback note
+recommending the adjacent row.}
+
+\newpage
+
+%--- Problem 6: Decibel logarithmic scale [6 marks, calculator] ---
+\item[6.] [Maximum mark: 6]
+
+$L = 10\log_{10}\!\left(\dfrac{I}{I_{0}}\right)$, $I_{0} = 10^{-12}$
+W/m\textsuperscript{2}.
+
+\medskip
+
+\textbf{(a)} $\dfrac{I}{I_{0}} = \dfrac{3.2 \times 10^{-5}}{10^{-12}}
+= 3.2 \times 10^{7}$. \hfill \textbf{M1}
+
+$L = 10\log_{10}(3.2 \times 10^{7}) = 10 \times 7.50515\ldots
+\approx 75.1$ dB (1 d.p.). \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} $130 = 10\log_{10}\!\left(\dfrac{I}{10^{-12}}\right)$, so
+$\log_{10}\!\left(\dfrac{I}{10^{-12}}\right) = 13$. \hfill \textbf{M1}
+
+$\dfrac{I}{10^{-12}} = 10^{13}$, hence $I = 10$, i.e.\
+$I = 1 \times 10^{\,1}$ W/m\textsuperscript{2}. \hfill \textbf{A1}
+
+\emph{Accept $I = 10$ W/m\textsuperscript{2}; $a = 1$, $k = 1$.}
+
+\medskip
+
+\textbf{(c)} $L_{2I} - L_{I}
+= 10\log_{10}\!\left(\dfrac{2I}{I_{0}}\right)
+- 10\log_{10}\!\left(\dfrac{I}{I_{0}}\right)
+= 10\log_{10} 2$. \hfill \textbf{M1}
+
+$10\log_{10} 2 = 10 \times 0.30103\ldots = 3.0103\ldots$ \hfill \textbf{A1}
+
+$\approx 3.01$ dB. \hfill \textbf{AG}
+
+\end{enumerate}
+\end{document}

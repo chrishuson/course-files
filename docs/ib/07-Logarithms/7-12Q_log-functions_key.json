@@ -1,0 +1,203 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.30,
+    "source": "Original (no calculator). Express expressions in form ln k, k in Z+.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Express ln 8 + ln 9 in the form ln k.",
+        "expected": {"answer": "ln 72"},
+        "tolerance": "Accept ln 72 only.",
+        "notes": "A1 for ln 72 (single application of the product rule ln a + ln b = ln(ab))."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Express 2 ln 6 - ln 4 in the form ln k.",
+        "expected": {"answer": "ln 9"},
+        "tolerance": "Accept ln 9. Intermediate ln 36 - ln 4 or ln(36/4) acceptable.",
+        "notes": "A1 for 2 ln 6 = ln 36 (power rule). A1 for ln(36/4) = ln 9 (quotient rule)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Express ln 48 - 2 ln 2 - ln 3 in the form ln k.",
+        "expected": {"answer": "ln 4"},
+        "tolerance": "Accept ln 4. Any valid order of product/quotient/power-rule applications is acceptable.",
+        "notes": "A1 for combining 2 ln 2 = ln 4 (or equivalent intermediate such as ln(2 ln 2 + ln 3) = ln 12). A1 for the final answer ln 4."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.22,
+    "source": "Original (no calculator). Solve exponential and logarithmic equations.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Solve 3^(2x) = 27.",
+        "expected": {"answer": "x = 3/2"},
+        "tolerance": "Accept x = 3/2 or x = 1.5.",
+        "notes": "M1 for rewriting 27 = 3^3 and equating exponents (2x = 3). A1 for x = 3/2."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Solve log_2(x + 3) + log_2(x - 3) = 4, where x > 3.",
+        "expected": {"answer": "x = 5"},
+        "tolerance": "Accept x = 5 only. The candidate must reject x = -5 (outside x > 3) either implicitly or explicitly.",
+        "notes": "M1 for combining logs as log_2[(x+3)(x-3)] = 4 (product rule). A1 for exponentiating and simplifying to x^2 - 9 = 16 (or x^2 = 25). A1 for x = 5 (with x = -5 rejected by the domain constraint x > 3)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 6,
+    "answer_box_top_frac": 0.25,
+    "source": "Original. Asymptote, x-intercept, and inverse of g(x) = 2 + log_3(x - 1).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "State the equation of the vertical asymptote of g(x) = 2 + log_3(x - 1).",
+        "expected": {"answer": "x = 1"},
+        "tolerance": "Accept x = 1 only. Do not accept '1' alone (the answer is the equation of a line, not a value).",
+        "notes": "A1 for x = 1 (argument of the log = 0)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the x-intercept of g(x) = 2 + log_3(x - 1).",
+        "expected": {"answer": "x = 10/9"},
+        "tolerance": "Accept x = 10/9, x ≈ 1.11 (3 s.f.), or the ordered pair (10/9, 0).",
+        "notes": "M1 for setting g(x) = 0 and isolating log_3(x - 1) = -2. A1 for x = 10/9 (or equivalent)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find an expression for g^{-1}(x).",
+        "expected": {"answer": "g^{-1}(x) = 1 + 3^(x - 2)"},
+        "tolerance": "Accept 1 + 3^(x - 2), 1 + 3^x/9, or any algebraically equivalent form.",
+        "notes": "M1 for interchanging x and y and writing x = 2 + log_3(y - 1) (or equivalent setup). A1 for exponentiating to y - 1 = 3^(x - 2). A1 for the final inverse g^{-1}(x) = 1 + 3^(x - 2)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 6,
+    "answer_box_top_frac": 0.32,
+    "source": "Original. Continuous exponential growth A(t) = 8 e^(kt), A(4) = 32.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show that k = (1/2) ln 2.",
+        "expected": {"answer": "k = (1/2) ln 2"},
+        "tolerance": "Show that (answer given). Accept any equivalent intermediate, e.g. k = (ln 4)/4 = (2 ln 2)/4.",
+        "notes": "M1 for substituting A(4) = 32 and isolating e^(4k) = 4. A1 for taking ln to get 4k = ln 4 = 2 ln 2. AG label on the simplification to (1/2) ln 2 (no separate mark)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find A(11), correct to the nearest integer.",
+        "expected": {"answer": "362 kg"},
+        "tolerance": "Accept 362 only for the nearest integer. The exact form 256√2 is acceptable as the M1 step.",
+        "notes": "M1 for substituting t = 11 to obtain A(11) = 8 e^(11k) = 8 · 2^(11/2) = 256√2 (or evaluating numerically). A1 for 362 kg."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the time at which the mass first reaches 1000 kg, correct to 2 d.p.",
+        "expected": {"answer": "13.93 days"},
+        "tolerance": "Accept 13.93. The exact form t = 6 log_2(5) or t = (2 ln 125)/(ln 2) is acceptable as the M1 step. A direct GDC solve of 8 e^(kt) = 1000 also acceptable.",
+        "notes": "M1 for setting 8 e^(kt) = 1000 and arriving at t = ln(125)/k (or equivalent). A1 for 13.93."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "total_marks": 6,
+    "answer_box_top_frac": 0.35,
+    "source": "Original. Compound interest, nominal annual 4.8% compounded monthly, P = $5000.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down a formula for V(t).",
+        "expected": {"answer": "V(t) = 5000(1 + 0.048/12)^(12t) = 5000(1.004)^(12t)"},
+        "tolerance": "Accept either the un-simplified (1 + 0.048/12) form or the simplified (1.004) form. Exponent must be 12t, not t.",
+        "notes": "A1 for any correct compound-interest formula with monthly compounding: V(t) = 5000(1 + 0.048/12)^(12t) or V(t) = 5000(1.004)^(12t)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find V(6), correct to the nearest cent.",
+        "expected": {"answer": "$6664.95"},
+        "tolerance": "Accept $6664.95 or $6664.96 (full-precision GDC evaluation rounds to either depending on intermediate precision).",
+        "notes": "M1 for substituting t = 6 to get V(6) = 5000(1.004)^72. A1 for $6664.95 (or $6664.96)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the smallest number of full years for V(t) to first exceed $8000.",
+        "expected": {"answer": "10 years"},
+        "tolerance": "Accept n = 10. Do not accept 9.81 years as the final answer because full years are required. Alternative method (table search) acceptable: full marks if both adjacent rows are shown (V(9) = $7695.03 and V(10) = $8072.62); award full marks for a single-row table too, but attach a feedback note recommending the adjacent row.",
+        "notes": "M1 for setting 5000(1.004)^(12n) > 8000 (or 1.004^(12n) > 1.6) or an equivalent logarithmic/evaluation method. A1 for the boundary value n > 9.81... (or, for the table method, for both adjacent rows). A1 for the smallest full-year value n = 10. If the student uses a single-row table, attach feedback: 'Show both adjacent rows (n=9 and n=10) to justify the crossover.' See markscheme-spec.md §18."
+      }
+    ]
+  },
+  {
+    "problem_number": 6,
+    "total_marks": 6,
+    "answer_box_top_frac": 0.36,
+    "source": "Original. Decibel scale L = 10 log_10(I/I_0), I_0 = 10^-12 W/m^2.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find L for a vacuum cleaner of intensity I = 3.2 × 10^-5 W/m^2, correct to 1 d.p.",
+        "expected": {"answer": "75.1 dB"},
+        "tolerance": "Accept 75.1 only for 1 d.p. The full-precision value 75.0515... is acceptable as the M1 step.",
+        "notes": "M1 for computing I/I_0 = 3.2 × 10^7 (or equivalent setup). A1 for 75.1 dB."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find I when L = 130 dB. Express in the form a × 10^k with 1 ≤ a < 10, k in Z.",
+        "expected": {"answer": "I = 1 × 10^1 W/m^2", "a": 1, "k": 1},
+        "tolerance": "Accept I = 1 × 10^1 or I = 10 W/m^2. The form a × 10^k is satisfied by a = 1, k = 1; no separate 'a = 1, k = 1' line is required.",
+        "notes": "M1 for inverting the formula to log_10(I/10^-12) = 13. A1 for I = 10 W/m^2 (i.e. 1 × 10^1)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show that doubling the intensity increases L by approximately 3.01 dB.",
+        "expected": {"answer": "10 log_10(2) ≈ 3.0103 ≈ 3.01 dB"},
+        "tolerance": "Show that (answer given). Accept any valid derivation that produces 10 log_10(2) as the L-difference.",
+        "notes": "M1 for setting up L_{2I} - L_I = 10 log_10(2I/I_0) - 10 log_10(I/I_0) and simplifying to 10 log_10(2). A1 for evaluating 10 log_10(2) = 3.0103... AG label on ≈ 3.01 dB (no separate mark)."
+      }
+    ]
+  }
+]
