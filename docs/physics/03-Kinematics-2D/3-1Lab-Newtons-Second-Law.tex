@@ -1,0 +1,122 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{Physics}
+\author{Chris Huson}
+\date{March 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ First \& last name: \hspace{2.25cm} \,\\ Grade: \hspace{2.25cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 10 March 2026}
+
+\begin{document}
+
+\subsubsection*{3.1 Lab Analysis: Newton's Second Law of Motion}
+
+A cart on a track was pulled by a hanging mass on a string over a pulley. A motion detector recorded position and velocity. You fit a line to the velocity vs.\ time graph; its \textbf{slope} is the cart's acceleration.
+
+\vspace{0.25cm}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Trial} & \textbf{Cart mass (g)} & \textbf{Hanging mass (g)} & \textbf{Acceleration (m/s$^2$)} \\
+\hline
+Light, $F = 10$ g & 390 & 10 & 0.23 \\
+Light, $F = 20$ g & 390 & 20 & 0.47 \\
+Light, $F = 50$ g & 390 & 50 & 1.10 \\
+\hline
+Heavy, $F = 10$ g & 890 & 10 & 0.098 \\
+Heavy, $F = 20$ g & 890 & 20 & 0.21 \\
+Heavy, $F = 50$ g & 890 & 50 & 0.53 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection*{Part 1: How does acceleration depend on force?}
+
+Compare trials that use the \textbf{same cart} but different hanging masses.
+
+\begin{enumerate}[itemsep=0.25cm]
+
+\item Consider the \textbf{light cart} (390 g) pulled by 10 g and then by 20 g.
+  \begin{enumerate}[itemsep=0.5cm]
+    \item What is the ratio of the hanging masses? \quad $\dfrac{20}{10} = $
+    \item What is the ratio of the accelerations? \quad $\dfrac{0.47}{0.23} = $
+    \item What do you notice about these two ratios?
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\item Now compare the \textbf{heavy cart} pulled by 10 g and by 50 g.
+  \begin{enumerate}[itemsep=0.5cm]
+    \item Ratio of hanging masses: \quad $\dfrac{50}{10} = $
+    \item Ratio of accelerations: \quad $\dfrac{0.53}{0.098} = $
+    \item Is the pattern the same as in question 1?
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\item Complete: When the cart mass stays the same, the acceleration is \rule{5cm}{0.4pt} to the force.
+
+\newpage
+\subsubsection*{Part 2: How does acceleration depend on mass?}
+
+Now compare trials that use the \textbf{same hanging mass} but different carts.
+
+\item Both carts are pulled by a \textbf{20 g} hanging mass.
+  \begin{enumerate}[itemsep=0.5cm]
+    \item Ratio of cart masses (heavy to light): \quad $\dfrac{890}{390} = $
+    \item Ratio of accelerations (light to heavy): \quad $\dfrac{0.47}{0.21} = $
+    \item What do you notice about these two ratios?
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\item Verify the pattern with the \textbf{50 g} hanging mass.
+  \begin{enumerate}[itemsep=0.5cm]
+    \item Ratio of accelerations (light to heavy): \quad $\dfrac{1.10}{0.53} = $
+    \item Does this confirm the same relationship?
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\item Complete: When the force stays the same, the acceleration is \textit{inversely} \rule{4cm}{0.4pt} to the mass.
+
+\newpage
+\subsubsection*{Part 3: Converting to Newtons --- discovering $F = ma$}
+
+The hanging mass creates a gravitational force: $F = mg$, where $g = 9.8~\text{m/s}^2$.
+
+\item Convert each hanging mass to a force in Newtons. \textit{(Convert grams to kilograms first.)}
+  \begin{enumerate}[itemsep=1.25cm]
+    \item 10 g: \quad $F = $
+    \item 20 g: \quad $F = $
+    \item 50 g: \quad $F = $
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\item For each trial, divide the force (in Newtons) by the measured acceleration.
+  \begin{enumerate}[itemsep=1.75cm]
+    \item Light cart, 20 g: \quad $\dfrac{F}{a} = \dfrac{\hspace{2.5cm}}{\hspace{2.5cm}} = $ \hfill units: \rule{2cm}{0.4pt}
+    \item Heavy cart, 20 g: \quad $\dfrac{F}{a} = \dfrac{\hspace{2.5cm}}{\hspace{2.5cm}} = $ \hfill units: \rule{2cm}{0.4pt}
+    \item Heavy cart, 50 g: \quad $\dfrac{F}{a} = \dfrac{\hspace{2.5cm}}{\hspace{2.5cm}} = $ \hfill units: \rule{2cm}{0.4pt}
+  \end{enumerate}
+  \vspace{0.5cm}
+
+\item Compare your $F/a$ values to the cart masses (converted to kilograms). What do you notice?
+  \vspace{2.5cm}
+
+\item Write the equation that relates force $F$, mass $m$, and acceleration $a$.
+  \vspace{1.5cm}
+
+\subsubsection*{Part 4: Acceleration from the position graph}
+
+In Graphical Analysis, you also fit the position data to a quadratic: $x = At^2 + Bt + C$.
+
+\item For constant acceleration, position follows $x = \frac{1}{2}at^2 + v_0 t + x_0$.
+  \begin{enumerate}[itemsep=1.75cm]
+    \item Comparing the two equations, what does $A$ equal in terms of acceleration $a$?
+    \item For the Heavy cart with 20 g, the position fit gave $A = 0.107$. \\ Calculate the acceleration from this value of $A$.
+    \item The velocity slope gave $a = 0.21$ m/s$^2$ for the same trial. Do the two methods agree?
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}
