@@ -1,0 +1,119 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{Physics}
+\author{Chris Huson}
+\date{May 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ \textbf{SOLUTIONS} \\ \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 3.5 Quiz --- 19 May 2026}
+
+\begin{document}
+
+\subsubsection*{3.5 Quiz: Vectors, Frames of Reference, and Energy --- Solutions}
+
+\begin{enumerate}
+
+\item \textbf{Matching: physicists and their work.}
+
+\vspace{0.2cm}
+
+\begin{tabular}{rl}
+Newton (1687) & \textbf{(c)} --- laws of motion and gravitation \\[0.25cm]
+Michelson \& Morley (1887) & \textbf{(a)} --- interferometer, null result for ether \\[0.25cm]
+Poincaré (1900) & \textbf{(e)} --- principle of relativity, simultaneity \\[0.25cm]
+Lorentz (1904) & \textbf{(d)} --- transformation equations \\[0.25cm]
+Einstein (1905) & \textbf{(b)} --- constancy of $c$, special relativity \\
+\end{tabular}
+
+\vspace{0.6cm}
+
+\item \textbf{Effects on measurements at high relative speed.}
+
+\begin{enumerate}[itemsep=0.4cm]
+\item \textbf{Length.} The object is measured to be \emph{shorter} along the direction of relative motion (length contraction). Its measured length is $L = L_0 / \gamma$, where $L_0$ is the proper (rest-frame) length and $\gamma = 1/\sqrt{1 - v^2/c^2} \ge 1$. Lengths perpendicular to the motion are unchanged.
+
+\item \textbf{Time.} Moving clocks are measured to run \emph{slower} (time dilation). A time interval measured in the moving frame as $\Delta t_0$ is measured as $\Delta t = \gamma \, \Delta t_0$ by the stationary observer --- so more time passes for the observer than for the moving clock.
+
+\item \textbf{Inertia.} The force required to produce a given acceleration \emph{increases} with speed. The object's effective inertia behaves as $\gamma m_0$, growing without bound as $v \to c$. Because $\gamma \to \infty$, no finite force can accelerate an object with nonzero rest mass up to the speed of light.
+\end{enumerate}
+
+\newpage
+
+\item \textbf{Force components} ($\vec{F} = 100\,\text{N}$ at $53^\circ$ above horizontal).
+
+\begin{enumerate}
+\item $F_x = F\cos\theta = (100\,\text{N})\cos 53^\circ \approx (100)(0.602) \approx \boxed{60\,\text{N}}$
+
+\item $F_y = F\sin\theta = (100\,\text{N})\sin 53^\circ \approx (100)(0.799) \approx \boxed{80\,\text{N}}$
+\end{enumerate}
+
+\emph{Check:} $\sqrt{60^2 + 80^2} = \sqrt{3600 + 6400} = \sqrt{10000} = 100\,\text{N}.$ \checkmark
+
+\vspace{0.8cm}
+
+\item \textbf{Magnitude and direction} ($v_x = 8\,\text{m/s}$, $v_y = 6\,\text{m/s}$).
+
+\begin{enumerate}
+\item $|\vec{v}| = \sqrt{v_x^2 + v_y^2} = \sqrt{8^2 + 6^2} = \sqrt{64 + 36} = \sqrt{100} = \boxed{10\,\text{m/s}}$
+
+\item $\theta = \arctan\!\left(\dfrac{v_y}{v_x}\right) = \arctan\!\left(\dfrac{6}{8}\right) = \arctan(0.75) \approx 36.87^\circ \approx \boxed{37^\circ}$ north of east.
+\end{enumerate}
+
+\vspace{0.8cm}
+
+\item \textbf{Frame of reference --- train.}
+
+\begin{enumerate}
+\item Take east as positive. The passenger walks forward at $+2.0\,\text{m/s}$ relative to the train, which moves at $+30\,\text{m/s}$ relative to the ground.
+\[
+v_{\text{passenger/ground}} = v_{\text{passenger/train}} + v_{\text{train/ground}} = 2.0 + 30 = \boxed{32\,\text{m/s east}}
+\]
+
+\item The car moves at $-20\,\text{m/s}$ (west) relative to the ground.
+\[
+v_{\text{passenger/car}} = v_{\text{passenger/ground}} - v_{\text{car/ground}} = 32 - (-20) = \boxed{52\,\text{m/s east}}
+\]
+\end{enumerate}
+
+\newpage
+
+\item \textbf{Frame of reference --- airplane in wind.}
+
+The plane's velocity relative to the air is $(60, 0)\,\text{m/s}$ (east). The air's velocity relative to the ground is $(0, 25)\,\text{m/s}$ (north). Adding,
+\[
+\vec{v}_{\text{plane/ground}} = (60, 25)\,\text{m/s}.
+\]
+
+\begin{enumerate}
+\item $|\vec{v}| = \sqrt{60^2 + 25^2} = \sqrt{3600 + 625} = \sqrt{4225} = \boxed{65\,\text{m/s}}$
+
+\item $\theta = \arctan\!\left(\dfrac{25}{60}\right) \approx 22.62^\circ \approx \boxed{23^\circ}$ north of east.
+\end{enumerate}
+
+\vspace{0.8cm}
+
+\item \textbf{Energy unit conversions} ($E = 4.0\times 10^{5}\,\text{J}$).
+
+\begin{enumerate}
+\item Kilocalories:
+\[
+E = 4.0\times 10^{5}\,\text{J} \times \dfrac{1\,\text{kcal}}{4184\,\text{J}} \approx \boxed{96\,\text{kcal}}
+\]
+(About 96 ``Calories'' --- close to the food-label value for a medium banana.)
+
+\item Kilowatt-hours:
+\[
+E = 4.0\times 10^{5}\,\text{J} \times \dfrac{1\,\text{kWh}}{3.6\times 10^{6}\,\text{J}} \approx \boxed{0.11\,\text{kWh}}
+\]
+
+\item Electron-volts:
+\[
+E = 4.0\times 10^{5}\,\text{J} \times \dfrac{1\,\text{eV}}{1.6\times 10^{-19}\,\text{J}} = \boxed{2.5\times 10^{24}\,\text{eV}}
+\]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
