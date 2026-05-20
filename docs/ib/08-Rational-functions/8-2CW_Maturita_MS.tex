@@ -1,0 +1,245 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math \\* 20 May 2026}
+\fancyhead[RO]{Markscheme}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{8.2 Classwork: Rational Functions --- Toward the Maturit\`a \,\textemdash\, Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1 ---
+\item Consider $\displaystyle f(x)=\dfrac{x+3}{x-2}$.
+
+\begin{enumerate}[label=(\alph*), itemsep=0.2cm]
+  \item Denominator $x-2=0\Rightarrow x=2$.
+  \textbf{Vertical asymptote: $x=2$.}
+
+  \item Long division: $x+3=(x-2)+5$, so
+  \[
+  f(x)=\dfrac{x-2}{x-2}+\dfrac{5}{x-2}=1+\dfrac{5}{x-2}.
+  \]
+  As $|x|\to\infty$, $5/(x-2)\to 0$, so $f(x)\to 1$.
+  \textbf{Horizontal asymptote: $y=1$.}
+
+  \item $x$-intercept: $f(x)=0\Rightarrow x+3=0\Rightarrow x=-3$. Point $(-3,0)$.
+
+  $y$-intercept: $f(0)=\dfrac{3}{-2}=-\dfrac{3}{2}$. Point $\left(0,-\tfrac{3}{2}\right)$.
+
+  \item Right branch ($x>2$): from $+\infty$ at $x=2^+$ down to $y=1$ from above.
+  Through $(3,6)$, $(7,2)$.
+
+  Left branch ($x<2$): from $y=1$ from below at $x=-\infty$ down to $-\infty$ at
+  $x=2^-$. Through $(-3,0)$, $(0,-3/2)$, $(1,-4)$.
+\end{enumerate}
+
+\medskip
+
+%--- Problem 2 ---
+\item $\displaystyle f_a(x)=\dfrac{x-2}{x-a}$, $a\ne 2$.
+
+\begin{enumerate}[label=(\alph*), itemsep=0.2cm]
+  \item Denominator $=0\Rightarrow x=a$. \textbf{VA: $x=a$.}
+
+  \item Leading-term comparison: $\lim_{x\to\pm\infty}\dfrac{x-2}{x-a}=1$.
+  \textbf{HA: $y=1$, independent of $a$.}
+
+  \item $f_a(2)=\dfrac{0}{2-a}=0$ (for $a\ne 2$).
+  Every curve in the family passes through the point $(2,0)$.
+
+  \item With $a=-1$: $f_{-1}(x)=\dfrac{x-2}{x+1}$. VA $x=-1$; HA $y=1$;
+  $y$-intercept $f_{-1}(0)=-2/1=-2$. $x$-intercept at $x=2$ (the shared
+  point from (c)).
+
+  Left branch ($x<-1$): from $1^+$ at $-\infty$ up to $+\infty$ at $-1^-$;
+  passes through $(-2,4)$.
+
+  Right branch ($x>-1$): from $-\infty$ at $-1^+$ up through $(0,-2)$,
+  $(2,0)$, approaching $y=1$ from below.
+\end{enumerate}
+
+\newpage
+
+%--- Problem 3 ---
+\item $\displaystyle g(x)=\dfrac{x^2+x}{x^2+1}$.
+
+\begin{enumerate}[label=(\alph*), itemsep=0.2cm]
+  \item $x^2+1\ge 1>0$ for every real $x$; the denominator is never zero.
+  \textbf{Domain: $\mathbb{R}$.}
+
+  \item Dividing numerator and denominator by $x^2$:
+  \[
+  g(x)=\dfrac{1+1/x}{1+1/x^2}\to 1\quad\text{as }x\to\pm\infty.
+  \]
+  \textbf{HA: $y=1$.}
+
+  \item $x$-intercepts: $x^2+x=x(x+1)=0\Rightarrow x=0$ or $x=-1$. Points
+  $(-1,0)$ and $(0,0)$.
+
+  $y$-intercept: $g(0)=0$ (same point).
+
+  \item Table of values:
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+  \hline
+  $x$    & $-3$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$ & $5$ \\
+  \hline
+  $g(x)$ & $\tfrac{6}{10}=0.6$ & $\tfrac{2}{5}=0.4$ & $0$ & $0$ & $1$ & $\tfrac{6}{5}=1.2$ & $\tfrac{12}{10}=1.2$ & $\tfrac{30}{26}\approx 1.15$ \\
+  \hline
+  \end{tabular}
+  \end{center}
+
+  Sketch: smooth curve, no asymptote on the $x$-axis side. Small dip below the
+  $x$-axis between $x=-1$ and $x=0$ (local minimum $\approx-0.21$ at
+  $x=1-\sqrt 2\approx-0.41$); local maximum $\approx 1.21$ at
+  $x=1+\sqrt 2\approx 2.41$; approaches $y=1$ from both sides.
+\end{enumerate}
+
+\medskip
+
+%--- Problem 4 ---
+\item $\displaystyle f_a(x)=\dfrac{x^2-ax}{x^2-a}$, $a\ne 0$.
+
+\begin{enumerate}[label=(\alph*), itemsep=0.2cm]
+  \item Domain: $x^2-a\ne 0$.
+
+  \quad (i) $a<0$: $x^2-a=x^2+|a|>0$ always. \textbf{Domain $\mathbb{R}$.}
+
+  \quad (ii) $a>0$: $x^2-a=0$ at $x=\pm\sqrt a$. \textbf{Domain
+  $\mathbb{R}\setminus\{\pm\sqrt a\}$}, with vertical asymptotes there.
+
+  \item Leading terms $x^2/x^2=1$. \textbf{HA: $y=1$.}
+
+  \item Solve $f_a(x)=1$:
+  \[
+  \dfrac{x^2-ax}{x^2-a}=1\Rightarrow x^2-ax=x^2-a\Rightarrow -ax=-a\Rightarrow x=1
+  \]
+  (valid for $a\ne 0$; we need $a\ne 1$ to avoid the removable cancellation at
+  $x=1$). Then $f_a(1)=(1-a)/(1-a)=1$. \textbf{Common point: $(1,1)$.}
+\newpage
+  \item $f_a(0)=\dfrac{0}{-a}=0$ for every $a\ne 0$.
+
+  Quotient rule:
+  \[
+  f_a'(x)=\dfrac{(2x-a)(x^2-a)-(x^2-ax)(2x)}{(x^2-a)^2}.
+  \]
+  At $x=0$: numerator $=(-a)(-a)-0=a^2$; denominator $=(-a)^2=a^2$.
+  Therefore $f_a'(0)=1$ for every $a\ne 0$.
+
+  \textbf{Tangent at the origin: $y=x$, same for every $a$.}
+\end{enumerate}
+
+\medskip
+
+%--- Problem 5 ---
+\item $\displaystyle h(x)=\dfrac{x^3+4}{x^2}$.
+
+\begin{enumerate}[label=(\alph*), itemsep=0.2cm]
+  \item Denominator vanishes at $x=0$. \textbf{Domain $x\ne 0$; vertical
+  asymptote $x=0$.}
+
+  \item $\dfrac{x^3+4}{x^2}=\dfrac{x^3}{x^2}+\dfrac{4}{x^2}=x+\dfrac{4}{x^2}$.
+
+  \item As $|x|\to\infty$, $4/x^2\to 0$, so $h(x)-x\to 0$, meaning the graph
+  approaches the line $y=x$.
+
+  \item Table of values:
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+  \hline
+  $x$    & $-3$ & $-2$ & $-1$ & $-0.5$ & $0.5$ & $1$ & $2$ & $4$ \\
+  \hline
+  $h(x)$ & $-\tfrac{23}{9}\approx-2.56$ & $-1$ & $3$ & $15.5$ & $16.5$ & $5$ & $3$ & $4.25$ \\
+  \hline
+  \end{tabular}
+  \end{center}
+
+  \item Right branch ($x>0$): from $+\infty$ at $0^+$ down to local minimum
+  $(2,3)$, then up toward $y=x$ from above.
+
+  Left branch ($x<0$): monotonically increasing from $-\infty$ along $y=x$
+  (from above), through $(-\sqrt[3]{4},0)\approx(-1.59,0)$, up to $+\infty$
+  at $0^-$.
+\end{enumerate}
+
+%--- Problem 6 (Maturita 2023) ---
+\item \textbf{PROBLEMA 2 --- Sessione ordinaria 2023.}
+
+\begin{enumerate}[label=(\alph*), itemsep=0.3cm]
+  \item Domain by sign of $a$:
+
+  \quad \emph{$a<0$:} $x^2-a>0$ always; domain $\mathbb R$, no vertical
+  asymptote.
+
+  \quad \emph{$a>0,\ a\ne 1$:} domain $\mathbb R\setminus\{\pm\sqrt a\}$,
+  vertical asymptotes $x=\pm\sqrt a$.
+
+  \quad \emph{$a=1$:} both numerator and denominator factor: numerator
+  $=x(x-1)$, denominator $=(x-1)(x+1)$. \textbf{Removable discontinuity}
+  at $x=1$; vertical asymptote at $x=-1$.
+
+  Horizontal asymptote: $\lim_{x\to\pm\infty}\dfrac{x^2-ax}{x^2-a}=1$, so
+  \textbf{$y=1$ for every $a$}.
+
+\newpage
+
+  \item Intersection with HA $y=1$: $f_a(x)=1\Rightarrow x^2-ax=x^2-a
+  \Rightarrow x=1$. Then $f_a(1)=(1-a)/(1-a)=1$ (valid for $a\ne 1$).
+  Every $\Omega_a$ (with $a\ne 1$) meets the line $y=1$ at the common
+  point $(1,1)$. \hfill $\blacksquare$
+
+  Tangent at the origin: $f_a(0)=0$ and, by the quotient-rule computation
+  done in Problem~4(d), $f_a'(0)=1$ for every $a\ne 0$. The tangent line
+  at the origin is therefore $y=x$ for every $a$. \hfill $\blacksquare$
+\end{enumerate}
+
+\medskip
+
+%--- Problem 7 (Maturita 2024) ---
+\item \textbf{PROBLEMA 1 --- Sessione ordinaria 2024.}
+
+\begin{enumerate}[label=(\alph*), itemsep=0.3cm]
+  \item $f_{a,b}(x)=\dfrac{ax^3+b}{x^2}=ax+\dfrac{b}{x^2}$, so
+  $f_{a,b}'(x)=a-\dfrac{2b}{x^3}$.
+
+  Line $t$: $y=-7x+12$, slope $-7$, value at $x=1$ is $5$. So
+  $P=(1,5)$.
+
+  Conditions for tangency at $P$:
+  \begin{itemize}
+    \item $P$ on the graph: $f_{a,b}(1)=a+b=5$.
+    \item Slopes match: $f_{a,b}'(1)=a-2b=-7$.
+  \end{itemize}
+  Subtracting: $3b=12\Rightarrow b=4$; then $a=1$.
+
+  \textbf{$a=1,\ b=4$.}
+
+  \item Study of $f(x)=\dfrac{x^3+4}{x^2}=x+\dfrac{4}{x^2}$.
+
+  \begin{itemize}
+    \item Domain $x\ne 0$; vertical asymptote $x=0$.
+    \item Oblique asymptote $y=x$ (from $f(x)-x=4/x^2\to 0$); curve sits
+    above the asymptote on both sides since $4/x^2>0$.
+    \item $f'(x)=1-8/x^3=0\Rightarrow x=2$. Local minimum $(2,3)$.
+    On the right branch, $f$ decreases on $(0,2)$ and increases on $(2,\infty)$.
+    On the left branch, $f'(x)=1-8/x^3>1>0$ for $x<0$, so $f$ is monotonically
+    increasing on $(-\infty,0)$.
+    \item $f''(x)=24/x^4>0$ for $x\ne 0$; curve is convex on each branch.
+    \item Zero of $f$: $x^3+4=0\Rightarrow x=-\sqrt[3]{4}\approx-1.59$. The
+    only $x$-intercept.
+    \item As $x\to 0^\pm$, $4/x^2\to+\infty$, so $f\to+\infty$ from both sides.
+    \item As $x\to+\infty$: $f\to+\infty$ along $y=x$.
+    As $x\to-\infty$: $f\to-\infty$ along $y=x$.
+  \end{itemize}
+
+  Sketch summary: two branches, both convex, both asymptotic to $y=x$ as
+  $|x|\to\infty$ and to $x=0$ as $x\to 0$. Right branch has a minimum at
+  $(2,3)$ and lies in the first quadrant; left branch monotonically rises
+  from $(-\infty,-\infty)$ through $(-\sqrt[3]{4},0)$ to $+\infty$ at $0^-$.
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
