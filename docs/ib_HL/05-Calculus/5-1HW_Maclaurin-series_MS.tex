@@ -1,0 +1,239 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math HL \\* 21 May 2026}
+
+\begin{document}
+\subsubsection*{5.1 HW: Maclaurin Series Take-home --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 4: e^x sin x series, integral approx, ODE-style identity, limit [21 marks] ---
+%--- Source: AA HL 2022 May P1 TZ1 Q12 ---
+\item[4.] \makebox[\linewidth][s]{[Maximum mark: 21]\hfill {\small AA HL 2022 May P1 TZ1 Q12}}
+
+\textbf{(a)} Maclaurin series for $f(x) = e^x \sin x$ up to $x^3$.
+\hfill [4]
+
+\textbf{Method 1 (multiply known series).} \hfill \textbf{M1}
+\[
+e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots,\qquad
+\sin x = x - \frac{x^3}{3!} + \cdots
+\]
+Multiply, keeping terms up to $x^3$: \hfill \textbf{M1}
+\begin{align*}
+e^x \sin x
+&= \left(1 + x + \tfrac{x^2}{2} + \tfrac{x^3}{6}\right)\!\left(x - \tfrac{x^3}{6}\right) + \cdots \\
+&= x + x^2 + \tfrac{x^3}{2} - \tfrac{x^3}{6} + \cdots \hfill \textbf{A1} \\
+&= x + x^2 + \tfrac{1}{3}x^3 + \cdots \hfill \textbf{A1}
+\end{align*}
+
+\textbf{Method 2 (derivatives at $0$).} Use
+$f^{(n)}(0)$ to build the series:
+$f(0) = 0$, $f'(0) = 1$, $f''(0) = 2$, $f'''(0) = 2$, giving the same answer.
+
+\medskip
+
+\textbf{(b)} Approximate
+$\displaystyle\int_0^1 e^{x^2} \sin(x^2)\, dx$. \hfill [4]
+
+\textbf{Solution.} Substituting $x \to x^2$ in (a):
+\[
+e^{x^2} \sin(x^2) \approx x^2 + x^4 + \tfrac{1}{3}x^6. \hfill \textbf{A1}
+\]
+Integrate termwise: \hfill \textbf{M1}
+\[
+\int_0^1 \!\left(x^2 + x^4 + \tfrac{1}{3}x^6\right) dx
+= \left[\tfrac{x^3}{3} + \tfrac{x^5}{5} + \tfrac{x^7}{21}\right]_0^1
+= \tfrac{1}{3} + \tfrac{1}{5} + \tfrac{1}{21} \hfill \textbf{A1}
+\]
+Common denominator $105$: $\dfrac{35 + 21 + 5}{105} = \dfrac{61}{105}$.
+\hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)(i)} Show $g''(x) = 2(g'(x) - g(x))$ where $g(x) = e^x \cos x$.
+\hfill [4]
+
+\textbf{Solution.} Product rule: \hfill \textbf{M1}
+\[
+g'(x) = e^x \cos x - e^x \sin x = e^x(\cos x - \sin x). \hfill \textbf{A1}
+\]
+\[
+g''(x) = e^x(\cos x - \sin x) + e^x(-\sin x - \cos x) = -2 e^x \sin x.
+\hfill \textbf{A1}
+\]
+Then
+\[
+2(g'(x) - g(x)) = 2\!\left[e^x(\cos x - \sin x) - e^x \cos x\right]
+= -2 e^x \sin x = g''(x). \hfill \textbf{A1\,AG}
+\]
+
+\medskip
+
+\textbf{(c)(ii)} Deduce $g^{(4)}(x) = 2(g'''(x) - g''(x))$. \hfill [1]
+
+Differentiating both sides of $g''(x) = 2(g'(x) - g(x))$ once gives
+$g'''(x) = 2(g''(x) - g'(x))$, and differentiating once more gives
+$g^{(4)}(x) = 2(g'''(x) - g''(x))$. \hfill \textbf{A1\,AG}
+
+\medskip
+
+\textbf{(d)} Maclaurin series for $g(x)$ up to $x^4$. \hfill [5]
+
+\textbf{Solution.} From (c):
+\begin{itemize}\setlength\itemsep{0.1em}
+  \item $g(0) = e^0 \cos 0 = 1$
+  \item $g'(0) = e^0(\cos 0 - \sin 0) = 1$
+  \item From $g''(x) = 2(g'(x) - g(x))$: $g''(0) = 2(1 - 1) = 0$
+    \hfill \textbf{A1}
+  \item Differentiating: $g'''(x) = 2(g''(x) - g'(x))$, so
+    $g'''(0) = 2(0 - 1) = -2$ \hfill \textbf{M1}
+  \item And $g^{(4)}(0) = 2(g'''(0) - g''(0)) = 2(-2 - 0) = -4$
+    \hfill \textbf{A1}
+\end{itemize}
+Apply the Maclaurin formula: \hfill \textbf{M1}
+\[
+g(x) = 1 + x + 0 \cdot \tfrac{x^2}{2} - \tfrac{2}{6}x^3 - \tfrac{4}{24}x^4
++ \cdots = 1 + x - \tfrac{1}{3}x^3 - \tfrac{1}{6}x^4 + \cdots
+\hfill \textbf{A1}
+\]
+
+\medskip
+
+\textbf{(e)} Evaluate
+$\displaystyle\lim_{x \to 0} \frac{e^x \cos x - 1 - x}{x^3}$. \hfill [3]
+
+\textbf{Solution.} Using the series from (d): \hfill \textbf{M1}
+\[
+\frac{e^x \cos x - 1 - x}{x^3}
+= \frac{\left(1 + x - \tfrac{1}{3}x^3 - \tfrac{1}{6}x^4 + \cdots\right) - 1 - x}{x^3}
+= \frac{-\tfrac{1}{3}x^3 - \tfrac{1}{6}x^4 + \cdots}{x^3} \hfill \textbf{A1}
+\]
+\[
+= -\tfrac{1}{3} - \tfrac{1}{6}x + \cdots \;\longrightarrow\; -\tfrac{1}{3}
+\quad\text{as } x \to 0. \hfill \textbf{A1}
+\]
+
+\bigskip
+\hrule
+\bigskip
+
+%--- Problem 5: Arctan series from geometric series; alternating-series error [15 marks] ---
+%--- Source: AA HL 2025 Nov P3 TZ3 Q02 (a)--(e) ---
+\item[5.] \makebox[\linewidth][s]{[Maximum mark: 15]\hfill {\small AA HL 2025 Nov P3 TZ3 Q02 (a)--(e)}}
+
+\textbf{(a)} Sum to infinity of $1 - x^2 + x^4 - x^6 + \cdots$ for $|x| < 1$.
+\hfill [2]
+
+\textbf{Solution.} Geometric series with first term $u_1 = 1$ and common
+ratio $r = -x^2$: \hfill \textbf{M1}
+\[
+S_{\infty} = \frac{u_1}{1 - r} = \frac{1}{1 + x^2}. \hfill \textbf{A1}
+\]
+
+\medskip
+
+\textbf{(b)} Show that
+$\arctan x = x - \dfrac{x^3}{3} + \dfrac{x^5}{5} - \dfrac{x^7}{7} + \cdots$.
+\hfill [3]
+
+\textbf{Solution.} Integrate both sides of
+$\dfrac{1}{1 + x^2} = 1 - x^2 + x^4 - x^6 + \cdots$\,:
+\[
+\int \frac{1}{1 + x^2}\, dx = \arctan x + C, \hfill \textbf{A1}
+\]
+\[
+\int \!\left(1 - x^2 + x^4 - x^6 + \cdots\right) dx
+= x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots + C'. \hfill \textbf{A1}
+\]
+At $x = 0$: $\arctan 0 = 0$, so $C = C' = 0$. Therefore
+$\arctan x = x - \dfrac{x^3}{3} + \dfrac{x^5}{5} - \dfrac{x^7}{7} + \cdots$.
+\hfill \textbf{R1\,AG}
+
+\medskip
+
+\textbf{(c)} Approximate $\pi$ to three decimal places using
+$x = \dfrac{1}{\sqrt{3}}$ and the first three non-zero terms.
+\hfill [3]
+
+\textbf{Solution.} Since $\tan\dfrac{\pi}{6} = \dfrac{1}{\sqrt{3}}$,
+$\arctan\dfrac{1}{\sqrt{3}} = \dfrac{\pi}{6}$. \hfill \textbf{A1}
+\[
+\frac{\pi}{6} \approx \frac{1}{\sqrt{3}} - \frac{1}{3}\!\left(\frac{1}{\sqrt{3}}\right)^{3}
++ \frac{1}{5}\!\left(\frac{1}{\sqrt{3}}\right)^{5}
+= \frac{41}{45\sqrt{3}}. \hfill \textbf{M1}
+\]
+\textit{(GDC: evaluate the sum directly.)} Multiplying by $6$:
+\[
+\pi \approx \frac{246}{45\sqrt{3}} = \frac{82\sqrt{3}}{45} \approx 3.156.
+\hfill \textbf{A1}
+\]
+
+\medskip
+
+\textbf{(d)} Number of terms needed so that the error in approximating
+$\arctan(1/\sqrt{3})$ is less than $0.0001$. \hfill [3]
+
+\textbf{Solution.} The $m$th non-zero term of the arctan series is
+$\dfrac{(-1)^{m-1} x^{2m-1}}{2m - 1}$. By the alternating-series theorem,
+the error after $m$ non-zero terms is at most
+\[
+\left|\frac{x^{2m+1}}{2m + 1}\right|. \hfill \textbf{M1}
+\]
+At $x = \dfrac{1}{\sqrt{3}}$, this becomes
+$\dfrac{1}{(2m+1)\, 3^{(2m+1)/2}}$, and we need this to be less than
+$10^{-4}$.
+
+Tabulate on GDC:
+\[
+\begin{array}{c|c}
+m & \text{error bound at } x = 1/\sqrt{3} \\ \hline
+4 & 7.92 \times 10^{-4} \\
+5 & 2.16 \times 10^{-4} \\
+6 & 6.09 \times 10^{-5} < 10^{-4}
+\end{array}
+\hfill \textbf{M1}
+\]
+
+So $m = 6$ non-zero terms are required. \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(e)} By integration by parts, show
+\[
+\int_{0}^{1/\sqrt{3}} \arctan x\, dx
+= \frac{\pi}{6\sqrt{3}} - \frac{1}{2}\ln\frac{4}{3}. \hfill [4]
+\]
+
+\textbf{Solution.} Let $u = \arctan x$, $\dfrac{dv}{dx} = 1$, so
+$\dfrac{du}{dx} = \dfrac{1}{1+x^2}$ and $v = x$. \hfill \textbf{A1}
+
+Then
+\[
+\int_{0}^{1/\sqrt{3}} \arctan x\, dx
+= \left[x \arctan x\right]_{0}^{1/\sqrt{3}}
+- \int_{0}^{1/\sqrt{3}} \frac{x}{1 + x^{2}}\, dx. \hfill \textbf{A1}
+\]
+
+For the remaining integral, substitute $w = 1 + x^2$, $dw = 2x\, dx$,
+or recognise $\dfrac{x}{1+x^2} = \dfrac{1}{2}\cdot\dfrac{2x}{1+x^2}$:
+\[
+\int_{0}^{1/\sqrt{3}} \frac{x}{1 + x^{2}}\, dx
+= \frac{1}{2}\!\left[\ln(1 + x^{2})\right]_{0}^{1/\sqrt{3}}
+= \frac{1}{2}\ln\!\left(1 + \tfrac{1}{3}\right)
+= \frac{1}{2}\ln\frac{4}{3}. \hfill \textbf{A1}
+\]
+
+Also $\left[x \arctan x\right]_{0}^{1/\sqrt{3}}
+= \dfrac{1}{\sqrt{3}} \cdot \dfrac{\pi}{6} = \dfrac{\pi}{6\sqrt{3}}$.
+Combining,
+\[
+\int_{0}^{1/\sqrt{3}} \arctan x\, dx
+= \frac{\pi}{6\sqrt{3}} - \frac{1}{2}\ln\frac{4}{3}. \hfill \textbf{A1\,AG}
+\]
+
+\end{enumerate}
+\end{document}

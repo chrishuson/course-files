@@ -1,0 +1,107 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math HL \\* 21 May 2026}
+
+\begin{document}
+\subsubsection*{5.1 HW: Maclaurin Series --- Take-home (calculator allowed)}
+
+Two problems. Answer on lined paper. Show all working.
+Total: 36 marks. A GDC may be used; show algebraic working before any
+numerical evaluation.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 4: e^x sin x series, integral approx, ODE-style identity, limit [21 marks] ---
+%--- Source: AA HL 2022 May P1 TZ1 Q12 ---
+\item[4.] \makebox[\linewidth][s]{[Maximum mark: 21]\hfill {\small AA HL 2022 May P1 TZ1 Q12}}
+
+The function $f$ is defined by $f(x) = e^{x} \sin x$, where
+$x \in \mathbb{R}$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the Maclaurin series for $f(x)$ up to and including the
+  $x^{3}$ term. \hfill [4]
+  \item Hence, find an approximate value for
+  $\displaystyle\int_{0}^{1} e^{x^{2}} \sin\!\left(x^{2}\right)\, dx$.
+  \hfill [4]
+\end{enumerate}
+
+The function $g$ is defined by $g(x) = e^{x} \cos x$, where
+$x \in \mathbb{R}$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item[(c)] \begin{enumerate}[itemsep=0.15cm]
+    \item[(i)] Show that $g(x)$ satisfies the equation
+    $g''(x) = 2\!\left(g'(x) - g(x)\right)$. \hfill [4]
+    \item[(ii)] Hence, deduce that
+    $g^{(4)}(x) = 2\!\left(g'''(x) - g''(x)\right)$. \hfill [1]
+  \end{enumerate}
+  \item[(d)] Using the result from part (c), find the Maclaurin series
+  for $g(x)$ up to and including the $x^{4}$ term. \hfill [5]
+  \item[(e)] Hence, or otherwise, determine the value of
+  \[
+  \lim_{x \to 0}\frac{e^{x} \cos x - 1 - x}{x^{3}}.
+  \]
+  \hfill [3]
+\end{enumerate}
+
+\newpage
+
+%--- Problem 5: Arctan series from geometric series; alternating-series error [15 marks] ---
+%--- Source: AA HL 2025 Nov P3 TZ3 Q02 (parts a-e only; calc parts omitted) ---
+\item[5.] \makebox[\linewidth][s]{[Maximum mark: 15]\hfill {\small AA HL 2025 Nov P3 TZ3 Q02 (a)--(e)}}
+
+The following problem uses Maclaurin series to investigate approximations
+of mathematical constants and the accuracies of such approximations.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Given $|x| < 1$, find the sum to infinity of the geometric
+  series
+  \[
+  1 - x^{2} + x^{4} - x^{6} + \cdots.
+  \]
+  \hfill [2]
+  \item Hence, use integration to show that the Maclaurin series of
+  $\arctan x$ may be expressed as
+  \[
+  \arctan x = x - \frac{x^{3}}{3} + \frac{x^{5}}{5} - \frac{x^{7}}{7}
+  + \cdots.
+  \]
+  \hfill [3]
+  \item Using $x = \dfrac{1}{\sqrt{3}}$ and the first \textbf{three}
+  (non-zero) terms of the Maclaurin series of $\arctan x$, find an
+  approximation for $\pi$ to three decimal places. \hfill [3]
+\end{enumerate}
+
+The Maclaurin series of $\arctan x$ is an alternating series.
+
+\textbf{Theorem.} For an alternating series whose terms decrease in
+magnitude, the error obtained in using a finite number of terms is less
+than or equal to the absolute value of the next term in the sequence.
+
+By this theorem, the maximum error in using the first three (non-zero)
+terms as an approximation to $\arctan x$ is $\left|-\dfrac{x^{7}}{7}\right|$,
+that is,
+\[
+\left|\arctan x - \left(x - \frac{x^{3}}{3} + \frac{x^{5}}{5}\right)\right|
+\leq \left|-\frac{x^{7}}{7}\right|.
+\]
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item[(d)] Determine how many (non-zero) terms of the series would
+  need to be used so that the error in approximating
+  $\arctan\!\left(\dfrac{1}{\sqrt{3}}\right)$ is less than $0.0001$.
+  \hfill [3]
+  \item[(e)] By using integration by parts, show that
+  \[
+  \int_{0}^{1/\sqrt{3}} \arctan x\, dx
+  = \frac{\pi}{6\sqrt{3}} - \frac{1}{2}\ln\frac{4}{3}.
+  \]
+  \hfill [4]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}

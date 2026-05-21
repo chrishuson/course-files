@@ -1,0 +1,111 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Name: \hspace{4cm} \,\\ \hspace{2.9cm} \,}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math HL \\* 21 May 2026}
+
+\begin{document}
+\subsubsection*{5.1 Quiz: Maclaurin Series (no calculator)}
+
+Answer all three problems. Show full working in the spaces provided.
+Total: 28 marks. Time: 45 minutes.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Maclaurin of (1-x)^-4 with depreciation application [7 marks] ---
+%--- Source: AA HL 2025 Nov P1 TZ1 Q05 ---
+\item[1.] \makebox[\linewidth][s]{[Maximum mark: 7]\hfill {\small AA HL 2025 Nov P1 TZ1 Q05}}
+
+The first four terms of the Maclaurin series expansion of $(1 - x)^{-4}$ are
+\[
+1 + ax + bx^2 + 20x^3,
+\]
+where $a, b \in \mathbb{Z}^{+}$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item \begin{enumerate}[itemsep=0.15cm]
+    \item[(i)] Show that $a = 4$. \hfill [2]
+    \item[(ii)] Find the value of $b$. \hfill [3]
+  \end{enumerate}
+  \item A car was purchased four years ago. The car depreciated in value by
+  $10\%$ each year. The value of the car today is $\$1000$. Using the results
+  of part (a), estimate the value of the car four years ago. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,11);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Maclaurin of sin(x^2) and product manipulation [7 marks] ---
+%--- Source: AA HL 2024 May P1 TZ1 Q08 ---
+\item[2.] \makebox[\linewidth][s]{[Maximum mark: 7]\hfill {\small AA HL 2024 May P1 TZ1 Q08}}
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the first two non-zero terms in the Maclaurin series of
+  \begin{enumerate}[itemsep=0.15cm]
+    \item[(i)] $\sin\!\left(x^{2}\right)$; \hfill [2]
+    \item[(ii)] $\sin^{2}\!\left(x^{2}\right)$. \hfill [3]
+  \end{enumerate}
+  \item Hence, or otherwise, find the first two non-zero terms in the
+  Maclaurin series of $4x \sin\!\left(x^{2}\right) \cos\!\left(x^{2}\right)$.
+  \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,11);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: Induction + Maclaurin + limit [14 marks] ---
+%--- Source: AA HL 2021 Nov P1 TZ0 Q11 ---
+\item[3.] \makebox[\linewidth][s]{[Maximum mark: 14]\hfill {\small AA HL 2021 Nov P1 TZ0 Q11}}
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Prove by mathematical induction that
+  \[
+  \frac{d^{n}}{dx^{n}}\!\left(x^{2} e^{x}\right)
+  = \left[x^{2} + 2nx + n(n - 1)\right] e^{x}
+  \quad\text{for } n \in \mathbb{Z}^{+}.
+  \]
+  \hfill [7]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,17);
+  \foreach \y in {1,2,...,16} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item[(b)] Hence or otherwise, determine the Maclaurin series of
+  $f(x) = x^{2} e^{x}$ in ascending powers of $x$, up to and including
+  the term in $x^{4}$. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,9);
+  \foreach \y in {1,2,...,8} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item[(c)] Hence or otherwise, determine the value of
+  \[
+  \lim_{x \to 0}\!\left[\frac{\left(x^{2} e^{x} - x^{2}\right)^{3}}{x^{9}}\right].
+  \]
+  \hfill [4]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,9);
+  \foreach \y in {1,2,...,8} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}
