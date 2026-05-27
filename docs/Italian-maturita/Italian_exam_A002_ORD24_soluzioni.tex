@@ -1,0 +1,476 @@
+% Soluzioni — Esame di Stato 2024, Seconda prova scritta, Matematica (A002)
+% Sessione ordinaria 2024 (ORD24)
+% Sorgente: source-files/Maturita/Italian_exam_A002_ORD24.pdf
+% Documento autonomo (la cartella Italian-maturita non ha preambolo condiviso).
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage[letterpaper, margin=1in, headsep=0.2in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+
+% Notazione italiana: seno, arcoseno, tangente
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\arcsen}{arcsen}
+\DeclareMathOperator{\arctg}{arctg}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[L]{La Scuola d'Italia / Dr.\ Huson \\* Soluzioni Maturit\`a}
+\fancyhead[R]{Esame di Stato 2024 --- A002 \\* Seconda prova --- Matematica}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{28pt}
+
+\setlist[enumerate]{itemsep=0.25cm}
+
+\begin{document}
+
+\begin{center}
+  {\Large\textbf{Esame di Stato 2024 --- Seconda prova scritta}}\\[2pt]
+  {\large Matematica (A002) --- Sessione ordinaria --- \textbf{Soluzioni}}
+\end{center}
+
+\medskip
+
+\noindent\emph{La prova chiede di risolvere uno dei due problemi e di rispondere a
+4 quesiti. Qui sono svolti entrambi i problemi e tutti gli otto quesiti, come
+riferimento completo.}
+
+\bigskip
+\hrule
+\bigskip
+
+\section*{Problema 1}
+
+\[
+f_{a,b}(x)=\frac{ax^3+b}{x^2},\qquad a,b\in\mathbb{R}.
+\]
+
+\subsection*{(a) Determinazione di \texorpdfstring{$a$}{a} e \texorpdfstring{$b$}{b}}
+
+Conviene riscrivere $f_{a,b}(x)=ax+\dfrac{b}{x^2}$, da cui
+\[
+f_{a,b}'(x)=a-\frac{2b}{x^3}.
+\]
+La retta $t\colon 7x+y-12=0$, ossia $y=-7x+12$, nel punto di ascissa $x=1$ vale
+$y=-7+12=5$; dunque $P=(1,5)$.
+
+Imponiamo che $P$ appartenga al grafico e che la pendenza coincida con quella di $t$:
+\[
+f_{a,b}(1)=a+b=5,\qquad f_{a,b}'(1)=a-2b=-7.
+\]
+Sottraendo: $3b=12$, quindi $b=4$ e $a=1$.
+\[
+\boxed{a=1,\qquad b=4.}
+\]
+
+\subsection*{(b) Studio di \texorpdfstring{$f$}{f} e seconda tangente per \texorpdfstring{$P$}{P}}
+
+Con $a=1$, $b=4$:
+\[
+f(x)=\frac{x^3+4}{x^2}=x+\frac{4}{x^2}.
+\]
+
+\textbf{Dominio:} $x\neq 0$, cio\`e $\,]-\infty,0[\,\cup\,]0,+\infty[$.
+
+\textbf{Intersezioni con gli assi:} $f(x)=0\iff x^3+4=0\iff x=-\sqrt[3]{4}\approx-1{,}59$.
+Non vi sono intersezioni con l'asse $y$ ($x=0$ escluso).
+
+\textbf{Limiti e asintoti:}
+\[
+\lim_{x\to0^{\pm}}f(x)=+\infty\ \Rightarrow\ \text{asintoto verticale } x=0;
+\]
+poich\'e $f(x)-x=\dfrac{4}{x^2}\to0^{+}$ per $x\to\pm\infty$, la retta $y=x$ \`e
+\textbf{asintoto obliquo} (il grafico vi si avvicina da sopra).
+
+\textbf{Monotonia:}
+\[
+f'(x)=1-\frac{8}{x^3}=\frac{x^3-8}{x^3},\qquad f'(x)=0\iff x=2.
+\]
+Studiando il segno: $f$ \`e crescente in $\,]-\infty,0[\,$, decrescente in $\,]0,2[\,$,
+crescente in $\,]2,+\infty[\,$. In $x=2$ vi \`e un \textbf{minimo relativo}, con
+$f(2)=2+1=3$, cio\`e il punto $(2,3)$.
+
+\textbf{Concavit\`a:}
+\[
+f''(x)=\frac{24}{x^4}>0\quad\forall x\neq0,
+\]
+dunque il grafico volge la concavit\`a verso l'alto su entrambi i rami; non vi sono flessi.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  axis lines=middle,
+  xlabel={$x$}, ylabel={$y$},
+  xmin=-4, xmax=6, ymin=-6, ymax=12,
+  xtick={-2,2,4}, ytick={3,5},
+  width=12cm, height=8cm,
+  samples=200,
+  restrict y to domain=-12:16,
+  clip=true,
+]
+  % rami della curva gamma
+  \addplot[thick, domain=-3.5:-0.45] {x + 4/x^2};
+  \addplot[thick, domain=0.45:5.5] {x + 4/x^2};
+  % asintoto obliquo y = x
+  \addplot[dashed, domain=-4:6] {x};
+  % retta t: y = -7x+12
+  \addplot[dotted, very thick, domain=0.5:1.6] {-7*x+12};
+  % punti notevoli
+  \node[circle, fill, inner sep=1.3pt, label=above right:{$P(1,5)$}] at (axis cs:1,5) {};
+  \node[circle, fill, inner sep=1.3pt, label=below right:{$(2,3)$}] at (axis cs:2,3) {};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\emph{Linea continua: $\gamma$; tratteggiata: asintoto $y=x$; punteggiata: tangente $t$.}
+
+\medskip
+
+\textbf{Seconda tangente per $P$.} La retta $t$ \`e gi\`a tangente a $\gamma$ in $P$
+(infatti $f'(1)=-7$). Cerchiamo l'altra tangente condotta da $P=(1,5)$.
+La tangente in $(x_0,f(x_0))$ passa per $P$ se
+\[
+5-f(x_0)=f'(x_0)\,(1-x_0).
+\]
+Sostituendo $f(x_0)=x_0+\dfrac{4}{x_0^2}$ e $f'(x_0)=1-\dfrac{8}{x_0^3}$ e
+semplificando si ottiene
+\[
+x_0^3-3x_0+2=0\ \Longrightarrow\ (x_0-1)^2(x_0+2)=0.
+\]
+La radice doppia $x_0=1$ \`e il punto $P$ stesso; la nuova tangente corrisponde a
+$x_0=-2$, dove $f(-2)=-1$ e $f'(-2)=2$:
+\[
+y-(-1)=2\,(x+2)\ \Longrightarrow\ \boxed{y=2x+3.}
+\]
+
+\subsection*{(c) Numero di intersezioni al variare di \texorpdfstring{$m$}{m}}
+
+Il fascio $y-5=m(x-1)$ \`e formato dalle rette per $P=(1,5)$ (esclusa la verticale $x=1$).
+Imponendo $f(x)=m(x-1)+5$ e moltiplicando per $x^2$ ($x\neq0$):
+\[
+(1-m)x^3+(m-5)x^2+4=0.
+\]
+Poich\'e $P\in\gamma$, $x=1$ \`e sempre soluzione; raccogliendo $(x-1)$:
+\[
+(x-1)\bigl[(1-m)x^2-4x-4\bigr]=0.
+\]
+Si nota che $x=0$ non \`e mai soluzione del fattore quadratico. Discutiamo
+$(1-m)x^2-4x-4=0$:
+
+\begin{itemize}[itemsep=0.15cm]
+  \item \textbf{$m=1$} (retta parallela all'asintoto): il fattore diventa lineare,
+        $-4x-4=0\Rightarrow x=-1$. Con $x=1$ si hanno \textbf{2} intersezioni.
+  \item \textbf{$m\neq1$}: discriminante
+        $\Delta=16+16(1-m)=16\,(2-m)$.
+        \begin{itemize}[itemsep=0.1cm]
+          \item $m>2$: $\Delta<0$, nessuna radice del fattore quadratico
+                $\Rightarrow$ \textbf{1} intersezione ($x=1$).
+          \item $m=2$: $\Delta=0$, radice doppia $x=-2$ (la curva \`e tangente in
+                $(-2,-1)$, cio\`e la tangente $y=2x+3$ del punto (b))
+                $\Rightarrow$ \textbf{2} intersezioni.
+          \item $m<2$: $\Delta>0$, due radici distinte. Esse coincidono con $x=1$
+                solo se $m=-7$ (allora il fascio d\`a la tangente $t$ in $P$),
+                caso in cui le intersezioni distinte sono \textbf{2}
+                (in $x=1$ e $x=-\tfrac12$).
+                Per ogni altro $m<2$ si hanno \textbf{3} intersezioni.
+        \end{itemize}
+\end{itemize}
+
+\noindent\textbf{Conclusione:}
+\[
+\#\,\text{intersezioni}=
+\begin{cases}
+1 & m>2,\\[2pt]
+2 & m\in\{-7,\,1,\,2\},\\[2pt]
+3 & m<2,\ m\neq-7,\ m\neq1.
+\end{cases}
+\]
+
+\subsection*{(d) Area \texorpdfstring{$S(k)$}{S(k)} e suo limite}
+
+L'asintoto obliquo $y=x$ e la retta $t\colon y=-7x+12$ si incontrano in
+$x=\tfrac32$ (da $x=-7x+12$). Per $x>\tfrac32$ la curva $\gamma$ sta sopra
+l'asintoto ($f(x)-x=4/x^2>0$); la tangente $t$ tocca $\gamma$ in $P=(1,5)$ e da l\`i
+scende fino a $(\tfrac32,\tfrac32)$. La regione si scompone in due parti:
+\[
+S(k)=\underbrace{\int_{1}^{3/2}\!\bigl[f(x)-(-7x+12)\bigr]\,dx}_{\text{tra }\gamma\text{ e }t}
+\;+\;\underbrace{\int_{3/2}^{k}\!\bigl[f(x)-x\bigr]\,dx}_{\text{tra }\gamma\text{ e asintoto}}.
+\]
+
+\textbf{Prima parte:} $f(x)+7x-12=8x+\dfrac{4}{x^2}-12$, primitiva
+$4x^2-\dfrac{4}{x}-12x$:
+\[
+\left[4x^2-\frac{4}{x}-12x\right]_{1}^{3/2}
+=-\frac{35}{3}-(-12)=\frac{1}{3}.
+\]
+
+\textbf{Seconda parte:}
+\[
+\int_{3/2}^{k}\frac{4}{x^2}\,dx=\left[-\frac{4}{x}\right]_{3/2}^{k}
+=\frac{8}{3}-\frac{4}{k}.
+\]
+
+Pertanto
+\[
+S(k)=\frac{1}{3}+\frac{8}{3}-\frac{4}{k}=3-\frac{4}{k},
+\qquad
+\boxed{\lim_{k\to+\infty}S(k)=3.}
+\]
+
+\textbf{Interpretazione geometrica.} Bench\'e la regione si estenda
+illimitatamente verso destra, la sua area \`e \emph{finita} e pari a $3$: la
+striscia compresa tra la curva e il suo asintoto ha area convergente perch\'e lo
+scarto $4/x^2$ decresce abbastanza rapidamente ($\int^{+\infty}4/x^2\,dx$ converge).
+
+\bigskip
+\hrule
+\bigskip
+
+\section*{Problema 2}
+
+\[
+f_n(x)=\sqrt[n]{x^2}-\sqrt{ax^2+bx+1},\qquad n\in\mathbb{N},\ n>1,\quad a,b\in\mathbb{R},\ a<0.
+\]
+
+\subsection*{(a) Non derivabilit\`a, punto angoloso, parametri \texorpdfstring{$a,b$}{a,b}}
+
+Si ha $\sqrt[n]{x^2}=|x|^{2/n}$. Il radicando $ax^2+bx+1$ vale $1>0$ in un intorno di
+$0$, quindi $\sqrt{ax^2+bx+1}$ \`e derivabile in $x=0$. La non derivabilit\`a di
+$f_n$ in $0$ dipende dunque dal solo termine $|x|^{2/n}$, la cui derivata \`e
+\[
+\frac{d}{dx}|x|^{2/n}=\frac{2}{n}\,\operatorname{sgn}(x)\,|x|^{\frac{2}{n}-1}.
+\]
+\begin{itemize}[itemsep=0.15cm]
+  \item Per \textbf{ogni} $n>1$ le derivate sinistra e destra in $0$ sono diverse,
+        quindi $f_n$ \emph{non \`e derivabile} in $x=0$.
+  \item Per $n=2$ l'esponente $\tfrac{2}{n}-1=0$: le derivate laterali valgono
+        $-1$ e $+1$ (finite e distinte) $\Rightarrow$ \textbf{punto angoloso}.
+        Per $n>2$ esse sono infinite ($\pm\infty$): si ha una cuspide, non un punto
+        angoloso. Dunque il punto angoloso si presenta solo per $\boxed{n=2}$.
+\end{itemize}
+
+Per $n=2$ si ha $f_2(x)=|x|-\sqrt{ax^2+bx+1}$. La simmetria rispetto all'asse $y$
+richiede che $\sqrt{ax^2+bx+1}$ sia pari, cio\`e $\boxed{b=0}$. Con $b=0$ e $a<0$ il
+radicando $ax^2+1\ge0$ d\`a il dominio $|x|\le\frac{1}{\sqrt{-a}}$; imponendo che
+coincida con $[-1;1]$:
+\[
+\frac{1}{\sqrt{-a}}=1\ \Longrightarrow\ \boxed{a=-1}.
+\]
+Quindi $\alpha\colon\ f_2(x)=|x|-\sqrt{1-x^2}$ su $[-1;1]$.
+
+\subsection*{(b) Studio di \texorpdfstring{$g$}{g} e curva \texorpdfstring{$\gamma=\alpha\cup\beta$}{gamma}}
+
+Con $a=-1,\ b=0$:
+\[
+g(x)=|x|+\sqrt{1-x^2},\qquad \text{dominio } [-1;1].
+\]
+$g$ \`e pari; $g(0)=1$, $g(\pm1)=1$, massimo $g\!\left(\pm\tfrac{1}{\sqrt2}\right)=\sqrt2$.
+
+\textbf{Non derivabilit\`a.} Per $x>0$, $g'(x)=1-\dfrac{x}{\sqrt{1-x^2}}$:
+\begin{itemize}[itemsep=0.1cm]
+  \item in $x=0$ le derivate laterali valgono $+1$ e $-1$ $\Rightarrow$ punto angoloso;
+  \item in $x\to\pm1$ si ha $g'\to\mp\infty$ $\Rightarrow$ tangenti verticali agli
+        estremi del dominio.
+\end{itemize}
+
+Osserviamo che da $\alpha$ ($y=|x|-\sqrt{1-x^2}$) e $\beta$ ($y=|x|+\sqrt{1-x^2}$)
+si ricava in entrambi i casi
+\[
+x^2+\bigl(y-|x|\bigr)^2=1,
+\]
+quindi $\gamma=\alpha\cup\beta$ \`e una curva chiusa (una circonferenza unitaria
+``inclinata'' dalla traslazione $y\mapsto y-|x|$), passante per $(0,1)$, $(0,-1)$ e
+$(\pm1,1)$.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  axis lines=middle,
+  xlabel={$x$}, ylabel={$y$},
+  xmin=-1.6, xmax=1.6, ymin=-1.4, ymax=1.8,
+  xtick={-1,1}, ytick={-1,1},
+  width=9cm, height=8cm,
+  samples=200,
+]
+  \addplot[thick, domain=-1:1] {abs(x)+sqrt(1-x^2)};        % beta
+  \addplot[thick, dashed, domain=-1:1] {abs(x)-sqrt(1-x^2)}; % alpha
+  \node[circle, fill, inner sep=1.1pt, label=above:{$(0,1)$}] at (axis cs:0,1) {};
+  \node[circle, fill, inner sep=1.1pt, label=below:{$(0,-1)$}] at (axis cs:0,-1) {};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\emph{Continua: $\beta$; tratteggiata: $\alpha$.}
+
+\subsection*{(c) Massimo di \texorpdfstring{$PQ$}{PQ}}
+
+La retta $r\colon x=k$ ($-1<k<1$) incontra $\gamma$ in
+$P=\bigl(k,\,|k|+\sqrt{1-k^2}\bigr)$ (su $\beta$) e
+$Q=\bigl(k,\,|k|-\sqrt{1-k^2}\bigr)$ (su $\alpha$). Dunque
+\[
+\overline{PQ}=\bigl(|k|+\sqrt{1-k^2}\bigr)-\bigl(|k|-\sqrt{1-k^2}\bigr)=2\sqrt{1-k^2}.
+\]
+La quantit\`a $2\sqrt{1-k^2}$ \`e massima quando $1-k^2$ \`e massimo, cio\`e per
+$k=0$, con $\overline{PQ}=2$. Ma $x=0$ (l'asse $y$) \`e proprio l'asse di simmetria
+di $\gamma$ (curva pari). Quindi $\overline{PQ}$ \`e massimo quando $r$ \`e asse di
+simmetria di $\gamma$. $\qquad\blacksquare$
+
+\subsection*{(d) Primitiva e area racchiusa da \texorpdfstring{$\gamma$}{gamma}}
+
+\textbf{Verifica.} Con $H(x)=\tfrac12\bigl(\arcsen x+x\sqrt{1-x^2}\bigr)$:
+\[
+H'(x)=\frac12\!\left(\frac{1}{\sqrt{1-x^2}}+\sqrt{1-x^2}-\frac{x^2}{\sqrt{1-x^2}}\right)
+=\frac12\cdot\frac{2(1-x^2)}{\sqrt{1-x^2}}=\sqrt{1-x^2}=h(x).\ \checkmark
+\]
+
+\textbf{Area.} La regione \`e compresa tra $\beta$ (sopra) e $\alpha$ (sotto); i
+termini $|x|$ si elidono:
+\[
+\text{Area}=\int_{-1}^{1}\bigl[g(x)-f_2(x)\bigr]\,dx
+=\int_{-1}^{1}2\sqrt{1-x^2}\,dx
+=2\bigl[H(x)\bigr]_{-1}^{1}
+=2\!\left(\frac{\pi}{4}+\frac{\pi}{4}\right)=\boxed{\pi.}
+\]
+(Il risultato \`e atteso: la trasformazione $y\mapsto y-|x|$ \`e una deformazione di
+taglio, che conserva le aree; $\gamma$ ha quindi l'area del cerchio unitario.)
+
+\newpage
+
+\section*{Quesiti}
+
+\subsection*{Quesito 1}
+
+Sia $ABC$ rettangolo in $B$, con ipotenusa $AC$. Dall'area:
+$\tfrac12\,AB\cdot BC=\tfrac12\,AC\cdot BH$, quindi $BH=\dfrac{AB\cdot BC}{AC}$.
+
+\textbf{($\Rightarrow$)} Se il triangolo \`e isoscele, $AB=BC=a$, allora
+$AC=a\sqrt2$ e $BH=\dfrac{a^2}{a\sqrt2}=\dfrac{a}{\sqrt2}=\dfrac{AC}{2}$.
+
+\textbf{($\Leftarrow$)} Se $BH=\dfrac{AC}{2}$, usando $AC^2=AB^2+BC^2$:
+\[
+\frac{AB\cdot BC}{AC}=\frac{AC}{2}
+\ \Longrightarrow\ 2\,AB\cdot BC=AC^2=AB^2+BC^2
+\ \Longrightarrow\ (AB-BC)^2=0,
+\]
+cio\`e $AB=BC$: il triangolo \`e isoscele. $\qquad\blacksquare$
+
+\subsection*{Quesito 2}
+
+La probabilit\`a di esattamente 2 teste in 5 lanci (binomiale) \`e
+\[
+P=\binom{5}{2}p^2(1-p)^3=10\,p^2(1-p)^3.
+\]
+Derivando:
+\[
+\frac{dP}{dp}=10\,p(1-p)^2\,(2-5p)=0\ \Longrightarrow\ p=\frac{2}{5}
+\]
+(escludendo $p=0,1$ che annullano $P$). Il massimo vale
+\[
+P_{\max}=10\left(\frac25\right)^2\left(\frac35\right)^3=\frac{1080}{3125}=0{,}3456.
+\]
+
+\subsection*{Quesito 3}
+
+Piano $\pi\colon 3x-2y+5=0$, normale $\vec n=(3,-2,0)$.
+
+\textbf{Proiezione di $P(4,2,1)$.} Retta $P+t\vec n=(4+3t,\,2-2t,\,1)$; imponendo
+$\pi$: $3(4+3t)-2(2-2t)+5=0\Rightarrow 13t+13=0\Rightarrow t=-1$. Quindi
+\[
+H=(1,4,1).
+\]
+
+\textbf{Intersezione con $s\colon\{x-y+1=0,\ z-2=0\}$.} Parametrizzando $x=t$,
+$y=t+1$, $z=2$ e imponendo $\pi$: $3t-2(t+1)+5=0\Rightarrow t=-3$. Punto
+\[
+(-3,\,-2,\,2).
+\]
+
+\newpage 
+\subsection*{Quesito 4}
+
+Sia $\varphi(x)=x^3+x-\cos x$. Allora
+$\varphi'(x)=3x^2+1+\sen x\ge 3x^2\,>0$ per $x>0$ (poich\'e $1+\sen x\ge0$):
+$\varphi$ \`e strettamente crescente su $]0,+\infty[$, quindi ammette al pi\`u una
+radice positiva. Inoltre $\varphi(0)=-1<0$ e
+$\varphi(\tfrac{\pi}{2})=\left(\tfrac{\pi}{2}\right)^3+\tfrac{\pi}{2}>0$: per il
+teorema degli zeri esiste (ed \`e unica) una radice in
+$]0,\tfrac{\pi}{2}[$. $\qquad\blacksquare$
+
+\subsection*{Quesito 5}
+
+Tangenza all'asse $x$ nell'origine $\Rightarrow$ radice doppia in $0$:
+$p(x)=ax^4+bx^3+cx^2$. Le condizioni $p(1)=0$, $p(2)=-2$, $p'(2)=0$ danno
+\[
+a+b+c=0,\quad 16a+8b+4c=-2,\quad 32a+12b+4c=0,
+\]
+con soluzione $a=1,\ b=-\tfrac72,\ c=\tfrac52$. Quindi
+\[
+p(x)=x^4-\frac{7}{2}x^3+\frac{5}{2}x^2=\frac{1}{2}x^2(x-1)(2x-5).
+\]
+
+\subsection*{Quesito 6}
+
+Posto $u=\dfrac1t$, una primitiva di $\dfrac{\cos(1/t)}{t^2}$ \`e $-\sen\!\left(\dfrac1t\right)$:
+\[
+F(x)=\left[-\sen\tfrac1t\right]_a^x=\sen\frac1a-\sen\frac1x.
+\]
+Da $F\!\left(\tfrac{2}{\pi}\right)=\sen\dfrac1a-\sen\dfrac{\pi}{2}
+=\sen\dfrac1a-1=-\dfrac12$ segue $\sen\dfrac1a=\dfrac12$.
+
+Il vincolo $a\le x=\dfrac{2}{\pi}$ impone $\dfrac1a\ge\dfrac{\pi}{2}$. La pi\`u
+piccola soluzione di $\sen\theta=\tfrac12$ con $\theta\ge\tfrac{\pi}{2}$ \`e
+$\theta=\dfrac{5\pi}{6}$ (a cui corrisponde il pi\`u grande $a$):
+\[
+\frac1a=\frac{5\pi}{6}\ \Longrightarrow\ \boxed{a=\frac{6}{5\pi}\approx0{,}382.}
+\]
+
+\subsection*{Quesito 7}
+
+L'orbita \`e un'ellisse con il Sole in un fuoco. Detti $A$ (afelio) e $P$ (perielio):
+\[
+a+c=1{,}52\cdot10^{11},\qquad a-c=1{,}47\cdot10^{11},
+\]
+da cui il semiasse maggiore $a=1{,}495\cdot10^{11}$ m e la distanza focale
+$c=2{,}5\cdot10^{9}$ m. Allora
+\[
+b^2=a^2-c^2\approx 2{,}2344\cdot10^{22}\ \text{m}^2,\qquad b\approx1{,}4948\cdot10^{11}\ \text{m}.
+\]
+Con origine nel centro dell'ellisse e Sole sul semiasse maggiore:
+\[
+\frac{x^2}{(1{,}495\cdot10^{11})^2}+\frac{y^2}{2{,}2344\cdot10^{22}}=1.
+\]
+(L'orbita \`e quasi circolare: $a$ e $b$ differiscono di meno dello $0{,}02\%$.)
+
+\subsection*{Quesito 8}
+
+Per un esagono regolare di raggio circoscritto $R$, l'apotema \`e
+\[
+a=R\cos30^{\circ}=\frac{\sqrt3}{2}\,R.
+\]
+Con $R=60$ mm $=6$ cm: $a=3\sqrt3\approx5{,}196$ cm, in accordo con il dato di Gadda
+($5{,}196$ cm) a fronte di $R=60$ mm. $\quad\checkmark$
+
+\textbf{Tassellazione.} L'angolo interno dell'esagono regolare \`e $120^{\circ}$ e
+$3\times120^{\circ}=360^{\circ}$: tre esagoni si dispongono attorno a ogni vertice
+senza lacune n\'e sovrapposizioni, ricoprendo il piano.
+
+Gli unici poligoni regolari (tutti congruenti) che tassellano il piano sono il
+\textbf{triangolo equilatero}, il \textbf{quadrato} e l'\textbf{esagono regolare}.
+Infatti, se $k$ poligoni di $n$ lati concorrono in un vertice,
+\[
+k\cdot\frac{(n-2)180^{\circ}}{n}=360^{\circ}\ \Longrightarrow\ k=\frac{2n}{n-2}\in\mathbb{N},
+\]
+condizione soddisfatta solo da $n=3\,(k=6)$, $n=4\,(k=4)$, $n=6\,(k=3)$.
+
+\end{document}
