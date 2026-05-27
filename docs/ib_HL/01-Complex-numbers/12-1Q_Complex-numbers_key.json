@@ -1,0 +1,302 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 5,
+    "answer_box_top_frac": 0.35,
+    "parts": [
+      {
+        "label": null,
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "M1", "A1", "A1"],
+        "description": "Find p and q given z = 5 + qi satisfies z^2 + iz = -p + 25i.",
+        "expected": {"p": -19, "q": 2},
+        "tolerance": "Accept any equivalent algebra. p must be -19 and q must be 2.",
+        "notes": "M1 for substituting z = 5 + qi. A1 for correct expansion 25 - q^2 + 10qi + 5i - q = -p + 25i. M1 for equating imaginary parts (10q + 5 = 25). A1 for q = 2. A1 for p = -19 (from equating real parts and substituting q)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 7,
+    "answer_box_top_frac": 0.44,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find |zw| where z = 2cis(pi/5) and w = 8(cos(2k pi/5) - i sin(2k pi/5)).",
+        "expected": {"answer": "16"},
+        "notes": "A1 for |zw| = |z||w| = 2 * 8 = 16."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find arg(zw) in terms of k.",
+        "expected": {"answer": "(1 - 2k)pi/5"},
+        "tolerance": "Accept pi/5 - 2k pi/5 or any equivalent form. The crucial step is recognising arg(w) = -2k pi/5 (negative because of the conjugate-style polar form).",
+        "notes": "M1 for identifying arg(z) = pi/5 and arg(w) = -2k pi/5. A1 for the combined argument (1 - 2k)pi/5."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["A1", "M1", "A1"],
+        "description": "Find the minimum positive integer k such that zw is an integer.",
+        "expected": {"answer": "k = 3"},
+        "tolerance": "Accept any valid argument that arg(zw) must be a multiple of pi.",
+        "notes": "A1 for stating arg(zw) is a multiple of pi (so zw is real). M1 for setting up (1 - 2k)pi/5 = m pi. A1 for k = 3.",
+        "follow_through": "Award FT if the candidate uses their own arg(zw) from (b) correctly to find the smallest positive integer k."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find zw for the value of k found in (c).",
+        "expected": {"answer": "-16"},
+        "notes": "A1 for zw = -16 (using k = 3, arg(zw) = -pi, modulus 16).",
+        "follow_through": "Award A1 for zw computed correctly from candidate's k in (c)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 22,
+    "answer_box_top_frac": null,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show that w = 4i / (1 + i sqrt(3)) equals sqrt(3) + i.",
+        "expected": {"answer": "sqrt(3) + i"},
+        "tolerance": "Show that (answer given). M1 for multiplying by conjugate (1 - i sqrt(3))/(1 - i sqrt(3)). A1 for the simplified result.",
+        "notes": "M1 for multiplying numerator and denominator by the conjugate of the denominator. A1 AG for arriving at sqrt(3) + i with sufficient working."
+      },
+      {
+        "label": "b_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find |w|.",
+        "expected": {"answer": "2"},
+        "notes": "M1 for |w| = sqrt((sqrt(3))^2 + 1^2). A1 for |w| = 2."
+      },
+      {
+        "label": "b_ii",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find arg w.",
+        "expected": {"answer": "pi/6"},
+        "notes": "A1 for pi/6."
+      },
+      {
+        "label": "c",
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "M1", "A1"],
+        "description": "Find the two square roots of w using de Moivre's theorem; give them in the form r e^(i theta) with r > 0 and -pi < theta <= pi.",
+        "expected": {"answer": "sqrt(2) e^(i pi/12) and sqrt(2) e^(-11 pi i/12)"},
+        "tolerance": "Accept sqrt(2) e^(13 pi i/12) for the second root if the requested range is not enforced.",
+        "notes": "M1 for writing w in exponential form 2 e^(i pi/6). A1 for sqrt(2) e^(i pi/12). M1 for adding/subtracting pi to the argument to get the second root. A1 for sqrt(2) e^(-11 pi i/12)."
+      },
+      {
+        "label": "d_i",
+        "marks": 6,
+        "mark_codes": ["M1", "A1", "M1", "A1", "M1", "R1"],
+        "description": "Given w = (a + bi)^2 with a, b in R+, show that a^2 = sqrt(3)/2 + 1.",
+        "expected": {"answer": "a^2 = sqrt(3)/2 + 1"},
+        "tolerance": "Show that (answer given). Accept either the standard route (expand, equate real and imaginary parts, eliminate b, solve quartic in a^2) OR the polar/half-angle route (recognise that a + bi has modulus sqrt(2) and argument pi/12, then use the half-angle identity cos^2(pi/12) = (1 + cos(pi/6))/2 to compute a^2 = 2 cos^2(pi/12) = (sqrt(3)/2 + 1)).",
+        "notes": "Standard route: M1 expand (a+bi)^2. A1 equate parts. M1 eliminate b using 2ab = 1. A1 quartic 4a^4 - 4 sqrt(3) a^2 - 1 = 0. M1 solve quadratic in a^2. R1 reject negative root because a^2 > 0. Polar route: award M1 for recognising sqrt(w) has modulus sqrt(2) and argument pi/12; A1 for a = sqrt(2) cos(pi/12); M1 for invoking half-angle formula on cos^2(pi/12); A1A1 for clean reduction; R1 for asserting a is real positive. Award full 6 if the chain is correct end to end."
+      },
+      {
+        "label": "d_ii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find b^2.",
+        "expected": {"answer": "1 - sqrt(3)/2"},
+        "notes": "M1 for using b^2 = a^2 - sqrt(3) (or any other valid route). A1 for 1 - sqrt(3)/2.",
+        "follow_through": "Award A1 for b^2 correctly found from the candidate's value of a^2 in (d)(i)."
+      },
+      {
+        "label": "e",
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "M1", "A1", "A1"],
+        "description": "Hence express tan(pi/12) in the form p + q sqrt(3), where p, q in Z.",
+        "expected": {"answer": "2 - sqrt(3)", "p": 2, "q": -1},
+        "tolerance": "Accept tan(pi/12) = 2 - sqrt(3) with p = 2 and q = -1.",
+        "notes": "M1 for identifying tan(pi/12) = b/a. A1 for tan(pi/12) = sqrt(b^2/a^2). M1 for substituting candidate's a^2 and b^2. A1 for clean simplification (e.g., rationalising to (1 - sqrt(3)/2)^2 / (1/4)). A1 for 2 - sqrt(3) and identifying p = 2, q = -1.",
+        "follow_through": "Award the substitution marks for consistent use of the candidate's a^2 and b^2 from part (d)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 20,
+    "answer_box_top_frac": null,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 6,
+        "mark_codes": ["A1", "M1", "A1", "M1", "A1", "A1"],
+        "description": "Find the four roots z_1, z_2, z_3, z_4 of z^4 = 16i with 0 <= theta_1 < theta_2 < theta_3 < theta_4 < 2 pi.",
+        "expected": {"answer": "z_1 = 2 cis(pi/8), z_2 = 2 cis(5 pi/8), z_3 = 2 cis(9 pi/8), z_4 = 2 cis(13 pi/8)"},
+        "tolerance": "Accept exponential form. The modulus must be 2 and the four arguments must be pi/8 + k pi/2 for k = 0, 1, 2, 3.",
+        "notes": "A1 for |16i| = 16 and arg = pi/2. M1 for invoking de Moivre's theorem (i.e., r^4 = 16 and 4 theta = pi/2 + 2 k pi). A1 for z_1 = 2 cis(pi/8). M1 for adding pi/2 to the argument to generate the other roots. A1 for z_2. A1 for z_3 and z_4."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the common ratio of the geometric sequence z_1, z_2, z_3, z_4 in Cartesian form.",
+        "expected": {"answer": "i"},
+        "notes": "M1 for computing z_2 / z_1 (or any consecutive pair). A1 for cis(pi/2). A1 for Cartesian form i.",
+        "follow_through": "Award marks for the ratio computed from the candidate's roots in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Plot A, B, C, D on an Argand diagram representing z_1, z_2, z_3, z_4.",
+        "expected": {"answer": "Four points on a circle of radius 2, at angles pi/8, 5 pi/8, 9 pi/8, 13 pi/8, labelled A, B, C, D respectively."},
+        "tolerance": "Accept any clearly labelled diagram. Points need not be at exact angles but A should be in Q1, B in Q2, C in Q3, D in Q4.",
+        "notes": "A1 for A approximately in the first quadrant. A1 for all four points approximately the same distance from origin. A1 for approximate angular separation of pi/2."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Determine a and b given v^4 = a + bi has roots z_1*, z_2*, z_3*, z_4*.",
+        "expected": {"a": 0, "b": -16},
+        "tolerance": "Accept v^4 = -16i directly.",
+        "notes": "A1 for (z_j*)^4 = (z_j^4)*. A1 for (16i)* = -16i. A1 for a = 0 and b = -16."
+      },
+      {
+        "label": "e",
+        "marks": 5,
+        "mark_codes": ["A1", "A1", "M1", "A1", "A1"],
+        "description": "Find the least positive p and corresponding q such that w^p = 2^q has roots at the midpoints A', B', C', D' of the sides of quadrilateral ABCD.",
+        "expected": {"p": 16, "q": 8},
+        "tolerance": "Accept p = 16 and q = 8 only with correct modulus reasoning (each midpoint has |A'| = sqrt(2), arg(A') = 3 pi/8).",
+        "notes": "A1 for arg(A') = (pi/8 + 5 pi/8)/2 = 3 pi/8. A1 for |A'| = sqrt(2) (perpendicular from origin to chord, not the slant calculation). M1 for requiring (sqrt(2) e^(3 pi i/8))^p to be positive real, so p * 3 pi/8 is a multiple of 2 pi. A1 for p = 16. A1 for q = 8 (since (sqrt(2))^16 = 2^8)."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "total_marks": 22,
+    "answer_box_top_frac": null,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["A1", "M1", "A1"],
+        "description": "Show that u = -1 + sqrt(3) i equals 2 e^(i 2 pi/3) by finding modulus and argument.",
+        "expected": {"answer": "u = 2 e^(i 2 pi/3)"},
+        "tolerance": "Show that (answer given). A1 for |u| = 2. M1 for reference angle pi/3 with u in quadrant II. A1 for arg u = 2 pi/3.",
+        "notes": "A1 |u| = 2. M1 quadrant-II reasoning. A1 AG for u = 2 e^(i 2 pi/3)."
+      },
+      {
+        "label": "b_i",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the smallest positive integer n such that u^n is real.",
+        "expected": {"answer": "n = 3"},
+        "notes": "M1 for u^n = 2^n e^(i 2 n pi/3) real means sin(2 n pi/3) = 0. A1 for 2 n pi/3 = k pi. A1 for n = 3."
+      },
+      {
+        "label": "b_ii",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find u^n for the value of n in (b)(i).",
+        "expected": {"answer": "8"},
+        "notes": "M1 for u^3 = 8 e^(i 2 pi). A1 for 8.",
+        "follow_through": "Award marks for substituting the candidate's multiple-of-3 value from (b)(i)."
+      },
+      {
+        "label": "c_i",
+        "marks": 5,
+        "mark_codes": ["A1", "M1", "A1", "A1", "A1"],
+        "description": "Given u is a root of z^3 + 5 z^2 + 10 z + 12 = 0, find the other roots.",
+        "expected": {"answer": "-1 - sqrt(3) i and -3"},
+        "tolerance": "Accept any valid factoring route: conjugate root theorem to identify -1 - sqrt(3) i, then either polynomial division by (z - u)(z - u*) = z^2 + 2z + 4, or Vieta's sum-of-roots = -5.",
+        "notes": "A1 for identifying the conjugate -1 - sqrt(3) i as a root (real coefficients). M1 for using sum of roots (or division by quadratic factor). A1 for setting up the linear equation. A1 for solving. A1 for third root = -3."
+      },
+      {
+        "label": "c_ii",
+        "marks": 4,
+        "mark_codes": ["A1", "A1", "M1", "A1"],
+        "description": "Find the roots of 1 + 5 w + 10 w^2 + 12 w^3 = 0 by a suitable transformation from z to w.",
+        "expected": {"answer": "w = -1/3, w = (-1 + sqrt(3) i)/4, w = (-1 - sqrt(3) i)/4"},
+        "tolerance": "Accept any equivalent form. The transformation z = 1/w (i.e., reverse the coefficients) gives w = 1/z for each root.",
+        "notes": "A1 A1 for spotting the substitution z = 1/w (coefficients reversed). M1 for inverting each root from (c)(i). A1 for the three w values."
+      },
+      {
+        "label": "d",
+        "marks": 5,
+        "mark_codes": ["A1", "M1", "M1", "A1", "A1"],
+        "description": "Solve z^2 = 2 z* with z != 0, by writing z = a + bi.",
+        "expected": {"answer": "z = 2, z = -1 + sqrt(3) i, z = -1 - sqrt(3) i"},
+        "tolerance": "Accept the three roots in any order. The two non-real roots are the conjugate pair of u.",
+        "notes": "A1 for substituting z = a + bi into the equation. M1 for equating real and imaginary parts (a^2 - b^2 = 2a and 2ab = -2b). M1 for factoring 2b(a + 1) = 0. A1 for the real root z = 2 (from b = 0 branch, z != 0). A1 for z = -1 +/- sqrt(3) i (from a = -1 branch)."
+      }
+    ]
+  },
+  {
+    "problem_number": 6,
+    "total_marks": 18,
+    "answer_box_top_frac": null,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Show that z_1 z_2* = r_1 r_2 e^(i(alpha - theta)).",
+        "expected": {"answer": "z_1 z_2* = r_1 r_2 e^(i(alpha - theta))"},
+        "tolerance": "Show that (answer given). A1 for z_2* = r_2 e^(-i theta). A1 for combining exponents.",
+        "notes": "A1 for z_2* in polar form. A1 AG for the product."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Given Re(z_1 z_2*) = 0, show that triangle Z_1 O Z_2 is right-angled.",
+        "expected": {"answer": "alpha - theta = pi/2, so the angle at O is a right angle"},
+        "tolerance": "Show that (answer given). Must conclude alpha - theta = pi/2 (NOT alpha - theta = pi), using 0 < alpha - theta < pi to pick the correct branch of cos = 0.",
+        "notes": "A1 for cos(alpha - theta) = 0 (deduced from Re = r_1 r_2 cos(alpha - theta) = 0 and r_1, r_2 > 0). A1 AG for alpha - theta = pi/2 using the given range, hence right-angled at O."
+      },
+      {
+        "label": "c_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Express z_1 in terms of z_2 when Z_1 O Z_2 is equilateral.",
+        "expected": {"answer": "z_1 = z_2 e^(i pi/3)"},
+        "notes": "M1 for r_1 = r_2 and alpha - theta = pi/3. A1 for z_1 = z_2 e^(i pi/3)."
+      },
+      {
+        "label": "c_ii",
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "A1", "A1"],
+        "description": "Hence show that z_1^2 + z_2^2 = z_1 z_2.",
+        "expected": {"answer": "z_1^2 + z_2^2 = z_1 z_2"},
+        "tolerance": "Show that (answer given). The key identity is e^(2 pi i/3) + 1 = e^(pi i/3).",
+        "notes": "M1 for substituting z_1 = z_2 e^(i pi/3) into LHS. A1 for z_2^2 (e^(2 pi i/3) + 1). A1 for the identity e^(2 pi i/3) + 1 = e^(pi i/3) (or equivalent argument). A1 AG."
+      },
+      {
+        "label": "d",
+        "marks": 5,
+        "mark_codes": ["A1", "A1", "A1", "M1", "A1"],
+        "description": "Given z_1 and z_2 are distinct roots of z^2 + a z + b = 0 with a, b in R, use (c)(ii) to show a^2 - 3b = 0.",
+        "expected": {"answer": "a^2 - 3b = 0"},
+        "tolerance": "Show that (answer given). Uses Vieta's: z_1 + z_2 = -a, z_1 z_2 = b.",
+        "notes": "A1 for sum and product of roots. A1 for a^2 = (z_1 + z_2)^2. A1 for expanding to z_1^2 + z_2^2 + 2 z_1 z_2. M1 for substituting (c)(ii). A1 AG for a^2 = 3b."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": ["A1", "R1", "A1"],
+        "description": "For z^2 + a z + 12 = 0, deduce that only one equilateral triangle Z_1 O Z_2 can be formed given 0 < alpha - theta < pi.",
+        "expected": {"answer": "Only a = 6 works; the equilateral triangle has roots -3 +/- sqrt(3) i"},
+        "tolerance": "Show that (answer given). Needs to compute a^2 = 36 from (d), then test orientation for a = +/- 6.",
+        "notes": "A1 for a^2 = 36 so a = +/- 6. R1 for rejecting a = -6 (orientation/range violated). A1 AG for a = 6 yielding roots -3 +/- sqrt(3) i with alpha - theta = pi/3, so exactly one equilateral triangle."
+      }
+    ]
+  }
+]
