@@ -1,0 +1,89 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 8,
+    "answer_box_top_frac": 0.4,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Vertical and horizontal asymptotes of f(x) = 3/(x+2) - 1",
+        "expected": {"vertical": "x = -2", "horizontal": "y = -1"},
+        "tolerance": "A1 for x = -2, A1 for y = -1.",
+        "notes": "A1 for the vertical asymptote x = -2. A1 for the horizontal asymptote y = -1 (A1A1)."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Describe the transformations mapping y = 1/x onto f(x) = 3/(x+2) - 1",
+        "expected": {"answer": "vertical stretch scale factor 3; translation 2 units left; translation 1 unit down"},
+        "tolerance": "Accept the two translations combined as a translation by the vector (-2, -1) (A1A1). Stretch and translations may be described in either order.",
+        "notes": "A1 vertical stretch scale factor 3. A1 horizontal translation 2 left. A1 vertical translation 1 down."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "y-intercept of f",
+        "expected": {"answer": "(0, 1/2)"},
+        "tolerance": "Accept y = 1/2.",
+        "notes": "A1 for 1/2 from f(0) = 3/2 - 1."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "x-intercept of f",
+        "expected": {"answer": "(1, 0)"},
+        "tolerance": "Accept x = 1.",
+        "notes": "M1 for setting f(x) = 0 and reaching x + 2 = 3. A1 for x = 1."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 8,
+    "answer_box_top_frac": 0.34,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Vertical and horizontal asymptotes of g(x) = (3x-2)/(x+1)",
+        "expected": {"vertical": "x = -1", "horizontal": "y = 3"},
+        "tolerance": "A1 for x = -1, A1 for y = 3.",
+        "notes": "A1 for x = -1. A1 for y = 3 (ratio of leading coefficients) (A1A1)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "x-intercept and y-intercept of g",
+        "expected": {"x_intercept": "(2/3, 0)", "y_intercept": "(0, -2)"},
+        "tolerance": "Accept x = 2/3 and y = -2, or the ordered-pair forms (A1A1).",
+        "notes": "A1 for x-intercept (2/3, 0). A1 for y-intercept (0, -2)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the inverse g^{-1}(x)",
+        "expected": {"answer": "-(x+2)/(x-3)"},
+        "tolerance": "Accept the equivalent form (x+2)/(3-x).",
+        "notes": "M1 for swapping x and y. A1 for correct rearrangement to y(x-3) = -(x+2). A1 for g^{-1}(x) = -(x+2)/(x-3)."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Domain of g^{-1}",
+        "expected": {"answer": "x in R, x != 3"},
+        "tolerance": "Accept x != 3.",
+        "notes": "A1 for x != 3.",
+        "follow_through": "Award A1 for x != (the candidate's horizontal-asymptote value of g from part (a))."
+      }
+    ]
+  }
+]

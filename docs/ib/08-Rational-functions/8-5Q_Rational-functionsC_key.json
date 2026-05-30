@@ -1,0 +1,89 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 8,
+    "answer_box_top_frac": 0.4,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Vertical and horizontal asymptotes of f(x) = 4/(x-1) + 2",
+        "expected": {"vertical": "x = 1", "horizontal": "y = 2"},
+        "tolerance": "A1 for x = 1, A1 for y = 2.",
+        "notes": "A1 for the vertical asymptote x = 1. A1 for the horizontal asymptote y = 2 (A1A1)."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Describe the transformations mapping y = 1/x onto f(x) = 4/(x-1) + 2",
+        "expected": {"answer": "vertical stretch scale factor 4; translation 1 unit right; translation 2 units up"},
+        "tolerance": "Accept the two translations combined as a translation by the vector (1, 2) (A1A1). Stretch and translations may be described in either order.",
+        "notes": "A1 vertical stretch scale factor 4. A1 horizontal translation 1 right. A1 vertical translation 2 up."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "y-intercept of f",
+        "expected": {"answer": "(0, -2)"},
+        "tolerance": "Accept y = -2.",
+        "notes": "A1 for -2 from f(0) = 4/(-1) + 2."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "x-intercept of f",
+        "expected": {"answer": "(-1, 0)"},
+        "tolerance": "Accept x = -1.",
+        "notes": "M1 for setting f(x) = 0 and reaching x - 1 = -2. A1 for x = -1."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 8,
+    "answer_box_top_frac": 0.34,
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Vertical and horizontal asymptotes of g(x) = (4x+3)/(x-2)",
+        "expected": {"vertical": "x = 2", "horizontal": "y = 4"},
+        "tolerance": "A1 for x = 2, A1 for y = 4.",
+        "notes": "A1 for x = 2. A1 for y = 4 (ratio of leading coefficients) (A1A1)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "x-intercept and y-intercept of g",
+        "expected": {"x_intercept": "(-3/4, 0)", "y_intercept": "(0, -3/2)"},
+        "tolerance": "Accept x = -3/4 and y = -3/2, or the ordered-pair forms (A1A1).",
+        "notes": "A1 for x-intercept (-3/4, 0). A1 for y-intercept (0, -3/2)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the inverse g^{-1}(x)",
+        "expected": {"answer": "(2x+3)/(x-4)"},
+        "tolerance": "Accept equivalent forms.",
+        "notes": "M1 for swapping x and y. A1 for correct rearrangement to y(x-4) = 2x+3. A1 for g^{-1}(x) = (2x+3)/(x-4)."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Domain of g^{-1}",
+        "expected": {"answer": "x in R, x != 4"},
+        "tolerance": "Accept x != 4.",
+        "notes": "A1 for x != 4.",
+        "follow_through": "Award A1 for x != (the candidate's horizontal-asymptote value of g from part (a))."
+      }
+    ]
+  }
+]
