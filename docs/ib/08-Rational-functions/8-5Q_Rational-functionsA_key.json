@@ -17,10 +17,13 @@
         "label": "b",
         "marks": 3,
         "mark_codes": ["A1", "A1", "A1"],
-        "description": "Describe the transformations mapping y = 1/x onto f(x) = 2/(x-3) + 1",
-        "expected": {"answer": "vertical stretch scale factor 2; translation 3 units right; translation 1 unit up"},
-        "tolerance": "Accept the two translations combined as a translation by the vector (3, 1) (A1A1). Stretch and translations may be described in either order.",
-        "notes": "A1 vertical stretch scale factor 2. A1 horizontal translation 3 right. A1 vertical translation 1 up."
+        "description": "Describe fully the transformations mapping y = 1/x onto f(x) = 2/(x-3) + 1",
+        "expected": {"stretch": "vertical stretch, scale factor 2", "horizontal": "translation 3 right", "vertical": "translation 1 up"},
+        "tolerance": "\"Describe fully\" requires WORDS, not symbols alone. One mark per correctly described transformation (A1A1A1). STRETCH: a word from stretch/dilate/dilation/scale (or an equivalent such as 'doubled vertically'), scale factor 2 (accept 'factor of two'), with direction stated as vertical (accept 'parallel to the y-axis'). HORIZONTAL TRANSLATION: translate/translation/shift/slide, magnitude 3, with 'right' explicit (accept 'positive x-direction'). VERTICAL TRANSLATION: translate/shift/slide, magnitude 1, up (direction may be omitted for an upward translation — assumed upward). The word 'units' is optional. Reject 'move'/'moved'.",
+        "notes": "A1 vertical stretch scale factor 2 (direction vertical stated). A1 horizontal translation 3 right (explicit). A1 vertical translation 1 up.",
+        "order_rule": "The stretch must precede the vertical translation; the horizontal translation may appear in any position (stretch and horizontal translation interchangeable). If the vertical translation is stated before the stretch, deduct 1 mark.",
+        "vector_form": "Accept the two translations as a vector, e.g. (3, 1), for BOTH translation marks, PROVIDED a translation word (translate/shift/slide) is used; the vector supplies direction and magnitude.",
+        "symbolic_fallback": "A description using NO transformation words (e.g. an equation chain 1/x -> 2/x -> 2/(x-3) -> 2/(x-3)+1) that is correct and complete earns at most 1 of 3. A vector accompanied by a translation word is NOT this case (award the translation marks in full)."
       },
       {
         "label": "c",
