@@ -1,0 +1,61 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[L]{La Scuola d'Italia / Dr.\ Huson / IB Math (c) \\* 14 March 2026}
+\fancyhead[R]{\fbox{\begin{minipage}{6cm}\footnotesize Student ID:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{7.11 PreQuiz: Logarithmic and Exponential Functions
+(calculator)}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Quarterly compound interest and continuous equivalent [6 marks] ---
+%--- Source: Original, modelled on 7-10PreQuiz_Log-functions problem 4 ---
+\item[1.] [Maximum mark: 6]
+
+Noah invests \$3200 in an account that pays interest of $7.2\,\%$ per
+annum, compounded quarterly. No further deposits or withdrawals are made.
+Let $V(t)$ be the value of the account after $t$ years.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down a formula for $V(t)$ in the form
+  $V(t)=a(b)^{4t}$. \hfill [2]
+  \item Write the same model in the equivalent continuous form
+  $V(t)=3200e^{kt}$, giving the exact value of $k$. \hfill [2]
+  \item Find the smallest number of full years required for the value of
+  the account to first exceed \$5000. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,11);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Continuous exponential growth [6 marks] ---
+%--- Source: Original, modelled on 7-10PreQuiz_Log-functions problem 3 ---
+\item[2.] [Maximum mark: 6]
+
+The number of users of a new app is modelled by
+$$U(t) = 9000 e^{kt}, \qquad k > 0$$
+where $t$ is the number of years after launch. After $3$ years there
+are $18\,500$ users.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the value of $k$. \hfill [2]
+  \item Find the number of users after $7$ years, correct to the nearest
+  whole number. \hfill [2]
+  \item Find the time, in years, when the number of users first reaches
+  $50\,000$. Give your answer correct to two decimal places. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (11,12);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(10.5,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,73 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 6,
+    "answer_box_top_frac": 0.34,
+    "source": "Original, modelled on 7-10PreQuiz_Log-functions problem 4; version B quarterly compounding.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find the quarterly growth factor for 6% per annum, compounded quarterly.",
+        "expected": {"answer": "1.015"},
+        "tolerance": "Accept 1.015 or equivalent statement of quarterly rate 0.015. Accept 1.5% with a feedback note that 1.015 is the preferred form for a growth 'factor'.",
+        "notes": "A1 for dividing 0.06 by 4 and forming the growth factor 1.015. If the student writes 1.5% instead, award the mark and attach feedback: 'A growth factor is the multiplier (1 + r), not the rate alone — write 1.015.'"
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the value of 2400 dollars after 5 years, correct to the nearest cent.",
+        "expected": {"answer": "$3232.45"},
+        "tolerance": "Accept 3232.45 with or without dollar sign.",
+        "notes": "M1 for using 2400(1.015)^20 or equivalent. A1 for 3232.45."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the smallest number of full years for the account value to first exceed 3400 dollars.",
+        "expected": {"answer": "6 years"},
+        "tolerance": "Accept n = 6. Do not accept 5.85... years as the final answer because full years are required. Alternative method (table search) acceptable: full marks if both adjacent rows are shown (2400(1.015)^20 = 3232.45 at n=5 and 2400(1.015)^24 = 3430.84 at n=6); award full marks for a single-row table too, but attach a feedback note recommending the adjacent row.",
+        "notes": "M1 for setting up 2400(1.015)^(4n) > 3400 or an equivalent method. A1 for finding the boundary n > 5.85... (or, for the table method, for both adjacent rows). A1 for the smallest full-year value n = 6. If the student uses a single-row table, attach feedback: 'Show both adjacent rows (n=5 and n=6) to justify the crossover.' See markscheme-spec.md §18."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 6,
+    "answer_box_top_frac": 0.40,
+    "source": "Original, modelled on 7-10PreQuiz_Log-functions problem 3; version B continuous growth with k unknown.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find k for M(t)=5000e^(kt), k>0, given M(2)=7200.",
+        "expected": {"answer": "k = 0.1823..."},
+        "tolerance": "Accept k = ln(7200/5000)/2 or a decimal equivalent.",
+        "notes": "M1 for substituting M(2)=7200 to get 5000e^(2k)=7200 or equivalent. A1 for k=(1/2)ln(7200/5000)=0.1823..."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the number of members after 6 years, correct to the nearest whole number.",
+        "expected": {"answer": "14930 members"},
+        "tolerance": "Accept 14930 (full precision) or 14901 (obtained by substituting rounded k = 0.182). Both earn full marks; if 14901 is given, attach feedback about not rounding intermediate values. See markscheme-spec.md §17.",
+        "notes": "M1 for substituting t=6 using their value of k. A1 for 14930 (full precision) or 14901 (from rounded k=0.182). If the rounded-k variant is used, attach feedback: 'Carry full precision through intermediate steps; round only the final answer.'"
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the time in years when the members first reach 10000, correct to two decimal places.",
+        "expected": {"answer": "3.80 years"},
+        "tolerance": "Accept 3.80 (full precision) or 3.81 (obtained by substituting rounded k = 0.182). Both earn full marks; if 3.81 is given, attach feedback about not rounding intermediate values. See markscheme-spec.md §17.",
+        "notes": "M1 for setting 5000e^(kt)=10000 and solving with logarithms. A1 for 3.80 (full precision) or 3.81 (from rounded k=0.182). If the rounded-k variant is used, attach feedback: 'Carry full precision through intermediate steps; round only the final answer.'",
+        "follow_through": "Award follow-through from the candidate's value of k in part (a) if the logarithmic method is correct."
+      }
+    ]
+  }
+]
