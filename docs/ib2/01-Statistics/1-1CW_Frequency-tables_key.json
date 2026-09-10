@@ -1,0 +1,148 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["4.1", "4.2"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.44,
+    "answer_box_top_frac_note": "Set by hand, not by detect_answer_boxes.py. The detector reported the TikZ answer box at top_frac 0.678 (no bottom bound). The printed table skeleton is part of the answer for part (a), so the crop starts at the top rule of the table (y = 352.5 pt of 792 pt = 0.445), backed off slightly to 0.44, and runs to the page bottom.",
+    "source": "Original (freshly authored). Categorical raw data: 24 replies to 'how do you usually travel to school' (walk, bus, subway, car, bike). Style after Haese, Core Topics SL, Chapter 11 Exercise 11D. Raw data as printed, reading left to right: bus, subway, walk, car, subway, walk, bike, subway / walk, bus, subway, subway, car, walk, subway, bus / subway, bike, walk, bus, car, subway, walk, bus. Counts: walk 6, bus 5, subway 8, car 3, bike 2; total 24.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Complete the tally and frequency table for the 24 travel-to-school replies. Category column (walk, bus, subway, car, bike) is printed; Tally and Frequency columns are empty.",
+        "expected": {
+          "answer": "walk 6, bus 5, subway 8, car 3, bike 2",
+          "walk": 6,
+          "bus": 5,
+          "subway": 8,
+          "car": 3,
+          "bike": 2
+        },
+        "tolerance": "Accept any tally notation: the five-bar gate, ungrouped strokes, dots, or strokes grouped in any other consistent way. Frequencies may be written as digits or words.",
+        "notes": "First A1 is earned when a tally is actually used and agrees with the candidate's own frequency column, however the strokes are grouped. Second A1 is earned when all five frequencies (6, 5, 8, 3, 2) are correct; four or fewer correct earns nothing for this mark. A candidate who fills in the frequency column correctly but leaves the tally column empty earns the second A1 only."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "How many students were surveyed altogether?",
+        "expected": {
+          "answer": "24"
+        },
+        "tolerance": "Accept 24 with or without working, and whether obtained by adding the frequencies or read from the stem ('Twenty-four students').",
+        "notes": "A1 for the value 24, reached by any route.",
+        "follow_through": "Award A1 for the sum of the candidate's own frequencies from (a) when that sum is computed correctly."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the mode of the data.",
+        "expected": {
+          "answer": "subway"
+        },
+        "tolerance": "Accept 'subway', 'the subway', or 'subway (8 students)'. Do not accept '8' alone: for a categorical variable the mode is the category, not its frequency.",
+        "notes": "A1 for naming the category with the greatest frequency.",
+        "follow_through": "Award A1 for the category carrying the largest frequency in the candidate's own table from (a)."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "What fraction of the students walk to school? Answer as a fraction or a percentage.",
+        "expected": {
+          "answer": "6/24 = 1/4 = 25%"
+        },
+        "tolerance": "Accept any equivalent fraction, decimal or percentage: 6/24, 3/12, 1/4, 0.25, 25%. Simplification is not required, and the question explicitly allows either a fraction or a percentage.",
+        "notes": "A1 for any correct expression of the proportion of walkers. A candidate who writes only the count 6 has not answered the question and earns nothing.",
+        "follow_through": "Award A1 for the candidate's own walk frequency from (a) divided by the candidate's own total from (b), expressed as a fraction or percentage."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": ["R1"],
+        "description": "Is 'how you travel to school' a categorical or a quantitative variable? One sentence.",
+        "expected": {
+          "answer": "Categorical, because the replies are names of groups (words), not numerical measurements."
+        },
+        "tolerance": "Accept 'categorical' or 'qualitative'. Accept any wording of the reason, including informal wording such as 'the answers are words, not numbers'.",
+        "notes": "R1 is earned when the answer both classifies the variable as categorical and gives a reason of the right kind - that the data are words, labels, names or groups rather than numbers that are counted or measured. The correct classification with no reason earns nothing; a correct reason without the word 'categorical' still earns the R1 if the classification is unambiguous from the sentence."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["4.1", "4.2"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.42,
+    "answer_box_top_frac_note": "Set by hand, not by detect_answer_boxes.py. The detector reported the TikZ answer box at top_frac 0.654 (no bottom bound). The printed table skeleton is part of the answer for part (a), so the crop starts at the top rule of the table (y = 333.4 pt of 792 pt = 0.421), backed off slightly to 0.42, and runs to the page bottom.",
+    "source": "Original (freshly authored). Discrete numerical raw data: 25 replies to 'how many brothers and sisters do you have', values 0 to 4. Style after Haese, Core Topics SL, Chapter 11 Exercise 11D. Raw data as printed, reading left to right, five per row: 1,2,0,3,1 / 1,2,4,1,2 / 1,3,0,2,1 / 1,2,3,1,2 / 1,4,0,2,3. Counts: 0 -> 3, 1 -> 9, 2 -> 7, 3 -> 4, 4 -> 2; total 25.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Complete the frequency table for the 25 sibling counts. Value column (0, 1, 2, 3, 4) is printed; Tally and Frequency columns are empty.",
+        "expected": {
+          "answer": "0 -> 3, 1 -> 9, 2 -> 7, 3 -> 4, 4 -> 2",
+          "0": 3,
+          "1": 9,
+          "2": 7,
+          "3": 4,
+          "4": 2
+        },
+        "tolerance": "Accept any tally notation: the five-bar gate, ungrouped strokes, dots, or strokes grouped in any other consistent way.",
+        "notes": "First A1 is earned when a tally is actually used and agrees with the candidate's own frequency column, however the strokes are grouped. Second A1 is earned when all five frequencies (3, 9, 7, 4, 2) are correct; four or fewer correct earns nothing for this mark. A candidate who fills in the frequency column correctly but leaves the tally column empty earns the second A1 only."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "How many students are in the class?",
+        "expected": {
+          "answer": "25"
+        },
+        "tolerance": "Accept 25 with or without working, and whether obtained by adding the frequencies or read from the stem ('the 25 students in a class').",
+        "notes": "A1 for the value 25, reached by any route.",
+        "follow_through": "Award A1 for the sum of the candidate's own frequencies from (a) when that sum is computed correctly."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the mode of the data.",
+        "expected": {
+          "answer": "1"
+        },
+        "tolerance": "Accept '1', '1 sibling', or 'one brother or sister'. Do not accept '9' alone: that is the frequency of the mode, not the mode.",
+        "notes": "A1 for the data value with the greatest frequency.",
+        "follow_through": "Award A1 for the value carrying the largest frequency in the candidate's own table from (a)."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "How many students have at least 2 brothers and sisters?",
+        "expected": {
+          "answer": "13"
+        },
+        "tolerance": "Accept 13 reached by any correct route: adding the frequencies for 2, 3 and 4 (7 + 4 + 2), counting directly from the raw list, or subtracting from the total (25 - 3 - 9). No working is required.",
+        "notes": "A1 for the count 13. The whole mark is for the value, so an answer of 6 - obtained by reading 'at least 2' as 'more than 2' and omitting the students with exactly 2 - earns nothing, and the return should tell the student that 'at least 2' includes 2 itself.",
+        "follow_through": "Award A1 for the sum of the candidate's own frequencies for 2, 3 and 4 from (a)."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": ["R1"],
+        "description": "Is 'number of brothers and sisters' discrete or continuous? Give a short reason.",
+        "expected": {
+          "answer": "Discrete, because it is counted and can only take separate whole-number values."
+        },
+        "tolerance": "Accept any wording of the reason, including informal wording such as 'you can't have 2.4 siblings'.",
+        "notes": "R1 is earned when the answer both classifies the variable as discrete and gives a reason of the right kind - the values are counted, are whole numbers, or cannot take values in between. The correct classification with no reason earns nothing. A reason based on the data being numerical (rather than on the values being separated) does not distinguish discrete from continuous and earns nothing."
+      }
+    ]
+  }
+]

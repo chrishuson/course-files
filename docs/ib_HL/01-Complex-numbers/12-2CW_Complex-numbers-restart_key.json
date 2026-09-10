@@ -1,0 +1,109 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 7,
+    "answer_box_top_frac": 0.367,
+    "topic_codes": ["1.12"],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find zw in the form a + bi, where z = 3 - 2i and w = 1 + 4i.",
+        "expected": {
+          "answer": "11 + 10i"
+        },
+        "tolerance": "Accept any equivalent exact form (e.g. 10i + 11). No calculator: decimals are not relevant here.",
+        "notes": "M1 for any complete expansion of the product, however the four terms are organised (grid, FOIL, distribution). A1 for the correct value 11 + 10i. An expansion that mishandles i^2 = -1 loses the A1 but keeps the M1."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find z/w in the form a + bi, where z = 3 - 2i and w = 1 + 4i.",
+        "expected": {
+          "answer": "-5/17 - (14/17)i"
+        },
+        "tolerance": "Accept (-5 - 14i)/17 or any equivalent exact form. Do not accept a decimal approximation (no calculator; exact form was requested).",
+        "notes": "M1 for any correct method of realising the denominator: multiplying numerator and denominator by the conjugate 1 - 4i, or setting (a + bi)(1 + 4i) = 3 - 2i and equating parts. A1 for the correct quotient, in either single-fraction or a + bi form."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find the exact value of |z| where z = 3 - 2i.",
+        "expected": {
+          "answer": "sqrt(13)"
+        },
+        "tolerance": "Accept sqrt(13) only in exact form; do not accept 3.61 or other decimals.",
+        "notes": "A1 for sqrt(13), however obtained. Writing |z| = sqrt(3^2 + (-2)^2) without evaluating earns the mark only if the value sqrt(13) is reached."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the real numbers x and y such that (x + yi)(2 - i) = 7 + 4i.",
+        "expected": {
+          "x": 2,
+          "y": 3
+        },
+        "tolerance": "Accept x = 2, y = 3 stated in any form, including as the single complex number x + yi = 2 + 3i.",
+        "notes": "M1 for any method that reduces the equation to real information: expanding and equating real and imaginary parts (2x + y = 7, 2y - x = 4), or dividing to get x + yi = (7 + 4i)/(2 - i). A1 requires both values; they come from one simultaneous system, so the mark is not split between x and y."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 7,
+    "answer_box_top_frac": 0.358,
+    "topic_codes": ["1.12", "1.14", "2.12"],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Solve z^2 - 4z + 13 = 0, giving both roots in the form a + bi.",
+        "expected": {
+          "answer": "z = 2 + 3i and z = 2 - 3i"
+        },
+        "tolerance": "Accept 2 +/- 3i written as a single expression. Accept the roots in either order.",
+        "notes": "M1 for any complete solution method: completing the square, or the quadratic formula with the negative discriminant handled. A1 for each root; the two A1s are independent, so one correct root alone earns one A1."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["R1"],
+        "description": "Explain why the two roots of z^2 - 4z + 13 = 0 are complex conjugates of each other.",
+        "expected": {
+          "answer": "The coefficients are real, so non-real roots occur in conjugate pairs."
+        },
+        "tolerance": "Accept any wording of the conjugate-root property, including the observation that the two roots differ only in the sign of the +/- 3i (or +/- sqrt(-36)) term.",
+        "notes": "R1 for a reason that connects the real coefficients (or the +/- of the square root of a negative discriminant) to the conjugate pair. Simply restating the two roots, or asserting 'they are conjugates', earns no mark on its own."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "The complex number 2 + i*sqrt(3) is one root of a quadratic equation with real coefficients. Without solving any equation, find the sum and the product of its two roots.",
+        "expected": {
+          "sum": 4,
+          "product": 7
+        },
+        "tolerance": "Accept the product written as 4 + 3 or as 2^2 - (i sqrt 3)^2. Exact values only.",
+        "notes": "A1 for the sum and A1 for the product; the two marks are independent. Both depend on using the conjugate 2 - i*sqrt(3) as the second root, stated or implied. A sum or product formed from any other second root earns no mark."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Hence write down a quadratic equation with real coefficients having 2 + i*sqrt(3) as a root.",
+        "expected": {
+          "answer": "z^2 - 4z + 7 = 0"
+        },
+        "tolerance": "Accept any non-zero real multiple (e.g. 2z^2 - 8z + 14 = 0) and the factored form (z - 2 - i sqrt 3)(z - 2 + i sqrt 3) = 0. Accept the expression z^2 - 4z + 7 without '= 0'.",
+        "notes": "A1 for a quadratic whose sum and product of roots match part (c), in any equivalent form.",
+        "follow_through": "Award A1 for z^2 - (candidate's sum)z + (candidate's product) = 0 formed correctly from their part (c) values."
+      }
+    ]
+  }
+]

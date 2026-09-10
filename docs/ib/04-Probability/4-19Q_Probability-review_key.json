@@ -1,0 +1,310 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 7,
+    "answer_box_top_frac": 0.475,
+    "source": "4-19Q_Probability-review_MS.tex (legacy authored markscheme)",
+    "topic_codes": [
+      "4.5",
+      "4.6",
+      "4.7"
+    ],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the number who do Music.",
+        "expected": {
+          "answer": "17"
+        },
+        "tolerance": "Accept any notation exactly equivalent to 17; for example, n(M) = 17.",
+        "notes": "A1 for 17, obtained from 11 + 6.",
+        "topic_codes": [
+          "4.6"
+        ]
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find the number who do neither Music nor Drama.",
+        "expected": {
+          "answer": "6"
+        },
+        "tolerance": "Accept any notation exactly equivalent to 6; for example, a = 6.",
+        "notes": "A1 for 6, obtained from 32 - 11 - 6 - 9.",
+        "topic_codes": [
+          "4.6"
+        ]
+      },
+      {
+        "label": "ci",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find the probability the student does not do Music.",
+        "expected": {
+          "answer": "15/32"
+        },
+        "tolerance": "Accept any exactly equivalent probability or a decimal correctly rounded to at least 3 significant figures; for example, 15/32, 0.46875, or 0.469.",
+        "notes": "A1 for P(M') = (9 + 6)/32 = 15/32.",
+        "topic_codes": [
+          "4.5",
+          "4.6"
+        ]
+      },
+      {
+        "label": "cii",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the probability of Music or Drama, but not both.",
+        "expected": {
+          "answer": "5/8"
+        },
+        "tolerance": "Accept any exactly equivalent probability or a decimal correctly rounded to at least 3 significant figures; for example, 20/32, 5/8, or 0.625.",
+        "notes": "M1 for identifying the exclusive regions and combining 11 + 9 = 20. A1 for 20/32 = 5/8.",
+        "topic_codes": [
+          "4.6"
+        ]
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the conditional probability of Music given Drama.",
+        "expected": {
+          "answer": "2/5"
+        },
+        "tolerance": "Accept any exactly equivalent conditional probability; for example, 6/15, 2/5, or 0.4.",
+        "notes": "M1 for recognizing the conditional sample space and finding n(D) = 6 + 9 = 15. A1 for P(M | D) = 6/15 = 2/5.",
+        "topic_codes": [
+          "4.7"
+        ]
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 6,
+    "answer_box_top_frac": 0.391,
+    "source": "4-19Q_Probability-review_MS.tex (legacy authored markscheme)",
+    "topic_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find the probability a student is in IB and has a nSpire.",
+        "expected": {
+          "answer": "1/2"
+        },
+        "tolerance": "Accept any exactly equivalent probability; for example, 8/16, 1/2, or 0.5.",
+        "notes": "A1 for P(IB intersection nSpire) = 8/16 = 1/2.",
+        "topic_codes": [
+          "4.6"
+        ]
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the probability of nSpire given non-IB.",
+        "expected": {
+          "answer": "1/6"
+        },
+        "tolerance": "Accept any exactly equivalent conditional probability or a decimal correctly rounded to at least 3 significant figures; for example, 1/6 or 0.167.",
+        "notes": "M1 for identifying the non-IB total as 6. A1 for P(nSpire | non-IB) = 1/6.",
+        "topic_codes": [
+          "4.7"
+        ]
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "R1"
+        ],
+        "description": "Determine whether the two events are independent; justify.",
+        "expected": {
+          "answer": "Not independent, because P(IB)P(nSpire) = (10/16)(9/16) = 90/256 = 45/128 approximately 0.352, while P(IB intersection nSpire) = 8/16 = 1/2."
+        },
+        "tolerance": "Accept any valid independence test that correctly compares a joint probability with the product of the marginals, or compares an appropriate conditional probability with its marginal, and reaches the justified conclusion that the events are not independent. Accept any value consistent with the candidate's own correctly-rounded intermediate — including 0.3515625 (0.352 to 3 significant figures) from exact marginals and 0.353 from the commonly-rounded intermediates 0.63 and 0.56. Award full marks when the method is correct and the value follows from the candidate's earlier rounding; note precision separately rather than withholding the accuracy mark.",
+        "notes": "M1 for a valid independence-test setup, such as P(IB)P(nSpire). A1 for correct probabilities and comparison, such as 90/256 approximately 0.352 versus 1/2. R1 for the justified conclusion that the events are not independent. Feedback: whenever an intermediate is rounded, advise carrying full precision through intermediate steps and rounding only at the end; tag student_error = premature_rounding.",
+        "topic_codes": [
+          "4.6"
+        ]
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 7,
+    "answer_box_top_frac": 0.573,
+    "source": "4-19Q_Probability-review_MS.tex (legacy authored markscheme)",
+    "topic_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Complete the tree diagram, showing all probabilities.",
+        "expected": {
+          "answer": "Walk = 0.4; Bus on time = 0.90; Walk late = 0.05; Walk on time = 0.95. Compound probabilities: Bus and late = 0.06; Bus and on time = 0.54; Walk and late = 0.02; Walk and on time = 0.38."
+        },
+        "tolerance": "Accept any exactly equivalent probability notation, including decimals, percentages, or fractions, provided each value is placed on the correct branch or outcome. For example, 0.4 may be shown as 40%.",
+        "notes": "Award A1A1 for the four missing branch probabilities Walk = 0.4, Bus on time = 0.90, Walk late = 0.05, and Walk on time = 0.95. The markscheme does not subdivide the two A marks more finely. It also shows compound probabilities 0.06, 0.54, 0.02, and 0.38, but assigns no additional marks to them.",
+        "topic_codes": [
+          "4.6"
+        ]
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find the probability a student walks and arrives late.",
+        "expected": {
+          "answer": "0.02"
+        },
+        "tolerance": "Accept any exactly equivalent probability; for example, 0.4 times 0.05 = 0.02, 1/50, or 2%.",
+        "notes": "A1 for P(Walk intersection Late) = 0.4 times 0.05 = 0.02.",
+        "topic_codes": [
+          "4.6"
+        ]
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the probability a student arrives late.",
+        "expected": {
+          "answer": "0.08"
+        },
+        "tolerance": "Accept any exactly equivalent probability, including 0.08, 2/25, or 8%. Accept any value consistent with the candidate's own correctly-rounded intermediate branch probabilities — including 0.08 from the full-precision values 0.06 and 0.02 and the corresponding sum from any correctly-rounded values carried from the candidate's tree. Award full marks when the method is correct and the value follows from the candidate's earlier rounding; note precision separately rather than withholding the accuracy mark.",
+        "notes": "M1 for adding the two late-path probabilities, 0.06 + 0.02. A1 for 0.08. Feedback: whenever an intermediate is rounded, advise carrying full precision through intermediate steps and rounding only at the end; tag student_error = premature_rounding.",
+        "follow_through": "Award the marks when the candidate correctly adds the late-path probabilities from their own completed tree in (a), subject to the method being valid.",
+        "topic_codes": [
+          "4.6"
+        ]
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the conditional probability of walking given late.",
+        "expected": {
+          "answer": "0.25"
+        },
+        "tolerance": "Accept any exactly equivalent conditional probability, including 0.02/0.08, 1/4, 0.25, or 25%. Accept any value consistent with the candidate's own correctly-rounded intermediate probabilities for Walk and Late and for Late — including 0.25 from the full-precision values 0.02 and 0.08 and the corresponding quotient from the candidate's correctly-rounded earlier values. Award full marks when the method is correct and the value follows from the candidate's earlier rounding; note precision separately rather than withholding the accuracy mark.",
+        "notes": "M1 for P(Walk | Late) = P(Walk intersection Late) / P(Late), using 0.02/0.08. A1 for 0.25. Feedback: whenever an intermediate is rounded, advise carrying full precision through intermediate steps and rounding only at the end; tag student_error = premature_rounding.",
+        "follow_through": "Award the marks for a correct conditional-probability calculation using the candidate's own values from (b) and (c), provided the denominator is non-zero.",
+        "topic_codes": [
+          "4.7"
+        ]
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 8,
+    "answer_box_top_frac": 0.286,
+    "source": "4-19Q_Probability-review_MS.tex (legacy authored markscheme)",
+    "topic_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the probability that both marbles are black.",
+        "expected": {
+          "answer": "2/15"
+        },
+        "tolerance": "Accept any exactly equivalent probability or a decimal correctly rounded to at least 3 significant figures; for example, 4/10 times 3/9, 12/90, 2/15, or 0.133.",
+        "notes": "M1 for multiplying the without-replacement probabilities 4/10 and 3/9. A1 for 2/15.",
+        "topic_codes": [
+          "4.6"
+        ]
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the probability that both marbles are the same colour.",
+        "expected": {
+          "answer": "7/15"
+        },
+        "tolerance": "Accept any exactly equivalent probability or a decimal correctly rounded to at least 3 significant figures; for example, 7/15 or 0.467. Accept any value consistent with the candidate's own correctly-rounded intermediate probabilities — including 0.466666... (0.467 to 3 significant figures) from full precision and 0.466 from the commonly-rounded intermediates 0.133 for P(BB) and 0.333 for P(WW). Award full marks when the method is correct and the value follows from the candidate's earlier rounding; note precision separately rather than withholding the accuracy mark.",
+        "notes": "M1 for P(WW) = (6/10)(5/9). A1 for P(WW) = 1/3. A1 for adding P(BB) + P(WW) to obtain 7/15. Feedback: whenever an intermediate is rounded, advise carrying full precision through intermediate steps and rounding only at the end; tag student_error = premature_rounding.",
+        "follow_through": "Award the final A1 for correctly adding the candidate's own P(BB) from (a) to a correctly obtained P(WW).",
+        "topic_codes": [
+          "4.6"
+        ]
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the conditional probability both are black given at least one black.",
+        "expected": {
+          "answer": "1/5"
+        },
+        "tolerance": "Accept any exactly equivalent conditional probability; for example, (2/15)/(2/3), 1/5, or 0.2. Accept any value consistent with the candidate's own correctly-rounded intermediate probabilities — including 0.2 from full precision and approximately 0.199 from the commonly-rounded intermediates 0.133 for P(BB) and 0.667 for P(at least one black). Award full marks when the method is correct and the value follows from the candidate's earlier rounding; note precision separately rather than withholding the accuracy mark.",
+        "notes": "M1 for using the complement 1 - P(WW). A1 for P(at least one black) = 2/3. A1 for the conditional quotient (2/15)/(2/3) = 1/5. Feedback: whenever an intermediate is rounded, advise carrying full precision through intermediate steps and rounding only at the end; tag student_error = premature_rounding.",
+        "follow_through": "Award the final A1 for a correct conditional-probability quotient using the candidate's own P(BB) and correctly obtained non-zero P(at least one black).",
+        "topic_codes": [
+          "4.6",
+          "4.7"
+        ]
+      }
+    ]
+  }
+]

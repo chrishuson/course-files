@@ -1,0 +1,104 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 9 September 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize First \& Last name:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{1.1 Classwork: Frequency Tables}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Tally and frequency table from categorical raw data [6 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.1); style after Haese Core Topics SL, Ex 11D ---
+\item[1.]
+
+Twenty-four students were asked how they usually travel to school.
+The replies were recorded in the order they were given:
+
+{\setlength{\tabcolsep}{4pt}
+\begin{center}
+\begin{tabular}{cccccccc}
+bus & subway & walk & car & subway & walk & bike & subway \\
+walk & bus & subway & subway & car & walk & subway & bus \\
+subway & bike & walk & bus & car & subway & walk & bus \\
+\end{tabular}
+\end{center}}
+
+\begin{enumerate}[itemsep=0.05cm]
+  \item Complete the tally and frequency table below.
+  \item How many students were surveyed altogether?
+  \item Write down the mode of the data.
+  \item What fraction of the students walk to school? Give your answer
+  as a fraction or as a percentage.
+  \item Is \emph{how you travel to school} a categorical variable or a
+  quantitative variable? Answer in one sentence.
+\end{enumerate}
+
+{\renewcommand{\arraystretch}{2.0}
+\begin{center}
+\begin{tabular}{|l|p{6cm}|c|}
+\hline
+\textbf{How you travel} & \hfil \textbf{Tally} & \textbf{Frequency} \\ \hline
+walk   & & \\ \hline
+bus    & & \\ \hline
+subway & & \\ \hline
+car    & & \\ \hline
+bike   & & \\ \hline
+\end{tabular}
+\end{center}}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,6.2);
+  \foreach \y in {1,2,...,5} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Frequency table from discrete numerical raw data [6 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.1); style after Haese Core Topics SL, Ex 11D ---
+\item[2.]
+
+Each of the 25 students in a class was asked how many brothers and
+sisters they have. The replies were:
+
+\begin{center}
+\begin{tabular}{ccccc}
+1 & 2 & 0 & 3 & 1 \\
+1 & 2 & 4 & 1 & 2 \\
+1 & 3 & 0 & 2 & 1 \\
+1 & 2 & 3 & 1 & 2 \\
+1 & 4 & 0 & 2 & 3 \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.05cm]
+  \item Complete the frequency table below.
+  \item How many students are in the class?
+  \item Write down the mode of the data.
+  \item How many students have at least 2 brothers and sisters?
+  \item Is \emph{number of brothers and sisters} discrete or continuous?
+  Give a short reason.
+\end{enumerate}
+
+{\renewcommand{\arraystretch}{2.0}
+\begin{center}
+\begin{tabular}{|c|p{6cm}|c|}
+\hline
+\textbf{Number of siblings} & \hfil \textbf{Tally} & \textbf{Frequency} \\ \hline
+0 & & \\ \hline
+1 & & \\ \hline
+2 & & \\ \hline
+3 & & \\ \hline
+4 & & \\ \hline
+\end{tabular}
+\end{center}}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,6.9);
+  \foreach \y in {1,2,...,6} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

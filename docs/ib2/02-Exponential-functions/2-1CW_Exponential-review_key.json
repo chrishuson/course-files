@@ -1,0 +1,204 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["2.9", "2.4"],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.404,
+    "source": "Original (authored September 2026, calculator allowed). Exponential function f(x) = 3*2^x - 5: asymptote, intercepts, evaluation, sketch.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": ["2.4", "2.9"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the equation of the horizontal asymptote of f(x) = 3*2^x - 5.",
+        "expected": {"answer": "y = -5"},
+        "tolerance": "Accept y = -5 only. Do not accept '-5' alone: the answer is the equation of a line, not a value.",
+        "notes": "A1 for any correct statement that the horizontal asymptote is the line y = -5, however it is reached (limit argument, translation of y = 3*2^x, or GDC trace)."
+      },
+      {
+        "label": "b",
+        "topic_codes": ["2.4", "2.9"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find the y-intercept of the graph of f(x) = 3*2^x - 5.",
+        "expected": {"answer": "(0, -2)"},
+        "tolerance": "Accept -2 or (0, -2). See markscheme-spec.md section 4.",
+        "notes": "A1 for the correct y-intercept, in either value or ordered-pair form. Evaluating f(0) is not separately rewarded; the mark is for the value."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["2.9"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find f(4) where f(x) = 3*2^x - 5.",
+        "expected": {"answer": "43"},
+        "tolerance": "Accept 43 only.",
+        "notes": "A1 for 43, however obtained (by hand or by GDC)."
+      },
+      {
+        "label": "d",
+        "topic_codes": ["1.7", "2.9", "2.10"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the x-intercept of the graph of f(x) = 3*2^x - 5, correct to three significant figures.",
+        "expected": {"answer": "x = 0.737", "exact": "log_2(5/3) = ln(5/3)/ln 2 = 0.736965..."},
+        "tolerance": "Accept 0.737 or (0.737, 0), and the exact form log_2(5/3) or ln(5/3)/ln 2. Accept 3 s.f. or better (e.g. 0.7370, 0.73697); do not accept 0.74 or 0.7.",
+        "notes": "M1 for any correct method that isolates the exponential and applies logarithms or a GDC solve: setting 3*2^x - 5 = 0, reaching 2^x = 5/3, or solving/graphing f(x) = 0 on the GDC. A1 for the value to 3 s.f. or better. Writing 2^x = 5/3 with no further progress earns M1 only."
+      },
+      {
+        "label": "e",
+        "topic_codes": ["2.4", "2.9"],
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "On the provided axes, sketch the graph of f(x) = 3*2^x - 5 for -3 <= x <= 2, showing the horizontal asymptote and both intercepts.",
+        "expected": {"answer": "Increasing concave-up exponential curve approaching y = -5 from above as x decreases, through (0, -2) and (0.737, 0)."},
+        "tolerance": "Accept a freehand curve. The asymptote may be shown as a dashed line, as a labelled line y = -5, or by the curve visibly flattening towards y = -5 without crossing it. A curve that touches or crosses y = -5 earns neither mark.",
+        "notes": "A1 for the correct shape: increasing, concave up, approaching y = -5 from above as x decreases, with the asymptote indicated. A1 for the curve passing through both intercepts in the correct positions on the grid. The two marks are independent: a correctly shaped curve through wrong intercepts earns the first only.",
+        "follow_through": "Award both marks for a sketch drawn correctly from the candidate's own asymptote in (a) and intercepts in (b) and (d)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["1.7", "2.10"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.295,
+    "source": "Original (authored September 2026, calculator allowed). Solving exponential equations with logarithms, answers to 3 s.f.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": ["1.7", "2.10"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Solve 5^x = 300, correct to three significant figures.",
+        "expected": {"answer": "x = 3.54", "exact": "ln 300 / ln 5 = log_5 300 = 3.543959..."},
+        "tolerance": "Accept 3.54, the exact forms log_5 300 or ln 300 / ln 5, and any value rounded to 3 s.f. or better (3.5440, 3.54396). Do not accept 3.5.",
+        "notes": "M1 for any correct use of logarithms that brings the exponent down, in any base (x ln 5 = ln 300, x log 5 = log 300, or x = log_5 300), or for a GDC solve of the equation. A1 for the value to 3 s.f. or better."
+      },
+      {
+        "label": "b",
+        "topic_codes": ["1.7", "2.10"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Solve 20 e^(0.15 t) = 90, correct to three significant figures.",
+        "expected": {"answer": "t = 10.0", "exact": "ln(4.5)/0.15 = 10.027182..."},
+        "tolerance": "Accept 10.0 or 10, the exact form ln(4.5)/0.15, and any value rounded to 3 s.f. or better (10.03, 10.027). Do not accept 10.5 or a value derived from 90/20 handled incorrectly.",
+        "notes": "M1 for isolating the exponential (e^(0.15t) = 4.5) and taking natural logarithms, or for a GDC solve of the original equation. A1 for the value to 3 s.f. or better. Taking logarithms before dividing by 20 earns the M1 only if the log of a product is handled correctly."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["1.7", "2.10"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Solve 2^(x+1) = 3^x, correct to three significant figures.",
+        "expected": {"answer": "x = 1.71", "exact": "ln 2 / (ln 3 - ln 2) = ln 2 / ln 1.5 = log_1.5 2 = 1.709511..."},
+        "tolerance": "Accept 1.71, the exact forms ln 2/(ln 3 - ln 2), ln 2/ln 1.5 or log_1.5 2, and any value rounded to 3 s.f. or better (1.7095, 1.70951). Do not accept 1.7.",
+        "notes": "M1 for taking logarithms of both sides and bringing both exponents down, in any base ((x+1) ln 2 = x ln 3 or equivalent), or for a graphical/numerical GDC solve. A1 for the value to 3 s.f. or better. Collecting the x terms is routine algebra and carries no separate mark; an answer of 1.71 with no working earns both marks only if a GDC method is evident."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": ["2.9", "1.7"],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.496,
+    "source": "Original (authored September 2026, calculator allowed). Continuous growth model N(t) = N_0 e^(kt) with N(2) = 4500 and N(6) = 7200.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": ["1.7", "2.9"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find k for N(t) = N_0 e^(kt) given N(2) = 4500 and N(6) = 7200, correct to three significant figures.",
+        "expected": {"answer": "k = 0.118", "exact": "(1/4) ln 1.6 = 0.11750091..."},
+        "tolerance": "Accept 0.118, the exact form (1/4) ln 1.6 or (1/4) ln(8/5), and any value to 3 s.f. or better (0.1175, 0.11750). Do not accept 0.12.",
+        "notes": "M1 for any correct method that eliminates N_0: dividing the two model equations to reach e^(4k) = 1.6 (or 7200/4500), or a simultaneous GDC solve for N_0 and k. A1 for k to 3 s.f. or better. A candidate who wrongly assumes N(0) = 4500 (treating t = 2 as t = 0) earns neither mark."
+      },
+      {
+        "label": "b",
+        "topic_codes": ["2.9"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find N_0 for N(t) = N_0 e^(kt), correct to the nearest whole number.",
+        "expected": {"answer": "3558", "exact": "4500 / sqrt(1.6) = 3557.5624..."},
+        "tolerance": "Accept 3558. Accept any value consistent with the candidate's own correctly-rounded k - including 3558 from full precision and 3557 or 3558 from k = 0.118. Award the mark when the method is correct and the value follows from the candidate's earlier rounding.",
+        "notes": "A1 for a correct value of N_0 obtained by substituting either data point back into the model, or read from a simultaneous GDC solve. Attach the premature-rounding feedback note whenever the candidate substituted a rounded k, whether or not the answer is accepted.",
+        "follow_through": "Award A1 for a value of N_0 computed correctly from the candidate's own k in (a)."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["1.7", "2.9"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find the annual percentage growth rate implied by the model, correct to three significant figures.",
+        "expected": {"answer": "12.5% per year", "exact": "e^k - 1 = 1.6^(1/4) - 1 = 0.1246827..."},
+        "tolerance": "Accept 12.5%, 12.5 with a percent sign in the surrounding text, or 0.125 stated as a proportion/multiplier of 1.125. Accept the exact form 1.6^(1/4) - 1. Do not accept 11.8% (that is k, the continuous rate, not the annual percentage increase).",
+        "notes": "A1 for any correct route to the annual multiplier e^k and hence the percentage increase: e^k - 1, 1.6^(1/4) - 1, or computing N(t+1)/N(t) numerically. Stating k itself as the percentage rate earns no mark.",
+        "follow_through": "Award A1 for the percentage computed correctly from the candidate's own k in (a)."
+      },
+      {
+        "label": "d",
+        "topic_codes": ["2.9"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Predict N at the start of 2030 (t = 10), correct to the nearest whole number.",
+        "expected": {"answer": "11520"},
+        "tolerance": "Accept 11520. Accept any value consistent with the candidate's own correctly-rounded intermediates - including 11520 from full precision and roughly 11500-11530 from rounded k or N_0. Award the mark when the method is correct and the value follows from the candidate's earlier rounding.",
+        "notes": "A1 for a correct evaluation of the model at t = 10, by any route (substituting N_0 and k, or scaling a known value by 1.6 per four years).",
+        "follow_through": "Award A1 for a value computed correctly from the candidate's own N_0 and k."
+      },
+      {
+        "label": "e",
+        "topic_codes": ["1.7", "2.9", "2.10"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find t at which N first reaches 15000, correct to three significant figures.",
+        "expected": {"answer": "t = 12.2", "exact": "ln(15000/3557.5624)/0.11750091 = 12.246498..."},
+        "tolerance": "Accept 12.2. Accept any value consistent with the candidate's own correctly-rounded intermediates - including 12.2 from full precision and 12.2 from k = 0.118 with N_0 = 3558. Award full marks when the method is correct and the value follows from the candidate's earlier rounding; note precision separately rather than withholding the accuracy mark.",
+        "notes": "M1 for setting the model equal to 15000 and applying logarithms to isolate t, or for a GDC solve/intersection of N(t) = 15000. A1 for t to 3 s.f. or better. An answer given as a calendar year (2032) rather than a value of t still earns the A1 provided the value of t is visible in the working.",
+        "follow_through": "Award M1A1 for a value of t computed correctly from the candidate's own N_0 and k."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": ["1.4", "1.7"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.466,
+    "source": "Original (authored September 2026, calculator allowed). Compound interest FV = PV(1 + r/100)^n: $2000 at 4.5% vs $3000 at 2%.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": ["1.4"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find the value of $2000 invested at 4.5% per annum compounded annually after 8 years, to the nearest cent.",
+        "expected": {"answer": "$2844.20", "exact": "2000(1.045)^8 = 2844.2012..."},
+        "tolerance": "Accept 2844.20 with or without a dollar sign. Accept 2844.2. Do not accept 2844 (the question asks for the nearest cent).",
+        "notes": "A1 for the correct value, by the formula or by a GDC finance solver."
+      },
+      {
+        "label": "b",
+        "topic_codes": ["1.4", "1.7"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the smallest whole number of years for $2000 at 4.5% compounded annually to be worth at least twice the amount invested.",
+        "expected": {"answer": "16 years", "exact": "ln 2 / ln 1.045 = 15.74730..."},
+        "tolerance": "Accept 16. Do not accept 15.7 alone as the final answer - the question asks for a whole number of years. Accept a table search in place of logarithms: full credit when both adjacent rows are shown (2000(1.045)^15 = $3870.56, under $4000; 2000(1.045)^16 = $4044.74, over). A single-row table still earns the marks, with feedback that the adjacent row is what justifies the crossover (markscheme-spec.md section 18).",
+        "notes": "M1 for setting up the doubling condition in any correct form: 2000(1.045)^n >= 4000, (1.045)^n >= 2, or a tabulated/graphical search for the crossover. A1 for the integer 16. A candidate who reaches 15.7473 and then rounds down to 15 earns M1 only."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["1.4", "1.7"],
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the smallest whole number of years after which $2000 at 4.5% exceeds $3000 at 2%, both compounded annually.",
+        "expected": {"answer": "17 years", "exact": "ln 1.5 / ln(1.045/1.02) = 16.744891..."},
+        "tolerance": "Accept 17. Accept the boundary value written as 16.7, 16.74 or 16.7449. Accept a table search in place of logarithms: full credit when both adjacent rows are shown (n = 16: $4044.74 < $4118.36; n = 17: $4226.75 > $4200.72). A single-row table still earns the marks, with feedback that the adjacent row is what justifies the crossover (markscheme-spec.md section 18).",
+        "notes": "M1 for setting up the comparison 2000(1.045)^n > 3000(1.02)^n (or an equivalent inequality, ratio, graph, or table of both accounts). A1 for the boundary value 16.74... , or, by the table method, for both adjacent rows showing the crossover. A1 for the integer 17. Rounding 16.7449 down to 16 loses the final A1; the strict inequality requires the next whole year.",
+        "follow_through": "Award the final A1 for the smallest integer strictly greater than the candidate's own boundary value."
+      }
+    ]
+  }
+]

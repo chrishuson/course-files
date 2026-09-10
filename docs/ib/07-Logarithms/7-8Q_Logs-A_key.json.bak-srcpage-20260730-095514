@@ -5,7 +5,7 @@
       "1.7"
     ],
     "total_marks": 5,
-    "answer_box_top_frac": 0.318,
+    "answer_box_top_frac": 0.3,
     "source": "original (parallel to 7-7PreQuiz Q1, version A: ln 5+ln 6, 2 ln 3, -ln(1/4))",
     "parts": [
       {
@@ -50,8 +50,7 @@
         "notes": "A1 for an intermediate step such as ln(1/4)^(-1), -(ln 1 - ln 4), or -ln 4^(-1). A1 for ln 4."
       }
     ],
-    "answer_box_bottom_frac": 0.577,
-    "source_page_index": 0
+    "answer_box_bottom_frac": 0.55
   },
   {
     "problem_number": 2,
@@ -59,7 +58,7 @@
       "1.7"
     ],
     "total_marks": 5,
-    "answer_box_top_frac": 0.689,
+    "answer_box_top_frac": 0.65,
     "source": "original (parallel to 7-7PreQuiz Q2, version A: log_10 2 = p, log_10 5 = q)",
     "parts": [
       {
@@ -92,7 +91,7 @@
         "notes": "A1 for log_10(4)/log_10(5) or 2 log_10(2)/log_10(5) (change of base). A1 for 2p/q."
       }
     ],
-    "source_page_index": 0
+    "answer_box_bottom_frac": 0.94
   },
   {
     "problem_number": 3,
@@ -100,7 +99,7 @@
       "1.7"
     ],
     "total_marks": 5,
-    "answer_box_top_frac": 0.295,
+    "answer_box_top_frac": 0.3,
     "source": "original (parallel to 7-7PreQuiz Q3, version A: log_10 a = 1/2)",
     "parts": [
       {
@@ -133,8 +132,7 @@
         "notes": "Marks are earned by the mathematical step, not by matching this route. A1 for any correct use of log_10 a = 1/2 -- substituting it into a change-of-base expression, or writing a = 10^(1/2) -- even if the base is then mishandled. A1 for correctly relating log_100 to log_10 (log_10 100 = 2, or 100 = 10^2). A1 for 1/4. A candidate who writes the base as 10^3 (or any base other than 10^2) has earned the first A1 only, provided the use of log_10 a = 1/2 is visible."
       }
     ],
-    "answer_box_bottom_frac": 0.573,
-    "source_page_index": 1
+    "answer_box_bottom_frac": 0.546
   },
   {
     "problem_number": 4,
@@ -142,7 +140,7 @@
       "1.7"
     ],
     "total_marks": 5,
-    "answer_box_top_frac": 0.644,
+    "answer_box_top_frac": 0.65,
     "source": "original (parallel to 7-7PreQuiz Q4, version A: solve 2 ln x = ln 25 + 6)",
     "parts": [
       {
@@ -165,6 +163,6 @@
         "notes": "M1 for any correct move that clears the coefficient of ln x -- 2 ln x = ln x^2, or dividing the whole equation by 2. M1 for combining the logarithms into a single logarithmic expression, or for the equivalent step of writing 6 (or 3) as a multiple of ln e. A1 for a correct exponentiation of the combined equation (e.g. x^2/25 = e^6, or x/5 = e^3). A1 for solving to an explicit x in any correct form (e.g. x = sqrt(25 e^6)). A1 for the requested form x = p e^q with p, q positive integers (5 e^3); do NOT require an explicit 'p = 5, q = 3' line. Any route reaching x = 5 e^3 with correct work earns all five marks. A correct log law applied where it does not advance the solution -- e.g. rewriting ln 25 as 2 ln 5 on the right-hand side and stopping -- earns no mark on its own."
       }
     ],
-    "source_page_index": 1
+    "answer_box_bottom_frac": 0.948
   }
 ]

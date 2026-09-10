@@ -1,7 +1,6 @@
 [
   {
     "problem_number": 1,
-    "topic_codes": ["1.4"],
     "total_marks": 6,
     "answer_box_top_frac": 0.34,
     "source": "Original, modelled on 7-10PreQuiz_Log-functions problem 4; version B quarterly compounding.",
@@ -35,7 +34,6 @@
       },
       {
         "label": "c",
-        "topic_codes": ["1.4", "1.7"],
         "marks": 3,
         "mark_codes": [
           "M1",
@@ -53,14 +51,12 @@
   },
   {
     "problem_number": 2,
-    "topic_codes": ["2.9"],
     "total_marks": 6,
     "answer_box_top_frac": 0.4,
     "source": "Original, modelled on 7-10PreQuiz_Log-functions problem 3; version B continuous growth with k unknown.",
     "parts": [
       {
         "label": "a",
-        "topic_codes": ["1.7", "2.9"],
         "marks": 2,
         "mark_codes": [
           "M1",
@@ -89,7 +85,6 @@
       },
       {
         "label": "c",
-        "topic_codes": ["1.7", "2.9"],
         "marks": 2,
         "mark_codes": [
           "M1",

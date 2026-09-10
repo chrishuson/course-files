@@ -1,11 +1,9 @@
 [
   {
     "problem_number": 1,
-    "topic_codes": [
-      "1.7"
-    ],
+    "topic_codes": ["1.7"],
     "total_marks": 5,
-    "answer_box_top_frac": 0.318,
+    "answer_box_top_frac": 0.3,
     "source": "original (parallel to 7-7PreQuiz Q1, version B: ln 4+ln 7, 2 ln 5, -ln(1/6))",
     "parts": [
       {
@@ -49,17 +47,13 @@
         "tolerance": "Accept ln 6.",
         "notes": "A1 for an intermediate step such as ln(1/6)^(-1), -(ln 1 - ln 6), or -ln 6^(-1). A1 for ln 6."
       }
-    ],
-    "answer_box_bottom_frac": 0.577,
-    "source_page_index": 0
+    ]
   },
   {
     "problem_number": 2,
-    "topic_codes": [
-      "1.7"
-    ],
+    "topic_codes": ["1.7"],
     "total_marks": 5,
-    "answer_box_top_frac": 0.689,
+    "answer_box_top_frac": 0.65,
     "source": "original (parallel to 7-7PreQuiz Q2, version B: log_10 3 = p, log_10 5 = q)",
     "parts": [
       {
@@ -91,16 +85,13 @@
         "tolerance": "Accept 2q/p.",
         "notes": "A1 for log_10(25)/log_10(3) or 2 log_10(5)/log_10(3) (change of base). A1 for 2q/p."
       }
-    ],
-    "source_page_index": 0
+    ]
   },
   {
     "problem_number": 3,
-    "topic_codes": [
-      "1.7"
-    ],
+    "topic_codes": ["1.7"],
     "total_marks": 5,
-    "answer_box_top_frac": 0.295,
+    "answer_box_top_frac": 0.3,
     "source": "original (parallel to 7-7PreQuiz Q3, version B: log_10 b = 2/3)",
     "parts": [
       {
@@ -130,19 +121,15 @@
           "answer": "2/9"
         },
         "tolerance": "Accept 2/9 only.",
-        "notes": "Marks are earned by the mathematical step, not by matching this route. A1 for any correct use of log_10 b = 2/3 -- substituting it into a change-of-base expression, or writing b = 10^(2/3) -- even if the base is then mishandled. A1 for correctly relating log_1000 to log_10 (log_10 1000 = 3, or 1000 = 10^3). A1 for 2/9. A candidate who writes the base as some power of 10 other than 10^3 has earned the first A1 only, provided the use of log_10 b = 2/3 is visible."
+        "notes": "A1 for change of base log_1000 b = log_10 b / log_10 1000. A1 for substituting log_10 b = 2/3 and log_10 1000 = 3 to get (2/3)/3. A1 for 2/9."
       }
-    ],
-    "answer_box_bottom_frac": 0.573,
-    "source_page_index": 1
+    ]
   },
   {
     "problem_number": 4,
-    "topic_codes": [
-      "1.7"
-    ],
+    "topic_codes": ["1.7"],
     "total_marks": 5,
-    "answer_box_top_frac": 0.644,
+    "answer_box_top_frac": 0.65,
     "source": "original (parallel to 7-7PreQuiz Q4, version B: solve 2 ln x = ln 16 + 4)",
     "parts": [
       {
@@ -162,9 +149,8 @@
           "q": 2
         },
         "tolerance": "Accept x = 4 e^2 or x = 4e^2. A separate 'p = 4, q = 2' statement is NOT required; writing the answer in the form 4 e^2 suffices for full marks. Other equivalent forms (e.g. sqrt(16 e^4)) earn intermediate marks but the requested form is x = pe^q with p, q positive integers.",
-        "notes": "M1 for any correct move that clears the coefficient of ln x -- 2 ln x = ln x^2, or dividing the whole equation by 2. M1 for combining the logarithms into a single logarithmic expression, or for the equivalent step of writing 4 (or 2) as a multiple of ln e. A1 for a correct exponentiation of the combined equation (e.g. x^2/16 = e^4, or x/4 = e^2). A1 for solving to an explicit x in any correct form (e.g. x = sqrt(16 e^4)). A1 for the requested form x = p e^q with p, q positive integers (4 e^2); do NOT require an explicit 'p = 4, q = 2' line. Any route reaching x = 4 e^2 with correct work earns all five marks. A correct log law applied where it does not advance the solution -- e.g. rewriting ln 16 as 2 ln 4 on the right-hand side and stopping -- earns no mark on its own."
+        "notes": "M1 for using m ln x = ln x^m to write ln x^2 - ln 16 = 4. M1 for using ln a - ln b = ln(a/b) to combine into a single logarithmic expression ln(x^2/16) = 4. A1 for x^2 = 16 e^4 (after exponentiating). A1 for x = sqrt(16 e^4) (with x > 0 noted). A1 for the simplification to 4 e^2 (i.e. answer in the requested form p e^q). Do NOT require an explicit 'p = 4, q = 2' line. Method 2 (express 4 as 4 ln e first) earns the same marks."
       }
-    ],
-    "source_page_index": 1
+    ]
   }
 ]

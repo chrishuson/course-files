@@ -1,0 +1,164 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 HL \\* 9 September 2026}
+
+\begin{document}
+\subsubsection*{12.3 Classwork: Polar Form and de Moivre (no calculator)
+--- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Cartesian arithmetic, modulus, real unknowns [7 marks] ---
+%--- Source: authored 2026-09-07 (HL syllabus 1.12) ---
+
+%--- Problem 3: Modulus-argument and exponential form, Argand plot [8 marks] ---
+%--- Source: authored 2026-09-07 (HL syllabus 1.13) ---
+\item[1.] [Maximum mark: 8]
+
+$z = -1 + i\sqrt{3}$, $w = 2 - 2i$, arguments in $-\pi < \theta \leq \pi$.
+
+\medskip
+
+\textbf{(a)} Write $z$ in modulus--argument and exponential form. \hfill [2]
+
+\textbf{Solution:}
+
+$|z| = \sqrt{(-1)^2 + (\sqrt{3})^2} = 2$; reference angle
+$\dfrac{\pi}{3}$, and $z$ lies in the second quadrant, so
+$\arg z = \dfrac{2\pi}{3}$ \hfill \textbf{A1}
+
+$z = 2\left(\cos\dfrac{2\pi}{3} + i\sin\dfrac{2\pi}{3}\right)
+= 2e^{i\frac{2\pi}{3}}$ \hfill \textbf{A1}
+
+\emph{A1 for a correct modulus \emph{and} argument, by any method; an
+unresolved quadrant ($\pm\frac{\pi}{3}$) earns no mark. A1 for both forms.}
+
+\medskip
+
+\textbf{(b)} Write $w$ in modulus--argument and exponential form. \hfill [2]
+
+\textbf{Solution:}
+
+$|w| = \sqrt{2^2 + (-2)^2} = 2\sqrt{2}$; $w$ lies in the fourth quadrant,
+so $\arg w = -\dfrac{\pi}{4}$ \hfill \textbf{A1}
+
+$w = 2\sqrt{2}\left(\cos\left(-\dfrac{\pi}{4}\right)
++ i\sin\left(-\dfrac{\pi}{4}\right)\right)
+= 2\sqrt{2}\,e^{-i\frac{\pi}{4}}$ \hfill \textbf{A1}
+
+\emph{Accept $\sqrt{8}$ for $2\sqrt{2}$. An argument of $\frac{7\pi}{4}$ is
+outside the stated range and earns no mark.}
+
+\medskip
+
+\textbf{(c)} Find $zw$ and $\dfrac{z}{w}$ in the form $re^{i\theta}$.
+\hfill [2]
+
+\textbf{Solution:}
+
+$|zw| = 2 \cdot 2\sqrt{2} = 4\sqrt{2}$,
+$\arg(zw) = \frac{2\pi}{3} - \frac{\pi}{4} = \frac{5\pi}{12}$, so
+$zw = 4\sqrt{2}\,e^{i\frac{5\pi}{12}}$ \hfill \textbf{A1}
+
+$\left|\frac{z}{w}\right| = \frac{2}{2\sqrt{2}} = \frac{\sqrt{2}}{2}$,
+$\arg\frac{z}{w} = \frac{2\pi}{3} + \frac{\pi}{4} = \frac{11\pi}{12}$, so
+$\dfrac{z}{w} = \dfrac{\sqrt{2}}{2}\,e^{i\frac{11\pi}{12}}$
+\hfill \textbf{A1}
+
+\emph{A1 for each answer; the marks are independent. Accept
+$\frac{1}{\sqrt{2}}$ or any equivalent exact modulus. FT: award each A1 for
+a product or quotient formed correctly by the modulus and argument rules
+from the candidate's own $r$ and $\theta$.}
+
+\medskip
+
+\textbf{(d)} Plot $z$, $w$ and $zw$ on the Argand diagram. \hfill [2]
+
+\textbf{Solution:}
+
+$z$ at $(-1,\ \sqrt{3}) \approx (-1,\ 1.7)$; $w$ at $(2,\ -2)$
+\hfill \textbf{A1}
+
+$zw$ at $(2\sqrt{3} - 2,\ 2 + 2\sqrt{3}) \approx (1.5,\ 5.5)$
+\hfill \textbf{A1}
+
+\emph{A1 for $z$ and $w$ plotted and labelled correctly. A1 for $zw$
+consistent with modulus $\approx 5.7$ and argument $\approx 75^\circ$;
+accept half-a-grid-square accuracy. FT: use the candidate's (c).}
+
+\newpage
+
+%--- Problem 4: de Moivre's theorem, cube roots of 8i [7 marks] ---
+%--- Source: authored 2026-09-07 (HL syllabus 1.14) ---
+\item[2.] [Maximum mark: 7]
+
+\textbf{(a)} Use de Moivre's theorem to find $(1 + i)^8$. \hfill [3]
+
+\textbf{Solution:}
+
+$1 + i = \sqrt{2}\left(\cos\dfrac{\pi}{4} + i\sin\dfrac{\pi}{4}\right)$
+\hfill \textbf{M1}
+
+$(1 + i)^8 = \left(\sqrt{2}\right)^8
+\left(\cos\dfrac{8\pi}{4} + i\sin\dfrac{8\pi}{4}\right)$ \hfill \textbf{A1}
+
+$(1 + i)^8 = 16(\cos 2\pi + i\sin 2\pi) = 16$ \hfill \textbf{A1}
+
+\emph{M1 for polar or exponential form with a correct modulus and
+argument. A1 for applying de Moivre's theorem to both the modulus and the
+argument, however written. A1 for the exact value $16$.}
+
+\emph{Repeated squaring, $(1+i)^2 = 2i$ then $(2i)^4 = 16$, earns all three
+marks; note that de Moivre's theorem was asked for rather than withholding
+marks.}
+
+\medskip
+
+\textbf{(b)} Find the three cube roots of $8i$ in the form $re^{i\theta}$.
+\hfill [3]
+
+\textbf{Solution:}
+
+$8i = 8e^{i\left(\frac{\pi}{2} + 2k\pi\right)}$, $k \in \mathbb{Z}$
+\hfill \textbf{M1}
+
+$r = 8^{\frac13} = 2$ and $\theta = \dfrac{\frac{\pi}{2} + 2k\pi}{3}$, so
+one root is $2e^{i\frac{\pi}{6}}$ \hfill \textbf{A1}
+
+The other roots differ in argument by $\dfrac{2\pi}{3}$:
+$2e^{i\frac{5\pi}{6}}$ and $2e^{-i\frac{\pi}{2}}$ \hfill \textbf{A1}
+
+\emph{M1 for $8i$ in polar or exponential form with the $2k\pi$ (or
+equivalent multiple-root) allowance shown or used. A1 for the modulus $2$
+with any one correct argument. A1 for the remaining two roots, each with
+argument in the required range.}
+
+\emph{$2e^{i\frac{3\pi}{2}}$ must be converted to $2e^{-i\frac{\pi}{2}}$;
+the question fixes $-\pi < \theta \leq \pi$. The Cartesian forms
+$\sqrt{3}+i$, $-\sqrt{3}+i$, $-2i$ may accompany the answer but do not
+replace the required exponential form.}
+
+\medskip
+
+\textbf{(c)} State the geometric relationship between the three roots.
+\hfill [1]
+
+\textbf{Solution:}
+
+The three roots lie on a circle of radius $2$ centred at the origin,
+equally spaced $\dfrac{2\pi}{3}$ apart; they are the vertices of an
+equilateral triangle. \hfill \textbf{R1}
+
+\emph{R1 for any statement carrying both the equal-modulus idea and the
+equal-spacing idea (equilateral triangle on a circle of radius 2, or
+arguments differing by $120^\circ$). ``Equally spaced'' alone, with no
+common modulus or circle, earns no mark.}
+
+\emph{FT: award R1 for a correct description of the candidate's own three
+roots from (b).}
+
+\end{enumerate}
+\end{document}

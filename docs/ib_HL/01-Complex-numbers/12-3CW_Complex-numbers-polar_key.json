@@ -1,0 +1,105 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 8,
+    "answer_box_top_frac": 0.38,
+    "topic_codes": ["1.13", "1.12"],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write z = -1 + i*sqrt(3) in the form r(cos theta + i sin theta) and in the form r e^(i theta), with -pi < theta <= pi.",
+        "expected": {
+          "r": 2,
+          "theta": "2pi/3",
+          "answer": "2(cos(2pi/3) + i sin(2pi/3)) = 2 e^(i 2pi/3)"
+        },
+        "tolerance": "Accept 2 cis(2pi/3) as the modulus-argument form. The argument must lie in -pi < theta <= pi; 2pi/3 only. Exact values only.",
+        "notes": "A1 for a correct modulus AND a correct argument, by any method (reference angle plus quadrant, or arctan with quadrant resolved). An argument whose quadrant is unresolved, such as +/- pi/3, earns no mark. A1 for both requested forms written correctly with the candidate's r and theta."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write w = 2 - 2i in the form r(cos theta + i sin theta) and in the form r e^(i theta), with -pi < theta <= pi.",
+        "expected": {
+          "r": "2 sqrt(2)",
+          "theta": "-pi/4",
+          "answer": "2sqrt(2)(cos(-pi/4) + i sin(-pi/4)) = 2sqrt(2) e^(-i pi/4)"
+        },
+        "tolerance": "Accept sqrt(8) for 2 sqrt(2). An argument of 7pi/4 is outside the stated range and earns no mark.",
+        "notes": "A1 for a correct modulus AND a correct argument in the required range. A1 for both requested forms written correctly with the candidate's r and theta."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Hence find zw and z/w in the form r e^(i theta), with -pi < theta <= pi.",
+        "expected": {
+          "zw": "4 sqrt(2) e^(i 5pi/12)",
+          "z_over_w": "(sqrt(2)/2) e^(i 11pi/12)"
+        },
+        "tolerance": "Accept 1/sqrt(2) or 2/(2 sqrt 2) for sqrt(2)/2, and any equivalent exact modulus. Accept cis form alongside the exponential form. Arguments must be in -pi < theta <= pi.",
+        "notes": "A1 for zw and A1 for z/w; the marks are independent. Each mark is for correct use of the modulus and argument rules (moduli multiplied or divided, arguments added or subtracted), however the working is laid out.",
+        "follow_through": "Award each A1 for a product or quotient formed correctly by the modulus and argument rules from the candidate's own r and theta in (a) and (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Plot and label the points representing z, w and zw on the supplied Argand grid.",
+        "expected": {
+          "z": "(-1, 1.73)",
+          "w": "(2, -2)",
+          "zw": "(2sqrt(3) - 2, 2 + 2sqrt(3)) approx (1.5, 5.5)"
+        },
+        "tolerance": "Accept plotting accurate to about half a grid square. Labels may be z, w, zw or the equivalent coordinates.",
+        "notes": "A1 for z and w both plotted and labelled correctly. A1 for zw plotted in a position consistent with a modulus of about 5.7 and an argument of about 75 degrees.",
+        "follow_through": "Award the second A1 for zw plotted consistently with the candidate's own answer to (c)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 7,
+    "answer_box_top_frac": 0.261,
+    "topic_codes": ["1.14", "1.13"],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Use de Moivre's theorem to find the exact value of (1 + i)^8.",
+        "expected": {
+          "answer": "16"
+        },
+        "tolerance": "Accept 16 written as 16 + 0i. Exact value only.",
+        "notes": "M1 for writing 1 + i in polar or Euler form with a correct modulus and argument (sqrt(2), pi/4). A1 for applying de Moivre's theorem with both the modulus and the argument raised correctly, however the power is written. A1 for the value 16. Repeated squaring ((1 + i)^2 = 2i, then (2i)^4 = 16) is a correct alternative and earns all three marks; note in feedback that de Moivre's theorem was the requested method rather than withholding a mark."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the three cube roots of 8i in the form r e^(i theta), r > 0 and -pi < theta <= pi.",
+        "expected": {
+          "answer": "2 e^(i pi/6), 2 e^(i 5pi/6), 2 e^(-i pi/2)"
+        },
+        "tolerance": "The exponential form is required. 2 e^(i 3pi/2) must be converted to 2 e^(-i pi/2) to satisfy the stated range. Cartesian equivalents (sqrt(3) + i, -sqrt(3) + i, -2i) may accompany the answer but do not replace the required form. Accept 2 cis theta only if the exponential form also appears.",
+        "notes": "M1 for writing 8i in polar or Euler form with the 2k*pi (or equivalent multiple-root) allowance shown or used. A1 for the modulus 2 together with any one correct argument. A1 for the remaining two roots, each with an argument in the required range. A candidate who gives only one root earns at most M1A1."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["R1"],
+        "description": "State the geometric relationship between the three cube roots of 8i on an Argand diagram.",
+        "expected": {
+          "answer": "They lie on a circle of radius 2 centred at the origin, equally spaced 2pi/3 apart (vertices of an equilateral triangle)."
+        },
+        "tolerance": "Accept 120 degrees for 2pi/3, and 'equilateral triangle' in place of the spacing statement.",
+        "notes": "R1 for a statement carrying both the equal-modulus idea (same distance from the origin / on a circle of radius 2) and the equal-spacing idea (equilateral triangle, or arguments differing by 2pi/3). 'They are equally spaced' with no mention of a common modulus or circle earns no mark.",
+        "follow_through": "Award R1 for a correct description of the candidate's own three roots from (b)."
+      }
+    ]
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["1.2"],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.388,
+    "source": "Original (freshly authored, calculator allowed). Recognise an arithmetic sequence 7, 11, 15, 19, ...; find d, u_n and u_50.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the first term u_1 of the sequence 7, 11, 15, 19, ...",
+        "expected": {
+          "answer": "u_1 = 7"
+        },
+        "tolerance": "Accept 7 alone; the label u_1 = is not required.",
+        "notes": "A1 for the value 7, however written."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "R1"],
+        "description": "State whether the sequence is arithmetic and give a reason.",
+        "expected": {
+          "answer": "Yes, arithmetic; the difference between consecutive terms is constant (equal to 4)."
+        },
+        "tolerance": "Accept 'yes', 'arithmetic', or equivalent for the statement. Accept any wording of the reason, including informal wording such as 'it goes up by 4 each time'.",
+        "notes": "A1 is earned by any correct statement that the sequence is arithmetic. R1 is earned by any justification that identifies the difference between consecutive terms as constant - stated in words, or demonstrated by computing at least two equal differences. A bare assertion of 'arithmetic' with no reason earns the A1 only; a correct reason with no explicit statement still earns the R1."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the common difference d.",
+        "expected": {
+          "answer": "d = 4"
+        },
+        "tolerance": "Accept 4 alone.",
+        "notes": "A1 for d = 4."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the next two terms of the sequence.",
+        "expected": {
+          "answer": "23 and 27"
+        },
+        "tolerance": "Accept the two values in any presentation (a list, a continuation of the given sequence, or labelled u_5 and u_6). Both values are required.",
+        "notes": "A1 for both values correct. One correct value alone earns nothing.",
+        "follow_through": "Award A1 for the two terms obtained by repeatedly adding the candidate's own d from (c) to 19."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find an expression for u_n, the nth term.",
+        "expected": {
+          "answer": "u_n = 4n + 3"
+        },
+        "tolerance": "Accept any algebraically equivalent form, including the unsimplified 7 + 4(n - 1) and 7 + (n - 1)(4). Simplification is not required.",
+        "notes": "M1 for any correct use of the arithmetic nth-term relationship with this sequence's first term and common difference, however it is written or arranged. A1 for a correct expression in n. A recursive statement alone (u_{n+1} = u_n + 4) does not answer the question and earns the M1 only.",
+        "follow_through": "Award M1A1 for an expression correctly formed from the candidate's own u_1 and d from (a) and (c)."
+      },
+      {
+        "label": "f",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find u_50.",
+        "expected": {
+          "answer": "203"
+        },
+        "tolerance": "Accept 203 obtained by any method, including a GDC sequence table or repeated addition.",
+        "notes": "A1 for 203.",
+        "follow_through": "Award A1 for the value obtained by substituting n = 50 into the candidate's own expression from (e)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["1.2"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.266,
+    "source": "Original (freshly authored, calculator allowed). Arithmetic sequence with u_1 = 40, d = -3; find u_20 and solve u_n = -50.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the first four terms of the arithmetic sequence with u_1 = 40 and d = -3.",
+        "expected": {
+          "answer": "40, 37, 34, 31"
+        },
+        "tolerance": "All four terms required, in order.",
+        "notes": "A1 for all four terms correct. Three or fewer correct terms earn nothing."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find u_20.",
+        "expected": {
+          "answer": "-17"
+        },
+        "tolerance": "Accept -17 only.",
+        "notes": "M1 for any correct use of the arithmetic nth-term relationship with n = 20, however the arithmetic is arranged; a GDC sequence table displaying the 20th term also earns the M1. A1 for -17. A common error is using n = 20 in place of (n - 1), giving 40 + 20(-3) = -20; this earns the M1 but not the A1."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "One term of the sequence equals -50. Find n, showing algebraic working.",
+        "expected": {
+          "answer": "n = 31"
+        },
+        "tolerance": "Accept n = 31. Any correct algebraic route is acceptable, e.g. 40 + (n - 1)(-3) = -50 or the expanded form 43 - 3n = -50.",
+        "notes": "M1 for setting a correct expression for the nth term equal to -50. A1 for any correct intermediate line that isolates n (for example n - 1 = 30, -3n = -93, or 3n = 93); the exact form is not prescribed. A1 for n = 31. The question asks for algebraic working, so a candidate who reports n = 31 from a GDC table with no algebra earns the final A1 only.",
+        "follow_through": "Award the marks for a correct solution of the candidate's own nth-term expression set equal to -50."
+      }
+    ]
+  }
+]

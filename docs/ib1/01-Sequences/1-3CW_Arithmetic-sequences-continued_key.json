@@ -1,0 +1,92 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["1.2"],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.277,
+    "source": "Original (freshly authored, calculator allowed). Two given terms u_4 = 17, u_9 = 37; find u_1 and d, then test whether 200 is a term.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Given u_4 = 17 and u_9 = 37, find d and u_1.",
+        "expected": {
+          "d": 4,
+          "u_1": 5,
+          "answer": "d = 4, u_1 = 5"
+        },
+        "tolerance": "Accept d = 4 and u_1 = 5 reached by any valid route.",
+        "notes": "M1 for any valid method that relates the two given terms to u_1 and d: writing both equations u_1 + 3d = 17 and u_1 + 8d = 37, using d = (u_9 - u_4)/(9 - 4), or solving the system on the GDC. A1 for d = 4 and A1 for u_1 = 5, awarded independently of each other. A candidate who divides by 9 - 4 = 5 correctly but then makes an arithmetic slip still holds the M1."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Hence write down an expression for u_n.",
+        "expected": {
+          "answer": "u_n = 4n + 1"
+        },
+        "tolerance": "Accept any algebraically equivalent form, including the unsimplified 5 + 4(n - 1).",
+        "notes": "A1 for a correct expression in n.",
+        "follow_through": "Award A1 for an expression correctly formed from the candidate's own u_1 and d from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "R1"],
+        "description": "Determine whether 200 is a term of the sequence, with justification.",
+        "expected": {
+          "answer": "No. Solving 4n + 1 = 200 gives n = 49.75, which is not a positive integer, so 200 is not a term."
+        },
+        "tolerance": "Accept either of two arguments. (i) Solve u_n = 200 and reject the non-integer n = 49.75 (accept 199/4 or 49.8). (ii) Observe that every term 4n + 1 is odd while 200 is even, so 200 cannot be a term.",
+        "notes": "The three marks reward: a method that tests membership, a correct result from that method, and a conclusion tied to the result. For route (i): M1 for setting a correct nth-term expression equal to 200, A1 for n = 49.75 (or 199/4), R1 for concluding that 200 is not a term because n is not a positive integer. For route (ii): M1 for examining the parity or structure of the terms, A1 for establishing that every term is odd, R1 for the conclusion that 200, being even, is not a term. R1 requires the conclusion to be linked to the reason; a bare 'no' earns no R1, and a correct reason with no stated conclusion earns no R1 either.",
+        "follow_through": "Award R1 for a conclusion correctly drawn from the candidate's own value of n - including concluding that 200 IS a term if their (b) expression made n a positive integer."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["1.2"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.267,
+    "source": "Original (freshly authored, calculator allowed). Modelling context: theatre seating, u_1 = 18, d = 3; first row exceeding 65 seats.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Theatre seating: row 1 has 18 seats, each later row has 3 more than the one in front. Find an expression for u_n, the number of seats in row n.",
+        "expected": {
+          "answer": "u_n = 3n + 15"
+        },
+        "tolerance": "Accept any algebraically equivalent form, including the unsimplified 18 + 3(n - 1). Simplification is not required.",
+        "notes": "M1 for extracting u_1 = 18 and d = 3 from the context and using the arithmetic nth-term relationship, however written. A1 for a correct expression in n. A candidate who writes u_n = 18 + 3n (treating row 1 as having 21 seats) has misread the first term and earns the M1 only."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find the number of seats in row 12.",
+        "expected": {
+          "answer": "51 seats"
+        },
+        "tolerance": "Accept 51 with or without the word 'seats'.",
+        "notes": "A1 for 51.",
+        "follow_through": "Award A1 for the value obtained by substituting n = 12 into the candidate's own expression from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the number of the first row that has more than 65 seats.",
+        "expected": {
+          "answer": "row 17"
+        },
+        "tolerance": "Accept 'row 17' or '17'. Do not accept 16.67 (or 16.666...) as the final answer - the answer must be a whole row number. An equation in place of the inequality (3n + 15 = 65 giving n = 16.67) is acceptable provided the candidate then selects the next whole row. A table search is also acceptable: full marks for showing both adjacent rows, u_16 = 63 (not more than 65) and u_17 = 66 (more than 65), and stating row 17.",
+        "notes": "M1 for comparing a correct expression for the number of seats with 65, by inequality, equation, or evaluation. A1 for the correct boundary result (n > 16.666..., or equivalently the pair of adjacent values that bracket 65). A1 for the answer row 17. Award full marks to a single-row table (u_17 = 66, so row 17) but attach the feedback note that the adjacent row u_16 is what justifies the word 'first' - see markscheme-spec.md section 18.",
+        "follow_through": "Award the final A1 for the smallest whole row number correctly read off from the candidate's own boundary value."
+      }
+    ]
+  }
+]

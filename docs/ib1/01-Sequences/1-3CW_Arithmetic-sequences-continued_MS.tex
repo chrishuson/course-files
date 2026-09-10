@@ -1,0 +1,119 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 9 September 2026}
+
+\begin{document}
+\subsubsection*{1.3 Classwork: Arithmetic Sequences (continued) --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Recognising an arithmetic sequence, u_n and u_50 [8 marks] ---
+
+%--- Problem 3: Two given terms -> u_1 and d; is 200 a term? [7 marks] ---
+\item[1.] [Maximum mark: 7]
+
+$u_{4} = 17$ and $u_{9} = 37$.
+
+\medskip
+
+\textbf{(a)} $u_{1} + 3d = 17$ \quad and \quad $u_{1} + 8d = 37$
+\hfill \textbf{M1}
+
+Subtracting: $5d = 20$, so $d = 4$ \hfill \textbf{A1}
+
+$u_{1} = 17 - 3(4) = 5$ \hfill \textbf{A1}
+
+\emph{M1 is for any valid route to the two unknowns: writing both
+equations, using $d = \dfrac{u_{9} - u_{4}}{9 - 4}$, or solving the
+system on the GDC. Any of these earns the method mark.}
+
+\emph{A1 for $d = 4$ and A1 for $u_{1} = 5$, awarded independently.}
+
+\medskip
+
+\textbf{(b)} $u_{n} = 5 + (n - 1)(4) = 4n + 1$ \hfill \textbf{A1}
+
+\emph{Accept the unsimplified form $5 + 4(n-1)$.}
+
+\emph{FT: award A1 for a correct expression formed from the
+candidate's own $u_{1}$ and $d$ from (a).}
+
+\medskip
+
+\textbf{(c)} Set $u_{n} = 200$: \quad $4n + 1 = 200$
+\hfill \textbf{M1}
+
+$4n = 199$, so $n = 49.75$ \hfill \textbf{A1}
+
+$n$ is not a positive integer, so $200$ is \textbf{not} a term of the
+sequence. \hfill \textbf{R1}
+
+\emph{Accept the alternative argument: every term $4n + 1$ is odd
+(the terms are $5, 9, 13, \ldots$), and $200$ is even, so $200$
+cannot be a term. Award M1 for identifying the parity/structure of
+the terms, A1 for stating that all terms are odd, R1 for the
+conclusion.}
+
+\emph{R1 requires the conclusion to be linked to the reason. ``No,
+because $n$ must be a whole number'' is sufficient; a bare ``no'' with
+no reason earns no R1.}
+
+\emph{FT: award R1 for a conclusion correctly drawn from the
+candidate's own value of $n$ (e.g.\ concluding that $200$ \emph{is} a
+term if their $n$ came out a positive integer).}
+
+\newpage
+
+%--- Problem 4: Theatre seating model; first row exceeding 65 seats [6 marks] ---
+\item[2.] [Maximum mark: 6]
+
+Row 1 has $18$ seats; each row has $3$ more than the one in front,
+so $u_{1} = 18$ and $d = 3$.
+
+\medskip
+
+\textbf{(a)} $u_{n} = 18 + (n - 1)(3)$ \hfill \textbf{M1}
+
+$u_{n} = 3n + 15$ \hfill \textbf{A1}
+
+\emph{Accept the unsimplified form $18 + 3(n-1)$ for full marks.}
+
+\emph{M1 is for identifying $u_{1} = 18$ and $d = 3$ and using the
+arithmetic $n^{\text{th}}$-term formula, however written.}
+
+\medskip
+
+\textbf{(b)} $u_{12} = 3(12) + 15 = 51$ seats \hfill \textbf{A1}
+
+\emph{FT: award A1 for the value obtained by substituting $n = 12$
+into the candidate's own expression from (a).}
+
+\medskip
+
+\textbf{(c)} $3n + 15 > 65$ \hfill \textbf{M1}
+
+$3n > 50$, so $n > 16.666\ldots$ \hfill \textbf{A1}
+
+The first such row is row $17$. \hfill \textbf{A1}
+
+\emph{Accept an equation in place of the inequality
+($3n + 15 = 65$, $n = 16.67$) provided the candidate then selects the
+next whole row.}
+
+\emph{Accept a table search: full marks for showing both adjacent
+rows, $u_{16} = 63$ ($\le 65$) and $u_{17} = 66$ ($> 65$), and stating
+row $17$. A single row ($u_{17} = 66$, so row 17) still earns full
+marks, with the feedback note that the adjacent row $u_{16}$ is what
+justifies ``first''. See markscheme-spec §18.}
+
+\emph{$16.666\ldots$ is not an acceptable final answer --- the answer
+must be a row number.}
+
+\emph{FT: award the final A1 for the smallest integer $n$ correctly
+read off from the candidate's own boundary value.}
+
+\end{enumerate}
+\end{document}
