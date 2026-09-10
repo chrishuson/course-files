@@ -16,9 +16,9 @@ project repo (below).
 | --- | --- |
 | `docs/ib/` | **Active** — IB Math AA SL, current year. Unit subfolders `01-Sequences` … `11-Review`, shared `preamble.tex`, `graphics/` |
 | `docs/ib_HL/` | **Active** — HL track (one advanced student) |
-| `docs/physics/` | **Active** — 9th-grade physics, own `preamble.tex` |
+| `docs/physics/` | **Active** — 9th-grade physics, current year (2026–27), own `preamble.tex`. Prior year archived at `Physics2026/` |
 | `docs/Italian-maturita/` | Active occasionally — Italian exam translations, self-contained `.tex` |
-| Year folders at root (`IB2023/`, `Geom2023/`, `Precalc2024/`, …) | **Frozen archive** — do not edit; old documents must keep compiling with their local preambles |
+| Year folders at root (`IB2023/`, `Geom2023/`, `Precalc2024/`, `Physics2026/`, …) | **Frozen archive** — do not edit; old documents must keep compiling with their local preambles |
 
 ## Compile rules
 
