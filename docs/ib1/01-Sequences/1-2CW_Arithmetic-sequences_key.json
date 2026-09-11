@@ -1,7 +1,9 @@
 [
   {
     "problem_number": 1,
-    "topic_codes": ["1.2"],
+    "topic_codes": [
+      "1.2"
+    ],
     "total_marks": 8,
     "answer_box_top_frac": 0.388,
     "source": "Original (freshly authored, calculator allowed). Recognise an arithmetic sequence 7, 11, 15, 19, ...; find d, u_n and u_50.",
@@ -9,7 +11,9 @@
       {
         "label": "a",
         "marks": 1,
-        "mark_codes": ["A1"],
+        "mark_codes": [
+          "A1"
+        ],
         "description": "Write down the first term u_1 of the sequence 7, 11, 15, 19, ...",
         "expected": {
           "answer": "u_1 = 7"
@@ -20,18 +24,23 @@
       {
         "label": "b",
         "marks": 2,
-        "mark_codes": ["A1", "R1"],
+        "mark_codes": [
+          "A1",
+          "R1"
+        ],
         "description": "State whether the sequence is arithmetic and give a reason.",
         "expected": {
           "answer": "Yes, arithmetic; the difference between consecutive terms is constant (equal to 4)."
         },
         "tolerance": "Accept 'yes', 'arithmetic', or equivalent for the statement. Accept any wording of the reason, including informal wording such as 'it goes up by 4 each time'.",
-        "notes": "A1 is earned by any correct statement that the sequence is arithmetic. R1 is earned by any justification that identifies the difference between consecutive terms as constant - stated in words, or demonstrated by computing at least two equal differences. A bare assertion of 'arithmetic' with no reason earns the A1 only; a correct reason with no explicit statement still earns the R1."
+        "notes": "A1 is earned by any correct statement that the sequence is arithmetic. R1 is earned by any justification that identifies the difference between consecutive terms as constant - stated in words, or demonstrated by computing at least two equal differences. A bare assertion of 'arithmetic' with no reason earns the A1 only; a correct reason with no explicit statement still earns the R1. Award the R1 if the reasoning is shown in a later part: a candidate who states only that the sequence is arithmetic here, and then computes the equal differences under (c), has given the reason and earns the R1."
       },
       {
         "label": "c",
         "marks": 1,
-        "mark_codes": ["A1"],
+        "mark_codes": [
+          "A1"
+        ],
         "description": "Write down the common difference d.",
         "expected": {
           "answer": "d = 4"
@@ -42,7 +51,9 @@
       {
         "label": "d",
         "marks": 1,
-        "mark_codes": ["A1"],
+        "mark_codes": [
+          "A1"
+        ],
         "description": "Write down the next two terms of the sequence.",
         "expected": {
           "answer": "23 and 27"
@@ -54,7 +65,10 @@
       {
         "label": "e",
         "marks": 2,
-        "mark_codes": ["M1", "A1"],
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
         "description": "Find an expression for u_n, the nth term.",
         "expected": {
           "answer": "u_n = 4n + 3"
@@ -66,7 +80,9 @@
       {
         "label": "f",
         "marks": 1,
-        "mark_codes": ["A1"],
+        "mark_codes": [
+          "A1"
+        ],
         "description": "Find u_50.",
         "expected": {
           "answer": "203"
@@ -79,7 +95,9 @@
   },
   {
     "problem_number": 2,
-    "topic_codes": ["1.2"],
+    "topic_codes": [
+      "1.2"
+    ],
     "total_marks": 6,
     "answer_box_top_frac": 0.266,
     "source": "Original (freshly authored, calculator allowed). Arithmetic sequence with u_1 = 40, d = -3; find u_20 and solve u_n = -50.",
@@ -87,7 +105,9 @@
       {
         "label": "a",
         "marks": 1,
-        "mark_codes": ["A1"],
+        "mark_codes": [
+          "A1"
+        ],
         "description": "Write down the first four terms of the arithmetic sequence with u_1 = 40 and d = -3.",
         "expected": {
           "answer": "40, 37, 34, 31"
@@ -98,7 +118,10 @@
       {
         "label": "b",
         "marks": 2,
-        "mark_codes": ["M1", "A1"],
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
         "description": "Find u_20.",
         "expected": {
           "answer": "-17"
@@ -109,7 +132,11 @@
       {
         "label": "c",
         "marks": 3,
-        "mark_codes": ["M1", "A1", "A1"],
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
         "description": "One term of the sequence equals -50. Find n, showing algebraic working.",
         "expected": {
           "answer": "n = 31"
