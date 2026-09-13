@@ -1,0 +1,326 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 16 September 2026}
+
+\begin{document}
+\subsubsection*{1.4 Quiz: Arithmetic Series --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Two given terms -> u_1 and d; is 200 a term? [7 marks] ---
+\item[1.] [Maximum mark: 7]
+
+$u_{4} = 17$ and $u_{9} = 37$.
+
+\medskip
+
+\textbf{(a)} $u_{1} + 3d = 17$ \quad and \quad $u_{1} + 8d = 37$
+\hfill \textbf{M1}
+
+Subtracting: $5d = 20$, so $d = 4$ \hfill \textbf{A1}
+
+$u_{1} = 17 - 3(4) = 5$ \hfill \textbf{A1}
+
+\emph{M1 is for any valid route to the two unknowns: writing both
+equations, using $d = \dfrac{u_{9} - u_{4}}{9 - 4}$, or solving the
+system on the GDC. Any of these earns the method mark.}
+
+\emph{A1 for $d = 4$ and A1 for $u_{1} = 5$, awarded independently.}
+
+\medskip
+
+\textbf{(b)} $u_{n} = 5 + (n - 1)(4) = 5 + 4(n - 1)$ \hfill \textbf{A1}
+
+\emph{Accept the simplified form $u_{n} = 4n + 1$, or any other equivalent
+expression. The substituted form is preferred because it shows where the
+expression comes from.}
+
+\emph{FT: award A1 for a correct expression formed from the
+candidate's own $u_{1}$ and $d$ from (a).}
+
+\medskip
+
+\textbf{(c)} Set $u_{n} = 200$: \quad $5 + 4(n - 1) = 200$
+\hfill \textbf{M1}
+
+$4(n - 1) = 195$
+
+$n - 1 = 48.75$, so $n = 49.75$ \hfill \textbf{A1}
+
+$n$ is not a positive integer, so $200$ is \textbf{not} a term of the
+sequence. \hfill \textbf{R1}
+
+\emph{Accept the equivalent set-up $4n + 1 = 200$, giving $n = 49.75$.}
+
+\emph{Accept the alternative argument: every term $4n + 1$ is odd
+(the terms are $5, 9, 13, \ldots$), and $200$ is even, so $200$
+cannot be a term. Award M1 for identifying the parity/structure of the
+terms, A1 for stating that all terms are odd, R1 for the
+conclusion.}
+
+\emph{R1 requires the conclusion to be linked to the reason. ``No,
+because $n$ must be a whole number'' is sufficient; a bare ``no'' with
+no reason earns no R1.}
+
+\emph{FT: award R1 for a conclusion correctly drawn from the
+candidate's own value of $n$ (e.g.\ concluding that $200$ \emph{is} a
+term if their $n$ came out a positive integer).}
+
+\newpage
+
+%--- Problem 2: Theatre seating model; first row exceeding 65 seats [6 marks] ---
+\item[2.] [Maximum mark: 6]
+
+Row 1 has $18$ seats; each row has $3$ more than the one in front,
+so $u_{1} = 18$ and $d = 3$.
+
+\medskip
+
+\textbf{(a)} $u_{n} = 18 + (n - 1)(3)$ \hfill \textbf{M1}
+
+$u_{n} = 18 + 3(n - 1)$ \hfill \textbf{A1}
+
+\emph{Accept the simplified form $u_{n} = 3n + 15$, or any other equivalent
+expression, for full marks. The substituted form is preferred because it
+shows where the expression comes from.}
+
+\emph{M1 is for identifying $u_{1} = 18$ and $d = 3$ and using the
+arithmetic $n^{\text{th}}$-term formula, however written. A candidate who
+writes $u_{n} = 18 + 3n$ (treating row 1 as having $21$ seats) earns the
+M1 only.}
+
+\medskip
+
+\textbf{(b)} $u_{12} = 18 + 3(12 - 1) = 51$ seats \hfill \textbf{A1}
+
+\emph{FT: award A1 for the value obtained by substituting $n = 12$
+into the candidate's own expression from (a).}
+
+\medskip
+
+\textbf{(c)} $18 + 3(n - 1) > 65$ \hfill \textbf{M1}
+
+$3(n - 1) > 47$
+
+$n > 16.666\ldots$ \hfill \textbf{A1}
+
+The first such row is row $17$. \hfill \textbf{A1}
+
+\emph{Accept an equation in place of the inequality
+($18 + 3(n - 1) = 65$, $n = 16.67$) provided the candidate then selects
+the next whole row.}
+
+\emph{Accept a table search: full marks for showing both adjacent
+rows, $u_{16} = 63$ ($\le 65$) and $u_{17} = 66$ ($> 65$), and stating
+row $17$. A single row ($u_{17} = 66$, so row 17) still earns full
+marks, with the feedback note that the adjacent row $u_{16}$ is what
+justifies ``first''. See markscheme-spec §18.}
+
+\emph{$16.666\ldots$ is not an acceptable final answer --- the answer
+must be a row number.}
+
+\emph{FT: award the final A1 for the smallest integer $n$ correctly
+read off from the candidate's own boundary value.}
+
+\newpage
+
+%--- Problem 3: Finite series 5 + 8 + ... + 62; number of terms and sum [5 marks] ---
+\item[3.] [Maximum mark: 5]
+
+The series $5 + 8 + 11 + \cdots + 62$.
+
+\medskip
+
+\textbf{(a)} $d = 8 - 5 = 3$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} $5 + (n - 1)(3) = 62$ \hfill \textbf{M1}
+
+$3(n - 1) = 57$
+
+$n - 1 = 19$
+
+$n = 20$ terms \hfill \textbf{A1}
+
+\emph{Accept $n = 20$ found from a GDC sequence table or by listing the
+terms, for full marks.}
+
+\emph{$n = 19$ counts the steps of $3$ from $5$ to $62$, not the terms;
+it earns the M1 only.}
+
+\emph{FT: award M1A1 for $n$ correctly obtained with the candidate's own
+$d$ from (a).}
+
+\medskip
+
+\textbf{(c)} $S_{20} = \dfrac{20}{2}(5 + 62)$ \hfill \textbf{M1}
+
+$S_{20} = 10(67) = 670$ \hfill \textbf{A1}
+
+\emph{Accept $S_{20} = \dfrac{20}{2}\bigl(2(5) + 19(3)\bigr) = 670$, or a
+GDC sum.}
+
+\emph{FT: award M1A1 for the sum correctly obtained with the candidate's
+own $n$ from (b).}
+
+\newpage
+
+%--- Problem 4: Weekly savings; week-12 amount, total, first week over $200 [7 marks] ---
+\item[4.] [Maximum mark: 7]
+
+$u_{1} = 5$ and $d = 2$, in dollars.
+
+\medskip
+
+\textbf{(a)} $u_{12} = 5 + (12 - 1)(2)$ \hfill \textbf{M1}
+
+$u_{12} = \$27$ \hfill \textbf{A1}
+
+\emph{Accept $27$ without the dollar sign.}
+
+\emph{Using $12$ in place of $(n - 1)$, giving $5 + 12(2) = 29$, earns the
+M1 only.}
+
+\medskip
+
+\textbf{(b)} $S_{12} = \dfrac{12}{2}(5 + 27)$ \hfill \textbf{M1}
+
+$S_{12} = 6(32) = \$192$ \hfill \textbf{A1}
+
+\emph{Accept $S_{12} = \dfrac{12}{2}\bigl(2(5) + 11(2)\bigr) = 192$, or a
+GDC sum.}
+
+\emph{FT: when $S_{n} = \dfrac{n}{2}(u_{1} + u_{n})$ is used, award M1A1
+for the total correctly obtained from the candidate's own $u_{12}$ in (a).}
+
+\medskip
+
+\textbf{(c)} From (b), $S_{12} = 192 < 200$.
+
+$S_{13} = \dfrac{13}{2}\bigl(2(5) + (13 - 1)(2)\bigr)$ \hfill \textbf{M1}
+
+$S_{13} = \dfrac{13}{2}(34) = 221 > 200$ \hfill \textbf{A1}
+
+The first such week is week $13$. \hfill \textbf{A1}
+
+\emph{Accept $S_{13} = 192 + 29 = 221$.}
+
+\emph{Accept an equation or inequality in $n$, e.g.\ $n(n + 4) = 200$ giving
+$n = 12.28\ldots$, provided the candidate then selects the next whole week.
+The A1 is then for $n = 12.28\ldots$ in place of $S_{13} = 221$.}
+
+\emph{Accept a GDC table of $S_{n}$: full marks for showing both
+$S_{12} = 192$ and $S_{13} = 221$ and stating week $13$. A single row
+($S_{13} = 221$, so week $13$) still earns full marks, with the feedback
+note that the adjacent value $S_{12} = 192$ is what justifies ``first''.
+See markscheme-spec §18.}
+
+\emph{$12.28\ldots$ is not an acceptable final answer --- the answer must
+be a week number.}
+
+\emph{FT: award the final A1 for the smallest whole week correctly read
+from the candidate's own totals.}
+
+\newpage
+
+%--- Problem 5: Terms in k; show k = 4, the terms, S_10 [5 marks] ---
+\item[5.] [Maximum mark: 5]
+
+$u_{1} = 2k$, \quad $u_{2} = 3k + 1$, \quad $u_{3} = 5k - 2$.
+
+\medskip
+
+\textbf{(a)} The sequence is arithmetic, so the two differences are equal.
+
+$(3k + 1) - 2k = (5k - 2) - (3k + 1)$ \hfill \textbf{M1}
+
+$k + 1 = 2k - 3$ \hfill \textbf{A1}
+
+$k = 4$ \hfill \textbf{AG}
+
+\emph{M1 is for any valid use of the equal-difference property, including
+$2u_{2} = u_{1} + u_{3}$, which gives $6k + 2 = 7k - 2$. The A1 is for a
+correct simplified equation in $k$ (either of these forms).}
+
+\emph{Substituting $k = 4$ and checking that the differences are equal
+($13 - 8 = 18 - 13 = 5$) does not show that $k$ must be $4$; it earns the
+M1 only.}
+
+\medskip
+
+\textbf{(b)} $u_{1} = 8$, \quad $u_{2} = 13$, \quad $u_{3} = 18$
+\hfill \textbf{A1}
+
+\emph{All three terms required for the mark. The value $k = 4$ is given,
+so a candidate who did not complete (a) can still earn this mark.}
+
+\medskip
+
+\textbf{(c)} $d = 13 - 8 = 5$
+
+$S_{10} = \dfrac{10}{2}\bigl(2(8) + (10 - 1)(5)\bigr)$ \hfill \textbf{M1}
+
+$S_{10} = 5(16 + 45) = 305$ \hfill \textbf{A1}
+
+\emph{Accept the route $u_{10} = 8 + 9(5) = 53$, then
+$S_{10} = \dfrac{10}{2}(8 + 53) = 305$, or a GDC sum.}
+
+\emph{Using $nd$ in place of $(n - 1)d$, giving $5(16 + 50) = 330$, earns
+the M1 only.}
+
+\emph{FT: award M1A1 for the sum correctly obtained from the candidate's
+own terms in (b).}
+
+\newpage
+
+%--- Problem 6: u_1 and S_10 given; find d, then S_20 [5 marks] ---
+\item[6.] [Maximum mark: 5]
+
+$u_{1} = 4$ and $S_{10} = 175$.
+
+\medskip
+
+\textbf{(a)} $\dfrac{10}{2}\bigl(2(4) + (10 - 1)d\bigr) = 175$
+\hfill \textbf{M1}
+
+$5(8 + 9d) = 175$
+
+$8 + 9d = 35$ \hfill \textbf{A1}
+
+$9d = 27$
+
+$d = 3$ \hfill \textbf{A1}
+
+\emph{The first A1 is for any correct equation once the substitution is
+simplified (e.g.\ $40 + 45d = 175$, $45d = 135$, or $9d = 27$); it does
+not have to be in this exact form.}
+
+\emph{Accept the route through $u_{10}$:
+$\dfrac{10}{2}(4 + u_{10}) = 175$ (M1), $u_{10} = 31$ (A1), then
+$4 + 9d = 31$, giving $d = 3$ (A1).}
+
+\emph{Using $nd$ in place of $(n - 1)d$, i.e.\ $5(8 + 10d) = 175$ giving
+$d = 2.7$, earns the M1 only.}
+
+\emph{A correct substituted equation solved on the GDC, giving $d = 3$,
+earns full marks. $d = 3$ with no working seen earns the final A1 only.}
+
+\medskip
+
+\textbf{(b)} $S_{20} = \dfrac{20}{2}\bigl(2(4) + (20 - 1)(3)\bigr)$
+\hfill \textbf{M1}
+
+$S_{20} = 10(8 + 57) = 650$ \hfill \textbf{A1}
+
+\emph{Accept $u_{20} = 4 + 19(3) = 61$, then
+$S_{20} = \dfrac{20}{2}(4 + 61) = 650$, or a GDC sum.}
+
+\emph{FT: award M1A1 for the sum correctly obtained with the candidate's
+own $d$ from (a).}
+
+\end{enumerate}
+\end{document}

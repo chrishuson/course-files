@@ -1,0 +1,60 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 15 September 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize First \& Last name:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{1.3 Classwork: Arithmetic Series}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: S_5 by adding, S_5 by formula, then S_20 [5 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.2) ---
+\item[1.]
+
+The sum of the first $n$ terms of an arithmetic sequence is
+$$S_{n} = \frac{n}{2}\bigl(2u_{1} + (n - 1)d\bigr)
+\qquad \text{or} \qquad
+S_{n} = \frac{n}{2}\bigl(u_{1} + u_{n}\bigr).$$
+
+Consider the arithmetic series
+$$3 + 7 + 11 + 15 + \cdots$$
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find $S_{5}$, the sum of the first five terms, by writing out
+  the five terms and adding them.
+  \item Use the first formula above to find $S_{5}$. Show the values
+  you substitute.
+  \item Find $S_{20}$, the sum of the first twenty terms.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.4);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Theatre seating; row 20, total seats, unreserved seats [7 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.2) ---
+\item[2.]
+
+A theatre has $20$ rows of seats. The first row has $18$ seats. Each
+row after the first has $3$ more seats than the row in front of it.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the number of seats in row $20$.
+  \item Find the total number of seats in the theatre.
+  \item The first $8$ rows are reserved for students. Find the number
+  of seats in the theatre that are \emph{not} in the reserved rows.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,17.0);
+  \foreach \y in {1,2,...,16} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

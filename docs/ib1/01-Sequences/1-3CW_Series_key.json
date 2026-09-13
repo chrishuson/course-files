@@ -1,0 +1,111 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 5,
+    "answer_box_top_frac": 0.417,
+    "source": "Original (freshly authored, calculator allowed). Introduction to the arithmetic sum formula: series 3 + 7 + 11 + 15 + ...; S_5 by adding, S_5 by formula, then S_20.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "For the series 3 + 7 + 11 + 15 + ..., find S_5 by writing out the five terms and adding them.",
+        "expected": {
+          "answer": "55"
+        },
+        "tolerance": "Accept 55 obtained by any method, including a sum formula.",
+        "notes": "A1 for 55. The sum of only four terms (3 + 7 + 11 + 15 = 36) earns nothing."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Use S_n = (n/2)(2u_1 + (n - 1)d) to find S_5, showing the values substituted.",
+        "expected": {
+          "answer": "S_5 = (5/2)(2(3) + (5 - 1)(4)) = 55"
+        },
+        "tolerance": "Accept substitution into the equivalent formula S_n = (n/2)(u_1 + u_n), i.e. (5/2)(3 + 19) = 55.",
+        "notes": "M1 for substituting n = 5, u_1 = 3 and d = 4 (or u_5 = 19) into a sum formula, however the arithmetic is then arranged. A1 for 55. The question asks for the substituted values, so 55 with no substitution shown earns the A1 only."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find S_20, the sum of the first twenty terms.",
+        "expected": {
+          "answer": "820"
+        },
+        "tolerance": "Accept 820 from any valid method, including finding u_20 = 79 and using (20/2)(3 + 79), or a GDC sum of the first 20 terms.",
+        "notes": "M1 for a correct substitution into either sum formula with n = 20, or for another valid method such as a GDC sum. A1 for 820. Using nd in place of (n - 1)d, giving 10(6 + 80) = 860, earns the M1 only. A correct 820 with no working earns M1A1; attach the feedback note that the formula substitution should be written out."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.282,
+    "source": "Original (freshly authored, calculator allowed). Theatre with 20 rows, first row 18 seats, each row 3 more: seats in row 20, total seats, seats outside the 8 reserved rows.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "A theatre has 20 rows; row 1 has 18 seats and each row has 3 more seats than the row in front. Find the number of seats in row 20.",
+        "expected": {
+          "answer": "75"
+        },
+        "tolerance": "Accept 75 obtained by any method, including a GDC sequence table or listing the rows.",
+        "notes": "M1 for any correct use of the nth-term relationship with u_1 = 18, d = 3 and n = 20. A1 for 75. Using 20 in place of (n - 1), giving 18 + 20(3) = 78, earns the M1 only."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the total number of seats in the theatre.",
+        "expected": {
+          "answer": "930"
+        },
+        "tolerance": "Accept (20/2)(18 + 75) or (20/2)(2(18) + 19(3)), or a GDC sum of the 20 rows.",
+        "notes": "M1 for a correct substitution into either sum formula with n = 20, or for another valid method such as a GDC sum. A1 for 930.",
+        "follow_through": "When S_n = (n/2)(u_1 + u_n) is used, award M1A1 for the total correctly obtained from the candidate's own row-20 value in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "The first 8 rows are reserved for students. Find the number of seats that are not in the reserved rows.",
+        "expected": {
+          "answer": "702",
+          "reserved_seats": 228
+        },
+        "tolerance": "Accept the direct route: rows 9 to 20 are 12 rows from u_9 = 42 to u_20 = 75, so (12/2)(42 + 75) = 702.",
+        "notes": "M1 for using a sum formula (or adding row sizes) to find the seats in the reserved rows, or for a sum of the 12 unreserved rows on the direct route. A1 for 228 (on the direct route, A1 for u_9 = 42). A1 for 702. Summing the first 9 rows in place of the first 8 (S_9 = 270, answer 660) earns the M1 and the final A1 by follow-through, but not the A1 for 228.",
+        "follow_through": "Award the final A1 for the candidate's own total from (b) minus the candidate's own reserved-row total."
+      }
+    ]
+  }
+]

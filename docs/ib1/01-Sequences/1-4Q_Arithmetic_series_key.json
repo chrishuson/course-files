@@ -1,0 +1,321 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.304,
+    "source": "Original (freshly authored, calculator allowed); carried over from 1-3CW_Arithmetic-sequences-continued P1. Two given terms u_4 = 17, u_9 = 37; find u_1 and d, then test whether 200 is a term.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Given u_4 = 17 and u_9 = 37, find d and u_1.",
+        "expected": {
+          "d": 4,
+          "u_1": 5,
+          "answer": "d = 4, u_1 = 5"
+        },
+        "tolerance": "Accept d = 4 and u_1 = 5 reached by any valid route.",
+        "notes": "M1 for any valid method that relates the two given terms to u_1 and d: writing both equations u_1 + 3d = 17 and u_1 + 8d = 37, using d = (u_9 - u_4)/(9 - 4), or solving the system on the GDC. A1 for d = 4 and A1 for u_1 = 5, awarded independently of each other. A candidate who divides by 9 - 4 = 5 correctly but then makes an arithmetic slip still holds the M1."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Hence write down an expression for u_n.",
+        "expected": {
+          "answer": "u_n = 5 + 4(n - 1)"
+        },
+        "tolerance": "Accept any algebraically equivalent form, including the simplified 4n + 1 and 5 + (n - 1)(4). Simplification is neither required nor preferred: the substituted form shows where the expression comes from.",
+        "notes": "A1 for a correct expression in n.",
+        "follow_through": "Award A1 for an expression correctly formed from the candidate's own u_1 and d from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "R1"
+        ],
+        "description": "Determine whether 200 is a term of the sequence, with justification.",
+        "expected": {
+          "answer": "No. Solving 5 + 4(n - 1) = 200 gives n = 49.75, which is not a positive integer, so 200 is not a term."
+        },
+        "tolerance": "Accept either of two arguments. (i) Solve u_n = 200 (in the form 5 + 4(n - 1) = 200 or 4n + 1 = 200) and reject the non-integer n = 49.75 (accept 199/4 or 49.8). (ii) Observe that every term 4n + 1 is odd while 200 is even, so 200 cannot be a term.",
+        "notes": "The three marks reward: a method that tests membership, a correct result from that method, and a conclusion tied to the result. For route (i): M1 for setting a correct nth-term expression equal to 200, A1 for n = 49.75 (or 199/4), R1 for concluding that 200 is not a term because n is not a positive integer. For route (ii): M1 for examining the parity or structure of the terms, A1 for establishing that every term is odd, R1 for the conclusion that 200, being even, is not a term. R1 requires the conclusion to be linked to the reason; a bare 'no' earns no R1, and a correct reason with no stated conclusion earns no R1 either.",
+        "follow_through": "Award R1 for a conclusion correctly drawn from the candidate's own value of n - including concluding that 200 IS a term if their (b) expression made n a positive integer."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.295,
+    "source": "Original (freshly authored, calculator allowed); carried over from 1-3CW_Arithmetic-sequences-continued P2. Modelling context: theatre seating, u_1 = 18, d = 3; first row exceeding 65 seats.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Theatre seating: row 1 has 18 seats, each later row has 3 more than the one in front. Find an expression for u_n, the number of seats in row n.",
+        "expected": {
+          "answer": "u_n = 18 + 3(n - 1)"
+        },
+        "tolerance": "Accept any algebraically equivalent form, including the simplified 3n + 15 and 18 + (n - 1)(3). Simplification is neither required nor preferred: the substituted form shows where the expression comes from.",
+        "notes": "M1 for extracting u_1 = 18 and d = 3 from the context and using the arithmetic nth-term relationship, however written. A1 for a correct expression in n. A candidate who writes u_n = 18 + 3n (treating row 1 as having 21 seats) has misread the first term and earns the M1 only."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find the number of seats in row 12.",
+        "expected": {
+          "answer": "51 seats"
+        },
+        "tolerance": "Accept 51 with or without the word 'seats'.",
+        "notes": "A1 for 51.",
+        "follow_through": "Award A1 for the value obtained by substituting n = 12 into the candidate's own expression from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the number of the first row that has more than 65 seats.",
+        "expected": {
+          "answer": "row 17"
+        },
+        "tolerance": "Accept 'row 17' or '17'. Do not accept 16.67 (or 16.666...) as the final answer - the answer must be a whole row number. An equation in place of the inequality (18 + 3(n - 1) = 65 or 3n + 15 = 65, giving n = 16.67) is acceptable provided the candidate then selects the next whole row. A table search is also acceptable: full marks for showing both adjacent rows, u_16 = 63 (not more than 65) and u_17 = 66 (more than 65), and stating row 17.",
+        "notes": "M1 for comparing a correct expression for the number of seats with 65, by inequality, equation, or evaluation. A1 for the correct boundary result (n > 16.666..., or equivalently the pair of adjacent values that bracket 65). A1 for the answer row 17. Award full marks to a single-row table (u_17 = 66, so row 17) but attach the feedback note that the adjacent row u_16 is what justifies the word 'first' - see markscheme-spec.md section 18.",
+        "follow_through": "Award the final A1 for the smallest whole row number correctly read off from the candidate's own boundary value."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 5,
+    "answer_box_top_frac": 0.316,
+    "source": "Original (freshly authored, calculator allowed). Finite arithmetic series 5 + 8 + 11 + ... + 62: common difference, number of terms (20), sum (670).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the common difference d of the arithmetic series 5 + 8 + 11 + ... + 62.",
+        "expected": {
+          "answer": "d = 3"
+        },
+        "tolerance": "Accept 3 alone.",
+        "notes": "A1 for d = 3."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the number of terms in the series 5 + 8 + 11 + ... + 62.",
+        "expected": {
+          "answer": "20"
+        },
+        "tolerance": "Accept n = 20 obtained by any method, including a GDC sequence table or listing the terms.",
+        "notes": "M1 for setting a correct expression for the nth term equal to 62 (e.g. 5 + 3(n - 1) = 62), or for a table or list that locates 62 as a term. A1 for n = 20. The answer n = 19 counts the steps of 3 from 5 to 62, not the terms, and earns the M1 only.",
+        "follow_through": "Award M1A1 for n correctly obtained with the candidate's own d from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the sum of the series.",
+        "expected": {
+          "answer": "670"
+        },
+        "tolerance": "Accept (20/2)(5 + 62) or (20/2)(2(5) + 19(3)), or a GDC sum.",
+        "notes": "M1 for a correct substitution into either sum formula with the candidate's number of terms, or for another valid method such as a GDC sum. A1 for 670.",
+        "follow_through": "Award M1A1 for the sum correctly obtained with the candidate's own n from (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.295,
+    "source": "Original (freshly authored, calculator allowed). Weekly savings: $5 in week 1, $2 more each week; week-12 amount ($27), total by week 12 ($192), first week total exceeds $200 (week 13).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Luca saves $5 in week 1 and $2 more each week than the week before. Find the amount he saves in week 12.",
+        "expected": {
+          "answer": "$27"
+        },
+        "tolerance": "Accept 27 with or without the dollar sign, obtained by any method including listing the weekly amounts.",
+        "notes": "M1 for any correct use of the nth-term relationship with u_1 = 5, d = 2 and n = 12. A1 for 27. Using 12 in place of (n - 1), giving 5 + 12(2) = 29, earns the M1 only."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the total amount Luca has saved by the end of week 12.",
+        "expected": {
+          "answer": "$192"
+        },
+        "tolerance": "Accept (12/2)(5 + 27) or (12/2)(2(5) + 11(2)), or a GDC sum; the dollar sign is not required.",
+        "notes": "M1 for a correct substitution into either sum formula with n = 12, or for another valid method such as a GDC sum or adding the twelve amounts. A1 for 192.",
+        "follow_through": "When S_n = (n/2)(u_1 + u_n) is used, award M1A1 for the total correctly obtained from the candidate's own week-12 amount in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the first week when Luca's total savings are more than $200.",
+        "expected": {
+          "answer": "week 13",
+          "S_12": 192,
+          "S_13": 221
+        },
+        "tolerance": "Accept a table search: full marks for S_12 = 192 (below 200) and S_13 = 221 (above 200) with the conclusion week 13. Accept S_13 = 192 + 29 = 221. Accept an equation or inequality in n (n(n + 4) = 200, giving n = 12.28...) provided the candidate then selects the next whole week.",
+        "notes": "M1 for any valid method of comparing the running total with 200: computing S_13 (or S_n for a suitable n), a GDC table of S_n, or an equation or inequality in n. A1 for S_13 = 221, or for the boundary value n = 12.28... from the equation. A1 for week 13. A single value (S_13 = 221, so week 13) still earns full marks, with the feedback note that the adjacent value S_12 = 192 is what justifies 'first'. 12.28 is not an acceptable final answer: the answer must be a week number.",
+        "follow_through": "Award the final A1 for the smallest whole week correctly read from the candidate's own totals."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 5,
+    "answer_box_top_frac": 0.316,
+    "source": "Original (freshly authored, calculator allowed). First three terms 2k, 3k + 1, 5k - 2 of an arithmetic sequence; show k = 4; terms 8, 13, 18; S_10 = 305.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Given u_1 = 2k, u_2 = 3k + 1, u_3 = 5k - 2 are the first three terms of an arithmetic sequence, show that k = 4.",
+        "expected": {
+          "answer": "(3k + 1) - 2k = (5k - 2) - (3k + 1), so k + 1 = 2k - 3, giving k = 4"
+        },
+        "tolerance": "Show that (answer given). Accept any valid use of the equal-difference property, including 2u_2 = u_1 + u_3 (6k + 2 = 7k - 2).",
+        "notes": "M1 for any valid use of the property that consecutive differences are equal, set up as an equation in k. A1 for a correct simplified equation in k (e.g. k + 1 = 2k - 3 or 6k + 2 = 7k - 2). The final line k = 4 is the given answer and earns no separate mark. Substituting k = 4 and checking that the differences are equal (13 - 8 = 18 - 13 = 5) does not show that k must be 4 and earns the M1 only."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the first three terms of the sequence.",
+        "expected": {
+          "answer": "8, 13, 18"
+        },
+        "tolerance": "All three terms required, in order. Accept them as a list or labelled u_1, u_2, u_3.",
+        "notes": "A1 for all three terms correct. Fewer than three correct terms earn nothing. The value k = 4 is given in (a), so this mark is available even when (a) is not completed."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the sum of the first 10 terms of the sequence.",
+        "expected": {
+          "answer": "305"
+        },
+        "tolerance": "Accept (10/2)(2(8) + 9(5)), or u_10 = 53 followed by (10/2)(8 + 53), or a GDC sum.",
+        "notes": "M1 for a correct substitution into either sum formula with n = 10 and the sequence's first term and common difference (d = 5), or for another valid method such as a GDC sum. A1 for 305. Using nd in place of (n - 1)d, giving 5(16 + 50) = 330, earns the M1 only.",
+        "follow_through": "Award M1A1 for the sum correctly obtained from the candidate's own terms in (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 6,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 5,
+    "answer_box_top_frac": 0.264,
+    "source": "Original (freshly authored, calculator allowed). Arithmetic sequence with u_1 = 4 and S_10 = 175; find d = 3 from the sum formula, then S_20 = 650.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "An arithmetic sequence has u_1 = 4 and S_10 = 175. Find the common difference d.",
+        "expected": {
+          "answer": "d = 3"
+        },
+        "tolerance": "Accept d = 3 by any valid route, including finding u_10 = 31 from (10/2)(4 + u_10) = 175 and then solving 4 + 9d = 31.",
+        "notes": "M1 for substituting u_1 = 4, n = 10 and S_10 = 175 into a sum formula (with d, or with u_10, unknown). A1 for any correct equation once the substitution is simplified (for example 8 + 9d = 35, 40 + 45d = 175, 45d = 135 or 9d = 27), or for u_10 = 31 on the alternative route. A1 for d = 3. A correct substituted equation solved on the GDC, giving d = 3, earns full marks. Using nd in place of (n - 1)d, i.e. 5(8 + 10d) = 175 giving d = 2.7, earns the M1 only. d = 3 with no working seen earns the final A1 only."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find S_20, the sum of the first 20 terms.",
+        "expected": {
+          "answer": "650"
+        },
+        "tolerance": "Accept (20/2)(2(4) + 19(3)), or u_20 = 61 followed by (20/2)(4 + 61), or a GDC sum.",
+        "notes": "M1 for a correct substitution into either sum formula with n = 20, u_1 = 4 and the candidate's d. A1 for 650.",
+        "follow_through": "Award M1A1 for the sum correctly obtained with the candidate's own d from (a)."
+      }
+    ]
+  }
+]

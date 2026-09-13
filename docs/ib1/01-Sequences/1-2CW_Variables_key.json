@@ -1,0 +1,142 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.365,
+    "source": "Original (freshly authored, calculator allowed). Review: arithmetic sequence 83, 77, 71, 65, ... with negative d; find u_n, u_20 and solve u_n = -13.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the common difference d of the arithmetic sequence 83, 77, 71, 65, ...",
+        "expected": {
+          "answer": "d = -6"
+        },
+        "tolerance": "Accept -6 alone; the label d = is not required. The negative sign is required.",
+        "notes": "A1 for d = -6. d = 6 earns nothing."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find an expression for u_n, the nth term.",
+        "expected": {
+          "answer": "u_n = 83 - 6(n - 1)"
+        },
+        "tolerance": "Accept any algebraically equivalent form, including the simplified 89 - 6n and 83 + (n - 1)(-6). Simplification is neither required nor preferred: the substituted form shows where the expression comes from.",
+        "notes": "M1 for any correct use of the arithmetic nth-term relationship with this sequence's first term and common difference, however it is written or arranged. A1 for a correct expression in n. A recursive statement alone (u_{n+1} = u_n - 6) does not answer the question and earns the M1 only.",
+        "follow_through": "Award M1A1 for an expression correctly formed from u_1 = 83 and the candidate's own d from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find u_20.",
+        "expected": {
+          "answer": "-31"
+        },
+        "tolerance": "Accept -31 obtained by any method, including a GDC sequence table or repeated subtraction.",
+        "notes": "A1 for -31. A substituted expression that is not evaluated, such as 83 - 6(20 - 1), earns nothing: the part asks for the value.",
+        "follow_through": "Award A1 for the value obtained by substituting n = 20 into the candidate's own expression from (b)."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "One term of the sequence equals -13. Find n, showing algebraic working.",
+        "expected": {
+          "answer": "n = 17"
+        },
+        "tolerance": "Accept n = 17. Any correct algebraic route is acceptable, e.g. 83 - 6(n - 1) = -13 or the expanded form 89 - 6n = -13.",
+        "notes": "M1 for setting a correct expression for the nth term equal to -13. A1 for any correct intermediate line that isolates n (for example n - 1 = 16, 6n = 102, or -6n = -102); the exact form is not prescribed. A1 for n = 17. An equation that drops the (n - 1), such as 83 - 6n = -13 giving n = 16, earns the M1 only, unless 83 - 6n is the candidate's own expression from (b), in which case follow-through applies. The question asks for algebraic working, so a candidate who reports n = 17 from a GDC table with no algebra earns the final A1 only.",
+        "follow_through": "Award the marks for a correct solution of the candidate's own nth-term expression from (b) set equal to -13."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.338,
+    "source": "Original (freshly authored, calculator allowed). First three terms k - 4, 2k, 4k - 1 of an arithmetic sequence; equal differences give k = 5; terms 1, 10, 19; u_10 = 82.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Given u_1 = k - 4, u_2 = 2k, u_3 = 4k - 1, find simplified expressions in terms of k for u_2 - u_1 and for u_3 - u_2.",
+        "expected": {
+          "answer": "u_2 - u_1 = k + 4 and u_3 - u_2 = 2k - 1",
+          "u2_minus_u1": "k + 4",
+          "u3_minus_u2": "2k - 1"
+        },
+        "tolerance": "Accept any correct equivalent form of each expression, simplified or not (e.g. 2k - k + 4 for k + 4).",
+        "notes": "A1 for each correct expression, awarded independently (A1A1). A sign error when subtracting the bracket, such as 2k - k - 4 = k - 4, earns no mark for that expression."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Use the fact that the sequence is arithmetic to find the value of k.",
+        "expected": {
+          "answer": "k = 5"
+        },
+        "tolerance": "Accept k = 5 from any valid use of the property that consecutive differences are equal.",
+        "notes": "M1 for any valid use of the equal-difference property: equating the two differences (k + 4 = 2k - 1), using 2u_2 = u_1 + u_3 (4k = 5k - 5), or substituting a value of k and showing that the two differences are then equal. A1 for k = 5. A value of k stated with no equation and no check earns the A1 only.",
+        "follow_through": "Award M1A1 for correctly solving the equation formed from the candidate's own expressions in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the first three terms of the sequence.",
+        "expected": {
+          "answer": "1, 10, 19"
+        },
+        "tolerance": "All three terms required, in order. Accept them as a list or labelled u_1, u_2, u_3.",
+        "notes": "A1 for all three terms correct. Fewer than three correct terms earn nothing.",
+        "follow_through": "Award A1 for the three terms obtained by substituting the candidate's own k from (b) into k - 4, 2k and 4k - 1."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find u_10.",
+        "expected": {
+          "answer": "82"
+        },
+        "tolerance": "Accept 82 obtained by any method, including listing the terms or a GDC sequence table.",
+        "notes": "M1 for any correct use of the nth-term relationship with the candidate's first term and common difference (d = 9), or for continuing the list of terms to the 10th term. A1 for 82. Using 10 in place of (n - 1), giving 1 + 10(9) = 91, earns the M1 only.",
+        "follow_through": "Award M1A1 for the 10th term correctly obtained from the candidate's own terms in (c)."
+      }
+    ]
+  }
+]
