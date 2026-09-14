@@ -3,4 +3,5 @@
 *.aux
 *.fdb_latexmk
 *.fls
-*texput.log
+*.log
+*.out

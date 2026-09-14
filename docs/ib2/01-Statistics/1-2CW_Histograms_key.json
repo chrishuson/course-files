@@ -1,0 +1,131 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["4.1"],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.44,
+    "answer_box_top_frac_note": "Detected answer-box rectangle starts at y = 359.4 pt of 792 pt (top_frac 0.454); backed off to 0.44 so the crop catches writing that starts on the box's top rule. All of the student's work for this problem is inside the box.",
+    "source": "Original (freshly authored, AA SL 4.1). Survey-design scenario: a school of 420 students; the principal asks the first 30 students entering the cafeteria one Tuesday, 'Do you agree that the new lunch menu is a big improvement?'. Style after Haese, Core Topics SL, Chapter 11A.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write down the population, and write down the size of the sample.",
+        "expected": {
+          "answer": "Population: all 420 students at the school. Sample size: 30.",
+          "population": "all 420 students at the school",
+          "sample_size": 30
+        },
+        "tolerance": "For the population accept any wording naming the whole student body ('the 420 students', 'all students at the school', 'the whole school's students'). Do not accept 'the school' alone, and do not accept 'the students in the cafeteria' or 'the 30 students' - those name the sample or the accessible group, not the population. For the sample size accept 30 written anywhere in the answer.",
+        "notes": "One A1 for the population, one A1 for the sample size; the two marks are independent. The population is the group the principal wants a conclusion about, not the group she was able to reach."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Name the sampling technique used when the principal surveys the students who happen to be closest to hand.",
+        "expected": {
+          "answer": "convenience sampling"
+        },
+        "tolerance": "Accept 'convenience sample', 'convenience', or 'opportunity sampling'. Do not accept 'random', 'simple random', 'systematic', 'stratified' or 'quota'.",
+        "notes": "A1 for naming the technique. The word 'convenience' (or 'opportunity') must appear; a description of the method without a name earns nothing, since the question asks for the name."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["R1"],
+        "description": "Give one reason why the sample may not be representative of all 420 students.",
+        "expected": {
+          "answer": "Only students who eat in the cafeteria can be asked, so students who bring lunch from home are never represented."
+        },
+        "tolerance": "Accept any reason of the right kind: cafeteria users only; one day only (Tuesday); the first to arrive may all be one year group or one class released early; the selection is not made by chance so some students have no possibility of being chosen.",
+        "notes": "R1 requires a stated reason connected to who is left out or over-represented. 'The sample is too small' alone earns nothing - 30 out of 420 is a workable size, and the defect here is how the sample was chosen, not its size. 'It is biased' with no explanation of the bias earns nothing."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["R1", "A1"],
+        "description": "Explain what is wrong with the leading question 'Do you agree that the new lunch menu is a big improvement?', and rewrite it so that it is not leading.",
+        "expected": {
+          "answer": "The wording suggests the answer before the student gives an opinion, pushing replies towards 'yes'. Neutral rewrite: 'What is your opinion of the new lunch menu?'"
+        },
+        "tolerance": "For the rewrite accept any version that puts the options evenhandedly, e.g. 'Do you think the new lunch menu is better, worse, or about the same as the old one?' or 'How would you rate the new lunch menu?'. A rewrite that still embeds a judgement ('Do you agree the menu is good?') earns nothing.",
+        "notes": "R1 for identifying that the wording invites agreement / suggests the answer / pushes the reply one way. A1 for a neutral rewrite. The two marks are independent: a candidate who rewrites neutrally without explaining the fault earns the A1 only, and one who explains the fault without rewriting earns the R1 only."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Describe how the principal could instead take a simple random sample of 30 students.",
+        "expected": {
+          "answer": "Number the students 1 to 420, then use the GDC random integer generator to choose 30 different numbers and survey those students."
+        },
+        "tolerance": "Accept drawing 30 names from a hat, or any method in which every student has an equal chance of selection and the choice is made by chance. Accept randInt(1,420) or any equivalent calculator/spreadsheet instruction.",
+        "notes": "First A1 for giving every student a label or listing the whole population (numbering 1 to 420, or a full roll). Second A1 for a chance mechanism together with the requirement that the 30 selections are different (repeats discarded). 'Pick 30 students at random' alone earns nothing - it restates the task without giving a method."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["4.1", "4.2"],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.38,
+    "answer_box_top_frac_note": "Set by hand, not by detect_answer_boxes.py. There is no answer-box rectangle on this page; the printed frequency table and the histogram grid together are the answer area. The crop starts at the top rule of the frequency table (y = 307.2 pt of 792 pt = 0.388), backed off to 0.38, and runs to the page bottom so both the table and the grid are captured. The detector would otherwise report the histogram grid rectangle at top_frac 0.627 and miss the table.",
+    "source": "Original (freshly authored, AA SL 4.1 and 4.2). Continuous data: heights in cm of 24 tomato plants, grouped in classes of width 5 from 20 to 45. Style after Haese, Core Topics SL, Chapter 11E. Raw data as printed, reading left to right, six per row: 23.4, 31.7, 28.0, 36.2, 41.5, 27.3 / 29.8, 25.0, 39.1, 30.0, 22.6, 33.4 / 37.9, 29.5, 26.8, 43.2, 35.0, 31.1 / 24.7, 32.6, 28.9, 40.3, 26.1, 42.0. Counts: [20,25) 3, [25,30) 8, [30,35) 5, [35,40) 4, [40,45) 4; total 24. The values 25.0, 30.0 and 35.0 sit exactly on class boundaries by design, so the lower-boundary-inclusive rule is exercised.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Complete the grouped frequency table for the 24 plant heights. The class column (20<=h<25, 25<=h<30, 30<=h<35, 35<=h<40, 40<=h<45, Total) is printed; the Tally and Frequency columns are empty.",
+        "expected": {
+          "answer": "3, 8, 5, 4, 4; total 24",
+          "20-25": 3,
+          "25-30": 8,
+          "30-35": 5,
+          "35-40": 4,
+          "40-45": 4,
+          "total": 24
+        },
+        "tolerance": "Accept any tally notation: the five-bar gate, ungrouped strokes, dots, or strokes grouped in any other consistent way.",
+        "notes": "First A1 is earned when a tally is actually used and agrees with the candidate's own frequency column. Second A1 requires all five frequencies (3, 8, 5, 4, 4) and the total 24 to be correct; four or fewer frequencies correct earns nothing for this mark. A candidate who fills the frequency column correctly but leaves the tally column empty earns the second A1 only. The commonest error is placing a boundary value (25.0, 30.0 or 35.0) in the class below, which produces 3, 7, 6, 4, 4 or similar and does not earn the second A1."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the modal class.",
+        "expected": {
+          "answer": "25 <= h < 30"
+        },
+        "tolerance": "Accept '25 to 30', '25-30', or 'the second class'. Do not accept '8' alone - that is the frequency of the modal class, not the class itself.",
+        "notes": "A1 for the class with the greatest frequency.",
+        "follow_through": "Award A1 for the class carrying the largest frequency in the candidate's own table from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "R1"],
+        "description": "A plant measured exactly 30.0 cm. State which class it is counted in, and explain why.",
+        "expected": {
+          "answer": "30 <= h < 35, because that class includes its lower boundary (30 <= h) while the class below excludes 30 (h < 30)."
+        },
+        "tolerance": "Accept any wording that identifies the lower boundary as included and the upper boundary as excluded: 'the classes are <= on the left and < on the right', '30 is in the class that starts at 30', 'the class 25 to 30 stops just before 30'.",
+        "notes": "A1 for the class, R1 for the reason (markscheme-spec.md rule 13: the count/answer carries the A1, the justification carries the R1). The correct class with no reason earns 1 of 2. A reason resting only on 'it is closer to the middle of that class' or 'you round it up' earns no R1."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Draw a histogram for the data on the printed grid. The grid has h from 20 to 45 on the horizontal axis (ticks every 5) and frequency from 0 to 9 on the vertical axis (labelled 0, 2, 4, 6, 8).",
+        "expected": {
+          "answer": "Five bars of heights 3, 8, 5, 4, 4 spanning 20-25, 25-30, 30-35, 35-40, 40-45, drawn with no gaps."
+        },
+        "tolerance": "Accept freehand bars when the heights are unambiguous against the gridlines. Shading or leaving the bars unshaded are both accepted.",
+        "notes": "First A1 for the five bar heights; award it for heights matching the candidate's own frequency column from (a). Second A1 for the form of the display - bars of equal width, each spanning its own class between the printed boundaries, with no gaps between adjacent bars. Bars drawn separated (a bar chart) lose the second A1 only. Bars centred on the class midpoints rather than spanning the boundaries also lose the second A1 only.",
+        "follow_through": "Award the first A1 for bars whose heights match the candidate's own frequencies from (a), even when those frequencies are wrong."
+      }
+    ]
+  }
+]

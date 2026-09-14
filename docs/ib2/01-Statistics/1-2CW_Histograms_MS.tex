@@ -1,0 +1,160 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\setlength{\parskip}{0.3\baselineskip}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 14 September 2026}
+
+\begin{document}
+\subsubsection*{1.2 Classwork: Sampling and Histograms --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Sampling terminology and survey design [8 marks] ---
+\item[1.] [Maximum mark: 8]
+
+A school of 420 students; the principal asks the first 30 students
+through the cafeteria door \emph{``Do you agree that the new lunch menu
+is a big improvement?''}
+
+\textbf{(a)} Population: all 420 students at the school. \hfill \textbf{A1}
+
+Sample size: 30. \hfill \textbf{A1}
+
+\emph{Accept ``the 420 students'', ``the whole school'', ``all students at
+the school''. Do not accept ``the school'' alone, or ``the students in the
+cafeteria'' --- the population is the group the principal wants a
+conclusion about, not the group she reached.}
+
+\textbf{(b)} Convenience sampling. \hfill \textbf{A1}
+
+\emph{Accept ``convenience sample'' or ``opportunity sampling''. Do not
+accept ``random'', ``systematic'' or ``quota''.}
+
+\textbf{(c)} Any one clear reason, for example: only students who eat in
+the cafeteria can be asked, so students who bring lunch from home are
+never represented. \hfill \textbf{R1}
+
+\emph{Accept any reason of the right kind --- one day only (Tuesday);
+only cafeteria users; the first to arrive may be one year group or one
+class leaving a lesson early; the sample is not chosen by chance so some
+students have no possibility of being asked. R1 requires a stated reason
+connected to \emph{who is left out or over-represented}. ``It is too
+small'' alone earns nothing --- 30 out of 420 is a workable sample size;
+the defect is how it was chosen, not its size.}
+
+\textbf{(d)} The wording invites the student to agree --- it suggests the
+answer (``a big improvement'') before the student has given an opinion,
+so it pushes replies towards ``yes''. \hfill \textbf{R1}
+
+A neutral rewrite, for example: \emph{``What is your opinion of the new
+lunch menu?''} \hfill \textbf{A1}
+
+\emph{Accept any rewrite that offers the options evenhandedly, e.g.
+``Do you think the new lunch menu is better, worse, or about the same as
+the old one?'' The R1 and the A1 are independent: a candidate who
+rewrites the question neutrally without explaining the fault earns the
+A1 only.}
+
+\textbf{(e)} Number the students $1$ to $420$ (a list or the school
+roll). \hfill \textbf{A1}
+
+Use the GDC's random integer generator to produce 30 different numbers
+from 1 to 420, and survey those students. \hfill \textbf{A1}
+
+\emph{\textbf{GDC:} \texttt{menu} $\rightarrow$ \texttt{Probability}
+$\rightarrow$ \texttt{Random} $\rightarrow$ \texttt{Integer},
+\texttt{randInt(1,420)}.}
+
+\emph{Accept drawing 30 names from a hat, or any method in which every
+student has an equal chance of selection and the selection is made by
+chance. The first A1 is for giving every student a label; the second is
+for a chance mechanism \emph{and} for discarding repeats (``30 different
+numbers''). A candidate who only writes ``pick 30 students at random''
+earns nothing --- that restates the task without giving a method.}
+
+\newpage
+
+%--- Problem 2: Grouping continuous data and drawing a histogram [7 marks] ---
+\item[2.] [Maximum mark: 7]
+
+Heights of 24 tomato plants (raw data on the student sheet), grouped:
+
+{\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+\textbf{Height $h$ (cm)} & $20 \le h < 25$ & $25 \le h < 30$ &
+$30 \le h < 35$ & $35 \le h < 40$ & $40 \le h < 45$ & \textbf{Total} \\ \hline
+\textbf{Frequency} & 3 & 8 & 5 & 4 & 4 & \textbf{24} \\ \hline
+\end{tabular}
+\end{center}}
+
+\textbf{(a)} Tally marks recorded for all five classes
+\hfill \textbf{A1}
+
+Frequencies $3,\; 8,\; 5,\; 4,\; 4$ and total $24$ all correct
+\hfill \textbf{A1}
+
+\emph{The tally A1 is for a tally that is used and that agrees with the
+candidate's own frequency column. Accept a completed frequency column
+with the tally column left empty for the second A1 only. The three
+boundary values $25.0$, $30.0$ and $35.0$
+each belong to the class \emph{above} the boundary; a candidate who puts
+one of them in the class below produces $3,7,6,4,4$ or similar and does
+not earn the second A1.}
+
+\textbf{(b)} Modal class is $25 \le h < 30$. \hfill \textbf{A1}
+
+\emph{Accept ``25 to 30'' or ``the second class''. Do not accept ``8''
+alone --- that is the frequency of the modal class, not the class.
+FT: award A1 for the class with the largest frequency in the candidate's
+own table from (a).}
+
+\textbf{(c)} It is counted in $30 \le h < 35$. \hfill \textbf{A1}
+
+Because the inequality $30 \le h$ includes 30 itself, while the class
+below ends at $h < 30$, which excludes it. \hfill \textbf{R1}
+
+\emph{The A1 is for the class, the R1 for the reason.
+Accept any wording that identifies the lower boundary as included and the
+upper boundary as excluded --- ``the classes are $\le$ on the left and
+$<$ on the right'', ``30 is in the class that starts at 30''. The A1 with
+no reason earns 1 of 2. A reason resting only on ``it is closer to the
+middle'' or ``you round it'' earns nothing.}
+
+\textbf{(d)} Histogram with bars of heights $3,\, 8,\, 5,\, 4,\, 4$ over
+the five classes \hfill \textbf{A1}
+
+Bars of equal width drawn between the correct boundaries
+$20,25,30,35,40,45$ with no gaps between them \hfill \textbf{A1}
+
+\emph{The first A1 is for the heights matching the candidate's own
+frequency column (FT from (a)); the second is for the shape of the
+display --- equal widths, bars touching, each bar spanning its own class.
+Bars drawn with gaps between them (a bar chart) lose the second A1 only.
+Bars centred on the class midpoints rather than
+spanning the boundaries also lose the second A1.}
+
+\vspace{-0.35cm}
+
+\begin{center}
+\begin{tikzpicture}[x=0.34cm, y=0.34cm]
+  \draw[gray!30] (20,0) grid[xstep=1, ystep=1] (45,9);
+  \draw[thick, -{Stealth[length=2mm]}] (20,0) -- (46.2,0);
+  \node[anchor=west] at (46.6,0) {\footnotesize $h$ (cm)};
+  \draw[thick, -{Stealth[length=2mm]}] (20,0) -- (20,9.6);
+  \foreach \x in {20,25,30,35,40,45} \draw (\x,0) -- (\x,-0.35) node[below] {\footnotesize \x};
+  \foreach \y in {0,2,4,6,8} \draw (20,\y) -- (19.5,\y) node[left] {\footnotesize \y};
+  \node[rotate=90, anchor=south] at (16.9,4.5) {\footnotesize frequency};
+  \draw[very thick] (20,3) rectangle (25,0);
+  \draw[very thick] (25,8) rectangle (30,0);
+  \draw[very thick] (30,5) rectangle (35,0);
+  \draw[very thick] (35,4) rectangle (40,0);
+  \draw[very thick] (40,4) rectangle (45,0);
+\end{tikzpicture}
+\end{center}
+
+\end{enumerate}
+\end{document}

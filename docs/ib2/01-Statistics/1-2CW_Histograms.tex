@@ -1,0 +1,101 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 14 September 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{1.2 Classwork: Sampling and Histograms}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Sampling terminology and survey design [7 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.1); style after Haese Core Topics SL, Ch 11A ---
+\item[1.]
+
+There are 420 students at a school. The principal wants to know what
+the students think of the new lunch menu. She stands at the cafeteria
+door one Tuesday and asks the first 30 students who walk in:
+
+\begin{center}
+\emph{``Do you agree that the new lunch menu is a big improvement?''}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down the population, and write down the size of the sample.
+  \item The principal took the students who happened to be closest to
+  hand. Name this sampling technique.
+  \item Give one reason why her sample may not be representative of all
+  420 students.
+  \item The question she asked is a \emph{leading} question. Explain what
+  is wrong with it, and rewrite it so that it is not leading.
+  \item Describe how the principal could instead take a simple random
+  sample of 30 students.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,12.6);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Grouping continuous data and drawing a histogram [7 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.1, 4.3); style after Haese Core Topics SL, Ch 11E ---
+\item[2.]
+
+The height of each of 24 tomato plants was measured, in centimetres:
+
+{\small
+\begin{center}
+\setlength{\tabcolsep}{8pt}
+\begin{tabular}{cccccc}
+23.4 & 31.7 & 28.0 & 36.2 & 41.5 & 27.3 \\
+29.8 & 25.0 & 39.1 & 30.0 & 22.6 & 33.4 \\
+37.9 & 29.5 & 26.8 & 43.2 & 35.0 & 31.1 \\
+24.7 & 32.6 & 28.9 & 40.3 & 26.1 & 42.0 \\
+\end{tabular}
+\end{center}}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Complete the grouped frequency table below.
+  \item Write down the modal class.
+  \item One plant measured exactly $30.0$ cm. State which class it is
+  counted in, and explain why.
+  \item Draw a histogram for the data on the grid below.
+\end{enumerate}
+
+{\renewcommand{\arraystretch}{1.7}
+\begin{center}
+\begin{tabular}{|c|p{4.2cm}|c|}
+\hline
+\textbf{Height $h$ (cm)} & \hfil \textbf{Tally} & \textbf{Frequency} \\ \hline
+$20 \le h < 25$ & & \\ \hline
+$25 \le h < 30$ & & \\ \hline
+$30 \le h < 35$ & & \\ \hline
+$35 \le h < 40$ & & \\ \hline
+$40 \le h < 45$ & & \\ \hline
+\textbf{Total}  & & \\ \hline
+\end{tabular}
+\end{center}}
+
+\vspace{-0.2cm}
+
+\begin{center}
+\begin{tikzpicture}[x=0.44cm, y=0.66cm]
+  % grid
+  \draw[gray!30] (20,0) grid[xstep=1, ystep=1] (45,9);
+  \draw[gray!60, thin] (20,0) grid[xstep=5, ystep=2] (45,9);
+  % axes
+  \draw[thick, -{Stealth[length=2mm]}] (20,0) -- (46.2,0);
+  \node[anchor=west] at (46.6,0) {\footnotesize $h$ (cm)};
+  \draw[thick, -{Stealth[length=2mm]}] (20,0) -- (20,9.6);
+  \foreach \x in {20,25,30,35,40,45} \draw (\x,0) -- (\x,-0.25) node[below] {\footnotesize \x};
+  \foreach \y in {0,2,4,6,8} \draw (20,\y) -- (19.6,\y) node[left] {\footnotesize \y};
+  \node[rotate=90, anchor=south] at (17.6,4.5) {\footnotesize frequency};
+\end{tikzpicture}
+\end{center}
+
+\end{enumerate}
+\end{document}
