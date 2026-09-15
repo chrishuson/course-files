@@ -1,0 +1,125 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+\setlength{\parskip}{0.3\baselineskip}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 HL \\* 15 September 2026}
+
+\begin{document}
+\subsubsection*{12.4 Classwork: de Moivre, Trigonometric Identities and Roots of Unity --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: de Moivre + binomial -> cos 3t [6 marks] ---
+\item[1.] [Maximum mark: 6]
+
+\textbf{(a)} $(\cos\theta + i\sin\theta)^{3} = \cos 3\theta + i\sin 3\theta$
+\hfill \textbf{A1}
+
+\emph{A1 for a correct statement of de Moivre's theorem at $n = 3$. Accept
+$\operatorname{cis}3\theta$ or $e^{3i\theta}$ written alongside.}
+
+\textbf{(b)} $(\cos\theta + i\sin\theta)^{3}
+= \cos^{3}\theta + 3\cos^{2}\theta\,(i\sin\theta)
++ 3\cos\theta\,(i\sin\theta)^{2} + (i\sin\theta)^{3}$ \hfill \textbf{M1}
+
+$= \cos^{3}\theta + 3i\cos^{2}\theta\sin\theta - 3\cos\theta\sin^{2}\theta
+- i\sin^{3}\theta$ \hfill \textbf{A1}
+
+\emph{M1 for a complete binomial expansion with the four terms and the correct
+coefficients $1, 3, 3, 1$, however it is set out. A1 for simplifying the powers
+of $i$ correctly ($i^{2} = -1$, $i^{3} = -i$) and collecting into real and
+imaginary parts. An expansion that keeps $i^{2}$ unevaluated earns the M1 only.}
+
+\textbf{(c)} Equating real parts with (a):
+$\cos 3\theta = \cos^{3}\theta - 3\cos\theta\sin^{2}\theta$ \hfill \textbf{M1}
+
+$= \cos^{3}\theta - 3\cos\theta\,(1 - \cos^{2}\theta)$ \hfill \textbf{A1}
+
+$= \cos^{3}\theta - 3\cos\theta + 3\cos^{3}\theta = 4\cos^{3}\theta - 3\cos\theta$
+\hfill \textbf{AG}
+
+\emph{M1 for equating the real part of (a) with the real part of (b); A1 for
+using $\sin^{2}\theta = 1 - \cos^{2}\theta$ to remove the sine. The AG is the
+printed result, so the two lines before it must both be present --- a candidate
+who writes the answer straight down from memory earns nothing here.}
+
+\newpage
+
+%--- Problem 2: sin 3t and the cubic equation [5 marks] ---
+\item[2.] [Maximum mark: 5]
+
+\textbf{(a)} Equating imaginary parts:
+$\sin 3\theta = 3\cos^{2}\theta\sin\theta - \sin^{3}\theta$ \hfill \textbf{M1}
+
+$= 3(1 - \sin^{2}\theta)\sin\theta - \sin^{3}\theta
+= 3\sin\theta - 4\sin^{3}\theta$ \hfill \textbf{A1}
+
+\emph{M1 for equating imaginary parts of the same two expressions; A1 for the
+expression in $\sin\theta$ only. Stopping at
+$3\cos^{2}\theta\sin\theta - \sin^{3}\theta$ earns the M1 only, since the
+question asks for $\sin\theta$ alone.}
+
+\textbf{(b)} $8\cos^{3}\theta - 6\cos\theta = 2(4\cos^{3}\theta - 3\cos\theta)
+= 2\cos 3\theta$, so $\cos 3\theta = \dfrac{1}{2}$ \hfill \textbf{M1}
+
+$0 \leq \theta < \pi \;\Rightarrow\; 0 \leq 3\theta < 3\pi$, and
+$\cos x = \dfrac{1}{2}$ at $x = \dfrac{\pi}{3},\ \dfrac{5\pi}{3},\ \dfrac{7\pi}{3}$
+\hfill \textbf{A1}
+
+$\theta = \dfrac{\pi}{9},\quad \dfrac{5\pi}{9},\quad \dfrac{7\pi}{9}$
+\hfill \textbf{A1}
+
+\emph{M1 for recognising the left side as $2\cos 3\theta$ using the identity
+from Problem 1 --- this is the whole point of the ``hence''. A1 for finding all
+three values of $3\theta$ in the widened interval $[0, 3\pi)$; a candidate who
+finds only $3\theta = \pi/3$ loses this mark. A1 for the three values of
+$\theta$. \textbf{FT:} award the final A1 for the candidate's own $3\theta$
+values each correctly divided by 3. A candidate who solves the cubic
+numerically earns nothing: the question says ``hence'', and exact multiples of
+$\pi$ are required.}
+
+\newpage
+
+%--- Problem 3: fifth roots of unity [5 marks] ---
+\item[3.] [Maximum mark: 5]
+
+\textbf{(a)} $z^{5} = 1 = e^{2k\pi i}$, so
+$z = e^{2k\pi i/5}$, $k \in \mathbb{Z}$ \hfill \textbf{M1}
+
+Taking $k = 0, \pm 1, \pm 2$ to place every argument in
+$-\pi < \theta \leq \pi$: \hfill \textbf{A1}
+
+$$z = 1,\quad e^{\,2\pi i/5},\quad e^{\,4\pi i/5},\quad e^{-2\pi i/5},\quad
+e^{-4\pi i/5}$$ \hfill \textbf{A1}
+
+\emph{M1 for writing $1$ in exponential form with the $2k\pi$ allowance and
+taking fifth roots. First A1 for the modulus $1$ together with any one correct
+non-zero argument. Second A1 for all five roots with every argument inside the
+stated range --- $e^{6\pi i/5}$ and $e^{8\pi i/5}$ are outside it and must be
+converted to $e^{-4\pi i/5}$ and $e^{-2\pi i/5}$. Accept $\operatorname{cis}$
+form throughout.}
+
+\textbf{(b)} The five roots are the roots of $z^{5} - 1 = 0$, in which the
+coefficient of $z^{4}$ is $0$, so their sum is $0$. \hfill \textbf{R1}
+
+\emph{Accept any complete argument: the sum of roots from the coefficients, as
+above; the geometric series
+$1 + \omega + \omega^{2} + \omega^{3} + \omega^{4}
+= \dfrac{1 - \omega^{5}}{1 - \omega} = \dfrac{1 - 1}{1 - \omega} = 0$ for
+$\omega \neq 1$; or the symmetry argument that five equal vectors spaced
+$2\pi/5$ apart cancel. Asserting ``they cancel by symmetry'' with nothing
+further earns nothing --- the equal spacing has to be the stated reason.}
+
+\textbf{(c)} A \textbf{regular pentagon}, centred at the origin, with every
+vertex a distance $1$ from the origin (the roots lie on the unit circle, one
+vertex at $z = 1$, consecutive vertices $\dfrac{2\pi}{5}$ apart).
+\hfill \textbf{A1}
+
+\emph{A1 requires the pentagon \emph{and} both requested details --- centre at
+the origin and vertices at distance $1$. ``A pentagon'' alone earns nothing,
+and neither does ``a regular polygon'' without the number of sides.}
+
+\end{enumerate}
+\end{document}

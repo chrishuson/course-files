@@ -1,0 +1,114 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["4.2", "4.3"],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.37,
+    "answer_box_top_frac_note": "The answer box runs 0.557 to 0.900. The crop is set higher, just above the '(a)' line at 0.380, so that anything a student writes beside the parts list is captured as well as the box. This is the lesson from 1-2CW_Histograms, where parts with no ruled space were answered beside the question text and fell outside a crop set at the box. The nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored, AA SL 4.2 and 4.3, calculator allowed). Real data: 2026 standard VAT rates for twelve European countries, Tax Foundation 'VAT Rates in Europe 2026'. Values as printed: Malta 18, Germany 19, Cyprus 19, France 20, Austria 20, Spain 21, Netherlands 21, Belgium 21, Italy 22, Ireland 23, Sweden 25, Hungary 27. Sorted: 18, 19, 19, 20, 20, 21, 21, 21, 22, 23, 25, 27. n = 12, sum = 256, mean = 64/3 = 21.333..., median = 21, mode = 21. Mean > median, so the distribution is skewed right, with Hungary at 27 the isolated high value. The dot plot on the sheet shows the same twelve values.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the mean of the twelve standard VAT rates.",
+        "expected": {"answer": "21.3 (3 s.f.)", "sum": 256, "n": 12, "exact": "64/3 = 21.333..."},
+        "tolerance": "Accept 21.3, 21.33, 21.3333, 64/3, or 21 1/3. Accept 21.33% with the percent sign. Do not accept 21 alone: that is the median and the mode, not the mean.",
+        "notes": "M1 for dividing a sum of the twelve values by 12, however the sum is written or obtained (by hand or on the GDC). A1 for 21.3 to three significant figures or any exact equivalent. A candidate whose sum is wrong but who divides it by 12 earns the M1 only."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the median of the twelve standard VAT rates.",
+        "expected": {"answer": "21"},
+        "tolerance": "Accept 21 or 21%. Accept the working (21 + 21)/2 shown or implied.",
+        "notes": "M1 for an ordered list, or for identifying that with n = 12 the median is the mean of the 6th and 7th values. A1 for 21. An ordered list with the middle pair marked and 21 stated earns both marks. A candidate who takes a single middle value without averaging still reaches 21 here; award both marks, since the value is correct and the ordering is the substance - but the return should note that with an even n the two middle values are averaged."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the mode of the twelve standard VAT rates.",
+        "expected": {"answer": "21"},
+        "tolerance": "Accept 21 or 21%. Accept 'Spain, Netherlands and Belgium' only if the value 21 also appears.",
+        "notes": "A1 for 21, the value occurring three times. Do not accept 3 (that is the frequency of the mode) or a list of countries with no value."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["A1", "R1"],
+        "description": "Describe the shape of the distribution from the dot plot, and justify by comparing the mean and the median.",
+        "expected": {"answer": "Skewed right (positively skewed), because the mean 21.3 is greater than the median 21, and the dot plot has a longer tail on the high side."},
+        "tolerance": "Accept 'positive skew', 'skewed right', 'skewed to the right', 'tail to the right', 'tail at the high end'. Accept a justification based only on the comparison of mean and median, or only on the shape of the tail, provided it is stated.",
+        "notes": "A1 for naming the shape as skewed right / positively skewed. R1 for a justification of the right kind: mean greater than median, or a longer tail on the high side with most of the data bunched at 19 to 22. Naming the shape with no justification earns the A1 only. 'Skewed left' earns nothing even with a justification attached, because the description is wrong.",
+        "follow_through": "Award the R1 for a comparison that is correct for the candidate's own mean and median from (a) and (b), even when those values are wrong."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": ["R1"],
+        "description": "Name the country that stands out, and say in one sentence why it would be called an outlier.",
+        "expected": {"answer": "Hungary (27%), because it sits well above the rest of the data, separated from the next value (25%) with a gap and far from where the bulk of the values lie."},
+        "tolerance": "Accept Hungary identified by name or by its value 27. Accept any informal reason of the right kind: it is far from the rest, it is separated by a gap, it is much higher than the others, it is not near the cluster at 19 to 22.",
+        "notes": "R1 requires both the country (or its value) and a reason of the right kind. Naming Hungary with no reason earns nothing. A reason resting only on 'it is the biggest' earns nothing: the largest value in any data set is the biggest, and what makes this one an outlier is its distance from the rest. No formal 1.5 x IQR test is expected at this stage."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["4.2", "4.3"],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.39,
+    "answer_box_top_frac_note": "The answer box runs 0.577 to 0.906. The crop starts just above the '(a)' line at 0.397 so that marginal work beside the parts list is captured too. The even-page nickname box sits at 0.065 and stays outside the crop.",
+    "source": "Original (freshly authored, AA SL 4.2 and 4.3, calculator allowed). Real data: 2026 US state sales tax rates, state rate only, Tax Foundation 'State and Local Sales Tax Rates, 2026'. Values as printed: Oregon 0, Montana 0, Delaware 0, Colorado 2.9, Alabama 4.0, Georgia 4.0, New York 4.0, Wyoming 4.0, Virginia 5.3, Florida 6.0, Texas 6.25, Tennessee 7.0, California 7.25. Sorted: 0, 0, 0, 2.9, 4.0, 4.0, 4.0, 4.0, 5.3, 6.0, 6.25, 7.0, 7.25. n = 13, sum = 50.7, mean = 3.9 exactly, median = the 7th value = 4.0, mode = 4.0 (four states). Mean < median, so this distribution is skewed left, pulled down by the three states charging nothing. Deliberately the mirror image of Problem 1.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the mean of the thirteen state sales tax rates.",
+        "expected": {"answer": "3.9", "sum": 50.7, "n": 13},
+        "tolerance": "Accept 3.9, 3.90 or 3.9%. The mean is exactly 3.9, so no rounding statement is needed. Do not accept a mean computed from ten states by dropping the three zeros.",
+        "notes": "M1 for dividing a sum of the thirteen values by 13. A1 for 3.9. The commonest error is to omit the three zeros and divide by 10, giving 5.07; that earns the M1 only, and the return should say that a state charging 0% is still a data value."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the median of the thirteen state sales tax rates.",
+        "expected": {"answer": "4.0"},
+        "tolerance": "Accept 4, 4.0 or 4%.",
+        "notes": "M1 for an ordered list, or for identifying that with n = 13 the median is the 7th value. A1 for 4.0. A candidate who orders the list but miscounts the position earns the M1 only."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the mode of the thirteen state sales tax rates.",
+        "expected": {"answer": "4.0"},
+        "tolerance": "Accept 4, 4.0 or 4%.",
+        "notes": "A1 for 4.0, the value occurring four times. Do not accept 0: it occurs three times, one fewer. Do not accept 4 stated together with 0 as a joint answer, since the two frequencies are not equal."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["A1", "R1"],
+        "description": "Describe the shape of this distribution, and justify by comparing the mean and the median.",
+        "expected": {"answer": "Skewed left (negatively skewed), because the mean 3.9 is less than the median 4.0, and the dot plot has a tail running down to the three states at 0."},
+        "tolerance": "Accept 'negative skew', 'skewed left', 'skewed to the left', 'tail to the left', 'tail at the low end'.",
+        "notes": "A1 for naming the shape as skewed left / negatively skewed. R1 for a justification of the right kind: mean less than median, or a tail running down to 0 with most of the data between 4 and 7.25. Note the contrast with Problem 1 is the teaching point: the same three statistics, opposite order, opposite shape.",
+        "follow_through": "Award the R1 for a comparison that is correct for the candidate's own mean and median from (a) and (b)."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": ["R1"],
+        "description": "Say whether the three states charging no sales tax should be treated as outliers or as a separate group, with a reason.",
+        "expected": {"answer": "Either answer is acceptable with a reason. They are far from the rest of the data, which is what makes a value an outlier; but there are three of them and they are identical, and they are 0 by policy rather than by accident, which is what makes them a group rather than stray values."},
+        "tolerance": "Accept 'outliers' or 'a separate group' or 'both'. The mark is for the reasoning, not for the label chosen.",
+        "notes": "R1 for any answer that engages with what makes a value an outlier - distance from the rest of the data - and applies it here. Accept 'outliers, because they are far below everything else'. Accept 'a group, because there are three of them at exactly the same value and those states have chosen to have no sales tax at all'. A bare label with no reason earns nothing. This part is deliberately open: it is the interpretation item, and a well-argued answer either way is full credit."
+      }
+    ]
+  }
+]

@@ -1,7 +1,9 @@
 [
   {
     "problem_number": 1,
-    "topic_codes": ["4.1"],
+    "topic_codes": [
+      "4.1"
+    ],
     "total_marks": 8,
     "answer_box_top_frac": 0.44,
     "answer_box_top_frac_note": "Detected answer-box rectangle starts at y = 359.4 pt of 792 pt (top_frac 0.454); backed off to 0.44 so the crop catches writing that starts on the box's top rule. All of the student's work for this problem is inside the box.",
@@ -10,7 +12,10 @@
       {
         "label": "a",
         "marks": 2,
-        "mark_codes": ["A1", "A1"],
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
         "description": "Write down the population, and write down the size of the sample.",
         "expected": {
           "answer": "Population: all 420 students at the school. Sample size: 30.",
@@ -23,7 +28,9 @@
       {
         "label": "b",
         "marks": 1,
-        "mark_codes": ["A1"],
+        "mark_codes": [
+          "A1"
+        ],
         "description": "Name the sampling technique used when the principal surveys the students who happen to be closest to hand.",
         "expected": {
           "answer": "convenience sampling"
@@ -34,7 +41,9 @@
       {
         "label": "c",
         "marks": 1,
-        "mark_codes": ["R1"],
+        "mark_codes": [
+          "R1"
+        ],
         "description": "Give one reason why the sample may not be representative of all 420 students.",
         "expected": {
           "answer": "Only students who eat in the cafeteria can be asked, so students who bring lunch from home are never represented."
@@ -45,7 +54,10 @@
       {
         "label": "d",
         "marks": 2,
-        "mark_codes": ["R1", "A1"],
+        "mark_codes": [
+          "R1",
+          "A1"
+        ],
         "description": "Explain what is wrong with the leading question 'Do you agree that the new lunch menu is a big improvement?', and rewrite it so that it is not leading.",
         "expected": {
           "answer": "The wording suggests the answer before the student gives an opinion, pushing replies towards 'yes'. Neutral rewrite: 'What is your opinion of the new lunch menu?'"
@@ -56,7 +68,10 @@
       {
         "label": "e",
         "marks": 2,
-        "mark_codes": ["A1", "A1"],
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
         "description": "Describe how the principal could instead take a simple random sample of 30 students.",
         "expected": {
           "answer": "Number the students 1 to 420, then use the GDC random integer generator to choose 30 different numbers and survey those students."
@@ -68,16 +83,22 @@
   },
   {
     "problem_number": 2,
-    "topic_codes": ["4.1", "4.2"],
+    "topic_codes": [
+      "4.1",
+      "4.2"
+    ],
     "total_marks": 7,
-    "answer_box_top_frac": 0.38,
-    "answer_box_top_frac_note": "Set by hand, not by detect_answer_boxes.py. There is no answer-box rectangle on this page; the printed frequency table and the histogram grid together are the answer area. The crop starts at the top rule of the frequency table (y = 307.2 pt of 792 pt = 0.388), backed off to 0.38, and runs to the page bottom so both the table and the grid are captured. The detector would otherwise report the histogram grid rectangle at top_frac 0.627 and miss the table.",
+    "answer_box_top_frac": 0.24,
+    "answer_box_top_frac_note": "Set by hand and RAISED from 0.38 to 0.24 on 2026-09-14 after the first scan. There is no answer box on this page; the printed frequency table and the histogram grid are the answer area, and 0.38 started at the top rule of the table. But parts (b) and (c) ask for written answers and the sheet gives them no ruled space, so students wrote those answers beside the question text - above 0.38, where the crop cut them off and both scorers saw a blank. The crop now starts just above the '(a)' line (y = 198.5 pt of 792 pt = 0.251), backed off to 0.24, and runs to the page bottom, so the parts text, the table and the grid are all captured. The nickname box sits near 0.10 and stays outside the crop. Design fix for the next printing: give (b) and (c) ruled answer lines.",
     "source": "Original (freshly authored, AA SL 4.1 and 4.2). Continuous data: heights in cm of 24 tomato plants, grouped in classes of width 5 from 20 to 45. Style after Haese, Core Topics SL, Chapter 11E. Raw data as printed, reading left to right, six per row: 23.4, 31.7, 28.0, 36.2, 41.5, 27.3 / 29.8, 25.0, 39.1, 30.0, 22.6, 33.4 / 37.9, 29.5, 26.8, 43.2, 35.0, 31.1 / 24.7, 32.6, 28.9, 40.3, 26.1, 42.0. Counts: [20,25) 3, [25,30) 8, [30,35) 5, [35,40) 4, [40,45) 4; total 24. The values 25.0, 30.0 and 35.0 sit exactly on class boundaries by design, so the lower-boundary-inclusive rule is exercised.",
     "parts": [
       {
         "label": "a",
         "marks": 2,
-        "mark_codes": ["A1", "A1"],
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
         "description": "Complete the grouped frequency table for the 24 plant heights. The class column (20<=h<25, 25<=h<30, 30<=h<35, 35<=h<40, 40<=h<45, Total) is printed; the Tally and Frequency columns are empty.",
         "expected": {
           "answer": "3, 8, 5, 4, 4; total 24",
@@ -94,7 +115,9 @@
       {
         "label": "b",
         "marks": 1,
-        "mark_codes": ["A1"],
+        "mark_codes": [
+          "A1"
+        ],
         "description": "Write down the modal class.",
         "expected": {
           "answer": "25 <= h < 30"
@@ -106,7 +129,10 @@
       {
         "label": "c",
         "marks": 2,
-        "mark_codes": ["A1", "R1"],
+        "mark_codes": [
+          "A1",
+          "R1"
+        ],
         "description": "A plant measured exactly 30.0 cm. State which class it is counted in, and explain why.",
         "expected": {
           "answer": "30 <= h < 35, because that class includes its lower boundary (30 <= h) while the class below excludes 30 (h < 30)."
@@ -117,7 +143,10 @@
       {
         "label": "d",
         "marks": 2,
-        "mark_codes": ["A1", "A1"],
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
         "description": "Draw a histogram for the data on the printed grid. The grid has h from 20 to 45 on the horizontal axis (ticks every 5) and frequency from 0 to 9 on the vertical axis (labelled 0, 2, 4, 6, 8).",
         "expected": {
           "answer": "Five bars of heights 3, 8, 5, 4, 4 spanning 20-25, 25-30, 30-35, 35-40, 40-45, drawn with no gaps."

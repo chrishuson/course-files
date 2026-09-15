@@ -1,0 +1,105 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["1.14"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.23,
+    "answer_box_top_frac_note": "The answer box starts at 0.390. The crop is set higher, just above the '(a)' line at 0.247, so working written beside the parts list is captured too (the lesson from 1-2CW_Histograms). The nickname box sits at roughly 0.06 to 0.11 and stays outside the crop.",
+    "source": "Original (freshly authored 2026-09-15, HL syllabus 1.14, no calculator). de Moivre at n = 3 plus the binomial expansion, equating real parts to derive the triple-angle identity cos 3t = 4cos^3 t - 3cos t. Problems 1 and 2 are a single 'hence' chain split across two pages so each has a full page of working space.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Use de Moivre's theorem to write (cos t + i sin t)^3 in terms of cos 3t and sin 3t.",
+        "expected": {"answer": "(cos t + i sin t)^3 = cos 3t + i sin 3t"},
+        "tolerance": "Accept cis 3t or e^(3it) written alongside the required form. Accept the general statement of de Moivre followed by the substitution n = 3.",
+        "notes": "A1 for a correct statement at n = 3. The right-hand side must show both cos 3t and i sin 3t."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Expand (cos t + i sin t)^3 by the binomial theorem, simplifying the powers of i.",
+        "expected": {"answer": "cos^3 t + 3i cos^2 t sin t - 3 cos t sin^2 t - i sin^3 t"},
+        "tolerance": "Accept any arrangement, and accept the real and imaginary parts collected or left in the order of the expansion. Accept Pascal's triangle coefficients written out.",
+        "notes": "M1 for a complete four-term expansion with coefficients 1, 3, 3, 1. A1 for simplifying i^2 = -1 and i^3 = -i correctly. An expansion that leaves i^2 unevaluated earns the M1 only."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "AG"],
+        "description": "By equating real parts, show that cos 3t = 4 cos^3 t - 3 cos t. (Answer given.)",
+        "expected": {"answer": "cos 3t = cos^3 t - 3 cos t sin^2 t = cos^3 t - 3 cos t (1 - cos^2 t) = 4 cos^3 t - 3 cos t"},
+        "tolerance": "Show that (answer given). Accept the Pythagorean substitution written as sin^2 t = 1 - cos^2 t or as 1 - sin^2 t = cos^2 t.",
+        "notes": "M1 for equating the real part of (a) with the real part of (b). A1 for using sin^2 t = 1 - cos^2 t to remove the sine. AG for reaching the printed result. Both preceding lines must be present: a candidate who writes the identity down from memory earns nothing, since the result is given."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["1.14", "3.8"],
+    "total_marks": 5,
+    "answer_box_top_frac": 0.12,
+    "answer_box_top_frac_note": "The answer box starts at 0.277, but the parts list begins at 0.134 and the crop is set just above it so any working written beside the question is captured. The even-page nickname box occupies 0.065 to about 0.11, so 0.12 is the lowest safe value: it must not rise further or a nickname enters the crop.",
+    "source": "Original (freshly authored 2026-09-15, HL syllabus 1.14 with trigonometric equation solving). Continues the chain from Problem 1: imaginary parts give sin 3t = 3 sin t - 4 sin^3 t, then 8cos^3 t - 6cos t = 2 cos 3t turns a cubic into cos 3t = 1/2, with solutions t = pi/9, 5pi/9, 7pi/9 on [0, pi).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Equate imaginary parts to find sin 3t in terms of sin t only.",
+        "expected": {"answer": "sin 3t = 3 sin t - 4 sin^3 t"},
+        "tolerance": "Accept the terms in either order. The expression must be in sin t alone.",
+        "notes": "M1 for equating the imaginary parts of the two expressions from Problem 1. A1 for the expression in sin t only. Stopping at 3 cos^2 t sin t - sin^3 t earns the M1 only, because the question asks for sin t alone."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Hence solve 8 cos^3 t - 6 cos t = 1 for 0 <= t < pi, giving exact multiples of pi.",
+        "expected": {"answer": "t = pi/9, 5pi/9, 7pi/9", "intermediate": "cos 3t = 1/2; 3t = pi/3, 5pi/3, 7pi/3"},
+        "tolerance": "Accept the three solutions in any order. Exact multiples of pi only; decimals earn nothing for the final mark.",
+        "notes": "M1 for recognising 8cos^3 t - 6cos t as 2(4cos^3 t - 3cos t) = 2 cos 3t and reducing to cos 3t = 1/2 - this is what 'hence' asks for. A1 for all three values of 3t in the widened interval [0, 3pi); finding only 3t = pi/3 loses this mark, and that is the commonest error. A1 for the three values of t. A candidate who solves the cubic numerically or graphically earns nothing on this part.",
+        "follow_through": "Award the final A1 for the candidate's own values of 3t each correctly divided by 3, even when the set of 3t values is incomplete or wrong."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": ["1.14"],
+    "total_marks": 5,
+    "answer_box_top_frac": 0.12,
+    "answer_box_top_frac_note": "The answer box starts at 0.472, but the parts list begins at 0.128 and the printed Argand grid sits between the two; a student may annotate the grid, so the crop starts above the parts list and takes in both. The odd-page nickname box occupies about 0.06 to 0.11, so 0.12 is the lowest safe value.",
+    "source": "Original (freshly authored 2026-09-15, HL syllabus 1.14). Fifth roots of unity: z = e^(2k pi i/5) for k = 0, +/-1, +/-2, giving arguments 0, +/-2pi/5, +/-4pi/5 inside -pi < theta <= pi; the roots sum to zero and form a regular pentagon on the unit circle with one vertex at z = 1. An unlabelled Argand grid is printed for optional working.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find all five solutions of z^5 = 1 in the form e^(i theta) with -pi < theta <= pi.",
+        "expected": {"answer": "1, e^(2 pi i/5), e^(4 pi i/5), e^(-2 pi i/5), e^(-4 pi i/5)"},
+        "tolerance": "Accept cis form throughout. Accept e^(0i) or 1 for the first root. Arguments must lie in -pi < theta <= pi: e^(6 pi i/5) and e^(8 pi i/5) are outside the range and must be converted.",
+        "notes": "M1 for writing 1 as e^(2k pi i) with the 2k pi allowance shown or used, and taking fifth roots. First A1 for modulus 1 together with any one correct non-zero argument. Second A1 for all five roots with every argument inside the stated range. Giving the roots as k = 0, 1, 2, 3, 4 without converting the last two into the required range loses the second A1 only."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["R1"],
+        "description": "Show that the five solutions sum to zero.",
+        "expected": {"answer": "The five roots are the roots of z^5 - 1 = 0, whose z^4 coefficient is 0, so the sum of the roots is 0."},
+        "tolerance": "Accept any complete argument: sum of roots from the coefficients; the geometric series 1 + w + w^2 + w^3 + w^4 = (1 - w^5)/(1 - w) = 0 for w not equal to 1; or five unit vectors equally spaced by 2pi/5 cancelling.",
+        "notes": "R1 for a complete reason. 'They cancel by symmetry' with nothing further earns nothing: the equal spacing, or the algebra, has to be stated. Numerically adding decimal approximations of the five roots earns nothing, since the question says show."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Describe the figure formed on an Argand diagram, stating its centre and the distance of each vertex from the origin.",
+        "expected": {"answer": "A regular pentagon centred at the origin, with each vertex a distance 1 from the origin (on the unit circle), one vertex at z = 1 and consecutive vertices 2pi/5 apart."},
+        "tolerance": "Accept 'regular pentagon' or 'regular 5-sided polygon'. Accept 'radius 1' or 'on the unit circle' for the distance.",
+        "notes": "A1 requires the pentagon together with both requested details: centre at the origin and vertices at distance 1. 'A pentagon' alone earns nothing, and neither does 'a regular polygon' without the number of sides."
+      }
+    ]
+  }
+]

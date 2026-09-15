@@ -1,0 +1,176 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\setlength{\parskip}{0.3\baselineskip}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 15 September 2026}
+
+\begin{document}
+\subsubsection*{1.3 Classwork: Mean, Median and Mode --- Markscheme}
+
+\emph{Data sources: Tax Foundation, \emph{VAT Rates in Europe 2026} and
+\emph{State and Local Sales Tax Rates 2026} (state rate only). Both sets are
+real 2026 figures.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: EU VAT, right skew [8 marks] ---
+\item[1.] [Maximum mark: 8]
+
+Twelve standard VAT rates, sorted:
+$$18,\; 19,\; 19,\; 20,\; 20,\; \underline{21},\; \underline{21},\; 21,\; 22,\; 23,\; 25,\; 27$$
+$n = 12$, $\sum x = 256$.
+
+\textbf{(a)} $\bar{x} = \dfrac{256}{12} = \dfrac{64}{3} = 21.333\ldots = 21.3$
+(3 s.f.) \hfill \textbf{M1A1}
+
+\emph{M1 for a sum of the twelve values divided by 12, by hand or on the GDC;
+A1 for 21.3. Accept $\frac{64}{3}$ or $21\frac{1}{3}$. Do not accept 21 --- that
+is the median and the mode.}
+
+\emph{\textbf{GDC:} \texttt{menu} $\rightarrow$ \texttt{Statistics}
+$\rightarrow$ \texttt{Stat Calculations} $\rightarrow$
+\texttt{One-Variable Statistics}.}
+
+\textbf{(b)} With $n = 12$ the median is the mean of the 6th and 7th values:
+$\dfrac{21 + 21}{2} = 21$ \hfill \textbf{M1A1}
+
+\emph{M1 for an ordered list or for identifying the middle pair; A1 for 21.
+A candidate who takes a single middle value still reaches 21 here --- award both
+marks, but the return should say that with an even $n$ the two middle values
+are averaged.}
+
+\textbf{(c)} Mode $= 21$ (Spain, Netherlands and Belgium).
+\hfill \textbf{A1}
+
+\emph{Do not accept 3, which is the frequency of the mode.}
+
+\textbf{(d)} The distribution is \textbf{skewed right} (positive skew).
+\hfill \textbf{A1}
+
+Because $\bar{x} = 21.3 > \text{median} = 21$, and the dot plot has a longer
+tail on the high side while most values bunch between 19 and 22.
+\hfill \textbf{R1}
+
+\emph{R1 for a justification of either kind --- the mean exceeding the median,
+or the long tail on the right. Naming the shape with no reason earns the A1
+only. ``Skewed left'' earns nothing, however it is justified. FT: award the R1
+for a comparison that is correct for the candidate's own mean and median.}
+
+\textbf{(e)} \textbf{Hungary} at $27\%$: it sits well above the rest, with a
+gap between it and the next value ($25\%$), far from where the bulk of the data
+lies. \hfill \textbf{R1}
+
+\emph{R1 requires the country (or the value 27) \emph{and} a reason of the
+right kind --- distance from the rest of the data, or the gap. ``It is the
+biggest'' earns nothing: every data set has a biggest value. No $1.5 \times$ IQR
+test is expected here; the definition in use is informal.}
+
+\newpage
+
+%--- Problem 2: US state sales tax, left skew [8 marks] ---
+\item[2.] [Maximum mark: 8]
+
+Thirteen state sales tax rates, sorted:
+$$0,\; 0,\; 0,\; 2.9,\; 4.0,\; 4.0,\; \underline{4.0},\; 4.0,\; 5.3,\; 6.0,\; 6.25,\; 7.0,\; 7.25$$
+$n = 13$, $\sum x = 50.7$.
+
+\textbf{(a)} $\bar{x} = \dfrac{50.7}{13} = 3.9$ exactly \hfill \textbf{M1A1}
+
+\emph{M1 for a sum of the thirteen values divided by 13; A1 for 3.9. The
+commonest error is to drop the three zeros and divide by 10, giving 5.07: that
+earns the M1 only. A state charging $0\%$ is still a data value.}
+
+\textbf{(b)} With $n = 13$ the median is the 7th value: $4.0$
+\hfill \textbf{M1A1}
+
+\emph{M1 for an ordered list or for identifying the 7th position; A1 for 4.0.}
+
+\textbf{(c)} Mode $= 4.0$ (Alabama, Georgia, New York and Wyoming).
+\hfill \textbf{A1}
+
+\emph{Four states share $4.0$; three share $0$. Do not accept 0, and do not
+accept the two quoted together --- the frequencies are not equal.}
+
+\textbf{(d)} The distribution is \textbf{skewed left} (negative skew).
+\hfill \textbf{A1}
+
+Because $\bar{x} = 3.9 < \text{median} = 4.0$, and the dot plot has a tail
+running down to the three states at $0$ while most values sit between 4 and
+7.25. \hfill \textbf{R1}
+
+\emph{The contrast with Problem 1 is the point of the pair: same three
+statistics, opposite order, opposite shape. FT as in 1(d).}
+
+\textbf{(e)} Either answer earns the mark if it is argued.
+\hfill \textbf{R1}
+
+\emph{Accept ``outliers'', because they sit far below everything else and
+distance from the rest of the data is what makes a value an outlier. Accept
+``a separate group'', because there are three of them at exactly the same
+value and those states have chosen to have no sales tax at all, which is a
+policy rather than a stray measurement. Accept ``both''. The mark is for the
+reasoning; a bare label earns nothing. This is the open interpretation item.}
+
+\bigskip
+\hrule
+\bigskip
+
+\textbf{Teacher notes --- not for the student sheet}
+
+\emph{\textbf{Local taxes on top.} The Problem 2 figures are state rates only.
+Cities and counties add their own: the population-weighted national average
+combined rate is about $7.5\%$, and Louisiana averages about $10.1\%$ combined
+against a $5.0\%$ state rate. Alaska appears at $0\%$ here but its boroughs do
+levy local sales tax --- a good example of a data value that is true as recorded
+and misleading as read.}
+
+\emph{\textbf{How the thirteen states were chosen, and what that costs.} The
+selection is pedagogical, not statistical --- a convenience sample picked to
+produce a clean left tail, a single mode, an odd $n$ and a sum that divides
+exactly. It is not representative, and the numbers say so:}
+
+{\small
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+ & $n$ & Mean & Median & Mode & \% at $0$ \\ \hline
+The thirteen on the sheet & 13 & 3.90 & 4.00 & 4.0 & 23\% \\ \hline
+The other 37 states       & 37 & 5.51 & 6.00 & 6.0 & 5\% \\ \hline
+\textbf{All 50 states}    & 50 & \textbf{5.09} & \textbf{6.00} & \textbf{6.0} & 10\% \\ \hline
+\end{tabular}
+\end{center}}
+
+\emph{The sheet's mean sits $1.2$ points below the true 50-state mean and its
+median a full $2$ points below. Three of the five zero-rate states are in
+(Alaska and New Hampshire are not), so zeros are over-represented more than
+twofold. The real mode is $6.0\%$ --- ten states charge it --- and only one of
+those ten (Florida) is on the sheet. Eight of the thirteen rank in the bottom
+twenty of fifty; nothing sits between rank 5 and rank 15.}
+
+\emph{\textbf{What survives.} The conclusion does. All fifty states are also
+skewed left, and more sharply than the sheet: mean $-$ median is $-0.91$ across
+all fifty against $-0.10$ for the thirteen. So the shape students find is the
+real shape; only the statistics are shifted. That is the briefing, and it ties
+straight back to 1.2 --- this data set is exactly the kind of purposive sample
+they were asked to criticise last week, and it still gets the qualitative answer
+right. Worth asking them why a biased sample can preserve a shape while moving
+every number.}
+
+\emph{\textbf{City income tax, for the discussion about putting two levels on
+one graph.} New York City residents pay a city income tax on top of New York
+State's, at four rates from $3.078\%$ to $3.876\%$ (single filers: $3.078\%$ on
+the first \$12{,}000 of city taxable income, then $3.762\%$, $3.819\%$ and
+$3.876\%$ above \$50{,}000). Yonkers levies a surcharge as well. Most US cities
+levy none at all. Two ways to put that on a graph are worth raising with the
+class: stack the city rate on the state rate as a bar with two segments, so the
+total is the bar height and the split is visible; or plot state rates alone and
+mark the few cities separately, since a variable that is zero for almost every
+city is not really the same variable as the state rate. The first answers ``what
+does a resident pay'', the second answers ``how do states differ'' --- which
+question you are asking decides the graph.}
+
+\end{enumerate}
+\end{document}
