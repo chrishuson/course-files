@@ -1,0 +1,382 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 16 September 2026}
+
+\begin{document}
+\subsubsection*{1.4 Pre-Quiz: Arithmetic Sequences --- Markscheme}
+
+\emph{Calculator allowed. Marks are not printed on the student sheet; they are
+recorded here so the set can be scored consistently. Total: 54 marks.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Arithmetic vs non-arithmetic; the constant-difference test [9 marks] ---
+\item[1.] [Maximum mark: 9]
+
+\medskip
+
+\textbf{(a)} The three differences $u_{2} - u_{1}$, $u_{3} - u_{2}$,
+$u_{4} - u_{3}$:
+
+\begin{center}
+\begin{tabular}{rll}
+(i) & $6,\; 10,\; 14,\; 18,\; 22$ & $4,\; 4,\; 4$ \\
+(ii) & $3,\; 6,\; 12,\; 24,\; 48$ & $3,\; 6,\; 12$ \\
+(iii) & $1,\; 4,\; 9,\; 16,\; 25$ & $3,\; 5,\; 7$ \\
+(iv) & $20,\; 14,\; 8,\; 2,\; -4$ & $-6,\; -6,\; -6$ \\
+(v) & $5,\; 5,\; 5,\; 5,\; 5$ & $0,\; 0,\; 0$ \\
+\end{tabular}
+\end{center}
+\hfill \textbf{A1A1}
+
+\emph{A1 for at least three of the five rows correct; A1 for all five. The
+negative signs in (iv) and the zeros in (v) must be present.}
+
+\medskip
+
+\textbf{(b)} Arithmetic: (i), (iv) and (v). \hfill \textbf{A1}
+
+$d = 4$ in (i), $d = -6$ in (iv) \hfill \textbf{A1}
+
+$d = 0$ in (v) \hfill \textbf{A1}
+
+\emph{The third A1 is for treating $d = 0$ as a legitimate common difference.
+A constant sequence is arithmetic; a candidate who excludes (v) earns the
+first two marks only.}
+
+\emph{FT: award the $d$ marks for values that follow correctly from the
+candidate's own differences in (a).}
+
+\medskip
+
+\textbf{(c)} (ii) is not arithmetic: each term is the previous term
+\emph{multiplied} by $2$. \hfill \textbf{A1}
+
+(iii) is not arithmetic: these are the square numbers, $u_{n} = n^{2}$; the
+differences grow by $2$ each time. \hfill \textbf{A1}
+
+\emph{Accept ``it doubles'' or ``geometric with ratio 2'' for (ii). Accept
+``squares'', ``$1^{2}, 2^{2}, 3^{2}, \ldots$'', or ``the differences are the
+odd numbers'' for (iii).}
+
+\medskip
+
+\textbf{(d)} ``A sequence is arithmetic when the difference between
+consecutive terms \ldots \hfill \textbf{A1}
+
+\ldots\ is the same (constant) for every pair of consecutive terms.''
+\hfill \textbf{A1}
+
+\emph{A1 for referring to the difference between consecutive (successive,
+neighbouring) terms, A1 for saying that difference is constant. ``You add the
+same number each time'' earns both. ``It goes up by the same amount'' earns
+both. ``There is a common difference'' alone earns the second mark only ---
+it names the term without saying what it means.}
+
+\newpage
+
+%--- Problem 2: Sequence vs series; u_n vs S_n notation [9 marks] ---
+\item[2.] [Maximum mark: 9]
+
+\medskip
+
+\textbf{(a)} A \emph{sequence} is an ordered list of terms.
+\hfill \textbf{A1}
+
+A \emph{series} is what you get when the terms of a sequence are added
+together. \hfill \textbf{A1}
+
+\emph{Accept any wording that carries the two ideas: a sequence lists,
+a series sums. ``A series has plus signs'' earns the second mark.}
+
+\medskip
+
+\textbf{(b)} $4 + 9 + 14 + 19 + 24$ \hfill \textbf{A1}
+
+$= 70$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} $u_{5}$ is the fifth term of the sequence; $u_{5} = 24$.
+\hfill \textbf{A1}
+
+$S_{5}$ is the sum of the first five terms; $S_{5} = 70$.
+\hfill \textbf{A1}
+
+\emph{Each A1 needs both the meaning and the value. A value with no
+description, or a description with no value, earns nothing for that part.}
+
+\emph{FT: award the second A1 for the candidate's own sum from (b).}
+
+\medskip
+
+\textbf{(d)} $3,\; 7,\; 11,\; 15$ --- sequence \qquad
+$3 + 7 + 11 + 15$ --- series
+
+$u_{n} = 2n + 1$ --- sequence \qquad $S_{20} = 430$ --- series
+\hfill \textbf{A1A1}
+
+\emph{A1 for any two correct, A1 for all four. $u_{n} = 2n + 1$ is a rule for
+the terms of a sequence; $S_{20}$ is the value of a series.}
+
+\medskip
+
+\textbf{(e)} $S_{5} = u_{1} + u_{2} + u_{3} + u_{4} + u_{5}$ and
+$S_{4} = u_{1} + u_{2} + u_{3} + u_{4}$, so subtracting removes the first
+four terms and leaves $u_{5}$. \hfill \textbf{R1}
+
+\emph{Accept the general statement $S_{n} - S_{n-1} = u_{n}$ explained in the
+same way, or a numerical demonstration on the sequence in (b):
+$70 - 46 = 24 = u_{5}$.}
+
+\newpage
+
+%--- Problem 3: The Gauss story; pairing and the S_n = n/2 (u_1 + u_n) formula [9 marks] ---
+\item[3.] [Maximum mark: 9]
+
+\medskip
+
+\textbf{(a)} $1 + 100 = 101$, \quad $2 + 99 = 101$, \quad $3 + 98 = 101$
+--- every pair has the same total, $101$. \hfill \textbf{A1}
+
+\emph{The A1 is for the observation, not for the three additions. As one
+number goes up by 1 the other goes down by 1, so the total does not change.}
+
+\medskip
+
+\textbf{(b)} The $100$ numbers make $\dfrac{100}{2} = 50$ pairs.
+\hfill \textbf{M1}
+
+$50 \times 101 = 5050$ \hfill \textbf{A1}
+
+\emph{M1 for $100 \div 2$, or for a clear statement that the pairs run
+$1 + 100$ down to $50 + 51$.}
+
+\medskip
+
+\textbf{(c)} $u_{1} = 1$, \quad $d = 1$, \quad $u_{100} = 100$
+
+$S_{100} = \dfrac{100}{2}\bigl(1 + 100\bigr)$ \hfill \textbf{M1}
+
+$= 50 \times 101 = 5050$ \hfill \textbf{A1}
+
+\emph{M1 for substituting all three values into the formula; A1 for $5050$
+together with a statement that it agrees with (b).}
+
+\emph{FT: award the A1 for a value correctly computed from the candidate's own
+$u_{1}$, $d$ and $u_{100}$.}
+
+\medskip
+
+\textbf{(d)} Pairing the first term with the last, the second with the
+second-to-last, and so on gives a total of $u_{1} + u_{n}$ every time.
+\hfill \textbf{R1}
+
+There are $\dfrac{n}{2}$ such pairs, because $n$ terms make $n$ divided by
+$2$ pairs --- so $S_{n} = \dfrac{n}{2}(u_{1} + u_{n})$ is the number of pairs
+times the pair total. \hfill \textbf{R1}
+
+\emph{The second R1 is specifically for identifying $\frac{n}{2}$ as the
+number of pairs. Accept the alternative explanation: write the series
+forwards and backwards, add the two copies to get $n$ lots of
+$(u_{1} + u_{n})$, then halve --- R1 for the doubling set-up, R1 for the
+halving.}
+
+\medskip
+
+\textbf{(e)} $\dfrac{500}{2} = 250$ pairs, each totalling $1 + 500 = 501$
+\hfill \textbf{M1}
+
+$250 \times 501 = 125\,250$ \hfill \textbf{A1}
+
+\emph{Accept the formula route $S_{500} = \frac{500}{2}(1 + 500)$ for the M1.}
+
+\newpage
+
+%--- Problem 4: Fibonacci; recursive vs explicit rules [9 marks] ---
+\item[4.] [Maximum mark: 9]
+
+\medskip
+
+\textbf{(a)} $21,\; 34,\; 55$ \hfill \textbf{A1}
+
+\emph{All three required for the mark.}
+
+\medskip
+
+\textbf{(b)} Differences: $1 - 1 = 0$, \quad $2 - 1 = 1$, \quad
+$3 - 2 = 1$, \quad $5 - 3 = 2$, \quad $8 - 5 = 3$ \hfill \textbf{M1}
+
+The differences are not all the same, so the sequence is not arithmetic.
+\hfill \textbf{A1}
+
+\emph{M1 for at least three differences computed; A1 for the conclusion
+linked to the differences not being constant. A bare ``it is not
+arithmetic'' earns nothing.}
+
+\medskip
+
+\textbf{(c)} A rule is \emph{recursive} when each new term is built from the
+term or terms that came before it. \hfill \textbf{R1}
+
+A recursive rule also needs starting value(s) --- here $u_{1} = u_{2} = 1$ ---
+and to reach a term you must work through all the terms before it.
+\hfill \textbf{R1}
+
+\emph{Accept ``the rule refers back to itself'', ``the answer to one step is
+the input to the next step''. The second R1 is for either of the two ideas:
+that starting values are required, or that you cannot jump straight to
+$u_{n}$.}
+
+\medskip
+
+\textbf{(d)} Recursive: $7 \to 11 \to 15 \to 19 \to 23$, so $u_{5} = 23$
+\hfill \textbf{A1}
+
+Explicit: $u_{5} = 4(5) + 3 = 23$ \hfill \textbf{A1}
+
+For $u_{100}$, use the explicit rule: it gives the answer in one step,
+$u_{100} = 4(100) + 3 = 403$, whereas the recursive rule needs $99$
+additions first. \hfill \textbf{R1}
+
+\emph{The first A1 requires the intermediate terms to be shown --- that is
+what makes it the recursive route. R1 for choosing the explicit rule with a
+reason about the number of steps; the value $403$ is not required.}
+
+\medskip
+
+\textbf{(e)} $\dfrac{u_{10}}{u_{9}} = \dfrac{55}{34} = 1.6176\ldots = 1.62$
+(3 s.f.) \quad and \quad
+$\dfrac{u_{12}}{u_{11}} = \dfrac{144}{89} = 1.6180\ldots = 1.62$ (3 s.f.);
+the ratios are settling down to about $1.618$. \hfill \textbf{A1}
+
+\emph{The mark needs both values and a comment that they are close to each
+other or approaching a fixed number. Naming the golden ratio is not
+required, but mention it when returning the work.}
+
+\newpage
+
+%--- Problem 5: Recursive self-improvement (RSI) in the AI news; arithmetic vs non-arithmetic growth [9 marks] ---
+\item[5.] [Maximum mark: 9]
+
+\medskip
+
+\textbf{(a)} The improvement is applied to its own output: the system that
+round $n$ produces is the system that does the improving in round $n + 1$,
+exactly as $u_{n+1}$ is defined from $u_{n}$. \hfill \textbf{R1}
+
+\emph{Accept any answer that carries ``the result of one round becomes the
+input to the next''. ``It repeats'' alone is not enough --- repetition is not
+the same as feeding the output back in.}
+
+\medskip
+
+\textbf{(b)} Model A: $100,\; 120,\; 140,\; 160$ \quad
+Model B: $100,\; 120,\; 144,\; 172.8$ \hfill \textbf{A1}
+
+Model A is arithmetic: its differences are $20, 20, 20$ --- constant. Model
+B's differences are $20, 24, 28.8$, which are not constant.
+\hfill \textbf{R1}
+
+\emph{A1 for both lists. R1 for naming Model A \emph{and} giving a reason
+based on the differences.}
+
+\medskip
+
+\textbf{(c)} Model A: $c_{1} = 100$, \quad $c_{n+1} = c_{n} + 20$
+\hfill \textbf{A1}
+
+Model B: $c_{1} = 100$, \quad $c_{n+1} = 1.2\,c_{n}$ \hfill \textbf{A1}
+
+\emph{Accept $c_{n+1} = c_{n} + 0.2c_{n}$ for Model B. The starting value
+must appear in at least one of the two rules; do not withhold both marks if
+it is stated once for both models.}
+
+\medskip
+
+\textbf{(d)} Model A: $c_{10} = 100 + 9(20) = 280$ \hfill \textbf{A1}
+
+Model B: $c_{10} = 100(1.2)^{9} = 515.97\ldots = 516$ (3 s.f.)
+\hfill \textbf{A1}
+
+\emph{Accept $516$, $515.98$, or the full $515.978\ldots$ Accept a correct
+value reached by stepping through all ten rounds on the GDC.}
+
+\emph{FT: award each A1 for a value that follows correctly from the
+candidate's own rule in (c).}
+
+\medskip
+
+\textbf{(e)} Model B. \hfill \textbf{A1}
+
+Each round adds $20\%$ of a score that is already bigger than last round's,
+so the increase itself grows --- $20$, then $24$, then $28.8$ --- and the
+model speeds up. Model A adds the same $20$ points for ever.
+\hfill \textbf{R1}
+
+\emph{R1 requires the reason to be about the \emph{increase} growing, not
+just about Model B being larger. FT: award both marks for a choice argued
+correctly from the candidate's own terms in (b).}
+
+\newpage
+
+%--- Problem 6: Arithmetic series calculations [9 marks] ---
+\item[6.] [Maximum mark: 9]
+
+$4 + 11 + 18 + \cdots + 200$
+
+\medskip
+
+\textbf{(a)} $d = 7$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} $u_{n} = 4 + 7(n - 1) = 200$ \hfill \textbf{M1}
+
+$7n - 3 = 200$, so $7n = 203$ and $n = 29$ \hfill \textbf{A1}
+
+\emph{M1 for setting the $n^{\text{th}}$-term expression equal to $200$,
+however it is written. Accept a GDC table or list used to locate $200$ as
+the $29^{\text{th}}$ term.}
+
+\medskip
+
+\textbf{(c)} $S_{29} = \dfrac{29}{2}\bigl(4 + 200\bigr)$ \hfill \textbf{M1}
+
+$= 29 \times 102 = 2958$ \hfill \textbf{A1}
+
+\emph{Accept the other form, $S_{29} = \frac{29}{2}(2(4) + 28(7))$.}
+
+\emph{FT: award the A1 for a sum computed correctly from the candidate's own
+$n$ in (b).}
+
+\medskip
+
+\textbf{(d)} $S_{30} = \dfrac{30}{2}\bigl(2(6) + 29(-2)\bigr)$
+\hfill \textbf{M1}
+
+$= 15(12 - 58) = 15(-46) = -690$ \hfill \textbf{A1}
+
+\emph{M1 for substituting $u_{1} = 6$, $d = -2$, $n = 30$ into either sum
+formula. The negative answer is correct --- the terms pass through zero and
+the later terms are negative.}
+
+\medskip
+
+\textbf{(e)} $S_{10} = \dfrac{10}{2}\bigl(2(5) + 9d\bigr) = 320$
+\hfill \textbf{M1}
+
+$5(10 + 9d) = 320$
+
+$10 + 9d = 64$
+
+$9d = 54$, so $d = 6$ \hfill \textbf{A1}
+
+\emph{M1 for a correct equation in $d$; A1 for $d = 6$. Accept the equation
+solved on the GDC.}
+
+\end{enumerate}
+\end{document}

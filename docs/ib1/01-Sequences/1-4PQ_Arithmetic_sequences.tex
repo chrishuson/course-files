@@ -1,0 +1,197 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 16 September 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyhead[LE]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{1.4 Pre-Quiz: Arithmetic Sequences}
+
+\emph{Homework. Due Monday 21 September, at the start of class. Write your
+answers in the boxes; a calculator is allowed. Several parts ask you to write
+a sentence --- those sentences are the point of the assignment.}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Arithmetic vs non-arithmetic; the constant-difference test [9 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.2) ---
+\item[1.]
+
+Here are five sequences.
+
+\begin{center}
+\begin{tabular}{rl}
+(i) & $6,\; 10,\; 14,\; 18,\; 22,\; \ldots$ \\[2pt]
+(ii) & $3,\; 6,\; 12,\; 24,\; 48,\; \ldots$ \\[2pt]
+(iii) & $1,\; 4,\; 9,\; 16,\; 25,\; \ldots$ \\[2pt]
+(iv) & $20,\; 14,\; 8,\; 2,\; -4,\; \ldots$ \\[2pt]
+(v) & $5,\; 5,\; 5,\; 5,\; 5,\; \ldots$ \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item For each sequence, write down the three differences
+  $u_{2} - u_{1}$, $u_{3} - u_{2}$ and $u_{4} - u_{3}$.
+  \item State which of the five sequences are arithmetic, and write down
+  the common difference $d$ of each one.
+  \item For each sequence that is \emph{not} arithmetic, describe its rule
+  in one sentence.
+  \item Complete the sentence: ``A sequence is arithmetic when \ldots''
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,11.0);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Sequence vs series; u_n vs S_n notation [9 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.2) ---
+\item[2.]
+
+Two words in this unit sound alike but mean different things:
+\emph{sequence} and \emph{series}.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Explain the difference between a sequence and a series, in your own
+  words.
+  \item Consider the sequence $4,\; 9,\; 14,\; 19,\; 24$. Write down the
+  series formed from these five terms, and find its value.
+  \item For that sequence, state what $u_{5}$ means and what $S_{5}$ means,
+  and write down the value of each.
+  \item State whether each of the following is a sequence or a series:
+
+  \hspace*{1em} $3,\; 7,\; 11,\; 15$ \hfill $3 + 7 + 11 + 15$ \hfill
+  $u_{n} = 2n + 1$ \hfill $S_{20} = 430$ \hspace*{1em}
+  \item Explain why $S_{5} - S_{4} = u_{5}$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,14.5);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: The Gauss story; pairing and the S_n = n/2 (u_1 + u_n) formula [9 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.2) ---
+\item[3.]
+
+When Carl Friedrich Gauss was a schoolboy, his teacher asked the class to
+add all the whole numbers from $1$ to $100$. Gauss wrote down the answer
+almost at once.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the value of $1 + 100$, of $2 + 99$, and of $3 + 98$. Write
+  down what you notice.
+  \item How many pairs like these are there in $1 + 2 + 3 + \cdots + 100$?
+  Hence find the total.
+  \item The sum $1 + 2 + 3 + \cdots + 100$ is an arithmetic series. Write
+  down $u_{1}$, $d$ and $u_{100}$, then use
+  $S_{n} = \dfrac{n}{2}\bigl(u_{1} + u_{n}\bigr)$ to check your answer
+  to (b).
+  \item Explain, in one or two sentences, why Gauss's pairing and the
+  formula are the same idea. Where does the $\dfrac{n}{2}$ come from?
+  \item Use Gauss's method to find $1 + 2 + 3 + \cdots + 500$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,14.0);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: Fibonacci; recursive vs explicit rules [9 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.2) ---
+\item[4.]
+
+The \emph{Fibonacci} sequence begins
+$$1,\; 1,\; 2,\; 3,\; 5,\; 8,\; 13,\; \ldots$$
+Each term after the second is the sum of the two terms before it.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down the next three terms.
+  \item Show that the Fibonacci sequence is not arithmetic.
+  \item The rule $u_{n+2} = u_{n+1} + u_{n}$, with $u_{1} = u_{2} = 1$, is
+  called a \textbf{recursive} rule. Explain what makes a rule recursive.
+  \item The arithmetic sequence $7,\; 11,\; 15,\; 19,\; \ldots$ can be
+  written recursively as $u_{1} = 7$, $u_{n+1} = u_{n} + 4$, or explicitly
+  as $u_{n} = 4n + 3$. Use each rule to find $u_{5}$. Then state which of
+  the two rules you would use to find $u_{100}$, and why.
+  \item The ninth to twelfth Fibonacci terms are $34,\; 55,\; 89,\; 144$.
+  Use your calculator to find $\dfrac{u_{10}}{u_{9}}$ and
+  $\dfrac{u_{12}}{u_{11}}$, and write down what you notice.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,11.8);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 5: Recursive self-improvement (RSI) in the AI news; arithmetic vs non-arithmetic growth [9 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.2); links to Problem 4 (recursion) ---
+\item[5.]
+
+In the news about artificial intelligence you will hear the phrase
+\textbf{recursive self-improvement} (RSI): the idea that an AI system could
+improve its own design, and that the improved system could then improve
+itself again, round after round.
+
+Here are two simple models of a system's capability score $c_{n}$ after
+$n$ rounds. Both start at $c_{1} = 100$.
+
+\begin{center}
+\begin{tabular}{rl}
+Model A: & each round adds $20$ points. \\[2pt]
+Model B: & each round adds $20\%$ of the current score. \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Using your answer to Question 4(c), explain what the word
+  \emph{recursive} is doing in the phrase ``recursive self-improvement''.
+  \item Write down the first four terms of each model. State which model is
+  arithmetic and give a reason.
+  \item Write a recursive rule for each model.
+  \item Find $c_{10}$ for each model.
+  \item People who worry about RSI have in mind a process that speeds up as
+  it goes. State which model matches that description, and explain what
+  feature of the model makes it speed up.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,10.5);
+  \foreach \y in {1,2,...,9} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 6: Arithmetic series calculations [9 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.2) ---
+\item[6.]
+
+Consider the arithmetic series
+$$4 + 11 + 18 + \cdots + 200.$$
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down the value of the common difference $d$.
+  \item Find the number of terms in the series.
+  \item Find the sum of the series.
+  \item An arithmetic sequence has $u_{1} = 6$ and $d = -2$. Find $S_{30}$.
+  \item An arithmetic series has $u_{1} = 5$ and $S_{10} = 320$. Find the
+  value of the common difference $d$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,14.5);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

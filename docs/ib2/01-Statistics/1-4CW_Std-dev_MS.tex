@@ -1,0 +1,140 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\setlength{\parskip}{0.3\baselineskip}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 16 September 2026}
+
+\begin{document}
+\subsubsection*{1.4 Classwork: Standard Deviation --- Markscheme}
+
+\emph{Calculator allowed. Marks are not printed on the student sheet; they are
+recorded here. Total: 18 marks.}
+
+\emph{\textbf{Throughout:} ``standard deviation'' means the population value
+$\sigma_{x}$, never the sample value $s_{x}$. The two sit side by side on the
+One-Variable Statistics screen, and Machine A in Problem 2 gives $s_{x} = 2$
+exactly --- which reads as more ``intended'' than the correct $1.87$. This is
+the most likely error on the sheet.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Mean and sd from a frequency table; quartiles; values beyond one sd [9 marks] ---
+\item[1.] [Maximum mark: 9]
+
+$n = \sum f = 50$, \quad $\sum fx = 175$, \quad $\sum fx^{2} = 713$.
+
+\emph{\textbf{GDC:} \texttt{menu} $\rightarrow$ \texttt{Statistics}
+$\rightarrow$ \texttt{Stat Calculations} $\rightarrow$ \texttt{One-Variable
+Statistics}, with the $x$ values in one list and the frequencies in a second
+list entered as the \texttt{Frequency List}.}
+
+\textbf{(a)} $\bar{x} = \dfrac{\sum fx}{\sum f} = \dfrac{175}{50}$
+\hfill \textbf{M1}
+
+$= 3.5$ \hfill \textbf{A1}
+
+\emph{M1 for a sum of $fx$ divided by $50$, by hand or by entering both lists
+on the GDC. A candidate who averages the six $x$ values also reaches $3.5$, by
+a method that fails as soon as the frequencies are not symmetric: award neither
+mark and say so in the return.}
+
+\textbf{(b)} $\sigma_{x} = 1.4177\ldots = 1.42$ (3 s.f.) \hfill \textbf{A1}
+
+\emph{Accept $1.42$, $1.418$, or the full $1.4177\ldots$ Do not accept
+$s_{x} = 1.4321\ldots$ ($1.43$), the sample standard deviation. Do not accept
+the variance $2.01$ on its own.}
+
+\textbf{(c)} Median $= 3$, \quad $Q_{1} = 2$, \quad $Q_{3} = 5$
+\hfill \textbf{A1}
+
+$\text{IQR} = Q_{3} - Q_{1} = 5 - 2 = 3$ \hfill \textbf{A1}
+
+\emph{All three values needed for the first A1; they are read directly from
+the One-Variable Statistics screen. FT: award the second A1 for
+$Q_{3} - Q_{1}$ computed correctly from the candidate's own quartiles.}
+
+\textbf{(d)} $\bar{x} + \sigma_{x} = 3.5 + 1.4177\ldots = 4.9177\ldots$
+\hfill \textbf{M1}
+
+Customers with $x = 5$ or $x = 6$: \quad $8 + 5 = 13$ customers
+\hfill \textbf{A1}
+
+\emph{M1 for forming $\bar{x} + \sigma_{x}$; A1 for $13$. Accept the boundary
+quoted as $4.92$. Counting $x \geq 5$ reaches the same $13$ --- accept it;
+counting both tails answers a different question --- M1 only. FT: award the A1
+for a count read correctly from the candidate's own $\bar{x} + \sigma_{x}$.}
+
+\textbf{(e)} The mean increases, to
+$\dfrac{175 + 20}{51} = 3.82$ (3 s.f.). \hfill \textbf{A1}
+
+The standard deviation also increases, to $2.68$ (3 s.f.), because $20$ lies
+far above every other value and so is far from the mean; the spread of the
+data has grown. \hfill \textbf{R1}
+
+\emph{Values are not required. A1 for stating that both increase; R1 for a
+reason referring to $20$ lying far from the mean, or far from the rest of the
+data. ``It is a big number'' is not enough --- distance from the mean is what
+drives the standard deviation, not size.}
+
+\newpage
+
+%--- Problem 2: Comparing two data sets with equal means; effect of adding a constant; within one sd [9 marks] ---
+\item[2.] [Maximum mark: 9]
+
+\emph{\textbf{GDC:} enter each machine's eight volumes as a list and run
+\texttt{One-Variable Statistics} on each.}
+
+\textbf{(a)} Machine A: \quad $\bar{x} = 500$ \hfill \textbf{A1}
+
+$\sigma_{x} = 1.8708\ldots = 1.87$ (3 s.f.) \hfill \textbf{A1}
+
+\emph{Accept $\sqrt{3.5}$. \textbf{Do not accept $2$} --- that is $s_{x}$, the
+sample standard deviation. The two marks are independent: a candidate with
+the correct mean and $s_{x} = 2$ earns the first A1 only.}
+
+\textbf{(b)} Machine B: \quad $\bar{x} = 500$ \hfill \textbf{A1}
+
+$\sigma_{x} = 4.2720\ldots = 4.27$ (3 s.f.) \hfill \textbf{A1}
+
+\emph{Accept $\sqrt{18.25}$. Do not accept $s_{x} = 4.57$.}
+
+\textbf{(c)} Machine A. \hfill \textbf{A1}
+
+The two machines have the same mean, $500$\,ml, so the mean alone cannot
+separate them. Machine A's standard deviation is smaller ($1.87$ against
+$4.27$), so its bottles are clustered more tightly around $500$\,ml.
+\hfill \textbf{R1}
+
+\emph{R1 requires both statistics to be used: that the means are equal
+\emph{and} that A's standard deviation is smaller. Naming Machine A with only
+``its standard deviation is smaller'' earns the A1 and not the R1, because
+the question asked for both. FT: award both marks for a choice argued
+correctly from the candidate's own values in (a) and (b).}
+
+\textbf{(d)} New mean $= 500 + 3 = 503$\,ml \hfill \textbf{A1}
+
+New standard deviation $= 1.87$\,ml, unchanged. \hfill \textbf{A1}
+
+\emph{The second A1 is the point of the part: adding the same amount to every
+value slides the whole data set along without changing how spread out it is.
+Award it for ``unchanged'', ``still $1.87$'', or ``$\sigma$ is not affected by
+adding a constant''. Recomputing all eight new volumes and running the GDC
+again is a valid route to the same two marks.}
+
+\textbf{(e)} One standard deviation either side of the mean:
+$500 \pm 4.2720\ldots$, \quad that is $495.7 < x < 504.3$.
+
+Machine B volumes inside that interval: $499,\; 496,\; 503,\; 497,\; 499$
+--- \quad $5$ bottles. \hfill \textbf{A1}
+
+\emph{Accept the interval quoted as $495.73$ to $504.27$, or as
+$496 \leq x \leq 504$ if the working shows the correct boundaries. The
+excluded bottles are $494$, $507$ and $505$. FT: award the A1 for a count
+made correctly from the candidate's own standard deviation in (b) --- a
+candidate using $s_{x} = 4.57$ reaches $495.4$ to $504.6$ and the same
+$5$ bottles.}
+
+\end{enumerate}
+\end{document}

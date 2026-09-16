@@ -1,0 +1,91 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 16 September 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyhead[LE]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{1.4 Classwork: Standard Deviation}
+
+\emph{Use your GDC. Give answers exactly, or correct to three significant
+figures. Write down the values you put into the calculator.}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Mean and sd from a frequency table; quartiles; values beyond one sd [9 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.3), GDC One-Variable Statistics with a frequency list ---
+\item[1.]
+
+A supermarket records the number of items bought by each of the $50$
+customers who used the express checkout one morning.
+
+\begin{center}
+\setlength{\tabcolsep}{10pt}\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+Number of items, $x$ & 1 & 2 & 3 & 4 & 5 & 6 \\
+\hline
+Frequency, $f$ & 4 & 9 & 13 & 11 & 8 & 5 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the mean number of items bought.
+  \item Find the standard deviation.
+  \item Write down the median, the lower quartile $Q_{1}$ and the upper
+  quartile $Q_{3}$, and hence find the interquartile range.
+  \item Find the number of customers who bought more than one standard
+  deviation above the mean.
+  \item A fifty-first customer goes through the express checkout with $20$
+  items. State the effect this has on the mean and on the standard
+  deviation. Give a reason for your answer.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,10.0);
+  \foreach \y in {1,2,...,9} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Comparing two data sets with equal means; effect of adding a constant; within one sd [9 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.3), GDC One-Variable Statistics from a list ---
+\item[2.]
+
+Two machines fill bottles that are labelled $500$ millilitres. Eight
+bottles are taken from each machine and the volume of each, in millilitres,
+is measured.
+
+\begin{center}
+\setlength{\tabcolsep}{8pt}\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{ll}
+Machine A: & $498,\; 502,\; 497,\; 503,\; 500,\; 499,\; 501,\; 500$ \\
+Machine B: & $494,\; 507,\; 499,\; 505,\; 496,\; 503,\; 497,\; 499$ \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the mean and the standard deviation of the volumes from
+  Machine A.
+  \item Find the mean and the standard deviation of the volumes from
+  Machine B.
+  \item The manufacturer wants every bottle to be as close to $500$\,ml as
+  possible. State which machine you would choose, and justify your answer by
+  referring to both statistics.
+  \item Machine A is adjusted so that every bottle it fills contains
+  $3$\,ml more than before. Write down the new mean and the new standard
+  deviation for Machine A.
+  \item Find the number of the eight Machine B bottles whose volume lies
+  within one standard deviation of the mean.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,12.5);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

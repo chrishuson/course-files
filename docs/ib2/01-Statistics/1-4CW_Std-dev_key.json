@@ -1,0 +1,117 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["4.3"],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.30,
+    "answer_box_top_frac_note": "The answer box runs 0.525 to 0.675 of page height. The crop is set higher, just above the '(a)' line at 0.300, so that anything written beside the parts list or beside the frequency table is captured as well as the box. This follows 1-3CW_Mean and the lesson from 1-2CW_Histograms. The nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored, AA SL 4.3, calculator allowed). Discrete frequency table: number of items bought by 50 express-checkout customers. x = 1..6 with f = 4, 9, 13, 11, 8, 5. n = 50, sum fx = 175, sum fx^2 = 713, mean = 3.5, population variance = 713/50 - 3.5^2 = 2.01, sigma_x = 1.41774... = 1.42 (3 s.f.), sample s_x = 1.43214... = 1.43 (not accepted). Cumulative frequencies 4, 13, 26, 37, 45, 50; median = 3, Q1 = 2, Q3 = 5, IQR = 3. mean + sigma = 4.91774..., so x = 5 or 6, giving 8 + 5 = 13 customers. With a 51st value of 20: mean = 195/51 = 3.8235... = 3.82, sigma = 2.6840... = 2.68.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the mean number of items bought, from the frequency table (x = 1..6, f = 4, 9, 13, 11, 8, 5, n = 50).",
+        "expected": {"answer": "3.5", "sum_fx": 175, "n": 50},
+        "tolerance": "Accept 3.5, 3.50, or 7/2. Do not accept 3.5 reached by averaging the six x values alone (1+2+3+4+5+6)/6 = 3.5 - the frequencies must be used; see notes.",
+        "notes": "M1 for a weighted sum of fx divided by 50, however obtained - written out by hand, or by entering the x list and the frequency list on the GDC. A1 for 3.5. A candidate who divides an incorrect sum by 50 earns the M1 only. A candidate who averages the six distinct x values reaches 3.5 by a method that fails whenever the frequencies are not symmetric: award neither mark and record the method error in the return."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find the standard deviation of the number of items bought.",
+        "expected": {"answer": "1.42 (3 s.f.)", "exact": "sqrt(2.01) = 1.41774...", "variance": 2.01},
+        "tolerance": "Accept 1.42, 1.418, sqrt(2.01), or the full 1.41774... Accept any value consistent with the candidate's own correctly-rounded intermediate. Do not accept s_x = 1.43214... (1.43), the sample standard deviation - this course uses the population value sigma_x. Do not accept the variance 2.01 on its own.",
+        "notes": "A1 for the population standard deviation read from the GDC One-Variable Statistics screen with the frequency list entered. The sample value 1.43 sits directly beside it on that screen and is the expected wrong answer; withhold the mark and name the sigma_x / s_x distinction in the return."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write down the median, Q1 and Q3, and hence find the interquartile range.",
+        "expected": {"median": 3, "Q1": 2, "Q3": 5, "IQR": 3},
+        "tolerance": "All three of median = 3, Q1 = 2, Q3 = 5 are needed for the first mark. Accept the values read straight from the GDC with no working.",
+        "notes": "A1 for all three quartile values; a candidate who gives two of the three earns nothing for that mark. A1 for IQR = Q3 - Q1 = 3.",
+        "follow_through": "Award the second A1 for Q3 - Q1 computed correctly from the candidate's own quartiles, even when those quartiles are wrong."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the number of customers who bought more than one standard deviation above the mean.",
+        "expected": {"answer": 13, "boundary": "3.5 + 1.41774... = 4.91774...", "values_counted": "x = 5 (f = 8) and x = 6 (f = 5)"},
+        "tolerance": "Accept the boundary quoted as 4.92 or 4.918. Accept any count consistent with the candidate's own correctly-rounded boundary.",
+        "notes": "M1 for forming mean + standard deviation, however written. A1 for 13. A candidate who counts x >= 5 reaches 13 here and earns both marks. A candidate who counts both tails (adding the four customers at x = 1) has answered a different question: M1 only.",
+        "follow_through": "Award the A1 for a count read correctly from the candidate's own mean and standard deviation in (a) and (b)."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["A1", "R1"],
+        "description": "State the effect on the mean and on the standard deviation of adding a 51st customer who buys 20 items, with a reason.",
+        "expected": {"answer": "Both increase.", "new_mean": "195/51 = 3.82 (3 s.f.)", "new_sd": "2.68 (3 s.f.)"},
+        "tolerance": "Numerical values are not required. Accept 'both go up', 'both get bigger'. If values are given, accept 3.82 and 2.68 or any correctly computed equivalents.",
+        "notes": "A1 for stating that both the mean and the standard deviation increase; a candidate who says only that the mean increases earns nothing for this mark. R1 for a reason that refers to 20 lying far from the mean, or far from the rest of the data, so the spread grows. 'Because 20 is a big number' is not sufficient - distance from the mean, not magnitude, is what drives the standard deviation."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["4.3"],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.22,
+    "answer_box_top_frac_note": "Page 2 is an even page: the answer box runs 0.450 to 0.645 and the crop is set just above the '(a)' line at 0.220 so that working written beside the parts list is captured. The even-page nickname box sits between 0.05 and 0.11 and stays outside the crop.",
+    "source": "Original (freshly authored, AA SL 4.3, calculator allowed). Two bottle-filling machines, eight volumes each in ml. Machine A: 498, 502, 497, 503, 500, 499, 501, 500 - sum 4000, mean 500, population variance 3.5, sigma_x = 1.87082... = 1.87 (3 s.f.), sample s_x = 2 exactly (a likely wrong answer, since it looks 'intended'). Machine B: 494, 507, 499, 505, 496, 503, 497, 499 - sum 4000, mean 500, population variance 18.25, sigma_x = 4.27200... = 4.27 (3 s.f.), sample s_x = 4.56696... = 4.57. Equal means, different spreads. Adding 3 ml to every Machine A volume gives mean 503, sigma unchanged at 1.87. One standard deviation either side of Machine B's mean: 495.728 to 504.272, containing 499, 496, 503, 497, 499 - five bottles; 494, 505 and 507 lie outside.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Find the mean and the standard deviation of the eight Machine A volumes (498, 502, 497, 503, 500, 499, 501, 500).",
+        "expected": {"mean": 500, "sd": "1.87 (3 s.f.)", "exact_sd": "sqrt(3.5) = 1.87082..."},
+        "tolerance": "Accept mean = 500 or 500.0 ml. Accept sd = 1.87, 1.871, sqrt(3.5), or the full 1.87082... Do not accept 2 - that is s_x, the sample standard deviation. Accept any value consistent with the candidate's own correctly-rounded intermediate.",
+        "notes": "A1 for the mean and A1 for the population standard deviation, awarded independently (A1A1). A candidate with mean = 500 and s_x = 2 earns the first A1 only. Machine A's sample standard deviation is exactly 2, which reads as a clean 'intended' answer, so this is the expected error: withhold the mark and name the sigma_x / s_x distinction in the return rather than treating it as arithmetic slippage."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Find the mean and the standard deviation of the eight Machine B volumes (494, 507, 499, 505, 496, 503, 497, 499).",
+        "expected": {"mean": 500, "sd": "4.27 (3 s.f.)", "exact_sd": "sqrt(18.25) = 4.27200..."},
+        "tolerance": "Accept mean = 500 or 500.0 ml. Accept sd = 4.27, 4.272, sqrt(18.25), or the full 4.27200... Do not accept s_x = 4.56696... (4.57).",
+        "notes": "A1 for the mean and A1 for the population standard deviation, awarded independently (A1A1). The mean matching Machine A exactly is intended, not a slip - it is what makes part (c) work."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "R1"],
+        "description": "State which machine to choose so that bottles are as close to 500 ml as possible, justifying the answer by referring to both statistics.",
+        "expected": {"answer": "Machine A", "reason": "The means are equal (both 500 ml), so the mean cannot separate the machines; Machine A's standard deviation is smaller (1.87 against 4.27), so its volumes cluster more tightly around 500 ml."},
+        "tolerance": "Accept any wording carrying both ideas. 'A, because it is more consistent / less spread out' earns the A1 and the R1 only if the equal means are also mentioned.",
+        "notes": "A1 for naming Machine A. R1 for a justification that uses both statistics: that the two means are equal, and that A's standard deviation is the smaller. The question explicitly asks for both, so a reason resting on the standard deviation alone earns the A1 and not the R1.",
+        "follow_through": "Award both marks for a choice argued correctly from the candidate's own means and standard deviations in (a) and (b) - including a candidate who used s_x throughout, since the comparison still favours Machine A."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write down the new mean and the new standard deviation for Machine A when every bottle contains 3 ml more.",
+        "expected": {"new_mean": "503 ml", "new_sd": "1.87 ml, unchanged"},
+        "tolerance": "Accept 503 or 503.0 ml. For the standard deviation accept 'unchanged', 'the same', 'still 1.87', or a restated 1.87082...",
+        "notes": "A1 for 503. A1 for the standard deviation being unchanged - this is the point of the part: adding the same constant to every value translates the data set without changing its spread. Recomputing all eight new volumes and re-running the GDC is a valid route to both marks.",
+        "follow_through": "Award the first A1 for the candidate's own mean from (a) plus 3, and the second for their own standard deviation from (a) restated unchanged."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find the number of the eight Machine B bottles whose volume lies within one standard deviation of the mean.",
+        "expected": {"answer": 5, "interval": "500 +/- 4.27200... , that is 495.728 < x < 504.272", "inside": "499, 496, 503, 497, 499", "outside": "494, 505, 507"},
+        "tolerance": "Accept the interval quoted as 495.7 to 504.3, or 495.73 to 504.27. Accept a count stated with no interval shown. Accept any count consistent with the candidate's own correctly-rounded standard deviation.",
+        "notes": "A1 for 5. The three excluded bottles are 494, 505 and 507. A candidate who writes the interval correctly but miscounts the repeated 499 earns nothing for the mark, though the return should credit the correct interval.",
+        "follow_through": "Award the A1 for a count made correctly from the candidate's own standard deviation in (b). A candidate using s_x = 4.57 gets the interval 495.4 to 504.6 and the same five bottles."
+      }
+    ]
+  }
+]
