@@ -45,6 +45,21 @@ every problem set gets a `_MS.tex`; quizzes/tests also get `_key.json`;
 figures black-and-white; pgfplots for axis graphs, TikZ otherwise;
 "(no calculator)" in the title when GDC is disallowed.
 
+### `_MS` vs `-solutions` — both courses
+
+The two suffixes mean different things and are not interchangeable:
+
+| Suffix | What it is | Who makes it |
+| --- | --- | --- |
+| `<stem>_MS.tex` / `.pdf` | The **official typeset solutions** (markscheme) for a problem set | Authored — agents write these |
+| `<stem>-solutions.pdf` | A **scan of Chris's handwritten** worked solutions | Chris scans these; never generated |
+
+Agents name every solutions document they author `_MS` — never
+`-solutions`, which would collide with the scans. Applies to physics as
+well as IB Math (adopted 2026-09-17). Physics files written before that
+date use `-solutions` for typeset solutions (`Physics2026/`); leave those
+alone, and name new ones `_MS`.
+
 Physics conventions: see the physics project
 (`~/Documents/Professional/Physics/claude-physics-project/CLAUDE.md`);
 same skeleton, algebra-based content, formulas provided on assessments.
