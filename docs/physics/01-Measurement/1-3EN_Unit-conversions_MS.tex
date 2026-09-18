@@ -1,0 +1,145 @@
+% context: markscheme (official solutions) for 1-3EN_Unit-conversions
+% topic: rounding to 3 s.f., scientific notation both directions, unit conversion, mi/h to ft/s
+% convention: "=" joins exact equalities; "\approx" introduces a rounded value
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+\setlength{\parskip}{0.3\baselineskip}
+
+\title{Physics}
+\author{Chris Huson}
+\date{September 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 18 September 2026}
+
+\begin{document}
+
+\subsubsection*{1.3 Exit Note Solutions: Unit Conversions}
+
+\emph{Notation: \,$=$\, joins values that are exactly equal; \,$\approx$\, introduces a
+rounded value. Each conversion runs as one chain of unit factors and is evaluated once,
+so there is nothing to round in the middle.}
+
+\begin{enumerate}[itemsep=0.25cm]
+
+\item Round to three significant figures.
+  \begin{enumerate}[itemsep=0.2cm]
+    \item $\sqrt{3} = 1.7320508\ldots \approx \mathbf{1.73}$
+    \item $\dfrac{100~\text{m}}{9.58~\text{s}} = 10.43841\ldots \approx \mathbf{10.4~\textbf{m/s}}$
+
+      \emph{Three figures is also all the data allows: 9.58 s has three. The 100 m is a
+      defined course length, not a measurement, so it does not limit the answer.}
+  \end{enumerate}
+
+\item Scientific notation.
+  \begin{enumerate}[itemsep=0.2cm]
+    \item $31{,}556{,}952~\text{s} = 3.1556952 \times 10^{7}~\text{s}
+      \approx \mathbf{3.16 \times 10^{7}~\textbf{s}}$
+
+      \emph{Move the decimal point 7 places left, so the exponent is $+7$. The familiar
+      mnemonic ``a year is $\pi \times 10^{7}$ seconds'' gives $3.14 \times 10^{7}$ ---
+      good to two figures, wrong in the third.}
+    \item $1.06 \times 10^{-10}~\text{m} = \mathbf{0.000\,000\,000\,106~\textbf{m}}$
+
+      \emph{A negative exponent of $-10$ moves the decimal point 10 places left: nine
+      zeros after the point, then 106.}
+  \end{enumerate}
+
+\item The Duomo di Milano, 108 m tall.
+
+  $108~\text{m} \times \dfrac{3.28~\text{ft}}{1~\text{m}} = 354.24~\text{ft}
+  \approx \mathbf{354~\textbf{ft}}$
+
+  \emph{The m cancel and ft remain. Three significant figures in, three out ---
+  converting a measurement never makes it more precise.}
+
+\item A Category 1 hurricane, 74 mi/h.
+
+  $74~\dfrac{\text{mi}}{\text{h}} \times \dfrac{5280~\text{ft}}{1~\text{mi}}
+  \times \dfrac{1~\text{h}}{3600~\text{s}}
+  = \dfrac{390{,}720}{3600}~\dfrac{\text{ft}}{\text{s}} = 108.53\ldots
+  \approx \mathbf{109~\textbf{ft/s}}$
+
+  \emph{Two factors, one evaluation. The mi cancel top-to-bottom and the h cancel
+  bottom-to-top, leaving ft/s. Watch the second factor: to turn ``per hour'' into ``per
+  second'' the hours must go on top, so the fraction is $\frac{1~\text{h}}{3600~\text{s}}$,
+  not its reciprocal. If the answer comes out absurdly small, that factor was flipped.}
+
+\newpage
+
+\item \textbf{Challenge: how fast is an elevator?}
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Convert all four to m/s.
+      \begin{itemize}[itemsep=0.28cm]
+        \item Shanghai Tower: $\mathbf{20.5~\textbf{m/s}}$ (already in m/s)
+        \item Taipei 101: $1010~\dfrac{\text{m}}{\text{min}} \times
+          \dfrac{1~\text{min}}{60~\text{s}} = \dfrac{1010}{60}~\dfrac{\text{m}}{\text{s}}
+          = 16.833\ldots \approx \mathbf{16.8~\textbf{m/s}}$
+        \item One World Trade Center: $2000~\dfrac{\text{ft}}{\text{min}} \times
+          \dfrac{1~\text{m}}{3.28~\text{ft}} \times \dfrac{1~\text{min}}{60~\text{s}}
+          = \dfrac{2000}{3.28 \times 60}~\dfrac{\text{m}}{\text{s}} = 10.162\ldots
+          \approx \mathbf{10.2~\textbf{m/s}}$
+        \item Empire State (express): $1200~\dfrac{\text{ft}}{\text{min}} \times
+          \dfrac{1~\text{m}}{3.28~\text{ft}} \times \dfrac{1~\text{min}}{60~\text{s}}
+          = \dfrac{1200}{3.28 \times 60}~\dfrac{\text{m}}{\text{s}} = 6.0975\ldots
+          \approx \mathbf{6.10~\textbf{m/s}}$
+      \end{itemize}
+      \vspace{0.1cm}
+      \emph{Write $6.10$, not $6.1$ --- the trailing zero is the third significant figure
+      and claiming it is the whole point of the instruction.}
+
+    \item Slowest to fastest: \textbf{Empire State (6.10) $<$ One WTC (10.2) $<$ Taipei
+      101 (16.8) $<$ Shanghai Tower (20.5)}, all in m/s.
+
+      \textbf{Yes, this ranking holds.} The four speeds are separated by several m/s, and
+      the shakiest figures here --- ``2000'' and ``1200'' ft/min, whose trailing zeros are
+      ambiguous and may carry only two significant figures --- are still nowhere near each
+      other. Even reading them as $2.0 \times 10^{3}$ and $1.2 \times 10^{3}$ ft/min, the
+      gaps between the four are far larger than the uncertainty.
+
+      \emph{Compare with problem 4 on the 1.2 classwork, where the car at 26.8 m/s and the
+      motorcycle at 27 m/s could not be told apart. Same question, opposite answer --- and
+      the difference is the size of the gap relative to the precision, not the number of
+      digits the calculator shows. Give credit for any answer that checks the gaps against
+      the precision, however it is worded.}
+
+    \item Time to rise 18 m, at the advertised speed:
+
+      $t = \dfrac{d}{v}$, so
+      $\;\dfrac{18~\text{m}}{20.5~\text{m/s}} = 0.878\ldots \approx \mathbf{0.88~\textbf{s}}$
+      \quad
+      $\dfrac{18~\text{m}}{16.833~\text{m/s}} = 1.069\ldots \approx \mathbf{1.1~\textbf{s}}$
+
+      $\dfrac{18~\text{m}}{10.162~\text{m/s}} = 1.771\ldots \approx \mathbf{1.8~\textbf{s}}$
+      \quad
+      $\dfrac{18~\text{m}}{6.0975~\text{m/s}} = 2.952\ldots \approx \mathbf{3.0~\textbf{s}}$
+
+      \emph{Two significant figures, because the 18 m has two. Carry the unrounded
+      converted speeds into this division rather than the rounded ones.}
+
+      Against 75 s on the stairs, even the slowest of these elevators is about
+      \textbf{25 times faster}, and the Shanghai Tower machine about 85 times faster.
+
+    \item \textbf{Why the times are all too small.} Each answer in (c) assumes the elevator
+      is travelling at full speed for the entire 18 m. It is not: it starts at rest, speeds
+      up, and must be back at rest by the top. Its \emph{average} speed over the trip is
+      therefore less than its top speed, and the real ride takes longer than $d/v$ predicts.
+
+      \textbf{Why the Shanghai Tower is worst.} The faster the elevator, the more distance
+      it needs to get up to speed. At an acceleration passengers would tolerate --- about
+      1 m/s$^2$ --- reaching 20.5 m/s takes roughly 20 seconds and around 200 meters of
+      shaft, and then as much again to stop. Our building gives it 18 m. That elevator
+      would never come close to its advertised speed here; it would spend the whole ride
+      speeding up and slowing down. The Empire State express at 6.10 m/s needs only about
+      6 seconds and 18 m, so it just barely reaches its top speed as it arrives.
+
+      \emph{The real lesson: an advertised top speed is not an average speed, and $d/v$
+      only gives the travel time when the speed is constant the whole way. This is the same
+      distinction as the Rome--Milan train, which is built for 300 km/h but averages about
+      190. We will make it precise when we reach acceleration.}
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}
