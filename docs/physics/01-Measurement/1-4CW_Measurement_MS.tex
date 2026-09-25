@@ -1,0 +1,118 @@
+% context: markscheme (official solutions) for 1-4CW_Measurement
+% topic: significant figures, rounding, scientific notation, reading a ruler,
+%        unit conversion, average speed
+% convention: "=" joins exact equalities; "\approx" introduces a rounded value
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+\setlength{\parskip}{0.3\baselineskip}
+
+\title{Physics}
+\author{Chris Huson}
+\date{September 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 24 September 2026}
+
+\begin{document}
+
+\subsubsection*{1.4 Classwork Solutions: Measurement quiz review}
+
+\emph{Notation: \,$=$\, joins values that are exactly equal; \,$\approx$\, introduces a
+rounded value. Students should write it the same way --- once you round the calculator
+display, the equals sign is no longer true.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+\item Significant digits.
+  \begin{multicols}{3}
+    \begin{enumerate}[itemsep=0.1cm]
+      \item \textbf{3}
+      \item \textbf{2}
+      \item \textbf{2}
+      \item \textbf{3}
+      \item \textbf{4}
+      \item \textbf{2}
+    \end{enumerate}
+  \end{multicols}
+  \emph{(b) The zero in 3.0 is after the decimal point, so it was measured. (c) The
+  leading zeros in 0.045 only locate the decimal point. (d) A zero between nonzero
+  digits always counts. (e) Both zeros count: the middle one is sandwiched, the trailing
+  one is after the decimal point. (f) In scientific notation, every digit of the
+  coefficient counts and nothing else does.}
+
+\item Round to three significant figures.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $\sqrt{10} = 3.1622776\ldots \approx \mathbf{3.16}$
+    \item $\dfrac{1}{7} = 0.1428571\ldots \approx \mathbf{0.143}$
+
+      \emph{The leading zero is not significant, so the three figures are 1, 4, 2 ---
+      and the next digit, 8, rounds the 2 up. A common error is 0.14, which is only two
+      figures.}
+  \end{enumerate}
+
+\item Scientific notation.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $149{,}600{,}000~\text{km} = 1.496 \times 10^{8}~\text{km}
+      \approx \mathbf{1.50 \times 10^{8}~\textbf{km}}$
+
+      \emph{Write 1.50, not 1.5 --- the trailing zero is the third significant figure.}
+    \item $0.000102~\text{m} = \mathbf{1.02 \times 10^{-4}~\textbf{m}}$
+      \quad (already exactly three figures --- nothing to round)
+
+      \emph{Count the places the decimal point moves: four, to the right, so the
+      exponent is negative. That is 0.1 mm, a tenth of a millimeter.}
+  \end{enumerate}
+
+\item Ordinary decimal numbers.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $8.849 \times 10^{3}~\text{m} = \mathbf{8849~\textbf{m}}$
+    \item $1.0 \times 10^{-3}~\text{kg} = \mathbf{0.0010~\textbf{kg}}$
+
+      \emph{Keep the trailing zero: $1.0 \times 10^{-3}$ has two significant figures,
+      and so must the decimal. Writing 0.001 kg is the right size but drops a figure.
+      This is also exactly 1 gram.}
+  \end{enumerate}
+
+\item Reading the ruler. The bar ends between the 2nd and 3rd millimeter marks past 4 cm,
+  closer to the 3rd.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $\mathbf{4.28~\textbf{cm}}$ --- the 4.2 is certain, and the final 8 is the
+      estimated digit.
+
+      \emph{Accept 4.27 to 4.29. Do not accept 4.2 or 4.3 (no estimated digit).}
+    \item $4.28~\text{cm} \times \dfrac{10~\text{mm}}{1~\text{cm}} = \mathbf{42.8~\textbf{mm}}$
+      \qquad
+      $4.28~\text{cm} \times \dfrac{1~\text{m}}{100~\text{cm}} = \mathbf{0.0428~\textbf{m}}$
+
+      \emph{All three have three significant figures --- changing units never changes
+      the precision.}
+  \end{enumerate}
+
+\item Convert.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $56.7~\text{m} \times \dfrac{3.28~\text{ft}}{1~\text{m}}
+      = 185.976~\text{ft} \approx \mathbf{186~\textbf{ft}}$
+
+      \emph{Check the direction: a foot is shorter than a meter, so the number of feet
+      must be larger than the number of meters.}
+    \item $11.0~\text{in} \times \dfrac{2.54~\text{cm}}{1~\text{in}}
+      = 27.94~\text{cm} \approx \mathbf{27.9~\textbf{cm}}$
+  \end{enumerate}
+
+\item $v = \dfrac{d}{t} = \dfrac{60.0~\text{m}}{45.0~\text{s}} = 1.3333\ldots
+  \approx \mathbf{1.33~\textbf{m/s}}$
+
+  \emph{A normal walking pace is about 1.4 m/s, so this is a relaxed stroll.}
+
+\item $119~\dfrac{\text{km}}{\text{h}} \times \dfrac{1000~\text{m}}{1~\text{km}}
+  \times \dfrac{1~\text{h}}{3600~\text{s}}
+  = \dfrac{119{,}000}{3600}~\dfrac{\text{m}}{\text{s}} = 33.055\ldots
+  \approx \mathbf{33.1~\textbf{m/s}}$
+
+  \emph{Both the kilometers and the hours cancel, leaving meters over seconds. A quick
+  check: dividing km/h by 3.6 gives m/s.}
+
+\end{enumerate}
+\end{document}

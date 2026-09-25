@@ -1,0 +1,101 @@
+% context: markscheme (official solutions) for 1-5CW_Applications
+% topic: unit conversion chains, scientific notation, significant figures,
+%        estimation
+% convention: "=" joins exact equalities; "\approx" introduces a rounded value
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+\setlength{\parskip}{0.3\baselineskip}
+
+\title{Physics}
+\author{Chris Huson}
+\date{September 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 25 September 2026}
+
+\begin{document}
+
+\subsubsection*{1.5 Classwork Solutions: Applications}
+
+\emph{Notation: \,$=$\, joins values that are exactly equal; \,$\approx$\, introduces a
+rounded value. Each conversion runs as one chain of unit factors and is evaluated once,
+so there is nothing to round in the middle.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+\item Rain on Manhattan.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $V = 20{,}000~\text{m} \times 3000~\text{m} \times 0.025~\text{m}
+      = \mathbf{1.5 \times 10^{6}~\textbf{m}^3}$
+
+      \emph{Converting each length to meters first avoids the square-kilometer trap:
+      $1~\text{km}^2$ is $10^{6}~\text{m}^2$, not $1000~\text{m}^2$.}
+    \item $1.5 \times 10^{6}~\text{m}^3 \times \dfrac{1000~\text{L}}{1~\text{m}^3}
+      \times \dfrac{1~\text{kg}}{1~\text{L}} = \mathbf{1.5 \times 10^{9}~\textbf{kg}}$
+
+      $1.5 \times 10^{9}~\text{kg} \times \dfrac{1~\text{t}}{1000~\text{kg}}
+      = \mathbf{1.5 \times 10^{6}~\textbf{metric tons}}$
+    \item $1.5 \times 10^{6}~\text{m}^3 \times \dfrac{1000~\text{L}}{1~\text{m}^3}
+      \times \dfrac{1~\text{gal}}{3.785~\text{L}} = 3.963\ldots \times 10^{8}~\text{gal}
+      \approx \mathbf{4.0 \times 10^{8}~\textbf{gal}}$
+
+      About \textbf{0.4 of a day's supply}, or roughly 10 hours of the whole city's
+      water use --- from one storm, on one borough.
+
+      \emph{Two figures throughout, from the 2.5 cm and 3.0 km (the 20 km is a rough
+      rectangle too). Start the gallons from the volume in part (a), not from a rounded
+      intermediate.}
+  \end{enumerate}
+
+\item The oil slick.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $1.0~\text{L} \times \dfrac{1~\text{m}^3}{1000~\text{L}}
+      = \mathbf{1.0 \times 10^{-3}~\textbf{m}^3}$
+    \item $A = \dfrac{V}{\text{thickness}}
+      = \dfrac{1.0 \times 10^{-3}~\text{m}^3}{2 \times 10^{-10}~\text{m}}
+      = \mathbf{5 \times 10^{6}~\textbf{m}^2}$
+
+      \emph{Dividing the powers of ten: $10^{-3-(-10)} = 10^{7}$, and $1.0/2 = 0.5$. The
+      units work too: $\text{m}^3 / \text{m} = \text{m}^2$.}
+    \item $\pi r^2 = 5 \times 10^{6}~\text{m}^2$, so
+      $r = \sqrt{\dfrac{5 \times 10^{6}~\text{m}^2}{\pi}} = 1261.5\ldots~\text{m}$
+      and $d = 2r = 2523\ldots~\text{m} \approx$ \textbf{2.5 km} (about 3 km)
+
+      \emph{The molecule size has one significant figure, so this is an estimate: ``a
+      couple of kilometers'' is the physics. Franklin's teaspoon covered about half an
+      acre. In 1890 Lord Rayleigh repeated the experiment carefully and used it to make
+      one of the first estimates of the size of a molecule.}
+  \end{enumerate}
+
+\item Walking around the Earth.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $40{,}075~\text{km} \times \dfrac{1~\text{h}}{5.0~\text{km}}
+      \times \dfrac{1~\text{day}}{12~\text{h}} = 667.91\ldots~\text{days}
+      \approx \mathbf{670~\textbf{days}}$, better written
+      $\mathbf{6.7 \times 10^{2}~\textbf{days}}$
+
+      \emph{Two figures, set by the 5.0 km/h. The 12 hours is a stated assumption,
+      not a measurement.}
+    \item $667.91~\text{days} \times \dfrac{1~\text{yr}}{365~\text{days}}
+      = 1.829\ldots~\text{yr} \approx \mathbf{1.8~\textbf{years}}$
+
+      \emph{Carry the unrounded 667.91 into this step. And the Pacific Ocean is in the
+      way.}
+  \end{enumerate}
+
+\item Sunlight.
+
+  $t = 1.496 \times 10^{8}~\text{km} \times \dfrac{1000~\text{m}}{1~\text{km}}
+  \times \dfrac{1~\text{s}}{3.00 \times 10^{8}~\text{m}}
+  \times \dfrac{1~\text{min}}{60~\text{s}}
+  = 8.3111\ldots~\text{min} \approx \mathbf{8.31~\textbf{min}}$
+
+  \emph{Three figures, set by the 3.00. Rearranging $v = d/t$ to $t = d/v$ is the same
+  thing as the $\frac{1~\text{s}}{3.00 \times 10^{8}~\text{m}}$ factor --- the speed of
+  light is a conversion factor between meters and seconds. The Sun we see is the Sun
+  of eight minutes ago.}
+
+\end{enumerate}
+\end{document}
