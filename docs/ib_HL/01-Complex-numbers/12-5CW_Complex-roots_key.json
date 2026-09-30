@@ -1,0 +1,166 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["1.12", "1.14"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.20,
+    "answer_box_top_frac_note": "The answer box starts at 0.342. The crop is set higher, just above the '(a)' line at 0.207, so working written beside the parts list is captured too (the lesson from 1-2CW_Histograms). The odd-page nickname box sits at roughly 0.06 to 0.11 and stays outside the crop.",
+    "source": "Original (freshly authored 2026-09-29, HL syllabus 1.12/1.14, no calculator). Square roots of 5 - 12i by equating parts of (a + bi)^2: a^2 - b^2 = 5, 2ab = -12, giving +-(3 - 2i). Hence z^2 - 2z - 4 + 12i = 0, i.e. (z - 1)^2 = 5 - 12i, with roots 4 - 2i and -2 + 2i. Review of the conjugate root theorem (12-2CW): the roots are not a conjugate pair because a coefficient is non-real.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "By writing (a + bi)^2 = 5 - 12i with a, b real, find the two square roots of 5 - 12i.",
+        "expected": {"answer": "3 - 2i and -3 + 2i"},
+        "tolerance": "Accept +-(3 - 2i). Accept the modulus shortcut a^2 + b^2 = 13 combined with a^2 - b^2 = 5.",
+        "notes": "M1 for expanding and equating both real and imaginary parts (a^2 - b^2 = 5 and 2ab = -12). A1 for a = +-3 with b = -+2. A1 for both roots with the signs paired correctly. Pairing the signs wrongly (3 + 2i) earns the M1 only, since 2ab = -12 forces opposite signs."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Hence solve z^2 - 2z - 4 + 12i = 0.",
+        "expected": {"answer": "z = 4 - 2i or z = -2 + 2i"},
+        "tolerance": "Accept the answers in either order and z = 1 +- (3 - 2i) expanded.",
+        "notes": "M1 for reducing the equation to the square root of 5 - 12i, by the quadratic formula (discriminant 4(5 - 12i)) or by completing the square, (z - 1)^2 = 5 - 12i. A1 for both solutions. A candidate who restarts with z = x + yi and solves correctly earns full marks, with the feedback note that (a) had already done the work.",
+        "follow_through": "Award the A1 for 1 +- the candidate's own square root from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["R1"],
+        "description": "Explain why the two solutions in (b) are not a conjugate pair.",
+        "expected": {"answer": "The coefficient -4 + 12i is not real; roots come in conjugate pairs only when all coefficients are real."},
+        "tolerance": "Accept any wording that identifies a non-real coefficient as the reason the conjugate root theorem does not apply.",
+        "notes": "R1 for naming the non-real coefficient (or 'the coefficients are not all real') as the reason. Saying only that 4 - 2i and -2 + 2i are not conjugates restates the question and earns nothing."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["1.13", "1.14"],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.12,
+    "answer_box_top_frac_note": "Page 2 is an even page. The answer box starts at 0.304; the stem line 'Let w = ...' sits just above the '(a)' line at 0.161, and the crop is set at 0.12 so working beside the stem and parts list is captured. The even-page nickname box occupies 0.065 to about 0.11, so 0.12 is the lowest safe value.",
+    "source": "Original (freshly authored 2026-09-29, HL syllabus 1.13/1.14, no calculator). w = -8 + 8sqrt3 i = 16e^(2pi i/3). Fourth roots: 2e^(i(pi/6 + k pi/2)), i.e. 2e^(i pi/6), 2e^(2pi i/3), 2e^(-i pi/3), 2e^(-5pi i/6). First-quadrant root sqrt3 + i. Conjugate equation z^4 = -8 - 8sqrt3 i has the conjugate roots 2e^(-i pi/6), 2e^(-2pi i/3), 2e^(i pi/3), 2e^(5pi i/6).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write w = -8 + 8sqrt3 i in the form re^(i theta), r > 0, -pi < theta <= pi.",
+        "expected": {"answer": "16e^(2 pi i/3)", "modulus": 16, "argument": "2pi/3"},
+        "tolerance": "Accept 16 cis(2pi/3) or 16(cos 2pi/3 + i sin 2pi/3).",
+        "notes": "A1 for modulus 16. A1 for argument 2pi/3. The marks are independent. An argument of -pi/3 (arctan(-sqrt3) with no quadrant check) loses the second A1."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Solve z^4 = w, giving each solution as re^(i theta) with -pi < theta <= pi.",
+        "expected": {"answer": "2e^(i pi/6), 2e^(2pi i/3), 2e^(-i pi/3), 2e^(-5pi i/6)"},
+        "tolerance": "Accept cis form. Accept the roots in any order.",
+        "notes": "M1 for modulus 2 with argument (2pi/3 + 2k pi)/4, or for one correct root followed by rotations of pi/2. A1 for any two correct roots. A1 for all four with every argument in the stated range; 2e^(7pi i/6) and 2e^(5pi i/3) are outside it and lose the final A1 unless converted.",
+        "follow_through": "Award the marks from the candidate's own modulus and argument in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write the first-quadrant solution in the form a + bi.",
+        "expected": {"answer": "sqrt3 + i"},
+        "tolerance": "Accept 2(sqrt3/2 + i/2) simplified to sqrt3 + i.",
+        "notes": "A1 for sqrt3 + i. Decimal values (1.73 + i) earn nothing: exact values are required.",
+        "follow_through": "Award A1 for the candidate's own first-quadrant root from (b) correctly converted to Cartesian form."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Hence write down the four solutions of z^4 = -8 - 8sqrt3 i in the form re^(i theta).",
+        "expected": {"answer": "2e^(-i pi/6), 2e^(-2pi i/3), 2e^(i pi/3), 2e^(5pi i/6)"},
+        "tolerance": "Accept cis form, any order, and any equivalent arguments. Accept solving z^4 = 16e^(-2pi i/3) directly.",
+        "notes": "A1 for all four roots. The intended route is that -8 - 8sqrt3 i is the conjugate of w, so the solutions are the conjugates of those in (b). Three of four earns nothing.",
+        "follow_through": "Award A1 for the conjugates of the candidate's own roots from (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": ["1.14", "2.12"],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.12,
+    "answer_box_top_frac_note": "The answer box starts at 0.258. The '(a)' line is the first line of the problem at 0.134; the crop is set just above it so working beside the parts list is captured. The odd-page nickname box occupies about 0.06 to 0.11, so 0.12 is the lowest safe value.",
+    "source": "Original (freshly authored 2026-09-29, HL syllabus 1.14 with polynomial review, no calculator). Cube roots of unity 1, -1/2 +- (sqrt3/2)i. Hence (z - 1)^3 = 8 gives z - 1 = 2 omega, so z = 3, sqrt3 i, -sqrt3 i. Expanding gives z^3 - 3z^2 + 3z - 9 = 0, which factorizes over the reals as (z - 3)(z^2 + 3).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the three cube roots of 1 in the form a + bi.",
+        "expected": {"answer": "1, -1/2 + (sqrt3/2)i, -1/2 - (sqrt3/2)i"},
+        "tolerance": "Accept the factor route (z - 1)(z^2 + z + 1) = 0 with the quadratic formula. Accept (-1 +- sqrt3 i)/2.",
+        "notes": "M1 for a valid method: e^(2k pi i/3) with k = 0, 1, 2 (or -1), or the factorization of z^3 - 1. A1 for all three in Cartesian form. Answers left as e^(+-2pi i/3) earn the M1 only."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Hence solve (z - 1)^3 = 8, giving each solution in the form a + bi.",
+        "expected": {"answer": "z = 3, sqrt3 i, -sqrt3 i"},
+        "tolerance": "Accept 0 + sqrt3 i forms. Accept any valid route, including expanding and factorizing first.",
+        "notes": "M1 for z - 1 = 2 omega with omega each cube root of unity (or an equivalent method giving all three values of z - 1). A1 for all three solutions. Finding only z = 3 earns nothing.",
+        "follow_through": "Award the marks for 1 + 2 omega computed correctly from the candidate's own roots in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "M1", "A1"],
+        "description": "Show that (z - 1)^3 = 8 can be written as z^3 - 3z^2 + 3z - 9 = 0 (answer given), and hence write z^3 - 3z^2 + 3z - 9 as a linear factor times a real quadratic factor.",
+        "expected": {"answer": "(z - 3)(z^2 + 3)"},
+        "tolerance": "The first step is show that (answer given). Accept the factors in either order.",
+        "notes": "First M1 for expanding (z - 1)^3 = z^3 - 3z^2 + 3z - 1 with the correct coefficients and signs, leading to the given cubic. Second M1 for any valid route to the factors: pairing the conjugate roots from (b) as (z - sqrt3 i)(z + sqrt3 i) = z^2 + 3, grouping z^2(z - 3) + 3(z - 3), or dividing by (z - 3). A1 for (z - 3)(z^2 + 3). A factorization with non-real coefficients, (z - 3)(z - sqrt3 i)(z + sqrt3 i), earns the second M1 only, since the question asks for a real quadratic factor."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": ["1.13", "1.14"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.12,
+    "answer_box_top_frac_note": "Page 4 is an even page. The answer box starts at 0.485, but the stem sits just above the '(a)' line at 0.161 and the printed Argand grid lies between the parts list and the box; a student may plot the roots on the grid, so the crop starts at 0.12 and takes in the stem, parts and grid. The even-page nickname box occupies 0.065 to about 0.11, so 0.12 is the lowest safe value.",
+    "source": "Original (freshly authored 2026-09-29, HL syllabus 1.13/1.14, no calculator; review of de Moivre from 12-3CW). One cube root of w is 1 + sqrt3 i = 2e^(i pi/3), so w = 8e^(i pi) = -8. The other cube roots are -2 and 1 - sqrt3 i. The three roots form an equilateral triangle of side 2sqrt3 with area 3sqrt3.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "One cube root of w is 1 + sqrt3 i. Use de Moivre's theorem to find w.",
+        "expected": {"answer": "w = -8"},
+        "tolerance": "Accept 8e^(i pi) alongside -8. A correct binomial expansion of (1 + sqrt3 i)^3 reaching -8 also earns full marks.",
+        "notes": "M1 for writing 1 + sqrt3 i in exponential or polar form (modulus 2, argument pi/3) and cubing. A1 for w = -8. On the binomial route, add the feedback note that the question asked for de Moivre."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the other two cube roots of w in the form a + bi.",
+        "expected": {"answer": "-2 and 1 - sqrt3 i"},
+        "tolerance": "Accept the roots in either order. Accept any valid method.",
+        "notes": "M1 for any valid method: rotating 2e^(i pi/3) by +-2pi/3, solving z^3 = 8e^(i(pi + 2k pi)), or the conjugate root theorem (z^3 + 8 = 0 has real coefficients) with the third root from the sum of roots or by inspection. A1 for both roots in Cartesian form. Roots left as 2e^(i pi) and 2e^(-i pi/3) earn the M1 only.",
+        "follow_through": "Award the marks for the cube roots of the candidate's own w from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "The three cube roots are plotted on an Argand diagram. Find the exact area of the triangle they form.",
+        "expected": {"answer": "3sqrt3"},
+        "tolerance": "Accept any exact equivalent, e.g. sqrt27.",
+        "notes": "M1 for any valid area method: base 2sqrt3 (from 1 + sqrt3 i to 1 - sqrt3 i) with height 3; the equilateral formula (sqrt3/4)s^2 with s = 2sqrt3; or three triangles from the origin, 3 x (1/2)(2)(2) sin(2pi/3). A1 for 3sqrt3. A decimal answer (5.20) loses the A1, since the exact area is asked for.",
+        "follow_through": "Award the marks for the area correctly computed from the candidate's own roots in (b)."
+      }
+    ]
+  }
+]

@@ -1,0 +1,144 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 29 September 2026}
+
+\begin{document}
+\subsubsection*{1.6 Classwork: Geometric Growth and Decay --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Common ratio, u_n, u_10, first term over 1 000 000 [6 marks] ---
+\item[1.] [Maximum mark: 6]
+
+The sequence $4, 12, 36, 108, \ldots$, so $u_{1} = 4$.
+
+\medskip
+
+\textbf{(a)} $\dfrac{12}{4} = 3, \quad \dfrac{36}{12} = 3, \quad
+\dfrac{108}{36} = 3$ \hfill \textbf{M1}
+
+$r = 3$ \hfill \textbf{A1}
+
+\emph{M1 for at least two of the three ratios correctly calculated.
+A1 for $r = 3$.}
+
+\emph{A common difference in place of a ratio (e.g.\ $12 - 4 = 8$)
+earns no marks.}
+
+\medskip
+
+\textbf{(b)} $u_{n} = 4 \times 3^{\,n - 1}$ \hfill \textbf{A1}
+
+\emph{Accept any equivalent form, e.g.\ $\dfrac{4}{3} \times 3^{n}$.}
+
+\emph{$u_{n} = 4 \times 3^{n}$ or $12^{\,n-1}$ earns no mark.}
+
+\emph{FT: award A1 for $4 \times r^{\,n-1}$ with the candidate's own
+$r$ from (a).}
+
+\medskip
+
+\textbf{(c)} $u_{10} = 4 \times 3^{9} = 78\,732$ \hfill \textbf{A1}
+
+\emph{FT: award A1 for the value obtained by substituting $n = 10$
+into the candidate's own expression from (b).}
+
+\medskip
+
+\textbf{(d)} $4 \times 3^{\,n - 1} > 1\,000\,000$ \hfill \textbf{M1}
+
+$u_{12} = 708\,588 \ (< 1\,000\,000)$ \quad and \quad
+$u_{13} = 2\,125\,764 \ (> 1\,000\,000)$
+
+$n = 13$ \hfill \textbf{A1}
+
+\emph{Accept solving the inequality on the GDC or with logarithms:
+$n - 1 > 11.31\ldots$, so $n = 13$.}
+
+\emph{Accept a table search: full marks for showing the adjacent rows
+$u_{12}$ and $u_{13}$ and stating $n = 13$. A single row
+($u_{13} = 2\,125\,764$, so $n = 13$) still earns full marks, with the
+feedback note that the adjacent row $u_{12}$ is what justifies
+``smallest''. See markscheme-spec §18.}
+
+\emph{$n = 12.31\ldots$ is not an acceptable final answer --- $n$ must
+be a whole number. Rounding it down to $n = 12$ earns the M1 only.}
+
+\emph{FT: award A1 for the smallest integer $n$ correctly obtained
+from the candidate's own expression in (b).}
+
+\newpage
+
+%--- Problem 2: Population growth 4% and car depreciation 15% [7 marks] ---
+\item[2.] [Maximum mark: 7]
+
+Population: $12\,000$ at the start of 2020, growing $4\%$ per
+year. Car: \$$24\,000$ at the start of 2020, losing $15\%$ per year.
+
+\medskip
+
+\textbf{(a)} $r = 1.04$ \hfill \textbf{A1}
+
+\emph{Accept $1 + 0.04$ or $\dfrac{104}{100}$.}
+
+\emph{$r = 0.04$ or $r = 4$ earns no mark.}
+
+\medskip
+
+\textbf{(b)} 2030 is $10$ years after 2020:
+$12\,000 \times 1.04^{10}$ \hfill \textbf{M1}
+
+$= 17\,762.9\ldots \approx 17\,763$ \hfill \textbf{A1}
+
+\emph{Accept $17\,800$ (3 s.f.), $17\,762$, $17\,762.9$ or any value
+that rounds to $17\,760$.}
+
+\emph{An exponent of $9$ (giving $17\,079.7\ldots$) or $11$ (giving
+$18\,473.4\ldots$) earns the M1 only.}
+
+\emph{FT: award M1A1 for $12\,000 \times r^{10}$ evaluated with the
+candidate's own $r$ from (a), provided $r > 1$.}
+
+\medskip
+
+\textbf{(c)} $r = 0.85$ \qquad
+$24\,000 \times 0.85^{5}$ \hfill \textbf{M1}
+
+$=$ \$$10\,648.93 \approx$ \$$10\,600$ \hfill \textbf{A1}
+
+\emph{Accept \$$10\,600$ (3 s.f.), \$$10\,649$ or \$$10\,648.93$. M1 is
+for a multiplier of $0.85$ applied five times, however written.}
+
+\emph{A multiplier of $0.15$ (giving \$$1.82$) or $1.15$ earns no
+marks. An exponent of $4$ (giving \$$12\,528.15$) earns the M1 only.}
+
+\medskip
+
+\textbf{(d)} $24\,000 \times 0.85^{\,n} < 5000$ \hfill \textbf{M1}
+
+After $9$ years: \$$5558.81$ \ ($> 5000$); \quad after $10$ years:
+\$$4724.99$ \ ($< 5000$)
+
+$10$ years \hfill \textbf{A1}
+
+\emph{Accept solving the inequality on the GDC or with logarithms:
+$n > 9.65\ldots$, so $10$ years.}
+
+\emph{Accept a table search: full marks for showing both adjacent
+years and stating $10$. A single row (after $10$ years the value is
+\$$4724.99$, so $10$) still earns full marks, with the feedback note
+that the adjacent year $9$ is what justifies ``first''. See
+markscheme-spec §18.}
+
+\emph{$9.65$ is not an acceptable final answer --- the answer must be
+a whole number of years. Rounding down to $9$ earns the M1 only.}
+
+\emph{FT: award A1 for the smallest whole number of years correctly
+obtained from the candidate's own multiplier in (c), provided it is
+between $0$ and $1$.}
+
+\end{enumerate}
+\end{document}

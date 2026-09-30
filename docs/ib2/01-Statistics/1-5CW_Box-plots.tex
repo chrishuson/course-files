@@ -1,0 +1,106 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 29 September 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyhead[LE]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{1.5 Classwork: Box-and-Whisker Plots}
+
+\emph{Use your GDC. Give answers exactly, or correct to three significant
+figures. An outlier is a value more than $1.5 \times \text{IQR}$ below
+$Q_{1}$ or more than $1.5 \times \text{IQR}$ above $Q_{3}$. On a
+box-and-whisker plot, mark an outlier with a cross ($\times$).}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Five-number summary from raw data; IQR; outlier test; draw the box plot [9 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.2), GDC One-Variable Statistics from a list ---
+\item[1.]
+
+Fifteen students record the time, in minutes, of their journey to school.
+
+\begin{center}
+$24,\; 18,\; 31,\; 12,\; 58,\; 22,\; 26,\; 15,\; 30,\; 21,\; 35,\; 20,\;
+28,\; 33,\; 25$
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down the median, the lower quartile $Q_{1}$ and the upper
+  quartile $Q_{3}$.
+  \item Find the interquartile range.
+  \item Show that $58$ is an outlier.
+  \item On the scale at the bottom of the box, draw a box-and-whisker
+  plot of the journey times. Mark the outlier with a cross.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.4);
+  \foreach \y in {5,6,...,12} \draw[dotted] (0,\y)--(14.1,\y);
+  \begin{scope}[xshift=1cm, x=0.2cm]
+    \foreach \t in {0,5,...,60} \draw[dotted] (\t,1.4)--(\t,4.2);
+    \draw (0,1.4)--(60,1.4);
+    \foreach \t in {0,5,...,60} \draw (\t,1.25)--(\t,1.55);
+    \foreach \t in {0,10,...,60} \node[below] at (\t,1.25) {\footnotesize \t};
+    \node at (30,0.35) {\footnotesize Journey time (minutes)};
+  \end{scope}
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Read a box plot; outlier test from a five-number summary; draw and compare [10 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.2) ---
+\item[2.]
+
+The box-and-whisker plot at the bottom of the box shows the test scores of
+the students in Class A. The scores of the students in Class B are
+summarized in the table.
+
+\begin{center}
+\setlength{\tabcolsep}{10pt}\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+Class B & Minimum & $Q_{1}$ & Median & $Q_{3}$ & Maximum \\
+\hline
+Score & 22 & 56 & 66 & 76 & 94 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down the median and find the interquartile range of the
+  Class A scores.
+  \item Show that the lowest Class B score is an outlier, and that the
+  highest Class B score is not.
+  \item The lowest Class B score that is not an outlier is $41$. On the
+  same scale as Class A, draw a box-and-whisker plot of the Class B
+  scores. Mark the outlier with a cross.
+  \item Compare the scores of the two classes. Make one comparison of
+  the centre and one comparison of the spread, quoting values.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.2);
+  \foreach \y in {6,7,...,12} \draw[dotted] (0,\y)--(14.1,\y);
+  \node[left] at (1.8,4.6) {\footnotesize Class A};
+  \node[left] at (1.8,2.6) {\footnotesize Class B};
+  \begin{scope}[xshift=-0.8cm, x=0.14cm]
+    \foreach \s in {20,25,...,100} \draw[dotted] (\s,1.4)--(\s,5.4);
+    \draw (20,1.4)--(100,1.4);
+    \foreach \s in {20,25,...,100} \draw (\s,1.25)--(\s,1.55);
+    \foreach \s in {20,30,...,100} \node[below] at (\s,1.25) {\footnotesize \s};
+    \node at (60,0.35) {\footnotesize Test score};
+    % Class A: 40, 52, 60, 68, 84
+    \draw[thick, fill=white] (52,4.2) rectangle (68,5.0);
+    \draw[thick] (60,4.2)--(60,5.0);
+    \draw[thick] (40,4.6)--(52,4.6);
+    \draw[thick] (68,4.6)--(84,4.6);
+    \draw[thick] (40,4.35)--(40,4.85);
+    \draw[thick] (84,4.35)--(84,4.85);
+  \end{scope}
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

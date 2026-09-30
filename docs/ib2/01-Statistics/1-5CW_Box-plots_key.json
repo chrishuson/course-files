@@ -1,0 +1,99 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["4.2"],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.27,
+    "answer_box_top_frac_note": "The answer box runs 0.414 to 0.893, with the printed box-plot scale inside its lower part. The crop is set higher, just above the '(a)' line at 0.280, so working written beside the parts list is captured as well as the box (the lesson from 1-2CW_Histograms). The nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored 2026-09-29, AA SL 4.2, calculator allowed). Fifteen journey times in minutes, printed unsorted: 24, 18, 31, 12, 58, 22, 26, 15, 30, 21, 35, 20, 28, 33, 25. Ordered: 12, 15, 18, 20, 21, 22, 24, 25, 26, 28, 30, 31, 33, 35, 58. Median 25; TI-Nspire quartiles (median excluded from each half) Q1 = 20, Q3 = 31; IQR = 11; 1.5 x IQR = 16.5; fences 3.5 and 47.5; 58 is the only outlier; whiskers 12 to 35.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write down the median, Q1 and Q3 of the fifteen journey times.",
+        "expected": {"median": 25, "Q1": 20, "Q3": 31},
+        "tolerance": "Accept Q1 = 20.5 and Q3 = 30.5 from a hand method that includes the median in each half. Accept the values read straight from the GDC with no working.",
+        "notes": "A1 for median 25. A1 for both quartiles; one quartile alone earns nothing for that mark. On the 20.5 / 30.5 convention, award the mark and add the feedback note that the GDC convention (median excluded) is the one to use."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find the interquartile range.",
+        "expected": {"answer": "11"},
+        "tolerance": "Accept 10 from the 20.5 / 30.5 quartile convention.",
+        "notes": "A1 for Q3 - Q1 = 11. The range, 58 - 12 = 46, earns no mark.",
+        "follow_through": "Award A1 for Q3 - Q1 computed correctly from the candidate's own quartiles in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "R1"],
+        "description": "Show that 58 is an outlier.",
+        "expected": {"answer": "Q3 + 1.5 x IQR = 31 + 16.5 = 47.5; 58 > 47.5 so 58 is an outlier", "upper_fence": 47.5},
+        "tolerance": "Show that (answer given). Accept an upper fence of 45.5 from the 20.5 / 30.5 convention.",
+        "notes": "M1 for 1.5 times the candidate's IQR added to the candidate's Q3. A1 for the fence 47.5. R1 for the comparison 58 > 47.5 stated with the conclusion; the fence value alone does not earn the R1. Adding 1.5 x IQR to the median or the mean earns no marks. The lower fence is not required.",
+        "follow_through": "Award all three marks from the candidate's own Q3 and IQR, provided their fence is below 58."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "On the printed scale (0 to 60 minutes), draw a box-and-whisker plot of the journey times, marking the outlier with a cross.",
+        "expected": {"box": "Q1 = 20 to Q3 = 31", "median_line": 25, "whiskers": "12 and 35", "outlier_cross": 58},
+        "tolerance": "Accept plotted values within 1 minute of the correct values.",
+        "notes": "A1 for the box from 20 to 31 with a median line at 25. A1 for whiskers ending at 12 and 35. A1 for 58 marked as a separate cross. The marks are independent. A whisker drawn to 58 or to the fence 47.5 loses the second A1; 58 drawn as a whisker end with no cross also loses the third.",
+        "follow_through": "Award the first A1 for a box drawn at the candidate's own quartiles and median from (a)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["4.2"],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.22,
+    "answer_box_top_frac_note": "Page 2 is an even page: the answer box runs 0.402 to 0.875, with the printed Class A plot and the empty Class B row inside its lower part. The crop is set just above the '(a)' line at 0.229 so working written beside the parts list is captured. The even-page nickname box sits near 0.05 to 0.11 and stays outside the crop.",
+    "source": "Original (freshly authored 2026-09-29, AA SL 4.2, calculator allowed). Class A printed as a box plot on a 20 to 100 scale: minimum 40, Q1 52, median 60, Q3 68, maximum 84 (IQR 16, range 44). Class B given as a five-number summary: minimum 22, Q1 56, median 66, Q3 76, maximum 94; IQR 20, 1.5 x IQR = 30, fences 26 and 106, so 22 is an outlier and 94 is not; lowest non-outlier 41 (given in part c).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "From the printed box plot, write down the median and find the interquartile range of the Class A scores.",
+        "expected": {"median": 60, "IQR": 16},
+        "tolerance": "Accept values read within 1 of the printed values.",
+        "notes": "A1 for median 60. A1 for IQR = 68 - 52 = 16. The marks are independent. The range, 84 - 40 = 44, earns no mark for the IQR."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "R1"],
+        "description": "Show that the lowest Class B score (22) is an outlier and the highest (94) is not.",
+        "expected": {"answer": "IQR = 20, 1.5 x IQR = 30; fences 26 and 106; 22 < 26 outlier, 94 < 106 not", "lower_fence": 26, "upper_fence": 106},
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for 1.5 times the Class B IQR (20). A1 for both fences, 26 and 106. R1 for both conclusions, each linked to its fence; one conclusion alone earns no R1. Using the Class A IQR earns no marks."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "The lowest non-outlier Class B score is 41. On the same scale as Class A, draw a box-and-whisker plot of the Class B scores, marking the outlier with a cross.",
+        "expected": {"box": "56 to 76", "median_line": 66, "whiskers": "41 and 94", "outlier_cross": 22},
+        "tolerance": "Accept plotted values within 1 of the correct values.",
+        "notes": "A1 for the box from 56 to 76 with a median line at 66. A1 for whiskers ending at 41 and 94. A1 for 22 marked as a separate cross. The marks are independent. A lower whisker drawn to 22 or to the fence 26 loses the second A1.",
+        "follow_through": "A candidate who concluded in (b) that 22 is not an outlier and draws the whisker to 22 with no cross earns the second A1 but not the third."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Compare the scores of the two classes: one comparison of the centre and one of the spread, quoting values.",
+        "expected": {"centre": "Class B median 66 > Class A median 60, so Class B generally scored higher", "spread": "Class B IQR 20 > Class A IQR 16, so Class B scores are more spread out"},
+        "tolerance": "Accept the ranges (72 against 44) for the spread comparison. Accept any wording that states the direction and quotes the values or names the statistic.",
+        "notes": "A1 for a centre comparison using the medians, with direction and values. A1 for a spread comparison using the IQRs (or ranges), with direction and values. A comparison of means earns no mark, since the means are not known. When the range is used, add the feedback note that the IQR is the better measure here because the Class B range is driven by the outlier.",
+        "follow_through": "Award the spread mark for a comparison made correctly from the candidate's own Class A IQR in (a)."
+      }
+    ]
+  }
+]

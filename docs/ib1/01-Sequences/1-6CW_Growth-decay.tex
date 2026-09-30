@@ -1,0 +1,68 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 29 September 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyhead[LE]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{1.6 Classwork: Geometric Growth and Decay}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Common ratio, u_n, u_10, first term over 1 000 000 [6 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.3) ---
+\item[1.]
+
+In a geometric sequence each term is the previous term multiplied by
+the common ratio $r$. The $n^{\text{th}}$ term is
+$$u_{n} = u_{1}\,r^{\,n - 1}.$$
+
+Consider the geometric sequence
+$$4, \ 12, \ 36, \ 108, \ \ldots$$
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find $\dfrac{u_{2}}{u_{1}}$, $\dfrac{u_{3}}{u_{2}}$ and
+  $\dfrac{u_{4}}{u_{3}}$. Hence write down the common ratio $r$.
+  \item Write down an expression for $u_{n}$ in terms of $n$.
+  \item Find $u_{10}$.
+  \item Find the smallest value of $n$ for which $u_{n} > 1\,000\,000$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.4);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Population growth 4% and car depreciation 15% [7 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.3, 1.4) ---
+\item[2.]
+
+The population of a town was $12\,000$ at the start of 2020. The
+population increases by $4\%$ each year.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down the common ratio of the geometric sequence formed by
+  the population at the start of each year.
+  \item Find the population at the start of 2030.
+\end{enumerate}
+
+A car was bought for \$$24\,000$ at the start of 2020. Its value
+decreases by $15\%$ each year.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item[(c)] Find the value of the car after $5$ years.
+  \item[(d)] Find the number of complete years after which the value
+  of the car first falls below \$$5000$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,16.0);
+  \foreach \y in {1,2,...,15} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}
