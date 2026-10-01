@@ -1,0 +1,129 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\setlength{\parskip}{0.3\baselineskip}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 30 September 2026}
+
+\begin{document}
+\subsubsection*{1.6 Classwork: Sampling bias and survey methodologies --- Markscheme}
+
+\emph{Calculator allowed. Marks are not printed on the student sheet; they are
+recorded here. Total: 17 marks.}
+
+\emph{\textbf{Throughout:} a technique must be named with its IB term (simple
+random, convenience, systematic, quota, stratified). An explanation earns its
+R1 only when it is tied to the context of the question, not a general
+definition alone.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: IA survey plan; population; convenience bias; stratified allocation; systematic [8 marks] ---
+\item[1.] [Maximum mark: 8]
+
+Grades 9--12: $84, 78, 68, 70$ students; total $300$. Sample size $30$.
+
+\textbf{(a)} All the students at the high school ($300$ students).
+\hfill \textbf{A1}
+
+\emph{``The $30$ students surveyed'' or ``Grade 12 students'' earns no
+mark --- that is a sample, not the population.}
+
+\textbf{(b)} Convenience sampling \hfill \textbf{A1}
+
+Only Grade 12 students are surveyed, and only those who choose the common
+room, so the sample is not representative of all grades; older students
+may have different sleep habits. \hfill \textbf{R1}
+
+\emph{Accept any reason tied to the context: only one grade is included;
+friends of Alex or students with the same routine are over-represented;
+not every student has an equal chance of being chosen.}
+
+\emph{``The sample is too small'' earns no R1 --- the sample size is the
+same $30$ as the later stratified sample.}
+
+\textbf{(c)(i)} $\dfrac{78}{300} \times 30$ \hfill \textbf{M1}
+
+$= 7.8$ \hfill \textbf{A1}
+
+$\approx 8$ students \hfill \textbf{AG}
+
+\emph{Accept $\dfrac{30}{300} = \dfrac{1}{10}$ of each grade, so
+$\dfrac{78}{10} = 7.8$. The value $7.8$ must be seen for the A1; writing
+only ``$8$'' earns the M1 at most.}
+
+\textbf{(c)(ii)} Grade 9: $8.4 \approx 8$; \quad Grade 11: $6.8 \approx 7$;
+\quad Grade 12: $7.0 = 7$ \hfill \textbf{A1A1}
+
+\emph{A1 for two correct, A1 for all three correct. Check: $8 + 8 + 7 + 7 =
+30$.}
+
+\emph{Numbers equal in each grade ($7.5$ or ``$7$ or $8$ each'') earn no
+marks.}
+
+\textbf{(d)} Systematic sampling \hfill \textbf{A1}
+
+\emph{Accept ``systematic random sampling''. ``Random sampling'' alone earns
+no mark.}
+
+\newpage
+
+%--- Problem 2: Discrete/continuous; quota; simple random; outlier as error; leading question [9 marks] ---
+\item[2.] [Maximum mark: 9]
+
+\textbf{(a)(i)} Discrete \hfill \textbf{A1}
+
+\textbf{(a)(ii)} Continuous \hfill \textbf{A1}
+
+\emph{Time is measured, not counted, so it is continuous even when it is
+recorded to the nearest hour or half-hour.}
+
+\textbf{(b)} Quota sampling \hfill \textbf{A1}
+
+\emph{``Convenience'' earns no mark: the fixed number from each group is
+what makes it quota sampling.}
+
+\textbf{(c)} In quota sampling the students within each group are not
+chosen at random (they are the first to arrive); in stratified sampling
+they are chosen at random, and the group sizes are in proportion to the
+population. \hfill \textbf{R1}
+
+\emph{Award R1 for either the ``not random within each group'' point or the
+``not in proportion to the population'' point.}
+
+\textbf{(d)} Use a random number generator (GDC or spreadsheet) to produce
+random whole numbers from $1$ to $300$ \hfill \textbf{M1}
+
+select the students with those numbers, ignoring repeats, until $30$
+different students are chosen \hfill \textbf{A1}
+
+\emph{Accept drawing $30$ numbers from a hat containing $1$ to $300$. M1 for
+a random method applied to the numbered list; A1 for $30$ distinct
+students (no repeats). ``Pick $30$ names from the list'' with no random
+method earns no marks.}
+
+\emph{\textbf{GDC:} \texttt{randInt(1,300)} repeated, or
+\texttt{randSamp} on the list $1$ to $300$ without replacement.}
+
+\textbf{(e)} Check the value with the student, or remove it from the data
+set \hfill \textbf{A1}
+
+$19$ hours of sleep in one night is unrealistic, so the value is most likely
+a recording error (for example $9$ hours) \hfill \textbf{R1}
+
+\emph{Accept ``it is an outlier and is probably an error''. The R1 needs the
+reason that the value is implausible or an error; ``it is an outlier'' alone
+earns the A1 only. ``Keep it'' earns A0, even with the reason that some
+outliers are valid data.}
+
+\textbf{(f)} It is a leading question: its wording suggests the answer
+``yes'', so students may agree rather than give their honest opinion.
+\hfill \textbf{R1}
+
+\emph{Accept ``biased wording'', ``it pushes students towards one answer''.
+``Students may lie'' alone earns no mark --- the R1 is for identifying that
+the question itself causes the bias.}
+
+\end{enumerate}
+\end{document}

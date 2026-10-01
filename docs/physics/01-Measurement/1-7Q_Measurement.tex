@@ -1,0 +1,134 @@
+% context: 9th-grade physics quiz, Unit 1 measurement
+% topic: significant figures, rounding, scientific notation, reading a ruler,
+%        unit conversion, average speed
+% structure: two quiz pages, then two "early finisher" pages (one problem each)
+% convention: long decimals are typeset with \num{} (siunitx), which groups the
+%        digits in threes with a thin space: \num{0.000000532} -> 0.000 000 532
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{Physics}
+\author{Chris Huson}
+\date{October 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Nickname: \hspace{2.25cm} \,\\ \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 2 October 2026}
+
+\begin{document}
+
+\subsubsection*{1.7 Quiz: Measurement}
+
+\textbf{Reference (provided).} \quad
+average speed $= \dfrac{\text{distance}}{\text{time}}$ \\[0.1cm]
+1 m $\approx$ 3.28 ft \quad 1 mi = 5280 ft \quad 1 km = 1000 m \quad 1 m = 100 cm
+\quad 1 cm = 10 mm \\
+1 h = 3600 s \quad 1 min = 60 s \quad 1 gal $\approx$ 3.785 L
+
+\vspace{0.3cm}
+
+\begin{enumerate}[itemsep=0.8cm]
+
+\item Write down the number of significant digits in each measurement.
+  \begin{multicols}{3}
+    \begin{enumerate}[itemsep=0.5cm]
+      \item 0.0350 m
+      \item 806 g
+      \item 7.0 s
+      \item 12.50 cm
+      \item \num{0.00009} kg
+      \item $6.02 \times 10^{23}$
+    \end{enumerate}
+  \end{multicols} \vspace{0.3cm}
+
+\item Round each value to three significant figures. Copy the calculator display
+  followed by three dots, then round: $\sqrt{2} = 1.4142135\ldots \approx 1.41$
+  \begin{multicols}{2}
+    \raggedright
+    \begin{enumerate}
+      \item $\sqrt{13}$
+      \item The height of Mount Everest, 8848.86 m
+    \end{enumerate}
+  \end{multicols} \vspace{1.6cm}
+
+\item Write in scientific notation, rounded to three significant figures.
+  \begin{multicols}{2}
+    \raggedright
+    \begin{enumerate}
+      \item The distance light travels in one year, about 9{,}460{,}730{,}000{,}000 km
+      \item The charge of an electron, \\
+        \num{0.0000000000000000001602} C
+    \end{enumerate}
+  \end{multicols} \vspace{1.6cm}
+
+\item Write each value as an ordinary decimal number.
+  \begin{multicols}{2}
+    \raggedright
+    \begin{enumerate}
+      \item The width of a human hair, $7.0 \times 10^{-5}$ m
+      \item The closest distance from the Earth to Mars, $5.46 \times 10^{7}$ km
+    \end{enumerate}
+  \end{multicols}
+
+\newpage
+
+\item The bar below is measured with a centimeter ruler marked in millimeters.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.05]
+  \draw[fill=gray!20] (0,0.18) rectangle (8.36,0.78);
+  \draw[thick] (-0.5,0) -- (10.6,0);
+  \foreach \x in {0.1,0.2,...,9.95}{\draw (\x,0) -- (\x,-0.14);}
+  \foreach \x in {0,1,2,3,4,5,6,7,8,9,10}{\draw[thick] (\x,0) -- (\x,-0.3) node[below] {\small \x};}
+  \node[right] at (10.7,-0.15) {\small cm};
+\end{tikzpicture}
+\end{center}
+
+  \begin{enumerate}[itemsep=1.0cm]
+    \item Record the length of the bar. Include one estimated digit --- the last
+      digit, the one you are not certain of.
+    \item How many significant figures does your measurement have?
+    \item Write your measurement in millimeters.
+  \end{enumerate} \vspace{1.0cm}
+
+\item Convert between units, rounding to three significant figures. Write each
+  conversion as a single chain of fractions and show the units cancelling.
+  \begin{enumerate}[itemsep=2.6cm]
+    \item Taipei 101 is 508 meters tall. What is its height in feet?
+    \item Spain's AVE high-speed train runs at 310 kilometers per hour. What is this
+      speed in meters per second?
+  \end{enumerate} \vspace{2.4cm}
+
+\item A cheetah has been timed running at 29 meters per second. What is this speed
+  in miles per hour?
+
+\end{enumerate}
+
+\newpage
+
+\subsubsection*{Early finisher}
+
+\begin{enumerate}[resume]
+
+\item Mars is $5.46 \times 10^{7}$ km from the Earth at its closest. A radio
+  command sent to a rover on Mars travels at the speed of light,
+  $3.00 \times 10^{8}$ m/s. How many minutes does the command take to arrive?
+  \vspace{9cm}
+
+\item The Atlantic Ocean widens by about 2.5 centimeters per year. Columbus first
+  crossed it in 1492. By how many meters has the Atlantic widened between 1492 and
+  2026?
+
+\newpage
+
+\item A US shower head lets through at most 2.5 gallons of water per minute. How many
+  liters of water does an 8.0-minute shower use? \vspace{9cm}
+
+\item New York City uses about 1.0 billion gallons of water per day, for a
+  population of about 8.5 million people. How many liters of water is that per
+  person per day? Round your answer to the number of significant figures the data
+  supports.
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,150 @@
+% context: markscheme (official solutions) for 1-7Q_Measurement
+% topic: significant figures, rounding, scientific notation, reading a ruler,
+%        unit conversion, average speed
+% convention: "=" joins exact equalities; "\approx" introduces a rounded value;
+%        long decimals use \num{} so the digits are grouped in threes
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+\setlength{\parskip}{0.3\baselineskip}
+\sisetup{reset-text-series=false, reset-math-version=false, text-series-to-math=true} % \num inherits bold
+
+\title{Physics}
+\author{Chris Huson}
+\date{October 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 2 October 2026}
+
+\begin{document}
+
+\subsubsection*{1.7 Quiz Solutions: Measurement}
+
+\emph{Notation: \,$=$\, joins values that are exactly equal; \,$\approx$\, introduces a
+rounded value. Each conversion runs as one chain of unit factors and is evaluated once.}
+
+\begin{enumerate}[itemsep=0.25cm]
+
+\item Significant digits.
+  \begin{multicols}{3}
+    \begin{enumerate}[itemsep=0.1cm]
+      \item \textbf{3}
+      \item \textbf{3}
+      \item \textbf{2}
+      \item \textbf{4}
+      \item \textbf{1}
+      \item \textbf{3}
+    \end{enumerate}
+  \end{multicols}
+  \emph{(a) Leading zeros do not count; the trailing zero after the decimal point does.
+  (b) A zero between nonzero digits always counts. (e) \num{0.00009} has a single
+  measured digit, the 9.}
+
+\item Round to three significant figures.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $\sqrt{13} = 3.6055512\ldots \approx \mathbf{3.61}$
+    \item $8848.86~\text{m} \approx \mathbf{8850~\textbf{m}}$, better written
+      $\mathbf{8.85 \times 10^{3}~\textbf{m}}$
+
+      \emph{The third figure is the 4 in the tens place; the 8 after it rounds it up.}
+  \end{enumerate}
+
+\item Scientific notation.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $9{,}460{,}730{,}000{,}000~\text{km} = 9.46073 \times 10^{12}~\text{km}
+      \approx \mathbf{9.46 \times 10^{12}~\textbf{km}}$
+    \item \num{0.0000000000000000001602}~C $= 1.602 \times 10^{-19}$~C
+      $\approx \mathbf{1.60 \times 10^{-19}~\textbf{C}}$
+
+      \emph{Six groups of three zeros is 18 zeros, so the 1 is in the 19th decimal
+      place: the exponent is $-19$. Write 1.60, not 1.6 --- the trailing zero is the
+      third significant figure.}
+  \end{enumerate}
+
+\item Ordinary decimal numbers.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $7.0 \times 10^{-5}~\text{m} = $ \textbf{\num{0.000070}~m}
+
+      \emph{Keep the trailing zero: $7.0$ has two significant figures and so must the
+      decimal form. 0.00007 m loses one.}
+    \item $5.46 \times 10^{7}~\text{km} = \mathbf{54{,}600{,}000~\textbf{km}}$
+  \end{enumerate}
+
+\item Reading the ruler. The bar ends between the 8.3 and 8.4 cm marks, a little past
+  halfway.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $\mathbf{8.36~\textbf{cm}}$ --- the 8.3 is certain and the final 6 is the
+      estimated digit. \emph{Accept 8.35 to 8.37.}
+    \item \textbf{Three significant figures.}
+    \item $8.36~\text{cm} \times \dfrac{10~\text{mm}}{1~\text{cm}}
+      = \mathbf{83.6~\textbf{mm}}$
+  \end{enumerate}
+
+\item Convert.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $508~\text{m} \times \dfrac{3.28~\text{ft}}{1~\text{m}} = 1666.24~\text{ft}
+      \approx \mathbf{1670~\textbf{ft}}$, or $\mathbf{1.67 \times 10^{3}~\textbf{ft}}$
+
+      \emph{The published height is 1667 ft, so this checks.}
+    \item $310~\dfrac{\text{km}}{\text{h}} \times \dfrac{1000~\text{m}}{1~\text{km}}
+      \times \dfrac{1~\text{h}}{3600~\text{s}} = 86.111\ldots
+      \approx \mathbf{86.1~\textbf{m/s}}$
+  \end{enumerate}
+
+\item Cheetah.
+
+  $29~\dfrac{\text{m}}{\text{s}} \times \dfrac{3.28~\text{ft}}{1~\text{m}}
+  \times \dfrac{1~\text{mi}}{5280~\text{ft}} \times \dfrac{3600~\text{s}}{1~\text{h}}
+  = 64.854\ldots \approx \mathbf{65~\textbf{mi/h}}$
+
+  \emph{Two significant figures, set by the 29 m/s. Accept 64.9 mi/h for full credit on
+  the conversion; the sig-fig point is worth discussing when the quiz is returned.}
+
+\end{enumerate}
+
+\subsubsection*{Early finisher}
+
+\begin{enumerate}[resume, itemsep=0.25cm]
+
+\item Radio command to Mars.
+
+  $t = \dfrac{d}{v}$: \quad
+  $5.46 \times 10^{7}~\text{km} \times \dfrac{1000~\text{m}}{1~\text{km}}
+  \times \dfrac{1~\text{s}}{3.00 \times 10^{8}~\text{m}}
+  \times \dfrac{1~\text{min}}{60~\text{s}} = 3.0333\ldots
+  \approx \mathbf{3.03~\textbf{min}}$
+
+  \emph{That is 182 s each way at closest approach, and up to about 24 minutes when
+  Mars is far --- which is why a Mars rover cannot be driven with a joystick.}
+
+\item Widening of the Atlantic, 1492 to 2026: $2026 - 1492 = 534$ years.
+
+  $534~\text{yr} \times \dfrac{2.5~\text{cm}}{1~\text{yr}}
+  \times \dfrac{1~\text{m}}{100~\text{cm}} = 13.35~\text{m}
+  \approx \mathbf{13~\textbf{m}}$
+
+  \emph{Two significant figures, set by ``about 2.5 cm''; the 534 years is a count and
+  does not limit the answer. About the length of a city bus --- in five centuries.}
+
+\item Shower.
+
+  $8.0~\text{min} \times \dfrac{2.5~\text{gal}}{1~\text{min}}
+  \times \dfrac{3.785~\text{L}}{1~\text{gal}} = 75.7~\text{L}
+  \approx \mathbf{76~\textbf{L}}$
+
+  \emph{Two significant figures: both 2.5 gal/min and 8.0 min have two.}
+
+\item Water per person per day.
+
+  $\dfrac{1.0 \times 10^{9}~\text{gal}}{8.5 \times 10^{6}~\text{people}}
+  \times \dfrac{3.785~\text{L}}{1~\text{gal}} = 445.29\ldots~\text{L}
+  \approx \mathbf{450~\textbf{L}}$, better written
+  $\mathbf{4.5 \times 10^{2}~\textbf{L}}$ per person per day
+
+  \emph{Both data values have two significant figures (``about 1.0 billion'', ``about
+  8.5 million''), so the answer gets two. 445 L or 445.3 L overstates the precision;
+  give full credit for the calculation and the sig-fig mark only for two figures.}
+
+\end{enumerate}
+\end{document}

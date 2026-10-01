@@ -1,0 +1,156 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.473,
+    "source": "Original (freshly authored, calculator allowed). Simple interest as an arithmetic sequence: $2000 invested at 3.5% per year simple interest; yearly interest, values after years 1-3, V_n, V_12, first year the value exceeds $3000.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Maria invests $2000 at 3.5% per year simple interest, I = P * r/100. Find the interest Maria earns each year.",
+        "expected": {
+          "answer": "$70"
+        },
+        "tolerance": "Accept 70 with or without units.",
+        "notes": "A1 for $70. A value of $7000 (using 3.5 in place of 0.035) earns no mark."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the value of her investment at the end of years 1, 2 and 3.",
+        "expected": {
+          "answer": "$2070, $2140, $2210"
+        },
+        "tolerance": "Accept values with or without units.",
+        "notes": "All three values required for the mark.",
+        "follow_through": "Award A1 for 2000 + I, 2000 + 2I, 2000 + 3I with the candidate's own I from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down an expression for the value V_n of the investment at the end of n years.",
+        "expected": {
+          "answer": "V_n = 2000 + 70n"
+        },
+        "tolerance": "Accept any equivalent form, e.g. V_n = 2070 + 70(n - 1).",
+        "notes": "A1 for 2000 + 70n or an equivalent. V_n = 2000 + 70(n - 1) earns no mark: it gives $2000 at the end of year 1.",
+        "follow_through": "Award A1 for 2000 + I*n with the candidate's own I from (a)."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find the value of the investment at the end of 12 years.",
+        "expected": {
+          "answer": "$2840"
+        },
+        "tolerance": "Accept 2840 obtained by any method, including repeated addition or a GDC table.",
+        "notes": "A1 for $2840.",
+        "follow_through": "Award A1 for the value obtained by substituting n = 12 into the candidate's own expression from (c)."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the number of complete years after which the value of the investment first exceeds $3000.",
+        "expected": {
+          "answer": "15",
+          "value_after_14_years": 2980,
+          "value_after_15_years": 3050
+        },
+        "tolerance": "Accept any valid method: the inequality 2000 + 70n > 3000 solved (n > 14.28..., so 15), or a table search. For a table search, full marks for the adjacent years (14 years: $2980; 15 years: $3050) with 15 stated; a single row (after 15 years the value is $3050, so 15) also earns full marks.",
+        "notes": "M1 for setting up the inequality (or equation) with the V_n expression and 3000, or for a table/list of yearly values reaching past 3000. A1 for 15 years. A non-integer final answer (14.3) earns the M1 only; rounding down to 14 earns the M1 only. On a single-row table search, attach the feedback note that the adjacent year 14 is what justifies 'first' (markscheme-spec section 18).",
+        "follow_through": "Award A1 for the smallest whole number of years correctly obtained from the candidate's own expression in (c)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "1.4"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.423,
+    "source": "Original (freshly authored, calculator allowed). Compound interest on $2000: Bank A 3.5% compounded annually vs Bank B 3.4% compounded monthly over 12 years; doubling time for Bank A.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Luca invests $2000 in Bank A at 3.5% per year compounded annually, FV = P(1 + r/(100k))^(kn). Find the value of the investment at the end of 12 years.",
+        "expected": {
+          "answer": "$3022.14",
+          "exact": "2000 * 1.035^12 = 3022.137..."
+        },
+        "tolerance": "Accept any value that rounds to $3020 at 3 s.f., including $3022 and $3022.14. Accept the TVM solver (N = 12, I% = 3.5, PV = -2000, PMT = 0, P/Y = C/Y = 1).",
+        "notes": "M1 for 2000 multiplied by 1.035 raised to the power 12, however written. A1 for 3022.14 or an accepted rounding. A multiplier of 0.035 or 1.35 earns no marks. An exponent of 11 ($2919.94) earns the M1 only. Simple-interest working (2000 + 12*70 = 2840) earns no marks."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Bank B pays 3.4% per year compounded monthly. Find the value of $2000 invested in Bank B at the end of 12 years.",
+        "expected": {
+          "answer": "$3005.88",
+          "exact": "2000 * (1 + 3.4/1200)^144 = 3005.879..."
+        },
+        "tolerance": "Accept any value that rounds to $3010 at 3 s.f., including $3006 and $3005.88. Accept the TVM solver (N = 144, I% = 3.4, PV = -2000, PMT = 0, P/Y = C/Y = 12).",
+        "notes": "M1 for a monthly rate of 3.4/1200 (0.002833...) and an exponent of 144. A1 for 3005.88 or an accepted rounding. Using 3.4% compounded annually (giving $2987.28) earns no marks."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "State which bank gives the greater value after 12 years.",
+        "expected": {
+          "answer": "Bank A"
+        },
+        "tolerance": "Accept 'A' or 'the annual account'.",
+        "notes": "A1 for Bank A.",
+        "follow_through": "Award A1 for the bank with the greater value from the candidate's own answers to (a) and (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "For Bank A, find the number of complete years after which Luca's investment first becomes at least double its original value.",
+        "expected": {
+          "answer": "21",
+          "value_after_20_years": 3979.58,
+          "value_after_21_years": 4118.86
+        },
+        "tolerance": "Accept any valid method: 2000 * 1.035^n >= 4000 (or 1.035^n >= 2) solved on the GDC or with logarithms (n >= 20.15..., so 21), the TVM solver for N (PV = -2000, FV = 4000), or a table search. For a table search, full marks for the adjacent years (20 years: $3979.58; 21 years: $4118.86) with 21 stated; a single row (after 21 years the value is $4118.86, so 21) also earns full marks.",
+        "notes": "M1 for setting up the inequality (or equation) with 2000, the 1.035 multiplier and 4000, or for a table/list of yearly values reaching 4000. A1 for 21 years. A non-integer final answer (20.1) earns the M1 only; rounding down to 20 earns the M1 only. On a single-row table search, attach the feedback note that the adjacent year 20 is what justifies 'first' (markscheme-spec section 18)."
+      }
+    ]
+  }
+]

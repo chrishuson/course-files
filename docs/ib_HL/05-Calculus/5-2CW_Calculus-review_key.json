@@ -1,0 +1,212 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "5.19"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.225,
+    "answer_box_top_frac_note": "The answer box starts at 0.525. The crop is set higher, just above the '(a)' line at 0.236, so working written beside the question is captured too (the 1-2CW_Histograms convention). The nickname box sits at roughly 0.06 to 0.11 and stays outside the crop.",
+    "source": "AA HL 2021 May P2 TZ2 Q9 (no calculator needed). Binomial (1+t)^-1, Maclaurin series of sec x from cos x, limit of x arctan 2x / (sec x - 1) = 4.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the first three terms of the binomial expansion of (1 + t)^-1 in ascending powers of t.",
+        "expected": {
+          "answer": "1 - t + t^2"
+        },
+        "tolerance": "Accept the three terms listed: 1, -t, t^2.",
+        "notes": "A1 for 1 - t + t^2."
+      },
+      {
+        "label": "b",
+        "marks": 4,
+        "mark_codes": [
+          "M1",
+          "M1",
+          "A1",
+          "A1",
+          "AG"
+        ],
+        "description": "By using the Maclaurin series for cos x and the result from part (a), show that the Maclaurin series for sec x up to and including the term in x^4 is 1 + x^2/2 + 5x^4/24.",
+        "expected": {
+          "answer": "sec x = 1 - (cos x - 1) + (cos x - 1)^2 = 1 - (-x^2/2 + x^4/24) + (-x^2/2 + x^4/24)^2 = 1 + x^2/2 - x^4/24 + x^4/4 = 1 + x^2/2 + 5x^4/24"
+        },
+        "tolerance": "Condone the absence of '...'. The two method marks are implied by correct working.",
+        "notes": "(M1) for sec x = 1/(1 - x^2/2! + x^4/4! - ...). (M1) for t = cos x - 1 substituted into 1 - t + t^2. A1 for the correct substituted expression. A1 for both x^4 contributions, -x^4/24 and +x^4/4, seen before the given answer. AG. Differentiating sec x four times earns no marks: the question requires the method of (a) and (b)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "By using the Maclaurin series for arctan x and the result from part (b), find the limit as x -> 0 of (x arctan 2x)/(sec x - 1).",
+        "expected": {
+          "answer": "4"
+        },
+        "tolerance": "Condone a missing 'lim' and errors in higher-order terms. Only the leading terms 2x^2 and x^2/2 are needed.",
+        "notes": "M1 for substituting arctan 2x = 2x - (2x)^3/3 + ... and the sec x series into the limit; do not award unless x is replaced by 2x in arctan. A1 for (2x^2 - 8x^4/3 + ...)/(x^2/2 + 5x^4/24) or after dividing by x^2. A1 for 4. L'Hopital's rule earns no marks: the question requires Maclaurin series.",
+        "follow_through": "Award the final A1 for the limit correctly obtained from the candidate's own leading coefficients."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "5.9",
+      "5.5",
+      "5.11"
+    ],
+    "total_marks": 16,
+    "answer_box_top_frac": 0.195,
+    "answer_box_top_frac_note": "The answer box starts at 0.359. The crop is set higher, just above the '(a)' line at 0.208, so working written beside the question is captured too (the 1-2CW_Histograms convention). The nickname box sits at roughly 0.06 to 0.11 and stays outside the crop.",
+    "source": "AA HL 2021 Nov P1 Q10 (no calculator). Kinematics: v(t) = 4 + 4t - 3t^2 for 0 <= t <= 3, P at origin at t = 0. Max velocity at t = 2/3; displacement 88/27 m; sketch of v with t-intercept 2, start (0, 4), vertex (2/3, 16/3), end (3, -11); total distance 8 + 5 = 13 m.",
+    "parts": [
+      {
+        "label": "a.i",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "A particle P moves along the x-axis with velocity v(t) = 4 + 4t - 3t^2 m/s for 0 <= t <= 3; at t = 0 it is at the origin O. Find the value of t when P reaches its maximum velocity.",
+        "expected": {
+          "answer": "t = 2/3"
+        },
+        "tolerance": "Accept -b/(2a) = -4/(2(-3)) or the average of the roots (-2/3 + 2)/2.",
+        "notes": "(M1) for a valid approach to find the turning point, e.g. v'(t) = 4 - 6t = 0. A1 for t = 2/3. The official markscheme totals (a)(i) and (a)(ii) as [7]; this split (2 + 5) follows its mark lines."
+      },
+      {
+        "label": "a.ii",
+        "marks": 5,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1",
+          "M1",
+          "A1",
+          "AG"
+        ],
+        "description": "Show that the distance of P from O at this time is 88/27 metres.",
+        "expected": {
+          "answer": "s = 4t + 2t^2 - t^3; s(2/3) = 8/3 + 8/9 - 8/27 = 88/27"
+        },
+        "tolerance": "Accept a definite integral from 0 to 2/3 in place of finding c.",
+        "notes": "(M1) for attempting to integrate v. A1 for 4t + 2t^2, A1 for -t^3. (M1) for substituting their t into their integral. A1 for 8/3 + 8/9 - 8/27 or an equivalent line seen before the given answer. AG.",
+        "follow_through": "The substitution (M1) follows through from the candidate's t in (a)(i)."
+      },
+      {
+        "label": "b",
+        "marks": 4,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "Sketch a graph of v against t on the given axes, clearly showing any points of intersection with the axes.",
+        "expected": {
+          "answer": "Concave-down parabola from (0, 4), vertex near (2/3, 16/3), crossing the t-axis at t = 2, ending at t = 3 (v = -11)."
+        },
+        "tolerance": "The value v(3) = -11 need not be labelled, but the end of the domain at t = 3 must be clearly indicated. Vertex position is approximate.",
+        "notes": "(M1) for a valid approach to solve 4 + 4t - 3t^2 = 0, e.g. (2 - t)(2 + 3t) (may be seen in (a)). A1 for the t-intercept at t = 2. A1 for the domain 0 to 3 starting at (0, 4). A1 for the vertex at approximately t = 2/3 with v > 4. The last two A marks require a concave-down parabola; they are independent of each other and of the (M1). Drawing the curve outside 0 <= t <= 3 (e.g. to the root t = -2/3) loses the domain A1."
+      },
+      {
+        "label": "c",
+        "marks": 5,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "Find the total distance travelled by P.",
+        "expected": {
+          "answer": "13 m",
+          "integral_0_to_2": 8,
+          "integral_2_to_3": -5
+        },
+        "tolerance": "Accept the integral of |v| from 0 to 3 as both method marks.",
+        "notes": "(M1) for recognising to integrate from 0 to 2 and from 2 to 3 (or the integral of |v|). A1 for 8. A1 for -5. (M1) for summing the magnitudes: int_0^2 v dt - int_2^3 v dt. A1 for 13. The integral from 0 to 3 (= 3) is the displacement, not the distance, and earns no marks on its own.",
+        "follow_through": "Award the A marks from the candidate's own antiderivative in (a)(ii) and root in (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "5.15",
+      "5.16"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.15,
+    "answer_box_top_frac_note": "The answer box starts at 0.268. The crop is set higher, just above the 'By using the substitution' line at 0.162, so working written beside the question is captured too (the 1-2CW_Histograms convention). The nickname box sits at roughly 0.06 to 0.11 and stays outside the crop.",
+    "source": "AA HL 2021 May P1 TZ2 Q9 (no calculator). Integral of sin x cos x / (sin^2 x - sin x - 2) by substitution u = sin x, then partial fractions u/((u+1)(u-2)) = 1/(3(u+1)) + 2/(3(u-2)).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 7,
+        "mark_codes": [
+          "A1",
+          "A1",
+          "M1",
+          "M1",
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "By using the substitution u = sin x, find the integral of (sin x cos x)/(sin^2 x - sin x - 2) dx.",
+        "expected": {
+          "answer": "(1/3) ln|sin x + 1| + (2/3) ln|sin x - 2| + C",
+          "A": "1/3",
+          "B": "2/3"
+        },
+        "tolerance": "Accept equivalent forms, e.g. (1/3) ln(1 + sin x) + (2/3) ln(2 - sin x) + C. Condone further simplification of the correct answer.",
+        "notes": "A1 for du = cos x dx. A1 for the integral of u/(u^2 - u - 2) du. M1 for attempting partial fractions. (M1) for a valid attempt to find A and B. A1 for A = 1/3 and B = 2/3. A1 for (1/3) ln|u + 1| + (2/3) ln|u - 2|; condone missing +C or moduli here. A1 for the final answer in x with +C and moduli (or equivalent). A final answer left in terms of u earns the first six marks only.",
+        "follow_through": "Award the two final A1 marks from the candidate's own A and B, provided both are non-zero."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "5.18",
+      "5.16"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.15,
+    "answer_box_top_frac_note": "The answer box starts at 0.306. The crop is set higher, just above the 'Solve the differential equation' line at 0.162, so working written beside the question is captured too (the 1-2CW_Histograms convention). The nickname box sits at roughly 0.06 to 0.11 and stays outside the crop.",
+    "source": "AA HL 2021 Nov P1 Q8 (no calculator). Linear first-order DE dy/dx = ln(2x)/x^2 - 2y/x, y = 4 at x = 1/2. Integrating factor x^2; integration by parts of ln 2x; c = 3/2.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 7,
+        "mark_codes": [
+          "M1",
+          "M1",
+          "A1",
+          "M1",
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "Solve the differential equation dy/dx = ln(2x)/x^2 - 2y/x, x > 0, given that y = 4 at x = 1/2. Give the answer in the form y = f(x).",
+        "expected": {
+          "answer": "y = ln(2x)/x - 1/x + 3/(2x^2)",
+          "integrating_factor": "x^2",
+          "c": "3/2"
+        },
+        "tolerance": "Accept equivalent forms, e.g. y = (2x ln 2x - 2x + 3)/(2x^2).",
+        "notes": "(M1) for rearranging to dy/dx + 2y/x = ln(2x)/x^2. (M1) for attempting the integrating factor. (A1) for x^2. (M1) for attempting integration by parts on the integral of ln 2x. A1 for x^2 y = x ln 2x - x (+c). M1 for substituting x = 1/2, y = 4 into an integrated equation involving c. A1 for the final answer. Not dividing c by x^2 loses the final A1. Treating the equation as separable earns no marks."
+      }
+    ]
+  }
+]

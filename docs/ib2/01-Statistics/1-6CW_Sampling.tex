@@ -1,0 +1,97 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 30 September 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyhead[LE]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{1.6 Classwork: Sampling bias and survey methodologies}
+
+\emph{Answer in IB terminology. The sampling techniques are: simple random,
+convenience, systematic, quota and stratified. Data are either discrete
+or continuous.}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: IA survey plan; population; convenience bias; stratified allocation; systematic [8 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.1), modelled on EXM.2.SL.TZ0.1 and 21M.1.SL.TZ2.7(e) ---
+\item[1.]
+
+Alex is writing a mathematical exploration (IA) on the sleep habits of
+the students at a high school. The number of students in each grade is
+shown in the table.
+
+\begin{center}
+\setlength{\tabcolsep}{10pt}\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+Grade & 9 & 10 & 11 & 12 & Total \\
+\hline
+Number of students & 84 & 78 & 68 & 70 & 300 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down the population for Alex's investigation.
+  \item Alex first plans to survey the $30$ students in the Grade 12
+  common room at lunch. State the name of this sampling technique and
+  explain why it is likely to produce a biased sample.
+  \item Alex decides instead to take a stratified sample of $30$
+  students by grade.
+  \begin{enumerate}[label=(\roman*)]
+    \item Show that $8$ students will be selected from Grade 10.
+    \item Find the number of students selected from each of the
+    other grades.
+  \end{enumerate}
+  \item To choose the Grade 12 students, Alex lists their names in
+  alphabetical order, picks a random starting name among the first
+  ten, and then selects every $10^{\text{th}}$ name on the list. State
+  the name of this sampling technique.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,10.6);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Discrete/continuous; quota; simple random; outlier as error; leading question [8 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.1) ---
+\item[2.]
+
+Sam is collecting survey data for an exploration on whether screen time
+is related to hours of sleep. For each student Sam records the number of
+apps on their phone and the time, in hours, they slept last night.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item State whether each variable is discrete or continuous.
+  \begin{enumerate}[label=(\roman*)]
+    \item The number of apps on a phone.
+    \item The time slept last night.
+  \end{enumerate}
+  \item Sam stands at the school entrance and surveys the first $15$
+  boys and the first $15$ girls who arrive. State the name of this
+  sampling technique.
+  \item Explain why the technique in part (b) is not the same as a
+  stratified sample by gender.
+  \item The school office gives Sam a numbered list of all $300$
+  students. Describe how Sam could use this list to select a simple
+  random sample of $30$ students.
+  \item One student records a sleep time of $19$ hours. Suggest what
+  Sam should do with this data value, and give a reason.
+  \item One survey question reads: ``Don't you agree that using your
+  phone late at night ruins your sleep?'' Explain why this question
+  may produce biased data.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,10.4);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

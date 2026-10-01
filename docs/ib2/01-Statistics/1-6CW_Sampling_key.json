@@ -1,0 +1,193 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "4.1"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.295,
+    "answer_box_top_frac_note": "The answer box starts at 0.552. The crop is set higher, just above the '(a)' line at 0.307, so short answers written beside the parts list are captured as well as the box (the 1-2CW_Histograms / 1-5CW_Box-plots convention). The nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored 2026-09-30, AA SL 4.1, calculator allowed), modelled on EXM.2.SL.TZ0.1 and 21M.1.SL.TZ2.7(e). IA context: Alex surveys sleep habits at a school of 300 students, grades 9-12 with 84, 78, 68, 70 students. Stratified sample of 30: 8.4, 7.8, 6.8, 7.0 -> 8, 8, 7, 7. Grade 12 chosen systematically: every 10th of 70 names from a random start among the first ten.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the population for Alex's investigation into the sleep habits of the students at a high school.",
+        "expected": {
+          "answer": "All the students at the high school (300 students)"
+        },
+        "tolerance": "Accept 'all 300 students', 'every student in the school'.",
+        "notes": "A1 for all students at the school. 'The 30 students surveyed' or 'Grade 12 students' earns no mark: that is a sample, not the population."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "R1"
+        ],
+        "description": "Alex first plans to survey the 30 students in the Grade 12 common room at lunch. State the name of this sampling technique and explain why it is likely to produce a biased sample.",
+        "expected": {
+          "technique": "Convenience sampling",
+          "reason": "Only Grade 12 students (and only those in the common room) are surveyed, so the sample does not represent all grades; not every student has an equal chance of selection."
+        },
+        "tolerance": "Accept any reason tied to the context: only one grade included; friends or students with the same routine over-represented; not every student has an equal chance of being chosen.",
+        "notes": "A1 for 'convenience'. R1 for a context-based reason for bias. 'The sample is too small' earns no R1: the size is the same 30 as the later stratified sample."
+      },
+      {
+        "label": "c.i",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "AG"
+        ],
+        "description": "Alex takes a stratified sample of 30 students by grade. Show that 8 students will be selected from Grade 10 (78 students out of 300).",
+        "expected": {
+          "answer": "78/300 * 30 = 7.8, which rounds to 8"
+        },
+        "tolerance": "Accept 30/300 = 1/10 of each grade, so 78/10 = 7.8.",
+        "notes": "M1 for 78/300 * 30 or equivalent. A1 for 7.8 seen. AG: the rounding to 8. Writing only '8' earns the M1 at most."
+      },
+      {
+        "label": "c.ii",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find the number of students selected from each of the other grades (Grade 9: 84, Grade 11: 68, Grade 12: 70 students).",
+        "expected": {
+          "grade_9": 8,
+          "grade_11": 7,
+          "grade_12": 7,
+          "unrounded": "8.4, 6.8, 7.0"
+        },
+        "tolerance": "Accept the whole numbers with or without the unrounded values shown.",
+        "notes": "A1 for two of the three correct, A1 for all three correct. Equal numbers in each grade (7.5, or '7 or 8 each') earn no marks."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Alex lists the Grade 12 names alphabetically, picks a random starting name among the first ten, then selects every 10th name. State the name of this sampling technique.",
+        "expected": {
+          "answer": "Systematic sampling"
+        },
+        "tolerance": "Accept 'systematic random sampling'.",
+        "notes": "A1 for 'systematic'. 'Random sampling' alone earns no mark."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "4.1"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.19,
+    "answer_box_top_frac_note": "The answer box starts at 0.523. The crop is set higher, just above the '(a)' line at 0.199, so short answers written beside the parts list are captured as well as the box. The nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored 2026-09-30, AA SL 4.1, calculator allowed). IA context: Sam surveys screen time and sleep; discrete vs continuous, quota sampling, quota vs stratified, simple random sample from a numbered list of 300, a 19-hour sleep value as a recording error, a leading survey question.",
+    "parts": [
+      {
+        "label": "a.i",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "State whether the number of apps on a phone is discrete or continuous.",
+        "expected": {
+          "answer": "Discrete"
+        },
+        "tolerance": "",
+        "notes": "A1 for discrete."
+      },
+      {
+        "label": "a.ii",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "State whether the time slept last night is discrete or continuous.",
+        "expected": {
+          "answer": "Continuous"
+        },
+        "tolerance": "",
+        "notes": "A1 for continuous. Time is measured, not counted, so it is continuous even when recorded to the nearest hour."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Sam stands at the school entrance and surveys the first 15 boys and the first 15 girls who arrive. State the name of this sampling technique.",
+        "expected": {
+          "answer": "Quota sampling"
+        },
+        "tolerance": "",
+        "notes": "A1 for quota. 'Convenience' earns no mark: the fixed number from each group is what makes it quota sampling."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "R1"
+        ],
+        "description": "Explain why the technique in part (b) is not the same as a stratified sample by gender.",
+        "expected": {
+          "answer": "In quota sampling the students within each group are not chosen at random (they are the first to arrive); in stratified sampling they are chosen at random, with group sizes in proportion to the population."
+        },
+        "tolerance": "Accept either point: not random within each group, or group sizes not in proportion to the population.",
+        "notes": "R1 for either the 'not random within each group' point or the 'not proportional to the population' point."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "The school office gives Sam a numbered list of all 300 students. Describe how Sam could use this list to select a simple random sample of 30 students.",
+        "expected": {
+          "answer": "Use a random number generator to produce random whole numbers from 1 to 300; select the students with those numbers, ignoring repeats, until 30 different students are chosen."
+        },
+        "tolerance": "Accept drawing 30 numbers from a hat containing 1 to 300, or GDC randInt(1,300) repeated / randSamp without replacement.",
+        "notes": "M1 for a random method applied to the numbered list. A1 for 30 distinct students (repeats ignored or sampling without replacement). 'Pick 30 names from the list' with no random method earns no marks."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "R1"
+        ],
+        "description": "One student records a sleep time of 19 hours. Suggest what Sam should do with this data value, and give a reason.",
+        "expected": {
+          "action": "Check the value with the student, or remove it from the data set",
+          "reason": "19 hours in one night is unrealistic, so it is most likely a recording error (e.g. 9 hours)."
+        },
+        "tolerance": "Accept 'it is an outlier and is probably an error' as the reason.",
+        "notes": "A1 for checking or removing the value. R1 for the reason that it is implausible or an error; 'it is an outlier' alone earns the A1 only. 'Keep it' earns A0, even with the reason that some outliers are valid data."
+      },
+      {
+        "label": "f",
+        "marks": 1,
+        "mark_codes": [
+          "R1"
+        ],
+        "description": "One survey question reads: 'Don't you agree that using your phone late at night ruins your sleep?' Explain why this question may produce biased data.",
+        "expected": {
+          "answer": "It is a leading question: the wording suggests the answer 'yes', so students may agree rather than give their honest opinion."
+        },
+        "tolerance": "Accept 'biased wording', 'it pushes students towards one answer'.",
+        "notes": "R1 for identifying that the question's wording causes the bias. 'Students may lie' alone earns no mark."
+      }
+    ]
+  }
+]

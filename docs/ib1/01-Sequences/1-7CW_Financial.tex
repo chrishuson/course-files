@@ -1,0 +1,77 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 30 September 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyhead[LE]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{1.7 Classwork: Financial calculations and compound interest}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Simple interest as an arithmetic sequence [6 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.2) ---
+\item[1.]
+
+With \textbf{simple interest}, the interest is paid only on the original
+amount invested, so the same interest $I$ is added every year:
+$$I = P \times \frac{r}{100},$$
+where $P$ is the amount invested and $r$ is the annual interest rate
+in percent.
+
+Maria invests \$$2000$ in an account that pays simple interest at a
+rate of $3.5\%$ per year.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the interest Maria earns each year.
+  \item Write down the value of her investment at the end of years
+  $1$, $2$ and $3$.
+  \item Write down an expression for the value $V_{n}$ of the
+  investment at the end of $n$ years.
+  \item Find the value of the investment at the end of $12$ years.
+  \item Find the number of complete years after which the value of
+  the investment first exceeds \$$3000$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,12.4);
+  \foreach \y in {1,2,...,12} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Compound interest, annual vs monthly, doubling time [7 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.4) ---
+\item[2.]
+
+With \textbf{compound interest}, the interest is added to the account
+and then earns interest itself. If \$$P$ is invested at $r\%$ per year,
+compounded $k$ times per year, the value after $n$ years is
+$$FV = P\left(1 + \frac{r}{100k}\right)^{kn}.$$
+
+Luca invests \$$2000$ in Bank A, which pays $3.5\%$ per year
+compounded \textbf{annually}.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the value of Luca's investment at the end of $12$ years.
+\end{enumerate}
+
+Bank B pays $3.4\%$ per year compounded \textbf{monthly}.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item[(b)] Find the value of \$$2000$ invested in Bank B at the end
+  of $12$ years.
+  \item[(c)] State which bank gives the greater value after $12$ years.
+  \item[(d)] For Bank A, find the number of complete years after which
+  Luca's investment first becomes at least double its original value.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.8);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

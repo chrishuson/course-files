@@ -1,0 +1,114 @@
+% context: markscheme (official solutions) for 1-6CW_Measurement-review
+% topic: significant figures, rounding, scientific notation, reading a ruler,
+%        unit conversion, average speed
+% convention: "=" joins exact equalities; "\approx" introduces a rounded value;
+%        long decimals use \num{} so the digits are grouped in threes
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+\setlength{\parskip}{0.3\baselineskip}
+\sisetup{reset-text-series=false, reset-math-version=false, text-series-to-math=true} % \num inherits bold
+
+\title{Physics}
+\author{Chris Huson}
+\date{October 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 1 October 2026}
+
+\begin{document}
+
+\subsubsection*{1.6 Classwork Solutions: Measurement review}
+
+\emph{Notation: \,$=$\, joins values that are exactly equal; \,$\approx$\, introduces a
+rounded value. Each conversion runs as one chain of unit factors and is evaluated once.}
+
+\begin{enumerate}[itemsep=0.25cm]
+
+\item Significant digits.
+  \begin{multicols}{3}
+    \begin{enumerate}[itemsep=0.1cm]
+      \item \textbf{3}
+      \item \textbf{2}
+      \item \textbf{3}
+      \item \textbf{4}
+      \item \textbf{4}
+      \item \textbf{4}
+    \end{enumerate}
+  \end{multicols}
+  \emph{(b) The leading zeros in 0.0062 only locate the decimal point. (c) The zero in
+  40.0 after the decimal point was measured, so it counts --- and so does the zero
+  between the 4 and it. (e) In \num{0.0005010} the four leading zeros do not count;
+  the 5, the zero after it, the 1, and the final zero do. The digit grouping makes the
+  leading zeros easy to count: there are four of them before the 5.}
+
+\item Round to three significant figures.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $\sqrt{11} = 3.3166247\ldots \approx \mathbf{3.32}$
+    \item $1609.344~\text{m} \approx \mathbf{1610~\textbf{m}}$, better written
+      $\mathbf{1.61 \times 10^{3}~\textbf{m}}$
+
+      \emph{The mile is defined as exactly 1609.344 m, so every digit is exact; the
+      rounding is only because the question asks for three figures.}
+  \end{enumerate}
+
+\item Scientific notation.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $1{,}392{,}700~\text{km} = 1.3927 \times 10^{6}~\text{km}
+      \approx \mathbf{1.39 \times 10^{6}~\textbf{km}}$
+    \item \num{0.00000000333564}~s $= 3.33564 \times 10^{-9}$~s
+      $\approx \mathbf{3.34 \times 10^{-9}~\textbf{s}}$
+
+      \emph{Count the places the decimal point moves to land after the first nonzero
+      digit: three groups of three gets you to the 3, so the exponent is $-9$.}
+  \end{enumerate}
+
+\item Ordinary decimal numbers.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $7.8 \times 10^{-6}~\text{m} = $ \textbf{\num{0.0000078}~m}
+    \item $1.496 \times 10^{8}~\text{km} = \mathbf{149{,}600{,}000~\textbf{km}}$
+  \end{enumerate}
+
+\item Bolt's average speed.
+
+  $v = \dfrac{100~\text{m}}{9.58~\text{s}} \times \dfrac{1~\text{km}}{1000~\text{m}}
+  \times \dfrac{3600~\text{s}}{1~\text{h}} = 37.578\ldots
+  \approx \mathbf{37.6~\textbf{km/h}}$
+
+  \emph{Three figures, set by the 9.58 s; the 100 m race distance is exact.}
+
+\item Reading the ruler. The bar ends between the 5.8 and 5.9 cm marks, about a third
+  of the way along.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $\mathbf{5.83~\textbf{cm}}$ --- the 5.8 is certain and the final 3 is the
+      estimated digit. \emph{Accept 5.82 to 5.84.}
+    \item \textbf{Three significant figures.}
+    \item $5.83~\text{cm} \times \dfrac{1~\text{m}}{100~\text{cm}}
+      = \mathbf{0.0583~\textbf{m}}$
+
+      \emph{Still three significant figures --- the leading zeros are placeholders.}
+  \end{enumerate}
+
+\item Convert.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $828~\text{m} \times \dfrac{3.28~\text{ft}}{1~\text{m}} = 2715.84~\text{ft}
+      \approx \mathbf{2720~\textbf{ft}}$, or $\mathbf{2.72 \times 10^{3}~\textbf{ft}}$
+    \item $20.5~\dfrac{\text{m}}{\text{s}} \times \dfrac{1~\text{km}}{1000~\text{m}}
+      \times \dfrac{3600~\text{s}}{1~\text{h}} = \mathbf{73.8~\textbf{km/h}}$
+
+      \emph{Exactly 73.8, with no rounding needed: multiplying by 3.6 happens to land
+      on three figures.}
+  \end{enumerate}
+
+\item Fingernail growth.
+
+  $3.5~\dfrac{\text{cm}}{\text{yr}} \times \dfrac{10~\text{mm}}{1~\text{cm}}
+  \times \dfrac{1~\text{yr}}{365.25~\text{days}} \times \dfrac{7~\text{days}}{1~\text{week}}
+  = 0.67077\ldots \approx \mathbf{0.67~\textbf{mm per week}}$
+
+  \emph{Two significant figures, because 3.5 cm has two. Reporting 0.671 mm would claim
+  a precision the ``about 3.5'' does not have.}
+
+\end{enumerate}
+\end{document}
