@@ -1,0 +1,205 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Solutions}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 5 October 2026}
+
+\begin{document}
+\subsubsection*{1.9 Pre-Quiz: Arithmetic and Geometric Sequences --- Solutions}
+
+\emph{Review set, not scored: worked solutions only, no marks. Calculator
+allowed. Answers are exact or correct to three significant figures.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Arithmetic sequence; d, u_n, u_40, which values are terms ---
+\item[1.]
+
+$12,\; 19,\; 26,\; 33,\; \ldots$
+
+\medskip
+
+\textbf{(a)} $d = 19 - 12 = 7$
+
+\medskip
+
+\textbf{(b)} $u_{n} = u_{1} + (n - 1)d = 12 + 7(n - 1) = 7n + 5$
+
+\emph{Check: $u_{1} = 7 + 5 = 12$.}
+
+\medskip
+
+\textbf{(c)} $u_{40} = 7(40) + 5 = 285$
+
+\medskip
+
+\textbf{(d)} $7n + 5 = 250 \;\Rightarrow\; 7n = 245 \;\Rightarrow\; n = 35$
+
+$n$ is a whole number, so $250$ is the $35^{\text{th}}$ term.
+
+\medskip
+
+\textbf{(e)} $7n + 5 = 300 \;\Rightarrow\; 7n = 295 \;\Rightarrow\;
+n = 42.14\ldots$
+
+$n$ is not a whole number, so $300$ is not a term.
+
+\emph{Equivalently: $u_{42} = 299$ and $u_{43} = 306$, and $300$ lies
+between them.}
+
+\bigskip \hrule \bigskip
+
+%--- Problem 2: Two given terms -> u_1 and d; first negative term; terms in k ---
+\item[2.]
+
+$u_{5} = 31$, \ $u_{12} = 3$.
+
+\medskip
+
+\textbf{(a)} From $u_{5}$ to $u_{12}$ is $7$ steps of $d$:
+$7d = 3 - 31 = -28 \;\Rightarrow\; d = -4$
+
+$u_{5} = u_{1} + 4d \;\Rightarrow\; 31 = u_{1} - 16 \;\Rightarrow\;
+u_{1} = 47$
+
+\emph{Or solve the simultaneous equations $u_{1} + 4d = 31$,
+$u_{1} + 11d = 3$ on the GDC.}
+
+\medskip
+
+\textbf{(b)} $u_{n} = 47 - 4(n - 1) = 51 - 4n$
+
+\medskip
+
+\textbf{(c)} $51 - 4n < 0 \;\Rightarrow\; n > 12.75$, so $n = 13$.
+
+$u_{12} = 3$ and $u_{13} = -1$. The first negative term is $-1$ (the
+$13^{\text{th}}$ term).
+
+\emph{The question asks for the term, not $n$: the answer is $-1$.}
+
+\medskip
+
+\textbf{(d)} Equal differences: \ $3k - (k + 2) = (4k + 1) - 3k$
+
+$2k - 2 = k + 1 \;\Rightarrow\; k = 3$
+
+First three terms: $5,\; 9,\; 13$ \quad ($d = 4$)
+
+\medskip
+
+\textbf{(e)} $u_{20} = 5 + 19 \times 4 = 81$
+
+\newpage
+
+%--- Problem 3: Arithmetic, geometric or neither; geometric u_n, u_10, first term over 1000; two given terms ---
+\item[3.]
+
+\textbf{(a)}
+
+\begin{tabular}{rll}
+(i) & $3,\; 7,\; 11,\; 15$ & arithmetic, $d = 4$ \\
+(ii) & $3,\; 6,\; 12,\; 24$ & geometric, $r = 2$ \\
+(iii) & $3,\; 4,\; 6,\; 9$ & neither (differences $1, 2, 3$; ratios
+$1.33, 1.5, 1.5$) \\
+(iv) & $80,\; 20,\; 5,\; 1.25$ & geometric, $r = \frac{1}{4} = 0.25$ \\
+\end{tabular}
+
+\emph{Test arithmetic by subtracting consecutive terms, geometric by
+dividing. In (iii) neither the differences nor the ratios are all
+equal.}
+
+\medskip
+
+\textbf{(b)} $r = \dfrac{9}{6} = 1.5$ \quad \emph{(check:
+$\dfrac{13.5}{9} = 1.5$)}
+
+\medskip
+
+\textbf{(c)} $u_{n} = u_{1}\,r^{\,n - 1} = 6(1.5)^{n - 1}$
+
+\medskip
+
+\textbf{(d)} $u_{10} = 6(1.5)^{9} = 230.66\ldots \approx 231$
+
+\emph{The exponent is $9$, not $10$. $6(1.5)^{10} = 346$ is the
+$11^{\text{th}}$ term.}
+
+\medskip
+
+\textbf{(e)} $6(1.5)^{n - 1} > 1000$
+
+$u_{13} = 778.5$ \ ($< 1000$); \quad $u_{14} = 1167.7$ \ ($> 1000$)
+
+$n = 14$
+
+\emph{Or solve $1.5^{\,n - 1} > 166.7$ on the GDC: $n - 1 > 12.6$, so
+$n = 14$. The answer is a whole number.}
+
+\medskip
+
+\textbf{(f)} From $u_{2}$ to $u_{5}$ is $3$ steps of $\times r$:
+$r^{3} = \dfrac{324}{12} = 27 \;\Rightarrow\; r = 3$
+
+$u_{1} = \dfrac{u_{2}}{r} = \dfrac{12}{3} = 4$
+
+\emph{Check: $4,\; 12,\; 36,\; 108,\; 324$.}
+
+\newpage
+
+%--- Problem 4: Applications -- arithmetic vs geometric salary; compound interest and real value ---
+\item[4.]
+
+Job A: arithmetic, $u_{1} = 42\,000$, $d = 1500$. \ Job B: geometric,
+$u_{1} = 40\,000$, $r = 1.05$.
+
+\medskip
+
+\textbf{(a)} Job A: $42\,000 + 2 \times 1500 = $ \$$45\,000$
+
+Job B: $40\,000 \times 1.05^{2} = $ \$$44\,100$
+
+\medskip
+
+\textbf{(b)} Job A: $A_{n} = 42\,000 + 1500(n - 1) = 40\,500 + 1500n$
+
+Job B: $B_{n} = 40\,000(1.05)^{n - 1}$
+
+\medskip
+
+\textbf{(c)} Compare the two salaries year by year:
+
+\begin{tabular}{ccc}
+Year & Job A & Job B \\
+\hline
+$4$ & \$$46\,500$ & \$$46\,305$ \\
+$5$ & \$$48\,000$ & \$$48\,620.25$ \\
+\end{tabular}
+
+Year $5$
+
+\emph{Use a GDC table of both expressions. Show the two adjacent years:
+year $4$ is what shows that year $5$ is the \emph{first}.}
+
+\medskip
+
+\textbf{(d)} $3000 \times 1.03^{8} = $ \$$3800.31$ \quad (\$$3800$ to
+3 s.f.)
+
+\emph{TVM solver: $N = 8$, $I\% = 3$, $PV = -3000$, $PMT = 0$,
+$P/Y = C/Y = 1$.}
+
+\medskip
+
+\textbf{(e)} Real value $= \dfrac{3800.31}{1.02^{8}} = $ \$$3243.53$
+\quad (\$$3240$ to 3 s.f.)
+
+\emph{The real-interest-rate method is also accepted: $3 - 2 = 1\%$ per
+year, $3000 \times 1.01^{8} = $ \$$3248.57$ (\$$3250$ to 3 s.f.).}
+
+\emph{The real value must be less than the answer to (d). Multiplying
+by $1.02^{8}$ is the most common error.}
+
+\end{enumerate}
+\end{document}

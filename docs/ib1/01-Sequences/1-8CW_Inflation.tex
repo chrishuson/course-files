@@ -1,0 +1,75 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 5 October 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyhead[LE]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{1.8 Classwork: Compound interest and inflation}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Compound interest compounded annually; value, interest, first year over $8000 [6 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.4) ---
+\item[1.]
+
+If \$$P$ is invested at $r\%$ per year, compounded $k$ times per year,
+the value after $n$ years is
+$$FV = P\left(1 + \frac{r}{100k}\right)^{kn}.$$
+
+Sofia invests \$$5000$ in an account that pays $4\%$ per year compounded
+annually.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down the number that the value is multiplied by each year.
+  \item Find the value of Sofia's investment at the end of $6$ years.
+  \item Find the total interest Sofia has earned at the end of $6$ years.
+  \item Find the number of complete years after which the value of the
+  investment first exceeds \$$8000$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.4);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Monthly compounding; real value after inflation; real value of cash [7 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.4), modelled on 25M.2.AHL.TZ2.4 ---
+\item[2.]
+
+Daniel invests \$$12\,000$ in an account that pays $5.2\%$ per year
+compounded \textbf{monthly}.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the value of Daniel's investment at the end of $10$ years.
+\end{enumerate}
+
+\textbf{Inflation} is the rise in prices over time, so the same amount of
+money buys less in the future. If inflation is $i\%$ per year, then \$$A$
+in $n$ years' time buys the same as
+$$\frac{A}{\left(1 + \dfrac{i}{100}\right)^{n}}$$
+today. This is called the \textbf{real value} of \$$A$.
+
+Over the $10$ years, inflation is $2.8\%$ per year.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item[(b)] Find the real value of Daniel's investment at the end of
+  $10$ years.
+  \item[(c)] Hence find the real increase in the value of Daniel's
+  investment.
+  \item[(d)] Daniel's sister keeps \$$12\,000$ in cash at home for the
+  same $10$ years. Find the real value of her cash at the end of the
+  $10$ years.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,11.2);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

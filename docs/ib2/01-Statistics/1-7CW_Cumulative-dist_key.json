@@ -1,0 +1,176 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "4.2"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.245,
+    "answer_box_top_frac_note": "The answer box runs 0.688 to 0.928. The crop is set higher, just above the graph (top of the plot at 0.260), because readings drawn on the graph are working for the M1 marks in (c) and (d); the '(a)' line is at 0.500. The nickname box sits near 0.07 and stays outside the crop. detect_answer_boxes.py picks the graph frame (0.26) as the box on this sheet, so do not let it overwrite this value.",
+    "source": "Original (freshly authored 2026-10-05, AA SL 4.2, calculator allowed). Cumulative frequency curve of homework time t (0-120 minutes) for 100 students, drawn through (0,0) (10,2) (20,7) (30,15) (40,25) (50,37) (60,50) (70,63) (80,75) (90,84) (100,90) (110,96) (120,100). Q1=40, median=60, Q3=80, IQR=40; 85 students at least 30 minutes; 90th percentile at 100 minutes; min 5, max 118, fences -20 and 140, no outliers.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Use the cumulative frequency graph of homework times for 100 students to write down the median time.",
+        "expected": {
+          "answer": "60 minutes"
+        },
+        "tolerance": "Accept 59 to 61.",
+        "notes": "A1 for the reading at cumulative frequency 50."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find the interquartile range of the homework times.",
+        "expected": {
+          "Q1": 40,
+          "Q3": 80,
+          "IQR": 40
+        },
+        "tolerance": "Accept Q1 in 39 to 41 and Q3 in 79 to 81; IQR consistent with the student's quartiles.",
+        "notes": "A1 for both quartiles (read at cumulative frequencies 25 and 75). A1 for IQR = Q3 - Q1, FT from the student's quartiles. Quartiles read at other cumulative frequencies earn A0A0."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the number of students who spent at least 30 minutes on homework.",
+        "expected": {
+          "reading": "15 students below 30 minutes",
+          "answer": 85
+        },
+        "tolerance": "Accept 84 to 86.",
+        "notes": "(M1) for reading the curve at t = 30 (15), seen or implied by a line on the graph. A1 for 100 - 15 = 85. A final answer of 15 earns M1A0."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "The 10% of students who spent the most time on homework are invited to a workshop. Find the least time that an invited student spent on homework.",
+        "expected": {
+          "method": "90% of 100 = 90; read the curve at cumulative frequency 90",
+          "answer": "100 minutes"
+        },
+        "tolerance": "Accept 99 to 101.",
+        "notes": "(M1) for reading at cumulative frequency 90, seen or implied by a line on the graph. A1 for 100. Reading at cumulative frequency 10 (about 24 minutes) earns M0A0."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "R1",
+          "AG"
+        ],
+        "description": "The shortest time was 5 minutes and the longest was 118 minutes. Show that there are no outliers in the data.",
+        "expected": {
+          "lower_boundary": "40 - 1.5*40 = -20",
+          "upper_boundary": "80 + 1.5*40 = 140",
+          "conclusion": "5 > -20 and 118 < 140, so no outliers"
+        },
+        "tolerance": "Boundaries FT from the student's quartiles and IQR in part (b).",
+        "notes": "M1 for at least one boundary correctly calculated. R1 for both comparisons, with the minimum and the maximum. AG: the conclusion. Checking only the longest time earns M1R0.",
+        "follow_through": "Boundaries use Q1, Q3 and IQR from part (b); award M1R1 for correct boundaries and comparisons from the student's own (b) values."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "4.2",
+      "4.3"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.17,
+    "answer_box_top_frac_note": "The answer box runs 0.630 to 0.938. The crop is set higher, just above the graph (top of the plot at 0.186), because readings drawn on the graph are working for the M1 mark in (b) and for (c); the '(a)' line is at 0.475. The nickname box sits near 0.07 on this even page and stays outside the crop. detect_answer_boxes.py picks the graph frame (0.186) as the box on this sheet, so do not let it overwrite this value.",
+    "source": "Original (freshly authored 2026-10-05, AA SL 4.2 and 4.3, calculator allowed). Cumulative frequency curve of the masses m (100-200 g) of 120 apples, drawn through (100,0) (110,3) (120,10) (130,20) (140,35) (150,55) (160,75) (170,90) (180,105) (190,114) (200,120). Grouped table with classes of width 20: frequencies 10, 25, p, q, 15 with p=40, q=30. Median 152.5 g; 30 apples over 170 g; estimated mean 18300/120 = 152.5 g.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Use the cumulative frequency graph of the masses of 120 apples to estimate the median mass.",
+        "expected": {
+          "answer": "152.5 grams"
+        },
+        "tolerance": "Accept 151 to 154.",
+        "notes": "A1 for the reading at cumulative frequency 60 (or 60.5)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Apples with a mass of more than 170 grams are graded 'large'. Find the number of large apples.",
+        "expected": {
+          "reading": "90 apples at most 170 g",
+          "answer": 30
+        },
+        "tolerance": "Accept 29 to 31.",
+        "notes": "(M1) for reading the curve at m = 170 (90), seen or implied by a line on the graph. A1 for 120 - 90 = 30. A final answer of 90 earns M1A0."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Use the graph to find p, the frequency of 140 < m <= 160, and q, the frequency of 160 < m <= 180.",
+        "expected": {
+          "p": 40,
+          "q": 30
+        },
+        "tolerance": "Accept values consistent with readings within 1 of 35, 75 and 105 at m = 140, 160, 180.",
+        "notes": "A1 for p = 75 - 35 = 40. A1 for q = 105 - 75 = 30. Check: 10 + 25 + 40 + 30 + 15 = 120. Cumulative frequencies given as frequencies (p = 75, q = 105) earn A0A0."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find an estimate of the mean mass of the apples, using the grouped frequency table.",
+        "expected": {
+          "method": "mid-interval values 110, 130, 150, 170, 190 with frequencies 10, 25, 40, 30, 15",
+          "answer": "152.5 grams"
+        },
+        "tolerance": "FT from the student's p and q.",
+        "notes": "(M1) for using mid-interval values with the frequencies (GDC One-Variable Statistics with a frequency list is acceptable working). A1 for 152.5. Class boundaries instead of mid-interval values, or the plain mean of the five mid-interval values (150), earn M0A0.",
+        "follow_through": "Uses p and q from part (c); award A1 for the correct mean from the student's own p and q with mid-interval values."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": [
+          "R1"
+        ],
+        "description": "Explain why the answer to part (d) is an estimate.",
+        "expected": {
+          "answer": "The actual masses are not known; each apple is given the mid-interval value of its class."
+        },
+        "tolerance": "Accept 'the data are grouped', 'mid-interval values are used'.",
+        "notes": "R1 for the grouped data / mid-interval reason. 'The graph is not exact' alone earns R0."
+      }
+    ]
+  }
+]
