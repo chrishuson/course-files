@@ -1,0 +1,128 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\setlength{\parskip}{0.3\baselineskip}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 7 October 2026}
+
+\begin{document}
+\subsubsection*{1.9 Classwork: Bivariate data and linear regression --- Markscheme}
+
+\emph{Calculator allowed. Marks are not printed on the student sheet; they are
+recorded here. Total: 18 marks.}
+
+\emph{\textbf{GDC:} enter $x$ in one list and $y$ in a second, then
+\texttt{menu} $\rightarrow$ \texttt{Statistics} $\rightarrow$ \texttt{Stat
+Calculations} $\rightarrow$ \texttt{Linear Regression (mx+b)}. The screen
+gives the gradient as $m$ (the $a$ of $y = ax + b$), the intercept $b$, $r^{2}$
+and $r$. For the line of $x$ on $y$, run it again with the \texttt{X List} and
+\texttt{Y List} swapped.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Pearson's r, describing correlation, y-on-x regression line, interpreting the gradient, interpolation, extrapolation [9 marks] ---
+\item[1.] [Maximum mark: 9]
+
+$n = 8$, \quad $\bar{x} = 24.625$, \quad $\bar{y} = 204.25$.
+
+\textbf{(a)} $r = 0.98212\ldots = 0.982$ (3 s.f.) \hfill \textbf{A1}
+
+\emph{Do not accept $r^{2} = 0.965$, which sits beside $r$ on the
+regression screen.}
+
+\textbf{(b)} Strong, positive (linear) correlation \hfill \textbf{A1A1}
+
+\emph{A1 for ``strong'' (accept ``very strong''), A1 for ``positive''; the two
+marks are independent. ``Moderate'' or ``weak'' earns A0 for the strength:
+$|r| = 0.982$ is well above $0.8$. FT from the candidate's $r$ in (a).}
+
+\textbf{(c)} $y = 8.37x - 1.96$ \hfill \textbf{A1A1}
+
+\emph{A1 for $a = 8.37$, A1 for $b = -1.96$; the two marks are independent.
+Accept $a = 8.3738\ldots$, $b = -1.9559\ldots$, or either value to more
+figures. Award A1A0 for $8.37x + 1.96$ (sign of $b$ lost). The reversed line
+$x = 0.115y + 1.10$ earns A0A0.}
+
+\textbf{(d)} For each increase of $1\,^{\circ}$C in the maximum temperature,
+the gelateria sells about $8.37$ more gelati. \hfill \textbf{A1}
+
+\emph{The answer must give the rate (about $8$ or $8.37$ gelati) per degree,
+in context. ``As the temperature rises, more gelati are sold'' restates the
+correlation without the rate and earns A0. FT from the candidate's $a$ in
+(c).}
+
+\textbf{(e)} $y = 8.37(26) - 1.96$ \hfill \textbf{(M1)}
+
+$= 215.76\ldots \approx 216$ gelati \hfill \textbf{A1}
+
+\emph{Accept any value consistent with the candidate's own correctly-rounded
+coefficients, including $215.76\ldots$ (full precision) and $215.66$ (from
+$8.37$ and $-1.96$), and either rounded to $216$. FT from the candidate's
+line in (c). \textbf{Feedback:} store the coefficients in the GDC (or use the
+regression function \texttt{f1(26)}) and round only the final answer.}
+
+\textbf{(f)} $10\,^{\circ}$C is outside the range of the recorded
+temperatures ($18$ to $32\,^{\circ}$C), so the estimate would be an
+extrapolation and is not reliable. \hfill \textbf{R1}
+
+\emph{R1 for stating that $10$ lies outside the data range (or ``below the
+lowest temperature recorded''). Accept ``extrapolation'' with a reference to
+the data. ``The correlation might not hold in winter'' with no reference to
+the range of the data earns R0. Computing $y = 81.8$ is not required and
+earns nothing on its own.}
+
+\newpage
+
+%--- Problem 2: y-on-x line and interpreting b; mean point; x-on-y line; choosing the appropriate line to estimate x from y [9 marks] ---
+\item[2.] [Maximum mark: 9]
+
+$n = 8$, \quad $r = -0.803$ (3 s.f.).
+
+\textbf{(a)} $y = -0.344x + 8.88$ \hfill \textbf{A1A1}
+
+\emph{A1 for $a = -0.344$, A1 for $b = 8.88$; the two marks are independent.
+Accept $a = -0.34370\ldots$, $b = 8.8834\ldots$, or either value to more
+figures. Award A0 for the gradient if its negative sign is lost.}
+
+\textbf{(b)} A student who spends no time on their phone is predicted to sleep
+about $8.88$ hours a night. \hfill \textbf{A1}
+
+\emph{The answer must refer to zero phone time (or ``$x = 0$'') and to sleep
+in hours. ``The $y$-intercept is $8.88$'' with no context earns A0. Accept a
+comment that $x = 0$ lies outside the data, so the value is itself an
+extrapolation, alongside the interpretation. FT from the candidate's $b$ in
+(a).}
+
+\textbf{(c)} $(\bar{x}, \bar{y}) = (3.625,\ 7.6375)$ \hfill \textbf{A1A1}
+
+\emph{A1 for $\bar{x} = 3.625$, A1 for $\bar{y} = 7.6375$; the two marks are
+independent. Accept $3.63$ and $7.64$ (3 s.f.). \textbf{GDC:} One-Variable
+Statistics on each list, or Two-Variable Statistics on both. By hand,
+$\bar{x} = \frac{29}{8}$ and $\bar{y} = \frac{61.1}{8}$. Both regression
+lines pass through the mean point.}
+
+\textbf{(d)} $x = -1.88y + 18.0$ \hfill \textbf{A1A1}
+
+\emph{A1 for the gradient $-1.88$, A1 for the intercept $18.0$; the two
+marks are independent. Accept $-1.8756\ldots$ and $17.950\ldots$ ($17.95$).
+Rearranging the line from (a) to make $x$ the subject,
+$x = -2.91y + 25.8$, is not the regression line of $x$ on $y$ and earns
+A0A0.}
+
+\textbf{(e)} $x = -1.88(7.0) + 18.0$ \hfill \textbf{M1}
+
+$= 4.8207\ldots = 4.82$ hours (3 s.f.) \hfill \textbf{A1}
+
+\emph{M1 for substituting $y = 7.0$ into the line of $x$ on $y$: the
+estimate is of $x$ from a given $y$, so the line of $x$ on $y$ is the
+appropriate one. Substituting into the line of $y$ on $x$ and solving,
+$7.0 = -0.344x + 8.88$, giving $x = 5.48$, is the wrong line and earns M0A0.
+Accept any value consistent with the candidate's own correctly-rounded
+coefficients, including $4.8207\ldots$ (full precision), $4.79$ (from $-1.88$
+and $17.95$) and $4.84$ (from $-1.88$ and $18.0$). FT from the candidate's
+line in (d). \textbf{Feedback:} where coefficients were rounded before
+substituting, store them in the GDC and round only the final answer.}
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,91 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 6 October 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyhead[LE]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{1.8 Classwork: Standard deviation on the GDC}
+
+\emph{Use your GDC. Give answers exactly, or correct to three significant
+figures. Write down the values you put into the calculator.}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Mean, sd and variance of raw data; effect of a linear transformation (C to F) on mean and sd [9 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.3), GDC One-Variable Statistics from a list ---
+\item[1.]
+
+The maximum daily temperature, in degrees Celsius, was recorded in Rome on
+ten days in October.
+
+\begin{center}
+\setlength{\tabcolsep}{8pt}\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Temperature ($^{\circ}$C) & 18 & 21 & 19 & 23 & 22 & 20 & 17 & 24 & 21 & 25 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the mean and the standard deviation of these temperatures.
+  \item Write down the variance of these temperatures.
+\end{enumerate}
+
+A visitor from New York converts each temperature to degrees Fahrenheit
+using the formula $F = 1.8\,C + 32$.
+
+\begin{enumerate}[resume, itemsep=0.1cm]
+  \item Find the mean of the ten temperatures in $^{\circ}$F.
+  \item Find the standard deviation of the ten temperatures in $^{\circ}$F.
+  \item Explain why the ``$+\,32$'' in the formula changes the mean but
+  does not change the standard deviation.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,11.5);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Frequency table with an unknown frequency from a given mean; sd; values beyond one sd; effect of an added value [7 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.3), GDC One-Variable Statistics with a frequency list ---
+\item[2.]
+
+The table shows the number of goals, $x$, that a football team scored in
+each of its matches last season. The mean number of goals per match was
+$2.2$.
+
+\begin{center}
+\setlength{\tabcolsep}{10pt}\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+Number of goals, $x$ & 0 & 1 & 2 & 3 & 4 & 5 \\
+\hline
+Frequency, $f$ & 2 & 7 & $k$ & 6 & 4 & 1 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the value of $k$.
+  \item Find the standard deviation of the number of goals per match.
+  \item Find the number of matches in which the number of goals was more
+  than one standard deviation away from the mean.
+  \item In its first match of the new season the team scores $2$ goals.
+  This match is added to the data. State whether the mean and the
+  standard deviation increase, decrease or stay the same. Give a reason
+  for each answer.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,14.5);
+  \foreach \y in {1,2,...,14} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

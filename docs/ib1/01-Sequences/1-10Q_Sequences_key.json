@@ -1,0 +1,280 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.27,
+    "answer_box_top_frac_note": "The answer box runs 0.402 to 0.925. The crop is set just above the '(a)' line at 0.283 so short answers written beside the parts list are captured. The nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored 2026-10-07, calculator allowed); parallel of 1-9PQ_Sequences P1(a)-(d). Arithmetic sequence 15, 23, 31, 39, ...; d = 8; u_n = 15 + 8(n - 1); u_30 = 247; 303 is u_37.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the common difference d of the arithmetic sequence 15, 23, 31, 39, ...",
+        "expected": {
+          "answer": "d = 8"
+        },
+        "tolerance": "8 exactly.",
+        "notes": "A1 for d = 8."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find an expression for u_n, the nth term.",
+        "expected": {
+          "answer": "u_n = 15 + 8(n - 1)"
+        },
+        "tolerance": "Accept any equivalent expression, e.g. 8n + 7; the substituted form is preferred but not required.",
+        "notes": "(M1) for the arithmetic nth-term formula with u_1 = 15 and d = 8, implied by a correct answer. A1 for a correct expression. u_n = 15 + 8n earns M1A0.",
+        "follow_through": "Uses d from part (a); award A1 for a correct expression from the student's own d."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find u_30.",
+        "expected": {
+          "answer": 247
+        },
+        "tolerance": "247 exactly.",
+        "notes": "(M1) for substituting n = 30 into the nth-term formula, e.g. 15 + 8(30 - 1). A1 for 247. 15 + 8(30) = 255 (u_31) earns M0A0.",
+        "follow_through": "Uses the expression from part (b); award A1 for the correct value from the student's own expression."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "R1"
+        ],
+        "description": "Show that 303 is a term of the sequence, and find which term it is.",
+        "expected": {
+          "equation": "15 + 8(n - 1) = 303",
+          "n": 37,
+          "answer": "303 is the 37th term"
+        },
+        "tolerance": "Accept 8n + 7 = 303 giving n = 37, or a table search showing u_37 = 303.",
+        "notes": "M1 for setting the nth-term expression equal to 303. A1 for n = 37. R1 for the conclusion that 303 is a term because n is a positive whole number; a bare 'n = 37' earns M1A1R0.",
+        "follow_through": "Uses the expression from part (b); award R1 for a conclusion correctly drawn from the student's own n."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.175,
+    "answer_box_top_frac_note": "Page 2 is an even page: the answer box runs 0.340 to 0.923. The crop is set just above the '(a)' line at 0.188 so working beside the parts list and the k-sequence stem is captured. The even-page nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored 2026-10-07, calculator allowed); parallel of 1-9PQ_Sequences P2(a), (c), (d). Arithmetic sequence with u_5 = 38, u_14 = 11: d = -3, u_1 = 50; first negative term u_18 = -1. Second sequence 2k + 1, 4k - 3, 5k + 1: k = 8, terms 17, 29, 41.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "In an arithmetic sequence u_5 = 38 and u_14 = 11. Find d and u_1.",
+        "expected": {
+          "d": -3,
+          "u_1": 50,
+          "answer": "d = -3, u_1 = 50"
+        },
+        "tolerance": "Exact values; any valid route.",
+        "notes": "M1 for any valid method relating the two terms (both equations u_1 + 4d = 38 and u_1 + 13d = 11, d = (u_14 - u_5)/(14 - 5), or GDC system). A1 for d = -3, A1 for u_1 = 50, independent.",
+        "follow_through": "Award the second A1 for u_1 correct from the student's own d."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the first term of the sequence that is negative.",
+        "expected": {
+          "inequality": "50 - 3(n - 1) < 0",
+          "n": 18,
+          "answer": -1
+        },
+        "tolerance": "Accept an equation in place of the inequality, or a table search showing u_17 = 2 and u_18 = -1; a single row u_18 = -1 still earns full marks with a feedback note.",
+        "notes": "M1 for an inequality, equation or table using the nth-term expression. A1 for n = 18 (from n > 17.67). A1 for the term -1. A final answer of 'n = 18' alone earns M1A1A0: the question asks for the term.",
+        "follow_through": "Uses u_1 and d from part (a); award marks for values correctly found from the student's own u_1 and d."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "The first three terms of an arithmetic sequence are 2k + 1, 4k - 3, 5k + 1. Find k and write down the first three terms.",
+        "expected": {
+          "equation": "(4k - 3) - (2k + 1) = (5k + 1) - (4k - 3)",
+          "k": 8,
+          "terms": "17, 29, 41"
+        },
+        "tolerance": "Accept the equivalent set-up 2(4k - 3) = (2k + 1) + (5k + 1).",
+        "notes": "M1 for equating the two differences. A1 for k = 8. A1 for the terms 17, 29, 41.",
+        "follow_through": "Award the final A1 for three terms correctly evaluated from the student's own k."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "1.2",
+      "1.3"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.15,
+    "answer_box_top_frac_note": "The answer box runs 0.407 to 0.922. The crop is set just above the '(a)' line at 0.161 so the classification answers, often written beside the four sequences, are captured. The nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored 2026-10-07, calculator allowed); parallel of 1-9PQ_Sequences P3(a), (b), (d), (f). Classify 5,10,20,40 (geometric r = 2); 7,4,1,-2 (arithmetic d = -3); 2,3,5,8 (neither); 162,54,18,6 (geometric r = 1/3). Geometric 16, 20, 25, ...: r = 1.25, u_12 = 16(1.25)^11 = 186.26. Challenge: u_3 = 45, u_6 = 1215 gives r = 3, u_1 = 5.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 4,
+        "mark_codes": [
+          "A1",
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "State whether each sequence is arithmetic, geometric or neither, with d or r: (i) 5, 10, 20, 40 (ii) 7, 4, 1, -2 (iii) 2, 3, 5, 8 (iv) 162, 54, 18, 6.",
+        "expected": {
+          "i": "geometric, r = 2",
+          "ii": "arithmetic, d = -3",
+          "iii": "neither",
+          "iv": "geometric, r = 1/3"
+        },
+        "tolerance": "Accept r = 0.333 in (iv).",
+        "notes": "A1 for each sequence: the type and, for (i), (ii) and (iv), the correct d or r. d = 3 in (ii) earns A0."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find the common ratio r of the geometric sequence 16, 20, 25, ...",
+        "expected": {
+          "answer": "r = 1.25"
+        },
+        "tolerance": "Accept 5/4.",
+        "notes": "A1 for 1.25."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find u_12 of the geometric sequence 16, 20, 25, ...",
+        "expected": {
+          "answer": "16(1.25)^11 = 186.26... = 186"
+        },
+        "tolerance": "Accept 186, 186.3 or 186.26.",
+        "notes": "(M1) for 16(1.25)^(12 - 1). A1 for 186. 16(1.25)^12 = 233 (u_13) earns M0A0.",
+        "follow_through": "Uses r from part (b); award A1 for the correct value from the student's own r."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Challenge: a geometric sequence has u_3 = 45 and u_6 = 1215. Find the common ratio and the first term.",
+        "expected": {
+          "r": 3,
+          "u_1": 5
+        },
+        "tolerance": "Exact values.",
+        "notes": "M1 for r^3 = 1215/45 = 27 (or the two equations u_1 r^2 = 45, u_1 r^5 = 1215 divided). A1 for r = 3. A1 for u_1 = 5. u_1 = 45/3 = 15 earns M1A1A0.",
+        "follow_through": "Award the final A1 for u_1 correct from the student's own r."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "1.2",
+      "1.3"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.22,
+    "answer_box_top_frac_note": "Page 4 is an even page: the answer box runs 0.323 to 0.914. The crop is set just above the '(a)' line at 0.235 so working beside the parts list is captured. The even-page nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored 2026-10-07, calculator allowed); parallel of 1-9PQ_Sequences P4(a)-(c), with (a) and (b) swapped. Job A: 38000 rising by 2000 per year (arithmetic). Job B: 36000 rising by 6% per year (geometric). Year 3: A 42000, B 40449.60. B first exceeds A in year 6 (A 48000, B 48176.12; year 5: A 46000, B 45449.17).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down an expression for the salary in year n for each job (Job A: $38000 rising by $2000 each year; Job B: $36000 rising by 6% each year).",
+        "expected": {
+          "A_n": "38000 + 2000(n - 1)",
+          "B_n": "36000(1.06)^(n - 1)"
+        },
+        "tolerance": "Accept any equivalent expression, e.g. A_n = 36000 + 2000n.",
+        "notes": "A1 for A_n. A1 for B_n. r = 0.06 or r = 6, or exponent n instead of n - 1, earns A0 for B_n."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find the salary in year 3 for each job.",
+        "expected": {
+          "A_3": 42000,
+          "B_3": 40449.6
+        },
+        "tolerance": "Accept 40400 (3 s.f.) or 40450 for Job B.",
+        "notes": "A1 for 42000. A1 for 40449.60.",
+        "follow_through": "Award each A1 for the value from the student's own expression in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the first year in which the Job B salary is greater than the Job A salary.",
+        "expected": {
+          "year_5": "A 46000, B 45449.17",
+          "year_6": "A 48000, B 48176.12",
+          "answer": "year 6"
+        },
+        "tolerance": "Accept a GDC table, a graph, or solving the equation on the GDC (n = 5.78...). A single row (B_6 > A_6) still earns full marks with a feedback note that year 5 justifies 'first'.",
+        "notes": "(M1) for a valid comparison of the two expressions. A1 for the two adjacent years (or n = 5.78). A1 for year 6. 'Year 5.78' as the final answer earns M1A1A0.",
+        "follow_through": "Uses the expressions from part (a); award marks for a comparison correctly made from the student's own expressions."
+      }
+    ]
+  }
+]

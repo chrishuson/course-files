@@ -1,0 +1,208 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 7 October 2026}
+
+\begin{document}
+\subsubsection*{1.10 Quiz: Arithmetic and Geometric Sequences --- Markscheme}
+
+\emph{Calculator allowed. Total: 34 marks.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Arithmetic sequence; d, u_n, u_30, show 303 is a term [8 marks] ---
+\item[1.] [Maximum mark: 8]
+
+$15,\; 23,\; 31,\; 39,\; \ldots$
+
+\medskip
+
+\textbf{(a)} $d = 23 - 15 = 8$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(b)} $u_{n} = u_{1} + (n - 1)d$ \hfill \textbf{(M1)}
+
+$u_{n} = 15 + 8(n - 1)$ \hfill \textbf{A1}
+
+\emph{Accept $u_{n} = 8n + 7$, or any equivalent expression, for full
+marks. A candidate who writes $u_{n} = 15 + 8n$ earns M1A0.}
+
+\emph{FT: award A1 for a correct expression from the candidate's own $d$
+in (a).}
+
+\medskip
+
+\textbf{(c)} $u_{30} = 15 + 8(30 - 1)$ \hfill \textbf{(M1)}
+
+$= 15 + 232 = 247$ \hfill \textbf{A1}
+
+\emph{A common error is $15 + 8(30) = 255$: M0A0 (it is
+$u_{31}$). FT from the candidate's expression in (b).}
+
+\medskip
+
+\textbf{(d)} $15 + 8(n - 1) = 303$ \hfill \textbf{M1}
+
+$8(n - 1) = 288 \;\Rightarrow\; n - 1 = 36 \;\Rightarrow\; n = 37$
+\hfill \textbf{A1}
+
+$n$ is a positive whole number, so $303$ is a term: the
+$37^{\text{th}}$ term. \hfill \textbf{R1}
+
+\emph{Accept $8n + 7 = 303$, $8n = 296$, $n = 37$. R1 requires the
+conclusion linked to $n$ being a whole number; a bare ``$n = 37$'' earns
+M1A1R0. Accept a table search that shows $u_{37} = 303$ for full marks.}
+
+\newpage
+
+%--- Problem 2: Two given terms -> u_1 and d; first negative term; terms in k [9 marks] ---
+\item[2.] [Maximum mark: 9]
+
+$u_{5} = 38$, \ $u_{14} = 11$.
+
+\medskip
+
+\textbf{(a)} $u_{1} + 4d = 38$ \quad and \quad $u_{1} + 13d = 11$
+\hfill \textbf{M1}
+
+$9d = 11 - 38 = -27 \;\Rightarrow\; d = -3$ \hfill \textbf{A1}
+
+$u_{1} = 38 - 4(-3) = 50$ \hfill \textbf{A1}
+
+\emph{M1 for any valid route: both equations, $d = \dfrac{u_{14} -
+u_{5}}{14 - 5}$, or solving the system on the GDC. The two A1 marks are
+independent. FT: award the second A1 for $u_{1}$ correct from the
+candidate's own $d$.}
+
+\medskip
+
+\textbf{(b)} $50 - 3(n - 1) < 0$ \hfill \textbf{M1}
+
+$3(n - 1) > 50 \;\Rightarrow\; n - 1 > 16.67 \;\Rightarrow\; n > 17.67$,
+so $n = 18$ \hfill \textbf{A1}
+
+$u_{18} = 50 - 3(18 - 1) = -1$ \hfill \textbf{A1}
+
+\emph{The question asks for the term, not $n$: the final A1 is for $-1$.
+A final answer of ``$n = 18$'' alone earns M1A1A0.}
+
+\emph{Accept an equation in place of the inequality, or a table search
+showing $u_{17} = 2$ and $u_{18} = -1$ (markscheme-spec §18). FT from the
+candidate's $u_{1}$ and $d$.}
+
+\medskip
+
+\textbf{(c)} Equal differences: \ $(4k - 3) - (2k + 1) = (5k + 1) - (4k
+- 3)$ \hfill \textbf{M1}
+
+$2k - 4 = k + 4 \;\Rightarrow\; k = 8$ \hfill \textbf{A1}
+
+First three terms: $17,\; 29,\; 41$ \quad ($d = 12$) \hfill \textbf{A1}
+
+\emph{Accept the equivalent set-up $2(4k - 3) = (2k + 1) + (5k + 1)$
+(the middle term is the mean of its neighbours). FT: award the final A1
+for three terms correctly evaluated from the candidate's $k$.}
+
+\newpage
+
+%--- Problem 3: Arithmetic, geometric or neither; geometric r and u_12; challenge: two given terms [10 marks] ---
+\item[3.] [Maximum mark: 10]
+
+\textbf{(a)}
+
+\begin{tabular}{rlll}
+(i) & $5,\; 10,\; 20,\; 40$ & geometric, $r = 2$ & \textbf{A1} \\
+(ii) & $7,\; 4,\; 1,\; -2$ & arithmetic, $d = -3$ & \textbf{A1} \\
+(iii) & $2,\; 3,\; 5,\; 8$ & neither & \textbf{A1} \\
+(iv) & $162,\; 54,\; 18,\; 6$ & geometric, $r = \frac{1}{3}$ & \textbf{A1} \\
+\end{tabular}
+
+\emph{Each A1 needs the type and, for (i), (ii) and (iv), the correct $d$
+or $r$. Accept $r = 0.333$ in (iv). In (iii) the differences are $1, 2,
+3$ and the ratios $1.5, 1.67, 1.6$, so neither is constant. $d = 3$ in
+(ii) (sign lost) earns A0.}
+
+\medskip
+
+\textbf{(b)} $r = \dfrac{20}{16} = 1.25$ \hfill \textbf{A1}
+
+\medskip
+
+\textbf{(c)} $u_{12} = 16(1.25)^{12 - 1}$ \hfill \textbf{(M1)}
+
+$= 16(1.25)^{11} = 186.26\ldots \approx 186$ \hfill \textbf{A1}
+
+\emph{Accept $186.3$ or $186.26$. $16(1.25)^{12} = 233$ is $u_{13}$:
+M0A0. FT from the candidate's $r$ in (b).}
+
+\medskip
+
+\textbf{(d)} From $u_{3}$ to $u_{6}$ is $3$ steps of $\times r$:
+$r^{3} = \dfrac{1215}{45} = 27$ \hfill \textbf{M1}
+
+$r = 3$ \hfill \textbf{A1}
+
+$u_{1} = \dfrac{u_{3}}{r^{2}} = \dfrac{45}{9} = 5$ \hfill \textbf{A1}
+
+\emph{Accept the equations $u_{1} r^{2} = 45$ and $u_{1} r^{5} = 1215$,
+divided to give $r^{3} = 27$, for the M1. A candidate who uses
+$u_{1} = \dfrac{u_{3}}{r} = 15$ earns M1A1A0. FT: award the final A1 for $u_{1}$ correct from the candidate's
+own $r$.}
+
+\newpage
+
+%--- Problem 4: Arithmetic vs geometric salary; expressions, year 3, first year B > A [7 marks] ---
+\item[4.] [Maximum mark: 7]
+
+Job A: arithmetic, $u_{1} = 38\,000$, $d = 2000$. \ Job B: geometric,
+$u_{1} = 36\,000$, $r = 1.06$.
+
+\medskip
+
+\textbf{(a)} Job A: $A_{n} = 38\,000 + 2000(n - 1)$ \hfill \textbf{A1}
+
+Job B: $B_{n} = 36\,000(1.06)^{n - 1}$ \hfill \textbf{A1}
+
+\emph{Accept $A_{n} = 36\,000 + 2000n$. A common error is $r = 0.06$ or
+$r = 6$ in Job B: A0. $B_{n} = 36\,000(1.06)^{n}$ earns A0 (it gives
+\$$38\,160$ in year $1$).}
+
+\medskip
+
+\textbf{(b)} Job A: $A_{3} = 38\,000 + 2000(3 - 1) = $ \$$42\,000$
+\hfill \textbf{A1}
+
+Job B: $B_{3} = 36\,000(1.06)^{3 - 1} = $ \$$40\,449.60$
+\hfill \textbf{A1}
+
+\emph{Accept \$$40\,400$ (3 s.f.) or \$$40\,450$. FT: award each A1 for the
+value from the candidate's own expression in (a).}
+
+\medskip
+
+\textbf{(c)} Compare the two salaries year by year: \hfill \textbf{(M1)}
+
+\begin{tabular}{ccc}
+Year & Job A & Job B \\
+\hline
+$5$ & \$$46\,000$ & \$$45\,449.17$ \\
+$6$ & \$$48\,000$ & \$$48\,176.12$ \\
+\end{tabular}
+\hfill \textbf{A1}
+
+Year $6$ \hfill \textbf{A1}
+
+\emph{M1 for a valid comparison: a GDC table of both expressions, a
+graph, or solving $36\,000(1.06)^{n - 1} = 38\,000 + 2000(n - 1)$ on the
+GDC ($n = 5.78\ldots$). The middle A1 is for the two adjacent years (or
+the value $n = 5.78$). A single row ($B_{6} > A_{6}$, so year $6$) still
+earns full marks, with the feedback note that year $5$ is what justifies
+``first'' (markscheme-spec §18).}
+
+\emph{The answer is a whole year: ``year $5.78$'' earns M1A1A0.}
+
+\end{enumerate}
+\end{document}

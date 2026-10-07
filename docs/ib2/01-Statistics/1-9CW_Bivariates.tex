@@ -1,0 +1,90 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 7 October 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyhead[LE]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{1.9 Classwork: Bivariate data and linear regression}
+
+\emph{Use your GDC. Give answers exactly, or correct to three significant
+figures. Write down the values you put into the calculator.}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Pearson's r, describing correlation, y-on-x regression line, interpreting the gradient, interpolation, extrapolation [9 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.4), GDC Linear Regression (mx+b) from two lists ---
+\item[1.]
+
+A gelateria in Rome recorded the maximum temperature, $x$ $^{\circ}$C, and
+the number of gelati sold, $y$, on eight days in June.
+
+\begin{center}
+\setlength{\tabcolsep}{7pt}\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+Temperature, $x$ ($^{\circ}$C) & 18 & 20 & 21 & 23 & 25 & 28 & 30 & 32 \\
+\hline
+Gelati sold, $y$ & 150 & 158 & 181 & 185 & 214 & 226 & 262 & 258 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find Pearson's product-moment correlation coefficient, $r$.
+  \item Describe the correlation between $x$ and $y$ (direction: positive
+  or negative; strength: strong, moderate, weak or none).
+  \item Write down the equation of the regression line of $y$ on $x$, in
+  the form $y = ax + b$.
+  \item Interpret the meaning of the value of $a$ in this context.
+  \item Use your regression line to estimate the number of gelati sold on
+  a day when the maximum temperature is $26\,^{\circ}$C.
+  \item Explain why the regression line should not be used to estimate the
+  number of gelati sold on a day in January when the maximum temperature
+  is $10\,^{\circ}$C.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,10.5);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: y-on-x line and interpreting b; mean point; x-on-y line; choosing the appropriate line to estimate x from y [9 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.4 and 4.10), GDC Linear Regression with the lists swapped ---
+\item[2.]
+
+A student asked eight classmates how many hours a day they spend on their
+phone, $x$, and how many hours they sleep a night, $y$.
+
+\begin{center}
+\setlength{\tabcolsep}{7pt}\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+Phone time, $x$ (hours) & 1.5 & 2 & 2.5 & 3 & 4 & 4.5 & 5.5 & 6 \\
+\hline
+Sleep, $y$ (hours) & 8.2 & 8.7 & 7.6 & 8.1 & 7.0 & 7.8 & 6.6 & 7.1 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the equation of the regression line of $y$ on $x$, in the
+  form $y = ax + b$.
+  \item Interpret the meaning of the value of $b$ in this context.
+  \item Find the coordinates of the mean point, $(\bar{x}, \bar{y})$.
+  \item Find the equation of the regression line of $x$ on $y$.
+  \item Another student, Lucia, sleeps $7.0$ hours a night. Use the
+  appropriate regression line to estimate her daily phone time.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.8);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

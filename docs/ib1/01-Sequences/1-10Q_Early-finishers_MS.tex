@@ -1,0 +1,132 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Solutions}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 7 October 2026}
+
+\begin{document}
+\subsubsection*{1.10 Early Finishers: Sequences and Compound Interest --- Solutions}
+
+\emph{Extension set, not scored: worked solutions only, no marks.
+Calculator allowed. Answers are exact or correct to three significant
+figures.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Arithmetic sequence from two conditions; count of terms below 500; arithmetic terms forming a geometric sequence ---
+\item[1.]
+
+$u_{3} + u_{8} = 48$, \ $u_{12} = 5\,u_{2}$.
+
+\medskip
+
+\textbf{(a)} Write each term as $u_{1} + (n - 1)d$:
+
+$(u_{1} + 2d) + (u_{1} + 7d) = 48 \;\Rightarrow\; 2u_{1} + 9d = 48$
+
+$u_{1} + 11d = 5(u_{1} + d) \;\Rightarrow\; 6d = 4u_{1}
+\;\Rightarrow\; u_{1} = 1.5d$
+
+Substitute: $2(1.5d) + 9d = 48 \;\Rightarrow\; 12d = 48
+\;\Rightarrow\; d = 4$
+
+$u_{1} = 1.5(4) = 6$
+
+\emph{Or rearrange both conditions to $2u_{1} + 9d = 48$ and
+$4u_{1} - 6d = 0$ and solve the system on the GDC. The sequence is
+$6, 10, 14, \ldots$: $u_{3} + u_{8} = 14 + 34 = 48$ and
+$u_{12} = 50 = 5 \times 10$.}
+
+\medskip
+
+\textbf{(b)} $6 + 4(n - 1) < 500 \;\Rightarrow\; 4(n - 1) < 494
+\;\Rightarrow\; n - 1 < 123.5 \;\Rightarrow\; n < 124.5$
+
+$u_{124} = 6 + 4(124 - 1) = 498$ and $u_{125} = 6 + 4(125 - 1) = 502$,
+so $124$ terms are less than $500$.
+
+\emph{The terms below $500$ are $u_{1}$ to $u_{124}$, so the count is the
+largest whole $n$, $124$.}
+
+\medskip
+
+\textbf{(c)} The $1^{\text{st}}$, $2^{\text{nd}}$ and $4^{\text{th}}$
+terms are $3$, \ $3 + d$, \ $3 + 3d$.
+
+Geometric, so the ratios are equal:
+$\dfrac{3 + d}{3} = \dfrac{3 + 3d}{3 + d}$
+
+$(3 + d)^{2} = 3(3 + 3d) \;\Rightarrow\; 9 + 6d + d^{2} = 9 + 9d
+\;\Rightarrow\; d^{2} - 3d = 0 \;\Rightarrow\; d(d - 3) = 0$
+
+$d \neq 0$, so $d = 3$.
+
+The terms are $3,\; 6,\; 12$, so $r = \dfrac{6}{3} = 2$.
+
+\emph{$d = 0$ also solves the equation (the constant sequence
+$3, 3, 3$), which is why the question excludes it.}
+
+\newpage
+
+%--- Problem 2: Compound interest -- doubling time; unknown rate; first year one investment overtakes another ---
+\item[2.]
+
+Sofia: $PV = 5000$, $4.8\%$ compounded monthly. \ Luca: $PV = 6000$,
+$r\%$ compounded quarterly, $FV = 9000$ after $10$ years.
+
+\medskip
+
+\textbf{(a)} $FV = PV\left(1 + \dfrac{r}{100k}\right)^{kn}$, with
+$k = 12$:
+
+$5000\left(1 + \dfrac{4.8}{100(12)}\right)^{12n} > 10\,000$
+
+\begin{tabular}{cc}
+$n$ (years) & Value \\
+\hline
+$14$ & \$$9777.63$ \\
+$15$ & \$$10\,257.42$ \\
+\end{tabular}
+
+$15$ years
+
+\emph{Or TVM solver: $I\% = 4.8$, $PV = -5000$, $PMT = 0$, $FV = 10\,000$,
+$P/Y = C/Y = 12$ gives $N = 173.6$ months $= 14.47$ years; the value is
+first over \$$10\,000$ at a whole year after $15$ years. Show the adjacent
+year: $14$ years is what shows $15$ is the \emph{least}.}
+
+\medskip
+
+\textbf{(b)} $6000\left(1 + \dfrac{r}{100(4)}\right)^{4(10)} = 9000$
+
+$\left(1 + \dfrac{r}{400}\right)^{40} = 1.5$
+
+$r = 400\left(1.5^{1/40} - 1\right) = 4.0752\ldots \approx 4.08$
+
+\emph{TVM solver: $N = 40$, $PV = -6000$, $PMT = 0$, $FV = 9000$,
+$P/Y = C/Y = 4$, solve for $I\% = 4.0752\ldots$}
+
+\medskip
+
+\textbf{(c)} Sofia: $S_{n} = 5000\left(1 + \dfrac{4.8}{100(12)}\right)^{12n}$
+\qquad Luca: $L_{n} = 6000\left(1 + \dfrac{4.0752\ldots}{100(4)}\right)^{4n}$
+
+\begin{tabular}{ccc}
+$n$ (years) & Sofia & Luca \\
+\hline
+$24$ & \$$15\,786.26$ & \$$15\,877.07$ \\
+$25$ & \$$16\,560.90$ & \$$16\,534.06$ \\
+\end{tabular}
+
+Year $25$
+
+\emph{Use a GDC table of both expressions, with the full-precision $r$
+stored from (b). Sofia starts with less but earns the higher effective
+rate ($1.004^{12} = 1.0491$, $4.91\%$ a year, against Luca's
+$1.5^{1/10} = 1.0414$, $4.14\%$ a year), so she catches up slowly. With
+$r = 4.08$ rounded, Luca's values are \$$15\,894.92$ and \$$16\,553.42$:
+the answer is still year $25$, but carry full precision to the end.}
+
+\end{enumerate}
+\end{document}

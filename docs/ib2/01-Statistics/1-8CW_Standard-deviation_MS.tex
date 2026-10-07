@@ -1,0 +1,137 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\setlength{\parskip}{0.3\baselineskip}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 6 October 2026}
+
+\begin{document}
+\subsubsection*{1.8 Classwork: Standard deviation on the GDC --- Markscheme}
+
+\emph{Calculator allowed. Marks are not printed on the student sheet; they are
+recorded here. Total: 16 marks.}
+
+\emph{\textbf{Throughout:} ``standard deviation'' means the population value
+$\sigma_{x}$, never the sample value $s_{x}$. The two sit side by side on the
+One-Variable Statistics screen. Problem 1 gives $s_{x} = 2.58$ and Problem 2
+gives $s_{x} = 1.24$; a candidate who quotes $s_{x}$ loses the A1 for that
+standard deviation once only, and is followed through afterwards.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Mean, sd and variance of raw data; effect of a linear transformation (C to F) on mean and sd [9 marks] ---
+\item[1.] [Maximum mark: 9]
+
+$n = 10$, \quad $\sum x = 210$, \quad $\sum (x - \bar{x})^{2} = 60$.
+
+\emph{\textbf{GDC:} enter the ten temperatures as a list, then
+\texttt{menu} $\rightarrow$ \texttt{Statistics} $\rightarrow$ \texttt{Stat
+Calculations} $\rightarrow$ \texttt{One-Variable Statistics}.}
+
+\textbf{(a)} $\bar{x} = 21\,^{\circ}$C \hfill \textbf{A1}
+
+$\sigma_{x} = \sqrt{6} = 2.4494\ldots = 2.45\,^{\circ}$C (3 s.f.)
+\hfill \textbf{A1}
+
+\emph{Accept $\sqrt{6}$, $2.449$, or the full $2.4494\ldots$ Do not accept
+$s_{x} = 2.5819\ldots$ ($2.58$), the sample standard deviation. The two marks
+are independent.}
+
+\textbf{(b)} Variance $= \sigma_{x}^{2} = 6$ \hfill \textbf{A1}
+
+\emph{Accept $6.00$, or $2.45^{2} = 6.0025 = 6.00$ (3 s.f.). FT: award the A1
+for the square of the candidate's standard deviation in (a). A candidate who
+used $s_{x}$ and gives $6.67$ earns the A1 on FT.}
+
+\textbf{(c)} $\bar{F} = 1.8 \times 21 + 32$ \hfill \textbf{(M1)}
+
+$= 69.8\,^{\circ}$F \hfill \textbf{A1}
+
+\emph{The M1 is for applying the formula to the mean. Converting all ten
+temperatures ($64.4, 69.8, 66.2, \ldots$) and running One-Variable
+Statistics again is a valid route to both marks. FT from the candidate's mean
+in (a).}
+
+\textbf{(d)} $\sigma_{F} = 1.8 \times \sigma_{x} = 1.8 \times 2.4494\ldots$
+\hfill \textbf{(M1)}
+
+$= 4.4090\ldots = 4.41\,^{\circ}$F (3 s.f.) \hfill \textbf{A1}
+
+\emph{Accept $1.8\sqrt{6}$, or $1.8 \times 2.45 = 4.41$. Recomputing from the
+ten converted values earns both marks. \textbf{The common error:}
+$1.8 \times 2.45 + 32 = 36.4$ --- adding $32$ to the standard deviation earns
+M0A0. FT from the candidate's standard deviation in (a); from $s_{x}$ the FT
+answer is $4.65$.}
+
+\textbf{(e)} Adding $32$ moves every temperature, and so the mean, up by
+$32$. \hfill \textbf{R1}
+
+The distance of each temperature from the mean is unchanged, so the spread
+of the data, and therefore the standard deviation, is unchanged.
+\hfill \textbf{R1}
+
+\emph{First R1 for the shift of every value (and so the mean). Second R1 for
+the reason the standard deviation is unaffected: distances from the mean,
+gaps between values, or the spread, stay the same. ``Adding does not affect
+the standard deviation'' restates the claim and earns R0 for the second mark.
+Accept a reason that names the multiplier: ``only the $\times 1.8$ stretches
+the data, the $+32$ only slides it''.}
+
+\newpage
+
+%--- Problem 2: Frequency table with an unknown frequency from a given mean; sd; values beyond one sd; effect of an added value [7 marks] ---
+\item[2.] [Maximum mark: 7]
+
+$n = 20 + k$, \quad $\sum fx = 46 + 2k$.
+
+\textbf{(a)} $\dfrac{0 + 7 + 2k + 18 + 16 + 5}{2 + 7 + k + 6 + 4 + 1}
+= 2.2$ \quad that is \quad $\dfrac{46 + 2k}{20 + k} = 2.2$
+\hfill \textbf{M1}
+
+$46 + 2k = 44 + 2.2k \;\Rightarrow\; 0.2k = 2 \;\Rightarrow\; k = 10$
+\hfill \textbf{A1}
+
+\emph{M1 for an equation setting $\sum fx \div \sum f$ equal to $2.2$, with
+$k$ in both the numerator and the denominator. An equation with $k$ in the
+numerator only (for example $\frac{46 + 2k}{20} = 2.2$, giving $k = -1$)
+earns M0A0. Trial and improvement on the GDC that reaches $k = 10$ and checks
+$\bar{x} = 2.2$ earns both marks.}
+
+\textbf{(b)} $\sigma_{x} = 1.2220\ldots = 1.22$ goals (3 s.f.)
+\hfill \textbf{A1}
+
+\emph{\textbf{GDC:} $x$ values in one list, frequencies (with $k = 10$) in a
+second list entered as the \texttt{Frequency List}; the screen also shows
+$n = 30$ and $\bar{x} = 2.2$ as a check. Do not accept $s_{x} = 1.2429\ldots$
+($1.24$). FT from the candidate's $k$.}
+
+\textbf{(c)} $\bar{x} \pm \sigma_{x} = 2.2 \pm 1.2220\ldots$, \quad that is
+$0.978$ to $3.42$ \hfill \textbf{(M1)}
+
+Matches outside that interval: $x = 0$, $x = 4$, $x = 5$: \quad
+$2 + 4 + 1 = 7$ matches \hfill \textbf{A1}
+
+\emph{M1 for at least one of $\bar{x} - \sigma_{x}$ and $\bar{x} + \sigma_{x}$,
+seen or implied. Counting one tail only ($5$ matches above, or $2$ below)
+earns M1A0. Counting the matches \emph{inside} the interval ($23$) earns
+M1A0. FT from the candidate's standard deviation in (b); $s_{x}$ gives the
+same interval in whole numbers and the same $7$.}
+
+\textbf{(d)} The mean decreases, because $2$ is less than the mean of $2.2$.
+\hfill \textbf{A1}
+
+The standard deviation decreases, because $2$ is very close to the mean
+(well within one standard deviation of it), so the new match adds less than
+the typical squared distance from the mean. \hfill \textbf{R1}
+
+\emph{New values: $\bar{x} = \frac{68}{31} = 2.19$ and $\sigma_{x} = 1.20$
+(3 s.f.). Values are not required, and a candidate who recomputes on the GDC
+and compares ($2.19 < 2.2$, $1.20 < 1.22$) has given a valid reason for both
+marks. A1 for the mean decreasing with its reason. R1 for the standard
+deviation decreasing with a reason that refers to $2$ being close to the
+mean. ``Stays the same, because $2$ is a typical value'' earns R0. A correct
+direction with no reason earns no mark for that statistic.}
+
+\end{enumerate}
+\end{document}

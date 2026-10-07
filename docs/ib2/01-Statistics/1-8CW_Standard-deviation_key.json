@@ -1,0 +1,162 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "4.3"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.27,
+    "answer_box_top_frac_note": "The answer box runs 0.489 to 0.900. The crop is set higher, just above the '(a)' line at 0.282, so short answers written beside the parts list (and the F = 1.8C + 32 stem between (b) and (c)) are captured as well as the box. The data table sits at about 0.21 and the nickname box near 0.07; both stay outside the crop.",
+    "source": "Original (freshly authored 2026-10-06, AA SL 4.3, calculator allowed). Ten maximum daily temperatures in Rome (degrees C): 18, 21, 19, 23, 22, 20, 17, 24, 21, 25. Sum 210, mean 21, sum of squared deviations 60, variance 6, sigma = sqrt(6) = 2.449 (s_x = 2.582). Converted with F = 1.8C + 32: mean 69.8, sigma = 1.8*sqrt(6) = 4.409.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find the mean and the standard deviation of the ten temperatures 18, 21, 19, 23, 22, 20, 17, 24, 21, 25 (degrees C).",
+        "expected": {
+          "mean": 21,
+          "standard_deviation": "sqrt(6) = 2.449... = 2.45"
+        },
+        "tolerance": "Mean: 21 exactly. Standard deviation: the population value sigma_x, exact (sqrt 6) or correct to at least 3 s.f. (2.45). The sample value s_x = 2.58 is not accepted.",
+        "notes": "A1 for the mean 21. A1 for sigma_x = 2.45. The two marks are independent. s_x = 2.58 earns A0 for the second mark."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the variance of the temperatures.",
+        "expected": {
+          "answer": 6
+        },
+        "tolerance": "Accept 6, 6.00, or 2.45^2 = 6.0025 = 6.00 (3 s.f.). Any value equal to the square of the student's standard deviation in (a) is accepted on FT.",
+        "notes": "A1 for 6. A student who used s_x in (a) and gives 6.67 earns A1 on FT.",
+        "follow_through": "Variance is the square of the standard deviation from part (a); award A1 for the square of the student's own (a) value."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Each temperature is converted to degrees Fahrenheit using F = 1.8C + 32. Find the mean of the ten temperatures in degrees F.",
+        "expected": {
+          "method": "1.8 * 21 + 32",
+          "answer": "69.8 degrees F"
+        },
+        "tolerance": "69.8 exactly. Converting all ten values and recomputing the mean on the GDC is a valid route to both marks.",
+        "notes": "(M1) for applying the formula to the mean, or for converting all ten values; implied by a correct answer. A1 for 69.8.",
+        "follow_through": "Uses the mean from part (a); award M1A1 for 1.8 times the student's own mean plus 32."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the standard deviation of the ten temperatures in degrees F.",
+        "expected": {
+          "method": "1.8 * sigma_x = 1.8 * 2.449...",
+          "answer": "4.409... = 4.41 degrees F"
+        },
+        "tolerance": "Accept 1.8*sqrt(6), 4.409, or 1.8 * 2.45 = 4.41. Recomputing from the ten converted values earns both marks.",
+        "notes": "(M1) for multiplying the standard deviation by 1.8 (not adding 32), or for recomputing from the converted values. A1 for 4.41. The common error 1.8 * 2.45 + 32 = 36.4 earns M0A0.",
+        "follow_through": "Uses the standard deviation from part (a); award M1A1 for 1.8 times the student's own (a) value. From s_x = 2.58 the FT answer is 4.65."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "R1",
+          "R1"
+        ],
+        "description": "Explain why the '+ 32' in the formula F = 1.8C + 32 changes the mean but does not change the standard deviation.",
+        "expected": {
+          "mean": "Adding 32 moves every value, and so the mean, up by 32.",
+          "standard_deviation": "The distance of each value from the mean is unchanged, so the spread, and therefore the standard deviation, is unchanged."
+        },
+        "tolerance": "Accept equivalent wording: the data slide along / shift; gaps between values, distances from the mean, or the spread stay the same; 'only the x1.8 stretches the data, the +32 only slides it'.",
+        "notes": "R1 for the shift of every value (and hence the mean) by 32. R1 for a reason why the standard deviation is unaffected that refers to distances from the mean, gaps between values, or spread. 'Adding does not affect the standard deviation' only restates the claim and earns R0 for the second mark."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "4.3"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.22,
+    "answer_box_top_frac_note": "Page 2 is an even page: the answer box runs 0.405 to 0.924 and the crop is set just above the '(a)' line at 0.232 so that working written beside the parts list is captured. The frequency table sits at about 0.13 and the even-page nickname box near 0.07; both stay outside the crop.",
+    "source": "Original (freshly authored 2026-10-06, AA SL 4.3, calculator allowed). Goals per match x = 0,1,2,3,4,5 with frequencies 2, 7, k, 6, 4, 1 and mean 2.2. (46 + 2k)/(20 + k) = 2.2 gives k = 10, n = 30. sigma_x = 1.222 (s_x = 1.243). Mean +/- sigma = 0.978 to 3.42; matches outside: x = 0, 4, 5, total 7. Adding a match with 2 goals: mean 68/31 = 2.19, sigma_x = 1.20, both decrease.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "A frequency table of goals per match has x = 0,1,2,3,4,5 with frequencies 2, 7, k, 6, 4, 1. The mean is 2.2. Find the value of k.",
+        "expected": {
+          "equation": "(46 + 2k)/(20 + k) = 2.2",
+          "answer": "k = 10"
+        },
+        "tolerance": "k = 10 exactly. Trial and improvement on the GDC that reaches k = 10 and checks the mean is 2.2 earns both marks.",
+        "notes": "M1 for an equation sum(fx)/sum(f) = 2.2 with k in both numerator and denominator. A1 for k = 10. An equation with k in the numerator only (e.g. (46 + 2k)/20 = 2.2, giving k = -1) earns M0A0."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find the standard deviation of the number of goals per match.",
+        "expected": {
+          "answer": "1.222... = 1.22"
+        },
+        "tolerance": "The population value sigma_x correct to at least 3 s.f. (1.22). The sample value s_x = 1.24 is not accepted.",
+        "notes": "A1 for sigma_x = 1.22 (GDC One-Variable Statistics with the frequency list). s_x = 1.24 earns A0.",
+        "follow_through": "Uses k from part (a); award A1 for the correct sigma_x from the student's own k."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the number of matches in which the number of goals was more than one standard deviation away from the mean.",
+        "expected": {
+          "interval": "2.2 +/- 1.222, i.e. 0.978 to 3.42",
+          "answer": "7 matches (x = 0, 4, 5: 2 + 4 + 1)"
+        },
+        "tolerance": "7 exactly.",
+        "notes": "(M1) for at least one of mean - sd and mean + sd, seen or implied. A1 for 7. Counting one tail only (5 or 2) earns M1A0. Counting the matches inside the interval (23) earns M1A0.",
+        "follow_through": "Uses the standard deviation from part (b) and k from part (a); award A1 for a count made correctly from the student's own values. s_x gives the same 7."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "R1"
+        ],
+        "description": "A new match with 2 goals is added to the data. State whether the mean and the standard deviation increase, decrease or stay the same, giving a reason for each.",
+        "expected": {
+          "mean": "Decreases, because 2 is less than the mean 2.2 (new mean 68/31 = 2.19).",
+          "standard_deviation": "Decreases, because 2 is very close to the mean, well within one standard deviation (new sigma_x = 1.20)."
+        },
+        "tolerance": "Values are not required. Recomputing on the GDC and comparing (2.19 < 2.2, 1.20 < 1.22) is a valid reason for both marks.",
+        "notes": "A1 for 'mean decreases' with the reason that 2 is below the mean. R1 for 'standard deviation decreases' with a reason referring to 2 being close to the mean. A correct direction with no reason earns no mark for that statistic. 'Stays the same, because 2 is a typical value' earns R0."
+      }
+    ]
+  }
+]

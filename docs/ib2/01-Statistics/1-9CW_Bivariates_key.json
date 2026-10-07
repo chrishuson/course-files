@@ -1,0 +1,200 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "4.4"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.297,
+    "answer_box_top_frac_note": "The answer box runs 0.541 to 0.916. The crop is set higher, just above the '(a)' line at 0.306, so short answers written beside the parts list are captured as well as the box. The data table ends at about 0.292 and the nickname box sits near 0.07; both stay outside the crop.",
+    "source": "Original (freshly authored 2026-10-07, AA SL 4.4, calculator allowed). Maximum temperature x (degrees C): 18, 20, 21, 23, 25, 28, 30, 32; gelati sold y: 150, 158, 181, 185, 214, 226, 262, 258. n = 8, xbar = 24.625, ybar = 204.25, r = 0.98212 (r^2 = 0.9646). y on x: a = 8.37385, b = -1.95593. y(26) = 215.76. y(10) = 81.8 (extrapolation; data range 18 to 32).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find Pearson's product-moment correlation coefficient r for the temperature and gelati data.",
+        "expected": {
+          "answer": "r = 0.98212... = 0.982"
+        },
+        "tolerance": "r correct to at least 3 s.f. (0.982). r^2 = 0.965 is not accepted.",
+        "notes": "A1 for r = 0.982. Quoting r^2 = 0.965 from the regression screen earns A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Describe the correlation between x and y (direction: positive or negative; strength: strong, moderate, weak or none).",
+        "expected": {
+          "strength": "strong",
+          "direction": "positive",
+          "answer": "Strong, positive (linear) correlation"
+        },
+        "tolerance": "Accept 'very strong' for the strength.",
+        "notes": "A1 for the strength 'strong' (or 'very strong'). A1 for the direction 'positive'. The two marks are independent. 'Moderate' or 'weak' earns A0 for the strength, since |r| = 0.982 is well above 0.8.",
+        "follow_through": "Award each A1 for a strength and direction consistent with the student's own r in part (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down the equation of the regression line of y on x, in the form y = ax + b.",
+        "expected": {
+          "a": "8.3738... = 8.37",
+          "b": "-1.9559... = -1.96",
+          "answer": "y = 8.37x - 1.96"
+        },
+        "tolerance": "Accept each coefficient correct to at least 3 s.f., or to more figures.",
+        "notes": "A1 for a = 8.37. A1 for b = -1.96. The two marks are independent: 8.37x + 1.96 (sign of b lost) earns A1A0. The x-on-y line x = 0.115y + 1.10 earns A0A0."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Interpret the meaning of the value of a in this context.",
+        "expected": {
+          "answer": "For each increase of 1 degree C in maximum temperature, about 8.37 more gelati are sold."
+        },
+        "tolerance": "Accept 'about 8' or 'about 8.4' gelati per degree, in any wording that gives the rate per degree in context.",
+        "notes": "A1 for a rate of increase in gelati sold per 1 degree C, in context. A statement that sales rise as temperature rises, with no rate, restates the correlation and earns A0.",
+        "follow_through": "Award A1 for an interpretation using the student's own gradient from part (c)."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Use the regression line to estimate the number of gelati sold on a day when the maximum temperature is 26 degrees C.",
+        "expected": {
+          "method": "y = 8.37(26) - 1.96",
+          "answer": "215.76... = 216 gelati"
+        },
+        "tolerance": "Accept any value consistent with the student's own correctly-rounded coefficients, including 215.76... (full precision) and 215.66 (from 8.37 and -1.96), and either rounded to 216. Award full marks when the method is correct and the value follows from the student's own earlier rounding; note precision separately rather than withholding the accuracy mark.",
+        "notes": "(M1) for substituting x = 26 into a y-on-x line; implied by a correct answer. A1 for 216 (or an unrounded value in the accepted range). If the coefficients were rounded before substituting, add the feedback note: store the coefficients in the GDC and round only the final answer (student_error = premature_rounding).",
+        "follow_through": "Uses the line from part (c); award M1A1 for substituting x = 26 into the student's own line correctly."
+      },
+      {
+        "label": "f",
+        "marks": 1,
+        "mark_codes": [
+          "R1"
+        ],
+        "description": "Explain why the regression line should not be used to estimate the number of gelati sold on a day in January when the maximum temperature is 10 degrees C.",
+        "expected": {
+          "answer": "10 degrees C is outside the range of the recorded temperatures (18 to 32), so the estimate would be an extrapolation and is not reliable."
+        },
+        "tolerance": "Accept 'extrapolation' with a reference to the data, or 'below the lowest temperature recorded'.",
+        "notes": "R1 for a reason that refers to 10 lying outside the range of the data. 'The correlation might not hold in winter' with no reference to the data range earns R0. Computing y = 81.8 is not required and earns nothing on its own."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "4.4",
+      "4.10"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.225,
+    "answer_box_top_frac_note": "Page 2 is an even page: the answer box runs 0.400 to 0.893 and the crop is set just above the '(a)' line at 0.232 so that working written beside the parts list is captured. The data table ends at about 0.219 and the even-page nickname box sits near 0.07; both stay outside the crop.",
+    "source": "Original (freshly authored 2026-10-07, AA SL 4.4 and 4.10, calculator allowed). Phone time x (hours/day): 1.5, 2, 2.5, 3, 4, 4.5, 5.5, 6; sleep y (hours/night): 8.2, 8.7, 7.6, 8.1, 7.0, 7.8, 6.6, 7.1. n = 8, mean point (xbar, ybar) = (3.625, 7.6375) (sums 29 and 61.1), r = -0.8029. y on x: a = -0.343709, b = 8.883444. x on y: x = -1.875678y + 17.950488. x(7.0) on the x-on-y line = 4.8207. Wrong line (solve y on x for y = 7.0): x = 5.4798. Rearranging the y-on-x line gives x = -2.909y + 25.85 (not the x-on-y line).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find the equation of the regression line of y (sleep) on x (phone time), in the form y = ax + b.",
+        "expected": {
+          "a": "-0.34370... = -0.344",
+          "b": "8.8834... = 8.88",
+          "answer": "y = -0.344x + 8.88"
+        },
+        "tolerance": "Accept each coefficient correct to at least 3 s.f., or to more figures.",
+        "notes": "A1 for a = -0.344 (the negative sign is required). A1 for b = 8.88. The two marks are independent."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Interpret the meaning of the value of b in this context.",
+        "expected": {
+          "answer": "A student who spends no time on their phone is predicted to sleep about 8.88 hours a night."
+        },
+        "tolerance": "Accept 'about 8.9 hours'. A remark that x = 0 lies outside the data, so the value is an extrapolation, may accompany the interpretation.",
+        "notes": "A1 for an interpretation that refers to zero phone time (x = 0) and sleep in hours. 'The y-intercept is 8.88' with no context earns A0.",
+        "follow_through": "Award A1 for an interpretation using the student's own b from part (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find the coordinates of the mean point (xbar, ybar) of the phone-time and sleep data.",
+        "expected": {
+          "xbar": 3.625,
+          "ybar": 7.6375,
+          "answer": "(3.625, 7.6375)"
+        },
+        "tolerance": "Each coordinate exact or correct to 3 s.f. (3.63, 7.64). Accept the fractions 29/8 and 61.1/8.",
+        "notes": "A1 for xbar = 3.625. A1 for ybar = 7.6375. The two marks are independent."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "topic_codes": [
+          "4.10"
+        ],
+        "description": "Find the equation of the regression line of x on y.",
+        "expected": {
+          "gradient": "-1.8756... = -1.88",
+          "intercept": "17.950... = 18.0",
+          "answer": "x = -1.88y + 18.0"
+        },
+        "tolerance": "Accept each coefficient correct to at least 3 s.f., or to more figures (e.g. 17.95).",
+        "notes": "A1 for the gradient -1.88. A1 for the intercept 18.0. The two marks are independent. Rearranging the y-on-x line to make x the subject (x = -2.91y + 25.8) is not the regression line of x on y and earns A0A0."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "topic_codes": [
+          "4.10"
+        ],
+        "description": "Lucia sleeps 7.0 hours a night. Use the appropriate regression line to estimate her daily phone time.",
+        "expected": {
+          "method": "x = -1.88(7.0) + 18.0",
+          "answer": "4.8207... = 4.82 hours"
+        },
+        "tolerance": "Accept any value consistent with the student's own correctly-rounded coefficients, including 4.8207... (full precision), 4.79 (from -1.88 and 17.95) and 4.84 (from -1.88 and 18.0). Award full marks when the method is correct and the value follows from the student's own earlier rounding; note precision separately rather than withholding the accuracy mark.",
+        "notes": "M1 for substituting y = 7.0 into a regression line of x on y (estimating x from a given y). A1 for 4.82 (or a value in the accepted range). Substituting into the y-on-x line and solving (7.0 = -0.344x + 8.88, giving x = 5.48) is the wrong line and earns M0A0. If the coefficients were rounded before substituting, add the feedback note: store the coefficients in the GDC and round only the final answer (student_error = premature_rounding).",
+        "follow_through": "Uses the line from part (d); award M1A1 for substituting y = 7.0 correctly into the student's own x-on-y line."
+      }
+    ]
+  }
+]
