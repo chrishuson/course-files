@@ -1,0 +1,88 @@
+% context: markscheme (official solutions) for 1-9CW_Rate-problems
+% topic: rate problems — rate x time = quantity (and its rearrangements),
+%        followed by a unit conversion
+% convention: "=" joins exact equalities; "\approx" introduces a rounded value;
+%        Step 1 is the rate relationship, Step 2 converts its result, carrying the
+%        unrounded Step 1 value; metric conversions are done in the head
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+\setlength{\parskip}{0.3\baselineskip}
+\sisetup{reset-text-series=false, reset-math-version=false, text-series-to-math=true} % \num inherits bold
+
+\title{Physics}
+\author{Chris Huson}
+\date{October 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 9 October 2026}
+
+\begin{document}
+
+\subsubsection*{1.9 Rate Problems Solutions}
+
+\emph{Notation: \,$=$\, joins values that are exactly equal; \,$\approx$\, introduces a
+rounded value. Step 1 applies the rate relationship, rate $\times$ time $=$ quantity or
+a rearrangement. Step 2 converts that result to the units asked for, carrying the
+unrounded Step 1 value. Convert a unit first when that makes Step 1 simpler; metric
+changes (m to km, cm to m) are done in the head.}
+
+\begin{enumerate}[itemsep=0.4cm]
+
+\item Sunlight. \quad $r \cdot t = d$, so $t = \dfrac{d}{r}$.
+
+  The distance is in km, so first write the speed in km/s:
+  \mbox{$3.00 \times 10^{8}$ m/s $= 3.00 \times 10^{5}$ km/s.}
+
+  Step 1: \quad $t = \dfrac{1.496 \times 10^{8}~\text{km}}{3.00 \times 10^{5}~\text{km/s}}
+  = 498.666\ldots~\text{s}$
+
+  Step 2: \quad $498.666\ldots~\text{s} \times \dfrac{1~\text{min}}{60~\text{s}}
+  = 8.3111\ldots \approx \mathbf{8.31~\textbf{min}}$
+
+  \emph{Three significant figures, set by the $3.00 \times 10^{8}$ m/s. Rounding Step 1
+  to 499 s first gives 8.32 min, not 8.31: rounding too early changes the answer.
+  The light we see left the Sun about eight minutes ago.}
+
+\item Hair. \quad $t = 15 - 9 = 6$ yr.
+
+  Step 1: \quad $d = r \cdot t = 15~\dfrac{\text{cm}}{\text{yr}} \times 6~\text{yr}
+  = 90~\text{cm}$
+
+  Step 2: \quad $90~\text{cm} = \mathbf{0.90~\textbf{m}}$
+
+  \emph{Two significant figures, set by ``about 15 cm''; the 6 years is a count and does
+  not limit the answer. Keep the trailing zero: 0.9 m has only one significant figure.}
+
+\newpage
+
+\item Pasta pot.
+
+  The rate is per minute, so first write the time in minutes:
+  $45~\text{s} \times \dfrac{1~\text{min}}{60~\text{s}} = 0.75~\text{min}$.
+
+  Step 1: \quad quantity $= r \cdot t = 2.2~\dfrac{\text{gal}}{\text{min}} \times
+  0.75~\text{min} = 1.65~\text{gal}$
+
+  Step 2: \quad $1.65~\text{gal} \times \dfrac{3.785~\text{L}}{1~\text{gal}}
+  = 6.24525~\text{L} \approx \mathbf{6.2~\textbf{L}}$
+
+  \emph{Two significant figures: both 2.2 gal/min and 45 s have two. Accept a solution
+  that converts the rate to gal/s instead (2.2 gal/min $= 0.0366\ldots$ gal/s); the
+  answer is the same.}
+
+\item Usain Bolt. \quad $r = \dfrac{d}{t}$.
+
+  Step 1: \quad $r = \dfrac{100~\text{m}}{9.58~\text{s}} = 10.438\ldots~\text{m/s}$
+
+  Step 2: \quad $10.438\ldots~\dfrac{\text{m}}{\text{s}} \times
+  \dfrac{1~\text{km}}{1000~\text{m}} \times \dfrac{3600~\text{s}}{1~\text{h}}
+  = 37.578\ldots \approx \mathbf{37.6~\textbf{km/h}}$
+
+  \emph{Three significant figures, set by the 9.58 s; the 100 m is the exact race
+  distance. This is his average speed --- he starts from rest, and his top speed
+  during the race was near 12.3 m/s, about 44 km/h.}
+
+\end{enumerate}
+\end{document}

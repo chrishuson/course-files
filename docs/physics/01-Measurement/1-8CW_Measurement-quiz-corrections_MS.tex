@@ -1,0 +1,115 @@
+% context: markscheme (official solutions) for 1-8CW_Measurement-quiz-corrections
+% topic: significant figures, rounding, scientific notation, reading a ruler,
+%        unit conversion; a parallel version of 1-7Q_Measurement pages 1-2
+% convention: "=" joins exact equalities; "\approx" introduces a rounded value;
+%        long decimals use \num{} so the digits are grouped in threes
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+\setlength{\parskip}{0.3\baselineskip}
+\sisetup{reset-text-series=false, reset-math-version=false, text-series-to-math=true} % \num inherits bold
+
+\title{Physics}
+\author{Chris Huson}
+\date{October 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 8 October 2026}
+
+\begin{document}
+
+\subsubsection*{1.8 Quiz Corrections Solutions: Measurement}
+
+\emph{Notation: \,$=$\, joins values that are exactly equal; \,$\approx$\, introduces a
+rounded value. Each conversion runs as one chain of unit factors and is evaluated once.}
+
+\begin{enumerate}[itemsep=0.25cm]
+
+\item Significant digits.
+  \begin{multicols}{3}
+    \begin{enumerate}[itemsep=0.1cm]
+      \item \textbf{3}
+      \item \textbf{3}
+      \item \textbf{2}
+      \item \textbf{4}
+      \item \textbf{1}
+      \item \textbf{3}
+    \end{enumerate}
+  \end{multicols}
+  \emph{(a) Leading zeros do not count; the trailing zero after the decimal point does.
+  (b) A zero between nonzero digits always counts. (d) Both zeros count: one sits
+  between nonzero digits, the other trails after the decimal point. (e) \num{0.00003}
+  has a single measured digit, the 3. (f) In scientific notation, count the digits of
+  the 1.67; the power of ten only places the decimal point.}
+
+\item Round to three significant figures.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $\sqrt{7} = 2.6457513\ldots \approx \mathbf{2.65}$
+    \item $4805.59~\text{m} \approx \mathbf{4810~\textbf{m}}$, better written
+      $\mathbf{4.81 \times 10^{3}~\textbf{m}}$
+
+      \emph{The third figure is the 0 in the tens place; the 5 after it rounds it up
+      to 1. Written as 4810 m the final zero is only a placeholder, which is why
+      scientific notation is the clearer answer.}
+  \end{enumerate}
+
+\item Scientific notation.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $149{,}597{,}871~\text{km} = 1.49597871 \times 10^{8}~\text{km}
+      \approx \mathbf{1.50 \times 10^{8}~\textbf{km}}$
+
+      \emph{The third figure, 9, rounds up and carries: 1.495\ldots\ becomes 1.50.
+      Write 1.50, not 1.5 --- the trailing zero is the third significant figure.}
+    \item \num{0.0000000000529177}~m $= 5.29177 \times 10^{-11}$~m
+      $\approx \mathbf{5.29 \times 10^{-11}~\textbf{m}}$
+
+      \emph{Three groups of three zeros, then one more zero before the 5: ten zeros, so
+      the 5 is in the 11th decimal place and the exponent is $-11$.}
+  \end{enumerate}
+
+\item Ordinary decimal numbers.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $1.0 \times 10^{-4}~\text{m} = $ \textbf{\num{0.00010}~m}
+
+      \emph{Keep the trailing zero: $1.0$ has two significant figures and so must the
+      decimal form. 0.0001 m loses one.}
+    \item $3.84 \times 10^{5}~\text{km} = \mathbf{384{,}000~\textbf{km}}$
+  \end{enumerate}
+
+\newpage
+
+\item Reading the ruler. The bar ends between the 6.7 and 6.8 cm marks, a little short
+  of halfway.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $\mathbf{6.74~\textbf{cm}}$ --- the 6.7 is certain and the final 4 is the
+      estimated digit. \emph{Accept 6.73 to 6.75.}
+    \item \textbf{Three significant figures.}
+    \item $6.74~\text{cm} \times \dfrac{10~\text{mm}}{1~\text{cm}}
+      = \mathbf{67.4~\textbf{mm}}$
+  \end{enumerate}
+
+\item Convert.
+  \begin{enumerate}[itemsep=0.15cm]
+    \item $828~\text{m} \times \dfrac{3.28~\text{ft}}{1~\text{m}} = 2715.84~\text{ft}
+      \approx \mathbf{2720~\textbf{ft}}$, or $\mathbf{2.72 \times 10^{3}~\textbf{ft}}$
+
+      \emph{The published height is 2717 ft, so this checks.}
+    \item $300~\dfrac{\text{km}}{\text{h}} \times \dfrac{1000~\text{m}}{1~\text{km}}
+      \times \dfrac{1~\text{h}}{3600~\text{s}} = 83.333\ldots
+      \approx \mathbf{83.3~\textbf{m/s}}$
+  \end{enumerate}
+
+\item Skydiver.
+
+  $55~\dfrac{\text{m}}{\text{s}} \times \dfrac{3.28~\text{ft}}{1~\text{m}}
+  \times \dfrac{1~\text{mi}}{5280~\text{ft}} \times \dfrac{3600~\text{s}}{1~\text{h}}
+  = 123~\text{mi/h} \approx \mathbf{1.2 \times 10^{2}~\textbf{mi/h}}$
+
+  \emph{Two significant figures, set by ``about 55 m/s''. Written as 120 mi/h the zero
+  is only a placeholder, so scientific notation states the precision honestly. Accept
+  123 mi/h for full credit on the conversion; the sig-fig point is the one the quiz
+  corrections are meant to practise.}
+
+\end{enumerate}
+\end{document}
