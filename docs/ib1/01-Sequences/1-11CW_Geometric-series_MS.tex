@@ -1,0 +1,144 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{eurosym}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 13 October 2026}
+
+\begin{document}
+\subsubsection*{1.11 Classwork: Geometric Series --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: S_5 by adding, S_5 by formula, S_10, n from S_n [7 marks] ---
+\item[1.] [Maximum mark: 7]
+
+The series $2 + 6 + 18 + 54 + \cdots$, so $u_{1} = 2$ and $r = 3$.
+
+\medskip
+
+\textbf{(a)} $S_{5} = 2 + 6 + 18 + 54 + 162 = 242$ \hfill \textbf{A1}
+
+\emph{Accept $242$ obtained by any method, including the sum formula.}
+
+\emph{The sum of only four terms, $2 + 6 + 18 + 54 = 80$, earns no mark.
+A fifth term from adding (e.g.\ $54 + 36 = 90$) in place of multiplying by
+$3$ earns no mark.}
+
+\medskip
+
+\textbf{(b)} $S_{5} = \dfrac{2\left(3^{5} - 1\right)}{3 - 1}$ \hfill \textbf{M1}
+
+$S_{5} = \dfrac{2(242)}{2} = 242$ \hfill \textbf{A1}
+
+\emph{Accept substitution into the second formula,
+$S_{5} = \dfrac{2\left(1 - 3^{5}\right)}{1 - 3} = \dfrac{-484}{-2} = 242$.}
+
+\emph{M1 is for substituting $u_{1} = 2$, $r = 3$ and $n = 5$ into a sum
+formula, however the arithmetic is then arranged. The question asks for
+the substituted values, so $242$ with no substitution shown earns the A1
+only.}
+
+\emph{An exponent of $4$ in place of $5$, giving $80$, earns the M1 only.}
+
+\medskip
+
+\textbf{(c)} $S_{10} = \dfrac{2\left(3^{10} - 1\right)}{3 - 1}$ \hfill \textbf{M1}
+
+$S_{10} = 59\,048$ \hfill \textbf{A1}
+
+\emph{An exponent of $9$, giving $19\,682$, earns the M1 only.
+$u_{10} = 2 \times 3^{9} = 39\,366$ (a term, not a sum) earns no marks.}
+
+\emph{Accept $59\,048$ from a GDC sum of the first $10$ terms for full
+marks. Feedback: write out the formula substitution so the method is
+visible.}
+
+\medskip
+
+\textbf{(d)} $\dfrac{2\left(3^{n} - 1\right)}{3 - 1} = 177\,146$ \hfill \textbf{M1}
+
+$3^{n} - 1 = 177\,146 \ \Rightarrow \ 3^{n} = 177\,147$
+
+$n = 11$ \hfill \textbf{A1}
+
+\emph{Accept solving the equation on the GDC, with logarithms, or by a
+table of sums ($S_{10} = 59\,048$, $S_{11} = 177\,146$). Accept trial of
+powers of $3$ ($3^{11} = 177\,147$).}
+
+\emph{M1 is for an equation setting a sum expression in $n$ equal to
+$177\,146$, or for a table of sums reaching $177\,146$. Setting a term
+expression equal to $177\,146$ ($2 \times 3^{\,n-1} = 177\,146$) earns no
+marks.}
+
+\newpage
+
+%--- Problem 2: Starting salaries rising 6% per year (NYC $70 000, Italy 30 000 euros); 3rd-year salary, 3-year total, first total over 1 000 000 for each [8 marks] ---
+\item[2.] [Maximum mark: 8]
+
+Luca: $u_{1} = 70\,000$ dollars; Sofia: $u_{1} = 30\,000$ euros; both
+$r = 1.06$.
+
+\medskip
+
+\textbf{(a)} $u_{3} = 70\,000(1.06)^{2}$ \hfill \textbf{M1}
+
+$=$ \$$78\,652$ \hfill \textbf{A1}
+
+\emph{Accept $78\,700$ (3 s.f.). Accept repeated multiplication:
+$70\,000 \times 1.06 = 74\,200$, then $74\,200 \times 1.06 = 78\,652$.}
+
+\emph{An exponent of $3$ (giving \$$83\,371.12$) earns the M1 only. A
+multiplier of $0.06$ or $6$ earns no marks.}
+
+\medskip
+
+\textbf{(b)} $S_{3} = \dfrac{70\,000\left(1.06^{3} - 1\right)}{1.06 - 1}$ \hfill \textbf{M1}
+
+$=$ \$$222\,852$ \hfill \textbf{A1}
+
+\emph{Accept adding the three salaries,
+$70\,000 + 74\,200 + 78\,652 = 222\,852$, for full marks. Accept $223\,000$
+(3 s.f.).}
+
+\emph{FT: award M1A1 for the sum of the first three salaries using the
+candidate's own third-year salary from (a). Three times the first salary
+(\$$210\,000$) or the third-year salary alone earns no marks.}
+
+\medskip
+
+\textbf{(c)} $\dfrac{70\,000\left(1.06^{n} - 1\right)}{1.06 - 1} > 1\,000\,000$ \hfill \textbf{M1}
+
+After $10$ years: \$$922\,655.65$ \ ($< 1\,000\,000$); \quad after $11$
+years: \$$1\,048\,014.98$ \ ($> 1\,000\,000$)
+
+$11$ years \hfill \textbf{A1}
+
+\emph{Accept solving the inequality (or the equation) on the GDC or with
+logarithms: $1.06^{n} > \frac{13}{7}$, $n > 10.6\ldots$, so $11$ years.}
+
+\emph{Accept a table search: full marks for showing both adjacent rows
+($n = 10$ and $n = 11$) and stating $11$. A single row still earns full
+marks, with the feedback note that the adjacent row $n = 10$ is what
+justifies ``first''. See markscheme-spec §18.}
+
+\emph{$10.6$ is not an acceptable final answer --- the answer must be a
+whole number of years. Rounding down to $10$ earns the M1 only. Using the
+yearly salary $70\,000(1.06)^{\,n-1}$ in place of the total earns no marks.}
+
+\medskip
+
+\textbf{(d)} $\dfrac{30\,000\left(1.06^{n} - 1\right)}{1.06 - 1} > 1\,000\,000$ \hfill \textbf{M1}
+
+After $18$ years: \euro$927\,169.58$ \ ($< 1\,000\,000$); \quad after $19$
+years: \euro$1\,012\,799.75$ \ ($> 1\,000\,000$)
+
+$19$ years \hfill \textbf{A1}
+
+\emph{Accept the GDC, logarithms ($1.06^{n} > 3$, $n > 18.9$, so $19$ years)
+or a table search, on the same terms as (c). Rounding down to $18$ earns the
+M1 only.}
+
+\end{enumerate}
+\end{document}

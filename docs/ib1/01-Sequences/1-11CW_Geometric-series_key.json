@@ -1,0 +1,144 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "1.3"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.454,
+    "source": "Original (freshly authored, calculator allowed). Introduction to geometric series: 2 + 6 + 18 + 54 + ...; S_5 by adding, S_5 by the sum formula, S_10, and n from S_n = 177146.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "For the geometric series 2 + 6 + 18 + 54 + ..., find S_5, the sum of the first five terms, by writing out the five terms and adding them.",
+        "expected": {
+          "answer": "S_5 = 2 + 6 + 18 + 54 + 162 = 242"
+        },
+        "tolerance": "Accept 242 obtained by any method, including the sum formula.",
+        "notes": "A1 for 242. The sum of only four terms (2 + 6 + 18 + 54 = 80) earns no mark. A fifth term obtained by adding (e.g. 54 + 36 = 90) instead of multiplying by 3 earns no mark."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Use S_n = u_1(r^n - 1)/(r - 1) to find S_5, showing the values substituted.",
+        "expected": {
+          "answer": "S_5 = 2(3^5 - 1)/(3 - 1) = 242"
+        },
+        "tolerance": "Accept substitution into the equivalent formula S_n = u_1(1 - r^n)/(1 - r), i.e. 2(1 - 3^5)/(1 - 3) = 242.",
+        "notes": "M1 for substituting u_1 = 2, r = 3 and n = 5 into a geometric sum formula, however the arithmetic is then arranged. A1 for 242. The question asks for the substituted values, so 242 with no substitution shown earns the A1 only. An exponent of 4 in place of 5 (giving 80) earns the M1 only."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find S_10, the sum of the first ten terms.",
+        "expected": {
+          "answer": "S_10 = 2(3^10 - 1)/(3 - 1) = 59048"
+        },
+        "tolerance": "Accept 59048 from any correct method, including a GDC sum of the first 10 terms.",
+        "notes": "M1 for substituting u_1 = 2, r = 3 and n = 10 into a geometric sum formula (or a GDC sum of ten terms). A1 for 59048. An exponent of 9 (giving 19682) earns the M1 only. The tenth term u_10 = 2 * 3^9 = 39366 (a term, not a sum) earns no marks. A GDC sum with no substitution shown earns full marks, with the feedback note to write out the formula substitution so the method is visible."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "The sum of the first n terms is 177146. Find n.",
+        "expected": {
+          "answer": "11",
+          "S_10": 59048,
+          "S_11": 177146
+        },
+        "tolerance": "Accept any valid method: solving 2(3^n - 1)/(3 - 1) = 177146 on the GDC or with logarithms, a table of sums reaching 177146, or trial of powers of 3 (3^11 = 177147).",
+        "notes": "M1 for an equation setting a sum expression in n equal to 177146, or for a table/list of sums reaching 177146. A1 for n = 11. Setting a term expression equal to 177146 (2 * 3^(n-1) = 177146) earns no marks."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "1.3",
+      "1.4"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.386,
+    "source": "Original (freshly authored, calculator allowed). Luca (New York City) starting annual salary $70 000; Sofia (Italy) starting annual salary 30 000 euros; both rise 6% per year. Salaries are published averages for college graduates (NYC about $68 500, ZipRecruiter 2026; Italy about 32 000 euros gross, Mercer 2025) rounded to the nearest 5000.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Luca starts with an annual salary of $70 000, increasing by 6% every year. Find Luca's annual salary in his third year.",
+        "expected": {
+          "answer": "$78652",
+          "exact": "70000 * 1.06^2 = 78652"
+        },
+        "tolerance": "Accept 78700 (3 s.f.) or 78652 by any method, including repeated multiplication (70000 x 1.06 = 74200, 74200 x 1.06 = 78652).",
+        "notes": "M1 for 70000 multiplied by 1.06 twice (exponent 2), however written. A1 for 78652. An exponent of 3 (giving $83371.12) earns the M1 only. A multiplier of 0.06 or 6 earns no marks."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the total amount Luca earns in his first three years.",
+        "expected": {
+          "answer": "$222852"
+        },
+        "tolerance": "Accept 223000 (3 s.f.). Accept adding the three salaries 70000 + 74200 + 78652 = 222852 for full marks.",
+        "notes": "M1 for substituting u_1 = 70000, r = 1.06 and n = 3 into a geometric sum formula, or for adding three yearly salaries. A1 for 222852. Three times the first salary ($210000), or the third-year salary alone, earns no marks.",
+        "follow_through": "Award M1A1 for the sum of the first three salaries using the candidate's own third-year salary from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the number of complete years Luca must work for his total earnings to first exceed $1 000 000.",
+        "expected": {
+          "answer": "11",
+          "total_after_10_years": 922655.65,
+          "total_after_11_years": 1048014.98
+        },
+        "tolerance": "Accept any valid method: the inequality (or equation) 70000(1.06^n - 1)/(1.06 - 1) > 1000000 solved on the GDC or with logarithms (1.06^n > 13/7, n > 10.6..., so 11), or a table search. For a table search, full marks for the adjacent rows (10 years: $922655.65; 11 years: $1048014.98) with 11 stated; a single row also earns full marks.",
+        "notes": "M1 for setting up the inequality (or equation) with a geometric sum expression in n and 1000000, or for a table/list of running totals reaching past 1000000. A1 for 11 years. A non-integer final answer (10.6...) earns the M1 only; rounding down to 10 earns the M1 only. Using the yearly salary 70000 * 1.06^(n-1) in place of the total earns no marks. On a single-row table search, attach the feedback note that the adjacent row n = 10 is what justifies 'first' (markscheme-spec section 18)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Sofia starts with an annual salary of 30 000 euros, increasing by 6% every year. Find the number of complete years Sofia must work for her total earnings to first exceed 1 000 000 euros.",
+        "expected": {
+          "answer": "19",
+          "total_after_18_years": 927169.58,
+          "total_after_19_years": 1012799.75
+        },
+        "tolerance": "Accept any valid method, on the same terms as (c): GDC or logarithms (1.06^n > 3, n > 18.85..., so 19), or a table search with adjacent rows (18 years: 927169.58 euros; 19 years: 1012799.75 euros); a single row also earns full marks.",
+        "notes": "M1 for setting up the inequality (or equation) with 30000, the 1.06 multiplier in a geometric sum expression, and 1000000, or for a table/list of running totals reaching past 1000000. A1 for 19 years. A non-integer final answer (18.85...) or rounding down to 18 earns the M1 only. Using the yearly salary in place of the total earns no marks. On a single-row table search, attach the feedback note that the adjacent row n = 18 justifies 'first'."
+      }
+    ]
+  }
+]

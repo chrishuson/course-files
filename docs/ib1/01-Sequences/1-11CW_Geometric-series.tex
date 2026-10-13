@@ -1,0 +1,69 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{eurosym}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 13 October 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyhead[LE]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{1.11 Classwork: Geometric Series}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: S_5 by adding, S_5 by formula, S_10, n from S_n [7 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.3) ---
+\item[1.]
+
+The sum of the first $n$ terms of a geometric sequence is
+$$S_{n} = \frac{u_{1}\left(r^{n} - 1\right)}{r - 1}
+\qquad \text{or} \qquad
+S_{n} = \frac{u_{1}\left(1 - r^{n}\right)}{1 - r},
+\qquad r \neq 1.$$
+
+Consider the geometric series
+$$2 + 6 + 18 + 54 + \cdots$$
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find $S_{5}$, the sum of the first five terms, by writing out
+  the five terms and adding them.
+  \item Use the first formula above to find $S_{5}$. Show the values
+  you substitute.
+  \item Find $S_{10}$, the sum of the first ten terms.
+  \item The sum of the first $n$ terms is $177\,146$. Find $n$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.4);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Starting salaries rising 6% per year (NYC $70 000, Italy 30 000 euros); 3rd-year salary, 3-year total, first total over 1 000 000 for each [8 marks] ---
+%--- Source: Original (freshly authored, AA SL 1.3, 1.4). Salaries rounded to the nearest 5000 from published averages, Oct 2026: NYC recent graduates about $68 500 (ZipRecruiter); Italy first-job gross salary about 32 000 euros (Mercer 2025) ---
+\item[2.]
+
+Two college graduates, Luca and Sofia, start their first jobs. Their
+starting annual salaries are close to the average for college graduates
+where they live. Luca works in New York City with a starting annual salary
+of \$$70\,000$. Sofia works in Italy with a starting annual salary of
+\euro$30\,000$. Each of their annual salaries increases by $6\%$ every year.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find Luca's annual salary in his third year.
+  \item Find the total amount Luca earns in his first three years.
+  \item Find the number of complete years Luca must work for his total
+  earnings to first exceed \$$1\,000\,000$.
+  \item Find the number of complete years Sofia must work for her total
+  earnings to first exceed \euro$1\,000\,000$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,15.4);
+  \foreach \y in {1,2,...,15} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

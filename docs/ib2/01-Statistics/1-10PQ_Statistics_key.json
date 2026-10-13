@@ -1,0 +1,356 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "4.1",
+      "4.2",
+      "4.3"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.325,
+    "answer_box_top_frac_note": "The answer box runs 0.551 to the bottom margin. The crop is set just above the '(a)' line at 0.334 so working written beside the parts list is captured (the lesson from 1-2CW_Histograms). The nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored, calculator allowed). Grouped frequency table of hours of exercise for 60 students: classes 0-2, 2-4, 4-6, 6-8, 8-10 with frequencies 6, 14, 20, 12, 8; stratified sample of 60 from 480 with 112 in Grade 12.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "State whether the data (hours spent exercising, grouped 0 <= h < 2, ..., 8 <= h < 10) are discrete or continuous.",
+        "expected": {
+          "answer": "continuous"
+        },
+        "tolerance": "A reason is not required; accept 'time can take any value in an interval'.",
+        "notes": "A1 for continuous. 'Discrete' earns A0."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the modal class.",
+        "expected": {
+          "answer": "4 <= h < 6"
+        },
+        "tolerance": "Accept '4 to 6 hours'.",
+        "notes": "A1 for the class 4 <= h < 6. The frequency 20 alone, or the mid-interval value 5 alone, earns A0."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find an estimate of the mean number of hours.",
+        "expected": {
+          "answer": "5.07",
+          "exact": "304/60 = 5.0666..."
+        },
+        "tolerance": "Accept 5.067, 5.0666... or 76/15.",
+        "notes": "M1 for using the mid-interval values 1, 3, 5, 7, 9 with the frequencies (shown as a sum, as GDC lists, or implied by the correct answer). A1 for 5.07. Using lower class boundaries (4.07) or upper class boundaries (6.07) earns M0A0. The mean of the frequencies (12) earns no marks."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": [
+          "R1"
+        ],
+        "description": "Explain why the answer to part (c) is an estimate.",
+        "expected": {
+          "answer": "The actual values are not known; mid-interval values were used in place of each student's actual hours."
+        },
+        "tolerance": "Accept either idea: only the classes (not the raw data) are given, or mid-interval values stand in for the actual values.",
+        "notes": "R1 for a reason referring to unknown actual values or to the use of mid-interval values. 'Because it is rounded' earns R0."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find an estimate of the standard deviation.",
+        "expected": {
+          "answer": "2.34",
+          "exact": "2.3371..."
+        },
+        "tolerance": "Accept 2.337 or 2.3371...",
+        "notes": "A1 for sigma = 2.34 (population standard deviation from the GDC with the frequency list). The sample standard deviation s_x = 2.36 (2.3568...) earns A0."
+      },
+      {
+        "label": "f",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "The 60 students are a stratified sample, by grade, of the 480 students in the school. There are 112 students in Grade 12. Find the number of Grade 12 students in the sample.",
+        "expected": {
+          "answer": "14"
+        },
+        "tolerance": "Accept any correct proportional working, e.g. 60/480 = 1/8 then 112/8.",
+        "notes": "M1 for the Grade 12 proportion of the school (112/480) applied to 60, or the sampling fraction 60/480 applied to 112, however written. A1 for 14."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "4.2"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.21,
+    "answer_box_top_frac_note": "Even page: the answer box runs 0.353 to the bottom margin, with the printed box-plot scale inside its lower part. The crop is set just above the '(a)' line at 0.217 so working written beside the parts list is captured. The even-page nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored, calculator allowed). Fifteen 5 km race times: 24, 27, 22, 31, 25, 29, 26, 23, 28, 30, 21, 26, 25, 44, 27; five-number summary, IQR, outlier test for 44, box-and-whisker plot on a printed scale 15-51 minutes.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down the median, the lower quartile Q1 and the upper quartile Q3 of the fifteen race times.",
+        "expected": {
+          "answer": "median 26, Q1 24, Q3 29"
+        },
+        "tolerance": "Accept Q1 = 24.5 and Q3 = 28.5 from a hand method that includes the median in each half, with the feedback note that the GDC convention is the one to use.",
+        "notes": "A1 for median 26. A1 for both quartiles Q1 = 24 and Q3 = 29 (both needed for the second mark)."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find the interquartile range.",
+        "expected": {
+          "answer": "5"
+        },
+        "tolerance": "None beyond follow-through.",
+        "notes": "A1 for 5. The range (44 - 21 = 23) earns no mark.",
+        "follow_through": "Award A1 for Q3 - Q1 from the candidate's own quartiles in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "R1"
+        ],
+        "description": "Show that 44 is an outlier.",
+        "expected": {
+          "answer": "Q3 + 1.5 x IQR = 29 + 7.5 = 36.5; 44 > 36.5 so 44 is an outlier"
+        },
+        "tolerance": "Show that (answer given). The lower fence (16.5) is not required.",
+        "notes": "M1 for 1.5 x their IQR added to their Q3. A1 for 36.5. R1 for the comparison 44 > 36.5 stated, not just the fence value. Adding 1.5 x IQR to the median or the mean earns no marks.",
+        "follow_through": "Award all three marks from the candidate's own Q3 and IQR, provided their fence is below 44."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "On the printed scale, draw a box-and-whisker plot of the race times. Mark the outlier with a cross.",
+        "expected": {
+          "answer": "box from 24 to 29 with median line at 26; whiskers to 21 and 31; cross at 44"
+        },
+        "tolerance": "Plotted values within half a small division (+/- 0.5 minute) are accepted.",
+        "notes": "A1 for the box from Q1 = 24 to Q3 = 29 with the median line at 26. A1 for whiskers to 21 and 31. A1 for 44 marked with a cross. Each mark is independent. A whisker drawn to 44 or to 36.5 loses the second A1.",
+        "follow_through": "Award the first A1 for a box drawn at the candidate's own quartiles from (a)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "4.2"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.2,
+    "answer_box_top_frac_note": "The answer box runs about 0.66 to the bottom margin. The crop is set just above the graph (top of the plot at 0.212), because readings drawn on the graph are working for the M1 marks in (b), (c) and (d). detect_answer_boxes.py picks the graph frame as the box on this sheet, so do not let it overwrite this value.",
+    "answer_box_bottom_frac": 0.213,
+    "source": "Original (freshly authored, calculator allowed). Cumulative frequency graph of puzzle times for 80 students; curve passes through (20, 8), (30, 20), (40, 40), (55, 60), (60, 65), (90, 80). Grouped table 0-20: 8, 20-40: p, 40-60: q, 60-100: 15.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "From the cumulative frequency graph (80 students), write down the median time.",
+        "expected": {
+          "answer": "40 seconds"
+        },
+        "tolerance": "Accept readings within one small square (+/- 2.5 seconds).",
+        "notes": "A1 for 40 (reading at cumulative frequency 40)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the interquartile range.",
+        "expected": {
+          "answer": "25 seconds",
+          "Q1": 30,
+          "Q3": 55
+        },
+        "tolerance": "Accept readings within one small square (+/- 2.5 seconds) and any IQR that follows from the candidate's own quartile readings.",
+        "notes": "M1 for reading the times at cumulative frequencies 20 and 60 (Q1 = 30, Q3 = 55), or for either quartile correct. A1 for 25. Reading at cumulative frequencies 25 and 75 (treating the total as 100) earns M0."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the number of students who took more than 60 seconds.",
+        "expected": {
+          "answer": "15",
+          "cf_at_60": 65
+        },
+        "tolerance": "Accept a cumulative-frequency reading at t = 60 within +/- 1 student (64 to 66) and the answer that follows from it.",
+        "notes": "M1 for reading the cumulative frequency at t = 60 (65) and subtracting from 80. A1 for 15. The reading 65 given as the final answer earns M1A0."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "The 10% of students with the shortest times receive a prize. Find the greatest time a student could take and still receive a prize.",
+        "expected": {
+          "answer": "20 seconds"
+        },
+        "tolerance": "Accept readings within one small square (+/- 2.5 seconds).",
+        "notes": "M1 for 10% of 80 = 8, or for reading the time at cumulative frequency 8. A1 for 20. Reading at cumulative frequency 72 (the slowest 10%, t = 70) earns M1A0."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "The times are grouped in a table: 0 < t <= 20: 8; 20 < t <= 40: p; 40 < t <= 60: q; 60 < t <= 100: 15. Find the values of p and q.",
+        "expected": {
+          "answer": "p = 32, q = 25"
+        },
+        "tolerance": "Accept values consistent with the candidate's own readings of the curve.",
+        "notes": "A1 for p = 32 (40 - 8). A1 for q = 25 (65 - 40, or 80 - 8 - 32 - 15). The two marks are independent.",
+        "follow_through": "Award the A1 for q from the candidate's own p when q is found by subtraction from 80."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "4.4"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.255,
+    "answer_box_top_frac_note": "Even page: the answer box runs 0.478 to the bottom margin. The crop is set just above the '(a)' line at 0.262 so working written beside the parts list is captured. The even-page nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored, calculator allowed). Hours revising x = 2, 3, 5, 6, 8, 9, 11, 12 and test score y = 48, 55, 59, 66, 70, 78, 80, 88; r, regression line of y on x, interpretation, estimate at x = 10, extrapolation at x = 20.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find Pearson's product-moment correlation coefficient, r, for hours revising x and test score y.",
+        "expected": {
+          "answer": "0.988",
+          "exact": "0.98815..."
+        },
+        "tolerance": "Accept 0.98815... or more figures.",
+        "notes": "A1 for 0.988. r^2 = 0.976 earns A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Describe the correlation between x and y.",
+        "expected": {
+          "answer": "strong positive"
+        },
+        "tolerance": "Accept 'very strong'.",
+        "notes": "A1 for strong, A1 for positive; the marks are independent. 'Moderate' or 'weak' earns A0 for strength.",
+        "follow_through": "Award the marks for a description consistent with the candidate's r in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down the regression line of y on x, in the form y = ax + b.",
+        "expected": {
+          "answer": "y = 3.72x + 42.0",
+          "a": 3.71739,
+          "b": 41.9783
+        },
+        "tolerance": "Accept a = 3.7173..., b = 41.978... or 42, or either value to more figures.",
+        "notes": "A1 for a = 3.72, A1 for b = 42.0; the marks are independent. The reversed line x = 0.263y - 10.9 earns A0A0."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Interpret the meaning of the value of a in this context.",
+        "expected": {
+          "answer": "For each extra hour of revision the test score increases by about 3.72 points."
+        },
+        "tolerance": "Accept about 3.7 or 4 points per hour, in context.",
+        "notes": "A1 for the rate per hour stated in context. 'Students who revise more score higher' (no rate) earns A0.",
+        "follow_through": "Award A1 for the interpretation of the candidate's own a from (c)."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Use the regression line to estimate the test score of a student who revised for 10 hours.",
+        "expected": {
+          "answer": "79.2",
+          "exact": "79.152..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded coefficients, including 79.152... (full precision) and 79.2 (from 3.72 and 42.0), and either rounded to 79. Award full marks when the method is correct and the value follows from the candidate's own rounding; note precision separately rather than withholding the accuracy mark.",
+        "notes": "M1 for substituting x = 10 into a regression line of y on x. A1 for 79.2 or an accepted value. If coefficients were rounded before substituting, attach the feedback note to store the coefficients in the GDC (or use f1(10)) and round only at the end (premature_rounding).",
+        "follow_through": "Award M1A1 for substituting x = 10 into the candidate's own line from (c)."
+      },
+      {
+        "label": "f",
+        "marks": 1,
+        "mark_codes": [
+          "R1"
+        ],
+        "description": "Explain why the regression line should not be used to estimate the test score of a student who revised for 20 hours.",
+        "expected": {
+          "answer": "20 hours is outside the range of the data (2 to 12 hours), so the estimate is an extrapolation and not reliable."
+        },
+        "tolerance": "Accept 'extrapolation' with a reference to the data range. The line giving 116 (impossible for a score out of 100) is acceptable as a supporting reason.",
+        "notes": "R1 for stating that 20 lies outside the data range. A reason with no reference to the data (e.g. 'revising too much might not help') earns R0."
+      }
+    ]
+  }
+]

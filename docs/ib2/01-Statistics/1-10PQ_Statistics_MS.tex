@@ -1,0 +1,235 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 13 October 2026}
+
+\begin{document}
+\subsubsection*{1.10 Pre-Quiz: Statistics --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Grouped frequency table; continuous data; modal class; estimated mean and sd; stratified sample [8 marks] ---
+\item[1.] [Maximum mark: 8]
+
+Mid-interval values $1, 3, 5, 7, 9$ with frequencies $6, 14, 20, 12, 8$;
+$n = 60$.
+
+\emph{\textbf{GDC:} enter the mid-interval values in one list and the
+frequencies in a second list, then run \texttt{One-Variable Statistics} with
+the frequency list.}
+
+\textbf{(a)} Continuous \hfill \textbf{A1}
+
+\emph{Time is measured, not counted. Accept a reason such as ``time can
+take any value in an interval''; no reason is required.}
+
+\textbf{(b)} $4 \le h < 6$ \hfill \textbf{A1}
+
+\emph{The class, not its frequency: ``$20$'' alone earns A0. Accept
+``$4$ to $6$ hours''. The mid-interval value $5$ alone earns A0.}
+
+\textbf{(c)} $\bar{x} = \dfrac{6(1) + 14(3) + 20(5) + 12(7) + 8(9)}{60}$
+\hfill \textbf{(M1)}
+
+$= \dfrac{304}{60} = 5.0666\ldots = 5.07$ hours (3 s.f.) \hfill \textbf{A1}
+
+\emph{M1 for using the mid-interval values with the frequencies, shown as a
+sum or as the GDC lists. Accept $5.067$ or $\frac{76}{15}$. Using the lower
+class boundaries ($0, 2, 4, 6, 8$, giving $4.07$) or upper boundaries
+(giving $6.07$) earns M0A0. The mean of the frequencies, $12$, earns no
+marks.}
+
+\textbf{(d)} The exact number of hours for each student is not known; each
+student is taken to be at the mid-interval value of their class.
+\hfill \textbf{R1}
+
+\emph{R1 for either idea: the raw data are not given (only the classes), or
+mid-interval values were used in place of the actual values.}
+
+\textbf{(e)} $\sigma = 2.3371\ldots = 2.34$ hours (3 s.f.) \hfill \textbf{A1}
+
+\emph{Do not accept $s_{x} = 2.3568\ldots$ ($2.36$), the sample standard
+deviation.}
+
+\textbf{(f)} $\dfrac{112}{480} \times 60$ \hfill \textbf{M1}
+
+$= 14$ students \hfill \textbf{A1}
+
+\emph{M1 for the Grade 12 proportion of the school applied to $60$, however
+written (e.g.\ $\frac{60}{480} = \frac{1}{8}$, then $\frac{112}{8}$).}
+
+\newpage
+
+%--- Problem 2: Five-number summary from raw data; IQR; outlier test; draw the box plot [9 marks] ---
+\item[2.] [Maximum mark: 9]
+
+Ordered: $21, 22, 23, 24, 25, 25, 26, \mathbf{26}, 27, 27, 28, 29, 30, 31,
+44$ \quad ($n = 15$).
+
+\emph{\textbf{GDC:} the TI-Nspire excludes the median from each half, so
+$Q_{1}$ is the median of the lowest seven values and $Q_{3}$ the median of
+the highest seven.}
+
+\textbf{(a)} Median $= 26$ \hfill \textbf{A1}
+
+$Q_{1} = 24$, \quad $Q_{3} = 29$ \hfill \textbf{A1}
+
+\emph{Both quartiles are needed for the second A1. Accept $Q_{1} = 24.5$ and
+$Q_{3} = 28.5$ from a hand method that includes the median in each half;
+feedback: the GDC convention is the one to use.}
+
+\textbf{(b)} $\text{IQR} = 29 - 24 = 5$ \hfill \textbf{A1}
+
+\emph{FT: award A1 for $Q_{3} - Q_{1}$ from the candidate's own quartiles.
+The range, $44 - 21 = 23$, earns no mark.}
+
+\textbf{(c)} $Q_{3} + 1.5 \times \text{IQR} = 29 + 1.5 \times 5$
+\hfill \textbf{M1}
+
+$= 36.5$ \hfill \textbf{A1}
+
+$44 > 36.5$, so $44$ is an outlier. \hfill \textbf{R1}
+
+\emph{M1 for $1.5 \times$ their IQR added to their $Q_{3}$. R1 for the
+comparison with $44$ stated, not just the fence value. Adding
+$1.5 \times \text{IQR}$ to the median or the mean earns no marks. The lower
+fence, $24 - 7.5 = 16.5$, is not required. FT: award all three marks from the
+candidate's own $Q_{3}$ and IQR, provided their fence is below $44$.}
+
+\textbf{(d)}
+
+\begin{center}
+\begin{tikzpicture}
+  \begin{scope}[x=0.35cm]
+    \draw (15,0)--(51,0);
+    \foreach \t in {15,16,...,51} \draw (\t,-0.08)--(\t,0.08);
+    \foreach \t in {15,20,...,50} \node[below] at (\t,-0.12) {\footnotesize \t};
+    \draw[thick] (24,0.6) rectangle (29,1.4);
+    \draw[thick] (26,0.6)--(26,1.4);
+    \draw[thick] (21,1.0)--(24,1.0);
+    \draw[thick] (29,1.0)--(31,1.0);
+    \draw[thick] (21,0.8)--(21,1.2);
+    \draw[thick] (31,0.8)--(31,1.2);
+    \node at (44,1.0) {$\times$};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+
+Box from $Q_{1} = 24$ to $Q_{3} = 29$ with the median line at $26$
+\hfill \textbf{A1}
+
+Whiskers to $21$ and $31$ \hfill \textbf{A1}
+
+Outlier $44$ marked with a cross \hfill \textbf{A1}
+
+\emph{Award each mark independently; plotted values within half a small
+division ($\pm 0.5$ minute) are accepted. A whisker drawn to $44$ or to
+$36.5$ loses the second A1. FT: award the first A1 for a box drawn at the
+candidate's own quartiles from (a).}
+
+\newpage
+
+%--- Problem 3: Read median, IQR, a count and a percentile from a CF curve; frequencies from the curve [9 marks] ---
+\item[3.] [Maximum mark: 9]
+
+$80$ students; the curve passes through $(20, 8)$, $(30, 20)$, $(40, 40)$,
+$(55, 60)$ and $(60, 65)$.
+
+\emph{Readings within one small square of the values below are accepted
+(\,$\pm 2.5$ seconds on the time axis, $\pm 1$ student on the cumulative
+frequency axis), and any value following from the candidate's own readings
+earns the A1. Feedback: draw the reading lines on the graph.}
+
+\textbf{(a)} Median: cumulative frequency $40$ gives $t = 40$ seconds
+\hfill \textbf{A1}
+
+\textbf{(b)} $Q_{1} = 30$ (at $20$), \quad $Q_{3} = 55$ (at $60$)
+\hfill \textbf{(M1)}
+
+$\text{IQR} = 55 - 30 = 25$ seconds \hfill \textbf{A1}
+
+\emph{M1 for reading the times at cumulative frequencies $20$ and $60$ (or
+for either quartile correct). Reading at $25$ and $75$ (percent of $100$)
+earns M0.}
+
+\textbf{(c)} $80 - 65$ \hfill \textbf{(M1)}
+
+$= 15$ students \hfill \textbf{A1}
+
+\emph{M1 for reading the cumulative frequency at $t = 60$ and subtracting
+from $80$. The reading $65$ alone, as a final answer, earns M1A0.}
+
+\textbf{(d)} $10\% \text{ of } 80 = 8$ \hfill \textbf{(M1)}
+
+Cumulative frequency $8$ gives $t = 20$ seconds \hfill \textbf{A1}
+
+\emph{M1 for $8$ (or for reading the time at cumulative frequency $8$).
+Reading at cumulative frequency $72$ (the slowest $10\%$, $t = 70$) earns
+M1A0.}
+
+\textbf{(e)} $p = 40 - 8 = 32$ \hfill \textbf{A1}
+
+$q = 65 - 40 = 25$ \hfill \textbf{A1}
+
+\emph{The two marks are independent. Accept $q = 80 - 8 - 32 - 15 = 25$.
+FT: award the A1 for $q$ from the candidate's own $p$ when $q$ is found by
+subtraction from $80$.}
+
+\newpage
+
+%--- Problem 4: Pearson's r, describing correlation, y-on-x regression line, interpreting the gradient, interpolation, extrapolation [9 marks] ---
+\item[4.] [Maximum mark: 9]
+
+$n = 8$, \quad $\bar{x} = 7$, \quad $\bar{y} = 68$.
+
+\emph{\textbf{GDC:} enter $x$ and $y$ in two lists and run
+\texttt{Linear Regression (mx+b)}.}
+
+\textbf{(a)} $r = 0.98815\ldots = 0.988$ (3 s.f.) \hfill \textbf{A1}
+
+\emph{Do not accept $r^{2} = 0.976$, which sits beside $r$ on the
+regression screen.}
+
+\textbf{(b)} Strong, positive (linear) correlation \hfill \textbf{A1A1}
+
+\emph{A1 for ``strong'' (accept ``very strong''), A1 for ``positive''; the two
+marks are independent. ``Moderate'' or ``weak'' earns A0 for the strength.
+FT from the candidate's $r$ in (a).}
+
+\textbf{(c)} $y = 3.72x + 42.0$ \hfill \textbf{A1A1}
+
+\emph{A1 for $a = 3.72$, A1 for $b = 42.0$; the two marks are independent.
+Accept $a = 3.7173\ldots$, $b = 41.978\ldots$ (or $42$), or either value to
+more figures. The reversed line $x = 0.263y - 10.9$ earns A0A0.}
+
+\textbf{(d)} For each extra hour of revision, the test score increases by
+about $3.72$ points. \hfill \textbf{A1}
+
+\emph{The answer must give the rate (about $3.7$ points) per hour, in
+context. ``Students who revise more score higher'' restates the correlation
+without the rate and earns A0. FT from the candidate's $a$ in (c).}
+
+\textbf{(e)} $y = 3.72(10) + 42.0$ \hfill \textbf{(M1)}
+
+$= 79.152\ldots \approx 79.2$ \hfill \textbf{A1}
+
+\emph{Accept any value consistent with the candidate's own correctly-rounded
+coefficients, including $79.152\ldots$ (full precision) and $79.2$ (from
+$3.72$ and $42.0$), and either rounded to $79$. FT from the candidate's
+line in (c). \textbf{Feedback:} store the coefficients in the GDC (or use the
+regression function \texttt{f1(10)}) and round only the final answer.}
+
+\textbf{(f)} $20$ hours is outside the range of the data ($2$ to $12$ hours),
+so the estimate would be an extrapolation and is not reliable.
+\hfill \textbf{R1}
+
+\emph{R1 for stating that $20$ lies outside the data range (or ``above the
+greatest number of hours recorded''). Accept the observation that the line
+gives $116$, which is impossible for a score out of $100$, as a supporting
+reason. ``Revising too much might not help'' with no reference to the data
+earns R0.}
+
+\end{enumerate}
+\end{document}
