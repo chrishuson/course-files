@@ -1,0 +1,240 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["1.12", "1.13"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.25,
+    "answer_box_top_frac_note": "The answer box runs 0.378 to 0.915. The crop is set just above the '(a)' line at 0.262 so working written beside the parts list is captured. The nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored 2026-10-14, HL syllabus 1.12/1.13, calculator allowed). z1 = 3 + 4i, z2 = 1 - 2i: z1 z2* = -5 + 10i, z1/z2 = -1 + 2i, modulus sqrt5, argument 2.03.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find z1 z2* in the form a + bi, where z1 = 3 + 4i and z2 = 1 - 2i.",
+        "expected": {"answer": "-5 + 10i"},
+        "tolerance": "Exact.",
+        "notes": "M1 for using z2* = 1 + 2i and expanding. A1 for -5 + 10i. Using z2 instead of its conjugate (giving 11 - 2i) earns M0A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find z1/z2 in the form a + bi.",
+        "expected": {"answer": "-1 + 2i"},
+        "tolerance": "Exact.",
+        "notes": "M1 for multiplying numerator and denominator by 1 + 2i, or a GDC entry shown. A1 for -1 + 2i.",
+        "follow_through": "Award M1 for dividing the candidate's answer to (a) by |z2|^2 = 5."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Find the modulus and the argument of z1/z2.",
+        "expected": {"answer": "modulus sqrt5 (2.24), argument 2.03", "modulus": 2.23607, "argument": 2.03444},
+        "tolerance": "Accept 2.24 for the modulus, or 5/sqrt5. Accept 2.03 radians or 117 degrees (116.565...) for the argument.",
+        "notes": "A1 for the modulus. A1 for the argument. arctan(-2) = -1.11 (fourth-quadrant angle) earns A0 because -1 + 2i is in the second quadrant.",
+        "follow_through": "Award both marks for the modulus and argument of the candidate's quotient in (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["1.13"],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.19,
+    "answer_box_top_frac_note": "Even page: the answer box runs 0.341 to 0.878. The crop is set just above the '(a)' line at 0.199 so working written beside the parts list is captured. The even-page nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored 2026-10-14, HL syllabus 1.13, calculator allowed). z = -sqrt3 + i = 2e^(5 pi i/6), w = 3 cis(pi/4); zw = 6 cis(-11 pi/12) = -5.80 - 1.55i; multiplication by w is a rotation by pi/4 anticlockwise and an enlargement by scale factor 3 about the origin.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write z = -sqrt3 + i in the form r e^(i theta), r > 0, -pi < theta <= pi.",
+        "expected": {"answer": "2e^(5 pi i/6)"},
+        "tolerance": "Accept 2.62 for the argument.",
+        "notes": "A1 for modulus 2. A1 for argument 5pi/6. -pi/6 (from arctan without quadrant check) earns A0 for the argument."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find zw in the form r(cos theta + i sin theta), r > 0, -pi < theta <= pi, where w = 3(cos pi/4 + i sin pi/4).",
+        "expected": {"answer": "6(cos(-11pi/12) + i sin(-11pi/12))"},
+        "tolerance": "Accept -2.88 for the argument.",
+        "notes": "M1 for multiplying the moduli and adding the arguments. A1 requires the argument in the stated range; 13pi/12 unadjusted earns M1A0.",
+        "follow_through": "From the candidate's modulus and argument in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write zw in the form a + bi.",
+        "expected": {"answer": "-5.80 - 1.55i", "exact": "-(3/2)(sqrt6 + sqrt2) - (3/2)(sqrt6 - sqrt2)i"},
+        "tolerance": "Accept the exact form or 3 s.f. (-5.7955... - 1.5529...i), from (b) or from multiplying the Cartesian forms directly.",
+        "notes": "A1 for the correct value."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Describe geometrically the transformation of the Argand diagram mapping the point representing z to the point representing zw.",
+        "expected": {"answer": "rotation about the origin by pi/4 anticlockwise and enlargement, centre the origin, scale factor 3"},
+        "tolerance": "Accept 45 degrees; accept 'stretched by 3' or 'three times as far from the origin'.",
+        "notes": "A1 for the rotation with angle and direction. A1 for the enlargement by scale factor 3. The marks are independent."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": ["1.12", "1.14", "2.12"],
+    "total_marks": 13,
+    "answer_box_top_frac": null,
+    "answer_box_top_frac_note": "Long-form problem answered on lined paper; no answer box on the sheet.",
+    "source": "Original (freshly authored 2026-10-14, HL syllabus 1.14 with link 2.12, calculator allowed). z^3 + az^2 + bz + 26 = 0 with root 3 + 2i; roots 3 +- 2i and -2; a = -4, b = 1; Argand triangle A(3,2), B(3,-2), C(-2,0) is isosceles (AC = BC = sqrt29), area 10.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "R1"],
+        "description": "Write down a second root of z^3 + az^2 + bz + 26 = 0 (a, b real, root 3 + 2i), giving a reason.",
+        "expected": {"answer": "3 - 2i, because the coefficients are real so non-real roots occur in conjugate pairs"},
+        "tolerance": "The reason must refer to real coefficients.",
+        "notes": "A1 for 3 - 2i. R1 for the reason referring to real coefficients."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "By considering the product of the roots, find the third root.",
+        "expected": {"answer": "-2"},
+        "tolerance": "Exact.",
+        "notes": "M1 for product of roots = -26 stated or used. A1 for (3 + 2i)(3 - 2i) = 13. A1 for -2. Using product = +26 (giving 2) earns M0A1A0.",
+        "follow_through": "From the candidate's second root in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "M1", "A1"],
+        "description": "Find the value of a and the value of b.",
+        "expected": {"answer": "a = -4, b = 1", "a": -4, "b": 1},
+        "tolerance": "Any valid method: sum and pairwise products of roots, expanding (z + 2)(z^2 - 6z + 13), or substituting 3 + 2i and equating parts.",
+        "notes": "Method 1: M1 for sum of roots = -a, A1 a = -4, M1 for sum of pairwise products = b, A1 b = 1. Method 2: M1 for the product of factors, M1 for expanding, A1A1 for a and b.",
+        "follow_through": "From the candidate's roots."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "The roots are points A (3 + 2i), B and C (the real root) on an Argand diagram. Show that triangle ABC is isosceles.",
+        "expected": {"answer": "AC = |5 + 2i| = sqrt29 = BC = |5 - 2i|"},
+        "tolerance": "Show that (answer given). Accept the reflection-symmetry argument (A and B are reflections in the real axis, on which C lies).",
+        "notes": "M1 for both lengths found (moduli or Pythagoras). A1 AG for concluding AC = BC."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the area of triangle ABC.",
+        "expected": {"answer": "10"},
+        "tolerance": "Exact.",
+        "notes": "M1 for base AB = 4 and height 5 (or equivalent). A1 for 10.",
+        "follow_through": "From the candidate's real root."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": ["1.14", "1.15", "3.10"],
+    "total_marks": 14,
+    "answer_box_top_frac": null,
+    "answer_box_top_frac_note": "Long-form problem answered on lined paper; no answer box on the sheet.",
+    "source": "Original (freshly authored 2026-10-14, HL syllabus 1.14/1.15 with link 3.10, calculator allowed). Proof of de Moivre's theorem by induction; cos 4theta = 8cos^4 theta - 8cos^2 theta + 1 from n = 4; (1 - sqrt3 i)^10 = -512 + 512 sqrt3 i.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 6,
+        "mark_codes": ["A1", "M1", "M1", "A1", "A1", "R1"],
+        "description": "Use mathematical induction to prove (cos theta + i sin theta)^n = cos n theta + i sin n theta for all positive integers n.",
+        "expected": {"answer": "Base case n = 1; assume true for n = k; multiply by (cos theta + i sin theta), expand, apply compound angle identities to get cos(k+1)theta + i sin(k+1)theta; conclusion."},
+        "tolerance": "Proof.",
+        "notes": "A1 for verifying n = 1. M1 for stating the assumption for n = k as an assumption ('P(k) is true' as fact earns M0). M1 for multiplying (cos k theta + i sin k theta)(cos theta + i sin theta). A1 for the correct expansion into real and imaginary parts. A1 for applying the compound angle identities to both parts. R1 for a conclusion naming base case and inductive step, only if the first four marks are earned."
+      },
+      {
+        "label": "b",
+        "marks": 5,
+        "mark_codes": ["M1", "M1", "A1", "M1", "A1"],
+        "description": "By using de Moivre's theorem with n = 4, show that cos 4theta = 8cos^4 theta - 8cos^2 theta + 1.",
+        "expected": {"answer": "Real part of (c + is)^4 = c^4 - 6c^2 s^2 + s^4, substitute s^2 = 1 - c^2."},
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for (cos theta + i sin theta)^4 = cos 4theta + i sin 4theta. M1 for a binomial expansion with all five terms. A1 for the real part c^4 - 6c^2 s^2 + s^4. M1 for replacing s^2 by 1 - c^2 throughout. A1 AG with the expansion of (1 - c^2)^2 seen."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["A1", "M1", "A1"],
+        "description": "Use de Moivre's theorem to find (1 - sqrt3 i)^10 in the form a + b sqrt3 i, a, b integers.",
+        "expected": {"answer": "-512 + 512 sqrt3 i"},
+        "tolerance": "Exact form required.",
+        "notes": "A1 for modulus 2 and argument -pi/3 (accept 5pi/3). M1 for 2^10 and argument multiplied by 10. A1 for -512 + 512 sqrt3 i. A GDC decimal -512 + 886.81i alone earns A0M0A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "topic_codes": ["1.13", "1.14", "2.12"],
+    "total_marks": 13,
+    "answer_box_top_frac": null,
+    "answer_box_top_frac_note": "Long-form problem answered on lined paper; no answer box on the sheet.",
+    "source": "Original (freshly authored 2026-10-14, HL syllabus 1.13/1.14, calculator allowed). w = -4sqrt2 + 4sqrt2 i = 8e^(3 pi i/4); cube roots 2e^(i pi/4), 2e^(11 pi i/12), 2e^(-5 pi i/12); first-quadrant root sqrt2 + sqrt2 i; roots sum to zero; w^(2/3) = 4i, 2sqrt3 - 2i, -2sqrt3 - 2i.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write w = -4sqrt2 + 4sqrt2 i in the form r e^(i theta), r > 0, -pi < theta <= pi.",
+        "expected": {"answer": "8e^(3 pi i/4)"},
+        "tolerance": "Accept 2.36 for the argument.",
+        "notes": "A1 for modulus 8. A1 for argument 3pi/4."
+      },
+      {
+        "label": "b",
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "M1", "A1", "A1"],
+        "description": "Solve z^3 = w, giving each solution as r e^(i theta), r > 0, -pi < theta <= pi.",
+        "expected": {"answer": "2e^(i pi/4), 2e^(11 pi i/12), 2e^(-5 pi i/12)"},
+        "tolerance": "Arguments must be in the stated range; 2e^(19 pi i/12) earns A0 for that root only.",
+        "notes": "M1 for cube root of the modulus and argument divided by 3. A1 for 2e^(i pi/4). M1 for arguments differing by 2pi/3. A1 for 2e^(11 pi i/12). A1 for 2e^(-5 pi i/12).",
+        "follow_through": "From the candidate's form of w in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write the solution in the first quadrant in the form a + bi.",
+        "expected": {"answer": "sqrt2 + sqrt2 i"},
+        "tolerance": "Accept 1.41 + 1.41i.",
+        "notes": "A1 for sqrt2 + sqrt2 i."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show that the sum of the three solutions is zero.",
+        "expected": {"answer": "z^3 - w = 0 has no z^2 term, so the sum of roots is 0; or z1(1 + e^(2pi i/3) + e^(4pi i/3)) = 0."},
+        "tolerance": "Show that (answer given). Accept an exact Cartesian sum.",
+        "notes": "M1 for a valid structural argument (sum of roots from coefficients, or factoring z1 out of a geometric sum). A1 AG. A GDC sum alone with no structure shown earns M1A0."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the three values of w^(2/3) in the form a + bi.",
+        "expected": {"answer": "4i, 2sqrt3 - 2i, -2sqrt3 - 2i"},
+        "tolerance": "Accept +-3.46 - 2i. Accept the route (w^2)^(1/3) with w^2 = 64e^(3 pi i/2).",
+        "notes": "M1 for squaring each cube root (or cube roots of w^2). A1 for 4i. A1 for both 2sqrt3 - 2i and -2sqrt3 - 2i.",
+        "follow_through": "From the candidate's cube roots in (b)."
+      }
+    ]
+  }
+]

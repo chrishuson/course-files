@@ -1,0 +1,220 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["4.1", "4.2", "4.3"],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.26,
+    "answer_box_top_frac_note": "The answer box runs 0.456 to 0.907. The crop is set just above the '(a)' line at 0.269 so working written beside the parts list is captured. The nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored, calculator allowed). Grouped frequency table of clinic waiting times for 50 patients: classes 0-10, 10-20, 20-30, 30-40, 40-50 minutes with frequencies 4, 12, 18, 11, 5; stratified sample of 50 from 600 registered patients with 192 over 65. Parallel of 1-10PQ_Statistics P1 without the 'explain why estimate' part.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "State whether the data (waiting time in minutes, grouped 0 <= t < 10, ..., 40 <= t < 50) are discrete or continuous.",
+        "expected": {"answer": "continuous"},
+        "tolerance": "A reason is not required; accept 'time can take any value in an interval'.",
+        "notes": "A1 for continuous. 'Discrete' earns A0."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the modal class.",
+        "expected": {"answer": "20 <= t < 30"},
+        "tolerance": "Accept '20 to 30 minutes'.",
+        "notes": "A1 for the class 20 <= t < 30. The frequency 18 alone, or the mid-interval value 25 alone, earns A0."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find an estimate of the mean waiting time.",
+        "expected": {"answer": "25.2", "exact": "1260/50 = 25.2"},
+        "tolerance": "Exact value; accept 25.2 with or without units.",
+        "notes": "M1 for using the mid-interval values 5, 15, 25, 35, 45 with the frequencies (shown as a sum, as GDC lists, or implied by the correct answer). A1 for 25.2. Using lower class boundaries (20.2) or upper class boundaries (30.2) earns M0A0. The mean of the frequencies (10) earns no marks."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find an estimate of the standard deviation.",
+        "expected": {"answer": "10.9", "exact": "10.860..."},
+        "tolerance": "Accept 10.86 or 10.860...",
+        "notes": "A1 for sigma = 10.9 (population standard deviation from the GDC with the frequency list). The sample standard deviation s_x = 11.0 (10.971...) earns A0."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "The 50 patients are a stratified sample, by age group, of the 600 registered patients. There are 192 registered patients over the age of 65. Find the number of patients over 65 in the sample.",
+        "expected": {"answer": "16"},
+        "tolerance": "Accept any correct proportional working, e.g. 50/600 = 1/12 then 192/12.",
+        "notes": "M1 for the over-65 proportion (192/600) applied to 50, or the sampling fraction 50/600 applied to 192, however written. A1 for 16."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["4.2"],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.21,
+    "answer_box_top_frac_note": "Even page: the answer box runs 0.353 to 0.890, with the printed box-plot scale inside its lower part. The crop is set just above the '(a)' line at 0.216 so working written beside the parts list is captured. The even-page nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored, calculator allowed). Fifteen push-up counts: 27, 31, 22, 35, 28, 25, 33, 8, 29, 24, 36, 26, 30, 28, 32; five-number summary, IQR, low-outlier test for 8, box-and-whisker plot on a printed scale 5-41.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write down the median, the lower quartile Q1 and the upper quartile Q3 of the fifteen push-up counts.",
+        "expected": {"answer": "median 28, Q1 25, Q3 32"},
+        "tolerance": "Accept Q1 = 25.5 and Q3 = 31.5 from a hand method that includes the median in each half, with the feedback note that the GDC convention is the one to use.",
+        "notes": "A1 for median 28. A1 for both quartiles Q1 = 25 and Q3 = 32 (both needed for the second mark)."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find the interquartile range.",
+        "expected": {"answer": "7"},
+        "tolerance": "None beyond follow-through.",
+        "notes": "A1 for 7. The range (36 - 8 = 28) earns no mark.",
+        "follow_through": "Award A1 for Q3 - Q1 from the candidate's own quartiles in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "R1"],
+        "description": "Show that 8 is an outlier.",
+        "expected": {"answer": "Q1 - 1.5 x IQR = 25 - 10.5 = 14.5; 8 < 14.5 so 8 is an outlier"},
+        "tolerance": "Show that (answer given). The upper fence (42.5) is not required.",
+        "notes": "M1 for 1.5 x their IQR subtracted from their Q1. A1 for 14.5. R1 for the comparison 8 < 14.5 stated, not just the fence value. Subtracting 1.5 x IQR from the median or the mean earns no marks.",
+        "follow_through": "Award all three marks from the candidate's own Q1 and IQR, provided their fence is above 8."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "On the printed scale, draw a box-and-whisker plot of the data. Mark the outlier with a cross.",
+        "expected": {"answer": "box from 25 to 32 with median line at 28; whiskers to 22 and 36; cross at 8"},
+        "tolerance": "Plotted values within half a small division (+/- 0.5) are accepted.",
+        "notes": "A1 for the box from Q1 = 25 to Q3 = 32 with the median line at 28. A1 for whiskers to 22 and 36. A1 for 8 marked with a cross. Each mark is independent. A whisker drawn to 8 or to 14.5 loses the second A1.",
+        "follow_through": "Award the first A1 for a box drawn at the candidate's own quartiles from (a)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": ["4.2"],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.18,
+    "answer_box_top_frac_note": "The answer box runs 0.668 to 0.940. The crop is set just above the graph (top tick label at 0.189), because readings drawn on the graph are working for the M1 marks in (b), (c) and (d). No answer_box_bottom_frac: one problem per page, so the crop runs to the page bottom. detect_answer_boxes.py may pick the graph frame as the box on this sheet, so do not let it overwrite this value.",
+    "source": "Original (freshly authored, calculator allowed). Cumulative frequency graph of lengths of 200 fish; curve passes through (16, 15), (20, 30), (24, 50), (28, 75), (32, 100), (40, 150), (44, 170), (48, 185), (60, 200). Grouped table 0-20: 30, 20-28: p, 28-44: q, 44-60: 30.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "From the cumulative frequency graph (200 fish), write down the median length.",
+        "expected": {"answer": "32 cm"},
+        "tolerance": "Accept readings within one small square (+/- 2 cm).",
+        "notes": "A1 for 32 (reading at cumulative frequency 100)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the interquartile range.",
+        "expected": {"answer": "16 cm", "Q1": 24, "Q3": 40},
+        "tolerance": "Accept readings within one small square (+/- 2 cm) and any IQR that follows from the candidate's own quartile readings.",
+        "notes": "M1 for reading the lengths at cumulative frequencies 50 and 150 (Q1 = 24, Q3 = 40), or for either quartile correct. A1 for 16. Reading at cumulative frequencies 25 and 75 (treating the total as 100) earns M0."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the number of fish longer than 44 cm.",
+        "expected": {"answer": "30", "cf_at_44": 170},
+        "tolerance": "Accept a cumulative-frequency reading at L = 44 within +/- 5 (165 to 175) and the answer that follows from it.",
+        "notes": "M1 for reading the cumulative frequency at L = 44 (170) and subtracting from 200. A1 for 30. The reading 170 given as the final answer earns M1A0."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "The shortest 15% of the fish are returned to the river. Find the greatest length of a fish that is returned.",
+        "expected": {"answer": "20 cm"},
+        "tolerance": "Accept readings within one small square (+/- 2 cm).",
+        "notes": "M1 for 15% of 200 = 30, or for reading the length at cumulative frequency 30. A1 for 20. Reading at cumulative frequency 170 (the longest 15%, L = 44) earns M1A0. Reading at cumulative frequency 15 (treating the total as 100, L = 16) earns M0A0."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "The lengths are grouped in a table: 0 < L <= 20: 30; 20 < L <= 28: p; 28 < L <= 44: q; 44 < L <= 60: 30. Find the values of p and q.",
+        "expected": {"answer": "p = 45, q = 95"},
+        "tolerance": "Accept values consistent with the candidate's own readings of the curve.",
+        "notes": "A1 for p = 45 (75 - 30). A1 for q = 95 (170 - 75, or 200 - 30 - 45 - 30). The two marks are independent.",
+        "follow_through": "Award the A1 for q from the candidate's own p when q is found by subtraction from 200."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": ["4.4"],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.25,
+    "answer_box_top_frac_note": "Even page: the answer box runs 0.425 to 0.919. The crop is set just above the '(a)' line at 0.257 so working written beside the parts list is captured. The even-page nickname box sits near 0.07 and stays outside the crop.",
+    "source": "Original (freshly authored, calculator allowed). Used-car age x = 1, 2, 3, 5, 6, 8, 9, 10 years and price y = 27, 27, 22, 21, 16, 15, 11, 12 thousand dollars; r, characterizing the correlation, regression line of y on x, interpretation of the gradient, estimate at x = 7. Parallel of 1-10PQ_Statistics P4 with negative correlation and no extrapolation part.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find Pearson's product-moment correlation coefficient, r, for car age x and price y.",
+        "expected": {"answer": "-0.973", "exact": "-0.97297..."},
+        "tolerance": "Accept -0.97297... or more figures. The negative sign is required.",
+        "notes": "A1 for -0.973. r^2 = 0.947, or 0.973 without the sign, earns A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Characterize the correlation (positive or negative; strong, moderate, weak, or none).",
+        "expected": {"answer": "strong negative"},
+        "tolerance": "Accept 'very strong'.",
+        "notes": "A1 for negative, A1 for strong; the marks are independent. 'Moderate' or 'weak' earns A0 for strength.",
+        "follow_through": "Award the marks for a description consistent with the candidate's r in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write down the regression line of y on x, in the form y = ax + b.",
+        "expected": {"answer": "y = -1.84x + 29.0", "a": -1.83974, "b": 28.9936},
+        "tolerance": "Accept a = -1.8397..., b = 28.993... or 29, or either value to more figures.",
+        "notes": "A1 for a = -1.84, A1 for b = 29.0; the marks are independent. The reversed line x = -0.515y + 15.2 earns A0A0."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Interpret the meaning of the value of a in this context.",
+        "expected": {"answer": "For each additional year of age, the price decreases by about 1.84 thousand dollars (about $1840)."},
+        "tolerance": "Accept about 1.8 or 2 thousand dollars per year, in context, with the direction (decrease).",
+        "notes": "A1 for the rate per year and the direction stated in context. 'Older cars are cheaper' (no rate) earns A0.",
+        "follow_through": "Award A1 for the interpretation of the candidate's own a from (c)."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Use the regression line to estimate the price of a car that is 7 years old.",
+        "expected": {"answer": "16.1", "exact": "16.115..."},
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded coefficients, including 16.115... (full precision) and 16.12 (from -1.84 and 29.0), each rounding to 16.1; accept $16 100. Award full marks when the method is correct and the value follows from the candidate's own rounding; note precision separately rather than withholding the accuracy mark.",
+        "notes": "M1 for substituting x = 7 into a regression line of y on x. A1 for 16.1 or an accepted value. If coefficients were rounded before substituting, attach the feedback note to store the coefficients in the GDC (or use f1(7)) and round only at the end (premature_rounding).",
+        "follow_through": "Award M1A1 for substituting x = 7 into the candidate's own line from (c)."
+      }
+    ]
+  }
+]

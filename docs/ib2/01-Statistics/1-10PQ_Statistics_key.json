@@ -175,7 +175,6 @@
     "total_marks": 9,
     "answer_box_top_frac": 0.2,
     "answer_box_top_frac_note": "The answer box runs about 0.66 to the bottom margin. The crop is set just above the graph (top of the plot at 0.212), because readings drawn on the graph are working for the M1 marks in (b), (c) and (d). detect_answer_boxes.py picks the graph frame as the box on this sheet, so do not let it overwrite this value.",
-    "answer_box_bottom_frac": 0.213,
     "source": "Original (freshly authored, calculator allowed). Cumulative frequency graph of puzzle times for 80 students; curve passes through (20, 8), (30, 20), (40, 40), (55, 60), (60, 65), (90, 80). Grouped table 0-20: 8, 20-40: p, 40-60: q, 60-100: 15.",
     "parts": [
       {

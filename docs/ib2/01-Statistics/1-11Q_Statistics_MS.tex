@@ -1,0 +1,221 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 14 October 2026}
+
+\begin{document}
+\subsubsection*{1.11 Quiz: Statistics --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Grouped frequency table; continuous data; modal class; estimated mean and sd; stratified sample [7 marks] ---
+\item[1.] [Maximum mark: 7]
+
+Mid-interval values $5, 15, 25, 35, 45$ with frequencies $4, 12, 18, 11, 5$;
+$n = 50$.
+
+\emph{\textbf{GDC:} enter the mid-interval values in one list and the
+frequencies in a second list, then run \texttt{One-Variable Statistics} with
+the frequency list.}
+
+\textbf{(a)} Continuous \hfill \textbf{A1}
+
+\emph{Time is measured, not counted. Accept a reason such as ``time can
+take any value in an interval''; no reason is required.}
+
+\textbf{(b)} $20 \le t < 30$ \hfill \textbf{A1}
+
+\emph{The class, not its frequency: ``$18$'' alone earns A0. Accept
+``$20$ to $30$ minutes''. The mid-interval value $25$ alone earns A0.}
+
+\textbf{(c)} $\bar{x} = \dfrac{4(5) + 12(15) + 18(25) + 11(35) + 5(45)}{50}$
+\hfill \textbf{(M1)}
+
+$= \dfrac{1260}{50} = 25.2$ minutes \hfill \textbf{A1}
+
+\emph{M1 for using the mid-interval values with the frequencies, shown as a
+sum or as the GDC lists. Using the lower class boundaries
+($0, 10, 20, 30, 40$, giving $20.2$) or upper boundaries (giving $30.2$)
+earns M0A0. The mean of the frequencies, $10$, earns no marks.}
+
+\textbf{(d)} $\sigma = 10.860\ldots = 10.9$ minutes (3 s.f.) \hfill \textbf{A1}
+
+\emph{Do not accept $s_{x} = 10.971\ldots$ ($11.0$), the sample standard
+deviation.}
+
+\textbf{(e)} $\dfrac{192}{600} \times 50$ \hfill \textbf{M1}
+
+$= 16$ patients \hfill \textbf{A1}
+
+\emph{M1 for the over-$65$ proportion of the registered patients applied to
+$50$, however written (e.g.\ $\frac{50}{600} = \frac{1}{12}$, then
+$\frac{192}{12}$).}
+
+\newpage
+
+%--- Problem 2: Five-number summary from raw data; IQR; low-outlier test; draw the box plot [9 marks] ---
+\item[2.] [Maximum mark: 9]
+
+Ordered: $8, 22, 24, 25, 26, 27, 28, \mathbf{28}, 29, 30, 31, 32, 33, 35,
+36$ \quad ($n = 15$).
+
+\emph{\textbf{GDC:} the TI-Nspire excludes the median from each half, so
+$Q_{1}$ is the median of the lowest seven values and $Q_{3}$ the median of
+the highest seven.}
+
+\textbf{(a)} Median $= 28$ \hfill \textbf{A1}
+
+$Q_{1} = 25$, \quad $Q_{3} = 32$ \hfill \textbf{A1}
+
+\emph{Both quartiles are needed for the second A1. Accept $Q_{1} = 25.5$ and
+$Q_{3} = 31.5$ from a hand method that includes the median in each half;
+feedback: the GDC convention is the one to use.}
+
+\textbf{(b)} $\text{IQR} = 32 - 25 = 7$ \hfill \textbf{A1}
+
+\emph{FT: award A1 for $Q_{3} - Q_{1}$ from the candidate's own quartiles.
+The range, $36 - 8 = 28$, earns no mark.}
+
+\textbf{(c)} $Q_{1} - 1.5 \times \text{IQR} = 25 - 1.5 \times 7$
+\hfill \textbf{M1}
+
+$= 14.5$ \hfill \textbf{A1}
+
+$8 < 14.5$, so $8$ is an outlier. \hfill \textbf{R1}
+
+\emph{M1 for $1.5 \times$ their IQR subtracted from their $Q_{1}$. R1 for
+the comparison with $8$ stated, not just the fence value. Subtracting
+$1.5 \times \text{IQR}$ from the median or the mean earns no marks. The
+upper fence, $32 + 10.5 = 42.5$, is not required. FT: award all three marks
+from the candidate's own $Q_{1}$ and IQR, provided their fence is above $8$.}
+
+\textbf{(d)}
+
+\begin{center}
+\begin{tikzpicture}
+  \begin{scope}[x=0.35cm]
+    \draw (5,0)--(41,0);
+    \foreach \t in {5,6,...,41} \draw (\t,-0.08)--(\t,0.08);
+    \foreach \t in {5,10,...,40} \node[below] at (\t,-0.12) {\footnotesize \t};
+    \draw[thick] (25,0.6) rectangle (32,1.4);
+    \draw[thick] (28,0.6)--(28,1.4);
+    \draw[thick] (22,1.0)--(25,1.0);
+    \draw[thick] (32,1.0)--(36,1.0);
+    \draw[thick] (22,0.8)--(22,1.2);
+    \draw[thick] (36,0.8)--(36,1.2);
+    \node at (8,1.0) {$\times$};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+
+Box from $Q_{1} = 25$ to $Q_{3} = 32$ with the median line at $28$
+\hfill \textbf{A1}
+
+Whiskers to $22$ and $36$ \hfill \textbf{A1}
+
+Outlier $8$ marked with a cross \hfill \textbf{A1}
+
+\emph{Award each mark independently; plotted values within half a small
+division ($\pm 0.5$) are accepted. A whisker drawn to $8$ or to $14.5$ loses
+the second A1. FT: award the first A1 for a box drawn at the candidate's own
+quartiles from (a).}
+
+\newpage
+
+%--- Problem 3: Read median, IQR, a count and a percentile from a CF curve; frequencies from the curve [9 marks] ---
+\item[3.] [Maximum mark: 9]
+
+$200$ fish; the curve passes through $(20, 30)$, $(24, 50)$, $(28, 75)$,
+$(32, 100)$, $(40, 150)$ and $(44, 170)$.
+
+\emph{Readings within one small square of the values below are accepted
+(\,$\pm 2$ cm on the length axis, $\pm 5$ fish on the cumulative frequency
+axis), and any value following from the candidate's own readings earns the
+A1. Feedback: draw the reading lines on the graph.}
+
+\textbf{(a)} Median: cumulative frequency $100$ gives $L = 32$ cm
+\hfill \textbf{A1}
+
+\textbf{(b)} $Q_{1} = 24$ (at $50$), \quad $Q_{3} = 40$ (at $150$)
+\hfill \textbf{(M1)}
+
+$\text{IQR} = 40 - 24 = 16$ cm \hfill \textbf{A1}
+
+\emph{M1 for reading the lengths at cumulative frequencies $50$ and $150$
+(or for either quartile correct). Reading at $25$ and $75$ (percent of
+$100$) earns M0.}
+
+\textbf{(c)} $200 - 170$ \hfill \textbf{(M1)}
+
+$= 30$ fish \hfill \textbf{A1}
+
+\emph{M1 for reading the cumulative frequency at $L = 44$ and subtracting
+from $200$. The reading $170$ alone, as a final answer, earns M1A0.}
+
+\textbf{(d)} $15\% \text{ of } 200 = 30$ \hfill \textbf{(M1)}
+
+Cumulative frequency $30$ gives $L = 20$ cm \hfill \textbf{A1}
+
+\emph{M1 for $30$ (or for reading the length at cumulative frequency $30$).
+Reading at cumulative frequency $170$ (the longest $15\%$, $L = 44$) earns
+M1A0. Reading at cumulative frequency $15$ (treating the total as $100$,
+$L = 16$) earns M0A0.}
+
+\textbf{(e)} $p = 75 - 30 = 45$ \hfill \textbf{A1}
+
+$q = 170 - 75 = 95$ \hfill \textbf{A1}
+
+\emph{The two marks are independent. Accept $q = 200 - 30 - 45 - 30 = 95$.
+FT: award the A1 for $q$ from the candidate's own $p$ when $q$ is found by
+subtraction from $200$.}
+
+\newpage
+
+%--- Problem 4: Pearson's r, characterizing correlation, y-on-x regression line, interpreting the gradient, interpolation [8 marks] ---
+\item[4.] [Maximum mark: 8]
+
+$n = 8$, \quad $\bar{x} = 5.5$, \quad $\bar{y} = 18.875$.
+
+\emph{\textbf{GDC:} enter $x$ and $y$ in two lists and run
+\texttt{Linear Regression (mx+b)}.}
+
+\textbf{(a)} $r = -0.97297\ldots = -0.973$ (3 s.f.) \hfill \textbf{A1}
+
+\emph{The negative sign is required. Do not accept $r^{2} = 0.947$, which
+sits beside $r$ on the regression screen.}
+
+\textbf{(b)} Strong, negative (linear) correlation \hfill \textbf{A1A1}
+
+\emph{A1 for ``negative'', A1 for ``strong'' (accept ``very strong''); the
+two marks are independent. ``Moderate'' or ``weak'' earns A0 for the
+strength. FT from the candidate's $r$ in (a).}
+
+\textbf{(c)} $y = -1.84x + 29.0$ \hfill \textbf{A1A1}
+
+\emph{A1 for $a = -1.84$, A1 for $b = 29.0$; the two marks are independent.
+Accept $a = -1.8397\ldots$, $b = 28.993\ldots$ (or $29$), or either value to
+more figures. The reversed line $x = -0.515y + 15.2$ earns A0A0.}
+
+\textbf{(d)} For each additional year of age, the price decreases by about
+$1.84$ thousand dollars (about \$1840). \hfill \textbf{A1}
+
+\emph{The answer must give the rate (about $1.8$ thousand dollars) per year
+and the direction (decrease), in context. ``Older cars are cheaper''
+restates the correlation without the rate and earns A0. FT from the
+candidate's $a$ in (c).}
+
+\textbf{(e)} $y = -1.84(7) + 29.0$ \hfill \textbf{(M1)}
+
+$= 16.115\ldots \approx 16.1$ thousand dollars \hfill \textbf{A1}
+
+\emph{Accept any value consistent with the candidate's own correctly-rounded
+coefficients, including $16.115\ldots$ (full precision) and $16.12$ (from
+$-1.84$ and $29.0$), each rounding to $16.1$; accept \$16\,100. FT from the
+candidate's line in (c). \textbf{Feedback:} store the coefficients in the GDC
+(or use the regression function \texttt{f1(7)}) and round only the final
+answer.}
+
+\end{enumerate}
+\end{document}
