@@ -34,7 +34,7 @@
           "answer": "u_n = 15 + 8(n - 1)"
         },
         "tolerance": "Accept any equivalent expression, e.g. 8n + 7; the substituted form is preferred but not required.",
-        "notes": "(M1) for the arithmetic nth-term formula with u_1 = 15 and d = 8, implied by a correct answer. A1 for a correct expression. u_n = 15 + 8n earns M1A0.",
+        "notes": "(M1) for the arithmetic nth-term formula with u_1 = 15 and d = 8, implied by a correct answer. A1 for a correct expression. u_n = 15 + 8n earns M1A0. The general formula u_n = u_1 + (n - 1)d with no values substituted earns M0A0. A substituted expression that appears only in a later part earns both marks here (answer_in_later_part).",
         "follow_through": "Uses d from part (a); award A1 for a correct expression from the student's own d."
       },
       {
@@ -67,7 +67,7 @@
           "answer": "303 is the 37th term"
         },
         "tolerance": "Accept 8n + 7 = 303 giving n = 37, or a table search showing u_37 = 303.",
-        "notes": "M1 for setting the nth-term expression equal to 303. A1 for n = 37. R1 for the conclusion that 303 is a term because n is a positive whole number; a bare 'n = 37' earns M1A1R0.",
+        "notes": "M1 for setting the nth-term expression equal to 303. A1 for n = 37. R1 requires the statement that n = 37 is a whole number (or an equivalent such as 'n is a positive integer'); a conclusion alone such as '303 = u_37', or a bare 'n = 37', earns R0. This is a markscheme Note: it overrides the general rule that a show-that response need not restate the conclusion.",
         "follow_through": "Uses the expression from part (b); award R1 for a conclusion correctly drawn from the student's own n."
       }
     ]
@@ -114,7 +114,7 @@
           "n": 18,
           "answer": -1
         },
-        "tolerance": "Accept an equation in place of the inequality, or a table search showing u_17 = 2 and u_18 = -1; a single row u_18 = -1 still earns full marks with a feedback note.",
+        "tolerance": "Accept an equation in place of the inequality, or a table search. A bare 'u_18 = -1', or even '-1', earns full marks: the step is short enough that no working is needed.",
         "notes": "M1 for an inequality, equation or table using the nth-term expression. A1 for n = 18 (from n > 17.67). A1 for the term -1. A final answer of 'n = 18' alone earns M1A1A0: the question asks for the term.",
         "follow_through": "Uses u_1 and d from part (a); award marks for values correctly found from the student's own u_1 and d."
       },
@@ -166,7 +166,7 @@
           "iv": "geometric, r = 1/3"
         },
         "tolerance": "Accept r = 0.333 in (iv).",
-        "notes": "A1 for each sequence: the type and, for (i), (ii) and (iv), the correct d or r. d = 3 in (ii) earns A0."
+        "notes": "A1 for each sequence: the type written as a word ('arithmetic', 'geometric', 'neither') and, for (i), (ii) and (iv), the correct d or r. A value alone ('r = 2', 'x2', 'r = 1/3') does not name the type: A0. d = 3 in (ii) earns A0."
       },
       {
         "label": "b",
@@ -192,7 +192,7 @@
         "expected": {
           "answer": "16(1.25)^11 = 186.26... = 186"
         },
-        "tolerance": "Accept 186, 186.3 or 186.26.",
+        "tolerance": "A1 for 186 (3 s.f.) or the calculator display written with an ellipsis (186.264..., 186.26...). A value cut short with no ellipsis (186.26, 186.265, 186.3, or the full display 186.2645149 written without one) earns A0 with a feedback note to round to 3 s.f.",
         "notes": "(M1) for 16(1.25)^(12 - 1). A1 for 186. 16(1.25)^12 = 233 (u_13) earns M0A0.",
         "follow_through": "Uses r from part (b); award A1 for the correct value from the student's own r."
       },
@@ -210,7 +210,7 @@
           "u_1": 5
         },
         "tolerance": "Exact values.",
-        "notes": "M1 for r^3 = 1215/45 = 27 (or the two equations u_1 r^2 = 45, u_1 r^5 = 1215 divided). A1 for r = 3. A1 for u_1 = 5. u_1 = 45/3 = 15 earns M1A1A0.",
+        "notes": "M1 for r^3 = 1215/45 = 27 (or the two equations u_1 r^2 = 45, u_1 r^5 = 1215 divided). A1 for r = 3. A1 for u_1 = 5. u_1 = 45/3 = 15 earns M1A1A0. Bare answers r = 3, u_1 = 5 with no working earn 1 mark (M0A1A0), never full marks: 'find' needs supporting working.",
         "follow_through": "Award the final A1 for u_1 correct from the student's own r."
       }
     ]
@@ -253,7 +253,7 @@
           "A_3": 42000,
           "B_3": 40449.6
         },
-        "tolerance": "Accept 40400 (3 s.f.) or 40450 for Job B.",
+        "tolerance": "Job B: accept the exact value 40449.60 (or 40449.6) or 40400 (3 s.f.). Any other precision (40450, 40449, 40449.6...) earns A0 for Job B, with a feedback note to round to 3 s.f.",
         "notes": "A1 for 42000. A1 for 40449.60.",
         "follow_through": "Award each A1 for the value from the student's own expression in (a)."
       },
@@ -271,8 +271,8 @@
           "year_6": "A 48000, B 48176.12",
           "answer": "year 6"
         },
-        "tolerance": "Accept a GDC table, a graph, or solving the equation on the GDC (n = 5.78...). A single row (B_6 > A_6) still earns full marks with a feedback note that year 5 justifies 'first'.",
-        "notes": "(M1) for a valid comparison of the two expressions. A1 for the two adjacent years (or n = 5.78). A1 for year 6. 'Year 5.78' as the final answer earns M1A1A0.",
+        "tolerance": "Accept any valid comparison method (GDC table, graph, or solving the equation on the GDC). The supporting work must show that year 6 is the first: a table with both the year-5 and year-6 rows, or a sketch of the two graphs intersecting with the intersection marked by its value (n = 5.78...) or with 5 and 6 marked on the axis. A single row (B_6 > A_6) is not enough.",
+        "notes": "M1 for a valid comparison of the two expressions. First A1 for year 6. Second A1 for supporting work (both adjacent years, or the marked intersection). A comparison and 'year 6' without supporting work earns M1A1A0. A bare 'year 6' with no comparison shown earns M0A0A0. 'Year 5.78' as the final answer earns M1A0A1. The year may be implicit in the subscript: B_6 > A_6 with no year written still earns the year A1 (feedback: state the year).",
         "follow_through": "Uses the expressions from part (a); award marks for a comparison correctly made from the student's own expressions."
       }
     ]

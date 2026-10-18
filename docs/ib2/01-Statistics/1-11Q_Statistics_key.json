@@ -40,7 +40,7 @@
         "mark_codes": ["A1"],
         "description": "Find an estimate of the standard deviation.",
         "expected": {"answer": "10.9", "exact": "10.860..."},
-        "tolerance": "Accept 10.86 or 10.860...",
+        "tolerance": "A1 for 10.9 (3 s.f.) or the display with an ellipsis (10.8609...). 10.86 with no ellipsis earns A0 with a feedback note to round to 3 s.f. The sample standard deviation s_x = 10.97 (11.0) earns A0.",
         "notes": "A1 for sigma = 10.9 (population standard deviation from the GDC with the frequency list). The sample standard deviation s_x = 11.0 (10.971...) earns A0."
       },
       {
@@ -173,7 +173,7 @@
         "mark_codes": ["A1"],
         "description": "Find Pearson's product-moment correlation coefficient, r, for car age x and price y.",
         "expected": {"answer": "-0.973", "exact": "-0.97297..."},
-        "tolerance": "Accept -0.97297... or more figures. The negative sign is required.",
+        "tolerance": "A1 for -0.973 (3 s.f.) or the display with an ellipsis (-0.97297...). -0.9730 or a truncated -0.972 earns A0. The negative sign is required.",
         "notes": "A1 for -0.973. r^2 = 0.947, or 0.973 without the sign, earns A0."
       },
       {
@@ -192,7 +192,7 @@
         "mark_codes": ["A1", "A1"],
         "description": "Write down the regression line of y on x, in the form y = ax + b.",
         "expected": {"answer": "y = -1.84x + 29.0", "a": -1.83974, "b": 28.9936},
-        "tolerance": "Accept a = -1.8397..., b = 28.993... or 29, or either value to more figures.",
+        "tolerance": "Each coefficient to 3 s.f. (a = -1.84, b = 29.0) or as the display with an ellipsis (a = -1.8397..., b = 28.993...). A coefficient cut short with no ellipsis (a = -1.840, b = 28.99) or given to fewer figures (b = 29) earns A0 for that coefficient.",
         "notes": "A1 for a = -1.84, A1 for b = 29.0; the marks are independent. The reversed line x = -0.515y + 15.2 earns A0A0."
       },
       {
@@ -211,7 +211,7 @@
         "mark_codes": ["M1", "A1"],
         "description": "Use the regression line to estimate the price of a car that is 7 years old.",
         "expected": {"answer": "16.1", "exact": "16.115..."},
-        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded coefficients, including 16.115... (full precision) and 16.12 (from -1.84 and 29.0), each rounding to 16.1; accept $16 100. Award full marks when the method is correct and the value follows from the candidate's own rounding; note precision separately rather than withholding the accuracy mark.",
+        "tolerance": "A1 for 16.1 (3 s.f.), $16 100, or the display with an ellipsis (16.115...), from any route: the full-precision coefficients or the rounded line (-1.84(7) + 29.0 = 16.12) both round to 16.1. A final answer of 16.12 with no ellipsis earns A0 with a feedback note to round to 3 s.f. FT from the candidate's own line in (c).",
         "notes": "M1 for substituting x = 7 into a regression line of y on x. A1 for 16.1 or an accepted value. If coefficients were rounded before substituting, attach the feedback note to store the coefficients in the GDC (or use f1(7)) and round only at the end (premature_rounding).",
         "follow_through": "Award M1A1 for substituting x = 7 into the candidate's own line from (c)."
       }
