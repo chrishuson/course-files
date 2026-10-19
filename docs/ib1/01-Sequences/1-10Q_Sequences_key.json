@@ -34,7 +34,7 @@
           "answer": "u_n = 15 + 8(n - 1)"
         },
         "tolerance": "Accept any equivalent expression, e.g. 8n + 7; the substituted form is preferred but not required.",
-        "notes": "(M1) for the arithmetic nth-term formula with u_1 = 15 and d = 8, implied by a correct answer. A1 for a correct expression. u_n = 15 + 8n earns M1A0. The general formula u_n = u_1 + (n - 1)d with no values substituted earns M0A0. A substituted expression that appears only in a later part earns both marks here (answer_in_later_part).",
+        "notes": "(M1) for the arithmetic nth-term formula with u_1 = 15 and d = 8, implied by a correct answer. A1 for a correct expression. u_n = 15 + 8n earns M1A0. The general formula u_n = u_1 + (n - 1)d with no values substituted earns M0A0. A substituted expression that appears only in a later part earns both marks here (answer_in_later_part). A substitution shown in a later part for a single value of n (e.g. 15 + (30 - 1)8 in (c)) counts.",
         "follow_through": "Uses d from part (a); award A1 for a correct expression from the student's own d."
       },
       {
@@ -115,7 +115,7 @@
           "answer": -1
         },
         "tolerance": "Accept an equation in place of the inequality, or a table search. A bare 'u_18 = -1', or even '-1', earns full marks: the step is short enough that no working is needed.",
-        "notes": "M1 for an inequality, equation or table using the nth-term expression. A1 for n = 18 (from n > 17.67). A1 for the term -1. A final answer of 'n = 18' alone earns M1A1A0: the question asks for the term.",
+        "notes": "M1 for an inequality, equation or table using the nth-term expression. A1 for n = 18 (from n > 17.67). A1 for the term -1. A final answer of 'n = 18' alone earns M1A1A0: the question asks for the term. A named term with no value ('u_18') is treated like 'n = 18' alone: M1A1A0.",
         "follow_through": "Uses u_1 and d from part (a); award marks for values correctly found from the student's own u_1 and d."
       },
       {
@@ -166,7 +166,7 @@
           "iv": "geometric, r = 1/3"
         },
         "tolerance": "Accept r = 0.333 in (iv).",
-        "notes": "A1 for each sequence: the type written as a word ('arithmetic', 'geometric', 'neither') and, for (i), (ii) and (iv), the correct d or r. A value alone ('r = 2', 'x2', 'r = 1/3') does not name the type: A0. d = 3 in (ii) earns A0."
+        "notes": "A1 for each sequence: the type written as a word ('arithmetic', 'geometric', 'neither') and, for (i), (ii) and (iv), the correct d or r. A value alone ('r = 2', 'x2', 'r = 1/3') does not name the type: A0. d = 3 in (ii) earns A0. With the type word present, accept r written as an operation ('r = x2', 'r = :3' meaning divide by 3), with a feedback note to write r as a number."
       },
       {
         "label": "b",
@@ -254,7 +254,7 @@
           "B_3": 40449.6
         },
         "tolerance": "Job B: accept the exact value 40449.60 (or 40449.6) or 40400 (3 s.f.). Any other precision (40450, 40449, 40449.6...) earns A0 for Job B, with a feedback note to round to 3 s.f.",
-        "notes": "A1 for 42000. A1 for 40449.60.",
+        "notes": "A1 for 42000. A1 for 40449.60. The precision rule applies to FT values too: an own value cut short (42876 from 42876.576) earns A0.",
         "follow_through": "Award each A1 for the value from the student's own expression in (a)."
       },
       {
@@ -272,7 +272,7 @@
           "answer": "year 6"
         },
         "tolerance": "Accept any valid comparison method (GDC table, graph, or solving the equation on the GDC). The supporting work must show that year 6 is the first: a table with both the year-5 and year-6 rows, or a sketch of the two graphs intersecting with the intersection marked by its value (n = 5.78...) or with 5 and 6 marked on the axis. A single row (B_6 > A_6) is not enough.",
-        "notes": "M1 for a valid comparison of the two expressions. First A1 for year 6. Second A1 for supporting work (both adjacent years, or the marked intersection). A comparison and 'year 6' without supporting work earns M1A1A0. A bare 'year 6' with no comparison shown earns M0A0A0. 'Year 5.78' as the final answer earns M1A0A1. The year may be implicit in the subscript: B_6 > A_6 with no year written still earns the year A1 (feedback: state the year).",
+        "notes": "M1 for a valid comparison of the two expressions. First A1 for year 6. Second A1 for supporting work (both adjacent years, or the marked intersection). A comparison and 'year 6' without supporting work earns M1A1A0. A bare 'year 6' with no comparison shown earns M0A0A0. 'Year 5.78' as the final answer earns M1A0A1. The year may be implicit in the subscript: B_6 > A_6 with no year written still earns the year A1 (feedback: state the year). Accept 'after 6 years' for year 6, with a feedback note that the question asks for the year.",
         "follow_through": "Uses the expressions from part (a); award marks for a comparison correctly made from the student's own expressions."
       }
     ]

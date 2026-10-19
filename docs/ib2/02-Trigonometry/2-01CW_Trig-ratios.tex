@@ -1,0 +1,136 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 19 October 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{2.1 Classwork: Right-Angled Triangle Trigonometry}
+
+Set your calculator to degree mode. Give answers correct to three
+significant figures.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Name the sides; sin, cos, tan as fractions; angle from a ratio; side from sin; hypotenuse from cos [11 marks] ---
+%--- Source: Original (freshly authored, AA SL 3.2); Haese AA SL Ch. 8 ---
+\item[1.]
+For an acute angle $\theta$ in a right-angled triangle,
+$$\sin\theta = \frac{\text{opposite}}{\text{hypotenuse}}, \qquad
+\cos\theta = \frac{\text{adjacent}}{\text{hypotenuse}}, \qquad
+\tan\theta = \frac{\text{opposite}}{\text{adjacent}}.$$
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+  \coordinate (A) at (0,0);
+  \coordinate (C) at (8,0);
+  \coordinate (B) at (8,15);
+  \draw[thick] (A) -- (C) -- (B) -- cycle;
+  \draw pic[draw, angle radius=0.25cm] {right angle = A--C--B};
+  \draw pic["$\theta$", draw, angle radius=0.6cm, angle eccentricity=1.6] {angle = C--A--B};
+  \node[below left] at (A) {$A$};
+  \node[below right] at (C) {$C$};
+  \node[above right] at (B) {$B$};
+  \node[below] at (4,0) {$8$};
+  \node[right] at (8,7.5) {$15$};
+  \node[above left] at (4,7.5) {$17$};
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}[scale=0.3]
+  \coordinate (P) at (0,0);
+  \coordinate (Q) at (9.83,0);
+  \coordinate (R) at (9.83,6.88);
+  \draw[thick] (P) -- (Q) -- (R) -- cycle;
+  \draw pic[draw, angle radius=0.25cm] {right angle = P--Q--R};
+  \draw pic["$35^\circ$", draw, angle radius=0.7cm, angle eccentricity=1.7] {angle = Q--P--R};
+  \node[below left] at (P) {$P$};
+  \node[below right] at (Q) {$Q$};
+  \node[above right] at (R) {$R$};
+  \node[above left] at (4.9,3.44) {$12\,\text{cm}$};
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}[scale=0.3]
+  \coordinate (D) at (0,0);
+  \coordinate (E) at (7,0);
+  \coordinate (F) at (7,8.34);
+  \draw[thick] (D) -- (E) -- (F) -- cycle;
+  \draw pic[draw, angle radius=0.25cm] {right angle = D--E--F};
+  \draw pic["$50^\circ$", draw, angle radius=0.6cm, angle eccentricity=1.8] {angle = E--D--F};
+  \node[below left] at (D) {$D$};
+  \node[below right] at (E) {$E$};
+  \node[above right] at (F) {$F$};
+  \node[below] at (3.5,0) {$7\,\text{cm}$};
+  \node[above left] at (3.5,4.17) {$x\,\text{cm}$};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item In triangle $ABC$, write down the length of the hypotenuse, the
+  side opposite $\theta$, and the side adjacent to $\theta$.
+  \item Write down $\sin\theta$, $\cos\theta$ and $\tan\theta$ as fractions.
+  \item Find the size of angle $\theta$.
+  \item In triangle $PQR$, find the length $QR$.
+  \item In triangle $DEF$, find the value of $x$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,9.4);
+  \foreach \y in {1,2,...,9} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Ladder (angle from cos, height); tower (elevation, height, hypotenuse, angle of depression) [10 marks] ---
+%--- Source: Original (freshly authored, AA SL 3.2, 3.3); Haese AA SL Ch. 8 ---
+\item[2.]
+A ladder $6\,\text{m}$ long leans against a vertical wall. The foot of the
+ladder is on horizontal ground, $1.8\,\text{m}$ from the base of the wall.
+It may help to draw a diagram.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the angle between the ladder and the ground.
+  \item Find how far up the wall the ladder reaches.
+\end{enumerate}
+
+A vertical tower $BT$ stands on horizontal ground. From a point $P$ on the
+ground, $40\,\text{m}$ from $B$, the angle of elevation of the top $T$ is
+$28^\circ$. A car is parked at point $C$, on the other side of the tower,
+$60\,\text{m}$ from $B$.
+
+\begin{center}
+\begin{tikzpicture}
+  \coordinate (P) at (-3,0);
+  \coordinate (B) at (0,0);
+  \coordinate (C) at (4.5,0);
+  \coordinate (T) at (0,2.4);
+  \draw[thick] (P) -- (C);
+  \draw[very thick] (B) -- (T);
+  \draw (P) -- (T) -- (C);
+  \draw[dotted] (T) -- (4.5,2.4);
+  \draw pic[draw, angle radius=0.25cm] {right angle = P--B--T};
+  \draw pic["$28^\circ$", draw, angle radius=0.9cm, angle eccentricity=1.45] {angle = B--P--T};
+  \node[below] at (P) {$P$};
+  \node[below] at (B) {$B$};
+  \node[below] at (C) {$C$};
+  \node[above] at (T) {$T$};
+  \node[below] at (-1.5,0) {$40\,\text{m}$};
+  \node[below] at (2.25,0) {$60\,\text{m}$};
+  \node[right] at (4.6,1.2) {\emph{diagram not to scale}};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item[(c)] Find the height of the tower.
+  \item[(d)] Find the distance $PT$.
+  \item[(e)] Find the angle of depression of the car $C$ from the top of
+  the tower, $T$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,10.4);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

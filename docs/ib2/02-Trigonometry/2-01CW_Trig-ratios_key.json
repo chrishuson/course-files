@@ -1,0 +1,115 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["3.2"],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.602,
+    "source": "Original (authored October 2026, calculator allowed). Right-angled triangles: ABC (8, 15, 17, angle theta at A), PQR (right angle at Q, angle P = 35 deg, PR = 12 cm), DEF (right angle at E, angle D = 50 deg, DE = 7 cm, DF = x cm).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "In right-angled triangle ABC (AC = 8, BC = 15, AB = 17, right angle at C, theta at A), write down the length of the hypotenuse, the side opposite theta, and the side adjacent to theta.",
+        "expected": {"hypotenuse": "17 (AB)", "opposite": "15 (BC)", "adjacent": "8 (AC)"},
+        "tolerance": "Accept the sides named by their vertices (AB, BC, AC) with or without their lengths, provided each is matched to the correct role.",
+        "notes": "A1 for the hypotenuse 17. A1 for both the opposite (15) and the adjacent (8) correctly identified; swapping opposite and adjacent earns this mark A0. 'Write down': no working needed."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Write down sin theta, cos theta and tan theta as fractions for triangle ABC.",
+        "expected": {"sin": "15/17", "cos": "8/17", "tan": "15/8"},
+        "tolerance": "Accept equivalent fractions. Accept decimals only if the exact fraction is also seen; a decimal alone (e.g. 0.882) earns A0 because the part asks for fractions.",
+        "notes": "A1 for each correct ratio, independently. 'Write down': no working needed.",
+        "follow_through": "FT from the candidate's side identification in (a): award each ratio built correctly from the sides they named."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the size of angle theta in triangle ABC.",
+        "expected": {"answer": "61.9 degrees", "full": "61.9275..."},
+        "tolerance": "Accept 61.9 degrees or the calculator display with an ellipsis (61.9275...). A value cut short without an ellipsis (61.93, 62) earns A0. A radian-mode value (1.08) earns M1A0.",
+        "notes": "M1 for any correct inverse-trig statement for theta using two sides of the triangle: tan^-1(15/8), sin^-1(15/17) or cos^-1(8/17). A1 for the angle to 3 s.f. in degrees.",
+        "follow_through": "FT from the candidate's ratio in (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "In triangle PQR (right angle at Q, angle P = 35 deg, hypotenuse PR = 12 cm), find the length QR.",
+        "expected": {"answer": "6.88 cm", "full": "6.88291..."},
+        "tolerance": "Accept 6.88 or the display with an ellipsis (6.88291...). Units not required. A value cut short without an ellipsis (6.9, 6.883) earns A0.",
+        "notes": "M1 for any correct trig equation relating QR to the 35 degree angle and the hypotenuse 12: sin 35 = QR/12, QR = 12 sin 35, or cos 55 = QR/12. A1 for 6.88."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "In triangle DEF (right angle at E, angle D = 50 deg, DE = 7 cm adjacent, DF = x cm hypotenuse), find x.",
+        "expected": {"answer": "x = 10.9", "full": "10.8900..."},
+        "tolerance": "Accept 10.9 or the display with an ellipsis (10.8900...). A value cut short without an ellipsis (10.89) earns A0.",
+        "notes": "M1 for any correct trig equation relating x to the 50 degree angle and the adjacent side 7: cos 50 = 7/x or x = 7/cos 50 (or via tan 50 to find EF, then Pythagoras). A1 for 10.9. The common error x = 7 cos 50 = 4.50 treats x as the adjacent side: M0A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["3.2", "3.3"],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.53,
+    "source": "Original (authored October 2026, calculator allowed). Ladder 6 m, foot 1.8 m from wall; tower BT with angle of elevation 28 deg from P at 40 m, car C at 60 m on the other side.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "A 6 m ladder leans against a vertical wall with its foot 1.8 m from the wall on horizontal ground. Find the angle between the ladder and the ground.",
+        "expected": {"answer": "72.5 degrees", "full": "72.5423..."},
+        "tolerance": "Accept 72.5 degrees or the display with an ellipsis (72.5423...). A value cut short without an ellipsis (72.54, 73) earns A0.",
+        "notes": "M1 for any correct trig statement for the angle at the ground: cos theta = 1.8/6, theta = cos^-1(0.3), or a correct route via the height and tan or sin. A1 for 72.5. A diagram is not required."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find how far up the wall the ladder reaches.",
+        "expected": {"answer": "5.72 m", "full": "5.72363..."},
+        "tolerance": "Accept 5.72 or the display with an ellipsis (5.72363...). Units not required. Accept any value consistent with the candidate's own correctly-rounded intermediate angle, including 5.72 from 6 sin 72.5. A value cut short without an ellipsis (5.7, 5.724) earns A0.",
+        "notes": "M1 for any correct method: Pythagoras sqrt(6^2 - 1.8^2), or 6 sin(angle from (a)), or 1.8 tan(angle from (a)). A1 for 5.72.",
+        "follow_through": "FT from the candidate's angle in (a) when a trig method is used."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "From P on horizontal ground, 40 m from the base B of a vertical tower BT, the angle of elevation of T is 28 deg. Find the height of the tower.",
+        "expected": {"answer": "21.3 m", "full": "21.2683..."},
+        "tolerance": "Accept 21.3 or the display with an ellipsis (21.2683...). Units not required. A value cut short without an ellipsis (21.27, 21) earns A0.",
+        "notes": "M1 for any correct trig equation relating BT, the 28 degree angle and 40: tan 28 = BT/40 or BT = 40 tan 28. A1 for 21.3."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the distance PT.",
+        "expected": {"answer": "45.3 m", "full": "45.3028..."},
+        "tolerance": "Accept 45.3 or the display with an ellipsis (45.3028...). Accept any value consistent with the candidate's own correctly-rounded height from (c), including 45.3 from sqrt(40^2 + 21.3^2). A value cut short without an ellipsis (45.30) earns A0.",
+        "notes": "M1 for any correct method for the hypotenuse PT: cos 28 = 40/PT, sin 28 = BT/PT, or Pythagoras sqrt(40^2 + BT^2). A1 for 45.3.",
+        "follow_through": "FT from the candidate's height in (c) when sin or Pythagoras is used."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "A car is at C on the ground, on the other side of the tower, 60 m from B. Find the angle of depression of C from T.",
+        "expected": {"answer": "19.5 degrees", "full": "19.5180..."},
+        "tolerance": "Accept 19.5 degrees or the display with an ellipsis (19.5180...). Accept any value consistent with the candidate's own correctly-rounded height, including 19.5 (19.544...) from tan^-1(21.3/60). A value cut short without an ellipsis (19.52) earns A0.",
+        "notes": "M1 for any correct trig statement for the angle at C (equal to the angle of depression by alternate angles): tan alpha = BT/60 using the candidate's height, or an equivalent route via TC. A1 for 19.5. The angle BTC at the top of the tower (70.5 degrees) is the common error: M1A0 if the trig is otherwise correct.",
+        "follow_through": "FT from the candidate's height in (c)."
+      }
+    ]
+  }
+]
