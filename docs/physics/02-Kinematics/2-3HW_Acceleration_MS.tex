@@ -1,0 +1,135 @@
+% context: markscheme (official solutions) for 2-3HW_Acceleration
+% topic: simple calculations at constant acceleration with the four kinematic
+%        equations; speeding up from rest, braking to a stop, a negative acceleration
+% convention: answers in bold; "=" joins exact equalities, "\approx" introduces a
+%        rounded value; each solution lists the knowns, then names the equation used
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+\setlength{\parskip}{0.2\baselineskip}
+
+\title{Physics}
+\author{Chris Huson}
+\date{October 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 23 October 2026}
+
+\begin{document}
+
+\subsubsection*{2.3 Homework: Constant Acceleration Solutions}
+
+\begin{enumerate}[itemsep=0.5cm]
+
+\item Vernier cart. Knowns: $v_0 = 0$, $a = 0.500$ m/s$^2$, $x_0 = 0$.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item \renewcommand{\arraystretch}{1.4}
+      \begin{tabular}[t]{| c | c | c | c | c | c |}
+        \hline
+        $t$ (s) & 0 & 1.00 & 2.00 & 3.00 & 4.00 \\ \hline
+        $v$ (m/s) & \textbf{0} & \textbf{0.500} & \textbf{1.00} & \textbf{1.50}
+          & \textbf{2.00} \\ \hline
+      \end{tabular}
+
+      \emph{Each second adds 0.500 m/s; this is $v = v_0 + at$ one row at a time.
+      The 0.500 m/s at $t = 1.00$ s is the instantaneous velocity found in 2.2,
+      question 4(b).}
+    \item Want $x - x_0$ at $t = 2.00$ s. Use $x = x_0 + v_0 t + \frac{1}{2}at^2$:
+
+      $x - x_0 = 0 + \tfrac{1}{2}(0.500~\text{m/s}^2)(2.00~\text{s})^2
+      = \mathbf{1.00~\textbf{m}}$. \quad \textbf{Yes, it agrees} with the measured
+      1.000 m.
+
+      \emph{Also accept the average velocity route:
+      $\bar{v} = \frac{1.00 + 0}{2} = 0.500$ m/s, and
+      $0.500~\text{m/s} \times 2.00~\text{s} = 1.00$ m. The 2.2 data were made from
+      $x = 0.25\,t^2$, which is exactly $\frac{1}{2}at^2$ with $a = 0.500$ m/s$^2$.}
+  \end{enumerate}
+
+\item Tesla Model S Plaid. Knowns: $v_0 = 0$, $v = 26.8$ m/s, $t = 1.99$ s.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Want $a$. Use $v = v_0 + at$, so $a = \dfrac{v - v_0}{t}$:
+
+      $a = \dfrac{26.8~\text{m/s} - 0}{1.99~\text{s}} = 13.467\ldots
+      \approx \mathbf{13.5~\textbf{m/s}^2}$
+
+      \emph{The car gains 13.5 m/s of speed every second, more than a falling
+      object's 9.80 m/s$^2$. Tesla's figure leaves out the first foot of travel, as
+      drag-strip timing does, so the true average acceleration from a standstill is
+      a little lower.}
+    \item Want $x - x_0$. Use $\bar{v} = \dfrac{v + v_0}{2}$:
+      $\bar{v} = \dfrac{26.8 + 0}{2} = 13.4$ m/s.
+
+      $x - x_0 = \bar{v}\,t = 13.4~\text{m/s} \times 1.99~\text{s} = 26.666
+      \approx \mathbf{26.7~\textbf{m}}$
+
+      \emph{Also accept $x - x_0 = \frac{1}{2}at^2
+      = \frac{1}{2}(13.467\ldots)(1.99)^2 \approx 26.7$ m. Using the rounded 13.5
+      m/s$^2$ gives 26.73 m, which also rounds to 26.7 m.}
+  \end{enumerate}
+
+\newpage
+
+\item Braking. Knowns: $v_0 = 13.4$ m/s, $v = 0$, $x - x_0 = 14$ m. Take the
+  direction of travel as positive.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Want $a$; no time is given. Use $v^2 = v_0^2 + 2a(x - x_0)$:
+
+      $0 = (13.4~\text{m/s})^2 + 2a(14~\text{m})$, \quad so
+
+      $a = -\dfrac{(13.4~\text{m/s})^2}{2(14~\text{m})} = -\dfrac{179.56}{28}
+      = -6.4128\ldots \approx \mathbf{-6.4~\textbf{m/s}^2}$
+
+      \textbf{It is negative because the car is slowing down}: the acceleration points
+      backward, opposite to the forward velocity.
+
+      \emph{Two significant figures, because 14 m has two. Accept $-6.41$ m/s$^2$. A
+      positive 6.4 m/s$^2$ described as ``deceleration'' earns the number but not the
+      sign question.}
+    \item Knowns: $v_0 = 26.8$ m/s, $v = 0$, $a = -6.4128\ldots$ m/s$^2$. Want
+      $x - x_0$. Use $v^2 = v_0^2 + 2a(x - x_0)$ again:
+
+      $x - x_0 = \dfrac{v^2 - v_0^2}{2a} = \dfrac{0 - (26.8~\text{m/s})^2}{2(-6.4128\ldots
+      ~\text{m/s}^2)} = \dfrac{718.24}{12.8257\ldots} = \mathbf{56~\textbf{m}}$
+
+      \textbf{Twice the speed gives four times the braking distance}: $4 \times 14$ m
+      $= 56$ m.
+
+      \emph{The distance grows with $v_0^2$, and $26.8 = 2 \times 13.4$, so
+      $v_0^2$ is four times as large. The Highway Code prints 55 m; its table is
+      rounded, and with two significant figures 55 m and 56 m agree. Accept 56.1 m
+      from the rounded $-6.4$ m/s$^2$.}
+  \end{enumerate}
+
+\item Shanghai Tower elevator. Knowns: $v_0 = 0$, $v = 20.5$ m/s,
+  $a = 1.0$ m/s$^2$.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Want $t$. Use $v = v_0 + at$, so $t = \dfrac{v - v_0}{a}$:
+
+      $t = \dfrac{20.5~\text{m/s} - 0}{1.0~\text{m/s}^2} = 20.5
+      \approx \mathbf{21~\textbf{s}}$
+
+      \emph{Accept 20.5 s. The acceleration has two significant figures, so 21 s is
+      the strict answer; either earns the mark.}
+    \item Want $x - x_0$. Use $\bar{v} = \dfrac{v + v_0}{2} = \dfrac{20.5 + 0}{2}
+      = 10.25$ m/s:
+
+      $x - x_0 = \bar{v}\,t = 10.25~\text{m/s} \times 20.5~\text{s} = 210.125
+      \approx \mathbf{210~\textbf{m}}$
+
+      \emph{Also accept $v^2 = v_0^2 + 2a(x - x_0)$:
+      $x - x_0 = \frac{(20.5)^2}{2(1.0)} = 210.125$ m, or
+      $\frac{1}{2}at^2 = \frac{1}{2}(1.0)(20.5)^2$. Carry 20.5 s, not the rounded
+      21 s, into this step.}
+    \item Speeding up takes 210 m and slowing down takes another 210 m:
+      $2 \times 210.125~\text{m} = 420.25 \approx \mathbf{420~\textbf{m}}$.
+
+      \emph{On any ride shorter than about 420 m the elevator must start slowing down
+      before it reaches 20.5 m/s. The tower is 632 m tall, so a long ride such as
+      the express from the lobby to the observation deck gets there; short hops
+      between floors never do.}
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}

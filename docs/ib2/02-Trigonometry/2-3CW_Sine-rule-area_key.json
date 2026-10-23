@@ -1,0 +1,114 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["3.2"],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.621,
+    "source": "Original (authored October 2026, calculator allowed). Sine rule and area of a triangle: ABC (A = 40, B = 65, BC = 8); PQR (P = 35, PQ = 10, QR = 8, R acute); sides 6 and 9 with 30 deg between; sides 5 and 10 with area 20.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "In triangle ABC, angle A = 40 deg, angle B = 65 deg, BC = 8. Find AC.",
+        "expected": {"answer": "AC = 11.3", "full": "11.2797..."},
+        "tolerance": "Accept 11.3 or the display with an ellipsis (11.2797...). A value cut short without an ellipsis (11.28) earns A0.",
+        "notes": "M1 for a correct sine rule equation pairing each side with its opposite angle: AC/sin 65 = 8/sin 40, in either orientation. A1 for 11.3."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["A1", "M1", "A1"],
+        "description": "Find the area of triangle ABC.",
+        "expected": {"answer": "43.6", "full": "43.5814...", "angle_C": "75 degrees"},
+        "tolerance": "Accept 43.6 or the display with an ellipsis (43.5814...). Accept any value consistent with the candidate's own correctly-rounded AC, including 43.7 from AC = 11.3. A value cut short without an ellipsis (43.58) earns A0.",
+        "notes": "A1 for angle C = 75 deg (may be seen in the area expression). M1 for (1/2)ab sin C using two sides and the angle between them: (1/2)(8)(AC) sin 75, or (1/2)(AB)(AC) sin 40 with AB found by the sine rule. A1 for 43.6.",
+        "follow_through": "FT from the candidate's AC in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "In triangle PQR, angle P = 35 deg, PQ = 10, QR = 8, and angle R is acute. Find angle R.",
+        "expected": {"answer": "45.8 degrees", "full": "45.8049..."},
+        "tolerance": "Accept 45.8 or the display with an ellipsis (45.8049...). The obtuse value 134.2 earns A0 because R is stated to be acute.",
+        "notes": "M1 for a correct sine rule equation: sin R/10 = sin 35/8, in either orientation. A1 for 45.8."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the exact area of a triangle with sides 6 and 9 and 30 deg between them.",
+        "expected": {"answer": "27/2", "decimal": "13.5"},
+        "tolerance": "Accept 27/2 or 13.5.",
+        "notes": "M1 for (1/2)(6)(9) sin 30. A1 for 27/2 or 13.5."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "A triangle has sides 5 cm and 10 cm and area 20 cm^2; the angle between them is acute. Find this angle.",
+        "expected": {"answer": "53.1 degrees", "full": "53.1301..."},
+        "tolerance": "Accept 53.1 or the display with an ellipsis (53.1301...). The obtuse value 126.9 earns A0.",
+        "notes": "M1 for the equation (1/2)(5)(10) sin theta = 20. A1 for 53.1."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["3.2", "3.3"],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.604,
+    "source": "Original (authored October 2026, calculator allowed). River: A and B 200 m apart on one bank, tree T on the opposite parallel bank, angle TAB = 52, angle TBA = 71. Garden: sides 8 m and 10 m, area 30 m^2, acute included angle.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down angle ATB.",
+        "expected": {"answer": "57 degrees"},
+        "tolerance": "Accept 57.",
+        "notes": "A1 for 57 deg. 'Write down': no working needed."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the distance AT.",
+        "expected": {"answer": "225 m", "full": "225.480..."},
+        "tolerance": "Accept 225 or the display with an ellipsis (225.480...). Units not required. A value cut short without an ellipsis (225.5) earns A0.",
+        "notes": "M1 for a correct sine rule equation: AT/sin 71 = 200/sin(their angle ATB). A1 for 225.",
+        "follow_through": "FT from the candidate's angle ATB in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the width of the river (perpendicular distance from T to AB).",
+        "expected": {"answer": "178 m", "full": "177.680..."},
+        "tolerance": "Accept 178 or the display with an ellipsis (177.680...). Accept any value consistent with the candidate's own correctly-rounded intermediate, including 177 from AT = 225. A value cut short without an ellipsis (177.7) earns A0.",
+        "notes": "M1 for any correct right-angled trigonometry for the perpendicular height: AT sin 52, or BT sin 71 with BT = 187.92... from the sine rule, or 2 x area / 200. A1 for 178.",
+        "follow_through": "FT from the candidate's AT in (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the area of triangle ABT.",
+        "expected": {"answer": "17800 m^2", "full": "17768.0..."},
+        "tolerance": "Accept 17800 (or 1.78 x 10^4) or the display with an ellipsis (17768.0...). Accept any value consistent with the candidate's own correctly-rounded intermediate, including 17700 from AT = 225. A value cut short without an ellipsis (17768) earns A0.",
+        "notes": "M1 for any correct area expression: (1/2)(200)(AT) sin 52, (1/2)(200)(BT) sin 71, or (1/2)(200)(width). A1 for 17800.",
+        "follow_through": "FT from the candidate's AT in (b) or width in (c)."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "A triangular garden has sides 8 m and 10 m and area 30 m^2; the angle between them is acute. Find this angle.",
+        "expected": {"answer": "48.6 degrees", "full": "48.5903..."},
+        "tolerance": "Accept 48.6 or the display with an ellipsis (48.5903...). The obtuse value 131.4 earns A0.",
+        "notes": "M1 for the equation (1/2)(8)(10) sin theta = 30. A1 for 48.6."
+      }
+    ]
+  }
+]

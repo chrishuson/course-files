@@ -1,0 +1,193 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["1.5", "1.7"],
+    "total_marks": 14,
+    "answer_box_top_frac": 0.472,
+    "source": "Original (authored October 2026, no calculator). Laws of exponents: product, quotient, power of a power, power of a product, zero, negative and fractional exponents.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": ["1.5"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Simplify 3^4 x 3^2.",
+        "expected": {"answer": "3^6"},
+        "tolerance": "Accept 3^6 or 729.",
+        "notes": "A1 for 3^6 or 729. A bare answer earns the mark. 3^8 (multiplying exponents) or 9^6 (multiplying bases) earns A0."
+      },
+      {
+        "label": "b",
+        "topic_codes": ["1.5"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Simplify x^7 / x^3.",
+        "expected": {"answer": "x^4"},
+        "tolerance": "Accept x^4 only.",
+        "notes": "A1 for x^4. A bare answer earns the mark."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["1.5"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Simplify (a^2)^3.",
+        "expected": {"answer": "a^6"},
+        "tolerance": "Accept a^6 only. a^5 earns A0.",
+        "notes": "A1 for a^6. A bare answer earns the mark."
+      },
+      {
+        "label": "d",
+        "topic_codes": ["1.5"],
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Simplify (2x^3)^2.",
+        "expected": {"answer": "4x^6"},
+        "tolerance": "Accept 4x^6 only.",
+        "notes": "A1 for the coefficient 4 (the 2 squared). A1 for x^6. The marks are independent: 2x^6 earns A0A1; 4x^5 earns A1A0. A bare answer earns both marks."
+      },
+      {
+        "label": "e",
+        "topic_codes": ["1.5"],
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Simplify 6x^5 / (2x^2).",
+        "expected": {"answer": "3x^3"},
+        "tolerance": "Accept 3x^3 only.",
+        "notes": "A1 for the coefficient 3. A1 for x^3. The marks are independent. A bare answer earns both marks."
+      },
+      {
+        "label": "f",
+        "topic_codes": ["1.5"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Evaluate 7^0.",
+        "expected": {"answer": "1"},
+        "tolerance": "Accept 1 only. 0 or 7 earns A0.",
+        "notes": "A1 for 1. A bare answer earns the mark."
+      },
+      {
+        "label": "g",
+        "topic_codes": ["1.5"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Evaluate 2^-3.",
+        "expected": {"answer": "1/8"},
+        "tolerance": "Accept 1/8 or 0.125. -8 or -6 earns A0.",
+        "notes": "A1 for 1/8. A bare answer earns the mark."
+      },
+      {
+        "label": "h",
+        "topic_codes": ["1.7"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Evaluate 9^(1/2).",
+        "expected": {"answer": "3"},
+        "tolerance": "Accept 3. -3 alone, or 4.5, earns A0.",
+        "notes": "A1 for 3. A bare answer earns the mark."
+      },
+      {
+        "label": "i",
+        "topic_codes": ["1.7"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Evaluate 8^(2/3).",
+        "expected": {"answer": "4"},
+        "tolerance": "Accept 4 only.",
+        "notes": "M1 for any correct interpretation of the fractional exponent: (cube root of 8)^2, 2^2, or cube root of 64. A1 for 4. A correct value with no working earns A1 only (M0A1, house exception, markscheme-spec.md section 22)."
+      },
+      {
+        "label": "j",
+        "topic_codes": ["1.7"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Evaluate 4^(-1/2).",
+        "expected": {"answer": "1/2"},
+        "tolerance": "Accept 1/2 or 0.5. -2 or 2 earns A0.",
+        "notes": "M1 for any correct handling of the negative fractional exponent: 1/4^(1/2), 1/sqrt(4), or (1/4)^(1/2). A1 for 1/2. A correct value with no working earns A1 only (M0A1)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["1.7"],
+    "total_marks": 15,
+    "answer_box_top_frac": 0.426,
+    "source": "Original (authored October 2026, no calculator). Simplifying radicals, like radicals, rationalizing a sqrt denominator, conjugate product, rationalizing with the conjugate. Radicals are prior learning; tagged 1.7 (rational exponents).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Simplify sqrt(12) in the form a sqrt(b).",
+        "expected": {"answer": "2 sqrt(3)"},
+        "tolerance": "Accept 2 sqrt(3) only. A decimal (3.46) earns A0.",
+        "notes": "M1 for writing 12 as a perfect square times another factor (sqrt(4) sqrt(3), or sqrt(4 x 3)). A1 for 2 sqrt(3). A correct answer with no working earns A1 only (M0A1)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Simplify sqrt(50) in the form a sqrt(b).",
+        "expected": {"answer": "5 sqrt(2)"},
+        "tolerance": "Accept 5 sqrt(2) only.",
+        "notes": "M1 for writing 50 as a perfect square times another factor (sqrt(25) sqrt(2)). A1 for 5 sqrt(2). A correct answer with no working earns A1 only (M0A1)."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Simplify sqrt(2) x sqrt(8).",
+        "expected": {"answer": "4"},
+        "tolerance": "Accept 4 or sqrt(16) simplified to 4. sqrt(16) left unsimplified earns A0.",
+        "notes": "A1 for 4. A bare answer earns the mark."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Simplify 3 sqrt(5) + 4 sqrt(5).",
+        "expected": {"answer": "7 sqrt(5)"},
+        "tolerance": "Accept 7 sqrt(5) only. 7 sqrt(10) earns A0.",
+        "notes": "A1 for 7 sqrt(5). A bare answer earns the mark."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Simplify sqrt(18) - sqrt(2).",
+        "expected": {"answer": "2 sqrt(2)"},
+        "tolerance": "Accept 2 sqrt(2) only. sqrt(16) = 4 earns M0A0.",
+        "notes": "M1 for rewriting sqrt(18) as 3 sqrt(2) (or otherwise expressing both terms as multiples of sqrt(2)). A1 for 2 sqrt(2). A correct answer with no working earns A1 only (M0A1)."
+      },
+      {
+        "label": "f",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Rationalize the denominator of 6 / sqrt(3).",
+        "expected": {"answer": "2 sqrt(3)"},
+        "tolerance": "Accept 2 sqrt(3) or 6 sqrt(3)/3.",
+        "notes": "M1 for multiplying numerator and denominator by sqrt(3). A1 for 2 sqrt(3) or 6 sqrt(3)/3. A correct answer with no working earns A1 only (M0A1)."
+      },
+      {
+        "label": "g",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Expand and simplify (3 - sqrt(5))(3 + sqrt(5)).",
+        "expected": {"answer": "4"},
+        "tolerance": "Accept 4 only.",
+        "notes": "M1 for a correct expansion with four terms (9 + 3 sqrt(5) - 3 sqrt(5) - 5) or the difference of two squares 3^2 - (sqrt(5))^2. A1 for 4. A correct answer with no working earns A1 only (M0A1)."
+      },
+      {
+        "label": "h",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Hence, rationalize the denominator of 8 / (3 - sqrt(5)).",
+        "expected": {"answer": "6 + 2 sqrt(5)"},
+        "tolerance": "Accept 6 + 2 sqrt(5) or 2(3 + sqrt(5)). Accept 8(3 + sqrt(5))/4 for the first A1 only.",
+        "notes": "M1 for multiplying numerator and denominator by the conjugate 3 + sqrt(5). A1 for the denominator 4 (any correct form of the new fraction, e.g. 8(3 + sqrt(5))/4). A1 for the simplified answer 6 + 2 sqrt(5) or 2(3 + sqrt(5)). Multiplying by 3 - sqrt(5) or by sqrt(5) earns M0.",
+        "follow_through": "FT the denominator from the candidate's value in (g)."
+      }
+    ]
+  }
+]

@@ -1,0 +1,95 @@
+% context: 9th-grade physics homework, Unit 2 kinematics, Giancoli 2-4 and 2-5
+% topic: simple calculations at constant acceleration with the four kinematic
+%        equations; speeding up from rest, braking to a stop, a negative acceleration;
+%        the Vernier cart from 2-2CW returns (its data fit x = 0.25 t^2)
+% structure: two pages with room to work; page 1 the equations, the cart, and a
+%        fast car; page 2 braking distance and a skyscraper elevator. No free fall yet.
+% data: Tesla's advertised 0-60 mi/h time for the Model S Plaid; braking distances
+%        from the UK Highway Code table; Shanghai Tower elevator top speed and height
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{Physics}
+\author{Chris Huson}
+\date{October 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Nickname: \hspace{2.25cm} \,\\ \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 23 October 2026}
+
+\begin{document}
+
+\subsubsection*{2.3 Homework: Constant Acceleration}
+
+\textbf{Reference (provided).} \quad These hold when the acceleration $a$ is constant.
+
+\vspace{0.1cm}
+{\hspace{0.5cm}%
+\renewcommand{\arraystretch}{1.8}%
+\begin{tabular}{l @{\hspace{2cm}} l}
+  $v = v_0 + at$ & $v^2 = v_0^2 + 2a(x - x_0)$ \\
+  $x = x_0 + v_0 t + \frac{1}{2}at^2$ & $\bar{v} = \dfrac{v + v_0}{2}$
+\end{tabular}}
+
+\vspace{0.2cm}
+For each problem, list what you know ($v_0$, $v$, $a$, $t$, $x - x_0$) and what you
+want, then choose the equation that connects them. Show the units.
+
+\vspace{0.2cm}
+
+\begin{enumerate}[itemsep=0.5cm]
+
+\item The cart from 2.2 is released from rest on a tilted Vernier track. It speeds
+  up at a constant $a = 0.500$ m/s$^2$.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item An acceleration of 0.500 m/s$^2$ means the velocity grows by 0.500 m/s
+      every second. Fill in the table.
+
+      \vspace{0.1cm}
+      \renewcommand{\arraystretch}{1.5}
+      \begin{tabular}{| c | p{1.3cm} | p{1.3cm} | p{1.3cm} | p{1.3cm} | p{1.3cm} |}
+        \hline
+        $t$ (s) & \centering 0 & \centering 1.00 & \centering 2.00 &
+          \centering 3.00 & \centering\arraybackslash 4.00 \\ \hline
+        $v$ (m/s) & & & & & \\ \hline
+      \end{tabular}
+    \item How far has the cart rolled at $t = 2.00$ s? In 2.2, Graphical Analysis
+      measured 1.000 m. Does your answer agree?
+      \vspace{3.0cm}
+  \end{enumerate}
+
+\item Tesla advertises that its Model S Plaid goes from 0 to 60 mi/h in 1.99 s.
+  Take 60 mi/h $= 26.8$ m/s and assume the acceleration is constant.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item Find the car's acceleration.
+      \vspace{3.0cm}
+    \item How far does the car travel in those 1.99 s?
+  \end{enumerate}
+
+\newpage
+
+\item The UK Highway Code, the official rules for British drivers, says that a car
+  at 30 mi/h (13.4 m/s) needs 14 m of braking distance to stop.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item Find the car's acceleration while it brakes. Why is it negative?
+      \vspace{3.0cm}
+    \item At 60 mi/h (26.8 m/s), with the same acceleration, find the braking
+      distance. Twice the speed gives how many times the braking distance?
+      \vspace{3.0cm}
+  \end{enumerate}
+
+\item The elevators in the Shanghai Tower, 632 m tall, reach a top speed of
+  20.5 m/s. Suppose an elevator starts from rest and speeds up at a constant
+  1.0 m/s$^2$, about as much as passengers find comfortable.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item How long does it take to reach top speed?
+      \vspace{2.3cm}
+    \item How far does it rise while speeding up?
+      \vspace{2.8cm}
+    \item At the top it slows down at the same rate, so it needs the same distance
+      to stop. What is the shortest ride on which the elevator reaches top speed?
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}

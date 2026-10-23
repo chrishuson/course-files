@@ -1,0 +1,88 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["3.2"],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.529,
+    "source": "Original (authored October 2026, calculator allowed). Cosine rule on three triangles: (a) sides 8 and 11 with included angle 40 deg, find x; (b)(c) sides 5, 7, 9, largest angle theta and classification; (d) sides 6 and 10 with included angle 120 deg, exact y.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Triangle with sides 8 and 11 and included angle 40 deg; x is the side opposite the 40 deg angle. Find x.",
+        "expected": {"answer": "x = 7.08", "full": "7.08351..."},
+        "tolerance": "Accept 7.08 or the display with an ellipsis (7.08351...). A value cut short without an ellipsis (7.1, 7.084) earns A0. A radian-mode value (17.4) earns M1A0.",
+        "notes": "M1 for a correct substitution into the cosine rule: x^2 = 8^2 + 11^2 - 2(8)(11)cos 40. A1 for 7.08."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Triangle with sides 5, 7, 9. Find the largest angle theta (opposite the side 9).",
+        "expected": {"answer": "theta = 95.7 degrees", "full": "95.7391...", "cos": "-0.1"},
+        "tolerance": "Accept 95.7 or the display with an ellipsis (95.7391...). A value cut short without an ellipsis (95.74, 96) earns A0.",
+        "notes": "M1 for a correct substitution into the cosine rule with 9^2 as the subtracted term: cos theta = (5^2 + 7^2 - 9^2)/(2(5)(7)), or 9^2 = 5^2 + 7^2 - 2(5)(7)cos theta. A1 for 95.7. An angle found opposite the side 5 or 7 earns M0A0."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "State whether the triangle with sides 5, 7, 9 is acute, right-angled or obtuse.",
+        "expected": {"answer": "obtuse"},
+        "tolerance": "Accept 'obtuse' with or without a reason (theta > 90, or cos theta < 0, or 9^2 > 5^2 + 7^2).",
+        "notes": "A1 for 'obtuse'. 'State': no working needed.",
+        "follow_through": "FT from the candidate's angle in (b): 'acute' earns A1 if their largest angle is below 90 degrees."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Triangle with sides 6 and 10 and included angle 120 deg; y is the side opposite the 120 deg angle. Find the exact value of y.",
+        "expected": {"answer": "y = 14"},
+        "tolerance": "Accept 14 or sqrt(196). A decimal such as 14.0 earns A1.",
+        "notes": "M1 for a correct substitution into the cosine rule: y^2 = 6^2 + 10^2 - 2(6)(10)cos 120. A1 for 14. The sign slip y^2 = 136 - 60 = 76, y = 8.72 earns M1A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["3.2", "3.3"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.502,
+    "source": "Original (authored October 2026, calculator allowed). Hikers 6 km and 9 km along paths at 35 deg; quadrilateral ABCD with AB = 5, BC = 8, CD = 6, AD = 4, angle ABC = 60 deg.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": ["3.3"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Two hikers leave a campsite along straight paths with 35 deg between them. One walks 6 km, the other 9 km. Find the distance between them.",
+        "expected": {"answer": "5.34 km", "full": "5.34149..."},
+        "tolerance": "Accept 5.34 or the display with an ellipsis (5.34149...). Units not required. A value cut short without an ellipsis (5.3, 5.341) earns A0.",
+        "notes": "M1 for a correct substitution into the cosine rule: d^2 = 6^2 + 9^2 - 2(6)(9)cos 35. A1 for 5.34. A diagram is not required."
+      },
+      {
+        "label": "b",
+        "topic_codes": ["3.2"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "In quadrilateral ABCD, AB = 5 cm, BC = 8 cm, angle ABC = 60 deg. Find the diagonal AC.",
+        "expected": {"answer": "AC = 7 cm"},
+        "tolerance": "Accept 7 or 7.00. Units not required.",
+        "notes": "M1 for a correct substitution into the cosine rule: AC^2 = 5^2 + 8^2 - 2(5)(8)cos 60. A1 for 7."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["3.2"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "In quadrilateral ABCD, CD = 6 cm, AD = 4 cm. Using AC from (b), find angle ADC.",
+        "expected": {"answer": "86.4 degrees", "full": "86.4166...", "cos": "3/48 = 0.0625"},
+        "tolerance": "Accept 86.4 or the display with an ellipsis (86.4166...). A value cut short without an ellipsis (86.42, 86) earns A0.",
+        "notes": "M1 for a correct substitution into the cosine rule in triangle ACD with AC^2 as the subtracted term: cos ADC = (4^2 + 6^2 - AC^2)/(2(4)(6)). A1 for 86.4.",
+        "follow_through": "FT from the candidate's AC in (b)."
+      }
+    ]
+  }
+]
