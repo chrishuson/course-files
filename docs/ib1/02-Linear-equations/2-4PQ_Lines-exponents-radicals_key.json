@@ -1,0 +1,583 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "2.1",
+      "3.1"
+    ],
+    "total_marks": 14,
+    "answer_box_top_frac": 0.446,
+    "source": "Original, in the style of AA SL Paper 1 coordinate-geometry questions. Triangle A(-2, 1), B(6, 5), C(4, -1); L through C perpendicular to AB meets AB at D(2, 3).",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": [
+          "2.1"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the gradient of the line AB, A(-2, 1), B(6, 5).",
+        "expected": {
+          "answer": "1/2"
+        },
+        "tolerance": "Accept 1/2, 4/8 or 0.5.",
+        "notes": "M1 for a correct substitution into (y_2 - y_1)/(x_2 - x_1) with the coordinates in a consistent order. A1 for 1/2. A bare answer earns A1 only (M0A1)."
+      },
+      {
+        "label": "b",
+        "topic_codes": [
+          "2.1"
+        ],
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "Find the equation of L (through C(4, -1), perpendicular to AB) in the form y = mx + c.",
+        "expected": {
+          "answer": "y = -2x + 7",
+          "gradient_L": "-2"
+        },
+        "tolerance": "The final answer must be in the form y = mx + c; y + 1 = -2(x - 4) alone earns the M1 and the first A1 but not the final A1.",
+        "notes": "A1 for the gradient of L, the negative reciprocal of their gradient of AB. M1 for substituting their gradient and C(4, -1) into any form of the equation of a line. A1 for y = -2x + 7.",
+        "follow_through": "FT from the candidate's gradient in (a)."
+      },
+      {
+        "label": "c",
+        "topic_codes": [
+          "2.1"
+        ],
+        "marks": 4,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the coordinates of D, the intersection of L and AB.",
+        "expected": {
+          "answer": "D(2, 3)",
+          "line_AB": "y = (1/2)x + 2"
+        },
+        "tolerance": "Accept (2, 3) or x = 2, y = 3.",
+        "notes": "A1 for a correct equation of line AB in any form. M1 for solving their equations of AB and L together by any valid method (equating, substitution, elimination, GDC). A1 for x = 2, A1 for y = 3, independently.",
+        "follow_through": "FT from the candidate's equation of L in (b) and gradient in (a)."
+      },
+      {
+        "label": "d",
+        "topic_codes": [
+          "3.1",
+          "1.7"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find CD in the form a sqrt(5).",
+        "expected": {
+          "answer": "2 sqrt(5)",
+          "unsimplified": "sqrt(20)"
+        },
+        "tolerance": "Accept 2 sqrt(5) or a = 2. sqrt(20) or 4.47 alone earns A0 (form not met).",
+        "notes": "M1 for a correct substitution of C and their D into the distance formula. A1 for 2 sqrt(5).",
+        "follow_through": "FT from the candidate's D in (c)."
+      },
+      {
+        "label": "e",
+        "topic_codes": [
+          "3.1",
+          "1.7"
+        ],
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area of triangle ABC.",
+        "expected": {
+          "answer": "20",
+          "AB": "4 sqrt(5) (sqrt(80))"
+        },
+        "tolerance": "Accept 20 only (exact).",
+        "notes": "A1 for AB = sqrt(80) or 4 sqrt(5) (may be seen in the area expression). M1 for (1/2) x base x height with AB as base and CD as height, or for any other valid method (e.g. enclosing rectangle minus right triangles; the A1 for AB is then awarded for that method's correct intermediate). A1 for 20.",
+        "follow_through": "FT from the candidate's CD in (d)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "2.1"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.389,
+    "source": "Original, in the style of IB linear-model questions. Car hire: company A costs 165 euros for 3 days, 305 for 7 days, C_A = md + c; company B C_B = 45d + 10.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "C_A(d) = md + c; 3 days cost 165, 7 days cost 305. Find m.",
+        "expected": {
+          "answer": "m = 35"
+        },
+        "tolerance": "Accept 35 only.",
+        "notes": "M1 for (305 - 165)/(7 - 3), or for setting up the system 3m + c = 165, 7m + c = 305. A1 for 35."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find c.",
+        "expected": {
+          "answer": "c = 60"
+        },
+        "tolerance": "Accept 60 only.",
+        "notes": "M1 for substituting their m and one data point (3, 165) or (7, 305), or for solving the system. A1 for 60.",
+        "follow_through": "FT from the candidate's m in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Interpret the value of c in context.",
+        "expected": {
+          "answer": "the fixed fee of 60 euros, charged however many days the car is hired (the cost for 0 days)"
+        },
+        "tolerance": "Accept 'the fixed fee', 'the fixed charge', 'the cost for 0 days', or equivalent wording tied to the car hire.",
+        "notes": "A1 for an interpretation in the context of the car hire. 'The y-intercept' with no reference to the context earns A0."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the number of days for which C_A = C_B (C_B = 45d + 10).",
+        "expected": {
+          "answer": "d = 5"
+        },
+        "tolerance": "Accept 5 or 5 days.",
+        "notes": "M1 for equating their C_A to C_B, or for a graph/table method on the GDC. A1 for 5.",
+        "follow_through": "FT from the candidate's m and c."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "For 9 days, state which company is cheaper and find the saving.",
+        "expected": {
+          "answer": "Company A; saves 40 euros",
+          "C_A(9)": 375,
+          "C_B(9)": 415
+        },
+        "tolerance": "Accept 40 or 40 euros.",
+        "notes": "M1 for evaluating both costs at d = 9. A1 for company A. A1 for 40. A1 for 'company A' needs a comparison or both costs seen.",
+        "follow_through": "FT from the candidate's m and c."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "2.1"
+    ],
+    "total_marks": 13,
+    "answer_box_top_frac": 0.391,
+    "source": "Original (systems of linear equations, parallel and perpendicular lines with a parameter). 3x - 4y = 18, 5x + 2y = 4; L1: 2x + ky = 6, L2: 3x - 6y = 5.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Solve 3x - 4y = 18, 5x + 2y = 4.",
+        "expected": {
+          "answer": "x = 2, y = -3"
+        },
+        "tolerance": "Accept (2, -3).",
+        "notes": "M1 (implied) for any valid method: elimination, substitution, or the GDC simultaneous-equation solver. A1 for x = 2, A1 for y = -3. A correct answer from the GDC with no other working earns 3/3 (calculator allowed; the M1 is implied)."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "L1: 2x + ky = 6, L2: 3x - 6y = 5. Find k so that L1 is parallel to L2.",
+        "expected": {
+          "answer": "k = -4",
+          "gradient_L2": "1/2",
+          "gradient_L1": "-2/k"
+        },
+        "tolerance": "Accept -4 only.",
+        "notes": "A1 for the gradient of L2 = 1/2. M1 for equating the gradients of the two lines (-2/k = 1/2), or comparing coefficients 2/3 = k/(-6). A1 for -4."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "R1"
+        ],
+        "description": "For this k, write down the number of solutions of the system, with a reason.",
+        "expected": {
+          "answer": "no solutions; the lines are parallel and distinct (y-intercepts -3/2 and -5/6), so they never meet"
+        },
+        "tolerance": "Accept 'none' or '0'. For the R1 accept 'the lines are parallel so they do not intersect'.",
+        "notes": "A1 for 'no solutions'. R1 for a reason based on the lines being parallel (and not the same line). Do not award A1R0: a correct count with no reason or a wrong reason earns 0.",
+        "follow_through": "FT from the candidate's k in (b) only if their lines are parallel."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find k so that L1 is perpendicular to L2.",
+        "expected": {
+          "answer": "k = 1"
+        },
+        "tolerance": "Accept 1 only.",
+        "notes": "M1 for (gradient of L1) x (gradient of L2) = -1, or for setting the gradient of L1 equal to -2. A1 for 1.",
+        "follow_through": "FT from the candidate's gradient of L2 in (b)."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "For k = 1, find the exact intersection of 2x + y = 6 and 3x - 6y = 5.",
+        "expected": {
+          "answer": "(41/15, 8/15)"
+        },
+        "tolerance": "Exact values are required: decimal coordinates (2.73, 0.533) earn A1A0 in total.",
+        "notes": "M1 for any valid method of solving the system, including the GDC solver. A1 for x = 41/15, A1 for y = 8/15.",
+        "follow_through": "FT from the candidate's k in (d)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "total_marks": 15,
+    "answer_box_top_frac": 0.377,
+    "source": "Original, in the style of AA SL Paper 1 exponent questions. Simplify (2x^3 y^-2)^3/(4x^5 y^-4); (27x^6)^(-2/3); 9^(x+1) = (1/27)^x; 4^x - 6(2^x) + 8 = 0 via u = 2^x; GDC solution of 5^x = 40.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Simplify (2x^3 y^-2)^3 / (4x^5 y^-4) with positive exponents only.",
+        "expected": {
+          "answer": "2x^4 / y^2"
+        },
+        "tolerance": "Accept 2x^4/y^2 only for the final A1; 2x^4 y^-2 earns the first A1 but not the second.",
+        "notes": "M1 for raising every factor of the bracket to the power 3 (8x^9 y^-6). A1 for 2x^4 y^-2 (any correct form). A1 for 2x^4/y^2 (positive exponents)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write (27x^6)^(-2/3) in the form a x^n.",
+        "expected": {
+          "answer": "(1/9) x^-4",
+          "a": "1/9",
+          "n": -4
+        },
+        "tolerance": "Accept a = 1/9, n = -4, or 9^-1 x^-4. 0.111x^-4 earns A0 for a (not exact).",
+        "notes": "A1 for a = 1/9. A1 for n = -4, independently."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Solve 9^(x+1) = (1/27)^x.",
+        "expected": {
+          "answer": "x = -2/5"
+        },
+        "tolerance": "Accept -2/5 or -0.4.",
+        "notes": "M1 for writing both sides as powers of the same base (3, or equivalent). A1 for the linear equation 2x + 2 = -3x (or equivalent). A1 for -2/5. A GDC answer with no working earns M0A0A1."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "With u = 2^x, show 4^x - 6(2^x) + 8 = 0 becomes u^2 - 6u + 8 = 0.",
+        "expected": {
+          "answer": "u^2 - 6u + 8 = 0 (answer given)"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "A1 for showing 4^x = (2^2)^x = (2^x)^2 = u^2, by any correct chain. Restating the given equation with no justification of 4^x = u^2 earns A0."
+      },
+      {
+        "label": "e",
+        "marks": 4,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "Hence solve 4^x - 6(2^x) + 8 = 0.",
+        "expected": {
+          "answer": "x = 1 or x = 2",
+          "u": "2 or 4"
+        },
+        "tolerance": "Accept x = 1, x = 2 in any order.",
+        "notes": "M1 for solving the quadratic in u by any method (factorizing, formula, GDC). A1 for u = 2 and u = 4. A1 for x = 1. A1 for x = 2. Stopping at u = 2, 4 earns M1A1A0A0. A GDC graph of y = 4^x - 6(2^x) + 8 with both roots read off earns full marks only if 'hence' working with u is attempted; otherwise M0A0A1A1."
+      },
+      {
+        "label": "f",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Use your calculator to solve 5^x = 40.",
+        "expected": {
+          "answer": "x = 2.29",
+          "full": "2.29203..."
+        },
+        "tolerance": "Accept 2.29 or the display with an ellipsis (2.29203...). A value cut short without an ellipsis (2.292, 2.3) earns A0.",
+        "notes": "M1 (implied by a correct answer) for a GDC method: intersection of y = 5^x and y = 40, the solver, or logarithms. A1 for 2.29. A bare correct answer earns 2/2."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "topic_codes": [
+      "1.7"
+    ],
+    "total_marks": 13,
+    "answer_box_top_frac": 0.365,
+    "source": "Original, in the style of AA SL surd questions. sqrt75 + sqrt48 - 2 sqrt27; (2 sqrt5 - 3)^2; (sqrt3 + 1)/(sqrt3 - 1); x sqrt2 + 3 = x sqrt8 - 5; rectangle length 3 + sqrt2, area 7 + 7 sqrt2.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Simplify sqrt(75) + sqrt(48) - 2 sqrt(27).",
+        "expected": {
+          "answer": "3 sqrt(3)"
+        },
+        "tolerance": "Exact form required: 5.20 earns A0.",
+        "notes": "M1 for writing at least two of the three surds as multiples of sqrt(3) (5 sqrt3, 4 sqrt3, 6 sqrt3). A1 for 3 sqrt(3)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Expand and simplify (2 sqrt(5) - 3)^2.",
+        "expected": {
+          "answer": "29 - 12 sqrt(5)"
+        },
+        "tolerance": "Accept -12 sqrt(5) + 29. Exact form required.",
+        "notes": "M1 for an expansion with all three (or four) terms, e.g. 20 - 6 sqrt5 - 6 sqrt5 + 9. A1 for 29 - 12 sqrt(5)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Write (sqrt3 + 1)/(sqrt3 - 1) in the form a + b sqrt3.",
+        "expected": {
+          "answer": "2 + sqrt(3)"
+        },
+        "tolerance": "Accept a = 2, b = 1.",
+        "notes": "M1 for multiplying numerator and denominator by the conjugate sqrt3 + 1. A1 for a correct numerator (4 + 2 sqrt3) with denominator 2. A1 for 2 + sqrt3."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Solve x sqrt2 + 3 = x sqrt8 - 5, answer in the form a sqrt2.",
+        "expected": {
+          "answer": "x = 4 sqrt(2)"
+        },
+        "tolerance": "The form a sqrt2 is required: 8/sqrt2 or 5.66 earns the final A0.",
+        "notes": "M1 for collecting the x-terms on one side (x sqrt8 - x sqrt2 = 8 or equivalent). A1 for x sqrt2 = 8, or x(sqrt8 - sqrt2) = 8 with sqrt8 = 2 sqrt2 seen. A1 for 4 sqrt2."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Rectangle with length 3 + sqrt2 and area 7 + 7 sqrt2: find the width as a + b sqrt2.",
+        "expected": {
+          "answer": "1 + 2 sqrt(2)"
+        },
+        "tolerance": "Accept a = 1, b = 2.",
+        "notes": "M1 for width = area / length multiplied by the conjugate (3 - sqrt2)/(3 - sqrt2), or for setting up (3 + sqrt2)(a + b sqrt2) = 7 + 7 sqrt2. A1 for (7 + 14 sqrt2)/7, or for the system 3a + 2b = 7, a + 3b = 7. A1 for 1 + 2 sqrt2."
+      }
+    ]
+  },
+  {
+    "problem_number": 6,
+    "topic_codes": [
+      "2.1",
+      "1.7",
+      "3.1"
+    ],
+    "total_marks": 12,
+    "answer_box_top_frac": 0.358,
+    "source": "Original synthesis of lines and surds. L through A(sqrt2, 3) and B(3 sqrt2, 7); y = sqrt2 x + 1; meets y = 2x at P.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": [
+          "2.1",
+          "1.7"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Show the gradient of L through A(sqrt2, 3), B(3 sqrt2, 7) is sqrt2.",
+        "expected": {
+          "answer": "sqrt(2) (answer given)"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for a correct gradient expression (7 - 3)/(3 sqrt2 - sqrt2). A1 for a correct step that reaches sqrt2 from 4/(2 sqrt2) or 2/sqrt2 (rationalizing, or 2 = sqrt2 x sqrt2). A decimal check (1.414...) does not show the result: A0."
+      },
+      {
+        "label": "b",
+        "topic_codes": [
+          "2.1",
+          "1.7"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the equation of L in the form y = mx + c.",
+        "expected": {
+          "answer": "y = sqrt(2) x + 1"
+        },
+        "tolerance": "The form y = mx + c is required for the A1.",
+        "notes": "M1 for substituting sqrt2 and either point into any form of the equation of a line. A1 for y = sqrt2 x + 1 (needs sqrt2 x sqrt2 = 2)."
+      },
+      {
+        "label": "c",
+        "topic_codes": [
+          "2.1",
+          "1.7"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the exact x-intercept of L with a rational denominator.",
+        "expected": {
+          "answer": "x = -sqrt(2)/2"
+        },
+        "tolerance": "Accept (-sqrt2/2, 0). -1/sqrt2 (denominator not rational) or -0.707 earns A0.",
+        "notes": "M1 for setting y = 0 in their equation of L. A1 for -sqrt2/2.",
+        "follow_through": "FT from the candidate's equation in (b)."
+      },
+      {
+        "label": "d",
+        "topic_codes": [
+          "2.1",
+          "1.7"
+        ],
+        "marks": 4,
+        "mark_codes": [
+          "M1",
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "L meets y = 2x at P. Find P exactly, each coordinate as a + b sqrt2.",
+        "expected": {
+          "answer": "P(1 + (1/2) sqrt2, 2 + sqrt2)"
+        },
+        "tolerance": "Accept x = (2 + sqrt2)/2. Decimal coordinates (1.71, 3.41) earn M1M0A0A0.",
+        "notes": "M1 for equating their L to 2x and collecting the x-terms (x(2 - sqrt2) = 1). M1 for multiplying by the conjugate 2 + sqrt2. A1 for x = 1 + (1/2) sqrt2. A1 for y = 2 + sqrt2.",
+        "follow_through": "FT from the candidate's equation in (b)."
+      },
+      {
+        "label": "e",
+        "topic_codes": [
+          "3.1",
+          "1.7"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the exact length AB in simplest surd form.",
+        "expected": {
+          "answer": "2 sqrt(6)",
+          "unsimplified": "sqrt(24)"
+        },
+        "tolerance": "Simplest surd form required: sqrt24 or 4.90 earns A0.",
+        "notes": "M1 for a correct substitution into the distance formula: sqrt((2 sqrt2)^2 + 4^2). A1 for 2 sqrt6."
+      }
+    ]
+  }
+]

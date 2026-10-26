@@ -1,0 +1,205 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 26 October 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{2.4 Pre-Quiz: Lines, Exponents and Radicals}
+
+A calculator is allowed. When a question asks for an exact answer or a
+particular form, show the algebra that leads to it.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Triangle ABC: gradient of AB, perpendicular from C, foot D, height CD in surd form, area [13 marks] ---
+%--- Source: Original, in the style of AA SL Paper 1 coordinate-geometry questions (AA SL 2.1, 1.7 prior learning) ---
+\item[1.]
+The points $A(-2,\ 1)$, $B(6,\ 5)$ and $C(4,\ -1)$ are the vertices of
+triangle $ABC$. The line $L$ passes through $C$ and is perpendicular to
+the line $AB$. The line $L$ meets the line $AB$ at the point $D$.
+
+\begin{minipage}[t]{0.6\linewidth}
+\vspace{0pt}
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the gradient of the line $AB$.
+  \item Find the equation of $L$. Give your answer in the form
+  $y = mx + c$.
+  \item Find the coordinates of $D$.
+  \item Find the length $CD$. Give your answer in the form $a\sqrt{5}$, where $a \in \mathbb{Z}$.
+  \item Find the area of triangle $ABC$.
+\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.37\linewidth}
+\vspace{0pt}
+\centering
+\begin{tikzpicture}[scale=0.42]
+  \draw[->] (-3.5,0) -- (7.5,0) node[right] {$x$};
+  \draw[->] (0,-2) -- (0,6.5) node[above] {$y$};
+  \coordinate (A) at (-2,1);
+  \coordinate (B) at (6,5);
+  \coordinate (C) at (4,-1);
+  \coordinate (D) at (2,3);
+  \draw[thick] (A) -- (B) -- (C) -- cycle;
+  \draw[dashed] (C) -- (D);
+  \draw pic[draw, angle radius=0.2cm] {right angle = B--D--C};
+  \foreach \P in {A,B,C,D} \fill (\P) circle (2.5pt);
+  \node[left] at (A) {$A$};
+  \node[right] at (B) {$B$};
+  \node[below right] at (C) {$C$};
+  \node[above left] at (D) {$D$};
+  \node[below left] at (0,0) {$O$};
+\end{tikzpicture}
+\end{minipage}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,12.7);
+  \foreach \y in {1,2,...,12} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Car hire: linear cost model from two data points, interpret intercept, break-even, compare at 9 days [9 marks] ---
+%--- Source: Original, in the style of IB linear-model questions (AA SL 2.1) ---
+\item[2.]
+Company $A$ hires out cars. It charges a fixed fee plus an amount for each
+day. Hiring a car for $3$ days costs $165$ euros, and hiring it for $7$
+days costs $305$ euros. The cost, in euros, of hiring a car for $d$ days
+from company $A$ is $C_{A}(d) = md + c$.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the value of $m$.
+  \item Find the value of $c$.
+  \item Interpret the value of $c$ in the context of the question.
+\end{enumerate}
+
+Company $B$ charges $10$ euros plus $45$ euros for each day, so
+$C_{B}(d) = 45d + 10$.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item[(d)] Find the number of days for which the two companies charge
+  the same amount.
+  \item[(e)] Mia wants to hire a car for $9$ days. State which company is
+  cheaper, and find how much she saves by choosing it.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,14.3);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: Solve a 2x2 system; lines with parameter k: parallel (no solution), perpendicular, intersection [13 marks] ---
+%--- Source: Original (AA SL 2.1, prior learning: systems of linear equations) ---
+\item[3.]
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Solve the system of equations
+  $$3x - 4y = 18, \qquad 5x + 2y = 4.$$
+\end{enumerate}
+
+The line $L_{1}$ has equation $2x + ky = 6$, where $k \neq 0$. The line
+$L_{2}$ has equation $3x - 6y = 5$.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item[(b)] Find the value of $k$ for which $L_{1}$ is parallel to
+  $L_{2}$.
+  \item[(c)] For this value of $k$, write down the number of solutions of
+  the system $2x + ky = 6$, $3x - 6y = 5$. Give a reason for your answer.
+  \item[(d)] Find the value of $k$ for which $L_{1}$ is perpendicular to
+  $L_{2}$.
+  \item[(e)] For the value of $k$ in part (d), find the exact coordinates
+  of the point where $L_{1}$ and $L_{2}$ intersect.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,14.2);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: Exponent laws with negative/fractional powers; same-base equation; hidden quadratic in 2^x; GDC solution of 5^x = 40 [15 marks] ---
+%--- Source: Original, in the style of AA SL Paper 1 prior-learning and 1.5 questions (AA SL 1.5) ---
+\item[4.]
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Simplify $\dfrac{\left(2x^{3}y^{-2}\right)^{3}}{4x^{5}y^{-4}}$.
+  Give your answer using positive exponents only.
+  \item Write $\left(27x^{6}\right)^{-\frac{2}{3}}$ in the form $ax^{n}$,
+  where $a \in \mathbb{Q}$ and $n \in \mathbb{Z}$.
+  \item Solve the equation $9^{x + 1} = \left(\dfrac{1}{27}\right)^{x}$.
+\end{enumerate}
+
+Consider the equation $4^{x} - 6\left(2^{x}\right) + 8 = 0$.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item[(d)] Let $u = 2^{x}$. Show that the equation can be written as
+  $u^{2} - 6u + 8 = 0$.
+  \item[(e)] Hence, solve the equation $4^{x} - 6\left(2^{x}\right) + 8 = 0$.
+  \item[(f)] Use your calculator to solve the equation $5^{x} = 40$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,14.6);
+  \foreach \y in {1,2,...,14} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 5: Surds: collect like surds, square a binomial, rationalize with conjugate, linear equation with surd coefficients, rectangle width [13 marks] ---
+%--- Source: Original, in the style of AA SL Paper 1 prior-learning surd questions (AA SL 1.5 / prior learning) ---
+\item[5.]
+In this question, give every answer in exact form.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Simplify $\sqrt{75} + \sqrt{48} - 2\sqrt{27}$.
+  \item Expand and simplify $\left(2\sqrt{5} - 3\right)^{2}$.
+  \item Write $\dfrac{\sqrt{3} + 1}{\sqrt{3} - 1}$ in the form
+  $a + b\sqrt{3}$, where $a, b \in \mathbb{Z}$.
+  \item Solve the equation $x\sqrt{2} + 3 = x\sqrt{8} - 5$. Give your
+  answer in the form $a\sqrt{2}$.
+  \item A rectangle has length $\left(3 + \sqrt{2}\right)\,\text{cm}$ and
+  area $\left(7 + 7\sqrt{2}\right)\,\text{cm}^{2}$. Find the width of the
+  rectangle in the form $a + b\sqrt{2}$, where $a, b \in \mathbb{Z}$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,14.9);
+  \foreach \y in {1,2,...,14} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 6: Line through surd points: gradient sqrt2, equation, exact x-intercept, intersection with y = 2x (rationalize), length AB [12 marks] ---
+%--- Source: Original synthesis of AA SL 2.1 and surd prior learning ---
+\item[6.]
+The line $L$ passes through the points $A\left(\sqrt{2},\ 3\right)$ and
+$B\left(3\sqrt{2},\ 7\right)$.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Show that the gradient of $L$ is $\sqrt{2}$.
+  \item Find the equation of $L$ in the form $y = mx + c$.
+  \item Find the exact $x$-intercept of $L$. Give your answer with a
+  rational denominator.
+\end{enumerate}
+
+The line $L$ meets the line $y = 2x$ at the point $P$.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item[(d)] Find the exact coordinates of $P$. Give each coordinate in
+  the form $a + b\sqrt{2}$, where $a, b \in \mathbb{Q}$.
+  \item[(e)] Find the exact length $AB$. Give your answer in simplest
+  surd form.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,15.1);
+  \foreach \y in {1,2,...,14} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

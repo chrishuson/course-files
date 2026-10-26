@@ -1,0 +1,229 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["3.2"],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.517,
+    "source": "Original (authored October 2026, calculator allowed; modelled on AA SL 2022 Nov P2 Q02). Triangle ABC with AC = 21 cm, BC = 15 cm, angle ABC = 108 degrees.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Triangle ABC, AC = 21, BC = 15, angle ABC = 108 deg. Find angle BAC.",
+        "expected": {"answer": "42.8 degrees", "full": "42.7910..."},
+        "tolerance": "Accept 42.8 or the display with an ellipsis (42.7910...). A value cut short without an ellipsis (42.79) earns A0. The obtuse value 137.2 earns A0 (the triangle already has an obtuse angle at B).",
+        "notes": "M1 for a correct sine rule equation pairing each side with its opposite angle: sin A / 15 = sin 108 / 21, in either orientation. A1 for 42.8."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["A1", "M1", "A1"],
+        "description": "Find AB.",
+        "expected": {"answer": "AB = 10.8 cm", "full": "10.7753...", "angle_ACB": "29.2 degrees (29.2089...)"},
+        "tolerance": "Accept 10.8 or the display with an ellipsis (10.7753...). Units not required. Accept any value consistent with the candidate's own correctly-rounded angle, e.g. 10.8 from angle C = 29.2. A value cut short without an ellipsis (10.78) earns A0.",
+        "notes": "A1 for angle ACB = 29.2 deg (may be seen in the sine rule). M1 for a correct sine rule equation for AB: AB / sin C = 21 / sin 108. A1 for 10.8. A cosine rule route (21^2 = AB^2 + 15^2 - 2(15)(AB) cos 108, solved on the GDC) earns full marks; the A1 for angle C is then implied by a correct final answer.",
+        "follow_through": "FT from the candidate's angle BAC in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the area of triangle ABC.",
+        "expected": {"answer": "76.9 cm^2", "full": "76.8594..."},
+        "tolerance": "Accept 76.9 or the display with an ellipsis (76.8594...). Accept any value consistent with the candidate's own correctly-rounded intermediate, including 76.8 from angle C = 29.2. A value cut short without an ellipsis (76.86) earns A0.",
+        "notes": "M1 for (1/2)ab sin C using any two sides and the angle between them: (1/2)(15)(21) sin C, or (1/2)(15)(AB) sin 108, or (1/2)(21)(AB) sin A. A1 for 76.9. If an intermediate was rounded, add the feedback: carry full precision and round only at the end.",
+        "follow_through": "FT from the candidate's values in (a) or (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["3.2", "3.4"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.43,
+    "source": "Original (authored October 2026, calculator allowed; modelled on AA SL 2022 May P2 TZ2 Q01). Triangle PQR with angle QPR = 1.3 radians, PQ = 9 cm, PR = 7 cm.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Triangle PQR, PQ = 9, PR = 7, angle QPR = 1.3 rad. Find QR.",
+        "expected": {"answer": "QR = 9.81 cm", "full": "9.81300..."},
+        "tolerance": "Accept 9.81 or the display with an ellipsis (9.81300...). Units not required. A value cut short without an ellipsis (9.813) earns A0. A degree-mode value (2.01) earns A0.",
+        "notes": "M1 for the cosine rule with the angle 1.3 between sides 9 and 7: QR^2 = 9^2 + 7^2 - 2(9)(7) cos 1.3. A1 for 9.81 (calculator in radian mode)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the area of triangle PQR.",
+        "expected": {"answer": "30.4 cm^2", "full": "30.3520..."},
+        "tolerance": "Accept 30.4 or the display with an ellipsis (30.3520...). A value cut short without an ellipsis (30.35) earns A0. A degree-mode value (0.715) earns A0.",
+        "notes": "M1 for (1/2)(9)(7) sin 1.3, or any two sides with the angle between them. A1 for 30.4."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find angle PQR (radians).",
+        "expected": {"answer": "0.758", "full": "0.757825..."},
+        "tolerance": "Accept 0.758 or the display with an ellipsis (0.757825...). Accept any value consistent with the candidate's own correctly-rounded QR. The answer must be in radians: 43.4 degrees earns A0. A value cut short without an ellipsis (0.7578) earns A0.",
+        "notes": "M1 for a correct sine rule equation (sin Q / 7 = sin 1.3 / QR) or cosine rule equation (cos Q = (9^2 + QR^2 - 7^2) / (2(9)(QR))) for angle PQR. A1 for 0.758.",
+        "follow_through": "FT from the candidate's QR in (a)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": ["3.2", "3.3"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.472,
+    "source": "Original (authored October 2026, calculator allowed; modelled on AA SL 2023 May P2 TZ2 Q02). Triangular field ABC with AB = 120 m, BC = 85 m, AC = 140 m; path along AC.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Field ABC with AB = 120, BC = 85, AC = 140. Find angle ABC.",
+        "expected": {"answer": "84.3 degrees", "full": "84.3031..."},
+        "tolerance": "Accept 84.3 or the display with an ellipsis (84.3031...). A value cut short without an ellipsis (84.30) earns A0.",
+        "notes": "M1 for the cosine rule with AC = 140 as the side opposite angle ABC: cos B = (120^2 + 85^2 - 140^2) / (2(120)(85)), or 140^2 = 120^2 + 85^2 - 2(120)(85) cos B. A1 for 84.3."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the area of the field.",
+        "expected": {"answer": "5070 m^2", "full": "5074.81..."},
+        "tolerance": "Accept 5070, 5.07 x 10^3, or the display with an ellipsis (5074.81...). Accept any value consistent with the candidate's own correctly-rounded angle. A value cut short without an ellipsis (5075, 5074.8) earns A0.",
+        "notes": "M1 for (1/2)ab sin C with any two sides and the angle between them, e.g. (1/2)(120)(85) sin B, or (1/2)(120)(140) sin A with A = 37.2 deg. A1 for 5070.",
+        "follow_through": "FT from the candidate's angle in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "The farmer walks from B to the path AC by the shortest route. Find its length (perpendicular distance from B to AC).",
+        "expected": {"answer": "72.5 m", "full": "72.4973..."},
+        "tolerance": "Accept 72.5 or the display with an ellipsis (72.4973...). Accept any value consistent with the candidate's own correctly-rounded intermediate, including 72.4 from area = 5070. A value cut short without an ellipsis (72.50) earns A0.",
+        "notes": "M1 for any correct method for the perpendicular distance from B to AC: (1/2)(140)h = area, or h = 120 sin A, or h = 85 sin C. A1 for 72.5. A slanted distance (e.g. BC = 85) earns M0. If the area was rounded first, add the feedback: carry full precision and round only at the end.",
+        "follow_through": "FT from the candidate's area in (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": ["3.2", "3.4"],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.273,
+    "source": "Original (authored October 2026, calculator allowed). Ambiguous case in radians: AB = 10 cm, BC = 7 cm, angle BAC = 0.6 rad.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Triangle ABC, AB = 10, BC = 7, angle BAC = 0.6 rad. Find the two possible values of angle ACB.",
+        "expected": {"answer": "0.938 and 2.20", "full": "0.938431... and 2.20316..."},
+        "tolerance": "Accept 0.938 and 2.20, or the displays with an ellipsis. Answers must be in radians: 53.8 and 126 degrees earn A0A0. A value cut short without an ellipsis (0.9384, 2.203) earns A0 for that value.",
+        "notes": "M1 for a correct sine rule equation: sin C / 10 = sin 0.6 / 7. A1 for 0.938. A1 for the second value 2.20 (pi minus the first). A degree-mode value (sin C = 0.0150) earns A0A0."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Given angle ACB is obtuse, find angle ABC.",
+        "expected": {"answer": "0.338", "full": "0.338431..."},
+        "tolerance": "Accept 0.338 or the display with an ellipsis. Accept any value consistent with the candidate's own correctly-rounded obtuse angle, including 0.342 from angle C = 2.20.",
+        "notes": "A1 for pi - 0.6 - (their obtuse angle C). A bare correct answer earns the mark (one-step part).",
+        "follow_through": "FT from the candidate's obtuse value in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the area of triangle ABC (obtuse case).",
+        "expected": {"answer": "11.6 cm^2", "full": "11.6202..."},
+        "tolerance": "Accept 11.6 or the display with an ellipsis (11.6202...). Accept any value consistent with the candidate's own correctly-rounded intermediate, including 11.7 from angle C = 2.20 (angle B = 0.342). A value cut short without an ellipsis (11.62) earns A0.",
+        "notes": "M1 for (1/2)ab sin C with any two sides and the angle between them: (1/2)(10)(7) sin B, or (1/2)(10)(AC) sin 0.6 with AC = 4.12 from the sine rule. A1 for 11.6. If an angle was rounded first, add the feedback: store the full value and use it.",
+        "follow_through": "FT from the candidate's angle in (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "topic_codes": ["3.2"],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.472,
+    "source": "Original (authored October 2026, calculator allowed; IB quadrilateral-with-diagonal pattern). Quadrilateral ABCD with AB = 6, AD = 9, BC = 8, angle BAD = 75 deg, angle BCD = 62 deg; diagonal BD.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Quadrilateral ABCD, AB = 6, AD = 9, angle BAD = 75 deg. Find BD.",
+        "expected": {"answer": "BD = 9.44 cm", "full": "9.43650..."},
+        "tolerance": "Accept 9.44 or the display with an ellipsis (9.43650...). A value cut short without an ellipsis (9.437) earns A0.",
+        "notes": "M1 for the cosine rule: BD^2 = 6^2 + 9^2 - 2(6)(9) cos 75. A1 for 9.44."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "BC = 8, angle BCD = 62 deg. Find angle BDC.",
+        "expected": {"answer": "48.5 degrees", "full": "48.4639..."},
+        "tolerance": "Accept 48.5 or the display with an ellipsis (48.4639...). Accept any value consistent with the candidate's own correctly-rounded BD, including 48.4 from BD = 9.44. The obtuse value 131.5 earns A0. A value cut short without an ellipsis (48.46) earns A0.",
+        "notes": "M1 for a correct sine rule equation: sin BDC / 8 = sin 62 / BD. A1 for 48.5.",
+        "follow_through": "FT from the candidate's BD in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 4,
+        "mark_codes": ["A1", "M1", "M1", "A1"],
+        "description": "Find the area of quadrilateral ABCD.",
+        "expected": {"answer": "61.4 cm^2", "full": "61.4439...", "angle_CBD": "69.5 degrees (69.5360...)", "area_ABD": "26.0799...", "area_BCD": "35.3639..."},
+        "tolerance": "Accept 61.4 or the display with an ellipsis (61.4439...). Accept any value consistent with the candidate's own correctly-rounded intermediates, including 61.5 from BD = 9.44 and angle BDC = 48.4. A value cut short without an ellipsis (61.44) earns A0.",
+        "notes": "A1 for angle CBD = 69.5 deg (may be seen in an area expression); a route that does not need angle CBD (e.g. CD = 10.0 by the sine rule, then (1/2)(BD)(CD) sin BDC) earns this A1 for its correct intermediate. First M1 for a correct area expression for triangle BCD with two sides and the angle between them, by any route. Second M1 for adding the areas of triangles ABD and BCD (area ABD = (1/2)(6)(9) sin 75 = 26.08). A1 for 61.4. If an intermediate was rounded, add the feedback: carry full precision.",
+        "follow_through": "FT from the candidate's BD in (a) and angle BDC in (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 6,
+    "topic_codes": ["3.2", "3.4", "2.7"],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.407,
+    "source": "Original (authored October 2026, calculator allowed; IB 'sides x and x + k, given area' pattern). Triangle ABC with AB = x, AC = x + 4, angle BAC = 2.1 rad, area 30 cm^2.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "AB = x, AC = x + 4, angle BAC = 2.1 rad, area = 30. Find x.",
+        "expected": {"answer": "x = 6.57", "full": "6.57368...", "equation": "(1/2) x (x + 4) sin 2.1 = 30"},
+        "tolerance": "Accept 6.57 or the display with an ellipsis (6.57368...). Accept the equivalent quadratic x^2 + 4x - 69.508... = 0. Giving both roots (6.57 and -10.6) as the final answer earns the final A0. A degree-mode value (38.5) earns A0. A value cut short without an ellipsis (6.574) earns A0.",
+        "notes": "M1 (implied) for an attempt to use the area formula with x, x + 4 and 2.1. A1 for the correct equation (1/2) x (x + 4) sin 2.1 = 30 or equivalent. A1 for x = 6.57 with the negative root rejected."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find BC.",
+        "expected": {"answer": "BC = 15.0 cm", "full": "15.0065..."},
+        "tolerance": "Accept 15.0 or the display with an ellipsis (15.0065...). Accept any value consistent with the candidate's own correctly-rounded x. A value cut short without an ellipsis (15.01) earns A0.",
+        "notes": "M1 for the cosine rule with the angle 2.1 between sides x and x + 4, substituting their x: BC^2 = x^2 + (x + 4)^2 - 2x(x + 4) cos 2.1. A1 for 15.0.",
+        "follow_through": "FT from the candidate's x in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find angle ABC (radians).",
+        "expected": {"answer": "0.654", "full": "0.653815..."},
+        "tolerance": "Accept 0.654 or the display with an ellipsis (0.653815...). Accept any value consistent with the candidate's own correctly-rounded x and BC. The answer must be in radians: 37.5 degrees earns A0. A value cut short without an ellipsis (0.6538) earns A0.",
+        "notes": "M1 for a sine rule or cosine rule equation with AC = x + 4 as the side opposite angle ABC, e.g. sin B / (x + 4) = sin 2.1 / BC. A1 for 0.654.",
+        "follow_through": "FT from the candidate's x in (a) and BC in (b)."
+      }
+    ]
+  }
+]
