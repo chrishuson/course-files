@@ -1,0 +1,256 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "3.3"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.603,
+    "source": "Original (authored 2026-10-27, calculator; parallel of 2-5PQ_Trig-statistics P1). Tree FT; A is 35 m from F, elevation 32 deg; B on [AF], 15 m from A.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Tree FT, A 35 m from F, elevation of T from A is 32 deg. Find the height.",
+        "expected": {
+          "answer": "21.9 m",
+          "full": "21.8704..."
+        },
+        "tolerance": "Accept 21.9 or the display with an ellipsis. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for tan 32 = FT/35. A1 for 21.9. Wrong methods: 35 sin 32 = 18.5 or 35/tan 32 = 56.0 earn M0A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find AT.",
+        "expected": {
+          "answer": "41.3 m",
+          "full": "41.2712..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for any valid method: 35/cos 32, Pythagoras with 35 and FT, or FT/sin 32. A1 for 41.3. Wrong method: 35/sin 32 = 66.0 earns M0A0.",
+        "follow_through": "FT from the candidate's height in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "B is on [AF], 15 m from A. Find the angle of elevation of T from B.",
+        "expected": {
+          "answer": "47.6 degrees",
+          "full": "47.5578...",
+          "BF": 20
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate, including 47.6 from FT = 21.9. A value cut short without an ellipsis earns A0.",
+        "notes": "A1 for BF = 20. M1 for tan theta = height / their BF. A1 for 47.6. Wrong method: using 15 as the horizontal distance gives 55.6: A0M1A0.",
+        "follow_through": "FT from the candidate's height in (a)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "3.2",
+      "3.3"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.46,
+    "source": "Original (authored 2026-10-27, calculator; parallel of 2-5PQ_Trig-statistics P2). Boats from harbour H: HA = 12 km, HB = 8 km, angle AHB = 105 deg.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "HA = 12, HB = 8, angle AHB = 105 deg. Find AB.",
+        "expected": {
+          "answer": "16.1 km",
+          "full": "16.0528..."
+        },
+        "tolerance": "Accept 16.1 or the display with an ellipsis. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for using the cosine rule. A1 for the correct substitution 12^2 + 8^2 - 2(12)(8) cos 105. A1 for 16.1. Wrong method: a sign error gives 12.6: M1A0A0."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find angle HAB.",
+        "expected": {
+          "answer": "28.8 degrees",
+          "full": "28.7751..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate, including 28.7 from AB = 16.1. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for using the sine rule (or cosine rule). A1 for pairing HB = 8 with angle HAB. A1 for 28.8. Wrong method: pairing 12 with angle HAB gives 46.2, which is angle HBA: M1A0A0.",
+        "follow_through": "FT from the candidate's AB in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area of triangle HAB.",
+        "expected": {
+          "answer": "46.4 km^2",
+          "full": "46.3644..."
+        },
+        "tolerance": "Accept 46.4 or the display with an ellipsis. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for (1/2)(12)(8) sin 105 or any two sides with the angle between them. A1 for 46.4. Wrong method: (1/2)(12)(8) = 48 earns M0A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "3.2",
+      "3.4"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.442,
+    "source": "Original (authored 2026-10-27, calculator, radians; parallel of 2-5PQ_Trig-statistics P3). Triangle ABC: AB = 6 cm, AC = 10 cm, angle BAC = 1.1 rad.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "AB = 6, AC = 10, angle BAC = 1.1 rad. Find BC.",
+        "expected": {
+          "answer": "9.03 cm",
+          "full": "9.03152..."
+        },
+        "tolerance": "Accept 9.03 or the display with an ellipsis. A value cut short without an ellipsis earns A0. Degree-mode value 4.00 earns the final A0.",
+        "notes": "M1 for using the cosine rule. A1 for the correct substitution 6^2 + 10^2 - 2(6)(10) cos 1.1. A1 for 9.03 (radian mode)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area of triangle ABC.",
+        "expected": {
+          "answer": "26.7 cm^2",
+          "full": "26.7362..."
+        },
+        "tolerance": "Accept 26.7 or the display with an ellipsis. A value cut short without an ellipsis earns A0. Degree-mode value 0.576 earns A0.",
+        "notes": "M1 for (1/2)(6)(10) sin 1.1. A1 for 26.7."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find angle ACB (radians).",
+        "expected": {
+          "answer": "0.634",
+          "full": "0.633617..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate. The answer must be in radians: 36.3 degrees earns the final A0. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for using the sine rule (or cosine rule). A1 for pairing AB = 6 with angle ACB. A1 for 0.634. Wrong method: pairing 10 with angle ACB gives 1.41, which is angle ABC: M1A0A0.",
+        "follow_through": "FT from the candidate's BC in (a)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "3.2"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.511,
+    "source": "Original (authored 2026-10-27, calculator; parallel of 2-5PQ_Trig-statistics P4). Plot ABC: AB = 40 m, angle A = 68 deg, angle B = 47 deg; second plot sides 24 m and 35 m, area 320 m^2, obtuse included angle.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "AB = 40, angle BAC = 68, angle ABC = 47. Write down angle ACB.",
+        "expected": {
+          "answer": "65 degrees"
+        },
+        "tolerance": "Accept 65.",
+        "notes": "A1 for 65. 'Write down': no working needed."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find AC.",
+        "expected": {
+          "answer": "32.3 m",
+          "full": "32.2783..."
+        },
+        "tolerance": "Accept 32.3 or the display with an ellipsis. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for using the sine rule. A1 for pairing AC with 47 deg and 40 with angle ACB. A1 for 32.3. Wrong method: pairing AC with 68 deg gives 40.9, which is BC: M1A0A0.",
+        "follow_through": "FT from the candidate's angle in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area of the plot.",
+        "expected": {
+          "answer": "599 m^2",
+          "full": "598.559..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate, including 599 from AC = 32.3. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for (1/2)ab sin C with two sides and the angle between them, e.g. (1/2)(40)(AC) sin 68. A1 for 599. Wrong method: (1/2)(40)(AC) sin 65 = 585: M0A0.",
+        "follow_through": "FT from the candidate's AC in (b)."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Second plot: sides 24 and 35, area 320, included angle obtuse. Find the angle.",
+        "expected": {
+          "answer": "130 degrees",
+          "full": "130.367...",
+          "acute": "49.6324..."
+        },
+        "tolerance": "A1 for 130 (3 s.f.) or the display with an ellipsis (130.367...). 130.4 with no ellipsis earns A0.",
+        "notes": "M1 for (1/2)(24)(35) sin theta = 320. A1 (implied) for the acute value 49.6. A1 for the obtuse value 130. Giving only the acute value earns M1A1A0."
+      }
+    ]
+  }
+]

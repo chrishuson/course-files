@@ -1,0 +1,405 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "3.3"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.572,
+    "source": "Original (authored 2026-10-27, calculator). Vertical cliff FT; A is 60 m from F, elevation 41 deg; B further out on line FA, elevation 26 deg.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Cliff FT, A 60 m from F, angle of elevation of T from A is 41 deg. Find the height FT.",
+        "expected": {
+          "answer": "52.2 m",
+          "full": "52.1572..."
+        },
+        "tolerance": "Accept 52.2 or the display with an ellipsis (52.1572...). A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for tan 41 = FT/60 (any correct right-angle ratio for the height). A1 for 52.2. Wrong methods: 60 sin 41 = 39.4 or 60/tan 41 = 69.0 earn M0A0."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "B is further from the cliff on line FA, elevation of T from B is 26 deg. Find AB.",
+        "expected": {
+          "answer": "46.9 m",
+          "full": "46.9381...",
+          "BF": "106.938..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate, including 47.0 from FT = 52.2. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for BF = FT/tan 26, or any valid route (e.g. angle ATB = 15 deg, AT = 60/cos 41 = 79.50..., then the sine rule). A1 for BF = 106.9 (or AT in the sine-rule route). A1 for AB = 46.9. Giving BF = 107 as the answer for AB earns M1A1A0.",
+        "follow_through": "FT from the candidate's height in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find BT.",
+        "expected": {
+          "answer": "119 m",
+          "full": "118.979..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for any valid method: FT/sin 26, BF/cos 26, or Pythagoras with BF and FT. A1 for 119. Wrong method: FT/cos 26 = 58.0 earns M0A0. Add the feedback to carry full precision if an intermediate was rounded.",
+        "follow_through": "FT from the candidate's values in (a) or (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "3.2",
+      "3.3"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.421,
+    "source": "Original (authored 2026-10-27, calculator; modelled on AA SL 2023 May P2 TZ2 Q02). Boats from harbour H: HA = 14 km, HB = 9 km, angle AHB = 118 deg.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "HA = 14 km, HB = 9 km, angle AHB = 118 deg. Find the distance AB.",
+        "expected": {
+          "answer": "19.9 km",
+          "full": "19.8823...",
+          "AB^2": "395.306..."
+        },
+        "tolerance": "Accept 19.9 or the display with an ellipsis (19.8823...). A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for using the cosine rule. A1 for the correct substitution 14^2 + 9^2 - 2(14)(9) cos 118. A1 for 19.9. Wrong method: a sign error (adding 2(14)(9) cos 118) gives 12.6: M1A0A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find angle HAB.",
+        "expected": {
+          "answer": "23.6 degrees",
+          "full": "23.5580..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate, including 23.5 from AB = 19.9. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for a correct sine rule (or cosine rule) equation pairing HB = 9 with angle HAB. A1 for 23.6. Wrong method: pairing 14 with angle HAB gives 38.4, which is angle HBA: M0A0.",
+        "follow_through": "FT from the candidate's AB in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area of triangle HAB.",
+        "expected": {
+          "answer": "55.6 km^2",
+          "full": "55.6256..."
+        },
+        "tolerance": "Accept 55.6 or the display with an ellipsis. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for (1/2)ab sin C with two sides and the angle between them, e.g. (1/2)(14)(9) sin 118. A1 for 55.6. Wrong method: (1/2)(14)(9) = 63 earns M0A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "3.2",
+      "3.4"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.407,
+    "source": "Original (authored 2026-10-27, calculator, radians). Triangle ABC: AB = x, AC = 2x, BC = 10, angle BAC = 1.2 rad.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "AB = x, AC = 2x, BC = 10, angle BAC = 1.2 rad. Find x.",
+        "expected": {
+          "answer": "x = 5.31",
+          "full": "5.30702...",
+          "equation": "100 = x^2 + (2x)^2 - 2(x)(2x) cos 1.2"
+        },
+        "tolerance": "Accept 5.31 or the display with an ellipsis (5.30702...). A value cut short without an ellipsis earns A0. Degree-mode value 10.0 earns the final A0.",
+        "notes": "M1 for the cosine rule with BC = 10 opposite the angle 1.2. A1 for the correct substitution, 100 = x^2 + 4x^2 - 4x^2 cos 1.2 or equivalent. A1 for 5.31. Wrong methods: writing (2x)^2 as 2x^2 gives x = 8.03 (M1A0A0); degree mode gives x = 10.0 (M1A1A0)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area of triangle ABC.",
+        "expected": {
+          "answer": "26.3 cm^2",
+          "full": "26.2504..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate. A value cut short without an ellipsis earns A0. Degree-mode value 0.590 earns A0.",
+        "notes": "M1 for (1/2)(x)(2x) sin 1.2 with their x. A1 for 26.3.",
+        "follow_through": "FT from the candidate's x in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find angle ACB (radians).",
+        "expected": {
+          "answer": "0.517",
+          "full": "0.517415..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate, including 0.518 from x = 5.31. The answer must be in radians: 29.6 degrees earns A0. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for a sine rule (or cosine rule) equation pairing AB = x with angle ACB. A1 for 0.517. Wrong method: pairing 2x with angle ACB gives 1.42, which is angle ABC: M0A0.",
+        "follow_through": "FT from the candidate's x in (a)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "3.2"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.504,
+    "source": "Original (authored 2026-10-27, calculator). Plot ABC: AB = 45 m, angle A = 72 deg, angle B = 51 deg; second plot sides 30 m and 40 m, area 500 m^2, obtuse included angle.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "AB = 45, angle BAC = 72, angle ABC = 51. Write down angle ACB.",
+        "expected": {
+          "answer": "57 degrees"
+        },
+        "tolerance": "Accept 57.",
+        "notes": "A1 for 57. 'Write down': no working needed."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find AC.",
+        "expected": {
+          "answer": "41.7 m",
+          "full": "41.6988..."
+        },
+        "tolerance": "Accept 41.7 or the display with an ellipsis. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for a correct sine rule equation pairing AC with 51 deg and AB = 45 with angle ACB. A1 for 41.7. Wrong method: pairing AC with 72 deg gives 51.0, which is BC: M0A0.",
+        "follow_through": "FT from the candidate's angle in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area of the plot.",
+        "expected": {
+          "answer": "892 m^2",
+          "full": "892.303..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for (1/2)ab sin C with two sides and the angle between them, e.g. (1/2)(45)(AC) sin 72. A1 for 892. Wrong method: (1/2)(45)(AC) sin 57 = 787 (angle not between the sides): M0A0.",
+        "follow_through": "FT from the candidate's AC in (b)."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Second plot: sides 30 and 40, area 500, included angle obtuse. Find the angle.",
+        "expected": {
+          "answer": "124 degrees",
+          "full": "123.557...",
+          "acute": "56.4426..."
+        },
+        "tolerance": "A1 for 124 (3 s.f.) or the display with an ellipsis (123.557...). 123.6 with no ellipsis earns A0.",
+        "notes": "M1 for (1/2)(30)(40) sin theta = 500. A1 (implied) for the acute value 56.4. A1 for the obtuse value 124. Giving only the acute value earns M1A1A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "topic_codes": [
+      "4.2",
+      "4.3"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.322,
+    "source": "Original (authored 2026-10-27, calculator). Homework minutes, n = 14: 34, 41, 28, 45, 39, 54, 31, 37, 43, 36, 40, 33, 85, 38.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down the median, Q1 and Q3.",
+        "expected": {
+          "answer": "median 38.5, Q1 = 34, Q3 = 43"
+        },
+        "tolerance": "n = 14 is even, so the GDC and hand methods agree.",
+        "notes": "A1 for the median 38.5. A1 for both quartiles, Q1 = 34 and Q3 = 43."
+      },
+      {
+        "label": "b",
+        "marks": 4,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1",
+          "R1"
+        ],
+        "description": "Determine whether 54 and 85 are outliers.",
+        "expected": {
+          "answer": "upper fence 56.5: 54 is not an outlier, 85 is",
+          "IQR": 9,
+          "upper_fence": 56.5
+        },
+        "tolerance": "The lower fence (20.5) is not required.",
+        "notes": "A1 for IQR = 9. M1 for Q3 + 1.5 x IQR. A1 for 56.5. R1 for both conclusions with the comparison stated. Wrong methods: median + 1.5 x IQR (38.5 + 13.5 = 52) or Q3 + IQR (43 + 9 = 52) make 54 an outlier: M0A0R0.",
+        "follow_through": "FT from the candidate's quartiles in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find the mean and the standard deviation.",
+        "expected": {
+          "answer": "mean 41.7, sd 13.5",
+          "mean_full": "41.7142...",
+          "sd_full": "13.5088..."
+        },
+        "tolerance": "Accept each to 3 s.f. or as the display with an ellipsis. A value cut short without an ellipsis earns A0. Do not accept s_x = 14.0 (14.0188...), the sample standard deviation.",
+        "notes": "A1 for the mean 41.7. A1 for sigma = 13.5."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "85 is removed as an error. Find the mean of the remaining 13 values.",
+        "expected": {
+          "answer": "38.4",
+          "full": "38.3846..."
+        },
+        "tolerance": "Accept 38.4 or the display with an ellipsis. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for (584 - 85)/13 or re-entering the 13 values. A1 for 38.4. Wrong methods: dividing by 14 (35.6) or giving the new median 38: M0A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 6,
+    "topic_codes": [
+      "4.4"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.402,
+    "source": "Original (authored 2026-10-27, calculator). Hours x: 2, 3, 5, 6, 8, 9, 11, 12; scores y: 52, 55, 61, 60, 70, 73, 79, 84.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find Pearson's r and describe the correlation.",
+        "expected": {
+          "answer": "r = 0.991; strong positive",
+          "full": "0.990632..."
+        },
+        "tolerance": "Accept r to 3 s.f. or the display with an ellipsis. Accept 'very strong'. Do not accept r^2 = 0.981.",
+        "notes": "A1 for r = 0.991. A1 for 'positive'. A1 for 'strong', independently.",
+        "follow_through": "FT for the description from the candidate's r."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down the regression line of y on x.",
+        "expected": {
+          "answer": "y = 3.15x + 44.7",
+          "a_full": "3.15217...",
+          "b_full": "44.6847..."
+        },
+        "tolerance": "Each coefficient to 3 s.f. or the display with an ellipsis. The x-on-y line x = 0.311y - 13.8 earns A0A0.",
+        "notes": "A1 for a = 3.15. A1 for b = 44.7, independently."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Estimate the score for 10 hours of study.",
+        "expected": {
+          "answer": "76.2",
+          "full": "76.2065..."
+        },
+        "tolerance": "The full-precision and the rounded line both give 76.2. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 (implied) for substituting x = 10 into their y-on-x line. A1 for 76.2. Wrong method: rearranging the x-on-y line gives 76.4: M0A0.",
+        "follow_through": "FT from the candidate's line in (b)."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": [
+          "R1"
+        ],
+        "description": "Explain why the line should not be used for 25 hours.",
+        "expected": {
+          "answer": "25 hours is outside the data range (2 to 12 hours): extrapolation"
+        },
+        "tolerance": "Accept a reason that the linear pattern may not continue beyond the data (e.g. the predicted score, about 123, exceeds any possible maximum).",
+        "notes": "R1 for identifying that 25 is outside the range of the data (extrapolation). 'r is not strong enough' earns R0."
+      }
+    ]
+  }
+]

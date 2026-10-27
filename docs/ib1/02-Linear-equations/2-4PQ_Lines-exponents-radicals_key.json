@@ -6,8 +6,8 @@
       "3.1"
     ],
     "total_marks": 14,
-    "answer_box_top_frac": 0.446,
-    "source": "Original, in the style of AA SL Paper 1 coordinate-geometry questions. Triangle A(-2, 1), B(6, 5), C(4, -1); L through C perpendicular to AB meets AB at D(2, 3).",
+    "answer_box_top_frac": 0.461,
+    "source": "Original, in the style of AA SL Paper 1 coordinate-geometry questions. Triangle A(-2, 1), B(6, 5), C(7, -2); L through C perpendicular to AB meets AB at D(4, 4). Revised 2026-10-27: the first draft had C(4, -1), which made D the midpoint of AB (markscheme-spec.md section 23).",
     "parts": [
       {
         "label": "a",
@@ -37,13 +37,13 @@
           "M1",
           "A1"
         ],
-        "description": "Find the equation of L (through C(4, -1), perpendicular to AB) in the form y = mx + c.",
+        "description": "Find the equation of L (through C(7, -2), perpendicular to AB) in the form y = mx + c.",
         "expected": {
-          "answer": "y = -2x + 7",
+          "answer": "y = -2x + 12",
           "gradient_L": "-2"
         },
-        "tolerance": "The final answer must be in the form y = mx + c; y + 1 = -2(x - 4) alone earns the M1 and the first A1 but not the final A1.",
-        "notes": "A1 for the gradient of L, the negative reciprocal of their gradient of AB. M1 for substituting their gradient and C(4, -1) into any form of the equation of a line. A1 for y = -2x + 7.",
+        "tolerance": "The final answer must be in the form y = mx + c; y + 2 = -2(x - 7) alone earns the M1 and the first A1 but not the final A1.",
+        "notes": "A1 for the gradient of L, the negative reciprocal of their gradient of AB. M1 for substituting their gradient and C(7, -2) into any form of the equation of a line. A1 for y = -2x + 12. Wrong method: the perpendicular bisector of AB, y = -2x + 7 (through the midpoint (2, 3), not through C), earns A1M0A0.",
         "follow_through": "FT from the candidate's gradient in (a)."
       },
       {
@@ -60,11 +60,11 @@
         ],
         "description": "Find the coordinates of D, the intersection of L and AB.",
         "expected": {
-          "answer": "D(2, 3)",
+          "answer": "D(4, 4)",
           "line_AB": "y = (1/2)x + 2"
         },
-        "tolerance": "Accept (2, 3) or x = 2, y = 3.",
-        "notes": "A1 for a correct equation of line AB in any form. M1 for solving their equations of AB and L together by any valid method (equating, substitution, elimination, GDC). A1 for x = 2, A1 for y = 3, independently.",
+        "tolerance": "Accept (4, 4) or x = 4, y = 4.",
+        "notes": "A1 for a correct equation of line AB in any form. M1 for solving their equations of AB and L together by any valid method (equating, substitution, elimination, GDC). A1 for x = 4, A1 for y = 4, independently. Wrong method: giving the midpoint of AB, (2, 3), earns the A1 for the equation of AB if seen, then M0A0A0.",
         "follow_through": "FT from the candidate's equation of L in (b) and gradient in (a)."
       },
       {
@@ -80,11 +80,11 @@
         ],
         "description": "Find CD in the form a sqrt(5).",
         "expected": {
-          "answer": "2 sqrt(5)",
-          "unsimplified": "sqrt(20)"
+          "answer": "3 sqrt(5)",
+          "unsimplified": "sqrt(45)"
         },
-        "tolerance": "Accept 2 sqrt(5) or a = 2. sqrt(20) or 4.47 alone earns A0 (form not met).",
-        "notes": "M1 for a correct substitution of C and their D into the distance formula. A1 for 2 sqrt(5).",
+        "tolerance": "Accept 3 sqrt(5) or a = 3. sqrt(45) or 6.71 alone earns A0 (form not met).",
+        "notes": "M1 for a correct substitution of C and their D into the distance formula. A1 for 3 sqrt(5). Wrong method: CA = 3 sqrt(10) or CB = 5 sqrt(2) is not the perpendicular distance: M0A0.",
         "follow_through": "FT from the candidate's D in (c)."
       },
       {
@@ -101,11 +101,11 @@
         ],
         "description": "Find the area of triangle ABC.",
         "expected": {
-          "answer": "20",
+          "answer": "30",
           "AB": "4 sqrt(5) (sqrt(80))"
         },
-        "tolerance": "Accept 20 only (exact).",
-        "notes": "A1 for AB = sqrt(80) or 4 sqrt(5) (may be seen in the area expression). M1 for (1/2) x base x height with AB as base and CD as height, or for any other valid method (e.g. enclosing rectangle minus right triangles; the A1 for AB is then awarded for that method's correct intermediate). A1 for 20.",
+        "tolerance": "Accept 30 only (exact).",
+        "notes": "A1 for AB = sqrt(80) or 4 sqrt(5) (may be seen in the area expression). M1 for (1/2) x base x height with AB as base and CD as height, or for any other valid method (e.g. enclosing rectangle minus right triangles; the A1 for AB is then awarded for that method's correct intermediate). A1 for 30. Leaving out the 1/2 gives 60: A1M1A0.",
         "follow_through": "FT from the candidate's CD in (d)."
       }
     ]
@@ -293,7 +293,7 @@
     ],
     "total_marks": 15,
     "answer_box_top_frac": 0.377,
-    "source": "Original, in the style of AA SL Paper 1 exponent questions. Simplify (2x^3 y^-2)^3/(4x^5 y^-4); (27x^6)^(-2/3); 9^(x+1) = (1/27)^x; 4^x - 6(2^x) + 8 = 0 via u = 2^x; GDC solution of 5^x = 40.",
+    "source": "Original, in the style of AA SL Paper 1 exponent questions. Simplify (2x^3 y^-2)^3/(4x^5 y^-4); (27x^6)^(-2/3); 9^(x+1) = (1/27)^x; 2(4^x) - 17(2^x) + 8 = 0 via u = 2^x (revised 2026-10-27 from 4^x - 6(2^x) + 8 = 0, whose roots u = 2, 4 and x = 1, 2 overlapped); GDC solution of 5^x = 40.",
     "parts": [
       {
         "label": "a",
@@ -347,9 +347,9 @@
         "mark_codes": [
           "A1"
         ],
-        "description": "With u = 2^x, show 4^x - 6(2^x) + 8 = 0 becomes u^2 - 6u + 8 = 0.",
+        "description": "With u = 2^x, show 2(4^x) - 17(2^x) + 8 = 0 becomes 2u^2 - 17u + 8 = 0.",
         "expected": {
-          "answer": "u^2 - 6u + 8 = 0 (answer given)"
+          "answer": "2u^2 - 17u + 8 = 0 (answer given)"
         },
         "tolerance": "Show that (answer given).",
         "notes": "A1 for showing 4^x = (2^2)^x = (2^x)^2 = u^2, by any correct chain. Restating the given equation with no justification of 4^x = u^2 earns A0."
@@ -363,13 +363,13 @@
           "A1",
           "A1"
         ],
-        "description": "Hence solve 4^x - 6(2^x) + 8 = 0.",
+        "description": "Hence solve 2(4^x) - 17(2^x) + 8 = 0.",
         "expected": {
-          "answer": "x = 1 or x = 2",
-          "u": "2 or 4"
+          "answer": "x = -1 or x = 3",
+          "u": "1/2 or 8"
         },
-        "tolerance": "Accept x = 1, x = 2 in any order.",
-        "notes": "M1 for solving the quadratic in u by any method (factorizing, formula, GDC). A1 for u = 2 and u = 4. A1 for x = 1. A1 for x = 2. Stopping at u = 2, 4 earns M1A1A0A0. A GDC graph of y = 4^x - 6(2^x) + 8 with both roots read off earns full marks only if 'hence' working with u is attempted; otherwise M0A0A1A1."
+        "tolerance": "Accept x = -1, x = 3 in any order.",
+        "notes": "M1 for solving the quadratic in u by any method (factorizing, formula, GDC). A1 for u = 1/2 and u = 8. A1 for x = -1. A1 for x = 3. Stopping at u = 1/2, 8 earns M1A1A0A0. Wrong method: reading 2^x as 2x gives x = 1/4, 4: A0A0 for those values. A GDC graph of y = 2(4^x) - 17(2^x) + 8 with both roots read off earns full marks only if 'hence' working with u is attempted; otherwise M0A0A1A1."
       },
       {
         "label": "f",

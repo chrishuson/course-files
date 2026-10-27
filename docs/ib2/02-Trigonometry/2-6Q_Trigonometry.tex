@@ -1,0 +1,185 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 (a) \\* 28 October 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyhead[LE]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{2.6 Quiz: Trigonometry}
+
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\centering
+$\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C}
+\qquad
+c^{2} = a^{2} + b^{2} - 2ab\cos C
+\qquad
+\text{Area} = \dfrac{1}{2}ab\sin C$
+\end{minipage}}
+\end{center}
+
+A calculator is allowed. Give answers correct to three significant figures,
+unless they are exact. When a question gives an angle in radians, give
+angles in radians. Diagrams are not to scale.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Tree: height from tan, line of sight, angle of elevation from a closer point [7 marks] ---
+%--- Source: Original (freshly authored, AA SL 3.3); parallel of 2-5PQ_Trig-statistics P1 ---
+\item[1.] [Maximum mark: 7]
+
+A vertical tree $FT$ has its foot $F$ on horizontal ground. Point $A$ is on
+the ground, $35\,\text{m}$ from $F$, and the angle of elevation of the top
+$T$ from $A$ is $32^\circ$. Point $B$ lies on $[AF]$, $15\,\text{m}$ from
+$A$.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.12]
+  \coordinate (F) at (0,0);
+  \coordinate (T) at (0,21.87);
+  \coordinate (A) at (-35,0);
+  \coordinate (B) at (-20,0);
+  \draw[thick] (-40,0) -- (5,0);
+  \draw[thick] (F) -- (T);
+  \draw (A) -- (T) -- (B);
+  \draw pic[draw, angle radius=0.25cm] {right angle = T--F--B};
+  \draw pic["$32^\circ$", draw, angle radius=0.7cm, angle eccentricity=1.5] {angle = F--A--T};
+  \node[below] at (F) {$F$};
+  \node[above] at (T) {$T$};
+  \node[below] at (A) {$A$};
+  \node[below] at (B) {$B$};
+  \node[below] at (-27.5,0) {$15\,\text{m}$};
+  \draw[<->] (-35,-6) -- (0,-6) node[midway, below] {$35\,\text{m}$};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the height of the tree. \hfill [2]
+  \item Find the distance $AT$. \hfill [2]
+  \item Find the angle of elevation of $T$ from $B$. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,8.3);
+  \foreach \y in {1,2,...,7} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Two boats from a harbour: cosine rule with an obtuse angle, sine rule for an angle, area [8 marks] ---
+%--- Source: Original (freshly authored, AA SL 3.2, 3.3); parallel of 2-5PQ_Trig-statistics P2 ---
+\item[2.] [Maximum mark: 8]
+
+Two boats leave a harbour $H$. Boat $A$ sails $12\,\text{km}$ in a straight
+line and boat $B$ sails $8\,\text{km}$ in a straight line. The angle between
+their paths is $A\hat{H}B = 105^\circ$.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.4]
+  \coordinate (H) at (0,0);
+  \coordinate (A) at (12,0);
+  \coordinate (B) at (-2.071,7.727);
+  \draw[thick] (H) -- (A) -- (B) -- cycle;
+  \draw pic["$105^\circ$", draw, angle radius=0.5cm, angle eccentricity=1.9] {angle = A--H--B};
+  \fill (H) circle (3pt);
+  \node[below] at (H) {$H$};
+  \node[right] at (A) {$A$};
+  \node[above left] at (B) {$B$};
+  \node[below] at (6,0) {$12\,\text{km}$};
+  \node[left] at (-1.1,3.86) {$8\,\text{km}$};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the distance between the two boats. \hfill [3]
+  \item Find $H\hat{A}B$. \hfill [3]
+  \item Find the area of triangle $HAB$. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,12.3);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: SAS in radians: cosine rule for a side, area, sine rule for an angle in radians [8 marks] ---
+%--- Source: Original (freshly authored, AA SL 3.2, 3.4); parallel of 2-5PQ_Trig-statistics P3 (no unknown x) ---
+\item[3.] [Maximum mark: 8]
+
+The following diagram shows triangle $ABC$, with $AB = 6\,\text{cm}$,
+$AC = 10\,\text{cm}$ and $B\hat{A}C = 1.1$ radians.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (2.722,5.347);
+  \coordinate (C) at (10,0);
+  \draw[thick] (A) -- (B) -- (C) -- cycle;
+  \draw pic["$1.1$", draw, angle radius=0.5cm, angle eccentricity=1.7] {angle = C--A--B};
+  \node[below left] at (A) {$A$};
+  \node[above] at (B) {$B$};
+  \node[below right] at (C) {$C$};
+  \node[left] at (1.36,2.67) {$6\,\text{cm}$};
+  \node[below] at (5,0) {$10\,\text{cm}$};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find $BC$. \hfill [3]
+  \item Find the area of triangle $ABC$. \hfill [2]
+  \item Find $A\hat{C}B$. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,12.8);
+  \foreach \y in {1,2,...,12} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: Triangular plot (AAS): third angle, sine rule for a side, area; second plot: obtuse angle from area [9 marks] ---
+%--- Source: Original (freshly authored, AA SL 3.2); parallel of 2-5PQ_Trig-statistics P4 ---
+\item[4.] [Maximum mark: 9]
+
+A triangular plot of land $ABC$ has $AB = 40\,\text{m}$,
+$B\hat{A}C = 68^\circ$ and $A\hat{B}C = 47^\circ$.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.1]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (40,0);
+  \coordinate (C) at (12.092,29.928);
+  \draw[thick] (A) -- (B) -- (C) -- cycle;
+  \draw pic["$68^\circ$", draw, angle radius=0.5cm, angle eccentricity=1.7] {angle = B--A--C};
+  \draw pic["$47^\circ$", draw, angle radius=0.5cm, angle eccentricity=1.7] {angle = C--B--A};
+  \node[below left] at (A) {$A$};
+  \node[below right] at (B) {$B$};
+  \node[above] at (C) {$C$};
+  \node[below] at (20,0) {$40\,\text{m}$};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down $A\hat{C}B$. \hfill [1]
+  \item Find $AC$. \hfill [3]
+  \item Find the area of the plot. \hfill [2]
+\end{enumerate}
+
+A second triangular plot has two sides of length $24\,\text{m}$ and
+$35\,\text{m}$. Its area is $320\,\text{m}^{2}$, and the angle between
+these two sides is obtuse.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item[(d)] Find the angle between these two sides. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,10.9);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

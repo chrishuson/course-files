@@ -13,10 +13,10 @@ particular form, show the algebra that leads to it.
 
 \begin{enumerate}[itemsep=0.15cm]
 
-%--- Problem 1: Triangle ABC: gradient of AB, perpendicular from C, foot D, height CD in surd form, area [13 marks] ---
+%--- Problem 1: Triangle ABC: gradient of AB, perpendicular from C, foot D, height CD in surd form, area [14 marks] ---
 %--- Source: Original, in the style of AA SL Paper 1 coordinate-geometry questions (AA SL 2.1, 1.7 prior learning) ---
 \item[1.]
-The points $A(-2,\ 1)$, $B(6,\ 5)$ and $C(4,\ -1)$ are the vertices of
+The points $A(-2,\ 1)$, $B(6,\ 5)$ and $C(7,\ -2)$ are the vertices of
 triangle $ABC$. The line $L$ passes through $C$ and is perpendicular to
 the line $AB$. The line $L$ meets the line $AB$ at the point $D$.
 
@@ -36,12 +36,12 @@ the line $AB$. The line $L$ meets the line $AB$ at the point $D$.
 \vspace{0pt}
 \centering
 \begin{tikzpicture}[scale=0.42]
-  \draw[->] (-3.5,0) -- (7.5,0) node[right] {$x$};
-  \draw[->] (0,-2) -- (0,6.5) node[above] {$y$};
+  \draw[->] (-3.5,0) -- (8.5,0) node[right] {$x$};
+  \draw[->] (0,-3) -- (0,6.5) node[above] {$y$};
   \coordinate (A) at (-2,1);
   \coordinate (B) at (6,5);
-  \coordinate (C) at (4,-1);
-  \coordinate (D) at (2,3);
+  \coordinate (C) at (7,-2);
+  \coordinate (D) at (4,4);
   \draw[thick] (A) -- (B) -- (C) -- cycle;
   \draw[dashed] (C) -- (D);
   \draw pic[draw, angle radius=0.2cm] {right angle = B--D--C};
@@ -55,8 +55,8 @@ the line $AB$. The line $L$ meets the line $AB$ at the point $D$.
 \end{minipage}
 
 \begin{tikzpicture}
-  \draw (-0.6,0) rectangle (14.6,12.7);
-  \foreach \y in {1,2,...,12} \draw[dotted] (0,\y)--(14.1,\y);
+  \draw (-0.6,0) rectangle (14.6,12.3);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(14.1,\y);
 \end{tikzpicture}
 
 \newpage
@@ -134,12 +134,12 @@ $L_{2}$ has equation $3x - 6y = 5$.
   \item Solve the equation $9^{x + 1} = \left(\dfrac{1}{27}\right)^{x}$.
 \end{enumerate}
 
-Consider the equation $4^{x} - 6\left(2^{x}\right) + 8 = 0$.
+Consider the equation $2\left(4^{x}\right) - 17\left(2^{x}\right) + 8 = 0$.
 
 \begin{enumerate}[itemsep=0.1cm]
   \item[(d)] Let $u = 2^{x}$. Show that the equation can be written as
-  $u^{2} - 6u + 8 = 0$.
-  \item[(e)] Hence, solve the equation $4^{x} - 6\left(2^{x}\right) + 8 = 0$.
+  $2u^{2} - 17u + 8 = 0$.
+  \item[(e)] Hence, solve the equation $2\left(4^{x}\right) - 17\left(2^{x}\right) + 8 = 0$.
   \item[(f)] Use your calculator to solve the equation $5^{x} = 40$.
 \end{enumerate}
 

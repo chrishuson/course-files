@@ -1,0 +1,244 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 27 October 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{2.5 Pre-Quiz: Trigonometry and Statistics}
+
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\centering
+$\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C}
+\qquad
+c^{2} = a^{2} + b^{2} - 2ab\cos C
+\qquad
+\text{Area} = \dfrac{1}{2}ab\sin C$
+\end{minipage}}
+\end{center}
+
+A calculator is allowed. Give answers correct to three significant figures,
+unless they are exact. When a question gives an angle in radians, give
+angles in radians. Diagrams are not to scale.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Cliff seen from two points: height from tan, distance between the points, line of sight [7 marks] ---
+%--- Source: Original (freshly authored, AA SL 3.3); IB angle-of-elevation pattern ---
+\item[1.]
+A vertical cliff $FT$ has its foot $F$ on horizontal ground. Point $A$ is
+on the ground, $60\,\text{m}$ from $F$. The angle of elevation of the top
+$T$ from $A$ is $41^\circ$. Point $B$ is on the ground, further from the
+cliff on the line $FA$, and the angle of elevation of $T$ from $B$ is
+$26^\circ$.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.06]
+  \coordinate (F) at (0,0);
+  \coordinate (T) at (0,52.16);
+  \coordinate (A) at (-60,0);
+  \coordinate (B) at (-106.94,0);
+  \draw[thick] (-115,0) -- (10,0);
+  \draw[thick] (F) -- (T);
+  \draw (A) -- (T) -- (B);
+  \draw pic[draw, angle radius=0.25cm] {right angle = T--F--A};
+  \draw pic["$41^\circ$", draw, angle radius=0.6cm, angle eccentricity=1.6] {angle = F--A--T};
+  \draw pic["$26^\circ$", draw, angle radius=0.8cm, angle eccentricity=1.5] {angle = F--B--T};
+  \node[below] at (F) {$F$};
+  \node[above] at (T) {$T$};
+  \node[below] at (A) {$A$};
+  \node[below] at (B) {$B$};
+  \node[below] at (-30,0) {$60\,\text{m}$};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the height of the cliff.
+  \item Find the distance $AB$.
+  \item Find the distance $BT$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,9.2);
+  \foreach \y in {1,2,...,8} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Two boats from a harbour: cosine rule with an obtuse angle, sine rule for an angle, area [7 marks] ---
+%--- Source: Original (freshly authored, AA SL 3.2, 3.3); modelled on AA SL 2023 May P2 TZ2 Q02 ---
+\item[2.]
+Two boats leave a harbour $H$. Boat $A$ sails $14\,\text{km}$ in a straight
+line and boat $B$ sails $9\,\text{km}$ in a straight line. The angle between
+their paths is $A\hat{H}B = 118^\circ$.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.35]
+  \coordinate (H) at (0,0);
+  \coordinate (A) at (14,0);
+  \coordinate (B) at (-4.225,7.947);
+  \draw[thick] (H) -- (A) -- (B) -- cycle;
+  \draw pic["$118^\circ$", draw, angle radius=0.5cm, angle eccentricity=1.9] {angle = A--H--B};
+  \fill (H) circle (3pt);
+  \node[below] at (H) {$H$};
+  \node[right] at (A) {$A$};
+  \node[above left] at (B) {$B$};
+  \node[below] at (7,0) {$14\,\text{km}$};
+  \node[left] at (-2.4,3.97) {$9\,\text{km}$};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the distance between the two boats.
+  \item Find $H\hat{A}B$.
+  \item Find the area of triangle $HAB$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.4);
+  \foreach \y in {1,2,...,12} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: Sides x and 2x, angle 1.2 rad, BC = 10: cosine rule for x, area, sine rule for an angle in radians [7 marks] ---
+%--- Source: Original (freshly authored, AA SL 3.2, 3.4); IB "sides x and kx" cosine-rule pattern ---
+\item[3.]
+The following diagram shows triangle $ABC$, with $AB = x\,\text{cm}$,
+$AC = 2x\,\text{cm}$, $BC = 10\,\text{cm}$ and $B\hat{A}C = 1.2$ radians.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (1.923,4.946);
+  \coordinate (C) at (10.614,0);
+  \draw[thick] (A) -- (B) -- (C) -- cycle;
+  \draw pic["$1.2$", draw, angle radius=0.5cm, angle eccentricity=1.7] {angle = C--A--B};
+  \node[below left] at (A) {$A$};
+  \node[above] at (B) {$B$};
+  \node[below right] at (C) {$C$};
+  \node[left] at (0.96,2.47) {$x$};
+  \node[below] at (5.3,0) {$2x$};
+  \node[above right] at (6.27,2.47) {$10$};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the value of $x$.
+  \item Find the area of triangle $ABC$.
+  \item Find $A\hat{C}B$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.8);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: Triangular plot (AAS): third angle, sine rule for a side, area; second plot: obtuse angle from area [8 marks] ---
+%--- Source: Original (freshly authored, AA SL 3.2); IB sine-rule and area pattern ---
+\item[4.]
+A triangular plot of land $ABC$ has $AB = 45\,\text{m}$,
+$B\hat{A}C = 72^\circ$ and $A\hat{B}C = 51^\circ$.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.09]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (45,0);
+  \coordinate (C) at (12.886,39.658);
+  \draw[thick] (A) -- (B) -- (C) -- cycle;
+  \draw pic["$72^\circ$", draw, angle radius=0.5cm, angle eccentricity=1.7] {angle = B--A--C};
+  \draw pic["$51^\circ$", draw, angle radius=0.5cm, angle eccentricity=1.7] {angle = C--B--A};
+  \node[below left] at (A) {$A$};
+  \node[below right] at (B) {$B$};
+  \node[above] at (C) {$C$};
+  \node[below] at (22.5,0) {$45\,\text{m}$};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down $A\hat{C}B$.
+  \item Find $AC$.
+  \item Find the area of the plot.
+\end{enumerate}
+
+A second triangular plot has two sides of length $30\,\text{m}$ and
+$40\,\text{m}$. Its area is $500\,\text{m}^{2}$, and the angle between
+these two sides is obtuse.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item[(d)] Find the angle between these two sides.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,11.1);
+  \foreach \y in {1,2,...,10} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 5: Raw data (n = 14): median and quartiles, outlier test for two values, mean and sd, mean after removing an error [10 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.2, 4.3); review of 1-10PQ_Statistics P2, 1-11Q_Statistics P2 ---
+\item[5.]
+Fourteen students recorded the number of minutes they spent on homework
+one evening.
+
+\begin{center}
+$34,\; 41,\; 28,\; 45,\; 39,\; 54,\; 31,\; 37,\; 43,\; 36,\; 40,\; 33,\;
+85,\; 38$
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down the median, the lower quartile $Q_{1}$ and the upper
+  quartile $Q_{3}$.
+  \item Determine whether $54$ and $85$ are outliers. Show your working.
+  \item Find the mean and the standard deviation of the data.
+  \item The value $85$ was a recording error and is removed. Find the
+  mean of the remaining $13$ values.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,16.1);
+  \foreach \y in {1,2,...,15} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 6: Bivariate data: Pearson's r and description, y-on-x regression line, interpolation, why extrapolation is unreliable [8 marks] ---
+%--- Source: Original (freshly authored, AA SL 4.4); review of 1-10PQ_Statistics P4, 1-11Q_Statistics P4 ---
+\item[6.]
+The table shows the number of hours, $x$, that eight students studied for
+a test, and their scores, $y$.
+
+\begin{center}
+\setlength{\tabcolsep}{7pt}\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+Hours, $x$ & 2 & 3 & 5 & 6 & 8 & 9 & 11 & 12 \\
+\hline
+Score, $y$ & 52 & 55 & 61 & 60 & 70 & 73 & 79 & 84 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find Pearson's product-moment correlation coefficient, $r$, and
+  describe the correlation.
+  \item Write down the regression line of $y$ on $x$, in the form
+  $y = ax + b$.
+  \item Use your regression line to estimate the score of a student who
+  studied for $10$ hours.
+  \item Explain why the regression line should not be used to estimate the
+  score of a student who studied for $25$ hours.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.9);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

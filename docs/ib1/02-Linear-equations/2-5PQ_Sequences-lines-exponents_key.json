@@ -1,0 +1,439 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "1.2"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.354,
+    "source": "Original (unit 1 review). Arithmetic sequence with u_4 = 23, u_11 = 51.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Arithmetic sequence, u_4 = 23 and u_11 = 51. Find d and u_1.",
+        "expected": {
+          "d": 4,
+          "u_1": 11
+        },
+        "tolerance": "Accept d = 4, u_1 = 11 only.",
+        "notes": "M1 for two equations from u_n = u_1 + (n - 1)d, or for d = (51 - 23)/(11 - 4). A1 for d = 4. A1 for u_1 = 11. Wrong method: u_1 = 23 - 4(4) = 7 (n in place of n - 1) earns A0 for u_1."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find an expression for u_n.",
+        "expected": {
+          "answer": "u_n = 11 + 4(n - 1)"
+        },
+        "tolerance": "Accept any equivalent expression, e.g. 4n + 7. The answer must be in terms of n.",
+        "notes": "M1 for substituting their u_1 and d into u_n = u_1 + (n - 1)d. A1 for a correct expression.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find S_20.",
+        "expected": {
+          "answer": "980"
+        },
+        "tolerance": "Accept 980 only.",
+        "notes": "M1 for a correct substitution into either sum formula: (20/2)(2(11) + 19(4)) or (20/2)(11 + 87). A1 for 980. Wrong method: u_20 = 87 is the term, not the sum: M0A0.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "R1"
+        ],
+        "description": "Show that 199 is a term and find which term.",
+        "expected": {
+          "answer": "n = 48; 199 is the 48th term"
+        },
+        "tolerance": "Show that, plus 'which term': the value n = 48 and the whole-number reason are both required.",
+        "notes": "M1 for setting their u_n equal to 199. A1 for n = 48. R1 for stating that n is a whole number (positive integer), so 199 is a term. Wrong method: 11 + 4n = 199 gives n = 47: M0A0, R1 may still be awarded.",
+        "follow_through": "FT from (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "1.3"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.249,
+    "source": "Original (unit 1 review). Geometric sequence with u_2 = 12, u_5 = 324; S_n > 100 000.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Geometric sequence, u_2 = 12 and u_5 = 324. Find r and u_1.",
+        "expected": {
+          "r": 3,
+          "u_1": 4
+        },
+        "tolerance": "Accept r = 3, u_1 = 4 only.",
+        "notes": "M1 for dividing the two terms to get r^3 = 27 (or equivalent). A1 for r = 3. A1 for u_1 = 4. Wrong method: r = 324/12 = 27 without the cube root: M1A0A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find S_8.",
+        "expected": {
+          "answer": "13120"
+        },
+        "tolerance": "Accept 13120 or 13 120.",
+        "notes": "M1 for a correct substitution into the geometric sum formula with their u_1 and r. A1 for 13120. Wrong method: u_8 = 8748 is the term, not the sum: M0A0.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the least n for which S_n > 100 000.",
+        "expected": {
+          "answer": "n = 10",
+          "S_9": 39364,
+          "S_10": 118096
+        },
+        "tolerance": "Accept 10 only. A final answer of 9.85 (the unrounded solution) earns the final A0.",
+        "notes": "M1 for an inequality S_n > 100000 with their formula, or a GDC table or graph of S_n. A1 for the values either side (S_9 = 39364 and S_10 = 118096) or the intersection n = 9.85... seen. A1 for n = 10. Wrong method: using u_n in place of S_n gives n = 11: M0A0A0.",
+        "follow_through": "FT from (a)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "2.1",
+      "3.1"
+    ],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.317,
+    "source": "Original, in the style of AA SL Paper 1 coordinate geometry. P(-4, 8), Q(6, 3), R(4, 9); L through R perpendicular to PQ meets PQ at F(2, 5).",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": [
+          "2.1"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the gradient of PQ, P(-4, 8), Q(6, 3).",
+        "expected": {
+          "answer": "-1/2"
+        },
+        "tolerance": "Accept -1/2, -5/10 or -0.5.",
+        "notes": "M1 for a correct substitution into the gradient formula with the coordinates in a consistent order. A1 for -1/2. A bare answer earns M0A1."
+      },
+      {
+        "label": "b",
+        "topic_codes": [
+          "2.1"
+        ],
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "Find the equation of L (through R(4, 9), perpendicular to PQ) in the form y = mx + c.",
+        "expected": {
+          "answer": "y = 2x + 1",
+          "gradient_L": 2
+        },
+        "tolerance": "The final answer must be in the form y = mx + c.",
+        "notes": "A1 for gradient 2, the negative reciprocal of their gradient. M1 for substituting their gradient and R(4, 9) into any form of a line. A1 for y = 2x + 1. Wrong method: gradient -2 (no sign change) gives y = -2x + 17: A0M1A0.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "c",
+        "topic_codes": [
+          "2.1"
+        ],
+        "marks": 4,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the coordinates of F, where L meets PQ.",
+        "expected": {
+          "answer": "F(2, 5)",
+          "line_PQ": "y = -(1/2)x + 6"
+        },
+        "tolerance": "Accept (2, 5) or x = 2, y = 5.",
+        "notes": "A1 for a correct equation of line PQ in any form. M1 for solving their equations of PQ and L together by any method. A1 for x = 2, A1 for y = 5, independently. Wrong method: the midpoint of PQ, (1, 5.5), earns the A1 for the equation of PQ if seen, then M0A0A0.",
+        "follow_through": "FT from (b)."
+      },
+      {
+        "label": "d",
+        "topic_codes": [
+          "3.1",
+          "1.7"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find RF in the form a sqrt(5).",
+        "expected": {
+          "answer": "2 sqrt(5)",
+          "unsimplified": "sqrt(20)"
+        },
+        "tolerance": "Accept 2 sqrt(5) or a = 2. sqrt(20) or 4.47 alone earns A0.",
+        "notes": "M1 for a correct substitution of R and their F into the distance formula. A1 for 2 sqrt(5). Wrong method: RP = sqrt(65) or RQ = 2 sqrt(10) is not the perpendicular distance: M0A0.",
+        "follow_through": "FT from (c)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "2.1"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.285,
+    "source": "Original (systems of linear equations in context). Museum: 3 adults + 2 children = 61 euros, 2 adults + 5 children = 70 euros; 4 adults + k children = 156 euros.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down two equations in x (adult price) and y (child price).",
+        "expected": {
+          "answer": "3x + 2y = 61 and 2x + 5y = 70"
+        },
+        "tolerance": "Accept any equivalent equations.",
+        "notes": "A1 for each correct equation, independently."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the adult and child ticket prices.",
+        "expected": {
+          "answer": "adult 15 euros, child 8 euros",
+          "x": 15,
+          "y": 8
+        },
+        "tolerance": "Accept x = 15, y = 8.",
+        "notes": "M1 (implied) for any valid method: elimination, substitution, or the GDC simultaneous-equation solver; a correct GDC answer with no other working earns 3/3. A1 for x = 15. A1 for y = 8.",
+        "follow_through": "FT from the candidate's equations in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "4 adults and some children pay 156 euros. Find the number of children.",
+        "expected": {
+          "answer": "12"
+        },
+        "tolerance": "Accept 12 only.",
+        "notes": "M1 for 4(their x) + k(their y) = 156. A1 for 12. Wrong method: swapping the prices, 4(8) + 15k = 156, gives k = 8.27 (not a whole number): M0A0.",
+        "follow_through": "FT from (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "topic_codes": [
+      "1.5",
+      "1.7",
+      "2.10"
+    ],
+    "total_marks": 12,
+    "answer_box_top_frac": 0.274,
+    "source": "Original, in the style of AA SL Paper 1 exponent questions. (3a^2 b^-1)^2 x 2a^-3 b^4; (16/81)^(-3/4); 4^(2x-1) = 8^(x+2); 3^(2x) - 10(3^x) + 9 = 0.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": [
+          "1.5"
+        ],
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Simplify (3a^2 b^-1)^2 x 2a^-3 b^4.",
+        "expected": {
+          "answer": "18ab^2"
+        },
+        "tolerance": "Accept 18a^1 b^2.",
+        "notes": "M1 for raising every factor of the bracket to the power 2 (9a^4 b^-2). A1 for a correct product with exponents added (18a^(4-3) b^(-2+4) or equivalent). A1 for 18ab^2. Wrong method: leaving the 3 unsquared gives 6ab^2: M0A0A0."
+      },
+      {
+        "label": "b",
+        "topic_codes": [
+          "1.7"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the exact value of (16/81)^(-3/4).",
+        "expected": {
+          "answer": "27/8"
+        },
+        "tolerance": "Accept 27/8 or 3 3/8. 3.375 from the GDC with no working earns M0A1.",
+        "notes": "M1 for inverting the fraction for the negative exponent, or for the fourth root (2/3 or 3/2) seen. A1 for 27/8. Wrong method: ignoring the negative sign gives 8/27: M0A0."
+      },
+      {
+        "label": "c",
+        "topic_codes": [
+          "1.5"
+        ],
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Solve 4^(2x - 1) = 8^(x + 2).",
+        "expected": {
+          "answer": "x = 8"
+        },
+        "tolerance": "Accept 8 only.",
+        "notes": "M1 for writing both sides as powers of 2. A1 for 4x - 2 = 3x + 6 (or equivalent). A1 for x = 8. A GDC answer with no working earns M0A0A1. Wrong method: equating exponents without changing the base (2x - 1 = x + 2, x = 3): M0A0A0."
+      },
+      {
+        "label": "d",
+        "topic_codes": [
+          "2.10",
+          "1.5"
+        ],
+        "marks": 4,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "With u = 3^x, solve 3^(2x) - 10(3^x) + 9 = 0.",
+        "expected": {
+          "answer": "x = 0 or x = 2",
+          "u": "1 or 9"
+        },
+        "tolerance": "Accept x = 0, x = 2 in any order.",
+        "notes": "M1 for the quadratic u^2 - 10u + 9 = 0 (using 3^(2x) = u^2) solved by any method. A1 for u = 1 and u = 9. A1 for x = 0. A1 for x = 2. Stopping at u = 1, 9 earns M1A1A0A0. Wrong method: reading 3^x as 3x gives x = 1/3, 3: A0A0 for those values."
+      }
+    ]
+  },
+  {
+    "problem_number": 6,
+    "topic_codes": [
+      "1.7"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.336,
+    "source": "Original, in the style of AA SL surd questions. sqrt98 - sqrt32 + sqrt18; 10/(sqrt7 - sqrt2); x sqrt3 = x + 2; rectangle (4 + sqrt5) by (4 - sqrt5).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Simplify sqrt(98) - sqrt(32) + sqrt(18).",
+        "expected": {
+          "answer": "6 sqrt(2)"
+        },
+        "tolerance": "Exact form required.",
+        "notes": "M1 for writing at least two of the surds as multiples of sqrt2. A1 for 6 sqrt2. Wrong method: sqrt(98 - 32 + 18) = sqrt(84): M0A0."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Write 10/(sqrt7 - sqrt2) in the form a sqrt7 + b sqrt2.",
+        "expected": {
+          "answer": "2 sqrt(7) + 2 sqrt(2)"
+        },
+        "tolerance": "Accept a = 2, b = 2.",
+        "notes": "M1 for multiplying numerator and denominator by the conjugate sqrt7 + sqrt2. A1 for the denominator 5. A1 for 2 sqrt7 + 2 sqrt2. Wrong method: denominator 7 + 2 = 9: M1A0A0."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Solve x sqrt3 = x + 2, answer as a + b sqrt3.",
+        "expected": {
+          "answer": "x = 1 + sqrt(3)"
+        },
+        "tolerance": "Accept a = 1, b = 1. 2.73 earns A0A0.",
+        "notes": "M1 for collecting the x-terms and factorizing: x(sqrt3 - 1) = 2. A1 for multiplying by the conjugate sqrt3 + 1. A1 for 1 + sqrt3. Wrong method: x sqrt3 - x = x sqrt2: M0A0A0."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area of a rectangle with sides (4 + sqrt5) cm and (4 - sqrt5) cm.",
+        "expected": {
+          "answer": "11 cm^2"
+        },
+        "tolerance": "Accept 11.",
+        "notes": "M1 for the product of the sides expanded, e.g. 16 - 5 or 16 - 4 sqrt5 + 4 sqrt5 - 5. A1 for 11. Wrong method: 16 + 5 = 21: M1A0."
+      }
+    ]
+  }
+]

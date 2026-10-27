@@ -1,0 +1,282 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "2.1"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.405,
+    "source": "Original (AA SL 2.1); parallel of 2-5PQ_Sequences-lines-exponents P3. A(-4, 1), B(4, 5), C(1, 6); L through C perpendicular to AB meets AB at (2, 4).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the gradient of AB, A(-4, 1), B(4, 5).",
+        "expected": {
+          "answer": "1/2"
+        },
+        "tolerance": "Accept 1/2, 4/8 or 0.5.",
+        "notes": "M1 for a correct substitution into the gradient formula. A1 for 1/2. A bare answer earns M0A1. Wrong method: change in x over change in y (2): M0A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the equation of AB in the form y = mx + c.",
+        "expected": {
+          "answer": "y = (1/2)x + 3"
+        },
+        "tolerance": "The A1 needs the form y = mx + c.",
+        "notes": "M1 for substituting their gradient and either point into any form of a line. A1 for y = (1/2)x + 3.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "L passes through C(1, 6), perpendicular to AB. Find L in the form y = mx + c.",
+        "expected": {
+          "answer": "y = -2x + 8"
+        },
+        "tolerance": "The final A1 needs the form y = mx + c.",
+        "notes": "A1 for gradient -2, the negative reciprocal of their gradient. M1 for substituting their gradient and C(1, 6). A1 for y = -2x + 8. Wrong methods: the perpendicular bisector y = -2x + 3 (through the midpoint (0, 3), not C): A1M0A0; gradient 2 (no sign change), y = 2x + 4: A0M1A0.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the coordinates of the point where L meets AB.",
+        "expected": {
+          "answer": "(2, 4)"
+        },
+        "tolerance": "Accept (2, 4) or x = 2, y = 4.",
+        "notes": "M1 for solving their equations of AB and L together by any method. A1 for x = 2, A1 for y = 4, independently. Wrong method: the midpoint of AB, (0, 3): M0A0A0.",
+        "follow_through": "FT from (b) and (c)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "2.1"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.313,
+    "source": "Original (systems of linear equations); parallel of 2-5PQ_Sequences-lines-exponents P4. Cinema: 2 adults + 3 children = 47 euros, 1 adult + 4 children = 41 euros; 2 adults + k children = 61 euros.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down two equations in x (adult price) and y (child price).",
+        "expected": {
+          "answer": "2x + 3y = 47 and x + 4y = 41"
+        },
+        "tolerance": "Accept any equivalent equations.",
+        "notes": "A1 for each correct equation, independently."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the adult and child ticket prices.",
+        "expected": {
+          "answer": "adult 13 euros, child 7 euros",
+          "x": 13,
+          "y": 7
+        },
+        "tolerance": "Accept x = 13, y = 7.",
+        "notes": "M1 (implied) for any valid method, including the GDC solver; a correct GDC answer with no other working earns 3/3. A1 for x = 13. A1 for y = 7.",
+        "follow_through": "FT from the candidate's equations in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "2 adults and some children pay 61 euros. Find the number of children.",
+        "expected": {
+          "answer": "5"
+        },
+        "tolerance": "Accept 5 only.",
+        "notes": "M1 for 2(their x) + k(their y) = 61. A1 for 5. Wrong method: swapping the prices, 2(7) + 13k = 61, gives k = 3.62 (not a whole number): M0A0.",
+        "follow_through": "FT from (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.315,
+    "source": "Original (AA SL 1.5, 1.7); parallel of 2-5PQ_Sequences-lines-exponents P5 without the equation in u. (2a^3 b)^2 x 3a^-2 b^-4; (8/27)^(-2/3); 9^(x-1) = 27^(x-3); 2^(x+3) = 1/32.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": [
+          "1.5"
+        ],
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Simplify (2a^3 b)^2 x 3a^-2 b^-4 with positive exponents only.",
+        "expected": {
+          "answer": "12a^4 / b^2"
+        },
+        "tolerance": "12a^4 b^-2 earns the first A1 but not the second.",
+        "notes": "M1 for raising every factor of the bracket to the power 2 (4a^6 b^2). A1 for 12a^4 b^-2 (any correct form). A1 for 12a^4/b^2. Wrong method: leaving the 2 unsquared gives 6a^4/b^2: M0A0A0."
+      },
+      {
+        "label": "b",
+        "topic_codes": [
+          "1.7"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the exact value of (8/27)^(-2/3).",
+        "expected": {
+          "answer": "9/4"
+        },
+        "tolerance": "Accept 9/4 or 2 1/4. 2.25 from the GDC with no working earns M0A1.",
+        "notes": "M1 for inverting the fraction for the negative exponent, or for the cube root (2/3 or 3/2) seen. A1 for 9/4. Wrong method: ignoring the negative sign gives 4/9: M0A0."
+      },
+      {
+        "label": "c",
+        "topic_codes": [
+          "1.5"
+        ],
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Solve 9^(x - 1) = 27^(x - 3).",
+        "expected": {
+          "answer": "x = 7"
+        },
+        "tolerance": "Accept 7 only.",
+        "notes": "M1 for writing both sides as powers of 3. A1 for 2x - 2 = 3x - 9 (or equivalent). A1 for x = 7. A GDC answer with no working earns M0A0A1. Wrong method: 2x - 2 = 3x - 3 (the 3 not multiplied through) gives x = 1: M1A0A0."
+      },
+      {
+        "label": "d",
+        "topic_codes": [
+          "1.5"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Solve 2^(x + 3) = 1/32.",
+        "expected": {
+          "answer": "x = -8"
+        },
+        "tolerance": "Accept -8 only.",
+        "notes": "M1 for writing 1/32 as 2^-5. A1 for -8. Wrong method: 1/32 = 2^5 gives x = 2: M0A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "1.7"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.331,
+    "source": "Original (AA SL 1.7 / prior learning); parallel of 2-5PQ_Sequences-lines-exponents P6. sqrt50 + sqrt8 - sqrt32; (3 + sqrt5)(3 - sqrt5); 8/(3 - sqrt5); x sqrt2 + 4 = 3x sqrt2.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Simplify sqrt(50) + sqrt(8) - sqrt(32).",
+        "expected": {
+          "answer": "3 sqrt(2)"
+        },
+        "tolerance": "Exact form required.",
+        "notes": "M1 for writing at least two of the surds as multiples of sqrt2. A1 for 3 sqrt2. Wrong method: sqrt(50 + 8 - 32) = sqrt(26): M0A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Expand and simplify (3 + sqrt5)(3 - sqrt5).",
+        "expected": {
+          "answer": "4"
+        },
+        "tolerance": "Accept 4 only.",
+        "notes": "M1 for a full expansion or 3^2 - (sqrt5)^2. A1 for 4. Wrong method: 9 + 5 = 14: M0A0."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Hence write 8/(3 - sqrt5) in the form a + b sqrt5.",
+        "expected": {
+          "answer": "6 + 2 sqrt(5)"
+        },
+        "tolerance": "Accept a = 6, b = 2.",
+        "notes": "M1 for multiplying numerator and denominator by 3 + sqrt5, using their (b) as the denominator. A1 for 6 + 2 sqrt5.",
+        "follow_through": "FT from (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Solve x sqrt2 + 4 = 3x sqrt2, simplest form.",
+        "expected": {
+          "answer": "x = sqrt(2)"
+        },
+        "tolerance": "2/sqrt2, 4/(2 sqrt2) or 1.41 earns A0.",
+        "notes": "M1 for collecting the x-terms on one side (2x sqrt2 = 4 or equivalent). A1 for sqrt2."
+      }
+    ]
+  }
+]
