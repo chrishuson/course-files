@@ -1,0 +1,103 @@
+% context: 9th-grade physics classwork, Unit 2 kinematics, Giancoli 2-4 and 2-5
+% topic: more practice with the four constant-acceleration equations, a step easier
+%        than 2-3HW: the acceleration is given in every problem but one, numbers are
+%        rounder, and the elevator problem walks through average velocity first
+% structure: two pages with room to work; page 1 the equations, the Vernier cart on a
+%        gentler slope, and the Taipei 101 elevator; page 2 a driver's reaction and
+%        braking time (a = 0, then a < 0), and a Frecciarossa braking into Milan.
+%        No free fall yet.
+% data: Taipei 101 elevator top speed (contexts.md #3); thinking and braking distance
+%        at 30 mi/h from the UK Highway Code table, braking a from 2-3HW;
+%        Frecciarossa 1000 service speed (contexts.md #2). The accelerations of the
+%        elevator and train are assumed, as in 2-3HW
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{Physics}
+\author{Chris Huson}
+\date{October 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Nickname: \hspace{2.25cm} \,\\ \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 29 October 2026}
+
+\begin{document}
+
+\subsubsection*{2.4 Classwork: Constant Acceleration Practice}
+
+\textbf{Reference (provided).} \quad These hold when the acceleration $a$ is constant.
+
+\vspace{0.1cm}
+{\hspace{0.5cm}%
+\renewcommand{\arraystretch}{1.8}%
+\begin{tabular}{l @{\hspace{2cm}} l}
+  $v = v_0 + at$ & $v^2 = v_0^2 + 2a(x - x_0)$ \\
+  $x = x_0 + v_0 t + \frac{1}{2}at^2$ & $\bar{v} = \dfrac{v + v_0}{2}$
+\end{tabular}}
+
+\vspace{0.2cm}
+For each problem, list what you know ($v_0$, $v$, $a$, $t$, $x - x_0$) and what you
+want, then choose the equation that connects them. Show the units.
+
+\vspace{0.2cm}
+
+\begin{enumerate}[itemsep=0.5cm]
+
+\item The Vernier track from 2.2 is set at a gentler slope. The cart is released from
+  rest and speeds up at a constant $a = 0.200$ m/s$^2$.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item The velocity grows by 0.200 m/s every second. Fill in the table.
+
+      \vspace{0.1cm}
+      \renewcommand{\arraystretch}{1.5}
+      \begin{tabular}{| c | p{1.3cm} | p{1.3cm} | p{1.3cm} | p{1.3cm} | p{1.3cm} |}
+        \hline
+        $t$ (s) & \centering 0 & \centering 1.00 & \centering 2.00 &
+          \centering 3.00 & \centering\arraybackslash 4.00 \\ \hline
+        $v$ (m/s) & & & & & \\ \hline
+      \end{tabular}
+    \item How far has the cart rolled at $t = 3.00$ s?
+      \vspace{3.0cm}
+  \end{enumerate}
+
+\item The elevators in Taipei 101 were the fastest in the world from 2004 to 2016,
+  with a top speed of 16.8 m/s. Suppose an elevator starts from rest and speeds up
+  at a constant 1.20 m/s$^2$.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item How long does it take to reach top speed?
+      \vspace{2.3cm}
+    \item What is its average velocity while it speeds up?
+      \vspace{2.0cm}
+    \item How far does it rise while speeding up?
+  \end{enumerate}
+
+\newpage
+
+\item A driver at 30 mi/h (13.4 m/s) sees a hazard ahead. The UK Highway Code allows
+  9 m of \emph{thinking distance}, covered before the foot reaches the brake, and
+  then 14 m of braking distance.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item While the driver reacts, the car keeps going at 13.4 m/s, so $a = 0$. How
+      long does the driver take to react?
+      \vspace{2.8cm}
+    \item In 2.3 you found that the car brakes at $a = -6.4$ m/s$^2$. How long does
+      it take to stop?
+      \vspace{2.8cm}
+    \item What is the total time, and the total distance, from seeing the hazard to
+      stopping?
+      \vspace{2.0cm}
+  \end{enumerate}
+
+\item The Frecciarossa 1000 runs between Rome and Milan at 300 km/h (83.3 m/s).
+  Approaching Milano Centrale, suppose it slows down at a constant 0.500 m/s$^2$,
+  so \mbox{$a = -0.500$ m/s$^2$}.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item How long does the train take to stop?
+      \vspace{2.8cm}
+    \item How far from the station must the driver start braking? Give your answer
+      in km.
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}

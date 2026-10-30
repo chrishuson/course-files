@@ -1,0 +1,141 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "3.2",
+      "3.4"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.405,
+    "source": "Copy of 2-6Q_Trigonometry version (b) P2 (authored 2026-10-28, calculator). Ambiguous case in radians: PQ = 12, QR = 9, angle QPR = 0.7 rad. Early-finisher extension, scored separately from the quiz.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Triangle PQR, PQ = 12, QR = 9, angle QPR = 0.7 rad. Find the two possible values of angle PRQ.",
+        "expected": {
+          "answer": "1.03 and 2.11",
+          "full": "1.03322... and 2.10836..."
+        },
+        "tolerance": "Accept 1.03 and 2.11, or the displays with an ellipsis. Answers must be in radians: 59.2 and 121 degrees earn A0A0. A value cut short without an ellipsis earns A0 for that value.",
+        "notes": "M1 for a correct sine rule equation: sin R / 12 = sin 0.7 / 9. A1 for 1.03. A1 for the second value 2.11 (pi minus the first). Giving only 1.03 earns M1A1A0. Degree mode (sin R = 0.0163) earns M1A0A0."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Given angle PRQ is obtuse, find angle PQR.",
+        "expected": {
+          "answer": "0.333",
+          "full": "0.333229..."
+        },
+        "tolerance": "Accept 0.333 or the display with an ellipsis. Accept any value consistent with the candidate's own correctly-rounded obtuse angle, including 0.332 from 2.11.",
+        "notes": "A1 for pi - 0.7 - (their obtuse angle). A bare correct answer earns the mark (one-step part). Wrong method: using the acute value gives 1.41: A0.",
+        "follow_through": "FT from the candidate's obtuse value in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find PR (obtuse case).",
+        "expected": {
+          "answer": "4.57 cm",
+          "full": "4.56967..."
+        },
+        "tolerance": "Accept 4.57 or the display with an ellipsis. Accept any value consistent with the candidate's own correctly-rounded intermediate, including 4.55 from angle PRQ = 2.11. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for the sine rule PR / sin Q = 9 / sin 0.7, or the cosine rule 9^2 = 12^2 + PR^2 - 2(12)(PR) cos 0.7 (roots 4.57 and 13.8; the obtuse case is the smaller root). A1 for 4.57. Giving 13.8 (the acute case) earns M1A0.",
+        "follow_through": "FT from the candidate's angle in (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area of triangle PQR (obtuse case).",
+        "expected": {
+          "answer": "17.7 cm^2",
+          "full": "17.6631..."
+        },
+        "tolerance": "Accept 17.7 or the display with an ellipsis. Accept any value consistent with the candidate's own correctly-rounded intermediate, including 17.6 from angle PRQ = 2.11. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for two sides with the angle between them: (1/2)(12)(9) sin Q, or (1/2)(12)(PR) sin 0.7. A1 for 17.7. Wrong method: (1/2)(12)(9) sin 0.7 = 34.8 (0.7 is not between these sides): M0A0. If an angle was rounded first, add the feedback: store full values in the calculator.",
+        "follow_through": "FT from the candidate's values in (b) or (c)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "4.2",
+      "4.3"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.416,
+    "source": "Copy of 2-6Q_Trigonometry version (b) P4 (authored 2026-10-28, calculator). 40 runners, grouped times with unknown p, q; estimated mean 31.25; 2-minute penalty then seconds. Early-finisher extension, scored separately from the quiz.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 4,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Grouped times of 40 runners: 10-20: 6, 20-30: p, 30-40: 12, 40-50: q, 50-60: 3; estimated mean 31.25 min. Find p and q.",
+        "expected": {
+          "p": 14,
+          "q": 5,
+          "answer": "p = 14, q = 5"
+        },
+        "tolerance": "Accept p = 14, q = 5 only.",
+        "notes": "A1 for p + q = 19 (or 21 + p + q = 40). M1 for the mean equation with the class midpoints 15, 25, 35, 45, 55: (15(6) + 25p + 35(12) + 45q + 55(3))/40 = 31.25. A1 for p = 14. A1 for q = 5. Solving the system on the GDC is accepted. Wrong method: lower class boundaries (10, 20, ...) give p = 4, q = 15: A1M0A0A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find an estimate of the standard deviation of the times.",
+        "expected": {
+          "answer": "11.1 min",
+          "full": "11.1102..."
+        },
+        "tolerance": "Accept 11.1 or the display with an ellipsis (11.1102...). The sample value s_x = 11.3 earns A0. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 (may be implied by a correct answer) for the midpoints with their frequencies entered in the GDC. A1 for 11.1.",
+        "follow_through": "FT from the candidate's p and q in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Every time gets a 2-minute penalty and is then written in seconds. Find the new estimated mean and standard deviation.",
+        "expected": {
+          "answer": "mean 1995 s, sd 667 s",
+          "mean": "1995",
+          "sd_full": "666.614..."
+        },
+        "tolerance": "Mean: accept 1995 only (exact). Standard deviation: accept 667 or the display with an ellipsis (666.614...); accept 666 from the rounded sd 11.1. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 (implied by either correct value) for the transformation 60(t + 2). A1 for the mean 1995. A1 for the standard deviation 667: the penalty does not change the spread, the conversion multiplies it by 60. Wrong methods: adding 120 to the standard deviation (787), or adding 2 after converting (mean 1877): A0 for that value.",
+        "follow_through": "FT from the candidate's sd in (b)."
+      }
+    ]
+  }
+]

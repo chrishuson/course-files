@@ -2,132 +2,12 @@
   {
     "problem_number": 1,
     "topic_codes": [
-      "3.3"
-    ],
-    "total_marks": 7,
-    "answer_box_top_frac": 0.603,
-    "source": "Original (authored 2026-10-27, calculator; parallel of 2-5PQ_Trig-statistics P1). Tree FT; A is 35 m from F, elevation 32 deg; B on [AF], 15 m from A.",
-    "parts": [
-      {
-        "label": "a",
-        "marks": 2,
-        "mark_codes": [
-          "M1",
-          "A1"
-        ],
-        "description": "Tree FT, A 35 m from F, elevation of T from A is 32 deg. Find the height.",
-        "expected": {
-          "answer": "21.9 m",
-          "full": "21.8704..."
-        },
-        "tolerance": "Accept 21.9 or the display with an ellipsis. A value cut short without an ellipsis earns A0.",
-        "notes": "M1 for tan 32 = FT/35. A1 for 21.9. Wrong methods: 35 sin 32 = 18.5 or 35/tan 32 = 56.0 earn M0A0."
-      },
-      {
-        "label": "b",
-        "marks": 2,
-        "mark_codes": [
-          "M1",
-          "A1"
-        ],
-        "description": "Find AT.",
-        "expected": {
-          "answer": "41.3 m",
-          "full": "41.2712..."
-        },
-        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate. A value cut short without an ellipsis earns A0.",
-        "notes": "M1 for any valid method: 35/cos 32, Pythagoras with 35 and FT, or FT/sin 32. A1 for 41.3. Wrong method: 35/sin 32 = 66.0 earns M0A0.",
-        "follow_through": "FT from the candidate's height in (a)."
-      },
-      {
-        "label": "c",
-        "marks": 3,
-        "mark_codes": [
-          "A1",
-          "M1",
-          "A1"
-        ],
-        "description": "B is on [AF], 15 m from A. Find the angle of elevation of T from B.",
-        "expected": {
-          "answer": "47.6 degrees",
-          "full": "47.5578...",
-          "BF": 20
-        },
-        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate, including 47.6 from FT = 21.9. A value cut short without an ellipsis earns A0.",
-        "notes": "A1 for BF = 20. M1 for tan theta = height / their BF. A1 for 47.6. Wrong method: using 15 as the horizontal distance gives 55.6: A0M1A0.",
-        "follow_through": "FT from the candidate's height in (a)."
-      }
-    ]
-  },
-  {
-    "problem_number": 2,
-    "topic_codes": [
-      "3.2",
-      "3.3"
-    ],
-    "total_marks": 8,
-    "answer_box_top_frac": 0.46,
-    "source": "Original (authored 2026-10-27, calculator; parallel of 2-5PQ_Trig-statistics P2). Boats from harbour H: HA = 12 km, HB = 8 km, angle AHB = 105 deg.",
-    "parts": [
-      {
-        "label": "a",
-        "marks": 3,
-        "mark_codes": [
-          "M1",
-          "A1",
-          "A1"
-        ],
-        "description": "HA = 12, HB = 8, angle AHB = 105 deg. Find AB.",
-        "expected": {
-          "answer": "16.1 km",
-          "full": "16.0528..."
-        },
-        "tolerance": "Accept 16.1 or the display with an ellipsis. A value cut short without an ellipsis earns A0.",
-        "notes": "M1 for using the cosine rule. A1 for the correct substitution 12^2 + 8^2 - 2(12)(8) cos 105. A1 for 16.1. Wrong method: a sign error gives 12.6: M1A0A0."
-      },
-      {
-        "label": "b",
-        "marks": 3,
-        "mark_codes": [
-          "M1",
-          "A1",
-          "A1"
-        ],
-        "description": "Find angle HAB.",
-        "expected": {
-          "answer": "28.8 degrees",
-          "full": "28.7751..."
-        },
-        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate, including 28.7 from AB = 16.1. A value cut short without an ellipsis earns A0.",
-        "notes": "M1 for using the sine rule (or cosine rule). A1 for pairing HB = 8 with angle HAB. A1 for 28.8. Wrong method: pairing 12 with angle HAB gives 46.2, which is angle HBA: M1A0A0.",
-        "follow_through": "FT from the candidate's AB in (a)."
-      },
-      {
-        "label": "c",
-        "marks": 2,
-        "mark_codes": [
-          "M1",
-          "A1"
-        ],
-        "description": "Find the area of triangle HAB.",
-        "expected": {
-          "answer": "46.4 km^2",
-          "full": "46.3644..."
-        },
-        "tolerance": "Accept 46.4 or the display with an ellipsis. A value cut short without an ellipsis earns A0.",
-        "notes": "M1 for (1/2)(12)(8) sin 105 or any two sides with the angle between them. A1 for 46.4. Wrong method: (1/2)(12)(8) = 48 earns M0A0."
-      }
-    ]
-  },
-  {
-    "problem_number": 3,
-    "topic_codes": [
       "3.2",
       "3.4"
     ],
     "total_marks": 8,
-    "answer_box_top_frac": 0.442,
-    "source": "Original (authored 2026-10-27, calculator, radians; parallel of 2-5PQ_Trig-statistics P3). Triangle ABC: AB = 6 cm, AC = 10 cm, angle BAC = 1.1 rad.",
+    "answer_box_top_frac": 0.562,
+    "source": "Original (authored 2026-10-27, calculator, radians; parallel of 2-5PQ_Trig-statistics P3). Triangle ABC: AB = 6 cm, AC = 10 cm, angle BAC = 1.1 rad. Moved to problem 1 on 2026-10-28.",
     "parts": [
       {
         "label": "a",
@@ -180,13 +60,13 @@
     ]
   },
   {
-    "problem_number": 4,
+    "problem_number": 2,
     "topic_codes": [
       "3.2"
     ],
     "total_marks": 9,
     "answer_box_top_frac": 0.511,
-    "source": "Original (authored 2026-10-27, calculator; parallel of 2-5PQ_Trig-statistics P4). Plot ABC: AB = 40 m, angle A = 68 deg, angle B = 47 deg; second plot sides 24 m and 35 m, area 320 m^2, obtuse included angle.",
+    "source": "Original (authored 2026-10-27, calculator; parallel of 2-5PQ_Trig-statistics P4). Plot ABC: AB = 40 m, angle A = 68 deg, angle B = 47 deg; second plot sides 24 m and 35 m, area 320 m^2, obtuse included angle. Moved to problem 2 on 2026-10-28.",
     "parts": [
       {
         "label": "a",
@@ -250,6 +130,153 @@
         },
         "tolerance": "A1 for 130 (3 s.f.) or the display with an ellipsis (130.367...). 130.4 with no ellipsis earns A0.",
         "notes": "M1 for (1/2)(24)(35) sin theta = 320. A1 (implied) for the acute value 49.6. A1 for the obtuse value 130. Giving only the acute value earns M1A1A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "3.4",
+      "3.5",
+      "3.8"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.636,
+    "source": "Original (added 2026-10-28 at Chris's request; replaces the two-boats problem). Unit circle: P(a, b) at pi/3, T(c, d) at 225 degrees, R(k, 0.6) and S on y = 0.6, alpha and beta the angles to OR and OS.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Unit circle: P(a, b) at angle pi/3. Write down the exact values of a and b.",
+        "expected": {
+          "a": "1/2",
+          "b": "sqrt(3)/2"
+        },
+        "tolerance": "Accept 0.5 for a. b must be exact: 0.866 earns A0.",
+        "notes": "A1 for a = 1/2, A1 for b = sqrt3/2, independently. Wrong method: swapping sine and cosine (a = sqrt3/2, b = 1/2): A0A0."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write 225 degrees in radians as an exact multiple of pi.",
+        "expected": {
+          "answer": "5pi/4"
+        },
+        "tolerance": "Accept 225pi/180 or 1.25pi. 3.93 earns A0 (not a multiple of pi).",
+        "notes": "A1 for 5pi/4 or an equivalent exact multiple of pi."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "T(c, d) at angle 225 degrees on the unit circle. Write down the exact values of c and d.",
+        "expected": {
+          "c": "-sqrt(2)/2",
+          "d": "-sqrt(2)/2"
+        },
+        "tolerance": "Accept -1/sqrt2. Decimals (-0.707) earn A0.",
+        "notes": "A1 for c = -sqrt2/2, A1 for d = -sqrt2/2, each with its sign; sqrt2/2 with no minus sign earns A0 for that value."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "R(k, 0.6) lies on the unit circle in the first quadrant. Find k.",
+        "expected": {
+          "answer": "k = 0.8"
+        },
+        "tolerance": "Accept 0.8 or 4/5.",
+        "notes": "M1 for x^2 + y^2 = 1 with y = 0.6 (Pythagoras in the unit circle), or k = cos(arcsin 0.6). A1 for 0.8. Giving k = +-0.8 as the final answer earns M1A0 (the negative root belongs to S). Wrong method: k = 1 - 0.6 = 0.4: M0A0."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "sin(theta) = 0.6 has two solutions alpha and beta for 0 <= theta <= 2pi (angles to OR and OS). Find alpha and beta.",
+        "expected": {
+          "alpha": "0.644 (0.643501...)",
+          "beta": "2.50 (2.49809...)"
+        },
+        "tolerance": "Accept 0.644 and 2.50, or the displays with an ellipsis. Accept 2.50 from the rounded alpha = 0.644. Answers in degrees (36.9, 143) earn A0 for each value; the M1 can still be awarded. A value cut short without an ellipsis (0.6435) earns A0.",
+        "notes": "A1 for alpha = 0.644. M1 for beta = pi - alpha, or for the symmetry of S and R about the y-axis. A1 for beta = 2.50. Wrong methods: pi + alpha = 3.79 or 2pi - alpha = 5.64 (these have sin = -0.6): M0A0.",
+        "follow_through": "FT from the candidate's alpha."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "3.3"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.483,
+    "source": "Original (authored 2026-10-27, calculator; parallel of 2-5PQ_Trig-statistics P1). Tree FT; A is 35 m from F, elevation 32 deg; B on [AF], 15 m from A. Moved to problem 4 on 2026-10-28.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Tree FT, A 35 m from F, elevation of T from A is 32 deg. Find the height.",
+        "expected": {
+          "answer": "21.9 m",
+          "full": "21.8704..."
+        },
+        "tolerance": "Accept 21.9 or the display with an ellipsis. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for tan 32 = FT/35. A1 for 21.9. Wrong methods: 35 sin 32 = 18.5 or 35/tan 32 = 56.0 earn M0A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find AT.",
+        "expected": {
+          "answer": "41.3 m",
+          "full": "41.2712..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for any valid method: 35/cos 32, Pythagoras with 35 and FT, or FT/sin 32. A1 for 41.3. Wrong method: 35/sin 32 = 66.0 earns M0A0.",
+        "follow_through": "FT from the candidate's height in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "B is on [AF], 15 m from A. Find the angle of elevation of T from B.",
+        "expected": {
+          "answer": "47.6 degrees",
+          "full": "47.5578...",
+          "BF": 20
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate, including 47.6 from FT = 21.9. A value cut short without an ellipsis earns A0.",
+        "notes": "A1 for BF = 20. M1 for tan theta = height / their BF. A1 for 47.6. Wrong method: using 15 as the horizontal distance gives 55.6: A0M1A0.",
+        "follow_through": "FT from the candidate's height in (a)."
       }
     ]
   }

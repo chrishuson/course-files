@@ -6,7 +6,7 @@
     ],
     "total_marks": 10,
     "answer_box_top_frac": 0.405,
-    "source": "Original (AA SL 2.1); parallel of 2-5PQ_Sequences-lines-exponents P3. A(-4, 1), B(4, 5), C(1, 6); L through C perpendicular to AB meets AB at (2, 4).",
+    "source": "Original (AA SL 2.1); parallel of 2-5PQ_Sequences-lines-exponents P3. A(-4, 1), B(4, 5), C(1, 6); L through C perpendicular to AB meets AB at (2, 4). Revised 2026-10-28: stem starts 'Given the points'; (b) and (c) no longer require the form y = mx + c.",
     "parts": [
       {
         "label": "a",
@@ -29,12 +29,12 @@
           "M1",
           "A1"
         ],
-        "description": "Find the equation of AB in the form y = mx + c.",
+        "description": "Find the equation of the line AB, A(-4, 1), B(4, 5).",
         "expected": {
-          "answer": "y = (1/2)x + 3"
+          "answer": "y - 1 = (1/2)(x + 4)"
         },
-        "tolerance": "The A1 needs the form y = mx + c.",
-        "notes": "M1 for substituting their gradient and either point into any form of a line. A1 for y = (1/2)x + 3.",
+        "tolerance": "Accept any correct form, e.g. y = (1/2)x + 3 or x - 2y = -6. The answer must be an equation.",
+        "notes": "M1 for substituting their gradient and either point into any form of a line. A1 for a correct equation in any form.",
         "follow_through": "FT from (a)."
       },
       {
@@ -45,12 +45,12 @@
           "M1",
           "A1"
         ],
-        "description": "L passes through C(1, 6), perpendicular to AB. Find L in the form y = mx + c.",
+        "description": "L passes through C(1, 6), perpendicular to AB. Find the equation of L.",
         "expected": {
-          "answer": "y = -2x + 8"
+          "answer": "y - 6 = -2(x - 1)"
         },
-        "tolerance": "The final A1 needs the form y = mx + c.",
-        "notes": "A1 for gradient -2, the negative reciprocal of their gradient. M1 for substituting their gradient and C(1, 6). A1 for y = -2x + 8. Wrong methods: the perpendicular bisector y = -2x + 3 (through the midpoint (0, 3), not C): A1M0A0; gradient 2 (no sign change), y = 2x + 4: A0M1A0.",
+        "tolerance": "Accept any correct form, e.g. y = -2x + 8 or 2x + y = 8. The answer must be an equation.",
+        "notes": "A1 for gradient -2, the negative reciprocal of their gradient. M1 for substituting their gradient and C(1, 6). A1 for a correct equation in any form. Wrong methods: the perpendicular bisector y = -2x + 3 (through the midpoint (0, 3), not C): A1M0A0; gradient 2 (no sign change), y = 2x + 4: A0M1A0.",
         "follow_through": "FT from (a)."
       },
       {

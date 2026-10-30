@@ -1,0 +1,123 @@
+% context: markscheme (official solutions) for 2-4CW_Acceleration-practice
+% topic: more practice with the four constant-acceleration equations; speeding up
+%        from rest, a = 0 during a reaction time, braking with a given negative a
+% convention: answers in bold; "=" joins exact equalities, "\approx" introduces a
+%        rounded value; each solution lists the knowns, then names the equation used
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+\setlength{\parskip}{0.2\baselineskip}
+
+\title{Physics}
+\author{Chris Huson}
+\date{October 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 29 October 2026}
+
+\begin{document}
+
+\subsubsection*{2.4 Classwork: Constant Acceleration Practice Solutions}
+
+\begin{enumerate}[itemsep=0.5cm]
+
+\item Vernier cart. Knowns: $v_0 = 0$, $a = 0.200$ m/s$^2$, $x_0 = 0$.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item \renewcommand{\arraystretch}{1.4}
+      \begin{tabular}[t]{| c | c | c | c | c | c |}
+        \hline
+        $t$ (s) & 0 & 1.00 & 2.00 & 3.00 & 4.00 \\ \hline
+        $v$ (m/s) & \textbf{0} & \textbf{0.200} & \textbf{0.400} & \textbf{0.600}
+          & \textbf{0.800} \\ \hline
+      \end{tabular}
+
+      \emph{Each second adds 0.200 m/s; this is $v = v_0 + at$ one row at a time.}
+    \item Want $x - x_0$ at $t = 3.00$ s. Use $x = x_0 + v_0 t + \frac{1}{2}at^2$:
+
+      $x - x_0 = 0 + \tfrac{1}{2}(0.200~\text{m/s}^2)(3.00~\text{s})^2
+      = \mathbf{0.900~\textbf{m}}$
+
+      \emph{Also accept the average velocity route, using the table:
+      $\bar{v} = \frac{0.600 + 0}{2} = 0.300$ m/s, and
+      $0.300~\text{m/s} \times 3.00~\text{s} = 0.900$ m. A common slip is
+      $\frac{1}{2}(0.200)(3.00) = 0.300$ m, forgetting to square the time.}
+  \end{enumerate}
+
+\item Taipei 101 elevator. Knowns: $v_0 = 0$, $v = 16.8$ m/s,
+  $a = 1.20$ m/s$^2$.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Want $t$. Use $v = v_0 + at$, so $t = \dfrac{v - v_0}{a}$:
+
+      $t = \dfrac{16.8~\text{m/s} - 0}{1.20~\text{m/s}^2}
+      = \mathbf{14.0~\textbf{s}}$
+    \item Use $\bar{v} = \dfrac{v + v_0}{2}$:
+
+      $\bar{v} = \dfrac{16.8~\text{m/s} + 0}{2} = \mathbf{8.40~\textbf{m/s}}$, upward.
+    \item Want $x - x_0$. Use $x - x_0 = \bar{v}\,t$:
+
+      $x - x_0 = 8.40~\text{m/s} \times 14.0~\text{s} = 117.6
+      \approx \mathbf{118~\textbf{m}}$
+
+      \emph{Also accept $v^2 = v_0^2 + 2a(x - x_0)$:
+      $x - x_0 = \frac{(16.8)^2}{2(1.20)} = \frac{282.24}{2.40} = 117.6$ m, or
+      $\frac{1}{2}at^2 = \frac{1}{2}(1.20)(14.0)^2 = 117.6$ m.}
+  \end{enumerate}
+
+\newpage
+
+\item Driver at 30 mi/h. Take the direction of travel as positive.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Knowns: $v_0 = 13.4$ m/s, $a = 0$, $x - x_0 = 9$ m. Want $t$. With
+      $a = 0$, $x = x_0 + v_0 t + \frac{1}{2}at^2$ becomes $x - x_0 = v_0 t$, so
+
+      $t = \dfrac{x - x_0}{v_0} = \dfrac{9~\text{m}}{13.4~\text{m/s}} = 0.6716\ldots
+      \approx \mathbf{0.67~\textbf{s}}$
+
+      \emph{Accept 0.7 s: 9 m has one significant figure, so 0.7 s is the strict
+      answer. This is longer than the 0.20--0.25 s reaction time of a catch-the-ruler
+      test, because a driver has to notice the hazard, decide, and move a foot to the
+      brake.}
+    \item Knowns: $v_0 = 13.4$ m/s, $v = 0$, $a = -6.4$ m/s$^2$. Want $t$. Use
+      $v = v_0 + at$, so $t = \dfrac{v - v_0}{a}$:
+
+      $t = \dfrac{0 - 13.4~\text{m/s}}{-6.4~\text{m/s}^2} = 2.09375
+      \approx \mathbf{2.1~\textbf{s}}$
+
+      \emph{Two significant figures, because $-6.4$ m/s$^2$ has two. Accept 2.09 s.
+      Check: $\bar{v} = \frac{13.4 + 0}{2} = 6.7$ m/s, and
+      $6.7~\text{m/s} \times 2.09375~\text{s} = 14.03$ m, the Highway Code's 14 m.}
+    \item Total time: $0.6716\ldots~\text{s} + 2.09375~\text{s} = 2.765\ldots
+      \approx \mathbf{2.8~\textbf{s}}$
+
+      Total distance: $9~\text{m} + 14~\text{m} = \mathbf{23~\textbf{m}}$
+
+      \emph{Add the unrounded times. 23 m is the overall stopping distance the
+      Highway Code prints for 30 mi/h; about two-fifths of it is covered before
+      the brakes are touched.}
+  \end{enumerate}
+
+\item Frecciarossa 1000. Knowns: $v_0 = 83.3$ m/s, $v = 0$, $a = -0.500$ m/s$^2$.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Want $t$. Use $v = v_0 + at$, so $t = \dfrac{v - v_0}{a}$:
+
+      $t = \dfrac{0 - 83.3~\text{m/s}}{-0.500~\text{m/s}^2} = 166.6
+      \approx \mathbf{167~\textbf{s}}$
+
+      \emph{About 2.8 minutes. The two negatives cancel, so the time comes out
+      positive, as it must.}
+    \item Want $x - x_0$. Use $\bar{v} = \dfrac{v + v_0}{2}
+      = \dfrac{0 + 83.3}{2} = 41.65$ m/s:
+
+      $x - x_0 = \bar{v}\,t = 41.65~\text{m/s} \times 166.6~\text{s} = 6938.89
+      \approx 6940~\text{m} \approx \mathbf{6.94~\textbf{km}}$
+
+      \emph{Also accept $v^2 = v_0^2 + 2a(x - x_0)$:
+      $x - x_0 = \frac{0 - (83.3)^2}{2(-0.500)} = \frac{-6938.89}{-1.000}
+      = 6938.89$ m. Carry 166.6 s, not the rounded 167 s, into this step; 167 s gives
+      6955.6 m $\approx$ 6.96 km. The driver starts braking nearly 7 km out, far
+      beyond where the station can be seen.}
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}

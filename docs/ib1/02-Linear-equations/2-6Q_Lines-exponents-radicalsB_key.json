@@ -1,0 +1,260 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "2.1",
+      "3.1"
+    ],
+    "total_marks": 12,
+    "answer_box_top_frac": 0.423,
+    "source": "Original (version b, harder parallel of version a P1). L1: 3x + 4y = 24, A(8, 0), B(0, 6), P(-1, -3); L2 through P perpendicular to L1 meets L1 at F(92/25, 81/25); PF = 7.8; area PAB = 39.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": [
+          "2.1"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the gradient of L1: 3x + 4y = 24.",
+        "expected": {
+          "answer": "-3/4"
+        },
+        "tolerance": "Accept -3/4 or -0.75.",
+        "notes": "M1 for rearranging to y = mx + c form, or for using -a/b. A1 for -3/4. A bare answer earns M0A1."
+      },
+      {
+        "label": "b",
+        "topic_codes": [
+          "2.1"
+        ],
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "L2 passes through P(-1, -3), perpendicular to L1. Find the equation of L2.",
+        "expected": {
+          "answer": "y + 3 = (4/3)(x + 1)"
+        },
+        "tolerance": "Accept any correct form: y = (4/3)x - 5/3, 4x - 3y = 5. The answer must be an equation.",
+        "notes": "A1 for gradient 4/3, the negative reciprocal of their gradient. M1 for substituting their gradient and P(-1, -3) into any form of a line. A1 for a correct equation. Wrong methods: gradient -4/3 (no sign change): A0M1A0; the perpendicular bisector of AB, y = (4/3)x - 7/3 (through the midpoint (4, 3), not P): A1M0A0.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "c",
+        "topic_codes": [
+          "2.1"
+        ],
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the coordinates of F, the intersection of L1 and L2.",
+        "expected": {
+          "answer": "F(92/25, 81/25) = (3.68, 3.24)"
+        },
+        "tolerance": "Accept fractions or the exact decimals 3.68, 3.24.",
+        "notes": "M1 for solving the two equations together by any method, including the GDC. A1 for x = 3.68, A1 for y = 3.24, independently. Wrong method: the midpoint of AB, (4, 3): M0A0A0.",
+        "follow_through": "FT from (b)."
+      },
+      {
+        "label": "d",
+        "topic_codes": [
+          "3.1",
+          "2.1"
+        ],
+        "marks": 4,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the area of triangle PAB, A and B the intercepts of L1.",
+        "expected": {
+          "answer": "39",
+          "AB": 10,
+          "PF": 7.8
+        },
+        "tolerance": "Accept 39 only (exact). Accept any value consistent with the candidate's own F.",
+        "notes": "A1 for AB = 10, or for both intercepts A(8, 0), B(0, 6) when another method is used. M1 for any valid area method that uses P: (1/2)(AB)(PF), an enclosing rectangle (81 - 13.5 - 24 - 4.5), or the shoelace formula. A1 for the height PF = 7.8, or the correct intermediate of their method. A1 for 39. Wrong methods: the area of triangle OAB (24), or (1/2)(AB)(PA) with PA = 3 sqrt10: M0.",
+        "follow_through": "FT from (c)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "2.1"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.281,
+    "source": "Original (system of three linear equations; replaces the notebooks-and-pens problem at Chris's request 2026-10-28). 2x + 3y - 4z = -20, 5x - 2y + 3z = 34, 3x + 4y + 2z = 11; x = 3, y = -2, z = 5. No variable has equal or opposite coefficients in two equations, so every elimination needs scaling.",
+    "parts": [
+      {
+        "label": null,
+        "marks": 7,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "M1",
+          "A1",
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "Solve by elimination, showing working: 2x + 3y - 4z = -20, 5x - 2y + 3z = 34, 3x + 4y + 2z = 11.",
+        "expected": {
+          "answer": "x = 3, y = -2, z = 5",
+          "example_route": "3(1) + 4(2): 26x + y = 76; (1) + 2(3): 8x + 11y = 2"
+        },
+        "tolerance": "Accept (3, -2, 5). Any order of elimination is acceptable.",
+        "notes": "First M1 for scaling and combining two equations so that one variable cancels; A1 for the correct two-variable equation (e.g. 26x + y = 76). Second M1 for eliminating the same variable from a different pair; A1 for the correct second equation (e.g. 8x + 11y = 2). A1 for x = 3, A1 for y = -2, A1 for z = 5, independently; these may come from any valid method for the two-variable system. One arithmetic slip in an elimination loses that A1 only: later A1s are awarded for values that follow correctly from the candidate's own two equations. Wrong methods: adding or subtracting equations without scaling, so no variable cancels: M0; a sign error when subtracting: M1A0. GDC answers with no elimination shown earn M0A0M0A0A1A1A1 (the question asks for elimination).",
+        "follow_through": "Within the problem: the final A1s follow from the candidate's own two-variable equations."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "1.5",
+      "1.7",
+      "2.10"
+    ],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.277,
+    "source": "Original (version b). 25^(x+1) = 125^(2x-3); (2 + sqrt3)(a + b sqrt3) = 12 + 7 sqrt3; 3(9^x) - 82(3^x) + 27 = 0 with u = 3^x.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": [
+          "1.5"
+        ],
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Solve 25^(x + 1) = 125^(2x - 3).",
+        "expected": {
+          "answer": "x = 11/4"
+        },
+        "tolerance": "Accept 11/4 or 2.75.",
+        "notes": "M1 for writing both sides as powers of 5. A1 for 2x + 2 = 6x - 9 (or equivalent). A1 for 11/4. A GDC answer with no working earns M0A0A1. Wrong methods: a bracket not multiplied out (2x + 1 = 6x - 9 gives 5/2; 2x + 2 = 6x - 3 gives 5/4): M1A0A0."
+      },
+      {
+        "label": "b",
+        "topic_codes": [
+          "1.7"
+        ],
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find integers a, b with (2 + sqrt3)(a + b sqrt3) = 12 + 7 sqrt3.",
+        "expected": {
+          "answer": "a = 3, b = 2"
+        },
+        "tolerance": "Accept a = 3, b = 2 only.",
+        "notes": "M1 for expanding the product and comparing rational and surd parts, or for dividing by 2 + sqrt3 and multiplying by the conjugate 2 - sqrt3. A1 for the pair of equations 2a + 3b = 12, a + 2b = 7, or for the rationalized form (24 - 12 sqrt3 + 14 sqrt3 - 21)/1. A1 for a = 3, b = 2. Trial with the expansion (2 + sqrt3)(3 + 2 sqrt3) = 12 + 7 sqrt3 shown as a check earns M1A1A1. A bare answer earns M0A0A1."
+      },
+      {
+        "label": "c",
+        "topic_codes": [
+          "2.10",
+          "1.5"
+        ],
+        "marks": 5,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "With u = 3^x, solve 3(9^x) - 82(3^x) + 27 = 0.",
+        "expected": {
+          "answer": "x = -1 or x = 3",
+          "u": "1/3 or 27"
+        },
+        "tolerance": "Accept x = -1, x = 3 in any order.",
+        "notes": "M1 for the quadratic 3u^2 - 82u + 27 = 0 (using 9^x = u^2). A1 for u = 1/3, A1 for u = 27 (by factorizing, formula or GDC). A1 for x = -1. A1 for x = 3. Stopping at u = 1/3, 27 earns M1A1A1A0A0. Wrong method: reading 3^x as 3x gives x = 1/9, 9: A0A0 for those values."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "1.2",
+      "1.3"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.331,
+    "source": "Original (unit 1 material, version b). Arithmetic u_1 = 7, d = 3; geometric v_1 = 2, r = 1.5; v_n > u_n first at n = 8; geometric sum > arithmetic sum first at n = 10.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down expressions for u_n (u_1 = 7, d = 3) and v_n (v_1 = 2, r = 1.5).",
+        "expected": {
+          "u_n": "7 + 3(n - 1)",
+          "v_n": "2(1.5)^(n - 1)"
+        },
+        "tolerance": "Accept any equivalent expressions, e.g. u_n = 3n + 4.",
+        "notes": "A1 for u_n, A1 for v_n, independently."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the least n for which v_n > u_n.",
+        "expected": {
+          "answer": "n = 8",
+          "u_7": 25,
+          "v_7": "22.8",
+          "u_8": 28,
+          "v_8": "34.2"
+        },
+        "tolerance": "Accept 8 only.",
+        "notes": "M1 for the inequality with their expressions, or a GDC table or graph of both sequences. A1 for the values on both sides of the change (n = 7 and n = 8), or a marked intersection near 7.6. A1 for n = 8. A final answer of 7.6 earns the final A0.",
+        "follow_through": "FT from (a): v_n = 2(1.5)^n gives n = 7, which earns full FT marks if consistent."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the least n for which the geometric sum of n terms exceeds the arithmetic sum of n terms.",
+        "expected": {
+          "answer": "n = 10",
+          "n=9": "149.8 < 171",
+          "n=10": "226.7 > 205"
+        },
+        "tolerance": "Accept 10 only.",
+        "notes": "M1 for both sum formulas with their values (or a GDC table of both sums). A1 for the sums on both sides of the change (n = 9 and n = 10). A1 for n = 10. Wrong method: comparing terms instead of sums gives n = 8: M0A0A0.",
+        "follow_through": "FT from (a)."
+      }
+    ]
+  }
+]

@@ -1,0 +1,222 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+\setlength{\parskip}{0.3\baselineskip}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 HL \\* 28 October 2026}
+
+\begin{document}
+\subsubsection*{5.3 Quiz: Maclaurin Series and Kinematics --- Markscheme}
+
+\emph{Calculator allowed. Total: 53 marks. Accuracy marks need 3 s.f., the
+exact value, or the calculator display with an ellipsis. Where a part asks
+for an exact form or a series, a GDC decimal earns the method marks shown
+but not the final A1.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Maclaurin series of e^(-2x) by substitution; product with (1 + 3x); f''(0) from a coefficient [6 marks] ---
+\item[1.] [Maximum mark: 6]
+
+\textbf{(a)} $e^{-2x} = 1 + (-2x) + \dfrac{(-2x)^{2}}{2!} + \dfrac{(-2x)^{3}}{3!}$ \hfill \textbf{M1}
+
+$= 1 - 2x + 2x^{2} - \dfrac{4}{3}x^{3}$ \hfill \textbf{A1}
+
+\emph{M1 for substituting $-2x$ into the series for $e^{x}$. Wrong method:
+leaving out the factorials ($1 - 2x + 4x^{2} - 8x^{3}$): M1A0.}
+
+\textbf{(b)} $(1 + 3x)\left(1 - 2x + 2x^{2} - \frac{4}{3}x^{3}\right)$ \hfill \textbf{M1}
+
+$= 1 - 2x + 2x^{2} - \frac{4}{3}x^{3} + 3x - 6x^{2} + 6x^{3}$ \hfill \textbf{A1}
+
+$= 1 + x - 4x^{2} + \dfrac{14}{3}x^{3}$ \hfill \textbf{A1}
+
+\emph{M1 for multiplying their series by $1 + 3x$. A1 for all products up to
+$x^{3}$ (no others needed). FT from (a). Accept a derivative route
+($f(0)$, $f'(0)$, \ldots) for full marks.}
+
+\textbf{(c)} $f''(0) = 2! \times (-4) = -8$ \hfill \textbf{A1}
+
+\emph{Wrong method: the coefficient $-4$ itself (forgetting the $2!$): A0.
+FT from (b).}
+
+\newpage
+
+%--- Problem 2: Velocity polynomial: acceleration, times at rest, total distance vs displacement [7 marks] ---
+\item[2.] [Maximum mark: 7]
+
+\textbf{(a)} $a = \dfrac{\mathrm{d}v}{\mathrm{d}t} = 2t - 7$ \hfill \textbf{M1}
+
+$a(4) = 1 \text{ m s}^{-2}$ \hfill \textbf{A1}
+
+\emph{Wrong method: $v(4) = -2$ is the velocity: M0A0.}
+
+\textbf{(b)} $t^{2} - 7t + 10 = 0$, \quad $(t - 2)(t - 5) = 0$ \hfill \textbf{M1}
+
+$t = 2$, \ $t = 5$ \hfill \textbf{A1}
+
+\emph{A1 for both values.}
+
+\textbf{(c)} $\text{distance} = \displaystyle\int_{0}^{6} \left|t^{2} - 7t + 10\right| \mathrm{d}t$ \hfill \textbf{M1}
+
+$= \dfrac{26}{3} + \dfrac{9}{2} + \dfrac{11}{6}$ \hfill \textbf{(A1)}
+
+$= 15 \text{ m}$ \hfill \textbf{A1}
+
+\emph{M1 for the modulus integral, or for splitting at $t = 2$ and $t = 5$
+and adding the sizes. The GDC value of the modulus integral is acceptable
+with the integral shown. Wrong methods: the displacement
+$\int_{0}^{6} v\,\mathrm{d}t = 6$: M0A0A0; splitting only at $t = 2$
+($\frac{26}{3} + \frac{8}{3} = \frac{34}{3}$): M1A0A0.}
+
+\newpage
+
+%--- Problem 3: Maclaurin series of ln(1 + sin x) from derivatives; limit; series approximation of an integral and percentage error [13 marks] ---
+\item[3.] [Maximum mark: 13]
+
+\textbf{(a)} $f'(x) = \dfrac{\cos x}{1 + \sin x}$ \hfill \textbf{A1}
+
+$f''(x) = \dfrac{-\sin x\,(1 + \sin x) - \cos x \cos x}{(1 + \sin x)^{2}}$ \hfill \textbf{M1}
+
+$= \dfrac{-\left(\sin x + \sin^{2}x + \cos^{2}x\right)}{(1 + \sin x)^{2}} = \dfrac{-(1 + \sin x)}{(1 + \sin x)^{2}}$ \hfill \textbf{A1}
+
+$= -\dfrac{1}{1 + \sin x}$ \hfill \textbf{AG}
+
+\emph{A1 for the chain rule result. M1 for the quotient (or product) rule.
+A1 for using $\sin^{2}x + \cos^{2}x = 1$; the AG line alone earns A0.}
+
+\textbf{(b)} $f''(x) = -(1 + \sin x)^{-1}$, so
+$f'''(x) = (1 + \sin x)^{-2}\cos x$ \hfill \textbf{M1}
+
+$f'''(x) = \dfrac{\cos x}{(1 + \sin x)^{2}}$ \hfill \textbf{A1}
+
+\textbf{(c)} $f(0) = 0$, \ $f'(0) = 1$, \ $f''(0) = -1$, \ $f'''(0) = 1$ \hfill \textbf{A1}
+
+$f(x) \approx 0 + x - \dfrac{x^{2}}{2!} + \dfrac{x^{3}}{3!}$ \hfill \textbf{M1}
+
+$f(x) \approx x - \dfrac{x^{2}}{2} + \dfrac{x^{3}}{6}$ \hfill \textbf{A1}
+
+\emph{A1 for all four values. M1 for the Maclaurin formula with their
+values. Wrong method: dividing by $n$ instead of $n!$ gives
+$\frac{x^{3}}{3}$: M0 for that term, A0. FT from (b).}
+
+\textbf{(d)} $\dfrac{\left(x - \frac{x^{2}}{2} + \frac{x^{3}}{6}\right) - x}{x^{2}} = -\dfrac{1}{2} + \dfrac{x}{6}$ \hfill \textbf{M1}
+
+$\to -\dfrac{1}{2}$ \hfill \textbf{A1}
+
+\emph{The question says to use part (c): l'H\^opital's rule applied twice
+with the correct answer earns M0A1. FT from (c).}
+
+\textbf{(e)} $\displaystyle\int_{0}^{0.4}\left(x - \frac{x^{2}}{2} + \frac{x^{3}}{6}\right)\mathrm{d}x = \left[\frac{x^{2}}{2} - \frac{x^{3}}{6} + \frac{x^{4}}{24}\right]_{0}^{0.4}$ \hfill \textbf{M1}
+
+$= 0.0704$ \quad (exactly $\frac{44}{625}$) \hfill \textbf{A1}
+
+$\text{percentage error} = \dfrac{|0.0704 - 0.0702534\ldots|}{0.0702534\ldots} \times 100 = 0.209\%$ \quad ($0.208666\ldots$) \hfill \textbf{A1}
+
+\emph{The GDC value of the integral is $0.0702534\ldots$. Accept any value
+consistent with the candidate's own series. Wrong method: dividing by the
+approximation instead of the true value gives $0.208\%$: A0 for the
+percentage error. FT from (c).}
+
+\newpage
+
+%--- Problem 4: Car with a = -0.02v^2: separable DE for v(t); time to slow to 12; distance by integration; v(s) from a = v dv/ds [14 marks] ---
+\item[4.] [Maximum mark: 14]
+
+\textbf{(a)} $\dfrac{\mathrm{d}v}{\mathrm{d}t} = -0.02v^{2}$, \quad $\displaystyle\int v^{-2}\,\mathrm{d}v = \int -0.02\,\mathrm{d}t$ \hfill \textbf{M1}
+
+$-\dfrac{1}{v} = -0.02t + C$ \hfill \textbf{A1}
+
+$t = 0$, $v = 30$: \quad $C = -\dfrac{1}{30}$ \hfill \textbf{M1}
+
+$\dfrac{1}{v} = 0.02t + \dfrac{1}{30} = \dfrac{0.6t + 1}{30}$ \hfill \textbf{A1}
+
+$v = \dfrac{30}{1 + 0.6t}$ \hfill \textbf{AG}
+
+\emph{M1 for separating the variables. M1 for using the initial
+condition. The final A1 needs a line that leads to the given form.
+Verifying the given answer by differentiation earns no marks: the
+question says ``by solving''.}
+
+\textbf{(b)} $\dfrac{30}{1 + 0.6t} = 12$, \quad $1 + 0.6t = 2.5$ \hfill \textbf{M1}
+
+$t = 2.5 \text{ s}$ \hfill \textbf{A1}
+
+\textbf{(c)} $s = \displaystyle\int_{0}^{2.5} \frac{30}{1 + 0.6t}\,\mathrm{d}t$ \hfill \textbf{M1}
+
+$= \Big[50\ln(1 + 0.6t)\Big]_{0}^{2.5} = 50\ln 2.5$ \hfill \textbf{(A1)}
+
+$= 45.8 \text{ m}$ \quad ($45.8145\ldots$) \hfill \textbf{A1}
+
+\emph{The GDC value of the integral is acceptable with the integral shown
+(M1A1A1). Wrong method: assuming constant deceleration,
+$\frac{30 + 12}{2} \times 2.5 = 52.5$: M0A0A0. FT from (b).}
+
+\textbf{(d)} $v\dfrac{\mathrm{d}v}{\mathrm{d}s} = -0.02v^{2}$, \quad $\displaystyle\int \frac{1}{v}\,\mathrm{d}v = \int -0.02\,\mathrm{d}s$ \hfill \textbf{M1}
+
+$\ln v = -0.02s + \ln 30$ \hfill \textbf{A1}
+
+$v = 30e^{-0.02s}$ \hfill \textbf{A1}
+
+\emph{A1 for the integrated equation with the constant found from $v = 30$
+at $s = 0$.}
+
+\textbf{(e)} $v = 30e^{-0.02(100)} = 30e^{-2}$ \hfill \textbf{M1}
+
+$v = 4.06 \text{ m s}^{-1}$ \quad ($4.06005\ldots$) \hfill \textbf{A1}
+
+\emph{Wrong method: $t = 100$ in $v(t)$ gives $0.492$: M0A0. FT from (d).}
+
+\newpage
+
+%--- Problem 5: dy/dx = x + 2y: Maclaurin series from the DE; exact solution by integrating factor (by parts); percentage error at x = 0.2 [13 marks] ---
+\item[5.] [Maximum mark: 13]
+
+\textbf{(a)} $f'(0) = 0 + 2(1) = 2$ \hfill \textbf{A1}
+
+$y'' = 1 + 2y'$ \hfill \textbf{M1}
+
+$f''(0) = 1 + 2(2) = 5$ \hfill \textbf{A1}
+
+$y''' = 2y''$, \quad $f'''(0) = 2(5) = 10$ \hfill \textbf{A1}
+
+\emph{M1 for differentiating the equation implicitly. Wrong method:
+differentiating $x$ as $0$ ($y'' = 2y'$, giving $4$ and $8$): M0A0A0.}
+
+\textbf{(b)} $y \approx 1 + 2x + \dfrac{5}{2!}x^{2} + \dfrac{10}{3!}x^{3}$ \hfill \textbf{M1}
+
+$y \approx 1 + 2x + \dfrac{5}{2}x^{2} + \dfrac{5}{3}x^{3}$ \hfill \textbf{A1}
+
+\emph{FT from (a). Dividing by $n$ instead of $n!$ shows only in the
+$x^{3}$ term ($\frac{10}{3}x^{3}$): A0.}
+
+\textbf{(c)} $\dfrac{\mathrm{d}y}{\mathrm{d}x} - 2y = x$, \quad integrating factor $e^{\int -2\,\mathrm{d}x}$ \hfill \textbf{M1}
+
+$= e^{-2x}$ \hfill \textbf{A1}
+
+$\dfrac{\mathrm{d}}{\mathrm{d}x}\left(ye^{-2x}\right) = xe^{-2x}$, \quad $\displaystyle\int xe^{-2x}\,\mathrm{d}x = -\frac{x}{2}e^{-2x} + \int \frac{1}{2}e^{-2x}\,\mathrm{d}x$ \hfill \textbf{M1}
+
+$ye^{-2x} = -\dfrac{x}{2}e^{-2x} - \dfrac{1}{4}e^{-2x} + C$ \hfill \textbf{A1}
+
+$y = 1$ at $x = 0$: \ $C = \dfrac{5}{4}$, \quad $y = \dfrac{5}{4}e^{2x} - \dfrac{x}{2} - \dfrac{1}{4}$ \hfill \textbf{A1}
+
+\emph{M1 for an integrating factor from the equation in the form
+$y' + P(x)y = Q(x)$. Second M1 for integration by parts. The final A1 needs
+the constant found. Wrong methods: integrating factor $e^{2x}$ (sign of
+$P$): M1A0, later marks FT; a sign slip in the parts gives
+$y = \frac{3}{4}e^{2x} - \frac{x}{2} + \frac{1}{4}$: A0 for the integral
+and the final A1.}
+
+\textbf{(d)} $f(0.2) \approx 1 + 0.4 + 0.1 + 0.01333\ldots = 1.51$ \quad ($1.51333\ldots$) \hfill \textbf{A1}
+
+exact: $f(0.2) = \frac{5}{4}e^{0.4} - 0.1 - 0.25 = 1.51478\ldots$
+
+$\text{percentage error} = \dfrac{|1.51333\ldots - 1.51478\ldots|}{1.51478\ldots} \times 100 = 0.0956\%$ \hfill \textbf{A1}
+
+\emph{Accept any value consistent with the candidate's own series and
+exact solution, or with a GDC value of the true solution. FT from (b) and
+(c).}
+
+\end{enumerate}
+\end{document}

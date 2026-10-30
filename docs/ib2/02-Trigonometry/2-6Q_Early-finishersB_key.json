@@ -1,0 +1,172 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "3.2",
+      "3.4"
+    ],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.587,
+    "source": "Original (authored 2026-10-28, calculator; early-finisher extension of 2-6Q_Trigonometry, scored separately). Kite ABCD: AB = AD = 10 cm, CB = CD = 7 cm, angle BAD = 1.4 rad.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Kite ABCD, AB = AD = 10, CB = CD = 7, angle BAD = 1.4 rad. Find BD.",
+        "expected": {
+          "answer": "12.9 cm",
+          "full": "12.8843..."
+        },
+        "tolerance": "Accept 12.9 or the display with an ellipsis (12.8843...). Degree mode (0.244) earns A0. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for the cosine rule in triangle ABD. A1 for the correct substitution 10^2 + 10^2 - 2(10)(10) cos 1.4. A1 for 12.9."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find angle BCD (radians).",
+        "expected": {
+          "answer": "2.34",
+          "full": "2.33774..."
+        },
+        "tolerance": "Accept 2.34 or the display with an ellipsis. Accept any value consistent with the candidate's own correctly-rounded BD, including 2.34 from BD = 12.9. The answer must be in radians: 134 degrees earns A0. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for the cosine rule for an angle in triangle BCD. A1 for BD as the side opposite angle BCD: cos C = (7^2 + 7^2 - BD^2)/(2(7)(7)). A1 for 2.34. Wrong method: a sign error gives 0.804: M1A0A0.",
+        "follow_through": "FT from the candidate's BD in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area of the kite.",
+        "expected": {
+          "answer": "66.9 cm^2",
+          "full": "66.9131...",
+          "area_ABD": "49.2724...",
+          "area_BCD": "17.6407..."
+        },
+        "tolerance": "Accept 66.9 or the display with an ellipsis. Accept any value consistent with the candidate's own correctly-rounded intermediates, e.g. 66.8 from BD = 12.9. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for a correct area expression for either triangle (two sides and the angle between them). M1 for adding the two triangles. A1 for 66.9. Other correct methods earn full marks: 2 x (1/2)(10)(7) sin ABC, or half the product of the diagonals. Wrong method: triangle ABD alone (49.3): M1M0A0.",
+        "follow_through": "FT from the candidate's angle in (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find angle ABC (radians).",
+        "expected": {
+          "answer": "1.27",
+          "full": "1.27271..."
+        },
+        "tolerance": "Accept 1.27 or the display with an ellipsis. Accept any value consistent with the candidate's own correctly-rounded angle BCD. The answer must be in radians: 72.9 degrees earns A0. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for the angle sum 2 pi with angle ABC = angle ADC by symmetry, (2 pi - 1.4 - BCD)/2, or any other valid method (e.g. angle ABD + angle DBC). A1 for 1.27. Wrong method: angle ABD = (pi - 1.4)/2 = 0.871 alone: M0A0.",
+        "follow_through": "FT from the candidate's angle in (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "4.4",
+      "4.10",
+      "4.3"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.46,
+    "source": "Original (authored 2026-10-28, calculator; early-finisher extension, unit 1 statistics). Sunshine x: 2, 4, 5, 7, 8, 10; drinks y: 12, 19, 14, k, 27, 26; mean of y is 20.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": [
+          "4.3"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Six (x, y) pairs with y = 12, 19, 14, k, 27, 26; the mean of y is 20. Find k.",
+        "expected": {
+          "answer": "k = 22"
+        },
+        "tolerance": "Accept 22 only.",
+        "notes": "M1 for (12 + 19 + 14 + k + 27 + 26)/6 = 20, or the total 120. A1 for 22. Wrong method: dividing by 5 gives k = 2: M0A0."
+      },
+      {
+        "label": "b",
+        "topic_codes": [
+          "4.4"
+        ],
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find Pearson's r and write down the regression line of y on x, y = ax + b.",
+        "expected": {
+          "r": "0.896 (0.895547...)",
+          "answer": "y = 1.90x + 8.57",
+          "a": "1.90476...",
+          "b": "8.57142..."
+        },
+        "tolerance": "Accept r = 0.896, a = 1.90, b = 8.57, or the displays with an ellipsis; accept a = 40/21, b = 60/7. A value cut short without an ellipsis earns A0 for that value.",
+        "notes": "A1 for r = 0.896. A1 for a = 1.90. A1 for b = 8.57. The line must be given as an equation; a and b given without the equation earn A1A0 for the line.",
+        "follow_through": "FT from the candidate's k in (a)."
+      },
+      {
+        "label": "c",
+        "topic_codes": [
+          "4.10"
+        ],
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "24 drinks sold on another day; use the appropriate regression line to estimate the hours of sunshine.",
+        "expected": {
+          "answer": "7.68 hours",
+          "full": "7.68421...",
+          "x_on_y": "x = 0.421y - 2.42"
+        },
+        "tolerance": "Accept 7.68 or the display with an ellipsis, including 7.68 from the rounded coefficients. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for choosing the regression line of x on y to estimate x from y. A1 for x = 0.421y - 2.42 (0.421052..., -2.42105...). A1 for 7.68. Wrong method: solving the y-on-x line for x gives 8.10: M0A0A0.",
+        "follow_through": "FT from the candidate's k in (a)."
+      },
+      {
+        "label": "d",
+        "topic_codes": [
+          "4.4"
+        ],
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down the coordinates of the intersection of the y-on-x and x-on-y regression lines.",
+        "expected": {
+          "answer": "(6, 20)"
+        },
+        "tolerance": "Accept (6, 20) or x = 6, y = 20.",
+        "notes": "A1 for x = 6 (the mean of x), A1 for y = 20 (the mean of y), independently. 'Write down': no working needed."
+      }
+    ]
+  }
+]

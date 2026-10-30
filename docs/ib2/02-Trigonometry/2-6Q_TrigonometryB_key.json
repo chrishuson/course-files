@@ -1,0 +1,278 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "3.2",
+      "3.3"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.633,
+    "source": "Original (authored 2026-10-28, calculator; harder parallel of 2-6Q version (a) P1). Tower FT; A and B in line with F, AB = 50 m; elevations 23 deg (A) and 40 deg (B).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Points A, B on level ground in line with the foot F of tower FT, B between A and F, AB = 50 m; elevation of T from A is 23 deg, from B is 40 deg. Show that angle ATB = 17 deg.",
+        "expected": {
+          "answer": "17 degrees (answer given)",
+          "angle_ABT": "140 degrees"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "A1 for angle ABT = 140 deg used in the angle sum (180 - 23 - 140), or for the exterior-angle reason 40 = 23 + angle ATB. Restating 17 with no reason earns A0."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find BT.",
+        "expected": {
+          "answer": "66.8 m",
+          "full": "66.8209..."
+        },
+        "tolerance": "Accept 66.8 or the display with an ellipsis (66.8209...). A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for the sine rule in triangle ABT. A1 for pairing BT with 23 deg and 50 with 17 deg: BT/sin 23 = 50/sin 17. A1 for 66.8. Wrong method: pairing BT with 140 deg (or 40 deg) gives 109.9, which is AT: M1A0A0."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the height of the tower FT.",
+        "expected": {
+          "answer": "43.0 m",
+          "full": "42.9516..."
+        },
+        "tolerance": "Accept 43.0 or the display with an ellipsis (42.9516...). Accept any value consistent with the candidate's own correctly-rounded intermediate, including 42.9 from BT = 66.8. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for any correct right-angled trigonometry for the height: BT sin 40, or AT sin 23 with AT = 109.926... A1 for 43.0. Wrong method: BT cos 40 = 51.2 (the distance BF): M0A0.",
+        "follow_through": "FT from the candidate's BT in (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the distance BF.",
+        "expected": {
+          "answer": "51.2 m",
+          "full": "51.1878..."
+        },
+        "tolerance": "Accept 51.2 or the display with an ellipsis (51.1878...). Accept any value consistent with the candidate's own correctly-rounded intermediates. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for any correct method: BT cos 40, FT/tan 40, Pythagoras with BT and FT, or AT cos 23 - 50. A1 for 51.2. Wrong method: BT sin 40 = 43.0 (the height): M0A0.",
+        "follow_through": "FT from the candidate's BT in (b) or FT in (c)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "3.2",
+      "3.4"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.331,
+    "source": "Original (authored 2026-10-28, calculator; harder parallel of 2-6Q version (a) P3). Ambiguous case in radians: PQ = 12, QR = 9, angle QPR = 0.7 rad.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Triangle PQR, PQ = 12, QR = 9, angle QPR = 0.7 rad. Find the two possible values of angle PRQ.",
+        "expected": {
+          "answer": "1.03 and 2.11",
+          "full": "1.03322... and 2.10836..."
+        },
+        "tolerance": "Accept 1.03 and 2.11, or the displays with an ellipsis. Answers must be in radians: 59.2 and 121 degrees earn A0A0. A value cut short without an ellipsis earns A0 for that value.",
+        "notes": "M1 for a correct sine rule equation: sin R / 12 = sin 0.7 / 9. A1 for 1.03. A1 for the second value 2.11 (pi minus the first). Giving only 1.03 earns M1A1A0. Degree mode (sin R = 0.0163) earns M1A0A0."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Given angle PRQ is obtuse, find angle PQR.",
+        "expected": {
+          "answer": "0.333",
+          "full": "0.333229..."
+        },
+        "tolerance": "Accept 0.333 or the display with an ellipsis. Accept any value consistent with the candidate's own correctly-rounded obtuse angle, including 0.332 from 2.11.",
+        "notes": "A1 for pi - 0.7 - (their obtuse angle). A bare correct answer earns the mark (one-step part). Wrong method: using the acute value gives 1.41: A0.",
+        "follow_through": "FT from the candidate's obtuse value in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find PR (obtuse case).",
+        "expected": {
+          "answer": "4.57 cm",
+          "full": "4.56967..."
+        },
+        "tolerance": "Accept 4.57 or the display with an ellipsis. Accept any value consistent with the candidate's own correctly-rounded intermediate, including 4.55 from angle PRQ = 2.11. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for the sine rule PR / sin Q = 9 / sin 0.7, or the cosine rule 9^2 = 12^2 + PR^2 - 2(12)(PR) cos 0.7 (roots 4.57 and 13.8; the obtuse case is the smaller root). A1 for 4.57. Giving 13.8 (the acute case) earns M1A0.",
+        "follow_through": "FT from the candidate's angle in (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area of triangle PQR (obtuse case).",
+        "expected": {
+          "answer": "17.7 cm^2",
+          "full": "17.6631..."
+        },
+        "tolerance": "Accept 17.7 or the display with an ellipsis. Accept any value consistent with the candidate's own correctly-rounded intermediate, including 17.6 from angle PRQ = 2.11. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for two sides with the angle between them: (1/2)(12)(9) sin Q, or (1/2)(12)(PR) sin 0.7. A1 for 17.7. Wrong method: (1/2)(12)(9) sin 0.7 = 34.8 (0.7 is not between these sides): M0A0. If an angle was rounded first, add the feedback: store full values in the calculator.",
+        "follow_through": "FT from the candidate's values in (b) or (c)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "3.2"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.493,
+    "source": "Original (authored 2026-10-28, calculator; harder parallel of 2-6Q version (a) P2). Quadrilateral ABCD: AB = 8, BC = 5, CD = 7, AD = 12 cm, angle ABC = 125 deg; diagonal AC.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Quadrilateral ABCD, AB = 8, BC = 5, angle ABC = 125 deg. Find AC.",
+        "expected": {
+          "answer": "11.6 cm",
+          "full": "11.6140..."
+        },
+        "tolerance": "Accept 11.6 or the display with an ellipsis (11.6140...). A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for the cosine rule. A1 for the correct substitution 8^2 + 5^2 - 2(8)(5) cos 125. A1 for 11.6. Wrong method: a sign error gives 6.57: M1A0A0."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "CD = 7, AD = 12. Find angle ADC.",
+        "expected": {
+          "answer": "69.8 degrees",
+          "full": "69.7622..."
+        },
+        "tolerance": "Accept 69.8 or the display with an ellipsis. Accept any value consistent with the candidate's own correctly-rounded AC, including 69.6 from AC = 11.6. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for the cosine rule for an angle in triangle ACD. A1 for AC as the side opposite angle ADC: cos D = (7^2 + 12^2 - AC^2)/(2(7)(12)). A1 for 69.8. Wrong method: using AD = 12 as the opposite side gives 75.8, which is angle ACD: M1A0A0.",
+        "follow_through": "FT from the candidate's AC in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area of quadrilateral ABCD.",
+        "expected": {
+          "answer": "55.8 cm^2",
+          "full": "55.7901...",
+          "area_ABC": "16.3830...",
+          "area_ACD": "39.4071..."
+        },
+        "tolerance": "Accept 55.8 or the display with an ellipsis. Accept any value consistent with the candidate's own correctly-rounded intermediates, including 55.8 from angle ADC = 69.6. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 for a correct area expression for either triangle, two sides and the angle between them: (1/2)(8)(5) sin 125 or (1/2)(7)(12) sin ADC. M1 for adding the areas of triangles ABC and ACD. A1 for 55.8. Wrong method: using 125 deg in triangle ACD as well gives 50.8: M1M1A0.",
+        "follow_through": "FT from the candidate's angle in (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "4.2",
+      "4.3"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.416,
+    "source": "Original (authored 2026-10-28, calculator; unit 1 statistics review). 40 runners, grouped times with unknown frequencies p, q; estimated mean 31.25; penalty 2 min then seconds.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 4,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Grouped times of 40 runners: 10-20: 6, 20-30: p, 30-40: 12, 40-50: q, 50-60: 3; estimated mean 31.25 min. Find p and q.",
+        "expected": {
+          "p": 14,
+          "q": 5,
+          "answer": "p = 14, q = 5"
+        },
+        "tolerance": "Accept p = 14, q = 5 only.",
+        "notes": "A1 for p + q = 19 (or 21 + p + q = 40). M1 for the mean equation with the class midpoints 15, 25, 35, 45, 55: (15(6) + 25p + 35(12) + 45q + 55(3))/40 = 31.25. A1 for p = 14. A1 for q = 5. Solving the system on the GDC is accepted. Wrong method: lower class boundaries (10, 20, ...) give p = 4, q = 15: A1M0A0A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find an estimate of the standard deviation of the times.",
+        "expected": {
+          "answer": "11.1 min",
+          "full": "11.1102..."
+        },
+        "tolerance": "Accept 11.1 or the display with an ellipsis (11.1102...). The sample value s_x = 11.3 earns A0. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 (may be implied by a correct answer) for the midpoints with their frequencies entered in the GDC. A1 for 11.1.",
+        "follow_through": "FT from the candidate's p and q in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Every time gets a 2-minute penalty and is then written in seconds. Find the new estimated mean and standard deviation.",
+        "expected": {
+          "answer": "mean 1995 s, sd 667 s",
+          "mean": "1995",
+          "sd_full": "666.614..."
+        },
+        "tolerance": "Mean: accept 1995 only (exact). Standard deviation: accept 667 or the display with an ellipsis (666.614...); accept 666 from the rounded sd 11.1. A value cut short without an ellipsis earns A0.",
+        "notes": "M1 (implied by either correct value) for the transformation 60(t + 2). A1 for the mean 1995. A1 for the standard deviation 667: the penalty does not change the spread, the conversion multiplies it by 60. Wrong methods: adding 120 to the standard deviation (787), or adding 2 after converting (mean 1877): A0 for that value.",
+        "follow_through": "FT from the candidate's sd in (b)."
+      }
+    ]
+  }
+]

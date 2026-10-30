@@ -1,0 +1,375 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "5.19"
+    ],
+    "total_marks": 6,
+    "answer_box_top_frac": 0.372,
+    "source": "Original (2026-10-28, HL AHL 5.19). f(x) = (1 + 3x)e^(-2x).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Using the series for e^x, write down the first four terms of the Maclaurin series for e^(-2x).",
+        "expected": {
+          "answer": "1 - 2x + 2x^2 - (4/3)x^3"
+        },
+        "tolerance": "Exact coefficients required.",
+        "notes": "M1 for substituting -2x into the series for e^x. A1 for all four terms. Wrong method: leaving out the factorials (1 - 2x + 4x^2 - 8x^3): M1A0."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Hence find the Maclaurin series of f(x) = (1 + 3x)e^(-2x) up to x^3.",
+        "expected": {
+          "answer": "1 + x - 4x^2 + (14/3)x^3"
+        },
+        "tolerance": "Exact coefficients required. Terms beyond x^3 may be shown or omitted.",
+        "notes": "M1 for multiplying their series by (1 + 3x). A1 for all products up to x^3. A1 for 1 + x - 4x^2 + (14/3)x^3. A derivative route (f(0), f'(0), f''(0), f'''(0)) earns full marks.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Hence write down f''(0).",
+        "expected": {
+          "answer": "-8"
+        },
+        "notes": "A1 for -8 (2! times the x^2 coefficient). Wrong method: the coefficient -4 itself: A0. 'Write down': no working needed.",
+        "follow_through": "FT from (b): 2 times their x^2 coefficient."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "5.9"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.319,
+    "source": "Original (2026-10-28). v(t) = t^2 - 7t + 10, 0 <= t <= 6.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the acceleration at t = 4.",
+        "expected": {
+          "answer": "1 m s^-2"
+        },
+        "tolerance": "Accept 1. Units not required.",
+        "notes": "M1 for a = dv/dt = 2t - 7. A1 for 1. Wrong method: v(4) = -2 is the velocity: M0A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the values of t for which the particle is at rest.",
+        "expected": {
+          "answer": "t = 2, t = 5"
+        },
+        "tolerance": "Both values required for the A1.",
+        "notes": "M1 for setting v = 0 and solving (factorizing, formula or GDC). A1 for both t = 2 and t = 5."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the total distance travelled for 0 <= t <= 6.",
+        "expected": {
+          "answer": "15 m",
+          "pieces": "26/3 + 9/2 + 11/6"
+        },
+        "tolerance": "Accept 15. The GDC value of the modulus integral is acceptable with the integral shown.",
+        "notes": "M1 for the integral of |v| from 0 to 6, or for splitting at t = 2 and t = 5 and adding the sizes. A1 (implied) for the three pieces 26/3, 9/2 (or -9/2), 11/6. A1 for 15. Wrong methods: the displacement integral of v = 6: M0A0A0; splitting only at t = 2 (26/3 + 8/3 = 34/3): M1A0A0.",
+        "follow_through": "FT from the candidate's roots in (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "5.12",
+      "5.13",
+      "5.19"
+    ],
+    "total_marks": 13,
+    "answer_box_top_frac": null,
+    "source": "Original (2026-10-28). f(x) = ln(1 + sin x): derivatives, Maclaurin series to x^3, limit, series integral on [0, 0.4] with percentage error.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "Show that f'(x) = cos x/(1 + sin x) and f''(x) = -1/(1 + sin x).",
+        "expected": {
+          "answer": "answer given"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "A1 for f'(x) by the chain rule. M1 for the quotient (or product) rule applied to f'(x). A1 for using sin^2 x + cos^2 x = 1 to reach -(1 + sin x)/(1 + sin x)^2 or equivalent; restating the given result with no simplification shown earns A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find f'''(x).",
+        "expected": {
+          "answer": "cos x/(1 + sin x)^2"
+        },
+        "tolerance": "Accept any equivalent form, e.g. (1 + sin x)^-2 cos x.",
+        "notes": "M1 for differentiating -(1 + sin x)^-1 with the chain rule (or the quotient rule). A1 for cos x/(1 + sin x)^2."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "Hence find the Maclaurin series for f(x) up to and including the x^3 term.",
+        "expected": {
+          "answer": "x - x^2/2 + x^3/6",
+          "values": "f(0) = 0, f'(0) = 1, f''(0) = -1, f'''(0) = 1"
+        },
+        "tolerance": "Exact coefficients required.",
+        "notes": "A1 for all four values f(0), f'(0), f''(0), f'''(0). M1 for the Maclaurin formula with their values. A1 for x - x^2/2 + x^3/6. Wrong method: dividing by n instead of n! gives x^3/3: A0.",
+        "follow_through": "FT from (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Use part (c) to find the limit as x -> 0 of (ln(1 + sin x) - x)/x^2.",
+        "expected": {
+          "answer": "-1/2"
+        },
+        "tolerance": "Accept -0.5.",
+        "notes": "M1 for substituting the series and simplifying to -1/2 + x/6 (or equivalent). A1 for -1/2. The question says to use part (c): l'Hopital's rule with the correct answer earns M0A1.",
+        "follow_through": "FT from (c)."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Use part (c) to approximate the integral of ln(1 + sin x) from 0 to 0.4, and find the percentage error.",
+        "expected": {
+          "approximation": "0.0704 (44/625)",
+          "true_value": "0.0702534...",
+          "percentage_error": "0.209% (0.208666...)"
+        },
+        "tolerance": "Accept any value consistent with the candidate's own series and correctly-rounded values. A value cut short without an ellipsis earns A0 (3 s.f., exact, or the display with an ellipsis).",
+        "notes": "M1 for integrating their series term by term on [0, 0.4]. A1 for 0.0704. A1 for the percentage error 0.209%, computed relative to the true (GDC) value. Wrong method: dividing by the approximation gives 0.208%: A0 for the percentage error.",
+        "follow_through": "FT from (c)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "5.9",
+      "5.18"
+    ],
+    "total_marks": 14,
+    "answer_box_top_frac": null,
+    "source": "Original (2026-10-28). a = -0.02v^2, v(0) = 30: v = 30/(1 + 0.6t); v = 12 at t = 2.5; distance 50 ln 2.5 = 45.8 m; v = 30e^(-0.02s); v(100 m) = 4.06.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 4,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "By solving a differential equation, show that v = 30/(1 + 0.6t).",
+        "expected": {
+          "answer": "answer given"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for separating the variables: integral of v^-2 dv = integral of -0.02 dt. A1 for -1/v = -0.02t + C. M1 for using v = 30 at t = 0 to find C. A1 for a line leading to the given form, e.g. 1/v = (0.6t + 1)/30. Verifying the given answer by differentiation earns at most M0A0M0A0 (the question says 'by solving')."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the time at which the speed is 12 m s^-1.",
+        "expected": {
+          "answer": "t = 2.5 s"
+        },
+        "tolerance": "Accept 2.5.",
+        "notes": "M1 for setting 30/(1 + 0.6t) = 12. A1 for 2.5."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the distance travelled in this time.",
+        "expected": {
+          "answer": "45.8 m",
+          "exact": "50 ln 2.5",
+          "full": "45.8145..."
+        },
+        "tolerance": "Accept 45.8, 50 ln 2.5, or the display with an ellipsis. The GDC value of the integral is acceptable with the integral shown. A value cut short without an ellipsis earns A0 (3 s.f., exact, or the display with an ellipsis).",
+        "notes": "M1 for the integral of v from 0 to their t. A1 (implied) for 50 ln(1 + 0.6t) or 50 ln 2.5. A1 for 45.8. Wrong method: constant deceleration (30 + 12)/2 x 2.5 = 52.5: M0A0A0.",
+        "follow_through": "FT from (b)."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Given a = v dv/ds, find v in terms of s.",
+        "expected": {
+          "answer": "v = 30e^(-0.02s)"
+        },
+        "tolerance": "Accept any equivalent form, e.g. ln v = -0.02s + ln 30 rearranged.",
+        "notes": "M1 for separating: integral of (1/v) dv = integral of -0.02 ds. A1 for ln v = -0.02s + C with C = ln 30 found from v = 30 at s = 0. A1 for v = 30e^(-0.02s)."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Hence find the speed after travelling 100 m.",
+        "expected": {
+          "answer": "4.06 m s^-1",
+          "full": "4.06005..."
+        },
+        "tolerance": "Accept 4.06 or 30e^-2. A value cut short without an ellipsis earns A0 (3 s.f., exact, or the display with an ellipsis).",
+        "notes": "M1 for substituting s = 100 into their v(s). A1 for 4.06. Wrong method: t = 100 in v(t) gives 0.492: M0A0.",
+        "follow_through": "FT from (d)."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "topic_codes": [
+      "5.16",
+      "5.18",
+      "5.19"
+    ],
+    "total_marks": 13,
+    "answer_box_top_frac": null,
+    "source": "Original (2026-10-28). dy/dx = x + 2y, y(0) = 1: derivatives 2, 5, 10; series 1 + 2x + (5/2)x^2 + (5/3)x^3; exact y = (5/4)e^(2x) - x/2 - 1/4; f(0.2) estimate 1.51333 vs 1.51478.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 4,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Use the differential equation to find f'(0), f''(0), f'''(0).",
+        "expected": {
+          "f'(0)": 2,
+          "f''(0)": 5,
+          "f'''(0)": 10
+        },
+        "notes": "A1 for f'(0) = 2. M1 for differentiating the equation implicitly (y'' = 1 + 2y'). A1 for f''(0) = 5. A1 for f'''(0) = 10. Wrong method: differentiating x as 0 (y'' = 2y', giving 4 and 8): M0A0A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Hence find the Maclaurin series for y up to x^3.",
+        "expected": {
+          "answer": "1 + 2x + (5/2)x^2 + (5/3)x^3"
+        },
+        "tolerance": "Exact coefficients required.",
+        "notes": "M1 for the Maclaurin formula with their values. A1 for the correct series. Dividing by n instead of n! shows only in the x^3 term (10/3): A0.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 5,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "By using an integrating factor, solve the differential equation.",
+        "expected": {
+          "answer": "y = (5/4)e^(2x) - x/2 - 1/4",
+          "integrating_factor": "e^(-2x)"
+        },
+        "tolerance": "Accept any equivalent form.",
+        "notes": "M1 for an integrating factor from y' - 2y = x. A1 for e^(-2x). M1 for integration by parts on x e^(-2x). A1 for -(x/2)e^(-2x) - (1/4)e^(-2x) + C. A1 for the final answer with C = 5/4 found. Wrong methods: integrating factor e^(2x): M1A0, later marks FT; a sign slip in the parts (giving (3/4)e^(2x) - x/2 + 1/4): A0 for the integral and the final A1."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Use the series to estimate f(0.2) and find the percentage error.",
+        "expected": {
+          "estimate": "1.51 (1.51333...)",
+          "true_value": "1.51478...",
+          "percentage_error": "0.0956%"
+        },
+        "tolerance": "Accept any value consistent with the candidate's own series and exact solution, or with a GDC value of the true solution. A value cut short without an ellipsis earns A0 (3 s.f., exact, or the display with an ellipsis).",
+        "notes": "A1 for the estimate 1.51333... (3 s.f. or display). A1 for the percentage error 0.0956%, relative to the true value.",
+        "follow_through": "FT from (b) and (c)."
+      }
+    ]
+  }
+]

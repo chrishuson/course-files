@@ -1,0 +1,126 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 HL \\* 28 October 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyhead[LE]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{5.3 Quiz: Maclaurin Series and Kinematics}
+
+Answer all five problems. A calculator is allowed. Use the spaces provided
+for Problems 1 and 2. Answer Problems 3--5 on lined paper.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Maclaurin series of e^(-2x) by substitution; product with (1 + 3x); f''(0) from a coefficient [6 marks] ---
+%--- Source: Original (freshly authored 2026-10-28, HL syllabus AHL 5.19) ---
+\item[1.] [Maximum mark: 6]
+
+Let $f(x) = (1 + 3x)\,e^{-2x}$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Using the Maclaurin series for $e^{x}$, write down the first four
+  terms of the Maclaurin series for $e^{-2x}$. \hfill [2]
+  \item Hence find the Maclaurin series for $f(x)$, up to and including
+  the term in $x^{3}$. \hfill [3]
+  \item Hence write down the value of $f''(0)$. \hfill [1]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,14.7);
+  \foreach \y in {1,2,...,14} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Velocity polynomial: acceleration, times at rest, total distance vs displacement [7 marks] ---
+%--- Source: Original (freshly authored 2026-10-28, HL syllabus SL 5.9) ---
+\item[2.] [Maximum mark: 7]
+
+A particle moves in a straight line. Its velocity, $v \text{ m s}^{-1}$, at
+time $t$ seconds is given by
+\[
+v(t) = t^{2} - 7t + 10, \qquad 0 \leq t \leq 6.
+\]
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Find the acceleration of the particle when $t = 4$. \hfill [2]
+  \item Find the values of $t$ for which the particle is at rest.
+  \hfill [2]
+  \item Find the total distance travelled by the particle for
+  $0 \leq t \leq 6$. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,16.2);
+  \foreach \y in {1,2,...,15} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+\emph{Answer Problems 3--5 on lined paper.}
+
+%--- Problem 3: Maclaurin series of ln(1 + sin x) from derivatives; limit; series approximation of an integral and percentage error [13 marks] ---
+%--- Source: Original (freshly authored 2026-10-28, HL syllabus AHL 5.12, 5.13, 5.19) ---
+\item[3.] [Maximum mark: 13]
+
+Let $f(x) = \ln(1 + \sin x)$, for $-\frac{\pi}{2} < x < \frac{3\pi}{2}$.
+
+\begin{enumerate}[itemsep=0.05cm]
+  \item Show that $f'(x) = \dfrac{\cos x}{1 + \sin x}$ and
+  $f''(x) = -\dfrac{1}{1 + \sin x}$. \hfill [3]
+  \item Find $f'''(x)$. \hfill [2]
+  \item Hence find the Maclaurin series for $f(x)$, up to and including
+  the term in $x^{3}$. \hfill [3]
+  \item Use your answer to part (c) to find
+  $\lim_{x \to 0} \dfrac{\ln(1 + \sin x) - x}{x^{2}}$. \hfill [2]
+  \item Use your answer to part (c) to find an approximate value of
+  $\int_{0}^{0.4} \ln(1 + \sin x)\,\mathrm{d}x$, and find the
+  percentage error in this approximation. \hfill [3]
+\end{enumerate}
+
+
+%--- Problem 4: Car with a = -0.02v^2: separable DE for v(t); time to slow to 12; distance by integration; v(s) from a = v dv/ds [14 marks] ---
+%--- Source: Original (freshly authored 2026-10-28, HL syllabus SL 5.9, AHL 5.18) ---
+\item[4.] [Maximum mark: 14]
+
+A car's engine is switched off at time $t = 0$, when its velocity is
+$30 \text{ m s}^{-1}$. For $t \geq 0$ its acceleration is $a = -0.02v^{2}$,
+where $v \text{ m s}^{-1}$ is its velocity at time $t$ seconds.
+
+\begin{enumerate}[itemsep=0.05cm]
+  \item By solving a differential equation, show that
+  $v = \dfrac{30}{1 + 0.6t}$. \hfill [4]
+  \item Find the time at which the speed of the car is
+  $12 \text{ m s}^{-1}$. \hfill [2]
+  \item Find the distance travelled by the car in this time. \hfill [3]
+  \item Given that $a = v\dfrac{\mathrm{d}v}{\mathrm{d}s}$, where $s$ metres
+  is the distance travelled since $t = 0$, find an expression for $v$ in
+  terms of $s$. \hfill [3]
+  \item Hence find the speed of the car when it has travelled
+  $100$ metres. \hfill [2]
+\end{enumerate}
+
+
+%--- Problem 5: dy/dx = x + 2y: Maclaurin series from the DE; exact solution by integrating factor (by parts); percentage error at x = 0.2 [13 marks] ---
+%--- Source: Original (freshly authored 2026-10-28, HL syllabus AHL 5.16, 5.18, 5.19) ---
+\item[5.] [Maximum mark: 13]
+
+The function $y = f(x)$ satisfies the differential equation
+$\dfrac{\mathrm{d}y}{\mathrm{d}x} = x + 2y$, and $y = 1$ when $x = 0$.
+
+\begin{enumerate}[itemsep=0.05cm]
+  \item Use the differential equation to find the values of $f'(0)$,
+  $f''(0)$ and $f'''(0)$. \hfill [4]
+  \item Hence find the Maclaurin series for $y$, up to and including the
+  term in $x^{3}$. \hfill [2]
+  \item By using an integrating factor, solve the differential equation.
+  Give your answer in the form $y = f(x)$. \hfill [5]
+  \item Use your series from part (b) to estimate $f(0.2)$, and find the
+  percentage error in this estimate. \hfill [2]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
