@@ -1,0 +1,105 @@
+% context: 9th-grade physics classwork, Unit 2 kinematics, Giancoli 2-7 (pp. 33-37)
+% topic: free fall with a = g = 9.80 m/s^2, the four constant-acceleration equations
+%        with y in place of x; dropped from rest (down positive), distance grows as
+%        t^2, Galileo's heavy-and-light claim, a ball thrown upward (up positive):
+%        v = 0 but a = -g at the top, symmetry of the flight, air resistance
+% structure: two pages; page 1 the equations, a dropped ball table (Example 2-10)
+%        and the Leaning Tower of Pisa; page 2 a ball thrown upward (Examples 2-12,
+%        2-13, 2-14, 2-15) and a raindrop with and without air.
+%        No quadratic formula (Example 2-16)
+% data: Leaning Tower of Pisa 55.86 m on its low side; raindrop terminal speed about
+%        9 m/s (contexts.md #8). The cloud height and throw speed are chosen values
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{Physics}
+\author{Chris Huson}
+\date{October 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Nickname: \hspace{2.25cm} \,\\ \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 30 October 2026}
+
+\begin{document}
+
+\subsubsection*{2.5 Classwork: Falling Objects}
+
+\textbf{Reference (provided).} \quad For a falling object, the acceleration is
+$g = 9.80$ m/s$^2$, downward.
+
+\vspace{0.1cm}
+{\hspace{0.5cm}%
+\renewcommand{\arraystretch}{1.8}%
+\begin{tabular}{l @{\hspace{2cm}} l}
+  $v = v_0 + at$ & $v^2 = v_0^2 + 2a(y - y_0)$ \\
+  $y = y_0 + v_0 t + \frac{1}{2}at^2$ & $\bar{v} = \dfrac{v + v_0}{2}$
+\end{tabular}}
+
+\vspace{0.2cm}
+Ignore air resistance unless the problem says otherwise. ``Dropped'' means
+$v_0 = 0$. Choose which direction is positive, up or down, and keep it for the whole
+problem. List what you know and what you want, then choose the equation.
+
+\vspace{0.2cm}
+
+\begin{enumerate}[itemsep=0.4cm]
+
+\item A ball is dropped from a tall building. Take \emph{down} as positive, so
+  $a = +9.80$ m/s$^2$, and $y_0 = 0$.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item Fill in the table.
+
+      \vspace{0.1cm}
+      \renewcommand{\arraystretch}{1.5}
+      \begin{tabular}{| c | p{1.6cm} | p{1.6cm} | p{1.6cm} | p{1.6cm} |}
+        \hline
+        $t$ (s) & \centering 0 & \centering 1.00 & \centering 2.00 &
+          \centering\arraybackslash 3.00 \\ \hline
+        $v$ (m/s) & & & & \\ \hline
+        $y$ (m) & & & & \\ \hline
+      \end{tabular}
+    \item At 2.00 s, the ball has fallen how many times as far as at 1.00 s? At
+      3.00 s? What pattern do you see?
+      \vspace{1.2cm}
+  \end{enumerate}
+
+\item Galileo is said to have dropped balls from the Leaning Tower of Pisa, which is
+  55.86 m tall on its low side. Take down as positive.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item How long does a ball dropped from the top take to reach the ground?
+      (Solve for $t^2$ first, then take the square root.)
+      \vspace{2.2cm}
+    \item How fast is it going when it lands?
+      \vspace{1.6cm}
+    \item A heavy iron ball and a light wooden ball of the same size are dropped
+      together. Which lands first?
+  \end{enumerate}
+
+\newpage
+
+\item A student throws a ball straight up. It leaves the hand at 14.7 m/s. Take
+  \emph{up} as positive, so $v_0 = +14.7$ m/s and $a = -9.80$ m/s$^2$.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item At the highest point, what is the ball's velocity? What is its
+      acceleration?
+      \vspace{1.4cm}
+    \item How long does the ball take to reach the highest point?
+      \vspace{2.4cm}
+    \item How high above the hand does it go?
+      \vspace{2.4cm}
+    \item How long after the throw does the ball come back to the hand, and what
+      is its velocity then?
+      \vspace{2.4cm}
+  \end{enumerate}
+
+\item A raindrop falls from a cloud 1000 m above the ground. Take down as positive.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item If there were no air, how fast would the raindrop be going when it reached
+      the ground?
+      \vspace{2.6cm}
+    \item Real raindrops land at about 9 m/s. Why is that so much slower?
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}
