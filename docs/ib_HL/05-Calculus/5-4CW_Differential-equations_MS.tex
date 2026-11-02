@@ -1,0 +1,196 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 HL \\* 2 November 2026}
+
+\begin{document}
+\subsubsection*{5.4 Classwork: Introduction to Differential Equations (no calculator) --- Markscheme}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Verify a general solution; particular solution; equilibrium value; form a DE (Newton's law of cooling) [9 marks] ---
+\item[1.] [Maximum mark: 9]
+
+\textbf{(a)} $\frac{\mathrm{d}y}{\mathrm{d}x} = -2Ae^{-2x}$ \hfill \textbf{A1}
+
+$6 - 2y = 6 - 2\left(Ae^{-2x} + 3\right)$ \hfill \textbf{M1}
+
+$= -2Ae^{-2x}$ \hfill \textbf{A1}
+
+so $\frac{\mathrm{d}y}{\mathrm{d}x} = 6 - 2y$ for every $A$ \hfill \textbf{AG}
+
+\emph{M1 for substituting $y$ into the right-hand side. The final A1 needs
+both sides shown equal to $-2Ae^{-2x}$. Accept working from
+$\frac{\mathrm{d}y}{\mathrm{d}x} + 2y = 6$.}
+
+\textbf{(b)} $5 = A + 3$, so $A = 2$ \hfill \textbf{M1}
+
+$y = 2e^{-2x} + 3$ \hfill \textbf{A1}
+
+\emph{Wrong method: $5 = A$ (the $+3$ forgotten, since $e^{0} = 1$) gives
+$y = 5e^{-2x} + 3$, M0A0.}
+
+\textbf{(c)} $y \to 3$ \hfill \textbf{A1}
+
+When $y = 3$, $\frac{\mathrm{d}y}{\mathrm{d}x} = 6 - 2(3) = 0$ \hfill \textbf{A1}
+
+\emph{Accept the argument $Ae^{-2x} \to 0$ for the first A1. The second
+A1 needs the substitution into the differential equation.}
+
+\textbf{(d)} $\dfrac{\mathrm{d}T}{\mathrm{d}t} = -k\left(T - 20\right)$
+\hfill \textbf{A1A1}
+
+\emph{A1 for $\frac{\mathrm{d}T}{\mathrm{d}t}$ proportional to $T - 20$.
+A1 for the negative sign (the temperature decreases while $T > 20$).
+$\frac{\mathrm{d}T}{\mathrm{d}t} = k(T - 20)$ with $k > 0$ earns A1A0.
+Accept $k\left(20 - T\right)$.}
+
+\bigskip \hrule \bigskip
+
+%--- Problem 2: Separation of variables: dy/dx = 6x^2 y with y(0) = 2; dy/dx = e^(x - y) with y(0) = ln 2 [9 marks] ---
+\item[2.] [Maximum mark: 9]
+
+\textbf{(a)} $\displaystyle\int \frac{1}{y}\,\mathrm{d}y = \int 6x^{2}\,\mathrm{d}x$
+\hfill \textbf{M1}
+
+$\ln|y| = 2x^{3} + C$ \hfill \textbf{A1A1}
+
+$\ln 2 = 0 + C$, so $C = \ln 2$ \hfill \textbf{M1}
+
+$y = 2e^{2x^{3}}$ \hfill \textbf{A1}
+
+\emph{M1 for separating with integral signs (or $\mathrm{d}y$ and
+$\mathrm{d}x$ on opposite sides). A1 for $\ln|y|$, A1 for $2x^{3} + C$; the
+$+C$ must appear for the second A1. Accept $y = Ae^{2x^{3}}$ followed by
+$A = 2$. Wrong method: exponentiating and adding a constant afterwards,
+$y = e^{2x^{3}} + C$, gives $y = e^{2x^{3}} + 1$, earning M1A1A0M1A0.}
+
+\textbf{(b)} $\dfrac{\mathrm{d}y}{\mathrm{d}x} = e^{x}e^{-y}$, so
+$\displaystyle\int e^{y}\,\mathrm{d}y = \int e^{x}\,\mathrm{d}x$
+\hfill \textbf{M1}
+
+$e^{y} = e^{x} + C$ \hfill \textbf{A1}
+
+$e^{\ln 2} = e^{0} + C$, so $2 = 1 + C$, $C = 1$ \hfill \textbf{M1}
+
+$y = \ln\left(e^{x} + 1\right)$ \hfill \textbf{A1}
+
+\emph{M1 for splitting $e^{x - y}$ as $e^{x}e^{-y}$ and separating. Wrong
+method: taking logarithms term by term, $y = \ln e^{x} + \ln 1 = x$, earns
+the final A0.}
+
+\bigskip \hrule \bigskip
+
+%--- Problem 3: Newton's law of cooling: solve dT/dt = -k(T - 20), T(0) = 90; k from T(10) = 55; time to reach 37.5 [9 marks] ---
+\item[3.] [Maximum mark: 9]
+
+\textbf{(a)} $\displaystyle\int \frac{1}{T - 20}\,\mathrm{d}T = \int -k\,\mathrm{d}t$
+\hfill \textbf{M1}
+
+$\ln|T - 20| = -kt + C$ \hfill \textbf{A1}
+
+$t = 0$, $T = 90$: $C = \ln 70$ \hfill \textbf{M1}
+
+$T - 20 = 70e^{-kt}$ \hfill \textbf{A1}
+
+$T = 20 + 70e^{-kt}$ \hfill \textbf{AG}
+
+\emph{Accept $T - 20 = Ae^{-kt}$ with $A = 70$ for the second M1A1.
+The final A1 needs a line before the given answer.}
+
+\textbf{(b)} $55 = 20 + 70e^{-10k}$, so $e^{-10k} = \frac{1}{2}$
+\hfill \textbf{M1}
+
+$-10k = \ln\frac{1}{2} = -\ln 2$, so $k = \frac{\ln 2}{10}$ \hfill \textbf{A1}
+
+\hfill \textbf{AG}
+
+\textbf{(c)} $37.5 = 20 + 70e^{-kt}$, so $e^{-kt} = \frac{17.5}{70} = \frac{1}{4}$
+\hfill \textbf{M1A1}
+
+$kt = \ln 4 = 2\ln 2$, so $t = \frac{2\ln 2}{\ln 2 / 10} = 20$ minutes
+\hfill \textbf{A1}
+
+\emph{Accept the half-life argument: the difference $T - 20$ halves every
+$10$ minutes, $70 \to 35 \to 17.5$, so $t = 20$ (M1A1A1). Wrong method:
+linear cooling at $3.5$ degrees per minute gives $t = 15$, M0A0A0.}
+
+\bigskip \hrule \bigskip
+
+%--- Problem 4: dy/dx = x + y, y(0) = 1: Euler h = 0.5 to x = 1; exact solution by integrating factor; concavity explains the underestimate [10 marks] ---
+\item[4.] [Maximum mark: 10]
+
+\textbf{(a)} $y_{1} = 1 + 0.5(0 + 1) = 1.5$ \hfill \textbf{A1}
+
+$y_{2} = 1.5 + 0.5(0.5 + 1.5)$ \hfill \textbf{M1}
+
+$= 2.5$ \hfill \textbf{A1}
+
+\emph{M1 for a second step using the slope at $(0.5,\ 1.5)$, FT from the
+candidate's $y_{1}$. Wrong method: leaving out the step length,
+$y_{1} = 1 + 1 = 2$, earns A0M0A0.}
+
+\textbf{(b)} $\frac{\mathrm{d}y}{\mathrm{d}x} - y = x$, integrating factor
+$e^{\int -1\,\mathrm{d}x} = e^{-x}$ \hfill \textbf{M1A1}
+
+$\frac{\mathrm{d}}{\mathrm{d}x}\left(ye^{-x}\right) = xe^{-x}$
+
+$ye^{-x} = \int xe^{-x}\,\mathrm{d}x = -xe^{-x} - e^{-x} + C$ \hfill \textbf{M1A1}
+
+$x = 0$, $y = 1$: $1 = -1 + C$, $C = 2$, so $y = 2e^{x} - x - 1$ \hfill \textbf{A1}
+
+\emph{First M1 for writing the equation in the form $y' + P(x)y = Q(x)$
+with $P = -1$. Second M1 for integration by parts. An integrating factor
+of $e^{x}$ (sign error) earns M1A0 and no further marks except FT of the
+constant.}
+
+\textbf{(c)} $\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}} = 1 + \frac{\mathrm{d}y}{\mathrm{d}x} = 1 + x + y$
+\hfill \textbf{A1}
+
+For $0 \le x \le 1$, $x \ge 0$ and $y > 0$, so
+$\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}} > 0$: the curve is concave up, so
+each Euler step along a tangent line lies below the curve. \hfill \textbf{R1}
+
+\emph{Accept a comparison with the exact value $2e - 2$ for the R1 only if
+it is justified without a calculator, e.g. $e > 2.7$ gives $2e - 2 > 3.4 > 2.5$.
+The R1 needs a reason (concavity or the comparison), not just ``Euler's
+method is approximate''.}
+
+\bigskip \hrule \bigskip
+
+%--- Problem 5: Homogeneous DE dy/dx = (x^2 + y^2)/(xy), substitution y = vx, y(e) = 2e [8 marks] ---
+\item[5.] [Maximum mark: 8]
+
+\textbf{(a)} $y = vx$ gives $\frac{\mathrm{d}y}{\mathrm{d}x} = v + x\frac{\mathrm{d}v}{\mathrm{d}x}$
+\hfill \textbf{A1}
+
+$v + x\frac{\mathrm{d}v}{\mathrm{d}x} = \dfrac{x^{2} + v^{2}x^{2}}{x \cdot vx}
+= \dfrac{1 + v^{2}}{v}$ \hfill \textbf{M1}
+
+$x\frac{\mathrm{d}v}{\mathrm{d}x} = \dfrac{1 + v^{2}}{v} - v = \dfrac{1}{v}$
+\hfill \textbf{A1}
+
+\hfill \textbf{AG}
+
+\textbf{(b)} $\displaystyle\int v\,\mathrm{d}v = \int \frac{1}{x}\,\mathrm{d}x$
+\hfill \textbf{M1}
+
+$\frac{1}{2}v^{2} = \ln x + C$ \hfill \textbf{A1}
+
+$x = e$, $v = \frac{2e}{e} = 2$: $2 = 1 + C$, $C = 1$ \hfill \textbf{A1}
+
+$\frac{y^{2}}{2x^{2}} = \ln x + 1$, so $y^{2} = x^{2}\left(2\ln x + 2\right)$
+\hfill \textbf{M1}
+
+$y = x\sqrt{2\ln x + 2}$ \hfill \textbf{A1}
+
+\emph{Second M1 for substituting $v = \frac{y}{x}$ back. For the final A1
+the positive root is required ($y > 0$). Accept $y = \sqrt{2x^{2}\ln x + 2x^{2}}$.
+Wrong method: using $v = 2e$ (the value of $y$) in the initial condition
+gives $C = 2e^{2} - 1$, earning A0 for the constant and A0 for the final
+answer.}
+
+\end{enumerate}
+\end{document}

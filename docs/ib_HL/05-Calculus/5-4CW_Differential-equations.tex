@@ -1,0 +1,127 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 HL \\* 2 November 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyhead[LE]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{5.4 Classwork: Introduction to Differential Equations (no calculator)}
+
+Answer Problems 1 and 2 in the spaces provided. Answer Problems 3--5 on
+lined paper. Show all working and give exact answers.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Verify a general solution; particular solution; equilibrium value; form a DE (Newton's law of cooling) [9 marks] ---
+%--- Source: Original (freshly authored 2026-11-02, HL syllabus AHL 5.18) ---
+\item[1.] [Maximum mark: 9]
+
+Consider the differential equation
+$$\frac{\mathrm{d}y}{\mathrm{d}x} = 6 - 2y.$$
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Show that $y = Ae^{-2x} + 3$ is a solution of the differential
+  equation for every constant $A$. \hfill [3]
+  \item Find the particular solution for which $y = 5$ when $x = 0$.
+  \hfill [2]
+  \item Write down the value that $y$ approaches as $x \to \infty$, and
+  show that this value of $y$ makes $\dfrac{\mathrm{d}y}{\mathrm{d}x} = 0$.
+  \hfill [2]
+\end{enumerate}
+
+A cup of tea cools in a room at $20^{\circ}\mathrm{C}$. The rate at which
+its temperature $T$ decreases is proportional to the difference between
+$T$ and the room temperature.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item[(d)] Write down a differential equation for $T$ in terms of the time
+  $t$ and a positive constant $k$. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,10.0);
+  \foreach \y in {1,2,...,9} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Separation of variables: dy/dx = 6x^2 y with y(0) = 2; dy/dx = e^(x - y) with y(0) = ln 2 [9 marks] ---
+%--- Source: Original (freshly authored 2026-11-02, HL syllabus AHL 5.18) ---
+\item[2.] [Maximum mark: 9]
+
+Solve each differential equation by separating the variables. Give each
+answer in the form $y = f(x)$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item $\dfrac{\mathrm{d}y}{\mathrm{d}x} = 6x^{2}y$, \ given that $y = 2$
+  when $x = 0$. \hfill [5]
+  \item $\dfrac{\mathrm{d}y}{\mathrm{d}x} = e^{x - y}$, \ given that
+  $y = \ln 2$ when $x = 0$. \hfill [4]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,17.4);
+  \foreach \y in {1,2,...,16} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+\emph{Answer Problems 3--5 on lined paper.}
+
+%--- Problem 3: Newton's law of cooling: solve dT/dt = -k(T - 20), T(0) = 90; k from T(10) = 55; time to reach 37.5 [9 marks] ---
+%--- Source: Original (freshly authored 2026-11-02, HL syllabus AHL 5.18); continues Problem 1(d) ---
+\item[3.] [Maximum mark: 9]
+
+The tea in Problem 1 is $90^{\circ}\mathrm{C}$ when $t = 0$, where $t$ is
+the time in minutes. Its temperature satisfies
+$$\frac{\mathrm{d}T}{\mathrm{d}t} = -k\left(T - 20\right), \qquad k > 0.$$
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item By solving the differential equation, show that
+  $T = 20 + 70e^{-kt}$. \hfill [4]
+  \item After $10$ minutes the temperature of the tea is
+  $55^{\circ}\mathrm{C}$. Show that $k = \dfrac{\ln 2}{10}$. \hfill [2]
+  \item Find the time at which the temperature of the tea is
+  $37.5^{\circ}\mathrm{C}$. \hfill [3]
+\end{enumerate}
+
+\bigskip
+
+%--- Problem 4: dy/dx = x + y, y(0) = 1: Euler h = 0.5 to x = 1; exact solution by integrating factor; concavity explains the underestimate [10 marks] ---
+%--- Source: Original (freshly authored 2026-11-02, HL syllabus AHL 5.18) ---
+\item[4.] [Maximum mark: 10]
+
+Consider the differential equation
+$\dfrac{\mathrm{d}y}{\mathrm{d}x} = x + y$, where $y = 1$ when $x = 0$.
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Use Euler's method with a step length of $0.5$ to find an
+  approximate value of $y$ when $x = 1$. \hfill [3]
+  \item By using an integrating factor, solve the differential equation.
+  Give your answer in the form $y = f(x)$. \hfill [5]
+  \item Show that $\dfrac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}} = 1 + x + y$.
+  Hence explain why the approximation in part (a) is less than the true
+  value of $y$ when $x = 1$. \hfill [2]
+\end{enumerate}
+
+\newpage
+
+%--- Problem 5: Homogeneous DE dy/dx = (x^2 + y^2)/(xy), substitution y = vx, y(e) = 2e [8 marks] ---
+%--- Source: Original (freshly authored 2026-11-02, HL syllabus AHL 5.18) ---
+\item[5.] [Maximum mark: 8]
+
+Consider the differential equation
+$$\frac{\mathrm{d}y}{\mathrm{d}x} = \frac{x^{2} + y^{2}}{xy},
+\qquad x > 0,\ y > 0.$$
+
+\begin{enumerate}[itemsep=0.15cm]
+  \item Use the substitution $y = vx$ to show that
+  $x\dfrac{\mathrm{d}v}{\mathrm{d}x} = \dfrac{1}{v}$. \hfill [3]
+  \item Given that $y = 2e$ when $x = e$, solve the differential equation.
+  Give your answer in the form $y = f(x)$. \hfill [5]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}

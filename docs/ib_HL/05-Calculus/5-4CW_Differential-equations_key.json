@@ -1,0 +1,174 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["5.18"],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.544,
+    "source": "Original (2026-11-02, HL AHL 5.18, no calculator). dy/dx = 6 - 2y: verify y = Ae^(-2x) + 3; particular solution through (0, 5); limit 3; form Newton's cooling DE dT/dt = -k(T - 20).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["A1", "M1", "A1"],
+        "description": "Show that y = Ae^(-2x) + 3 is a solution of dy/dx = 6 - 2y for every constant A.",
+        "expected": {"answer": "dy/dx = -2Ae^(-2x) and 6 - 2y = -2Ae^(-2x), so equal (AG)"},
+        "tolerance": "Accept working from dy/dx + 2y = 6.",
+        "notes": "Show-that part. A1 for dy/dx = -2Ae^(-2x). M1 for substituting y into 6 - 2y. A1 for simplifying to -2Ae^(-2x), with both sides shown equal. Checking a single value of A (e.g. A = 1) only earns A1M1A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the particular solution with y = 5 when x = 0.",
+        "expected": {"answer": "y = 2e^(-2x) + 3"},
+        "tolerance": "Accept A = 2 with the solution written.",
+        "notes": "M1 for substituting x = 0, y = 5 to get 5 = A + 3. A1 for y = 2e^(-2x) + 3. A bare correct answer earns A1 only. Wrong method: 5 = A (forgetting the +3) gives y = 5e^(-2x) + 3, M0A0."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write down the value y approaches as x -> infinity and show it makes dy/dx = 0.",
+        "expected": {"answer": "y -> 3; 6 - 2(3) = 0"},
+        "tolerance": "Accept y = 3.",
+        "notes": "A1 for 3. A1 for substituting y = 3 into the differential equation to get 0. Stating 'the gradient is zero' with no substitution earns the second A0."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write down a DE for the temperature T of tea cooling in a 20 degree room (rate proportional to T - 20), with positive constant k.",
+        "expected": {"answer": "dT/dt = -k(T - 20)"},
+        "tolerance": "Accept dT/dt = k(20 - T).",
+        "notes": "A1 for dT/dt proportional to (T - 20). A1 for the negative sign. dT/dt = k(T - 20) with k > 0 earns A1A0. dT/dt = -kT earns A0A1."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["5.18"],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.294,
+    "source": "Original (2026-11-02, HL AHL 5.18, no calculator). Separation of variables: dy/dx = 6x^2 y, y(0) = 2 gives y = 2e^(2x^3); dy/dx = e^(x - y), y(0) = ln 2 gives y = ln(e^x + 1).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "A1", "M1", "A1"],
+        "description": "Solve dy/dx = 6x^2 y given y = 2 when x = 0; answer as y = f(x).",
+        "expected": {"answer": "y = 2e^(2x^3)"},
+        "tolerance": "Accept y = 2exp(2x^3).",
+        "notes": "M1 for separating the variables (integral of 1/y dy = integral of 6x^2 dx). A1 for ln|y|. A1 for 2x^3 + C (the +C is needed). M1 for using the initial condition. A1 for y = 2e^(2x^3). Accept y = Ae^(2x^3) with A = 2. A correct answer with no working earns A1 only. Wrong method: adding the constant after exponentiating, y = e^(2x^3) + C, gives y = e^(2x^3) + 1, earning M1A1A0M1A0."
+      },
+      {
+        "label": "b",
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "M1", "A1"],
+        "description": "Solve dy/dx = e^(x - y) given y = ln 2 when x = 0; answer as y = f(x).",
+        "expected": {"answer": "y = ln(e^x + 1)"},
+        "tolerance": "Accept y = ln(1 + e^x).",
+        "notes": "M1 for writing e^(x - y) = e^x e^(-y) and separating (integral of e^y dy = integral of e^x dx). A1 for e^y = e^x + C. M1 for using the initial condition (2 = 1 + C). A1 for y = ln(e^x + 1). Wrong method: taking logs term by term, y = ln(e^x) + ln 1 = x, earns the final A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": ["5.18"],
+    "total_marks": 9,
+    "answer_box_top_frac": null,
+    "source": "Original (2026-11-02, HL AHL 5.18, no calculator). Answered on lined paper. dT/dt = -k(T - 20), T(0) = 90: T = 20 + 70e^(-kt); T(10) = 55 gives k = ln2/10; T = 37.5 at t = 20 min.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "M1", "A1"],
+        "description": "By solving the DE dT/dt = -k(T - 20) with T = 90 at t = 0, show that T = 20 + 70e^(-kt).",
+        "expected": {"answer": "ln|T - 20| = -kt + C, C = ln 70, T = 20 + 70e^(-kt) (AG)"},
+        "tolerance": "Accept T - 20 = Ae^(-kt) with A = 70.",
+        "notes": "Show-that part. M1 for separating. A1 for ln|T - 20| = -kt + C. M1 for using T(0) = 90. A1 for T - 20 = 70e^(-kt) seen before the given answer."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Given T = 55 when t = 10, show that k = ln 2 / 10.",
+        "expected": {"answer": "e^(-10k) = 1/2, so k = ln2/10 (AG)"},
+        "tolerance": "Accept -10k = ln(1/2) or 10k = ln 2.",
+        "notes": "Show-that part. M1 for substituting to get e^(-10k) = 1/2 (or 35/70). A1 for -10k = -ln 2 or equivalent before the given answer."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the time at which T = 37.5.",
+        "expected": {"answer": "t = 20 minutes"},
+        "tolerance": "Accept 20 only.",
+        "notes": "M1 for 37.5 = 20 + 70e^(-kt). A1 for e^(-kt) = 1/4. A1 for t = 20. Accept the half-life argument (the difference 70 halves every 10 minutes: 70, 35, 17.5) for M1A1A1. Wrong method: linear cooling at 3.5 degrees per minute gives t = 15, M0A0A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": ["5.18"],
+    "total_marks": 10,
+    "answer_box_top_frac": null,
+    "source": "Original (2026-11-02, HL AHL 5.18, no calculator). Answered on lined paper. dy/dx = x + y, y(0) = 1: Euler h = 0.5 gives y(1) ~ 2.5; integrating factor gives y = 2e^x - x - 1; y'' = 1 + x + y > 0 explains the underestimate.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["A1", "M1", "A1"],
+        "description": "Euler's method with step 0.5 to approximate y at x = 1.",
+        "expected": {"answer": "y1 = 1.5, y2 = 2.5"},
+        "tolerance": "Accept 2.5 only.",
+        "notes": "A1 for y1 = 1.5. M1 for a second step using the slope at (0.5, 1.5) (FT from y1). A1 for 2.5. Wrong method: omitting the step length, y1 = 1 + 1 = 2, earns A0M0A0."
+      },
+      {
+        "label": "b",
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "M1", "A1", "A1"],
+        "description": "Solve dy/dx = x + y, y(0) = 1, using an integrating factor; answer as y = f(x).",
+        "expected": {"answer": "y = 2e^x - x - 1"},
+        "tolerance": "Accept any equivalent form.",
+        "notes": "M1 for writing dy/dx - y = x (P = -1). A1 for the integrating factor e^(-x). M1 for integrating xe^(-x) by parts. A1 for ye^(-x) = -xe^(-x) - e^(-x) + C. A1 for C = 2 and y = 2e^x - x - 1. An integrating factor e^x (sign error) earns M1A0 and no further marks except the constant (M0A0A0 otherwise)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "R1"],
+        "description": "Show y'' = 1 + x + y; explain why the Euler approximation is less than the true y(1).",
+        "expected": {"answer": "y'' = 1 + y' = 1 + x + y > 0, so the curve is concave up and Euler's tangent steps lie below it"},
+        "tolerance": "Accept a justified comparison 2e - 2 > 2.5 (e.g. using e > 2.7) for the R1.",
+        "notes": "A1 for differentiating the DE: y'' = 1 + dy/dx = 1 + x + y. R1 for concave up (y'' > 0 since x >= 0, y > 0) so tangent steps fall below the curve, or a justified no-calculator comparison with the exact value. 'Euler's method is only approximate' earns R0."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "topic_codes": ["5.18"],
+    "total_marks": 8,
+    "answer_box_top_frac": null,
+    "source": "Original (2026-11-02, HL AHL 5.18, no calculator). Answered on lined paper. Homogeneous dy/dx = (x^2 + y^2)/(xy) with y = vx: x dv/dx = 1/v; y(e) = 2e gives y = x sqrt(2 ln x + 2).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["A1", "M1", "A1"],
+        "description": "Use y = vx to show that x dv/dx = 1/v.",
+        "expected": {"answer": "v + x dv/dx = (1 + v^2)/v, so x dv/dx = 1/v (AG)"},
+        "tolerance": "Any correct algebra.",
+        "notes": "Show-that part. A1 for dy/dx = v + x dv/dx. M1 for substituting y = vx into the right-hand side. A1 for simplifying (1 + v^2)/v - v = 1/v."
+      },
+      {
+        "label": "b",
+        "marks": 5,
+        "mark_codes": ["M1", "A1", "A1", "M1", "A1"],
+        "description": "Given y = 2e when x = e, solve the DE; answer as y = f(x).",
+        "expected": {"answer": "y = x sqrt(2 ln x + 2)"},
+        "tolerance": "Accept y = sqrt(2x^2 ln x + 2x^2). y^2 = x^2(2 ln x + 2) without taking the root earns the final A0.",
+        "notes": "M1 for separating (integral of v dv = integral of 1/x dx). A1 for v^2/2 = ln x + C. A1 for C = 1 (v = 2 at x = e). M1 for substituting v = y/x back. A1 for y = x sqrt(2 ln x + 2), positive root. Wrong method: using v = 2e (the value of y) gives C = 2e^2 - 1, earning A0 for the constant and A0 for the final answer.",
+        "follow_through": "FT the final answer from the candidate's C."
+      }
+    ]
+  }
+]
