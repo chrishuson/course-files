@@ -1,0 +1,106 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["2.1"],
+    "total_marks": 13,
+    "answer_box_top_frac": 0.604,
+    "source": "Original (authored November 2026, no calculator). Linear supply and demand lines D: p = 50 - 3q and S: p = 10 + 2q (q thousand cases per month, p euros); equilibrium by elimination, gradient interpretation, price ceiling shortage, consumer surplus triangle.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Use the graph to estimate the equilibrium quantity and price.",
+        "expected": {"answer": "q approximately 8, p approximately 26"},
+        "tolerance": "Accept q from 7 to 9 and p from 24 to 28. Accept the coordinates (8, 26).",
+        "notes": "A1 for the quantity estimate, A1 for the price estimate. The marks are independent. A bare answer earns both marks."
+      },
+      {
+        "label": "b",
+        "marks": 4,
+        "mark_codes": ["A1", "M1", "A1", "A1"],
+        "description": "Write both equations in the form aq + bp = c; use elimination to find the exact equilibrium quantity and price.",
+        "expected": {"answer": "3q + p = 50 and 2q - p = -10; q = 8, p = 26"},
+        "tolerance": "Accept any equivalent pair of equations in the form aq + bp = c (e.g. -2q + p = 10). Accept q = 8 thousand or 8000 cases; p = 26 euros.",
+        "notes": "A1 for both equations correct in the form aq + bp = c. M1 for adding or subtracting the equations (after scaling, if used) so that one variable is eliminated, e.g. 5q = 40, or 5p = 130 when q is eliminated first. A1 for q = 8. A1 for p = 26. Substitution in place of elimination earns M0, then A1A1 for correct values. A correct answer with no working earns A1 for each value only (A0M0A1A1 unless the equations are written). Wrong method: a sign slip writing 2q - p = 10 gives q = 12, p = 14, which earns A0M1A0A0.",
+        "follow_through": "FT p from the candidate's value of q."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["A1", "R1"],
+        "description": "Write down the gradient of the supply line and interpret it in context.",
+        "expected": {"answer": "2; for each extra 1000 cases supplied the price rises by 2 euros"},
+        "tolerance": "Accept the reverse reading: each 2 euro rise in price brings 1000 more cases from suppliers.",
+        "notes": "A1 for the gradient 2. R1 for an interpretation that states an increase and uses both units (euros, and thousands of cases). 'The line goes up 2' with no context earns R0. Wrong method: giving the demand gradient -3 earns A0, and its interpretation earns R0."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "At a maximum price of 20 euros, find the quantity demanded and the quantity supplied, and hence the shortage.",
+        "expected": {"answer": "demand 10 thousand, supply 5 thousand, shortage 5 thousand cases (5000)"},
+        "tolerance": "Accept 5, 5 thousand or 5000 cases for the shortage.",
+        "notes": "M1 for substituting p = 20 into both equations. A1 for both quantities, 10 (demand) and 5 (supply). A1 for the shortage 5 thousand. A negative answer (-5), or calling it a surplus, earns the final A0. Wrong method: reading 20 as a quantity (q = 20) earns M0A0A0.",
+        "follow_through": "FT the shortage from the candidate's two quantities, provided demand exceeds supply."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Shade the consumer surplus triangle (demand line, p-axis, horizontal line at the equilibrium price) and find the consumer surplus in euros.",
+        "expected": {"answer": "96 000 euros"},
+        "tolerance": "Accept 96 000 euros or 96 thousand euros. 96 euros (units ignored) earns A0.",
+        "notes": "M1 for base 8 and height 50 - 26 = 24 seen in an area calculation, or for the correct triangle (vertices (0, 50), (0, 26), (8, 26)) shaded on the graph. A1 for 96 000 euros. Wrong methods: the triangle down to the q-axis, (1/2)(8)(26) = 104, earns M0A0; the rectangle 8 x 24 = 192 earns M0A0; the producer surplus (1/2)(8)(16) = 64 earns M0A0.",
+        "follow_through": "FT from the candidate's equilibrium point in (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["2.1"],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.413,
+    "source": "Original (authored November 2026, no calculator). Simple-interest investment split as a 2x2 system solved by elimination with scaling; extension (c) a three-fund 3x3 system for the advanced group.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write down two equations in x and y (10 000 euros split between 3% and 7%, interest 540 euros).",
+        "expected": {"answer": "x + y = 10000 and 0.03x + 0.07y = 540"},
+        "tolerance": "Accept 3x + 7y = 54000 or any equivalent form of the interest equation.",
+        "notes": "A1 for x + y = 10000. A1 for the interest equation. 3x + 7y = 540 (percentages not converted) earns A0 for that equation. Wrong method: swapping the rates (0.07x + 0.03y = 540) earns A0 for that equation."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Use elimination to find the amount in the bond (x) and the amount in the fund (y).",
+        "expected": {"answer": "x = 4000 euros (bond), y = 6000 euros (fund)"},
+        "tolerance": "Accept 4000 and 6000 only.",
+        "notes": "M1 for scaling one or both equations so a variable can be eliminated, then adding or subtracting (e.g. 3x + 7y = 54000 minus 3x + 3y = 30000). A1 for y = 6000. A1 for x = 4000. Substitution in place of elimination earns M0, then A1A1 for correct values. A correct answer with no working earns A1A1 only. Wrong method: the swapped rates give x = 6000, y = 4000, which earns M1A0A0 unless the swap was already penalized in (a) (then FT).",
+        "follow_through": "FT from the candidate's equations in (a)."
+      },
+      {
+        "label": "c(i)",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Extension: write down three equations in x, y and z (20 000 euros in funds at 2%, 4%, 6%; interest 740 euros; y is 2000 more than z).",
+        "expected": {"answer": "x + y + z = 20000; 0.02x + 0.04y + 0.06z = 740; y - z = 2000"},
+        "tolerance": "Accept any equivalent forms, e.g. x + 2y + 3z = 37000, y = z + 2000.",
+        "notes": "Extension part, attempted by the advanced group; a blank earns 0 with no comment. A1 for the interest equation. A1 for both the total and the difference equations. Wrong method: z - y = 2000 earns the second A0."
+      },
+      {
+        "label": "c(ii)",
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "A1", "A1"],
+        "description": "Extension: use elimination to find x, y and z.",
+        "expected": {"answer": "x = 8000, y = 7000, z = 5000"},
+        "tolerance": "Accept 8000, 7000, 5000 only.",
+        "notes": "Extension part; a blank earns 0 with no comment. M1 for eliminating one variable to reach a correct equation in the other two (e.g. y + 2z = 17000). A1 for z = 5000. A1 for y = 7000. A1 for x = 8000. Any order of elimination is fine. A correct answer with no working earns A1A1A1 only.",
+        "follow_through": "FT from the candidate's equations in (c)(i)."
+      }
+    ]
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["3.5", "3.6"],
+    "total_marks": 14,
+    "answer_box_top_frac": 0.394,
+    "source": "Original (authored November 2026, no calculator, radians only). Unit circle labelled from memory at 16 standard angles; exact values; Pythagorean identity verified at 5pi/6 and used with a quadrant condition.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": ["3.5"],
+        "marks": 6,
+        "mark_codes": ["A1", "A1", "A1", "A1", "A1", "A1"],
+        "description": "On the unit circle diagram, write the angle in radians (inside) and the coordinates (cos theta, sin theta) (outside) at each of the 16 marked points.",
+        "expected": {"answer": "0:(1,0); pi/6:(sqrt3/2,1/2); pi/4:(sqrt2/2,sqrt2/2); pi/3:(1/2,sqrt3/2); pi/2:(0,1); 2pi/3:(-1/2,sqrt3/2); 3pi/4:(-sqrt2/2,sqrt2/2); 5pi/6:(-sqrt3/2,1/2); pi:(-1,0); 7pi/6:(-sqrt3/2,-1/2); 5pi/4:(-sqrt2/2,-sqrt2/2); 4pi/3:(-1/2,-sqrt3/2); 3pi/2:(0,-1); 5pi/3:(1/2,-sqrt3/2); 7pi/4:(sqrt2/2,-sqrt2/2); 11pi/6:(sqrt3/2,-1/2)"},
+        "tolerance": "Accept 1/sqrt2 for sqrt2/2. Accept 2pi or 0 at the point (1, 0). Coordinates must be exact.",
+        "notes": "A1 for all 16 angles in radians at the correct points. A1 for the four axis points. A1 for each quadrant's three non-axis points (first, second, third, fourth), each needing both coordinates with correct values and signs. Angles in degrees earn the first A0. Wrong method: swapping the coordinates of the pi/6 and pi/3 points (or 7pi/6 and 4pi/3, etc.) earns A0 for that quadrant. The labels are written on the diagram inside the answer box."
+      },
+      {
+        "label": "b",
+        "topic_codes": ["3.5"],
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Write down the exact values of sin(5pi/6), cos(4pi/3) and tan(7pi/4).",
+        "expected": {"answer": "1/2, -1/2, -1"},
+        "tolerance": "Exact values only. 0.5 and -0.5 are acceptable as exact.",
+        "notes": "A1 for each value. Bare answers earn the marks. Wrong methods, each A0: sin(5pi/6) = -sqrt3/2 (gave the cosine); cos(4pi/3) = 1/2 or -sqrt3/2; tan(7pi/4) = 1 (sign)."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["3.6"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Verify sin^2 theta + cos^2 theta = 1 for theta = 5pi/6.",
+        "expected": {"answer": "(1/2)^2 + (-sqrt3/2)^2 = 1/4 + 3/4 = 1"},
+        "tolerance": "Accept sqrt3/2 without the negative sign, since it is squared.",
+        "notes": "Show-that part (AG). M1 for substituting both exact values into the identity. A1 for 1/4 and 3/4 seen, adding to 1. Writing only 'sin^2 + cos^2 = 1' with no values earns M0A0. A square of -3/4 earns A0."
+      },
+      {
+        "label": "d",
+        "topic_codes": ["3.6"],
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Given sin theta = 2/3 and pi/2 < theta < pi, find the exact value of cos theta.",
+        "expected": {"answer": "-sqrt5/3"},
+        "tolerance": "Accept -sqrt5/3 or -sqrt(5/9). A decimal earns the final A0.",
+        "notes": "M1 for cos^2 theta = 1 - (2/3)^2 (or = 5/9). A1 for +/- sqrt5/3 (or sqrt5/3 seen). A1 for choosing the negative value; a reason (second quadrant) is expected but not required for the mark. Final answer +sqrt5/3 earns M1A1A0. A correct final answer with no working earns A1 only. Wrong method: 1 - 2/3 = 1/3 (forgot to square) gives -1/sqrt3, earning M0A0A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["3.7", "3.5", "2.1"],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.448,
+    "source": "Original (authored November 2026, no calculator, radians only). Plot y = sin x and y = cos x on a grid from unit-circle values; gradient of OP is tan(theta); lines from an angle with the x-axis (pi/6 with intercept 2; 2pi/3 through (1, 4)).",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": ["3.7"],
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Plot y = sin x at multiples of pi/6 from 0 to 2pi on the grid, join with a smooth curve and label it.",
+        "expected": {"answer": "points (0,0), (pi/6,0.5), (pi/3,0.87), (pi/2,1), (2pi/3,0.87), (5pi/6,0.5), (pi,0), (7pi/6,-0.5), (4pi/3,-0.87), (3pi/2,-1), (5pi/3,-0.87), (11pi/6,-0.5), (2pi,0); smooth sine wave labelled y = sin x"},
+        "tolerance": "Points within half a grid square.",
+        "notes": "A1 for at least 11 of the 13 points correct. A1 for a smooth curve (no straight segments, no corners at the maximum and minimum) labelled y = sin x. A curve labelled y = cos x earns the second A0."
+      },
+      {
+        "label": "b",
+        "topic_codes": ["3.7"],
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "On the same grid, plot and label y = cos x in the same way.",
+        "expected": {"answer": "points (0,1), (pi/6,0.87), (pi/3,0.5), (pi/2,0), (2pi/3,-0.5), (5pi/6,-0.87), (pi,-1), (7pi/6,-0.87), (4pi/3,-0.5), (3pi/2,0), (5pi/3,0.5), (11pi/6,0.87), (2pi,1); smooth cosine wave labelled y = cos x"},
+        "tolerance": "Points within half a grid square.",
+        "notes": "A1 for at least 11 of the 13 points correct. A1 for a smooth curve labelled y = cos x. Curves labelled the wrong way round lose the second A1 in both (a) and (b)."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["3.5", "2.1"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show that the gradient of OP, where P = (cos theta, sin theta), is tan theta.",
+        "expected": {"answer": "(sin theta - 0)/(cos theta - 0) = sin theta / cos theta = tan theta"},
+        "tolerance": "Accept a right-triangle argument (opposite sin theta, adjacent cos theta).",
+        "notes": "Show-that part (AG). M1 for rise over run using O and P. A1 for sin theta / cos theta seen before the given answer. Writing only 'gradient = tan theta' earns M0A0."
+      },
+      {
+        "label": "d",
+        "topic_codes": ["3.5", "2.1"],
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Line L1 makes an angle pi/6 with the positive x-axis and has y-intercept 2. Find its equation.",
+        "expected": {"answer": "y = x/sqrt3 + 2 (= (sqrt3/3)x + 2)"},
+        "tolerance": "Accept 1/sqrt3 or sqrt3/3 for the gradient, and any equivalent form of the equation.",
+        "notes": "A1 for the gradient tan(pi/6) = 1/sqrt3. A1 for the equation. Wrong methods: m = sqrt3 (the value for pi/3) or m = sin(pi/6) = 1/2 earns A0 for the gradient, then A1 FT for y = mx + 2.",
+        "follow_through": "FT the equation from the candidate's gradient."
+      },
+      {
+        "label": "e",
+        "topic_codes": ["3.5", "2.1"],
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Line L2 makes an angle 2pi/3 with the positive x-axis and passes through (1, 4). Find its equation.",
+        "expected": {"answer": "y - 4 = -sqrt3(x - 1), i.e. y = -sqrt3 x + 4 + sqrt3"},
+        "tolerance": "Accept any correct form of the equation.",
+        "notes": "M1 for m = tan(2pi/3). A1 for -sqrt3. A1 for the equation. Wrong methods: m = +sqrt3 earns M1A0A1 (FT); swapping the point's coordinates, y - 1 = -sqrt3(x - 4), earns M1A1A0. A correct equation with no working earns A1 only for the equation, plus A1 if -sqrt3 is seen.",
+        "follow_through": "FT the equation from the candidate's gradient."
+      }
+    ]
+  }
+]
