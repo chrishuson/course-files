@@ -20,7 +20,7 @@
           "answer": "1/2"
         },
         "tolerance": "Accept 1/2, 4/8 or 0.5.",
-        "notes": "M1 for a correct substitution into the gradient formula. A1 for 1/2. A bare answer earns M0A1. Wrong method: change in x over change in y (2): M0A0."
+        "notes": "(M1) implied: M1 for a correct substitution into the gradient formula; it may be implied by the correct gradient. A1 for 1/2. A bare answer earns (M1)A1 (2/2). Wrong method: change in x over change in y (2): M0A0."
       },
       {
         "label": "b",
@@ -34,7 +34,7 @@
           "answer": "y - 1 = (1/2)(x + 4)"
         },
         "tolerance": "Accept any correct form, e.g. y = (1/2)x + 3 or x - 2y = -6. The answer must be an equation.",
-        "notes": "M1 for substituting their gradient and either point into any form of a line. A1 for a correct equation in any form.",
+        "notes": "(M1) implied: M1 for substituting their gradient and either point into any form of a line; it may be implied by a correct equation, so a bare correct equation earns (M1)A1 (2/2). A1 for a correct equation in any form.",
         "follow_through": "FT from (a)."
       },
       {
@@ -50,7 +50,7 @@
           "answer": "y - 6 = -2(x - 1)"
         },
         "tolerance": "Accept any correct form, e.g. y = -2x + 8 or 2x + y = 8. The answer must be an equation.",
-        "notes": "A1 for gradient -2, the negative reciprocal of their gradient. M1 for substituting their gradient and C(1, 6). A1 for a correct equation in any form. Wrong methods: the perpendicular bisector y = -2x + 3 (through the midpoint (0, 3), not C): A1M0A0; gradient 2 (no sign change), y = 2x + 4: A0M1A0.",
+        "notes": "A1 for gradient -2, the negative reciprocal of their gradient. (M1) implied: M1 for substituting their gradient and C(1, 6); it may be implied by a correct equation, so a bare correct equation earns A1(M1)A1 (3/3). A1 for a correct equation in any form. Wrong methods: the perpendicular bisector y = -2x + 3 (through the midpoint (0, 3), not C): A1M0A0; gradient 2 (no sign change), y = 2x + 4: A0M1A0.",
         "follow_through": "FT from (a)."
       },
       {
@@ -146,7 +146,7 @@
         ],
         "marks": 3,
         "mark_codes": [
-          "M1",
+          "A1",
           "A1",
           "A1"
         ],
@@ -154,8 +154,8 @@
         "expected": {
           "answer": "12a^4 / b^2"
         },
-        "tolerance": "12a^4 b^-2 earns the first A1 but not the second.",
-        "notes": "M1 for raising every factor of the bracket to the power 2 (4a^6 b^2). A1 for 12a^4 b^-2 (any correct form). A1 for 12a^4/b^2. Wrong method: leaving the 2 unsquared gives 6a^4/b^2: M0A0A0."
+        "tolerance": "Marks are for the final answer. 12a^4 b^-2 earns A1A1A0 (the question asks for positive exponents only).",
+        "notes": "Marks are for the final answer, not the steps, independently: A1 for the coefficient 12, A1 for a^4, A1 for b^2 in the denominator. A bare 12a^4/b^2 earns 3/3. Wrong method: leaving the 2 unsquared gives 6a^4/b^2: A0A1A1."
       },
       {
         "label": "b",
@@ -171,8 +171,8 @@
         "expected": {
           "answer": "9/4"
         },
-        "tolerance": "Accept 9/4 or 2 1/4. 2.25 from the GDC with no working earns M0A1.",
-        "notes": "M1 for inverting the fraction for the negative exponent, or for the cube root (2/3 or 3/2) seen. A1 for 9/4. Wrong method: ignoring the negative sign gives 4/9: M0A0."
+        "tolerance": "Accept 9/4, 2 1/4 or 2.25.",
+        "notes": "(M1) implied: M1 for inverting the fraction for the negative exponent (27/8), or for converting to cube-root form (cube root of 8 or 27, or 2/3, 3/2 seen); it may be implied by the correct answer, so a bare 9/4 (or 2.25) earns (M1)A1 (2/2). A1 for 9/4. Wrong method: ignoring the negative sign gives 4/9: M0A0. Tag student_error show_the_working at full credit on a bare answer: the paper asks for the algebra behind an exact answer or a particular form."
       },
       {
         "label": "c",
@@ -190,7 +190,7 @@
           "answer": "x = 7"
         },
         "tolerance": "Accept 7 only.",
-        "notes": "M1 for writing both sides as powers of 3. A1 for 2x - 2 = 3x - 9 (or equivalent). A1 for x = 7. A GDC answer with no working earns M0A0A1. Wrong method: 2x - 2 = 3x - 3 (the 3 not multiplied through) gives x = 1: M1A0A0."
+        "notes": "(M1) implied: M1 for writing both sides as powers of 3; it may be implied by a correct 2x - 2 = 3x - 9 (or equivalent). A1 for 2x - 2 = 3x - 9. A1 for x = 7. A bare x = 7 (e.g. from the GDC) earns M0A0A1. Wrong method: 2x - 2 = 3x - 3 (the 3 not multiplied through) gives x = 1: M1A0A0."
       },
       {
         "label": "d",
@@ -207,7 +207,7 @@
           "answer": "x = -8"
         },
         "tolerance": "Accept -8 only.",
-        "notes": "M1 for writing 1/32 as 2^-5. A1 for -8. Wrong method: 1/32 = 2^5 gives x = 2: M0A0."
+        "notes": "(M1) implied: M1 for -5 seen anywhere, e.g. 1/32 = 2^-5 or x + 3 = -5; it may be implied by the correct answer, so a bare x = -8 earns (M1)A1 (2/2). A1 for -8. Wrong method: 1/32 = 2^5 gives x = 2: M0A0."
       }
     ]
   },
@@ -232,7 +232,7 @@
           "answer": "3 sqrt(2)"
         },
         "tolerance": "Exact form required.",
-        "notes": "M1 for writing at least two of the surds as multiples of sqrt2. A1 for 3 sqrt2. Wrong method: sqrt(50 + 8 - 32) = sqrt(26): M0A0."
+        "notes": "(M1) implied: M1 for writing at least two of the surds as multiples of sqrt2; it may be implied by the correct answer, so a bare 3 sqrt2 earns (M1)A1 (2/2). A1 for 3 sqrt2. Wrong method: sqrt(50 + 8 - 32) = sqrt(26): M0A0. Tag student_error show_the_working at full credit on a bare answer: the paper asks for the algebra behind an exact answer or a particular form."
       },
       {
         "label": "b",
@@ -246,21 +246,23 @@
           "answer": "4"
         },
         "tolerance": "Accept 4 only.",
-        "notes": "M1 for a full expansion or 3^2 - (sqrt5)^2. A1 for 4. Wrong method: 9 + 5 = 14: M0A0."
+        "notes": "(M1) implied: M1 for a full expansion or 3^2 - (sqrt5)^2; it may be implied by the correct answer, so a bare 4 earns (M1)A1 (2/2). A1 for 4. Wrong method: 9 + 5 = 14: M0A0. Tag student_error show_the_working at full credit on a bare answer: the paper asks for the algebra behind an exact answer or a particular form."
       },
       {
         "label": "c",
         "marks": 2,
         "mark_codes": [
-          "M1",
+          "A1",
           "A1"
         ],
         "description": "Hence write 8/(3 - sqrt5) in the form a + b sqrt5.",
         "expected": {
-          "answer": "6 + 2 sqrt(5)"
+          "answer": "6 + 2 sqrt(5)",
+          "a": 6,
+          "b": 2
         },
-        "tolerance": "Accept a = 6, b = 2.",
-        "notes": "M1 for multiplying numerator and denominator by 3 + sqrt5, using their (b) as the denominator. A1 for 6 + 2 sqrt5.",
+        "tolerance": "Accept a = 6, b = 2 written separately for full marks, tagged write_in_the_requested_form (full credit): the question asks for the form a + b sqrt5.",
+        "notes": "No method mark. A1 for a = 6, A1 for b = 2, independently. A bare 6 + 2 sqrt5 (no conjugate multiplication shown) earns 2/2; tag student_error show_the_working at full credit. If the answer is given only as a = 6, b = 2 (not as 6 + 2 sqrt5), award A1A1 and tag student_error write_in_the_requested_form at full credit; this tag takes precedence over show_the_working.",
         "follow_through": "FT from (b)."
       },
       {
@@ -275,7 +277,7 @@
           "answer": "x = sqrt(2)"
         },
         "tolerance": "2/sqrt2, 4/(2 sqrt2) or 1.41 earns A0.",
-        "notes": "M1 for collecting the x-terms on one side (2x sqrt2 = 4 or equivalent). A1 for sqrt2."
+        "notes": "(M1) implied: M1 for collecting the x-terms on one side (2x sqrt2 = 4 or equivalent); it may be implied by the correct answer, so a bare x = sqrt2 earns (M1)A1 (2/2). A1 for sqrt2. Tag student_error show_the_working at full credit on a bare answer: the paper asks for the algebra behind an exact answer or a particular form."
       }
     ]
   }

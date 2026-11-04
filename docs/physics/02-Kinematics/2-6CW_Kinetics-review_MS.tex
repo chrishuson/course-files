@@ -1,0 +1,155 @@
+% context: markscheme (official solutions) for 2-6CW_Kinetics-review
+% topic: kinematics review — distance vs displacement, average speed vs velocity,
+%        average speed with a conversion to km/h, braking with a given negative a,
+%        a dropped stone, a ball thrown straight up
+% convention: answers in bold; "=" joins exact equalities, "\approx" introduces a
+%        rounded value; each solution lists the knowns, then names the equation used.
+%        Q2 follows the two-step rate rule: Step 1 the rate, Step 2 the conversion
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+\setlength{\parskip}{0.2\baselineskip}
+
+\title{Physics}
+\author{Chris Huson}
+\date{November 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 5 November 2026}
+
+\begin{document}
+
+\subsubsection*{2.6 Classwork: Kinematics Review Solutions}
+
+\begin{enumerate}[itemsep=0.5cm]
+
+\item Hallway walk, east positive, origin at the door.
+
+  \begin{center}
+  \begin{tikzpicture}[scale=0.6]
+    \draw[<->, thick] (-6.6,0) -- (8.6,0) node[right]{$x$ (m)};
+    \foreach \x in {-6,...,8} \draw (\x,0.12) -- (\x,-0.12);
+    \foreach \x in {-6,-4,...,8} \node[below] at (\x,-0.12) {\small \x};
+    \node[above] at (0,0.1) {\scriptsize door};
+    \draw[->, very thick] (0,0.7) -- (6,0.7) node[midway, above]{\small $+6.0$ m};
+    \draw[->, very thick] (6,1.6) -- (-4,1.6) node[midway, above]{\small $-10.0$ m};
+  \end{tikzpicture}
+  \end{center}
+
+  \begin{enumerate}[itemsep=0.3cm]
+    \item $x = 0 + 6.0 - 10.0 = \mathbf{-4.0~\textbf{m}}$, that is, 4.0 m west of the
+      door.
+    \item Distance = $6.0 + 10.0 = \mathbf{16.0~\textbf{m}}$. \quad Displacement =
+      $-4.0 - 0 = \mathbf{-4.0~\textbf{m}}$, or \textbf{4.0 m west}.
+
+      \emph{Distance counts every meter walked and has no direction. Displacement is
+      only where the student ended up, measured from the start.}
+    \item Total time = $3.0 + 5.0 = 8.0$ s.
+
+      average speed $= \dfrac{16.0~\text{m}}{8.0~\text{s}} = \mathbf{2.0~\textbf{m/s}}$
+      \qquad
+      $\bar{v} = \dfrac{-4.0~\text{m}}{8.0~\text{s}}
+      = \mathbf{-0.50~\textbf{m/s}}$, or \textbf{0.50 m/s west}
+
+      \emph{A common slip is to average the two legs' velocities,
+      $\frac{2.0 + (-2.0)}{2} = 0$; that ignores that the legs take different
+      times. Divide the total displacement by the total time.}
+  \end{enumerate}
+
+\item Usain Bolt, 100 m in 9.58 s. The race distance is exact, so the answer takes
+  three significant figures from 9.58 s.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Step 1, the rate:
+      average speed $= \dfrac{100~\text{m}}{9.58~\text{s}} = 10.438\ldots
+      \approx \mathbf{10.4~\textbf{m/s}}$
+
+      Step 2, convert, carrying the unrounded value:
+
+      $10.438\ldots~\dfrac{\text{m}}{\text{s}} \times
+      \dfrac{3600~\text{s}}{1~\text{h}} \times \dfrac{1~\text{km}}{1000~\text{m}}
+      = 37.578\ldots \approx \mathbf{37.6~\textbf{km/h}}$
+
+      \emph{Also accept $\times 3.6$ in Step 2. Rounding first, $10.4 \times 3.6 =
+      37.44 \approx 37.4$ km/h, loses the third figure --- the reason to carry
+      $10.438\ldots$}
+    \item 12.3 m/s is an \textbf{instantaneous} speed. \textbf{He starts from rest},
+      and the first few seconds are spent speeding up, so the average over the whole
+      race is lower than the top speed.
+
+      \emph{Credit any answer that names the start from rest (the acceleration
+      phase). Also accept that he eases off slightly at the end.}
+  \end{enumerate}
+
+\item Braking car. Knowns: $v_0 = 17.9$ m/s, $v = 0$, $a = -6.4$ m/s$^2$. The
+  acceleration has two significant figures, so the answers do too.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Want $t$. Use $v = v_0 + at$, so $t = \dfrac{v - v_0}{a}$:
+
+      $t = \dfrac{0 - 17.9~\text{m/s}}{-6.4~\text{m/s}^2} = 2.796\ldots
+      \approx \mathbf{2.8~\textbf{s}}$
+    \item Want $x - x_0$; use $v^2 = v_0^2 + 2a(x - x_0)$:
+
+      $0 = (17.9~\text{m/s})^2 + 2(-6.4~\text{m/s}^2)(x - x_0)$, \quad so
+
+      $x - x_0 = \dfrac{-320.41~\text{m}^2/\text{s}^2}{-12.8~\text{m/s}^2}
+      = 25.03\ldots \approx \mathbf{25~\textbf{m}}$
+
+      \textbf{Yes, it agrees}: 25 m and 24 m differ by about 1 m, which is within
+      the precision of a two-figure acceleration.
+
+      \emph{Also accept the average velocity route: $\bar{v} = \frac{17.9 + 0}{2}
+      = 8.95$ m/s, and $8.95 \times 2.796\ldots \approx 25$ m. A negative distance
+      means the minus sign on $a$ was dropped in one place but not the other.}
+  \end{enumerate}
+
+\item Dropped stone. Knowns: $v_0 = 0$, $t = 2.00$ s, $a = +9.80$ m/s$^2$ (down
+  positive).
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Want $v$. Use $v = v_0 + at$:
+
+      $v = 0 + (9.80~\text{m/s}^2)(2.00~\text{s}) = \mathbf{19.6~\textbf{m/s}}$
+      downward
+    \item Want $y - y_0$. Use $y = y_0 + v_0 t + \frac{1}{2}at^2$ with $v_0 = 0$:
+
+      $y - y_0 = \tfrac{1}{2}(9.80~\text{m/s}^2)(2.00~\text{s})^2
+      = 4.90 \times 4.00 = \mathbf{19.6~\textbf{m}}$
+
+      \emph{The two answers share the digits 19.6 only because $t = 2.00$ s; one is a
+      speed and one a height. Also accept $\bar{v}\,t = 9.80~\text{m/s} \times
+      2.00~\text{s}$. The usual slip is forgetting the $\frac{1}{2}$ (39.2 m) or not
+      squaring the time (9.80 m).}
+  \end{enumerate}
+
+\item Ball thrown up. Knowns: $v_0 = +9.80$ m/s, $a = -9.80$ m/s$^2$, $y_0 = 0$ at
+  the hand (up positive).
+  \begin{enumerate}[itemsep=0.3cm]
+    \item \textbf{Velocity $\mathbf{v = 0}$} for an instant. \textbf{Acceleration
+      $\mathbf{a = -9.80}$ m/s$^\mathbf{2}$}, downward, the same as everywhere else
+      in the flight.
+
+      \emph{The common wrong answer is $a = 0$ at the top. If the acceleration were
+      zero there, the velocity would stay zero and the ball would hang in the air.}
+    \item Want $t$ when $v = 0$. Use $v = v_0 + at$, so $t = \dfrac{v - v_0}{a}$:
+
+      $t = \dfrac{0 - 9.80~\text{m/s}}{-9.80~\text{m/s}^2} = \mathbf{1.00~\textbf{s}}$
+
+      \emph{The ball loses 9.80 m/s every second and starts with 9.80 m/s.}
+    \item Want $y - y_0$. Use $\bar{v} = \dfrac{v + v_0}{2} = \dfrac{0 + 9.80}{2}
+      = 4.90$ m/s:
+
+      $y - y_0 = \bar{v}\,t = 4.90~\text{m/s} \times 1.00~\text{s}
+      = \mathbf{4.90~\textbf{m}}$
+
+      \emph{Also accept $v^2 = v_0^2 + 2a(y - y_0)$:
+      $y - y_0 = \frac{0 - (9.80)^2}{2(-9.80)} = \frac{-96.04}{-19.6} = 4.90$ m.}
+    \item \textbf{2.00 s.} The fall back down takes as long as the rise:
+      $2 \times 1.00~\text{s} = 2.00$ s.
+
+      \emph{It comes back at 9.80 m/s downward, $v = 9.80 + (-9.80)(2.00) = -9.80$
+      m/s. Also accept setting $y = 0$ in $y = v_0 t + \frac{1}{2}at^2$:
+      $0 = (9.80 - 4.90\,t)\,t$, so $t = 2.00$ s.}
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}

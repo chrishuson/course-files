@@ -1,0 +1,86 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 3 November 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{2.8 Classwork: Systems of Equations by Elimination}
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Three 2x2 systems by elimination: add directly; scale one equation; scale both equations [9 marks] ---
+%--- Source: Original (AA SL 2.1, prior learning: simultaneous linear equations) ---
+\item[1.]
+
+Solve each system of equations using the \emph{elimination} method. Show
+the equation you get after eliminating one variable. You may check your
+answers with your GDC.
+
+\medskip
+\begin{tabular}{@{}p{4.9cm}p{4.9cm}p{4.9cm}@{}}
+(a) \quad $\begin{aligned}[t]
+    3x + 2y &= 17 \\
+    5x - 2y &= 7
+  \end{aligned}$ &
+(b) \quad $\begin{aligned}[t]
+    5x + 3y &= 21 \\
+    4x - y &= 27
+  \end{aligned}$ &
+(c) \quad $\begin{aligned}[t]
+    3x + 4y &= 14 \\
+    2x + 3y &= 11
+  \end{aligned}$ \\
+\end{tabular}
+
+\medskip
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,17.4);
+  \draw[dashed] (4.4,0.3) -- (4.4,17.1);
+  \draw[dashed] (9.5,0.3) -- (9.5,17.1);
+  \node[anchor=north west] at (-0.4,17.3) {(a)};
+  \node[anchor=north west] at (4.6,17.3) {(b)};
+  \node[anchor=north west] at (9.7,17.3) {(c)};
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Supply and demand lines from survey data; show demand equation; find supply equation; equilibrium by elimination; minimum price surplus [12 marks] ---
+%--- Source: Original (AA SL 2.1 lines and systems); market context following 2-7CW ---
+\item[2.]
+
+A city studies the weekly market for bicycle helmets. The quantity is $q$
+hundred helmets per week and the price is $p$ euros per helmet. Two surveys
+give these results.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{l|cc|cc}
+  & \multicolumn{2}{c|}{\textbf{Demand}} & \multicolumn{2}{c}{\textbf{Supply}} \\
+  & \multicolumn{2}{c|}{(shoppers buy)} & \multicolumn{2}{c}{(shops offer)} \\
+  \hline
+  Price $p$ (euros) & $36$ & $72$ & $33$ & $68$ \\
+  Quantity $q$ (hundreds) & $16$ & $4$ & $6$ & $20$ \\
+\end{tabular}
+\end{center}
+
+Demand and supply are each modelled by a straight line $p = mq + c$.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Show that the demand line is $p = 84 - 3q$.
+  \item Find the equation of the supply line.
+  \item Write both equations in the form $aq + bp = c$. Hence, use the
+  elimination method to find the equilibrium quantity and price.
+  \item The city sets a minimum price of $60$ euros per helmet. Find the
+  quantity demanded and the quantity supplied at this price. Hence, find
+  the surplus of helmets each week.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.0);
+  \foreach \y in {1,2,...,12} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,235 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["3.4"],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.605,
+    "source": "Original (authored November 2026, calculator). Radian measure: 135 deg to radians; 2.4 rad to degrees; sector radius 9 cm, angle 1.2 rad: arc length, area; angle of a sector with area 60 cm^2.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write 135 degrees in radians as an exact multiple of pi.",
+        "expected": {"answer": "3pi/4"},
+        "tolerance": "Exact form only. 2.36 earns A0.",
+        "notes": "Write down: a bare answer earns the mark."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Convert 2.4 radians to degrees.",
+        "expected": {"answer": "138 degrees (137.509...)"},
+        "tolerance": "A1 for 138 or the display with an ellipsis (137.50...). 137.5 or 137.51 with no ellipsis earns A0 (3 s.f. rule).",
+        "notes": "M1 for 2.4 x 180/pi. A1 for 138. Wrong method: 2.4 x pi/180 = 0.0419 earns M0A0. A bare correct answer earns A1 only."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the arc length AB of a sector with radius 9 cm and angle 1.2 rad.",
+        "expected": {"answer": "10.8 cm"},
+        "tolerance": "Exact value; no rounding issue.",
+        "notes": "M1 for 9 x 1.2. A1 for 10.8. Wrong method: the degree formula (1.2/360)(2pi)(9) = 0.188 earns M0A0. A bare correct answer earns A1 only."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the area of the sector AOB (radius 9 cm, angle 1.2 rad).",
+        "expected": {"answer": "48.6 cm^2"},
+        "tolerance": "Exact value; no rounding issue.",
+        "notes": "M1 for (1/2)(9^2)(1.2). A1 for 48.6. Wrong methods: the degree formula (1.2/360)(pi)(81) earns M0A0; (1/2)(9)(1.2) = 5.4 (r for r^2) earns M0A0. A bare correct answer earns A1 only."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "A second sector of the same circle (radius 9 cm) has area 60 cm^2. Find its angle in radians.",
+        "expected": {"answer": "1.48 rad (1.48148...), exact 40/27"},
+        "tolerance": "Accept 40/27, 1.48, or the display with an ellipsis. 1.481 with no ellipsis earns A0 (3 s.f. rule).",
+        "notes": "M1 for 60 = (1/2)(9^2)theta. A1 for 1.48. Wrong methods: 60/81 = 0.741 (half dropped) earns M0A0; 60/9 = 6.67 (arc-length formula) earns M0A0. An answer in degrees only (84.9) earns M1A0. A bare correct answer earns A1 only."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["3.5", "3.6", "3.8"],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.472,
+    "source": "Original (authored November 2026, calculator allowed but exact answers asked). Exact values cos(3pi/4), sin(5pi/3), tan(4pi/3); cos theta = -5/13 in the third quadrant, find sin and tan; solve 2 sin x + 1 = 0 on [0, 2pi].",
+    "parts": [
+      {
+        "label": "a_i",
+        "topic_codes": ["3.5"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the exact value of cos(3pi/4).",
+        "expected": {"answer": "-sqrt2/2"},
+        "tolerance": "Accept -1/sqrt2. Decimals (-0.707) earn A0.",
+        "notes": "Write down: a bare answer earns the mark."
+      },
+      {
+        "label": "a_ii",
+        "topic_codes": ["3.5"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the exact value of sin(5pi/3).",
+        "expected": {"answer": "-sqrt3/2"},
+        "tolerance": "Decimals (-0.866) earn A0.",
+        "notes": "Write down: a bare answer earns the mark. +sqrt3/2 (sign) earns A0."
+      },
+      {
+        "label": "a_iii",
+        "topic_codes": ["3.5"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the exact value of tan(4pi/3).",
+        "expected": {"answer": "sqrt3"},
+        "tolerance": "Accept 3/sqrt3. Decimals (1.73) earn A0.",
+        "notes": "Write down: a bare answer earns the mark. -sqrt3 (sign) earns A0."
+      },
+      {
+        "label": "b_i",
+        "topic_codes": ["3.6"],
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Given cos theta = -5/13 and pi < theta < 3pi/2, find the exact value of sin theta.",
+        "expected": {"answer": "-12/13"},
+        "tolerance": "Exact value only; -0.923 earns the final A0.",
+        "notes": "M1 for sin^2 theta = 1 - 25/169 (= 144/169), or a right triangle with sides 5, 12, 13. A1 for +/-12/13 (or 12/13 seen). A1 for choosing -12/13 (third quadrant). Wrong method: the GDC route sin(arccos(-5/13)) = +12/13 gives the second-quadrant angle and earns M1A1A0. A bare -12/13 earns A1 only."
+      },
+      {
+        "label": "b_ii",
+        "topic_codes": ["3.6"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find the exact value of tan theta.",
+        "expected": {"answer": "12/5"},
+        "tolerance": "Accept 2.4 (exact).",
+        "notes": "A1 for 12/5. -12/5 earns A0 unless it follows from the candidate's +12/13 in (b)(i) (then A1 FT).",
+        "follow_through": "FT from the candidate's sin theta in (b)(i): tan theta = sin theta / (-5/13)."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["3.8"],
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Solve 2 sin x + 1 = 0 for 0 <= x <= 2pi, exact multiples of pi.",
+        "expected": {"answer": "x = 7pi/6, x = 11pi/6"},
+        "tolerance": "Exact multiples of pi. Decimals (3.67, 5.76) earn at most A1A0.",
+        "notes": "M1 for sin x = -1/2. A1 for 7pi/6. A1 for 11pi/6. Wrong methods: the GDC value -pi/6 is outside the interval and earns A0; pi/6 and 5pi/6 (sign of sin x wrong) earn M0A0A0. Extra values outside the interval earn the final A0. Bare correct answers earn A1A1 (M0)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": ["2.11", "3.7"],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.677,
+    "source": "Original (authored November 2026, calculator). Graph of f(x) = a cos(bx) + d with maximum (0, 7) and minimum (pi/6, -1), so f(x) = 4cos(6x) + 3; period; parameters; vertical stretch factor 1/2 then translation 5 down gives h(x) = 2cos(6x) - 3.5; describe the transformations from y = cos x.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": ["3.7"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the period of f from the graph (max (0, 7), min (pi/6, -1)).",
+        "expected": {"answer": "pi/3"},
+        "tolerance": "Accept 1.05 (1.047...). Exact pi/3 preferred.",
+        "notes": "Write down: a bare answer earns the mark. pi/6 (half period) earns A0."
+      },
+      {
+        "label": "b",
+        "topic_codes": ["3.7", "2.11"],
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Find a, b and d for f(x) = a cos(bx) + d.",
+        "expected": {"answer": "a = 4, b = 6, d = 3"},
+        "tolerance": "Exact integers.",
+        "notes": "A1 for a = 4. A1 for d = 3. A1 for b = 6. Bare correct values earn all three marks (the values can be read from the graph). Wrong methods, each A0: b = pi/3 (period used as b); a = 8 (not halved); d = 4.",
+        "follow_through": "FT b from the candidate's period in (a)."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["2.11"],
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Stretch the graph of f vertically with scale factor 1/2, then translate 5 units down, to give h. Find h(x) = p cos(qx) + r.",
+        "expected": {"answer": "h(x) = 2cos(6x) - 3.5"},
+        "tolerance": "Accept -7/2 for -3.5.",
+        "notes": "M1 for (1/2)(4cos(6x) + 3) - 5, the stretch applied to the whole of f and the translation after it. A1 for 2cos(6x) + 1.5 - 5 (or 1.5 seen). A1 for 2cos(6x) - 3.5. Wrong methods: stretching only the cosine term, 2cos(6x) + 3 - 5 = 2cos(6x) - 2, earns M0A0A0; translating before stretching, (1/2)(f(x) - 5) = 2cos(6x) - 1, earns M0A0A0. A bare correct answer earns A1A1 (M0).",
+        "follow_through": "FT from the candidate's a, b, d in (b)."
+      },
+      {
+        "label": "d",
+        "topic_codes": ["2.11"],
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Describe fully the sequence of transformations that maps y = cos x onto y = 4cos(6x) + 3.",
+        "expected": {"answer": "vertical stretch, scale factor 4; horizontal stretch, scale factor 1/6; vertical translation 3 up"},
+        "tolerance": "Words required. Each transformation needs its type (stretch / dilation / scale, or translate / translation / shift / slide), its direction (vertical or horizontal, or parallel to the y- or x-axis; up) and its size. Accept 'horizontal compression by a factor of 6'. Reject 'move' or 'moved'.",
+        "order_rule": "The vertical stretch must come before the vertical translation. The horizontal stretch may come anywhere. Deduct 1 mark for a wrong order.",
+        "vector_form": "'Translation by the vector (0, 3)' with a translation word earns the translation mark.",
+        "symbolic_fallback": "A correct chain of equations with no words earns at most 1 of the 3 marks.",
+        "notes": "A1 for each correctly described transformation (A1A1A1). Wrong method: horizontal stretch with scale factor 6 earns A0 for that transformation. See markscheme-spec section 19.",
+        "follow_through": "FT from the candidate's a, b, d in (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": ["3.7", "2.11"],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.441,
+    "source": "Original (authored November 2026, calculator). Tide model D(t) = 2.5 sin(0.5t) + 6, t hours after midnight: max and min depth, period, depth at 09:00, length of time with D >= 7 for 0 <= t <= 12, time of first minimum.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Write down the maximum and minimum depth of D(t) = 2.5 sin(0.5t) + 6.",
+        "expected": {"answer": "maximum 8.5 m, minimum 3.5 m"},
+        "tolerance": "Exact values.",
+        "notes": "Write down: bare answers earn the marks. A1 for each value."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the period of D.",
+        "expected": {"answer": "4pi = 12.6 hours (12.566...)"},
+        "tolerance": "Accept 4pi, 12.6, or the display with an ellipsis. 12.57 with no ellipsis earns A0 (3 s.f. rule).",
+        "notes": "M1 for 2pi/0.5. A1 for 4pi or 12.6. Wrong method: 2pi x 0.5 = pi earns M0A0. A bare correct answer earns A1 only."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the depth of the water at 09:00 (t = 9).",
+        "expected": {"answer": "3.56 m (3.55617...)"},
+        "tolerance": "A1 for 3.56 or the display with an ellipsis. 3.556 with no ellipsis earns A0 (3 s.f. rule).",
+        "notes": "M1 for substituting t = 9. A1 for 3.56. Wrong method: degree mode gives 6.20 (6.19614...), earning M1A0. A bare correct answer earns A1 only."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the length of time between t = 0 and t = 12 for which D >= 7.",
+        "expected": {"answer": "D = 7 at t = 0.823 (0.823033...) and t = 5.46 (5.46015...); length 4.64 hours (4.63711...)"},
+        "tolerance": "A1 for 4.64 or the display with an ellipsis. Accept 4.64 from the rounded values 5.46 - 0.823. 4.637 or 4.6 with no ellipsis earns A0 (3 s.f. rule). Accept any value consistent with the candidate's own correctly rounded intersections.",
+        "notes": "M1 for D(t) = 7 or D(t) >= 7 set up, or a sketch with the line D = 7. A1 for both t-values. A1 for the length 4.64 hours. Wrong methods: one intersection given as the answer earns M1A0A0; degree mode gives no intersection in 0 <= t <= 12 and earns M1A0A0. A bare 4.64 earns the final A1 only."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the first time after midnight at which the water is at its minimum depth.",
+        "expected": {"answer": "t = 3pi = 9.42 hours (9.42477...), about 09:25"},
+        "tolerance": "Accept 3pi, 9.42, the display with an ellipsis, or 09:25.",
+        "notes": "M1 for sin(0.5t) = -1 (0.5t = 3pi/2), or the GDC minimum of the graph. A1 for 9.42. Wrong methods: 0.5t = pi/2 gives t = pi (the first maximum), M0A0; t = 12.6 (one period), M0A0. A bare correct answer earns A1 only."
+      }
+    ]
+  }
+]

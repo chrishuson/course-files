@@ -1,0 +1,92 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["2.11", "3.7"],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.348,
+    "source": "Original (authored November 2026, calculator allowed, radians). f(x) = 4 sin(2(x - pi/6)) - 1: describe the transformations from y = sin x; amplitude, period, range; sketch on 0 <= x <= pi with exact maximum and minimum.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": ["2.11"],
+        "marks": 4,
+        "mark_codes": ["A1", "A1", "A1", "A1"],
+        "description": "Describe fully the sequence of transformations that maps y = sin x onto y = 4 sin(2(x - pi/6)) - 1.",
+        "expected": {"answer": "vertical stretch, scale factor 4; horizontal stretch, scale factor 1/2; horizontal translation pi/6 to the right; vertical translation 1 down"},
+        "tolerance": "Words required. Each transformation needs its type (stretch / dilation / scale, or translate / translation / shift / slide), its direction (vertical or horizontal, or parallel to the y- or x-axis; right; down) and its size. Accept 'horizontal compression by a factor of 2' for the horizontal stretch. The vertical translation must say 'down'. Reject 'move' or 'moved'.",
+        "order_rule": "The horizontal stretch (factor 1/2) must come before the translation of pi/6 to the right, and the vertical stretch before the translation down. Also fully correct: translate pi/3 right, then horizontal stretch factor 1/2. Deduct 1 mark for a wrong order.",
+        "vector_form": "'Translation by the vector (pi/6, -1)' with a translation word earns both translation marks.",
+        "symbolic_fallback": "A correct chain of equations with no words earns at most 1 of the 4 marks.",
+        "notes": "A1 for each correctly described transformation (A1A1A1A1). Wrong methods, each A0 for that transformation: translation pi/6 to the left; horizontal stretch with factor 2. See markscheme-spec section 19."
+      },
+      {
+        "label": "b",
+        "topic_codes": ["2.11", "3.7"],
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Write down the amplitude, the period and the range of f.",
+        "expected": {"answer": "amplitude 4; period pi; range -5 <= y <= 3"},
+        "tolerance": "Accept [-5, 3] or -5 <= f(x) <= 3 for the range. Accept 3.14 or 3.14159... for the period only if pi is not seen anywhere; pi is expected.",
+        "notes": "Write down: bare answers earn full marks. A1 for each value. Strict inequalities for the range earn A0. Wrong methods, each A0: period 4pi (2pi x 2); range -4 <= y <= 4 (vertical translation ignored)."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["3.7"],
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Sketch y = f(x) for 0 <= x <= pi on the grid; mark the maximum and minimum points with exact coordinates.",
+        "expected": {"answer": "sine-wave shape from (0, -2sqrt3 - 1 = -4.46) to (pi, -4.46); maximum (5pi/12, 3); minimum (11pi/12, -5)"},
+        "tolerance": "Coordinates must be exact. GDC decimals (1.31, 3) and (2.88, -5) earn A0 for that point.",
+        "notes": "A1 for a smooth curve of the correct shape on 0 <= x <= pi, endpoints near -4.5, with the maximum and minimum within half a grid square of the correct positions. A1 for the maximum (5pi/12, 3). A1 for the minimum (11pi/12, -5). Wrong methods, each A0 for that point: translating left gives (pi/12, 3) and (7pi/12, -5); dropping the bracket (2x - pi/6 = pi/2) gives x = pi/3. The sketch is drawn on the grid inside the answer box.",
+        "follow_through": "FT the y-coordinates from the candidate's range in (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["3.7", "2.11"],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.428,
+    "source": "Original (authored November 2026, calculator allowed, radians). Daylight hours in New York, D(t) = a cos(b(t - c)) + d, t months after 1 January; maximum 15.1 at t = 5.7, minimum 9.3 at t = 11.7. Find parameters, evaluate at t = 10.1, GDC solve D > 14.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find a and d for D(t) = a cos(b(t - c)) + d, given maximum 15.1 and minimum 9.3.",
+        "expected": {"answer": "a = 2.9, d = 12.2"},
+        "tolerance": "Exact values; no rounding issue.",
+        "notes": "M1 for (15.1 - 9.3)/2 or (15.1 + 9.3)/2 seen. A1 for a = 2.9. A1 for d = 12.2. Correct values with no working earn M0A1A1."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find b and c, given the maximum at t = 5.7 and the minimum at t = 11.7, with 0 < c < 12.",
+        "expected": {"answer": "b = pi/6 (0.523598...), c = 5.7"},
+        "tolerance": "Accept b = pi/6, 0.524, or the display with an ellipsis (0.5235...). 0.52 or 0.5236 with no ellipsis earns A0 (3 s.f. rule).",
+        "notes": "M1 for period 12 (e.g. 2(11.7 - 5.7)) used in b = 2pi/period. A1 for b = pi/6. A1 for c = 5.7 (the cosine is maximum where t - c = 0). Wrong methods, each A0: b = 12 (period used as b); c = 11.7 (time of the minimum); c = 2.7 (quarter-period shift, as for sine); c = -5.7 (sign)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Use the model to find the hours of daylight on 3 November, t = 10.1.",
+        "expected": {"answer": "10.3 hours (10.2595...)"},
+        "tolerance": "A1 for 10.3 or the display with an ellipsis (10.259...). 10.26 or 10.2595 with no ellipsis earns A0 (3 s.f. rule). Accept any value consistent with the candidate's own model from (a) and (b).",
+        "notes": "M1 for substituting t = 10.1 into the candidate's model. A1 for 10.3. Wrong method: degree mode gives 15.1 (15.0976...), earning M1A0. A bare answer earns A1 only.",
+        "follow_through": "FT from the candidate's a, b, c, d in (a) and (b)."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the length of time during the year, in months, with more than 14 hours of daylight.",
+        "expected": {"answer": "D = 14 at t = 3.98 (3.97888...) and t = 7.42 (7.42111...); length 3.44 months (3.44223...)"},
+        "tolerance": "A1 for 3.44 or the display with an ellipsis. Accept 3.44 from the rounded values 7.42 - 3.98. 3.4 or 3.442 with no ellipsis earns A0 (3 s.f. rule). Accept any value consistent with the candidate's own model.",
+        "notes": "M1 for D(t) = 14 or D(t) > 14 set up, or a sketch with the line D = 14 drawn. A1 for both t-values 3.98 and 7.42. A1 for the length 3.44 months. Wrong methods: giving one intersection as the answer (3.98 or 7.42) earns M1A0A0; degree mode gives no intersection and earns M1A0A0. A bare 3.44 earns A1 only (the final A1).",
+        "follow_through": "FT from the candidate's model in (a) and (b)."
+      }
+    ]
+  }
+]

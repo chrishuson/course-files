@@ -1,0 +1,89 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["2.1"],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.271,
+    "source": "Original (authored November 2026, calculator allowed, elimination required). Three 2x2 linear systems: (a) add directly, (b) scale one equation, (c) scale both equations.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Solve 3x + 2y = 17, 5x - 2y = 7 by elimination.",
+        "expected": {"answer": "x = 3, y = 4"},
+        "tolerance": "Accept the solution written as the point (3, 4).",
+        "notes": "M1 for adding the equations to eliminate y, seen as 8x = 24. A1 for x = 3. A1 for y = 4. Substitution in place of elimination earns M0, then A1A1 for correct values. Correct values with no working (e.g. from the GDC) earn M0A1A1. Work for (a) is in the left column of the answer box.",
+        "follow_through": "FT y from the candidate's value of x."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Solve 5x + 3y = 21, 4x - y = 27 by elimination.",
+        "expected": {"answer": "x = 6, y = -3"},
+        "tolerance": "Accept the solution written as the point (6, -3).",
+        "notes": "M1 for scaling an equation correctly (both sides) and adding or subtracting so that one variable is eliminated, e.g. 12x - 3y = 81 then 17x = 102, or 17y = -51 when x is eliminated first. A1 for x = 6. A1 for y = -3. Wrong method: scaling the left side only (12x - 3y = 27, giving 17x = 48) earns M0. Substitution earns M0, then A1A1. Correct values with no working earn M0A1A1. Work for (b) is in the middle column.",
+        "follow_through": "FT the second value from the candidate's first value."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Solve 3x + 4y = 14, 2x + 3y = 11 by elimination.",
+        "expected": {"answer": "x = -2, y = 5"},
+        "tolerance": "Accept the solution written as the point (-2, 5).",
+        "notes": "M1 for scaling both equations and adding or subtracting so that one variable is eliminated, e.g. 6x + 8y = 28 and 6x + 9y = 33 giving y = 5, or 9x + 12y = 42 and 8x + 12y = 44 giving x = -2. A1 for y = 5. A1 for x = -2. Common error: x = 2 (sign slip in 14 - 20) earns the final A0. Substitution earns M0, then A1A1. Correct values with no working earn M0A1A1. Work for (c) is in the right column.",
+        "follow_through": "FT the second value from the candidate's first value."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["2.1"],
+    "total_marks": 12,
+    "answer_box_top_frac": 0.479,
+    "source": "Original (authored November 2026, calculator allowed). Bicycle-helmet market: demand points (q, p) = (16, 36), (4, 72); supply points (6, 33), (20, 68); q hundreds of helmets per week, p euros. Lines from two points, equilibrium by elimination, minimum price surplus.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show that the demand line through (q, p) = (16, 36) and (4, 72) is p = 84 - 3q.",
+        "expected": {"answer": "m = (72 - 36)/(4 - 16) = -3; 36 = -3(16) + c gives c = 84; p = 84 - 3q"},
+        "tolerance": "Show that (answer given). Accept point-gradient form p - 36 = -3(q - 16) expanded to the given line.",
+        "notes": "M1 for the gradient from the two demand points. A1 for finding c = 84 from a point, or for checking both points satisfy the line after finding m = -3. Checking only that the given equation fits the two points, with no gradient calculation, earns M1A0. A gradient of -1/3 (run over rise) earns M0A0."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the equation of the supply line through (q, p) = (6, 33) and (20, 68).",
+        "expected": {"answer": "p = 2.5q + 18"},
+        "tolerance": "Accept 35/14 or 5/2 for the gradient, and any equivalent form of the equation, e.g. p - 33 = 2.5(q - 6).",
+        "notes": "M1 for the gradient (68 - 33)/(20 - 6). A1 for 2.5. A1 for the equation. Wrong method: the inverted gradient 14/35 = 0.4 earns M0A0, then A1 FT for p = 0.4q + 30.6. A bare correct equation earns A1A1 only (M0).",
+        "follow_through": "FT the equation from the candidate's gradient."
+      },
+      {
+        "label": "c",
+        "marks": 4,
+        "mark_codes": ["A1", "M1", "A1", "A1"],
+        "description": "Write both lines in the form aq + bp = c; use elimination to find the equilibrium quantity and price.",
+        "expected": {"answer": "3q + p = 84 and 2.5q - p = -18; q = 12 (1200 helmets per week), p = 48 euros"},
+        "tolerance": "Accept any equivalent pair in the form aq + bp = c (e.g. 5q - 2p = -36). Accept q = 12 hundred or 1200 helmets; p = 48 euros.",
+        "notes": "A1 for both equations correct in the form aq + bp = c. M1 for adding or subtracting (after scaling, if used) so that one variable is eliminated, e.g. 5.5q = 66, or 11q = 132, or 11p = 528 when q is eliminated first. A1 for q = 12. A1 for p = 48. Substitution in place of elimination earns M0, then A1A1. Correct values with no working (e.g. GDC intersection) earn A1A1 only, plus the first A1 if the equations are written. Wrong method: the sign slip 2.5q - p = 18 gives 5.5q = 102, q = 18.5 (18.5454...), earning A0M1A0A0.",
+        "follow_through": "FT from the candidate's supply line in (b), and p from the candidate's q."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "At a minimum price of 60 euros, find the quantity demanded and the quantity supplied, and hence the weekly surplus.",
+        "expected": {"answer": "demand 8 hundred (800), supply 16.8 hundred (1680), surplus 8.8 hundred = 880 helmets per week"},
+        "tolerance": "Accept 8.8 (hundred) or 880 helmets for the surplus. The values are exact; no rounding issue.",
+        "notes": "M1 for substituting p = 60 into both equations. A1 for both quantities, 8 (demand) and 16.8 (supply). A1 for the surplus 8.8 hundred (880). A negative answer, or calling it a shortage, earns the final A0. Wrong methods: comparing with the equilibrium quantity (16.8 - 12 = 4.8 or 12 - 8 = 4) earns the final A0.",
+        "follow_through": "FT the surplus from the candidate's supply line in (b), provided supply exceeds demand at p = 60."
+      }
+    ]
+  }
+]

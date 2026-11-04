@@ -1,0 +1,83 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 3 November 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{3.2 Classwork: Transformations of Trigonometric Functions}
+
+All angles are in radians. You may use your GDC.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: f(x) = 4sin(2(x - pi/6)) - 1: describe the transformations from y = sin x; amplitude, period, range; sketch with exact max and min [10 marks] ---
+%--- Source: Original (AA SL 2.11, 3.7) ---
+\item[1.]
+
+The function $f$ is defined by
+$f(x) = 4\sin\!\left(2\left(x - \dfrac{\pi}{6}\right)\right) - 1$.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Describe fully the sequence of transformations that maps the graph
+  of $y = \sin x$ onto the graph of $y = f(x)$.
+  \item Write down the amplitude, the period and the range of $f$.
+  \item On the grid, sketch the graph of $y = f(x)$ for $0 \le x \le \pi$.
+  Mark the maximum point and the minimum point, and write their
+  \emph{exact} coordinates.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,16.0);
+  \foreach \y in {10,11,...,15} \draw[dotted] (0,\y)--(14.1,\y);
+  % sketch grid: 1 cm per pi/12 across, 0.8 cm per unit up; origin at (0.8, 5.1)
+  \begin{scope}[shift={(0.8,5.1)}]
+    \draw[thin, color=gray!60, xstep=1cm, ystep=0.8cm] (0,-4) grid (12,3.2);
+    \draw[thick, ->] (-0.3,0) -- (12.6,0) node[right] {$x$};
+    \draw[thick, ->] (0,-4.3) -- (0,3.7) node[right] {$y$};
+    \foreach \v in {-5,-4,...,4}
+      \draw (2pt,0.8*\v) -- (-2pt,0.8*\v) node[left, font=\footnotesize] {$\v$};
+    \foreach \k/\lab in {2/\frac{\pi}{6}, 4/\frac{\pi}{3}, 6/\frac{\pi}{2},
+        8/\frac{2\pi}{3}, 10/\frac{5\pi}{6}, 12/\pi}
+      \node[below, font=\footnotesize] at (\k,-4.0) {$\displaystyle\lab$};
+    % solution curve (MS check): max (5pi/12, 3), min (11pi/12, -5)
+    %\draw[thick, domain=0:12, samples=120, smooth]
+    %  plot (\x, {0.8*(4*sin(deg(2*(\x*pi/12 - pi/6)))) - 0.8});
+  \end{scope}
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Daylight hours in New York, D(t) = a cos(b(t - c)) + d; find a, d, b, c from max and min; evaluate today; GDC solve D > 14 [11 marks] ---
+%--- Source: Original (AA SL 3.7, 2.11); data rounded from NYC sunrise/sunset tables ---
+\item[2.]
+
+The number of hours of daylight in New York, $D$, can be modelled by the
+function
+\[
+  D(t) = a\cos\bigl(b(t - c)\bigr) + d, \qquad 0 \le t \le 12,
+\]
+where $t$ is the time in months after 1 January, $a, b, c, d > 0$ and
+$c < 12$.
+
+The longest day has $15.1$ hours of daylight, at $t = 5.7$ (21 June).
+The shortest day has $9.3$ hours of daylight, at $t = 11.7$
+(21 December).
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the value of $a$ and the value of $d$.
+  \item Find the value of $b$ and the value of $c$.
+  \item Today is 3 November, $t = 10.1$. Use the model to find the number
+  of hours of daylight today.
+  \item Find the length of time during the year, in months, for which
+  New York has more than $14$ hours of daylight.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,14.0);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

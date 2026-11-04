@@ -1,0 +1,119 @@
+% context: 9th-grade physics classwork, Unit 2 kinematics review, Giancoli 2-1 to 2-7
+% topic: review of the unit so far, moderately easy: distance vs displacement and
+%        average speed vs average velocity on a number line (2-1, 2-2); average speed
+%        with a conversion to km/h, average vs instantaneous (2-2); braking to a
+%        stop with the constant-acceleration equations (2-3, 2-4); a dropped stone
+%        and a ball thrown straight up (2-5)
+% structure: two pages with room to work; page 1 the reference, the hallway walk,
+%        Usain Bolt; page 2 braking, a dropped stone, a thrown ball.
+%        No quadratic formula
+% data: Bolt 100 m world record 9.58 s, Berlin 2009, peak near 12.3 m/s (contexts.md
+%        #4); 40 mi/h = 17.9 m/s and 24 m braking distance from the UK Highway Code table,
+%        braking a = -6.4 m/s^2 from 2-3HW. The bridge time and throw speed are chosen
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{Physics}
+\author{Chris Huson}
+\date{November 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Nickname: \hspace{2.25cm} \,\\ \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 5 November 2026}
+
+\begin{document}
+
+\subsubsection*{2.6 Classwork: Kinematics Review}
+
+\textbf{Reference (provided).} \quad
+average speed $= \dfrac{\text{distance}}{\text{time}}$ \quad
+$\bar{v} = \dfrac{\text{displacement}}{\text{time}}$ \quad
+\mbox{1 h = 3600 s}
+
+\vspace{0.1cm}
+When the acceleration $a$ is constant:
+
+{\hspace{0.5cm}%
+\renewcommand{\arraystretch}{1.8}%
+\begin{tabular}{l @{\hspace{2cm}} l}
+  $v = v_0 + at$ & $v^2 = v_0^2 + 2a(x - x_0)$ \\
+  $x = x_0 + v_0 t + \frac{1}{2}at^2$ & $\bar{v} = \dfrac{v + v_0}{2}$
+\end{tabular}}
+
+\vspace{0.1cm}
+For a falling object, write $y$ in place of $x$, and $a = g = 9.80$ m/s$^2$ downward.
+List what you know and what you want, then choose the equation. Show the units.
+
+\vspace{0.1cm}
+
+\begin{enumerate}[itemsep=0.4cm]
+
+\item Take the classroom door as the origin, with east positive. A student walks
+  6.0 m east in 3.0 s, then 10.0 m west in 5.0 s. Draw each displacement as an arrow
+  above the number line.
+
+  \begin{center}
+  \begin{tikzpicture}[scale=0.7]
+    \draw[<->, thick] (-6.6,0) -- (8.6,0) node[right]{$x$ (m)};
+    \foreach \x in {-6,...,8} \draw (\x,0.12) -- (\x,-0.12);
+    \foreach \x in {-6,-4,...,8} \node[below] at (\x,-0.12) {\small \x};
+    \node[above] at (0,0.1) {\scriptsize door};
+    \path (0,0) -- (0,1.7); % room above the line for the arrows
+    % Solution arrows — uncomment to see the answer
+    %\draw[->, very thick] (0,0.7) -- (6,0.7) node[midway, above]{\small $+6.0$ m};
+    %\draw[->, very thick] (6,1.4) -- (-4,1.4) node[midway, above]{\small $-10.0$ m};
+  \end{tikzpicture}
+  \end{center}
+
+  \begin{enumerate}[itemsep=0.5cm]
+    \item Where does the student end up? \hfill $x = $ \rule{2.5cm}{0.4pt}
+    \item Distance walked = \rule{2.5cm}{0.4pt} \hfill
+      Displacement = \rule{2.5cm}{0.4pt}
+    \item Find the average speed and the average velocity for the whole walk.
+      \vspace{2.2cm}
+  \end{enumerate}
+
+\item In 2009 Usain Bolt set the 100 m world record, 9.58 s.
+  \begin{enumerate}[itemsep=0.5cm]
+    \item Find his average speed in m/s. Then convert it to km/h.
+      \vspace{3.0cm}
+    \item His top speed during the race was about 12.3 m/s. Why is his average
+      speed lower?
+      \vspace{1.2cm}
+  \end{enumerate}
+
+\newpage
+
+\item A car is driving at 40 mi/h (17.9 m/s) when the driver brakes hard. In 2.3 you
+  found that the car slows down at $a = -6.4$ m/s$^2$.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item How long does the car take to stop?
+      \vspace{1.8cm}
+    \item Find the braking distance. The UK Highway Code gives 24 m at 40 mi/h. Does
+      your answer agree?
+      \vspace{1.9cm}
+  \end{enumerate}
+
+\item A student drops a stone from a footbridge and sees it hit the water 2.00 s
+  later. Take \emph{down} as positive.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item How fast is the stone going when it hits the water?
+      \vspace{1.5cm}
+    \item How high is the bridge above the water?
+      \vspace{1.4cm}
+  \end{enumerate}
+
+\item A ball is thrown straight up at 9.80 m/s. Take \emph{up} as positive.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item At the highest point, what is the ball's velocity? What is its acceleration?
+      \vspace{0.8cm}
+    \item How long does the ball take to reach the highest point?
+      \vspace{1.4cm}
+    \item How high does it go?
+      \vspace{1.4cm}
+    \item How long after the throw does it come back to the hand?
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}
