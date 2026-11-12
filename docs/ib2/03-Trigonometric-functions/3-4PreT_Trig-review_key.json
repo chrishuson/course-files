@@ -1,0 +1,224 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["3.4", "3.2"],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.591,
+    "source": "Original (authored November 2026, calculator). Circle centre O, radius 8 cm, angle AOB = 2.1 rad; shaded segment between chord AB and the minor arc: arc length, chord AB by the cosine rule, segment area, segment perimeter.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": ["3.4"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the length of the minor arc AB (radius 8 cm, angle 2.1 rad).",
+        "expected": {"answer": "16.8 cm"},
+        "tolerance": "Exact value; no rounding issue.",
+        "notes": "M1 for 8 x 2.1. A1 for 16.8. Wrong method: the degree formula (2.1/360)(2pi)(8) = 0.293 earns M0A0. A bare correct answer earns A1 only."
+      },
+      {
+        "label": "b",
+        "topic_codes": ["3.2"],
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the chord AB, where OA = OB = 8 cm and angle AOB = 2.1 rad.",
+        "expected": {"answer": "13.9 cm (13.8787...)"},
+        "tolerance": "A1 for 13.9 or the display with an ellipsis. 13.88 with no ellipsis earns A0 (3 s.f. rule).",
+        "notes": "M1 for substituting into the cosine rule. A1 for the correct substitution AB^2 = 8^2 + 8^2 - 2(8)(8)cos 2.1. A1 for 13.9. Accept AB = 2 x 8 sin 1.05 (right-triangle method) for M1A1. Wrong methods: degree mode gives 0.293 (0.293198...), M1A1A0; AB^2 = 192.620... given as the answer, M1A1A0. A bare correct answer earns the final A1 only."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["3.4", "3.2"],
+        "marks": 4,
+        "mark_codes": ["A1", "A1", "M1", "A1"],
+        "description": "Find the area of the shaded segment bounded by chord AB and the minor arc.",
+        "expected": {"answer": "39.6 cm^2 (39.5773...); sector 67.2, triangle 27.6226..."},
+        "tolerance": "A1 for 39.6 or the display with an ellipsis. Accept 39.6 from the rounded values 67.2 - 27.6. 39.58 with no ellipsis earns A0 (3 s.f. rule).",
+        "notes": "A1 for the sector area (1/2)(8^2)(2.1) = 67.2. A1 for the triangle area (1/2)(8)(8)sin 2.1 = 27.6. M1 for subtracting the triangle from the sector (their values). A1 for 39.6. Wrong methods: degree mode for the triangle (1.17) gives 66.0, A1A0M1A0; the sector area alone (67.2), A1A0M0A0; r for r^2 in the sector (8.4), first A0. A bare correct answer earns the final A1 only."
+      },
+      {
+        "label": "d",
+        "topic_codes": ["3.4"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the perimeter of the shaded segment.",
+        "expected": {"answer": "30.7 cm (30.6787...)"},
+        "tolerance": "A1 for 30.7 or the display with an ellipsis. Accept 30.7 from 16.8 + 13.9.",
+        "notes": "M1 for arc plus chord. A1 for 30.7. Wrong methods: adding the two radii (46.7) or the sector perimeter 16.8 + 16 = 32.8 earn M0A0. A bare correct answer earns A1 only.",
+        "follow_through": "FT from the candidate's arc length in (a) and chord in (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["3.2"],
+    "total_marks": 12,
+    "answer_box_top_frac": 0.475,
+    "source": "Original (authored November 2026, calculator). Triangular garden with sides 45, 60, 80 m: largest angle (opposite 80) by the cosine rule, area. Separate triangle PQR, PQ = 14 cm, QR = 10 cm, angle QPR = 38 deg: ambiguous case, two values of angle PRQ, difference of the two possible lengths PR.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the largest angle of triangle ABC with AB = 45 m, BC = 60 m, AC = 80 m.",
+        "expected": {"answer": "angle ABC = 98.3 degrees (98.2514...)"},
+        "tolerance": "A1 for 98.3 or the display with an ellipsis. 98.25 with no ellipsis earns A0 (3 s.f. rule). 1.71 radians accepted only with the unit radians stated.",
+        "notes": "M1 for substituting into the cosine rule for any angle. A1 for cos ABC = (45^2 + 60^2 - 80^2)/(2 x 45 x 60) (the angle opposite 80). A1 for 98.3. Wrong methods: the angle opposite 45 (33.8) or opposite 60 (47.9) earns M1A0A0. A bare correct answer earns the final A1 only."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the area of the garden.",
+        "expected": {"answer": "1340 m^2 (1336.02...)"},
+        "tolerance": "Accept 1340, 1336, or the display with an ellipsis.",
+        "notes": "M1 for (1/2)(45)(60) sin(their angle B), or any correct pairing of two sides with their included angle. A1 for 1340. Wrong method: an angle not included between the two sides, e.g. (1/2)(45)(60) sin 33.8, M0A0. A bare correct answer earns A1 only.",
+        "follow_through": "FT from the candidate's angle in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "In triangle PQR, PQ = 14 cm, QR = 10 cm, angle QPR = 38 deg. Find the two possible values of angle PRQ.",
+        "expected": {"answer": "59.5 degrees (59.5335...) and 120 degrees (120.466...)"},
+        "tolerance": "Accept 120.5 for the obtuse value. 59.53 with no ellipsis earns A0 (3 s.f. rule).",
+        "notes": "M1 for sin PRQ / 14 = sin 38 / 10. A1 for 59.5. A1 for 120. Wrong methods: the acute angle only earns M1A1A0; sides paired with the wrong angles, sin PRQ = 10 sin 38 / 14, gives 26.1 and earns M0A0A0. Bare correct answers earn A1A1 (M0)."
+      },
+      {
+        "label": "d",
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "A1", "A1"],
+        "description": "Find the difference between the two possible lengths of PR.",
+        "expected": {"answer": "PR = 16.1 (16.1024...) or 5.96 (5.96181...); difference 10.1 cm (10.1406...)"},
+        "tolerance": "A1 for 10.1 or the display with an ellipsis. Accept 16.1 - 5.96 = 10.14.",
+        "notes": "Method 1: M1 for a third angle PQR (82.4665... or 21.5335...) from either value in (c), then the sine rule. A1 for PR = 16.1. A1 for PR = 5.96. A1 for 10.1. Method 2: M1 for 10^2 = 14^2 + PR^2 - 2(14)(PR)cos 38; A1A1 for the two roots 16.1 and 5.96; A1 for 10.1. Wrong methods: one length only earns M1A1A0A0; the sum 22.1 earns the final A0. A bare correct answer earns the final A1 only.",
+        "follow_through": "FT from the candidate's angles in (c)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": ["3.5", "3.6", "3.8"],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.418,
+    "source": "Original (authored November 2026, calculator allowed but exact answers asked). Exact sin(4pi/3), tan(2pi/3); sin theta = 2/3 in the second quadrant, find cos and tan exactly; solve 2cos x + sqrt3 = 0 on [0, 2pi].",
+    "parts": [
+      {
+        "label": "a_i",
+        "topic_codes": ["3.5"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the exact value of sin(4pi/3).",
+        "expected": {"answer": "-sqrt3/2"},
+        "tolerance": "Decimals (-0.866) earn A0.",
+        "notes": "Write down: a bare answer earns the mark. Wrong sign, or cos(4pi/3) = -1/2, earns A0."
+      },
+      {
+        "label": "a_ii",
+        "topic_codes": ["3.5"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the exact value of tan(2pi/3).",
+        "expected": {"answer": "-sqrt3"},
+        "tolerance": "Accept -3/sqrt3. Decimals (-1.73) earn A0.",
+        "notes": "Write down: a bare answer earns the mark. Wrong sign, or -1/sqrt3 (ratio inverted), earns A0."
+      },
+      {
+        "label": "b_i",
+        "topic_codes": ["3.6"],
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Given sin theta = 2/3 and pi/2 < theta < pi, find the exact value of cos theta.",
+        "expected": {"answer": "-sqrt5/3"},
+        "tolerance": "Exact value only; -0.745 earns the final A0.",
+        "notes": "M1 for cos^2 theta = 1 - 4/9 (= 5/9), or a right triangle with sides 2, sqrt5, 3. A1 for +/-sqrt5/3 (or sqrt5/3 seen). A1 for choosing -sqrt5/3 (second quadrant). Wrong method: the GDC route cos(arcsin(2/3)) = +sqrt5/3 gives the first-quadrant angle and earns M1A1A0. A bare -sqrt5/3 earns A1 only."
+      },
+      {
+        "label": "b_ii",
+        "topic_codes": ["3.6"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Find the exact value of tan theta.",
+        "expected": {"answer": "-2/sqrt5"},
+        "tolerance": "Accept -2sqrt5/5. Decimals (-0.894) earn A0.",
+        "notes": "A1 for -2/sqrt5. Inverted ratio -sqrt5/2 earns A0. +2/sqrt5 earns A0 unless it follows from the candidate's +sqrt5/3 in (b)(i) (then A1 FT).",
+        "follow_through": "FT from the candidate's cos theta in (b)(i): tan theta = (2/3) / cos theta."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["3.8"],
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Solve 2cos x + sqrt3 = 0 for 0 <= x <= 2pi, exact multiples of pi.",
+        "expected": {"answer": "x = 5pi/6, x = 7pi/6"},
+        "tolerance": "Exact multiples of pi. Decimals (2.62, 3.67) earn at most A1A0.",
+        "notes": "M1 for cos x = -sqrt3/2. A1 for 5pi/6. A1 for 7pi/6. Wrong methods: the GDC value 5pi/6 alone earns M1A1A0; pi/6 and 11pi/6 (sign of cos x wrong) earn M0A0A0; -5pi/6 is outside the interval, A0. Extra values outside the interval earn the final A0. Bare correct answers earn A1A1 (M0)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": ["3.7", "2.11"],
+    "total_marks": 13,
+    "answer_box_top_frac": 0.496,
+    "source": "Original (authored November 2026, calculator). Ferris wheel h(t) = d - a cos(bt), lowest 2 m at t = 0, highest 30 m, period 12 min, so h(t) = 16 - 14cos(pi t/6): a and d, b, h(2.5), time above 25 m in one turn, describe the transformations from y = cos t (including a reflection).",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": ["3.7"],
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Find a and d for h(t) = d - a cos(bt), lowest 2 m, highest 30 m.",
+        "expected": {"answer": "a = 14, d = 16"},
+        "tolerance": "Exact integers.",
+        "notes": "A1 for a = 14. A1 for d = 16. Bare correct values earn both marks. Wrong methods, each A0: a = 28 (not halved); d = 14."
+      },
+      {
+        "label": "b",
+        "topic_codes": ["3.7"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find b, given one turn takes 12 minutes.",
+        "expected": {"answer": "b = pi/6 (0.523598...)"},
+        "tolerance": "Accept pi/6, 0.524, or the display with an ellipsis.",
+        "notes": "M1 for 2pi/12. A1 for pi/6. Wrong methods: b = 12 (period used as b) or b = 2pi x 12 = 75.4 earns M0A0; b = 30 (degree measure) earns M1A0. A bare correct answer earns A1 only."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["3.7"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the height of the seat at t = 2.5 minutes.",
+        "expected": {"answer": "12.4 m (12.3765...)"},
+        "tolerance": "A1 for 12.4 or the display with an ellipsis. 12.38 with no ellipsis earns A0 (3 s.f. rule).",
+        "notes": "M1 for substituting t = 2.5 into h. A1 for 12.4. b = 30 used in degree mode is consistent and earns M1A1. Wrong method: b = pi/6 in degree mode gives 2.00 (2.00365...), M1A0. A bare correct answer earns A1 only.",
+        "follow_through": "FT from the candidate's a, b, d in (a) and (b)."
+      },
+      {
+        "label": "d",
+        "topic_codes": ["3.7"],
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the length of time during one turn for which h > 25.",
+        "expected": {"answer": "h = 25 at t = 4.33 (4.33350...) and t = 7.67 (7.66649...); length 3.33 minutes (3.33298...)"},
+        "tolerance": "A1 for 3.33 or the display with an ellipsis. Accept 3.34 from the rounded values 7.67 - 4.33.",
+        "notes": "M1 for h(t) = 25 or h(t) > 25 set up, or a sketch with the line h = 25. A1 for both t-values. A1 for 3.33. Wrong methods: one intersection (4.33) as the answer earns M1A0A0; the time below 25 m (8.67) earns M1A1A0. A bare 3.33 earns the final A1 only.",
+        "follow_through": "FT from the candidate's h."
+      },
+      {
+        "label": "e",
+        "topic_codes": ["2.11"],
+        "marks": 4,
+        "mark_codes": ["A1", "A1", "A1", "A1"],
+        "description": "Describe fully a sequence of transformations that maps y = cos t onto y = 16 - 14cos(pi t/6).",
+        "expected": {"answer": "reflection in the t-axis; vertical stretch, scale factor 14; horizontal stretch, scale factor 6/pi; vertical translation 16 up"},
+        "tolerance": "Words required. Each transformation needs its type (reflection; stretch / dilation / scale; translate / translation / shift / slide), its direction or axis, and its size. Accept the scale factor 1.91 for 6/pi. Reject 'move' or 'moved', and 'flip' with no axis. A vertical stretch with scale factor -14 earns the stretch mark but not the reflection mark.",
+        "order_rule": "The reflection and the vertical stretch (in either order) must come before the vertical translation. The horizontal stretch may come anywhere. Deduct 1 mark for a wrong order.",
+        "vector_form": "'Translation by the vector (0, 16)' with a translation word earns the translation mark.",
+        "symbolic_fallback": "A correct chain of equations with no words earns at most 1 of the 4 marks.",
+        "notes": "A1 for each correctly described transformation (A1A1A1A1). Wrong method: horizontal stretch with scale factor pi/6 earns A0 for that transformation. See markscheme-spec section 19.",
+        "follow_through": "FT from the candidate's a, b, d in (a) and (b)."
+      }
+    ]
+  }
+]

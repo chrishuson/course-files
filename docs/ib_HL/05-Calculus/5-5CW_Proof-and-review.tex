@@ -1,0 +1,127 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 HL \\* 10 November 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{5.5 Classwork: Proof, Differential Equations and Series (no calculator)}
+
+Show all working and give exact answers. If you need more space, continue
+on lined paper and label the problem and part.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Lemma n^3 - n even; prove by contradiction x^3 + x + 1 = 0 has no integer roots; prove by contradiction p^2 - 8q - 3 != 0 for integers p, q [13 marks] ---
+%--- Source: Original (AA HL 1.15 proof by contradiction); follow-up to AA HL 2022 May P1 TZ2 Q9 (2x^3 + 6x + 1 = 0), parallel of AA HL 2023 May P2 TZ1 Q9 ---
+\item[1.] [Maximum mark: 13]
+
+In this question, use these facts about integers: the sum, difference and
+product of integers are integers; an integer is \emph{even} if it equals
+$2m$ for some $m \in \mathbb{Z}$, and \emph{odd} if it equals $2m + 1$.
+No integer is both even and odd.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Show that $n^{3} - n$ is even for every $n \in \mathbb{Z}$. \hfill [2]
+  \item Prove by contradiction that the equation $x^{3} + x + 1 = 0$ has
+  no integer roots. Begin with a precise statement of what you assume.
+  \hfill [5]
+  \item Prove by contradiction that $p^{2} - 8q - 3 \neq 0$ for all
+  $p, q \in \mathbb{Z}$. \hfill [6]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,15.0);
+  \foreach \y in {1,2,...,14} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: dy/dx = x^2 + 1 - y, y(0) = 1: integral by parts twice; integrating factor, show solution; Maclaurin series from the DE to x^3; point of inflection with reason [17 marks] ---
+%--- Source: Original (AA HL 5.16, 5.18, 5.19); structure after AA HL 2025 May P2 TZ3 Q12; targets 5-4CW errors (constant times e^(-x), concavity reason) ---
+\item[2.] [Maximum mark: 17]
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find $\displaystyle\int \left(x^{2} + 1\right)e^{x}\,\mathrm{d}x$.
+  \hfill [4]
+\end{enumerate}
+
+Consider the differential equation
+$\dfrac{\mathrm{d}y}{\mathrm{d}x} = x^{2} + 1 - y$, where $y = 1$ when
+$x = 0$.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item[(b)] By solving the differential equation, show that
+  $y = x^{2} - 2x + 3 - 2e^{-x}$. \hfill [5]
+  \item[(c)] Without using the solution from part (b), use the differential
+  equation to find the Maclaurin series for $y$, up to and including the
+  term in $x^{3}$. \hfill [5]
+  \item[(d)] Show that the curve $y = x^{2} - 2x + 3 - 2e^{-x}$ has a point
+  of inflection at $(0,\ 1)$. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.6);
+  \foreach \y in {1,2,...,13} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: Induction for the nth derivative of ln(1 + x); Maclaurin series of ln(1 + x); series of ln((1 + x)/(1 - x)); limit [15 marks] ---
+%--- Source: Original (AA HL 1.15, 5.19); pattern of AA HL 2021 Nov P1 Q11 and AA HL 2024 May P1 TZ2 Q12 ---
+\item[3.] [Maximum mark: 15]
+
+Let $f(x) = \ln(1 + x)$, for $x > -1$.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Prove by mathematical induction that
+  \[
+  f^{(n)}(x) = \frac{(-1)^{n - 1}(n - 1)!}{(1 + x)^{n}}
+  \quad \text{for all } n \in \mathbb{Z}^{+}.
+  \]
+  \hfill [7]
+  \item Hence show that the Maclaurin series for $f(x)$ is \hfill [3]
+  \[
+  x - \frac{x^{2}}{2} + \frac{x^{3}}{3} - \cdots
+  + \frac{(-1)^{n - 1}x^{n}}{n} + \cdots
+  \]
+  \item Find the Maclaurin series for
+  $\ln\left(\dfrac{1 + x}{1 - x}\right)$, up to and including the term in
+  $x^{5}$. \hfill [3]
+  \item Hence find
+  $\displaystyle\lim_{x \to 0}
+  \frac{\ln\left(\frac{1 + x}{1 - x}\right) - 2x}{x^{3}}$. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.2);
+  \foreach \y in {1,2,...,12} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: Conjugate proofs; (w*)^n = (w^n)* by de Moivre; (1 + i)^n + (1 - i)^n real; = 2^(n/2 + 1) cos(n pi/4); value at n = 12 [14 marks] ---
+%--- Source: Original (AA HL 1.12, 1.13, 1.14); first part after AA HL 2024 Nov P2 Q8 ---
+\item[4.] [Maximum mark: 14]
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Let $w = a + bi$, $a, b \in \mathbb{R}$. Prove that
+  $w + w^{*} = 2\,\mathrm{Re}(w)$ and $ww^{*} = |w|^{2}$. \hfill [3]
+  \item Let $w = re^{i\theta}$. Use de Moivre's theorem to show that
+  $\left(w^{*}\right)^{n} = \left(w^{n}\right)^{*}$, $n \in \mathbb{Z}^{+}$.
+  \hfill [3]
+  \item Hence prove that $(1 + i)^{n} + (1 - i)^{n}$ is real for all
+  $n \in \mathbb{Z}^{+}$. \hfill [2]
+  \item Show that $(1 + i)^{n} + (1 - i)^{n} =
+  2^{\frac{n}{2} + 1}\cos\dfrac{n\pi}{4}$. \hfill [4]
+  \item Hence find the value of $(1 + i)^{12} + (1 - i)^{12}$. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,16.2);
+  \foreach \y in {1,2,...,15} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

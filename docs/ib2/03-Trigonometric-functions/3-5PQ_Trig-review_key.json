@@ -1,0 +1,223 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": ["3.6", "3.5"],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.436,
+    "source": "Original (authored November 2026, calculator allowed but exact answers asked). cos theta = 1/4 with 3pi/2 < theta < 2pi (fourth quadrant): exact sin theta, sin 2theta, cos 2theta; show sin 2x/(1 + cos 2x) = tan x; hence exact tan theta.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Given cos theta = 1/4 and 3pi/2 < theta < 2pi, find the exact value of sin theta.",
+        "expected": {"answer": "-sqrt15/4"},
+        "tolerance": "Exact value only; -0.968 earns the final A0.",
+        "notes": "M1 for sin^2 theta = 1 - 1/16 (= 15/16), or a right triangle with sides 1, sqrt15, 4. A1 for +/-sqrt15/4 (or sqrt15/4 seen). A1 for choosing -sqrt15/4 (fourth quadrant). Wrong method: the GDC route sin(arccos(1/4)) = +sqrt15/4 gives the first-quadrant angle and earns M1A1A0. A bare -sqrt15/4 earns A1 only."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the exact value of sin 2theta.",
+        "expected": {"answer": "-sqrt15/8"},
+        "tolerance": "Exact value only. Decimals (-0.484) earn A0.",
+        "notes": "M1 for 2 sin theta cos theta with their sin theta and cos theta = 1/4. A1 for -sqrt15/8. Wrong method: sin 2theta = 2 sin theta = -sqrt15/2 earns M0A0. A bare correct answer earns A1 only.",
+        "follow_through": "FT from the candidate's sin theta in (a): +sqrt15/4 gives +sqrt15/8, M1A1 FT."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the exact value of cos 2theta.",
+        "expected": {"answer": "-7/8"},
+        "tolerance": "Accept -0.875 or -14/16.",
+        "notes": "M1 for any double-angle form for cos 2theta with substitution (2(1/16) - 1, 1/16 - 15/16, or 1 - 2(15/16)). A1 for -7/8. Wrong method: cos 2theta = 2cos theta = 1/2 earns M0A0. A bare correct answer earns A1 only."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Show that sin 2x/(1 + cos 2x) = tan x, for cos x != 0.",
+        "expected": {"answer": "2 sin x cos x / (1 + 2cos^2 x - 1) = 2 sin x cos x / (2cos^2 x) = sin x / cos x = tan x (AG)"},
+        "tolerance": "Show that: the response must reach sin x / cos x or tan x from the left side.",
+        "notes": "M1 for substituting both double-angle identities. A1 for 2 sin x cos x / (2cos^2 x). A1 for sin x / cos x. The form cos^2 x - sin^2 x also works with 1 - sin^2 x = cos^2 x. Wrong method: checking a single value such as x = pi/4 earns M0A0A0."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Hence, or otherwise, find the exact value of tan theta.",
+        "expected": {"answer": "-sqrt15"},
+        "tolerance": "Exact value only. Decimals (-3.87) earn A0.",
+        "notes": "A1 for -sqrt15, by (b)/(1 + (c)) or sin theta / cos theta. Inverted ratio -1/sqrt15 earns A0. +sqrt15 earns A0 unless it follows from the candidate's +sqrt15/4 in (a) (then A1 FT).",
+        "follow_through": "FT from the candidate's (b) and (c), or from (a)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": ["3.3", "3.2"],
+    "total_marks": 12,
+    "answer_box_top_frac": 0.534,
+    "source": "Original (authored November 2026, calculator). Ship leaves harbour H, sails 12 km on bearing 070 to A, then 9 km on bearing 170 to B: show angle HAB = 80 deg; HB by the cosine rule; bearing of B from H by the sine rule; back bearing of H from B; area of triangle HAB.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show that angle HAB = 80 degrees.",
+        "expected": {"answer": "bearing of H from A = 250; 250 - 170 = 80 (AG)"},
+        "tolerance": "Show that: any correct angle argument at A.",
+        "notes": "M1 for a correct angle at A: the back bearing 250, or 70 deg between AH and the south line (alternate angles), or the turn of 170 - 70 = 100. A1 for reaching 80 (AG). Wrong method: stating 80 with no angle reasoning earns M0A0."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Find the distance HB.",
+        "expected": {"answer": "13.7 km (13.6927...)"},
+        "tolerance": "A1 for 13.7 or the display with an ellipsis. 13.69 with no ellipsis earns A0 (3 s.f. rule).",
+        "notes": "M1 for substituting into the cosine rule. A1 for HB^2 = 12^2 + 9^2 - 2(12)(9)cos 80. A1 for 13.7. Wrong methods: the angle 100 gives 16.2, M1A0A0; radian mode gives 15.8 (15.7747...), M1A1A0; HB^2 = 187.491... given as the answer, M1A1A0. A bare correct answer earns the final A1 only."
+      },
+      {
+        "label": "c",
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "M1", "A1"],
+        "description": "Find the bearing of B from H.",
+        "expected": {"answer": "angle AHB = 40.3 deg (40.3380...); bearing 110 deg (110.338...)"},
+        "tolerance": "Accept 110 or 110.3. The bearing to 3 s.f. is 110.",
+        "notes": "M1 for sin AHB / 9 = sin 80 / HB (or the cosine rule for angle AHB). A1 for 40.3. M1 for 70 + their angle. A1 for 110. Wrong methods: 40.3 given as the bearing earns M1A1M0A0; 70 - 40.3 = 29.7 earns M1A1M0A0; the angle at B (59.7) added to 70 gives 130, M0A0M1A0. A bare 110 earns the final A1 only.",
+        "follow_through": "FT from the candidate's HB in (b)."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the bearing of H from B.",
+        "expected": {"answer": "290 deg (290.338...)"},
+        "tolerance": "Accept 290 or 290.3.",
+        "notes": "Write down: a bare answer earns the mark. Wrong methods, each A0: 360 - 110 = 250; 180 - 110 = 70.",
+        "follow_through": "FT: their bearing in (c) + 180."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Find the area of triangle HAB.",
+        "expected": {"answer": "53.2 km^2 (53.1796...)"},
+        "tolerance": "A1 for 53.2 or the display with an ellipsis.",
+        "notes": "M1 for (1/2)(12)(9) sin 80, or any two sides with their included angle. A1 for 53.2. Wrong method: an angle not included between the two sides, (1/2)(12)(13.69) sin 80 = 80.9, earns M0A0. Note sin 100 = sin 80, so the 100 deg angle gives the correct area; (a) fixes the angle. A bare correct answer earns A1 only."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": ["3.8", "3.6"],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.275,
+    "source": "Original (authored November 2026, exact answers). Solve sin 2x = sin x on [0, 2pi] by factorising (not dividing by sin x); show cos 2x + 3cos x + 2 = 2cos^2 x + 3cos x + 1; hence solve the quadratic in cos x on [0, 2pi].",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 5,
+        "mark_codes": ["M1", "M1", "A1", "A1", "A1"],
+        "description": "Solve sin 2x = sin x for 0 <= x <= 2pi, exact multiples of pi.",
+        "expected": {"answer": "x = 0, pi/3, pi, 5pi/3, 2pi"},
+        "tolerance": "Exact multiples of pi. Decimals (1.05, 3.14, 5.24) earn at most one of the three A1.",
+        "notes": "M1 for 2 sin x cos x = sin x. M1 for factorising sin x (2cos x - 1) = 0 (or setting each factor to zero). A1 for 0, pi, 2pi (all three). A1 for pi/3. A1 for 5pi/3. Wrong method: dividing by sin x loses 0, pi, 2pi and earns M1M0A0A1A1. Missing the end points 0 or 2pi earns A0 on that mark. Bare correct answers earn A1A1A1 (M0M0)."
+      },
+      {
+        "label": "b_i",
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show that cos 2x + 3cos x + 2 = 2cos^2 x + 3cos x + 1.",
+        "expected": {"answer": "2cos^2 x - 1 + 3cos x + 2 = 2cos^2 x + 3cos x + 1 (AG)"},
+        "tolerance": "Show that.",
+        "notes": "M1 for substituting cos 2x = 2cos^2 x - 1. A1 for the simplification (AG). The forms cos^2 x - sin^2 x or 1 - 2sin^2 x earn the M1 only when sin^2 x is then replaced by 1 - cos^2 x."
+      },
+      {
+        "label": "b_ii",
+        "marks": 4,
+        "mark_codes": ["M1", "A1", "A1", "A1"],
+        "description": "Hence solve cos 2x + 3cos x + 2 = 0 for 0 <= x <= 2pi, exact multiples of pi.",
+        "expected": {"answer": "x = 2pi/3, pi, 4pi/3"},
+        "tolerance": "Exact multiples of pi. Decimals (2.09, 3.14, 4.19) earn at most one of the last two A1.",
+        "notes": "M1 for (2cos x + 1)(cos x + 1) = 0, the quadratic formula, or u = cos x. A1 for cos x = -1/2 or cos x = -1. A1 for 2pi/3 and 4pi/3. A1 for pi. Wrong method: a sign error in the factors, cos x = 1/2 or 1, gives 0, pi/3, 5pi/3, 2pi: M1A0 then A1A1 FT. Missing x = pi is the most common loss. Bare correct answers earn A1A1 only (the final two).",
+        "follow_through": "FT from the candidate's values of cos x, when they lie in [-1, 1]."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": ["3.7", "3.6", "3.8"],
+    "total_marks": 13,
+    "answer_box_top_frac": 0.37,
+    "source": "Original (authored November 2026, calculator allowed, exact answers asked in (e)). f(x) = 6 sin x cos x + 1 on [0, pi]: show f = 3 sin 2x + 1; period; range; sketch on a printed grid; solve f(x) = 2.5 exactly; values of k for exactly two solutions of f(x) = k.",
+    "parts": [
+      {
+        "label": "a",
+        "topic_codes": ["3.6"],
+        "marks": 2,
+        "mark_codes": ["M1", "A1"],
+        "description": "Show that f(x) = 6 sin x cos x + 1 = 3 sin 2x + 1.",
+        "expected": {"answer": "6 sin x cos x = 3(2 sin x cos x) = 3 sin 2x (AG)"},
+        "tolerance": "Show that.",
+        "notes": "M1 for 3 x 2 sin x cos x or use of sin 2x = 2 sin x cos x. A1 for 3 sin 2x (AG)."
+      },
+      {
+        "label": "b",
+        "topic_codes": ["3.7"],
+        "marks": 1,
+        "mark_codes": ["A1"],
+        "description": "Write down the period of f.",
+        "expected": {"answer": "pi"},
+        "tolerance": "Accept 3.14.",
+        "notes": "Write down: a bare answer earns the mark. Wrong methods, each A0: 2pi (period of sin x); 2."
+      },
+      {
+        "label": "c",
+        "topic_codes": ["3.7"],
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Find the range of f.",
+        "expected": {"answer": "-2 <= f(x) <= 4"},
+        "tolerance": "Accept [-2, 4]. Strict inequalities earn A1A0.",
+        "notes": "A1 for each end point with the correct inequality. The end points are included: f(pi/4) = 4, f(3pi/4) = -2. Wrong methods: -3 <= f(x) <= 3 (the +1 ignored) or -5 <= f(x) <= 7 (amplitude 6), A0A0.",
+        "follow_through": "FT from the candidate's amplitude and vertical shift."
+      },
+      {
+        "label": "d",
+        "topic_codes": ["3.7"],
+        "marks": 3,
+        "mark_codes": ["A1", "A1", "A1"],
+        "description": "Sketch y = f(x) for 0 <= x <= pi on the printed grid.",
+        "expected": {"answer": "one sine cycle: (0, 1), max (pi/4, 4), (pi/2, 1), min (3pi/4, -2), (pi, 1); x-intercepts 1.74 and 2.97"},
+        "tolerance": "Sketch: approximate positions on the grid; intercepts need not be labelled.",
+        "notes": "A1 for the shape: one complete smooth sine wave. A1 for the maximum (pi/4, 4) and minimum (3pi/4, -2). A1 for y = 1 at x = 0, pi/2, pi and the curve drawn only on [0, pi]. Wrong method: two cycles (period pi/2) or half a cycle (period 2pi) earns A0 for the shape.",
+        "follow_through": "FT from (b) and (c)."
+      },
+      {
+        "label": "e",
+        "topic_codes": ["3.8"],
+        "marks": 3,
+        "mark_codes": ["M1", "A1", "A1"],
+        "description": "Solve f(x) = 2.5, exact multiples of pi.",
+        "expected": {"answer": "x = pi/12, 5pi/12"},
+        "tolerance": "Exact multiples of pi. Decimals (0.262, 1.31) earn A1A0 at most.",
+        "notes": "M1 for sin 2x = 1/2. A1 for pi/12. A1 for 5pi/12. Wrong methods: pi/6, 5pi/6 (not halved) earns M1A0A0; pi/12 only earns M1A1A0; sin 2x = 2.5/3 (the +1 ignored) earns M0. Extra values outside [0, pi], e.g. 13pi/12, earn the final A0. Bare correct answers earn A1A1 (M0)."
+      },
+      {
+        "label": "f",
+        "topic_codes": ["3.7", "3.8"],
+        "marks": 2,
+        "mark_codes": ["A1", "A1"],
+        "description": "Find the values of k for which f(x) = k has exactly two solutions on [0, pi].",
+        "expected": {"answer": "-2 < k < 1 or 1 < k < 4"},
+        "tolerance": "Accept -2 < k < 4, k != 1, or interval notation.",
+        "notes": "A1 for -2 < k < 1. A1 for 1 < k < 4. k = 1 gives three solutions (0, pi/2, pi); k = 4 or k = -2 gives one. Wrong methods: -2 < k < 4 with k = 1 not excluded earns A1A0; including k = -2 or k = 4 earns A0 for that interval.",
+        "follow_through": "FT from the candidate's sketch in (d)."
+      }
+    ]
+  }
+]

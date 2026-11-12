@@ -1,0 +1,162 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\setlength{\parskip}{0.3\baselineskip}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 10 November 2026}
+
+\begin{document}
+\subsubsection*{1.12 Classwork: Simpson's Paradox --- Markscheme}
+
+\emph{Lesson problem set, not scored: model answers and teaching notes.
+Correlation descriptors follow the textbook scale: $\lvert r \rvert < 0.25$
+very weak, $0.25$--$0.5$ weak, $0.5$--$0.75$ moderate, $0.75$--$0.95$ strong.
+Data and figures: \texttt{claude-ib-project/output/correlation\_claude/}
+(data set D).}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Reading the two time series; currency conversion in and out of dollars; effect of a weaker and a stronger dollar on the investor ---
+\item[1.]
+
+\textbf{(a)} $100\,000 \times 1.0622 = 106\,220$ US dollars.
+
+\textbf{(b)} $\dfrac{106\,220}{1.5759} = 67\,402.75\ldots$, so EUR $67\,400$.
+
+percentage change $= \dfrac{67\,402.75\ldots - 100\,000}{100\,000} \times 100
+= -32.6\%$ \quad $(-32.597\ldots)$
+
+\emph{The dollar weakened by about a third against the euro. Common error:
+multiplying by $1.5759$ instead of dividing (USD $\to$ EUR divides by
+EUR/USD), which gives a ``gain'' to EUR $167\,000$.}
+
+\textbf{(c)} EUR/USD fell from $1.5759$ to $1.2744$, so the dollar became
+\emph{stronger}.
+
+$\dfrac{106\,220}{1.2744} = 83\,349.02\ldots$, so EUR $83\,300$ (accept
+$83\,349$).
+
+\emph{Teaching note: in four months the same dollars gained about $24\%$ in
+euro terms ($83\,349 / 67\,403$). In the autumn 2008 crisis, investors
+worldwide bought dollars and US Treasuries as a safe haven.}
+
+\textbf{(d)} The yield fell from $4.01\%$ to $2.42\%$, a fall of $1.59$
+percentage points. When yields fall, the prices of existing bonds rise, so
+this was good for the investor.
+
+\emph{Accept ``fell steeply in December 2008''. Late 2008 was good for the
+investor on both counts: bond prices up and the dollar stronger.}
+
+\bigskip \hrule \bigskip
+
+%--- Problem 2: Correlation of levels: r for each period and the whole period; Simpson's paradox explained by the shift in the period means ---
+\item[2.]
+
+\textbf{(a)} 2003--2007: $r = 0.39$, weak positive.
+
+2008--2011: $r = 0.46$, weak positive.
+
+2003--2011: $r = -0.30$, weak negative.
+
+\emph{Accept ``moderate'' for $0.46$. The point to draw out: both periods
+are positive, the whole is negative.}
+
+\textbf{(b)} From the first period to the second, the mean yield fell
+($4.40 \to 3.23$) and the mean EUR/USD rose ($1.249 \to 1.396$). So the
+2008--2011 cloud of points lies up and to the left of the 2003--2007 cloud.
+A line fitted to all the points mostly joins the two clouds, and it slopes
+down. This shift between the periods outweighs the upward slope inside
+each period.
+
+\emph{Teaching background (law of total covariance): the whole-period
+covariance is the weighted within-period covariance plus a between-period
+term $\sum_k w_k(\bar{x}_k - \bar{x})(\bar{y}_k - \bar{y})$. Here the
+between-period term is negative and dominates.}
+
+\textbf{(c)} Within each period the relationship is the opposite: months
+with higher yields had a higher EUR/USD, a \emph{weaker} dollar. The
+negative whole-period value comes from the difference between the two
+periods, not from how the series move together month by month. Yields and
+the exchange rate both drifted over the years, so a correlation of
+\emph{levels} mainly reflects those drifts and changes with the dates
+chosen.
+
+\emph{Also accept: correlation does not show causation; a third factor (the
+2008 crisis and the Federal Reserve's rate cuts) drove both.}
+
+\bigskip \hrule \bigskip
+
+%--- Problem 3: Monthly changes: change in percentage points and percentage change; r of changes in each period; interpretation as a partial hedge for the investor ---
+\item[3.]
+
+\textbf{(a)}
+
+\begin{center}
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+Month (2008) & Jul & Aug & Sep & Oct & Nov & Dec \\
+\hline
+change in yield (pp) & & $-0.12$ & $-0.20$ & $+0.12$ & $-0.28$ & $-1.11$ \\
+\hline
+change in EUR/USD (\%) & & $-5.10$ & $-4.10$ & $-7.50$ & $-3.93$ & $+6.02$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\emph{For example, September: $\dfrac{1.4342 - 1.4955}{1.4955} \times 100
+= -4.0990\ldots$. Common errors: percentage change of the yield
+($-0.20/3.89 = -5.14\%$) instead of the change in percentage points;
+dividing by this month's value instead of last month's.}
+
+\textbf{(b)} 2003--2007: $r = -0.25$; 2008--2011: $r = -0.15$; 2003--2011:
+$r = -0.18$. All three are weak or very weak and \emph{negative}. Unlike the
+levels in 2(a), the changes give the same sign for each period and for the
+whole period: there is no Simpson's paradox.
+
+\textbf{(c)} $r < 0$: in a month when the US yield rises, EUR/USD tends to
+fall, so the dollar tends to get \emph{stronger}. A stronger dollar raises
+the euro value of the investor's dollars. This currency gain partly offsets
+the loss on the bonds, so the two risks partly cancel, and the investor's
+total risk is smaller than it would be if the two moved independently.
+
+\emph{The offset is small: $r = -0.18$ is very weak. Class examples from
+the table: October 2008 (yield $+0.12$, dollar $7.5\%$ stronger) and
+December 2008 (yield $-1.11$, bond gain; dollar $6\%$ weaker, currency
+loss).}
+
+\bigskip \hrule \bigskip
+
+%--- Problem 4: Six-point Simpson's paradox on the GDC; why changes resist the paradox; why correlating price levels misleads in a research paper ---
+\item[4.]
+
+\textbf{(a)} Period 1: $r = -1$. \quad Period 2: $r = -1$. \quad All six
+points: $r = 0.807$ \quad $(0.80722\ldots)$
+
+\emph{By hand: $\bar{x} = 4.5$, $\bar{y} = 6.5$, $S_{xy} = 33.5$,
+$S_{xx} = S_{yy} = 41.5$, so $r = 33.5/41.5$.}
+
+\textbf{(b)} Each period lies on a straight line with gradient $-1$, but
+period 2 lies up and to the right of period 1: the means are $(2, 4)$ and
+$(7, 9)$. Taken together, the points rise from the first group to the
+second, so $r$ for all six points is positive.
+
+\textbf{(c)} Simpson's paradox appears when the groups have different
+means, so the clouds sit in different places. Monthly changes average close
+to zero in every period, so the clouds of changes sit on top of each other.
+There is no shift between the periods to create a trend of its own, and
+the whole-period $r$ reflects the month-to-month relationship found inside
+each period.
+
+\textbf{(d)} Model answer: ``Correlate the monthly changes (returns) of the
+two prices, not the prices themselves: prices trend, so the correlation of
+levels mostly measures shared trends and changes sign with the dates you
+choose. Report $r$ for the returns over the whole period and in each half,
+to check that the relationship is stable.''
+
+\emph{Teaching note: for gold and oil, 2015--2025, the monthly returns give
+$r \approx -0.04$ for the whole period and for each half.}
+
+\end{enumerate}
+\end{document}

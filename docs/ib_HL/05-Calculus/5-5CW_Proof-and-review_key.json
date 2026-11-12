@@ -1,0 +1,347 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "1.15"
+    ],
+    "total_marks": 13,
+    "answer_box_top_frac": 0.405,
+    "source": "Original (2026-11-10, AA HL 1.15, no calculator). Follow-up to AA HL 2022 May P1 TZ2 Q9; (c) parallels AA HL 2023 May P2 TZ1 Q9.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "R1"
+        ],
+        "description": "Show that n^3 - n is even for every integer n.",
+        "expected": {
+          "answer": "n^3 - n = (n - 1)n(n + 1); n - 1 and n are consecutive, one is even, so the product is even"
+        },
+        "tolerance": "Show that (answer given). Accept any valid argument: factorization with consecutive integers, or the two cases n = 2m and n = 2m + 1.",
+        "notes": "A1 for the factorization (or for setting up both parity cases). R1 for the reason the product is even. Checking particular values of n is not a proof: A0R0."
+      },
+      {
+        "label": "b",
+        "marks": 5,
+        "mark_codes": [
+          "M1",
+          "M1",
+          "A1",
+          "R1",
+          "R1"
+        ],
+        "description": "Prove by contradiction that x^3 + x + 1 = 0 has no integer roots.",
+        "expected": {
+          "answer": "Assume an integer alpha with alpha^3 + alpha + 1 = 0; then alpha^3 + alpha = -1; alpha^3 + alpha = (alpha^3 - alpha) + 2alpha is even; -1 is odd: contradiction"
+        },
+        "tolerance": "Show that (answer given). Accept alpha(alpha^2 + 1) with a parity case argument. Accept the increasing-function method: f'(x) = 3x^2 + 1 > 0, f(-1) = -1, f(0) = 1, so the only real root is between -1 and 0.",
+        "notes": "M1 for a precise assumption that an integer root exists (M0 for 'consider the equation has integer roots' or 'let alpha in Z be a root'); later marks do not depend on it; condone x for alpha. M1 for rearranging to alpha^3 + alpha = -1 (or an equivalent useful form). A1 for writing alpha^3 + alpha as (alpha^3 - alpha) + 2alpha or alpha(alpha^2 + 1). R1 for a valid reason that alpha^3 + alpha is even. R1 for the contradiction with -1 odd. Increasing-function method: M1 (assumption) M1A1 (f' > 0, so increasing) R1 (f(-1) and f(0) of opposite sign) R1 (contradiction)."
+      },
+      {
+        "label": "c",
+        "marks": 6,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "R1",
+          "M1",
+          "A1",
+          "R1"
+        ],
+        "description": "Prove by contradiction that p^2 - 8q - 3 != 0 for all integers p, q.",
+        "expected": {
+          "answer": "Assume p^2 = 8q + 3 (odd), so p odd; p = 2k + 1 gives 2(k^2 + k - 2q) = 1, even = odd: contradiction"
+        },
+        "tolerance": "Show that (answer given). Accept 4k(k + 1) = 8q + 2 with k(k + 1) even (left side a multiple of 8, right side not). Accept k^2 + k - 2q = 1/2, not an integer.",
+        "notes": "M1 for assuming integers p, q exist with p^2 - 8q - 3 = 0. A1 for p^2 = 8q + 3 identified as odd. R1 for deducing p is odd (with a reason or by cases). M1 for substituting p = 2k + 1. A1 for 2(k^2 + k - 2q) = 1 or equivalent. R1 for the contradiction stated."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "5.18",
+      "5.16",
+      "5.19"
+    ],
+    "total_marks": 17,
+    "answer_box_top_frac": 0.351,
+    "source": "Original (2026-11-10, AA HL 5.16, 5.18, 5.19, no calculator). dy/dx = x^2 + 1 - y, y(0) = 1. Structure after AA HL 2025 May P2 TZ3 Q12; targets 5-4CW errors (constant times e^(-x), concavity reason).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 4,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "Find the integral of (x^2 + 1)e^x dx.",
+        "expected": {
+          "answer": "(x^2 - 2x + 3)e^x + C"
+        },
+        "tolerance": "Accept any unsimplified equivalent. Condone a missing + C in this part.",
+        "notes": "M1 for a first integration by parts with u = x^2 + 1. A1 for (x^2 + 1)e^x - integral 2xe^x dx. M1 for a second integration by parts on 2xe^x. A1 for the final antiderivative.",
+        "topic_codes": [
+          "5.16"
+        ]
+      },
+      {
+        "label": "b",
+        "marks": 5,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "By solving dy/dx = x^2 + 1 - y with y(0) = 1, show that y = x^2 - 2x + 3 - 2e^(-x).",
+        "expected": {
+          "answer": "Integrating factor e^x; ye^x = (x^2 - 2x + 3)e^x + C; C = -2; y = x^2 - 2x + 3 - 2e^(-x)"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for the integrating factor e^x (from dy/dx + y = x^2 + 1). A1 for d/dx(ye^x) = (x^2 + 1)e^x. A1 for ye^x = (x^2 - 2x + 3)e^x + C. M1 for using x = 0, y = 1 to find C. A1 for the given solution with the constant term Ce^(-x) correctly divided by e^x. Common error: y = x^2 - 2x + 3 + C (constant not divided by e^x) gives y = x^2 - 2x + 1; the AG is not reached, so A0 for the last two marks unless corrected.",
+        "follow_through": "Integral from (a).",
+        "topic_codes": [
+          "5.18"
+        ]
+      },
+      {
+        "label": "c",
+        "marks": 5,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "Without using the solution, use the DE to find the Maclaurin series for y up to the x^3 term.",
+        "expected": {
+          "answer": "y = 1 + x^3/3"
+        },
+        "tolerance": "Accept 1 + 0x + 0x^2 + (1/3)x^3.",
+        "notes": "A1 for y'(0) = 0. M1 for differentiating the DE: y'' = 2x - y'. A1 for y''(0) = 0. A1 for y''' = 2 - y'' and y'''(0) = 2. A1 for 1 + x^3/3. Expanding the solution from (b) is not what the question asks: M0, but award the final A1 for 1 + x^3/3.",
+        "topic_codes": [
+          "5.19"
+        ]
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "R1"
+        ],
+        "description": "Show that y = x^2 - 2x + 3 - 2e^(-x) has a point of inflection at (0, 1).",
+        "expected": {
+          "answer": "y'' = 2 - 2e^(-x); y''(0) = 0; y'' < 0 for x < 0 and y'' > 0 for x > 0 (sign change); y(0) = 1"
+        },
+        "tolerance": "Show that (answer given). Accept the series argument: y is approximately 1 + x^3/3 near 0, so y'' is approximately 2x, which changes sign.",
+        "notes": "M1 for finding y'' (from the solution or from y'' = 2x - y'). A1 for y''(0) = 0. R1 for the change of sign of y'' at x = 0; y''(0) = 0 alone earns R0.",
+        "topic_codes": [
+          "5.7"
+        ]
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "1.15",
+      "5.19"
+    ],
+    "total_marks": 15,
+    "answer_box_top_frac": 0.476,
+    "source": "Original (2026-11-10, AA HL 1.15, 5.19, no calculator). f(x) = ln(1 + x); pattern of AA HL 2021 Nov P1 Q11 and AA HL 2024 May P1 TZ2 Q12.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 7,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "M1",
+          "A1",
+          "A1",
+          "R1",
+          "R1"
+        ],
+        "description": "Prove by induction that the nth derivative of ln(1 + x) is (-1)^(n-1)(n-1)!/(1 + x)^n for all positive integers n.",
+        "expected": {
+          "answer": "Base case n = 1: 1/(1 + x); assume for n = k; differentiate to get (-1)^k k!/(1 + x)^(k+1); conclusion"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "A1 for verifying n = 1 (both sides 1/(1 + x)). M1 for assuming the statement true for n = k (not 'let n = k'). M1 for differentiating the n = k expression. A1 for (-1)^(k-1)(k-1)!(-k)(1 + x)^(-k-1). A1 for (-1)^k k!/(1 + x)^(k+1). R1 for recognising this as the n = k + 1 statement. R1 for the conclusion referring to the base case and the inductive step (only if both were attempted).",
+        "topic_codes": [
+          "1.15"
+        ]
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Hence show that the Maclaurin series of ln(1 + x) is x - x^2/2 + x^3/3 - ... + (-1)^(n-1)x^n/n + ...",
+        "expected": {
+          "answer": "f(0) = 0; f^(n)(0) = (-1)^(n-1)(n-1)!; coefficient (-1)^(n-1)(n-1)!/n! = (-1)^(n-1)/n"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for f^(n)(0) = (-1)^(n-1)(n-1)! (with f(0) = 0). A1 for dividing by n!. A1 for simplifying to (-1)^(n-1)/n and the given series.",
+        "topic_codes": [
+          "5.19"
+        ]
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the Maclaurin series of ln((1 + x)/(1 - x)) up to the x^5 term.",
+        "expected": {
+          "answer": "2x + 2x^3/3 + 2x^5/5"
+        },
+        "tolerance": "Accept equivalent forms.",
+        "notes": "M1 for ln(1 + x) - ln(1 - x). A1 for the series of ln(1 - x) = -x - x^2/2 - x^3/3 - x^4/4 - x^5/5. A1 for 2x + 2x^3/3 + 2x^5/5. Writing the logarithm of the quotient as a quotient of logarithms, or splitting ln(1 + x) as ln 1 + ln x, earns M0.",
+        "topic_codes": [
+          "5.19"
+        ]
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Hence find the limit as x -> 0 of (ln((1 + x)/(1 - x)) - 2x)/x^3.",
+        "expected": {
+          "answer": "2/3"
+        },
+        "tolerance": "Accept l'Hopital's rule applied correctly.",
+        "notes": "M1 for substituting the series and dividing by x^3. A1 for 2/3.",
+        "follow_through": "Series from (c).",
+        "topic_codes": [
+          "5.19"
+        ]
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "1.12",
+      "1.13",
+      "1.14"
+    ],
+    "total_marks": 14,
+    "answer_box_top_frac": 0.32,
+    "source": "Original (2026-11-10, AA HL 1.12-1.14, no calculator). (a) after AA HL 2024 Nov P2 Q8.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "For w = a + bi, prove w + w* = 2Re(w) and ww* = |w|^2.",
+        "expected": {
+          "answer": "w + w* = 2a; ww* = a^2 - b^2 i^2 = a^2 + b^2 = |w|^2"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "A1 for w + w* = 2a = 2Re(w). M1 for expanding (a + bi)(a - bi). A1 for a^2 + b^2 = |w|^2.",
+        "topic_codes": [
+          "1.12"
+        ]
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "For w = re^(i theta), use de Moivre to show (w*)^n = (w^n)*.",
+        "expected": {
+          "answer": "w* = re^(-i theta); (w*)^n = r^n e^(-in theta); (w^n)* = (r^n e^(in theta))* = r^n e^(-in theta)"
+        },
+        "tolerance": "Show that (answer given). Accept cis form.",
+        "notes": "A1 for w* = re^(-i theta). M1 for applying de Moivre to w*. A1 for showing (w^n)* equals the same expression.",
+        "topic_codes": [
+          "1.13",
+          "1.14"
+        ]
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "R1",
+          "R1"
+        ],
+        "description": "Hence prove that (1 + i)^n + (1 - i)^n is real for all positive integers n.",
+        "expected": {
+          "answer": "1 - i = (1 + i)*, so (1 - i)^n = ((1 + i)^n)*; the sum is z + z* = 2Re(z), real"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "R1 for using (b) with 1 - i the conjugate of 1 + i. R1 for using (a): z + z* is real.",
+        "follow_through": "Results of (a) and (b).",
+        "topic_codes": [
+          "1.12"
+        ]
+      },
+      {
+        "label": "d",
+        "marks": 4,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "M1",
+          "A1"
+        ],
+        "description": "Show that (1 + i)^n + (1 - i)^n = 2^(n/2 + 1) cos(n pi/4).",
+        "expected": {
+          "answer": "1 + i = sqrt2 e^(i pi/4); (1 + i)^n = 2^(n/2)e^(i n pi/4); sum = 2 Re(...) = 2^(n/2 + 1) cos(n pi/4)"
+        },
+        "tolerance": "Show that (answer given). Accept adding the two exponential forms with the sine terms cancelling.",
+        "notes": "A1 for 1 + i = sqrt2 e^(i pi/4) (or cis form). M1 for applying de Moivre: 2^(n/2)e^(i n pi/4). M1 for doubling the real part, or for adding the conjugate forms. A1 for the given result.",
+        "topic_codes": [
+          "1.13",
+          "1.14"
+        ]
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Hence find (1 + i)^12 + (1 - i)^12.",
+        "expected": {
+          "answer": "-128"
+        },
+        "tolerance": "Accept (2i)^6 + (-2i)^6 = -64 - 64.",
+        "notes": "M1 for substituting n = 12: 2^7 cos 3pi. A1 for -128.",
+        "follow_through": "Result of (d).",
+        "topic_codes": [
+          "1.14"
+        ]
+      }
+    ]
+  }
+]

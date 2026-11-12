@@ -1,0 +1,245 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 HL \\* 10 November 2026}
+
+\begin{document}
+\subsubsection*{5.5 Classwork: Proof, Differential Equations and Series --- Markscheme}
+
+Total 59 marks.
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1 [13 marks] ---
+\item[1.] [Maximum mark: 13]
+
+\textbf{(a)} $n^{3} - n = (n - 1)n(n + 1)$ \hfill \textbf{A1}
+
+$n - 1$ and $n$ are consecutive integers, so one of them is even, and
+the product is even \hfill \textbf{R1}
+
+\emph{Accept a case argument: $n = 2m$ gives $2m(4m^{2} - 1)$;
+$n = 2m + 1$ gives $(2m + 1)(2m)(2m + 2)$. Checking a few values of $n$
+is not a proof: A0R0.}
+
+\textbf{(b)} Assume there exists $\alpha \in \mathbb{Z}$ such that
+$\alpha^{3} + \alpha + 1 = 0$ \hfill \textbf{M1}
+
+\emph{M0 for vague openings such as ``consider the equation has integer
+roots'' or ``let $\alpha \in \mathbb{Z}$ be a root''; the assumption must
+state that an integer root exists. Condone $x$ in place of $\alpha$.
+Later marks do not depend on this M1 (as in the IB markscheme for 2022
+May P1 TZ2 Q9).}
+
+$\alpha^{3} + \alpha = -1$ \hfill \textbf{M1}
+
+$\alpha^{3} + \alpha = \left(\alpha^{3} - \alpha\right) + 2\alpha$
+\hfill \textbf{A1}
+
+$\alpha^{3} - \alpha$ is even by part (a) and $2\alpha$ is even, so
+$\alpha^{3} + \alpha$ is even \hfill \textbf{R1}
+
+but $-1$ is odd, a contradiction, so the equation has no integer roots
+\hfill \textbf{R1}\,\textbf{AG}
+
+\emph{Accept $\alpha^{3} + \alpha = \alpha\left(\alpha^{2} + 1\right)$ with
+the case argument ($\alpha$ even, or $\alpha$ odd so $\alpha^{2} + 1$
+even) for A1R1. Accept the method of the increasing function:
+$f'(x) = 3x^{2} + 1 > 0$, so $f$ is increasing; $f(-1) = -1$ and
+$f(0) = 1$, so the only real root lies between $-1$ and $0$, which
+contradicts the assumption: M1 (assumption) M1A1 (derivative and
+increasing) R1 (the two values) R1 (contradiction).}
+
+\textbf{(c)} Assume there exist $p, q \in \mathbb{Z}$ such that
+$p^{2} - 8q - 3 = 0$ \hfill \textbf{M1}
+
+$p^{2} = 8q + 3 = 2(4q + 1) + 1$, which is odd \hfill \textbf{A1}
+
+so $p$ is odd (if $p$ were even, $p^{2}$ would be even) \hfill \textbf{R1}
+
+let $p = 2k + 1$, $k \in \mathbb{Z}$: \
+$4k^{2} + 4k + 1 = 8q + 3$ \hfill \textbf{M1}
+
+$4k^{2} + 4k - 8q = 2$
+
+$2\left(k^{2} + k - 2q\right) = 1$ \hfill \textbf{A1}
+
+the left side is even and $1$ is odd, a contradiction, so
+$p^{2} - 8q - 3 \neq 0$ \hfill \textbf{R1}\,\textbf{AG}
+
+\emph{Accept $4k(k + 1) = 8q + 2$: by part (a) reasoning $k(k + 1)$ is
+even, so the left side is a multiple of $8$, but $8q + 2$ is not. Accept
+$k^{2} + k - 2q = \frac{1}{2}$, not an integer.}
+
+\newpage
+
+%--- Problem 2 [17 marks] ---
+\item[2.] [Maximum mark: 17]
+
+\textbf{(a)} $\displaystyle\int \left(x^{2} + 1\right)e^{x}\,\mathrm{d}x
+= \left(x^{2} + 1\right)e^{x} - \int 2xe^{x}\,\mathrm{d}x$ \hfill \textbf{M1A1}
+
+$\displaystyle\int 2xe^{x}\,\mathrm{d}x = 2xe^{x} - \int 2e^{x}\,\mathrm{d}x
+= 2xe^{x} - 2e^{x}$ \hfill \textbf{M1}
+
+$\left(x^{2} - 2x + 3\right)e^{x} + C$ \hfill \textbf{A1}
+
+\emph{Accept an unsimplified equivalent. Condone a missing $+C$ here; it
+is needed in (b).}
+
+\textbf{(b)} $\dfrac{\mathrm{d}y}{\mathrm{d}x} + y = x^{2} + 1$;
+integrating factor $e^{\int 1\,\mathrm{d}x} = e^{x}$ \hfill \textbf{M1}
+
+$\dfrac{\mathrm{d}}{\mathrm{d}x}\left(ye^{x}\right) = \left(x^{2} + 1\right)e^{x}$
+\hfill \textbf{A1}
+
+$ye^{x} = \left(x^{2} - 2x + 3\right)e^{x} + C$ \hfill \textbf{A1}
+
+$x = 0,\ y = 1$: $1 = 3 + C$, so $C = -2$ \hfill \textbf{M1}
+
+$y = x^{2} - 2x + 3 - 2e^{-x}$ \hfill \textbf{A1}\,\textbf{AG}
+
+\emph{The final A1 needs the division by $e^{x}$ applied to the constant:
+$Ce^{-x}$. Common error: $y = x^{2} - 2x + 3 + C$ (constant not divided
+by $e^{x}$) leads to $y = x^{2} - 2x + 1$, so the AG is not reached:
+A0 for the last two marks unless the error is corrected. FT the
+integral from (a).}
+
+\textbf{(c)} $y'(0) = 0 + 1 - 1 = 0$ \hfill \textbf{A1}
+
+$y'' = 2x - y'$ \hfill \textbf{M1}
+
+$y''(0) = 0$ \hfill \textbf{A1}
+
+$y''' = 2 - y''$, so $y'''(0) = 2$ \hfill \textbf{A1}
+
+$y = 1 + \dfrac{2}{3!}x^{3} = 1 + \dfrac{x^{3}}{3}$ \hfill \textbf{A1}
+
+\emph{Accept $1 + 0x + 0x^{2} + \frac{1}{3}x^{3}$. Expanding the solution
+from (b) instead is not what the question asks: M0, but award the final
+A1 for $1 + \frac{x^{3}}{3}$.}
+
+\textbf{(d)} $y' = 2x - 2 + 2e^{-x}$, \ $y'' = 2 - 2e^{-x}$ \hfill \textbf{M1}
+
+$y''(0) = 2 - 2 = 0$ \hfill \textbf{A1}
+
+$y'' < 0$ for $x < 0$ (since $e^{-x} > 1$) and $y'' > 0$ for $x > 0$, so
+the concavity changes at $x = 0$; and $y(0) = 3 - 2 = 1$ \hfill \textbf{R1}
+
+\emph{R1 needs the sign change of $y''$, not only $y''(0) = 0$. Accept
+the series from (c): near $0$, $y \approx 1 + \frac{x^{3}}{3}$, so
+$y'' \approx 2x$, which changes sign at $0$.}
+
+\newpage
+
+%--- Problem 3 [15 marks] ---
+\item[3.] [Maximum mark: 15]
+
+\textbf{(a)} $n = 1$: $f'(x) = \dfrac{1}{1 + x}$ and
+$\dfrac{(-1)^{0}\,0!}{(1 + x)^{1}} = \dfrac{1}{1 + x}$, so true for
+$n = 1$ \hfill \textbf{A1}
+
+assume true for $n = k$:
+$f^{(k)}(x) = \dfrac{(-1)^{k - 1}(k - 1)!}{(1 + x)^{k}}$ \hfill \textbf{M1}
+
+\emph{Do not accept ``let $n = k$'' or ``assume $n = k$''; the
+statement must be assumed true.}
+
+$f^{(k + 1)}(x) = \dfrac{\mathrm{d}}{\mathrm{d}x}
+\left[(-1)^{k - 1}(k - 1)!\,(1 + x)^{-k}\right]$ \hfill \textbf{M1}
+
+$= (-1)^{k - 1}(k - 1)!\,(-k)(1 + x)^{-k - 1}$ \hfill \textbf{A1}
+
+$= \dfrac{(-1)^{k}\,k!}{(1 + x)^{k + 1}}$ \hfill \textbf{A1}
+
+this is the statement for $n = k + 1$ \hfill \textbf{R1}
+
+since true for $n = 1$, and true for $n = k$ implies true for
+$n = k + 1$, the statement is true for all $n \in \mathbb{Z}^{+}$
+\hfill \textbf{R1}
+
+\emph{The final R1 needs both the base case and the inductive step to
+have been attempted.}
+
+\textbf{(b)} $f(0) = 0$ and $f^{(n)}(0) = (-1)^{n - 1}(n - 1)!$
+\hfill \textbf{M1}
+
+coefficient of $x^{n}$: $\dfrac{(-1)^{n - 1}(n - 1)!}{n!}$ \hfill \textbf{A1}
+
+$= \dfrac{(-1)^{n - 1}}{n}$, so
+$f(x) = x - \frac{x^{2}}{2} + \frac{x^{3}}{3} - \cdots
++ \frac{(-1)^{n - 1}x^{n}}{n} + \cdots$ \hfill \textbf{A1}\,\textbf{AG}
+
+\textbf{(c)} $\ln\left(\dfrac{1 + x}{1 - x}\right) = \ln(1 + x) - \ln(1 - x)$
+\hfill \textbf{M1}
+
+$\ln(1 - x) = -x - \frac{x^{2}}{2} - \frac{x^{3}}{3} - \frac{x^{4}}{4}
+- \frac{x^{5}}{5} - \cdots$ \hfill \textbf{A1}
+
+$2x + \dfrac{2x^{3}}{3} + \dfrac{2x^{5}}{5}$ \hfill \textbf{A1}
+
+\emph{Common error: $\ln\left(\frac{1 + x}{1 - x}\right)$ written as
+$\frac{\ln(1 + x)}{\ln(1 - x)}$, or $\ln(1 + x)$ split as
+$\ln 1 + \ln x$: M0.}
+
+\textbf{(d)} $\dfrac{\frac{2x^{3}}{3} + \frac{2x^{5}}{5} + \cdots}{x^{3}}
+= \dfrac{2}{3} + \dfrac{2x^{2}}{5} + \cdots$ \hfill \textbf{M1}
+
+limit $= \dfrac{2}{3}$ \hfill \textbf{A1}
+
+\emph{FT from (c). Accept l'H\^opital's rule applied correctly.}
+
+\newpage
+
+%--- Problem 4 [14 marks] ---
+\item[4.] [Maximum mark: 14]
+
+\textbf{(a)} $w + w^{*} = (a + bi) + (a - bi) = 2a = 2\,\mathrm{Re}(w)$
+\hfill \textbf{A1}
+
+$ww^{*} = (a + bi)(a - bi) = a^{2} - b^{2}i^{2}$ \hfill \textbf{M1}
+
+$= a^{2} + b^{2} = |w|^{2}$ \hfill \textbf{A1}\,\textbf{AG}
+
+\textbf{(b)} $w^{*} = re^{-i\theta}$ \hfill \textbf{A1}
+
+$\left(w^{*}\right)^{n} = r^{n}e^{-in\theta}$ \hfill \textbf{M1}
+
+$w^{n} = r^{n}e^{in\theta}$, so
+$\left(w^{n}\right)^{*} = r^{n}e^{-in\theta} = \left(w^{*}\right)^{n}$
+\hfill \textbf{A1}\,\textbf{AG}
+
+\emph{Accept the same argument in cis form:
+$\left(r\,\mathrm{cis}(-\theta)\right)^{n} = r^{n}\,\mathrm{cis}(-n\theta)$.}
+
+\textbf{(c)} $1 - i = (1 + i)^{*}$, so $(1 - i)^{n} = \left((1 + i)^{n}\right)^{*}$
+by (b) \hfill \textbf{R1}
+
+$(1 + i)^{n} + (1 - i)^{n} = z + z^{*} = 2\,\mathrm{Re}(z)$, where
+$z = (1 + i)^{n}$, which is real by (a) \hfill \textbf{R1}\,\textbf{AG}
+
+\textbf{(d)} $1 + i = \sqrt{2}\,e^{i\frac{\pi}{4}}$ \hfill \textbf{A1}
+
+$(1 + i)^{n} = 2^{\frac{n}{2}}e^{i\frac{n\pi}{4}}$ \hfill \textbf{M1}
+
+$(1 + i)^{n} + (1 - i)^{n} = 2\,\mathrm{Re}\left(2^{\frac{n}{2}}e^{i\frac{n\pi}{4}}\right)$
+\hfill \textbf{M1}
+
+$= 2 \times 2^{\frac{n}{2}}\cos\dfrac{n\pi}{4} = 2^{\frac{n}{2} + 1}\cos\dfrac{n\pi}{4}$
+\hfill \textbf{A1}\,\textbf{AG}
+
+\emph{Accept adding $2^{\frac{n}{2}}e^{i\frac{n\pi}{4}}$ and
+$2^{\frac{n}{2}}e^{-i\frac{n\pi}{4}}$ directly, the sine terms cancelling,
+for the second M1.}
+
+\textbf{(e)} $2^{7}\cos 3\pi$ \hfill \textbf{M1}
+
+$-128$ \hfill \textbf{A1}
+
+\emph{Accept $(1 + i)^{2} = 2i$, so $(1 + i)^{12} = (2i)^{6} = -64$, and the
+same for $(1 - i)^{12}$, giving $-128$.}
+
+\end{enumerate}
+\end{document}
