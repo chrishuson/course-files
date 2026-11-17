@@ -1,0 +1,92 @@
+% context: 9th-grade physics homework, harder companion to 2-8PreTest_Kinematics for
+%        early finishers; given 13 November 2026, before the unit test on 19 November
+% topic: stopping distance (reaction plus braking, from km/h); a train catching a
+%        cyclist (two position equations set equal); a stone thrown up from a roof
+%        that lands below; the depth of a well from a dropped stone, then corrected
+%        for the time sound takes to come back up
+% structure: two pages, two problems per page, numbered 9-12 to follow the
+%        PreTest's eight, with plenty of room to work
+% design notes: no back-references to other sheets (values are restated); no
+%        coincidental values within a problem (checked); multi-part problems build
+%        step by step so each part is reachable
+% data: braking a = -6.5 m/s^2 from the UK Highway Code 70 mi/h figure (2-9HW Q4);
+%        reaction time 0.70 s is a chosen value; speed of
+%        sound 343 m/s at 20 C (contexts.md #9); the train, roof and well are chosen
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+
+\title{Physics}
+\author{Chris Huson}
+\date{November 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage \\ Nickname: \hspace{2.25cm} \,\\ \,}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 13 November 2026}
+
+\begin{document}
+
+\subsubsection*{2.8 PreTest: Early Finishers (homework)}
+
+\textbf{Reference (provided).} \quad $v = v_0 + at$ \quad
+$x = x_0 + v_0 t + \frac{1}{2}at^2$ \quad $v^2 = v_0^2 + 2a(x - x_0)$
+
+$\bar{v} = \frac{1}{2}(v + v_0)$ \quad $g = 9.80$ m/s$^2$ downward \quad 1 m/s = 3.6 km/h \quad Show your work, with units.
+
+\vspace{0.2cm}
+
+\begin{enumerate}[itemsep=0.4cm, start=9]
+
+\item \textbf{Stopping distance.} A car is driving at 90 km/h when the driver sees
+  a hazard ahead. It takes the driver 0.70 s to react and press the brake. During
+  that time the car keeps its speed. Then the car brakes at $a = -6.5$ m/s$^2$.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item How far does the car travel while the driver reacts?
+      \vspace{2.0cm}
+    \item Find the braking distance, and the total stopping distance.
+      \vspace{3.4cm}
+  \end{enumerate}
+
+\item \textbf{Catching up.} A train pulls away from rest with $a = 0.40$ m/s$^2$.
+  At the same moment a cyclist passes the front of the train, riding beside the
+  track at a steady 6.0 m/s. Take the train's starting point as $x = 0$.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item Write an equation for the position of each, the cyclist and the train,
+      at time $t$.
+      \vspace{1.3cm}
+    \item When and where does the train catch up with the cyclist? \emph{Hint:
+      their positions are equal.}
+      \vspace{2.5cm}
+    \item How fast is the train going at that moment? Compare it with the
+      cyclist's speed, and explain why.
+  \end{enumerate}
+
+\newpage
+
+\item \textbf{Off the roof.} A stone is thrown straight up at 12.0 m/s from the edge
+  of a roof 30.0 m above the street. It misses the roof on the way down and lands
+  in the street. Take \emph{up} as positive, with the roof edge at $y = 0$.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item How high above the roof does the stone rise?
+      \vspace{2.8cm}
+    \item What is its velocity just before it hits the street? \emph{Hint: what is
+      $y - y_0$?}
+      \vspace{3.0cm}
+    \item How long is the stone in the air?
+      \vspace{2.4cm}
+  \end{enumerate}
+
+\item \textbf{How deep is the well?} You drop a stone down a well and hear the
+  splash 2.40 s later.
+  \begin{enumerate}[itemsep=0.4cm]
+    \item Assume the sound reaches you instantly. How deep is the well?
+      \vspace{2.4cm}
+    \item As you recall, sound travels at 343 m/s in air at 20 \si{\celsius}. How
+      long does the sound of the splash take to travel back up that depth?
+      \vspace{1.8cm}
+    \item So the stone fell for less than 2.40 s. Use the shorter time to estimate
+      the depth again. Was it reasonable to ignore the time for the sound?
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,148 @@
+% context: markscheme (official solutions) for 2-8PreTest_Kinematics
+% topic: Unit 1 review (sig figs, rounding, scientific notation), mental math, a
+%        one-chain conversion, a two-step rate problem, displacement and average
+%        velocity, braking, a ball thrown up, a velocity-time graph
+% convention: answers in bold; "=" joins exact equalities, "\approx" introduces a
+%        rounded value; each problem names the skill it scores on the 10-point scale
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+\setlength{\parskip}{0.2\baselineskip}
+\sisetup{reset-text-series=false, reset-math-version=false, text-series-to-math=true}
+
+\title{Physics}
+\author{Chris Huson}
+\date{November 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 12 November 2026}
+
+\begin{document}
+
+\subsubsection*{2.8 PreTest: Kinematics Solutions}
+
+\begin{enumerate}[itemsep=0.5cm]
+
+\item \emph{Skills: significant figures, rounding, scientific notation, calculator
+  use.}
+  \begin{enumerate}[itemsep=0.3cm]
+    \item \textbf{3} significant figures (4, 7 and the final 0). The leading zeros
+      only place the decimal point.
+    \item \textbf{9.81 m/s$^\mathbf{2}$}. The fourth figure is 6, so round up.
+    \item \num{384400} km $= \num{384400000}$ m $= \mathbf{3.844 \times 10^{8}}$
+      \textbf{m}
+
+      \emph{Also accept $3.84 \times 10^{8}$ m. A common slip is to write the km value,
+      $3.844 \times 10^{5}$, which is correct in km but not in meters as asked.}
+    \item $t = \dfrac{d}{v} = \dfrac{3.844 \times 10^{8}~\text{m}}{3.00 \times 10^{8}~\text{m/s}}
+      = 1.2813\ldots \approx \mathbf{1.28~\textbf{s}}$
+
+      \emph{Three figures, because 3.00 has three. Check the calculator entry: the
+      $\times 10^{8}$ cancels, so an answer near 1 s is the sanity check. Using
+      $3.844 \times 10^{5}$ km here gives $1.28 \times 10^{-3}$, which is wrong
+      by a factor of 1000.}
+  \end{enumerate}
+
+\item \emph{Skill: mental math.} One mark per blank; the unit is part of the answer
+  in (f).
+  \begin{enumerate}[itemsep=0.1cm]
+      \item \textbf{400} mm \quad ($\times 1000$: mm are smaller, so more of them)
+      \item \textbf{0.09} \quad (not 0.9: $0.3 \times 0.3 = 0.09$)
+      \item \textbf{15} m/s \quad ($54 \div 3.6$, or $54 \div 18 \times 5$)
+      \item \textbf{1.5} min \quad (not 1.3: 30 s is half a minute)
+      \item $\mathbf{\frac{1}{3}}$ h \quad ($\frac{20}{60}$)
+      \item \textbf{30 km} \quad (30 min $= \frac{1}{2}$ h, so $60 \times \frac{1}{2}$)
+  \end{enumerate}
+
+\item \emph{Skill: unit conversion.} One chain each, evaluated once.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item $1010\,\dfrac{\text{m}}{\text{min}} \times \dfrac{1~\text{min}}{60~\text{s}}
+      = 16.833\ldots \approx \mathbf{16.8~\textbf{m/s}}$
+    \item $1010\,\dfrac{\text{m}}{\text{min}} \times \dfrac{60~\text{min}}{1~\text{h}}
+      \times \dfrac{1~\text{km}}{1000~\text{m}} = \mathbf{60.6~\textbf{km/h}}$
+
+      \emph{This is exact. Check: $16.833\ldots \times 3.6 = 60.6$. The usual error
+      is a factor upside down, e.g.\ $\frac{1~\text{h}}{60~\text{min}}$, giving
+      0.0168; cancelling the units shows it.}
+  \end{enumerate}
+
+\item \emph{Skill: rate problem.} Knowns: $v = 1.4$ m/s, $d = 1609$ m.
+
+  Step 1, the rate relationship: \quad $t = \dfrac{d}{v} =
+  \dfrac{1609~\text{m}}{1.4~\text{m/s}} = 1149.28\ldots~\text{s}$
+
+  Step 2, convert, carrying the unrounded value: \quad
+  $1149.28\ldots~\text{s} \times \dfrac{1~\text{min}}{60~\text{s}} = 19.15\ldots
+  \approx \mathbf{19~\textbf{min}}$
+
+  \emph{Two figures, because 1.4 m/s has two. Accept 19.2 min. That is about a minute
+  per block.}
+
+\newpage
+
+\item \emph{Skill: distance and displacement, speed and velocity.} Arrows: $+12$ m
+  from 0 to 12, then $-20$ m from 12 to $-8$.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item $x = 12 - 20 = \mathbf{-8~\textbf{m}}$, that is, 8 m west of the entrance.
+    \item Distance $= 12 + 20 = \mathbf{32~\textbf{m}}$ \qquad Displacement
+      $= \mathbf{-8~\textbf{m}}$ (8 m west)
+    \item Total time $= 8.0 + 12.0 = 20.0$ s.
+
+      average speed $= \dfrac{32~\text{m}}{20.0~\text{s}} = \mathbf{1.6~\textbf{m/s}}$
+      \qquad
+      $\bar{v} = \dfrac{-8~\text{m}}{20.0~\text{s}} = \mathbf{-0.40~\textbf{m/s}}$,
+      that is, 0.40 m/s west
+
+      \emph{The average velocity is much smaller because most of the walk cancels
+      out. Credit $\bar{v}$ only with its sign or direction.}
+  \end{enumerate}
+
+\item \emph{Skill: constant-acceleration equations.} Knowns: $v_0 = 22.4$ m/s,
+  $v = 0$, $a = -6.4$ m/s$^2$.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Use $v = v_0 + at$, so $t = \dfrac{v - v_0}{a}$:
+      \quad $t = \dfrac{0 - 22.4~\text{m/s}}{-6.4~\text{m/s}^2} = \mathbf{3.5~\textbf{s}}$
+    \item Use $\bar{v} = \dfrac{v + v_0}{2} = \dfrac{0 + 22.4}{2} = 11.2$ m/s:
+      \quad $x - x_0 = \bar{v}\,t = 11.2~\text{m/s} \times 3.5~\text{s} = 39.2
+      \approx \mathbf{39~\textbf{m}}$
+
+      \textbf{Yes, it agrees}: 39 m against the Highway Code's 38 m, about 1 m or
+      3\% apart.
+
+      \emph{Also accept $v^2 = v_0^2 + 2a(x - x_0)$:
+      $x - x_0 = \frac{0 - 22.4^2}{2(-6.4)} = \frac{-501.76}{-12.8} = 39.2$ m. Two
+      figures, from $-6.4$. A negative distance or time means a sign slip.}
+  \end{enumerate}
+
+\item \emph{Skill: free fall.} Up positive: $v_0 = +19.6$ m/s, $a = -9.80$ m/s$^2$.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item \textbf{Velocity $\mathbf{v = 0}$}, for an instant. \textbf{Acceleration
+      $\mathbf{a = -9.80}$ m/s$^\mathbf{2}$}, the same as during the rest of the
+      flight.
+
+      \emph{The common wrong answer is $a = 0$ at the top.}
+    \item $t = \dfrac{v - v_0}{a} = \dfrac{0 - 19.6~\text{m/s}}{-9.80~\text{m/s}^2}
+      = \mathbf{2.00~\textbf{s}}$
+    \item $\bar{v} = \dfrac{0 + 19.6}{2} = 9.80$ m/s, so
+      $y - y_0 = \bar{v}\,t = 9.80~\text{m/s} \times 2.00~\text{s} =
+      \mathbf{19.6~\textbf{m}}$
+
+      \emph{Also accept $y - y_0 = \frac{0 - 19.6^2}{2(-9.80)} = 19.6$ m, or
+      $v_0 t + \frac{1}{2}at^2 = 39.2 - 19.6 = 19.6$ m.}
+  \end{enumerate}
+
+\item \emph{Skill: motion graphs.}
+  \begin{enumerate}[itemsep=0.3cm]
+    \item \textbf{6 m/s}, read from the line at $t = 2.0$ s.
+    \item slope $= \dfrac{12 - 0~\text{m/s}}{4.0 - 0~\text{s}} =
+      \mathbf{3.0~\textbf{m/s}^\mathbf{2}}$
+    \item \textbf{Zero}: the line is flat. \textbf{The car moves at a constant
+      12 m/s.}
+
+      \emph{The common error is ``the car has stopped''. A flat velocity graph means
+      steady speed; the car stops only where $v = 0$.}
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}

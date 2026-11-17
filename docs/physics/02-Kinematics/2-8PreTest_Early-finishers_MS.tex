@@ -1,0 +1,114 @@
+% context: markscheme (official solutions) for 2-8PreTest_Early-finishers
+% topic: stopping distance, a train catching a cyclist, a stone thrown up from a
+%        roof, the depth of a well corrected for the speed of sound
+% convention: answers in bold; "=" joins exact equalities, "\approx" introduces a
+%        rounded value; unrounded values are carried into later parts
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+\setlength{\parskip}{0.2\baselineskip}
+\sisetup{reset-text-series=false, reset-math-version=false, text-series-to-math=true}
+
+\title{Physics}
+\author{Chris Huson}
+\date{November 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 13 November 2026}
+
+\begin{document}
+
+\subsubsection*{2.8 PreTest: Early Finishers Solutions}
+
+\begin{enumerate}[itemsep=0.5cm, start=9]
+
+\item \textbf{Stopping distance.} First the speed in m/s:
+  $90\,\dfrac{\text{km}}{\text{h}} \times \dfrac{1~\text{m/s}}{3.6~\text{km/h}}
+  = 25$ m/s.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Constant speed while reacting: \quad $d = vt = 25~\text{m/s} \times
+      0.70~\text{s} = 17.5 \approx \mathbf{18~\textbf{m}}$
+    \item Braking, from $v_0 = 25$ m/s to $v = 0$ with $a = -6.5$ m/s$^2$; no time
+      is given, so use $v^2 = v_0^2 + 2a(x - x_0)$:
+
+      $x - x_0 = \dfrac{v^2 - v_0^2}{2a} = \dfrac{0 - 25^2}{2(-6.5)} =
+      \dfrac{-625}{-13} = 48.07\ldots \approx \mathbf{48~\textbf{m}}$
+
+      Total stopping distance $= 17.5 + 48.07\ldots = 65.57\ldots \approx
+      \mathbf{66~\textbf{m}}$
+
+      \emph{Two figures, from 0.70 and 6.5. More than a quarter of the stopping
+      distance is covered before the brakes are touched. Common errors: using
+      90 in place of 25, and leaving out the reaction distance.}
+  \end{enumerate}
+
+\item \textbf{Catching up.}
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Cyclist, constant velocity: $\mathbf{x_c = 6.0\,t}$. \quad Train, from rest
+      with $x_0 = 0$ and $v_0 = 0$: $\mathbf{x_t = \tfrac{1}{2}(0.40)t^2 = 0.20\,t^2}$
+    \item Set the positions equal: \quad $0.20\,t^2 = 6.0\,t$
+
+      Divide both sides by $t$ (the other solution, $t = 0$, is the start):
+      \quad $t = \dfrac{6.0}{0.20} = \mathbf{30~\textbf{s}}$
+
+      Position: $x = 6.0~\text{m/s} \times 30~\text{s} = \mathbf{180~\textbf{m}}$
+      from the start. \emph{Check with the train: $0.20 \times 30^2 = 180$ m.}
+    \item $v = v_0 + at = 0 + 0.40~\text{m/s}^2 \times 30~\text{s} =
+      \mathbf{12~\textbf{m/s}}$, \textbf{exactly twice the cyclist's speed.}
+
+      \textbf{Why:} both covered 180 m in 30 s, so both had the same average
+      velocity, 6.0 m/s. The train started from rest, so its average is
+      $\bar{v} = \frac{0 + v}{2}$. For that to be 6.0 m/s, $v$ must be 12 m/s.
+
+      \emph{This is a strong answer if the student uses the average velocity. Also
+      credit ``it started slower, so it must end faster to catch up'', with the
+      number.}
+  \end{enumerate}
+
+\newpage
+
+\item \textbf{Off the roof.} Up positive: $v_0 = +12.0$ m/s, $a = -9.80$ m/s$^2$,
+  roof edge at $y = 0$.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item At the top $v = 0$: \quad $y - y_0 = \dfrac{0 - 12.0^2}{2(-9.80)} =
+      \dfrac{-144}{-19.6} = 7.346\ldots \approx \mathbf{7.35~\textbf{m}}$ above the
+      roof.
+    \item The street is 30.0 m \emph{below} the start, so $y - y_0 = -30.0$ m:
+
+      $v^2 = 12.0^2 + 2(-9.80)(-30.0) = 144 + 588 = 732$, \quad
+      $v = -\sqrt{732} = -27.05\ldots \approx \mathbf{-27.1~\textbf{m/s}}$
+
+      \emph{Take the negative root, because the stone is moving down. The common
+      error is $y - y_0 = +30.0$, which gives $v^2 = 144 - 588 < 0$: a negative
+      $v^2$ is the sign that the displacement's sign is wrong.}
+    \item $t = \dfrac{v - v_0}{a} = \dfrac{-27.05\ldots - 12.0}{-9.80} =
+      3.985\ldots \approx \mathbf{3.99~\textbf{s}}$
+
+      \emph{Check, in two stages: up to the top, $\frac{12.0}{9.80} = 1.22$ s; then a
+      fall from rest through $7.35 + 30.0 = 37.35$ m,
+      $t = \sqrt{\frac{2 \times 37.35}{9.80}} = 2.76$ s. Total 3.99 s.}
+  \end{enumerate}
+
+\item \textbf{How deep is the well?} Down positive, dropped from rest.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item $y = \tfrac{1}{2}gt^2 = \tfrac{1}{2}(9.80)(2.40)^2 = 4.90 \times 5.76 =
+      28.224 \approx \mathbf{28.2~\textbf{m}}$
+
+      \emph{Watch for $2.40^2$ entered as $2.4 \times 2$.}
+    \item $t = \dfrac{d}{v} = \dfrac{28.224~\text{m}}{343~\text{m/s}} = 0.0822\ldots
+      \approx \mathbf{0.082~\textbf{s}}$
+    \item Fall time $= 2.40 - 0.0822\ldots = 2.3177\ldots$ s, so
+
+      $y = 4.90 \times 2.3177\ldots^2 = 26.32\ldots \approx
+      \mathbf{26.3~\textbf{m}}$
+
+      \textbf{About 2 m (7\%) shallower.} \emph{Credit either judgment with a
+      reason. For a rough estimate, ignoring the sound is fine. The 0.08 s
+      correction is smaller than a person's reaction time with a stopwatch (about
+      0.2 s), so hand timing is the bigger source of error. Repeating the
+      correction once more gives 26.4 m.}
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}

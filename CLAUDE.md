@@ -40,7 +40,7 @@ The full specs live in the IB Math project repo
 - `workflows/authoring/key-json-spec.md` — `_key.json` schema
 
 Quick facts: `\documentclass[12pt, twoside]{article}`; file naming
-`<unit>-<section><Type>_<Topic>.tex` (types DN/CW/HW/PreQuiz/Q/Test);
+`<unit>-<section><Type>_<Topic>.tex` (types DN/CW/HW/PreQuiz/Q/PreTest/Test; a PreTest is the practice twin of a Test, as a PreQuiz is of a Q);
 every problem set gets a `_MS.tex`; quizzes/tests also get `_key.json`;
 figures black-and-white; pgfplots for axis graphs, TikZ otherwise;
 "(no calculator)" in the title when GDC is disallowed.

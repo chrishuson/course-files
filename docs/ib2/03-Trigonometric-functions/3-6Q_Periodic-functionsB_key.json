@@ -1,0 +1,327 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "3.4",
+      "3.5",
+      "3.6"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.661,
+    "source": "Original (authored 2026-11-17, no calculator). Unit circle: P at 4pi/3, Q at 135 deg; sin theta = -2/5 in quadrant IV. Version b.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write 4pi/3 in degrees.",
+        "expected": {
+          "answer": "240 degrees"
+        },
+        "notes": "A1 for the value."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down the exact coordinates of P (angle 4pi/3).",
+        "expected": {
+          "answer": "(-1/2, -sqrt3/2)"
+        },
+        "tolerance": "Accept -0.5 for -1/2. The root-3 coordinate must be exact: decimals earn A0 for that coordinate.",
+        "notes": "A1 for each coordinate with its sign. Wrong method: sine and cosine swapped, (-sqrt3/2, -1/2): A0A0."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write 135 degrees in radians as an exact multiple of pi.",
+        "expected": {
+          "answer": "3pi/4"
+        },
+        "tolerance": "Accept 135pi/180 unsimplified or a decimal multiple of pi. A decimal with no pi earns A0.",
+        "notes": "A1 for the value."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down the exact coordinates of Q (angle 135 degrees).",
+        "expected": {
+          "answer": "(-sqrt2/2, sqrt2/2)"
+        },
+        "tolerance": "Accept 1/sqrt2 for sqrt2/2. Decimals earn A0.",
+        "notes": "A1 for each coordinate with its sign."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "sin theta = -2/5, theta in quadrant IV. Use sin^2 + cos^2 = 1 to find cos theta exactly.",
+        "expected": {
+          "answer": "sqrt21/5"
+        },
+        "tolerance": "Accept equivalent exact forms.",
+        "notes": "M1 for substituting into sin^2 theta + cos^2 theta = 1 (squares present). A1 for cos^2 theta = 21/25. A1 for sqrt21/5 (cosine positive in quadrant IV). The final A1 needs the correct sign only: the opposite sign or +/- as the final answer earns M1A1A0. A bare correct answer with no working earns M0A1A1. Wrong method: cos theta = 1 - |sin theta| = 3/5 (squares left out): M0A0A0."
+      },
+      {
+        "label": "f",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find the exact value of tan theta.",
+        "expected": {
+          "answer": "-2/sqrt21"
+        },
+        "tolerance": "Accept -2sqrt21/21.",
+        "notes": "A1 for sin theta / cos theta with the correct sign.",
+        "follow_through": "FT from the candidate's cos theta in (e), including its sign."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "2.11",
+      "3.7"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.588,
+    "source": "Original (authored 2026-11-17, no calculator; part (e) expression for g removed 2026-11-17 for space). Graph of f(x) = 4 sin(2x) + 1 on [0, pi] (solid), max (pi/4, 5), min (3pi/4, -3); dashed g = f translated pi/4 to the right. Version b.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down the maximum and minimum values of f(x) = a sin(bx) + d from the graph.",
+        "expected": {
+          "answer": "max 5, min -3"
+        },
+        "tolerance": "Accept the points (pi/4, 5) and (3pi/4, -3).",
+        "notes": "A1 for each value. Write down: a bare answer earns the marks."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the period of f.",
+        "expected": {
+          "answer": "pi"
+        },
+        "tolerance": "Accept the decimal 3.14 only with a note to give exact values.",
+        "notes": "Wrong methods, each A0: pi/2 (maximum to minimum is half a period); 2pi (period of sin x)."
+      },
+      {
+        "label": "c",
+        "marks": 4,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find a, b and d.",
+        "expected": {
+          "answer": "a = 4, b = 2, d = 1"
+        },
+        "notes": "M1 for a = (max - min)/2 or d = (max + min)/2, or reading the principal axis y = 1. A1 for a = 4. A1 for d = 1. A1 for b = 2pi/pi = 2. Correct a and d with no working earn M0A1A1; a bare b = 2 earns its A1. Wrong methods: a = 8 (max minus min); swapping a and d (a = 1, d = 4); b = pi or b = 1/2: A0 for that value.",
+        "follow_through": "FT b from the candidate's period in (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "R1",
+          "A1"
+        ],
+        "description": "State whether g(x) = f(x + pi/4) or g(x) = f(x - pi/4), with a reason.",
+        "expected": {
+          "answer": "g(x) = f(x - pi/4)"
+        },
+        "notes": "R1 for a valid reason: the graph of g is the graph of f moved right (e.g. the maximum of f at x = pi/4 is at x = pi/2 on g), and f(x - h) is a translation to the right; or a check such as g(pi/2) = f(pi/4) = 5. A1 for g(x) = f(x - pi/4). Do not award R0A1: the choice with no reason earns 0. Wrong method: f(x + pi/4) (the sign that matches the direction in words): R0A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "3.2"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.507,
+    "source": "Original (authored 2026-11-17, calculator, degrees). Quadrilateral ABCD with diagonal AC: AB = 8, BC = 6, angle ABC = 115; angle ACD = 52, angle ADC = 70 (so CAD = 58). Version b.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find AC (AB = 8, BC = 6, angle ABC = 115 deg).",
+        "expected": {
+          "answer": "11.9 cm",
+          "full": "11.8562..."
+        },
+        "tolerance": "Accept 3 s.f. or the calculator display with an ellipsis; a value cut short with no ellipsis earns A0 (markscheme-spec 21).",
+        "notes": "M1 for the cosine rule. A1 for the substitution 8^2 + 6^2 - 2(8)(6) cos 115. A1 for 11.9. Wrong methods: sign error gives 7.71: M1A0A0; radian mode gives 11.5: M1A1A0."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find AD (angle ACD = 52, angle ADC = 70).",
+        "expected": {
+          "answer": "9.94 cm",
+          "full": "9.94248..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate values; note premature rounding as feedback rather than withholding the accuracy mark. Accept 3 s.f. or the calculator display with an ellipsis; a value cut short with no ellipsis earns A0 (markscheme-spec 21).",
+        "notes": "M1 for the sine rule in triangle ACD. A1 for pairing AD with 52 deg and AC with 70 deg. A1 for 9.94. Wrong method: pairing AD with 70 deg gives 14.1: M1A0A0.",
+        "follow_through": "FT from the candidate's AC in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area of quadrilateral ABCD.",
+        "expected": {
+          "answer": "71.7 cm^2",
+          "full": "71.7356..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate values; note premature rounding as feedback rather than withholding the accuracy mark. Accept 3 s.f. or the calculator display with an ellipsis; a value cut short with no ellipsis earns A0 (markscheme-spec 21).",
+        "notes": "M1 for a correct area expression for either triangle: (1/2)(8)(6) sin 115, or (1/2)(AC)(AD) sin 58 (angle CAD = 58 may be implied). M1 for adding the two triangle areas. A1 for 71.7. Wrong method: using 115 deg in triangle ACD gives 75.2: M1M1A0. Feedback note on premature rounding if AC or AD was rounded.",
+        "follow_through": "FT from the candidate's AC and AD."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "2.11",
+      "3.7"
+    ],
+    "total_marks": 12,
+    "answer_box_top_frac": 0.532,
+    "source": "Original (authored 2026-11-17, calculator, radians). Darkness D(t) = a sin(b(t - c)) + d, t days after 31 Dec; NYC max 14.7 (t = 355), min 8.9 (t = 172); Siracusa S(t) = p sin(b(t - c)) + q, max 14.4, min 9.3. Version b.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find a and d from the maximum and minimum.",
+        "expected": {
+          "answer": "a = 2.9, d = 11.8"
+        },
+        "notes": "A1 for a = (max - min)/2 = 2.9; A1 for d = (max + min)/2 = 11.8. Note: bare values earn A1A1 (overrides the bare-answer default). Wrong methods: a = 5.8 (max minus min); a and d swapped: A0 for that value."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Find b (period 365 days).",
+        "expected": {
+          "answer": "2pi/365",
+          "full": "0.0172142..."
+        },
+        "tolerance": "Accept 0.0172 or the display 0.0172142...",
+        "notes": "A1. Wrong methods, A0: b = 365; b = 365/(2pi) = 58.1."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find c (0 < c < 365).",
+        "expected": {
+          "answer": "263.75"
+        },
+        "tolerance": "Accept 263.25 (from the minimum condition) and 3 s.f. forms.",
+        "notes": "M1 for the maximum condition b(t_max - c) = pi/2, the minimum condition b(t_min - c) = 3pi/2 (or -pi/2), or 'a quarter period before the maximum'. A1 for 263.75. Wrong methods, M0A0: c = 355 (date of the maximum, the cosine shift); c = 172.",
+        "follow_through": "FT from the candidate's b."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find p and q for the Italian city.",
+        "expected": {
+          "answer": "p = 2.55, q = 11.85"
+        },
+        "tolerance": "Accept q to 3 s.f.",
+        "notes": "A1 for p = (max - min)/2; A1 for q = (max + min)/2. Bare values earn A1A1."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "1 December, t = 335: how many more minutes of darkness New York has than Siracusa.",
+        "expected": {
+          "answer": "16.8 minutes",
+          "full": "16.7676..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate values; note premature rounding as feedback rather than withholding the accuracy mark. Examples: 16.8 from c = 263.25 or from b = 0.0172. Accept 3 s.f. or the calculator display with an ellipsis; a value cut short with no ellipsis earns A0 (markscheme-spec 21).",
+        "notes": "M1 for evaluating both models at the given t and subtracting. A1 for 16.8 minutes. Wrong methods: 0.279 (hours, not converted): M1A0; degree mode gives -2.55: M1A0.",
+        "follow_through": "FT from the candidate's a, b, c, d, p, q."
+      },
+      {
+        "label": "f",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Length of time, in days, during which Siracusa has more than 13.5 hours of darkness.",
+        "expected": {
+          "answer": "101 days",
+          "full": "100.739..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate values; note premature rounding as feedback rather than withholding the accuracy mark. Example: 101 (100.521...) from b = 0.0172. Accept 3 s.f. or the calculator display with an ellipsis; a value cut short with no ellipsis earns A0 (markscheme-spec 21).",
+        "notes": "M1 for the equation (or a GDC graph with the horizontal line drawn). A1 for both intersection values t = 40.4 (40.3697...) and t = 305 (304.630...). A1 for the length, which wraps around the new year: (365 - later value) + earlier value. Wrong method: later minus earlier = 264 days (the complementary period): M1A1A0. Whole-number answers (e.g. rounding to a whole day) earn the final A0 with a feedback note to give 3 s.f.",
+        "follow_through": "FT from the candidate's model."
+      }
+    ]
+  }
+]

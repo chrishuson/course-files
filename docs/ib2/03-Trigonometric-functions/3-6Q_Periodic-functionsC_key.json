@@ -1,0 +1,316 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "2.11",
+      "3.7"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.672,
+    "source": "Original (authored 2026-11-17, no calculator, scaffolded). Graph of f(x) = 2 sin x + 1 on [0, 2pi] with y = sin x dashed; A max (pi/2, 3), B min (3pi/2, -1). Version c.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the coordinates of the y-intercept.",
+        "expected": {
+          "answer": "(0, 1)"
+        },
+        "tolerance": "Accept 1 or y = 1.",
+        "notes": "A1."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down the coordinates of A (max) and B (min).",
+        "expected": {
+          "answer": "A(pi/2, 3), B(3pi/2, -1)"
+        },
+        "tolerance": "Accept 90 and 270 degrees for the x-coordinates.",
+        "notes": "A1 for each point; both coordinates needed for each mark."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Read the two x-intercepts from the grid.",
+        "expected": {
+          "answer": "x = 7pi/6 and x = 11pi/6"
+        },
+        "tolerance": "Accept (7pi/6, 0) and (11pi/6, 0), or 210 and 330 degrees.",
+        "notes": "A1 for each value."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find d = (max + min)/2 and a = (max - min)/2.",
+        "expected": {
+          "answer": "d = 1, a = 2"
+        },
+        "notes": "A1 for each value; bare values earn the marks.",
+        "follow_through": "FT from the candidate's max and min in (b)."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down f(x).",
+        "expected": {
+          "answer": "2 sin x + 1"
+        },
+        "notes": "A1.",
+        "follow_through": "FT from (d)."
+      },
+      {
+        "label": "f",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Complete: stretched vertically by scale factor __, then translated __ units up.",
+        "expected": {
+          "answer": "scale factor 2; 1 unit up"
+        },
+        "notes": "A1 for each blank.",
+        "follow_through": "FT from (d)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "3.4",
+      "3.5",
+      "3.6"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.595,
+    "source": "Original (authored 2026-11-17, no calculator, scaffolded). Unit circle: 60 deg to radians; cos and sin of pi/3; P at pi/4; Q at 135 deg (reflection of P in the y-axis); sin theta = 3/5 acute. Version c.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write 60 degrees in radians.",
+        "expected": {
+          "answer": "pi/3"
+        },
+        "tolerance": "Accept 60pi/180. 1.05 earns A0.",
+        "notes": "A1."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down exact cos(pi/3) and sin(pi/3).",
+        "expected": {
+          "answer": "1/2 and sqrt3/2"
+        },
+        "tolerance": "Accept 0.5 for 1/2.",
+        "notes": "A1 for each value. Values swapped: A0A0."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Exact coordinates of P at pi/4.",
+        "expected": {
+          "answer": "(sqrt2/2, sqrt2/2)"
+        },
+        "tolerance": "Accept 1/sqrt2.",
+        "notes": "A1 for each coordinate."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Exact coordinates of Q at 135 degrees.",
+        "expected": {
+          "answer": "(-sqrt2/2, sqrt2/2)"
+        },
+        "tolerance": "Accept 1/sqrt2.",
+        "notes": "A1 for each coordinate with its sign.",
+        "follow_through": "FT from (c) with the sign of the x-coordinate changed."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "sin theta = 3/5, theta acute: find cos theta using sin^2 + cos^2 = 1.",
+        "expected": {
+          "answer": "4/5"
+        },
+        "tolerance": "Accept 0.8.",
+        "notes": "M1 for cos^2 theta = 1 - 9/25 (or the hinted equation). A1 for 4/5. A bare 4/5 earns M0A1; +/- 4/5 as the final answer earns M1A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "3.2"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.425,
+    "source": "Original (authored 2026-11-17, calculator, degrees, scaffolded). Triangle ABC: AB = 5, AC = 8, angle BAC = 60 deg. Version c.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find BC with the cosine rule.",
+        "expected": {
+          "answer": "7 cm"
+        },
+        "notes": "M1 for the cosine rule. A1 for 5^2 + 8^2 - 2(5)(8) cos 60. A1 for 7. Wrong method: radian mode gives 12.9: M1A1A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the area with (1/2)(AB)(AC) sin A.",
+        "expected": {
+          "answer": "17.3 cm^2",
+          "full": "17.3205..."
+        },
+        "tolerance": "Accept 10sqrt3. Accept 3 s.f. or the calculator display with an ellipsis; a value cut short with no ellipsis earns A0 (markscheme-spec 21).",
+        "notes": "M1 for (1/2)(5)(8) sin 60. A1 for 17.3."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find angle ACB with the sine rule.",
+        "expected": {
+          "answer": "38.2 degrees",
+          "full": "38.2132..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate values; note premature rounding as feedback rather than withholding the accuracy mark. Accept 3 s.f. or the calculator display with an ellipsis; a value cut short with no ellipsis earns A0 (markscheme-spec 21).",
+        "notes": "M1 for the sine rule. A1 for pairing AB = 5 with angle C and BC with 60 deg. A1 for 38.2. Wrong method: pairing 8 with angle C gives 81.8 (angle ABC): M1A0A0.",
+        "follow_through": "FT from the candidate's BC in (a)."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "2.11",
+      "3.7"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.595,
+    "source": "Original (authored 2026-11-17, calculator, radians, scaffolded). N(t) = 2.9 sin(pi/6 (t - 2.7)) + 12.2 (New York), P(t) = 2.65 sin(pi/6 (t - 2.7)) + 12.15 (Palermo), t months after 1 January. Version c.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down the max and min daylight in New York.",
+        "expected": {
+          "answer": "max 15.1 hours, min 9.3 hours"
+        },
+        "notes": "A1 for each value (d + a and d - a)."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the period of N in months.",
+        "expected": {
+          "answer": "12 months"
+        },
+        "notes": "M1 for 2pi/(pi/6). A1 for 12. A bare 12 earns M0A1."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find N(10.5).",
+        "expected": {
+          "answer": "9.85 hours",
+          "full": "9.85385..."
+        },
+        "tolerance": "Accept 3 s.f. or the calculator display with an ellipsis; a value cut short with no ellipsis earns A0 (markscheme-spec 21).",
+        "notes": "M1 for substituting t = 10.5. A1 for 9.85. Wrong method: degree mode gives 12.4: M1A0."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Write down the max and min daylight in Palermo.",
+        "expected": {
+          "answer": "max 14.8 hours, min 9.5 hours"
+        },
+        "notes": "A1 for each value."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "How many more minutes of daylight Palermo has on the shortest day.",
+        "expected": {
+          "answer": "12 minutes"
+        },
+        "notes": "M1 for 9.5 - 9.3 (difference of the minima). A1 for 12 minutes. Wrong method: 0.2 with no conversion: M1A0.",
+        "follow_through": "FT from (a) and (d)."
+      }
+    ]
+  }
+]

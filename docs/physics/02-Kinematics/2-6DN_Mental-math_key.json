@@ -1,0 +1,783 @@
+[
+  {
+    "problem_number": 1,
+    "total_marks": 6,
+    "source_page_index": 0,
+    "answer_box_top_frac": 0.223,
+    "answer_box_bottom_frac": 0.434,
+    "topic_codes": [
+      "units.metric"
+    ],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "3.2 km = ___ m",
+        "expected": {
+          "answer": "3200"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: metric_wrong_direction (divided where it should multiply or vice versa, e.g. 0.4 m = 0.04 mm), metric_wrong_factor (x100 for x1000, e.g. 3.2 km = 320 m). Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "60 cm = ___ m",
+        "expected": {
+          "answer": "0.6"
+        },
+        "tolerance": "Accept 0.60.",
+        "notes": "Likely errors and their student_error tags: metric_wrong_direction (divided where it should multiply or vice versa, e.g. 0.4 m = 0.04 mm), metric_wrong_factor (x100 for x1000, e.g. 3.2 km = 320 m). Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "1.5 m = ___ cm",
+        "expected": {
+          "answer": "150"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: metric_wrong_direction (divided where it should multiply or vice versa, e.g. 0.4 m = 0.04 mm), metric_wrong_factor (x100 for x1000, e.g. 3.2 km = 320 m). Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "9 mm = ___ cm",
+        "expected": {
+          "answer": "0.9"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: metric_wrong_direction (divided where it should multiply or vice versa, e.g. 0.4 m = 0.04 mm), metric_wrong_factor (x100 for x1000, e.g. 3.2 km = 320 m). Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "0.4 m = ___ mm",
+        "expected": {
+          "answer": "400"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: metric_wrong_direction (divided where it should multiply or vice versa, e.g. 0.4 m = 0.04 mm), metric_wrong_factor (x100 for x1000, e.g. 3.2 km = 320 m). Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "f",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "750 m = ___ km",
+        "expected": {
+          "answer": "0.75"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: metric_wrong_direction (divided where it should multiply or vice versa, e.g. 0.4 m = 0.04 mm), metric_wrong_factor (x100 for x1000, e.g. 3.2 km = 320 m). Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "total_marks": 8,
+    "source_page_index": 0,
+    "answer_box_top_frac": 0.384,
+    "answer_box_bottom_frac": 0.555,
+    "topic_codes": [
+      "number.squares"
+    ],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "4^2",
+        "expected": {
+          "answer": "16"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: decimal_square_place (0.2^2 = 0.4: squared the digit but not the place value), square_as_double (4^2 = 8), square_place_value (30^2 = 300 or 90), root_error (wrong root, e.g. sqrt(400) = 200), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "9^2",
+        "expected": {
+          "answer": "81"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: decimal_square_place (0.2^2 = 0.4: squared the digit but not the place value), square_as_double (4^2 = 8), square_place_value (30^2 = 300 or 90), root_error (wrong root, e.g. sqrt(400) = 200), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "11^2",
+        "expected": {
+          "answer": "121"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: decimal_square_place (0.2^2 = 0.4: squared the digit but not the place value), square_as_double (4^2 = 8), square_place_value (30^2 = 300 or 90), root_error (wrong root, e.g. sqrt(400) = 200), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "30^2",
+        "expected": {
+          "answer": "900"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: decimal_square_place (0.2^2 = 0.4: squared the digit but not the place value), square_as_double (4^2 = 8), square_place_value (30^2 = 300 or 90), root_error (wrong root, e.g. sqrt(400) = 200), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "0.2^2",
+        "expected": {
+          "answer": "0.04"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: decimal_square_place (0.2^2 = 0.4: squared the digit but not the place value), square_as_double (4^2 = 8), square_place_value (30^2 = 300 or 90), root_error (wrong root, e.g. sqrt(400) = 200), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "f",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "1.5^2",
+        "expected": {
+          "answer": "2.25"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: decimal_square_place (0.2^2 = 0.4: squared the digit but not the place value), square_as_double (4^2 = 8), square_place_value (30^2 = 300 or 90), root_error (wrong root, e.g. sqrt(400) = 200), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "g",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "sqrt(49)",
+        "expected": {
+          "answer": "7"
+        },
+        "tolerance": "Accept 7 or \u00b17 (full credit; mention plus/minus in the rationale).",
+        "notes": "Likely errors and their student_error tags: decimal_square_place (0.2^2 = 0.4: squared the digit but not the place value), square_as_double (4^2 = 8), square_place_value (30^2 = 300 or 90), root_error (wrong root, e.g. sqrt(400) = 200), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "h",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "sqrt(400)",
+        "expected": {
+          "answer": "20"
+        },
+        "tolerance": "Accept 20 or \u00b120.",
+        "notes": "Likely errors and their student_error tags: decimal_square_place (0.2^2 = 0.4: squared the digit but not the place value), square_as_double (4^2 = 8), square_place_value (30^2 = 300 or 90), root_error (wrong root, e.g. sqrt(400) = 200), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "total_marks": 4,
+    "source_page_index": 0,
+    "answer_box_top_frac": 0.505,
+    "answer_box_bottom_frac": 0.673,
+    "topic_codes": [
+      "units.speed"
+    ],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "5 m/s = ___ km/h",
+        "expected": {
+          "answer": "18"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "If the student's answer is overwritten or a different value is written above the blank, mark the clearest final value and note it. Likely errors and their student_error tags: speed_wrong_operation (multiplied by 3.6 where it should divide, or the reverse; the km/h number must be the larger), speed_wrong_factor (used 18, 36, 60 or 1000 alone), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "15 m/s = ___ km/h",
+        "expected": {
+          "answer": "54"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "If the student's answer is overwritten or a different value is written above the blank, mark the clearest final value and note it. Likely errors and their student_error tags: speed_wrong_operation (multiplied by 3.6 where it should divide, or the reverse; the km/h number must be the larger), speed_wrong_factor (used 18, 36, 60 or 1000 alone), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "72 km/h = ___ m/s",
+        "expected": {
+          "answer": "20"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "If the student's answer is overwritten or a different value is written above the blank, mark the clearest final value and note it. Likely errors and their student_error tags: speed_wrong_operation (multiplied by 3.6 where it should divide, or the reverse; the km/h number must be the larger), speed_wrong_factor (used 18, 36, 60 or 1000 alone), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "90 km/h = ___ m/s",
+        "expected": {
+          "answer": "25"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "If the student's answer is overwritten or a different value is written above the blank, mark the clearest final value and note it. Likely errors and their student_error tags: speed_wrong_operation (multiplied by 3.6 where it should divide, or the reverse; the km/h number must be the larger), speed_wrong_factor (used 18, 36, 60 or 1000 alone), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "total_marks": 4,
+    "source_page_index": 0,
+    "answer_box_top_frac": 0.623,
+    "answer_box_bottom_frac": 0.867,
+    "topic_codes": [
+      "kinematics.rate"
+    ],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "A student walks at 1.5 m/s for 20 s. How far?",
+        "expected": {
+          "answer": "30 m"
+        },
+        "tolerance": "Accept 30 m. Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: time_unit_mismatch (multiplied km/h by minutes, or m/s by minutes, e.g. 1800 km or 180 km for 90 km/h for 20 min; 6 m for 6 m/s for one minute), rate_wrong_operation (multiplied where it should divide, e.g. 500 for 100 m at 5 m/s), wrong_unit, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "A cyclist rides at 6 m/s for one minute. How far?",
+        "expected": {
+          "answer": "360 m"
+        },
+        "tolerance": "Accept 360 m. Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: time_unit_mismatch (multiplied km/h by minutes, or m/s by minutes, e.g. 1800 km or 180 km for 90 km/h for 20 min; 6 m for 6 m/s for one minute), rate_wrong_operation (multiplied where it should divide, e.g. 500 for 100 m at 5 m/s), wrong_unit, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "A car drives at 90 km/h for 20 minutes. How far?",
+        "expected": {
+          "answer": "30 km"
+        },
+        "tolerance": "Accept 30 km or 30 000 m. Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: time_unit_mismatch (multiplied km/h by minutes, or m/s by minutes, e.g. 1800 km or 180 km for 90 km/h for 20 min; 6 m for 6 m/s for one minute), rate_wrong_operation (multiplied where it should divide, e.g. 500 for 100 m at 5 m/s), wrong_unit, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "How long does it take to run 100 m at 5 m/s?",
+        "expected": {
+          "answer": "20 s"
+        },
+        "tolerance": "Accept 20 s. Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: time_unit_mismatch (multiplied km/h by minutes, or m/s by minutes, e.g. 1800 km or 180 km for 90 km/h for 20 min; 6 m for 6 m/s for one minute), rate_wrong_operation (multiplied where it should divide, e.g. 500 for 100 m at 5 m/s), wrong_unit, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "total_marks": 2,
+    "source_page_index": 0,
+    "answer_box_top_frac": 0.817,
+    "topic_codes": [
+      "kinematics.speed_velocity"
+    ],
+    "parts": [
+      {
+        "label": "speed",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "A runner jogs one 400 m lap in 80 s, finishing where it began. Average speed?",
+        "expected": {
+          "answer": "5 m/s"
+        },
+        "tolerance": "Accept 5 m/s. Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: velocity_as_speed is not possible here; rate_wrong_operation (400 x 80 or 80 / 400), wrong_unit, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "velocity",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Average velocity for the same lap?",
+        "expected": {
+          "answer": "0"
+        },
+        "tolerance": "Accept 0, 0 m/s. No unit needed for zero.",
+        "notes": "Likely errors and their student_error tags: velocity_as_speed (gave 5 m/s, the speed, for the velocity: displacement not recognized as zero), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      }
+    ]
+  },
+  {
+    "problem_number": 6,
+    "total_marks": 8,
+    "source_page_index": 1,
+    "answer_box_top_frac": 0.1,
+    "answer_box_bottom_frac": 0.292,
+    "topic_codes": [
+      "number.fractions"
+    ],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "3/5",
+        "expected": {
+          "answer": "0.6"
+        },
+        "tolerance": "Accept 0.60.",
+        "notes": "Likely errors and their student_error tags: fraction_place_value (1/50 = 0.2, 3/25 = 0.012), truncated_repeating (1/9 = 0.1 or 4/3 = 1.3: the repeating decimal cut to one place, without a bar or ellipsis), fraction_inverted (computed b/a, e.g. 4/3 = 0.75), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "9/10",
+        "expected": {
+          "answer": "0.9"
+        },
+        "tolerance": "Accept 0.90.",
+        "notes": "Likely errors and their student_error tags: fraction_place_value (1/50 = 0.2, 3/25 = 0.012), truncated_repeating (1/9 = 0.1 or 4/3 = 1.3: the repeating decimal cut to one place, without a bar or ellipsis), fraction_inverted (computed b/a, e.g. 4/3 = 0.75), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "3/20",
+        "expected": {
+          "answer": "0.15"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: fraction_place_value (1/50 = 0.2, 3/25 = 0.012), truncated_repeating (1/9 = 0.1 or 4/3 = 1.3: the repeating decimal cut to one place, without a bar or ellipsis), fraction_inverted (computed b/a, e.g. 4/3 = 0.75), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "1/50",
+        "expected": {
+          "answer": "0.02"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: fraction_place_value (1/50 = 0.2, 3/25 = 0.012), truncated_repeating (1/9 = 0.1 or 4/3 = 1.3: the repeating decimal cut to one place, without a bar or ellipsis), fraction_inverted (computed b/a, e.g. 4/3 = 0.75), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "3/25",
+        "expected": {
+          "answer": "0.12"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: fraction_place_value (1/50 = 0.2, 3/25 = 0.012), truncated_repeating (1/9 = 0.1 or 4/3 = 1.3: the repeating decimal cut to one place, without a bar or ellipsis), fraction_inverted (computed b/a, e.g. 4/3 = 0.75), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "f",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "5/4",
+        "expected": {
+          "answer": "1.25"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: fraction_place_value (1/50 = 0.2, 3/25 = 0.012), truncated_repeating (1/9 = 0.1 or 4/3 = 1.3: the repeating decimal cut to one place, without a bar or ellipsis), fraction_inverted (computed b/a, e.g. 4/3 = 0.75), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "g",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "1/9",
+        "expected": {
+          "answer": "0.111... (0.1 repeating)"
+        },
+        "tolerance": "Accept the bar or dot notation, an ellipsis, or a value given to at least two decimal places (0.11, 0.111; 1.33, 1.333). A single decimal place (0.1, 1.3) earns 0, tag truncated_repeating.",
+        "notes": "Likely errors and their student_error tags: fraction_place_value (1/50 = 0.2, 3/25 = 0.012), truncated_repeating (1/9 = 0.1 or 4/3 = 1.3: the repeating decimal cut to one place, without a bar or ellipsis), fraction_inverted (computed b/a, e.g. 4/3 = 0.75), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "h",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "4/3",
+        "expected": {
+          "answer": "1.333... (1.3 repeating)"
+        },
+        "tolerance": "Accept the bar or dot notation, an ellipsis, or a value given to at least two decimal places (0.11, 0.111; 1.33, 1.333). A single decimal place (0.1, 1.3) earns 0, tag truncated_repeating.",
+        "notes": "Likely errors and their student_error tags: fraction_place_value (1/50 = 0.2, 3/25 = 0.012), truncated_repeating (1/9 = 0.1 or 4/3 = 1.3: the repeating decimal cut to one place, without a bar or ellipsis), fraction_inverted (computed b/a, e.g. 4/3 = 0.75), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      }
+    ]
+  },
+  {
+    "problem_number": 7,
+    "total_marks": 8,
+    "source_page_index": 1,
+    "answer_box_top_frac": 0.242,
+    "answer_box_bottom_frac": 0.495,
+    "topic_codes": [
+      "units.time"
+    ],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "0.5 hour = ___ min",
+        "expected": {
+          "answer": "30"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: decimal_as_minutes (treated the decimal part as minutes or seconds: 90 s = 1.3 min, 0.25 h = 25 min, 2.25 h = 2 h 25 min), time_wrong_factor (used 100 or 10 in place of 60), time_wrong_operation, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "0.4 hour = ___ min",
+        "expected": {
+          "answer": "24"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: decimal_as_minutes (treated the decimal part as minutes or seconds: 90 s = 1.3 min, 0.25 h = 25 min, 2.25 h = 2 h 25 min), time_wrong_factor (used 100 or 10 in place of 60), time_wrong_operation, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "2.5 min = ___ s",
+        "expected": {
+          "answer": "150"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: decimal_as_minutes (treated the decimal part as minutes or seconds: 90 s = 1.3 min, 0.25 h = 25 min, 2.25 h = 2 h 25 min), time_wrong_factor (used 100 or 10 in place of 60), time_wrong_operation, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "d",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "90 s = ___ min",
+        "expected": {
+          "answer": "1.5"
+        },
+        "tolerance": "Accept 1.5 or 1 1/2.",
+        "notes": "Likely errors and their student_error tags: decimal_as_minutes (treated the decimal part as minutes or seconds: 90 s = 1.3 min, 0.25 h = 25 min, 2.25 h = 2 h 25 min), time_wrong_factor (used 100 or 10 in place of 60), time_wrong_operation, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "e",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "6 min = ___ h (decimal)",
+        "expected": {
+          "answer": "0.1"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: decimal_as_minutes (treated the decimal part as minutes or seconds: 90 s = 1.3 min, 0.25 h = 25 min, 2.25 h = 2 h 25 min), time_wrong_factor (used 100 or 10 in place of 60), time_wrong_operation, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "f",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "40 min = ___ h (fraction)",
+        "expected": {
+          "answer": "2/3"
+        },
+        "tolerance": "Accept 2/3 or an equivalent fraction (4/6, 40/60). A decimal (0.67) earns the mark only if written with a bar or to two places; note fraction_requested.",
+        "notes": "Likely errors and their student_error tags: decimal_as_minutes (treated the decimal part as minutes or seconds: 90 s = 1.3 min, 0.25 h = 25 min, 2.25 h = 2 h 25 min), time_wrong_factor (used 100 or 10 in place of 60), time_wrong_operation, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "g",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "1 week = ___ hours",
+        "expected": {
+          "answer": "168"
+        },
+        "tolerance": "Accept any equivalent form of the exact value.",
+        "notes": "Likely errors and their student_error tags: decimal_as_minutes (treated the decimal part as minutes or seconds: 90 s = 1.3 min, 0.25 h = 25 min, 2.25 h = 2 h 25 min), time_wrong_factor (used 100 or 10 in place of 60), time_wrong_operation, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "h",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "2.25 hours = ___ h ___ min",
+        "expected": {
+          "answer": "2 h 15 min"
+        },
+        "tolerance": "Both blanks needed for the mark.",
+        "notes": "Likely errors and their student_error tags: decimal_as_minutes (treated the decimal part as minutes or seconds: 90 s = 1.3 min, 0.25 h = 25 min, 2.25 h = 2 h 25 min), time_wrong_factor (used 100 or 10 in place of 60), time_wrong_operation, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      }
+    ]
+  },
+  {
+    "problem_number": 8,
+    "total_marks": 5,
+    "source_page_index": 1,
+    "answer_box_top_frac": 0.445,
+    "answer_box_bottom_frac": 0.708,
+    "topic_codes": [
+      "kinematics.acceleration"
+    ],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "0 to 20 m/s in 5 s: acceleration",
+        "expected": {
+          "answer": "4 m/s^2"
+        },
+        "tolerance": "Accept 4 m/s^2 (or m/s/s). Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: accel_used_final_speed (used the final speed, not the change: 8 / 3 for the bike), accel_wrong_operation (multiplied), accel_time_confusion (gave an acceleration where a time was asked, or the reverse), wrong_unit, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "2 m/s to 8 m/s in 3 s: acceleration",
+        "expected": {
+          "answer": "2 m/s^2"
+        },
+        "tolerance": "Accept 2 m/s^2. Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: accel_used_final_speed (used the final speed, not the change: 8 / 3 for the bike), accel_wrong_operation (multiplied), accel_time_confusion (gave an acceleration where a time was asked, or the reverse), wrong_unit, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "At 20 m/s, losing 5 m/s every second: seconds to stop",
+        "expected": {
+          "answer": "4 s"
+        },
+        "tolerance": "Accept 4 s or 4. Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: accel_used_final_speed (used the final speed, not the change: 8 / 3 for the bike), accel_wrong_operation (multiplied), accel_time_confusion (gave an acceleration where a time was asked, or the reverse), wrong_unit, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "d_vel",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "For the car in (a): average velocity",
+        "expected": {
+          "answer": "10 m/s"
+        },
+        "tolerance": "Accept 10 m/s. Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: accel_used_final_speed (used the final speed, not the change: 8 / 3 for the bike), accel_wrong_operation (multiplied), accel_time_confusion (gave an acceleration where a time was asked, or the reverse), wrong_unit, arithmetic_slip, avg_velocity_used_final (gave 20 m/s). Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "d_dist",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "For the car in (a): distance in the 5 s",
+        "expected": {
+          "answer": "50 m"
+        },
+        "tolerance": "Accept 50 m. Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: accel_used_final_speed (used the final speed, not the change: 8 / 3 for the bike), accel_wrong_operation (multiplied), accel_time_confusion (gave an acceleration where a time was asked, or the reverse), wrong_unit, arithmetic_slip, avg_velocity_used_final (100 m from 20 x 5). Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      }
+    ]
+  },
+  {
+    "problem_number": 9,
+    "total_marks": 5,
+    "source_page_index": 1,
+    "answer_box_top_frac": 0.658,
+    "answer_box_bottom_frac": 0.92,
+    "topic_codes": [
+      "kinematics.freefall"
+    ],
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Dropped stone: speed after 3 s",
+        "expected": {
+          "answer": "30 m/s"
+        },
+        "tolerance": "Accept 30 m/s. Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: freefall_missing_half (dropped the 1/2: 40 m), freefall_used_speed_as_distance (10 x 2 = 20 m/s given for a distance, or the reverse), a_zero_at_top (acceleration 0 at the top), wrong_unit, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Distance fallen after 2 s (1/2 x 10 x t^2)",
+        "expected": {
+          "answer": "20 m"
+        },
+        "tolerance": "Accept 20 m. Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: freefall_missing_half (dropped the 1/2: 40 m), freefall_used_speed_as_distance (10 x 2 = 20 m/s given for a distance, or the reverse), a_zero_at_top (acceleration 0 at the top), wrong_unit, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Thrown up at 20 m/s: seconds to reach the top",
+        "expected": {
+          "answer": "2 s"
+        },
+        "tolerance": "Accept 2 s or 2. Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: freefall_missing_half (dropped the 1/2: 40 m), freefall_used_speed_as_distance (10 x 2 = 20 m/s given for a distance, or the reverse), a_zero_at_top (acceleration 0 at the top), wrong_unit, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "d_vel",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "At the top: velocity",
+        "expected": {
+          "answer": "0"
+        },
+        "tolerance": "Accept 0 or 0 m/s.",
+        "notes": "Likely errors and their student_error tags: freefall_missing_half (dropped the 1/2: 40 m), freefall_used_speed_as_distance (10 x 2 = 20 m/s given for a distance, or the reverse), a_zero_at_top (acceleration 0 at the top), wrong_unit, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      },
+      {
+        "label": "d_acc",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "At the top: acceleration",
+        "expected": {
+          "answer": "10 m/s^2 downward"
+        },
+        "tolerance": "Accept 10 m/s^2, -10 m/s^2, or 10 m/s^2 down (no sign convention was given). 0 earns 0, tag a_zero_at_top. Units: where the unit is printed after the blank, the number alone is the answer. Where it is not printed, the student must write the unit: a correct value with a WRONG unit (e.g. 30 m/s for a distance) earns 0, tag wrong_unit; a correct value with NO unit earns the mark, student_error left empty, and the words 'missing unit' in feedback.",
+        "notes": "Likely errors and their student_error tags: freefall_missing_half (dropped the 1/2: 40 m), freefall_used_speed_as_distance (10 x 2 = 20 m/s given for a distance, or the reverse), a_zero_at_top (acceleration 0 at the top), wrong_unit, arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      }
+    ]
+  },
+  {
+    "problem_number": 10,
+    "total_marks": 1,
+    "source_page_index": 1,
+    "answer_box_top_frac": 0.87,
+    "topic_codes": [
+      "number.estimation"
+    ],
+    "parts": [
+      {
+        "label": null,
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "A marathon is about 42 km and 1 km is about 5/8 mile. About how many miles?",
+        "expected": {
+          "answer": "about 26 miles"
+        },
+        "tolerance": "Accept any value from 25 to 26.25 (26, 26.2, 26.25), with or without the unit.",
+        "notes": "Likely errors and their student_error tags: estimation_wrong_operation (divided by 5/8: about 67), arithmetic_slip. Bare answer earns full marks: this is a no-calculator mental-math sheet, students write only the answer and no working is expected, so never withhold the mark or tag show_the_working for missing working. A blank part: answer_given blank, mark 0, student_error no_attempt (the output contract requires exactly this). If every later blank on the same physical page is also empty, the student ran out of time: write 'not reached' at the start of the rationale. A crossed-out answer is ignored; mark the answer the student left standing."
+      }
+    ]
+  }
+]

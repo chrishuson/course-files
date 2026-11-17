@@ -1,0 +1,454 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "2.11",
+      "3.7",
+      "3.5"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.688,
+    "source": "Original (authored 2026-11-17, no calculator). f(x) = a cos(bx) + d with min (0, -5), max (pi/3, 3): f(x) = -4cos(3x) - 1 on [0, pi]; dashed g = f(x + pi/4). Modelled on AA_HL_2025_Nov_P2_TZ1 Q4.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find a and d (a real, may be negative).",
+        "expected": {
+          "answer": "a = -4, d = -1"
+        },
+        "notes": "A1 for a = -4 (the graph starts at a minimum, so a < 0). A1 for d = -1. Bare values earn the marks. Wrong method: a = 4: A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find b.",
+        "expected": {
+          "answer": "3"
+        },
+        "notes": "M1 for period = 2 x pi/3 = 2pi/3 (minimum to maximum is half a period). A1 for b = 3. A bare 3 earns M0A1. Wrong methods: b = 6 (pi/3 taken as the period): M0A0; b = 2/3: M1A0.",
+        "follow_through": "FT from a misread half-period."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "f(x) = p sin(b(x - q)) - 1 with p > 0: write down p, find the smallest positive q.",
+        "expected": {
+          "answer": "p = 4, q = pi/6"
+        },
+        "notes": "A1 for p = 4. M1 for any valid method linking the forms: sin(theta - pi/2) = -cos theta; sine maximum where 3(x - q) = pi/2 at x = pi/3; or upward crossing a quarter period before the maximum. A1 for q = pi/6. Wrong method: q = pi/2 (from 3x - pi/2 without factoring the 3): M1A0.",
+        "follow_through": "FT from (a) and (b)."
+      },
+      {
+        "label": "d_i",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down an expression for g(x) (dashed graph = f translated pi/4 to the left).",
+        "expected": {
+          "answer": "-4cos(3(x + pi/4)) - 1"
+        },
+        "tolerance": "Accept -4cos(3x + 3pi/4) - 1 or 4 sin(3(x + pi/12)) - 1.",
+        "notes": "A1. Wrong methods, A0: f(x - pi/4) (the graph moved left); -4cos(3x + pi/4) - 1.",
+        "follow_through": "FT from the candidate's a, b, d."
+      },
+      {
+        "label": "d_ii",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the exact value of g(0).",
+        "expected": {
+          "answer": "2sqrt2 - 1"
+        },
+        "tolerance": "Must be exact: 1.83 earns A0.",
+        "notes": "M1 for substituting x = 0 into the candidate's g, e.g. -4cos(3pi/4) - 1. A1 for 2sqrt2 - 1.",
+        "follow_through": "FT from (d)(i)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "3.4",
+      "3.6",
+      "3.9",
+      "3.10"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.348,
+    "source": "Original (authored 2026-11-17, no calculator). sec theta = -4, pi < theta < 3pi/2; cos 105 deg by compound angle; sec(7pi/12) rationalised. Modelled on AA_HL_2021_May_P1_TZ1 Q6.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "sec theta = -4, theta in quadrant III: find exact tan theta.",
+        "expected": {
+          "answer": "sqrt15"
+        },
+        "notes": "M1 for 1 + tan^2 = sec^2 (or cos = -1/4 then sin = -sqrt15/4). A1 for tan^2 theta = 15 (or both sin and cos). A1 for sqrt15 (positive in quadrant III). -sqrt15 or +/- sqrt15 as the final answer earns M1A1A0. A bare sqrt15 earns M0A1A1."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find exact cosec theta.",
+        "expected": {
+          "answer": "-4/sqrt15"
+        },
+        "tolerance": "Accept -4sqrt15/15.",
+        "notes": "M1 for sin theta = -sqrt(1 - 1/16) or 1 + cot^2 = cosec^2. A1 for -4/sqrt15 (negative: sine negative in quadrant III). A positive value earns M1A0.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "By writing 105 = 60 + 45, find exact cos 105 deg.",
+        "expected": {
+          "answer": "(sqrt2 - sqrt6)/4"
+        },
+        "tolerance": "Accept (1 - sqrt3)/(2sqrt2).",
+        "notes": "M1 for cos60 cos45 - sin60 sin45. A1 for (sqrt2 - sqrt6)/4. Wrong methods: plus sign, giving (sqrt2 + sqrt6)/4 (= cos 15): M0A0; cos60 + cos45: M0A0."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "Write 105 deg in radians; find sec(7pi/12) with a rational denominator.",
+        "expected": {
+          "answer": "7pi/12; -sqrt2 - sqrt6"
+        },
+        "tolerance": "Accept -(sqrt2 + sqrt6).",
+        "notes": "A1 for 7pi/12. M1 for 4/(sqrt2 - sqrt6) multiplied by the conjugate. A1 for -sqrt2 - sqrt6. Wrong method: sec = 1/sin: M0A0.",
+        "follow_through": "FT from (c)."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "3.6",
+      "3.8"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.236,
+    "source": "Original (authored 2026-11-17, no calculator). cos 2x - 3 sin x - 2 = 0 on [0, 2pi]. Modelled on AA_HL_2021_May_P1_TZ2 Q2.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Show cos 2x - 3 sin x - 2 = 0 can be written 2sin^2 x + 3 sin x + 1 = 0.",
+        "expected": {
+          "answer": "answer given"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for substituting cos 2x = 1 - 2sin^2 x (other double-angle forms earn M1 only once converted to sine). A1 for a correct line before the given result, e.g. -2sin^2 x - 3 sin x - 1 = 0. Wrong method: cos 2x = 1 - 2 sin x: M0A0."
+      },
+      {
+        "label": "b",
+        "marks": 5,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "Solve for 0 <= x <= 2pi.",
+        "expected": {
+          "answer": "x = 7pi/6, 3pi/2, 11pi/6"
+        },
+        "tolerance": "Exact answers required.",
+        "notes": "M1 for factorising (2 sin x + 1)(sin x + 1) or the quadratic formula. A1 for sin x = -1/2 and sin x = -1. A1 for each of 7pi/6, 11pi/6, 3pi/2. If extra values are given (pi/6, 5pi/6 from a sign error, or values outside the interval), deduct one A mark. Answers in degrees earn M1A1 and A0 for the values.",
+        "follow_through": "FT from the candidate's values of sin x."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "3.2"
+    ],
+    "total_marks": 9,
+    "answer_box_top_frac": 0.307,
+    "source": "Original (authored 2026-11-17, calculator, radians). Triangle ABC: AB = 10, AC = 7, angle ABC = 0.6 rad, BC = x: ambiguous case through the cosine-rule quadratic.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Show x^2 - (20cos0.6)x + 51 = 0.",
+        "expected": {
+          "answer": "answer given"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for the cosine rule 7^2 = 10^2 + x^2 - 2(10)(x)cos 0.6. A1 for a correct rearranged line before the given result."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find the two possible values of x.",
+        "expected": {
+          "answer": "x = 12.4 and x = 4.12",
+          "full": "12.3907... and 4.11597..."
+        },
+        "tolerance": "Accept 3 s.f. or the calculator display with an ellipsis; a value cut short with no ellipsis earns A0 (markscheme-spec 21).",
+        "notes": "A1 for each value. GDC solver accepted without working. Wrong method: degree mode gives 17.0 and 3.00: A0A0."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the two possible values of angle ACB.",
+        "expected": {
+          "answer": "0.938 and 2.20 (radians)",
+          "full": "0.938431... and 2.20316..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate values; note premature rounding as feedback rather than withholding the accuracy mark. Accept 3 s.f. or the calculator display with an ellipsis; a value cut short with no ellipsis earns A0 (markscheme-spec 21).",
+        "notes": "M1 for the sine rule sin C/10 = sin 0.6/7 (or cosine rule with each x). A1 for 0.938. A1 for pi - 0.938... = 2.20. Degrees (53.8, 126) earn M1A0A0. Giving only 0.938 earns M1A1A0.",
+        "follow_through": "FT from (b) if the cosine rule is used."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the difference between the areas of the two possible triangles.",
+        "expected": {
+          "answer": "23.4 cm^2",
+          "full": "23.3613..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate values; note premature rounding as feedback rather than withholding the accuracy mark. Example: 23.4 from x = 12.4 and 4.12. Accept 3 s.f. or the calculator display with an ellipsis; a value cut short with no ellipsis earns A0 (markscheme-spec 21).",
+        "notes": "M1 for two correct area expressions subtracted. A1 for 23.4. Wrong method: the area of one triangle only: M0A0.",
+        "follow_through": "FT from (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 5,
+    "topic_codes": [
+      "3.6",
+      "3.10",
+      "2.11",
+      "5.11"
+    ],
+    "total_marks": 12,
+    "answer_box_top_frac": null,
+    "answer_box_top_frac_note": "Long-form problem answered on lined paper; no answer box on the sheet.",
+    "source": "Original (authored 2026-11-17, calculator). f(x) = sin x + sqrt3 cos x = 2 sin(x + pi/3) on [0, 2pi]. Modelled on AA_HL_2025_Nov_P1_TZ1 Q8 and AA_HL_2024_Nov_P1 Q9.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "By expanding sin(x + pi/3), show f(x) = 2 sin(x + pi/3).",
+        "expected": {
+          "answer": "answer given"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for the compound-angle expansion sin x cos(pi/3) + cos x sin(pi/3). A1 for substituting 1/2 and sqrt3/2 and reaching sin x + sqrt3 cos x."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Describe fully the transformations mapping y = sin x onto y = f(x).",
+        "expected": {
+          "answer": "translation pi/3 to the left; vertical stretch scale factor 2"
+        },
+        "tolerance": "Either order. A translation word with a vector (-pi/3, 0) earns the translation mark.",
+        "notes": "A1 for a horizontal translation of pi/3 to the left (type, direction, size). A1 for a vertical stretch with scale factor 2. 'Move' earns A0. A purely symbolic description earns at most 1 mark (markscheme-spec 19). Translation to the right: A0 for that transformation."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Write down the range of f.",
+        "expected": {
+          "answer": "-2 <= f(x) <= 2"
+        },
+        "tolerance": "Accept [-2, 2]. Strict inequalities earn A0.",
+        "notes": "A1."
+      },
+      {
+        "label": "d",
+        "marks": 4,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "Solve f(x) = 1, exact multiples of pi.",
+        "expected": {
+          "answer": "x = pi/2, 11pi/6"
+        },
+        "notes": "M1 for sin(x + pi/3) = 1/2. A1 for at least one correct value of x + pi/3 in [pi/3, 7pi/3] (5pi/6 or 13pi/6). A1 for pi/2. A1 for 11pi/6. If -pi/6 (outside the domain) is given as an answer, deduct one A mark. GDC decimals (1.57, 5.76) earn M1A1A0A0."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "Find the x-intercepts of f and the area of R between them.",
+        "expected": {
+          "answer": "x = 2pi/3, 5pi/3; area 4"
+        },
+        "tolerance": "Accept 2.09 and 5.24 for the intercepts. A GDC integral is accepted.",
+        "notes": "A1 for both intercepts. M1 for an integral of f (or |f|) between the candidate's intercepts. A1 for 4. Accept -4 as the integral with area stated as 4.",
+        "follow_through": "FT from the candidate's intercepts."
+      }
+    ]
+  },
+  {
+    "problem_number": 6,
+    "topic_codes": [
+      "2.11",
+      "3.7",
+      "5.6"
+    ],
+    "total_marks": 13,
+    "answer_box_top_frac": null,
+    "answer_box_top_frac_note": "Long-form problem answered on lined paper; no answer box on the sheet.",
+    "source": "Original (authored 2026-11-17, calculator, radians). Daylight N(t) = a sin(b(t - c)) + d, t days; NYC max 15.1 (t = 172), min 9.3 (t = 355); Palermo max 14.8, min 9.5; same b, c. Modelled on AA_HL_2024_May_P2_TZ1 Q10.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find a and d.",
+        "expected": {
+          "answer": "a = 2.9, d = 12.2"
+        },
+        "notes": "A1 each. Bare values earn A1A1."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "Find b and c.",
+        "expected": {
+          "answer": "b = 2pi/365, c = 80.75",
+          "full": "b = 0.0172142..."
+        },
+        "tolerance": "Accept b = 0.0172; accept c = 81.25 (from the minimum).",
+        "notes": "A1 for b. M1 for (2pi/365)(172 - c) = pi/2 or equivalent. A1 for c = 80.75. Wrong method: c = 172 (the cosine shift): M0A0."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find p and q.",
+        "expected": {
+          "answer": "p = 2.65, q = 12.15"
+        },
+        "tolerance": "Accept 12.2 for q (3 s.f.).",
+        "notes": "A1 each."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Rate of change of daylight in New York at t = 321, in minutes per day.",
+        "expected": {
+          "answer": "-1.63 minutes per day",
+          "full": "-0.0272190... h/day; -1.63314... min/day"
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate values; note premature rounding as feedback rather than withholding the accuracy mark. Examples: -1.65 from c = 81.25; -1.64 from b = 0.0172. Accept 'decreasing at 1.63 minutes per day'. Accept 3 s.f. or the calculator display with an ellipsis; a value cut short with no ellipsis earns A0 (markscheme-spec 21).",
+        "notes": "M1 for N'(t) = ab cos(b(t - c)) or a GDC derivative at t = 321. A1 for -0.0272 hours per day. A1 for -1.63 minutes per day. Wrong method: degree mode gives +2.99: M1A0A0.",
+        "follow_through": "FT from (a) and (b)."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Number of days in the year on which Palermo has more daylight than New York.",
+        "expected": {
+          "answer": "159 days",
+          "full": "159.105..."
+        },
+        "tolerance": "Accept any value consistent with the candidate's own correctly-rounded intermediate values; note premature rounding as feedback rather than withholding the accuracy mark. Example: 159 (158.935...) from b = 0.0172. Accept 3 s.f. or the calculator display with an ellipsis; a value cut short with no ellipsis earns A0 (markscheme-spec 21).",
+        "notes": "M1 for P(t) = N(t) or a graph of P - N. A1 for t = 69.1 and t = 275. A1 for 365 - (274.947... - 69.0528...) = 159. Wrong method: 206 (the time New York has more daylight): M1A1A0.",
+        "follow_through": "FT from the candidate's models."
+      }
+    ]
+  }
+]
