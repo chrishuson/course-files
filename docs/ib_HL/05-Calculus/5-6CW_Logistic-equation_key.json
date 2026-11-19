@@ -1,0 +1,301 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "5.18"
+    ],
+    "total_marks": 7,
+    "answer_box_top_frac": 0.521,
+    "source": "Original (2026-11-18, AA HL 5.18, no calculator). Forming DEs from words; targets the 5-4CW 1(d) sign error.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Bacteria P increase at a rate proportional to P. Write a DE (k > 0).",
+        "expected": {
+          "answer": "dP/dt = kP"
+        },
+        "tolerance": "Accept P' = kP.",
+        "notes": "A1 for dP/dt = kP."
+      },
+      {
+        "label": "b",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Drug amount A decreases at a rate proportional to A. Write a DE (k > 0).",
+        "expected": {
+          "answer": "dA/dt = -kA"
+        },
+        "tolerance": "Negative sign required.",
+        "notes": "A1 for dA/dt = -kA. dA/dt = kA earns A0 (k is positive and A decreases)."
+      },
+      {
+        "label": "c",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Tank volume V decreases at a rate proportional to root V. Write a DE (k > 0).",
+        "expected": {
+          "answer": "dV/dt = -k sqrt(V)"
+        },
+        "tolerance": "Accept -kV^(1/2). Negative sign required.",
+        "notes": "A1 for dV/dt = -k sqrt(V). Missing negative: A0."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Rumour in a school of 400: rate proportional to (number who have heard) x (number who have not). Write a DE.",
+        "expected": {
+          "answer": "dN/dt = kN(400 - N)"
+        },
+        "tolerance": "Accept k(400N - N^2).",
+        "notes": "A1 for a rate proportional to a product including N. A1 for the factor 400 - N. kN(N - 400): A1A0."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "R1",
+          "R1"
+        ],
+        "description": "Explain from the DE why the rumour spreads slowly at first and slowly near the end.",
+        "expected": {
+          "answer": "N small makes the product small (few spreaders); N near 400 makes 400 - N small (few left to hear)."
+        },
+        "tolerance": "Any clear equivalent wording.",
+        "notes": "R1 for N small => factor N small => rate small. R1 for N near 400 => factor 400 - N small => rate small. Each R1 must refer to the factor or product, not context alone.",
+        "follow_through": "FT from their DE in (d)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "5.18",
+      "1.11",
+      "5.15"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.419,
+    "source": "Original. dN/dt = kN(400 - N), N(0) = 40. Structure after AA HL 2021 May P2 TZ1 Q12; targets the 5-4CW 2(b) error (log of a sum / term-by-term exponentiation).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find A and B with 1/(N(400 - N)) = A/N + B/(400 - N).",
+        "expected": {
+          "A": "1/400",
+          "B": "1/400"
+        },
+        "tolerance": "Accept 0.0025.",
+        "notes": "M1 for 1 = A(400 - N) + BN or equating coefficients. A1 for both values."
+      },
+      {
+        "label": "b",
+        "marks": 5,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1",
+          "M1",
+          "A1"
+        ],
+        "description": "By solving the DE, show ln(N/(400 - N)) = 400kt - ln 9.",
+        "expected": {
+          "answer": "(1/400)(ln N - ln(400 - N)) = kt + C; 400C = ln(40/360) = -ln 9"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for separating with integral signs. A1 for ln N. A1 for -ln(400 - N) (chain-rule negative). M1 for using t = 0, N = 40. A1 for the constant -ln 9 (or ln(1/9)) leading to the AG. Wrong method: +ln(400 - N) gives ln(N(400 - N)): A0 for that term and A0 for the constant.",
+        "follow_through": "Partial fractions from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "M1",
+          "A1"
+        ],
+        "description": "Hence show N = 400/(1 + 9e^(-400kt)).",
+        "expected": {
+          "answer": "N/(400 - N) = e^(400kt)/9; N(9 + e^(400kt)) = 400e^(400kt); divide by e^(400kt)"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for exponentiating both sides correctly (e^(a - ln 9) = e^a / 9). Term-by-term exponentiation, N/(400 - N) = e^(400kt) - 9: M0. M1 for collecting the N terms. A1 for the division by e^(400kt) seen, reaching the AG."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "5.18",
+      "1.7"
+    ],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.416,
+    "source": "Original. N = 400/(1 + 9e^(-400kt)); N(2) = 100. Numbers chosen so linear extrapolation gives wrong answers in (b) and (d).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "After 2 days N = 100. Show k = ln 3 / 800.",
+        "expected": {
+          "answer": "1 + 9e^(-800k) = 4, e^(-800k) = 1/3, 800k = ln 3"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for substituting t = 2, N = 100 and rearranging to 9e^(-800k) = 3. A1 for e^(-800k) = 1/3 (or e^(800k) = 3) and 800k = ln 3 seen before the AG."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the time when N = 200.",
+        "expected": {
+          "answer": "t = 4 days"
+        },
+        "tolerance": "Accept 4 only (exact).",
+        "notes": "M1 for 200 = 400/(1 + 9e^(-400kt)) leading to 9e^(-400kt) = 1. A1 for 400kt = ln 9 with 400k = (ln 3)/2. A1 for t = 4. Wrong method: straight line through (0, 40) and (2, 100) gives 16/3: M0A0A0.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Show N = 400/(1 + 3^(2 - t/2)).",
+        "expected": {
+          "answer": "e^(-400kt) = e^(-(t/2)ln 3) = 3^(-t/2); 9 x 3^(-t/2) = 3^(2 - t/2)"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for e^(-(t/2) ln 3) = 3^(-t/2). A1 for 9 = 3^2 combined with 3^(-t/2) to give 3^(2 - t/2)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find N when t = 8.",
+        "expected": {
+          "answer": 360
+        },
+        "tolerance": "Accept 360 only.",
+        "notes": "M1 for 400/(1 + 3^(-2)). A1 for 360. Wrong method: straight-line continuation of 40, 100, 200 gives 400: M0A0.",
+        "follow_through": "FT from (c) or from their k."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "R1"
+        ],
+        "description": "Write down the limit of N as t tends to infinity and interpret it.",
+        "expected": {
+          "answer": "400; eventually every student hears the rumour"
+        },
+        "tolerance": "Accept 'all 400 students'.",
+        "notes": "A1 for 400. R1 for the interpretation in context (all students in the school), not just 'levels off'."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "5.18",
+      "5.7"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.46,
+    "source": "Original. General logistic dP/dt = kP(N - P). Structure after AA HL 2022 May P2 TZ2 Q12(b)-(d); targets the 5-4CW 4(c) error (a reason is required).",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Show d2P/dt2 = k^2 P(N - P)(N - 2P).",
+        "expected": {
+          "answer": "d2P/dt2 = k(N - 2P) dP/dt = k^2 P(N - P)(N - 2P)"
+        },
+        "tolerance": "Show that (answer given).",
+        "notes": "M1 for differentiating with respect to t with the chain rule. A1 for k(N - 2P) dP/dt. A1 for substituting dP/dt = kP(N - P) to reach the AG. Missing the factor dP/dt: M0."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "R1"
+        ],
+        "description": "Hence show the population increases at its greatest rate when P = N/2; justify.",
+        "expected": {
+          "answer": "P = N/2; d2P/dt2 changes from positive to negative there"
+        },
+        "tolerance": "Accept the quadratic-vertex argument for dP/dt as a function of P.",
+        "notes": "M1 for setting d2P/dt2 = 0. A1 for P = N/2 (rejecting P = 0, P = N). R1 for a reason: sign change of d2P/dt2 from + to -, or dP/dt = k(NP - P^2) is a downward quadratic in P with vertex at N/2. 'd2P/dt2 = 0' alone earns R0.",
+        "follow_through": "From (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the greatest value of dP/dt in terms of k and N.",
+        "expected": {
+          "answer": "kN^2/4"
+        },
+        "tolerance": "Accept k(N/2)^2.",
+        "notes": "M1 for substituting P = N/2 into dP/dt. A1 for kN^2/4.",
+        "follow_through": "FT from (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "For the rumour, find the greatest spreading rate and when it occurs.",
+        "expected": {
+          "rate": "50 ln 3 students per day",
+          "time": "t = 4 days"
+        },
+        "tolerance": "Accept 200 ln 3 / 4 or any exact equivalent; accept about 55 if exact form also seen.",
+        "notes": "A1 for 50 ln 3. A1 for t = 4 (or when N = 200).",
+        "follow_through": "FT from (c), 3(a) and 3(b)."
+      }
+    ]
+  }
+]

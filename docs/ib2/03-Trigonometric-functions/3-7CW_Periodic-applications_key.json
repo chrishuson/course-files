@@ -1,0 +1,176 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "2.11",
+      "3.7"
+    ],
+    "total_marks": 10,
+    "answer_box_top_frac": 0.534,
+    "source": "Original (2026-11-18, calculator, radians). Ferris wheel diameter 40 m, centre 25 m, period 12 min, h(t) = d - a cos(bt). Easier than 3-6Q (a) P4: no phase shift.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find a and d for h(t) = d - a cos(bt).",
+        "expected": {
+          "a": 20,
+          "d": 25
+        },
+        "tolerance": "Bare values accepted.",
+        "notes": "A1 for a = 20. A1 for d = 25. a = 40 (diameter): A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find b (period 12 minutes).",
+        "expected": {
+          "b": "pi/6 (0.524)"
+        },
+        "tolerance": "Accept 0.524 or 0.5236.",
+        "notes": "M1 for 2pi/b = 12. A1 for pi/6. b = 12 or 12/(2pi): M0A0."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the height after 2 minutes.",
+        "expected": {
+          "answer": 15
+        },
+        "tolerance": "Accept 15.0.",
+        "notes": "M1 for substituting t = 2. A1 for 15. Degree mode gives 5.00: M1A0.",
+        "follow_through": "FT from (a) and (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the first time the seat is 40 m above the ground.",
+        "expected": {
+          "answer": "4.62 minutes (4.61967...)"
+        },
+        "tolerance": "Accept 4.62 or 4.620.",
+        "notes": "M1 for h(t) = 40 or a graph with y = 40. A1 for 4.62. Degree mode gives 265: M1A0.",
+        "follow_through": "FT from (a) and (b)."
+      },
+      {
+        "label": "e",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the time per turn for which the seat is more than 40 m high.",
+        "expected": {
+          "answer": "2.76 minutes (2.76064...)"
+        },
+        "tolerance": "Accept 2.76 or 2.761.",
+        "notes": "M1 for the second time 7.38 (symmetry about t = 6 or GDC). A1 for 2.76. Giving 7.38 as the answer: M1A0.",
+        "follow_through": "FT from (d)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "2.11",
+      "3.7"
+    ],
+    "total_marks": 11,
+    "answer_box_top_frac": 0.429,
+    "source": "Original (2026-11-18, calculator, radians). Tide D(t) = a sin(b(t - c)) + d, 0 < c < 4; high 8.4 m at 04:00, low 1.6 m at 10:15. Difficulty of 3-6Q (a) P4.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find a and d.",
+        "expected": {
+          "a": 3.4,
+          "d": 5
+        },
+        "tolerance": "Bare values accepted.",
+        "notes": "A1 for a = 3.4. A1 for d = 5. a = 6.8 or a and d swapped: A0 for that value."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "A1",
+          "A1"
+        ],
+        "description": "Find the period in hours, and hence b.",
+        "expected": {
+          "period": 12.5,
+          "b": "4pi/25 (0.503)"
+        },
+        "tolerance": "Accept 0.503 or 0.5027.",
+        "notes": "A1 for period 12.5. A1 for b = 2pi/12.5. Period 6.25 (b = 1.01): A0A0 but FT later."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find c.",
+        "expected": {
+          "c": 0.875
+        },
+        "tolerance": "Accept 0.875 only (or FT).",
+        "notes": "M1 for b(4 - c) = pi/2 (maximum condition) or quarter period before high tide; minimum condition b(10.25 - c) = 3pi/2 also accepted. A1 for 0.875. c = 4 (cosine shift): M0A0.",
+        "follow_through": "FT from (b)."
+      },
+      {
+        "label": "d",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Find the depth at 13:00.",
+        "expected": {
+          "answer": "4.36 m (4.36290...)"
+        },
+        "tolerance": "Accept 4.36 or 4.37 from a rounded b.",
+        "notes": "M1 for D(13). A1 for 4.36. Degree mode 5.36: M1A0. c = 4 gives 1.66: FT only.",
+        "follow_through": "FT from (a)-(c)."
+      },
+      {
+        "label": "e",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Boat needs depth at least 3.5 m: find the time between the 04:00 and 16:30 high tides when it cannot enter.",
+        "expected": {
+          "answer": "4.43 hours (4.43201...), from t = 8.03 to t = 12.47"
+        },
+        "tolerance": "Accept 4.43 h or about 4 h 26 min.",
+        "notes": "M1 for D(t) = 3.5 or a graph with y = 3.5. A1 for both times 8.03 and 12.5 (12.466). A1 for 4.43. 8.07 (time it can enter): M1A1A0.",
+        "follow_through": "FT from (a)-(c)."
+      }
+    ]
+  }
+]

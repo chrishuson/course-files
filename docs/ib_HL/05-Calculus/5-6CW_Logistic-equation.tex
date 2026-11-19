@@ -1,0 +1,123 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 HL \\* 18 November 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{5.6 Classwork: The Logistic Equation (no calculator)}
+
+Show all working and give exact answers. If you need more space, continue
+on lined paper and label the problem and part.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Forming differential equations from words: growth, decay, rate proportional to root V, logistic rumour model; explain the slow start and slow finish [7 marks] ---
+%--- Source: Original (AA HL 5.18); targets the 5-4CW 1(d) sign error (decreasing quantity needs -k) ---
+\item[1.] [Maximum mark: 7]
+
+In each part, $k$ is a positive constant and $t$ is the time. Write down a
+differential equation for each situation.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item The number of bacteria $P$ in a culture increases at a rate
+  proportional to $P$. \hfill [1]
+  \item The amount $A$ of a drug in a patient's blood decreases at a rate
+  proportional to $A$. \hfill [1]
+  \item The volume $V$ of water in a leaking tank decreases at a rate
+  proportional to $\sqrt{V}$. \hfill [1]
+  \item A rumour spreads through a school of $400$ students. The number of
+  students $N$ who have heard it increases at a rate proportional to the
+  product of the number who have heard it and the number who have not.
+  \hfill [2]
+  \item Use your equation in part (d) to explain why the rumour spreads
+  slowly at first, and slowly again near the end. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,10.5);
+  \foreach \y in {1,2,...,9} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Partial fractions for 1/(N(400 - N)); separate and integrate the logistic DE dN/dt = kN(400 - N), N(0) = 40; rearrange to N = 400/(1 + 9e^(-400kt)) [10 marks] ---
+%--- Source: Original (AA HL 1.11, 5.15, 5.18); structure after AA HL 2021 May P2 TZ1 Q12 and 2022 May P2 TZ2 Q12(e); targets the 5-4CW 2(b) error (logarithm of a sum split) ---
+\item[2.] [Maximum mark: 10]
+
+The rumour in Problem 1 is modelled by the differential equation
+$$\frac{\mathrm{d}N}{\mathrm{d}t} = kN\left(400 - N\right), \qquad
+0 < N < 400,$$
+where $t$ is the time in days. When $t = 0$, $40$ students have heard the
+rumour.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the constants $A$ and $B$ such that
+  $\dfrac{1}{N(400 - N)} = \dfrac{A}{N} + \dfrac{B}{400 - N}$. \hfill [2]
+  \item Hence, by solving the differential equation, show that
+  $\ln\left(\dfrac{N}{400 - N}\right) = 400kt - \ln 9$. \hfill [5]
+  \item Hence show that $N = \dfrac{400}{1 + 9e^{-400kt}}$. \hfill [3]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.4);
+  \foreach \y in {1,2,...,12} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: Logistic solution with data: k = ln3/800 from N(2) = 100; time to reach 200; rewrite as 400/(1 + 3^(2 - t/2)); N(8); limit and meaning [11 marks] ---
+%--- Source: Original (AA HL 5.18, 1.7); data step after AA HL 2022 May P2 TZ2 Q12(f); numbers chosen so linear extrapolation gives wrong answers ---
+\item[3.] [Maximum mark: 11]
+
+The number of students who have heard the rumour after $t$ days is
+$$N = \frac{400}{1 + 9e^{-400kt}}.$$
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item After $2$ days, $100$ students have heard the rumour. Show that
+  $k = \dfrac{\ln 3}{800}$. \hfill [2]
+  \item Find the time at which half of the school has heard the rumour.
+  \hfill [3]
+  \item Show that $N = \dfrac{400}{1 + 3^{2 - t/2}}$. \hfill [2]
+  \item Find the number of students who have heard the rumour after $8$
+  days. \hfill [2]
+  \item Write down the limit of $N$ as $t \to \infty$, and state what it
+  means in this context. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.4);
+  \foreach \y in {1,2,...,12} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: General logistic dP/dt = kP(N - P): second derivative; maximum rate at P = N/2 with justification; maximum rate kN^2/4; apply to the rumour, 50 ln 3 students per day at t = 4 [10 marks] ---
+%--- Source: Original (AA HL 5.18, 5.7); structure after AA HL 2022 May P2 TZ2 Q12(b)-(d); targets the 5-4CW 4(c) error (concavity needs a reason) ---
+\item[4.] [Maximum mark: 10]
+
+A population $P$ satisfies the logistic differential equation
+$$\frac{\mathrm{d}P}{\mathrm{d}t} = kP\left(N - P\right), \qquad
+0 < P < N,$$
+where $k$ and $N$ are positive constants.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Show that $\dfrac{\mathrm{d}^{2}P}{\mathrm{d}t^{2}} =
+  k^{2}P\left(N - P\right)\left(N - 2P\right)$. \hfill [3]
+  \item Hence show that the population increases at its greatest rate when
+  $P = \dfrac{N}{2}$. Justify your answer. \hfill [3]
+  \item Find the greatest value of $\dfrac{\mathrm{d}P}{\mathrm{d}t}$ in
+  terms of $k$ and $N$. \hfill [2]
+  \item For the rumour in Problems 2 and 3, find the greatest rate at which
+  the rumour spreads, in students per day, and write down the time at
+  which it occurs. \hfill [2]
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,12.2);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,208 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 17 November 2026}
+
+\begin{document}
+\subsubsection*{3.2 Pre-Quiz: Sets, Venn Diagrams and Review --- Markscheme}
+
+\emph{Total: 47 marks.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Three-set Venn word problem: regions in terms of x from set and pairwise totals; solve for x; exactly one; probabilities [13 marks] ---
+\item[1.] [Maximum mark: 13]
+
+\textbf{(a)}
+
+\begin{center}
+\begin{venndiagram3sets}[labelA=$C$, labelB=$D$, labelC=$R$,
+  labelABC={$x$}, labelOnlyAB={\small $11 - x$}, labelOnlyAC={\small $14 - x$},
+  labelOnlyBC={\small $8 - x$}, labelOnlyA={\small $8 + x$},
+  labelOnlyB={\small $5 + x$}, labelOnlyC={\small $12 + x$},
+  labelNotABC={$7$}, tikzoptions={scale=1.7}]
+\end{venndiagram3sets}
+\end{center}
+
+$x$ in the centre and $7$ outside the circles \hfill \textbf{A1}
+
+$11 - x$, \ $14 - x$, \ $8 - x$ in the three ``two clubs only'' regions \hfill \textbf{A1}
+
+$C$ only: $33 - (11 - x) - (14 - x) - x = 8 + x$
+
+$D$ only: $24 - (11 - x) - (8 - x) - x = 5 + x$
+
+$R$ only: $34 - (14 - x) - (8 - x) - x = 12 + x$ \hfill \textbf{A1A1}
+
+\emph{A1A1 for all three ``one club only'' regions; A1A0 for one or two of
+them. FT within the diagram from their two-club regions. Common error:
+writing $11$, $14$ and $8$ in the two-club-only regions. These totals
+include the $x$ students in all three clubs: A0 for those regions.}
+
+\textbf{(b)} $(8 + x) + (5 + x) + (12 + x) + (11 - x) + (14 - x) + (8 - x) + x + 7 = 70$ \hfill \textbf{M1}
+
+$65 + x = 70$ \hfill \textbf{A1}
+
+$x = 5$ \hfill \textbf{A1}
+
+\emph{Accept $33 + 24 + 34 - 11 - 14 - 8 + x + 7 = 70$. FT from (a). Wrong
+method: the two-club totals left unsubtracted give $65 - 2x = 70$,
+$x = -2.5$, which is not a number of students: M1A0A0.}
+
+\smallskip
+With $x = 5$: $C$ only $13$, $D$ only $10$, $R$ only $17$; $C \cap D$ only
+$6$, $C \cap R$ only $9$, $D \cap R$ only $3$; all three $5$; none $7$.
+
+\textbf{(c)} $13 + 10 + 17$ \hfill \textbf{M1}
+
+$= 40$ \hfill \textbf{A1}
+
+\emph{FT from (a) and (b).}
+
+\textbf{(d)} (i) $\dfrac{6 + 9 + 3 + 5}{70}$ \hfill \textbf{M1}
+
+$= \dfrac{23}{70}$ \ $(0.329)$ \hfill \textbf{A1}
+
+\emph{Wrong method: ``exactly two'' omits the centre, $\frac{18}{70}$:
+M0A0. FT from (a) and (b).}
+
+(ii) $\dfrac{17 + 3}{70}$ \hfill \textbf{M1}
+
+$= \dfrac{20}{70} = \dfrac{2}{7}$ \ $(0.286)$ \hfill \textbf{A1}
+
+\emph{Accept $\frac{34 - 14}{70}$. Wrong method: $R$ only,
+$\frac{17}{70}$: M0A0. FT from (a) and (b).}
+
+\newpage
+
+%--- Problem 2: Two-set percentages: both from "neither"; probability of cat-not-dog, exactly one, not a dog; expected count; reverse problem P(cat) from dog, both, neither [12 marks] ---
+\item[2.] [Maximum mark: 12]
+
+\textbf{(a)} $58 + 35 - y + 24 = 100$ \hfill \textbf{M1}
+
+$y = 17\%$ \hfill \textbf{A1}
+
+\begin{center}
+\begin{venndiagram2sets}[labelA=$D$, labelB=$C$, labelOnlyA={$41\%$},
+  labelAB={$17\%$}, labelOnlyB={$18\%$}, labelNotAB={$24\%$},
+  tikzoptions={scale=1.3}]
+\end{venndiagram2sets}
+\end{center}
+
+Venn diagram with all four regions correct \hfill \textbf{A1}
+
+\emph{Accept $n(D \cup C) = 100 - 24 = 76$, so $58 + 35 - 76 = 17$. FT
+within the diagram from their percentage for both.}
+
+\textbf{(b)} (i) $0.18$ \hfill \textbf{A1}
+
+\emph{Wrong method: $0.35$ is the probability of a cat, with or without a
+dog: A0.}
+
+(ii) $0.41 + 0.18$ \hfill \textbf{M1}
+
+$= 0.59$ \hfill \textbf{A1}
+
+\emph{Common error: $0.76$ (``at least one'' in place of ``exactly
+one''): M0A0.}
+
+(iii) $1 - 0.58 = 0.42$ \hfill \textbf{A1}
+
+\emph{Accept percentages ($18\%$, $59\%$, $42\%$) or fractions. FT from
+(a).}
+
+\textbf{(c)} $0.17 \times 1200$ \hfill \textbf{M1}
+
+$= 204$ \hfill \textbf{A1}
+
+\emph{FT from (a).}
+
+\textbf{(d)} Dog only: $46 - 15 = 31\%$ \hfill \textbf{M1}
+
+Cat only: $100 - 31 - 15 - 32 = 22\%$ \hfill \textbf{M1}
+
+$P(\text{cat}) = 0.22 + 0.15 = 0.37$ \hfill \textbf{A1}
+
+\emph{Accept $n(D \cup C) = 68$, so $68 = 46 + c - 15$, $c = 37\%$
+(M1M1A1). Wrong methods: $0.22$ is cat \emph{only} (M1M1A0);
+$1 - 0.46 = 0.54$ is ``no dog'' (M0M0A0).}
+
+\newpage
+
+%--- Problem 3: Smoothie prices: set up a 3x3 system from two sales totals and a price difference; solve; number of medium smoothies [8 marks] ---
+\item[3.] [Maximum mark: 8]
+
+\textbf{(a)} $12x + 9y + 6z = 107.10$ \hfill \textbf{A1}
+
+$8x + 14y + 5z = 109.10$ \hfill \textbf{A1}
+
+$z = x + 1.50$ \hfill \textbf{A1}
+
+\emph{Accept $z - x = 1.5$ or any equivalent form. Wrong method:
+$x = z + 1.50$ reverses the difference: A0.}
+
+\textbf{(b)} Small $3.40$ euros, medium $4.10$ euros, large $4.90$ euros
+\hfill \textbf{A1A1A1}
+
+\emph{GDC simultaneous-equation solver expected. By hand: substitute
+$z = x + 1.5$ to get $18x + 9y = 98.1$ and $13x + 14y = 101.6$, then
+$x = 3.4$, $y = 4.1$, $z = 4.9$. Accept $3.4$, $4.1$, $4.9$. FT from their
+three equations in (a) if they give a solution.}
+
+\textbf{(c)} $15(3.40) + 4.10m + 10(4.90) = 153.30$ \hfill \textbf{M1}
+
+$100 + 4.10m = 153.30$, \quad $m = 13$ \hfill \textbf{A1}
+
+\emph{FT from (b) only if their $m$ is a whole number.}
+
+\newpage
+
+%--- Problem 4: Surds and powers: integers a, b from a surd product; hence a quotient; same-base equation; equation quadratic in 3^x [14 marks] ---
+\item[4.] [Maximum mark: 14]
+
+\textbf{(a)} $4a + 4b\sqrt{3} + a\sqrt{3} + 3b = (4a + 3b) + (a + 4b)\sqrt{3}$ \hfill \textbf{M1}
+
+$4a + 3b = 14$, \quad $a + 4b = -3$ \hfill \textbf{M1}
+
+$a = 5$, \quad $b = -2$ \hfill \textbf{A1A1}
+
+\emph{M1 for expanding with $\sqrt{3} \times \sqrt{3} = 3$. M1 for
+equating the rational parts and the $\sqrt{3}$ parts. Wrong method:
+$\sqrt{3} \times \sqrt{3} = 9$ gives $4a + 9b = 14$ and non-integer values:
+M0M1A0A0.}
+
+\textbf{(b)} $\dfrac{14 - 3\sqrt{3}}{4 + \sqrt{3}} = a + b\sqrt{3}$ \hfill \textbf{M1}
+
+$= 5 - 2\sqrt{3}$ \hfill \textbf{A1}
+
+\emph{Accept rationalising:
+$\dfrac{(14 - 3\sqrt{3})(4 - \sqrt{3})}{16 - 3} = \dfrac{65 - 26\sqrt{3}}{13}
+= 5 - 2\sqrt{3}$. FT from (a).}
+
+\textbf{(c)} $2^{3(x + 1)} = 2^{4(2x - 1)}$ \hfill \textbf{M1}
+
+$3x + 3 = 8x - 4$ \hfill \textbf{M1}
+
+$x = \dfrac{7}{5}$ \hfill \textbf{A1}
+
+\emph{Accept $x = 1.4$. Wrong methods: $8(x + 1) = 16(2x - 1)$ gives
+$x = 1$ (M0M0A0); $2^{3x + 1} = 2^{8x - 1}$ multiplies only the first term
+of each exponent, giving $x = \frac{2}{5}$ (M1M0A0).}
+
+\textbf{(d)} $3^{2x + 1} = 3\left(3^{x}\right)^{2} = 3u^{2}$ \hfill \textbf{M1}
+
+$3u^{2} - 28u + 9 = 0$ \hfill \textbf{A1}
+
+$(3u - 1)(u - 9) = 0$, \quad $u = \dfrac{1}{3}$ or $u = 9$ \hfill \textbf{A1}
+
+$3^{x} = \dfrac{1}{3}$, \ $x = -1$; \quad $3^{x} = 9$, \ $x = 2$ \hfill \textbf{A1A1}
+
+\emph{GDC or quadratic formula accepted for the $u$ values. Wrong methods:
+reading $3^{2x + 1}$ as $u^{2}$ or $u^{2} + 3$ (M0, then FT only if they
+solve their quadratic); giving $u = \frac{1}{3}, 9$ as the final answers
+(A0A0 for the $x$ values).}
+
+\end{enumerate}
+\end{document}

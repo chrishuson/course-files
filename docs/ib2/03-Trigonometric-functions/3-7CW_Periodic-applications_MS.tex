@@ -1,0 +1,118 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 18 November 2026}
+
+\begin{document}
+\subsubsection*{3.7 Classwork: Applications of Periodic Functions --- Markscheme}
+
+\emph{Total: 21 marks. Radians throughout.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Ferris wheel [10 marks] ---
+\item[1.] [Maximum mark: 10]
+
+$h(t) = d - a\cos(bt)$; lowest point $25 - 20 = 5$\,m, highest $45$\,m,
+period $12$ minutes.
+
+\textbf{(a)} $a = 20$ \hfill \textbf{A1}
+
+$d = 25$ \hfill \textbf{A1}
+
+\emph{$a$ is the radius (half the diameter), $d$ the height of the centre.
+Bare values earn A1A1. Wrong method: $a = 40$ (the diameter): A0.}
+
+\textbf{(b)} $\dfrac{2\pi}{b} = 12$ \hfill \textbf{M1}
+
+$b = \dfrac{\pi}{6}$ \quad ($0.523598\ldots$) \hfill \textbf{A1}
+
+\emph{Accept $0.524$. Wrong methods, M0A0: $b = 12$; $b = \frac{12}{2\pi}$.}
+
+\textbf{(c)} $h(2) = 25 - 20\cos\left(\dfrac{\pi}{6} \times 2\right)$ \hfill \textbf{M1}
+
+$= 25 - 20 \times \dfrac{1}{2} = 15$\,m \hfill \textbf{A1}
+
+\emph{Wrong method: degree mode gives $5.00$: M1A0. FT from (a), (b).}
+
+\textbf{(d)} $25 - 20\cos\left(\dfrac{\pi t}{6}\right) = 40$, \ so
+$\cos\left(\dfrac{\pi t}{6}\right) = -0.75$ \hfill \textbf{M1}
+
+$t = 4.62$ minutes \quad ($4.61967\ldots$) \hfill \textbf{A1}
+
+\emph{\textit{GDC: graph $y = h(t)$ and $y = 40$ for $0 \le t \le 12$; Menu,
+Analyze Graph, Intersection.} M1 for the equation, or for a graph with
+$y = 40$ drawn. Wrong method: degree mode gives $265$: M1A0.}
+
+\textbf{(e)} Second time: $t = 12 - 4.61967\ldots = 7.38032\ldots$ \hfill \textbf{M1}
+
+$7.38032\ldots - 4.61967\ldots = 2.76$ minutes \quad ($2.76064\ldots$) \hfill \textbf{A1}
+
+\emph{M1 for the second solution, by symmetry about $t = 6$ or from the
+GDC. Wrong method: $12 - 4.62 = 7.38$ (the second time, not the length of
+time): M1A0. FT from (d).}
+
+\newpage
+
+%--- Problem 2: Tides [11 marks] ---
+\item[2.] [Maximum mark: 11]
+
+$D(t) = a\sin\bigl(b(t - c)\bigr) + d$; maximum $8.4$ at $t = 4$, minimum
+$1.6$ at $t = 10.25$.
+
+\textbf{(a)} $a = \dfrac{8.4 - 1.6}{2} = 3.4$ \hfill \textbf{A1}
+
+$d = \dfrac{8.4 + 1.6}{2} = 5$ \hfill \textbf{A1}
+
+\emph{Bare values earn A1A1. Wrong methods: $a = 6.8$; swapping $a$ and
+$d$: A0 for that value.}
+
+\textbf{(b)} High to low tide is half a period: period $= 2 \times 6.25 = 12.5$
+hours \hfill \textbf{A1}
+
+$b = \dfrac{2\pi}{12.5} = \dfrac{4\pi}{25}$ \quad ($0.502654\ldots$) \hfill \textbf{A1}
+
+\emph{Accept $0.503$. Wrong method: period $6.25$ (high to low only) gives
+$b = 1.01$: A0A0, but FT for (c)--(e).}
+
+\textbf{(c)} The sine is at its maximum when $b(t - c) = \dfrac{\pi}{2}$:
+
+$\dfrac{2\pi}{12.5}(4 - c) = \dfrac{\pi}{2}$ \hfill \textbf{M1}
+
+$4 - c = \dfrac{12.5}{4} = 3.125$, \quad $c = 0.875$ \hfill \textbf{A1}
+
+\emph{M1 for the maximum condition, or ``a quarter period before high
+tide''. Accept $c = 0.875$ from the minimum,
+$\frac{2\pi}{12.5}(10.25 - c) = \frac{3\pi}{2}$. Wrong method: $c = 4$ (the
+time of the maximum, the shift for a cosine model; it breaks
+$0 < c < 4$): M0A0. FT from (b).}
+
+\textbf{(d)} $D(13) = 3.4\sin\bigl(0.502654\ldots(13 - 0.875)\bigr) + 5$
+\hfill \textbf{M1}
+
+$= 4.36$\,m \quad ($4.36290\ldots$) \hfill \textbf{A1}
+
+\emph{Wrong methods: degree mode gives $5.36$ (M1A0); $c = 4$ gives $1.66$
+(FT from their (c) only). Accept values from a correctly rounded $b$, e.g.\
+$4.36$ or $4.37$.}
+
+\textbf{(e)} $3.4\sin\bigl(0.502654\ldots(t - 0.875)\bigr) + 5 = 3.5$
+\hfill \textbf{M1}
+
+\emph{\textit{GDC: graph $y = D(t)$ and $y = 3.5$ for $4 \le t \le 16.5$;
+find both intersections.}}
+
+$t = 8.03$ \ ($8.03399\ldots$) \ and \ $t = 12.5$ \ ($12.4660\ldots$)
+\hfill \textbf{A1}
+
+$12.4660\ldots - 8.03399\ldots = 4.43$ hours \quad ($4.43201\ldots$, about
+4 hours 26 minutes) \hfill \textbf{A1}
+
+\emph{M1 for the equation or a graph with $y = 3.5$ drawn. The first A1
+needs both times (08:02 and 12:28). Wrong method: $8.07$ hours is the time
+the boat \emph{can} enter: M1A1A0. FT from (a)--(c).}
+
+\end{enumerate}
+\end{document}

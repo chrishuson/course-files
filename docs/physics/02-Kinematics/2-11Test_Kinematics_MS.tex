@@ -1,0 +1,248 @@
+% context: markscheme (official solutions) for 2-11Test_Kinematics, the Unit 2 test
+%        given 20 November 2026
+% topic: measurement review; a one-chain conversion; a two-step rate problem;
+%        displacement and average velocity; a jet's take-off run; a ball thrown up;
+%        a velocity-time graph; a labelled height-time parabola; plotting a parabola
+%        and its velocity line
+% convention: answers in bold; "=" joins exact equalities, "\approx" introduces a
+%        rounded value; each problem names the skill it tests (one 10-point
+%        competency score per problem)
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+\usepackage{float}
+\setlength{\parskip}{0.2\baselineskip}
+\sisetup{reset-text-series=false, reset-math-version=false, text-series-to-math=true}
+
+\title{Physics}
+\author{Chris Huson}
+\date{November 2026}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{La Scuola d'Italia / Huson / Physics \\* 20 November 2026}
+
+\begin{document}
+
+\subsubsection*{2.11 Test: Kinematics Solutions}
+
+\begin{enumerate}[itemsep=0.5cm]
+
+\item \emph{Skill: significant figures, rounding, scientific notation, calculator.}
+  \begin{enumerate}[itemsep=0.3cm]
+    \item \textbf{4} \quad \emph{The leading zeros only place the decimal point;
+      the trailing zero after the 8 is measured.}
+    \item $\mathbf{3.00 \times 10^{8}~\textbf{m/s}}$ \quad \emph{Not $3 \times
+      10^8$: the two zeros are the second and third figures.}
+    \item $\num{149600000}~\text{km} = 1.496 \times 10^{8}~\text{km} =
+      \mathbf{1.496 \times 10^{11}~\textbf{m}}$
+    \item $t = \dfrac{d}{v} = \dfrac{1.496 \times 10^{11}~\text{m}}{3.00 \times
+      10^{8}~\text{m/s}} = 498.66\ldots \approx \mathbf{499~\textbf{s}}$
+
+      \emph{Three figures, from 3.00. That is about 8.3 minutes. The usual error is
+      keeping km, which gives 0.499 s.}
+  \end{enumerate}
+
+\item \emph{Skill: unit conversion.} One chain, evaluated once:
+
+  $65\,\dfrac{\text{mi}}{\text{h}} \times \dfrac{1609~\text{m}}{1~\text{mi}} \times
+  \dfrac{1~\text{h}}{3600~\text{s}} = 29.05\ldots \approx
+  \mathbf{29~\textbf{m/s}}$
+
+  \emph{Two figures, from 65. It agrees with the 29 m/s measured on the run. Also
+  accept a chain through km/h using 1 m/s = 3.6 km/h. The usual error is the time
+  factor upside down, giving about $3.8 \times 10^{8}$.}
+
+\item \emph{Skill: rate problem.} Knowns: $v = 4.6$ m/s, $d = 12.5$ km
+  $= \num{12500}$ m.
+
+  Step 1, the rate relationship: \quad $t = \dfrac{d}{v} =
+  \dfrac{\num{12500}~\text{m}}{4.6~\text{m/s}} = 2717.39\ldots~\text{s}$
+
+  Step 2, convert, carrying the unrounded value: \quad
+  $2717.39\ldots~\text{s} \times \dfrac{1~\text{min}}{60~\text{s}} = 45.28\ldots
+  \approx \mathbf{45~\textbf{min}}$
+
+  \emph{Two figures, from 4.6. The distractors 1 h = 3600 s and 1 m/s = 3.6 km/h are
+  not needed.}
+
+\item \emph{Skill: distance and displacement, speed and velocity.} Arrows: $+9$ m
+  from 0 to 9, then $-25$ m from 9 to $-16$.
+
+  \begin{center}
+  \begin{tikzpicture}[scale=0.5]
+    \draw[<->, thick] (-17,0) -- (11,0) node[right]{$x$ (m)};
+    \foreach \x in {-16,...,10} \draw (\x,0.12) -- (\x,-0.12);
+    \foreach \x in {-16,-14,...,10} \node[below] at (\x,-0.12) {\small \x};
+    \draw[->, very thick] (0,0.8) -- (9,0.8) node[midway, above]{\small $+9$ m};
+    \draw[->, very thick] (9,1.9) -- (-16,1.9) node[midway, above]{\small $-25$ m};
+  \end{tikzpicture}
+  \end{center}
+
+  \begin{enumerate}[itemsep=0.3cm]
+    \item $x = 9 - 25 = \mathbf{-16~\textbf{m}}$, that is, 16 m west of the bus
+      stop.
+    \item Distance $= 9 + 25 = \mathbf{34~\textbf{m}}$ \qquad Displacement
+      $= \mathbf{-16~\textbf{m}}$ (16 m west)
+    \item Total time $= 6.0 + 14.0 = 20.0$ s.
+
+      average speed $= \dfrac{34~\text{m}}{20.0~\text{s}} = \mathbf{1.7~\textbf{m/s}}$
+      \qquad
+      $\bar{v} = \dfrac{-16~\text{m}}{20.0~\text{s}} =
+      \mathbf{-0.80~\textbf{m/s}}$, that is, 0.80 m/s west
+
+      \emph{Credit $\bar{v}$ only with its sign or direction.}
+  \end{enumerate}
+
+\item \emph{Skill: constant-acceleration equations.} Knowns: $v_0 = 0$,
+  $a = 2.50$ m/s$^2$, $v = 78.0$ m/s.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item $t = \dfrac{v - v_0}{a} = \dfrac{78.0 - 0~\text{m/s}}{2.50~\text{m/s}^2} =
+      \mathbf{31.2~\textbf{s}}$
+    \item $\bar{v} = \dfrac{v + v_0}{2} = \dfrac{78.0 + 0}{2} = 39.0$ m/s, so
+      $x - x_0 = \bar{v}\,t = 39.0~\text{m/s} \times 31.2~\text{s} = 1216.8
+      \approx \mathbf{1220~\textbf{m}}$
+
+      \emph{Also accept $x - x_0 = \frac{v^2 - v_0^2}{2a} = \frac{78.0^2}{2 \times
+      2.50} = \frac{6084}{5.00} = 1216.8$ m, or $\frac{1}{2}at^2$. Three figures:
+      1220 m, or 1.22 km.}
+    \item \textbf{Yes}: the jet needs about 1220 m, and the runway is 2130 m, about
+      900 m longer.
+
+      \emph{Any sensible comparison earns credit. A good answer adds that the spare
+      length lets a pilot stop safely if the take-off has to be abandoned.}
+  \end{enumerate}
+
+\item \emph{Skill: free fall.} Up positive: $v_0 = +14.7$ m/s, $a = -9.80$ m/s$^2$.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item \textbf{Velocity $\mathbf{v = 0}$}, for an instant. \textbf{Acceleration
+      $\mathbf{a = -9.80}$ m/s$^\mathbf{2}$}, the same as during the rest of the
+      flight.
+
+      \emph{The common wrong answer is $a = 0$ at the top.}
+    \item $t = \dfrac{v - v_0}{a} = \dfrac{0 - 14.7~\text{m/s}}{-9.80~\text{m/s}^2}
+      = \mathbf{1.50~\textbf{s}}$
+    \item $\bar{v} = \dfrac{0 + 14.7}{2} = 7.35$ m/s, so
+      $y - y_0 = \bar{v}\,t = 7.35~\text{m/s} \times 1.50~\text{s} = 11.025
+      \approx \mathbf{11.0~\textbf{m}}$
+
+      \emph{Also accept $y - y_0 = \frac{0 - 14.7^2}{2(-9.80)} = 11.0$ m.}
+    \item The trip down takes as long as the trip up, so the ball is back at
+      $\mathbf{t = 3.00~\textbf{s}}$, moving at $\mathbf{v = -14.7~\textbf{m/s}}$:
+      the same speed it was thrown at, now downward.
+
+      \emph{Check: $v = v_0 + at = 14.7 - 9.80 \times 3.00 = -14.7$ m/s. Also accept
+      $y = 0$ in $y = v_0 t + \frac{1}{2}at^2$, which gives $t = 3.00$ s.}
+  \end{enumerate}
+
+\item \emph{Skill: motion graphs (velocity).} The line runs from (0, 0) to (5, 15),
+  flat to (9, 15), then down to (15, 0).
+  \begin{enumerate}[itemsep=0.3cm]
+    \item \textbf{6 m/s}, read from the line at $t = 2.0$ s.
+    \item slope $= \dfrac{15 - 0~\text{m/s}}{5.0 - 0~\text{s}} =
+      \mathbf{3.0~\textbf{m/s}^\mathbf{2}}$
+    \item \textbf{Zero}: the line is flat. \textbf{The car moves at a constant
+      15 m/s.}
+
+      \emph{Not ``the car has stopped''. It stops only where $v = 0$, at 15 s.}
+    \item slope $= \dfrac{0 - 15~\text{m/s}}{15.0 - 9.0~\text{s}} =
+      \mathbf{-2.5~\textbf{m/s}^\mathbf{2}}$. \textbf{The car is slowing down}: the
+      acceleration is opposite to the velocity, which is still positive.
+    \item \textbf{No.} The line never goes below the $t$-axis, so the velocity is
+      never negative. The car only slows to a stop at 15 s.
+
+      \emph{A sloping-down line does not mean moving backward; a line below the
+      axis would.}
+  \end{enumerate}
+
+\item \emph{Skill: motion graphs (reading a height-time graph).} Here
+  $y = 30t - 5t^2$ and $v = 30 - 10t$.
+  \begin{enumerate}[itemsep=0.3cm]
+    \item Read from the grid lines:
+
+      {\renewcommand{\arraystretch}{1.4}%
+      \begin{tabular}{| l | c | c | c | c | c |}
+        \hline
+        Point & A & B & C & D & E \\ \hline
+        $t$ (s) & 0 & 1 & 3 & 5 & 6 \\ \hline
+        $y$ (m) & 0 & 25 & 45 & 25 & 0 \\ \hline
+      \end{tabular}}
+    \item \textbf{C}. \textbf{Velocity $\mathbf{v = 0}$}: the tangent there is
+      flat. \textbf{Acceleration $\mathbf{a \approx -10}$ m/s$^\mathbf{2}$}, as at
+      every other point.
+    \item \textbf{Up from A to C}: the height increases, the slope is positive.
+      \textbf{Down from C to E}: the height decreases, the slope is negative.
+    \item slope $= \dfrac{45 - 0~\text{m}}{3 - 0~\text{s}} =
+      \mathbf{15~\textbf{m/s}}$. \textbf{It is the average velocity on the way up.}
+
+      \emph{It is half of 30 m/s, as $\bar{v} = \frac{v + v_0}{2} = \frac{0 +
+      30}{2}$ predicts.}
+    \item $v_B = 30 - 10 \times 1 = \mathbf{+20~\textbf{m/s}}$ \qquad
+      $v_D = 30 - 10 \times 5 = \mathbf{-20~\textbf{m/s}}$
+
+      \textbf{Alike: the same speed, 20 m/s. Different: B is going up, D is coming
+      down.}
+
+      \emph{Also accept the tangent slopes read from the graph, or the symmetry
+      argument (D is as far after the top as B is before it).}
+    \item $v_E = 30 - 10 \times 6 = \mathbf{-30~\textbf{m/s}}$: the speed it was
+      hit at, now downward.
+  \end{enumerate}
+
+\item \emph{Skill: motion graphs (plotting free fall).}
+  \begin{enumerate}[itemsep=0.3cm]
+    \item With $y_0 = 0$, $v_0 = 8$ m/s, $a = -10$ m/s$^2$:
+      $y = y_0 + v_0 t + \frac{1}{2}at^2 = 0 + 8t + \frac{1}{2}(-10)t^2 =
+      \mathbf{8t - 5t^2}$ \quad and \quad $v = v_0 + at = \mathbf{8 - 10t}$.
+
+      \emph{Credit requires the sign of $a$ to be negative, from up positive.}
+    \item Square the time first: at 0.6 s, $y = 8(0.6) - 5(0.36) = 4.8 - 1.8 =
+      3.0$ m.
+
+      {\renewcommand{\arraystretch}{1.4}%
+      \begin{tabular}{| l | c | c | c | c | c | c | c | c | c |}
+        \hline
+        $t$ (s) & 0 & 0.2 & 0.4 & 0.6 & 0.8 & 1.0 & 1.2 & 1.4 & 1.6 \\ \hline
+        $y$ (m) & 0 & 1.4 & 2.4 & 3.0 & \textbf{3.2} & 3.0 & 2.4 & 1.4 & 0 \\ \hline
+        $v$ (m/s) & 8 & 6 & 4 & 2 & \textbf{0} & $-2$ & $-4$ & $-6$ & $-8$ \\
+        \hline
+      \end{tabular}}
+
+      \emph{The heights are symmetric about 0.8 s, which is a built-in check.}
+    \item Plotted points, a smooth curve, and a ruled line:
+
+      \begin{tikzpicture}[x=3.3cm, y=1.9cm]
+        \draw[gray!25, thin, xstep=0.1, ystep=0.1] (0,0) grid (1.6,3.4);
+        \draw[gray!60, xstep=0.2, ystep=0.5] (0,0) grid (1.6,3.4);
+        \draw[->, thick] (0,0) -- (1.68,0) node[below right]{\small $t$ (s)};
+        \draw[->, thick] (0,0) -- (0,3.6) node[above]{\small $y$ (m)};
+        \foreach \t in {0,0.4,0.8,1.2,1.6} \node[below] at (\t,0) {\scriptsize \t};
+        \foreach \y in {0.5,1.0,1.5,2.0,2.5,3.0}
+          \node[left] at (0,\y) {\scriptsize \y};
+        \draw[very thick, domain=0:1.6, samples=60] plot (\x, {8*\x - 5*\x*\x});
+        \foreach \t in {0,0.2,...,1.6} \fill (\t, {8*\t - 5*\t*\t}) circle (1.8pt);
+      \end{tikzpicture}
+      \hfill
+      \begin{tikzpicture}[x=3.3cm, y=0.4cm]
+        \draw[gray!25, thin, xstep=0.1, ystep=1] (0,-8) grid (1.6,8);
+        \draw[gray!60, xstep=0.2, ystep=2] (0,-8) grid (1.6,8);
+        \draw[->, thick] (0,0) -- (1.68,0) node[above right]{\small $t$ (s)};
+        \draw[->, thick] (0,-8) -- (0,9) node[above]{\small $v$ (m/s)};
+        \foreach \t in {0.4,0.8,1.2,1.6}
+          \node[below, fill=white, inner sep=1pt] at (\t,-0.3) {\scriptsize \t};
+        \foreach \v in {-8,-4,...,8} \node[left] at (0,\v) {\scriptsize \v};
+        \draw[very thick] (0,8) -- (1.6,-8);
+        \foreach \t in {0,0.2,...,1.6} \fill (\t, {8 - 10*\t}) circle (1.8pt);
+      \end{tikzpicture}
+
+      \emph{The position curve must be smooth and rounded at the top, not a point
+      made of two straight segments.}
+    \item Highest at $\mathbf{t = 0.8~\textbf{s}}$, \textbf{3.2 m} above the hand,
+      where $\mathbf{v = 0}$: the velocity line crosses zero at the same moment the
+      position curve is at its top.
+    \item slope $= \dfrac{-8 - 8~\text{m/s}}{1.6 - 0~\text{s}} =
+      \mathbf{-10~\textbf{m/s}^\mathbf{2}}$. \textbf{It is the acceleration}, $g$,
+      downward.
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}

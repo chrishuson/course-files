@@ -1,0 +1,179 @@
+\documentclass[12pt, twoside]{article}
+\input{/Users/chris/github/course-files/docs/ib/preamble}
+
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{Markscheme}
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 HL \\* 18 November 2026}
+
+\begin{document}
+\subsubsection*{5.6 Classwork: The Logistic Equation (no calculator) --- Markscheme}
+
+\emph{Total: 38 marks.}
+
+\begin{enumerate}[itemsep=0.3cm]
+
+%--- Problem 1: Forming differential equations from words [7 marks] ---
+\item[1.] [Maximum mark: 7]
+
+\textbf{(a)} $\dfrac{\mathrm{d}P}{\mathrm{d}t} = kP$ \hfill \textbf{A1}
+
+\textbf{(b)} $\dfrac{\mathrm{d}A}{\mathrm{d}t} = -kA$ \hfill \textbf{A1}
+
+\textbf{(c)} $\dfrac{\mathrm{d}V}{\mathrm{d}t} = -k\sqrt{V}$ \hfill \textbf{A1}
+
+\emph{(b) and (c): the negative sign is required, because $k > 0$ and the
+quantity decreases. $\frac{\mathrm{d}A}{\mathrm{d}t} = kA$ earns A0 (the
+5-4CW 1(d) error).}
+
+\textbf{(d)} $\dfrac{\mathrm{d}N}{\mathrm{d}t} = kN\left(400 - N\right)$
+\hfill \textbf{A1A1}
+
+\emph{A1 for a rate proportional to a product with $N$. A1 for
+$400 - N$, the number who have not heard. $kN(N - 400)$ earns A1A0.}
+
+\textbf{(e)} When $N$ is small, the factor $N$ is small: few students
+know the rumour to pass it on. \hfill \textbf{R1}
+
+When $N$ is close to $400$, the factor $400 - N$ is small: few students are
+left to hear it. \hfill \textbf{R1}
+
+\emph{Each R1 needs a reference to the factor in the equation (or the
+product being small), not just the context.}
+
+\bigskip \hrule \bigskip
+
+%--- Problem 2: Partial fractions; solve the logistic DE; rearrange [10 marks] ---
+\item[2.] [Maximum mark: 10]
+
+\textbf{(a)} $1 = A(400 - N) + BN$ \hfill \textbf{M1}
+
+$N = 0$: $A = \dfrac{1}{400}$; \quad $N = 400$: $B = \dfrac{1}{400}$ \hfill \textbf{A1}
+
+\emph{A1 for both values.}
+
+\textbf{(b)} $\displaystyle\int \frac{1}{N(400 - N)}\,\mathrm{d}N = \int k\,\mathrm{d}t$
+\hfill \textbf{M1}
+
+$\dfrac{1}{400}\left(\ln N - \ln(400 - N)\right) = kt + C$ \hfill \textbf{A1A1}
+
+$\ln\left(\dfrac{N}{400 - N}\right) = 400kt + 400C$
+
+$t = 0$, $N = 40$: \ $400C = \ln\dfrac{40}{360} = \ln\dfrac{1}{9} = -\ln 9$ \hfill \textbf{M1A1}
+
+$\ln\left(\dfrac{N}{400 - N}\right) = 400kt - \ln 9$ \hfill \textbf{AG}
+
+\emph{M1 for separating with integral signs. A1 for $\ln N$; A1 for
+$-\ln(400 - N)$, with the negative from the chain rule. Moduli are not
+needed, since $0 < N < 400$. M1 for using $t = 0$, $N = 40$; A1 for the
+constant. Wrong method: $+\ln(400 - N)$ gives
+$\ln\left(N(400 - N)\right)$ and the given answer cannot be reached: A0 for
+that term and A0 for the constant.}
+
+\textbf{(c)} $\dfrac{N}{400 - N} = e^{400kt - \ln 9} = \dfrac{e^{400kt}}{9}$
+\hfill \textbf{M1}
+
+$9N = 400e^{400kt} - Ne^{400kt}$, \quad $N\left(9 + e^{400kt}\right) = 400e^{400kt}$
+\hfill \textbf{M1}
+
+$N = \dfrac{400e^{400kt}}{9 + e^{400kt}} = \dfrac{400}{1 + 9e^{-400kt}}$
+\hfill \textbf{A1}
+
+\hfill \textbf{AG}
+
+\emph{First M1 for exponentiating both sides correctly. Wrong method:
+exponentiating term by term, $\frac{N}{400 - N} = e^{400kt} - 9$, earns M0
+(the 5-4CW 2(b) error). Second M1 for collecting the $N$ terms. A1 for
+dividing numerator and denominator by $e^{400kt}$, seen.}
+
+\newpage
+
+%--- Problem 3: Logistic solution with data [11 marks] ---
+\item[3.] [Maximum mark: 11]
+
+\textbf{(a)} $100 = \dfrac{400}{1 + 9e^{-800k}}$, \quad $1 + 9e^{-800k} = 4$
+\hfill \textbf{M1}
+
+$e^{-800k} = \dfrac{1}{3}$, \quad $800k = \ln 3$, \quad $k = \dfrac{\ln 3}{800}$
+\hfill \textbf{A1}
+
+\hfill \textbf{AG}
+
+\textbf{(b)} $200 = \dfrac{400}{1 + 9e^{-400kt}}$, \quad $9e^{-400kt} = 1$
+\hfill \textbf{M1}
+
+$400kt = \ln 9$, \quad $t = \dfrac{\ln 9}{400k} = \dfrac{2\ln 3}{\frac{1}{2}\ln 3}$
+\hfill \textbf{A1}
+
+$t = 4$ days \hfill \textbf{A1}
+
+\emph{$400k = \frac{\ln 3}{2}$. Wrong method: a straight line through
+$(0, 40)$ and $(2, 100)$ gives $t = 5\frac{1}{3}$: M0A0A0.}
+
+\textbf{(c)} $400k = \dfrac{\ln 3}{2}$, so
+$e^{-400kt} = e^{-\frac{t}{2}\ln 3} = 3^{-t/2}$ \hfill \textbf{M1}
+
+$9e^{-400kt} = 3^{2} \times 3^{-t/2} = 3^{2 - t/2}$ \hfill \textbf{A1}
+
+\hfill \textbf{AG}
+
+\textbf{(d)} $N = \dfrac{400}{1 + 3^{2 - 4}} = \dfrac{400}{1 + \frac{1}{9}}$
+\hfill \textbf{M1}
+
+$N = 360$ \hfill \textbf{A1}
+
+\emph{Wrong method: continuing the pattern $40$, $100$, $200$ in a straight
+line from $t = 2$ to $t = 4$ gives $400$ at $t = 8$: M0A0.}
+
+\textbf{(e)} $N \to 400$ \hfill \textbf{A1}
+
+In the long run every student in the school hears the rumour. \hfill \textbf{R1}
+
+\emph{The R1 needs the context (all $400$ students), not just ``the
+population levels off''.}
+
+\bigskip \hrule \bigskip
+
+%--- Problem 4: General logistic: second derivative, maximum rate [10 marks] ---
+\item[4.] [Maximum mark: 10]
+
+\textbf{(a)} $\dfrac{\mathrm{d}P}{\mathrm{d}t} = k\left(NP - P^{2}\right)$, so
+$\dfrac{\mathrm{d}^{2}P}{\mathrm{d}t^{2}} = k\left(N - 2P\right)\dfrac{\mathrm{d}P}{\mathrm{d}t}$
+\hfill \textbf{M1A1}
+
+$= k\left(N - 2P\right) \cdot kP\left(N - P\right)
+= k^{2}P\left(N - P\right)\left(N - 2P\right)$ \hfill \textbf{A1}
+
+\hfill \textbf{AG}
+
+\emph{M1 for differentiating with respect to $t$ using the chain rule
+(implicit differentiation). A1 for $k(N - 2P)\frac{\mathrm{d}P}{\mathrm{d}t}$.
+Differentiating with respect to $P$ only, $k(N - 2P)$, without the factor
+$\frac{\mathrm{d}P}{\mathrm{d}t}$: M0.}
+
+\textbf{(b)} $\dfrac{\mathrm{d}^{2}P}{\mathrm{d}t^{2}} = 0$, and $P \neq 0$,
+$P \neq N$, so $P = \dfrac{N}{2}$ \hfill \textbf{M1A1}
+
+For $P < \frac{N}{2}$, $\frac{\mathrm{d}^{2}P}{\mathrm{d}t^{2}} > 0$; for
+$P > \frac{N}{2}$, $\frac{\mathrm{d}^{2}P}{\mathrm{d}t^{2}} < 0$. So
+$\frac{\mathrm{d}P}{\mathrm{d}t}$ changes from increasing to decreasing, and
+is greatest at $P = \frac{N}{2}$. \hfill \textbf{R1}
+
+\emph{Accept: $\frac{\mathrm{d}P}{\mathrm{d}t} = k(NP - P^{2})$ is a
+quadratic in $P$ with a negative $P^{2}$ coefficient, so its maximum is at
+the vertex $P = \frac{N}{2}$ (M1A1R1). The R1 needs a reason, not just
+``second derivative is zero'' (the 5-4CW 4(c) error).}
+
+\textbf{(c)} $k \cdot \dfrac{N}{2}\left(N - \dfrac{N}{2}\right)$ \hfill \textbf{M1}
+
+$= \dfrac{kN^{2}}{4}$ \hfill \textbf{A1}
+
+\textbf{(d)} $\dfrac{\ln 3}{800} \times \dfrac{400^{2}}{4} = 50\ln 3$ students
+per day \hfill \textbf{A1}
+
+at $t = 4$ days, when $N = 200$ \hfill \textbf{A1}
+
+\emph{FT from (c) and from 3(a), 3(b). Accept $\frac{200\ln 3}{4}$ or any
+exact equivalent.}
+
+\end{enumerate}
+\end{document}

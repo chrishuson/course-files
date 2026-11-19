@@ -1,0 +1,144 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 11 \\* 17 November 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{3.2 Pre-Quiz: Sets, Venn Diagrams and Review}
+
+A calculator is allowed. When a question asks for an exact answer or a
+particular form, show the algebra that leads to it.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Three-set Venn word problem: regions in terms of x from set and pairwise totals; solve for x; exactly one; probabilities [13 marks] ---
+%--- Source: Original (AA SL prior learning / 4.5 Venn diagrams); three-set extension of 3-1CW_Sets-Venn-review P8 ---
+\item[1.]
+A group of $70$ students were asked which of three clubs they belong to:
+Chess ($C$), Drama ($D$) and Robotics ($R$).
+
+\begin{itemize}[itemsep=0cm, topsep=0.1cm]
+  \item $33$ belong to Chess, $24$ belong to Drama and $34$ belong to Robotics.
+  \item $11$ belong to both Chess and Drama, $14$ belong to both Chess and
+  Robotics, and $8$ belong to both Drama and Robotics.
+  \item $x$ students belong to all three clubs, and $7$ students belong to
+  none of the three clubs.
+\end{itemize}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Complete the Venn diagram. Write the number of students in each
+  region, in terms of $x$ where needed. Start with $x$ in the centre.
+\end{enumerate}
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\vspace{0pt}
+\begin{venndiagram3sets}[labelA=$C$, labelB=$D$, labelC=$R$, tikzoptions={scale=1.3}]
+\end{venndiagram3sets}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+\vspace{0pt}
+\begin{enumerate}[itemsep=0.1cm, leftmargin=0.9cm]
+  \item[(b)] Write down an equation in $x$, and solve it.
+  \item[(c)] Find the number of students who belong to exactly one club.
+  \item[(d)] A student is chosen at random from the group. Find the
+  probability that the student belongs to
+  \begin{enumerate}[label=(\roman*), itemsep=0cm]
+    \item at least two of the clubs;
+    \item Robotics but not Chess.
+  \end{enumerate}
+\end{enumerate}
+\end{minipage}
+
+\medskip
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,6.0);
+  \foreach \y in {1,2,...,5} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Two-set percentages: both from "neither"; probability of cat-not-dog, exactly one, not a dog; expected count; reverse problem P(cat) from dog, both, neither [12 marks] ---
+%--- Source: Original; parallel of 3-1CW_Sets-Venn-review P9 (modelled on AA SL 2021 May P2 TZ2 Q4) ---
+\item[2.]
+In a town, $58\%$ of the households have a dog ($D$) and $35\%$ have a cat
+($C$). $24\%$ of the households have neither a dog nor a cat.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Draw a Venn diagram, and find the percentage of households that have
+  both a dog and a cat.
+  \item A household is chosen at random. Find the probability that the
+  household
+  \begin{enumerate}[label=(\roman*), itemsep=0cm]
+    \item has a cat but not a dog;
+    \item has exactly one of the two pets;
+    \item does not have a dog.
+  \end{enumerate}
+  \item There are $1200$ households in the town. Find the number of
+  households that have both a dog and a cat.
+  \item In a second town, $46\%$ of the households have a dog, $15\%$ have
+  both a dog and a cat, and $32\%$ have neither. A household in this town
+  is chosen at random. Find the probability that it has a cat.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,12.4);
+  \foreach \y in {1,2,...,11} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 3: Smoothie prices: set up a 3x3 system from two sales totals and a price difference; solve; number of medium smoothies [8 marks] ---
+%--- Source: Original (AA SL 1.1 / prior learning, systems of linear equations); 3x3 extension of 2-5PQ_Sequences-lines-exponents P4 ---
+\item[3.]
+A caf\'e sells small, medium and large smoothies. A small smoothie costs
+$x$ euros, a medium costs $y$ euros and a large costs $z$ euros.
+
+\begin{itemize}[itemsep=0cm, topsep=0.1cm]
+  \item On Monday the caf\'e sold $12$ small, $9$ medium and $6$ large
+  smoothies, for a total of $107.10$ euros.
+  \item On Tuesday it sold $8$ small, $14$ medium and $5$ large smoothies,
+  for a total of $109.10$ euros.
+  \item A large smoothie costs $1.50$ euros more than a small smoothie.
+\end{itemize}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Write down three equations in $x$, $y$ and $z$.
+  \item Find the price of each size of smoothie.
+  \item On Wednesday the caf\'e sold $15$ small and $10$ large smoothies,
+  and some medium smoothies, for a total of $153.30$ euros. Find the
+  number of medium smoothies sold on Wednesday.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.2);
+  \foreach \y in {1,2,...,12} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 4: Surds and powers: integers a, b from a surd product; hence a quotient; same-base equation; equation quadratic in 3^x [14 marks] ---
+%--- Source: Original (AA SL 1.5, 1.7, prior learning surds); in the style of 2-6Q early finishers (a) P1 and 2-10CW P4-P5 ---
+\item[4.]
+In this question, give every answer in exact form.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the integers $a$ and $b$ such that
+  $\left(4 + \sqrt{3}\right)\left(a + b\sqrt{3}\right) = 14 - 3\sqrt{3}$.
+  \item Hence write $\dfrac{14 - 3\sqrt{3}}{4 + \sqrt{3}}$ in the form
+  $p + q\sqrt{3}$, where $p, q \in \mathbb{Z}$.
+  \item Solve the equation $8^{x + 1} = 16^{2x - 1}$.
+  \item By letting $u = 3^{x}$, solve the equation
+  $3^{2x + 1} - 28\left(3^{x}\right) + 9 = 0$.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,16.5);
+  \foreach \y in {1,2,...,15} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

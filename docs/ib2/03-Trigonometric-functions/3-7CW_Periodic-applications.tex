@@ -1,0 +1,95 @@
+\documentclass[12pt, twoside]{article}
+\input{../preamble}
+
+\fancyhead[LO]{La Scuola d'Italia / Dr.\ Huson / IB Math 12 \\* 18 November 2026}
+\fancyhead[RO]{\fbox{\begin{minipage}{6cm}\footnotesize Nickname:\\[0.5cm]\end{minipage}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\subsubsection*{3.7 Classwork: Applications of Periodic Functions}
+
+All angles are in radians: set your GDC to radian mode. Give answers
+correct to three significant figures.
+
+\begin{enumerate}[itemsep=0.15cm]
+
+%--- Problem 1: Ferris wheel h(t) = d - a cos(bt): a and d from the wheel, b from the period, h(2), first time at 40 m, time above 40 m per revolution [9 marks] ---
+%--- Source: Original (AA SL 2.11, 3.7); easier than 3-6Q version (a) Problem 4: no phase shift, model form given ---
+\item[1.]
+\begin{minipage}[t]{0.6\linewidth}
+A Ferris wheel has a diameter of $40$ metres. Its centre is $25$ metres
+above the ground, and it turns once every $12$ minutes. A seat starts at
+the lowest point when $t = 0$.
+
+\smallskip
+The height of the seat above the ground, in metres, $t$ minutes later is
+modelled by
+\[
+h(t) = d - a\cos(bt), \qquad a,\ b,\ d > 0.
+\]
+\end{minipage}%
+\begin{minipage}[t]{0.4\linewidth}
+\vspace{0pt}
+\begin{flushright}
+\begin{tikzpicture}[scale=0.85]
+  \draw[thick] (-2.4,0) -- (2.4,0);
+  \draw[thick] (0,2.5) circle (2);
+  \fill (0,2.5) circle (1.5pt);
+  \fill (0,0.5) circle (2.5pt);
+  \node[left, font=\small] at (-0.12,0.5) {seat};
+  \draw[<->] (-2.2,0) -- (-2.2,2.5) node[midway, left, font=\small] {$25$};
+  \draw[dashed] (-2.3,2.5) -- (0,2.5);
+  \draw[<->] (2.15,0.5) -- (2.15,4.5) node[midway, right, font=\small] {$40$};
+  \draw[dashed] (0,4.5) -- (2.3,4.5) (0,0.5) -- (2.3,0.5);
+\end{tikzpicture}
+\end{flushright}
+\end{minipage}
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the value of $a$ and the value of $d$.
+  \item Find the value of $b$.
+  \item Find the height of the seat after $2$ minutes.
+  \item Find the first time at which the seat is $40$ metres above the
+  ground.
+  \item Find the length of time, during one turn of the wheel, for which the
+  seat is more than $40$ metres above the ground.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,10.1);
+  \foreach \y in {1,2,...,9} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\newpage
+
+%--- Problem 2: Tides D(t) = a sin(b(t - c)) + d from high tide 8.4 m at 04:00 and low tide 1.6 m at 10:15: a, d; period and b; c; depth at 13:00; time the harbour is too shallow between high tides [11 marks] ---
+%--- Source: Original (AA SL 2.11, 3.7); parallel in difficulty to 3-6Q version (a) Problem 4 (sine model, c from the maximum, time below a level) ---
+\item[2.]
+
+The depth of water in a harbour, in metres, $t$ hours after midnight is
+modelled by
+\[
+D(t) = a\sin\bigl(b(t - c)\bigr) + d, \qquad a,\ b,\ d > 0, \quad
+0 < c < 4.
+\]
+On one day, high tide is at 04:00, when the depth is $8.4$ metres. The next
+low tide is at 10:15, when the depth is $1.6$ metres.
+
+\begin{enumerate}[itemsep=0.1cm]
+  \item Find the value of $a$ and the value of $d$.
+  \item Find the period of the model, in hours, and hence find the value
+  of $b$.
+  \item Find the value of $c$.
+  \item Find the depth of the water at 13:00.
+  \item A fishing boat can enter the harbour only when the depth of water is
+  at least $3.5$ metres. Find the length of time between the high tides at
+  04:00 and 16:30 during which the boat cannot enter the harbour.
+\end{enumerate}
+
+\begin{tikzpicture}
+  \draw (-0.6,0) rectangle (14.6,13.1);
+  \foreach \y in {1,2,...,12} \draw[dotted] (0,\y)--(14.1,\y);
+\end{tikzpicture}
+
+\end{enumerate}
+\end{document}

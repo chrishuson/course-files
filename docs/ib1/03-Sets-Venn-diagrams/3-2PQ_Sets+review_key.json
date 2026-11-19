@@ -1,0 +1,336 @@
+[
+  {
+    "problem_number": 1,
+    "topic_codes": [
+      "4.5"
+    ],
+    "total_marks": 13,
+    "answer_box_top_frac": 0.425,
+    "source": "Original. Three-set Venn: 70 students, Chess 33, Drama 24, Robotics 34; C and D 11, C and R 14, D and R 8; x in all three; 7 in none. Three-set extension of 3-1CW P8. answer_box_top_frac set by hand to 0.425 (just above the Venn diagram frame at 0.433) so the crop includes part (a); the ruled box itself starts at 0.686.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 4,
+        "mark_codes": [
+          "A1",
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "Complete the three-set Venn diagram (printed on the page, beside the answer box) in terms of x.",
+        "expected": {
+          "centre": "x",
+          "none": 7,
+          "C_and_D_only": "11 - x",
+          "C_and_R_only": "14 - x",
+          "D_and_R_only": "8 - x",
+          "C_only": "8 + x",
+          "D_only": "5 + x",
+          "R_only": "12 + x"
+        },
+        "tolerance": "Accept equivalent expressions (e.g. 33 - 25 + x). Accept numerical values from x = 5 (13, 10, 17, 6, 9, 3, 5, 7) if the student has found x first.",
+        "notes": "The work is in the printed Venn diagram above the answer box. A1 for x in the centre and 7 outside the circles. A1 for 11 - x, 14 - x, 8 - x in the two-club-only regions. A1A1 for all three one-club-only regions; A1A0 for one or two. Common error: 11, 14, 8 written in the two-club-only regions without subtracting x: A0 for those regions; one-club regions FT within the diagram."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Write down an equation in x and solve it.",
+        "expected": {
+          "x": 5
+        },
+        "tolerance": "Accept the inclusion-exclusion form 33 + 24 + 34 - 11 - 14 - 8 + x + 7 = 70.",
+        "notes": "M1 for the sum of all eight regions (including the 7) set equal to 70. A1 for 65 + x = 70. A1 for x = 5. Wrong method: two-club totals unsubtracted give 65 - 2x = 70, x = -2.5: M1A0A0.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Number of students who belong to exactly one club.",
+        "expected": {
+          "answer": 40
+        },
+        "tolerance": "Accept 40 only (or FT).",
+        "notes": "M1 for 13 + 10 + 17 or (8 + x) + (5 + x) + (12 + x) with their x. A1 for 40.",
+        "follow_through": "FT from (a) and (b)."
+      },
+      {
+        "label": "d_i",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Probability a random student belongs to at least two clubs.",
+        "expected": {
+          "answer": "23/70"
+        },
+        "tolerance": "Accept 0.329 or 0.32857... Accept 32.9%.",
+        "notes": "M1 for (6 + 9 + 3 + 5)/70. A1 for 23/70. Wrong method: exactly two, 18/70: M0A0.",
+        "follow_through": "FT from (a) and (b)."
+      },
+      {
+        "label": "d_ii",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Probability a random student belongs to Robotics but not Chess.",
+        "expected": {
+          "answer": "2/7"
+        },
+        "tolerance": "Accept 20/70, 0.286 or 0.28571...",
+        "notes": "M1 for (17 + 3)/70 or (34 - 14)/70. A1 for 2/7. Wrong method: Robotics only, 17/70: M0A0.",
+        "follow_through": "FT from (a) and (b)."
+      }
+    ]
+  },
+  {
+    "problem_number": 2,
+    "topic_codes": [
+      "4.5"
+    ],
+    "total_marks": 12,
+    "answer_box_top_frac": 0.452,
+    "source": "Original. Dog 58%, cat 35%, neither 24%; 1200 households; second town dog 46%, both 15%, neither 32%. Parallel of 3-1CW P9.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Draw a Venn diagram and find the percentage with both a dog and a cat.",
+        "expected": {
+          "both": "17%",
+          "dog_only": "41%",
+          "cat_only": "18%",
+          "neither": "24%"
+        },
+        "tolerance": "Accept 0.17 or 17. Diagram values may be percentages, decimals or counts out of 100.",
+        "notes": "M1 for 58 + 35 - y + 24 = 100 or 58 + 35 - 76. A1 for 17%. A1 for a Venn diagram with all four regions correct (FT from their both)."
+      },
+      {
+        "label": "b_i",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Probability a household has a cat but not a dog.",
+        "expected": {
+          "answer": 0.18
+        },
+        "tolerance": "Accept 18%, 18/100, 9/50.",
+        "notes": "A1 for 0.18. Wrong method: 0.35 (all cat owners): A0.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "b_ii",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Probability a household has exactly one of the two pets.",
+        "expected": {
+          "answer": 0.59
+        },
+        "tolerance": "Accept 59%, 59/100.",
+        "notes": "M1 for 0.41 + 0.18. A1 for 0.59. Common error: 0.76 (at least one): M0A0.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "b_iii",
+        "marks": 1,
+        "mark_codes": [
+          "A1"
+        ],
+        "description": "Probability a household does not have a dog.",
+        "expected": {
+          "answer": 0.42
+        },
+        "tolerance": "Accept 42%, 21/50.",
+        "notes": "A1 for 0.42 (1 - 0.58, or 0.18 + 0.24)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Number of the 1200 households with both a dog and a cat.",
+        "expected": {
+          "answer": 204
+        },
+        "tolerance": "Accept 204 only (or FT).",
+        "notes": "M1 for 0.17 x 1200. A1 for 204.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "d",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "M1",
+          "A1"
+        ],
+        "description": "Second town: dog 46%, both 15%, neither 32%. Probability a household has a cat.",
+        "expected": {
+          "answer": 0.37
+        },
+        "tolerance": "Accept 37%, 37/100.",
+        "notes": "M1 for dog only 46 - 15 = 31. M1 for cat only 100 - 31 - 15 - 32 = 22. A1 for 0.37. Alternative: n(D or C) = 68, 68 = 46 + c - 15 (M1M1), c = 37 (A1). Wrong methods: 0.22 (cat only) M1M1A0; 0.54 (1 - 0.46) M0M0A0."
+      }
+    ]
+  },
+  {
+    "problem_number": 3,
+    "topic_codes": [
+      "1.1"
+    ],
+    "total_marks": 8,
+    "answer_box_top_frac": 0.425,
+    "source": "Original (prior learning: systems of linear equations). Smoothies: Mon 12, 9, 6 for 107.10; Tue 8, 14, 5 for 109.10; large = small + 1.50; Wed 15 small, 10 large, m medium for 153.30. 3x3 extension of 2-5PQ P4.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "Write down three equations in x, y and z.",
+        "expected": {
+          "answer": "12x + 9y + 6z = 107.10; 8x + 14y + 5z = 109.10; z = x + 1.50"
+        },
+        "tolerance": "Accept any equivalent form, e.g. z - x = 1.5.",
+        "notes": "A1 for each correct equation. Wrong method: x = z + 1.50 (difference reversed): A0 for that equation."
+      },
+      {
+        "label": "b",
+        "marks": 3,
+        "mark_codes": [
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the price of each size of smoothie.",
+        "expected": {
+          "x": 3.4,
+          "y": 4.1,
+          "z": 4.9
+        },
+        "tolerance": "Accept 3.4, 4.1, 4.9 with or without units.",
+        "notes": "A1 for each correct price. GDC solver expected; no working required.",
+        "follow_through": "FT from their three equations in (a)."
+      },
+      {
+        "label": "c",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Number of medium smoothies sold on Wednesday.",
+        "expected": {
+          "answer": 13
+        },
+        "tolerance": "Accept 13 only (or FT whole number).",
+        "notes": "M1 for 15(3.40) + 4.10m + 10(4.90) = 153.30. A1 for 13.",
+        "follow_through": "FT from (b) only if their m is a whole number."
+      }
+    ]
+  },
+  {
+    "problem_number": 4,
+    "topic_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "total_marks": 14,
+    "answer_box_top_frac": 0.305,
+    "source": "Original. Surd product (4 + root 3)(a + b root 3) = 14 - 3 root 3; hence quotient; 8^(x+1) = 16^(2x-1); 3^(2x+1) - 28(3^x) + 9 = 0. Style of 2-6Q early finishers (a) P1 and 2-10CW P4-P5.",
+    "parts": [
+      {
+        "label": "a",
+        "marks": 4,
+        "mark_codes": [
+          "M1",
+          "M1",
+          "A1",
+          "A1"
+        ],
+        "description": "Find the integers a and b such that (4 + root 3)(a + b root 3) = 14 - 3 root 3.",
+        "expected": {
+          "a": 5,
+          "b": -2
+        },
+        "tolerance": "Accept a = 5, b = -2 only.",
+        "notes": "M1 for expanding to (4a + 3b) + (a + 4b) root 3. M1 for equating parts: 4a + 3b = 14 and a + 4b = -3. A1 for a = 5. A1 for b = -2. Wrong method: root 3 x root 3 = 9 gives non-integers: M0M1A0A0."
+      },
+      {
+        "label": "b",
+        "marks": 2,
+        "mark_codes": [
+          "M1",
+          "A1"
+        ],
+        "description": "Hence write (14 - 3 root 3)/(4 + root 3) in the form p + q root 3.",
+        "expected": {
+          "answer": "5 - 2 root 3"
+        },
+        "tolerance": "Accept rationalising with the conjugate (4 - root 3): (65 - 26 root 3)/13.",
+        "notes": "M1 for recognising the quotient equals a + b root 3 from (a), or for multiplying by (4 - root 3)/(4 - root 3). A1 for 5 - 2 root 3.",
+        "follow_through": "FT from (a)."
+      },
+      {
+        "label": "c",
+        "marks": 3,
+        "mark_codes": [
+          "M1",
+          "M1",
+          "A1"
+        ],
+        "description": "Solve 8^(x+1) = 16^(2x-1).",
+        "expected": {
+          "answer": "x = 7/5"
+        },
+        "tolerance": "Accept 1.4.",
+        "notes": "M1 for writing both sides as powers of 2 (or of 4 or 16 consistently). M1 for 3x + 3 = 8x - 4. A1 for 7/5. Wrong methods: 8(x + 1) = 16(2x - 1), x = 1: M0M0A0; 3x + 1 = 8x - 1, x = 2/5: M1M0A0."
+      },
+      {
+        "label": "d",
+        "marks": 5,
+        "mark_codes": [
+          "M1",
+          "A1",
+          "A1",
+          "A1",
+          "A1"
+        ],
+        "description": "By letting u = 3^x, solve 3^(2x+1) - 28(3^x) + 9 = 0.",
+        "expected": {
+          "x": [
+            -1,
+            2
+          ]
+        },
+        "tolerance": "Accept u values from GDC or quadratic formula.",
+        "notes": "M1 for 3^(2x+1) = 3u^2. A1 for 3u^2 - 28u + 9 = 0. A1 for u = 1/3 and u = 9. A1 for x = -1. A1 for x = 2. Wrong methods: 3^(2x+1) read as u^2 or u^2 + 3: M0, later marks FT on their quadratic; u values 1/3, 9 given as final x answers: A0A0 for the x values."
+      }
+    ]
+  }
+]
